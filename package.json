@@ -1,0 +1,44 @@
+{
+  "name": "fabricjs-website",
+  "private": true,
+  "description": "Website for the FabricJS HTML5 canvas library",
+  "version": "0.1.0",
+  "license": "MIT",
+  "keywords": [
+		"fabricjs"
+	],
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "dependencies": {
+    "gatsby": "^2.19.7",
+    "gatsby-image": "^2.3.1",
+    "gatsby-plugin-react-helmet": "^3.1.22",
+    "gatsby-plugin-sharp": "^2.5.3",
+    "gatsby-remark-autolink-headers": "^2.1.24",
+    "gatsby-remark-images": "^3.2.1",
+    "gatsby-source-filesystem": "^2.1.48",
+    "gatsby-transformer-remark": "^2.6.53",
+    "gatsby-transformer-sharp": "^2.4.3",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.1"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  },
+  "homepage": "https://github.com/fabricjs/fabricjs-website",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fabricjs/fabricjs-website"
+  },
+  "bugs": {
+    "url": "https://github.com/fabricjs/fabricjs-website/issues"
+  }
+}
