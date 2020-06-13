@@ -19,4 +19,3 @@ After installation is done, you can run [locally](http://localhost:8000) by exec
 ```shell
 gatsby develop
 ```
-
