@@ -15,7 +15,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "deploy": "gh-pages -d public -b master"
+    "deploy": "gh-pages -d public -r https://$GITHUB_TOKEN@github.com/fabricjs/fabricjs.github.io.git -b master"
   },
   "dependencies": {
     "gatsby": "^2.19.7",
