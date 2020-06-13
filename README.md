@@ -17,5 +17,5 @@ npm install
 
 After installation is done, you can run [locally](http://localhost:8000) by executing following command
 ```shell
-gatsby develop
+npm run develop
 ```
