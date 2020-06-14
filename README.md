@@ -1,5 +1,7 @@
 [website-url]: https://fabricjs.github.io/  "FabricJS website"
 
+![CI build status](https://github.com/fabricjs/fabricjs.github.io/workflows/Build/badge.svg)
+
 ![FabricJS logo](src/images/fabricjs-logo.png)
 
 # FabricJS website
