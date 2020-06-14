@@ -5,8 +5,8 @@
   "version": "0.1.0",
   "license": "MIT",
   "keywords": [
-		"fabricjs"
-	],
+    "fabricjs"
+  ],
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -14,7 +14,8 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "deploy": "gh-pages -d public -r https://$GITHUB_TOKEN@github.com/fabricjs/fabricjs.github.io.git -b master"
   },
   "dependencies": {
     "gatsby": "^2.19.7",
@@ -31,6 +32,7 @@
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
+    "gh-pages": "^3.0.0",
     "prettier": "^1.19.1"
   },
   "homepage": "https://github.com/fabricjs/fabricjs-website",
