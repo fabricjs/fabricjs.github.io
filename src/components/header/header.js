@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import "./header.css";
-import logo from "../images/fabricjs-logo.png";
+import logo from "../../images/fabricjs-logo.png";
 
 export default function(){
 	return(

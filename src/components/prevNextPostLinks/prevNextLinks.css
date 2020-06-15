@@ -1,0 +1,56 @@
+main>#prevNextPostLinks{
+	padding:2% var(--padding-left-right);
+}
+#prevNextPostLinks>ul{
+	border-top:1px solid #eee;
+	padding-top:2%;
+}
+#prevNextPostLinks>ul>li{
+	display:block;
+}
+li.nextPost{text-align: right;}
+li.prevPost::before,
+li.nextPost::before{
+	display: block;
+	font-size:var(--font-size-smaller);
+	/*font-weight:lighter;*/
+	color:var(--font-color-dark);
+}
+li.prevPost::before{
+	content:'Previous';
+}
+li.nextPost::before{
+	content:'Next';
+}
+
+#prevNextPostLinks>ul>li>a{
+	position: relative;
+}
+#prevNextPostLinks>ul>li>a:hover:before{
+	content:'';
+	position:absolute;
+	left:-10px;right:-10px;
+	top:-5px;bottom:-5px;
+	background-color: var(--primary-color-tint);
+	padding:5px 10px;
+	border-radius:var(--border-radius-normal);
+	z-index: -1
+}
+
+@media (min-width:480px) and (orientation:landscape){
+	#prevNextPostLinks>ul>li{
+		display:inline-block;
+		width:50%
+	}
+	li.prevPost{
+		float:left
+	}
+	li.nextPost{
+		float:right
+	}
+	#prevNextPostLinks>ul::after{
+		content:'';
+		display:block;
+		clear:both;
+	}
+}

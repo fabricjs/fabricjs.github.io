@@ -25,12 +25,29 @@ exports.createPages = async ({ graphql, actions }) => {
 	query {
 		allMarkdownRemark(
 			filter: {
-				fileAbsolutePath: {regex: "//demo/[a-zA-Z0-9- ]+/index.md$/"},
+				fileAbsolutePath: {regex: "//demo/[a-zA-Z0-9-]+/index.md$/"},
 				frontmatter: {title: {regex: "/[a-zA-Z0-9]+$/"}}
-			}
+			},
+			sort: {order: ASC, fields: frontmatter___title}
 		) {
 			edges {
+				previous {
+					frontmatter {
+						title
+					}
+					fields {
+						slug
+					}
+				}
 				node {
+					fields {
+						slug
+					}
+				}
+				next {
+					frontmatter {
+						title
+					}
 					fields {
 						slug
 					}
@@ -41,14 +58,16 @@ exports.createPages = async ({ graphql, actions }) => {
 	`);
 
 	//create pages for each of the 'demo' pages
-	demoPagesQueryResult.data.allMarkdownRemark.edges.forEach(({ node }) => {
+	demoPagesQueryResult.data.allMarkdownRemark && demoPagesQueryResult.data.allMarkdownRemark.edges.forEach(({ node,previous,next }) => {
 		node.fields.slug!==null && node.fields.slug.trim()!=='' && createPage({
 			path: node.fields.slug,
 			component: path.resolve(`./src/templates/demo.js`),
 			context: {
 				// Data passed to context is available
 				// in page queries as GraphQL variables.
-				slug: node.fields.slug
+				slug: node.fields.slug,
+				prev: previous ? {'title':previous.frontmatter.title,'slug':previous.fields.slug} : null,
+				next: next ? {'title':next.frontmatter.title,'slug':next.fields.slug} : null,
 			},
 		})
 	})
