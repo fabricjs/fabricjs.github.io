@@ -60,7 +60,7 @@
 		border-bottom:1px solid #eee;/*#eaeaea*/
 		z-index:9
 	}
-	#site-header>nav{/*flex-basis:*/width:40%;height:unset;position:unset;background-color:unset}
+	#site-header>nav{/*flex-basis:*/width:50%;height:unset;position:unset;background-color:unset}
 	#site-header>nav::before{display:none}
 	#site-header>nav>ul{justify-content:space-between;background-color:unset;border-radius:unset;padding:0;box-shadow:unset}
 

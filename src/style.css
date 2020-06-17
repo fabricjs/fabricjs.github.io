@@ -1,6 +1,7 @@
 :root {
 	--primary-color:#76CEF4;/*70A9FF -> 76CEF4 -> 7BF2EA*/
 	--primary-color-tint:#f0f8ff;
+	--offwhite-color:#fafafa;
 	--padding-left-right:5%;
 	--font-size-smaller2:13px;
 	--font-size-smaller:14px;
@@ -72,6 +73,9 @@ h2{font-size:var(--font-size-bigger)}
 
 /*------- main ------*/
 
+main.darkBg{
+	background-color:var(--offwhite-color);
+}
 main>#breadcrumb-nav{padding:5px var(--padding-left-right);margin:0;font-size:var(--font-size-smaller2)}
 
 main>article>*{padding:10px var(--padding-left-right);margin:0}
