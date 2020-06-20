@@ -9,7 +9,6 @@ import "./thumbnailCard.css";
 export default function ThumbnailCard(props){
 	return(
 		<Card>
-			<>
 			<span className="thumbCntnr">
 				{props.gatsbyImgFluid?(
 					<GatsbyImage title={props.title} alt={props.title} fluid={props.gatsbyImgFluid}></GatsbyImage>
@@ -25,7 +24,6 @@ export default function ThumbnailCard(props){
 			{/*<span className="thumbnailCardFooter">
 				<Link title={props.title} to={props.linkToUrlSlug}>{props.buttonText || "View"}</Link>
 			</span>*/}
-			</>
 		</Card>
 	)
 }
