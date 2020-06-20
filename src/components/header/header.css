@@ -7,7 +7,6 @@
 	width:100%;height:var(--header-height);*/
 	/*padding:0 7.5%;*/
 	background:#fff;
-	border-bottom:1px solid #eee;/*#eaeaea*/
 	z-index:9
 }
 #logo{
@@ -55,9 +54,9 @@
 	
 		position:fixed;top:0;left:0;
 		width:100%;height:var(--header-height);
-		padding:0 7.5%;
+		padding:0 var(--padding-left-right);
 		background:#fff;
-		border-bottom:1px solid #eee;/*#eaeaea*/
+		/*border-bottom:1px solid #eee;/*#eaeaea*/
 		z-index:9
 	}
 	#site-header>nav{/*flex-basis:*/width:50%;height:unset;position:unset;background-color:unset}
@@ -65,5 +64,5 @@
 	#site-header>nav>ul{justify-content:space-between;background-color:unset;border-radius:unset;padding:0;box-shadow:unset}
 
 	#site-header>nav>ul>li>a{height:var(--header-height);padding:24px 0;font-size:unset}
-	#site-header>nav>ul>li>a.active{color:var(--font-color-dark);box-shadow:0 -3px 0 0 var(--primary-color) inset}
+	#site-header>nav>ul>li>a.active{color:var(--font-color-dark2);box-shadow:0 -3px 0 0 var(--primary-color) inset}
 }
