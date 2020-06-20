@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import "./header.css";
 import logo from "../../images/fabricjs-logo.png";
+import CarbonAd from '../CarbonAd/CarbonAd';
 
 export default function(){
 	return(
@@ -15,6 +16,7 @@ export default function(){
 				<li><Link activeClassName="active" to="/support">Support</Link></li>
 			</ul></nav>
 			{/*<span>Search bar here</span>*/}
+			<CarbonAd />
 		</header>
 	)
 }
