@@ -22,7 +22,7 @@ function codepenLoaded() {
 	window.__CPEmbed(".codepen-later");
 }
 
-export default function Layout(props){
+export default function Layout(props) {
 	return(
 		<>
 		<Script onLoad={codepenLoaded} url="https://static.codepen.io/assets/embed/ei.js" />
