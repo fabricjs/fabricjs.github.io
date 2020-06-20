@@ -15,7 +15,6 @@ function escapeHtml(unsafe) {
 }
 
 function codepenLoaded() {
-	console.log('test');
 	var preEl = document.querySelectorAll('[data-lang="html"]');
 	[].forEach.call(preEl, function(el) {
 		el.innerHTML = escapeHtml(el.innerHTML);
