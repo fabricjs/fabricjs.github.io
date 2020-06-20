@@ -29,7 +29,8 @@
     "gatsby-transformer-sharp": "^2.4.3",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "react-load-script": "^0.0.6"
   },
   "devDependencies": {
     "gh-pages": "^3.0.0",
