@@ -6,6 +6,7 @@ import CarbonAd from '../CarbonAd/CarbonAd';
 
 export default function(){
 	return(
+		<>
 		<header id="site-header">
 			<Link id="logo" to="/"><img alt="FabricJS logo" src={logo}/></Link>
 			<nav><ul>
@@ -16,7 +17,9 @@ export default function(){
 				<li><Link activeClassName="active" to="/support">Support</Link></li>
 			</ul></nav>
 			{/*<span>Search bar here</span>*/}
-			<CarbonAd />
+			
 		</header>
+		<CarbonAd />
+		</>
 	)
 }
