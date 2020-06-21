@@ -21,7 +21,7 @@ And to run custom code for
 ### Creating the control
 
 We create a new control and we add it to the object.
-To create a control we use `new fabric.Control(options)`
+To create a control we use `javascript>new fabric.Control(options)`
 In this case we want the corner to be near the top right classic control, so we give it a position of x of 0.5 that is the extreme right of the bounding box of the object.
 Same for y at -0.5. We do not want it to overlap with the current top right corner, so we add an `offsetY` with a positive number that will make it render a bit more down.
 
@@ -30,7 +30,7 @@ So we have to provide our own render function to the control.
 The function is receiving the canvas context as first argument and so a simple drawImage will make it.
 
 For the custom action we want simply to delete the object.
-We build a function following the mouseUpHandler signature and we use there `canvas.remove(target)`;
+We build a function following the mouseUpHandler signature and we use there `javascript>canvas.remove(target)`;
 
 <div
   class="codepen-later"
