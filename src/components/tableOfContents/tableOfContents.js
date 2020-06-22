@@ -16,19 +16,12 @@ export default class TableOfContents extends React.Component{
 		//this.state = {someVar : someVal	}
 	//}
 
-	_getPageYOffset = ()=>{	// cross-browser fn to get pageYOffset
-		//if(typeof window === 'undefined')return;
-		if(window.pageYOffset) return window.pageYOffset; // Firefox, Chrome, Opera, Safari.
-		if(document.documentElement && document.documentElement.scrollTop) return document.documentElement.scrollTop; // Internet Explorer 6 (standards mode).
-		if(document.body.scrollTop) return document.body.scrollTop; // Internet Explorer 6, 7 and 8.
-		return 0; // if none of the above.
-	}
 	//derived from -- https://stackoverflow.com/questions/17722497/scroll-smoothly-to-specific-element-on-page
 	_doScrolling = (scrolToElm,duration)=>{
 		//if(typeof window === 'undefined')return;
 		if(!scrolToElm)return;
 		duration=duration||500;	//default to 0.5 sec
-		var startPos = this._getPageYOffset(),	//window.pageYOffset,		//relative to entire document (pixels of document hidden above the top-screen-line)
+		var startPos = window.pageYOffset || 0,		//relative to entire document (pixels of document hidden above the top-screen-line)
 			distanceToElmTop = scrolToElm.getBoundingClientRect().top;	//relative to screen (distance to top of element to be scrolled to)
 			distanceToElmTop -= 60;	//offset from top to accomodate header
 		//in order to scrollTo that elm, we add startPos and distanceToElmTop
