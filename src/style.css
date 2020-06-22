@@ -8,8 +8,8 @@
 	--font-size-smaller:14px;
 	--font-size-normal:16px;
 	--font-size-bigger:18px;
-	--font-size-bigger2:24px;
-	--font-size-bigger3:28px;
+	--font-size-bigger2:20px;
+	--font-size-bigger3:24px;
 	--font-color-light2:#7B93AB;
 	--font-color-light:#5A7896;
 	--font-color-normal:#445a71;
@@ -81,7 +81,7 @@ ul{list-style-type:none;margin:0px;padding:0px}
 
 h1,h2{font-weight:600;color:var(--font-color-dark2)}
 h1{font-size:var(--font-size-bigger3)}
-h2{font-size:var(--font-size-bigger)}
+h2{font-size:var(--font-size-bigger2)}
 h3{color:var(--font-color-dark)}
 
 
@@ -107,12 +107,12 @@ main > h1{
 ###   Main article styling   |
 ----------------------------*/
 
-main > article > h3{
+main > article > h2{
 	margin:var(--padding-above) 0 3% 0;
 	padding:0 0 0 20px;
 	border-left:3px solid var(--primary-color)
 }
-main > article > h3:first-child{margin-top:3%}
+main > article > h2:first-child{margin-top:3%}
 
 /*main > article > h3::before{
 	content: '|';
@@ -122,7 +122,7 @@ main > article > h3:first-child{margin-top:3%}
 	padding-right:15px
 }*/
 
-main > article > h3:hover > a:before{
+main > article > h2:hover > a:before{
 	content:'🔗';
 	font-weight:normal;
 	margin-left:10px;

@@ -57,7 +57,7 @@ fabricObject.setPositionByOrigin(absolutePoint, newX + 0.5, newY + 0.5);
 ```
 
 
-### Creating the control
+## Creating the control
 
 <div
   class="codepen-later"

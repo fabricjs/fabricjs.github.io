@@ -18,7 +18,7 @@ And to run custom code for
 - rendering
 - cursor style
 
-### Creating the control
+## Creating the control
 
 We create a new control and we add it to the object.
 To create a control we use `javascript>new fabric.Control(options)`
@@ -110,7 +110,7 @@ We build a function following the mouseUpHandler signature and we use there `jav
 </pre>
 </div>
 
-### Adding a clone control
+## Adding a clone control
 
 Let's add a new control to allow for quick duplication of the Object.
 We use again `javascript>new fabric.Control(options)` and we add it to a key named `clone`.
