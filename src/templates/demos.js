@@ -11,26 +11,17 @@ export default function({data}){
 	return(
 		<Layout darkBg={true}>
 			<Seo title="FabricJS demos"></Seo>
-			<h1>Demos</h1>
-			<p>{data.allMarkdownRemark.totalCount + ' ' + pageDesc}</p>
-			<ThumbnailList>{data.allMarkdownRemark.edges.map(({node})=>(
-				<li key={node.fields.slug}>
-					{/*<div>
-						<span className="thumbCntnr">
-							{node.frontmatter.thumbnail?(
-								<GatsbyImage fluid={node.frontmatter.thumbnail.childImageSharp.fluid}></GatsbyImage>
-							):(
-								//if featured image exists, generate a thumbnail from it
-								<img alt="For dummy purpose only" src="https://source.unsplash.com/random/200x200"/>
-							)}
-						</span>
-						<h4>{node.frontmatter.title}</h4>
-						{node.frontmatter.description && (<span className="desc">{node.frontmatter.description}</span>)}
-						<span className="foot">
-							<Link title={node.frontmatter.title} to={node.fields.slug}>View demo</Link>
-						</span>
-					</div>*/}
-					<ThumbnailCard title={node.frontmatter.title} description={node.frontmatter.description} linkToUrlSlug={node.fields.slug} buttonText="View demo" gatsbyImgFluid={node.frontmatter.thumbnail ? node.frontmatter.thumbnail.childImageSharp.fluid : null}></ThumbnailCard>
+			<h1>FabricJS Demos</h1>
+			<p style={{"text-align":"center"}}>{data.allDemoPagesMD.totalCount + ' ' + pageDesc}</p>
+			<ThumbnailList>{data.allDemoPagesMD.demoPages.map(({frontmatter,fields})=>(	//map((demoPage)=>(
+				<li key={fields.slug}>
+					<ThumbnailCard
+						title = {frontmatter.title}
+						description = {frontmatter.description}
+						linkToUrlSlug = {fields.slug}
+						buttonText = "View demo"
+						gatsbyImgFluid = {frontmatter.thumbnail ? frontmatter.thumbnail.childImageSharp.fluid : null}
+					></ThumbnailCard>
 				</li>
 			))}</ThumbnailList>
 		</Layout>
@@ -44,27 +35,25 @@ export default function({data}){
 //note that we ignore fetching sub-posts in this query coz we do not want to list sub-posts when listing projects. Sub-posts will b accessible from the page of the relevant post they belong to
 export const query = graphql`
 	query{
-		allMarkdownRemark(
+		allDemoPagesMD: allMarkdownRemark(
 			filter: {fileAbsolutePath: {regex: "//demo/[a-zA-Z0-9-]+/index.md$/"}},
 			sort: {order: ASC, fields: frontmatter___title}
 		) {
 			totalCount
-			edges {
-				node {
-					frontmatter {
-						title
-						description
-						thumbnail {
-							childImageSharp {
-								fluid(maxWidth: 400) {
-									...GatsbyImageSharpFluid
-								}
+			demoPages: nodes {
+				frontmatter {
+					title
+					description
+					thumbnail {
+						childImageSharp {
+							fluid(maxWidth: 400) {
+								...GatsbyImageSharpFluid
 							}
 						}
 					}
-					fields {
-						slug
-					}
+				}
+				fields {
+					slug
 				}
 			}
 		}

@@ -1,20 +1,23 @@
 import React from "react";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import LayoutCodepen from "../components/layoutFullWidthWithCodepen";
 import PrevNextLinks from "../components/prevNextPostLinks/prevNextLinks";
+import Seo from "../components/seo";
 
 export default ({ data, pageContext }) => {
   return (
     <LayoutCodepen>
-				<h1>{data.markdownRemark.frontmatter.title}</h1>
-        <article dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
-				<PrevNextLinks prev={pageContext.prev} next={pageContext.next}></PrevNextLinks>
+			<Seo title={data.demoPage.frontmatter.title}></Seo>
+			<nav id="breadcrumb-nav" aria-label="breadcrumb"><Link to='/demos'>Demos</Link> > <span>{data.demoPage.frontmatter.title}</span></nav>
+			<h1>{data.demoPage.frontmatter.title}</h1>
+			<article dangerouslySetInnerHTML={{ __html: data.demoPage.html }} />
+			<PrevNextLinks prev={pageContext.prev || {'title':'All FabricJS demos','slug':'/demos'}} next={pageContext.next}></PrevNextLinks>
     </LayoutCodepen>
   )
 }
 export const query = graphql`
 	query($slug: String!){
-		markdownRemark(fields: {slug: {eq: $slug}}) {
+		demoPage: markdownRemark(fields: {slug: {eq: $slug}}) {
 			html
 			frontmatter {
 				title
