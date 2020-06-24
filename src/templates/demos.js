@@ -1,6 +1,6 @@
-import React from "react";
-import { graphql } from "gatsby";
-//import GatsbyImage from "gatsby-image";
+import React from 'react';
+import { graphql } from 'gatsby';
+// import GatsbyImage from "gatsby-image";
 import Layout from "../components/layoutFullWidth";
 import ThumbnailList from "../components/list/thumbnailList";
 import ThumbnailCard from "../components/card/thumbnailCard";
@@ -28,9 +28,9 @@ export default function({data}){
 	)
 }
 
-//Programmatically create pages from data -- https://www.gatsbyjs.org/tutorial/part-seven/
-//Adding markdown pages -- https://www.gatsbyjs.org/docs/adding-markdown-pages/
-//Working with Images in Markdown Posts and Pages -- https://www.gatsbyjs.org/docs/working-with-images-in-markdown/
+// Programmatically create pages from data -- https://www.gatsbyjs.org/tutorial/part-seven/
+// Adding markdown pages -- https://www.gatsbyjs.org/docs/adding-markdown-pages/
+// Working with Images in Markdown Posts and Pages -- https://www.gatsbyjs.org/docs/working-with-images-in-markdown/
 
 //note that we ignore fetching sub-posts in this query coz we do not want to list sub-posts when listing projects. Sub-posts will b accessible from the page of the relevant post they belong to
 export const query = graphql`

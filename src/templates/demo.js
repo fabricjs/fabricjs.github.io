@@ -4,7 +4,7 @@ import LayoutCodepen from "../components/layoutFullWidthWithCodepen";
 import PrevNextLinks from "../components/prevNextPostLinks/prevNextLinks";
 import Seo from "../components/seo";
 
-export default ({ data, pageContext }) => {
+export default ({ data, pageContext, asd }) => {
   return (
     <LayoutCodepen>
 			<Seo title={data.demoPage.frontmatter.title}></Seo>
