@@ -14,6 +14,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
+    "lint": "eslint \"src/**/*.+(js|jsx)\"",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "deploy": "gh-pages -d public -r https://$GITHUB_TOKEN@github.com/fabricjs/fabricjs.github.io.git -b master"
   },
@@ -35,6 +36,13 @@
     "react-load-script": "0.0.6"
   },
   "devDependencies": {
+    "eslint": "^7.3.1",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.0",
+    "gatsby-plugin-eslint": "^2.0.8",
     "gh-pages": "^3.0.0",
     "prettier": "^1.19.1"
   },
