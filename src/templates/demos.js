@@ -12,7 +12,7 @@ export default function({data}){
 		<Layout darkBg={true}>
 			<Seo title="FabricJS demos"></Seo>
 			<h1>FabricJS Demos</h1>
-			<p style={{"text-align":"center"}}>{data.allDemoPagesMD.totalCount + ' ' + pageDesc}</p>
+			<p style={{ textAlign: "center"}}>{data.allDemoPagesMD.totalCount + ' ' + pageDesc}</p>
 			<ThumbnailList>{data.allDemoPagesMD.demoPages.map(({frontmatter,fields})=>(	//map((demoPage)=>(
 				<li key={fields.slug}>
 					<ThumbnailCard

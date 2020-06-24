@@ -22,15 +22,15 @@ function codepenLoaded() {
 	window.__CPEmbed(".codepen-later");
 }
 
-export default function Layout(props) {
+const Layout = ({ children, darkBg }) => {
 	return(
 		<>
 		<Script onLoad={codepenLoaded} url="https://static.codepen.io/assets/embed/ei.js" />
 		{/* <Seo></Seo> */}
 		<Header>
 		</Header>
-		<main className={props.darkBg && "darkBg"}>
-			{props.children}
+		<main className={darkBg && "darkBg"}>
+			{children}
 		</main>
 		<Footer/>
 		</>
@@ -40,3 +40,5 @@ export default function Layout(props) {
 Layout.propTypes = {
 	darkBg : PropTypes.bool
 };
+
+export default Layout;

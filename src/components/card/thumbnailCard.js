@@ -11,7 +11,7 @@ export default function ThumbnailCard(props){
 		<Card>
 			<Link title={props.title} to={props.linkToUrlSlug}>
 			<span className="thumbCntnr">
-				{props.gatsbyImgFluid?(
+				{props.gatsbyImgFluid ? (
 					<GatsbyImage title={props.title} alt={props.title} fluid={props.gatsbyImgFluid}></GatsbyImage>
 				):(
 					//if featured image exists, generate a thumbnail from it
