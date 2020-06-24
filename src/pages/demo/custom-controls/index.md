@@ -18,7 +18,7 @@ And to run custom code for
 - rendering
 - cursor style
 
-### Creating the control
+## Creating the control
 
 We create a new control and we add it to the object.
 To create a control we use `javascript>new fabric.Control(options)`
@@ -110,15 +110,14 @@ We build a function following the mouseUpHandler signature and we use there `jav
 </pre>
 </div>
 
-### Adding a clone control
+## Adding a clone control
 
 Let's add a new control to allow for quick duplication of the Object.
-We use again `new fabric.Control(options)` and we add it to a key named `clone`.
+We use again `javascript>new fabric.Control(options)` and we add it to a key named `clone`.
 When the objects are shrunk too much, corners with offset do not look great, so in this case
 let's try to keep them outside the bounding box, on the top.
 
-For the clone functionality we will simply do
-`target.clone(function(cloned) { canvas.add(cloned) });`
+For the clone functionality we will simply do `javascript>target.clone(function(cloned) { canvas.add(cloned) });`
 
 <div
   class="codepen-later"

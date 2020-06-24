@@ -20,7 +20,12 @@ const path = require(`path`);
 exports.createPages = async ({ graphql, actions }) => {
 	const { createPage } = actions;
 
-////fetch the 'demo' md files and create pages for them
+
+/* ----------------------------------------------------
+###   Create pages for listing 'demos' & each 'demo'  |
+-----------------------------------------------------*/
+
+	////fetch the 'demo' md files and create pages for them
 	const demoPagesQueryResult = await graphql(`
 	query {
 		allMarkdownRemark(
@@ -57,7 +62,7 @@ exports.createPages = async ({ graphql, actions }) => {
 	}
 	`);
 
-	//create pages for each of the 'demo' pages
+	//create each 'demo' page
 	demoPagesQueryResult.data.allMarkdownRemark && demoPagesQueryResult.data.allMarkdownRemark.edges.forEach(({ node,previous,next }) => {
 		node.fields.slug!==null && node.fields.slug.trim()!=='' && createPage({
 			path: node.fields.slug,
@@ -78,4 +83,60 @@ exports.createPages = async ({ graphql, actions }) => {
 		component: path.resolve(`./src/templates/demos.js`),
 	})
 
+
+
+/* ----------------------------------------------------------
+###   Create pages for 'docs' intro-page & each 'doc' page  |
+-----------------------------------------------------------*/
+
+	////fetch the 'doc' md files and create pages for them
+	const docPagesQueryResult = await graphql(`
+	query {
+		allDocPagesMD: allMarkdownRemark(
+			filter: {
+				fileAbsolutePath: {regex: "//docs/[a-zA-Z0-9-]+/index.md$/"},
+				frontmatter: {title: {regex: "/[a-zA-Z0-9]+$/"}}
+			},
+			sort: {order: ASC, fields: frontmatter___date}
+		) {
+			docPages: nodes {
+				frontmatter {
+					title
+				}
+				fields {
+					slug
+				}
+			}
+		}
+	}
+	`);
+	const docPages = docPagesQueryResult.data.allDocPagesMD.docPages;
+
+	//collect all doc titles and links in a array which we'll pass as context when creating each doc page
+	/*let docList = [];
+	docPages.forEach(({frontmatter,fields})=>{
+		fields.slug!==null && fields.slug.trim()!=='' && docList.push({'title':frontmatter.title,'slug':fields.slug})
+	})*/
+	const docList = docPages.map( ({frontmatter,fields}) => ({'title':frontmatter.title,'slug':fields.slug}) );
+
+	//create each 'doc' page
+	docPages.forEach(({fields},di) => {
+		fields.slug!==null && fields.slug.trim()!=='' && createPage({
+			path: fields.slug,
+			component: path.resolve(`./src/templates/doc.js`),
+			context: {
+				slug: fields.slug,
+				prev : di===0 ? null : {'title':docPages[di-1].frontmatter.title,'slug':docPages[di-1].fields.slug},
+				next : di===docPages.length-1 ? null : {'title':docPages[di+1].frontmatter.title,'slug':docPages[di+1].fields.slug},
+				docList,
+			},
+		})
+	})
+
+	//create 'docs' page
+	createPage({
+		path: `/docs`,
+		component: path.resolve(`./src/templates/docs.js`),
+		context: {docList}
+	})
 }
