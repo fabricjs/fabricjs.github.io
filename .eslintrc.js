@@ -17,12 +17,12 @@ module.exports = {
     'max-len': 'warn',
     'no-unused-expressions': 'warn',
     'react/jsx-filename-extension': [
-      'warn',
+      'off',
       {
         extensions: ['.js', '.jsx'],
       },
     ],
-    'jsx-a11y/click-events-have-key-events': 'off',
+    'jsx-a11y/click-events-have-key-events': 'warn',
     'jsx-a11y/control-has-associated-label': 'off',
     'jsx-a11y/no-noninteractive-element-interactions': 'warn',
     'jsx-a11y/no-static-element-interactions': 'warn',
