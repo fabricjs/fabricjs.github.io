@@ -7,7 +7,7 @@ import './CarbonAd.css';
 const CarbonAd = () => {
   const [showReminder, setShowreminder] = useState(false);
   // eslint-disable-next-line no-undef, no-underscore-dangle
-  const [correctlyLoaded, setCorrectylLoaded] = useState(!!window._carbonads);
+  const [correctlyLoaded, setCorrectylLoaded] = useState(typeof window !== 'undefined' ? !!window._carbonads : false);
   const containerRef = useRef();
   const { pathname } = useLocation();
 
