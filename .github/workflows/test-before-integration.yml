@@ -18,6 +18,8 @@ jobs:
         node-version: 14
     - name: Install dependencies
       run: npm ci
+    - name: Lint using ESLint
+      run: npm run lint --if-present
 #   - name: Test
 #     run: npm run test
     - name: Build Gatsby site
