@@ -6,22 +6,26 @@ import './CarbonAd.css';
 
 const CarbonAd = () => {
   const [showReminder, setShowreminder] = useState(false);
+  // eslint-disable-next-line no-undef, no-underscore-dangle
   const [correctlyLoaded, setCorrectylLoaded] = useState(!!window._carbonads);
   const containerRef = useRef();
   const { pathname } = useLocation();
 
   const verifyIsLoaded = () => {
+    // eslint-disable-next-line no-undef
     const ads = document.getElementById('carbonads');
     if (!containerRef.current) {
       return;
     }
+    // eslint-disable-next-line no-undef
     const style = window.getComputedStyle(containerRef.current);
     if (!ads || style.display === 'none') {
       setShowreminder(true);
-    } else if (window._carbonads) {
+      // eslint-disable-next-line no-undef, no-underscore-dangle
+    } else if (wind._carbonads) {
       setCorrectylLoaded(true);
     }
-  }
+  };
 
   useEffect(() => {
     setTimeout(verifyIsLoaded, 3000);
@@ -29,6 +33,7 @@ const CarbonAd = () => {
 
   useEffect(() => {
     if (correctlyLoaded) {
+      // eslint-disable-next-line no-undef, no-underscore-dangle
       window._carbonads.refresh();
     }
   }, [pathname]);
