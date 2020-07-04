@@ -9,7 +9,7 @@ export default function Layout({ children, darkBg }) {
     <>
       {/* <Seo></Seo> */}
       <Header />
-      <main className={darkBg && 'darkBg'}>
+      <main className={(darkBg ? 'darkBg' : '')}>
         {children}
       </main>
       <Footer />

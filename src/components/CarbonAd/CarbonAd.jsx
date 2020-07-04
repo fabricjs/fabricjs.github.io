@@ -22,7 +22,7 @@ const CarbonAd = () => {
     if (!ads || style.display === 'none') {
       setShowreminder(true);
       // eslint-disable-next-line no-undef, no-underscore-dangle
-    } else if (wind._carbonads) {
+    } else if (window._carbonads) {
       setCorrectylLoaded(true);
     }
   };
