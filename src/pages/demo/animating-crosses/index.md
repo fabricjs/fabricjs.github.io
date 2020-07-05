@@ -12,7 +12,7 @@ tags: ['animation']
   data-height="500"
   data-default-tab="js,result"
   data-prefill='{
-    "scripts": ["https://unpkg.com/fabric@4.0.0-beta.12/dist/fabric.js"]
+    "scripts": ["https://unpkg.com/fabric@4.0.0-rc.1/dist/fabric.js"]
   }'
 >
 <pre data-lang="html">
