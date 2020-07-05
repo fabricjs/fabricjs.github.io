@@ -39,7 +39,7 @@ This demo shows the result of applying `transformMatrix` to a Fabric object. For
   class="codepen-later"
   data-editable="true"
   data-height="500"
-  data-default-tab="js,result"
+  data-default-tab="result"
   data-prefill='{
     "scripts": ["https://unpkg.com/fabric@4.0.0-beta.12/dist/fabric.js"]
   }'
