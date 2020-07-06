@@ -36,9 +36,9 @@ We build a function following the mouseUpHandler signature and we use there `jav
   class="codepen-later"
   data-editable="true"
   data-height="500"
-  data-default-tab="js,result"
+  data-default-tab="result"
   data-prefill='{
-    "scripts": "https://unpkg.com/fabric@4.0.0-beta.11/dist/fabric.js"
+    "scripts": "https://unpkg.com/fabric@4.0.0-rc.1/dist/fabric.js"
   }'
 >
 <pre data-lang="css" data-options-autoprefixer="true">
@@ -83,7 +83,8 @@ We build a function following the mouseUpHandler signature and we use there `jav
   }
 
   fabric.Object.prototype.controls.deleteControl = new fabric.Control({
-    position: { x: 0.5, y: -0.5 },
+    x: 0.5,
+    y: -0.5,
     offsetY: 16,
     cursorStyle: 'pointer',
     mouseUpHandler: deleteObject,
@@ -123,7 +124,7 @@ For the clone functionality we will simply do `javascript>target.clone(function(
   class="codepen-later"
   data-editable="true"
   data-height="500"
-  data-default-tab="js,result"
+  data-default-tab="result"
   data-prefill='{
     "scripts": "https://unpkg.com/fabric@4.0.0-beta.11/dist/fabric.js"
   }'
@@ -186,7 +187,8 @@ For the clone functionality we will simply do `javascript>target.clone(function(
   }
 
   fabric.Object.prototype.controls.deleteControl = new fabric.Control({
-    position: { x: 0.5, y: -0.5 },
+    x: 0.5,
+    y: -0.5,
     offsetY: -16,
     offsetX: 16,
     cursorStyle: 'pointer',
@@ -196,7 +198,8 @@ For the clone functionality we will simply do `javascript>target.clone(function(
   });
 
   fabric.Object.prototype.controls.clone = new fabric.Control({
-    position: { x: -0.5, y: -0.5 },
+    x: -0.5,
+    y: -0.5,
     offsetY: -16,
     offsetX: -16,
     cursorStyle: 'pointer',
