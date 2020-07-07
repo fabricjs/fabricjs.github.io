@@ -11,7 +11,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     const slug = createFilePath({
       node,
       getNode,
-      basePath: 'pages',
+      basePath: 'content',
       trailingSlash: false,
     }); /* basePath -- path inside src folder to act as base path */
 
