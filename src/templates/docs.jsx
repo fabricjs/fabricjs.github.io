@@ -3,10 +3,14 @@ import { graphql, Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import Layout from '../components/layout';
 import TableOfContents from '../components/tableOfContents/tableOfContents';
+import GithubEditLink from '../components/githubEditLink/githubEditLink';
 import PrevNextLinks from '../components/prevNextPostLinks/prevNextLinks';
 import Seo from '../components/seo';
 
 export default function Docs({ pageContext, data }) {
+  const {
+    frontmatter, html, toc, mdFile,
+  } = data.introPage;
   return (
     <Layout leftSidebar={(setVisibility) => (
       <>
@@ -17,7 +21,7 @@ export default function Docs({ pageContext, data }) {
               <Link onClick={() => { setVisibility(false); }} activeClassName="active" title="Introduction" to="/docs">Introduction</Link>
               <TableOfContents
                 hideSidebar={() => { setVisibility(false); }}
-                tableOfContentsHtml={data.introPage.toc}
+                tableOfContentsHtml={toc}
               />
             </li>
             {
@@ -38,7 +42,7 @@ export default function Docs({ pageContext, data }) {
       </>
     )}
     >
-      <Seo title={data.introPage.frontmatter.title} />
+      <Seo title={frontmatter.title} />
       <nav id="breadcrumb-nav" aria-label="breadcrumb">
         <Link to="/">FabricJS</Link>
         {' '}
@@ -46,9 +50,10 @@ export default function Docs({ pageContext, data }) {
         {' '}
         <span>Docs</span>
       </nav>
-      <h1>{data.introPage.frontmatter.title}</h1>
+      <h1>{frontmatter.title}</h1>
       {/* eslint-disable-next-line react/no-danger */}
-      <article dangerouslySetInnerHTML={{ __html: data.introPage.html }} />
+      <article dangerouslySetInnerHTML={{ __html: html }} />
+      <GithubEditLink relativePath={mdFile.relativePath} />
       <PrevNextLinks
         next={{
           title: pageContext.docList[0].title,
@@ -67,6 +72,11 @@ export const query = graphql`
         title
       }
       toc: tableOfContents(absolute: false,maxDepth: 2)
+      mdFile: parent {
+        ... on File {
+          relativePath
+        }
+      }
     }
   }
 `;
