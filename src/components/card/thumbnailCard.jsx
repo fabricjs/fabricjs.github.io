@@ -10,7 +10,12 @@ export default function ThumbnailCard({
 }) {
   return (
     <Card>
-      <Link title={title} to={linkToUrlSlug}>
+      <Link
+        title={title}
+        to={linkToUrlSlug}
+        draggable="false"
+        onDragStart={(e) => { e.preventDefault(); return false; }}
+      >
         <span className="thumbCntnr">
           {gatsbyImgFluid ? (
             <GatsbyImage title={title} alt={title} fluid={gatsbyImgFluid} />
@@ -31,7 +36,7 @@ export default function ThumbnailCard({
 ThumbnailCard.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
-  gatsbyImgFluid: PropTypes.string,
+  gatsbyImgFluid: PropTypes.object, /* eslint-disable-line react/forbid-prop-types */
   linkToUrlSlug: PropTypes.string,
 };
 

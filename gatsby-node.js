@@ -1,8 +1,70 @@
 /* eslint-disable no-unused-expressions */
 /* eslint-disable max-len */
 
-/* Create slug from file-path and append that slug to the 'fields' section under GraphQl
-so that we can reference it inside pages */
+// +------------------------------------------------------------------+
+// | Fetch remote data (contributors) at build-time                   |
+// | Later, maybe use the Github GraphQl API to source data in one go |
+// +------------------------------------------------------------------+
+const fetch = require('node-fetch');
+
+// https://www.gatsbyjs.org/docs/creating-a-source-plugin/#sourcing-data-and-creating-nodes
+// https://www.gatsbyjs.org/docs/data-fetching/
+exports.sourceNodes = async ({
+  actions: { createNode },
+  createNodeId,
+  createContentDigest,
+}) => {
+  // get data from GitHub API at build time
+  const result = await fetch('https://api.github.com/repos/fabricjs/fabric.js/contributors?per_page=10');
+  const jsonData = await result.json();
+  // Commented out, since we also require the 'name' which is not available until we query user-details of each contributor
+  /* jsonData.forEach((datum) => {
+    createNode({
+      // arbitrary fields from the data
+      name: datum.login,
+      picUrl: datum.avatar_url, // maybe later create remote file-nodes from this so as for Sharp to optimize the img delivery
+      url: datum.html_url,
+      // required fields
+      id: createNodeId(`fabricjs-contributor-${datum.login}`),
+      parent: null,
+      children: [],
+      internal: {
+        type: 'Contributor',
+        contentDigest: createContentDigest(datum),
+      },
+    });
+  });// */
+
+  const numUsers = jsonData.length;
+
+  // https://zellwk.com/blog/async-await-in-loops/
+
+  for (let userIndex = 0; userIndex < numUsers; userIndex++) { /* eslint-disable-line no-plusplus */
+    // console.log(`Creating node for ${jsonData[userIndex].login}`);
+    const userData = await fetch(`https://api.github.com/users/${jsonData[userIndex].login}`); /* eslint-disable-line no-await-in-loop */
+    const user = await userData.json(); /* eslint-disable-line no-await-in-loop */
+    createNode({
+      // arbitrary fields from the data
+      name: user.name || user.login,
+      picUrl: user.avatar_url, // maybe later create remote file-nodes from this so as for Sharp to optimize the img delivery
+      url: user.html_url, // url: user.blog === '' ? user.html_url : user.blog,
+      // required fields
+      id: createNodeId(`fabricjs-contributor-${user.login}`),
+      parent: null,
+      children: [],
+      internal: {
+        type: 'Contributor',
+        contentDigest: createContentDigest(user),
+      },
+    });
+  }
+};
+
+// +------------------------------------------------------------------+
+// | Create slug from file-path and append it to the 'fields' section |
+// | under GraphQl so that we can reference it inside pages           |
+// +------------------------------------------------------------------+
+
 const { createFilePath } = require('gatsby-source-filesystem');
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
@@ -28,9 +90,9 @@ const path = require('path');
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
-  /* ----------------------------------------------------
-###   Create pages for listing 'demos' & each 'demo'  |
------------------------------------------------------*/
+  // +------------------------------------------------------------------+
+  // | Create pages for listing 'demos' & each 'demo'                   |
+  // +------------------------------------------------------------------+
 
   /// /fetch the 'demo' md files and create pages for them
   const demoPagesQueryResult = await graphql(`
@@ -102,9 +164,9 @@ exports.createPages = async ({ graphql, actions }) => {
     component: path.resolve('./src/templates/demos.jsx'),
   });
 
-  /* ----------------------------------------------------------
-###   Create pages for 'docs' intro-page & each 'doc' page  |
------------------------------------------------------------*/
+  // +------------------------------------------------------------------+
+  // | Create pages for 'docs' intro-page & each 'doc' page             |
+  // +------------------------------------------------------------------+
 
   /// /fetch the 'doc' md files and create pages for them
   const docPagesQueryResult = await graphql(`

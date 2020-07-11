@@ -1,0 +1,40 @@
+.horizontalPanCntnr {
+  overflow-x: hidden;
+  /*scroll-snap-type: x proximity;*/
+  /*scroll-snap-type: x mandatory;*/
+  cursor: ew-resize;
+  /*grabbing*/
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+ul.horizontalPanList {
+  width: 100%;
+  text-align: center;
+  white-space: nowrap;
+}
+
+ul.horizontalPanList>li {
+  display: inline-block;
+  width: 70%;
+  /*80vmin,70vw*/
+  padding: 10px;
+  vertical-align: top;
+  /*maybe later on we'd use flex to have even height for all items*/
+  /*scroll-snap-align: center;*/
+}
+
+@media (min-width:600px) and (orientation: landscape) {
+  ul.horizontalPanList>li {
+    width: 40%;
+  }
+}
+
+@media (min-width:800px) and (orientation: landscape) {
+  ul.horizontalPanList>li {
+    width: 30%;
+  }
+}
