@@ -2,23 +2,26 @@ import React from 'react';
 import { graphql, Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import LayoutCodepen from '../components/layoutFullWidthWithCodepen';
+import GithubEditLink from '../components/githubEditLink/githubEditLink';
 import PrevNextLinks from '../components/prevNextPostLinks/prevNextLinks';
 import Seo from '../components/seo';
 
 export default function Demo({ data, pageContext }) {
+  const { frontmatter, html, mdFile } = data.demoPage;
   return (
     <LayoutCodepen>
-      <Seo title={data.demoPage.frontmatter.title} />
+      <Seo title={frontmatter.title} />
       <nav id="breadcrumb-nav" aria-label="breadcrumb">
         <Link to="/demos">Demos</Link>
         {' '}
         &gt;
         {' '}
-        <span>{data.demoPage.frontmatter.title}</span>
+        <span>{frontmatter.title}</span>
       </nav>
-      <h1>{data.demoPage.frontmatter.title}</h1>
+      <h1>{frontmatter.title}</h1>
       {/* eslint-disable-next-line react/no-danger */}
-      <article dangerouslySetInnerHTML={{ __html: data.demoPage.html }} />
+      <article dangerouslySetInnerHTML={{ __html: html }} />
+      <GithubEditLink relativePath={mdFile.relativePath} />
       <PrevNextLinks prev={pageContext.prev || { title: 'All FabricJS demos', slug: '/demos' }} next={pageContext.next} />
     </LayoutCodepen>
   );
@@ -30,6 +33,11 @@ export const query = graphql`
       html
       frontmatter {
         title
+      }
+      mdFile: parent {
+        ... on File {
+          relativePath
+        }
       }
     }
   }
