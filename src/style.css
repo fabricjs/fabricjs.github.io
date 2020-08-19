@@ -49,7 +49,7 @@
 ###   Generic page styling   |
 ----------------------------*/
 
-*{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
+*{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
 ::selection{background-color:transparent;}
 
 html{
@@ -84,15 +84,14 @@ h1{font-size:var(--font-size-bigger3)}
 h2{font-size:var(--font-size-bigger2)}
 h3{color:var(--font-color-dark)}
 
-
+.darkBg{
+	background-color:var(--offwhite-color);
+}
 
 /* ---------------------------
 ###   Main element styling   |
 ----------------------------*/
 
-main.darkBg{
-	background-color:var(--offwhite-color);
-}
 main > #breadcrumb-nav{padding:5px var(--padding-left-right);margin:0;font-size:var(--font-size-smaller2)}
 
 main > *{padding:20px var(--padding-left-right);margin:0}
