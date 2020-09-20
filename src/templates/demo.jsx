@@ -45,6 +45,7 @@ export const query = graphql`
 
 Demo.propTypes = {
   data: PropTypes.shape({
+    // eslint-disable-next-line react/forbid-prop-types
     demoPage: PropTypes.object,
   }).isRequired,
   pageContext: PropTypes.shape({

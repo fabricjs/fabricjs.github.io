@@ -56,9 +56,20 @@ export default function HorizontalPanList({
   return (
     <div
       className={`horizontalPanCntnr${!customClass || customClass === '' ? '' : ` ${customClass}`}`}
+      // more info -- https://developer.mozilla.org/en-US/docs/Web/API/Touch_events/Supporting_both_TouchEvent_and_MouseEvent#Event_firing
+
       onPointerDown={pointerDown}
-      onPointerMove={pointerMove}
-      onPointerUpCapture={pointerUp}
+      // onMouseDown={pointerDown}
+      // onTouchStart={pointerDown}
+
+      // onPointerMove={pointerMove}
+      onMouseMove={pointerMove}
+      onTouchMove={pointerMove}
+
+      // onPointerUpCapture={pointerUp}
+      onMouseUpCapture={pointerUp}
+      onTouchEndCapture={pointerUp}
+
       onClickCapture={clickCapture}
     >
       <ul className="horizontalPanList">
@@ -66,9 +77,9 @@ export default function HorizontalPanList({
           <li key={child.key}>{child}</li>
         ))}
         {customLastItem && typeof customLastItem === 'function' && (
-        <li key="custom-last-item">
-          {customLastItem()}
-        </li>
+          <li key="custom-last-item">
+            {customLastItem()}
+          </li>
         )}
       </ul>
     </div>

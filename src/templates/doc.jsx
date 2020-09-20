@@ -79,9 +79,11 @@ export const query = graphql`
 
 Doc.propTypes = {
   data: PropTypes.shape({
+    // eslint-disable-next-line react/forbid-prop-types
     docPage: PropTypes.object,
   }).isRequired,
   pageContext: PropTypes.shape({
+    // eslint-disable-next-line react/forbid-prop-types
     docList: PropTypes.array,
     slug: PropTypes.string,
     prev: PropTypes.shape({
