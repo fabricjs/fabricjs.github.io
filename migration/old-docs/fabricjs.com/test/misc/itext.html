@@ -1,0 +1,148 @@
+---
+layout: test
+title: IText tests
+---
+
+<style>
+  @font-face {
+    font-family: 'Lobster';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lobster'), url(http://themes.googleusercontent.com/static/fonts/lobster/v5/NIaFDq6p6eLpSvtV2DTNDQLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+  }
+  .example {
+    margin-bottom: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  h3 {
+    font-family: Helvetica, sans-serif;
+    font-weight: normal;
+    text-align: center;
+    background-color: #444;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 3px 0;
+  }
+  select { font-size: 16px; }
+</style>
+
+<p>
+  <button id="bold">Bold</button>
+  <button id="italic">Italic</button>
+  <button id="underline">Underline</button>
+  <button id="line-through">Line-through</button>
+  <button id="super-script">Super-script</button>
+  <button id="sub-script">Sub-script</button>
+  <input type="color" id="color">
+  <input type="color" id="bg-color">
+  <input type="range" min="5" max="150" value="40" id="size">
+</p>
+<div class="example">
+  <h3>Styled & with bg color</h3>
+  <canvas id="c2" width="250" height="300" style="border: 1px solid #ccc"></canvas>
+</div>
+<div class="example">
+  <h3>Superscript and subscript</h3>
+  <canvas id="c21" width="250" height="300" style="border: 1px solid #ccc"></canvas>
+</div>
+<div class="example">
+  <h3>Styled & with bg color</h3>
+  <canvas id="c3" width="250" height="300" style="border: 1px solid #ccc"></canvas>
+</div>
+<div class="example">
+  <h3>Styled & with bg color</h3>
+  <canvas id="c4" width="250" height="300" style="border: 1px solid #ccc"></canvas>
+</div>
+<div class="example">
+  <h3>Styled & with empty line</h3>
+  <canvas id="c5" width="250" height="300" style="border: 1px solid #ccc"></canvas>
+</div>
+<div class="example">
+  <h3>Custom font</h3>
+  <canvas id="c6" width="250" height="300" style="border: 1px solid #ccc"></canvas>
+</div>
+<div class="example">
+  <h3>Empty text w. invitation</h3>
+  <canvas id="c7" width="250" height="300" style="border: 1px solid #ccc"></canvas>
+</div>
+<div class="example">
+  <h3>Lots of text to test double click</h3>
+  <canvas id="c8" width="600" height="300" style="border: 1px solid #ccc"></canvas>
+</div>
+<div class="example">
+  <h3>Right aligned</h3>
+  <canvas id="c9" width="400" height="300" style="border: 1px solid #ccc"></canvas>
+</div>
+<div class="example">
+  <h3>Center-aligned & styled</h3>
+  <canvas id="c10" width="300" height="300" style="border: 1px solid #ccc"></canvas>
+</div>
+<div class="example">
+  <h3>Breaking Bad</h3>
+  <canvas id="c11" width="300" height="300" style="border: 1px solid #ccc"></canvas>
+</div>
+<div class="example">
+  <h3>Center-align w. different size</h3>
+  <canvas id="c12" width="500" height="400" style="border: 1px solid #ccc"></canvas>
+</div>
+<div class="example">
+  <h3>textBackgroundColor, decoration, font sizes</h3>
+  <canvas id="c13" width="400" height="400" style="border: 1px solid #ccc"></canvas>
+</div>
+<div class="example">
+  <h3>Shadows</h3>
+  <canvas id="c14" width="200" height="200" style="border: 1px solid #ccc"></canvas>
+</div>
+<div class="example">
+  <h3>Cursor detection in rotated</h3>
+  <canvas id="c15" width="400" height="300" style="border: 1px solid #ccc"></canvas>
+</div>
+<div class="example">
+  <h3>Cursor detection in scaled</h3>
+  <canvas id="c16" width="500" height="300" style="border: 1px solid #ccc"></canvas>
+</div>
+<div class="example">
+  <h3>Cursor detection in flipped</h3>
+  <canvas id="c18" width="400" height="300" style="border: 1px solid #ccc"></canvas>
+</div>
+<div class="example">
+  <h3>Vertical cursor movement in diff-sized text</h3>
+  <canvas id="c19" width="400" height="300" style="border: 1px solid #ccc"></canvas>
+</div>
+<div class="example">
+  <h3>All kinds of styling</h3>
+  <canvas id="c1" width="600" height="400" style="border: 1px solid #ccc"></canvas>
+</div>
+<div class="example">
+  <h3>Lots of text (performance test)</h3>
+  <canvas id="c17" width="500" height="600" style="border: 1px solid #ccc"></canvas>
+</div>
+<div class="example">
+  <h3>A bigger text (performance test)</h3>
+  <canvas id="c20" width="1000" height="900" style="border: 1px solid #ccc"></canvas>
+</div>
+<script src="/js/itext.js" charset="utf-8"></script>
+<script>
+  (function() {
+    var canvases = document.getElementsByClassName('canvas-container');
+    for (var i = 0, len = canvases.length; i < len; i++) {
+
+      var linkEl = document.createElement('a');
+      linkEl.href = '#';
+      linkEl.innerHTML = '<code style="display: block">toSVG()</code>';
+      canvases[i].parentNode.appendChild(linkEl);
+
+      linkEl.onclick = (function(container) {
+        return function() {
+          window.open('data:image/svg+xml;charset=utf-8,' +
+            encodeURIComponent(container.canvas.toSVG()));
+
+          return false;
+        };
+      })(canvases[i]);
+    }
+  })();
+</script>

@@ -1,0 +1,33 @@
+<script type="text/javascript">
+  var currentScript = 'https://unpkg.com/fabric@latest/dist/fabric.js';
+  function codepenLoaded() {
+    function escapeHtml(unsafe) {
+      return unsafe
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+    }
+    var preEl = document.querySelectorAll('[data-lang="html"]');
+    [].forEach.call(preEl, function(el) {
+      el.innerHTML = escapeHtml(el.innerHTML);
+    });
+    var addMainEl = document.querySelectorAll('.codepen-later');
+    [].forEach.call(addMainEl, function(el) {
+      var currentData = el.getAttribute('data-prefill');
+      if (currentData) {
+        currentData = JSON.parse(currentData);
+        if (!currentData.scripts) {
+          currentData.scripts = [];
+        }
+        currentData.scripts.unshift(currentScript);
+      } else {
+        currentData = { scripts: [currentScript] };
+      }
+      el.setAttribute('data-prefill', JSON.stringify(currentData));
+    });
+    window.__CPEmbed(".codepen-later");
+  }
+</script>
+<script async onload="codepenLoaded()" src="https://static.codepen.io/assets/embed/ei.js"></script>

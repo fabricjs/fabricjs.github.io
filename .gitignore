@@ -1,6 +1,8 @@
 # Dependencies
 /node_modules
 
+migration/script/node_modules
+migration/old-docs/fabricjs.com/.idea
 # Production
 /build
 

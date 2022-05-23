@@ -1,0 +1,63 @@
+---
+layout: test-ad
+title: SVG Rendering
+---
+
+<link rel="stylesheet" type="text/css" href="svg_import.css">
+
+<script>
+  fabric.Object.prototype.originX = 'center';
+  fabric.Object.prototype.originY = 'center';
+  fabric.Object.NUM_FRACTION_DIGITS = 4;
+
+  function initCanvas(id) {
+    var canvas;
+    fabric.loadSVGFromURL('../../assets/' + id + '.svg', function(objects, options) {
+      var shape = fabric.util.groupSVGElements(objects, options);
+      var canvasEl = document.getElementById('c' + (id + '').replace('/', '_'));
+      var div = document.getElementById('exp_c' + (id + '').replace('/', '_'));
+      canvasEl.width = shape.getScaledWidth() || 600;
+      canvasEl.height = shape.getScaledHeight() || 600;
+
+      var iframeEl = canvasEl.parentNode.nextSibling.childNodes[1];
+      if (iframeEl) {
+        iframeEl.style.width = canvasEl.width + 'px';
+        iframeEl.style.height = canvasEl.height + 'px';
+      }
+      shape.top = canvasEl.height/2;
+      shape.left = canvasEl.width/2;
+      canvas = window['__canvas' + id] = new fabric.Canvas('c' + id, { backgroundColor: '#fff' });
+      canvas.add(shape);
+      div.innerHTML = canvas.toSVG();
+    });
+  }
+</script>
+
+<script>
+  var blacklist = [
+//    16 /* image doesn't render properly */,
+//    20 /* very intense shape */,
+//    33, 34, 35 /* very intense shapes */,
+//    66 /* the shape is too big */,
+//    68 /* svg has parsing error */,
+//    72, 73 /* shapes are too big */,
+//   74, 75 /* shapes has weird dimensions */,
+ //   78, 79, 80, 81, 82, 83, 84, 85 /* wrong offset */,
+//   149 /* too big? */,
+    150 /* svg parse error */
+  ];
+  for (var i = 183; i >= 1; i--) {
+
+    if (blacklist.indexOf(i) === -1) {
+      document.write(
+        '<div class="test"><div class="block left"><p>Canvas #' + i + '</p>' +
+        '<canvas id="c' + i + '" width="300" height="300"></canvas></div>' +
+        '<div class="block"><p><a href="../../assets/' + i + '.svg">SVG</a></p>' +
+        '<iframe src="../../assets/' + i + '.svg"></iframe></div>' +
+        '<div class="block"><p><a href="../../assets/' + i + '.svg">EXPORTED SVG</a></p>' +
+        '<div id="exp_c' + i + '" ></div></div></div>'
+      );
+      initCanvas(i);
+    }
+  }
+</script>

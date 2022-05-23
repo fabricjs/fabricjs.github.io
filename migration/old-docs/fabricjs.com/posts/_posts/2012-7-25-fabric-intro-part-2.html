@@ -1,0 +1,570 @@
+---
+layout: articlead
+title: Introduction to Fabric.js. Part 2.
+---
+
+<style>h2 { margin-bottom: 15px } h3 { margin-bottom: 10px; } h4 { margin-bottom: 7px; } </style>
+
+<div class="container" style="margin:30px auto">
+  <h2 id="introduction_to_fabricjs">Introduction to Fabric.js. Part 2.</h2>
+
+  <p>In the <a href="/fabric-intro-part-1">first part of this series</a>, we only started to get familiar with Fabric.js. We looked at the reasons to use Fabric, at its object model and object hierarchy, at different kind of entities available in Fabric &mdash; simple shapes, images, and complex paths. We also learned how to perform simple operations with Fabric objects on canvas.</p>
+
+  <p>Now that most of the basics are out of the way, let's get down to some fun stuff!</p>
+
+  <h3 id="animation">Animation</h3>
+
+  <p>No respectable canvas library goes without animation facility. And Fabric is not an exception. Since there's such a powerful object model and graphical capabilities, it would be a shame not to have animation helpers built in.</p>
+
+  <p>Remember how easy it was to change property of any object? We just called <code>set</code> method, passing corresponding value(s):</p>
+
+<pre>
+rect.set('angle', 45);
+</pre>
+
+  <p>Well, animating an object is just as easy. Every Fabric object has <code>animate</code> method which... animates that object.</p>
+
+<pre>
+rect.animate('angle', 45, {
+  onChange: canvas.renderAll.bind(canvas)
+});
+</pre>
+
+<p>First argument is the property to animate. Second argument is the ending value of animation. If rectangle has -15&deg; angle, and we pass 45, it will be animated from -15&deg; to 45&deg;. The third argument is an optional object specifying finer details of animation &mdash; duration, callbacks, easing, etc.</p>
+
+<p>One convenient feature of <code>animate</code> is that it also supports relative values. For example, if you wanted to animate object's left property by 100px, you could do it like this:</p>
+
+<pre>
+rect.animate('left', '+=100', { onChange: canvas.renderAll.bind(canvas) });
+</pre>
+
+<p>Similarly, rotating object by 5 degrees counter-clockwise, can be accomplished like so:</p>
+
+<pre>
+rect.animate('angle', '-=5', { onChange: canvas.renderAll.bind(canvas) });
+</pre>
+
+<p>You might be wondering why we always specify "onChange" callback there. Isn't third argument optional? It is, but calling <code>canvas.renderAll</code> on each animation frame is what allows us to see actual animation! You see, when we call <code>animate</code> method, it only animates property value over time, following specific algorithm (i.e. easing). So <code>rect.animate('angle', 45)</code> will change object's angle but won't re-render canvas screen after each change of the angle. And we obviously need this re-rendering in order to see the actual animation.</p>
+
+<p>Remember that there's entire object model underneath that canvas surface. Objects have their own properties and relations, and canvas is only responsible for projecting their existence to the outside world.</p>
+
+<p>The reason <code>animate</code> doesn't automatically re-render canvas after each change is due to performance. After all, we can have hundreds or thousands animating objects on canvas, and it wouldn't be good if every one of them tried to re-render screen. In the case of many objects, you could use something like <code>requestAnimationFrame</code> (or other timer-based) loop to render canvas continuosly on its own, without calling <code>renderAll</code> for each object. But most of the time, you'll probably need to explicitly specify <code>canvas.renderAll</code> as "onChange" callback.</p>
+
+<p>So which other options can we pass to animate?</p>
+
+<ul>
+  <li><b>from</b>: Allows to specify starting value of animatable property (if we don't want current value to be used).</li>
+  <li><b>duration</b>: Defaults to 500 (ms). Can be used to change duration of an animation.</li>
+  <li><b>onComplete</b>: Callback that's invoked at the end of the animation.</li>
+  <li><b>easing</b>: Easing function.</li>
+</ul>
+
+<p>All of these options should be self-explanatory, except perhaps easing one. Let's take a closer look.</p>
+
+<p>By default, <code>animate</code> uses "easeInSine" function for animation. If that's not what you need, there's a whole slew of easing options available under <code>fabric.util.ease</code>. For example, if we wanted to move object to the right in a bouncy fashion:</p>
+
+<pre>
+rect.animate('left', 500, {
+  onChange: canvas.renderAll.bind(canvas),
+  duration: 1000,
+  easing: fabric.util.ease.easeOutBounce
+});
+</pre>
+
+<p>Notice <code>fabric.util.ease.easeOutBounce</code> as an easing option. Other notable ones include <code>easeInCubic</code>, <code>easeOutCubic</code>, <code>easeInElastic</code>, <code>easeOutElastic</code>, <code>easeInBounce</code>, and <code>easeOutExpo</code>.</p>
+
+<p>So this almost covers the animation part of Fabric. Just to give you some ideas of what becomes possible &mdash; you can animate object's angle to make it rotate; animate left/top properties to make it move; animate width/height to make it shrink/grow; animate opacity to make it fade in/out; and so on.</p>
+
+<p><h4 id="running_animations">fabric.runningAnimations</h4></p>
+
+<p>If you need to access the animations that are currently running by fabric, use <code>fabric.runningAnimations</code>. It's an array of objects, each an animation context object.</p>
+
+<p>
+  Handy methods:<br/>
+  <ul>
+    <li><code>fabric.runningAnimations.findAnimation(signature)</code> - returns the animation context matching <code>signature</code> which is the abort function returned by <code>fabric.util.animate</code>.</li>
+    <li><code>fabric.runningAnimations.findAnimationIndex(signature)</code> - same as <code>findAnimation</code>, returns the index.</li>
+    <li><code>fabric.runningAnimations.findAnimationsByTarget(target)</code> - returns all animations that have a <code>target</code> property that is equal to target.</li>
+    <li><code>fabric.runningAnimations.cancelAll()</code> - cancels all running animations.</li>
+    <li><code>fabric.runningAnimations.cancelByTarget(target)</code> - cancels animations that have a <code>target</code> property that is equal to target.</li>
+    <li><code>object.dispose()</code> - all animations created by the object (<code>object.animate(...)</code>) are cancelled.
+    If you want to add animations using
+    <code>fabric.util.animate</code> instead of <code>object.animate(...)</code> you can attach them to an object by passing the
+    <code>target</code> property. This way the animations will cancel once the object is disposed.</li>
+  </ul>
+</p>
+
+<pre>
+  let cancel = fabric.util.animate({...});
+  let i = fabric.runningAnimations.findAnimationIndex(cancel);
+  let context = fabric.runningAnimations.findAnimation(cancel);
+  let cancelled = fabric.runningAnimations.cancelAll();
+  
+  //  the following statements are true
+  cancelled[i] === context;
+  cancelled[i].cancel === cancel;
+  fabric.runningAnimations.length === 0;
+</pre>
+
+<h3 id="image_filters">Image filters</h3>
+
+<p>In the first part of this series, we learned how to work with images in Fabric. There's <code>fabric.Image</code> constructor, that accepts image element. There's also <code>fabric.Image.fromURL</code> method, which can create image instance ouf of a URL string. And any of these images can be thrown and rendered on canvas just like any other object.</p>
+
+<p>But as fun working with images as it is, it's even cooler to apply image filters to them!</p>
+
+<p>Fabric provides few filters by default, both for WEBGL enabled browsers and not. It also makes it easy to define your own. Some of the built-in ones you might be very well familiar with &mdash; filter to remove white background, grayscale filter, invert or brightness ones. Others might be a little less popular &mdash; colormatrix, sepia, or noise.</p>
+
+<p>So how do we apply filters to images in Fabric? Well, every instance of <code>fabric.Image</code> has "filters" property which is a simple array of filters. Each of the filters in that array is an instance of one of Fabric filters. Or an instance of your own custom filter.</p>
+
+<p>So let's create a grayscale image.</p>
+
+<pre>
+fabric.Image.fromURL('pug.jpg', function(img) {
+
+  // add filter
+  img.filters.push(new fabric.Image.filters.Grayscale());
+
+  // apply filters and re-render canvas when done
+  img.applyFilters();
+  // add image onto canvas (it also re-render the canvas)
+  canvas.add(img);
+});
+</pre>
+
+<p><img src="/article_assets/2_1.png" style="border:1px solid #eee"></p>
+
+<p>How about a sepia version of an image?</p>
+
+<pre>
+fabric.Image.fromURL('pug.jpg', function(img) {
+  img.filters.push(new fabric.Image.filters.Sepia());
+  img.applyFilters();
+  // add image onto canvas (it also re-render the canvas)
+  canvas.add(img);
+});
+</pre>
+
+<p><img src="/article_assets/2_2.png" style="border:1px solid #eee"></p>
+
+<p>Since "filters" property is a simple array, we can perform any desired operations with it in a usual way &mdash; <b>remove</b> filter (via <code>pop</code>, <code>splice</code>, or <code>shift</code>), <b>add</b> filter (via <code>push</code>, <code>splice</code>, <code>unshift</code>), or even combine multiple filters. Any filters present in "filters" array will be applied one by one, when we call <code>applyFilters</code>. So let's try to create an image that's both sepia and bright.</p>
+
+<pre>
+fabric.Image.fromURL('pug.jpg', function(img) {
+  img.filters.push(
+    new fabric.Image.filters.Sepia(),
+    new fabric.Image.filters.Brightness({ brightness: 100 }));
+
+  img.applyFilters();
+  canvas.add(img);
+});
+</pre>
+
+<p><img src="/article_assets/2_3.png" style="border:1px solid #eee"></p>
+
+<p>Notice that we also passed <code>{ brightness: 100 }</code> object to Brightness filter. That's because some filters can be applied without any additional configuration (e.g. grayscale, invert, sepia) and others provide finer control for their behavior. For brightness filter, it's the actual brightness level (-1 full black to 1 full white). For noise filter, it's the noise value (0-1000). For "remove color" filter, it's the threshold and distance values. And so on.</p>
+
+<p>So now that you became familiar with Fabric filters, it's time to break out of the box and create your own filter!</p>
+
+<p>The template for creating a filter is pretty straightforward. We'll need to create a "class", then define <code>applyTo</code> method. Optionally, we might give filter <code>toJSON</code> method (support for JSON serialization), and/or <code>initialize</code> method (support for optional parameters).</p>
+
+<pre>
+fabric.Image.filters.Redify = fabric.util.createClass(fabric.Image.filters.BaseFilter, {
+
+  type: 'Redify',
+
+  /**
+   * Fragment source for the redify program
+   */
+  fragmentSource: 'precision highp float;\n' +
+    'uniform sampler2D uTexture;\n' +
+    'varying vec2 vTexCoord;\n' +
+    'void main() {\n' +
+      'vec4 color = texture2D(uTexture, vTexCoord);\n' +
+      'color.g = 0.0;\n' +
+      'color.b = 0.0;\n' +
+      'gl_FragColor = color;\n' +
+    '}',
+
+  applyTo2d: function(options) {
+    var imageData = options.imageData,
+        data = imageData.data, i, len = data.length;
+
+    for (i = 0; i < len; i += 4) {
+      data[i + 1] = 0;
+      data[i + 2] = 0;
+    }
+
+  }
+});
+
+fabric.Image.filters.Redify.fromObject = fabric.Image.filters.BaseFilter.fromObject;
+</pre>
+
+<p><img src="/article_assets/2_4.png" style="border:1px solid #eee"></p>
+
+<p>Without delving too much into this code, the main action is happening in a loop. where we replace green (data[i+1]) and blue (data[i+2]) components of each pixel with 0, essentially removing them. Red component of standard rgb triple stays untouched, essentially making entire image painted red. As you can see, <code>applyTo</code> method is being passed an option object that contains the imageData of the image at that stage of the filtering pipeline. From there, we can iterate over its pixels (<code>getImageData().data</code>) modifying them in any way we want. If the browsers is WEBGL enabled filters can run on the GPU. To do so you have to provide a fragment shader that describes the operation to do over pixels. There are many filter defined in fabric where you can see example of how to write a fragment or vertex shader</p>
+
+<h3 id="colors">Colors</h3>
+
+<p>Whether you're more comfortable working with hex, RGB, or RGBA colors, Fabric provides a solid color foundation to help you express yourself most naturally. Here are some of the ways in which you can define a color in Fabric:</p>
+
+<pre>
+new fabric.Color('#f55');
+new fabric.Color('#123123');
+new fabric.Color('356735');
+new fabric.Color('rgb(100,0,100)');
+new fabric.Color('rgba(10, 20, 30, 0.5)');
+</pre>
+
+<p>Conversion is straightforward as well. <code>toHex()</code> will convert color instance to hex representation. <code>toRgb()</code> &mdash; to RGB one, and <code>toRgba()</code> &mdash; to RGB with alpha channel.</p>
+
+<pre>
+new fabric.Color('#f55').toRgb(); // "rgb(255,85,85)"
+new fabric.Color('rgb(100,100,100)').toHex(); // "646464"
+new fabric.Color('fff').toHex(); // "FFFFFF"
+</pre>
+
+<p>Conversion is not the only thing you can do with colors. You can also overlay one color with another, or turn it to grayscale version.</p>
+
+<pre>
+var redish = new fabric.Color('#f55');
+var greenish = new fabric.Color('#5f5');
+
+redish.overlayWith(greenish).toHex(); // "AAAA55"
+redish.toGrayscale().toHex(); // "A1A1A1"
+</pre>
+
+<h3 id="gradients">Gradients</h3>
+
+<p>An even more expressive way to work with colors is via gradients. Gradients allow us to blend one color into another, creating some stunning graphical effects.</p>
+
+<p>Fabric supports gradients setting the fill or stroke property on all objects. In order to set a gradient to an object, first create the gradient and then assign it to fill or stroke.</p>
+
+<pre>
+var circle = new fabric.Circle({
+  left: 100,
+  top: 100,
+  radius: 50
+});
+
+var gradient = new fabric.Gradient({
+  type: 'linear',
+  gradientUnits: 'pixels', // or 'percentage'
+  coords: { x1: 0, y1: 0, x2: 0, y2: circle.height },
+  colorStops:[
+    { offset: 0, color: '#000' },
+    { offset: 1, color: '#fff'}
+  ]
+})
+
+circle.set('fill', gradient);
+</pre>
+
+<p><img src="/article_assets/2_15.png" style="border:1px solid #eee"></p>
+
+<p>In the above example, we create a circle at 100,100 location, with 50px radius.
+  We then set its fill to a gradient that spans throughout entire height of that circle, from black to white.</p>
+
+<p>Gradient option object has 2 main properties, coords and colorStops. <code>coords</code> expect at least 2 coordinates
+ pairs (x1, y1 and x2, y2) that will define how the gradient extend on the object, while <code>colorStops</code> is an array
+ that defines the gradients colors. Each color in the array is defined by an <code>offset</code> that represents its position
+ on the gradient, a <code>color</code> that defines the color itself and eventually an <code>opacity</code> property.
+ You can define as many color stops as you want, as long as theyr offset range from `0` to `1`. `0` represents beginning of a gradient, `1` its end.
+ Coordinates are relative to object top left corner, so the highest point of the circle is <code>0</code>, and the lowest point is <code>circle.height</code>.
+<br />
+ You can specify type <code>linear</code> or <code>radial</code> to obtain 2 different kind of gradients, and also
+ <code>gradientUnits</code> defaults to pixels but can be specified as `percentage`. `percentage` will allow the gradient
+ size to be specified in percentage of object size, with `1` being 100% of object size.<br />
+ This setting is useful for <code>fabric.Text</code> objects that change the width or height depending on text content.
+</p>
+
+<p>Here's an example of left-to-right red-blue gradient:</p>
+
+<pre>
+  var gradient = new fabric.Gradient({
+    type: 'linear',
+    gradientUnits: 'pixels', // or 'percentage'
+    coords: { x1: 0, y1: 0, x2: circle.width, y2: 0 },
+    colorStops:[
+      { offset: 0, color: 'red' },
+      { offset: 1, color: 'blue'}
+    ]
+  })
+ // or in percentage
+  var gradient = new fabric.Gradient({
+    type: 'linear',
+    gradientUnits: 'percentage',
+    coords: { x1: 0, y1: 0, x2: 1, y2: 0 },
+    colorStops:[
+      { offset: 0, color: 'red' },
+      { offset: 1, color: 'blue'}
+    ]
+  })
+</pre>
+
+<p><img src="/article_assets/2_16.png" style="border:1px solid #eee"></p>
+
+<p>And here's a 5-stops rainbow gradient, with colors spanning at even 20% intervals:</p>
+
+<pre>
+var gradient = new fabric.Gradient({
+  type: 'linear',
+  gradientUnits: 'pixels', // or 'percentage'
+  coords: { x1: 0, y1: 0, x2: circle.width, y2: 0 },
+  colorStops:[
+    { offset: 0, color: 'red' },
+    { offset: 0.2, color: 'orange' },
+    { offset: 0.4, color: 'yellow' },
+    { offset: 0.6, color: 'green' },
+    { offset: 0.8, color: 'blue' },
+    { offset: 1, color: 'purple' }
+  ]
+});
+</pre>
+
+<p><img src="/article_assets/2_17.png" style="border:1px solid #eee"></p>
+
+<h3 id="text">Text</h3>
+
+<p>What if you wanted to display not only images and vector shapes on canvas, but also text? Fabric has you covered! Meet <code>fabric.Text</code> objects.</p>
+
+<p>There are 2 reasons we're providing text abstraction in Fabric. First, is to allow working with text in an object oriented fashion. Native canvas methods &mdash; as usual &mdash; only allow to fill or stroke text on a very low level. By instantiating <code>fabric.Text</code> instances, we can work with text just like we would work with any other Fabric object &mdash; move it, scale it, change its properties, and so on.</p>
+
+<p>Second reason is to provide a much richer functionality than what canvas gives us. Some of the Fabric additions include:</p>
+
+<ul>
+  <li><b>Multiline support</b> Native text methods unfortunately simply ignore new lines.</li>
+  <li><b>Text alignment</b> Left, center, right. Useful when working with multiline text.</li>
+  <li><b>Text background</b> Background also respects text alignment.</li>
+  <li><b>Text decoration</b> Underline, overline, strike-through.</li>
+  <li><b>Line height</b> Useful when working with multiline text.</li>
+  <li><b>Char spacing</b> Makes text more compact or more spaced</li>
+  <li><b>Subranges</b> apply colors and properties to subranges of your text object</li>
+  <li><b>Multibyte</b> support emoticons!</li>
+  <li><b>On canvas editing</b> with the interactive class you can type text directly over the canvas</li>
+</ul>
+
+<p>How about hello world example?</p>
+
+<pre>
+var text = new fabric.Text('hello world', { left: 100, top: 100 });
+canvas.add(text);
+</pre>
+
+<p>That's right! Displaying text on canvas is as simple as adding <code>fabric.Text</code> instance at a desired location. As you can see, the only required first parameter is actual text string. Second argument is the usual options object, which can have any of the usual left, top, fill, opacity, etc. properties.</p>
+
+<p>But of course text objects also have their own, unique, text-related properties. Let's look at some of them:</p>
+
+<h4>fontFamily</h4>
+<p>Set as "Times New Roman" by default, this property allow us to change font family used to render a text object. Changing it will immediately make text rendered in a new font.</p>
+
+<pre>
+var comicSansText = new fabric.Text("I'm in Comic Sans", {
+  fontFamily: 'Comic Sans'
+});
+</pre>
+
+<p><img src="/article_assets/2_5.png" style="border:1px solid #eee"></p>
+
+<h4>fontSize</h4>
+
+<p>Font size controls the size of rendered text. Note that unlike with other objects in Fabric, you can't change text's width/height properties directly. Instead, you'll need to change "fontSize" value in order to make text objects larger or smaller. Either that, or you can always use scaleX/scaleY properties.</p>
+
+<pre>
+var text40 = new fabric.Text("I'm at fontSize 40", {
+  fontSize: 40
+});
+var text20 = new fabric.Text("I'm at fontSize 20", {
+  fontSize: 20
+});
+</pre>
+
+<p><img src="/article_assets/2_6.png" style="border:1px solid #eee"></p>
+
+<h4>fontWeight</h4>
+
+<p>Font weight allows to make text thicker or thinner -looking. Just like in CSS, you can use either keywords ("normal", "bold") or numbers (100, 200, 400, 600, 800). Note that whether you can use certain weight depends on availability of that weight for a chosen font. If you're using remote font, you'll need to make sure you provide both normal and bold (as well as any other required weight) font definitions.</p>
+
+<pre>
+var normalText = new fabric.Text("I'm a normal text", {
+  fontWeight: 'normal'
+});
+var boldText = new fabric.Text("I'm at bold text", {
+  fontWeight: 'bold'
+});
+</pre>
+
+<p><img src="/article_assets/2_7.png" style="border:1px solid #eee"></p>
+
+<h4>textDecoration</h4>
+
+<p>Text decoration allows to add undeline, overline, or strike-through to a text. This is similar to CSS, but Fabric goes a little further and allows to use any combination of the above together. So you can have a text that's both underline and overline, or underline and strike-through, and so on.</p>
+
+<pre>
+var underlineText = new fabric.Text("I'm an underlined text", {
+  underline; true
+});
+var strokeThroughText = new fabric.Text("I'm a stroke-through text", {
+  linethrough: true
+});
+var overlineText = new fabric.Text("I'm an overline text", {
+  overline: true
+});
+</pre>
+
+<p><img src="/article_assets/2_8.png" style="border:1px solid #eee"></p>
+
+<h4>shadow</h4>
+
+<p>This property was called "textShadow" before version 1.3.0</p>
+
+<p>Text shadow consists of 4 components: color, horizontal offset, vertical offset, and blur size. This might look very familiar if you've worked with shadows in CSS. Lots of combinations possible by changing these values.</p>
+
+<pre>
+var shadowText1 = new fabric.Text("I'm a text with shadow", {
+  shadow: 'rgba(0,0,0,0.3) 5px 5px 5px'
+});
+var shadowText2 = new fabric.Text("And another shadow", {
+  shadow: 'rgba(0,0,0,0.2) 0 0 5px'
+});
+var shadowText3 = new fabric.Text("Lorem ipsum dolor sit", {
+  shadow: 'green -5px -5px 3px'
+});
+</pre>
+
+<p><img src="/article_assets/2_9.png" style="border:1px solid #eee"></p>
+
+<h4>fontStyle</h4>
+
+<p>Font style can be one of 2 values: normal or italic. This is similar to same-named CSS property.</p>
+
+<pre>
+var italicText = new fabric.Text("A very fancy italic text", {
+  fontStyle: 'italic',
+  fontFamily: 'Delicious'
+});
+var anotherItalicText = new fabric.Text("another italic text", {
+  fontStyle: 'italic',
+  fontFamily: 'Hoefler Text'
+});
+</pre>
+
+<p><img src="/article_assets/2_10.png" style="border:1px solid #eee"></p>
+
+<h4>stroke and strokeWidth</h4>
+
+<p>By combining stroke (color of the stroke) and strokeWidth (its width), you can achieve some interesting effects on your text. Here's a couple of examples:</p>
+
+<pre>
+var textWithStroke = new fabric.Text("Text with a stroke", {
+  stroke: '#ff1318',
+  strokeWidth: 1
+});
+var loremIpsumDolor = new fabric.Text("Lorem ipsum dolor", {
+  fontFamily: 'Impact',
+  stroke: '#c3bfbf',
+  strokeWidth: 3
+});
+</pre>
+
+<p><img src="/article_assets/2_11.png" style="border:1px solid #eee"></p>
+
+<h4>textAlign</h4>
+
+<p>Text align comes useful when working with multiline text. With one-line text, the width of bounding box is always exactly matching that line's width, so there's nothing to align.
+
+<p>Allowed values are "left", "center", and "right".</p>
+
+<pre>
+var text = 'this is\na multiline\ntext\naligned right!';
+var alignedRightText = new fabric.Text(text, {
+  textAlign: 'right'
+});
+</pre>
+
+<p><img src="/article_assets/2_12.png" style="border:1px solid #eee"></p>
+
+<h4>lineHeight</h4>
+
+<p>Another property that might be familiar from CSS-land is lineHeight. It allows us to change vertical spacing between text lines in multiline text. In the following example, first chunk of text has lineHeight of 3, and second one &mdash; 1.</p>
+
+<pre>
+var lineHeight3 = new fabric.Text('Lorem ipsum ...', {
+  lineHeight: 3
+});
+var lineHeight1 = new fabric.Text('Lorem ipsum ...', {
+  lineHeight: 1
+});
+</pre>
+
+<p><img src="/article_assets/2_13.png" style="border:1px solid #eee"></p>
+
+<h4>textBackgroundColor</h4>
+
+<p>Finally, textBackgroundColor is what allows to give text a background. Note that background fills only space occupied by text characters, not the entire bounding box. It means that text alignment changes the way text background is rendered. So does line height, since background respects this vertical space between lines, created by lineHeight.</p>
+
+<pre>
+var text = 'this is\na multiline\ntext\nwith\ncustom lineheight\n&background';
+var textWithBackground = new fabric.Text(text, {
+  textBackgroundColor: 'rgb(0,200,0)'
+});
+</pre>
+
+<p><img src="/article_assets/2_14.png" style="border:1px solid #eee"></p>
+
+<h3 id="events">Events</h3>
+
+<p>The event-driven architecture is the basis for some amazing power and flexibility within a framework. Fabric is no exception, and provides an extensive event system, starting from low-level "mouse" events to high-level objects ones.</p>
+
+<p>These events allow us to tap into different moments of various actions happening on canvas. Want to know when the mouse was pressed? Just observe "mouse:down" event. How about when object was added to canvas? "object:added" is there for you. And what about when the entire canvas is re-rendered? Just use "after:render".</p>
+
+<p>The event API is very simple and resembles that of jQuery, Underscore.js, or other popular JS libraries. There's <code>on</code> method to initialize event listener, and <code>off</code> to remove it.</p>
+
+<p>Let's take a look at an actual example:</p>
+
+<pre>
+var canvas = new fabric.Canvas('...');
+canvas.on('mouse:down', function(options) {
+  console.log(options.e.clientX, options.e.clientY);
+});
+</pre>
+
+<p>We're adding event "mouse:down" event listener onto canvas, and giving it an event handler that will log coordinates of where the event originated. In other words, it'll log where exactly on canvas the mouse was pressed. The event handler receives an options object, which has 2 properties: <code>e</code> &mdash; the original event, and <code>target</code> &mdash; a clicked object on canvas, if any. The event is present at all times, but <code>target</code> only exists if you actually did click on some object on canvas. The <code>target</code> is also only passed to handlers of events where it makes sense. For example, for "mouse:down" but not for "after:render" (which denotes that entire canvas was re-drawn).</p>
+
+<pre>
+canvas.on('mouse:down', function(options) {
+  if (options.target) {
+    console.log('an object was clicked! ', options.target.type);
+  }
+});
+</pre>
+
+<p>The above example will log "an object was clicked!" if you click an object. It will also show the type of object clicked.</p>
+
+<p>So which other events are available in Fabric? Well, from mouse-level ones there are "<b>mouse:down</b>", "<b>mouse:move</b>", and "<b>mouse:up</b>". From generic ones, there are "<b>after:render</b>". Then there are selection-related events: "<b>before:selection:cleared</b>", "<b>selection:created</b>", "<b>selection:cleared</b>". And finally, object ones: "<b>object:modified</b>", "<b>object:selected</b>", "<b>object:moving</b>", "<b>object:scaling</b>", "<b>object:rotating</b>", "<b>object:added</b>", and "<b>object:removed</b>"</p>
+
+<p>Note that events like "object:moving" (or "object:scaling") are fired continuously every time an object is moved (or scaled) even by one pixel. On the other hand, events like "object:modified" or "selection:created" are fired only at the end of the action (object modification or selection creation).</p>
+
+<p>Note how we attached events right onto canvas (<code>canvas.on('mouse:down', ...)</code>). As you can imagine, this means that events are all scoped to canvas instances. If you have multiple canvases on a page, you can attach different event listeners to each one of them. They're all independent and respect only events that were assigned to them.</p>
+
+<p>For convenience, Fabric takes event system even further, and allows you to attach listeners directly to canvas objects. Let's take a look:</p>
+
+<pre>
+var rect = new fabric.Rect({ width: 100, height: 50, fill: 'green' });
+rect.on('selected', function() {
+  console.log('selected a rectangle');
+});
+
+var circle = new fabric.Circle({ radius: 75, fill: 'blue' });
+circle.on('selected', function() {
+  console.log('selected a circle');
+});
+</pre>
+
+<p>We're attaching event listeners directly to rectangle and circle instances. Instead of "object:selected", we're using "selected" event. Similarly, we could have used "modified" event ("object:modified" when attaching to canvas), "rotating" event ("object:rotating" when attaching to canvas), and so on.</p>
+
+<p>Check this <a href="/events">events demo</a> for a more extensive exploration of Fabric's event system.</p>
+
+<p>Read <a href="/fabric-intro-part-3">Part 3</a>.</p>
+
+</div>

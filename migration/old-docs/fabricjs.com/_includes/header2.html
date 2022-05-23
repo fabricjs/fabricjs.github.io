@@ -1,0 +1,48 @@
+<ul id="header">
+  <li><a href="/">Home</a></li>
+  <li><a href="/demos">Demos</a></li>
+  <li><a href="/articles">Tutorial</a></li>
+  <li><a href="/docs">Docs</a></li>
+  <li><a href="/build">Custom Build</a></li>
+  <li><a href="/help">Support</a></li>
+  <li><a href="/test">Tests/Benchmarks</a></li>
+  <li><a href="/team">Team</a></li>
+  <li class="github secondary">
+    <!-- Place this tag where you want the button to render. -->
+    <a class="github-button" href="https://github.com/fabricjs/fabric.js" data-size="large" data-show-count="true" aria-label="Star fabricjs/fabric.js on GitHub">Star</a>
+  </li>
+  <li class="twitter secondary">
+    <a href="https://twitter.com/fabricjs" class="twitter-follow-button" data-show-count="true">Follow @fabricjs</a>
+  </li>
+  <li id="carbonads-container">
+    <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CKYIEK7E&placement=fabricjscom" id="_carbonads_js"></script>
+  </li>
+</ul>
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<script>
+(function() {
+
+  if (document.location.hostname !== 'localhost') {
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+  }
+})();
+(function() {
+  window.addEventListener('load', function() {
+    setTimeout(function() {
+      var ads = document.getElementById('carbonads');
+      var ads2 = document.getElementById('carbonads-container');
+      var style = window.getComputedStyle(ads2);
+      if (!ads || style.display === 'none') {
+        var nag = document.getElementById('nag');
+        if (!nag) {
+          var newDiv = document.createElement('div');
+          newDiv.id = 'gentle-reminder';
+          newDiv.className = 'reminder';
+          newDiv.innerHTML = 'Do you like fabricJS?<br />If you want it continue running and you do not mind tech related ads, please allow this website in your adblocker.<br /><br />❤️ Thank You!';
+          document.body.appendChild(newDiv)
+        }
+      }
+    }, 4000);
+  });
+})();
+</script>

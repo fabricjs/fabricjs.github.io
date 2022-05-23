@@ -1,0 +1,21 @@
+---
+layout: default
+title: Demos
+---
+
+<ul id="demos">
+  <li>
+    <a href="http://challengepost.com/software/built-with/fabric-js">
+      <img src="/site_assets/challengepost.png">
+      <span class="caption">ChallangePost gallery</span>
+    </a>
+  </li>
+{% for post in site.categories.demos %}
+  <li>
+    <a href="{{ post.url }}">
+      <img src="/site_assets/{{ post.url }}.png" style="min-height: 150px">
+      <span class="caption">{{ post.title }}</span>
+    </a>
+  </li>
+{% endfor %}
+</ul>

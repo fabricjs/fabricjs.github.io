@@ -1,0 +1,122 @@
+---
+layout: articlead
+title: Fabric.js breaking changes - Part 2
+---
+
+<style>h2 { margin-bottom: 15px } h3 { margin-bottom: 10px; } h4 { margin-bottom: 7px; } </style>
+
+<div class="container" style="margin:30px auto">
+  <h2 id="introduction_to_fabricjs">Fabric.js V 2.0 list of breaking changes - Part 2</h2>
+  <h3>Selection handling</h3>
+  <p>
+    With the `Canvas` class fabric.js can handle a layer of selection / interaction.<br />
+    Fabric can handle also multiple selection using a special class called `ActiveSelection`.<br />
+    When a mouse interaction is performed by a user that utilize an app based on fabricJS, there are
+    some built in selection functionalities.<br />
+    What follow is a default overview of the selection process:<br />
+     - Left click on an object selects it.<br />
+     - Click and drag on the canvas creates a rectangular selection. All the bounding boxes intersecting with
+     this rectangle will be selected on mouse up creating a multi selection.<br />
+     - Clicking on objects with shift selects it or add it to the current selection, changing from a selected
+     object to a multi selection of 2 objects.<br />
+  </p>
+  <h4>How this is handled internally</h4>
+  <p>
+    An object is selected and behaves as selected when is on a canvas and is referenced on that canvas <code>_activeObject</code>
+    property.<br />
+    A multi selection is represented by an <code>ActiveSelection</code> object, that is a special class derived from the <code>Group</code>
+    class, referenced in the <code>_activeObject</code> property of the canvas.<br />
+    There is one active object at time and it is either an object or a multi selection.
+  </p>
+  <h4>Modify the selection programatically</h4>
+  <p>
+    Developers can create/destroy or change selection, outside of user mouse interactions in the following ways:<br />
+    <code>canvas.setActiveObject(object)</code> sets the object passed as argument as the active one. The current selected
+    object gets discarded.<br />
+    <code>canvas.discardActiveObject()</code> Remove the current selection.<br />
+    <code>canvas.getActiveObject()</code> Returns a reference to the current active object.<br />
+    <code>canvas.getActiveObjects()</code> Returns an array containing a reference to the current selected objects, one or many.<br />
+    None of this methods render the canvas again, so you have to call <code>canvas.requestRenderAll</code> after them to see the changes.
+    <code>canvas._setActiveObject()</code> and <code>canvas._discardActiveObject()</code> are two private method used from the non private ones
+    to make the selection job. They do not contain the event firing code, and they are not chainable. if you need to handle a selection process
+    but you do not want to fire the side effects you inserted in the selection events, you may try to use those.
+  </p>
+  <h4>Create a multi selection</h4>
+<pre>// rect1 and rect2 are 2 object on a canvas, canvas is the canvas instance
+var selection = new fabric.ActiveSelection([rect1, rect2], {
+  canvas: canvas
+});
+canvas.setActiveObject(selection);</pre>
+<h4>Add an object to a multi selection</h4>
+<pre>// rect1 and rect2 are 2 object on a canvas, grouped in a multi selection
+// rect3 is another object on the canvas
+var selection = canvas.getActiveObject();
+if (selection.type === 'activeSelection') {
+  selection.addWithUpdate(rect3)
+}</pre>
+<p>So an object that is on a canvas can be an activeObject. Many object in a canvas can be grouped in an
+  ActiveSelection object and behave like a multi seleciton. The objects inside the multi selection are still
+  direct children of the canvas, and the ActiveSelection object, even if referenced in the `_activeObject` property
+  of the canvas, <strong>it is not included in the canvas objects</strong>. canvas.getObjects() will not contain
+  the ActiveSelection object. The active selection has a mandatory canvas property that has to be the actual canvas
+  or it will not work.<br/>Future non breaking updates to fabric may simplify this aspect, changing the canvas property
+  of the multi selection implictly in some method.<br />
+  A take away point is that the ActiveSelection is a service class that behaves in some predetermined way and that has little
+  space for customization.
+</p>
+<h4>IMPORTANT</h4>
+<p>
+  discardActiveObject on a multi selection triggers lot of side effects.
+  If you are planning to do something with objects inside an active selection and reuse them, and then trash the activeSelection,
+  <strong>first discardActiveObject</strong>, then do what you want to do with the objects, then in case select a new object.<br />
+</p>
+<h4>Removed methods</h4>
+<p>
+  The following methods are no more available since the introduction of ActiveSelection:<br />
+</p>
+<pre>setActiveGroup(group)
+getActiveGroup();
+deactivateAll();
+discardActiveGroup();
+deactivateAllWithDispatch();</pre>
+<h3>How to react to user selection</h3>
+<p>Regarding selections fabric provides callbacks and events.<br />
+Events fired by objects are:
+<pre>selected
+deselected</pre>
+Events fired by canvas are:
+<pre>selection:created
+selection:updated
+before:selection:cleared
+selection:cleared
+// deprecated
+object:selected
+</pre>
+For each object are available 2 callbacks
+<pre>onDeselect
+onSelect</pre>
+Those callbacks are empty and meant to be overridden, and should not used to execute much logic,
+but just to return a boolean to cancel the current process depending on dynamic conditions for
+which mutating the properties of objects like selectable, evented or others, is not comfortable or
+anyway brings to weird code paths.
+</p>
+<h4>Firing events</h4>
+<p>Those events are meant to intercept user interaction with the selection of fabric.<br/>
+You should expect the canvas to fire <code>selection:created</code> every time the user pass from a situation
+of no selection to something selected. Each object involved in the seleciton process, one or more, by click or <body>
+click and drag, will fire the <code>selected</code> event.<br />
+When <code>selection:created</code> fires, it receives as first argument of the callback an object that contains <thead>
+property 'selected', with an array of all the selected fabric instances.<br />
+When an user remove or add an object from the multiselection or switch from single to multi selection, or simply move the selection
+from the object A to the object B, the event <code>selection:updated</code> fires. The event receives as first argument of the
+callback an object that contains both 'selected' and 'deselected'
+property contaning an array of the objects that entered or exited the selection status. Each object involved in the process fires its
+own single event.<br />
+Finally when an user destroy a multiple selection or deselect an object, the event <code>selection:cleared</code> fires, getting in <thead>
+arguments an object with the 'deselected' property. <br />
+The event <code>object:selected</code> is considered deprecated and will be removed in the next major version of fabricjs.
+<h4>Callbacks on multiple selection</h4>
+The callbacks onSelect and onDeselect are not available yet on the click and drag selection or on the shift click selection and will
+be added as a feature as soon as branch 2.0 is ready.
+</p>
+</div>
