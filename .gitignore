@@ -1,8 +1,6 @@
 # Dependencies
 /node_modules
 
-migration/script/node_modules
-migration/old-docs/fabricjs.com/.idea
 # Production
 /build
 
@@ -19,6 +17,6 @@ migration/old-docs/fabricjs.com/.idea
 
 npm-debug.log*
 yarn-debug.log*
-yarn-error.log*
+yarn-error.log*ove
 *.iml
 .idea
