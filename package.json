@@ -10,7 +10,7 @@
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
-    "checkout-commit": "git checkout doc-pages && mv build/* . && git add . && git commit -am 'auto build' && git push",
+    "checkout-commit": "git checkout doc-pages && rsync --delete -r build/* . && git add . && git commit -am 'auto build' && git push",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids"
   },
