@@ -22,6 +22,7 @@ jobs:
     - run: npm ci
     - run: npm run build
     - uses: actions/checkout@v3
+      if: ${{ always() }}
       with:
         ref: doc-pages
     - run: npm run checkout-commit
