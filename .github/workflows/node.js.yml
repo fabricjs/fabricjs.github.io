@@ -21,5 +21,5 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm run build
-    - run: npm checkout-commit
+    - run: npm run checkout-commit
       if: ${{ always() }}
