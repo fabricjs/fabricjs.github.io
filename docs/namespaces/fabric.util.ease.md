@@ -1,0 +1,251 @@
+# ease
+
+## [fabric](fabric.html)[.util](fabric.util.html).ease Easing functions See [Easing Equations by Robert Penner](http://gizma.com/easing/)
+
+Source:
+
+* [fabric.js](fabric.js.html), [line 4206](fabric.js.html#line4206)
+
+### Methods
+
+#### [(static)easeInBack()](#.easeInBack)
+
+Backwards easing in
+
+Source:
+
+* [fabric.js](fabric.js.html), [line 4135](fabric.js.html#line4135)
+
+#### [(static)easeInBounce()](#.easeInBounce)
+
+Bouncing easing in
+
+Source:
+
+* [fabric.js](fabric.js.html), [line 4172](fabric.js.html#line4172)
+
+#### [(static)easeInCirc()](#.easeInCirc)
+
+Circular easing in
+
+Source:
+
+* [fabric.js](fabric.js.html), [line 4043](fabric.js.html#line4043)
+
+#### [(static)easeInCubic()](#.easeInCubic)
+
+Cubic easing in
+
+Source:
+
+* [fabric.js](fabric.js.html), [line 4245](fabric.js.html#line4245)
+
+#### [(static)easeInElastic()](#.easeInElastic)
+
+Elastic easing in
+
+Source:
+
+* [fabric.js](fabric.js.html), [line 4071](fabric.js.html#line4071)
+
+#### [(static)easeInExpo()](#.easeInExpo)
+
+Exponential easing in
+
+Source:
+
+* [fabric.js](fabric.js.html), [line 4009](fabric.js.html#line4009)
+
+#### [(static)easeInOutBack()](#.easeInOutBack)
+
+Backwards easing in and out
+
+Source:
+
+* [fabric.js](fabric.js.html), [line 4157](fabric.js.html#line4157)
+
+#### [(static)easeInOutBounce()](#.easeInOutBounce)
+
+Bouncing easing in and out
+
+Source:
+
+* [fabric.js](fabric.js.html), [line 4199](fabric.js.html#line4199)
+
+#### [(static)easeInOutCirc()](#.easeInOutCirc)
+
+Circular easing in and out
+
+Source:
+
+* [fabric.js](fabric.js.html), [line 4059](fabric.js.html#line4059)
+
+#### [(static)easeInOutCubic()](#.easeInOutCubic)
+
+Cubic easing in and out
+
+Source:
+
+* [fabric.js](fabric.js.html), [line 3917](fabric.js.html#line3917)
+
+#### [(static)easeInOutElastic()](#.easeInOutElastic)
+
+Elastic easing in and out
+
+Source:
+
+* [fabric.js](fabric.js.html), [line 4111](fabric.js.html#line4111)
+
+#### [(static)easeInOutExpo()](#.easeInOutExpo)
+
+Exponential easing in and out
+
+Source:
+
+* [fabric.js](fabric.js.html), [line 4025](fabric.js.html#line4025)
+
+#### [(static)easeInOutQuad()](#.easeInOutQuad)
+
+Quadratic easing in and out
+
+Source:
+
+* [fabric.js](fabric.js.html), [line 4233](fabric.js.html#line4233)
+
+#### [(static)easeInOutQuart()](#.easeInOutQuart)
+
+Quartic easing in and out
+
+Source:
+
+* [fabric.js](fabric.js.html), [line 3945](fabric.js.html#line3945)
+
+#### [(static)easeInOutQuint()](#.easeInOutQuint)
+
+Quintic easing in and out
+
+Source:
+
+* [fabric.js](fabric.js.html), [line 3973](fabric.js.html#line3973)
+
+#### [(static)easeInOutSine()](#.easeInOutSine)
+
+Sinusoidal easing in and out
+
+Source:
+
+* [fabric.js](fabric.js.html), [line 4001](fabric.js.html#line4001)
+
+#### [(static)easeInQuad()](#.easeInQuad)
+
+Quadratic easing in
+
+Source:
+
+* [fabric.js](fabric.js.html), [line 4217](fabric.js.html#line4217)
+
+#### [(static)easeInQuart()](#.easeInQuart)
+
+Quartic easing in
+
+Source:
+
+* [fabric.js](fabric.js.html), [line 3929](fabric.js.html#line3929)
+
+#### [(static)easeInQuint()](#.easeInQuint)
+
+Quintic easing in
+
+Source:
+
+* [fabric.js](fabric.js.html), [line 3957](fabric.js.html#line3957)
+
+#### [(static)easeInSine()](#.easeInSine)
+
+Sinusoidal easing in
+
+Source:
+
+* [fabric.js](fabric.js.html), [line 3985](fabric.js.html#line3985)
+
+#### [(static)easeOutBack()](#.easeOutBack)
+
+Backwards easing out
+
+Source:
+
+* [fabric.js](fabric.js.html), [line 4146](fabric.js.html#line4146)
+
+#### [(static)easeOutBounce()](#.easeOutBounce)
+
+Bouncing easing out
+
+Source:
+
+* [fabric.js](fabric.js.html), [line 4180](fabric.js.html#line4180)
+
+#### [(static)easeOutCirc()](#.easeOutCirc)
+
+Circular easing out
+
+Source:
+
+* [fabric.js](fabric.js.html), [line 4051](fabric.js.html#line4051)
+
+#### [(static)easeOutCubic()](#.easeOutCubic)
+
+Cubic easing out
+
+Source:
+
+* [fabric.js](fabric.js.html), [line 3909](fabric.js.html#line3909)
+
+#### [(static)easeOutElastic()](#.easeOutElastic)
+
+Elastic easing out
+
+Source:
+
+* [fabric.js](fabric.js.html), [line 4091](fabric.js.html#line4091)
+
+#### [(static)easeOutExpo()](#.easeOutExpo)
+
+Exponential easing out
+
+Source:
+
+* [fabric.js](fabric.js.html), [line 4017](fabric.js.html#line4017)
+
+#### [(static)easeOutQuad()](#.easeOutQuad)
+
+Quadratic easing out
+
+Source:
+
+* [fabric.js](fabric.js.html), [line 4225](fabric.js.html#line4225)
+
+#### [(static)easeOutQuart()](#.easeOutQuart)
+
+Quartic easing out
+
+Source:
+
+* [fabric.js](fabric.js.html), [line 3937](fabric.js.html#line3937)
+
+#### [(static)easeOutQuint()](#.easeOutQuint)
+
+Quintic easing out
+
+Source:
+
+* [fabric.js](fabric.js.html), [line 3965](fabric.js.html#line3965)
+
+#### [(static)easeOutSine()](#.easeOutSine)
+
+Sinusoidal easing out
+
+Source:
+
+* [fabric.js](fabric.js.html), [line 3993](fabric.js.html#line3993)
+labelHide inherited properties and method from the page/label  
+Documentation generated by [JSDoc 3.6.7](https://github.com/jsdoc3/jsdoc) on Sun Feb 06 2022 00:57:18 GMT+0100 (Central European Standard Time)
