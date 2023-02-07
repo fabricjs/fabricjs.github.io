@@ -65,7 +65,7 @@ export default function Docs({ pageContext, data }) {
 }
 
 export const query = graphql`
-  query {
+  query docsQuery {
     introPage : markdownRemark(fileAbsolutePath: {regex: "//docs/introduction.md$/"}) {
       html
       frontmatter {

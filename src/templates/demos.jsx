@@ -44,30 +44,30 @@ export default function Demos({ data }) {
 // note that we ignore fetching sub-posts in this query coz we do not want to list sub-posts when listing projects
 // Sub-posts will b accessible from the page of the relevant post they belong to
 export const query = graphql`
-  query{
-    allDemoPagesMD: allMarkdownRemark(
-      filter: {fileAbsolutePath: {regex: "//demo/[a-zA-Z0-9-]+/index.md$/"}},
-      sort: {order: ASC, fields: frontmatter___title}
-    ) {
-      totalCount
-      demoPages: nodes {
-        frontmatter {
-          title
-          description
-          thumbnail {
-            childImageSharp {
-              fluid(maxWidth: 400) {
-                ...GatsbyImageSharpFluid
-              }
+query allDemoPagesMD {
+  allDemoPagesMD: allMarkdownRemark(
+    filter: {fileAbsolutePath: {regex: "//demo/[a-zA-Z0-9-]+/index.md$/"}}
+    sort: {frontmatter: {title: ASC}}
+  ) {
+    totalCount
+    demoPages: nodes {
+      frontmatter {
+        title
+        description
+        thumbnail {
+          childImageSharp {
+            fluid(maxWidth: 400) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
-        fields {
-          slug
-        }
+      }
+      fields {
+        slug
       }
     }
   }
+}
 `;
 
 Demos.propTypes = {
