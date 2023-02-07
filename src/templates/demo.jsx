@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql, Link } from 'gatsby';
+import PropTypes from 'prop-types';
 import LayoutCodepen from '../components/layoutFullWidthWithCodepen';
 import GithubEditLink from '../components/githubEditLink/githubEditLink';
 import PrevNextLinks from '../components/prevNextPostLinks/prevNextLinks';
@@ -41,3 +42,20 @@ export const query = graphql`
     }
   }
 `;
+
+Demo.propTypes = {
+  data: PropTypes.shape({
+    // eslint-disable-next-line react/forbid-prop-types
+    demoPage: PropTypes.object,
+  }).isRequired,
+  pageContext: PropTypes.shape({
+    prev: PropTypes.shape({
+      title: PropTypes.string,
+      slug: PropTypes.string,
+    }),
+    next: PropTypes.shape({
+      title: PropTypes.string,
+      slug: PropTypes.string,
+    }),
+  }).isRequired,
+};
