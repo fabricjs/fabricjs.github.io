@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import GatsbyImage from 'gatsby-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import PropTypes from 'prop-types';
 import Card from './card';
 import './thumbnailCard.css';

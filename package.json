@@ -1,61 +1,35 @@
 {
-  "name": "fabricjs-website",
+  "name": "fabric-gatsby5",
+  "version": "1.0.0",
   "private": true,
-  "description": "Website for the FabricJS HTML5 canvas library",
-  "version": "0.1.0",
-  "license": "MIT",
+  "description": "fabric-gatsby5",
+  "author": "Andrea Bogazzi",
   "keywords": [
-    "fabricjs"
+    "gatsby"
   ],
   "scripts": {
-    "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "lint": "eslint \"src/**/*.+(js|jsx)\"",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "deploy": "gh-pages -d public -r https://$GITHUB_TOKEN@github.com/fabricjs/fabricjs.github.io.git -b master"
+    "clean": "gatsby clean"
   },
   "dependencies": {
-    "@reach/router": "^1.3.3",
-    "gatsby": "^2.19.7",
-    "gatsby-image": "^2.3.1",
-    "gatsby-plugin-react-helmet": "^3.1.22",
-    "gatsby-plugin-sharp": "^2.5.3",
-    "gatsby-remark-autolink-headers": "^2.1.24",
-    "gatsby-remark-images": "^3.2.1",
-    "gatsby-remark-prismjs": "^3.5.4",
-    "gatsby-source-filesystem": "^2.1.48",
-    "gatsby-transformer-remark": "^2.6.53",
-    "gatsby-transformer-sharp": "^2.4.3",
-    "node-fetch": "^2.6.0",
-    "prismjs": "^1.20.0",
-    "prop-types": "^15.7.2",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-helmet": "^5.2.1",
-    "react-load-script": "0.0.6"
-  },
-  "devDependencies": {
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.3.1",
-    "eslint-config-airbnb": "^18.2.0",
-    "eslint-loader": "^4.0.2",
-    "eslint-plugin-import": "^2.21.2",
-    "eslint-plugin-jsx-a11y": "^6.3.1",
-    "eslint-plugin-react": "^7.20.0",
-    "gatsby-plugin-eslint": "^2.0.8",
-    "gh-pages": "^3.0.0",
-    "prettier": "^1.19.1"
-  },
-  "homepage": "https://github.com/fabricjs/fabricjs-website",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/fabricjs/fabricjs-website"
-  },
-  "bugs": {
-    "url": "https://github.com/fabricjs/fabricjs-website/issues"
+    "@mdx-js/react": "^2.2.1",
+    "gatsby": "^5.5.0",
+    "gatsby-plugin-image": "^3.5.0",
+    "gatsby-plugin-mdx": "^5.5.0",
+    "gatsby-plugin-react-helmet": "^6.5.0",
+    "gatsby-plugin-sharp": "^5.5.0",
+    "gatsby-remark-autolink-headers": "^6.5.0",
+    "gatsby-remark-images": "^7.5.0",
+    "gatsby-remark-prismjs": "^7.5.0",
+    "gatsby-source-filesystem": "^5.5.0",
+    "gatsby-transformer-remark": "^6.5.0",
+    "gatsby-transformer-sharp": "^5.5.0",
+    "prismjs": "^1.29.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-load-script": "^0.0.6"
   }
 }

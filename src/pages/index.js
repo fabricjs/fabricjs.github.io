@@ -49,8 +49,8 @@ export default function HomePage({ data }) {
 export const query = graphql`
   query demosQuery {
     demoPagesMD: allMarkdownRemark(
-      filter: {fileAbsolutePath: {regex: "//demo/[a-zA-Z0-9-]+/index.md$/"}},
-      sort: {order: DESC, fields: frontmatter___date},
+      filter: {fileAbsolutePath: {regex: "//demo/[a-zA-Z0-9-]+/index.md$/"}}
+      sort: {frontmatter: {date: DESC}}
       limit: 5
     ) {
       totalCount

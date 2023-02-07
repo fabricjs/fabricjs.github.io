@@ -96,13 +96,11 @@ exports.createPages = async ({ graphql, actions }) => {
 
   /// /fetch the 'demo' md files and create pages for them
   const demoPagesQueryResult = await graphql(`
-    query {
+    query demoPagesQueryResult {
       allMarkdownRemark(
-        filter: {
-          fileAbsolutePath: { regex: "//demo/[a-zA-Z0-9-]+/index.md$/" }
-          frontmatter: { title: { regex: "/[a-zA-Z0-9]+$/" } }
-        }
-        sort: { order: ASC, fields: frontmatter___title }
+        filter: {fileAbsolutePath: {regex: "//demo/[a-zA-Z0-9-]+/index.md$/"},
+    frontmatter: {title: {regex: "/[a-zA-Z0-9]+$/"}}}
+        sort: {frontmatter: {title: ASC}}
       ) {
         edges {
           previous {
@@ -170,13 +168,11 @@ exports.createPages = async ({ graphql, actions }) => {
 
   /// /fetch the 'doc' md files and create pages for them
   const docPagesQueryResult = await graphql(`
-    query {
+    query docPagesQueryResult {
       allDocPagesMD: allMarkdownRemark(
-        filter: {
-          fileAbsolutePath: { regex: "//docs/[a-zA-Z0-9-]+/index.md$/" }
-          frontmatter: { title: { regex: "/[a-zA-Z0-9]+$/" } }
-        }
-        sort: { order: ASC, fields: frontmatter___date }
+        filter: {fileAbsolutePath: {regex: "//docs/[a-zA-Z0-9-]+/index.md$/"},
+    frontmatter: {title: {regex: "/[a-zA-Z0-9]+$/"}}}
+        sort: {frontmatter: {date: ASC}}
       ) {
         docPages: nodes {
           frontmatter {
