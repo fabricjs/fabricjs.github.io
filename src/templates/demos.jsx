@@ -5,13 +5,13 @@ import PropTypes from 'prop-types';
 import Layout from '../components/layoutFullWidth';
 import ThumbnailList from '../components/list/thumbnailList';
 import ThumbnailCard from '../components/card/thumbnailCard';
-import Seo from '../components/seo';
+export { Head } from '../components/seo';
 
 export default function Demos({ data }) {
   const pageDesc = 'Awesome demos portraying various interactive aspects and capabilities of FabricJS';
   return (
     <Layout darkBg>
-      <Seo title="FabricJS demos" />
+      {/* <Seo title="FabricJS demos" /> */}
       <h1>FabricJS Demos</h1>
       <p style={{ 'text-align': 'center' }}>{`${data.allDemoPagesMD.totalCount} ${pageDesc}`}</p>
       <ThumbnailList>
@@ -23,7 +23,7 @@ export default function Demos({ data }) {
               linkToUrlSlug={fields.slug}
               buttonText="View demo"
               gatsbyImgFluid={frontmatter.thumbnail ? (
-                frontmatter.thumbnail.childImageSharp.fluid
+                frontmatter.thumbnail.childImageSharp.gatsbyImageData
               ) : (
                 null
               )}
@@ -43,8 +43,7 @@ export default function Demos({ data }) {
 // eslint-disable-next-line max-len
 // note that we ignore fetching sub-posts in this query coz we do not want to list sub-posts when listing projects
 // Sub-posts will b accessible from the page of the relevant post they belong to
-export const query = graphql`
-query allDemoPagesMD {
+export const query = graphql`query allDemoPagesMD {
   allDemoPagesMD: allMarkdownRemark(
     filter: {fileAbsolutePath: {regex: "//demo/[a-zA-Z0-9-]+/index.md$/"}}
     sort: {frontmatter: {title: ASC}}
@@ -56,9 +55,7 @@ query allDemoPagesMD {
         description
         thumbnail {
           childImageSharp {
-            fluid(maxWidth: 400) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(width: 400, layout: CONSTRAINED)
           }
         }
       }
@@ -67,8 +64,7 @@ query allDemoPagesMD {
       }
     }
   }
-}
-`;
+}`;
 
 Demos.propTypes = {
   data: PropTypes.shape({

@@ -27,7 +27,7 @@ export default function HomePage({ data }) {
               linkToUrlSlug={fields.slug}
               buttonText="View demo"
               gatsbyImgFluid={frontmatter.thumbnail ? (
-                frontmatter.thumbnail.childImageSharp.fluid
+                frontmatter.thumbnail.childImageSharp.gatsbyImageData
               ) : (
                 null
               )}
@@ -46,33 +46,29 @@ export default function HomePage({ data }) {
   );
 }
 
-export const query = graphql`
-  query demosQuery {
-    demoPagesMD: allMarkdownRemark(
-      filter: {fileAbsolutePath: {regex: "//demo/[a-zA-Z0-9-]+/index.md$/"}}
-      sort: {frontmatter: {date: DESC}}
-      limit: 5
-    ) {
-      totalCount
-      demoPages: nodes {
-        frontmatter {
-          title
-          description
-          thumbnail {
-            childImageSharp {
-              fluid(maxWidth: 400) {
-                ...GatsbyImageSharpFluid
-              }
-            }
+export const query = graphql`query demosQuery {
+  demoPagesMD: allMarkdownRemark(
+    filter: {fileAbsolutePath: {regex: "//demo/[a-zA-Z0-9-]+/index.md$/"}}
+    sort: {frontmatter: {date: DESC}}
+    limit: 5
+  ) {
+    totalCount
+    demoPages: nodes {
+      frontmatter {
+        title
+        description
+        thumbnail {
+          childImageSharp {
+            gatsbyImageData(width: 400, layout: CONSTRAINED)
           }
         }
-        fields {
-          slug
-        }
+      }
+      fields {
+        slug
       }
     }
   }
-`;
+}`;
 
 HomePage.propTypes = {
   data: PropTypes.shape({

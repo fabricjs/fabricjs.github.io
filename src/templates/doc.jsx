@@ -5,7 +5,7 @@ import Layout from '../components/layout';
 import TableOfContents from '../components/tableOfContents/tableOfContents';
 import GithubEditLink from '../components/githubEditLink/githubEditLink';
 import PrevNextLinks from '../components/prevNextPostLinks/prevNextLinks';
-import Seo from '../components/seo';
+export { Head } from '../components/seo';
 
 export default function Doc({ pageContext, data }) {
   const {
@@ -43,7 +43,7 @@ export default function Doc({ pageContext, data }) {
       </>
     )}
     >
-      <Seo title={frontmatter.title} />
+      {/* <Seo title={frontmatter.title} /> */}
       <nav id="breadcrumb-nav" aria-label="breadcrumb">
         <Link to="/docs">Guide docs</Link>
         {' '}

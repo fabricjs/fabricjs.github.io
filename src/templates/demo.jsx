@@ -4,13 +4,13 @@ import PropTypes from 'prop-types';
 import LayoutCodepen from '../components/layoutFullWidthWithCodepen';
 import GithubEditLink from '../components/githubEditLink/githubEditLink';
 import PrevNextLinks from '../components/prevNextPostLinks/prevNextLinks';
-import Seo from '../components/seo';
+export { Head } from '../components/seo';
 
 export default function Demo({ data, pageContext }) {
   const { frontmatter, html, mdFile } = data.demoPage;
   return (
     <LayoutCodepen>
-      <Seo title={frontmatter.title} />
+      {/* <Seo title={frontmatter.title} /> */}
       <nav id="breadcrumb-nav" aria-label="breadcrumb">
         <Link to="/demos">Demos</Link>
         {' '}

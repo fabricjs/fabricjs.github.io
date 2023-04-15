@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { GatsbyImage } from 'gatsby-plugin-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 import PropTypes from 'prop-types';
 import Card from './card';
 import './thumbnailCard.css';
@@ -17,8 +17,8 @@ export default function ThumbnailCard({
         onDragStart={(e) => { e.preventDefault(); return false; }}
       >
         <span className="thumbCntnr">
-          {gatsbyImgFluid ? (
-            <GatsbyImage title={title} alt={title} fluid={gatsbyImgFluid} />
+          {gatsbyImgFluid ? console.log(gatsbyImgFluid) || (
+            <GatsbyImage image={gatsbyImgFluid} title={title} alt={title} />
           ) : (
           // if featured image exists, generate a thumbnail from it
             <img alt="For dummy purpose only" src="https://source.unsplash.com/random/200x200" />
