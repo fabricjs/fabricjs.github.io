@@ -17,7 +17,7 @@ export default function ThumbnailCard({
         onDragStart={(e) => { e.preventDefault(); return false; }}
       >
         <span className="thumbCntnr">
-          {gatsbyImgFluid ? console.log(gatsbyImgFluid) || (
+          {gatsbyImgFluid ? (
             <GatsbyImage image={gatsbyImgFluid} title={title} alt={title} />
           ) : (
           // if featured image exists, generate a thumbnail from it

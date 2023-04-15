@@ -2,12 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 
-export function Head({
-  pageContext,
+export default function Head({
   title: propTitle, description: propDescription, path, image: propImg,
 }) {
-
-  console.log({ pageContext })
 
   const data = useStaticQuery(graphql`
     {
@@ -62,14 +59,14 @@ export function Head({
   );
 }
 
-Seo.propTypes = {
+Head.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
   path: PropTypes.string,
   image: PropTypes.string,
 };
 
-Seo.defaultProps = {
+Head.defaultProps = {
   title: 'FabricJS',
   description: 'FabricJS is a HTML5 canvas library offering an interactive object model for drawing graphics while also being able to parse SVG',
   path: null,
