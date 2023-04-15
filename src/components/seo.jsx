@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
+import { Helmet } from 'react-helmet';
 
-export default function Head({
+export default function Seo({
   title: propTitle, description: propDescription, path, image: propImg,
 }) {
-
   const data = useStaticQuery(graphql`
     {
       site {
@@ -35,7 +35,7 @@ export default function Head({
   const image = propImg ? new URL(propImg, defaults.baseUrl) : false;
 
   return (
-    <>
+    <Helmet>
       <title>{title}</title>
       <link rel="canonical" href={url} />
       <meta name="description" content={description} />
@@ -55,18 +55,18 @@ export default function Head({
       {image && <meta name="twitter:image" content={image} />}
       */
       }
-    </>
+    </Helmet>
   );
 }
 
-Head.propTypes = {
+Seo.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
   path: PropTypes.string,
   image: PropTypes.string,
 };
 
-Head.defaultProps = {
+Seo.defaultProps = {
   title: 'FabricJS',
   description: 'FabricJS is a HTML5 canvas library offering an interactive object model for drawing graphics while also being able to parse SVG',
   path: null,

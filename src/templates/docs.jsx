@@ -5,7 +5,7 @@ import Layout from '../components/layout';
 import TableOfContents from '../components/tableOfContents/tableOfContents';
 import GithubEditLink from '../components/githubEditLink/githubEditLink';
 import PrevNextLinks from '../components/prevNextPostLinks/prevNextLinks';
-export { Head } from '../components/seo';
+import Seo from '../components/seo';
 
 export default function Docs({ pageContext, data }) {
   const {
@@ -42,7 +42,7 @@ export default function Docs({ pageContext, data }) {
       </>
     )}
     >
-      {/* <Seo title={frontmatter.title} /> */}
+      <Seo title={frontmatter.title} />
       <nav id="breadcrumb-nav" aria-label="breadcrumb">
         <Link to="/">FabricJS</Link>
         {' '}

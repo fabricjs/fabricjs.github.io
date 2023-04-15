@@ -1,17 +1,16 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-// import GatsbyImage from "gatsby-image";
 import PropTypes from 'prop-types';
 import Layout from '../components/layoutFullWidth';
 import ThumbnailList from '../components/list/thumbnailList';
 import ThumbnailCard from '../components/card/thumbnailCard';
-export { Head } from '../components/seo';
+import Seo from '../components/seo';
 
 export default function Demos({ data }) {
   const pageDesc = 'Awesome demos portraying various interactive aspects and capabilities of FabricJS';
   return (
     <Layout darkBg>
-      {/* <Seo title="FabricJS demos" /> */}
+      <Seo title="FabricJS demos" />
       <h1>FabricJS Demos</h1>
       <p style={{ 'text-align': 'center' }}>{`${data.allDemoPagesMD.totalCount} ${pageDesc}`}</p>
       <ThumbnailList>

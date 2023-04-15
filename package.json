@@ -20,6 +20,7 @@
     "gatsby": "5.8.1",
     "gatsby-plugin-image": "^3.8.0",
     "gatsby-plugin-mdx": "5.8.0",
+    "gatsby-plugin-react-helmet": "^6.8.0",
     "gatsby-plugin-sharp": "5.8.1",
     "gatsby-remark-autolink-headers": "^6.5.0",
     "gatsby-remark-images": "^7.5.0",
@@ -30,6 +31,7 @@
     "prismjs": "^1.29.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
     "react-load-script": "^0.0.6"
   },
   "devDependencies": {

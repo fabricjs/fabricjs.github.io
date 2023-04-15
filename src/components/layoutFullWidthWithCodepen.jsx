@@ -3,7 +3,6 @@ import Script from 'react-load-script';
 import PropTypes from 'prop-types';
 import Header from './header/header';
 import Footer from './footer/footer';
-// import Seo from "./seo";
 
 function escapeHtml(unsafe) {
   return unsafe
@@ -28,7 +27,6 @@ export default function Layout({ children, darkBg }) {
   return (
     <>
       <Script onLoad={codepenLoaded} url="https://static.codepen.io/assets/embed/ei.js" />
-      {/* <Seo></Seo> */}
       <Header />
       <main className={darkBg && 'darkBg'}>
         {children}

@@ -3,12 +3,10 @@ import PropTypes from 'prop-types';
 import Header from './header/header';
 import Footer from './footer/footer';
 import SidebarLeft from './sidebarLeft/sidebarLeft';
-// import Seo from "./seo";
 
 export default function Layout({ children, leftSidebar }) {
   return (
     <>
-      {/* <Seo></Seo> */}
       <Header />
       {leftSidebar && typeof (leftSidebar) === 'function' && (
         <SidebarLeft>
