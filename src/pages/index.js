@@ -6,12 +6,14 @@ import FeaturedBanner from '../components/featuredBanner/featuredBanner';
 import HorizontalPanList from '../components/horizontalPanList/horizontalPanList';
 import ThumbnailCard from '../components/card/thumbnailCard';
 import ContributorsList from '../components/contributorsList/contributorsList';
+import Features from '../components/Features/Features';
 
 export default function HomePage({ data }) {
   const { demoPages, totalCount } = data.demoPagesMD;
   return (
     <Layout>
       <FeaturedBanner />
+      <Features />
       <section>
         <h2>Demos</h2>
         <span>{`${totalCount} demos showcasing varied capabilities of FabricJS`}</span>
