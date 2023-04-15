@@ -13,7 +13,8 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "gh-pages -d public -r https://$GITHUB_TOKEN@github.com/fabricjs/fabricjs.github.io.git -b master"
+    "deploy": "gh-pages -d public -r https://$GITHUB_TOKEN@github.com/fabricjs/fabricjs.github.io.git -b master",
+    "lint": "eslint --config .eslintrc.js src/**/*.js*"
   },
   "dependencies": {
     "@mdx-js/react": "^2.2.1",
@@ -35,7 +36,10 @@
     "react-load-script": "^0.0.6"
   },
   "devDependencies": {
+    "prettier": "^2.8.7",
+    "eslint-config-prettier": "^8.8.0",
     "eslint": "^8.38.0",
+    "eslint-plugin-react": "^7.32.2",
     "gh-pages": "^5.0.0"
   }
 }
