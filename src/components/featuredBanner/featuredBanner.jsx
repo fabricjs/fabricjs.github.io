@@ -1,6 +1,7 @@
 import React from 'react'
 // import PropTypes from 'prop-types';
 import './featuredBanner.css'
+import { CoolCanvasBanner } from '../CoolCanvasBanner/CoolCanvasBanner'
 
 export default function FeaturedBanner() {
   return (
@@ -13,6 +14,7 @@ export default function FeaturedBanner() {
         also provide serialization and has SVG-to-canvas (and canvas-to-SVG)
         parser
       </p>
+      <CoolCanvasBanner />
     </section>
   )
 }
