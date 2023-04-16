@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Canvas } from 'fabric';
-import './CoolCanvasBanner.css';
+import './coolCanvasBanner.css';
 
 const useCanvasInit = () => {
   useEffect(() => {
