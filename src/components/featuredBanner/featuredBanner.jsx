@@ -6,7 +6,7 @@ export default function FeaturedBanner() {
   return (
     <section id="featuredBanner">
       <h1>
-        Fabric.js is a powerful and simple Javascript HTML5 canvas library
+        Fabric.js is a powerful and simple Javascript HTML5 canvas library LOL
       </h1>
       <p>
         Fabric provides interactive object model on top of canvas element Fabric

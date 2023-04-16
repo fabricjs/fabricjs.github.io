@@ -12,7 +12,7 @@ const TeamPage = () => (
     <h1>Fabric.js Team</h1>
     <TeamMember name="Andrea Bogazzi" imgSrc={andrea}>
       <p>
-        Andrea was born in 1979, Rome Italy.
+        
         <br />
         Since 2005 he is working as a software developer.
         <br />
