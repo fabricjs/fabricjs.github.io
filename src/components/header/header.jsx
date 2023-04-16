@@ -16,6 +16,7 @@ export default function Header() {
             <li><Link activeClassName="active" to="/docs">Docs</Link></li>
             <li><Link activeClassName="active" to="/customize-build">Customize build</Link></li>
             <li><Link activeClassName="active" to="/support">Support</Link></li>
+            <li><Link activeClassName="active" to="/team">Team</Link></li>
           </ul>
 
         </nav>
