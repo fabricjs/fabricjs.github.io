@@ -1,8 +1,8 @@
 ---
-date: "2018-03-03"
-title: "Superscript and subscript"
-description: "Demonstration of text superscript and subscript feature"
-thumbnail: "superscript-subscript.png"
+date: '2018-03-03'
+title: 'Superscript and subscript'
+description: 'Demonstration of text superscript and subscript feature'
+thumbnail: 'superscript-subscript.png'
 tags: ['text']
 ---
 
@@ -46,37 +46,38 @@ function remove() {
 }
 
 function superScript() {
-	var active = canvas.getActiveObject();
-	if (!active) return;
-	active.setSuperscript();
-	canvas.requestRenderAll();
+var active = canvas.getActiveObject();
+if (!active) return;
+active.setSuperscript();
+canvas.requestRenderAll();
 }
 
 function subScript() {
-	var active = canvas.getActiveObject();
-	if (!active) return;
-	active.setSubscript();
-	canvas.requestRenderAll();
+var active = canvas.getActiveObject();
+if (!active) return;
+active.setSubscript();
+canvas.requestRenderAll();
 }
 
-var canvas = this.__canvas = new fabric.Canvas('c');
+var canvas = this.\_\_canvas = new fabric.Canvas('c');
 // create a rectangle object
 var itext = new fabric.IText('This is a IText object', {
-	left: 100,
-	top: 150,
-	fill: '#D81B60',
-	strokeWidth: 2,
-	stroke: "#880E4F",
+left: 100,
+top: 150,
+fill: '#D81B60',
+strokeWidth: 2,
+stroke: "#880E4F",
 });
 
 var textbox = new fabric.Textbox('This is a Textbox object', {
-	left: 20,
-	top: 50,
-	fill: '#880E4F',
-	strokeWidth: 2,
-	stroke: "#D81B60",
+left: 20,
+top: 50,
+fill: '#880E4F',
+strokeWidth: 2,
+stroke: "#D81B60",
 });
 
 canvas.add(itext, textbox);
+
 </pre>
 </div>

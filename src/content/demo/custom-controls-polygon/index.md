@@ -1,9 +1,9 @@
 ---
-date: "2015-03-10"
-title: "Custom controls for polygon"
-description: "How to modify points of a polygon"
-thumbnail: "custom-controls-polygon.png"
-tags: ['controls','customization','polygon']
+date: '2015-03-10'
+title: 'Custom controls for polygon'
+description: 'How to modify points of a polygon'
+thumbnail: 'custom-controls-polygon.png'
+tags: ['controls', 'customization', 'polygon']
 ---
 
 This demo shows how to use the controls api to do something like changing the shape of a polygon.
@@ -24,21 +24,28 @@ In this way interaction and rendering are done.
 To make the actual control change the current point, we need to write a custom action handler.
 
 Changing a point position is actually easy:
+
 ```javascript
-fabricObject.points[index].x = number;
-fabricObject.points[index].y = number;
+fabricObject.points[index].x = number
+fabricObject.points[index].y = number
 ```
+
 The hard part is handling the object that change dimensions while mantaining the correct position.
 
 We need an anchor point. We choose to fix the polygon position on the actual position of any point of the points array that is not the one that we are dragging.
 
 So having chosen the point, we calculate its actual absolute position:
+
 ```javascript
-var absolutePoint = fabric.util.transformPoint({
-    x: (fabricObject.points[anchorIndex].x - fabricObject.pathOffset.x),
-    y: (fabricObject.points[anchorIndex].y - fabricObject.pathOffset.y),
-}, fabricObject.calcTransformMatrix());
+var absolutePoint = fabric.util.transformPoint(
+  {
+    x: fabricObject.points[anchorIndex].x - fabricObject.pathOffset.x,
+    y: fabricObject.points[anchorIndex].y - fabricObject.pathOffset.y,
+  },
+  fabricObject.calcTransformMatrix()
+)
 ```
+
 We will use this absolute position after we have modified the polygon.
 
 Then we swap the dragged point with the new one, we recalculate the width/height and pathOffset of the polygon ( basically we reinitialize its dimensions ).
@@ -47,15 +54,15 @@ Now to keep its position steady, we want to know the point that represent the an
 
 ```javascript
 var newX = (fabricObject.points[anchorIndex].x - fabricObject.pathOffset.x) / fabricObject.width,
-    newY = (fabricObject.points[anchorIndex].y - fabricObject.pathOffset.y) / fabricObject.height;
+  newY = (fabricObject.points[anchorIndex].y - fabricObject.pathOffset.y) / fabricObject.height
 ```
+
 Now newX and newY represent the point position with a range from -0.5 to 0.5 for X and Y.
 Fabric supports numeric origins for objects with a range from 0 to 1. This let us use the relative position as an origin to translate the old absolutePoint we find before.
 
 ```javascript
-fabricObject.setPositionByOrigin(absolutePoint, newX + 0.5, newY + 0.5);
+fabricObject.setPositionByOrigin(absolutePoint, newX + 0.5, newY + 0.5)
 ```
-
 
 ## Creating the control
 

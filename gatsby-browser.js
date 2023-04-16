@@ -1,3 +1,3 @@
-import './src/style.css';
+import './src/style.css'
 
-require('prismjs/themes/prism-okaidia.css');
+require('prismjs/themes/prism-okaidia.css')

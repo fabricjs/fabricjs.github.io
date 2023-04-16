@@ -1,9 +1,5 @@
-import React from 'react';
+import React from 'react'
 
 export default function Footer() {
-  return (
-    <footer>
-      Copyright text and sitelinks here
-    </footer>
-  );
+  return <footer>Copyright text and sitelinks here</footer>
 }

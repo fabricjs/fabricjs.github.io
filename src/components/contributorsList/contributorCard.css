@@ -1,7 +1,7 @@
-.contributorCard{
+.contributorCard {
   text-align: center;
 }
-.contributorCard>img{
-  border-radius:100px;
-  width:90%;
+.contributorCard > img {
+  border-radius: 100px;
+  width: 90%;
 }
