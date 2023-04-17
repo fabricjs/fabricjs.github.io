@@ -1,14 +1,18 @@
 import React, { useEffect } from 'react';
-import { Canvas } from 'fabric';
+import { setupCanvasBanner } from './setupCanvasBanner';
+
 import './coolCanvasBanner.css';
 
 const useCanvasInit = () => {
   useEffect(() => {
-    const fabricCanvas = new Canvas('canvasbanner', {
-      containerClass: 'canvas-banner',
+    const container = document.getElementById('featuredBanner');
+    const canvasEl = document.getElementById('canvasbanner');
+    const { resizeObserver, fabricCanvas } = setupCanvasBanner({
+      container,
+      canvasEl,
     });
-    fabricCanvas.wrapperEl.style.position = 'absolute';
     return () => {
+      resizeObserver.unobserve(container);
       return fabricCanvas.dispose();
     };
   }, []);
