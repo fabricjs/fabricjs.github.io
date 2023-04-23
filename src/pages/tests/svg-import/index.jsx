@@ -102,4 +102,5 @@ export default function SvgImportShowcase() {
 
 SVGImportShowcase.propTypes = {
   id: PropTypes.number.isRequired,
+  delay: PropTypes.any.isRequired,
 };
