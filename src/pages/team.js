@@ -69,7 +69,7 @@ const TeamPage = () => (
     <h3>Original team members and onorable mentions</h3>
     <TeamMember name="Juriy Zaytsev" imgSrc={juriy}>
       <p>
-        Juriy (also known as <a href="https://twitter.com/kangax">&quot;kangax&quot;)</a> is a front-end web developer
+        Juriy (also known as <a href="https://twitter.com/kangax">&quot;kangax&quot;</a>) is a front-end web developer
         based in New York.
         <br />
         Juriy created Fabric.js in 2008, when starting to work on his startup —
@@ -78,11 +78,9 @@ const TeamPage = () => (
         His adventures with Javascript started in 2008, and ever since he
         enjoyed working on <a href="https://kangax.github.io/">various open source projects</a>.
         <br />
-        Up until 2010, Juriy has been a core developer of <a href="https://prototypejs.org/">Prototype.js</a>
-        Javascript library.
+        Up until 2010, Juriy has been a core developer of <a href="https://prototypejs.org/">Prototype.js</a> Javascript library.
         <br />
-        He blogs Javascript, Fabric, and other front-end minutae at
-        <a href="https://perfectionkills.com/">perfectionkills.com</a>
+        He blogs Javascript, Fabric, and other front-end minutae at <a href="https://perfectionkills.com/">perfectionkills.com</a>
         <br />
       </p>
     </TeamMember>
@@ -90,8 +88,7 @@ const TeamPage = () => (
       <p>
         Stefan (<a href="https://twitter.com/kienzle_s">kienzle_s</a>) is 29 years old, from Stuttgart, Germany.
         <br />
-        Between 2005 and 2008 he studied business informatics at the
-        <a href="https://www.dhbw-stuttgart.de/service/english/about-us.html">Baden-Wuerttemberg Cooperative State University</a>.
+        Between 2005 and 2008 he studied business informatics at the <a href="https://www.dhbw-stuttgart.de/service/english/about-us.html">Baden-Wuerttemberg Cooperative State University</a>.
         <br />
         He&lsquo;s been working as a web developer at the German insurance
         company <a href="https://www.wgv.de/">Württembergische Gemeinde-Versicherung a.G.</a> since 2008.
