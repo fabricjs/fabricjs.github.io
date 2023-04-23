@@ -1,14 +1,14 @@
-.contributorsList>ul>li {
+.contributorsList > ul > li {
   width: 40%;
 }
 
-@media (min-width:600px) and (orientation: landscape) {
-  .contributorsList>ul>li {
+@media (min-width: 600px) and (orientation: landscape) {
+  .contributorsList > ul > li {
     width: 22%;
   }
 }
-@media (min-width:800px) and (orientation: landscape) {
-  .contributorsList>ul>li {
+@media (min-width: 800px) and (orientation: landscape) {
+  .contributorsList > ul > li {
     width: 8%;
   }
 }

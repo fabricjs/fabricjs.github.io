@@ -1,73 +1,83 @@
-import React from 'react';
-import { graphql, Link } from 'gatsby';
-import PropTypes from 'prop-types';
-import Layout from '../components/layout';
-import TableOfContents from '../components/tableOfContents/tableOfContents';
-import GithubEditLink from '../components/githubEditLink/githubEditLink';
-import PrevNextLinks from '../components/prevNextPostLinks/prevNextLinks';
-import Seo from '../components/seo';
+import React from 'react'
+import { graphql, Link } from 'gatsby'
+import PropTypes from 'prop-types'
+import Layout from '../components/layout'
+import TableOfContents from '../components/tableOfContents/tableOfContents'
+import GithubEditLink from '../components/githubEditLink/githubEditLink'
+import PrevNextLinks from '../components/prevNextPostLinks/prevNextLinks'
+import Seo from '../components/seo'
 
 export default function Doc({ pageContext, data }) {
-  const {
-    frontmatter, toc, html, mdFile,
-  } = data.docPage;
+  const { frontmatter, toc, html, mdFile } = data.docPage
   return (
-    <Layout leftSidebar={(setVisibility) => (
-      <>
-        <header>Guides</header>
-        <nav id="topics" aria-label="Contents">
-          <ol>
-            <li><Link onClick={() => { setVisibility(false); }} title="Introduction" to="/docs">Introduction</Link></li>
-            {
-            pageContext.docList.map(({ title, slug }) => (
-              <li key={slug}>
+    <Layout
+      leftSidebar={(setVisibility) => (
+        <>
+          <header>Guides</header>
+          <nav id="topics" aria-label="Contents">
+            <ol>
+              <li>
                 <Link
-                  onClick={() => { setVisibility(false); }}
-                  activeClassName="active"
-                  title={title}
-                  to={slug}
+                  onClick={() => {
+                    setVisibility(false)
+                  }}
+                  title="Introduction"
+                  to="/docs"
                 >
-                  {title}
+                  Introduction
                 </Link>
-                {pageContext.slug === slug && (
-                <TableOfContents
-                  hideSidebar={() => { setVisibility(false); }}
-                  tableOfContentsHtml={toc}
-                />
-                )}
               </li>
-            ))
-          }
-          </ol>
-        </nav>
-      </>
-    )}
+              {pageContext.docList.map(({ title, slug }) => (
+                <li key={slug}>
+                  <Link
+                    onClick={() => {
+                      setVisibility(false)
+                    }}
+                    activeClassName="active"
+                    title={title}
+                    to={slug}
+                  >
+                    {title}
+                  </Link>
+                  {pageContext.slug === slug && (
+                    <TableOfContents
+                      hideSidebar={() => {
+                        setVisibility(false)
+                      }}
+                      tableOfContentsHtml={toc}
+                    />
+                  )}
+                </li>
+              ))}
+            </ol>
+          </nav>
+        </>
+      )}
     >
       <Seo title={frontmatter.title} />
       <nav id="breadcrumb-nav" aria-label="breadcrumb">
-        <Link to="/docs">Guide docs</Link>
-        {' '}
-        &gt;
-        {' '}
-        <span>{frontmatter.title}</span>
+        <Link to="/docs">Guide docs</Link> &gt; <span>{frontmatter.title}</span>
       </nav>
       <h1>{frontmatter.title}</h1>
       {/* eslint-disable-next-line react/no-danger */}
       <article dangerouslySetInnerHTML={{ __html: html }} />
       <GithubEditLink relativePath={mdFile.relativePath} />
-      <PrevNextLinks prev={pageContext.prev || { title: 'Introduction', slug: '/docs' }} next={pageContext.next} />
+      <PrevNextLinks
+        prev={pageContext.prev || { title: 'Introduction', slug: '/docs' }}
+        next={pageContext.next}
+      />
     </Layout>
-  );
+  )
 }
 
 export const query = graphql`
-  query($slug: String!){
+  query ($slug: String!) {
     docPage: markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {
         title
       }
-      toc: tableOfContents(absolute: false,maxDepth: 2)
+      toc: tableOfContents(absolute: false, maxDepth: 2)
       mdFile: parent {
         ... on File {
           relativePath
@@ -75,7 +85,7 @@ export const query = graphql`
       }
     }
   }
-`;
+`
 
 Doc.propTypes = {
   data: PropTypes.shape({
@@ -95,4 +105,4 @@ Doc.propTypes = {
       slug: PropTypes.string,
     }),
   }).isRequired,
-};
+}

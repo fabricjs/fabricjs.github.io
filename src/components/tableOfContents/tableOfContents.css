@@ -1,9 +1,9 @@
-#table-of-contents>ul{
-	padding-left:8px;
-	margin:0 0 16px 16px;
-	border-left:1px solid #eee
+#table-of-contents > ul {
+  padding-left: 8px;
+  margin: 0 0 16px 16px;
+  border-left: 1px solid #eee;
 }
-#table-of-contents>ul>li>a{
-	font-size:var(--font-size-smaller2);
-	line-height: 1.1;
+#table-of-contents > ul > li > a {
+  font-size: var(--font-size-smaller2);
+  line-height: 1.1;
 }

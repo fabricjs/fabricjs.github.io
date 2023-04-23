@@ -1,5 +1,5 @@
-import React from 'react';
-import Layout from '../../components/layoutFullWidth';
+import React from 'react'
+import Layout from '../../components/layoutFullWidth'
 
 // export default () => <div>Hello world!</div>
 export default function CustomizeBuildPage() {
@@ -7,5 +7,5 @@ export default function CustomizeBuildPage() {
     <Layout>
       <h1>Customize build page</h1>
     </Layout>
-  );
+  )
 }

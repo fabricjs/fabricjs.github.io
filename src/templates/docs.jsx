@@ -1,54 +1,60 @@
-import React from 'react';
-import { graphql, Link } from 'gatsby';
-import PropTypes from 'prop-types';
-import Layout from '../components/layout';
-import TableOfContents from '../components/tableOfContents/tableOfContents';
-import GithubEditLink from '../components/githubEditLink/githubEditLink';
-import PrevNextLinks from '../components/prevNextPostLinks/prevNextLinks';
-import Seo from '../components/seo';
+import React from 'react'
+import { graphql, Link } from 'gatsby'
+import PropTypes from 'prop-types'
+import Layout from '../components/layout'
+import TableOfContents from '../components/tableOfContents/tableOfContents'
+import GithubEditLink from '../components/githubEditLink/githubEditLink'
+import PrevNextLinks from '../components/prevNextPostLinks/prevNextLinks'
+import Seo from '../components/seo'
 
 export default function Docs({ pageContext, data }) {
-  const {
-    frontmatter, html, toc, mdFile,
-  } = data.introPage;
+  const { frontmatter, html, toc, mdFile } = data.introPage
   return (
-    <Layout leftSidebar={(setVisibility) => (
-      <>
-        <header>Guides</header>
-        <nav id="topics" aria-label="Contents">
-          <ol>
-            <li>
-              <Link onClick={() => { setVisibility(false); }} activeClassName="active" title="Introduction" to="/docs">Introduction</Link>
-              <TableOfContents
-                hideSidebar={() => { setVisibility(false); }}
-                tableOfContentsHtml={toc}
-              />
-            </li>
-            {
-            pageContext.docList.map(({ title, slug }) => (
-              <li key={slug}>
+    <Layout
+      leftSidebar={(setVisibility) => (
+        <>
+          <header>Guides</header>
+          <nav id="topics" aria-label="Contents">
+            <ol>
+              <li>
                 <Link
-                  onClick={() => { setVisibility(false); }}
-                  title={title}
-                  to={slug}
+                  onClick={() => {
+                    setVisibility(false)
+                  }}
+                  activeClassName="active"
+                  title="Introduction"
+                  to="/docs"
                 >
-                  {title}
+                  Introduction
                 </Link>
+                <TableOfContents
+                  hideSidebar={() => {
+                    setVisibility(false)
+                  }}
+                  tableOfContentsHtml={toc}
+                />
               </li>
-            ))
-          }
-          </ol>
-        </nav>
-      </>
-    )}
+              {pageContext.docList.map(({ title, slug }) => (
+                <li key={slug}>
+                  <Link
+                    onClick={() => {
+                      setVisibility(false)
+                    }}
+                    title={title}
+                    to={slug}
+                  >
+                    {title}
+                  </Link>
+                </li>
+              ))}
+            </ol>
+          </nav>
+        </>
+      )}
     >
       <Seo title={frontmatter.title} />
       <nav id="breadcrumb-nav" aria-label="breadcrumb">
-        <Link to="/">FabricJS</Link>
-        {' '}
-        &gt;
-        {' '}
-        <span>Docs</span>
+        <Link to="/">FabricJS</Link> &gt; <span>Docs</span>
       </nav>
       <h1>{frontmatter.title}</h1>
       {/* eslint-disable-next-line react/no-danger */}
@@ -61,17 +67,19 @@ export default function Docs({ pageContext, data }) {
         }}
       />
     </Layout>
-  );
+  )
 }
 
 export const query = graphql`
   query docsQuery {
-    introPage : markdownRemark(fileAbsolutePath: {regex: "//docs/introduction.md$/"}) {
+    introPage: markdownRemark(
+      fileAbsolutePath: { regex: "//docs/introduction.md$/" }
+    ) {
       html
       frontmatter {
         title
       }
-      toc: tableOfContents(absolute: false,maxDepth: 2)
+      toc: tableOfContents(absolute: false, maxDepth: 2)
       mdFile: parent {
         ... on File {
           relativePath
@@ -79,7 +87,7 @@ export const query = graphql`
       }
     }
   }
-`;
+`
 
 Docs.propTypes = {
   data: PropTypes.shape({
@@ -90,4 +98,4 @@ Docs.propTypes = {
     // eslint-disable-next-line react/forbid-prop-types
     docList: PropTypes.array,
   }).isRequired,
-};
+}

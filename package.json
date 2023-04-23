@@ -14,7 +14,8 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "deploy": "gh-pages -d public -r https://$GITHUB_TOKEN@github.com/fabricjs/fabricjs.github.io.git -b master",
-    "lint": "eslint --config .eslintrc.js src/**/*.js*"
+    "lint": "eslint --config .eslintrc.js src/**/*.js*",
+    "prettier:write": "prettier --write ."
   },
   "dependencies": {
     "@mdx-js/react": "^2.2.1",
