@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@mdx-js/react": "^2.2.1",
+    "fabric": "^6.0.0-beta3",
     "gatsby": "5.8.1",
     "gatsby-plugin-image": "^3.8.0",
     "gatsby-plugin-mdx": "5.8.0",
@@ -37,10 +38,10 @@
     "react-load-script": "^0.0.6"
   },
   "devDependencies": {
-    "prettier": "^2.8.7",
-    "eslint-config-prettier": "^8.8.0",
     "eslint": "^8.38.0",
+    "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-react": "^7.32.2",
-    "gh-pages": "^5.0.0"
+    "gh-pages": "^5.0.0",
+    "prettier": "^2.8.7"
   }
 }

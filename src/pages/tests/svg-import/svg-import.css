@@ -1,0 +1,22 @@
+.svg-row {
+  margin: 8px;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid var(--font-color-light2);
+}
+
+.svg-block {
+  margin: 8px;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  width: 33%;
+  flex-direction: column;
+}
+
+.svg-block img,
+.svg-block canvas,
+.svg-block svg {
+  max-width: 100%;
+  max-height: auto;
+}

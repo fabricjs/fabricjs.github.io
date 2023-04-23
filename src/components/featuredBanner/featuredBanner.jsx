@@ -1,10 +1,13 @@
-import React from 'react'
+import React from 'react';
 // import PropTypes from 'prop-types';
-import './featuredBanner.css'
+import './featuredBanner.css';
+import { CoolCanvasBanner } from '../CoolCanvasBanner/CoolCanvasBanner';
 
 export default function FeaturedBanner() {
+  // inner functionalities of CoolCanvasBanner depends on the id `featuredBanner`
   return (
     <section id="featuredBanner">
+      <CoolCanvasBanner />
       <h1>
         Fabric.js is a powerful and simple Javascript HTML5 canvas library
       </h1>
@@ -14,5 +17,5 @@ export default function FeaturedBanner() {
         parser
       </p>
     </section>
-  )
+  );
 }
