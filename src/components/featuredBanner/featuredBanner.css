@@ -1,4 +1,5 @@
 #featuredBanner {
+  position: relative;
   height: 70vh /*calc(100vh - var(--header-height))/*100vmin*/;
   background-color: var(--primary-color);
 }

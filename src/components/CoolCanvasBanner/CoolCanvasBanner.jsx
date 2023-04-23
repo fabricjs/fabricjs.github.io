@@ -22,5 +22,5 @@ const useCanvasInit = () => {
 export const CoolCanvasBanner = () => {
   useCanvasInit();
 
-  return <canvas id="canvasbanner" />;
+  return <canvas id="canvasbanner"></canvas>;
 };
