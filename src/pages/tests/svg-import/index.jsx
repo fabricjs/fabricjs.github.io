@@ -12,35 +12,31 @@ import './svg-import.css';
 FabricObject.ownDefaults.originX = 'center';
 FabricObject.ownDefaults.originY = 'center';
 
-const delay = (time) => new Promise((resolve) => setTimeout(resolve, time));
-
-const SVGImportShowcase = ({ id, delay }) => {
+const SVGImportShowcase = ({ id }) => {
   const svgLink = `/assets/${id}.svg`;
   const canvasRef = useRef();
   const outputRef = useRef();
   useEffect(() => {
     if (canvasRef.current && outputRef.current) {
-      delay.then(() =>
-        loadSVGFromURL(svgLink, (objects, options) => {
-          const canvasEl = canvasRef.current;
-          const div = outputRef.current;
-          const shape = util.groupSVGElements(objects, options);
-          const { x: width, y: height } = shape._getTransformedDimensions();
-          canvasEl.width = width;
-          canvasEl.height = height;
-          const bbox = canvasEl.getBoundingClientRect();
-          shape.top = canvasEl.height / 2;
-          shape.left = canvasEl.width / 2;
-          const canvas = new StaticCanvas(canvasEl, {
-            backgroundColor: '#fff',
-          });
-          const scale = util.findScaleToFit(canvas, bbox);
-          canvas.add(shape);
-          canvasEl.style.width = `${scale * width}px`;
-          canvasEl.style.height = `${scale * height}px`;
-          div.innerHTML = canvas.toSVG();
-        })
-      );
+      loadSVGFromURL(svgLink, (objects, options) => {
+        const canvasEl = canvasRef.current;
+        const div = outputRef.current;
+        const shape = util.groupSVGElements(objects, options);
+        const { x: width, y: height } = shape._getTransformedDimensions();
+        canvasEl.width = width;
+        canvasEl.height = height;
+        const bbox = canvasEl.getBoundingClientRect();
+        shape.top = canvasEl.height / 2;
+        shape.left = canvasEl.width / 2;
+        const canvas = new StaticCanvas(canvasEl, {
+          backgroundColor: '#fff',
+        });
+        const scale = util.findScaleToFit(canvas, bbox);
+        canvas.add(shape);
+        canvasEl.style.width = `${scale * width}px`;
+        canvasEl.style.height = `${scale * height}px`;
+        div.innerHTML = canvas.toSVG();
+      });
     }
   }, []);
 
@@ -88,11 +84,7 @@ export default function SvgImportShowcase() {
         {numberArray.map((_, index) => {
           const svgToDisplay = numberSvg - index;
           return denyList.includes(svgToDisplay) ? null : (
-            <SVGImportShowcase
-              id={svgToDisplay}
-              key={svgToDisplay}
-              delay={delay(index * 10)}
-            />
+            <SVGImportShowcase id={svgToDisplay} key={svgToDisplay} />
           );
         })}
       </section>
@@ -102,5 +94,4 @@ export default function SvgImportShowcase() {
 
 SVGImportShowcase.propTypes = {
   id: PropTypes.number.isRequired,
-  delay: PropTypes.any.isRequired,
 };
