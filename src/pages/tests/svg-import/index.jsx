@@ -1,4 +1,3 @@
-'use client';
 import React, { useEffect, useRef } from 'react';
 import Layout from '../../../components/layoutFullWidth';
 import {
@@ -18,7 +17,11 @@ const SVGImportShowcase = ({ id }) => {
   const canvasRef = useRef();
   const outputRef = useRef();
   useEffect(() => {
-    if (canvasRef.current && outputRef.current) {
+    if (
+      canvasRef.current &&
+      outputRef.current &&
+      typeof window !== 'undefined'
+    ) {
       loadSVGFromURL(svgLink, (objects, options) => {
         const canvasEl = canvasRef.current;
         const div = outputRef.current;
