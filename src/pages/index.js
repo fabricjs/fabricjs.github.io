@@ -1,15 +1,15 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Link, graphql } from 'gatsby'
-import Layout from '../components/layoutFullWidth'
-import FeaturedBanner from '../components/featuredBanner/featuredBanner'
-import HorizontalPanList from '../components/horizontalPanList/horizontalPanList'
-import ThumbnailCard from '../components/card/thumbnailCard'
-import ContributorsList from '../components/contributorsList/contributorsList'
-import Features from '../components/Features/Features'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Link, graphql } from 'gatsby';
+import Layout from '../components/layoutFullWidth';
+import FeaturedBanner from '../components/featuredBanner/featuredBanner';
+import HorizontalPanList from '../components/horizontalPanList/horizontalPanList';
+import ThumbnailCard from '../components/card/thumbnailCard';
+import ContributorsList from '../components/contributorsList/contributorsList';
+import Features from '../components/Features/Features';
 
 export default function HomePage({ data }) {
-  const { demoPages, totalCount } = data.demoPagesMD
+  const { demoPages, totalCount } = data.demoPagesMD;
   return (
     <Layout>
       <FeaturedBanner />
@@ -57,16 +57,12 @@ export default function HomePage({ data }) {
         <ContributorsList />
       </section>
     </Layout>
-  )
+  );
 }
 
 export const query = graphql`
   query demosQuery {
-    demoPagesMD: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "//demo/[a-zA-Z0-9-]+/index.md$/" } }
-      sort: { frontmatter: { date: DESC } }
-      limit: 5
-    ) {
+    demoPagesMD: allMdx(sort: { frontmatter: { date: DESC } }, limit: 5) {
       totalCount
       demoPages: nodes {
         frontmatter {
@@ -78,17 +74,14 @@ export const query = graphql`
             }
           }
         }
-        fields {
-          slug
-        }
       }
     }
   }
-`
+`;
 
 HomePage.propTypes = {
   data: PropTypes.shape({
     // eslint-disable-next-line react/forbid-prop-types
     demoPagesMD: PropTypes.object,
   }).isRequired,
-}
+};

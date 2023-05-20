@@ -1,14 +1,14 @@
-import React from 'react'
-import { graphql, Link } from 'gatsby'
-import PropTypes from 'prop-types'
-import Layout from '../components/layout'
-import TableOfContents from '../components/tableOfContents/tableOfContents'
-import GithubEditLink from '../components/githubEditLink/githubEditLink'
-import PrevNextLinks from '../components/prevNextPostLinks/prevNextLinks'
-import Seo from '../components/seo'
+import React from 'react';
+import { graphql, Link } from 'gatsby';
+import PropTypes from 'prop-types';
+import Layout from '../components/layout';
+import TableOfContents from '../components/tableOfContents/tableOfContents';
+import GithubEditLink from '../components/githubEditLink/githubEditLink';
+import PrevNextLinks from '../components/prevNextPostLinks/prevNextLinks';
+import Seo from '../components/seo';
 
 export default function Docs({ pageContext, data }) {
-  const { frontmatter, html, toc, mdFile } = data.introPage
+  const { frontmatter, html, toc, mdFile } = data.introPage;
   return (
     <Layout
       leftSidebar={(setVisibility) => (
@@ -19,7 +19,7 @@ export default function Docs({ pageContext, data }) {
               <li>
                 <Link
                   onClick={() => {
-                    setVisibility(false)
+                    setVisibility(false);
                   }}
                   activeClassName="active"
                   title="Introduction"
@@ -29,7 +29,7 @@ export default function Docs({ pageContext, data }) {
                 </Link>
                 <TableOfContents
                   hideSidebar={() => {
-                    setVisibility(false)
+                    setVisibility(false);
                   }}
                   tableOfContentsHtml={toc}
                 />
@@ -38,7 +38,7 @@ export default function Docs({ pageContext, data }) {
                 <li key={slug}>
                   <Link
                     onClick={() => {
-                      setVisibility(false)
+                      setVisibility(false);
                     }}
                     title={title}
                     to={slug}
@@ -67,14 +67,12 @@ export default function Docs({ pageContext, data }) {
         }}
       />
     </Layout>
-  )
+  );
 }
 
 export const query = graphql`
   query docsQuery {
-    introPage: markdownRemark(
-      fileAbsolutePath: { regex: "//docs/introduction.md$/" }
-    ) {
+    introPage: mdx(fileAbsolutePath: { regex: "//docs/introduction.md$/" }) {
       html
       frontmatter {
         title
@@ -87,7 +85,7 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 
 Docs.propTypes = {
   data: PropTypes.shape({
@@ -98,4 +96,4 @@ Docs.propTypes = {
     // eslint-disable-next-line react/forbid-prop-types
     docList: PropTypes.array,
   }).isRequired,
-}
+};

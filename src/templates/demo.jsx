@@ -1,13 +1,13 @@
-import React from 'react'
-import { graphql, Link } from 'gatsby'
-import PropTypes from 'prop-types'
-import LayoutCodepen from '../components/layoutFullWidthWithCodepen'
-import GithubEditLink from '../components/githubEditLink/githubEditLink'
-import PrevNextLinks from '../components/prevNextPostLinks/prevNextLinks'
-import Seo from '../components/seo'
+import React from 'react';
+import { graphql, Link } from 'gatsby';
+import PropTypes from 'prop-types';
+import LayoutCodepen from '../components/layoutFullWidthWithCodepen';
+import GithubEditLink from '../components/githubEditLink/githubEditLink';
+import PrevNextLinks from '../components/prevNextPostLinks/prevNextLinks';
+import Seo from '../components/seo';
 
 export default function Demo({ data, pageContext }) {
-  const { frontmatter, html, mdFile } = data.demoPage
+  const { frontmatter, html, mdFile } = data.demoPage;
   return (
     <LayoutCodepen>
       <Seo title={frontmatter.title} />
@@ -25,12 +25,12 @@ export default function Demo({ data, pageContext }) {
         next={pageContext.next}
       />
     </LayoutCodepen>
-  )
+  );
 }
 
 export const query = graphql`
   query ($slug: String!) {
-    demoPage: markdownRemark(fields: { slug: { eq: $slug } }) {
+    demoPage: mdx(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {
         title
@@ -42,7 +42,7 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 
 Demo.propTypes = {
   data: PropTypes.shape({
@@ -59,4 +59,4 @@ Demo.propTypes = {
       slug: PropTypes.string,
     }),
   }).isRequired,
-}
+};

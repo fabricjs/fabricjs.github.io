@@ -1,0 +1,114 @@
+<script
+  type="text/javascript"
+  src="https://mrdoob.github.io/stats.js/build/stats.min.js"
+></script>
+
+<script type="text/javascript" defer >
+  console.log('EXECUTING')
+  var lastTime = 0;
+  var width = 600;
+  var height = 400;
+  var bunnys = [];
+  var GRAVITY = 0.75;
+  var maxX = width;
+  var minX = 0;
+  var maxY = height;
+  var minY = 0;
+  const startBunnyCount = 1000;
+  let isAdding = false;
+  let count = 0;
+  let amount = 10;
+  const canvas = new fabric.StaticCanvas('canvas', {
+    renderOnAddRemove: false,
+  });
+  var wabbitTexture = new Image();
+  wabbitTexture.onload = function () {
+    _handleTextureLoaded();
+  };
+  wabbitTexture.src = 'assets/bunny-texture.png';
+  var stats = new Stats();
+  document.body.appendChild(stats.domElement);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.top = '0px';
+  window.requestAnimationFrame(update);
+  const counter = document.getElementById('counter');
+  count = startBunnyCount;
+  counter.innerHTML = startBunnyCount + ' BUNNIES';
+  canvas.on('mousedown', function () {
+    isAdding = true;
+  });
+  canvas.on('mouseup', function () {
+    isAdding = false;
+  });
+  document.addEventListener('touchstart', onTouchStart, true);
+  document.addEventListener('touchend', onTouchEnd, true);
+  function _handleTextureLoaded(event) {
+    for (let i = 0; i < startBunnyCount; i++) {
+      const bunny = new fabric.Image(wabbitTexture, {
+        imageSmoothing: false,
+        x: 10,
+        y: 10,
+      });
+      bunny.speedX = Math.random() * 10;
+      bunny.speedY = Math.random() * 10 - 5;
+      bunnys.push(bunny);
+      canvas.add(bunny);
+    }
+  }
+  function onTouchStart(event) {
+    isAdding = true;
+  }
+  function onTouchEnd(event) {
+    isAdding = false;
+  }
+  function update() {
+    stats.begin();
+    if (isAdding) {
+      for (let i = 0; i < amount; i++) {
+        const bunny = new fabric.Image(wabbitTexture, {
+          imageSmoothing: false,
+          x: 0,
+          y: 0,
+        });
+        bunny.speedX = Math.random() * 10;
+        bunny.speedY = Math.random() * 10 - 5;
+        bunnys.push(bunny);
+        canvas.add(bunny);
+        count++;
+      }
+      counter.innerHTML = count + ' BUNNIES';
+    }
+    for (let i = 0; i < bunnys.length; i++) {
+      var bunny = bunnys[i];
+      var pos = {
+        x: bunny.left,
+        y: bunny.top,
+      };
+      pos.x = pos.x + bunny.speedX;
+      pos.y = pos.y + bunny.speedY;
+      bunny.speedY += GRAVITY;
+      if (pos.x > maxX - wabbitTexture.width) {
+        bunny.speedX *= -1;
+        pos.x = maxX - wabbitTexture.width;
+      } else if (pos.x < minX) {
+        bunny.speedX *= -1;
+        pos.x = minX;
+      }
+      if (pos.y > maxY - wabbitTexture.height) {
+        bunny.speedY *= -0.85;
+        pos.y = maxY - wabbitTexture.height;
+        if (Math.random() > 0.5) {
+          bunny.speedY -= Math.random() * 6;
+        }
+      } else if (pos.y < minY) {
+        bunny.speedY = 0;
+        pos.y = minY;
+      }
+      bunny.left = pos.x;
+      bunny.top = pos.x;
+    }
+    canvas.renderAll();
+    requestAnimationFrame(update);
+    stats.end();
+  }
+</script>

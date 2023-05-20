@@ -17,7 +17,6 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`, // Needed for dynamic images
     'gatsby-plugin-mdx',
-    'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -26,10 +25,11 @@ module.exports = {
       },
       __key: 'content',
     },
+    'gatsby-plugin-react-helmet',
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: `gatsby-plugin-mdx`,
       options: {
-        plugins: [
+        gatsbyRemarkPlugins: [
           /* `gatsby-remark-copy-linked-files`, */ /* for copying files linked inside md to the distribution folder, for eg pdf files or any such attachments */
           {
             resolve:
@@ -61,4 +61,4 @@ module.exports = {
       },
     },
   ],
-}
+};
