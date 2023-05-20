@@ -16,7 +16,6 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`, // Needed for dynamic images
-    'gatsby-plugin-mdx',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -29,6 +28,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
+        extensions: [`.md`, `.mdx`],
         gatsbyRemarkPlugins: [
           /* `gatsby-remark-copy-linked-files`, */ /* for copying files linked inside md to the distribution folder, for eg pdf files or any such attachments */
           {

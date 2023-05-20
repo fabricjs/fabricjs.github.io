@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql, Link } from 'gatsby';
+import { MDXRenderer } from 'gatsby-plugin-mdx';
 import PropTypes from 'prop-types';
 import Layout from '../components/layout';
 import TableOfContents from '../components/tableOfContents/tableOfContents';
@@ -8,7 +9,7 @@ import PrevNextLinks from '../components/prevNextPostLinks/prevNextLinks';
 import Seo from '../components/seo';
 
 export default function Docs({ pageContext, data }) {
-  const { frontmatter, html, toc, mdFile } = data.introPage;
+  const { frontmatter, body, toc, mdFile } = data.introPage;
   return (
     <Layout
       leftSidebar={(setVisibility) => (
@@ -57,8 +58,9 @@ export default function Docs({ pageContext, data }) {
         <Link to="/">FabricJS</Link> &gt; <span>Docs</span>
       </nav>
       <h1>{frontmatter.title}</h1>
-      {/* eslint-disable-next-line react/no-danger */}
-      <article dangerouslySetInnerHTML={{ __html: html }} />
+      <article>
+        <MDXRenderer>{body}</MDXRenderer>
+      </article>
       <GithubEditLink relativePath={mdFile.relativePath} />
       <PrevNextLinks
         next={{
@@ -73,7 +75,7 @@ export default function Docs({ pageContext, data }) {
 export const query = graphql`
   query docsQuery {
     introPage: mdx(fileAbsolutePath: { regex: "//docs/introduction.md$/" }) {
-      html
+      body
       frontmatter {
         title
       }

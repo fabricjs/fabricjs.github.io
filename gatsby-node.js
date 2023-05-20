@@ -74,7 +74,7 @@ exports.sourceNodes = async ({
 const { createFilePath } = require('gatsby-source-filesystem');
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
-  if (node.internal.type === 'mdx') {
+  if (node.internal.type === 'Mdx') {
     const { createNodeField } = actions;
     const slug = createFilePath({
       node,

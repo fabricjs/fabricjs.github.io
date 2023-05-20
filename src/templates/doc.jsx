@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql, Link } from 'gatsby';
+import { MDXRenderer } from 'gatsby-plugin-mdx';
 import PropTypes from 'prop-types';
 import Layout from '../components/layout';
 import TableOfContents from '../components/tableOfContents/tableOfContents';
@@ -8,7 +9,7 @@ import PrevNextLinks from '../components/prevNextPostLinks/prevNextLinks';
 import Seo from '../components/seo';
 
 export default function Doc({ pageContext, data }) {
-  const { frontmatter, toc, html, mdFile } = data.docPage;
+  const { frontmatter, toc, body, mdFile } = data.docPage;
   return (
     <Layout
       leftSidebar={(setVisibility) => (
@@ -59,8 +60,9 @@ export default function Doc({ pageContext, data }) {
         <Link to="/docs">Guide docs</Link> &gt; <span>{frontmatter.title}</span>
       </nav>
       <h1>{frontmatter.title}</h1>
-      {/* eslint-disable-next-line react/no-danger */}
-      <article dangerouslySetInnerHTML={{ __html: html }} />
+      <article>
+        <MDXRenderer>{body}</MDXRenderer>
+      </article>
       <GithubEditLink relativePath={mdFile.relativePath} />
       <PrevNextLinks
         prev={pageContext.prev || { title: 'Introduction', slug: '/docs' }}
@@ -73,7 +75,7 @@ export default function Doc({ pageContext, data }) {
 export const query = graphql`
   query ($slug: String!) {
     docPage: mdx(fields: { slug: { eq: $slug } }) {
-      html
+      body
       frontmatter {
         title
       }

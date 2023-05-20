@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql, Link } from 'gatsby';
+import { MDXRenderer } from 'gatsby-plugin-mdx';
 import PropTypes from 'prop-types';
 import LayoutCodepen from '../components/layoutFullWidthWithCodepen';
 import GithubEditLink from '../components/githubEditLink/githubEditLink';
@@ -7,7 +8,7 @@ import PrevNextLinks from '../components/prevNextPostLinks/prevNextLinks';
 import Seo from '../components/seo';
 
 export default function Demo({ data, pageContext }) {
-  const { frontmatter, html, mdFile } = data.demoPage;
+  const { frontmatter, body, mdFile } = data.demoPage;
   return (
     <LayoutCodepen>
       <Seo title={frontmatter.title} />
@@ -15,8 +16,9 @@ export default function Demo({ data, pageContext }) {
         <Link to="/demos">Demos</Link> &gt; <span>{frontmatter.title}</span>
       </nav>
       <h1>{frontmatter.title}</h1>
-      {/* eslint-disable-next-line react/no-danger */}
-      <article dangerouslySetInnerHTML={{ __html: html }} />
+      <article>
+        <MDXRenderer>{body}</MDXRenderer>
+      </article>
       <GithubEditLink relativePath={mdFile.relativePath} />
       <PrevNextLinks
         prev={
@@ -31,7 +33,7 @@ export default function Demo({ data, pageContext }) {
 export const query = graphql`
   query ($slug: String!) {
     demoPage: mdx(fields: { slug: { eq: $slug } }) {
-      html
+      body
       frontmatter {
         title
       }
