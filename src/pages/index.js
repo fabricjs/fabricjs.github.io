@@ -9,6 +9,7 @@ import ContributorsList from '../components/contributorsList/contributorsList';
 import Features from '../components/Features/Features';
 
 export default function HomePage({ data }) {
+  console.log(data);
   const { demoPages, totalCount } = data.demoPagesMD;
   return (
     <Layout>
@@ -62,9 +63,12 @@ export default function HomePage({ data }) {
 
 export const query = graphql`
   query demosQuery {
-    demoPagesMD: allMdx(sort: { frontmatter: { date: DESC } }, limit: 5) {
+    demoPagesMD: allMdx {
       totalCount
       demoPages: nodes {
+        fields {
+          slug
+        }
         frontmatter {
           title
           description

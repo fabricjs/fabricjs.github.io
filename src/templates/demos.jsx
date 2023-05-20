@@ -7,7 +7,6 @@ import ThumbnailCard from '../components/card/thumbnailCard';
 import Seo from '../components/seo';
 
 export default function Demos({ data }) {
-  console.log(data);
   const pageDesc =
     'Awesome demos portraying various interactive aspects and capabilities of FabricJS';
   return (
@@ -51,9 +50,12 @@ export default function Demos({ data }) {
 // Sub-posts will b accessible from the page of the relevant post they belong to
 export const query = graphql`
   query allDemoPages {
-    allDemoPagesMD: allMdx(sort: { frontmatter: { date: DESC } }) {
+    allDemoPagesMD: allMdx {
       totalCount
       demoPages: nodes {
+        fields {
+          slug
+        }
         frontmatter {
           title
           description

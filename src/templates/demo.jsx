@@ -34,6 +34,9 @@ export const query = graphql`
   query ($slug: String!) {
     demoPage: mdx(fields: { slug: { eq: $slug } }) {
       body
+      fields {
+        slug
+      }
       frontmatter {
         title
       }

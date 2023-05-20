@@ -16,14 +16,6 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`, // Needed for dynamic images
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'markdown-content',
-        path: `${__dirname}/src/content`,
-      },
-      __key: 'content',
-    },
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-mdx`,
