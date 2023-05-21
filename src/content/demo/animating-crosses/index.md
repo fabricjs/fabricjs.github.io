@@ -7,10 +7,10 @@ tags: ['animation']
 ---
 
 import { CodeEditor } from '../../../components/CodeEditor';
-import { code } from './code';
+import { codeString } from './code';
 
 <canvas  width="600" height="500"></canvas>
 
-<div id="code-editor" >{code}</div>
+<div id="code-editor" ><pre>{codeString}</pre></div>
 
-<CodeEditor code={code} />
+<CodeEditor code={codeString} destination="code-editor" />
