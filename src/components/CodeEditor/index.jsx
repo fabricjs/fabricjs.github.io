@@ -18,7 +18,7 @@ export const CodeEditor = ({ code, children, canvasId }) => {
     }
     const code = editorRef.current.state.doc.text;
     const preamble = [
-      `const fabric =  window.fabric;`,
+      `const fabric = window.fabric;`,
       `const canvasEl = document.getElementById('${canvasId}');`,
     ];
     const cleanupCode = [`window.canvasesId['${canvasId}'] = canvas`];
@@ -27,6 +27,9 @@ export const CodeEditor = ({ code, children, canvasId }) => {
   });
 
   useEffect(() => {
+    // need to assign fabric to window
+    // and add to window canvases for cleanup/restart
+    // seems hacky, maybe it is, but it allow us to use the imported verison
     window.fabric = fabric;
     window.canvasesId = window.canvasesId || {};
     editorRef.current = new EditorView({
