@@ -1,13 +1,13 @@
-import React from 'react'
-import { graphql, Link } from 'gatsby'
-import PropTypes from 'prop-types'
-import LayoutCodepen from '../components/layoutFullWidthWithCodepen'
-import GithubEditLink from '../components/githubEditLink/githubEditLink'
-import PrevNextLinks from '../components/prevNextPostLinks/prevNextLinks'
-import Seo from '../components/seo'
+import React from 'react';
+import { graphql, Link } from 'gatsby';
+import PropTypes from 'prop-types';
+import LayoutCodepen from '../components/layoutFullWidthWithCodepen';
+import GithubEditLink from '../components/githubEditLink/githubEditLink';
+import PrevNextLinks from '../components/prevNextPostLinks/prevNextLinks';
+import Seo from '../components/seo';
 
-export default function Demo({ data, pageContext }) {
-  const { frontmatter, html, mdFile } = data.demoPage
+export default function Demo({ data, pageContext, children }) {
+  const { frontmatter, mdFile } = data.demoPage;
   return (
     <LayoutCodepen>
       <Seo title={frontmatter.title} />
@@ -16,7 +16,7 @@ export default function Demo({ data, pageContext }) {
       </nav>
       <h1>{frontmatter.title}</h1>
       {/* eslint-disable-next-line react/no-danger */}
-      <article dangerouslySetInnerHTML={{ __html: html }} />
+      <article>{children}</article>
       <GithubEditLink relativePath={mdFile.relativePath} />
       <PrevNextLinks
         prev={
@@ -25,13 +25,12 @@ export default function Demo({ data, pageContext }) {
         next={pageContext.next}
       />
     </LayoutCodepen>
-  )
+  );
 }
 
 export const query = graphql`
   query ($slug: String!) {
-    demoPage: markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
+    demoPage: mdx(fields: { slug: { eq: $slug } }) {
       frontmatter {
         title
       }
@@ -42,13 +41,14 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 
 Demo.propTypes = {
   data: PropTypes.shape({
     // eslint-disable-next-line react/forbid-prop-types
     demoPage: PropTypes.object,
   }).isRequired,
+  children: PropTypes.any,
   pageContext: PropTypes.shape({
     prev: PropTypes.shape({
       title: PropTypes.string,
@@ -59,4 +59,4 @@ Demo.propTypes = {
       slug: PropTypes.string,
     }),
   }).isRequired,
-}
+};

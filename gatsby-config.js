@@ -16,20 +16,20 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`, // Needed for dynamic images
-    'gatsby-plugin-mdx',
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'markdown-content',
+        name: 'mdx-content',
         path: `${__dirname}/src/content`,
       },
       __key: 'content',
     },
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: `gatsby-plugin-mdx`,
       options: {
-        plugins: [
+        extensions: [`.md`, `.mdx`],
+        gatsbyRemarkPlugins: [
           /* `gatsby-remark-copy-linked-files`, */ /* for copying files linked inside md to the distribution folder, for eg pdf files or any such attachments */
           {
             resolve:
@@ -61,4 +61,4 @@ module.exports = {
       },
     },
   ],
-}
+};
