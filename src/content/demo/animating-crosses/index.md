@@ -6,6 +6,11 @@ thumbnail: 'animating-crosses.png'
 tags: ['animation']
 ---
 
-# HELLO
+import { CodeEditor } from '../../../components/CodeEditor';
+import { code } from './code';
 
-We are doing good
+<canvas  width="600" height="500"></canvas>
+
+<div id="code-editor" >{code}</div>
+
+<CodeEditor code={code} />

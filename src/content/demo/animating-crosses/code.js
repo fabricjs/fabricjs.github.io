@@ -1,25 +1,4 @@
----
-date: '2011-9-1'
-title: 'Animating crosses'
-description: 'Animating crosses using FabricJS'
-thumbnail: 'animating-crosses.png'
-tags: ['animation']
----
-
-<div
-  class="codepen-later"
-  data-editable="true"
-  data-height="500"
-  data-default-tab="result"
-  data-prefill='{
-    "scripts": ["https://unpkg.com/fabric@4.0.0-rc.1/dist/fabric.js"]
-  }'
->
-<pre data-lang="html">
-  <canvas id="c" width="600" height="500"></canvas>
-</pre>
-<pre data-lang="js">
-(function() {
+export const code = `
 	var canvas = this.__canvas = new fabric.Canvas('c');
 	fabric.Object.prototype.transparentCorners = false;
 
@@ -94,8 +73,4 @@ tags: ['animation']
     	canvas.renderAll();
     	setTimeout(animate, 10);
     }, 10);
-
-})();
-
-</pre>
-</div>
+`;

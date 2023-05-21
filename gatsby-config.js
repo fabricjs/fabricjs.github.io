@@ -51,12 +51,12 @@ module.exports = {
               isIconAfterHeader: true,
             },
           },
-          {
-            resolve: 'gatsby-remark-prismjs',
-            options: {
-              inlineCodeMarker: '>',
-            },
-          },
+          // {
+          //   resolve: 'gatsby-remark-prismjs',
+          //   options: {
+          //     inlineCodeMarker: '>',
+          //   },
+          // },
         ],
       },
     },

@@ -186,6 +186,10 @@ article a {
   border-bottom: 1px dashed var(--primary-color);
 }
 
+#code-editor {
+  all: unset;
+}
+
 /*blockquote > p{
 	background-color:#ffb;
 	padding: 20px;
