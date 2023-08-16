@@ -116,7 +116,7 @@ export const setupCanvasBanner = ({ canvasEl, container }) => {
   });
   canvas.add(text1, text2, text3, text4, text5);
 
-  loadSVGFromURL('/assets/112.svg', (objects, options) => {
+  loadSVGFromURL('/assets/112.svg').then(({ objects, options }) => {
     var shape = util.groupSVGElements(objects, options);
     shape.set({
       left: 430,
@@ -171,7 +171,7 @@ export const setupCanvasBanner = ({ canvasEl, container }) => {
   canvas.add(triangleB, rectB, circleB);
 
   // complex shapes
-  loadSVGFromURL('assets/57.svg', function (objects, options) {
+  loadSVGFromURL('assets/57.svg').then(({ objects, options }) => {
     var shape = util.groupSVGElements(objects, options);
     shape
       .set({
@@ -206,7 +206,7 @@ export const setupCanvasBanner = ({ canvasEl, container }) => {
   });
 
   // arrow
-  loadSVGFromURL('assets/156.svg', function (objects, options) {
+  loadSVGFromURL('assets/156.svg').then(({ objects, options }) => {
     var shape = util.groupSVGElements(objects, options);
     shape.set({
       left: 1130,
@@ -221,9 +221,8 @@ export const setupCanvasBanner = ({ canvasEl, container }) => {
   });
 
   // gradients
-  loadSVGFromURL(
-    'assets/gradients/svg_radial_4.svg',
-    function (objects, options) {
+  loadSVGFromURL('assets/gradients/svg_radial_4.svg').then(
+    ({ objects, options }) => {
       var shape = util.groupSVGElements(objects, options);
       shape
         .set({
@@ -238,9 +237,8 @@ export const setupCanvasBanner = ({ canvasEl, container }) => {
       canvas.add(shape);
     }
   );
-  loadSVGFromURL(
-    'assets/gradients/svg_linear_8.svg',
-    function (objects, options) {
+  loadSVGFromURL('assets/gradients/svg_linear_8.svg').then(
+    ({ objects, options }) => {
       var shape = util.groupSVGElements(objects, options);
       shape
         .set({
