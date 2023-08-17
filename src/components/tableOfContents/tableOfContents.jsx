@@ -57,11 +57,7 @@ export default class TableOfContents extends React.Component {
   render() {
     const { toc } = this.props;
     return (
-      <nav
-        onClick={this.handleClick}
-        role="button" // eslint-disable-line jsx-a11y/no-noninteractive-element-to-interactive-role
-        id="table-of-contents"
-      >
+      <nav onClick={this.handleClick} role="button" id="table-of-contents">
         <ul>
           {toc.map(({ title, url }) => (
             <li key={url}>
