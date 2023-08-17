@@ -16,7 +16,11 @@ export const CodeEditor = ({ code, children, canvasId }) => {
     if (window.canvasesId[canvasId]) {
       window.canvasesId[canvasId].dispose();
     }
-    const code = editorRef.current.state.doc.text;
+    const docChildren = editorRef.current.state.doc.children || [
+      editorRef.current.state.doc,
+    ];
+    const code = docChildren.map((textLeaf) => textLeaf.text.join('\n'));
+
     const preamble = [
       `const fabric = window.fabric;`,
       `const canvasEl = document.getElementById('${canvasId}');`,
@@ -44,6 +48,10 @@ export const CodeEditor = ({ code, children, canvasId }) => {
       parent: divRef.current,
     });
   }, []);
+
+  // useEffect(() => {
+  //   runCallback();
+  // }, []);
 
   return (
     <>

@@ -1,12 +1,11 @@
-function code() {
-  var fabric = window.fabric;
-  var canvas = (this.__canvas = new fabric.Canvas('c'));
-  fabric.Object.prototype.transparentCorners = false;
+export function code(canvasEl, fabric) {
+  const canvas = new fabric.Canvas(canvasEl);
 
-  var Cross = fabric.util.createClass(fabric.Object, {
-    objectCaching: false,
-    initialize: function (options) {
-      this.callSuper('initialize', options);
+  class Cross extends fabric.Object {
+    constructor(options = {}) {
+      super(options);
+      this.transparentCorners = false;
+      this.objectCaching = false;
       this.animDirection = 'up';
 
       this.width = 100;
@@ -14,13 +13,14 @@ function code() {
 
       this.w1 = this.h2 = 100;
       this.h1 = this.w2 = 30;
-    },
+    }
 
-    animateWidthHeight: function () {
-      var interval = 2;
+    animateWidthHeight() {
+      const interval = 2;
 
       if (this.h2 >= 30 && this.h2 <= 100) {
-        var actualInterval = this.animDirection === 'up' ? interval : -interval;
+        const actualInterval =
+          this.animDirection === 'up' ? interval : -interval;
         this.h2 += actualInterval;
         this.w1 += actualInterval;
       }
@@ -35,13 +35,13 @@ function code() {
         this.h2 += interval;
         this.w1 += interval;
       }
-    },
+    }
 
-    _render: function (ctx) {
+    _render(ctx) {
       ctx.fillRect(-this.w1 / 2, -this.h1 / 2, this.w1, this.h1);
       ctx.fillRect(-this.w2 / 2, -this.h2 / 2, this.w2, this.h2);
-    },
-  });
+    }
+  }
 
   canvas.add(
     new Cross({
@@ -66,14 +66,11 @@ function code() {
     })
   );
 
-  setTimeout(function animate() {
-    canvas.forEachObject(function (obj) {
-      obj.animateWidthHeight();
-      obj.dirty = true;
-    });
-    canvas.renderAll();
-    setTimeout(animate, 10);
-  }, 10);
+  requestAnimationFrame(function animate() {
+    canvas.forEachObject((obj) => obj.animateWidthHeight());
+    canvas.requestRenderAll();
+    requestAnimationFrame(animate);
+  });
 }
 
 export const codeString = code

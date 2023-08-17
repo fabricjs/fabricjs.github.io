@@ -42,6 +42,8 @@
     "react-load-script": "^0.0.6"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.22.10",
+    "babel-preset-gatsby": "^3.11.0",
     "eslint": "^8.38.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-react": "^7.32.2",
