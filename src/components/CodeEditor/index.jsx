@@ -6,6 +6,7 @@ import {
   scopeCompletionSource,
 } from '@codemirror/lang-javascript';
 import * as fabric from 'fabric';
+import { functionToCodeString } from './utils';
 
 export const CodeEditor = ({ code, children, canvasId }) => {
   const divRef = useRef();
@@ -37,7 +38,7 @@ export const CodeEditor = ({ code, children, canvasId }) => {
     window.fabric = fabric;
     window.canvasesId = window.canvasesId || {};
     editorRef.current = new EditorView({
-      doc: code,
+      doc: functionToCodeString(code),
       extensions: [
         basicSetup,
         javascript(),

@@ -72,7 +72,3 @@ export function code(canvasEl, fabric) {
     requestAnimationFrame(animate);
   });
 }
-
-export const codeString = code
-  .toString()
-  .match(/function[^{]+\{([\s\S]*)\}$/)[1];

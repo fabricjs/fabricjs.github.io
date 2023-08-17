@@ -7,8 +7,8 @@ tags: []
 ---
 
 import { CodeEditor } from '../../../components/CodeEditor';
-import { codeString } from './code';
+import { code } from './code';
 
-<CodeEditor code={codeString} canvasId="test1" >
+<CodeEditor code={code} canvasId="test1" >
     <canvas  width="600" height="500" id="test1"></canvas>
 </CodeEditor>

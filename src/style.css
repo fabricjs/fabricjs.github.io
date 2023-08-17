@@ -133,7 +133,8 @@ main > #breadcrumb-nav {
 }
 
 main > * {
-  padding: 20px var(--padding-left-right);
+  padding: 20px max(var(--padding-left-right), 160px) 20px
+    var(--padding-left-right);
   margin: 0;
 }
 main > h1 {
