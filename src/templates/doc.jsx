@@ -9,6 +9,7 @@ import Seo from '../components/seo';
 
 export default function Doc({ pageContext, data, children }) {
   const { frontmatter, toc, mdFile } = data.docPage;
+
   return (
     <Layout
       leftSidebar={(setVisibility) => (
@@ -44,7 +45,7 @@ export default function Doc({ pageContext, data, children }) {
                       hideSidebar={() => {
                         setVisibility(false);
                       }}
-                      tableOfContentsHtml={toc}
+                      toc={toc.items}
                     />
                   )}
                 </li>
