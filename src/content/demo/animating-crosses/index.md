@@ -3,7 +3,7 @@ date: '2011-9-1'
 title: 'Animating crosses'
 description: 'Animating crosses using FabricJS'
 thumbnail: 'animating-crosses.png'
-tags: []
+tags: ['subclassing', 'animation']
 ---
 
 import { CodeEditor } from '../../../components/CodeEditor';
