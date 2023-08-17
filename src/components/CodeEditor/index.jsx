@@ -50,9 +50,9 @@ export const CodeEditor = ({ code, children, canvasId }) => {
     });
   }, []);
 
-  // useEffect(() => {
-  //   runCallback();
-  // }, []);
+  useEffect(() => {
+    runCallback();
+  }, []);
 
   return (
     <>
