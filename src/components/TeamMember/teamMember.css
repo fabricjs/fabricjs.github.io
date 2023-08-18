@@ -3,7 +3,7 @@
   align-items: center;
 }
 
-.team-member img {
+.team-member img.profile {
   padding: 8px;
   display: inline-block;
   height: 300px;
