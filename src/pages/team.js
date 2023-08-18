@@ -27,8 +27,8 @@ const TeamPage = () => (
         playing a big role in improving his Javascript and canvas skills.
         <br />
         To give back, he helps fix library bugs, adds features, and assists
-        people with their issues. Since them he become a contributor, a
-        maintainer and then the admin of the repo.
+        people with their issues. Since then he has became a contributor, a
+        maintainer and the admin of the repo.
       </p>
     </TeamMember>
     <TeamMember name="Shachar Nencel" githubName="ShaMan123" imgSrc={shachar}>
