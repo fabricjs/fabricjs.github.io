@@ -65,10 +65,10 @@ const TeamPage = () => (
         Steve now works as a developer for stoneycreekwinepress.com where he
         handles frontend web development and builds internal production software
         using C# and Adobe ExtendScript. He discovered Fabric in 2017, and used
-        it to build the company`s LabelMaker Pro design platform.
+        it to build the company&apos;s LabelMaker Pro design platform.
         <br />
-        You`ll see him around here contributing features and helping with bug
-        reports and issues.
+        You&apos;ll see him around here contributing features and helping with
+        bug reports and issues.
         <br />
       </p>
     </TeamMember>
