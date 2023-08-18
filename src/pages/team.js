@@ -1,6 +1,9 @@
 import React from 'react';
 import Layout from '../components/layoutFullWidth';
-import { TeamMember } from '../components/TeamMember/TeamMember';
+import {
+  TeamMember,
+  TeamMemberName,
+} from '../components/TeamMember/TeamMember';
 import andrea from '../images/andrea.png';
 import shachar from '../images/shachar.jpg';
 import steve from '../images/steve-eberhardt.jpg';
@@ -12,7 +15,8 @@ const TeamPage = () => (
     <h1>Fabric.js Team</h1>
     <TeamMember name="Andrea Bogazzi" githubName="asturur" imgSrc={andrea}>
       <p>
-        Andrea was born in 1979, Rome Italy.
+        <TeamMemberName name="Andrea Bogazzi" githubName="asturur" /> was born
+        in 1979, Rome Italy.
         <br />
         Since 2005 he is working as a software developer.
         <br />
@@ -29,7 +33,8 @@ const TeamPage = () => (
     </TeamMember>
     <TeamMember name="Shachar Nencel" githubName="ShaMan123" imgSrc={shachar}>
       <p>
-        Shachar Nencel is from Israel.
+        <TeamMemberName name="Shachar Nencel" githubName="ShaMan123" /> is from
+        Israel.
         <br />
         Since 2017 he has been developing front-end projects.
         <br />
@@ -50,7 +55,8 @@ const TeamPage = () => (
     </TeamMember>
     <TeamMember name="Steve Eberhardt" githubName="melchiar" imgSrc={steve}>
       <p>
-        Steve was born in 1988 and lives in British Columbia, Canada.
+        <TeamMemberName name="Steve Eberhardt" githubName="melchiar" /> was born
+        in 1988 and lives in British Columbia, Canada.
         <br />
         He began experimenting with web design at age 12, and started coding on
         his old TI-83 Plus graphing calculator, along with dabbling in 3d

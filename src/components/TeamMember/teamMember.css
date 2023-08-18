@@ -1,9 +1,10 @@
 .team-member {
   display: flex;
-  align-items: center;
+  align-items: start;
 }
 
 .team-member img.profile {
+  margin: 1rem;
   padding: 8px;
   display: inline-block;
   height: 300px;
