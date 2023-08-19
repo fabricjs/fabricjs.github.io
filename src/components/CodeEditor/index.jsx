@@ -77,6 +77,7 @@ export const CodeEditor = ({ code: codeProp, children, canvasId }) => {
     window.addEventListener('canvas_dispose', handler);
     return () => window.removeEventListener('canvas_dispose', handler);
   });
+
   return (
     <>
       <Helmet>
