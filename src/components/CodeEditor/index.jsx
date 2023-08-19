@@ -7,10 +7,9 @@ import { StateField } from '@codemirror/state';
 import { EditorView, basicSetup } from 'codemirror';
 import * as fabric from 'fabric';
 import { debounce } from 'lodash';
-import { default as React, useEffect, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { functionToCodeString } from './utils';
-import { useCallback } from 'react';
 
 export const CodeEditor = ({ code: codeProp, children, canvasId }) => {
   const divRef = useRef();
