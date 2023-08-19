@@ -1,7 +1,5 @@
 ## Transformations
 
-Understanding transformations is vital.
-
 ### Math Intro
 
 A transformation is described by a matrix:
