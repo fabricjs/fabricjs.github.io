@@ -55,6 +55,7 @@ Fabric exposes the following utils for such cases:
 
 ```
 sendPointToPlane
+sendVectorToPlane
 sendObjectToPlane
 ```
 
