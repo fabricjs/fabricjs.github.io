@@ -12,9 +12,10 @@ const vectorY = [c, d];
 const translation = [e, f];
 ```
 
-`vectorX` and `vectorY` describe the transform applied to the unit vectors `[1, 0]` and `[0, 1]` respectively. `translation` describes the offset to the center of the plane.
+`vectorX` and `vectorY` describe the transform applied to the unit vectors `[1, 0]` and `[0, 1]` respectively.
+We use the decomposed values (`angle`, `scaleX`, `scaleY`, `skewX`, `skewY`) that are derived from the transformation applied to the unit vectors, see `qrDecompose`.
 
-We use the decomposed values (`angle`, `scaleX`, `scaleY`, `skewX`, `skewY`, `translateX`, `translateY`) that are derived from the transformation applied to the unit vectors, see `qrDecompose`. `angle`, `scaleX`, `scaleY`, `skewX`, `skewY` describe the actual transformation, `translateX`, `translateY` describe the offset from the parent plane's `(0, 0)` to the center of the plane. Canvas `(0, 0)` is its tl corner, group `(0, 0)` is its center.
+`translation` describes the offset from the parent plane's `(0, 0)` to the center of the plane, decomposed into `translateX` and `translateY`. Canvas `(0, 0)` is the canvas' tl corner, group `(0, 0)` is the group's center point.
 
 Transformations application order:
 
