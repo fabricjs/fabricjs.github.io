@@ -19,9 +19,10 @@
   },
   "dependencies": {
     "@codemirror/commands": "^6.2.4",
-    "@codemirror/lang-javascript": "^6.1.8",
-    "@codemirror/state": "^6.2.0",
-    "@codemirror/view": "^6.12.0",
+    "@codemirror/lang-javascript": "^6.1.9",
+    "@codemirror/language": "^6.9.0",
+    "@codemirror/state": "^6.2.1",
+    "@codemirror/view": "^6.16.0",
     "@mdx-js/react": "^2.3.0",
     "codemirror": "^6.0.1",
     "fabric": "^6.0.0-beta10",
