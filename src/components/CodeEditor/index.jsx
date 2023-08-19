@@ -1,13 +1,13 @@
+import React, { useCallback, useEffect, useRef } from 'react';
+import { EditorView, basicSetup } from 'codemirror';
 import {
   javascript,
   javascriptLanguage,
   scopeCompletionSource,
 } from '@codemirror/lang-javascript';
 import { StateField } from '@codemirror/state';
-import { EditorView, basicSetup } from 'codemirror';
 import * as fabric from 'fabric';
 import { debounce } from 'lodash';
-import React, { useCallback, useEffect, useRef } from 'react';
 import { functionToCodeString } from './utils';
 
 export const CodeEditor = ({ code, children, canvasId }) => {
@@ -82,6 +82,7 @@ export const CodeEditor = ({ code, children, canvasId }) => {
     <>
       {children}
       <div ref={divRef} />
+      <button onClick={() => runCallback()}>runMe</button>
     </>
   );
 };
