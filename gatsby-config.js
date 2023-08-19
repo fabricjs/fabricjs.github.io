@@ -51,12 +51,13 @@ module.exports = {
               isIconAfterHeader: true,
             },
           },
-          // {
-          //   resolve: 'gatsby-remark-prismjs',
-          //   options: {
-          //     inlineCodeMarker: '>',
-          //   },
-          // },
+          /* we could dump this in favor of a react render maybe as suggested by docs */
+          {
+            resolve: 'gatsby-remark-prismjs',
+            options: {
+              inlineCodeMarker: '>',
+            },
+          },
         ],
       },
     },
