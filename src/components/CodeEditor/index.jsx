@@ -3,7 +3,7 @@ import {
   javascriptLanguage,
   scopeCompletionSource,
 } from '@codemirror/lang-javascript';
-import { StateField } from '@codemirror/state';
+import { StateField, EditorState } from '@codemirror/state';
 import { EditorView, basicSetup } from 'codemirror';
 import * as fabric from 'fabric';
 import { debounce } from 'lodash';
@@ -55,16 +55,21 @@ export const CodeEditor = ({ code: codeProp, children, canvasId }) => {
       },
     });
     const parsedCode = functionToCodeString(codeProp);
-    const editor = (editorRef.current = new EditorView({
+
+    const startState = EditorState.create({
       doc: parsedCode,
       extensions: [
-        basicSetup,
         javascript(),
+        basicSetup,
         javascriptLanguage.data.of({
           autocomplete: scopeCompletionSource(globalThis),
         }),
         onChangeHook,
       ],
+    });
+
+    const editor = (editorRef.current = new EditorView({
+      state: startState,
       parent: divRef.current,
     }));
     runCallback([parsedCode]);
