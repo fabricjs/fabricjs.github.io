@@ -31,12 +31,12 @@ object.setCoords();
 
 Objects are shapes with a lifecycle that supports both the **logical** and the **visual** states.
 
-- Path
-- Polyline, Polygon
-- Rect
-- Circle, Ellipse
-- Image
-- Text, IText, Textbox
+- `Path`
+- `Polyline`, `Polygon`
+- `Rect`
+- `Circle`, `Ellipse`
+- `Image`
+- `Text`, `IText`, `Textbox`
 
 ## Interactions
 
