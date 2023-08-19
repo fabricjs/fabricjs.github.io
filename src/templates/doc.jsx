@@ -1,14 +1,15 @@
-import React from 'react'
-import { graphql, Link } from 'gatsby'
-import PropTypes from 'prop-types'
-import Layout from '../components/layout'
-import TableOfContents from '../components/tableOfContents/tableOfContents'
-import GithubEditLink from '../components/githubEditLink/githubEditLink'
-import PrevNextLinks from '../components/prevNextPostLinks/prevNextLinks'
-import Seo from '../components/seo'
+import React from 'react';
+import { graphql, Link } from 'gatsby';
+import PropTypes from 'prop-types';
+import Layout from '../components/layout';
+import TableOfContents from '../components/tableOfContents/tableOfContents';
+import GithubEditLink from '../components/githubEditLink/githubEditLink';
+import PrevNextLinks from '../components/prevNextPostLinks/prevNextLinks';
+import Seo from '../components/seo';
 
-export default function Doc({ pageContext, data }) {
-  const { frontmatter, toc, html, mdFile } = data.docPage
+export default function Doc({ pageContext, data, children }) {
+  const { frontmatter, toc, mdFile } = data.docPage;
+
   return (
     <Layout
       leftSidebar={(setVisibility) => (
@@ -19,7 +20,7 @@ export default function Doc({ pageContext, data }) {
               <li>
                 <Link
                   onClick={() => {
-                    setVisibility(false)
+                    setVisibility(false);
                   }}
                   title="Introduction"
                   to="/docs"
@@ -31,7 +32,7 @@ export default function Doc({ pageContext, data }) {
                 <li key={slug}>
                   <Link
                     onClick={() => {
-                      setVisibility(false)
+                      setVisibility(false);
                     }}
                     activeClassName="active"
                     title={title}
@@ -42,9 +43,9 @@ export default function Doc({ pageContext, data }) {
                   {pageContext.slug === slug && (
                     <TableOfContents
                       hideSidebar={() => {
-                        setVisibility(false)
+                        setVisibility(false);
                       }}
-                      tableOfContentsHtml={toc}
+                      toc={toc.items}
                     />
                   )}
                 </li>
@@ -60,24 +61,23 @@ export default function Doc({ pageContext, data }) {
       </nav>
       <h1>{frontmatter.title}</h1>
       {/* eslint-disable-next-line react/no-danger */}
-      <article dangerouslySetInnerHTML={{ __html: html }} />
+      <article>{children}</article>
       <GithubEditLink relativePath={mdFile.relativePath} />
       <PrevNextLinks
         prev={pageContext.prev || { title: 'Introduction', slug: '/docs' }}
         next={pageContext.next}
       />
     </Layout>
-  )
+  );
 }
 
 export const query = graphql`
   query ($slug: String!) {
-    docPage: markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
+    docPage: mdx(fields: { slug: { eq: $slug } }) {
       frontmatter {
         title
       }
-      toc: tableOfContents(absolute: false, maxDepth: 2)
+      toc: tableOfContents(maxDepth: 2)
       mdFile: parent {
         ... on File {
           relativePath
@@ -85,13 +85,14 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 
 Doc.propTypes = {
   data: PropTypes.shape({
     // eslint-disable-next-line react/forbid-prop-types
     docPage: PropTypes.object,
   }).isRequired,
+  children: PropTypes.any,
   pageContext: PropTypes.shape({
     // eslint-disable-next-line react/forbid-prop-types
     docList: PropTypes.array,
@@ -105,4 +106,4 @@ Doc.propTypes = {
       slug: PropTypes.string,
     }),
   }).isRequired,
-}
+};

@@ -1,98 +1,26 @@
 ---
 date: '2017-10-24'
-title: 'Loading custom font'
+title: 'Loading custom fonts'
 description: 'Loading custom fonts in FabricJS'
 thumbnail: 'load-custom-fonts.png'
 tags: ['fonts', 'typography', 'custom']
 ---
 
-<div
-  class="codepen-later"
-  data-editable="true"
-  data-height="500"
-  data-default-tab="result"
-  data-prefill='{
-    "scripts": ["https://unpkg.com/fabric@4.0.0-beta.12/dist/fabric.js", "http://rawgit.com/bramstein/fontfaceobserver/master/fontfaceobserver.js"]
-  }'
->
-<pre data-lang="css" data-options-autoprefixer="true">
-.controls {
-	display: inline-block;
-}
-canvas {
-  border: 1px solid #999;
-}
-</pre>
-<pre data-lang="html">
-  <canvas id="c" width="500" height="500" style="border:1px solid #ccc"></canvas>
-  <div class="controls">
-    <p>
-      Font-family: <select id="font-family"></select>
-    </p>
-  </div>
-</pre>
-<pre data-lang="js">
-/*
 When working with custom fonts on a fabric canvas, it is recommended to
-use a font preloader. Not doing so is likely to cause texts that are
-imported onto the canvas to be rendered with a wrong (default) font. It
-can also cause you to see a FOUT (Flash of Unstyled Text) right after
-changing the font of a text. The reason behind this is that the browser
-will only load a font after it is used in the DOM. Preloading fonts
-prevents this from happening. In this example we are using Font Face
-Observer (https://github.com/bramstein/fontfaceobserver) to preload
-Google Fonts, using the following steps:
-- Add the custom fonts using @import in your CSS
-- Make an array containing the names of all the custom fonts
-- Load all the custom fonts using a promise or load them by request
-- When the promise is fulfilled, initialize the fabric canvas
-*/
+use the [CSS Font loader api](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Font_Loading_API).
+Not doing so will make your app do FOUT(s) (Flash of Unstyled Text).
+This happens because font loading involve network and is async by nature, and so when you will be adding a text object with a custom font, or switching font, the canvas will try to render before the font has been actually loaded and so the browser will fallback on the specified fallback font or the default one.
 
-var canvas = new fabric.Canvas('c');
-// Define an array with all fonts
-var fonts = ["Pacifico", "VT323", "Quicksand", "Inconsolata"];
+If for some reason your target browsers do not support that api yet you can pick from a selection of font preloading libraries like [Font Face Observer](https://github.com/bramstein/fontfaceobserver)
 
-var textbox = new fabric.Textbox('Lorum ipsum dolor sit amet', {
-left: 50,
-top: 50,
-width: 150,
-fontSize: 20
-});
-canvas.add(textbox).setActiveObject(textbox);
-fonts.unshift('Times New Roman');
-// Populate the fontFamily select
-var select = document.getElementById("font-family");
-fonts.forEach(function(font) {
-var option = document.createElement('option');
-option.innerHTML = font;
-option.value = font;
-select.appendChild(option);
-});
+In this example we are using the browser native CSS Font loader api to load 2 google fonts from google's cdn.
+We load the font, then we create a textbox and then use the loaded font family. Note that you could create the textbox, add them to canvas and just re-render when the font is loaded, doing so you would have saved in FabricJS cache some values calculated with the font not correctly loaded and likely **have cursor positioning issues** or **wrong bounding boxes issues**. Always assign the font family after the font has correctly loaded.
 
-// Apply selected font on change
-document.getElementById('font-family').onchange = function() {
-if (this.value !== 'Times New Roman') {
-loadAndUse(this.value);
-} else {
-canvas.getActiveObject().set("fontFamily", this.value);
-canvas.requestRenderAll();
-}
-};
+When dealing with fonts with multiple weights and styles is easier to assign a different font family to each of them and just use different font families, in the example's code we do show how to load different weights with the same family name, but be aware that one font file has one family, one weight and one style. Loading the font `Lato` doesn't grant you access to all variants of the fonts, but just one. there is one file per variant.
 
-function loadAndUse(font) {
-var myfont = new FontFaceObserver(font)
-myfont.load()
-.then(function() {
-// when font is loaded, use it.
-canvas.getActiveObject().set("fontFamily", font);
-canvas.requestRenderAll();
-}).catch(function(e) {
-console.log(e)
-alert('font loading failed ' + font);
-});
-}
+import { CodeEditor } from '../../../components/CodeEditor';
+import { code } from './code';
 
-// Load all fonts using Font Face Observer
-
-</pre>
-</div>
+<CodeEditor code={code} canvasId="c" >
+    <canvas  width="600" height="600" id="c"></canvas>
+</CodeEditor>
