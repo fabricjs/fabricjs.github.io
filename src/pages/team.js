@@ -13,7 +13,12 @@ import stefan from '../images/stefan.png';
 const TeamPage = () => (
   <Layout>
     <h1>Fabric.js Team</h1>
-    <TeamMember name="Andrea Bogazzi" githubName="asturur" imgSrc={andrea}>
+    <TeamMember
+      name="Andrea Bogazzi"
+      githubName="asturur"
+      imgSrc={andrea}
+      withSponsor
+    >
       <p>
         <TeamMemberName name="Andrea Bogazzi" githubName="asturur" /> was born
         in 1979, Rome Italy.
@@ -31,7 +36,12 @@ const TeamPage = () => (
         maintainer and the admin of the repo.
       </p>
     </TeamMember>
-    <TeamMember name="Shachar Nencel" githubName="ShaMan123" imgSrc={shachar}>
+    <TeamMember
+      name="Shachar Nencel"
+      githubName="ShaMan123"
+      imgSrc={shachar}
+      withSponsor
+    >
       <p>
         <TeamMemberName name="Shachar Nencel" githubName="ShaMan123" /> is from
         Israel.
@@ -53,7 +63,12 @@ const TeamPage = () => (
         <br />
       </p>
     </TeamMember>
-    <TeamMember name="Steve Eberhardt" githubName="melchiar" imgSrc={steve}>
+    <TeamMember
+      name="Steve Eberhardt"
+      githubName="melchiar"
+      imgSrc={steve}
+      withSponsor
+    >
       <p>
         <TeamMemberName name="Steve Eberhardt" githubName="melchiar" /> was born
         in 1988 and lives in British Columbia, Canada.
