@@ -1,54 +1,52 @@
-import React, { useCallback, useEffect, useRef } from 'react';
-import { EditorView, basicSetup } from 'codemirror';
 import {
   javascript,
   javascriptLanguage,
   scopeCompletionSource,
 } from '@codemirror/lang-javascript';
 import { StateField } from '@codemirror/state';
+import { EditorView, basicSetup } from 'codemirror';
 import * as fabric from 'fabric';
 import { debounce } from 'lodash';
+import { default as React, useEffect, useRef, useState } from 'react';
+import { Helmet } from 'react-helmet';
 import { functionToCodeString } from './utils';
+import { useCallback } from 'react';
 
-export const CodeEditor = ({ code, children, canvasId }) => {
+export const CodeEditor = ({ code: codeProp, children, canvasId }) => {
   const divRef = useRef();
-
   const editorRef = useRef();
+
+  const [code, setCode] = useState('');
 
   const runCallback = useCallback(
     debounce((code) => {
       if (window.canvasesId[canvasId]) {
         window.canvasesId[canvasId].dispose();
       }
-      const editor = editorRef.current;
-      code =
-        code ||
-        editor.state.doc.children ||
-        [editor.state.doc].map((textLeaf) => textLeaf.text.join('\n'));
-
       const preamble = [
         `const fabric = window.fabric;`,
         `const canvasEl = document.getElementById('${canvasId}');`,
       ];
-      const cleanupCode = [`window.canvasesId['${canvasId}'] = canvas`];
-      const finalCode = [...preamble, ...code, ...cleanupCode].join('\n');
-      try {
-        eval(finalCode);
-      } catch (error) {
-        console.log('codemirror', error);
-      }
+      const exec = `try {
+          ${code.join('\n')}
+          window.canvasesId['${canvasId}'] = canvas;
+        } catch (error) {
+          console.error(error);
+          window.dispatchEvent(new CustomEvent('canvas_dispose'));
+        }`;
+      setCode([...preamble, exec].join('\n'));
     }, 500)
   );
 
   useEffect(() => {
     // need to assign fabric to window
     // and add to window canvases for cleanup/restart
-    // seems hacky, maybe it is, but it allow us to use the imported verison
+    // seems hacky, maybe it is, but it allow us to use the imported version
     window.fabric = fabric;
     window.canvasesId = window.canvasesId || {};
 
     // https://github.com/codemirror/dev/issues/44#issuecomment-789093799
-    const listenChangesExtension = StateField.define({
+    const onChangeHook = StateField.define({
       create: () => null,
       update: (value, transaction) => {
         if (transaction.docChanged) {
@@ -57,29 +55,33 @@ export const CodeEditor = ({ code, children, canvasId }) => {
         return null;
       },
     });
-
+    const parsedCode = functionToCodeString(codeProp);
     const editor = (editorRef.current = new EditorView({
-      doc: functionToCodeString(code),
+      doc: parsedCode,
       extensions: [
         basicSetup,
         javascript(),
         javascriptLanguage.data.of({
           autocomplete: scopeCompletionSource(globalThis),
         }),
-        listenChangesExtension,
+        onChangeHook,
       ],
       parent: divRef.current,
     }));
-
+    runCallback([parsedCode]);
     return () => editor.destroy();
-  }, [runCallback]);
-
-  useEffect(() => {
-    runCallback();
   }, []);
 
+  useEffect(() => {
+    const handler = () => console.log('TODO: handle disposing gracefully');
+    window.addEventListener('canvas_dispose', handler);
+    return () => window.removeEventListener('canvas_dispose', handler);
+  });
   return (
     <>
+      <Helmet>
+        <script type="module">{code}</script>
+      </Helmet>
       {children}
       <div ref={divRef} />
       <button onClick={() => runCallback()}>runMe</button>
