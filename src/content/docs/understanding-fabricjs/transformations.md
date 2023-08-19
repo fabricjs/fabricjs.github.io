@@ -59,5 +59,21 @@ sendVectorToPlane
 sendObjectToPlane
 ```
 
+### Origin
+
+Positioning an object can be done from the center point or from any other point
+
+```ts
+// sets the center point in the canvas plane
+object.setCenterPoint(point);
+// sets the center point in the parent plane
+object.setRelativeCenterPoint(point);
+
+// sets the tl point in the canvas plane
+object.setXY(point, 'left', 'top');
+// sets the br point in the parent plane
+object.setRelativeXY(point, 'bottom', 'right');
+```
+
 [transforms]: https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Transformations#transforms
 [matrices]: https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Matrix_math_for_the_web
