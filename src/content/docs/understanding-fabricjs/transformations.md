@@ -1,6 +1,12 @@
-## Transformations
+---
+date: '2023-08-20'
+title: 'Transformations'
+description: 'Transformations'
+---
 
-### Math Intro
+# Transformations
+
+## Math Intro
 
 A transformation is described by a matrix:
 
@@ -27,7 +33,7 @@ Transformations application order:
 
 Read more about [matrices] and [transforms] on MDN.
 
-### How It Works
+## How It Works
 
 Each object has its own transform that defines a _plane_.
 An object can exist in a _plane_ defined by another object (e.g. an object nested under a group, a clip path). This means that the object is affected by that _plane_.
