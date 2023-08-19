@@ -4,10 +4,6 @@ title: 'Getting started'
 description: 'Getting started with FabricJS'
 ---
 
-import {version} from 'fabric'
-
-In this guide, we'll get started with the basics of FabricJS
-
 ## Installation
 
 FabricJS can be made available via following approaches as suited by your project
