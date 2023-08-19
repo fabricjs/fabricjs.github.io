@@ -4,6 +4,8 @@ title: 'Core Concepts'
 description: 'Core Concepts'
 ---
 
+# Core Concepts
+
 ## State
 
 State is comprised of 2 aspects. The **logical** state and the **visual** state.
