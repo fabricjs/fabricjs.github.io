@@ -103,6 +103,8 @@ Keep in mind that rendering can be expensive and therefore can lead to a drop in
 
 Rendering is performed in the parent plane, see [transformations](#transformations).
 
+Objects need a reference to canvas for proper rendering (handled by fabric under the hood).
+
 #### `renderAll` vs. `requestRenderAll`
 
 `renderAll` is sync, `requestRenderAll` is not, both render the canvas.
@@ -133,6 +135,8 @@ Take a look at:
 | **`PDF`**  | `N/A`         | Use node canvas |
 
 Use the `classRegistry` to register your own classes for parsing.
+
+If you encounter issues with serialization try changing `NUM_FRACTION_DIGITS`.
 
 ## Customization, Subclassing & Mutation
 
