@@ -49,7 +49,7 @@ object.calcTransformMatrix();
 multiplyTransformMatrixArray([canvas.viewportTransform, object.group?.calcTransformMatrix()]);
 ```
 
-Using transformations can become tricky. Sometimes we need to use the relative parent plane (e.g. during rendering) whereas sometimes we need to use the canvas plane or the viewport plane (e.g. object intersection, mouse interactions).
+Using transformations can be tricky. Sometimes we need to use the relative parent plane (e.g. during rendering) whereas sometimes we need to use the canvas plane or the viewport plane (e.g. object intersection, mouse interactions).
 
 Fabric exposes the following utils for such cases:
 
