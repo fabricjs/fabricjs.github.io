@@ -37,9 +37,9 @@ The function is receiving the canvas context as first argument and so a simple d
 For the custom action we want simply to delete the object.
 We build a function following the mouseUpHandler signature and we use there `javascript>canvas.remove(target)`;
 
-<div class="controls">
+<div className="controls">
   <p>
-    <button id="add" onclick="Add()">Add a rectangle</button>
+    <button id="add">Add a rectangle</button>
   </p>
 </div>
 <CodeEditor code={code} canvasId="test1" >
@@ -55,11 +55,11 @@ let's try to keep them outside the bounding box, on the top.
 
 For the clone functionality we will simply do `javascript>target.clone(function(cloned) { canvas.add(cloned) });`
 
-<div class="controls">
+<div className="controls">
     <p>
-      <button id="add" onclick="Add()">Add a rectangle</button>
+      <button id="add2">Add a rectangle</button>
     </p>
   </div>
-<CodeEditor code={code2} canvasId="test1" >
-    <canvas  width="600" height="500" id="test1"></canvas>
+<CodeEditor code={code2} canvasId="test2" >
+    <canvas  width="600" height="500" id="test2"></canvas>
 </CodeEditor>
