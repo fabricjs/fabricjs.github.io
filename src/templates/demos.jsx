@@ -14,7 +14,7 @@ export default function Demos({ data }) {
       <Seo title="FabricJS demos" />
       <h1>FabricJS Demos</h1>
       <p
-        style={{ 'text-align': 'center' }}
+        style={{ textAlign: 'center' }}
       >{`${data.allDemoPagesMD.totalCount} ${pageDesc}`}</p>
       <ThumbnailList>
         {data.allDemoPagesMD.demoPages.map(
