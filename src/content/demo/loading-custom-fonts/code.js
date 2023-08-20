@@ -1,4 +1,4 @@
-export function code(canvasEl, fabric) {
+export const code = `
   const urlMap = {
     VT323:
       'url(https://fonts.gstatic.com/s/vt323/v17/pxiKyp0ihIEF2isfFJXUdVNF.woff2)',
@@ -74,6 +74,4 @@ export function code(canvasEl, fabric) {
     });
     canvas.add(pacifico, vt323, lato100, lato900);
   });
-}
-
-export const codeString = '';
+`;

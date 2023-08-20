@@ -266,3 +266,14 @@ exports.createPages = async ({ graphql, actions }) => {
     context: { docList },
   });
 };
+
+exports.onCreateWebpackConfig = ({
+  stage,
+  rules,
+  loaders,
+  plugins,
+  actions,
+}) => {
+  // console.log({ plugins, actions, loaders, stage, rules });
+  console.log(rules.js.toString());
+};

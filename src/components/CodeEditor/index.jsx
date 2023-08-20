@@ -9,7 +9,6 @@ import * as fabric from 'fabric';
 import { debounce } from 'lodash';
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { Helmet } from 'react-helmet';
-import { functionToCodeString } from './utils';
 
 export const CodeEditor = ({ code: codeProp, children, canvasId }) => {
   const divRef = useRef();
@@ -54,7 +53,7 @@ export const CodeEditor = ({ code: codeProp, children, canvasId }) => {
         return null;
       },
     });
-    const parsedCode = functionToCodeString(codeProp);
+    const parsedCode = codeProp;
 
     const startState = EditorState.create({
       doc: parsedCode,
