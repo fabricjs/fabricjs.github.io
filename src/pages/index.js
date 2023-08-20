@@ -33,7 +33,6 @@ export default function HomePage({ data }) {
             (
               demoPage // map((demoPage)=>(
             ) => {
-              console.log(demoPage);
               const { frontmatter, fields } = demoPage;
               return (
                 <ThumbnailCard
