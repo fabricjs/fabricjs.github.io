@@ -1,4 +1,4 @@
-export function code(canvasEl, fabric) {
+export const code = `
   const canvas = new fabric.Canvas(canvasEl);
 
   const rect = new fabric.Rect({
@@ -28,4 +28,4 @@ export function code(canvasEl, fabric) {
       }
     );
   };
-}
+`;

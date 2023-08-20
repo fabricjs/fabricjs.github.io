@@ -1,4 +1,4 @@
-export function code(canvasEl, fabric) {
+export const code = `
   const canvas = new fabric.Canvas(canvasEl);
   const demoImg = 'http://fabricjs.com/assets/pug.jpg';
 
@@ -40,4 +40,4 @@ export function code(canvasEl, fabric) {
     canvas.add(img);
     canvas.setActiveObject(img);
   });
-}
+`;

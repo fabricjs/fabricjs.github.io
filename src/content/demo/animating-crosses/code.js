@@ -1,4 +1,4 @@
-export function code(canvasEl, fabric) {
+export const code = `
   const canvas = new fabric.Canvas(canvasEl);
 
   class Cross extends fabric.Object {
@@ -71,4 +71,4 @@ export function code(canvasEl, fabric) {
     canvas.requestRenderAll();
     requestAnimationFrame(animate);
   });
-}
+`;
