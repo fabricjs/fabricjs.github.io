@@ -4,8 +4,6 @@ title: 'Transformations'
 description: 'Transformations'
 ---
 
-# Transformations
-
 ## Math Intro
 
 A transformation is described by a matrix:
