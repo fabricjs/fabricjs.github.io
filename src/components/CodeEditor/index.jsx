@@ -48,18 +48,12 @@ export const CodeEditor = ({ code: _code }) => {
       } catch(error) {
         fabric.cleanup();
         console.error(error);
-        window.dispatchEvent(new CustomEvent('demo_error', { detail: error }));
        }`);
     }, 500)
   );
 
   useEffect(() => {
     window.onerror = () => true;
-    const handler = ({ detail }) => {
-      // do something
-    };
-    window.addEventListener('demo_error', handler, { once: true });
-    return () => window.removeEventListener('demo_error', handler);
   }, []);
 
   useEffect(() => {
