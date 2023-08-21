@@ -68,6 +68,7 @@ Demo.propTypes = {
   data: PropTypes.shape({
     // eslint-disable-next-line react/forbid-prop-types
     demoPage: PropTypes.object,
+    demoScripts: PropTypes.object,
   }).isRequired,
   children: PropTypes.any,
   pageContext: PropTypes.shape({
