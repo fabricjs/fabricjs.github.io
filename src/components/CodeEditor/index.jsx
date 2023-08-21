@@ -3,60 +3,83 @@ import {
   javascriptLanguage,
   scopeCompletionSource,
 } from '@codemirror/lang-javascript';
-import { StateField, EditorState } from '@codemirror/state';
+import { EditorState, StateField } from '@codemirror/state';
 import { EditorView, basicSetup } from 'codemirror';
-import * as fabric from 'fabric';
 import { debounce } from 'lodash';
-import React, { useCallback, useEffect, useRef, useState } from 'react';
+import React, {
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from 'react';
 import { Helmet } from 'react-helmet';
+import * as fabric from './fabric';
 
-export const CodeEditor = ({ code: codeProp, children, canvasId }) => {
+export const useCodeSnippet = (scripts, dir) => {
+  const { publicURL } = useMemo(
+    () => scripts.find(({ relativeDirectory }) => relativeDirectory === dir),
+    [scripts, dir]
+  );
+  const [code, setCode] = useState('');
+  useEffect(() => {
+    fetch(publicURL)
+      .then((res) => res.text())
+      .then((code) => {
+        setCode(code);
+      });
+  }, [publicURL]);
+  return code;
+};
+
+export const CodeEditor = ({ code: _code }) => {
   const divRef = useRef();
   const editorRef = useRef();
-
   const [code, setCode] = useState('');
 
-  const runCallback = useCallback(
-    debounce((code) => {
-      if (window.canvasesId[canvasId]) {
-        window.canvasesId[canvasId].dispose();
-      }
-      const preamble = [
-        `const fabric = window.fabric;`,
-        `const canvasEl = document.getElementById('${canvasId}');`,
-      ];
-      const exec = `try {
-          ${code.join('\n')}
-          window.canvasesId['${canvasId}'] = canvas;
-        } catch (error) {
-          console.error(error);
-          window.dispatchEvent(new CustomEvent('canvas_dispose'));
-        }`;
-      setCode([...preamble, exec].join('\n'));
+  const runCode = useCallback(
+    debounce((code = editorRef.current.state.doc.toJSON().join('\n')) => {
+      setCode(`
+      fabric.cleanup();
+      try {
+        ${code.replace(
+          `import * as fabric from 'fabric';`,
+          `const fabric = window.fabric;`
+        )} 
+      } catch(error) {
+        fabric.cleanup();
+        console.error(error);
+        window.dispatchEvent(new CustomEvent('demo_error', { detail: error }));
+       }`);
     }, 500)
   );
 
   useEffect(() => {
+    const handler = ({ detail }) => {
+      // do something
+    };
+    window.addEventListener('demo_error', handler, { once: true });
+    return () => window.removeEventListener('demo_error', handler);
+  }, []);
+
+  useEffect(() => {
     // need to assign fabric to window
-    // and add to window canvases for cleanup/restart
-    // seems hacky, maybe it is, but it allow us to use the imported version
+    // TODO: support importing
     window.fabric = fabric;
-    window.canvasesId = window.canvasesId || {};
 
     // https://github.com/codemirror/dev/issues/44#issuecomment-789093799
     const onChangeHook = StateField.define({
       create: () => null,
       update: (value, transaction) => {
         if (transaction.docChanged) {
-          runCallback(transaction.newDoc.toJSON());
+          runCode(transaction.newDoc.toJSON().join('\n'));
         }
         return null;
       },
     });
-    const parsedCode = codeProp;
 
     const startState = EditorState.create({
-      doc: parsedCode,
+      doc: _code,
       extensions: [
         javascript(),
         basicSetup,
@@ -71,24 +94,19 @@ export const CodeEditor = ({ code: codeProp, children, canvasId }) => {
       state: startState,
       parent: divRef.current,
     }));
-    runCallback([parsedCode]);
-    return () => editor.destroy();
-  }, []);
 
-  useEffect(() => {
-    const handler = () => console.log('TODO: handle disposing gracefully');
-    window.addEventListener('canvas_dispose', handler);
-    return () => window.removeEventListener('canvas_dispose', handler);
-  });
+    runCode(_code);
+
+    return () => editor.destroy();
+  }, [_code]);
 
   return (
     <>
       <Helmet>
         <script type="module">{code}</script>
       </Helmet>
-      {children}
       <div ref={divRef} />
-      <button onClick={() => runCallback()}>runMe</button>
+      <button onClick={() => runCode()}>runMe</button>
     </>
   );
 };

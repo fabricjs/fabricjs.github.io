@@ -5,9 +5,17 @@ import LayoutFullWidth from '../components/layoutFullWidth';
 import GithubEditLink from '../components/githubEditLink/githubEditLink';
 import PrevNextLinks from '../components/prevNextPostLinks/prevNextLinks';
 import Seo from '../components/seo';
+import { CodeEditor, useCodeSnippet } from '../components/CodeEditor';
 
-export default function Demo({ data, pageContext, children }) {
-  const { frontmatter, mdFile } = data.demoPage;
+export default function Demo({
+  data: {
+    demoPage: { frontmatter, mdFile },
+    demoScripts: { nodes: scripts },
+  },
+  pageContext,
+  children,
+}) {
+  const demoCode = useCodeSnippet(scripts, mdFile.relativeDirectory);
   return (
     <LayoutFullWidth>
       <Seo title={frontmatter.title} />
@@ -16,7 +24,10 @@ export default function Demo({ data, pageContext, children }) {
       </nav>
       <h1>{frontmatter.title}</h1>
       {/* eslint-disable-next-line react/no-danger */}
-      <article>{children}</article>
+      <article>
+        {children}
+        {demoCode && <CodeEditor code={demoCode} />}
+      </article>
       <GithubEditLink relativePath={mdFile.relativePath} />
       <PrevNextLinks
         prev={
@@ -30,14 +41,24 @@ export default function Demo({ data, pageContext, children }) {
 
 export const query = graphql`
   query ($slug: String!) {
-    demoPage: mdx(fields: { slug: { eq: $slug } }) {
+    demoPage: mdx(fields: {slug: {eq: $slug}}) {
       frontmatter {
         title
       }
       mdFile: parent {
         ... on File {
           relativePath
+          relativeDirectory
         }
+      }
+    }
+    demoScripts: allFile(
+      filter: {absolutePath: {regex: "//demo/"}, ext: {regex: "/\\.js/"}}
+    ) {
+      nodes {
+        relativePath
+        relativeDirectory
+        publicURL
       }
     }
   }
