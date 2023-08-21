@@ -187,8 +187,8 @@ exports.createPages = async ({ graphql, actions }) => {
             // in page queries as GraphQL variables.
             title: node.frontmatter.title,
             slug: node.fields.slug,
-            relativeDirectory: node.relativeDirectory,
-            relativePath: node.relativePath,
+            relativeDirectory: node.parent.relativeDirectory,
+            relativePath: node.parent.relativePath,
             code: readFileSync(
               path.resolve(codeQuery.dir, codeQuery.base)
             ).toString(),

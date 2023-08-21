@@ -8,15 +8,13 @@ import PrevNextLinks from '../components/prevNextPostLinks/prevNextLinks';
 import Seo from '../components/seo';
 
 export default function Demo({ pageContext, children }) {
-  console.log(pageContext);
-  const { title } = pageContext.frontmatter;
   return (
     <LayoutFullWidth>
-      <Seo title={title} />
+      <Seo title={pageContext.title} />
       <nav id="breadcrumb-nav" aria-label="breadcrumb">
-        <Link to="/demos">Demos</Link> &gt; <span>{title}</span>
+        <Link to="/demos">Demos</Link> &gt; <span>{pageContext.title}</span>
       </nav>
-      <h1>{title}</h1>
+      <h1>{pageContext.title}</h1>
       <article>
         {children}
         {pageContext.code && <CodeEditor code={pageContext.code} />}
@@ -35,9 +33,7 @@ export default function Demo({ pageContext, children }) {
 Demo.propTypes = {
   children: PropTypes.any,
   pageContext: PropTypes.shape({
-    frontmatter: {
-      title: PropTypes.string,
-    },
+    title: PropTypes.string,
     code: PropTypes.string,
     relativePath: PropTypes.string,
     prev: PropTypes.shape({
