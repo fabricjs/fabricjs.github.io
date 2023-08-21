@@ -6,9 +6,6 @@ thumbnail: 'animation-easing.png'
 tags: ['animation', 'easing']
 ---
 
-import { CodeEditor } from '../../../components/CodeEditor';
-import { code } from './code';
-
 <select id="easing">
   <option>easeInQuad</option>
   <option>easeOutQuad</option>
@@ -42,6 +39,4 @@ import { code } from './code';
   <option>easeInOutBounce</option>
 </select>
 <button id="animate">Animate</button>
-<CodeEditor code={code} canvasId="c" >
-    <canvas  width="600" height="500" id="c"></canvas>
-</CodeEditor>
+<canvas width="600" height="500" id="canvas"></canvas>

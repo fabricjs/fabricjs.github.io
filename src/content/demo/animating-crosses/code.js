@@ -1,5 +1,5 @@
 import * as fabric from 'fabric';
-const canvas = new fabric.Canvas('canvas');
+const canvas = new fabric.Canvas();
 
 class Cross extends fabric.Object {
   constructor(options = {}) {
