@@ -53,14 +53,13 @@ export const CodeEditor = ({ code: _code }) => {
   );
 
   useEffect(() => {
+    // need to assign fabric to window
+    // TODO: support importing
+    window.fabric = fabric;
     window.onerror = () => true;
   }, []);
 
   useEffect(() => {
-    // need to assign fabric to window
-    // TODO: support importing
-    window.fabric = fabric;
-
     // https://github.com/codemirror/dev/issues/44#issuecomment-789093799
     const onChangeHook = StateField.define({
       create: () => null,
