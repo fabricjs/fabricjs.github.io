@@ -55,10 +55,44 @@ canvas.on({
   'object:rotating': onChange,
 });
 
+const hit = new fabric.Circle({
+  radius: 5,
+  originX: 'center',
+  originY: 'center',
+  opacity: 0.5,
+});
+
 function onChange({ target }) {
   target.setCoords();
+  const ctx = canvas.getTopContext();
+  canvas.clearContext(ctx);
   canvas.forEachObject((obj) => {
     if (obj === target) return;
-    obj.set('opacity', target.intersectsWithObject(obj) ? 0.5 : 1);
+    const intersection = fabric.Intersection.intersectPolygonPolygon(
+      target.getCoords(true),
+      obj.getCoords(true)
+    );
+
+    hit.set({ fill: obj.fill });
+    if (
+      intersection.status === 'Intersection' ||
+      intersection.status === 'Coincident' ||
+      obj.isContainedWithinObject(target, true) ||
+      target.isContainedWithinObject(obj, true)
+    ) {
+      obj.set('opacity', 0.5);
+      ctx.save();
+      ctx.transform(...canvas.viewportTransform);
+      hit.transform(ctx);
+      intersection.points.forEach(({ x, y }) => {
+        ctx.save();
+        ctx.translate(x, y);
+        hit._render(ctx);
+        ctx.restore();
+      });
+      ctx.restore();
+    } else {
+      obj.set('opacity', 1);
+    }
   });
 }
