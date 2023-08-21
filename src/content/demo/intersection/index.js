@@ -67,7 +67,10 @@ function onChange({ target }) {
   const ctx = canvas.getTopContext();
   canvas.clearContext(ctx);
   canvas.forEachObject((obj) => {
-    if (obj === target) return;
+    if (obj === target) {
+      obj.set('opacity', 1);
+      return;
+    }
     const intersection = fabric.Intersection.intersectPolygonPolygon(
       target.getCoords(true),
       obj.getCoords(true)
