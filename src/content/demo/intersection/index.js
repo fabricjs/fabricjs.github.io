@@ -53,6 +53,7 @@ canvas.on({
   'object:moving': onChange,
   'object:scaling': onChange,
   'object:rotating': onChange,
+  'object:skewing': onChange,
 });
 
 const hit = new fabric.Circle({
