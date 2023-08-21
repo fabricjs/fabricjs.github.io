@@ -92,6 +92,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 };
 
 const path = require('path');
+const { readFileSync } = require('fs');
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
@@ -103,11 +104,9 @@ exports.createPages = async ({ graphql, actions }) => {
   /// /fetch the 'demo' md files and create pages for them
   const demoPagesQueryResult = await graphql(`
     query demoPagesQueryResult {
-      allMdx(
+      demoFiles: allMdx(
         filter: {
-          internal: {
-            contentFilePath: { regex: "//demo/[a-zA-Z0-9-]+/index.md$/" }
-          }
+          internal: { contentFilePath: { regex: "//demo/" } }
           frontmatter: { title: { regex: "/[a-zA-Z0-9]+$/" } }
         }
         sort: { frontmatter: { title: ASC } }
@@ -134,6 +133,14 @@ exports.createPages = async ({ graphql, actions }) => {
             internal {
               contentFilePath
             }
+            parent {
+              ... on File {
+                dir
+                base
+                relativePath
+                relativeDirectory
+              }
+            }
           }
           next {
             frontmatter {
@@ -148,38 +155,57 @@ exports.createPages = async ({ graphql, actions }) => {
           }
         }
       }
+      demoScripts: allFile(
+        filter: { absolutePath: { regex: "//demo/" }, ext: { eq: ".js" } }
+      ) {
+        nodes {
+          dir
+          base
+          relativePath
+          relativeDirectory
+          publicURL
+        }
+      }
     }
   `);
 
   // create each 'demo' page
-  demoPagesQueryResult.data.allMdx &&
-    demoPagesQueryResult.data.allMdx.edges.forEach(
-      ({ node, previous, next }) => {
-        node.fields.slug !== null &&
-          node.fields.slug.trim() !== '' &&
-          createPage({
-            path: node.fields.slug,
-            component: `${path.resolve(
-              './src/templates/demo.jsx'
-            )}?__contentFilePath=${node.internal.contentFilePath}`,
-            context: {
-              // Data passed to context is available
-              // in page queries as GraphQL variables.
-              title: node.frontmatter.title,
-              slug: node.fields.slug,
-              prev: previous
-                ? {
-                    title: previous.frontmatter.title,
-                    slug: previous.fields.slug,
-                  }
-                : null,
-              next: next
-                ? { title: next.frontmatter.title, slug: next.fields.slug }
-                : null,
-            },
-          });
+  demoPagesQueryResult.data.demoFiles?.edges.forEach(
+    ({ node, previous, next }) => {
+      if (node.fields.slug !== null && node.fields.slug.trim() !== '') {
+        const codeQuery = demoPagesQueryResult.data.demoScripts.nodes.find(
+          ({ relativeDirectory }) =>
+            relativeDirectory === node.parent.relativeDirectory
+        );
+        createPage({
+          path: node.fields.slug,
+          component: `${path.resolve(
+            './src/templates/demo.jsx'
+          )}?__contentFilePath=${node.internal.contentFilePath}`,
+          context: {
+            // Data passed to context is available
+            // in page queries as GraphQL variables.
+            title: node.frontmatter.title,
+            slug: node.fields.slug,
+            relativeDirectory: node.relativeDirectory,
+            relativePath: node.relativePath,
+            code: readFileSync(
+              path.resolve(codeQuery.dir, codeQuery.base)
+            ).toString(),
+            prev: previous
+              ? {
+                  title: previous.frontmatter.title,
+                  slug: previous.fields.slug,
+                }
+              : null,
+            next: next
+              ? { title: next.frontmatter.title, slug: next.fields.slug }
+              : null,
+          },
+        });
       }
-    );
+    }
+  );
 
   // create 'demos' page
   createPage({
@@ -196,9 +222,7 @@ exports.createPages = async ({ graphql, actions }) => {
     query docPagesQueryResult {
       allDocPagesMD: allMdx(
         filter: {
-          internal: {
-            contentFilePath: { regex: "//docs/[a-zA-Z0-9-]+/index.mdx?$/" }
-          }
+          internal: { contentFilePath: { regex: "//docs/" } }
           frontmatter: { title: { regex: "/[a-zA-Z0-9]+$/" } }
         }
         sort: { frontmatter: { date: ASC } }

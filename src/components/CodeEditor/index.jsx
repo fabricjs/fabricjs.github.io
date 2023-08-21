@@ -6,31 +6,9 @@ import {
 import { EditorState, StateField } from '@codemirror/state';
 import { EditorView, basicSetup } from 'codemirror';
 import { debounce } from 'lodash';
-import React, {
-  useCallback,
-  useEffect,
-  useMemo,
-  useRef,
-  useState,
-} from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import * as fabric from './fabric';
-
-export const useCodeSnippet = (scripts, dir) => {
-  const { publicURL } = useMemo(
-    () => scripts.find(({ relativeDirectory }) => relativeDirectory === dir),
-    [scripts, dir]
-  );
-  const [code, setCode] = useState('');
-  useEffect(() => {
-    fetch(publicURL)
-      .then((res) => res.text())
-      .then((code) => {
-        setCode(code);
-      });
-  }, [publicURL]);
-  return code;
-};
 
 export const CodeEditor = ({ code: _code }) => {
   const divRef = useRef();
