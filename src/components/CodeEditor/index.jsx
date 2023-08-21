@@ -40,12 +40,11 @@ export const CodeEditor = ({ code: _code }) => {
   const runCode = useCallback(
     debounce((code = editorRef.current.state.doc.toJSON().join('\n')) => {
       setCode(`
+      // TODO: support importing
+      const fabric = window.fabric;
       fabric.cleanup();
       try {
-        ${code.replace(
-          `import * as fabric from 'fabric';`,
-          `const fabric = window.fabric;`
-        )} 
+        ${code.replace(`import * as fabric from 'fabric';`, '')} 
       } catch(error) {
         fabric.cleanup();
         console.error(error);
