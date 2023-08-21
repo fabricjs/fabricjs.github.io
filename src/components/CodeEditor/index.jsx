@@ -54,6 +54,7 @@ export const CodeEditor = ({ code: _code }) => {
   );
 
   useEffect(() => {
+    window.onerror = () => true;
     const handler = ({ detail }) => {
       // do something
     };
