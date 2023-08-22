@@ -6,6 +6,7 @@ import GithubEditLink from '../components/githubEditLink/githubEditLink';
 import LayoutFullWidth from '../components/layoutFullWidth';
 import PrevNextLinks from '../components/prevNextPostLinks/prevNextLinks';
 import Seo from '../components/seo';
+import '../style.css';
 
 export default function Demo({ pageContext, children }) {
   return (

@@ -76,7 +76,7 @@ export const CodeEditor = ({ code: _code }) => {
       <Helmet>
         <script type="module">{code}</script>
       </Helmet>
-      <div ref={divRef} />
+      <div className="code-editor" ref={divRef} />
       <button onClick={() => runCode()}>runMe</button>
     </>
   );
