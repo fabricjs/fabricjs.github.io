@@ -18,9 +18,4 @@ We load the font, then we create a textbox and then use the loaded font family. 
 
 When dealing with fonts with multiple weights and styles is easier to assign a different font family to each of them and just use different font families, in the example's code we do show how to load different weights with the same family name, but be aware that one font file has one family, one weight and one style. Loading the font `Lato` doesn't grant you access to all variants of the fonts, but just one. there is one file per variant.
 
-import { CodeEditor } from '../../../components/CodeEditor';
-import { code } from './code';
-
-<CodeEditor code={code} canvasId="c" >
-    <canvas  width="600" height="600" id="c"></canvas>
-</CodeEditor>
+<canvas  width="600" height="600" id="canvas"></canvas>
