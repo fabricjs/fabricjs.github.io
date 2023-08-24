@@ -78,6 +78,32 @@ export const code2 = `
   fabric.Object.prototype.cornerColor = 'blue';
   fabric.Object.prototype.cornerStyle = 'circle';
 
+  function renderIcon(icon) {
+    return function renderIcon(ctx, left, top, styleOverride, fabricObject) {
+      var size = this.cornerSize;
+      ctx.save();
+      ctx.translate(left, top);
+      ctx.rotate(fabric.util.degreesToRadians(fabricObject.angle));
+      ctx.drawImage(icon, -size / 2, -size / 2, size, size);
+      ctx.restore();
+    };
+  }
+
+  function deleteObject(eventData, target) {
+    var canvas = target.canvas;
+    canvas.remove(target);
+    canvas.requestRenderAll();
+  }
+
+  function cloneObject(eventData, transform) {
+    var canvas = transform.target.canvas;
+    transform.target.clone().then((cloned) => {
+      cloned.left += 10;
+      cloned.top += 10;
+      canvas.add(cloned);
+    });
+  }
+
   function Add() {
     var rect = new fabric.Rect({
       left: 100,
@@ -90,57 +116,31 @@ export const code2 = `
       strokeWidth: 4,
     });
 
+    rect.controls.deleteControl = new fabric.Control({
+      x: 0.5,
+      y: -0.5,
+      offsetY: -16,
+      offsetX: 16,
+      cursorStyle: 'pointer',
+      mouseUpHandler: deleteObject,
+      render: renderIcon(deleteImg),
+      cornerSize: 24,
+    });
+
+    rect.controls.clone = new fabric.Control({
+      x: -0.5,
+      y: -0.5,
+      offsetY: -16,
+      offsetX: -16,
+      cursorStyle: 'pointer',
+      mouseUpHandler: cloneObject,
+      render: renderIcon(cloneImg),
+      cornerSize: 24,
+    });
+
     canvas.add(rect);
     canvas.setActiveObject(rect);
   }
 
-  function renderIcon(icon) {
-    return function renderIcon(ctx, left, top, styleOverride, fabricObject) {
-      var size = this.cornerSize;
-      ctx.save();
-      ctx.translate(left, top);
-      ctx.rotate(fabric.util.degreesToRadians(fabricObject.angle));
-      ctx.drawImage(icon, -size / 2, -size / 2, size, size);
-      ctx.restore();
-    };
-  }
-
-  fabric.Object.prototype.controls.deleteControl = new fabric.Control({
-    x: 0.5,
-    y: -0.5,
-    offsetY: -16,
-    offsetX: 16,
-    cursorStyle: 'pointer',
-    mouseUpHandler: deleteObject,
-    render: renderIcon(deleteImg),
-    cornerSize: 24,
-  });
-
-  fabric.Object.prototype.controls.clone = new fabric.Control({
-    x: -0.5,
-    y: -0.5,
-    offsetY: -16,
-    offsetX: -16,
-    cursorStyle: 'pointer',
-    mouseUpHandler: cloneObject,
-    render: renderIcon(cloneImg),
-    cornerSize: 24,
-  });
-
   Add();
-
-  function deleteObject(eventData, target) {
-    var canvas = target.canvas;
-    canvas.remove(target);
-    canvas.requestRenderAll();
-  }
-
-  function cloneObject(eventData, target) {
-    var canvas = target.canvas;
-    target.clone(function (cloned) {
-      cloned.left += 10;
-      cloned.top += 10;
-      canvas.add(cloned);
-    });
-  }
 `;
