@@ -1,6 +1,5 @@
-import * as fabric from 'fabric';
-
-const canvas = new fabric.Canvas();
+export const code = `
+const canvas = new fabric.Canvas(canvasEl);
 
 fabric.Object.ownDefaults.transparentCorners = false;
 
@@ -100,3 +99,4 @@ function onChange({ target }) {
     }
   });
 }
+`;
