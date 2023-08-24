@@ -1,6 +1,5 @@
-import * as fabric from 'fabric';
-
-const canvas = new fabric.Canvas();
+export const code = `
+const canvas = new fabric.Canvas(canvasEl);
 
 const points = [
   {
@@ -84,3 +83,4 @@ poly.on('mousedblclick', () => {
   }
   canvas.requestRenderAll();
 });
+`;
