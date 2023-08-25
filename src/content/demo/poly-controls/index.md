@@ -20,7 +20,7 @@ We have a function that trigger the `none>edit mode`.
 When we enter in edit mode we create one new control for each polygon point.
 To those controls we attach a property, called point index, to remember to which point they are bound to.
 
-Those controls use their own custo position handler: `none>polygonPositionHandler`. This function
+Those controls use their own custom position handler: `none>polygonPositionHandler`. This function
 look at the pointIndex of the control and return the current canvas position for that particular point.
 In this way interaction and rendering are done.
 
@@ -66,6 +66,8 @@ Fabric supports numeric origins for objects with a range from 0 to 1. This let u
 ```javascript
 fabricObject.setPositionByOrigin(absolutePoint, newX + 0.5, newY + 0.5);
 ```
+
+In the below canvas, use the classic controls to scale and rotate the polygon, use a double click to switch back and forth in polygon editing mode. Once in polygon editing mode, you can drag point of the polygon around with an orchestrated user experience that feels correct.
 
 <CodeEditor code={code} canvasId="canvas" >
   <canvas id="canvas" width="500" height="500"></canvas>
