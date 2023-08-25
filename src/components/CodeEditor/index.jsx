@@ -17,7 +17,7 @@ export const CodeEditor = ({ code: codeProp, children, canvasId }) => {
   const [code, setCode] = useState('');
 
   const runCallback = useCallback(
-    debounce((code) => {
+    debounce((code = [codeProp]) => {
       if (window.canvasesId[canvasId]) {
         window.canvasesId[canvasId].dispose();
       }
