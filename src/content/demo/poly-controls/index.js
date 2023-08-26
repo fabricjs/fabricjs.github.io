@@ -64,6 +64,7 @@ const poly = new fabric.Polygon(points, {
   objectCaching: false,
   transparentCorners: false,
   cornerColor: 'blue',
+  exactBoundingBox: true,
 });
 canvas.viewportTransform = [0.7, 0, 0, 0.7, -50, 50];
 canvas.add(poly);
