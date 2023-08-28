@@ -340,7 +340,7 @@ export const EventInspectorUI = () => {
           </div>
 
           <div className="demo-body">
-            <canvas id="c1" width="500" height="400"></canvas>
+            <canvas id="c1" width="400" height="400"></canvas>
             <div>
               Drag me on the canvas
               <br />
@@ -361,16 +361,13 @@ export const EventInspectorUI = () => {
           <div id="observing-events-log">
             <strong>Observing these events</strong>
           </div>
-
+        </div>
+        <div className="column-events">
           <div id="observing-events-log-obj">
             <strong>Objects events</strong>
           </div>
-
           <div id="non-observing-events-log">
             <strong>Other available events</strong>
-            <p>path:created</p>
-            <p>object:added</p>
-            <p>object:removed</p>
           </div>
         </div>
       </div>
