@@ -15,6 +15,7 @@ label {
   vertical-align: top;
 }
 .info {
+  display: inline-block;
   width: 35px;
 }
 #bd-wrapper {
