@@ -16,7 +16,30 @@
   display: flex;
   flex-direction: row;
 }
-#log1 {
+p,
+.log-entry {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+.log-entry {
+  white-space: pre;
+  border-bottom: 1px solid blue;
+}
+.bold {
+  font-weight: bold;
+}
+.log-entry > code {
+  font-weight: initial;
+}
+.log-entry > button {
+  margin: 0 2px;
+}
+*[hidden] {
+  display: none;
+}
+.log-container,
+#log1,
+#log2 {
   display: inline-block;
   width: 620px;
   height: 260px;
@@ -25,12 +48,32 @@
   font-family: monospace;
   font-size: 11px;
 }
-#log1 > p {
-  border-bottom: 1px solid blue;
-}
 #drag-me {
   display: inline-block;
   width: 100px;
   background-color: purple;
   height: 100px;
+}
+label {
+  margin-right: 8px;
+}
+.bold label {
+  font-weight: bold;
+}
+label[for='green'] {
+  color: green;
+}
+label[for='red'] {
+  color: red;
+}
+label[for='blue'] {
+  color: blue;
+}
+.log-container {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+.hidden {
+  display: none;
 }
