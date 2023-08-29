@@ -18,7 +18,6 @@ function toggleUniform() {
 
 document.getElementById('toggle').onclick = toggleUniform;
 
-
 // create a rectangle object
 const rect = new fabric.Rect({
     left: 100,
