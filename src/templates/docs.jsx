@@ -9,7 +9,7 @@ import Seo from '../components/seo';
 
 export default function Docs({ pageContext, data, children }) {
   const { frontmatter, toc, mdFile } = data.introPage;
-
+  console.log({ pageContext });
   return (
     <Layout
       leftSidebar={(setVisibility) => (

@@ -265,4 +265,80 @@ exports.createPages = async ({ graphql, actions }) => {
     component: path.resolve('./src/templates/docs.jsx'),
     context: { docList },
   });
+
+  // +------------------------------------------------------------------+
+  // | Create pages for 'api-docs' generated from tsdocs from the lib   |
+  // +------------------------------------------------------------------+
+
+  /// /fetch the 'doc' md files and create pages for them
+  const apiDocsPagesQueryResult = await graphql(`
+    query docPagesQueryResult {
+      allApiPagesMD: allMdx(
+        filter: {
+          internal: {
+            contentFilePath: {
+              regex: "//apidocs/[a-zA-Z0-9-.]/[a-zA-Z0-9-.]+.md$/"
+            }
+          }
+          frontmatter: { title: { regex: "/[a-zA-Z0-9]+$/" } }
+        }
+        sort: { frontmatter: { date: ASC } }
+      ) {
+        apiPages: nodes {
+          frontmatter {
+            title
+          }
+          fields {
+            slug
+          }
+          internal {
+            contentFilePath
+          }
+        }
+      }
+    }
+  `);
+  const { apiPages } = apiDocsPagesQueryResult.data.allApiPagesMD;
+  const apiList = apiPages.map(({ frontmatter, fields }) => ({
+    title: frontmatter.title,
+    slug: fields.slug,
+  }));
+  console.log({ data: apiDocsPagesQueryResult, apiList });
+
+  // create each 'api-doc' page
+  apiPages.forEach(({ fields, internal }, di) => {
+    fields.slug !== null &&
+      fields.slug.trim() !== '' &&
+      createPage({
+        path: fields.slug,
+        component: `${path.resolve(
+          './src/templates/doc.jsx'
+        )}?__contentFilePath=${internal.contentFilePath}`,
+        context: {
+          slug: fields.slug,
+          prev:
+            di === 0
+              ? null
+              : {
+                  title: apiPages[di - 1].frontmatter.title,
+                  slug: apiPages[di - 1].fields.slug,
+                },
+          next:
+            di === apiPages.length - 1
+              ? null
+              : {
+                  title: apiPages[di + 1].frontmatter.title,
+                  slug: apiPages[di + 1].fields.slug,
+                },
+          docList: apiList,
+        },
+      });
+  });
+
+  // create 'docs' page
+  createPage({
+    path: '/api-docs',
+    component: path.resolve('./src/templates/docs.jsx'),
+    context: { docList: apiList },
+  });
 };

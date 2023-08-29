@@ -1,13 +1,11 @@
 export const code = `
 const canvas = new fabric.Canvas(canvasEl);
 
-fabric.Object.prototype.noScaleCache = false;
-/*
-	strokeUniform works better without scalingCache
-	Objects in group are not scaled directly, so stroke uniform will not have effect.
-*/
+fabric.Object.ownDefaults.noScaleCache = false;
+
 function toggleUniform() {
 	var aObject = canvas.getActiveObject();
+    if (!aObject) return;
 	if (aObject.type === 'activeSelection') {
 		aObject.getObjects().forEach(function(obj) {
 			obj.set('strokeUniform', !obj.strokeUniform);
@@ -17,6 +15,9 @@ function toggleUniform() {
 	}
 	canvas.requestRenderAll();
 }
+
+document.getElementById('toggle').onclick = toggleUniform;
+
 
 // create a rectangle object
 const rect = new fabric.Rect({
