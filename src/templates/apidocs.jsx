@@ -7,14 +7,13 @@ import GithubEditLink from '../components/githubEditLink/githubEditLink';
 import PrevNextLinks from '../components/prevNextPostLinks/prevNextLinks';
 import Seo from '../components/seo';
 
-export default function Docs({ pageContext, data, children }) {
+export default function ApiDocs({ pageContext, data, children }) {
   const { frontmatter, toc, mdFile } = data.introPage;
 
   return (
     <Layout
       leftSidebar={(setVisibility) => (
         <>
-          <header>Guides</header>
           <nav id="topics" aria-label="Contents">
             <ol>
               <li>
@@ -23,10 +22,10 @@ export default function Docs({ pageContext, data, children }) {
                     setVisibility(false);
                   }}
                   activeClassName="active"
-                  title="Introduction"
-                  to="/docs"
+                  title="Modules"
+                  to="/api-docs"
                 >
-                  Introduction
+                  Modules
                 </Link>
                 <TableOfContents
                   hideSidebar={() => {
@@ -35,7 +34,7 @@ export default function Docs({ pageContext, data, children }) {
                   toc={toc.items}
                 />
               </li>
-              {pageContext.docList.map(({ title, slug }) => (
+              {pageContext.apiDocList.map(({ title, slug }) => (
                 <li key={slug}>
                   <Link
                     onClick={() => {
@@ -55,7 +54,7 @@ export default function Docs({ pageContext, data, children }) {
     >
       <Seo title={frontmatter.title} />
       <nav id="breadcrumb-nav" aria-label="breadcrumb">
-        <Link to="/">FabricJS</Link> &gt; <span>Docs</span>
+        <Link to="/">FabricJS</Link> &gt; <span>Api Docs</span>
       </nav>
       <h1>{frontmatter.title}</h1>
       {/* eslint-disable-next-line react/no-danger */}
@@ -63,8 +62,8 @@ export default function Docs({ pageContext, data, children }) {
       <GithubEditLink relativePath={mdFile.relativePath} />
       <PrevNextLinks
         next={{
-          title: pageContext.docList[0].title,
-          slug: pageContext.docList[0].slug,
+          title: pageContext.apiDocList[0].title,
+          slug: pageContext.apiDocList[0].slug,
         }}
       />
     </Layout>
@@ -74,7 +73,7 @@ export default function Docs({ pageContext, data, children }) {
 export const query = graphql`
   query docsQuery {
     introPage: mdx(
-      internal: { contentFilePath: { regex: "//docs/introduction.md$/" } }
+      internal: { contentFilePath: { regex: "//apidocs/modules.md$/" } }
     ) {
       frontmatter {
         title
@@ -89,7 +88,7 @@ export const query = graphql`
   }
 `;
 
-Docs.propTypes = {
+ApiDocs.propTypes = {
   data: PropTypes.shape({
     // eslint-disable-next-line react/forbid-prop-types
     introPage: PropTypes.object,
@@ -97,6 +96,6 @@ Docs.propTypes = {
   children: PropTypes.any,
   pageContext: PropTypes.shape({
     // eslint-disable-next-line react/forbid-prop-types
-    docList: PropTypes.array,
+    apiDocList: PropTypes.array,
   }).isRequired,
 };

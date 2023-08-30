@@ -35,15 +35,19 @@
     "gatsby-remark-images": "^7.5.0",
     "gatsby-remark-prismjs": "^7.11.0",
     "gatsby-source-filesystem": "^5.11.x",
+    "gatsby-source-typedoc": "^2.0.0",
     "gatsby-transformer-sharp": "^5.11.x",
     "prismjs": "^1.29.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
-    "react-load-script": "^0.0.6"
+    "react-load-script": "^0.0.6",
+    "typedoc": "^0.24.8",
+    "typescript": "^4.9.4"
   },
   "devDependencies": {
     "@babel/plugin-proposal-decorators": "^7.22.10",
+    "@types/jsdom": "^21.1.2",
     "babel-preset-gatsby": "^3.11.0",
     "eslint": "^8.38.0",
     "eslint-config-prettier": "^8.8.0",
