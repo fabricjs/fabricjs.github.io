@@ -72,6 +72,13 @@ module.exports = {
         // See: https://typedoc.org/guides/options/
         typedoc: {
           tsconfig: `${__dirname}/node_modules/fabric/tsconfig.json`,
+          out: 'src/content/api-docs',
+          exclude: [
+            './node_modules/fabric/src/**/*.test.ts',
+            './node_modules/fabric/src/**/*.spec.ts',
+          ],
+          excludeExternals: true,
+          logLevel: 'Verbose',
         },
       },
     },
