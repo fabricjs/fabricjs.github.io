@@ -1,13 +1,12 @@
 {
   // https://typedoc.org/options/
   "$schema": "https://typedoc.org/schema.json",
-  "out": "docs",
+  "out": "src/content/api-docs",
   "exclude": [
-    "node_modules/fabric/src/**/*.test.ts",
-    "node_modules/fabric/src/**/*.spec.ts"
+    "./node_modules/fabric/src/**/*.test.ts",
+    "./node_modules/fabric/src/**/*.spec.ts"
   ],
   "excludeExternals": true,
-  "tsconfig": "node_modules/fabric/tsconfig.json",
-  "logLevel": "Verbose",
-  "emit": "both"
+  "tsconfig": "./node_modules/fabric/tsconfig.json",
+  "logLevel": "Verbose"
 }

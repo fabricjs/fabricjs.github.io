@@ -67,13 +67,10 @@ module.exports = {
         // Array of Typescript files to
         // include
         src: [`${__dirname}/node_modules/fabric/fabric.ts`],
-
         // Options passed to Typedoc Application
         // Usually corresponds to CLI args directly
         // See: https://typedoc.org/guides/options/
         typedoc: {
-          exclude: ['src/**/*.test.ts', 'src/**/*.spec.ts'],
-          excludeExternals: true,
           tsconfig: `${__dirname}/node_modules/fabric/tsconfig.json`,
         },
       },
