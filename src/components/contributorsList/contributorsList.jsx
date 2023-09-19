@@ -1,26 +1,22 @@
-import React from 'react';
+import React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
 // import PropTypes from 'prop-types';
-import HorizontalPanList from '../horizontalPanList/horizontalPanList';
-import ContributorCard from './contributorCard';
-import './contributorsList.css';
+import HorizontalPanList from '../horizontalPanList/horizontalPanList'
+import ContributorCard from './contributorCard'
+import './contributorsList.css'
 
 export default function ContributorsList() {
-  // const data = useStaticQuery(graphql`
-  //   query ContributorsQuery {
-  //     allContributor(limit: 10) {
-  //       nodes {
-  //         name
-  //         picUrl
-  //         url
-  //       }
-  //     }
-  //   }
-  // `);
-  const data = {
-    allContributor: {
-      nodes: [],
-    },
-  };
+  const data = useStaticQuery(graphql`
+    query ContributorsQuery {
+      allContributor(limit: 10) {
+        nodes {
+          name
+          picUrl
+          url
+        }
+      }
+    }
+  `)
   return (
     <HorizontalPanList
       customClass="contributorsList"
@@ -45,5 +41,5 @@ export default function ContributorsList() {
         />
       ))}
     </HorizontalPanList>
-  );
+  )
 }
