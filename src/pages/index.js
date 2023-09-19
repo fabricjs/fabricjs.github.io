@@ -5,7 +5,6 @@ import Layout from '../components/layoutFullWidth';
 import FeaturedBanner from '../components/featuredBanner/featuredBanner';
 import HorizontalPanList from '../components/horizontalPanList/horizontalPanList';
 import ThumbnailCard from '../components/card/thumbnailCard';
-import ContributorsList from '../components/contributorsList/contributorsList';
 import Features from '../components/Features/Features';
 
 export default function HomePage({ data }) {
@@ -57,7 +56,7 @@ export default function HomePage({ data }) {
       </section>
       <section>
         <h2>Contributors</h2>
-        <ContributorsList />
+        {/* <ContributorsList /> */}
       </section>
     </Layout>
   );
