@@ -65,6 +65,21 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       value: slug.replace(/ +/g, '-').replace(/-+/g, '-'), // slug.replace(/\/$/,"")    //also remove trailing slash if any (this is not req coz while creating the slug using createFilePath(), we have already set 'trailingSlash' as false)
     });
   }
+  if (node.internal.type === 'MarkdownRemark') {
+    const { createNodeField } = actions;
+    const slug = createFilePath({
+      node,
+      getNode,
+      basePath: 'tsdocs',
+      trailingSlash: false,
+    }); /* basePath -- path inside src folder to act as base path */
+
+    createNodeField({
+      node,
+      name: 'slug',
+      value: `/apidocs${slug.replace(/ +/g, '-').replace(/-+/g, '-')}`,
+    });
+  }
 };
 
 const path = require('path');
@@ -243,34 +258,29 @@ exports.createPages = async ({ graphql, actions }) => {
   });
 
   // +------------------------------------------------------------------+
-  // | Create pages for 'apidocs'                                       |
+  // | Create pages for 'tsdocs'                                       |
   // +------------------------------------------------------------------+
 
   /// /fetch the 'doc' md files and create pages for them
   const apiDocQueryResult = await graphql(`
     query apidocPagesQueryResult {
-      allApidocPagesMD: allMdx(
+      allApidocPagesMD: allMarkdownRemark(
         filter: {
-          internal: {
-            contentFilePath: {
-              regex: "//apidocs/[a-zA-Z0-9-]+/[a-zA-Z0-9-]+.md/"
-            }
+          fileAbsolutePath: {
+            regex: "//tsdocs/[a-zA-Z0-9-]+/[a-zA-Z0-9-]+.md/"
           }
         }
       ) {
         apidocPages: nodes {
+          html
           fields {
             slug
-          }
-          internal {
-            contentFilePath
           }
         }
       }
     }
   `);
   const { apidocPages } = apiDocQueryResult.data.allApidocPagesMD;
-
   // collect all doc titles and links in a array which we'll pass as context when creating each doc page
   /* let docList = [];
   docPages.forEach(({frontmatter,fields})=>{
@@ -282,14 +292,12 @@ exports.createPages = async ({ graphql, actions }) => {
   }));
 
   // create each 'doc' page
-  apidocPages.forEach(({ fields, internal }, di) => {
+  apidocPages.forEach(({ fields }, di) => {
     fields.slug !== null &&
       fields.slug.trim() !== '' &&
       createPage({
         path: fields.slug,
-        component: `${path.resolve(
-          './src/templates/apidoc.jsx'
-        )}?__contentFilePath=${internal.contentFilePath}`,
+        component: `${path.resolve('./src/templates/apidoc.jsx')}`,
         context: {
           slug: fields.slug,
           prev:

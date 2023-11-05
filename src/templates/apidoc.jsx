@@ -6,8 +6,8 @@ import TableOfContents from '../components/tableOfContents/tableOfContents';
 import GithubEditLink from '../components/githubEditLink/githubEditLink';
 import PrevNextLinks from '../components/prevNextPostLinks/prevNextLinks';
 
-export default function Apidoc({ pageContext, data, children }) {
-  const { toc, mdFile } = data.apidocPage;
+export default function Apidoc({ pageContext, data }) {
+  const { toc, mdFile, html } = data.apidocPage;
 
   return (
     <Layout
@@ -60,7 +60,7 @@ export default function Apidoc({ pageContext, data, children }) {
       </nav>
       <h1>{frontmatter.title}</h1> */}
       {/* eslint-disable-next-line react/no-danger */}
-      <article>{children}</article>
+      <article dangerouslySetInnerHTML={{ __html: html }} />
       <GithubEditLink relativePath={mdFile.relativePath} />
       <PrevNextLinks prev={pageContext.prev} next={pageContext.next} />
     </Layout>
@@ -69,7 +69,8 @@ export default function Apidoc({ pageContext, data, children }) {
 
 export const query = graphql`
   query ($slug: String!) {
-    apidocPage: mdx(fields: { slug: { eq: $slug } }) {
+    apidocPage: markdownRemark(fields: { slug: { eq: $slug } }) {
+      html
       toc: tableOfContents(maxDepth: 3)
       mdFile: parent {
         ... on File {
@@ -85,7 +86,6 @@ Apidoc.propTypes = {
     // eslint-disable-next-line react/forbid-prop-types
     apidocPage: PropTypes.object,
   }).isRequired,
-  children: PropTypes.any,
   pageContext: PropTypes.shape({
     // eslint-disable-next-line react/forbid-prop-types
     apidocList: PropTypes.array,
