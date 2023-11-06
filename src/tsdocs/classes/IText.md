@@ -95,7 +95,7 @@ paste
 
 ### constructor
 
-• **new IText**\<`Props`, `SProps`, `EventSpec`\>(`text`, `options?`): [`IText`](/apidocs/classes/IText.md)\<`Props`, `SProps`, `EventSpec`\>
+**new IText**\<`Props`, `SProps`, `EventSpec`\>(`text`, `options?`): [`IText`](/apidocs/classes/IText.md)\<`Props`, `SProps`, `EventSpec`\>
 
 Constructor
 
@@ -124,13 +124,13 @@ ITextClickBehavior\&lt;Props, SProps, EventSpec\&gt;.constructor
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:219](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/IText.ts#L219)
+[src/shapes/IText/IText.ts:219](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L219)
 
 ## Properties
 
 ### CACHE\_FONT\_SIZE
 
-• `Private` `Readonly` **CACHE\_FONT\_SIZE**: `number`
+ `Private` `Readonly` **CACHE\_FONT\_SIZE**: `number`
 
 use this size when measuring text. To avoid IE11 rounding errors
 
@@ -147,13 +147,13 @@ ITextClickBehavior.CACHE\_FONT\_SIZE
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:380](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L380)
+[src/shapes/Text/Text.ts:380](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L380)
 
 ___
 
 ### MIN\_TEXT\_WIDTH
 
-• **MIN\_TEXT\_WIDTH**: `number`
+ **MIN\_TEXT\_WIDTH**: `number`
 
 contains the min text width to avoid getting 0
 
@@ -169,13 +169,13 @@ ITextClickBehavior.MIN\_TEXT\_WIDTH
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:387](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L387)
+[src/shapes/Text/Text.ts:387](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L387)
 
 ___
 
 ### \_\_charBounds
 
-• `Protected` **\_\_charBounds**: [`GraphemeBBox`](/apidocs/modules.md#graphemebbox)[][] = `[]`
+ `Protected` **\_\_charBounds**: [`GraphemeBBox`](/apidocs/modules.md#graphemebbox)[][] = `[]`
 
 contains characters bounding boxes
 This variable is considered to be protected.
@@ -187,13 +187,13 @@ ITextClickBehavior.\_\_charBounds
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:371](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L371)
+[src/shapes/Text/Text.ts:371](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L371)
 
 ___
 
 ### \_\_corner
 
-• `Optional` **\_\_corner**: `string`
+ `Optional` **\_\_corner**: `string`
 
 keeps the value of the last hovered corner during mouse move.
 0 is no corner, or 'mt', 'ml', 'mtr' etc..
@@ -207,13 +207,13 @@ ITextClickBehavior.\_\_corner
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:115](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L115)
+[src/shapes/Object/InteractiveObject.ts:115](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L115)
 
 ___
 
 ### \_\_lineHeights
 
-• **\_\_lineHeights**: `number`[]
+ **\_\_lineHeights**: `number`[]
 
 #### Inherited from
 
@@ -221,13 +221,13 @@ ITextClickBehavior.\_\_lineHeights
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:407](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L407)
+[src/shapes/Text/Text.ts:407](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L407)
 
 ___
 
 ### \_\_lineWidths
 
-• **\_\_lineWidths**: `number`[]
+ **\_\_lineWidths**: `number`[]
 
 #### Inherited from
 
@@ -235,13 +235,13 @@ ITextClickBehavior.\_\_lineWidths
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:408](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L408)
+[src/shapes/Text/Text.ts:408](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L408)
 
 ___
 
 ### \_\_owningGroup
 
-• `Optional` **\_\_owningGroup**: [`Group`](/apidocs/classes/Group.md)
+ `Optional` **\_\_owningGroup**: [`Group`](/apidocs/classes/Group.md)
 
 A reference to the parent of the object
 Used to keep the original parent ref when the object has been added to an ActiveSelection, hence loosing the `group` ref
@@ -252,13 +252,13 @@ ITextClickBehavior.\_\_owningGroup
 
 #### Defined in
 
-[src/shapes/Object/StackedObject.ts:45](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/StackedObject.ts#L45)
+[src/shapes/Object/StackedObject.ts:45](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/StackedObject.ts#L45)
 
 ___
 
 ### \_\_selectionStartOnMouseDown
 
-• `Protected` **\_\_selectionStartOnMouseDown**: `number`
+ `Protected` **\_\_selectionStartOnMouseDown**: `number`
 
 #### Inherited from
 
@@ -266,13 +266,13 @@ ITextClickBehavior.\_\_selectionStartOnMouseDown
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:71](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextBehavior.ts#L71)
+[src/shapes/IText/ITextBehavior.ts:71](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L71)
 
 ___
 
 ### \_cacheCanvas
 
-• `Optional` `Private` **\_cacheCanvas**: `HTMLCanvasElement`
+ `Optional` `Private` **\_cacheCanvas**: `HTMLCanvasElement`
 
 A reference to the HTMLCanvasElement that is used to contain the cache of the object
 this canvas element is resized and cleared as needed
@@ -292,13 +292,13 @@ ITextClickBehavior.\_cacheCanvas
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:184](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L184)
+[src/shapes/Object/Object.ts:184](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L184)
 
 ___
 
 ### \_cacheContext
 
-• `Private` **\_cacheContext**: ``null`` \| `CanvasRenderingContext2D` = `null`
+ `Private` **\_cacheContext**: ``null`` \| `CanvasRenderingContext2D` = `null`
 
 Quick access for the _cacheCanvas rendering context
 This is part of the objectCaching feature
@@ -317,13 +317,13 @@ ITextClickBehavior.\_cacheContext
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:173](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L173)
+[src/shapes/Object/Object.ts:173](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L173)
 
 ___
 
 ### \_controlsVisibility
 
-• **\_controlsVisibility**: `Record`\<`string`, `boolean`\>
+ **\_controlsVisibility**: `Record`\<`string`, `boolean`\>
 
 a map of control visibility for this object.
 this was left when controls were introduced to not break the api too much
@@ -335,13 +335,13 @@ ITextClickBehavior.\_controlsVisibility
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:122](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L122)
+[src/shapes/Object/InteractiveObject.ts:122](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L122)
 
 ___
 
 ### \_currentCursorOpacity
 
-• `Protected` **\_currentCursorOpacity**: `number` = `1`
+ `Protected` **\_currentCursorOpacity**: `number` = `1`
 
 #### Inherited from
 
@@ -349,13 +349,13 @@ ITextClickBehavior.\_currentCursorOpacity
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:69](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextBehavior.ts#L69)
+[src/shapes/IText/ITextBehavior.ts:69](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L69)
 
 ___
 
 ### \_fontSizeFraction
 
-• `Private` **\_fontSizeFraction**: `number`
+ `Private` **\_fontSizeFraction**: `number`
 
 #### Inherited from
 
@@ -363,13 +363,13 @@ ITextClickBehavior.\_fontSizeFraction
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:323](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L323)
+[src/shapes/Text/Text.ts:323](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L323)
 
 ___
 
 ### \_fontSizeMult
 
-• **\_fontSizeMult**: `number`
+ **\_fontSizeMult**: `number`
 
 Text Line proportion to font Size (in pixels)
 
@@ -385,13 +385,13 @@ ITextClickBehavior.\_fontSizeMult
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:335](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L335)
+[src/shapes/Text/Text.ts:335](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L335)
 
 ___
 
 ### \_forceClearCache
 
-• `Protected` **\_forceClearCache**: `boolean`
+ `Protected` **\_forceClearCache**: `boolean`
 
 #### Inherited from
 
@@ -399,13 +399,13 @@ ITextClickBehavior.\_forceClearCache
 
 #### Defined in
 
-[src/shapes/Text/StyledText.ts:28](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/StyledText.ts#L28)
+[src/shapes/Text/StyledText.ts:28](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/StyledText.ts#L28)
 
 ___
 
 ### \_reNewline
 
-• `Private` **\_reNewline**: `RegExp`
+ `Private` **\_reNewline**: `RegExp`
 
 #### Inherited from
 
@@ -413,13 +413,13 @@ ITextClickBehavior.\_reNewline
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:140](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L140)
+[src/shapes/Text/Text.ts:140](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L140)
 
 ___
 
 ### \_reSpace
 
-• `Protected` **\_reSpace**: `RegExp`
+ `Protected` **\_reSpace**: `RegExp`
 
 #### Inherited from
 
@@ -427,13 +427,13 @@ ITextClickBehavior.\_reSpace
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:66](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextBehavior.ts#L66)
+[src/shapes/IText/ITextBehavior.ts:66](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L66)
 
 ___
 
 ### \_reSpaceAndTab
 
-• `Private` **\_reSpaceAndTab**: `RegExp`
+ `Private` **\_reSpaceAndTab**: `RegExp`
 
 Use this regular expression to filter for whitespace that is not a new line.
 Mostly used when text is 'justify' aligned.
@@ -444,13 +444,13 @@ ITextClickBehavior.\_reSpaceAndTab
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:154](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L154)
+[src/shapes/Text/Text.ts:154](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L154)
 
 ___
 
 ### \_reSpacesAndTabs
 
-• `Private` **\_reSpacesAndTabs**: `RegExp`
+ `Private` **\_reSpacesAndTabs**: `RegExp`
 
 Use this regular expression to filter for whitespaces that is not a new line.
 Mostly used when text is 'justify' aligned.
@@ -461,13 +461,13 @@ ITextClickBehavior.\_reSpacesAndTabs
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:147](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L147)
+[src/shapes/Text/Text.ts:147](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L147)
 
 ___
 
 ### \_reWords
 
-• `Private` **\_reWords**: `RegExp`
+ `Private` **\_reWords**: `RegExp`
 
 Use this regular expression to filter consecutive groups of non spaces.
 Mostly used when text is 'justify' aligned.
@@ -478,13 +478,13 @@ ITextClickBehavior.\_reWords
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:161](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L161)
+[src/shapes/Text/Text.ts:161](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L161)
 
 ___
 
 ### \_savedProps
 
-• `Protected` `Optional` **\_savedProps**: `Object`
+ `Protected` `Optional` **\_savedProps**: `Object`
 
 #### Type declaration
 
@@ -505,13 +505,13 @@ ITextClickBehavior.\_savedProps
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:75](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextBehavior.ts#L75)
+[src/shapes/IText/ITextBehavior.ts:75](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L75)
 
 ___
 
 ### \_scaling
 
-• `Optional` **\_scaling**: `boolean`
+ `Optional` **\_scaling**: `boolean`
 
 A boolean used from the gesture module to keep tracking of a scaling
 action when there is no scaling transform in place.
@@ -529,13 +529,13 @@ ITextClickBehavior.\_scaling
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:144](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L144)
+[src/shapes/Object/InteractiveObject.ts:144](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L144)
 
 ___
 
 ### \_selectionDirection
 
-• `Protected` **\_selectionDirection**: ``null`` \| ``"left"`` \| ``"right"``
+ `Protected` **\_selectionDirection**: ``null`` \| ``"left"`` \| ``"right"``
 
 #### Inherited from
 
@@ -543,13 +543,13 @@ ITextClickBehavior.\_selectionDirection
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:85](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextBehavior.ts#L85)
+[src/shapes/IText/ITextBehavior.ts:85](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L85)
 
 ___
 
 ### \_text
 
-• **\_text**: `string`[]
+ **\_text**: `string`[]
 
 #### Inherited from
 
@@ -557,13 +557,13 @@ ITextClickBehavior.\_text
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:405](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L405)
+[src/shapes/Text/Text.ts:405](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L405)
 
 ___
 
 ### \_textLines
 
-• **\_textLines**: `string`[][]
+ **\_textLines**: `string`[][]
 
 same as textlines, but each line is an array of graphemes as split by splitByGrapheme
 
@@ -579,13 +579,13 @@ ITextClickBehavior.\_textLines
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:402](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L402)
+[src/shapes/Text/Text.ts:402](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L402)
 
 ___
 
 ### \_transformDone
 
-• `Optional` `Private` **\_transformDone**: `boolean`
+ `Optional` `Private` **\_transformDone**: `boolean`
 
 Private. indicates if the object inside a group is on a transformed context or not
 or is part of a larger cache for many object ( a group for example)
@@ -603,13 +603,13 @@ ITextClickBehavior.\_transformDone
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:264](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L264)
+[src/shapes/Object/Object.ts:264](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L264)
 
 ___
 
 ### \_unwrappedTextLines
 
-• **\_unwrappedTextLines**: `string`[][]
+ **\_unwrappedTextLines**: `string`[][]
 
 #### Inherited from
 
@@ -617,13 +617,13 @@ ITextClickBehavior.\_unwrappedTextLines
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:404](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L404)
+[src/shapes/Text/Text.ts:404](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L404)
 
 ___
 
 ### aCoords
 
-• **aCoords**: [`TCornerPoint`](/apidocs/modules.md#tcornerpoint)
+ **aCoords**: [`TCornerPoint`](/apidocs/modules.md#tcornerpoint)
 
 Describe object's corner position in canvas object absolute coordinates
 properties are tl,tr,bl,br and describe the four main corner.
@@ -649,13 +649,13 @@ ITextClickBehavior.aCoords
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:58](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L58)
+[src/shapes/Object/ObjectGeometry.ts:57](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L57)
 
 ___
 
 ### absolutePositioned
 
-• **absolutePositioned**: `boolean`
+ **absolutePositioned**: `boolean`
 
 #### Inherited from
 
@@ -663,13 +663,13 @@ ITextClickBehavior.absolutePositioned
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:137](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L137)
+[src/shapes/Object/Object.ts:137](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L137)
 
 ___
 
 ### activeOn
 
-• **activeOn**: ``"down"`` \| ``"up"``
+ **activeOn**: ``"down"`` \| ``"up"``
 
 #### Inherited from
 
@@ -677,13 +677,13 @@ ITextClickBehavior.activeOn
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:91](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L91)
+[src/shapes/Object/InteractiveObject.ts:91](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L91)
 
 ___
 
 ### angle
 
-• **angle**: [`TDegree`](/apidocs/modules.md#tdegree)
+ **angle**: [`TDegree`](/apidocs/modules.md#tdegree)
 
 #### Inherited from
 
@@ -691,13 +691,13 @@ ITextClickBehavior.angle
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:29](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L29)
+[src/shapes/Object/ObjectOrigin.ts:29](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L29)
 
 ___
 
 ### backgroundColor
 
-• **backgroundColor**: `string`
+ **backgroundColor**: `string`
 
 #### Inherited from
 
@@ -705,13 +705,13 @@ ITextClickBehavior.backgroundColor
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:124](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L124)
+[src/shapes/Object/Object.ts:124](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L124)
 
 ___
 
 ### borderColor
 
-• **borderColor**: `string`
+ **borderColor**: `string`
 
 #### Inherited from
 
@@ -719,13 +719,13 @@ ITextClickBehavior.borderColor
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:81](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L81)
+[src/shapes/Object/InteractiveObject.ts:81](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L81)
 
 ___
 
 ### borderDashArray
 
-• **borderDashArray**: ``null`` \| `number`[]
+ **borderDashArray**: ``null`` \| `number`[]
 
 #### Inherited from
 
@@ -733,13 +733,13 @@ ITextClickBehavior.borderDashArray
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:82](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L82)
+[src/shapes/Object/InteractiveObject.ts:82](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L82)
 
 ___
 
 ### borderOpacityWhenMoving
 
-• **borderOpacityWhenMoving**: `number`
+ **borderOpacityWhenMoving**: `number`
 
 #### Inherited from
 
@@ -747,13 +747,13 @@ ITextClickBehavior.borderOpacityWhenMoving
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:83](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L83)
+[src/shapes/Object/InteractiveObject.ts:83](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L83)
 
 ___
 
 ### borderScaleFactor
 
-• **borderScaleFactor**: `number`
+ **borderScaleFactor**: `number`
 
 #### Inherited from
 
@@ -761,13 +761,13 @@ ITextClickBehavior.borderScaleFactor
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:84](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L84)
+[src/shapes/Object/InteractiveObject.ts:84](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L84)
 
 ___
 
 ### cacheHeight
 
-• `Optional` `Private` **cacheHeight**: `number`
+ `Optional` `Private` **cacheHeight**: `number`
 
 Size of the cache canvas, height
 since 1.7.0
@@ -785,13 +785,13 @@ ITextClickBehavior.cacheHeight
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:202](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L202)
+[src/shapes/Object/Object.ts:202](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L202)
 
 ___
 
 ### cacheTranslationX
 
-• `Optional` `Private` **cacheTranslationX**: `number`
+ `Optional` `Private` **cacheTranslationX**: `number`
 
 zoom level used on the cacheCanvas to draw the cache, Y axe
 since 1.7.0
@@ -809,13 +809,13 @@ ITextClickBehavior.cacheTranslationX
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:229](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L229)
+[src/shapes/Object/Object.ts:229](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L229)
 
 ___
 
 ### cacheTranslationY
 
-• `Optional` `Private` **cacheTranslationY**: `number`
+ `Optional` `Private` **cacheTranslationY**: `number`
 
 translation of the cacheCanvas away from the center, for subpixel accuracy and crispness
 since 1.7.0
@@ -833,13 +833,13 @@ ITextClickBehavior.cacheTranslationY
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:238](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L238)
+[src/shapes/Object/Object.ts:238](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L238)
 
 ___
 
 ### cacheWidth
 
-• `Optional` `Private` **cacheWidth**: `number`
+ `Optional` `Private` **cacheWidth**: `number`
 
 Size of the cache canvas, width
 since 1.7.0
@@ -857,13 +857,13 @@ ITextClickBehavior.cacheWidth
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:193](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L193)
+[src/shapes/Object/Object.ts:193](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L193)
 
 ___
 
 ### caching
 
-• **caching**: `boolean`
+ **caching**: `boolean`
 
 Indicates whether internal text char widths can be cached
 
@@ -875,13 +875,13 @@ Indicates whether internal text char widths can be cached
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:197](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/IText.ts#L197)
+[src/shapes/IText/IText.ts:197](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L197)
 
 ___
 
 ### canvas
 
-• `Optional` **canvas**: [`Canvas`](/apidocs/classes/Canvas.md)
+ `Optional` **canvas**: [`Canvas`](/apidocs/classes/Canvas.md)
 
 #### Inherited from
 
@@ -889,13 +889,13 @@ ITextClickBehavior.canvas
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:146](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L146)
+[src/shapes/Object/InteractiveObject.ts:146](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L146)
 
 ___
 
 ### centeredRotation
 
-• **centeredRotation**: `boolean`
+ **centeredRotation**: `boolean`
 
 #### Inherited from
 
@@ -903,13 +903,13 @@ ITextClickBehavior.centeredRotation
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:138](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L138)
+[src/shapes/Object/Object.ts:138](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L138)
 
 ___
 
 ### centeredScaling
 
-• **centeredScaling**: `boolean`
+ **centeredScaling**: `boolean`
 
 #### Inherited from
 
@@ -917,13 +917,13 @@ ITextClickBehavior.centeredScaling
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:58](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L58)
+[src/shapes/Object/InteractiveObject.ts:58](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L58)
 
 ___
 
 ### charSpacing
 
-• **charSpacing**: `number`
+ **charSpacing**: `number`
 
 additional space between characters
 expressed in thousands of em unit
@@ -940,13 +940,13 @@ ITextClickBehavior.charSpacing
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:343](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L343)
+[src/shapes/Text/Text.ts:343](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L343)
 
 ___
 
 ### clipPath
 
-• `Optional` **clipPath**: `FabricObject`\<`Partial`\<`ObjectProps`\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
+ `Optional` **clipPath**: `FabricObject`\<`Partial`\<`ObjectProps`\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
 
 #### Inherited from
 
@@ -954,13 +954,13 @@ ITextClickBehavior.clipPath
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:135](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L135)
+[src/shapes/Object/Object.ts:135](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L135)
 
 ___
 
 ### clipPathId
 
-• `Optional` **clipPathId**: `string`
+ `Optional` **clipPathId**: `string`
 
 When an object is being exported as SVG as a clippath, a reference inside the SVG is needed.
 This reference is a UID in the fabric namespace and is temporary stored here.
@@ -971,13 +971,13 @@ ITextClickBehavior.clipPathId
 
 #### Defined in
 
-[src/shapes/Object/FabricObjectSVGExportMixin.ts:14](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/FabricObjectSVGExportMixin.ts#L14)
+[src/shapes/Object/FabricObjectSVGExportMixin.ts:14](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/FabricObjectSVGExportMixin.ts#L14)
 
 ___
 
 ### colorProperties
 
-• **colorProperties**: `string`[]
+ **colorProperties**: `string`[]
 
 List of properties to consider for animating colors.
 
@@ -987,23 +987,23 @@ ITextClickBehavior.colorProperties
 
 #### Defined in
 
-[src/shapes/Object/AnimatableObject.ts:20](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/AnimatableObject.ts#L20)
+[src/shapes/Object/AnimatableObject.ts:20](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/AnimatableObject.ts#L20)
 
 ___
 
 ### compositionColor
 
-• **compositionColor**: `string`
+ **compositionColor**: `string`
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:190](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/IText.ts#L190)
+[src/shapes/IText/IText.ts:190](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L190)
 
 ___
 
 ### compositionEnd
 
-• **compositionEnd**: `number`
+ **compositionEnd**: `number`
 
 #### Overrides
 
@@ -1011,13 +1011,13 @@ ITextClickBehavior.compositionEnd
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:129](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/IText.ts#L129)
+[src/shapes/IText/IText.ts:129](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L129)
 
 ___
 
 ### compositionStart
 
-• **compositionStart**: `number`
+ **compositionStart**: `number`
 
 #### Overrides
 
@@ -1025,13 +1025,13 @@ ITextClickBehavior.compositionStart
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:127](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/IText.ts#L127)
+[src/shapes/IText/IText.ts:127](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L127)
 
 ___
 
 ### controls
 
-• **controls**: `TControlSet`
+ **controls**: `TControlSet`
 
 holds the controls for the object.
 controls are added by default_controls.js
@@ -1042,13 +1042,13 @@ ITextClickBehavior.controls
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:128](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L128)
+[src/shapes/Object/InteractiveObject.ts:128](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L128)
 
 ___
 
 ### cornerColor
 
-• **cornerColor**: `string`
+ **cornerColor**: `string`
 
 #### Inherited from
 
@@ -1056,13 +1056,13 @@ ITextClickBehavior.cornerColor
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:75](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L75)
+[src/shapes/Object/InteractiveObject.ts:75](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L75)
 
 ___
 
 ### cornerDashArray
 
-• **cornerDashArray**: ``null`` \| `number`[]
+ **cornerDashArray**: ``null`` \| `number`[]
 
 #### Inherited from
 
@@ -1070,13 +1070,13 @@ ITextClickBehavior.cornerDashArray
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:78](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L78)
+[src/shapes/Object/InteractiveObject.ts:78](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L78)
 
 ___
 
 ### cornerSize
 
-• **cornerSize**: `number`
+ **cornerSize**: `number`
 
 #### Inherited from
 
@@ -1084,13 +1084,13 @@ ITextClickBehavior.cornerSize
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:72](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L72)
+[src/shapes/Object/InteractiveObject.ts:72](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L72)
 
 ___
 
 ### cornerStrokeColor
 
-• **cornerStrokeColor**: `string`
+ **cornerStrokeColor**: `string`
 
 #### Inherited from
 
@@ -1098,13 +1098,13 @@ ITextClickBehavior.cornerStrokeColor
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:76](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L76)
+[src/shapes/Object/InteractiveObject.ts:76](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L76)
 
 ___
 
 ### cornerStyle
 
-• **cornerStyle**: ``"circle"`` \| ``"rect"``
+ **cornerStyle**: ``"circle"`` \| ``"rect"``
 
 #### Inherited from
 
@@ -1112,13 +1112,13 @@ ITextClickBehavior.cornerStyle
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:77](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L77)
+[src/shapes/Object/InteractiveObject.ts:77](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L77)
 
 ___
 
 ### ctrlKeysMapDown
 
-• **ctrlKeysMapDown**: `TKeyMapIText`
+ **ctrlKeysMapDown**: `TKeyMapIText`
 
 For functionalities on keyDown + ctrl || cmd
 
@@ -1128,13 +1128,13 @@ ITextClickBehavior.ctrlKeysMapDown
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:42](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextKeyBehavior.ts#L42)
+[src/shapes/IText/ITextKeyBehavior.ts:42](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L42)
 
 ___
 
 ### ctrlKeysMapUp
 
-• **ctrlKeysMapUp**: `TKeyMapIText`
+ **ctrlKeysMapUp**: `TKeyMapIText`
 
 For functionalities on keyUp + ctrl || cmd
 
@@ -1144,13 +1144,13 @@ ITextClickBehavior.ctrlKeysMapUp
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:37](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextKeyBehavior.ts#L37)
+[src/shapes/IText/ITextKeyBehavior.ts:37](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L37)
 
 ___
 
 ### cursorColor
 
-• **cursorColor**: `string`
+ **cursorColor**: `string`
 
 Color of text cursor color in editing mode.
 if not set (default) will take color from the text.
@@ -1165,13 +1165,13 @@ be used instead of the color of the text at the current position.
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:174](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/IText.ts#L174)
+[src/shapes/IText/IText.ts:174](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L174)
 
 ___
 
 ### cursorDelay
 
-• **cursorDelay**: `number`
+ **cursorDelay**: `number`
 
 Delay between cursor blink (in ms)
 
@@ -1187,13 +1187,13 @@ ITextClickBehavior.cursorDelay
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:181](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/IText.ts#L181)
+[src/shapes/IText/IText.ts:181](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L181)
 
 ___
 
 ### cursorDuration
 
-• **cursorDuration**: `number`
+ **cursorDuration**: `number`
 
 Duration of cursor fade in (in ms)
 
@@ -1209,13 +1209,13 @@ ITextClickBehavior.cursorDuration
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:188](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/IText.ts#L188)
+[src/shapes/IText/IText.ts:188](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L188)
 
 ___
 
 ### cursorOffsetCache
 
-• `Protected` **cursorOffsetCache**: `Object`
+ `Protected` **cursorOffsetCache**: `Object`
 
 #### Type declaration
 
@@ -1230,13 +1230,13 @@ ITextClickBehavior.cursorOffsetCache
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:74](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextBehavior.ts#L74)
+[src/shapes/IText/ITextBehavior.ts:74](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L74)
 
 ___
 
 ### cursorWidth
 
-• **cursorWidth**: `number`
+ **cursorWidth**: `number`
 
 Width of cursor (in px)
 
@@ -1252,13 +1252,13 @@ ITextClickBehavior.cursorWidth
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:164](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/IText.ts#L164)
+[src/shapes/IText/IText.ts:164](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L164)
 
 ___
 
 ### deltaY
 
-• **deltaY**: `number`
+ **deltaY**: `number`
 
 Baseline shift, styles only, keep at 0 for the main text object
 
@@ -1274,13 +1274,13 @@ ITextClickBehavior.deltaY
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:350](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L350)
+[src/shapes/Text/Text.ts:350](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L350)
 
 ___
 
 ### direction
 
-• **direction**: `CanvasDirection`
+ **direction**: `CanvasDirection`
 
 WARNING: EXPERIMENTAL. NOT SUPPORTED YET
 determine the direction of the text.
@@ -1305,13 +1305,13 @@ ITextClickBehavior.direction
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:363](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L363)
+[src/shapes/Text/Text.ts:363](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L363)
 
 ___
 
 ### dirty
 
-• **dirty**: `boolean`
+ **dirty**: `boolean`
 
 When set to `true`, object's cache will be rerendered next render call.
 since 1.7.0
@@ -1328,13 +1328,13 @@ ITextClickBehavior.dirty
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:163](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L163)
+[src/shapes/Object/Object.ts:163](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L163)
 
 ___
 
 ### draggableTextDelegate
 
-• `Protected` **draggableTextDelegate**: `DraggableTextDelegate`
+ `Protected` **draggableTextDelegate**: `DraggableTextDelegate`
 
 #### Inherited from
 
@@ -1342,13 +1342,13 @@ ITextClickBehavior.draggableTextDelegate
 
 #### Defined in
 
-[src/shapes/IText/ITextClickBehavior.ts:32](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextClickBehavior.ts#L32)
+[src/shapes/IText/ITextClickBehavior.ts:32](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextClickBehavior.ts#L32)
 
 ___
 
 ### editable
 
-• **editable**: `boolean`
+ **editable**: `boolean`
 
 Indicates whether a text can be edited
 
@@ -1364,13 +1364,13 @@ ITextClickBehavior.editable
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:150](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/IText.ts#L150)
+[src/shapes/IText/IText.ts:150](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L150)
 
 ___
 
 ### editingBorderColor
 
-• **editingBorderColor**: `string`
+ **editingBorderColor**: `string`
 
 Border color of text object while it's in editing mode
 
@@ -1386,13 +1386,13 @@ ITextClickBehavior.editingBorderColor
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:157](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/IText.ts#L157)
+[src/shapes/IText/IText.ts:157](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L157)
 
 ___
 
 ### evented
 
-• **evented**: `boolean`
+ **evented**: `boolean`
 
 #### Inherited from
 
@@ -1400,13 +1400,13 @@ ITextClickBehavior.evented
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:89](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L89)
+[src/shapes/Object/InteractiveObject.ts:89](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L89)
 
 ___
 
 ### excludeFromExport
 
-• **excludeFromExport**: `boolean`
+ **excludeFromExport**: `boolean`
 
 #### Inherited from
 
@@ -1414,13 +1414,13 @@ ITextClickBehavior.excludeFromExport
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:131](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L131)
+[src/shapes/Object/Object.ts:131](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L131)
 
 ___
 
 ### fill
 
-• **fill**: ``null`` \| `string` \| [`TFiller`](/apidocs/modules.md#tfiller)
+ **fill**: ``null`` \| `string` \| [`TFiller`](/apidocs/modules.md#tfiller)
 
 #### Inherited from
 
@@ -1428,13 +1428,13 @@ ITextClickBehavior.fill
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:114](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L114)
+[src/shapes/Object/Object.ts:114](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L114)
 
 ___
 
 ### fillRule
 
-• **fillRule**: `CanvasFillRule`
+ **fillRule**: `CanvasFillRule`
 
 #### Inherited from
 
@@ -1442,13 +1442,13 @@ ITextClickBehavior.fillRule
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:115](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L115)
+[src/shapes/Object/Object.ts:115](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L115)
 
 ___
 
 ### flipX
 
-• **flipX**: `boolean`
+ **flipX**: `boolean`
 
 #### Inherited from
 
@@ -1456,13 +1456,13 @@ ITextClickBehavior.flipX
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:21](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L21)
+[src/shapes/Object/ObjectOrigin.ts:21](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L21)
 
 ___
 
 ### flipY
 
-• **flipY**: `boolean`
+ **flipY**: `boolean`
 
 #### Inherited from
 
@@ -1470,13 +1470,13 @@ ITextClickBehavior.flipY
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:22](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L22)
+[src/shapes/Object/ObjectOrigin.ts:22](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L22)
 
 ___
 
 ### fontFamily
 
-• **fontFamily**: `string`
+ **fontFamily**: `string`
 
 Font family
 
@@ -1492,13 +1492,13 @@ ITextClickBehavior.fontFamily
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:184](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L184)
+[src/shapes/Text/Text.ts:184](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L184)
 
 ___
 
 ### fontSize
 
-• **fontSize**: `number`
+ **fontSize**: `number`
 
 Font size (in pixels)
 
@@ -1514,13 +1514,13 @@ ITextClickBehavior.fontSize
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:170](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L170)
+[src/shapes/Text/Text.ts:170](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L170)
 
 ___
 
 ### fontStyle
 
-• **fontStyle**: `string`
+ **fontStyle**: `string`
 
 Font style . Possible values: "", "normal", "italic" or "oblique".
 
@@ -1536,13 +1536,13 @@ ITextClickBehavior.fontStyle
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:220](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L220)
+[src/shapes/Text/Text.ts:220](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L220)
 
 ___
 
 ### fontWeight
 
-• **fontWeight**: `string`
+ **fontWeight**: `string`
 
 Font weight (e.g. bold, normal, 400, 600, 800)
 
@@ -1558,13 +1558,13 @@ ITextClickBehavior.fontWeight
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:177](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L177)
+[src/shapes/Text/Text.ts:177](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L177)
 
 ___
 
 ### globalCompositeOperation
 
-• **globalCompositeOperation**: `GlobalCompositeOperation`
+ **globalCompositeOperation**: `GlobalCompositeOperation`
 
 #### Inherited from
 
@@ -1572,13 +1572,13 @@ ITextClickBehavior.globalCompositeOperation
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:123](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L123)
+[src/shapes/Object/Object.ts:123](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L123)
 
 ___
 
 ### group
 
-• `Optional` `Private` **group**: [`Group`](/apidocs/classes/Group.md)
+ `Optional` `Private` **group**: [`Group`](/apidocs/classes/Group.md)
 
 A reference to the parent of the object, usually a Group
 
@@ -1595,13 +1595,13 @@ ITextClickBehavior.group
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:246](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L246)
+[src/shapes/Object/Object.ts:246](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L246)
 
 ___
 
 ### hasBorders
 
-• **hasBorders**: `boolean`
+ **hasBorders**: `boolean`
 
 #### Inherited from
 
@@ -1609,13 +1609,13 @@ ITextClickBehavior.hasBorders
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:85](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L85)
+[src/shapes/Object/InteractiveObject.ts:85](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L85)
 
 ___
 
 ### hasControls
 
-• **hasControls**: `boolean`
+ **hasControls**: `boolean`
 
 #### Inherited from
 
@@ -1623,13 +1623,13 @@ ITextClickBehavior.hasControls
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:79](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L79)
+[src/shapes/Object/InteractiveObject.ts:79](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L79)
 
 ___
 
 ### height
 
-• **height**: `number`
+ **height**: `number`
 
 #### Inherited from
 
@@ -1637,13 +1637,13 @@ ITextClickBehavior.height
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:20](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L20)
+[src/shapes/Object/ObjectOrigin.ts:20](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L20)
 
 ___
 
 ### hiddenTextarea
 
-• **hiddenTextarea**: ``null`` \| `HTMLTextAreaElement`
+ **hiddenTextarea**: ``null`` \| `HTMLTextAreaElement`
 
 #### Inherited from
 
@@ -1651,13 +1651,13 @@ ITextClickBehavior.hiddenTextarea
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:44](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextKeyBehavior.ts#L44)
+[src/shapes/IText/ITextKeyBehavior.ts:44](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L44)
 
 ___
 
 ### hiddenTextareaContainer
 
-• `Optional` **hiddenTextareaContainer**: ``null`` \| `HTMLElement`
+ `Optional` **hiddenTextareaContainer**: ``null`` \| `HTMLElement`
 
 DOM container to append the hiddenTextarea.
 An alternative to attaching to the document.body.
@@ -1676,13 +1676,13 @@ ITextClickBehavior.hiddenTextareaContainer
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:54](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextKeyBehavior.ts#L54)
+[src/shapes/IText/ITextKeyBehavior.ts:54](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L54)
 
 ___
 
 ### hoverCursor
 
-• **hoverCursor**: ``null`` \| `string`
+ **hoverCursor**: ``null`` \| `string`
 
 #### Inherited from
 
@@ -1690,13 +1690,13 @@ ITextClickBehavior.hoverCursor
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:93](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L93)
+[src/shapes/Object/InteractiveObject.ts:93](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L93)
 
 ___
 
 ### inCompositionMode
 
-• `Protected` **inCompositionMode**: `boolean`
+ `Protected` **inCompositionMode**: `boolean`
 
 Helps determining when the text is in composition, so that the cursor
 rendering is altered.
@@ -1707,13 +1707,13 @@ ITextClickBehavior.inCompositionMode
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:64](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextBehavior.ts#L64)
+[src/shapes/IText/ITextBehavior.ts:64](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L64)
 
 ___
 
 ### includeDefaultValues
 
-• **includeDefaultValues**: `boolean`
+ **includeDefaultValues**: `boolean`
 
 #### Inherited from
 
@@ -1721,13 +1721,13 @@ ITextClickBehavior.includeDefaultValues
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:130](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L130)
+[src/shapes/Object/Object.ts:130](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L130)
 
 ___
 
 ### initialized
 
-• `Optional` **initialized**: ``true``
+ `Optional` **initialized**: ``true``
 
 #### Inherited from
 
@@ -1735,13 +1735,13 @@ ITextClickBehavior.initialized
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:409](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L409)
+[src/shapes/Text/Text.ts:409](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L409)
 
 ___
 
 ### inverted
 
-• **inverted**: `boolean`
+ **inverted**: `boolean`
 
 #### Inherited from
 
@@ -1749,13 +1749,13 @@ ITextClickBehavior.inverted
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:136](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L136)
+[src/shapes/Object/Object.ts:136](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L136)
 
 ___
 
 ### isEditing
 
-• **isEditing**: `boolean`
+ **isEditing**: `boolean`
 
 Indicates whether text is in editing mode
 
@@ -1771,13 +1771,13 @@ ITextClickBehavior.isEditing
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:143](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/IText.ts#L143)
+[src/shapes/IText/IText.ts:143](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L143)
 
 ___
 
 ### isMoving
 
-• `Optional` **isMoving**: `boolean`
+ `Optional` **isMoving**: `boolean`
 
 internal boolean to signal the code that the object is
 part of the move action.
@@ -1788,13 +1788,13 @@ ITextClickBehavior.isMoving
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:134](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L134)
+[src/shapes/Object/InteractiveObject.ts:134](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L134)
 
 ___
 
 ### keysMap
 
-• **keysMap**: `TKeyMapIText`
+ **keysMap**: `TKeyMapIText`
 
 For functionalities on keyDown
 Map a special key to a function of the instance/prototype
@@ -1812,13 +1812,13 @@ ITextClickBehavior.keysMap
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:30](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextKeyBehavior.ts#L30)
+[src/shapes/IText/ITextKeyBehavior.ts:30](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L30)
 
 ___
 
 ### keysMapRtl
 
-• **keysMapRtl**: `TKeyMapIText`
+ **keysMapRtl**: `TKeyMapIText`
 
 #### Inherited from
 
@@ -1826,13 +1826,13 @@ ITextClickBehavior.keysMapRtl
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:32](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextKeyBehavior.ts#L32)
+[src/shapes/IText/ITextKeyBehavior.ts:32](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L32)
 
 ___
 
 ### left
 
-• **left**: `number`
+ **left**: `number`
 
 #### Inherited from
 
@@ -1840,13 +1840,13 @@ ITextClickBehavior.left
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:18](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L18)
+[src/shapes/Object/ObjectOrigin.ts:18](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L18)
 
 ___
 
 ### lineCoords
 
-• **lineCoords**: [`TCornerPoint`](/apidocs/modules.md#tcornerpoint)
+ **lineCoords**: [`TCornerPoint`](/apidocs/modules.md#tcornerpoint)
 
 Describe object's corner position in canvas element coordinates.
 includes padding. Used of object detection.
@@ -1863,13 +1863,13 @@ ITextClickBehavior.lineCoords
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:67](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L67)
+[src/shapes/Object/ObjectGeometry.ts:66](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L66)
 
 ___
 
 ### lineHeight
 
-• **lineHeight**: `number`
+ **lineHeight**: `number`
 
 Line height
 
@@ -1885,13 +1885,13 @@ ITextClickBehavior.lineHeight
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:227](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L227)
+[src/shapes/Text/Text.ts:227](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L227)
 
 ___
 
 ### linethrough
 
-• **linethrough**: `boolean`
+ **linethrough**: `boolean`
 
 Text decoration linethrough.
 
@@ -1907,13 +1907,13 @@ ITextClickBehavior.linethrough
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:205](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L205)
+[src/shapes/Text/Text.ts:205](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L205)
 
 ___
 
 ### lockMovementX
 
-• **lockMovementX**: `boolean`
+ **lockMovementX**: `boolean`
 
 #### Inherited from
 
@@ -1921,13 +1921,13 @@ ITextClickBehavior.lockMovementX
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:63](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L63)
+[src/shapes/Object/InteractiveObject.ts:63](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L63)
 
 ___
 
 ### lockMovementY
 
-• **lockMovementY**: `boolean`
+ **lockMovementY**: `boolean`
 
 #### Inherited from
 
@@ -1935,13 +1935,13 @@ ITextClickBehavior.lockMovementY
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:64](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L64)
+[src/shapes/Object/InteractiveObject.ts:64](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L64)
 
 ___
 
 ### lockRotation
 
-• **lockRotation**: `boolean`
+ **lockRotation**: `boolean`
 
 #### Inherited from
 
@@ -1949,13 +1949,13 @@ ITextClickBehavior.lockRotation
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:65](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L65)
+[src/shapes/Object/InteractiveObject.ts:65](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L65)
 
 ___
 
 ### lockScalingFlip
 
-• **lockScalingFlip**: `boolean`
+ **lockScalingFlip**: `boolean`
 
 #### Inherited from
 
@@ -1963,13 +1963,13 @@ ITextClickBehavior.lockScalingFlip
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:70](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L70)
+[src/shapes/Object/InteractiveObject.ts:70](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L70)
 
 ___
 
 ### lockScalingX
 
-• **lockScalingX**: `boolean`
+ **lockScalingX**: `boolean`
 
 #### Inherited from
 
@@ -1977,13 +1977,13 @@ ITextClickBehavior.lockScalingX
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:66](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L66)
+[src/shapes/Object/InteractiveObject.ts:66](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L66)
 
 ___
 
 ### lockScalingY
 
-• **lockScalingY**: `boolean`
+ **lockScalingY**: `boolean`
 
 #### Inherited from
 
@@ -1991,13 +1991,13 @@ ITextClickBehavior.lockScalingY
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:67](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L67)
+[src/shapes/Object/InteractiveObject.ts:67](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L67)
 
 ___
 
 ### lockSkewingX
 
-• **lockSkewingX**: `boolean`
+ **lockSkewingX**: `boolean`
 
 #### Inherited from
 
@@ -2005,13 +2005,13 @@ ITextClickBehavior.lockSkewingX
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:68](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L68)
+[src/shapes/Object/InteractiveObject.ts:68](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L68)
 
 ___
 
 ### lockSkewingY
 
-• **lockSkewingY**: `boolean`
+ **lockSkewingY**: `boolean`
 
 #### Inherited from
 
@@ -2019,13 +2019,13 @@ ITextClickBehavior.lockSkewingY
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:69](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L69)
+[src/shapes/Object/InteractiveObject.ts:69](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L69)
 
 ___
 
 ### matrixCache
 
-• `Optional` **matrixCache**: `TMatrixCache`
+ `Optional` **matrixCache**: `TMatrixCache`
 
 storage cache for object full transform matrix
 
@@ -2035,13 +2035,13 @@ ITextClickBehavior.matrixCache
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:77](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L77)
+[src/shapes/Object/ObjectGeometry.ts:76](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L76)
 
 ___
 
 ### minScaleLimit
 
-• **minScaleLimit**: `number`
+ **minScaleLimit**: `number`
 
 #### Inherited from
 
@@ -2049,13 +2049,13 @@ ITextClickBehavior.minScaleLimit
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:109](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L109)
+[src/shapes/Object/Object.ts:109](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L109)
 
 ___
 
 ### moveCursor
 
-• **moveCursor**: ``null`` \| `string`
+ **moveCursor**: ``null`` \| `string`
 
 #### Inherited from
 
@@ -2063,13 +2063,13 @@ ITextClickBehavior.moveCursor
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:94](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L94)
+[src/shapes/Object/InteractiveObject.ts:94](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L94)
 
 ___
 
 ### noScaleCache
 
-• **noScaleCache**: `boolean`
+ **noScaleCache**: `boolean`
 
 #### Inherited from
 
@@ -2077,13 +2077,13 @@ ITextClickBehavior.noScaleCache
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:57](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L57)
+[src/shapes/Object/InteractiveObject.ts:57](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L57)
 
 ___
 
 ### oCoords
 
-• **oCoords**: `Record`\<`string`, `TOCoord`\>
+ **oCoords**: `Record`\<`string`, `TOCoord`\>
 
 Describe object's corner position in canvas element coordinates.
 properties are depending on control keys and padding the main controls.
@@ -2099,13 +2099,13 @@ ITextClickBehavior.oCoords
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:105](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L105)
+[src/shapes/Object/InteractiveObject.ts:105](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L105)
 
 ___
 
 ### objectCaching
 
-• **objectCaching**: `boolean`
+ **objectCaching**: `boolean`
 
 #### Inherited from
 
@@ -2113,13 +2113,13 @@ ITextClickBehavior.objectCaching
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:133](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L133)
+[src/shapes/Object/Object.ts:133](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L133)
 
 ___
 
 ### offsets
 
-• `Private` **offsets**: `Object`
+ `Private` **offsets**: `Object`
 
 #### Type declaration
 
@@ -2135,13 +2135,13 @@ ITextClickBehavior.offsets
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:328](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L328)
+[src/shapes/Text/Text.ts:328](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L328)
 
 ___
 
 ### opacity
 
-• **opacity**: `number`
+ **opacity**: `number`
 
 #### Inherited from
 
@@ -2149,13 +2149,13 @@ ITextClickBehavior.opacity
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:111](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L111)
+[src/shapes/Object/Object.ts:111](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L111)
 
 ___
 
 ### originX
 
-• **originX**: [`TOriginX`](/apidocs/modules.md#toriginx)
+ **originX**: [`TOriginX`](/apidocs/modules.md#toriginx)
 
 #### Inherited from
 
@@ -2163,13 +2163,13 @@ ITextClickBehavior.originX
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:27](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L27)
+[src/shapes/Object/ObjectOrigin.ts:27](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L27)
 
 ___
 
 ### originY
 
-• **originY**: [`TOriginY`](/apidocs/modules.md#toriginy)
+ **originY**: [`TOriginY`](/apidocs/modules.md#toriginy)
 
 #### Inherited from
 
@@ -2177,13 +2177,13 @@ ITextClickBehavior.originY
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:28](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L28)
+[src/shapes/Object/ObjectOrigin.ts:28](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L28)
 
 ___
 
 ### overline
 
-• **overline**: `boolean`
+ **overline**: `boolean`
 
 Text decoration overline.
 
@@ -2199,13 +2199,13 @@ ITextClickBehavior.overline
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:198](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L198)
+[src/shapes/Text/Text.ts:198](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L198)
 
 ___
 
 ### ownCaching
 
-• `Optional` `Private` **ownCaching**: `boolean`
+ `Optional` `Private` **ownCaching**: `boolean`
 
 Indicate if the object is sitting on a cache dedicated to it
 or is part of a larger cache for many object ( a group for example)
@@ -2223,13 +2223,13 @@ ITextClickBehavior.ownCaching
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:255](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L255)
+[src/shapes/Object/Object.ts:255](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L255)
 
 ___
 
 ### ownMatrixCache
 
-• `Optional` **ownMatrixCache**: `TMatrixCache`
+ `Optional` **ownMatrixCache**: `TMatrixCache`
 
 storage cache for object transform matrix
 
@@ -2239,13 +2239,13 @@ ITextClickBehavior.ownMatrixCache
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:72](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L72)
+[src/shapes/Object/ObjectGeometry.ts:71](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L71)
 
 ___
 
 ### padding
 
-• **padding**: `number`
+ **padding**: `number`
 
 #### Inherited from
 
@@ -2253,13 +2253,13 @@ ITextClickBehavior.padding
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:45](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L45)
+[src/shapes/Object/ObjectGeometry.ts:44](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L44)
 
 ___
 
 ### paintFirst
 
-• **paintFirst**: ``"fill"`` \| ``"stroke"``
+ **paintFirst**: ``"fill"`` \| ``"stroke"``
 
 #### Inherited from
 
@@ -2267,13 +2267,13 @@ ITextClickBehavior.paintFirst
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:113](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L113)
+[src/shapes/Object/Object.ts:113](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L113)
 
 ___
 
 ### path
 
-• `Optional` **path**: [`Path`](/apidocs/classes/Path.md)\<`Partial`\<[`PathProps`](/apidocs/interfaces/PathProps.md)\>, [`SerializedPathProps`](/apidocs/interfaces/SerializedPathProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
+ `Optional` **path**: [`Path`](/apidocs/classes/Path.md)\<`Partial`\<[`PathProps`](/apidocs/interfaces/PathProps.md)\>, [`SerializedPathProps`](/apidocs/interfaces/SerializedPathProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
 
 Path that the text should follow.
 since 4.6.0 the path will be drawn automatically.
@@ -2310,13 +2310,13 @@ ITextClickBehavior.path
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:292](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L292)
+[src/shapes/Text/Text.ts:292](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L292)
 
 ___
 
 ### pathAlign
 
-• **pathAlign**: [`TPathAlign`](/apidocs/modules.md#tpathalign)
+ **pathAlign**: [`TPathAlign`](/apidocs/modules.md#tpathalign)
 
 How text is aligned to the path. This property determines
 the perpendicular position of each character relative to the path.
@@ -2335,13 +2335,13 @@ ITextClickBehavior.pathAlign
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:318](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L318)
+[src/shapes/Text/Text.ts:318](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L318)
 
 ___
 
 ### pathSide
 
-• **pathSide**: [`TPathSide`](/apidocs/modules.md#tpathside)
+ **pathSide**: [`TPathSide`](/apidocs/modules.md#tpathside)
 
 Which side of the path the text should be drawn on.
 Only used when text has a path
@@ -2358,13 +2358,13 @@ ITextClickBehavior.pathSide
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:308](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L308)
+[src/shapes/Text/Text.ts:308](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L308)
 
 ___
 
 ### pathStartOffset
 
-• **pathStartOffset**: `number`
+ **pathStartOffset**: `number`
 
 Offset amount for text path starting position
 Only used when text has a path
@@ -2381,13 +2381,13 @@ ITextClickBehavior.pathStartOffset
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:300](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L300)
+[src/shapes/Text/Text.ts:300](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L300)
 
 ___
 
 ### perPixelTargetFind
 
-• **perPixelTargetFind**: `boolean`
+ **perPixelTargetFind**: `boolean`
 
 #### Inherited from
 
@@ -2395,13 +2395,13 @@ ITextClickBehavior.perPixelTargetFind
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:90](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L90)
+[src/shapes/Object/InteractiveObject.ts:90](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L90)
 
 ___
 
 ### scaleX
 
-• **scaleX**: `number`
+ **scaleX**: `number`
 
 #### Inherited from
 
@@ -2409,13 +2409,13 @@ ITextClickBehavior.scaleX
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:23](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L23)
+[src/shapes/Object/ObjectOrigin.ts:23](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L23)
 
 ___
 
 ### scaleY
 
-• **scaleY**: `number`
+ **scaleY**: `number`
 
 #### Inherited from
 
@@ -2423,13 +2423,13 @@ ITextClickBehavior.scaleY
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:24](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L24)
+[src/shapes/Object/ObjectOrigin.ts:24](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L24)
 
 ___
 
 ### selectable
 
-• **selectable**: `boolean`
+ **selectable**: `boolean`
 
 #### Inherited from
 
@@ -2437,13 +2437,13 @@ ITextClickBehavior.selectable
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:88](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L88)
+[src/shapes/Object/InteractiveObject.ts:88](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L88)
 
 ___
 
 ### selected
 
-• `Protected` **selected**: `boolean`
+ `Protected` **selected**: `boolean`
 
 #### Inherited from
 
@@ -2451,13 +2451,13 @@ ITextClickBehavior.selected
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:73](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextBehavior.ts#L73)
+[src/shapes/IText/ITextBehavior.ts:73](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L73)
 
 ___
 
 ### selectionBackgroundColor
 
-• **selectionBackgroundColor**: `string`
+ **selectionBackgroundColor**: `string`
 
 #### Inherited from
 
@@ -2465,13 +2465,13 @@ ITextClickBehavior.selectionBackgroundColor
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:86](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L86)
+[src/shapes/Object/InteractiveObject.ts:86](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L86)
 
 ___
 
 ### selectionColor
 
-• **selectionColor**: `string`
+ **selectionColor**: `string`
 
 Color of text selection
 
@@ -2483,13 +2483,13 @@ Color of text selection
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:136](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/IText.ts#L136)
+[src/shapes/IText/IText.ts:136](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L136)
 
 ___
 
 ### selectionEnd
 
-• **selectionEnd**: `number`
+ **selectionEnd**: `number`
 
 Index where text selection ends
 
@@ -2509,13 +2509,13 @@ ITextClickBehavior.selectionEnd
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:125](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/IText.ts#L125)
+[src/shapes/IText/IText.ts:125](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L125)
 
 ___
 
 ### selectionStart
 
-• **selectionStart**: `number`
+ **selectionStart**: `number`
 
 Index where text selection starts (or where cursor is when there is no selection)
 
@@ -2535,13 +2535,13 @@ ITextClickBehavior.selectionStart
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:118](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/IText.ts#L118)
+[src/shapes/IText/IText.ts:118](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L118)
 
 ___
 
 ### shadow
 
-• **shadow**: ``null`` \| [`Shadow`](/apidocs/classes/Shadow.md)
+ **shadow**: ``null`` \| [`Shadow`](/apidocs/classes/Shadow.md)
 
 #### Inherited from
 
@@ -2549,13 +2549,13 @@ ITextClickBehavior.shadow
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:126](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L126)
+[src/shapes/Object/Object.ts:126](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L126)
 
 ___
 
 ### skewX
 
-• **skewX**: `number`
+ **skewX**: `number`
 
 #### Inherited from
 
@@ -2563,13 +2563,13 @@ ITextClickBehavior.skewX
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:25](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L25)
+[src/shapes/Object/ObjectOrigin.ts:25](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L25)
 
 ___
 
 ### skewY
 
-• **skewY**: `number`
+ **skewY**: `number`
 
 #### Inherited from
 
@@ -2577,13 +2577,13 @@ ITextClickBehavior.skewY
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:26](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L26)
+[src/shapes/Object/ObjectOrigin.ts:26](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L26)
 
 ___
 
 ### snapAngle
 
-• `Optional` **snapAngle**: [`TDegree`](/apidocs/modules.md#tdegree)
+ `Optional` **snapAngle**: [`TDegree`](/apidocs/modules.md#tdegree)
 
 #### Inherited from
 
@@ -2591,13 +2591,13 @@ ITextClickBehavior.snapAngle
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:60](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L60)
+[src/shapes/Object/InteractiveObject.ts:60](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L60)
 
 ___
 
 ### snapThreshold
 
-• `Optional` **snapThreshold**: [`TDegree`](/apidocs/modules.md#tdegree)
+ `Optional` **snapThreshold**: [`TDegree`](/apidocs/modules.md#tdegree)
 
 #### Inherited from
 
@@ -2605,13 +2605,13 @@ ITextClickBehavior.snapThreshold
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:61](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L61)
+[src/shapes/Object/InteractiveObject.ts:61](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L61)
 
 ___
 
 ### stroke
 
-• **stroke**: ``null`` \| `string` \| [`TFiller`](/apidocs/modules.md#tfiller)
+ **stroke**: ``null`` \| `string` \| [`TFiller`](/apidocs/modules.md#tfiller)
 
 #### Inherited from
 
@@ -2619,13 +2619,13 @@ ITextClickBehavior.stroke
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:116](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L116)
+[src/shapes/Object/Object.ts:116](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L116)
 
 ___
 
 ### strokeDashArray
 
-• **strokeDashArray**: ``null`` \| `number`[]
+ **strokeDashArray**: ``null`` \| `number`[]
 
 #### Inherited from
 
@@ -2633,13 +2633,13 @@ ITextClickBehavior.strokeDashArray
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:117](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L117)
+[src/shapes/Object/Object.ts:117](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L117)
 
 ___
 
 ### strokeDashOffset
 
-• **strokeDashOffset**: `number`
+ **strokeDashOffset**: `number`
 
 #### Inherited from
 
@@ -2647,13 +2647,13 @@ ITextClickBehavior.strokeDashOffset
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:118](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L118)
+[src/shapes/Object/Object.ts:118](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L118)
 
 ___
 
 ### strokeLineCap
 
-• **strokeLineCap**: `CanvasLineCap`
+ **strokeLineCap**: `CanvasLineCap`
 
 #### Inherited from
 
@@ -2661,13 +2661,13 @@ ITextClickBehavior.strokeLineCap
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:119](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L119)
+[src/shapes/Object/Object.ts:119](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L119)
 
 ___
 
 ### strokeLineJoin
 
-• **strokeLineJoin**: `CanvasLineJoin`
+ **strokeLineJoin**: `CanvasLineJoin`
 
 #### Inherited from
 
@@ -2675,13 +2675,13 @@ ITextClickBehavior.strokeLineJoin
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:120](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L120)
+[src/shapes/Object/Object.ts:120](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L120)
 
 ___
 
 ### strokeMiterLimit
 
-• **strokeMiterLimit**: `number`
+ **strokeMiterLimit**: `number`
 
 #### Inherited from
 
@@ -2689,13 +2689,13 @@ ITextClickBehavior.strokeMiterLimit
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:121](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L121)
+[src/shapes/Object/Object.ts:121](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L121)
 
 ___
 
 ### strokeUniform
 
-• **strokeUniform**: `boolean`
+ **strokeUniform**: `boolean`
 
 #### Inherited from
 
@@ -2703,13 +2703,13 @@ ITextClickBehavior.strokeUniform
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:31](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L31)
+[src/shapes/Object/ObjectOrigin.ts:31](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L31)
 
 ___
 
 ### strokeWidth
 
-• **strokeWidth**: `number`
+ **strokeWidth**: `number`
 
 #### Inherited from
 
@@ -2717,13 +2717,13 @@ ITextClickBehavior.strokeWidth
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:30](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L30)
+[src/shapes/Object/ObjectOrigin.ts:30](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L30)
 
 ___
 
 ### styles
 
-• **styles**: [`TextStyle`](/apidocs/modules.md#textstyle)
+ **styles**: [`TextStyle`](/apidocs/modules.md#textstyle)
 
 #### Inherited from
 
@@ -2731,13 +2731,13 @@ ITextClickBehavior.styles
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:268](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L268)
+[src/shapes/Text/Text.ts:268](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L268)
 
 ___
 
 ### subscript
 
-• **subscript**: `Object`
+ **subscript**: `Object`
 
 Subscript schema object (minimum overlap)
 
@@ -2754,13 +2754,13 @@ ITextClickBehavior.subscript
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:248](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L248)
+[src/shapes/Text/Text.ts:248](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L248)
 
 ___
 
 ### superscript
 
-• **superscript**: `Object`
+ **superscript**: `Object`
 
 Superscript schema object (minimum overlap)
 
@@ -2777,13 +2777,13 @@ ITextClickBehavior.superscript
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:232](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L232)
+[src/shapes/Text/Text.ts:232](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L232)
 
 ___
 
 ### text
 
-• **text**: `string`
+ **text**: `string`
 
 #### Inherited from
 
@@ -2791,13 +2791,13 @@ ITextClickBehavior.text
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:163](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L163)
+[src/shapes/Text/Text.ts:163](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L163)
 
 ___
 
 ### textAlign
 
-• **textAlign**: `string`
+ **textAlign**: `string`
 
 Text alignment. Possible values: "left", "center", "right", "justify",
 "justify-left", "justify-center" or "justify-right".
@@ -2814,13 +2814,13 @@ ITextClickBehavior.textAlign
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:213](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L213)
+[src/shapes/Text/Text.ts:213](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L213)
 
 ___
 
 ### textBackgroundColor
 
-• **textBackgroundColor**: `string`
+ **textBackgroundColor**: `string`
 
 Background color of text lines
 
@@ -2836,13 +2836,13 @@ ITextClickBehavior.textBackgroundColor
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:266](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L266)
+[src/shapes/Text/Text.ts:266](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L266)
 
 ___
 
 ### textLines
 
-• **textLines**: `string`[]
+ **textLines**: `string`[]
 
 contains the the text of the object, divided in lines as they are displayed
 on screen. Wrapping will divide the text independently of line breaks
@@ -2859,13 +2859,13 @@ ITextClickBehavior.textLines
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:395](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L395)
+[src/shapes/Text/Text.ts:395](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L395)
 
 ___
 
 ### top
 
-• **top**: `number`
+ **top**: `number`
 
 #### Inherited from
 
@@ -2873,13 +2873,13 @@ ITextClickBehavior.top
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:17](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L17)
+[src/shapes/Object/ObjectOrigin.ts:17](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L17)
 
 ___
 
 ### touchCornerSize
 
-• **touchCornerSize**: `number`
+ **touchCornerSize**: `number`
 
 #### Inherited from
 
@@ -2887,13 +2887,13 @@ ITextClickBehavior.touchCornerSize
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:73](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L73)
+[src/shapes/Object/InteractiveObject.ts:73](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L73)
 
 ___
 
 ### transparentCorners
 
-• **transparentCorners**: `boolean`
+ **transparentCorners**: `boolean`
 
 #### Inherited from
 
@@ -2901,13 +2901,13 @@ ITextClickBehavior.transparentCorners
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:74](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L74)
+[src/shapes/Object/InteractiveObject.ts:74](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L74)
 
 ___
 
 ### underline
 
-• **underline**: `boolean`
+ **underline**: `boolean`
 
 Text decoration underline.
 
@@ -2923,13 +2923,13 @@ ITextClickBehavior.underline
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:191](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L191)
+[src/shapes/Text/Text.ts:191](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L191)
 
 ___
 
 ### visible
 
-• **visible**: `boolean`
+ **visible**: `boolean`
 
 #### Inherited from
 
@@ -2937,13 +2937,13 @@ ITextClickBehavior.visible
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:128](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L128)
+[src/shapes/Object/Object.ts:128](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L128)
 
 ___
 
 ### width
 
-• **width**: `number`
+ **width**: `number`
 
 #### Inherited from
 
@@ -2951,13 +2951,13 @@ ITextClickBehavior.width
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:19](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L19)
+[src/shapes/Object/ObjectOrigin.ts:19](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L19)
 
 ___
 
 ### zoomX
 
-• `Optional` `Private` **zoomX**: `number`
+ `Optional` `Private` **zoomX**: `number`
 
 zoom level used on the cacheCanvas to draw the cache, X axe
 since 1.7.0
@@ -2975,13 +2975,13 @@ ITextClickBehavior.zoomX
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:211](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L211)
+[src/shapes/Object/Object.ts:211](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L211)
 
 ___
 
 ### zoomY
 
-• `Optional` `Private` **zoomY**: `number`
+ `Optional` `Private` **zoomY**: `number`
 
 zoom level used on the cacheCanvas to draw the cache, Y axe
 since 1.7.0
@@ -2999,13 +2999,13 @@ ITextClickBehavior.zoomY
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:220](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L220)
+[src/shapes/Object/Object.ts:220](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L220)
 
 ___
 
 ### ATTRIBUTE\_NAMES
 
-▪ `Static` **ATTRIBUTE\_NAMES**: `string`[]
+ `Static` **ATTRIBUTE\_NAMES**: `string`[]
 
 List of attribute names to account for when parsing SVG element (used by [FabricText.fromElement](/apidocs/classes/FabricText.md#fromelement))
 
@@ -3022,13 +3022,13 @@ ITextClickBehavior.ATTRIBUTE\_NAMES
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1801](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L1801)
+[src/shapes/Text/Text.ts:1801](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1801)
 
 ___
 
 ### \_styleProperties
 
-▪ `Static` **\_styleProperties**: readonly `StylePropertiesType`[] = `styleProperties`
+ `Static` **\_styleProperties**: readonly `StylePropertiesType`[] = `styleProperties`
 
 #### Inherited from
 
@@ -3036,13 +3036,13 @@ ITextClickBehavior.\_styleProperties
 
 #### Defined in
 
-[src/shapes/Text/StyledText.ts:29](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/StyledText.ts#L29)
+[src/shapes/Text/StyledText.ts:29](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/StyledText.ts#L29)
 
 ___
 
 ### cacheProperties
 
-▪ `Static` **cacheProperties**: `string`[]
+ `Static` **cacheProperties**: `string`[]
 
 #### Inherited from
 
@@ -3050,13 +3050,13 @@ ITextClickBehavior.cacheProperties
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:411](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L411)
+[src/shapes/Text/Text.ts:411](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L411)
 
 ___
 
 ### genericFonts
 
-▪ `Static` **genericFonts**: `string`[]
+ `Static` **genericFonts**: `string`[]
 
 #### Inherited from
 
@@ -3064,13 +3064,13 @@ ITextClickBehavior.genericFonts
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1785](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L1785)
+[src/shapes/Text/Text.ts:1785](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1785)
 
 ___
 
 ### ownDefaults
 
-▪ `Static` **ownDefaults**: `Record`\<`string`, `any`\> = `iTextDefaultValues`
+ `Static` **ownDefaults**: `Record`\<`string`, `any`\> = `iTextDefaultValues`
 
 #### Overrides
 
@@ -3078,13 +3078,13 @@ ITextClickBehavior.ownDefaults
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:199](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/IText.ts#L199)
+[src/shapes/IText/IText.ts:199](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L199)
 
 ___
 
 ### stateProperties
 
-▪ `Static` **stateProperties**: `string`[] = `stateProperties`
+ `Static` **stateProperties**: `string`[] = `stateProperties`
 
 This list of properties is used to check if the state of an object is changed.
 This state change now is only used for children of groups to understand if a group
@@ -3096,13 +3096,13 @@ ITextClickBehavior.stateProperties
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:146](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L146)
+[src/shapes/Object/Object.ts:146](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L146)
 
 ___
 
 ### textLayoutProperties
 
-▪ `Static` `Protected` **textLayoutProperties**: `string`[] = `textLayoutProperties`
+ `Static` `Protected` **textLayoutProperties**: `string`[] = `textLayoutProperties`
 
 Properties that requires a text layout recalculation when changed
 
@@ -3112,13 +3112,13 @@ ITextClickBehavior.textLayoutProperties
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:135](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L135)
+[src/shapes/Text/Text.ts:135](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L135)
 
 ___
 
 ### type
 
-▪ `Static` **type**: `string` = `'IText'`
+ `Static` **type**: `string` = `'IText'`
 
 #### Overrides
 
@@ -3126,13 +3126,13 @@ ITextClickBehavior.type
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:205](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/IText.ts#L205)
+[src/shapes/IText/IText.ts:205](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L205)
 
 ## Accessors
 
 ### type
 
-• `get` **type**(): `string`
+`get` **type**(): `string`
 
 #### Returns
 
@@ -3144,13 +3144,13 @@ ITextClickBehavior.type
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:207](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/IText.ts#L207)
+[src/shapes/IText/IText.ts:207](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L207)
 
 ## Methods
 
 ### \_\_getCursorBoundariesOffsets
 
-▸ **__getCursorBoundariesOffsets**(`index`): `Object`
+**__getCursorBoundariesOffsets**(`index`): `Object`
 
 Calculates cursor left/top offset relative to instance's center point
 
@@ -3171,13 +3171,13 @@ Calculates cursor left/top offset relative to instance's center point
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:434](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/IText.ts#L434)
+[src/shapes/IText/IText.ts:434](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L434)
 
 ___
 
 ### \_animate
 
-▸ **_animate**\<`T`\>(`key`, `endValue`, `options?`): [`TAnimation`](/apidocs/modules/util.md#tanimation)\<`T`\>
+**_animate**\<`T`\>(`key`, `endValue`, `options?`): [`TAnimation`](/apidocs/modules/util.md#tanimation)\<`T`\>
 
 #### Type parameters
 
@@ -3203,13 +3203,13 @@ ITextClickBehavior.\_animate
 
 #### Defined in
 
-[src/shapes/Object/AnimatableObject.ts:50](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/AnimatableObject.ts#L50)
+[src/shapes/Object/AnimatableObject.ts:50](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/AnimatableObject.ts#L50)
 
 ___
 
 ### \_animateCursor
 
-▸ **_animateCursor**(`«destructured»`): `ValueAnimation`
+**_animateCursor**(`«destructured»`): `ValueAnimation`
 
 #### Parameters
 
@@ -3231,13 +3231,13 @@ ITextClickBehavior.\_animateCursor
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:120](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextBehavior.ts#L120)
+[src/shapes/IText/ITextBehavior.ts:120](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L120)
 
 ___
 
 ### \_applyPatternForTransformedGradient
 
-▸ **_applyPatternForTransformedGradient**(`ctx`, `filler`): `void`
+**_applyPatternForTransformedGradient**(`ctx`, `filler`): `void`
 
 This function try to patch the missing gradientTransform on canvas gradients.
 transforming a context to transform the gradient, is going to transform the stroke too.
@@ -3263,13 +3263,13 @@ ITextClickBehavior.\_applyPatternForTransformedGradient
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1255](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1255)
+[src/shapes/Object/Object.ts:1255](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1255)
 
 ___
 
 ### \_applyPatternGradientTransform
 
-▸ **_applyPatternGradientTransform**(`ctx`, `filler`): `Object`
+**_applyPatternGradientTransform**(`ctx`, `filler`): `Object`
 
 #### Parameters
 
@@ -3293,13 +3293,13 @@ ITextClickBehavior.\_applyPatternGradientTransform
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1152](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1152)
+[src/shapes/Object/Object.ts:1152](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1152)
 
 ___
 
 ### \_applyPatternGradientTransformText
 
-▸ **_applyPatternGradientTransformText**(`filler`): `CanvasPattern`
+**_applyPatternGradientTransformText**(`filler`): `CanvasPattern`
 
 This function try to patch the missing gradientTransform on canvas gradients.
 transforming a context to transform the gradient, is going to transform the stroke too.
@@ -3326,13 +3326,13 @@ ITextClickBehavior.\_applyPatternGradientTransformText
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1245](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L1245)
+[src/shapes/Text/Text.ts:1245](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1245)
 
 ___
 
 ### \_calcTextareaPosition
 
-▸ **_calcTextareaPosition**(): \{ `charHeight?`: `undefined` = charHeight; `fontSize?`: `undefined` ; `left`: `string` = '1px'; `top`: `string` = '1px' } \| \{ `charHeight`: `number` = charHeight; `fontSize`: `string` ; `left`: `string` ; `top`: `string`  }
+**_calcTextareaPosition**(): \{ `charHeight?`: `undefined` = charHeight; `fontSize?`: `undefined` ; `left`: `string` = '1px'; `top`: `string` = '1px' } \| \{ `charHeight`: `number` = charHeight; `fontSize`: `string` ; `left`: `string` ; `top`: `string`  }
 
 #### Returns
 
@@ -3346,13 +3346,13 @@ ITextClickBehavior.\_calcTextareaPosition
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:559](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextBehavior.ts#L559)
+[src/shapes/IText/ITextBehavior.ts:559](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L559)
 
 ___
 
 ### \_calculateCurrentDimensions
 
-▸ **_calculateCurrentDimensions**(`options?`): [`Point`](/apidocs/classes/Point.md)
+**_calculateCurrentDimensions**(`options?`): [`Point`](/apidocs/classes/Point.md)
 
 Calculate object dimensions for controls box, including padding and canvas zoom.
 and active selection
@@ -3375,13 +3375,13 @@ ITextClickBehavior.\_calculateCurrentDimensions
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:697](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L697)
+[src/shapes/Object/ObjectGeometry.ts:633](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L633)
 
 ___
 
 ### \_clearCache
 
-▸ **_clearCache**(): `void`
+**_clearCache**(): `void`
 
 #### Returns
 
@@ -3393,13 +3393,13 @@ ITextClickBehavior.\_clearCache
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1491](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L1491)
+[src/shapes/Text/Text.ts:1491](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1491)
 
 ___
 
 ### \_constrainScale
 
-▸ **_constrainScale**(`value`): `number`
+**_constrainScale**(`value`): `number`
 
 Makes sure the scale is valid and modifies it if necessary
 @todo: this is a control action issue, not a geometry one
@@ -3422,13 +3422,13 @@ ITextClickBehavior.\_constrainScale
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:675](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L675)
+[src/shapes/Object/Object.ts:675](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L675)
 
 ___
 
 ### \_createBaseClipPathSVGMarkup
 
-▸ **_createBaseClipPathSVGMarkup**(`this`, `objectMarkup`, `«destructured»?`): `string`
+**_createBaseClipPathSVGMarkup**(`this`, `objectMarkup`, `«destructured»?`): `string`
 
 #### Parameters
 
@@ -3450,13 +3450,13 @@ ITextClickBehavior.\_createBaseClipPathSVGMarkup
 
 #### Defined in
 
-[src/shapes/Object/FabricObjectSVGExportMixin.ts:158](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/FabricObjectSVGExportMixin.ts#L158)
+[src/shapes/Object/FabricObjectSVGExportMixin.ts:158](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/FabricObjectSVGExportMixin.ts#L158)
 
 ___
 
 ### \_createBaseSVGMarkup
 
-▸ **_createBaseSVGMarkup**(`this`, `objectMarkup`, `«destructured»?`): `string`
+**_createBaseSVGMarkup**(`this`, `objectMarkup`, `«destructured»?`): `string`
 
 #### Parameters
 
@@ -3480,13 +3480,13 @@ ITextClickBehavior.\_createBaseSVGMarkup
 
 #### Defined in
 
-[src/shapes/Object/FabricObjectSVGExportMixin.ts:179](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/FabricObjectSVGExportMixin.ts#L179)
+[src/shapes/Object/FabricObjectSVGExportMixin.ts:179](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/FabricObjectSVGExportMixin.ts#L179)
 
 ___
 
 ### \_createCacheCanvas
 
-▸ **_createCacheCanvas**(): `void`
+**_createCacheCanvas**(): `void`
 
 Create a the canvas used to keep the cached copy of the object
 
@@ -3500,13 +3500,13 @@ ITextClickBehavior.\_createCacheCanvas
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:319](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L319)
+[src/shapes/Object/Object.ts:319](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L319)
 
 ___
 
 ### \_deleteLineStyle
 
-▸ **_deleteLineStyle**(`lineIndex`): `void`
+**_deleteLineStyle**(`lineIndex`): `void`
 
 #### Parameters
 
@@ -3524,13 +3524,13 @@ ITextClickBehavior.\_deleteLineStyle
 
 #### Defined in
 
-[src/shapes/Text/StyledText.ts:320](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/StyledText.ts#L320)
+[src/shapes/Text/StyledText.ts:320](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/StyledText.ts#L320)
 
 ___
 
 ### \_deleteStyleDeclaration
 
-▸ **_deleteStyleDeclaration**(`lineIndex`, `charIndex`): `void`
+**_deleteStyleDeclaration**(`lineIndex`, `charIndex`): `void`
 
 #### Parameters
 
@@ -3549,13 +3549,13 @@ ITextClickBehavior.\_deleteStyleDeclaration
 
 #### Defined in
 
-[src/shapes/Text/StyledText.ts:298](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/StyledText.ts#L298)
+[src/shapes/Text/StyledText.ts:298](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/StyledText.ts#L298)
 
 ___
 
 ### \_drawBorders
 
-▸ **_drawBorders**(`ctx`, `size`, `styleOverride?`): `void`
+**_drawBorders**(`ctx`, `size`, `styleOverride?`): `void`
 
 #### Parameters
 
@@ -3575,13 +3575,13 @@ ITextClickBehavior.\_drawBorders
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:376](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L376)
+[src/shapes/Object/InteractiveObject.ts:376](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L376)
 
 ___
 
 ### \_drawClipPath
 
-▸ **_drawClipPath**(`ctx`, `clipPath?`): `void`
+**_drawClipPath**(`ctx`, `clipPath?`): `void`
 
 Prepare clipPath state and cache and draw it on instance's cache
 
@@ -3602,13 +3602,13 @@ ITextClickBehavior.\_drawClipPath
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:944](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L944)
+[src/shapes/Object/Object.ts:944](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L944)
 
 ___
 
 ### \_exitEditing
 
-▸ **_exitEditing**(): `void`
+**_exitEditing**(): `void`
 
 runs the actual logic that exits from editing state, see [exitEditing](/apidocs/classes/IText.md#exitediting)
 
@@ -3622,13 +3622,13 @@ ITextClickBehavior.\_exitEditing
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:663](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextBehavior.ts#L663)
+[src/shapes/IText/ITextBehavior.ts:663](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L663)
 
 ___
 
 ### \_findCenterFromElement
 
-▸ **_findCenterFromElement**(): [`Point`](/apidocs/classes/Point.md)
+**_findCenterFromElement**(): [`Point`](/apidocs/classes/Point.md)
 
 This function is an helper for svg import. it returns the center of the object in the svg
 untransformed coordinates
@@ -3645,13 +3645,13 @@ ITextClickBehavior.\_findCenterFromElement
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1303](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1303)
+[src/shapes/Object/Object.ts:1303](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1303)
 
 ___
 
 ### \_findTargetCorner
 
-▸ **_findTargetCorner**(`pointer`, `forTouch?`): `string`
+**_findTargetCorner**(`pointer`, `forTouch?`): `string`
 
 Determines which corner is under the mouse cursor, represented by `pointer`.
 This function is return a corner only if the object is the active one.
@@ -3678,13 +3678,13 @@ ITextClickBehavior.\_findTargetCorner
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:191](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L191)
+[src/shapes/Object/InteractiveObject.ts:191](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L191)
 
 ___
 
 ### \_fireSelectionChanged
 
-▸ **_fireSelectionChanged**(): `void`
+**_fireSelectionChanged**(): `void`
 
 Fires the even of selection changed
 
@@ -3698,13 +3698,13 @@ ITextClickBehavior.\_fireSelectionChanged
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:282](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/IText.ts#L282)
+[src/shapes/IText/IText.ts:282](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L282)
 
 ___
 
 ### \_getCacheCanvasDimensions
 
-▸ **_getCacheCanvasDimensions**(): [`TCacheCanvasDimensions`](/apidocs/modules.md#tcachecanvasdimensions)
+**_getCacheCanvasDimensions**(): [`TCacheCanvasDimensions`](/apidocs/modules.md#tcachecanvasdimensions)
 
 Return the dimension and the zoom level needed to create a cache canvas
 big enough to host the object to be cached.
@@ -3727,13 +3727,13 @@ ITextClickBehavior.\_getCacheCanvasDimensions
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:588](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L588)
+[src/shapes/Text/Text.ts:588](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L588)
 
 ___
 
 ### \_getCurrentCharIndex
 
-▸ **_getCurrentCharIndex**(): `Object`
+**_getCurrentCharIndex**(): `Object`
 
 Returns the cursor position for the getCurrent.. functions
 
@@ -3748,13 +3748,13 @@ Returns the cursor position for the getCurrent.. functions
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:682](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/IText.ts#L682)
+[src/shapes/IText/IText.ts:682](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L682)
 
 ___
 
 ### \_getCursorBoundaries
 
-▸ **_getCursorBoundaries**(`index?`, `skipCaching?`): `CursorBoundaries`
+**_getCursorBoundaries**(`index?`, `skipCaching?`): `CursorBoundaries`
 
 Returns cursor boundaries (left, top, leftOffset, topOffset)
 left/top are left/top of entire text box
@@ -3777,13 +3777,13 @@ ITextClickBehavior.\_getCursorBoundaries
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:395](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/IText.ts#L395)
+[src/shapes/IText/IText.ts:395](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L395)
 
 ___
 
 ### \_getCursorBoundariesOffsets
 
-▸ **_getCursorBoundariesOffsets**(`index`, `skipCaching?`): `Object`
+**_getCursorBoundariesOffsets**(`index`, `skipCaching?`): `Object`
 
 Caches and returns cursor left/top offset relative to instance's center point
 
@@ -3805,13 +3805,13 @@ Caches and returns cursor left/top offset relative to instance's center point
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:416](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/IText.ts#L416)
+[src/shapes/IText/IText.ts:416](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L416)
 
 ___
 
 ### \_getFontDeclaration
 
-▸ **_getFontDeclaration**(`«destructured»?`, `forMeasuring?`): `string`
+**_getFontDeclaration**(`«destructured»?`, `forMeasuring?`): `string`
 
 return font declaration string for canvas context
 
@@ -3834,13 +3834,13 @@ ITextClickBehavior.\_getFontDeclaration
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1648](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L1648)
+[src/shapes/Text/Text.ts:1648](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1648)
 
 ___
 
 ### \_getGraphemeBox
 
-▸ **_getGraphemeBox**(`grapheme`, `lineIndex`, `charIndex`, `prevGrapheme?`, `skipLeft?`): [`GraphemeBBox`](/apidocs/modules.md#graphemebbox)
+**_getGraphemeBox**(`grapheme`, `lineIndex`, `charIndex`, `prevGrapheme?`, `skipLeft?`): [`GraphemeBBox`](/apidocs/modules.md#graphemebbox)
 
 #### Parameters
 
@@ -3864,13 +3864,13 @@ ITextClickBehavior.\_getGraphemeBox
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:973](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L973)
+[src/shapes/Text/Text.ts:973](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L973)
 
 ___
 
 ### \_getIndexOnLine
 
-▸ **_getIndexOnLine**(`lineIndex`, `width`): `number`
+**_getIndexOnLine**(`lineIndex`, `width`): `number`
 
 for a given width it founds the matching character.
 
@@ -3891,13 +3891,13 @@ ITextClickBehavior.\_getIndexOnLine
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:416](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextKeyBehavior.ts#L416)
+[src/shapes/IText/ITextKeyBehavior.ts:416](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L416)
 
 ___
 
 ### \_getLeftOffset
 
-▸ **_getLeftOffset**(): `number`
+**_getLeftOffset**(): `number`
 
 #### Returns
 
@@ -3911,13 +3911,13 @@ ITextClickBehavior.\_getLeftOffset
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1048](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L1048)
+[src/shapes/Text/Text.ts:1048](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1048)
 
 ___
 
 ### \_getLeftTopCoords
 
-▸ **_getLeftTopCoords**(): [`Point`](/apidocs/classes/Point.md)
+**_getLeftTopCoords**(): [`Point`](/apidocs/classes/Point.md)
 
 #### Returns
 
@@ -3929,13 +3929,13 @@ ITextClickBehavior.\_getLeftTopCoords
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:222](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L222)
+[src/shapes/Object/ObjectOrigin.ts:222](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L222)
 
 ___
 
 ### \_getLineLeftOffset
 
-▸ **_getLineLeftOffset**(`lineIndex`): `number`
+**_getLineLeftOffset**(`lineIndex`): `number`
 
 #### Parameters
 
@@ -3955,13 +3955,13 @@ ITextClickBehavior.\_getLineLeftOffset
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1445](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L1445)
+[src/shapes/Text/Text.ts:1445](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1445)
 
 ___
 
 ### \_getLineStyle
 
-▸ **_getLineStyle**(`lineIndex`): `boolean`
+**_getLineStyle**(`lineIndex`): `boolean`
 
 #### Parameters
 
@@ -3981,13 +3981,13 @@ ITextClickBehavior.\_getLineStyle
 
 #### Defined in
 
-[src/shapes/Text/StyledText.ts:307](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/StyledText.ts#L307)
+[src/shapes/Text/StyledText.ts:307](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/StyledText.ts#L307)
 
 ___
 
 ### \_getNonTransformedDimensions
 
-▸ **_getNonTransformedDimensions**(): [`Point`](/apidocs/classes/Point.md)
+**_getNonTransformedDimensions**(): [`Point`](/apidocs/classes/Point.md)
 
 Calculate object dimensions from its properties
 
@@ -4003,13 +4003,13 @@ ITextClickBehavior.\_getNonTransformedDimensions
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:686](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L686)
+[src/shapes/Object/ObjectGeometry.ts:622](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L622)
 
 ___
 
 ### \_getSelectionForOffset
 
-▸ **_getSelectionForOffset**(`e`, `isRight`): `number`
+**_getSelectionForOffset**(`e`, `isRight`): `number`
 
 private
 Helps finding if the offset should be counted from Start or End
@@ -4031,13 +4031,13 @@ ITextClickBehavior.\_getSelectionForOffset
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:377](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextKeyBehavior.ts#L377)
+[src/shapes/IText/ITextKeyBehavior.ts:377](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L377)
 
 ___
 
 ### \_getStyleDeclaration
 
-▸ **_getStyleDeclaration**(`lineIndex`, `charIndex`): `Partial`\<[`CompleteTextStyleDeclaration`](/apidocs/modules.md#completetextstyledeclaration)\>
+**_getStyleDeclaration**(`lineIndex`, `charIndex`): `Partial`\<[`CompleteTextStyleDeclaration`](/apidocs/modules.md#completetextstyledeclaration)\>
 
 get the reference, not a clone, of the style object for a given character,
 if not style is set for a pre det
@@ -4061,13 +4061,13 @@ ITextClickBehavior.\_getStyleDeclaration
 
 #### Defined in
 
-[src/shapes/Text/StyledText.ts:252](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/StyledText.ts#L252)
+[src/shapes/Text/StyledText.ts:252](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/StyledText.ts#L252)
 
 ___
 
 ### \_getTopOffset
 
-▸ **_getTopOffset**(): `number`
+**_getTopOffset**(): `number`
 
 #### Returns
 
@@ -4081,13 +4081,13 @@ ITextClickBehavior.\_getTopOffset
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1056](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L1056)
+[src/shapes/Text/Text.ts:1056](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1056)
 
 ___
 
 ### \_getTransformedDimensions
 
-▸ **_getTransformedDimensions**(`options?`): [`Point`](/apidocs/classes/Point.md)
+**_getTransformedDimensions**(`options?`): [`Point`](/apidocs/classes/Point.md)
 
 Calculate object bounding box dimensions from its properties scale, skew.
 
@@ -4109,13 +4109,13 @@ ITextClickBehavior.\_getTransformedDimensions
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:49](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L49)
+[src/shapes/Object/ObjectOrigin.ts:49](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L49)
 
 ___
 
 ### \_getWidthBeforeCursor
 
-▸ **_getWidthBeforeCursor**(`lineIndex`, `charIndex`): `number`
+**_getWidthBeforeCursor**(`lineIndex`, `charIndex`): `number`
 
 Finds the width in pixels before the cursor on the same line
 
@@ -4138,13 +4138,13 @@ ITextClickBehavior.\_getWidthBeforeCursor
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:328](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextKeyBehavior.ts#L328)
+[src/shapes/IText/ITextKeyBehavior.ts:328](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L328)
 
 ___
 
 ### \_getWidthOfCharSpacing
 
-▸ **_getWidthOfCharSpacing**(): `number`
+**_getWidthOfCharSpacing**(): `number`
 
 #### Returns
 
@@ -4156,13 +4156,13 @@ ITextClickBehavior.\_getWidthOfCharSpacing
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1515](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L1515)
+[src/shapes/Text/Text.ts:1515](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1515)
 
 ___
 
 ### \_limitCacheSize
 
-▸ **_limitCacheSize**(`dims`): `any`
+**_limitCacheSize**(`dims`): `any`
 
 Limit the cache dimensions so that X * Y do not cross config.perfLimitSizeTotal
 and each side do not cross fabric.cacheSideLimit
@@ -4193,13 +4193,13 @@ ITextClickBehavior.\_limitCacheSize
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:342](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L342)
+[src/shapes/Object/Object.ts:342](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L342)
 
 ___
 
 ### \_measureChar
 
-▸ **_measureChar**(`_char`, `charStyle`, `previousChar?`, `prevCharStyle?`): `Object`
+**_measureChar**(`_char`, `charStyle`, `previousChar?`, `prevCharStyle?`): `Object`
 
 measure and return the width of a single character.
 possibly overridden to accommodate different measure logic or
@@ -4229,13 +4229,13 @@ ITextClickBehavior.\_measureChar
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:792](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L792)
+[src/shapes/Text/Text.ts:792](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L792)
 
 ___
 
 ### \_measureLine
 
-▸ **_measureLine**(`lineIndex`): `Object`
+**_measureLine**(`lineIndex`): `Object`
 
 measure every grapheme of a line, populating __charBounds
 
@@ -4264,13 +4264,13 @@ ITextClickBehavior.\_measureLine
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:881](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L881)
+[src/shapes/Text/Text.ts:881](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L881)
 
 ___
 
 ### \_mouseDownHandler
 
-▸ **_mouseDownHandler**(`«destructured»`): `void`
+**_mouseDownHandler**(`«destructured»`): `void`
 
 Default event handler for the basic functionalities needed on _mouseDown
 can be overridden to do something different.
@@ -4295,13 +4295,13 @@ ITextClickBehavior.\_mouseDownHandler
 
 #### Defined in
 
-[src/shapes/IText/ITextClickBehavior.ts:131](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextClickBehavior.ts#L131)
+[src/shapes/IText/ITextClickBehavior.ts:131](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextClickBehavior.ts#L131)
 
 ___
 
 ### \_mouseDownHandlerBefore
 
-▸ **_mouseDownHandlerBefore**(`«destructured»`): `void`
+**_mouseDownHandlerBefore**(`«destructured»`): `void`
 
 Default event handler for the basic functionalities needed on mousedown:before
 can be overridden to do something different.
@@ -4323,13 +4323,13 @@ ITextClickBehavior.\_mouseDownHandlerBefore
 
 #### Defined in
 
-[src/shapes/IText/ITextClickBehavior.ts:166](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextClickBehavior.ts#L166)
+[src/shapes/IText/ITextClickBehavior.ts:166](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextClickBehavior.ts#L166)
 
 ___
 
 ### \_move
 
-▸ **_move**(`e`, `prop`, `direction`): `boolean`
+**_move**(`e`, `prop`, `direction`): `boolean`
 
 #### Parameters
 
@@ -4355,13 +4355,13 @@ ITextClickBehavior.\_move
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:548](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextKeyBehavior.ts#L548)
+[src/shapes/IText/ITextKeyBehavior.ts:548](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L548)
 
 ___
 
 ### \_moveCursorLeftOrRight
 
-▸ **_moveCursorLeftOrRight**(`direction`, `e`): `void`
+**_moveCursorLeftOrRight**(`direction`, `e`): `void`
 
 Moves cursor right or Left, fires event
 
@@ -4382,13 +4382,13 @@ ITextClickBehavior.\_moveCursorLeftOrRight
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:638](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextKeyBehavior.ts#L638)
+[src/shapes/IText/ITextKeyBehavior.ts:638](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L638)
 
 ___
 
 ### \_moveCursorUpOrDown
 
-▸ **_moveCursorUpOrDown**(`direction`, `e`): `void`
+**_moveCursorUpOrDown**(`direction`, `e`): `void`
 
 Moves cursor up or down, fires the events
 
@@ -4409,13 +4409,13 @@ ITextClickBehavior.\_moveCursorUpOrDown
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:477](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextKeyBehavior.ts#L477)
+[src/shapes/IText/ITextKeyBehavior.ts:477](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L477)
 
 ___
 
 ### \_moveLeft
 
-▸ **_moveLeft**(`e`, `prop`): `boolean`
+**_moveLeft**(`e`, `prop`): `boolean`
 
 #### Parameters
 
@@ -4434,13 +4434,13 @@ ITextClickBehavior.\_moveLeft
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:572](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextKeyBehavior.ts#L572)
+[src/shapes/IText/ITextKeyBehavior.ts:572](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L572)
 
 ___
 
 ### \_moveRight
 
-▸ **_moveRight**(`e`, `prop`): `boolean`
+**_moveRight**(`e`, `prop`): `boolean`
 
 #### Parameters
 
@@ -4459,13 +4459,13 @@ ITextClickBehavior.\_moveRight
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:579](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextKeyBehavior.ts#L579)
+[src/shapes/IText/ITextKeyBehavior.ts:579](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L579)
 
 ___
 
 ### \_removeCacheCanvas
 
-▸ **_removeCacheCanvas**(): `void`
+**_removeCacheCanvas**(): `void`
 
 Remove cacheCanvas and its dimensions from the objects
 
@@ -4479,13 +4479,13 @@ ITextClickBehavior.\_removeCacheCanvas
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:798](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L798)
+[src/shapes/Object/Object.ts:798](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L798)
 
 ___
 
 ### \_removeDefaultValues
 
-▸ **_removeDefaultValues**\<`T`\>(`object`): `Partial`\<`T`\>
+**_removeDefaultValues**\<`T`\>(`object`): `Partial`\<`T`\>
 
 #### Type parameters
 
@@ -4509,13 +4509,13 @@ ITextClickBehavior.\_removeDefaultValues
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:590](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L590)
+[src/shapes/Object/Object.ts:590](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L590)
 
 ___
 
 ### \_removeExtraneousStyles
 
-▸ **_removeExtraneousStyles**(): `void`
+**_removeExtraneousStyles**(): `void`
 
 #### Returns
 
@@ -4527,13 +4527,13 @@ ITextClickBehavior.\_removeExtraneousStyles
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:703](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextBehavior.ts#L703)
+[src/shapes/IText/ITextBehavior.ts:703](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L703)
 
 ___
 
 ### \_removeShadow
 
-▸ **_removeShadow**(`ctx`): `void`
+**_removeShadow**(`ctx`): `void`
 
 #### Parameters
 
@@ -4551,13 +4551,13 @@ ITextClickBehavior.\_removeShadow
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1138](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1138)
+[src/shapes/Object/Object.ts:1138](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1138)
 
 ___
 
 ### \_render
 
-▸ **_render**(`ctx`): `void`
+**_render**(`ctx`): `void`
 
 #### Parameters
 
@@ -4575,13 +4575,13 @@ ITextClickBehavior.\_render
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:600](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L600)
+[src/shapes/Text/Text.ts:600](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L600)
 
 ___
 
 ### \_renderBackground
 
-▸ **_renderBackground**(`ctx`): `void`
+**_renderBackground**(`ctx`): `void`
 
 Draws a background for the object big as its untransformed dimensions
 
@@ -4601,13 +4601,13 @@ ITextClickBehavior.\_renderBackground
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1006](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1006)
+[src/shapes/Object/Object.ts:1006](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1006)
 
 ___
 
 ### \_renderChar
 
-▸ **_renderChar**(`method`, `ctx`, `lineIndex`, `charIndex`, `_char`, `left`, `top`): `void`
+**_renderChar**(`method`, `ctx`, `lineIndex`, `charIndex`, `_char`, `left`, `top`): `void`
 
 #### Parameters
 
@@ -4631,13 +4631,13 @@ ITextClickBehavior.\_renderChar
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1343](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L1343)
+[src/shapes/Text/Text.ts:1343](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1343)
 
 ___
 
 ### \_renderChars
 
-▸ **_renderChars**(`method`, `ctx`, `line`, `left`, `top`, `lineIndex`): `void`
+**_renderChars**(`method`, `ctx`, `line`, `left`, `top`, `lineIndex`): `void`
 
 #### Parameters
 
@@ -4660,13 +4660,13 @@ ITextClickBehavior.\_renderChars
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1132](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L1132)
+[src/shapes/Text/Text.ts:1132](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1132)
 
 ___
 
 ### \_renderControls
 
-▸ **_renderControls**(`ctx`, `styleOverride?`): `void`
+**_renderControls**(`ctx`, `styleOverride?`): `void`
 
 Renders controls and borders for the object
 the context here is not transformed
@@ -4692,13 +4692,13 @@ ITextClickBehavior.\_renderControls
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:402](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L402)
+[src/shapes/Object/InteractiveObject.ts:402](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L402)
 
 ___
 
 ### \_renderCursor
 
-▸ **_renderCursor**(`ctx`, `boundaries`, `selectionStart`): `void`
+**_renderCursor**(`ctx`, `boundaries`, `selectionStart`): `void`
 
 #### Parameters
 
@@ -4714,13 +4714,13 @@ ___
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:493](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/IText.ts#L493)
+[src/shapes/IText/IText.ts:493](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L493)
 
 ___
 
 ### \_renderFill
 
-▸ **_renderFill**(`ctx`): `void`
+**_renderFill**(`ctx`): `void`
 
 #### Parameters
 
@@ -4738,13 +4738,13 @@ ITextClickBehavior.\_renderFill
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1205](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1205)
+[src/shapes/Object/Object.ts:1205](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1205)
 
 ___
 
 ### \_renderPaintInOrder
 
-▸ **_renderPaintInOrder**(`ctx`): `void`
+**_renderPaintInOrder**(`ctx`): `void`
 
 #### Parameters
 
@@ -4762,13 +4762,13 @@ ITextClickBehavior.\_renderPaintInOrder
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1180](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1180)
+[src/shapes/Object/Object.ts:1180](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1180)
 
 ___
 
 ### \_renderSelection
 
-▸ **_renderSelection**(`ctx`, `selection`, `boundaries`): `void`
+**_renderSelection**(`ctx`, `selection`, `boundaries`): `void`
 
 Renders text selection
 
@@ -4788,13 +4788,13 @@ Renders text selection
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:571](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/IText.ts#L571)
+[src/shapes/IText/IText.ts:571](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L571)
 
 ___
 
 ### \_renderStroke
 
-▸ **_renderStroke**(`ctx`): `void`
+**_renderStroke**(`ctx`): `void`
 
 #### Parameters
 
@@ -4812,13 +4812,13 @@ ITextClickBehavior.\_renderStroke
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1224](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1224)
+[src/shapes/Object/Object.ts:1224](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1224)
 
 ___
 
 ### \_renderText
 
-▸ **_renderText**(`ctx`): `void`
+**_renderText**(`ctx`): `void`
 
 #### Parameters
 
@@ -4836,13 +4836,13 @@ ITextClickBehavior.\_renderText
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:615](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L615)
+[src/shapes/Text/Text.ts:615](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L615)
 
 ___
 
 ### \_renderTextCommon
 
-▸ **_renderTextCommon**(`ctx`, `method`): `void`
+**_renderTextCommon**(`ctx`, `method`): `void`
 
 #### Parameters
 
@@ -4861,13 +4861,13 @@ ITextClickBehavior.\_renderTextCommon
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1065](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L1065)
+[src/shapes/Text/Text.ts:1065](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1065)
 
 ___
 
 ### \_renderTextDecoration
 
-▸ **_renderTextDecoration**(`ctx`, `type`): `void`
+**_renderTextDecoration**(`ctx`, `type`): `void`
 
 #### Parameters
 
@@ -4886,13 +4886,13 @@ ITextClickBehavior.\_renderTextDecoration
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1542](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L1542)
+[src/shapes/Text/Text.ts:1542](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1542)
 
 ___
 
 ### \_renderTextFill
 
-▸ **_renderTextFill**(`ctx`): `void`
+**_renderTextFill**(`ctx`): `void`
 
 #### Parameters
 
@@ -4910,13 +4910,13 @@ ITextClickBehavior.\_renderTextFill
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1094](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L1094)
+[src/shapes/Text/Text.ts:1094](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1094)
 
 ___
 
 ### \_renderTextLine
 
-▸ **_renderTextLine**(`method`, `ctx`, `line`, `left`, `top`, `lineIndex`): `void`
+**_renderTextLine**(`method`, `ctx`, `line`, `left`, `top`, `lineIndex`): `void`
 
 #### Parameters
 
@@ -4939,13 +4939,13 @@ ITextClickBehavior.\_renderTextLine
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:684](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L684)
+[src/shapes/Text/Text.ts:684](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L684)
 
 ___
 
 ### \_renderTextLinesBackground
 
-▸ **_renderTextLinesBackground**(`ctx`): `void`
+**_renderTextLinesBackground**(`ctx`): `void`
 
 Renders the text background for lines, taking care of style
 
@@ -4965,13 +4965,13 @@ ITextClickBehavior.\_renderTextLinesBackground
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:700](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L700)
+[src/shapes/Text/Text.ts:700](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L700)
 
 ___
 
 ### \_renderTextStroke
 
-▸ **_renderTextStroke**(`ctx`): `void`
+**_renderTextStroke**(`ctx`): `void`
 
 #### Parameters
 
@@ -4989,13 +4989,13 @@ ITextClickBehavior.\_renderTextStroke
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1106](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L1106)
+[src/shapes/Text/Text.ts:1106](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1106)
 
 ___
 
 ### \_restoreEditingProps
 
-▸ **_restoreEditingProps**(): `void`
+**_restoreEditingProps**(): `void`
 
 #### Returns
 
@@ -5007,13 +5007,13 @@ ITextClickBehavior.\_restoreEditingProps
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:638](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextBehavior.ts#L638)
+[src/shapes/IText/ITextBehavior.ts:638](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L638)
 
 ___
 
 ### \_saveEditingProps
 
-▸ **_saveEditingProps**(): `void`
+**_saveEditingProps**(): `void`
 
 #### Returns
 
@@ -5025,13 +5025,13 @@ ITextClickBehavior.\_saveEditingProps
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:622](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextBehavior.ts#L622)
+[src/shapes/IText/ITextBehavior.ts:622](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L622)
 
 ___
 
 ### \_set
 
-▸ **_set**(`key`, `value`): [`IText`](/apidocs/classes/IText.md)\<`Props`, `SProps`, `EventSpec`\>
+**_set**(`key`, `value`): [`IText`](/apidocs/classes/IText.md)\<`Props`, `SProps`, `EventSpec`\>
 
 While editing handle differently
 
@@ -5052,13 +5052,13 @@ ITextClickBehavior.\_set
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:230](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/IText.ts#L230)
+[src/shapes/IText/IText.ts:230](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L230)
 
 ___
 
 ### \_setClippingProperties
 
-▸ **_setClippingProperties**(`ctx`): `void`
+**_setClippingProperties**(`ctx`): `void`
 
 #### Parameters
 
@@ -5076,13 +5076,13 @@ ITextClickBehavior.\_setClippingProperties
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1084](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1084)
+[src/shapes/Object/Object.ts:1084](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1084)
 
 ___
 
 ### \_setEditingProps
 
-▸ **_setEditingProps**(): `void`
+**_setEditingProps**(): `void`
 
 #### Returns
 
@@ -5094,13 +5094,13 @@ ITextClickBehavior.\_setEditingProps
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:449](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextBehavior.ts#L449)
+[src/shapes/IText/ITextBehavior.ts:449](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L449)
 
 ___
 
 ### \_setFillStyles
 
-▸ **_setFillStyles**(`ctx`, `style`): `Object`
+**_setFillStyles**(`ctx`, `style`): `Object`
 
 This function prepare the canvas for a ill style, and fill
 need to be sent in as defined
@@ -5127,13 +5127,13 @@ ITextClickBehavior.\_setFillStyles
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1328](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L1328)
+[src/shapes/Text/Text.ts:1328](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1328)
 
 ___
 
 ### \_setGraphemeOnPath
 
-▸ **_setGraphemeOnPath**(`positionInPath`, `graphemeInfo`): `void`
+**_setGraphemeOnPath**(`positionInPath`, `graphemeInfo`): `void`
 
 Calculate the angle  and the left,top position of the char that follow a path.
 It appends it to graphemeInfo to be reused later at rendering
@@ -5155,13 +5155,13 @@ ITextClickBehavior.\_setGraphemeOnPath
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:954](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L954)
+[src/shapes/Text/Text.ts:954](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L954)
 
 ___
 
 ### \_setLineDash
 
-▸ **_setLineDash**(`ctx`, `dashArray?`): `void`
+**_setLineDash**(`ctx`, `dashArray?`): `void`
 
 Sets line dash
 
@@ -5182,13 +5182,13 @@ ITextClickBehavior.\_setLineDash
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1096](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1096)
+[src/shapes/Object/Object.ts:1096](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1096)
 
 ___
 
 ### \_setLineStyle
 
-▸ **_setLineStyle**(`lineIndex`): `void`
+**_setLineStyle**(`lineIndex`): `void`
 
 Set the line style to an empty object so that is initialized
 
@@ -5208,13 +5208,13 @@ ITextClickBehavior.\_setLineStyle
 
 #### Defined in
 
-[src/shapes/Text/StyledText.ts:316](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/StyledText.ts#L316)
+[src/shapes/Text/StyledText.ts:316](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/StyledText.ts#L316)
 
 ___
 
 ### \_setObject
 
-▸ **_setObject**(`obj`): `void`
+**_setObject**(`obj`): `void`
 
 #### Parameters
 
@@ -5232,13 +5232,13 @@ ITextClickBehavior.\_setObject
 
 #### Defined in
 
-[src/CommonMethods.ts:18](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/CommonMethods.ts#L18)
+[src/CommonMethods.ts:18](https://github.com/fabricjs/fabric.js/blob/078809453/src/CommonMethods.ts#L18)
 
 ___
 
 ### \_setOpacity
 
-▸ **_setOpacity**(`ctx`): `void`
+**_setOpacity**(`ctx`): `void`
 
 #### Parameters
 
@@ -5256,13 +5256,13 @@ ITextClickBehavior.\_setOpacity
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1023](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1023)
+[src/shapes/Object/Object.ts:1023](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1023)
 
 ___
 
 ### \_setOptions
 
-▸ **_setOptions**(`options?`): `void`
+**_setOptions**(`options?`): `void`
 
 Sets object's properties from options, for initialization only
 
@@ -5282,13 +5282,13 @@ ITextClickBehavior.\_setOptions
 
 #### Defined in
 
-[src/CommonMethods.ts:9](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/CommonMethods.ts#L9)
+[src/CommonMethods.ts:9](https://github.com/fabricjs/fabric.js/blob/078809453/src/CommonMethods.ts#L9)
 
 ___
 
 ### \_setScript
 
-▸ **_setScript**(`start`, `end`, `schema`): `void`
+**_setScript**(`start`, `end`, `schema`): `void`
 
 Applies 'schema' at given position
 
@@ -5312,13 +5312,13 @@ ITextClickBehavior.\_setScript
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1418](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L1418)
+[src/shapes/Text/Text.ts:1418](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1418)
 
 ___
 
 ### \_setShadow
 
-▸ **_setShadow**(`ctx`): `void`
+**_setShadow**(`ctx`): `void`
 
 #### Parameters
 
@@ -5336,13 +5336,13 @@ ITextClickBehavior.\_setShadow
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1111](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1111)
+[src/shapes/Object/Object.ts:1111](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1111)
 
 ___
 
 ### \_setStrokeStyles
 
-▸ **_setStrokeStyles**(`ctx`, `style`): `Object`
+**_setStrokeStyles**(`ctx`, `style`): `Object`
 
 This function prepare the canvas for a stroke style, and stroke and strokeWidth
 need to be sent in as defined
@@ -5369,13 +5369,13 @@ ITextClickBehavior.\_setStrokeStyles
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1306](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L1306)
+[src/shapes/Text/Text.ts:1306](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1306)
 
 ___
 
 ### \_setStyleDeclaration
 
-▸ **_setStyleDeclaration**(`lineIndex`, `charIndex`, `style`): `void`
+**_setStyleDeclaration**(`lineIndex`, `charIndex`, `style`): `void`
 
 #### Parameters
 
@@ -5395,13 +5395,13 @@ ITextClickBehavior.\_setStyleDeclaration
 
 #### Defined in
 
-[src/shapes/Text/StyledText.ts:284](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/StyledText.ts#L284)
+[src/shapes/Text/StyledText.ts:284](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/StyledText.ts#L284)
 
 ___
 
 ### \_setTextStyles
 
-▸ **_setTextStyles**(`ctx`, `charStyle?`, `forMeasuring?`): `void`
+**_setTextStyles**(`ctx`, `charStyle?`, `forMeasuring?`): `void`
 
 Set the font parameter of the context with the object properties or with charStyle
 
@@ -5423,13 +5423,13 @@ ITextClickBehavior.\_setTextStyles
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:635](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L635)
+[src/shapes/Text/Text.ts:635](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L635)
 
 ___
 
 ### \_setupCompositeOperation
 
-▸ **_setupCompositeOperation**(`ctx`): `void`
+**_setupCompositeOperation**(`ctx`): `void`
 
 Sets canvas globalCompositeOperation for specific object
 custom composition operation for the particular object can be specified using globalCompositeOperation property
@@ -5450,13 +5450,13 @@ ITextClickBehavior.\_setupCompositeOperation
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1535](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1535)
+[src/shapes/Object/Object.ts:1535](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1535)
 
 ___
 
 ### \_splitText
 
-▸ **_splitText**(): `TextLinesInfo`
+**_splitText**(): `TextLinesInfo`
 
 Divides text into lines of text and lines of graphemes.
 
@@ -5470,13 +5470,13 @@ ITextClickBehavior.\_splitText
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:446](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L446)
+[src/shapes/Text/Text.ts:446](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L446)
 
 ___
 
 ### \_splitTextIntoLines
 
-▸ **_splitTextIntoLines**(`text`): `TextLinesInfo`
+**_splitTextIntoLines**(`text`): `TextLinesInfo`
 
 Returns the text as an array of lines.
 
@@ -5498,13 +5498,13 @@ ITextClickBehavior.\_splitTextIntoLines
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1716](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L1716)
+[src/shapes/Text/Text.ts:1716](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1716)
 
 ___
 
 ### \_toSVG
 
-▸ **_toSVG**(`reviver?`): `string`[]
+**_toSVG**(`reviver?`): `string`[]
 
 Returns svg representation of an instance
 This function is implemented in each subclass
@@ -5529,13 +5529,13 @@ ITextClickBehavior.\_toSVG
 
 #### Defined in
 
-[src/shapes/Object/FabricObjectSVGExportMixin.ts:120](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/FabricObjectSVGExportMixin.ts#L120)
+[src/shapes/Object/FabricObjectSVGExportMixin.ts:120](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/FabricObjectSVGExportMixin.ts#L120)
 
 ___
 
 ### \_updateAndFire
 
-▸ **_updateAndFire**(`property`, `index`): `void`
+**_updateAndFire**(`property`, `index`): `void`
 
 #### Parameters
 
@@ -5550,13 +5550,13 @@ ___
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:267](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/IText.ts#L267)
+[src/shapes/IText/IText.ts:267](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L267)
 
 ___
 
 ### \_updateCacheCanvas
 
-▸ **_updateCacheCanvas**(): `boolean`
+**_updateCacheCanvas**(): `boolean`
 
 Update width and height of the canvas for cache
 returns true or false if canvas needed resize.
@@ -5573,13 +5573,13 @@ ITextClickBehavior.\_updateCacheCanvas
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:164](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L164)
+[src/shapes/Object/InteractiveObject.ts:164](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L164)
 
 ___
 
 ### \_updateTextarea
 
-▸ **_updateTextarea**(): `void`
+**_updateTextarea**(): `void`
 
 #### Returns
 
@@ -5591,13 +5591,13 @@ ITextClickBehavior.\_updateTextarea
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:502](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextBehavior.ts#L502)
+[src/shapes/IText/ITextBehavior.ts:502](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L502)
 
 ___
 
 ### abortCursorAnimation
 
-▸ **abortCursorAnimation**(): `void`
+**abortCursorAnimation**(): `void`
 
 Aborts cursor animation, clears all timeouts and clear textarea context if necessary
 
@@ -5611,13 +5611,13 @@ ITextClickBehavior.abortCursorAnimation
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:181](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextBehavior.ts#L181)
+[src/shapes/IText/ITextBehavior.ts:181](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L181)
 
 ___
 
 ### addPaintOrder
 
-▸ **addPaintOrder**(`this`): `string`
+**addPaintOrder**(`this`): `string`
 
 #### Parameters
 
@@ -5635,13 +5635,13 @@ ITextClickBehavior.addPaintOrder
 
 #### Defined in
 
-[src/shapes/Object/FabricObjectSVGExportMixin.ts:249](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/FabricObjectSVGExportMixin.ts#L249)
+[src/shapes/Object/FabricObjectSVGExportMixin.ts:249](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/FabricObjectSVGExportMixin.ts#L249)
 
 ___
 
 ### animate
 
-▸ **animate**\<`T`\>(`animatable`, `options?`): `Record`\<`string`, [`TAnimation`](/apidocs/modules/util.md#tanimation)\<`T`\>\>
+**animate**\<`T`\>(`animatable`, `options?`): `Record`\<`string`, [`TAnimation`](/apidocs/modules/util.md#tanimation)\<`T`\>\>
 
 Animates object's properties
 
@@ -5679,13 +5679,13 @@ ITextClickBehavior.animate
 
 #### Defined in
 
-[src/shapes/Object/AnimatableObject.ts:34](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/AnimatableObject.ts#L34)
+[src/shapes/Object/AnimatableObject.ts:34](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/AnimatableObject.ts#L34)
 
 ___
 
 ### blur
 
-▸ **blur**(): `void`
+**blur**(): `void`
 
 Override this method to customize cursor behavior on textbox blur
 
@@ -5699,13 +5699,13 @@ ITextClickBehavior.blur
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:106](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextKeyBehavior.ts#L106)
+[src/shapes/IText/ITextKeyBehavior.ts:106](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L106)
 
 ___
 
 ### calcACoords
 
-▸ **calcACoords**(): [`TCornerPoint`](/apidocs/modules.md#tcornerpoint)
+**calcACoords**(): [`TCornerPoint`](/apidocs/modules.md#tcornerpoint)
 
 Calculates the coordinates of the 4 corner of the bbox, in absolute coordinates.
 those never change with zoom or viewport changes.
@@ -5720,34 +5720,13 @@ ITextClickBehavior.calcACoords
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:552](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L552)
-
-___
-
-### calcLineCoords
-
-▸ **calcLineCoords**(): [`TCornerPoint`](/apidocs/modules.md#tcornerpoint)
-
-return the coordinate of the 4 corners of the bounding box in HTMLCanvasElement coordinates
-used for bounding box interactivity with the mouse
-
-#### Returns
-
-[`TCornerPoint`](/apidocs/modules.md#tcornerpoint)
-
-#### Inherited from
-
-ITextClickBehavior.calcLineCoords
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:506](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L506)
+[src/shapes/Object/ObjectGeometry.ts:491](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L491)
 
 ___
 
 ### calcOCoords
 
-▸ **calcOCoords**(): `Record`\<`string`, `TOCoord`\>
+**calcOCoords**(): `Record`\<`string`, `TOCoord`\>
 
 Calculates the coordinates of the center of each control plus the corners of the control itself
 This basically just delegates to each control positionHandler
@@ -5764,13 +5743,13 @@ ITextClickBehavior.calcOCoords
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:223](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L223)
+[src/shapes/Object/InteractiveObject.ts:223](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L223)
 
 ___
 
 ### calcOwnMatrix
 
-▸ **calcOwnMatrix**(): [`TMat2D`](/apidocs/modules.md#tmat2d)
+**calcOwnMatrix**(): [`TMat2D`](/apidocs/modules.md#tmat2d)
 
 calculate transform matrix that represents the current transformations from the
 object's properties, this matrix does not include the group transformation
@@ -5787,13 +5766,13 @@ ITextClickBehavior.calcOwnMatrix
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:655](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L655)
+[src/shapes/Object/ObjectGeometry.ts:591](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L591)
 
 ___
 
 ### calcTextHeight
 
-▸ **calcTextHeight**(): `number`
+**calcTextHeight**(): `number`
 
 Calculate text box height
 
@@ -5807,13 +5786,13 @@ ITextClickBehavior.calcTextHeight
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1034](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L1034)
+[src/shapes/Text/Text.ts:1034](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1034)
 
 ___
 
 ### calcTextWidth
 
-▸ **calcTextWidth**(): `number`
+**calcTextWidth**(): `number`
 
 calculate and return the text Width measuring each line.
 
@@ -5829,13 +5808,13 @@ ITextClickBehavior.calcTextWidth
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:663](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L663)
+[src/shapes/Text/Text.ts:663](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L663)
 
 ___
 
 ### calcTransformMatrix
 
-▸ **calcTransformMatrix**(`skipGroup?`): [`TMat2D`](/apidocs/modules.md#tmat2d)
+**calcTransformMatrix**(`skipGroup?`): [`TMat2D`](/apidocs/modules.md#tmat2d)
 
 calculate transform matrix that represents the current transformations from the
 object's properties.
@@ -5858,13 +5837,13 @@ ITextClickBehavior.calcTransformMatrix
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:627](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L627)
+[src/shapes/Object/ObjectGeometry.ts:563](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L563)
 
 ___
 
 ### canDrop
 
-▸ **canDrop**(`e`): `boolean`
+**canDrop**(`e`): `boolean`
 
 override this method to control whether instance should/shouldn't become a drop target
 
@@ -5884,13 +5863,13 @@ ITextClickBehavior.canDrop
 
 #### Defined in
 
-[src/shapes/IText/ITextClickBehavior.ts:70](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextClickBehavior.ts#L70)
+[src/shapes/IText/ITextClickBehavior.ts:70](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextClickBehavior.ts#L70)
 
 ___
 
 ### cleanStyle
 
-▸ **cleanStyle**(`property`): `undefined` \| ``false``
+**cleanStyle**(`property`): `undefined` \| ``false``
 
 Check if characters in a text have a value for a property
 whose value matches the textbox's value for that property.  If so,
@@ -5915,13 +5894,13 @@ ITextClickBehavior.cleanStyle
 
 #### Defined in
 
-[src/shapes/Text/StyledText.ts:102](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/StyledText.ts#L102)
+[src/shapes/Text/StyledText.ts:102](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/StyledText.ts#L102)
 
 ___
 
 ### clearContextTop
 
-▸ **clearContextTop**(`restoreManually?`): `undefined` \| `CanvasRenderingContext2D`
+**clearContextTop**(`restoreManually?`): `undefined` \| `CanvasRenderingContext2D`
 
 Clears the canvas.contextTop in a specific area that corresponds to the object's bounding box
 that is in the canvas.contextContainer.
@@ -5951,13 +5930,13 @@ ITextClickBehavior.clearContextTop
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:582](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L582)
+[src/shapes/Object/InteractiveObject.ts:582](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L582)
 
 ___
 
 ### clone
 
-▸ **clone**(`propertiesToInclude?`): `Promise`\<[`IText`](/apidocs/classes/IText.md)\<`Props`, `SProps`, `EventSpec`\>\>
+**clone**(`propertiesToInclude?`): `Promise`\<[`IText`](/apidocs/classes/IText.md)\<`Props`, `SProps`, `EventSpec`\>\>
 
 Clones an instance.
 
@@ -5977,13 +5956,13 @@ ITextClickBehavior.clone
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1312](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1312)
+[src/shapes/Object/Object.ts:1312](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1312)
 
 ___
 
 ### cloneAsImage
 
-▸ **cloneAsImage**(`options?`): [`FabricImage`](/apidocs/classes/FabricImage.md)\<`Partial`\<[`ImageProps`](/apidocs/interfaces/ImageProps.md)\>, [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
+**cloneAsImage**(`options?`): [`FabricImage`](/apidocs/classes/FabricImage.md)\<`Partial`\<[`ImageProps`](/apidocs/interfaces/ImageProps.md)\>, [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
 
 Creates an instance of Image out of an object
 makes use of toCanvasElement.
@@ -6014,13 +5993,13 @@ ITextClickBehavior.cloneAsImage
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1338](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1338)
+[src/shapes/Object/Object.ts:1338](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1338)
 
 ___
 
 ### complexity
 
-▸ **complexity**(): `number`
+**complexity**(): `number`
 
 Returns complexity of an instance
 
@@ -6036,13 +6015,13 @@ ITextClickBehavior.complexity
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1781](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L1781)
+[src/shapes/Text/Text.ts:1781](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1781)
 
 ___
 
 ### containsPoint
 
-▸ **containsPoint**(`point`, `absolute?`, `calculate?`): `boolean`
+**containsPoint**(`point`, `calculate?`): `boolean`
 
 Checks if point is inside the object
 
@@ -6051,7 +6030,6 @@ Checks if point is inside the object
 | Name | Type | Default value | Description |
 | :------ | :------ | :------ | :------ |
 | `point` | [`Point`](/apidocs/classes/Point.md) | `undefined` | Point to check against |
-| `absolute?` | `boolean` | `false` | use coordinates without viewportTransform |
 | `calculate?` | `boolean` | `false` | use coordinates of current position instead of stored ones |
 
 #### Returns
@@ -6066,13 +6044,13 @@ ITextClickBehavior.containsPoint
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:341](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L341)
+[src/shapes/Object/ObjectGeometry.ts:322](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L322)
 
 ___
 
 ### copy
 
-▸ **copy**(): `void`
+**copy**(): `void`
 
 Copies selected text
 
@@ -6086,13 +6064,13 @@ ITextClickBehavior.copy
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:295](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextKeyBehavior.ts#L295)
+[src/shapes/IText/ITextKeyBehavior.ts:295](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L295)
 
 ___
 
 ### dispose
 
-▸ **dispose**(): `void`
+**dispose**(): `void`
 
 #### Returns
 
@@ -6104,13 +6082,13 @@ ITextClickBehavior.dispose
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:689](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/IText.ts#L689)
+[src/shapes/IText/IText.ts:689](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L689)
 
 ___
 
 ### doubleClickHandler
 
-▸ **doubleClickHandler**(`options`): `void`
+**doubleClickHandler**(`options`): `void`
 
 Default handler for double click, select a word
 
@@ -6130,13 +6108,13 @@ ITextClickBehavior.doubleClickHandler
 
 #### Defined in
 
-[src/shapes/IText/ITextClickBehavior.ts:106](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextClickBehavior.ts#L106)
+[src/shapes/IText/ITextClickBehavior.ts:106](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextClickBehavior.ts#L106)
 
 ___
 
 ### drawBorders
 
-▸ **drawBorders**(`ctx`, `options`, `styleOverride?`): `void`
+**drawBorders**(`ctx`, `options`, `styleOverride?`): `void`
 
 Draws borders of an object's bounding box.
 Requires public properties: width, height
@@ -6160,13 +6138,13 @@ ITextClickBehavior.drawBorders
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:440](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L440)
+[src/shapes/Object/InteractiveObject.ts:440](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L440)
 
 ___
 
 ### drawCacheOnCanvas
 
-▸ **drawCacheOnCanvas**(`this`, `ctx`): `void`
+**drawCacheOnCanvas**(`this`, `ctx`): `void`
 
 Paint the cached copy of the object on the target context.
 
@@ -6187,13 +6165,13 @@ ITextClickBehavior.drawCacheOnCanvas
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:962](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L962)
+[src/shapes/Object/Object.ts:962](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L962)
 
 ___
 
 ### drawClipPathOnCache
 
-▸ **drawClipPathOnCache**(`ctx`, `clipPath`): `void`
+**drawClipPathOnCache**(`ctx`, `clipPath`): `void`
 
 Execute the drawing operation for an object clipPath
 
@@ -6214,13 +6192,13 @@ ITextClickBehavior.drawClipPathOnCache
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:891](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L891)
+[src/shapes/Object/Object.ts:891](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L891)
 
 ___
 
 ### drawControls
 
-▸ **drawControls**(`ctx`, `styleOverride?`): `void`
+**drawControls**(`ctx`, `styleOverride?`): `void`
 
 Draws corners of an object's bounding box.
 Requires public properties: width, height
@@ -6243,13 +6221,13 @@ ITextClickBehavior.drawControls
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:504](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L504)
+[src/shapes/Object/InteractiveObject.ts:504](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L504)
 
 ___
 
 ### drawControlsConnectingLines
 
-▸ **drawControlsConnectingLines**(`ctx`, `size`): `void`
+**drawControlsConnectingLines**(`ctx`, `size`): `void`
 
 Draws lines from a borders of an object's bounding box to controls that have `withConnection` property set.
 Requires public properties: width, height
@@ -6272,13 +6250,13 @@ ITextClickBehavior.drawControlsConnectingLines
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:474](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L474)
+[src/shapes/Object/InteractiveObject.ts:474](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L474)
 
 ___
 
 ### drawObject
 
-▸ **drawObject**(`ctx`, `forClipping?`): `void`
+**drawObject**(`ctx`, `forClipping?`): `void`
 
 Execute the drawing operation for an object on a specified context
 
@@ -6299,13 +6277,13 @@ ITextClickBehavior.drawObject
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:923](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L923)
+[src/shapes/Object/Object.ts:923](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L923)
 
 ___
 
 ### drawSelectionBackground
 
-▸ **drawSelectionBackground**(`ctx`): `void`
+**drawSelectionBackground**(`ctx`): `void`
 
 Draws a colored layer behind the object, inside its selection borders.
 Requires public options: padding, selectionBackgroundColor
@@ -6334,13 +6312,13 @@ ITextClickBehavior.drawSelectionBackground
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:342](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L342)
+[src/shapes/Object/InteractiveObject.ts:342](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L342)
 
 ___
 
 ### enlargeSpaces
 
-▸ **enlargeSpaces**(): `void`
+**enlargeSpaces**(): `void`
 
 Enlarge space boxes and shift the others
 
@@ -6354,13 +6332,13 @@ ITextClickBehavior.enlargeSpaces
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:481](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L481)
+[src/shapes/Text/Text.ts:481](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L481)
 
 ___
 
 ### enterEditing
 
-▸ **enterEditing**(`e?`): `void`
+**enterEditing**(`e?`): `void`
 
 Enters editing state
 
@@ -6380,13 +6358,13 @@ ITextClickBehavior.enterEditing
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:378](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextBehavior.ts#L378)
+[src/shapes/IText/ITextBehavior.ts:378](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L378)
 
 ___
 
 ### exitEditing
 
-▸ **exitEditing**(): [`IText`](/apidocs/classes/IText.md)\<`Props`, `SProps`, `EventSpec`\>
+**exitEditing**(): [`IText`](/apidocs/classes/IText.md)\<`Props`, `SProps`, `EventSpec`\>
 
 Exits from editing state and fires relevant events
 
@@ -6400,13 +6378,13 @@ ITextClickBehavior.exitEditing
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:681](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextBehavior.ts#L681)
+[src/shapes/IText/ITextBehavior.ts:681](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L681)
 
 ___
 
 ### findCommonAncestors
 
-▸ **findCommonAncestors**\<`T`, `S`\>(`other`, `strict?`): `AncestryComparison`\<`S`\>
+**findCommonAncestors**\<`T`, `S`\>(`other`, `strict?`): `AncestryComparison`\<`S`\>
 
 Compare ancestors
 
@@ -6436,13 +6414,13 @@ ITextClickBehavior.findCommonAncestors
 
 #### Defined in
 
-[src/shapes/Object/StackedObject.ts:99](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/StackedObject.ts#L99)
+[src/shapes/Object/StackedObject.ts:99](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/StackedObject.ts#L99)
 
 ___
 
 ### findLineBoundaryLeft
 
-▸ **findLineBoundaryLeft**(`startFrom`): `number`
+**findLineBoundaryLeft**(`startFrom`): `number`
 
 Find new selection index representing start of current line according to current selection index
 
@@ -6464,13 +6442,13 @@ ITextClickBehavior.findLineBoundaryLeft
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:282](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextBehavior.ts#L282)
+[src/shapes/IText/ITextBehavior.ts:282](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L282)
 
 ___
 
 ### findLineBoundaryRight
 
-▸ **findLineBoundaryRight**(`startFrom`): `number`
+**findLineBoundaryRight**(`startFrom`): `number`
 
 Find new selection index representing end of current line according to current selection index
 
@@ -6492,13 +6470,13 @@ ITextClickBehavior.findLineBoundaryRight
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:299](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextBehavior.ts#L299)
+[src/shapes/IText/ITextBehavior.ts:299](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L299)
 
 ___
 
 ### findWordBoundaryLeft
 
-▸ **findWordBoundaryLeft**(`startFrom`): `number`
+**findWordBoundaryLeft**(`startFrom`): `number`
 
 Find new selection index representing start of current word according to current selection index
 
@@ -6520,13 +6498,13 @@ ITextClickBehavior.findWordBoundaryLeft
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:234](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextBehavior.ts#L234)
+[src/shapes/IText/ITextBehavior.ts:234](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L234)
 
 ___
 
 ### findWordBoundaryRight
 
-▸ **findWordBoundaryRight**(`startFrom`): `number`
+**findWordBoundaryRight**(`startFrom`): `number`
 
 Find new selection index representing end of current word according to current selection index
 
@@ -6548,13 +6526,13 @@ ITextClickBehavior.findWordBoundaryRight
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:258](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextBehavior.ts#L258)
+[src/shapes/IText/ITextBehavior.ts:258](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L258)
 
 ___
 
 ### fire
 
-▸ **fire**\<`K`\>(`eventName`, `options?`): `void`
+**fire**\<`K`\>(`eventName`, `options?`): `void`
 
 Fires event with an optional options object
 
@@ -6581,13 +6559,13 @@ ITextClickBehavior.fire
 
 #### Defined in
 
-[src/Observable.ts:159](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L159)
+[src/Observable.ts:159](https://github.com/fabricjs/fabric.js/blob/078809453/src/Observable.ts#L159)
 
 ___
 
 ### forEachControl
 
-▸ **forEachControl**(`fn`): `void`
+**forEachControl**(`fn`): `void`
 
 Calls a function for each control. The function gets called,
 with the control, the control's key and the object that is calling the iterator
@@ -6608,13 +6586,13 @@ ITextClickBehavior.forEachControl
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:320](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L320)
+[src/shapes/Object/InteractiveObject.ts:320](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L320)
 
 ___
 
 ### fromGraphemeToStringSelection
 
-▸ **fromGraphemeToStringSelection**(`start`, `end`, `graphemes`): `Object`
+**fromGraphemeToStringSelection**(`start`, `end`, `graphemes`): `Object`
 
 convert from fabric to textarea values
 
@@ -6641,13 +6619,13 @@ ITextClickBehavior.fromGraphemeToStringSelection
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:481](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextBehavior.ts#L481)
+[src/shapes/IText/ITextBehavior.ts:481](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L481)
 
 ___
 
 ### fromStringToGraphemeSelection
 
-▸ **fromStringToGraphemeSelection**(`start`, `end`, `text`): `Object`
+**fromStringToGraphemeSelection**(`start`, `end`, `text`): `Object`
 
 convert from textarea to grapheme indexes
 
@@ -6674,13 +6652,13 @@ ITextClickBehavior.fromStringToGraphemeSelection
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:464](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextBehavior.ts#L464)
+[src/shapes/IText/ITextBehavior.ts:464](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L464)
 
 ___
 
 ### get
 
-▸ **get**(`property`): `any`
+**get**(`property`): `any`
 
 Basic getter
 
@@ -6702,13 +6680,13 @@ ITextClickBehavior.get
 
 #### Defined in
 
-[src/CommonMethods.ts:59](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/CommonMethods.ts#L59)
+[src/CommonMethods.ts:59](https://github.com/fabricjs/fabric.js/blob/078809453/src/CommonMethods.ts#L59)
 
 ___
 
 ### get2DCursorLocation
 
-▸ **get2DCursorLocation**(`selectionStart?`, `skipWrapping?`): `Object`
+**get2DCursorLocation**(`selectionStart?`, `skipWrapping?`): `Object`
 
 Returns 2d representation (lineIndex and charIndex) of cursor (or selection start)
 
@@ -6734,13 +6712,13 @@ ITextClickBehavior.get2DCursorLocation
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:334](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/IText.ts#L334)
+[src/shapes/IText/IText.ts:334](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L334)
 
 ___
 
 ### getActiveControl
 
-▸ **getActiveControl**(): `undefined` \| `string`
+**getActiveControl**(): `undefined` \| `string`
 
 #### Returns
 
@@ -6752,13 +6730,13 @@ ITextClickBehavior.getActiveControl
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:176](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L176)
+[src/shapes/Object/InteractiveObject.ts:176](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L176)
 
 ___
 
 ### getAncestors
 
-▸ **getAncestors**\<`T`\>(`strict?`): `Ancestors`\<`T`\>
+**getAncestors**\<`T`\>(`strict?`): `Ancestors`\<`T`\>
 
 #### Type parameters
 
@@ -6784,13 +6762,13 @@ ITextClickBehavior.getAncestors
 
 #### Defined in
 
-[src/shapes/Object/StackedObject.ts:80](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/StackedObject.ts#L80)
+[src/shapes/Object/StackedObject.ts:80](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/StackedObject.ts#L80)
 
 ___
 
 ### getBoundingRect
 
-▸ **getBoundingRect**(`absolute?`, `calculate?`): [`TBBox`](/apidocs/modules.md#tbbox)
+**getBoundingRect**(`calculate?`): [`TBBox`](/apidocs/modules.md#tbbox)
 
 Returns coordinates of object's bounding rectangle (left, top, width, height)
 the box is intended as aligned to axis of canvas.
@@ -6799,7 +6777,6 @@ the box is intended as aligned to axis of canvas.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `absolute?` | `boolean` | use coordinates without viewportTransform |
 | `calculate?` | `boolean` | use coordinates of current position instead of .lineCoords / .aCoords |
 
 #### Returns
@@ -6814,13 +6791,13 @@ ITextClickBehavior.getBoundingRect
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:428](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L428)
+[src/shapes/Object/ObjectGeometry.ts:405](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L405)
 
 ___
 
 ### getCanvasRetinaScaling
 
-▸ **getCanvasRetinaScaling**(): `number`
+**getCanvasRetinaScaling**(): `number`
 
 #### Returns
 
@@ -6832,13 +6809,13 @@ ITextClickBehavior.getCanvasRetinaScaling
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:487](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L487)
+[src/shapes/Object/ObjectGeometry.ts:462](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L462)
 
 ___
 
 ### getCenterPoint
 
-▸ **getCenterPoint**(): [`Point`](/apidocs/classes/Point.md)
+**getCenterPoint**(): [`Point`](/apidocs/classes/Point.md)
 
 Returns the center coordinates of the object relative to canvas
 
@@ -6852,13 +6829,13 @@ ITextClickBehavior.getCenterPoint
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:169](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L169)
+[src/shapes/Object/ObjectOrigin.ts:169](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L169)
 
 ___
 
 ### getCompleteStyleDeclaration
 
-▸ **getCompleteStyleDeclaration**(`lineIndex`, `charIndex`): [`CompleteTextStyleDeclaration`](/apidocs/modules.md#completetextstyledeclaration)
+**getCompleteStyleDeclaration**(`lineIndex`, `charIndex`): [`CompleteTextStyleDeclaration`](/apidocs/modules.md#completetextstyledeclaration)
 
 return a new object that contains all the style property for a character
 the object returned is newly created
@@ -6882,13 +6859,13 @@ ITextClickBehavior.getCompleteStyleDeclaration
 
 #### Defined in
 
-[src/shapes/Text/StyledText.ts:267](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/StyledText.ts#L267)
+[src/shapes/Text/StyledText.ts:267](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/StyledText.ts#L267)
 
 ___
 
 ### getCoords
 
-▸ **getCoords**(`absolute?`, `calculate?`): [`Point`](/apidocs/classes/Point.md)[]
+**getCoords**(`calculate?`): [`Point`](/apidocs/classes/Point.md)[]
 
 return correct set of coordinates for intersection
 this will return either aCoords or lineCoords.
@@ -6898,7 +6875,6 @@ The coords are returned in an array.
 
 | Name | Type | Default value | Description |
 | :------ | :------ | :------ | :------ |
-| `absolute` | `boolean` | `false` | will return aCoords if true or lineCoords |
 | `calculate` | `boolean` | `false` | will return aCoords if true or lineCoords |
 
 #### Returns
@@ -6913,13 +6889,13 @@ ITextClickBehavior.getCoords
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:228](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L228)
+[src/shapes/Object/ObjectGeometry.ts:222](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L222)
 
 ___
 
 ### getCurrentCharColor
 
-▸ **getCurrentCharColor**(): ``null`` \| `string` \| [`TFiller`](/apidocs/modules.md#tfiller)
+**getCurrentCharColor**(): ``null`` \| `string` \| [`TFiller`](/apidocs/modules.md#tfiller)
 
 High level function to know the color of the cursor.
 the currentChar is the one that precedes the cursor
@@ -6935,13 +6911,13 @@ Character color (fill)
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:673](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/IText.ts#L673)
+[src/shapes/IText/IText.ts:673](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L673)
 
 ___
 
 ### getCurrentCharFontSize
 
-▸ **getCurrentCharFontSize**(): `number`
+**getCurrentCharFontSize**(): `number`
 
 High level function to know the height of the cursor.
 the currentChar is the one that precedes the cursor
@@ -6956,13 +6932,13 @@ Character font size
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:660](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/IText.ts#L660)
+[src/shapes/IText/IText.ts:660](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L660)
 
 ___
 
 ### getDownCursorOffset
 
-▸ **getDownCursorOffset**(`e`, `isRight`): `number`
+**getDownCursorOffset**(`e`, `isRight`): `number`
 
 Gets start offset of a selection
 
@@ -6983,13 +6959,13 @@ ITextClickBehavior.getDownCursorOffset
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:345](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextKeyBehavior.ts#L345)
+[src/shapes/IText/ITextKeyBehavior.ts:345](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L345)
 
 ___
 
 ### getHeightOfChar
 
-▸ **getHeightOfChar**(`line`, `_char`): `number`
+**getHeightOfChar**(`line`, `_char`): `number`
 
 Computes height of character at given position
 
@@ -7012,13 +6988,13 @@ ITextClickBehavior.getHeightOfChar
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:856](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L856)
+[src/shapes/Text/Text.ts:856](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L856)
 
 ___
 
 ### getHeightOfLine
 
-▸ **getHeightOfLine**(`lineIndex`): `number`
+**getHeightOfLine**(`lineIndex`): `number`
 
 Calculate height of line at 'lineIndex'
 
@@ -7038,13 +7014,13 @@ ITextClickBehavior.getHeightOfLine
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1015](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L1015)
+[src/shapes/Text/Text.ts:1015](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1015)
 
 ___
 
 ### getLineWidth
 
-▸ **getLineWidth**(`lineIndex`): `number`
+**getLineWidth**(`lineIndex`): `number`
 
 Measure a single line given its index. Used to calculate the initial
 text bounding box. The values are calculated and stored in __lineWidths cache.
@@ -7067,13 +7043,13 @@ ITextClickBehavior.getLineWidth
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1505](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L1505)
+[src/shapes/Text/Text.ts:1505](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1505)
 
 ___
 
 ### getObjectOpacity
 
-▸ **getObjectOpacity**(): `number`
+**getObjectOpacity**(): `number`
 
 Return the object opacity counting also the group property
 
@@ -7087,13 +7063,13 @@ ITextClickBehavior.getObjectOpacity
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:660](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L660)
+[src/shapes/Object/Object.ts:660](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L660)
 
 ___
 
 ### getObjectScaling
 
-▸ **getObjectScaling**(): [`Point`](/apidocs/classes/Point.md)
+**getObjectScaling**(): [`Point`](/apidocs/classes/Point.md)
 
 Return the object scale factor counting also the group scaling
 
@@ -7107,13 +7083,13 @@ ITextClickBehavior.getObjectScaling
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:629](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L629)
+[src/shapes/Object/Object.ts:629](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L629)
 
 ___
 
 ### getParent
 
-▸ **getParent**\<`T`\>(`strict?`): `undefined` \| `TAncestor`
+**getParent**\<`T`\>(`strict?`): `undefined` \| `TAncestor`
 
 Returns instance's parent **EXCLUDING** `ActiveSelection`
 
@@ -7139,13 +7115,13 @@ ITextClickBehavior.getParent
 
 #### Defined in
 
-[src/shapes/Object/StackedObject.ts:51](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/StackedObject.ts#L51)
+[src/shapes/Object/StackedObject.ts:51](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/StackedObject.ts#L51)
 
 ___
 
 ### getPointByOrigin
 
-▸ **getPointByOrigin**(`originX`, `originY`): [`Point`](/apidocs/classes/Point.md)
+**getPointByOrigin**(`originX`, `originY`): [`Point`](/apidocs/classes/Point.md)
 
 Returns the coordinates of the object as if it has a different origin
 
@@ -7166,13 +7142,13 @@ ITextClickBehavior.getPointByOrigin
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:194](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L194)
+[src/shapes/Object/ObjectOrigin.ts:194](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L194)
 
 ___
 
 ### getRelativeCenterPoint
 
-▸ **getRelativeCenterPoint**(): [`Point`](/apidocs/classes/Point.md)
+**getRelativeCenterPoint**(): [`Point`](/apidocs/classes/Point.md)
 
 Returns the center coordinates of the object relative to it's parent
 
@@ -7186,13 +7162,13 @@ ITextClickBehavior.getRelativeCenterPoint
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:180](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L180)
+[src/shapes/Object/ObjectOrigin.ts:180](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L180)
 
 ___
 
 ### getRelativeX
 
-▸ **getRelativeX**(): `number`
+**getRelativeX**(): `number`
 
 #### Returns
 
@@ -7207,13 +7183,13 @@ ITextClickBehavior.getRelativeX
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:119](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L119)
+[src/shapes/Object/ObjectGeometry.ts:118](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L118)
 
 ___
 
 ### getRelativeXY
 
-▸ **getRelativeXY**(): [`Point`](/apidocs/classes/Point.md)
+**getRelativeXY**(): [`Point`](/apidocs/classes/Point.md)
 
 #### Returns
 
@@ -7227,13 +7203,13 @@ ITextClickBehavior.getRelativeXY
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:180](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L180)
+[src/shapes/Object/ObjectGeometry.ts:179](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L179)
 
 ___
 
 ### getRelativeY
 
-▸ **getRelativeY**(): `number`
+**getRelativeY**(): `number`
 
 #### Returns
 
@@ -7248,13 +7224,13 @@ ITextClickBehavior.getRelativeY
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:135](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L135)
+[src/shapes/Object/ObjectGeometry.ts:134](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L134)
 
 ___
 
 ### getScaledHeight
 
-▸ **getScaledHeight**(): `number`
+**getScaledHeight**(): `number`
 
 Returns height of an object bounding box counting transformations
 
@@ -7274,13 +7250,13 @@ ITextClickBehavior.getScaledHeight
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:446](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L446)
+[src/shapes/Object/ObjectGeometry.ts:423](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L423)
 
 ___
 
 ### getScaledWidth
 
-▸ **getScaledWidth**(): `number`
+**getScaledWidth**(): `number`
 
 Returns width of an object's bounding box counting transformations
 
@@ -7300,13 +7276,13 @@ ITextClickBehavior.getScaledWidth
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:437](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L437)
+[src/shapes/Object/ObjectGeometry.ts:414](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L414)
 
 ___
 
 ### getSelectedText
 
-▸ **getSelectedText**(): `string`
+**getSelectedText**(): `string`
 
 Returns selected text
 
@@ -7320,13 +7296,13 @@ ITextClickBehavior.getSelectedText
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:225](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextBehavior.ts#L225)
+[src/shapes/IText/ITextBehavior.ts:225](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L225)
 
 ___
 
 ### getSelectionStartFromPointer
 
-▸ **getSelectionStartFromPointer**(`e`): `number`
+**getSelectionStartFromPointer**(`e`): `number`
 
 Returns index of a character corresponding to where an object was clicked
 
@@ -7348,13 +7324,13 @@ ITextClickBehavior.getSelectionStartFromPointer
 
 #### Defined in
 
-[src/shapes/IText/ITextClickBehavior.ts:241](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextClickBehavior.ts#L241)
+[src/shapes/IText/ITextClickBehavior.ts:241](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextClickBehavior.ts#L241)
 
 ___
 
 ### getSelectionStyles
 
-▸ **getSelectionStyles**(`startIndex?`, `endIndex?`, `complete?`): `Partial`\<[`CompleteTextStyleDeclaration`](/apidocs/modules.md#completetextstyledeclaration)\>[]
+**getSelectionStyles**(`startIndex?`, `endIndex?`, `complete?`): `Partial`\<[`CompleteTextStyleDeclaration`](/apidocs/modules.md#completetextstyledeclaration)\>[]
 
 Gets style of a current selection/cursor (at the start position)
 if startIndex or endIndex are not provided, selectionStart or selectionEnd will be used.
@@ -7379,13 +7355,13 @@ ITextClickBehavior.getSelectionStyles
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:307](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/IText.ts#L307)
+[src/shapes/IText/IText.ts:307](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L307)
 
 ___
 
 ### getStyleAtPosition
 
-▸ **getStyleAtPosition**(`position`, `complete?`): `Partial`\<[`CompleteTextStyleDeclaration`](/apidocs/modules.md#completetextstyledeclaration)\>
+**getStyleAtPosition**(`position`, `complete?`): `Partial`\<[`CompleteTextStyleDeclaration`](/apidocs/modules.md#completetextstyledeclaration)\>
 
 Gets style of a current selection/cursor position
 
@@ -7408,13 +7384,13 @@ ITextClickBehavior.getStyleAtPosition
 
 #### Defined in
 
-[src/shapes/Text/StyledText.ts:224](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/StyledText.ts#L224)
+[src/shapes/Text/StyledText.ts:224](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/StyledText.ts#L224)
 
 ___
 
 ### getSvgCommons
 
-▸ **getSvgCommons**(`this`): `string`
+**getSvgCommons**(`this`): `string`
 
 Returns id attribute for svg output
 
@@ -7434,13 +7410,13 @@ ITextClickBehavior.getSvgCommons
 
 #### Defined in
 
-[src/shapes/Object/FabricObjectSVGExportMixin.ts:84](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/FabricObjectSVGExportMixin.ts#L84)
+[src/shapes/Object/FabricObjectSVGExportMixin.ts:84](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/FabricObjectSVGExportMixin.ts#L84)
 
 ___
 
 ### getSvgFilter
 
-▸ **getSvgFilter**(`this`): `string`
+**getSvgFilter**(`this`): `string`
 
 Returns filter for svg shadow
 
@@ -7460,13 +7436,13 @@ ITextClickBehavior.getSvgFilter
 
 #### Defined in
 
-[src/shapes/Object/FabricObjectSVGExportMixin.ts:76](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/FabricObjectSVGExportMixin.ts#L76)
+[src/shapes/Object/FabricObjectSVGExportMixin.ts:76](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/FabricObjectSVGExportMixin.ts#L76)
 
 ___
 
 ### getSvgStyles
 
-▸ **getSvgStyles**(`this`, `skipShadow?`): `string`
+**getSvgStyles**(`this`, `skipShadow?`): `string`
 
 Returns styles-string for svg-export
 
@@ -7487,13 +7463,13 @@ ITextClickBehavior.getSvgStyles
 
 #### Defined in
 
-[src/shapes/Object/FabricObjectSVGExportMixin.ts:21](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/FabricObjectSVGExportMixin.ts#L21)
+[src/shapes/Object/FabricObjectSVGExportMixin.ts:21](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/FabricObjectSVGExportMixin.ts#L21)
 
 ___
 
 ### getSvgTransform
 
-▸ **getSvgTransform**(`this`, `full?`, `additionalTransform?`): `string`
+**getSvgTransform**(`this`, `full?`, `additionalTransform?`): `string`
 
 Returns transform-string for svg-export
 
@@ -7515,13 +7491,13 @@ ITextClickBehavior.getSvgTransform
 
 #### Defined in
 
-[src/shapes/Object/FabricObjectSVGExportMixin.ts:103](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/FabricObjectSVGExportMixin.ts#L103)
+[src/shapes/Object/FabricObjectSVGExportMixin.ts:103](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/FabricObjectSVGExportMixin.ts#L103)
 
 ___
 
 ### getTotalAngle
 
-▸ **getTotalAngle**(): [`TDegree`](/apidocs/modules.md#tdegree)
+**getTotalAngle**(): [`TDegree`](/apidocs/modules.md#tdegree)
 
 Returns the object angle relative to canvas counting also the group property
 
@@ -7535,13 +7511,13 @@ ITextClickBehavior.getTotalAngle
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:495](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L495)
+[src/shapes/Object/ObjectGeometry.ts:470](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L470)
 
 ___
 
 ### getTotalObjectScaling
 
-▸ **getTotalObjectScaling**(): [`Point`](/apidocs/classes/Point.md)
+**getTotalObjectScaling**(): [`Point`](/apidocs/classes/Point.md)
 
 Return the object scale factor counting also the group scaling, zoom and retina
 
@@ -7557,13 +7533,13 @@ ITextClickBehavior.getTotalObjectScaling
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:646](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L646)
+[src/shapes/Object/Object.ts:646](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L646)
 
 ___
 
 ### getUpCursorOffset
 
-▸ **getUpCursorOffset**(`e`, `isRight`): `number`
+**getUpCursorOffset**(`e`, `isRight`): `number`
 
 #### Parameters
 
@@ -7582,13 +7558,13 @@ ITextClickBehavior.getUpCursorOffset
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:390](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextKeyBehavior.ts#L390)
+[src/shapes/IText/ITextKeyBehavior.ts:390](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L390)
 
 ___
 
 ### getValueOfPropertyAt
 
-▸ **getValueOfPropertyAt**\<`T`\>(`lineIndex`, `charIndex`, `property`): [`IText`](/apidocs/classes/IText.md)\<`Props`, `SProps`, `EventSpec`\>[`T`]
+**getValueOfPropertyAt**\<`T`\>(`lineIndex`, `charIndex`, `property`): [`IText`](/apidocs/classes/IText.md)\<`Props`, `SProps`, `EventSpec`\>[`T`]
 
 Retrieves the value of property at given character position
 
@@ -7618,13 +7594,13 @@ ITextClickBehavior.getValueOfPropertyAt
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1529](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L1529)
+[src/shapes/Text/Text.ts:1529](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1529)
 
 ___
 
 ### getViewportTransform
 
-▸ **getViewportTransform**(): [`TMat2D`](/apidocs/modules.md#tmat2d)
+**getViewportTransform**(): [`TMat2D`](/apidocs/modules.md#tmat2d)
 
 Retrieves viewportTransform from Object's canvas if possible
 
@@ -7646,13 +7622,13 @@ ITextClickBehavior.getViewportTransform
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:543](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L543)
+[src/shapes/Object/ObjectGeometry.ts:482](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L482)
 
 ___
 
 ### getX
 
-▸ **getX**(): `number`
+**getX**(): `number`
 
 #### Returns
 
@@ -7666,13 +7642,13 @@ ITextClickBehavior.getX
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:90](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L90)
+[src/shapes/Object/ObjectGeometry.ts:89](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L89)
 
 ___
 
 ### getXY
 
-▸ **getXY**(): [`Point`](/apidocs/classes/Point.md)
+**getXY**(): [`Point`](/apidocs/classes/Point.md)
 
 #### Returns
 
@@ -7686,13 +7662,13 @@ ITextClickBehavior.getXY
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:150](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L150)
+[src/shapes/Object/ObjectGeometry.ts:149](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L149)
 
 ___
 
 ### getY
 
-▸ **getY**(): `number`
+**getY**(): `number`
 
 #### Returns
 
@@ -7706,13 +7682,13 @@ ITextClickBehavior.getY
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:104](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L104)
+[src/shapes/Object/ObjectGeometry.ts:103](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L103)
 
 ___
 
 ### graphemeSplit
 
-▸ **graphemeSplit**(`value`): `string`[]
+**graphemeSplit**(`value`): `string`[]
 
 Override this method to customize grapheme splitting
 
@@ -7740,13 +7716,13 @@ ITextClickBehavior.graphemeSplit
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1707](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L1707)
+[src/shapes/Text/Text.ts:1707](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1707)
 
 ___
 
 ### handleFiller
 
-▸ **handleFiller**\<`T`\>(`ctx`, `property`, `filler`): `Object`
+**handleFiller**\<`T`\>(`ctx`, `property`, `filler`): `Object`
 
 #### Type parameters
 
@@ -7777,13 +7753,13 @@ ITextClickBehavior.handleFiller
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1266](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L1266)
+[src/shapes/Text/Text.ts:1266](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1266)
 
 ___
 
 ### hasCommonAncestors
 
-▸ **hasCommonAncestors**\<`T`\>(`other`, `strict?`): `boolean`
+**hasCommonAncestors**\<`T`\>(`other`, `strict?`): `boolean`
 
 #### Type parameters
 
@@ -7808,13 +7784,13 @@ ITextClickBehavior.hasCommonAncestors
 
 #### Defined in
 
-[src/shapes/Object/StackedObject.ts:168](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/StackedObject.ts#L168)
+[src/shapes/Object/StackedObject.ts:168](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/StackedObject.ts#L168)
 
 ___
 
 ### hasFill
 
-▸ **hasFill**(): ``null`` \| `boolean` \| ``""``
+**hasFill**(): ``null`` \| `boolean` \| ``""``
 
 return true if the object will draw a fill
 Does not consider text styles. This is just a shortcut used at rendering time
@@ -7839,13 +7815,13 @@ ITextClickBehavior.hasFill
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:831](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L831)
+[src/shapes/Object/Object.ts:831](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L831)
 
 ___
 
 ### hasStroke
 
-▸ **hasStroke**(): ``null`` \| `boolean` \| ``""``
+**hasStroke**(): ``null`` \| `boolean` \| ``""``
 
 return true if the object will draw a stroke
 Does not consider text styles. This is just a shortcut used at rendering time
@@ -7870,13 +7846,13 @@ ITextClickBehavior.hasStroke
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:815](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L815)
+[src/shapes/Object/Object.ts:815](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L815)
 
 ___
 
 ### initBehavior
 
-▸ **initBehavior**(): `void`
+**initBehavior**(): `void`
 
 #### Returns
 
@@ -7888,13 +7864,13 @@ ITextClickBehavior.initBehavior
 
 #### Defined in
 
-[src/shapes/IText/ITextClickBehavior.ts:34](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextClickBehavior.ts#L34)
+[src/shapes/IText/ITextClickBehavior.ts:34](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextClickBehavior.ts#L34)
 
 ___
 
 ### initDelayedCursor
 
-▸ **initDelayedCursor**(`restart?`): `void`
+**initDelayedCursor**(`restart?`): `void`
 
 Initializes delayed cursor
 
@@ -7914,13 +7890,13 @@ ITextClickBehavior.initDelayedCursor
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:173](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextBehavior.ts#L173)
+[src/shapes/IText/ITextBehavior.ts:173](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L173)
 
 ___
 
 ### initDimensions
 
-▸ **initDimensions**(): `void`
+**initDimensions**(): `void`
 
 Initialize text dimensions. Render all text on given context
 or on a offscreen canvas to get the text width with measureText.
@@ -7937,13 +7913,13 @@ ITextClickBehavior.initDimensions
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:294](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/IText.ts#L294)
+[src/shapes/IText/IText.ts:294](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L294)
 
 ___
 
 ### initHiddenTextarea
 
-▸ **initHiddenTextarea**(): `void`
+**initHiddenTextarea**(): `void`
 
 Initializes hidden textarea (needed to bring up keyboard in iOS)
 
@@ -7957,13 +7933,13 @@ ITextClickBehavior.initHiddenTextarea
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:63](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextKeyBehavior.ts#L63)
+[src/shapes/IText/ITextKeyBehavior.ts:63](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L63)
 
 ___
 
 ### insertCharStyleObject
 
-▸ **insertCharStyleObject**(`lineIndex`, `charIndex`, `quantity`, `copiedStyle?`): `void`
+**insertCharStyleObject**(`lineIndex`, `charIndex`, `quantity`, `copiedStyle?`): `void`
 
 Inserts style object for a given line/char index
 
@@ -7986,13 +7962,13 @@ ITextClickBehavior.insertCharStyleObject
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:867](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextBehavior.ts#L867)
+[src/shapes/IText/ITextBehavior.ts:867](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L867)
 
 ___
 
 ### insertChars
 
-▸ **insertChars**(`text`, `style`, `start`, `end?`): `void`
+**insertChars**(`text`, `style`, `start`, `end?`): `void`
 
 insert characters at start position, before start position.
 start  equal 1 it means the text get inserted between actual grapheme 0 and 1
@@ -8019,13 +7995,13 @@ ITextClickBehavior.insertChars
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:1017](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextBehavior.ts#L1017)
+[src/shapes/IText/ITextBehavior.ts:1017](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L1017)
 
 ___
 
 ### insertNewStyleBlock
 
-▸ **insertNewStyleBlock**(`insertedText`, `start`, `copiedStyle?`): `void`
+**insertNewStyleBlock**(`insertedText`, `start`, `copiedStyle?`): `void`
 
 Inserts style object(s)
 
@@ -8047,13 +8023,13 @@ ITextClickBehavior.insertNewStyleBlock
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:925](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextBehavior.ts#L925)
+[src/shapes/IText/ITextBehavior.ts:925](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L925)
 
 ___
 
 ### insertNewlineStyleObject
 
-▸ **insertNewlineStyleObject**(`lineIndex`, `charIndex`, `qty`, `copiedStyle?`): `void`
+**insertNewlineStyleObject**(`lineIndex`, `charIndex`, `qty`, `copiedStyle?`): `void`
 
 Handle insertion of more consecutive style lines for when one or more
 newlines gets added to the text. Since current style needs to be shifted
@@ -8079,13 +8055,13 @@ ITextClickBehavior.insertNewlineStyleObject
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:801](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextBehavior.ts#L801)
+[src/shapes/IText/ITextBehavior.ts:801](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L801)
 
 ___
 
 ### intersectsWithObject
 
-▸ **intersectsWithObject**(`other`, `absolute?`, `calculate?`): `boolean`
+**intersectsWithObject**(`other`, `calculate?`): `boolean`
 
 Checks if object intersects with another object
 
@@ -8094,7 +8070,6 @@ Checks if object intersects with another object
 | Name | Type | Default value | Description |
 | :------ | :------ | :------ | :------ |
 | `other` | `ObjectGeometry`\<[`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | `undefined` | Object to test |
-| `absolute?` | `boolean` | `false` | use coordinates without viewportTransform |
 | `calculate?` | `boolean` | `false` | use coordinates of current position instead of calculating them |
 
 #### Returns
@@ -8109,13 +8084,13 @@ ITextClickBehavior.intersectsWithObject
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:268](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L268)
+[src/shapes/Object/ObjectGeometry.ts:260](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L260)
 
 ___
 
 ### intersectsWithRect
 
-▸ **intersectsWithRect**(`pointTL`, `pointBR`, `absolute?`, `calculate?`): `boolean`
+**intersectsWithRect**(`pointTL`, `pointBR`, `calculate?`): `boolean`
 
 Checks if object intersects with an area formed by 2 points
 
@@ -8125,7 +8100,6 @@ Checks if object intersects with an area formed by 2 points
 | :------ | :------ | :------ |
 | `pointTL` | [`Point`](/apidocs/classes/Point.md) | top-left point of area |
 | `pointBR` | [`Point`](/apidocs/classes/Point.md) | bottom-right point of area |
-| `absolute?` | `boolean` | use coordinates without viewportTransform |
 | `calculate?` | `boolean` | use coordinates of current position instead of stored one |
 
 #### Returns
@@ -8140,13 +8114,13 @@ ITextClickBehavior.intersectsWithRect
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:246](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L246)
+[src/shapes/Object/ObjectGeometry.ts:239](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L239)
 
 ___
 
 ### isCacheDirty
 
-▸ **isCacheDirty**(`skipCanvas?`): `boolean`
+**isCacheDirty**(`skipCanvas?`): `boolean`
 
 Check if cache is dirty
 
@@ -8166,13 +8140,13 @@ ITextClickBehavior.isCacheDirty
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:976](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L976)
+[src/shapes/Object/Object.ts:976](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L976)
 
 ___
 
 ### isContainedWithinObject
 
-▸ **isContainedWithinObject**(`other`, `absolute?`, `calculate?`): `boolean`
+**isContainedWithinObject**(`other`, `calculate?`): `boolean`
 
 Checks if object is fully contained within area of another object
 
@@ -8181,7 +8155,6 @@ Checks if object is fully contained within area of another object
 | Name | Type | Default value | Description |
 | :------ | :------ | :------ | :------ |
 | `other` | `ObjectGeometry`\<[`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | `undefined` | Object to test |
-| `absolute?` | `boolean` | `false` | use coordinates without viewportTransform |
 | `calculate?` | `boolean` | `false` | use coordinates of current position instead of stored ones |
 
 #### Returns
@@ -8196,15 +8169,15 @@ ITextClickBehavior.isContainedWithinObject
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:293](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L293)
+[src/shapes/Object/ObjectGeometry.ts:281](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L281)
 
 ___
 
 ### isContainedWithinRect
 
-▸ **isContainedWithinRect**(`pointTL`, `pointBR`, `absolute?`, `calculate?`): `boolean`
+**isContainedWithinRect**(`pointTL`, `pointBR`, `calculate?`): `boolean`
 
-Checks if object is fully contained within area formed by 2 points
+Checks if object is fully contained within area formed by 2 points, aligned with scene axis.
 
 #### Parameters
 
@@ -8212,7 +8185,6 @@ Checks if object is fully contained within area formed by 2 points
 | :------ | :------ | :------ |
 | `pointTL` | [`Point`](/apidocs/classes/Point.md) | top-left point of area |
 | `pointBR` | [`Point`](/apidocs/classes/Point.md) | bottom-right point of area |
-| `absolute?` | `boolean` | use coordinates without viewportTransform |
 | `calculate?` | `boolean` | use coordinates of current position instead of stored one |
 
 #### Returns
@@ -8227,13 +8199,13 @@ ITextClickBehavior.isContainedWithinRect
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:311](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L311)
+[src/shapes/Object/ObjectGeometry.ts:294](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L294)
 
 ___
 
 ### isControlVisible
 
-▸ **isControlVisible**(`controlKey`): `boolean`
+**isControlVisible**(`controlKey`): `boolean`
 
 Returns true if the specified control is visible, false otherwise.
 
@@ -8255,13 +8227,13 @@ ITextClickBehavior.isControlVisible
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:539](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L539)
+[src/shapes/Object/InteractiveObject.ts:539](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L539)
 
 ___
 
 ### isDescendantOf
 
-▸ **isDescendantOf**(`target`): `boolean`
+**isDescendantOf**(`target`): `boolean`
 
 Checks if object is descendant of target
 Should be used instead of [Group.contains](/apidocs/classes/StaticCanvas.md#contains) or [StaticCanvas.contains](/apidocs/classes/StaticCanvas.md#contains) for performance reasons
@@ -8282,13 +8254,13 @@ ITextClickBehavior.isDescendantOf
 
 #### Defined in
 
-[src/shapes/Object/StackedObject.ts:64](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/StackedObject.ts#L64)
+[src/shapes/Object/StackedObject.ts:64](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/StackedObject.ts#L64)
 
 ___
 
 ### isEmptyStyles
 
-▸ **isEmptyStyles**(`lineIndex?`): `boolean`
+**isEmptyStyles**(`lineIndex?`): `boolean`
 
 Returns true if object has no styling or no styling in a line
 
@@ -8308,13 +8280,13 @@ ITextClickBehavior.isEmptyStyles
 
 #### Defined in
 
-[src/shapes/Text/StyledText.ts:40](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/StyledText.ts#L40)
+[src/shapes/Text/StyledText.ts:40](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/StyledText.ts#L40)
 
 ___
 
 ### isEndOfWrapping
 
-▸ **isEndOfWrapping**(`lineIndex`): `boolean`
+**isEndOfWrapping**(`lineIndex`): `boolean`
 
 Detect if the text line is ended with an hard break
 text and itext do not have wrapping, return false
@@ -8335,13 +8307,13 @@ ITextClickBehavior.isEndOfWrapping
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:525](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L525)
+[src/shapes/Text/Text.ts:525](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L525)
 
 ___
 
 ### isInFrontOf
 
-▸ **isInFrontOf**\<`T`\>(`other`): `undefined` \| `boolean`
+**isInFrontOf**\<`T`\>(`other`): `undefined` \| `boolean`
 
 #### Type parameters
 
@@ -8367,13 +8339,13 @@ ITextClickBehavior.isInFrontOf
 
 #### Defined in
 
-[src/shapes/Object/StackedObject.ts:178](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/StackedObject.ts#L178)
+[src/shapes/Object/StackedObject.ts:178](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/StackedObject.ts#L178)
 
 ___
 
 ### isNotVisible
 
-▸ **isNotVisible**(): `boolean`
+**isNotVisible**(): `boolean`
 
 #### Returns
 
@@ -8385,13 +8357,13 @@ ITextClickBehavior.isNotVisible
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:738](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L738)
+[src/shapes/Object/Object.ts:738](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L738)
 
 ___
 
 ### isOnScreen
 
-▸ **isOnScreen**(`calculate?`): `boolean`
+**isOnScreen**(`calculate?`): `boolean`
 
 Checks if object is contained within the canvas with current viewportTransform
 the check is done stopping at first point that appears on screen
@@ -8414,13 +8386,13 @@ ITextClickBehavior.isOnScreen
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:354](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L354)
+[src/shapes/Object/ObjectGeometry.ts:332](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L332)
 
 ___
 
 ### isOverlapping
 
-▸ **isOverlapping**\<`T`\>(`other`): `boolean`
+**isOverlapping**\<`T`\>(`other`): `boolean`
 
 #### Type parameters
 
@@ -8444,13 +8416,13 @@ ITextClickBehavior.isOverlapping
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:326](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L326)
+[src/shapes/Object/ObjectGeometry.ts:308](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L308)
 
 ___
 
 ### isPartiallyOnScreen
 
-▸ **isPartiallyOnScreen**(`calculate?`): `boolean`
+**isPartiallyOnScreen**(`calculate?`): `boolean`
 
 Checks if object is partially contained within the canvas with current viewportTransform
 
@@ -8472,13 +8444,13 @@ ITextClickBehavior.isPartiallyOnScreen
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:403](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L403)
+[src/shapes/Object/ObjectGeometry.ts:381](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L381)
 
 ___
 
 ### isTripleClick
 
-▸ **isTripleClick**(`newPointer`): `boolean`
+**isTripleClick**(`newPointer`): `boolean`
 
 #### Parameters
 
@@ -8496,13 +8468,13 @@ ITextClickBehavior.isTripleClick
 
 #### Defined in
 
-[src/shapes/IText/ITextClickBehavior.ts:94](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextClickBehavior.ts#L94)
+[src/shapes/IText/ITextClickBehavior.ts:94](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextClickBehavior.ts#L94)
 
 ___
 
 ### isType
 
-▸ **isType**(`...types`): `boolean`
+**isType**(`...types`): `boolean`
 
 Returns true if any of the specified types is identical to the type of an instance
 
@@ -8522,13 +8494,13 @@ ITextClickBehavior.isType
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1466](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1466)
+[src/shapes/Object/Object.ts:1466](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1466)
 
 ___
 
 ### measureLine
 
-▸ **measureLine**(`lineIndex`): `Object`
+**measureLine**(`lineIndex`): `Object`
 
 measure a text line measuring all characters.
 
@@ -8553,13 +8525,13 @@ ITextClickBehavior.measureLine
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:864](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L864)
+[src/shapes/Text/Text.ts:864](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L864)
 
 ___
 
 ### missingNewlineOffset
 
-▸ **missingNewlineOffset**(`lineIndex`, `skipWrapping?`): ``0`` \| ``1``
+**missingNewlineOffset**(`lineIndex`, `skipWrapping?`): ``0`` \| ``1``
 
 Detect if a line has a linebreak and so we need to account for it when moving
 and counting style.
@@ -8584,13 +8556,13 @@ ITextClickBehavior.missingNewlineOffset
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:535](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L535)
+[src/shapes/Text/Text.ts:535](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L535)
 
 ___
 
 ### mouseUpHandler
 
-▸ **mouseUpHandler**(`«destructured»`): `void`
+**mouseUpHandler**(`«destructured»`): `void`
 
 standard handler for mouse up, overridable
 
@@ -8610,13 +8582,13 @@ ITextClickBehavior.mouseUpHandler
 
 #### Defined in
 
-[src/shapes/IText/ITextClickBehavior.ts:179](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextClickBehavior.ts#L179)
+[src/shapes/IText/ITextClickBehavior.ts:179](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextClickBehavior.ts#L179)
 
 ___
 
 ### moveCursorDown
 
-▸ **moveCursorDown**(`e`): `void`
+**moveCursorDown**(`e`): `void`
 
 Moves cursor down
 
@@ -8636,13 +8608,13 @@ ITextClickBehavior.moveCursorDown
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:451](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextKeyBehavior.ts#L451)
+[src/shapes/IText/ITextKeyBehavior.ts:451](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L451)
 
 ___
 
 ### moveCursorLeft
 
-▸ **moveCursorLeft**(`e`): `void`
+**moveCursorLeft**(`e`): `void`
 
 Moves cursor left
 
@@ -8662,13 +8634,13 @@ ITextClickBehavior.moveCursorLeft
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:535](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextKeyBehavior.ts#L535)
+[src/shapes/IText/ITextKeyBehavior.ts:535](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L535)
 
 ___
 
 ### moveCursorLeftWithShift
 
-▸ **moveCursorLeftWithShift**(`e`): `undefined` \| `boolean`
+**moveCursorLeftWithShift**(`e`): `undefined` \| `boolean`
 
 Moves cursor left while keeping selection
 
@@ -8688,13 +8660,13 @@ ITextClickBehavior.moveCursorLeftWithShift
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:607](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextKeyBehavior.ts#L607)
+[src/shapes/IText/ITextKeyBehavior.ts:607](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L607)
 
 ___
 
 ### moveCursorLeftWithoutShift
 
-▸ **moveCursorLeftWithoutShift**(`e`): `boolean`
+**moveCursorLeftWithoutShift**(`e`): `boolean`
 
 Moves cursor left without keeping selection
 
@@ -8714,13 +8686,13 @@ ITextClickBehavior.moveCursorLeftWithoutShift
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:587](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextKeyBehavior.ts#L587)
+[src/shapes/IText/ITextKeyBehavior.ts:587](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L587)
 
 ___
 
 ### moveCursorRight
 
-▸ **moveCursorRight**(`e`): `void`
+**moveCursorRight**(`e`): `void`
 
 Moves cursor right
 
@@ -8740,13 +8712,13 @@ ITextClickBehavior.moveCursorRight
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:623](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextKeyBehavior.ts#L623)
+[src/shapes/IText/ITextKeyBehavior.ts:623](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L623)
 
 ___
 
 ### moveCursorRightWithShift
 
-▸ **moveCursorRightWithShift**(`e`): `undefined` \| `boolean`
+**moveCursorRightWithShift**(`e`): `undefined` \| `boolean`
 
 Moves cursor right while keeping selection
 
@@ -8766,13 +8738,13 @@ ITextClickBehavior.moveCursorRightWithShift
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:655](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextKeyBehavior.ts#L655)
+[src/shapes/IText/ITextKeyBehavior.ts:655](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L655)
 
 ___
 
 ### moveCursorRightWithoutShift
 
-▸ **moveCursorRightWithoutShift**(`e`): `boolean`
+**moveCursorRightWithoutShift**(`e`): `boolean`
 
 Moves cursor right without keeping selection
 
@@ -8792,13 +8764,13 @@ ITextClickBehavior.moveCursorRightWithoutShift
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:671](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextKeyBehavior.ts#L671)
+[src/shapes/IText/ITextKeyBehavior.ts:671](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L671)
 
 ___
 
 ### moveCursorUp
 
-▸ **moveCursorUp**(`e`): `void`
+**moveCursorUp**(`e`): `void`
 
 Moves cursor up
 
@@ -8818,13 +8790,13 @@ ITextClickBehavior.moveCursorUp
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:465](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextKeyBehavior.ts#L465)
+[src/shapes/IText/ITextKeyBehavior.ts:465](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L465)
 
 ___
 
 ### moveCursorWithShift
 
-▸ **moveCursorWithShift**(`offset`): `boolean`
+**moveCursorWithShift**(`offset`): `boolean`
 
 Moves cursor with shift
 
@@ -8844,13 +8816,13 @@ ITextClickBehavior.moveCursorWithShift
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:503](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextKeyBehavior.ts#L503)
+[src/shapes/IText/ITextKeyBehavior.ts:503](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L503)
 
 ___
 
 ### moveCursorWithoutShift
 
-▸ **moveCursorWithoutShift**(`offset`): `boolean`
+**moveCursorWithoutShift**(`offset`): `boolean`
 
 Moves cursor up without shift
 
@@ -8870,13 +8842,13 @@ ITextClickBehavior.moveCursorWithoutShift
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:520](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextKeyBehavior.ts#L520)
+[src/shapes/IText/ITextKeyBehavior.ts:520](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L520)
 
 ___
 
 ### needsItsOwnCache
 
-▸ **needsItsOwnCache**(): `boolean`
+**needsItsOwnCache**(): `boolean`
 
 When set to `true`, force the object to have its own cache, even if it is inside a group
 it may be needed when your object behave in a particular way on the cache and always needs
@@ -8896,13 +8868,13 @@ ITextClickBehavior.needsItsOwnCache
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:843](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L843)
+[src/shapes/Object/Object.ts:843](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L843)
 
 ___
 
 ### off
 
-▸ **off**\<`K`\>(`eventName`, `handler`): `void`
+**off**\<`K`\>(`eventName`, `handler`): `void`
 
 unsubscribe an event listener
 
@@ -8929,9 +8901,9 @@ ITextClickBehavior.off
 
 #### Defined in
 
-[src/Observable.ts:120](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L120)
+[src/Observable.ts:120](https://github.com/fabricjs/fabric.js/blob/078809453/src/Observable.ts#L120)
 
-▸ **off**(`handlers`): `void`
+**off**(`handlers`): `void`
 
 unsubscribe event listeners
 
@@ -8951,9 +8923,9 @@ ITextClickBehavior.off
 
 #### Defined in
 
-[src/Observable.ts:125](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L125)
+[src/Observable.ts:125](https://github.com/fabricjs/fabric.js/blob/078809453/src/Observable.ts#L125)
 
-▸ **off**(): `void`
+**off**(): `void`
 
 unsubscribe all event listeners
 
@@ -8967,13 +8939,13 @@ ITextClickBehavior.off
 
 #### Defined in
 
-[src/Observable.ts:129](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L129)
+[src/Observable.ts:129](https://github.com/fabricjs/fabric.js/blob/078809453/src/Observable.ts#L129)
 
 ___
 
 ### on
 
-▸ **on**\<`K`, `E`\>(`eventName`, `handler`): `VoidFunction`
+**on**\<`K`, `E`\>(`eventName`, `handler`): `VoidFunction`
 
 Observes specified event
 
@@ -9007,9 +8979,9 @@ ITextClickBehavior.on
 
 #### Defined in
 
-[src/Observable.ts:23](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L23)
+[src/Observable.ts:23](https://github.com/fabricjs/fabric.js/blob/078809453/src/Observable.ts#L23)
 
-▸ **on**(`handlers`): `VoidFunction`
+**on**(`handlers`): `VoidFunction`
 
 #### Parameters
 
@@ -9027,13 +8999,13 @@ ITextClickBehavior.on
 
 #### Defined in
 
-[src/Observable.ts:27](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L27)
+[src/Observable.ts:27](https://github.com/fabricjs/fabric.js/blob/078809453/src/Observable.ts#L27)
 
 ___
 
 ### onCompositionEnd
 
-▸ **onCompositionEnd**(): `void`
+**onCompositionEnd**(): `void`
 
 Composition end
 
@@ -9047,13 +9019,13 @@ ITextClickBehavior.onCompositionEnd
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:281](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextKeyBehavior.ts#L281)
+[src/shapes/IText/ITextKeyBehavior.ts:281](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L281)
 
 ___
 
 ### onCompositionStart
 
-▸ **onCompositionStart**(): `void`
+**onCompositionStart**(): `void`
 
 Composition start
 
@@ -9067,13 +9039,13 @@ ITextClickBehavior.onCompositionStart
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:274](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextKeyBehavior.ts#L274)
+[src/shapes/IText/ITextKeyBehavior.ts:274](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L274)
 
 ___
 
 ### onCompositionUpdate
 
-▸ **onCompositionUpdate**(`«destructured»`): `void`
+**onCompositionUpdate**(`«destructured»`): `void`
 
 #### Parameters
 
@@ -9091,13 +9063,13 @@ ITextClickBehavior.onCompositionUpdate
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:285](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextKeyBehavior.ts#L285)
+[src/shapes/IText/ITextKeyBehavior.ts:285](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L285)
 
 ___
 
 ### onDeselect
 
-▸ **onDeselect**(`options?`): `boolean`
+**onDeselect**(`options?`): `boolean`
 
 #### Parameters
 
@@ -9117,13 +9089,13 @@ ITextClickBehavior.onDeselect
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:111](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextBehavior.ts#L111)
+[src/shapes/IText/ITextBehavior.ts:111](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L111)
 
 ___
 
 ### onDragStart
 
-▸ **onDragStart**(`e`): `boolean`
+**onDragStart**(`e`): `boolean`
 
 override this method to control whether instance should/shouldn't become a drag source,
 
@@ -9149,13 +9121,13 @@ ITextClickBehavior.onDragStart
 
 #### Defined in
 
-[src/shapes/IText/ITextClickBehavior.ts:63](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextClickBehavior.ts#L63)
+[src/shapes/IText/ITextClickBehavior.ts:63](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextClickBehavior.ts#L63)
 
 ___
 
 ### onInput
 
-▸ **onInput**(`this`, `e`): `void`
+**onInput**(`this`, `e`): `void`
 
 Handles onInput event
 
@@ -9176,13 +9148,13 @@ ITextClickBehavior.onInput
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:167](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextKeyBehavior.ts#L167)
+[src/shapes/IText/ITextKeyBehavior.ts:167](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L167)
 
 ___
 
 ### onKeyDown
 
-▸ **onKeyDown**(`e`): `void`
+**onKeyDown**(`e`): `void`
 
 Handles keydown event
 only used for arrows and combination of modifier keys.
@@ -9203,13 +9175,13 @@ ITextClickBehavior.onKeyDown
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:115](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextKeyBehavior.ts#L115)
+[src/shapes/IText/ITextKeyBehavior.ts:115](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L115)
 
 ___
 
 ### onKeyUp
 
-▸ **onKeyUp**(`e`): `void`
+**onKeyUp**(`e`): `void`
 
 Handles keyup event
 We handle KeyUp because ie11 and edge have difficulties copy/pasting
@@ -9231,13 +9203,13 @@ ITextClickBehavior.onKeyUp
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:147](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextKeyBehavior.ts#L147)
+[src/shapes/IText/ITextKeyBehavior.ts:147](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L147)
 
 ___
 
 ### onMouseDown
 
-▸ **onMouseDown**(`options`): `void`
+**onMouseDown**(`options`): `void`
 
 Default event handler to simulate triple click
 
@@ -9257,13 +9229,13 @@ ITextClickBehavior.onMouseDown
 
 #### Defined in
 
-[src/shapes/IText/ITextClickBehavior.ts:78](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextClickBehavior.ts#L78)
+[src/shapes/IText/ITextClickBehavior.ts:78](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextClickBehavior.ts#L78)
 
 ___
 
 ### onSelect
 
-▸ **onSelect**(`options?`): `boolean`
+**onSelect**(`options?`): `boolean`
 
 This callback function is called every time _discardActiveObject or _setActiveObject
 try to to select this object. If the function returns true, the process is cancelled
@@ -9285,13 +9257,13 @@ ITextClickBehavior.onSelect
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:627](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L627)
+[src/shapes/Object/InteractiveObject.ts:627](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L627)
 
 ___
 
 ### once
 
-▸ **once**\<`K`, `E`\>(`eventName`, `handler`): `VoidFunction`
+**once**\<`K`, `E`\>(`eventName`, `handler`): `VoidFunction`
 
 Observes specified event **once**
 
@@ -9325,9 +9297,9 @@ ITextClickBehavior.once
 
 #### Defined in
 
-[src/Observable.ts:62](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L62)
+[src/Observable.ts:62](https://github.com/fabricjs/fabric.js/blob/078809453/src/Observable.ts#L62)
 
-▸ **once**(`handlers`): `VoidFunction`
+**once**(`handlers`): `VoidFunction`
 
 #### Parameters
 
@@ -9345,13 +9317,13 @@ ITextClickBehavior.once
 
 #### Defined in
 
-[src/Observable.ts:66](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L66)
+[src/Observable.ts:66](https://github.com/fabricjs/fabric.js/blob/078809453/src/Observable.ts#L66)
 
 ___
 
 ### paste
 
-▸ **paste**(): `void`
+**paste**(): `void`
 
 Pastes text
 
@@ -9365,13 +9337,13 @@ ITextClickBehavior.paste
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:317](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextKeyBehavior.ts#L317)
+[src/shapes/IText/ITextKeyBehavior.ts:317](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L317)
 
 ___
 
 ### removeChars
 
-▸ **removeChars**(`start`, `end?`): `void`
+**removeChars**(`start`, `end?`): `void`
 
 Removes characters from start/end
 start/end ar per grapheme position in _text array.
@@ -9393,13 +9365,13 @@ ITextClickBehavior.removeChars
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:995](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextBehavior.ts#L995)
+[src/shapes/IText/ITextBehavior.ts:995](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L995)
 
 ___
 
 ### removeStyle
 
-▸ **removeStyle**(`property`): `void`
+**removeStyle**(`property`): `void`
 
 Remove a style property or properties from all individual character styles
 in a text object.  Deletes the character style object if it contains no other style
@@ -9421,13 +9393,13 @@ ITextClickBehavior.removeStyle
 
 #### Defined in
 
-[src/shapes/Text/StyledText.ts:164](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/StyledText.ts#L164)
+[src/shapes/Text/StyledText.ts:164](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/StyledText.ts#L164)
 
 ___
 
 ### removeStyleFromTo
 
-▸ **removeStyleFromTo**(`start`, `end`): `void`
+**removeStyleFromTo**(`start`, `end`): `void`
 
 remove and reflow a style block from start to end.
 
@@ -9448,13 +9420,13 @@ ITextClickBehavior.removeStyleFromTo
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:716](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextBehavior.ts#L716)
+[src/shapes/IText/ITextBehavior.ts:716](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L716)
 
 ___
 
 ### render
 
-▸ **render**(`ctx`): `void`
+**render**(`ctx`): `void`
 
 #### Parameters
 
@@ -9472,13 +9444,13 @@ ITextClickBehavior.render
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:345](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/IText.ts#L345)
+[src/shapes/IText/IText.ts:345](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L345)
 
 ___
 
 ### renderCache
 
-▸ **renderCache**(`options?`): `void`
+**renderCache**(`options?`): `void`
 
 #### Parameters
 
@@ -9496,13 +9468,13 @@ ITextClickBehavior.renderCache
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:784](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L784)
+[src/shapes/Object/Object.ts:784](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L784)
 
 ___
 
 ### renderCursor
 
-▸ **renderCursor**(`ctx`, `boundaries`): `void`
+**renderCursor**(`ctx`, `boundaries`): `void`
 
 Renders cursor
 
@@ -9519,13 +9491,13 @@ Renders cursor
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:489](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/IText.ts#L489)
+[src/shapes/IText/IText.ts:489](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L489)
 
 ___
 
 ### renderCursorAt
 
-▸ **renderCursorAt**(`selectionStart`): `void`
+**renderCursorAt**(`selectionStart`): `void`
 
 Renders cursor on context Top, outside the animation cycle, on request
 Used for the drag/drop effect.
@@ -9543,13 +9515,13 @@ If contextTop is not available, do nothing.
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:479](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/IText.ts#L479)
+[src/shapes/IText/IText.ts:479](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L479)
 
 ___
 
 ### renderCursorOrSelection
 
-▸ **renderCursorOrSelection**(): `void`
+**renderCursorOrSelection**(): `void`
 
 Renders cursor or selection (depending on what exists)
 it does on the contextTop. If contextTop is not available, do nothing.
@@ -9564,13 +9536,13 @@ ITextClickBehavior.renderCursorOrSelection
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:369](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/IText.ts#L369)
+[src/shapes/IText/IText.ts:369](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L369)
 
 ___
 
 ### renderDragSourceEffect
 
-▸ **renderDragSourceEffect**(): `void`
+**renderDragSourceEffect**(): `void`
 
 Renders drag start text selection
 
@@ -9584,13 +9556,13 @@ ITextClickBehavior.renderDragSourceEffect
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:549](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/IText.ts#L549)
+[src/shapes/IText/IText.ts:549](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L549)
 
 ___
 
 ### renderDropTargetEffect
 
-▸ **renderDropTargetEffect**(`e`): `void`
+**renderDropTargetEffect**(`e`): `void`
 
 #### Parameters
 
@@ -9608,13 +9580,13 @@ ITextClickBehavior.renderDropTargetEffect
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:559](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/IText.ts#L559)
+[src/shapes/IText/IText.ts:559](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L559)
 
 ___
 
 ### renderSelection
 
-▸ **renderSelection**(`ctx`, `boundaries`): `void`
+**renderSelection**(`ctx`, `boundaries`): `void`
 
 Renders text selection
 
@@ -9631,13 +9603,13 @@ Renders text selection
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:534](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/IText.ts#L534)
+[src/shapes/IText/IText.ts:534](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L534)
 
 ___
 
 ### restartCursorIfNeeded
 
-▸ **restartCursorIfNeeded**(): `void`
+**restartCursorIfNeeded**(): `void`
 
 #### Returns
 
@@ -9649,13 +9621,13 @@ ITextClickBehavior.restartCursorIfNeeded
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:200](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextBehavior.ts#L200)
+[src/shapes/IText/ITextBehavior.ts:200](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L200)
 
 ___
 
 ### rotate
 
-▸ **rotate**(`angle`): `void`
+**rotate**(`angle`): `void`
 
 Sets "angle" of an instance with centered rotation
 
@@ -9675,13 +9647,13 @@ ITextClickBehavior.rotate
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1494](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1494)
+[src/shapes/Object/Object.ts:1494](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1494)
 
 ___
 
 ### scale
 
-▸ **scale**(`value`): `void`
+**scale**(`value`): `void`
 
 Scales an object (equally by x and y)
 
@@ -9701,22 +9673,21 @@ ITextClickBehavior.scale
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:455](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L455)
+[src/shapes/Object/ObjectGeometry.ts:432](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L432)
 
 ___
 
 ### scaleToHeight
 
-▸ **scaleToHeight**(`value`, `absolute?`): `void`
+**scaleToHeight**(`value`): `void`
 
 Scales an object to a given height, with respect to bounding box (scaling by x/y equally)
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `value` | `number` | `undefined` | New height value |
-| `absolute` | `boolean` | `false` | ignore viewport |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `number` | New height value |
 
 #### Returns
 
@@ -9728,13 +9699,13 @@ ITextClickBehavior.scaleToHeight
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:480](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L480)
+[src/shapes/Object/ObjectGeometry.ts:455](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L455)
 
 ___
 
 ### scaleToWidth
 
-▸ **scaleToWidth**(`value`, `absolute?`): `void`
+**scaleToWidth**(`value`): `void`
 
 Scales an object to a given width, with respect to bounding box (scaling by x/y equally)
 
@@ -9743,7 +9714,6 @@ Scales an object to a given width, with respect to bounding box (scaling by x/y 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | New width value |
-| `absolute?` | `boolean` | ignore viewport |
 
 #### Returns
 
@@ -9755,13 +9725,13 @@ ITextClickBehavior.scaleToWidth
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:467](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L467)
+[src/shapes/Object/ObjectGeometry.ts:443](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L443)
 
 ___
 
 ### searchWordBoundary
 
-▸ **searchWordBoundary**(`selectionStart`, `direction`): `number`
+**searchWordBoundary**(`selectionStart`, `direction`): `number`
 
 Finds index corresponding to beginning or end of a word
 
@@ -9784,13 +9754,13 @@ ITextClickBehavior.searchWordBoundary
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:317](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextBehavior.ts#L317)
+[src/shapes/IText/ITextBehavior.ts:317](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L317)
 
 ___
 
 ### selectAll
 
-▸ **selectAll**(): [`IText`](/apidocs/classes/IText.md)\<`Props`, `SProps`, `EventSpec`\>
+**selectAll**(): [`IText`](/apidocs/classes/IText.md)\<`Props`, `SProps`, `EventSpec`\>
 
 Selects entire text
 
@@ -9804,13 +9774,13 @@ ITextClickBehavior.selectAll
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:213](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextBehavior.ts#L213)
+[src/shapes/IText/ITextBehavior.ts:213](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L213)
 
 ___
 
 ### selectLine
 
-▸ **selectLine**(`selectionStart`): [`IText`](/apidocs/classes/IText.md)\<`Props`, `SProps`, `EventSpec`\>
+**selectLine**(`selectionStart`): [`IText`](/apidocs/classes/IText.md)\<`Props`, `SProps`, `EventSpec`\>
 
 Selects a line based on the index
 
@@ -9830,13 +9800,13 @@ ITextClickBehavior.selectLine
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:363](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextBehavior.ts#L363)
+[src/shapes/IText/ITextBehavior.ts:363](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L363)
 
 ___
 
 ### selectWord
 
-▸ **selectWord**(`selectionStart`): `void`
+**selectWord**(`selectionStart`): `void`
 
 Selects a word based on the index
 
@@ -9856,13 +9826,13 @@ ITextClickBehavior.selectWord
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:342](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextBehavior.ts#L342)
+[src/shapes/IText/ITextBehavior.ts:342](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L342)
 
 ___
 
 ### set
 
-▸ **set**(`key`, `value?`): [`IText`](/apidocs/classes/IText.md)\<`Props`, `SProps`, `EventSpec`\>
+**set**(`key`, `value?`): [`IText`](/apidocs/classes/IText.md)\<`Props`, `SProps`, `EventSpec`\>
 
 #### Parameters
 
@@ -9881,13 +9851,13 @@ ITextClickBehavior.set
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1750](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L1750)
+[src/shapes/Text/Text.ts:1750](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1750)
 
 ___
 
 ### setControlVisible
 
-▸ **setControlVisible**(`controlKey`, `visible`): `void`
+**setControlVisible**(`controlKey`, `visible`): `void`
 
 Sets the visibility of the specified control.
 please do not use.
@@ -9913,13 +9883,13 @@ ITextClickBehavior.setControlVisible
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:554](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L554)
+[src/shapes/Object/InteractiveObject.ts:554](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L554)
 
 ___
 
 ### setControlsVisibility
 
-▸ **setControlsVisibility**(`options?`): `void`
+**setControlsVisibility**(`options?`): `void`
 
 Sets the visibility state of object controls, this is just a bulk option for setControlVisible;
 
@@ -9939,13 +9909,13 @@ ITextClickBehavior.setControlsVisibility
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:566](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L566)
+[src/shapes/Object/InteractiveObject.ts:566](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L566)
 
 ___
 
 ### setCoords
 
-▸ **setCoords**(): `void`
+**setCoords**(): `void`
 
 Sets corner and controls position coordinates based on current angle, width and height, left and top.
 oCoords are used to find the corners
@@ -9963,13 +9933,13 @@ ITextClickBehavior.setCoords
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:309](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L309)
+[src/shapes/Object/InteractiveObject.ts:309](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L309)
 
 ___
 
 ### setCursorByClick
 
-▸ **setCursorByClick**(`e`): `void`
+**setCursorByClick**(`e`): `void`
 
 Changes cursor location in a text depending on passed pointer (x/y) object
 
@@ -9989,13 +9959,13 @@ ITextClickBehavior.setCursorByClick
 
 #### Defined in
 
-[src/shapes/IText/ITextClickBehavior.ts:220](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextClickBehavior.ts#L220)
+[src/shapes/IText/ITextClickBehavior.ts:220](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextClickBehavior.ts#L220)
 
 ___
 
 ### setOnGroup
 
-▸ **setOnGroup**(): `void`
+**setOnGroup**(): `void`
 
 This callback function is called by the parent group of an object every
 time a non-delegated property changes on the group. It is passed the key
@@ -10012,13 +9982,13 @@ ITextClickBehavior.setOnGroup
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1526](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1526)
+[src/shapes/Object/Object.ts:1526](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1526)
 
 ___
 
 ### setOptions
 
-▸ **setOptions**(`options?`): `void`
+**setOptions**(`options?`): `void`
 
 Sets object's properties from options, for class constructor only.
 Needs to be overridden for different defaults.
@@ -10039,13 +10009,13 @@ ITextClickBehavior.setOptions
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:495](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L495)
+[src/shapes/Object/Object.ts:495](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L495)
 
 ___
 
 ### setPathInfo
 
-▸ **setPathInfo**(): `void`
+**setPathInfo**(): `void`
 
 If text has a path, it will add the extra information needed
 for path and text calculations
@@ -10060,13 +10030,13 @@ ITextClickBehavior.setPathInfo
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:435](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L435)
+[src/shapes/Text/Text.ts:435](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L435)
 
 ___
 
 ### setPositionByOrigin
 
-▸ **setPositionByOrigin**(`pos`, `originX`, `originY`): `void`
+**setPositionByOrigin**(`pos`, `originX`, `originY`): `void`
 
 Sets the position of the object taking into consideration the object's origin
 
@@ -10088,13 +10058,13 @@ ITextClickBehavior.setPositionByOrigin
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:209](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L209)
+[src/shapes/Object/ObjectOrigin.ts:209](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L209)
 
 ___
 
 ### setRelativeX
 
-▸ **setRelativeX**(`value`): `void`
+**setRelativeX**(`value`): `void`
 
 #### Parameters
 
@@ -10112,13 +10082,13 @@ ITextClickBehavior.setRelativeX
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:127](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L127)
+[src/shapes/Object/ObjectGeometry.ts:126](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L126)
 
 ___
 
 ### setRelativeXY
 
-▸ **setRelativeXY**(`point`, `originX?`, `originY?`): `void`
+**setRelativeXY**(`point`, `originX?`, `originY?`): `void`
 
 As [setXY](/apidocs/classes/FabricObject.md#setxy), but in current parent's coordinate plane (the current group if any or the canvas)
 
@@ -10140,13 +10110,13 @@ ITextClickBehavior.setRelativeXY
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:190](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L190)
+[src/shapes/Object/ObjectGeometry.ts:189](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L189)
 
 ___
 
 ### setRelativeY
 
-▸ **setRelativeY**(`value`): `void`
+**setRelativeY**(`value`): `void`
 
 #### Parameters
 
@@ -10164,13 +10134,13 @@ ITextClickBehavior.setRelativeY
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:143](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L143)
+[src/shapes/Object/ObjectGeometry.ts:142](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L142)
 
 ___
 
 ### setSelectionEnd
 
-▸ **setSelectionEnd**(`index`): `void`
+**setSelectionEnd**(`index`): `void`
 
 Sets selection end (right boundary of a selection)
 
@@ -10186,13 +10156,13 @@ Sets selection end (right boundary of a selection)
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:257](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/IText.ts#L257)
+[src/shapes/IText/IText.ts:257](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L257)
 
 ___
 
 ### setSelectionStart
 
-▸ **setSelectionStart**(`index`): `void`
+**setSelectionStart**(`index`): `void`
 
 Sets selection start (left boundary of a selection)
 
@@ -10208,13 +10178,13 @@ Sets selection start (left boundary of a selection)
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:248](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/IText.ts#L248)
+[src/shapes/IText/IText.ts:248](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L248)
 
 ___
 
 ### setSelectionStartEndWithShift
 
-▸ **setSelectionStartEndWithShift**(`start`, `end`, `newSelection`): `void`
+**setSelectionStartEndWithShift**(`start`, `end`, `newSelection`): `void`
 
 Set the selectionStart and selectionEnd according to the new position of cursor
 mimic the key - mouse navigation when shift is pressed.
@@ -10237,13 +10207,13 @@ ITextClickBehavior.setSelectionStartEndWithShift
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:1044](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextBehavior.ts#L1044)
+[src/shapes/IText/ITextBehavior.ts:1044](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L1044)
 
 ___
 
 ### setSelectionStyles
 
-▸ **setSelectionStyles**(`styles?`, `startIndex?`, `endIndex?`): `void`
+**setSelectionStyles**(`styles?`, `startIndex?`, `endIndex?`): `void`
 
 Sets style of a current selection, if no selection exist, do not set anything.
 
@@ -10265,13 +10235,13 @@ ITextClickBehavior.setSelectionStyles
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:321](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/IText.ts#L321)
+[src/shapes/IText/IText.ts:321](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L321)
 
 ___
 
 ### setSubscript
 
-▸ **setSubscript**(`start`, `end`): `void`
+**setSubscript**(`start`, `end`): `void`
 
 Turns the character into an 'inferior figure' (i.e. 'subscript')
 
@@ -10292,13 +10262,13 @@ ITextClickBehavior.setSubscript
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1407](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L1407)
+[src/shapes/Text/Text.ts:1407](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1407)
 
 ___
 
 ### setSuperscript
 
-▸ **setSuperscript**(`start`, `end`): `void`
+**setSuperscript**(`start`, `end`): `void`
 
 Turns the character into a 'superior figure' (i.e. 'superscript')
 
@@ -10319,13 +10289,13 @@ ITextClickBehavior.setSuperscript
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1398](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L1398)
+[src/shapes/Text/Text.ts:1398](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1398)
 
 ___
 
 ### setX
 
-▸ **setX**(`value`): `void`
+**setX**(`value`): `void`
 
 #### Parameters
 
@@ -10343,13 +10313,13 @@ ITextClickBehavior.setX
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:97](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L97)
+[src/shapes/Object/ObjectGeometry.ts:96](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L96)
 
 ___
 
 ### setXY
 
-▸ **setXY**(`point`, `originX?`, `originY?`): `void`
+**setXY**(`point`, `originX?`, `originY?`): `void`
 
 Set an object position to a particular point, the point is intended in absolute ( canvas ) coordinate.
 You can specify originX and originY values,
@@ -10380,13 +10350,13 @@ ITextClickBehavior.setXY
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:167](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L167)
+[src/shapes/Object/ObjectGeometry.ts:166](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L166)
 
 ___
 
 ### setY
 
-▸ **setY**(`value`): `void`
+**setY**(`value`): `void`
 
 #### Parameters
 
@@ -10404,13 +10374,13 @@ ITextClickBehavior.setY
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:111](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L111)
+[src/shapes/Object/ObjectGeometry.ts:110](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L110)
 
 ___
 
 ### shiftLineStyles
 
-▸ **shiftLineStyles**(`lineIndex`, `offset`): `void`
+**shiftLineStyles**(`lineIndex`, `offset`): `void`
 
 Shifts line styles up or down
 
@@ -10431,13 +10401,13 @@ ITextClickBehavior.shiftLineStyles
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:778](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextBehavior.ts#L778)
+[src/shapes/IText/ITextBehavior.ts:778](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L778)
 
 ___
 
 ### shouldCache
 
-▸ **shouldCache**(): `boolean`
+**shouldCache**(): `boolean`
 
 Decide if the object should cache or not. Create its own cache level
 objectCaching is a global flag, wins over everything
@@ -10456,13 +10426,13 @@ ITextClickBehavior.shouldCache
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:867](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L867)
+[src/shapes/Object/Object.ts:867](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L867)
 
 ___
 
 ### shouldStartDragging
 
-▸ **shouldStartDragging**(): `boolean`
+**shouldStartDragging**(): `boolean`
 
 #### Returns
 
@@ -10474,13 +10444,13 @@ ITextClickBehavior.shouldStartDragging
 
 #### Defined in
 
-[src/shapes/IText/ITextClickBehavior.ts:55](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextClickBehavior.ts#L55)
+[src/shapes/IText/ITextClickBehavior.ts:55](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextClickBehavior.ts#L55)
 
 ___
 
 ### strokeBorders
 
-▸ **strokeBorders**(`ctx`, `size`): `void`
+**strokeBorders**(`ctx`, `size`): `void`
 
 override this function in order to customize the drawing of the control box, e.g. rounded corners, different border style.
 
@@ -10501,13 +10471,13 @@ ITextClickBehavior.strokeBorders
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:366](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L366)
+[src/shapes/Object/InteractiveObject.ts:366](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L366)
 
 ___
 
 ### styleHas
 
-▸ **styleHas**(`property`, `lineIndex?`): `boolean`
+**styleHas**(`property`, `lineIndex?`): `boolean`
 
 Returns true if object has a style property or has it ina specified line
 This function is used to detect if a text will use a particular property or not.
@@ -10529,13 +10499,13 @@ ITextClickBehavior.styleHas
 
 #### Defined in
 
-[src/shapes/Text/StyledText.ts:69](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/StyledText.ts#L69)
+[src/shapes/Text/StyledText.ts:69](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/StyledText.ts#L69)
 
 ___
 
 ### toCanvasElement
 
-▸ **toCanvasElement**(`options?`): `HTMLCanvasElement`
+**toCanvasElement**(`options?`): `HTMLCanvasElement`
 
 block cursor/selection logic while rendering the exported canvas
 
@@ -10559,13 +10529,13 @@ ITextClickBehavior.toCanvasElement
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:357](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/IText.ts#L357)
+[src/shapes/IText/IText.ts:357](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L357)
 
 ___
 
 ### toClipPathSVG
 
-▸ **toClipPathSVG**(`this`, `reviver?`): `string`
+**toClipPathSVG**(`this`, `reviver?`): `string`
 
 Returns svg clipPath representation of an instance
 
@@ -10588,13 +10558,13 @@ ITextClickBehavior.toClipPathSVG
 
 #### Defined in
 
-[src/shapes/Object/FabricObjectSVGExportMixin.ts:143](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/FabricObjectSVGExportMixin.ts#L143)
+[src/shapes/Object/FabricObjectSVGExportMixin.ts:143](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/FabricObjectSVGExportMixin.ts#L143)
 
 ___
 
 ### toDataURL
 
-▸ **toDataURL**(`options?`): `string`
+**toDataURL**(`options?`): `string`
 
 Converts an object into a data-url-like string
 
@@ -10616,13 +10586,13 @@ ITextClickBehavior.toDataURL
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1453](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1453)
+[src/shapes/Object/Object.ts:1453](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1453)
 
 ___
 
 ### toDatalessObject
 
-▸ **toDatalessObject**(`propertiesToInclude?`): `any`
+**toDatalessObject**(`propertiesToInclude?`): `any`
 
 Returns (dataless) object representation of an instance
 
@@ -10644,13 +10614,13 @@ ITextClickBehavior.toDatalessObject
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:581](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L581)
+[src/shapes/Object/Object.ts:581](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L581)
 
 ___
 
 ### toJSON
 
-▸ **toJSON**(): `any`
+**toJSON**(): `any`
 
 Returns a JSON representation of an instance
 
@@ -10666,13 +10636,13 @@ ITextClickBehavior.toJSON
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1485](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1485)
+[src/shapes/Object/Object.ts:1485](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1485)
 
 ___
 
 ### toObject
 
-▸ **toObject**\<`T`, `K`\>(`propertiesToInclude?`): `Pick`\<`T`, `K`\> & `SProps`
+**toObject**\<`T`, `K`\>(`propertiesToInclude?`): `Pick`\<`T`, `K`\> & `SProps`
 
 Returns object representation of an instance
 
@@ -10701,13 +10671,13 @@ ITextClickBehavior.toObject
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1739](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L1739)
+[src/shapes/Text/Text.ts:1739](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1739)
 
 ___
 
 ### toSVG
 
-▸ **toSVG**(`this`, `reviver?`): `string`
+**toSVG**(`this`, `reviver?`): `string`
 
 Returns svg representation of an instance
 
@@ -10730,13 +10700,13 @@ ITextClickBehavior.toSVG
 
 #### Defined in
 
-[src/shapes/Object/FabricObjectSVGExportMixin.ts:129](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/FabricObjectSVGExportMixin.ts#L129)
+[src/shapes/Object/FabricObjectSVGExportMixin.ts:129](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/FabricObjectSVGExportMixin.ts#L129)
 
 ___
 
 ### toString
 
-▸ **toString**(): `string`
+**toString**(): `string`
 
 Returns string representation of an instance
 
@@ -10752,13 +10722,13 @@ ITextClickBehavior.toString
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:571](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L571)
+[src/shapes/Text/Text.ts:571](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L571)
 
 ___
 
 ### toggle
 
-▸ **toggle**(`property`): [`IText`](/apidocs/classes/IText.md)\<`Props`, `SProps`, `EventSpec`\>
+**toggle**(`property`): [`IText`](/apidocs/classes/IText.md)\<`Props`, `SProps`, `EventSpec`\>
 
 Toggles specified property from `true` to `false` or from `false` to `true`
 
@@ -10778,13 +10748,13 @@ ITextClickBehavior.toggle
 
 #### Defined in
 
-[src/CommonMethods.ts:46](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/CommonMethods.ts#L46)
+[src/CommonMethods.ts:46](https://github.com/fabricjs/fabric.js/blob/078809453/src/CommonMethods.ts#L46)
 
 ___
 
 ### transform
 
-▸ **transform**(`ctx`): `void`
+**transform**(`ctx`): `void`
 
 Transforms context when rendering an object
 
@@ -10804,13 +10774,13 @@ ITextClickBehavior.transform
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:503](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L503)
+[src/shapes/Object/Object.ts:503](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L503)
 
 ___
 
 ### transformMatrixKey
 
-▸ **transformMatrixKey**(`skipGroup?`): `string`
+**transformMatrixKey**(`skipGroup?`): `string`
 
 #### Parameters
 
@@ -10828,13 +10798,13 @@ ITextClickBehavior.transformMatrixKey
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:584](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L584)
+[src/shapes/Object/ObjectGeometry.ts:520](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L520)
 
 ___
 
 ### translateToCenterPoint
 
-▸ **translateToCenterPoint**(`point`, `originX`, `originY`): [`Point`](/apidocs/classes/Point.md)
+**translateToCenterPoint**(`point`, `originX`, `originY`): [`Point`](/apidocs/classes/Point.md)
 
 Translates the coordinates from origin to center coordinates (based on the object's dimensions)
 
@@ -10856,13 +10826,13 @@ ITextClickBehavior.translateToCenterPoint
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:122](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L122)
+[src/shapes/Object/ObjectOrigin.ts:122](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L122)
 
 ___
 
 ### translateToGivenOrigin
 
-▸ **translateToGivenOrigin**(`point`, `fromOriginX`, `fromOriginY`, `toOriginX`, `toOriginY`): [`Point`](/apidocs/classes/Point.md)
+**translateToGivenOrigin**(`point`, `fromOriginX`, `fromOriginY`, `toOriginX`, `toOriginY`): [`Point`](/apidocs/classes/Point.md)
 
 Translates the coordinates from a set of origin to another (based on the object's dimensions)
 
@@ -10886,13 +10856,13 @@ ITextClickBehavior.translateToGivenOrigin
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:94](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L94)
+[src/shapes/Object/ObjectOrigin.ts:94](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L94)
 
 ___
 
 ### translateToOriginPoint
 
-▸ **translateToOriginPoint**(`center`, `originX`, `originY`): [`Point`](/apidocs/classes/Point.md)
+**translateToOriginPoint**(`center`, `originX`, `originY`): [`Point`](/apidocs/classes/Point.md)
 
 Translates the coordinates from center to origin coordinates (based on the object's dimensions)
 
@@ -10914,13 +10884,13 @@ ITextClickBehavior.translateToOriginPoint
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:147](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L147)
+[src/shapes/Object/ObjectOrigin.ts:147](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L147)
 
 ___
 
 ### tripleClickHandler
 
-▸ **tripleClickHandler**(`options`): `void`
+**tripleClickHandler**(`options`): `void`
 
 Default handler for triple click, select a line
 
@@ -10940,13 +10910,13 @@ ITextClickBehavior.tripleClickHandler
 
 #### Defined in
 
-[src/shapes/IText/ITextClickBehavior.ts:116](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextClickBehavior.ts#L116)
+[src/shapes/IText/ITextClickBehavior.ts:116](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextClickBehavior.ts#L116)
 
 ___
 
 ### updateFromTextArea
 
-▸ **updateFromTextArea**(): `void`
+**updateFromTextArea**(): `void`
 
 #### Returns
 
@@ -10958,13 +10928,13 @@ ITextClickBehavior.updateFromTextArea
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:522](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextBehavior.ts#L522)
+[src/shapes/IText/ITextBehavior.ts:522](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L522)
 
 ___
 
 ### updateSelectionOnMouseMove
 
-▸ **updateSelectionOnMouseMove**(`e`): `void`
+**updateSelectionOnMouseMove**(`e`): `void`
 
 called by [Canvas#textEditingManager](/apidocs/classes/Canvas.md#texteditingmanager)
 
@@ -10984,13 +10954,13 @@ ITextClickBehavior.updateSelectionOnMouseMove
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:410](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextBehavior.ts#L410)
+[src/shapes/IText/ITextBehavior.ts:410](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L410)
 
 ___
 
 ### updateTextareaPosition
 
-▸ **updateTextareaPosition**(): `void`
+**updateTextareaPosition**(): `void`
 
 #### Returns
 
@@ -11002,13 +10972,13 @@ ITextClickBehavior.updateTextareaPosition
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:547](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/ITextBehavior.ts#L547)
+[src/shapes/IText/ITextBehavior.ts:547](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L547)
 
 ___
 
 ### willDrawShadow
 
-▸ **willDrawShadow**(): `boolean`
+**willDrawShadow**(): `boolean`
 
 Check if this object or a child object will cast a shadow
 used by Group.shouldCache to know if child has a shadow recursively
@@ -11025,13 +10995,13 @@ ITextClickBehavior.willDrawShadow
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:880](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L880)
+[src/shapes/Object/Object.ts:880](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L880)
 
 ___
 
 ### \_fromObject
 
-▸ **_fromObject**\<`S`\>(`object`, `«destructured»?`): `Promise`\<`S`\>
+**_fromObject**\<`S`\>(`object`, `«destructured»?`): `Promise`\<`S`\>
 
 #### Type parameters
 
@@ -11056,13 +11026,13 @@ ITextClickBehavior.\_fromObject
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1564](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1564)
+[src/shapes/Object/Object.ts:1564](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1564)
 
 ___
 
 ### fromElement
 
-▸ **fromElement**(`element`, `options?`, `cssRules?`): `Promise`\<[`FabricText`](/apidocs/classes/FabricText.md)\<\{ `fontSize`: `number` ; `left`: `number` ; `linethrough`: `boolean` ; `overline`: `boolean` ; `signal?`: `AbortSignal` ; `strokeWidth`: `number` = 0; `top`: `number` ; `underline`: `boolean`  }, [`SerializedTextProps`](/apidocs/interfaces/SerializedTextProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>\>
+**fromElement**(`element`, `options?`, `cssRules?`): `Promise`\<[`FabricText`](/apidocs/classes/FabricText.md)\<\{ `fontSize`: `number` ; `left`: `number` ; `linethrough`: `boolean` ; `overline`: `boolean` ; `signal?`: `AbortSignal` ; `strokeWidth`: `number` = 0; `top`: `number` ; `underline`: `boolean`  }, [`SerializedTextProps`](/apidocs/interfaces/SerializedTextProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>\>
 
 Returns FabricText instance from an SVG element (<b>not yet implemented</b>)
 
@@ -11090,13 +11060,13 @@ ITextClickBehavior.fromElement
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1822](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L1822)
+[src/shapes/Text/Text.ts:1822](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1822)
 
 ___
 
 ### fromObject
 
-▸ **fromObject**\<`T`, `S`\>(`object`): `Promise`\<`S`\>
+**fromObject**\<`T`, `S`\>(`object`): `Promise`\<`S`\>
 
 Returns FabricText instance from an object representation
 
@@ -11123,13 +11093,13 @@ ITextClickBehavior.fromObject
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1899](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L1899)
+[src/shapes/Text/Text.ts:1899](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1899)
 
 ___
 
 ### getDefaults
 
-▸ **getDefaults**(): `Object`
+**getDefaults**(): `Object`
 
 #### Returns
 
@@ -11141,4 +11111,4 @@ ITextClickBehavior.getDefaults
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:201](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/IText/IText.ts#L201)
+[src/shapes/IText/IText.ts:201](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L201)

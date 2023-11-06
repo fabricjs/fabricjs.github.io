@@ -10,7 +10,7 @@
 
 ### constructor
 
-• **new CanvasDOMManager**(`arg0?`, `«destructured»?`): [`CanvasDOMManager`](/apidocs/classes/CanvasDOMManager.md)
+**new CanvasDOMManager**(`arg0?`, `«destructured»?`): [`CanvasDOMManager`](/apidocs/classes/CanvasDOMManager.md)
 
 #### Parameters
 
@@ -31,23 +31,23 @@
 
 #### Defined in
 
-[src/canvas/DOMManagers/CanvasDOMManager.ts:18](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/DOMManagers/CanvasDOMManager.ts#L18)
+[src/canvas/DOMManagers/CanvasDOMManager.ts:18](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/DOMManagers/CanvasDOMManager.ts#L18)
 
 ## Properties
 
 ### container
 
-• **container**: `HTMLDivElement`
+ **container**: `HTMLDivElement`
 
 #### Defined in
 
-[src/canvas/DOMManagers/CanvasDOMManager.ts:16](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/DOMManagers/CanvasDOMManager.ts#L16)
+[src/canvas/DOMManagers/CanvasDOMManager.ts:16](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/DOMManagers/CanvasDOMManager.ts#L16)
 
 ___
 
 ### lower
 
-• **lower**: `CanvasItem`
+ **lower**: `CanvasItem`
 
 #### Inherited from
 
@@ -55,23 +55,23 @@ ___
 
 #### Defined in
 
-[src/canvas/DOMManagers/StaticCanvasDOMManager.ts:22](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/DOMManagers/StaticCanvasDOMManager.ts#L22)
+[src/canvas/DOMManagers/StaticCanvasDOMManager.ts:22](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/DOMManagers/StaticCanvasDOMManager.ts#L22)
 
 ___
 
 ### upper
 
-• **upper**: `CanvasItem`
+ **upper**: `CanvasItem`
 
 #### Defined in
 
-[src/canvas/DOMManagers/CanvasDOMManager.ts:15](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/DOMManagers/CanvasDOMManager.ts#L15)
+[src/canvas/DOMManagers/CanvasDOMManager.ts:15](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/DOMManagers/CanvasDOMManager.ts#L15)
 
 ## Methods
 
 ### applyCanvasStyle
 
-▸ **applyCanvasStyle**(`element`, `«destructured»`): `void`
+**applyCanvasStyle**(`element`, `«destructured»`): `void`
 
 #### Parameters
 
@@ -87,13 +87,13 @@ ___
 
 #### Defined in
 
-[src/canvas/DOMManagers/CanvasDOMManager.ts:79](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/DOMManagers/CanvasDOMManager.ts#L79)
+[src/canvas/DOMManagers/CanvasDOMManager.ts:79](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/DOMManagers/CanvasDOMManager.ts#L79)
 
 ___
 
 ### calcOffset
 
-▸ **calcOffset**(): `Object`
+**calcOffset**(): `Object`
 
 Calculates canvas element offset relative to the document
 
@@ -112,13 +112,13 @@ Calculates canvas element offset relative to the document
 
 #### Defined in
 
-[src/canvas/DOMManagers/StaticCanvasDOMManager.ts:71](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/DOMManagers/StaticCanvasDOMManager.ts#L71)
+[src/canvas/DOMManagers/StaticCanvasDOMManager.ts:71](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/DOMManagers/StaticCanvasDOMManager.ts#L71)
 
 ___
 
 ### cleanupDOM
 
-▸ **cleanupDOM**(`size`): `void`
+**cleanupDOM**(`size`): `void`
 
 #### Parameters
 
@@ -136,13 +136,13 @@ ___
 
 #### Defined in
 
-[src/canvas/DOMManagers/CanvasDOMManager.ts:104](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/DOMManagers/CanvasDOMManager.ts#L104)
+[src/canvas/DOMManagers/CanvasDOMManager.ts:104](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/DOMManagers/CanvasDOMManager.ts#L104)
 
 ___
 
 ### createContainerElement
 
-▸ **createContainerElement**(): `HTMLDivElement`
+**createContainerElement**(): `HTMLDivElement`
 
 #### Returns
 
@@ -150,13 +150,13 @@ ___
 
 #### Defined in
 
-[src/canvas/DOMManagers/CanvasDOMManager.ts:65](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/DOMManagers/CanvasDOMManager.ts#L65)
+[src/canvas/DOMManagers/CanvasDOMManager.ts:65](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/DOMManagers/CanvasDOMManager.ts#L65)
 
 ___
 
 ### createLowerCanvas
 
-▸ **createLowerCanvas**(`arg0?`): `HTMLCanvasElement`
+**createLowerCanvas**(`arg0?`): `HTMLCanvasElement`
 
 #### Parameters
 
@@ -174,13 +174,13 @@ ___
 
 #### Defined in
 
-[src/canvas/DOMManagers/StaticCanvasDOMManager.ts:29](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/DOMManagers/StaticCanvasDOMManager.ts#L29)
+[src/canvas/DOMManagers/StaticCanvasDOMManager.ts:29](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/DOMManagers/StaticCanvasDOMManager.ts#L29)
 
 ___
 
 ### createUpperCanvas
 
-▸ **createUpperCanvas**(): `HTMLCanvasElement`
+**createUpperCanvas**(): `HTMLCanvasElement`
 
 #### Returns
 
@@ -188,13 +188,13 @@ ___
 
 #### Defined in
 
-[src/canvas/DOMManagers/CanvasDOMManager.ts:50](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/DOMManagers/CanvasDOMManager.ts#L50)
+[src/canvas/DOMManagers/CanvasDOMManager.ts:50](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/DOMManagers/CanvasDOMManager.ts#L50)
 
 ___
 
 ### dispose
 
-▸ **dispose**(): `void`
+**dispose**(): `void`
 
 #### Returns
 
@@ -206,13 +206,13 @@ ___
 
 #### Defined in
 
-[src/canvas/DOMManagers/CanvasDOMManager.ts:116](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/DOMManagers/CanvasDOMManager.ts#L116)
+[src/canvas/DOMManagers/CanvasDOMManager.ts:116](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/DOMManagers/CanvasDOMManager.ts#L116)
 
 ___
 
 ### setCSSDimensions
 
-▸ **setCSSDimensions**(`size`): `void`
+**setCSSDimensions**(`size`): `void`
 
 #### Parameters
 
@@ -230,13 +230,13 @@ ___
 
 #### Defined in
 
-[src/canvas/DOMManagers/CanvasDOMManager.ts:98](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/DOMManagers/CanvasDOMManager.ts#L98)
+[src/canvas/DOMManagers/CanvasDOMManager.ts:98](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/DOMManagers/CanvasDOMManager.ts#L98)
 
 ___
 
 ### setDimensions
 
-▸ **setDimensions**(`size`, `retinaScaling`): `void`
+**setDimensions**(`size`, `retinaScaling`): `void`
 
 #### Parameters
 
@@ -255,4 +255,4 @@ ___
 
 #### Defined in
 
-[src/canvas/DOMManagers/CanvasDOMManager.ts:92](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/DOMManagers/CanvasDOMManager.ts#L92)
+[src/canvas/DOMManagers/CanvasDOMManager.ts:92](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/DOMManagers/CanvasDOMManager.ts#L92)

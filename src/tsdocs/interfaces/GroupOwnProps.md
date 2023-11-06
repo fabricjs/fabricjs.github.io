@@ -12,28 +12,28 @@
 
 ### interactive
 
-• **interactive**: `boolean`
+ **interactive**: `boolean`
 
 #### Defined in
 
-[src/shapes/Group.ts:86](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L86)
+[src/shapes/Group.ts:86](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L86)
 
 ___
 
 ### layout
 
-• **layout**: [`LayoutStrategy`](/apidocs/modules.md#layoutstrategy)
+ **layout**: [`LayoutStrategy`](/apidocs/modules.md#layoutstrategy)
 
 #### Defined in
 
-[src/shapes/Group.ts:84](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L84)
+[src/shapes/Group.ts:84](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L84)
 
 ___
 
 ### subTargetCheck
 
-• **subTargetCheck**: `boolean`
+ **subTargetCheck**: `boolean`
 
 #### Defined in
 
-[src/shapes/Group.ts:85](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L85)
+[src/shapes/Group.ts:85](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L85)

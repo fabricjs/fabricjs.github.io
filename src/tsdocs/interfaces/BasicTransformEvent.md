@@ -16,7 +16,7 @@
 
 ### e
 
-• **e**: `E`
+ **e**: `E`
 
 #### Inherited from
 
@@ -24,24 +24,24 @@
 
 #### Defined in
 
-[src/EventTypeDefs.ts:84](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L84)
+[src/EventTypeDefs.ts:84](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L84)
 
 ___
 
 ### pointer
 
-• **pointer**: [`Point`](/apidocs/classes/Point.md)
+ **pointer**: [`Point`](/apidocs/classes/Point.md)
 
 #### Defined in
 
-[src/EventTypeDefs.ts:94](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L94)
+[src/EventTypeDefs.ts:94](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L94)
 
 ___
 
 ### transform
 
-• **transform**: [`Transform`](/apidocs/modules.md#transform)
+ **transform**: [`Transform`](/apidocs/modules.md#transform)
 
 #### Defined in
 
-[src/EventTypeDefs.ts:93](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L93)
+[src/EventTypeDefs.ts:93](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L93)

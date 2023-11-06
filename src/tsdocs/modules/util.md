@@ -9,7 +9,7 @@
 
 ### AnimationOptions
 
-Ƭ **AnimationOptions**\<`T`\>: `T` extends [`TColorArg`](/apidocs/modules.md#tcolorarg) ? [`ColorAnimationOptions`](/apidocs/modules/util.md#coloranimationoptions) : `T` extends `number`[] ? [`ArrayAnimationOptions`](/apidocs/modules/util.md#arrayanimationoptions) : [`ValueAnimationOptions`](/apidocs/modules/util.md#valueanimationoptions)
+ **AnimationOptions**\<`T`\>: `T` extends [`TColorArg`](/apidocs/modules.md#tcolorarg) ? [`ColorAnimationOptions`](/apidocs/modules/util.md#coloranimationoptions) : `T` extends `number`[] ? [`ArrayAnimationOptions`](/apidocs/modules/util.md#arrayanimationoptions) : [`ValueAnimationOptions`](/apidocs/modules/util.md#valueanimationoptions)
 
 #### Type parameters
 
@@ -19,63 +19,63 @@
 
 #### Defined in
 
-[src/util/animation/types.ts:132](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/animation/types.ts#L132)
+[src/util/animation/types.ts:132](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L132)
 
 ___
 
 ### AnimationState
 
-Ƭ **AnimationState**: ``"pending"`` \| ``"running"`` \| ``"completed"`` \| ``"aborted"``
+ **AnimationState**: ``"pending"`` \| ``"running"`` \| ``"completed"`` \| ``"aborted"``
 
 #### Defined in
 
-[src/util/animation/types.ts:4](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/animation/types.ts#L4)
+[src/util/animation/types.ts:4](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L4)
 
 ___
 
 ### ArrayAnimationOptions
 
-Ƭ **ArrayAnimationOptions**: [`TAnimationOptions`](/apidocs/modules/util.md#tanimationoptions)\<`number`[]\>
+ **ArrayAnimationOptions**: [`TAnimationOptions`](/apidocs/modules/util.md#tanimationoptions)\<`number`[]\>
 
 #### Defined in
 
-[src/util/animation/types.ts:124](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/animation/types.ts#L124)
+[src/util/animation/types.ts:124](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L124)
 
 ___
 
 ### ColorAnimationOptions
 
-Ƭ **ColorAnimationOptions**: [`TAnimationOptions`](/apidocs/modules/util.md#tanimationoptions)\<[`TColorArg`](/apidocs/modules.md#tcolorarg), `string`, `number`[]\>
+ **ColorAnimationOptions**: [`TAnimationOptions`](/apidocs/modules/util.md#tanimationoptions)\<[`TColorArg`](/apidocs/modules.md#tcolorarg), `string`, `number`[]\>
 
 #### Defined in
 
-[src/util/animation/types.ts:126](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/animation/types.ts#L126)
+[src/util/animation/types.ts:126](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L126)
 
 ___
 
 ### EnlivenObjectOptions
 
-Ƭ **EnlivenObjectOptions**: [`Abortable`](/apidocs/modules.md#abortable) & \{ `reviver?`: \<T\>(`serializedObj`: `Record`\<`string`, `any`\>, `instance`: `T`) => `void`  }
+ **EnlivenObjectOptions**: [`Abortable`](/apidocs/modules.md#abortable) & \{ `reviver?`: \<T\>(`serializedObj`: `Record`\<`string`, `any`\>, `instance`: `T`) => `void`  }
 
 #### Defined in
 
-[src/util/misc/objectEnlive.ts:59](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/objectEnlive.ts#L59)
+[src/util/misc/objectEnlive.ts:59](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/objectEnlive.ts#L59)
 
 ___
 
 ### LoadImageOptions
 
-Ƭ **LoadImageOptions**: [`Abortable`](/apidocs/modules.md#abortable) & \{ `crossOrigin?`: [`TCrossOrigin`](/apidocs/modules.md#tcrossorigin)  }
+ **LoadImageOptions**: [`Abortable`](/apidocs/modules.md#abortable) & \{ `crossOrigin?`: [`TCrossOrigin`](/apidocs/modules.md#tcrossorigin)  }
 
 #### Defined in
 
-[src/util/misc/objectEnlive.ts:11](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/objectEnlive.ts#L11)
+[src/util/misc/objectEnlive.ts:11](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/objectEnlive.ts#L11)
 
 ___
 
 ### TAbortCallback
 
-Ƭ **TAbortCallback**\<`T`\>: [`TOnAnimationChangeCallback`](/apidocs/modules/util.md#tonanimationchangecallback)\<`T`, `boolean`\>
+ **TAbortCallback**\<`T`\>: [`TOnAnimationChangeCallback`](/apidocs/modules/util.md#tonanimationchangecallback)\<`T`, `boolean`\>
 
 Called on each step to determine if animation should abort
 
@@ -87,13 +87,13 @@ Called on each step to determine if animation should abort
 
 #### Defined in
 
-[src/util/animation/types.ts:23](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/animation/types.ts#L23)
+[src/util/animation/types.ts:23](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L23)
 
 ___
 
 ### TAnimation
 
-Ƭ **TAnimation**\<`T`\>: `T` extends [`TColorArg`](/apidocs/modules.md#tcolorarg) ? `ColorAnimation` : `T` extends `number`[] ? `ArrayAnimation` : `ValueAnimation`
+ **TAnimation**\<`T`\>: `T` extends [`TColorArg`](/apidocs/modules.md#tcolorarg) ? `ColorAnimation` : `T` extends `number`[] ? `ArrayAnimation` : `ValueAnimation`
 
 #### Type parameters
 
@@ -103,13 +103,13 @@ ___
 
 #### Defined in
 
-[src/util/animation/animate.ts:11](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/animation/animate.ts#L11)
+[src/util/animation/animate.ts:11](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/animate.ts#L11)
 
 ___
 
 ### TAnimationBaseOptions
 
-Ƭ **TAnimationBaseOptions**\<`T`\>: `Object`
+ **TAnimationBaseOptions**\<`T`\>: `Object`
 
 #### Type parameters
 
@@ -128,13 +128,13 @@ ___
 
 #### Defined in
 
-[src/util/animation/types.ts:50](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/animation/types.ts#L50)
+[src/util/animation/types.ts:50](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L50)
 
 ___
 
 ### TAnimationCallbacks
 
-Ƭ **TAnimationCallbacks**\<`T`\>: `Object`
+ **TAnimationCallbacks**\<`T`\>: `Object`
 
 #### Type parameters
 
@@ -153,13 +153,13 @@ ___
 
 #### Defined in
 
-[src/util/animation/types.ts:75](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/animation/types.ts#L75)
+[src/util/animation/types.ts:75](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L75)
 
 ___
 
 ### TAnimationOptions
 
-Ƭ **TAnimationOptions**\<`T`, `TCallback`, `TEasing`\>: `Partial`\<[`TAnimationBaseOptions`](/apidocs/modules/util.md#tanimationbaseoptions)\<`TEasing`\> & [`TAnimationCallbacks`](/apidocs/modules/util.md#tanimationcallbacks)\<`TCallback`\> & \{ `endValue`: `T` ; `startValue`: `T`  }\>
+ **TAnimationOptions**\<`T`, `TCallback`, `TEasing`\>: `Partial`\<[`TAnimationBaseOptions`](/apidocs/modules/util.md#tanimationbaseoptions)\<`TEasing`\> & [`TAnimationCallbacks`](/apidocs/modules/util.md#tanimationcallbacks)\<`TCallback`\> & \{ `endValue`: `T` ; `startValue`: `T`  }\>
 
 #### Type parameters
 
@@ -171,23 +171,23 @@ ___
 
 #### Defined in
 
-[src/util/animation/types.ts:105](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/animation/types.ts#L105)
+[src/util/animation/types.ts:105](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L105)
 
 ___
 
 ### TArcCommand
 
-Ƭ **TArcCommand**: `TCommand8`\<[`TParsedArcCommand`](/apidocs/modules/util.md#tparsedarccommand)\> \| [`TArcCommandSingleFlag`](/apidocs/modules/util.md#tarccommandsingleflag)\<[`TParsedArcCommand`](/apidocs/modules/util.md#tparsedarccommand)\>
+ **TArcCommand**: `TCommand8`\<[`TParsedArcCommand`](/apidocs/modules/util.md#tparsedarccommand)\> \| [`TArcCommandSingleFlag`](/apidocs/modules/util.md#tarccommandsingleflag)\<[`TParsedArcCommand`](/apidocs/modules/util.md#tparsedarccommand)\>
 
 #### Defined in
 
-[src/util/path/typedefs.ts:258](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L258)
+[src/util/path/typedefs.ts:258](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L258)
 
 ___
 
 ### TArcCommandSingleFlag
 
-Ƭ **TArcCommandSingleFlag**\<`T`\>: \`$\{T[0]} $\{T[1]} $\{T[2]} $\{T[3]} $\{T[4]}$\{T[5]} $\{T[6]} $\{T[7]}\`
+ **TArcCommandSingleFlag**\<`T`\>: \`$\{T[0]} $\{T[1]} $\{T[2]} $\{T[3]} $\{T[4]}$\{T[5]} $\{T[6]} $\{T[7]}\`
 
 #### Type parameters
 
@@ -197,13 +197,13 @@ ___
 
 #### Defined in
 
-[src/util/path/typedefs.ts:256](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L256)
+[src/util/path/typedefs.ts:256](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L256)
 
 ___
 
 ### TBaseAnimationOptions
 
-Ƭ **TBaseAnimationOptions**\<`T`, `TCallback`, `TEasing`\>: `Partial`\<[`TAnimationBaseOptions`](/apidocs/modules/util.md#tanimationbaseoptions)\<`TEasing`\> & [`TAnimationCallbacks`](/apidocs/modules/util.md#tanimationcallbacks)\<`TCallback`\>\> & \{ `byValue`: `T` ; `startValue`: `T`  }
+ **TBaseAnimationOptions**\<`T`, `TCallback`, `TEasing`\>: `Partial`\<[`TAnimationBaseOptions`](/apidocs/modules/util.md#tanimationbaseoptions)\<`TEasing`\> & [`TAnimationCallbacks`](/apidocs/modules/util.md#tanimationcallbacks)\<`TCallback`\>\> & \{ `byValue`: `T` ; `startValue`: `T`  }
 
 #### Type parameters
 
@@ -215,77 +215,77 @@ ___
 
 #### Defined in
 
-[src/util/animation/types.ts:98](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/animation/types.ts#L98)
+[src/util/animation/types.ts:98](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L98)
 
 ___
 
 ### TClosePathCommand
 
-Ƭ **TClosePathCommand**: `TCommand1`\<[`TParsedClosePathCommand`](/apidocs/modules/util.md#tparsedclosepathcommand)\>
+ **TClosePathCommand**: `TCommand1`\<[`TParsedClosePathCommand`](/apidocs/modules/util.md#tparsedclosepathcommand)\>
 
 #### Defined in
 
-[src/util/path/typedefs.ts:147](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L147)
+[src/util/path/typedefs.ts:147](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L147)
 
 ___
 
 ### TComplexParsedCommand
 
-Ƭ **TComplexParsedCommand**: [`TParsedMoveToCommand`](/apidocs/modules/util.md#tparsedmovetocommand) \| [`TParsedLineCommand`](/apidocs/modules/util.md#tparsedlinecommand) \| [`TParsedHorizontalLineCommand`](/apidocs/modules/util.md#tparsedhorizontallinecommand) \| [`TParsedVerticalLineCommand`](/apidocs/modules/util.md#tparsedverticallinecommand) \| [`TParsedClosePathCommand`](/apidocs/modules/util.md#tparsedclosepathcommand) \| [`TParsedCubicCurveCommand`](/apidocs/modules/util.md#tparsedcubiccurvecommand) \| [`TParsedCubicCurveShortcutCommand`](/apidocs/modules/util.md#tparsedcubiccurveshortcutcommand) \| [`TParsedQuadraticCurveCommand`](/apidocs/modules/util.md#tparsedquadraticcurvecommand) \| [`TParsedQuadraticCurveShortcutCommand`](/apidocs/modules/util.md#tparsedquadraticcurveshortcutcommand) \| [`TParsedArcCommand`](/apidocs/modules/util.md#tparsedarccommand)
+ **TComplexParsedCommand**: [`TParsedMoveToCommand`](/apidocs/modules/util.md#tparsedmovetocommand) \| [`TParsedLineCommand`](/apidocs/modules/util.md#tparsedlinecommand) \| [`TParsedHorizontalLineCommand`](/apidocs/modules/util.md#tparsedhorizontallinecommand) \| [`TParsedVerticalLineCommand`](/apidocs/modules/util.md#tparsedverticallinecommand) \| [`TParsedClosePathCommand`](/apidocs/modules/util.md#tparsedclosepathcommand) \| [`TParsedCubicCurveCommand`](/apidocs/modules/util.md#tparsedcubiccurvecommand) \| [`TParsedCubicCurveShortcutCommand`](/apidocs/modules/util.md#tparsedcubiccurveshortcutcommand) \| [`TParsedQuadraticCurveCommand`](/apidocs/modules/util.md#tparsedquadraticcurvecommand) \| [`TParsedQuadraticCurveShortcutCommand`](/apidocs/modules/util.md#tparsedquadraticcurveshortcutcommand) \| [`TParsedArcCommand`](/apidocs/modules/util.md#tparsedarccommand)
 
 Any old valid SVG path command
 
 #### Defined in
 
-[src/util/path/typedefs.ts:269](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L269)
+[src/util/path/typedefs.ts:269](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L269)
 
 ___
 
 ### TComplexPathData
 
-Ƭ **TComplexPathData**: [`TComplexParsedCommand`](/apidocs/modules/util.md#tcomplexparsedcommand)[]
+ **TComplexPathData**: [`TComplexParsedCommand`](/apidocs/modules/util.md#tcomplexparsedcommand)[]
 
 A series of path commands
 
 #### Defined in
 
-[src/util/path/typedefs.ts:284](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L284)
+[src/util/path/typedefs.ts:284](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L284)
 
 ___
 
 ### TComposeMatrixArgs
 
-Ƭ **TComposeMatrixArgs**: [`TTranslateMatrixArgs`](/apidocs/modules/util.md#ttranslatematrixargs) & [`TRotateMatrixArgs`](/apidocs/modules/util.md#trotatematrixargs) & [`TScaleMatrixArgs`](/apidocs/modules/util.md#tscalematrixargs)
+ **TComposeMatrixArgs**: [`TTranslateMatrixArgs`](/apidocs/modules/util.md#ttranslatematrixargs) & [`TRotateMatrixArgs`](/apidocs/modules/util.md#trotatematrixargs) & [`TScaleMatrixArgs`](/apidocs/modules/util.md#tscalematrixargs)
 
 #### Defined in
 
-[src/util/misc/matrix.ts:27](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/matrix.ts#L27)
+[src/util/misc/matrix.ts:27](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/matrix.ts#L27)
 
 ___
 
 ### TCubicCurveCommand
 
-Ƭ **TCubicCurveCommand**: `TCommand7`\<[`TParsedCubicCurveCommand`](/apidocs/modules/util.md#tparsedcubiccurvecommand)\>
+ **TCubicCurveCommand**: `TCommand7`\<[`TParsedCubicCurveCommand`](/apidocs/modules/util.md#tparsedcubiccurvecommand)\>
 
 #### Defined in
 
-[src/util/path/typedefs.ts:171](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L171)
+[src/util/path/typedefs.ts:171](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L171)
 
 ___
 
 ### TCubicCurveShortcutCommand
 
-Ƭ **TCubicCurveShortcutCommand**: `TCommand5`\<[`TParsedCubicCurveShortcutCommand`](/apidocs/modules/util.md#tparsedcubiccurveshortcutcommand)\>
+ **TCubicCurveShortcutCommand**: `TCommand5`\<[`TParsedCubicCurveShortcutCommand`](/apidocs/modules/util.md#tparsedcubiccurveshortcutcommand)\>
 
 #### Defined in
 
-[src/util/path/typedefs.ts:191](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L191)
+[src/util/path/typedefs.ts:191](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L191)
 
 ___
 
 ### TCurveInfo
 
-Ƭ **TCurveInfo**\<`C`\>: [`TPathSegmentInfoCommon`](/apidocs/modules/util.md#tpathsegmentinfocommon)\<`C`\> & \{ `angleFinder`: (`pct`: `number`) => `number` ; `iterator`: (`pct`: `number`) => [`Point`](/apidocs/classes/Point.md) ; `length`: `number`  }
+ **TCurveInfo**\<`C`\>: [`TPathSegmentInfoCommon`](/apidocs/modules/util.md#tpathsegmentinfocommon)\<`C`\> & \{ `angleFinder`: (`pct`: `number`) => `number` ; `iterator`: (`pct`: `number`) => [`Point`](/apidocs/classes/Point.md) ; `length`: `number`  }
 
 #### Type parameters
 
@@ -295,13 +295,13 @@ ___
 
 #### Defined in
 
-[src/util/path/typedefs.ts:11](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L11)
+[src/util/path/typedefs.ts:11](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L11)
 
 ___
 
 ### TEasingFunction
 
-Ƭ **TEasingFunction**\<`T`\>: `T` extends `number`[] ? (`timeElapsed`: `number`, `startValue`: `number`, `byValue`: `number`, `duration`: `number`, `index`: `number`) => `number` : (`timeElapsed`: `number`, `startValue`: `number`, `byValue`: `number`, `duration`: `number`) => `number`
+ **TEasingFunction**\<`T`\>: `T` extends `number`[] ? (`timeElapsed`: `number`, `startValue`: `number`, `byValue`: `number`, `duration`: `number`, `index`: `number`) => `number` : (`timeElapsed`: `number`, `startValue`: `number`, `byValue`: `number`, `duration`: `number`) => `number`
 
 An easing function used to calculate the current value
 
@@ -329,53 +329,53 @@ in ms
 
 #### Defined in
 
-[src/util/animation/types.ts:35](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/animation/types.ts#L35)
+[src/util/animation/types.ts:35](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L35)
 
 ___
 
 ### TEndPathInfo
 
-Ƭ **TEndPathInfo**: [`TPathSegmentInfoCommon`](/apidocs/modules/util.md#tpathsegmentinfocommon)\<``"Z"``\> & \{ `destX`: `number` ; `destY`: `number`  }
+ **TEndPathInfo**: [`TPathSegmentInfoCommon`](/apidocs/modules/util.md#tpathsegmentinfocommon)\<``"Z"``\> & \{ `destX`: `number` ; `destY`: `number`  }
 
 #### Defined in
 
-[src/util/path/typedefs.ts:28](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L28)
+[src/util/path/typedefs.ts:28](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L28)
 
 ___
 
 ### THorizontalLineCommand
 
-Ƭ **THorizontalLineCommand**: `TCommand2`\<[`TParsedHorizontalLineCommand`](/apidocs/modules/util.md#tparsedhorizontallinecommand)\>
+ **THorizontalLineCommand**: `TCommand2`\<[`TParsedHorizontalLineCommand`](/apidocs/modules/util.md#tparsedhorizontallinecommand)\>
 
 #### Defined in
 
-[src/util/path/typedefs.ts:131](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L131)
+[src/util/path/typedefs.ts:131](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L131)
 
 ___
 
 ### TLineCommand
 
-Ƭ **TLineCommand**: `TCommand3`\<[`TParsedLineCommand`](/apidocs/modules/util.md#tparsedlinecommand)\>
+ **TLineCommand**: `TCommand3`\<[`TParsedLineCommand`](/apidocs/modules/util.md#tparsedlinecommand)\>
 
 #### Defined in
 
-[src/util/path/typedefs.ts:123](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L123)
+[src/util/path/typedefs.ts:123](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L123)
 
 ___
 
 ### TMoveToCommand
 
-Ƭ **TMoveToCommand**: `TCommand3`\<[`TParsedMoveToCommand`](/apidocs/modules/util.md#tparsedmovetocommand)\>
+ **TMoveToCommand**: `TCommand3`\<[`TParsedMoveToCommand`](/apidocs/modules/util.md#tparsedmovetocommand)\>
 
 #### Defined in
 
-[src/util/path/typedefs.ts:115](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L115)
+[src/util/path/typedefs.ts:115](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L115)
 
 ___
 
 ### TOnAnimationChangeCallback
 
-Ƭ **TOnAnimationChangeCallback**\<`T`, `R`\>: (`value`: `T`, `valueProgress`: `number`, `durationProgress`: `number`) => `R`
+ **TOnAnimationChangeCallback**\<`T`, `R`\>: (`value`: `T`, `valueProgress`: `number`, `durationProgress`: `number`) => `R`
 
 #### Type parameters
 
@@ -386,7 +386,7 @@ ___
 
 #### Type declaration
 
-▸ (`value`, `valueProgress`, `durationProgress`): `R`
+(`value`, `valueProgress`, `durationProgress`): `R`
 
 Callback called every frame
 
@@ -404,328 +404,328 @@ Callback called every frame
 
 #### Defined in
 
-[src/util/animation/types.ts:13](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/animation/types.ts#L13)
+[src/util/animation/types.ts:13](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L13)
 
 ___
 
 ### TParsedAbsoluteArcCommand
 
-Ƭ **TParsedAbsoluteArcCommand**: [command: "A", radiusX: number, radiusY: number, rotation: TRadian, largeArc: 0 \| 1, sweep: 0 \| 1, endX: number, endY: number]
+ **TParsedAbsoluteArcCommand**: [command: "A", radiusX: number, radiusY: number, rotation: TRadian, largeArc: 0 \| 1, sweep: 0 \| 1, endX: number, endY: number]
 
 #### Defined in
 
-[src/util/path/typedefs.ts:231](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L231)
+[src/util/path/typedefs.ts:231](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L231)
 
 ___
 
 ### TParsedAbsoluteClosePathCommand
 
-Ƭ **TParsedAbsoluteClosePathCommand**: [command: "Z"]
+ **TParsedAbsoluteClosePathCommand**: [command: "Z"]
 
 #### Defined in
 
-[src/util/path/typedefs.ts:141](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L141)
+[src/util/path/typedefs.ts:141](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L141)
 
 ___
 
 ### TParsedAbsoluteCubicCurveCommand
 
-Ƭ **TParsedAbsoluteCubicCurveCommand**: [command: "C", controlPoint1X: number, controlPoint1Y: number, controlPoint2X: number, controlPoint2Y: number, endX: number, endY: number]
+ **TParsedAbsoluteCubicCurveCommand**: [command: "C", controlPoint1X: number, controlPoint1Y: number, controlPoint2X: number, controlPoint2Y: number, endX: number, endY: number]
 
 #### Defined in
 
-[src/util/path/typedefs.ts:149](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L149)
+[src/util/path/typedefs.ts:149](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L149)
 
 ___
 
 ### TParsedAbsoluteCubicCurveShortcutCommand
 
-Ƭ **TParsedAbsoluteCubicCurveShortcutCommand**: [command: "S", controlPoint2X: number, controlPoint2Y: number, endX: number, endY: number]
+ **TParsedAbsoluteCubicCurveShortcutCommand**: [command: "S", controlPoint2X: number, controlPoint2Y: number, endX: number, endY: number]
 
 #### Defined in
 
-[src/util/path/typedefs.ts:173](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L173)
+[src/util/path/typedefs.ts:173](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L173)
 
 ___
 
 ### TParsedAbsoluteHorizontalLineCommand
 
-Ƭ **TParsedAbsoluteHorizontalLineCommand**: [command: "H", x: number]
+ **TParsedAbsoluteHorizontalLineCommand**: [command: "H", x: number]
 
 #### Defined in
 
-[src/util/path/typedefs.ts:125](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L125)
+[src/util/path/typedefs.ts:125](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L125)
 
 ___
 
 ### TParsedAbsoluteLineCommand
 
-Ƭ **TParsedAbsoluteLineCommand**: [command: "L", x: number, y: number]
+ **TParsedAbsoluteLineCommand**: [command: "L", x: number, y: number]
 
 #### Defined in
 
-[src/util/path/typedefs.ts:117](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L117)
+[src/util/path/typedefs.ts:117](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L117)
 
 ___
 
 ### TParsedAbsoluteMoveToCommand
 
-Ƭ **TParsedAbsoluteMoveToCommand**: [command: "M", x: number, y: number]
+ **TParsedAbsoluteMoveToCommand**: [command: "M", x: number, y: number]
 
 Begin parsed SVG path commands
 Read about commands at [https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths|MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths|MDN)
 
 #### Defined in
 
-[src/util/path/typedefs.ts:105](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L105)
+[src/util/path/typedefs.ts:105](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L105)
 
 ___
 
 ### TParsedAbsoluteQuadraticCurveCommand
 
-Ƭ **TParsedAbsoluteQuadraticCurveCommand**: [command: "Q", controlPointX: number, controlPointY: number, endX: number, endY: number]
+ **TParsedAbsoluteQuadraticCurveCommand**: [command: "Q", controlPointX: number, controlPointY: number, endX: number, endY: number]
 
 #### Defined in
 
-[src/util/path/typedefs.ts:194](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L194)
+[src/util/path/typedefs.ts:194](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L194)
 
 ___
 
 ### TParsedAbsoluteQuadraticCurveShortcutCommand
 
-Ƭ **TParsedAbsoluteQuadraticCurveShortcutCommand**: [command: "T", endX: number, endY: number]
+ **TParsedAbsoluteQuadraticCurveShortcutCommand**: [command: "T", endX: number, endY: number]
 
 #### Defined in
 
-[src/util/path/typedefs.ts:214](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L214)
+[src/util/path/typedefs.ts:214](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L214)
 
 ___
 
 ### TParsedAbsoluteVerticalLineCommand
 
-Ƭ **TParsedAbsoluteVerticalLineCommand**: [command: "V", y: number]
+ **TParsedAbsoluteVerticalLineCommand**: [command: "V", y: number]
 
 #### Defined in
 
-[src/util/path/typedefs.ts:133](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L133)
+[src/util/path/typedefs.ts:133](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L133)
 
 ___
 
 ### TParsedArcCommand
 
-Ƭ **TParsedArcCommand**: [`TParsedAbsoluteArcCommand`](/apidocs/modules/util.md#tparsedabsolutearccommand) \| [`TParsedRelativeArcCommand`](/apidocs/modules/util.md#tparsedrelativearccommand)
+ **TParsedArcCommand**: [`TParsedAbsoluteArcCommand`](/apidocs/modules/util.md#tparsedabsolutearccommand) \| [`TParsedRelativeArcCommand`](/apidocs/modules/util.md#tparsedrelativearccommand)
 
 #### Defined in
 
-[src/util/path/typedefs.ts:252](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L252)
+[src/util/path/typedefs.ts:252](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L252)
 
 ___
 
 ### TParsedClosePathCommand
 
-Ƭ **TParsedClosePathCommand**: [`TParsedAbsoluteClosePathCommand`](/apidocs/modules/util.md#tparsedabsoluteclosepathcommand) \| [`TParsedRelativeClosePathCommand`](/apidocs/modules/util.md#tparsedrelativeclosepathcommand)
+ **TParsedClosePathCommand**: [`TParsedAbsoluteClosePathCommand`](/apidocs/modules/util.md#tparsedabsoluteclosepathcommand) \| [`TParsedRelativeClosePathCommand`](/apidocs/modules/util.md#tparsedrelativeclosepathcommand)
 
 #### Defined in
 
-[src/util/path/typedefs.ts:143](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L143)
+[src/util/path/typedefs.ts:143](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L143)
 
 ___
 
 ### TParsedCommand
 
-Ƭ **TParsedCommand**: [command: string] \| [command: string, arg1: number] \| [command: string, arg1: number, arg2: number] \| [command: string, arg1: number, arg2: number, arg3: number] \| [command: string, arg1: number, arg2: number, arg3: number, arg4: number] \| [command: string, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number] \| [command: string, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number] \| [command: string, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number]
+ **TParsedCommand**: [command: string] \| [command: string, arg1: number] \| [command: string, arg1: number, arg2: number] \| [command: string, arg1: number, arg2: number, arg3: number] \| [command: string, arg1: number, arg2: number, arg3: number, arg4: number] \| [command: string, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number] \| [command: string, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number] \| [command: string, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number]
 
 A parsed command of any length (even impossible ones)
 
 #### Defined in
 
-[src/util/path/typedefs.ts:51](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L51)
+[src/util/path/typedefs.ts:51](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L51)
 
 ___
 
 ### TParsedCubicCurveCommand
 
-Ƭ **TParsedCubicCurveCommand**: [`TParsedAbsoluteCubicCurveCommand`](/apidocs/modules/util.md#tparsedabsolutecubiccurvecommand) \| [`TParsedRelativeCubicCurveCommand`](/apidocs/modules/util.md#tparsedrelativecubiccurvecommand)
+ **TParsedCubicCurveCommand**: [`TParsedAbsoluteCubicCurveCommand`](/apidocs/modules/util.md#tparsedabsolutecubiccurvecommand) \| [`TParsedRelativeCubicCurveCommand`](/apidocs/modules/util.md#tparsedrelativecubiccurvecommand)
 
 #### Defined in
 
-[src/util/path/typedefs.ts:167](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L167)
+[src/util/path/typedefs.ts:167](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L167)
 
 ___
 
 ### TParsedCubicCurveShortcutCommand
 
-Ƭ **TParsedCubicCurveShortcutCommand**: [`TParsedAbsoluteCubicCurveShortcutCommand`](/apidocs/modules/util.md#tparsedabsolutecubiccurveshortcutcommand) \| [`TParsedRelativeCubicCurveShortcutCommand`](/apidocs/modules/util.md#tparsedrelativecubiccurveshortcutcommand)
+ **TParsedCubicCurveShortcutCommand**: [`TParsedAbsoluteCubicCurveShortcutCommand`](/apidocs/modules/util.md#tparsedabsolutecubiccurveshortcutcommand) \| [`TParsedRelativeCubicCurveShortcutCommand`](/apidocs/modules/util.md#tparsedrelativecubiccurveshortcutcommand)
 
 #### Defined in
 
-[src/util/path/typedefs.ts:187](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L187)
+[src/util/path/typedefs.ts:187](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L187)
 
 ___
 
 ### TParsedHorizontalLineCommand
 
-Ƭ **TParsedHorizontalLineCommand**: [`TParsedAbsoluteHorizontalLineCommand`](/apidocs/modules/util.md#tparsedabsolutehorizontallinecommand) \| [`TParsedRelativeHorizontalLineCommand`](/apidocs/modules/util.md#tparsedrelativehorizontallinecommand)
+ **TParsedHorizontalLineCommand**: [`TParsedAbsoluteHorizontalLineCommand`](/apidocs/modules/util.md#tparsedabsolutehorizontallinecommand) \| [`TParsedRelativeHorizontalLineCommand`](/apidocs/modules/util.md#tparsedrelativehorizontallinecommand)
 
 #### Defined in
 
-[src/util/path/typedefs.ts:127](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L127)
+[src/util/path/typedefs.ts:127](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L127)
 
 ___
 
 ### TParsedLineCommand
 
-Ƭ **TParsedLineCommand**: [`TParsedAbsoluteLineCommand`](/apidocs/modules/util.md#tparsedabsolutelinecommand) \| [`TParsedRelativeLineCommand`](/apidocs/modules/util.md#tparsedrelativelinecommand)
+ **TParsedLineCommand**: [`TParsedAbsoluteLineCommand`](/apidocs/modules/util.md#tparsedabsolutelinecommand) \| [`TParsedRelativeLineCommand`](/apidocs/modules/util.md#tparsedrelativelinecommand)
 
 #### Defined in
 
-[src/util/path/typedefs.ts:119](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L119)
+[src/util/path/typedefs.ts:119](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L119)
 
 ___
 
 ### TParsedMoveToCommand
 
-Ƭ **TParsedMoveToCommand**: [`TParsedAbsoluteMoveToCommand`](/apidocs/modules/util.md#tparsedabsolutemovetocommand) \| [`TParsedRelativeMoveToCommand`](/apidocs/modules/util.md#tparsedrelativemovetocommand)
+ **TParsedMoveToCommand**: [`TParsedAbsoluteMoveToCommand`](/apidocs/modules/util.md#tparsedabsolutemovetocommand) \| [`TParsedRelativeMoveToCommand`](/apidocs/modules/util.md#tparsedrelativemovetocommand)
 
 #### Defined in
 
-[src/util/path/typedefs.ts:111](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L111)
+[src/util/path/typedefs.ts:111](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L111)
 
 ___
 
 ### TParsedQuadraticCurveCommand
 
-Ƭ **TParsedQuadraticCurveCommand**: [`TParsedAbsoluteQuadraticCurveCommand`](/apidocs/modules/util.md#tparsedabsolutequadraticcurvecommand) \| [`TParsedRelativeQuadraticCurveCommand`](/apidocs/modules/util.md#tparsedrelativequadraticcurvecommand)
+ **TParsedQuadraticCurveCommand**: [`TParsedAbsoluteQuadraticCurveCommand`](/apidocs/modules/util.md#tparsedabsolutequadraticcurvecommand) \| [`TParsedRelativeQuadraticCurveCommand`](/apidocs/modules/util.md#tparsedrelativequadraticcurvecommand)
 
 #### Defined in
 
-[src/util/path/typedefs.ts:208](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L208)
+[src/util/path/typedefs.ts:208](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L208)
 
 ___
 
 ### TParsedQuadraticCurveShortcutCommand
 
-Ƭ **TParsedQuadraticCurveShortcutCommand**: [`TParsedAbsoluteQuadraticCurveShortcutCommand`](/apidocs/modules/util.md#tparsedabsolutequadraticcurveshortcutcommand) \| [`TParsedRelativeQuadraticCurveShortcutCommand`](/apidocs/modules/util.md#tparsedrelativequadraticcurveshortcutcommand)
+ **TParsedQuadraticCurveShortcutCommand**: [`TParsedAbsoluteQuadraticCurveShortcutCommand`](/apidocs/modules/util.md#tparsedabsolutequadraticcurveshortcutcommand) \| [`TParsedRelativeQuadraticCurveShortcutCommand`](/apidocs/modules/util.md#tparsedrelativequadraticcurveshortcutcommand)
 
 #### Defined in
 
-[src/util/path/typedefs.ts:224](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L224)
+[src/util/path/typedefs.ts:224](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L224)
 
 ___
 
 ### TParsedRelativeArcCommand
 
-Ƭ **TParsedRelativeArcCommand**: [command: "a", radiusX: number, radiusY: number, rotation: TRadian, largeArc: 0 \| 1, sweep: 0 \| 1, endDX: number, endDY: number]
+ **TParsedRelativeArcCommand**: [command: "a", radiusX: number, radiusY: number, rotation: TRadian, largeArc: 0 \| 1, sweep: 0 \| 1, endDX: number, endDY: number]
 
 #### Defined in
 
-[src/util/path/typedefs.ts:241](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L241)
+[src/util/path/typedefs.ts:241](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L241)
 
 ___
 
 ### TParsedRelativeClosePathCommand
 
-Ƭ **TParsedRelativeClosePathCommand**: [command: "z"]
+ **TParsedRelativeClosePathCommand**: [command: "z"]
 
 #### Defined in
 
-[src/util/path/typedefs.ts:142](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L142)
+[src/util/path/typedefs.ts:142](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L142)
 
 ___
 
 ### TParsedRelativeCubicCurveCommand
 
-Ƭ **TParsedRelativeCubicCurveCommand**: [command: "c", controlPoint1DX: number, controlPoint1DY: number, controlPoint2DX: number, controlPoint2DY: number, endDX: number, endDY: number]
+ **TParsedRelativeCubicCurveCommand**: [command: "c", controlPoint1DX: number, controlPoint1DY: number, controlPoint2DX: number, controlPoint2DY: number, endDX: number, endDY: number]
 
 #### Defined in
 
-[src/util/path/typedefs.ts:158](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L158)
+[src/util/path/typedefs.ts:158](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L158)
 
 ___
 
 ### TParsedRelativeCubicCurveShortcutCommand
 
-Ƭ **TParsedRelativeCubicCurveShortcutCommand**: [command: "s", controlPoint2DX: number, controlPoint2DY: number, endDX: number, endDY: number]
+ **TParsedRelativeCubicCurveShortcutCommand**: [command: "s", controlPoint2DX: number, controlPoint2DY: number, endDX: number, endDY: number]
 
 #### Defined in
 
-[src/util/path/typedefs.ts:180](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L180)
+[src/util/path/typedefs.ts:180](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L180)
 
 ___
 
 ### TParsedRelativeHorizontalLineCommand
 
-Ƭ **TParsedRelativeHorizontalLineCommand**: [command: "h", dx: number]
+ **TParsedRelativeHorizontalLineCommand**: [command: "h", dx: number]
 
 #### Defined in
 
-[src/util/path/typedefs.ts:126](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L126)
+[src/util/path/typedefs.ts:126](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L126)
 
 ___
 
 ### TParsedRelativeLineCommand
 
-Ƭ **TParsedRelativeLineCommand**: [command: "l", dx: number, dy: number]
+ **TParsedRelativeLineCommand**: [command: "l", dx: number, dy: number]
 
 #### Defined in
 
-[src/util/path/typedefs.ts:118](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L118)
+[src/util/path/typedefs.ts:118](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L118)
 
 ___
 
 ### TParsedRelativeMoveToCommand
 
-Ƭ **TParsedRelativeMoveToCommand**: [command: "m", dx: number, dy: number]
+ **TParsedRelativeMoveToCommand**: [command: "m", dx: number, dy: number]
 
 #### Defined in
 
-[src/util/path/typedefs.ts:106](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L106)
+[src/util/path/typedefs.ts:106](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L106)
 
 ___
 
 ### TParsedRelativeQuadraticCurveCommand
 
-Ƭ **TParsedRelativeQuadraticCurveCommand**: [command: "q", controlPointDX: number, controlPointDY: number, endDX: number, endDY: number]
+ **TParsedRelativeQuadraticCurveCommand**: [command: "q", controlPointDX: number, controlPointDY: number, endDX: number, endDY: number]
 
 #### Defined in
 
-[src/util/path/typedefs.ts:201](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L201)
+[src/util/path/typedefs.ts:201](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L201)
 
 ___
 
 ### TParsedRelativeQuadraticCurveShortcutCommand
 
-Ƭ **TParsedRelativeQuadraticCurveShortcutCommand**: [command: "t", endDX: number, endDY: number]
+ **TParsedRelativeQuadraticCurveShortcutCommand**: [command: "t", endDX: number, endDY: number]
 
 #### Defined in
 
-[src/util/path/typedefs.ts:219](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L219)
+[src/util/path/typedefs.ts:219](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L219)
 
 ___
 
 ### TParsedRelativeVerticalLineCommand
 
-Ƭ **TParsedRelativeVerticalLineCommand**: [command: "v", dy: number]
+ **TParsedRelativeVerticalLineCommand**: [command: "v", dy: number]
 
 #### Defined in
 
-[src/util/path/typedefs.ts:134](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L134)
+[src/util/path/typedefs.ts:134](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L134)
 
 ___
 
 ### TParsedVerticalLineCommand
 
-Ƭ **TParsedVerticalLineCommand**: [`TParsedAbsoluteVerticalLineCommand`](/apidocs/modules/util.md#tparsedabsoluteverticallinecommand) \| [`TParsedRelativeVerticalLineCommand`](/apidocs/modules/util.md#tparsedrelativeverticallinecommand)
+ **TParsedVerticalLineCommand**: [`TParsedAbsoluteVerticalLineCommand`](/apidocs/modules/util.md#tparsedabsoluteverticallinecommand) \| [`TParsedRelativeVerticalLineCommand`](/apidocs/modules/util.md#tparsedrelativeverticallinecommand)
 
 #### Defined in
 
-[src/util/path/typedefs.ts:135](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L135)
+[src/util/path/typedefs.ts:135](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L135)
 
 ___
 
 ### TPathSegmentCommandInfo
 
-Ƭ **TPathSegmentCommandInfo**: `Object`
+ **TPathSegmentCommandInfo**: `Object`
 
 Relevant info to calculate path length/points on path
 for each command type in a simplified parsed path
@@ -742,23 +742,23 @@ for each command type in a simplified parsed path
 
 #### Defined in
 
-[src/util/path/typedefs.ts:37](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L37)
+[src/util/path/typedefs.ts:37](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L37)
 
 ___
 
 ### TPathSegmentInfo
 
-Ƭ **TPathSegmentInfo**: [`TPathSegmentCommandInfo`](/apidocs/modules/util.md#tpathsegmentcommandinfo)[keyof [`TPathSegmentCommandInfo`](/apidocs/modules/util.md#tpathsegmentcommandinfo)]
+ **TPathSegmentInfo**: [`TPathSegmentCommandInfo`](/apidocs/modules/util.md#tpathsegmentcommandinfo)[keyof [`TPathSegmentCommandInfo`](/apidocs/modules/util.md#tpathsegmentcommandinfo)]
 
 #### Defined in
 
-[src/util/path/typedefs.ts:45](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L45)
+[src/util/path/typedefs.ts:45](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L45)
 
 ___
 
 ### TPathSegmentInfoCommon
 
-Ƭ **TPathSegmentInfoCommon**\<`C`\>: `Object`
+ **TPathSegmentInfoCommon**\<`C`\>: `Object`
 
 #### Type parameters
 
@@ -777,25 +777,25 @@ ___
 
 #### Defined in
 
-[src/util/path/typedefs.ts:4](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L4)
+[src/util/path/typedefs.ts:4](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L4)
 
 ___
 
 ### TPointAngle
 
-Ƭ **TPointAngle**: [`XY`](/apidocs/interfaces/XY.md) & \{ `angle`: [`TRadian`](/apidocs/modules.md#tradian)  }
+ **TPointAngle**: [`XY`](/apidocs/interfaces/XY.md) & \{ `angle`: [`TRadian`](/apidocs/modules.md#tradian)  }
 
 A point (vector) and angle between the vector and x-axis
 
 #### Defined in
 
-[src/util/path/typedefs.ts:305](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L305)
+[src/util/path/typedefs.ts:305](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L305)
 
 ___
 
 ### TProjectStrokeOnPointsOptions
 
-Ƭ **TProjectStrokeOnPointsOptions**: `Object`
+ **TProjectStrokeOnPointsOptions**: `Object`
 
 #### Type declaration
 
@@ -813,13 +813,13 @@ ___
 
 #### Defined in
 
-[src/util/misc/projectStroke/types.ts:4](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/projectStroke/types.ts#L4)
+[src/util/misc/projectStroke/types.ts:4](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/projectStroke/types.ts#L4)
 
 ___
 
 ### TProjection
 
-Ƭ **TProjection**: `Object`
+ **TProjection**: `Object`
 
 #### Type declaration
 
@@ -832,43 +832,43 @@ ___
 
 #### Defined in
 
-[src/util/misc/projectStroke/types.ts:19](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/projectStroke/types.ts#L19)
+[src/util/misc/projectStroke/types.ts:19](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/projectStroke/types.ts#L19)
 
 ___
 
 ### TQrDecomposeOut
 
-Ƭ **TQrDecomposeOut**: `Required`\<`Omit`\<[`TComposeMatrixArgs`](/apidocs/modules/util.md#tcomposematrixargs), ``"flipX"`` \| ``"flipY"``\>\>
+ **TQrDecomposeOut**: `Required`\<`Omit`\<[`TComposeMatrixArgs`](/apidocs/modules/util.md#tcomposematrixargs), ``"flipX"`` \| ``"flipY"``\>\>
 
 #### Defined in
 
-[src/util/misc/matrix.ts:31](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/matrix.ts#L31)
+[src/util/misc/matrix.ts:31](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/matrix.ts#L31)
 
 ___
 
 ### TQuadraticCurveCommand
 
-Ƭ **TQuadraticCurveCommand**: `TCommand5`\<[`TParsedQuadraticCurveCommand`](/apidocs/modules/util.md#tparsedquadraticcurvecommand)\>
+ **TQuadraticCurveCommand**: `TCommand5`\<[`TParsedQuadraticCurveCommand`](/apidocs/modules/util.md#tparsedquadraticcurvecommand)\>
 
 #### Defined in
 
-[src/util/path/typedefs.ts:212](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L212)
+[src/util/path/typedefs.ts:212](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L212)
 
 ___
 
 ### TQuadraticCurveShortcutCommand
 
-Ƭ **TQuadraticCurveShortcutCommand**: `TCommand3`\<[`TParsedQuadraticCurveShortcutCommand`](/apidocs/modules/util.md#tparsedquadraticcurveshortcutcommand)\>
+ **TQuadraticCurveShortcutCommand**: `TCommand3`\<[`TParsedQuadraticCurveShortcutCommand`](/apidocs/modules/util.md#tparsedquadraticcurveshortcutcommand)\>
 
 #### Defined in
 
-[src/util/path/typedefs.ts:228](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L228)
+[src/util/path/typedefs.ts:228](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L228)
 
 ___
 
 ### TRotateMatrixArgs
 
-Ƭ **TRotateMatrixArgs**: `Object`
+ **TRotateMatrixArgs**: `Object`
 
 #### Type declaration
 
@@ -878,13 +878,13 @@ ___
 
 #### Defined in
 
-[src/util/misc/matrix.ts:9](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/matrix.ts#L9)
+[src/util/misc/matrix.ts:9](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/matrix.ts#L9)
 
 ___
 
 ### TScaleMatrixArgs
 
-Ƭ **TScaleMatrixArgs**: `Object`
+ **TScaleMatrixArgs**: `Object`
 
 #### Type declaration
 
@@ -899,37 +899,37 @@ ___
 
 #### Defined in
 
-[src/util/misc/matrix.ts:18](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/matrix.ts#L18)
+[src/util/misc/matrix.ts:18](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/matrix.ts#L18)
 
 ___
 
 ### TSimpleParsedCommand
 
-Ƭ **TSimpleParsedCommand**: [`TParsedAbsoluteMoveToCommand`](/apidocs/modules/util.md#tparsedabsolutemovetocommand) \| [`TParsedAbsoluteLineCommand`](/apidocs/modules/util.md#tparsedabsolutelinecommand) \| [`TParsedAbsoluteClosePathCommand`](/apidocs/modules/util.md#tparsedabsoluteclosepathcommand) \| [`TParsedAbsoluteCubicCurveCommand`](/apidocs/modules/util.md#tparsedabsolutecubiccurvecommand) \| [`TParsedAbsoluteQuadraticCurveCommand`](/apidocs/modules/util.md#tparsedabsolutequadraticcurvecommand)
+ **TSimpleParsedCommand**: [`TParsedAbsoluteMoveToCommand`](/apidocs/modules/util.md#tparsedabsolutemovetocommand) \| [`TParsedAbsoluteLineCommand`](/apidocs/modules/util.md#tparsedabsolutelinecommand) \| [`TParsedAbsoluteClosePathCommand`](/apidocs/modules/util.md#tparsedabsoluteclosepathcommand) \| [`TParsedAbsoluteCubicCurveCommand`](/apidocs/modules/util.md#tparsedabsolutecubiccurvecommand) \| [`TParsedAbsoluteQuadraticCurveCommand`](/apidocs/modules/util.md#tparsedabsolutequadraticcurvecommand)
 
 Any SVG command that all Fabric functions can understand
 
 #### Defined in
 
-[src/util/path/typedefs.ts:290](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L290)
+[src/util/path/typedefs.ts:290](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L290)
 
 ___
 
 ### TSimplePathData
 
-Ƭ **TSimplePathData**: [`TSimpleParsedCommand`](/apidocs/modules/util.md#tsimpleparsedcommand)[]
+ **TSimplePathData**: [`TSimpleParsedCommand`](/apidocs/modules/util.md#tsimpleparsedcommand)[]
 
 A series of simple paths
 
 #### Defined in
 
-[src/util/path/typedefs.ts:300](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L300)
+[src/util/path/typedefs.ts:300](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L300)
 
 ___
 
 ### TTranslateMatrixArgs
 
-Ƭ **TTranslateMatrixArgs**: `Object`
+ **TTranslateMatrixArgs**: `Object`
 
 #### Type declaration
 
@@ -940,43 +940,43 @@ ___
 
 #### Defined in
 
-[src/util/misc/matrix.ts:13](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/matrix.ts#L13)
+[src/util/misc/matrix.ts:13](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/matrix.ts#L13)
 
 ___
 
 ### TVerticalLineCommand
 
-Ƭ **TVerticalLineCommand**: `TCommand2`\<[`TParsedVerticalLineCommand`](/apidocs/modules/util.md#tparsedverticallinecommand)\>
+ **TVerticalLineCommand**: `TCommand2`\<[`TParsedVerticalLineCommand`](/apidocs/modules/util.md#tparsedverticallinecommand)\>
 
 #### Defined in
 
-[src/util/path/typedefs.ts:139](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L139)
+[src/util/path/typedefs.ts:139](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L139)
 
 ___
 
 ### TextStyleArray
 
-Ƭ **TextStyleArray**: \{ `end`: `number` ; `start`: `number` ; `style`: [`TextStyleDeclaration`](/apidocs/modules.md#textstyledeclaration)  }[]
+ **TextStyleArray**: \{ `end`: `number` ; `start`: `number` ; `style`: [`TextStyleDeclaration`](/apidocs/modules.md#textstyledeclaration)  }[]
 
 #### Defined in
 
-[src/util/misc/textStyles.ts:8](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/textStyles.ts#L8)
+[src/util/misc/textStyles.ts:8](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/textStyles.ts#L8)
 
 ___
 
 ### ValueAnimationOptions
 
-Ƭ **ValueAnimationOptions**: [`TAnimationOptions`](/apidocs/modules/util.md#tanimationoptions)\<`number`\>
+ **ValueAnimationOptions**: [`TAnimationOptions`](/apidocs/modules/util.md#tanimationoptions)\<`number`\>
 
 #### Defined in
 
-[src/util/animation/types.ts:122](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/animation/types.ts#L122)
+[src/util/animation/types.ts:122](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L122)
 
 ## Functions
 
 ### addTransformToObject
 
-▸ **addTransformToObject**(`object`, `transform`): `void`
+**addTransformToObject**(`object`, `transform`): `void`
 
 given an object and a transform, apply the transform to the object.
 this is equivalent to change the space where the object is drawn.
@@ -996,13 +996,13 @@ This is used when removing an object from an active selection for example.
 
 #### Defined in
 
-[src/util/misc/objectTransforms.ts:45](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/objectTransforms.ts#L45)
+[src/util/misc/objectTransforms.ts:45](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/objectTransforms.ts#L45)
 
 ___
 
 ### animate
 
-▸ **animate**(`options`): `ArrayAnimation`
+**animate**(`options`): `ArrayAnimation`
 
 Changes value(s) from startValue to endValue within a certain period of time,
 invoking callbacks as the value(s) change.
@@ -1047,9 +1047,9 @@ animate({
 
 #### Defined in
 
-[src/util/animation/animate.ts:50](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/animation/animate.ts#L50)
+[src/util/animation/animate.ts:50](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/animate.ts#L50)
 
-▸ **animate**(`options`): `ValueAnimation`
+**animate**(`options`): `ValueAnimation`
 
 #### Parameters
 
@@ -1063,9 +1063,9 @@ animate({
 
 #### Defined in
 
-[src/util/animation/animate.ts:51](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/animation/animate.ts#L51)
+[src/util/animation/animate.ts:51](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/animate.ts#L51)
 
-▸ **animate**\<`T`\>(`options`): `T` extends [`ArrayAnimationOptions`](/apidocs/modules/util.md#arrayanimationoptions) ? `ArrayAnimation` : `ValueAnimation`
+**animate**\<`T`\>(`options`): `T` extends [`ArrayAnimationOptions`](/apidocs/modules/util.md#arrayanimationoptions) ? `ArrayAnimation` : `ValueAnimation`
 
 #### Type parameters
 
@@ -1085,13 +1085,13 @@ animate({
 
 #### Defined in
 
-[src/util/animation/animate.ts:52](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/animation/animate.ts#L52)
+[src/util/animation/animate.ts:52](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/animate.ts#L52)
 
 ___
 
 ### animateColor
 
-▸ **animateColor**(`options`): `ColorAnimation`
+**animateColor**(`options`): `ColorAnimation`
 
 #### Parameters
 
@@ -1105,13 +1105,13 @@ ___
 
 #### Defined in
 
-[src/util/animation/animate.ts:70](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/animation/animate.ts#L70)
+[src/util/animation/animate.ts:70](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/animate.ts#L70)
 
 ___
 
 ### applyTransformToObject
 
-▸ **applyTransformToObject**(`object`, `transform`): `void`
+**applyTransformToObject**(`object`, `transform`): `void`
 
 discard an object transform state and apply the one from the matrix.
 
@@ -1128,13 +1128,13 @@ discard an object transform state and apply the one from the matrix.
 
 #### Defined in
 
-[src/util/misc/objectTransforms.ts:56](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/objectTransforms.ts#L56)
+[src/util/misc/objectTransforms.ts:56](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/objectTransforms.ts#L56)
 
 ___
 
 ### calcAngleBetweenVectors
 
-▸ **calcAngleBetweenVectors**(`a`, `b`): [`TRadian`](/apidocs/modules.md#tradian)
+**calcAngleBetweenVectors**(`a`, `b`): [`TRadian`](/apidocs/modules.md#tradian)
 
 Calculates the angle between 2 vectors
 
@@ -1153,13 +1153,13 @@ the angle in radians from `a` to `b`
 
 #### Defined in
 
-[src/util/misc/vectors.ts:39](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/vectors.ts#L39)
+[src/util/misc/vectors.ts:39](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/vectors.ts#L39)
 
 ___
 
 ### calcDimensionsMatrix
 
-▸ **calcDimensionsMatrix**(`options`): [`TMat2D`](/apidocs/modules.md#tmat2d)
+**calcDimensionsMatrix**(`options`): [`TMat2D`](/apidocs/modules.md#tmat2d)
 
 Returns a transform matrix starting from an object of the same kind of
 the one returned from qrDecompose, useful also if you want to calculate some
@@ -1181,13 +1181,13 @@ transform matrix
 
 #### Defined in
 
-[src/util/misc/matrix.ts:272](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/matrix.ts#L272)
+[src/util/misc/matrix.ts:272](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/matrix.ts#L272)
 
 ___
 
 ### calcPlaneChangeMatrix
 
-▸ **calcPlaneChangeMatrix**(`from?`, `to?`): [`TMat2D`](/apidocs/modules.md#tmat2d)
+**calcPlaneChangeMatrix**(`from?`, `to?`): [`TMat2D`](/apidocs/modules.md#tmat2d)
 
 We are actually looking for the transformation from the destination plane to the source plane (change of basis matrix)\
 The object will exist on the destination plane and we want it to seem unchanged by it so we invert the destination matrix (`to`) and then apply the source matrix (`from`)
@@ -1205,13 +1205,13 @@ The object will exist on the destination plane and we want it to seem unchanged 
 
 #### Defined in
 
-[src/util/misc/planeChange.ts:15](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/planeChange.ts#L15)
+[src/util/misc/planeChange.ts:15](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/planeChange.ts#L15)
 
 ___
 
 ### calcVectorRotation
 
-▸ **calcVectorRotation**(`v`): [`TRadian`](/apidocs/modules.md#tradian)
+**calcVectorRotation**(`v`): [`TRadian`](/apidocs/modules.md#tradian)
 
 Calculates the angle between the x axis and the vector
 
@@ -1229,13 +1229,13 @@ the angle in radians of `v`
 
 #### Defined in
 
-[src/util/misc/vectors.ts:47](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/vectors.ts#L47)
+[src/util/misc/vectors.ts:47](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/vectors.ts#L47)
 
 ___
 
 ### cancelAnimFrame
 
-▸ **cancelAnimFrame**(`handle`): `void`
+**cancelAnimFrame**(`handle`): `void`
 
 #### Parameters
 
@@ -1249,13 +1249,13 @@ ___
 
 #### Defined in
 
-[src/util/animation/AnimationFrameProvider.ts:7](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/animation/AnimationFrameProvider.ts#L7)
+[src/util/animation/AnimationFrameProvider.ts:7](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/AnimationFrameProvider.ts#L7)
 
 ___
 
 ### capValue
 
-▸ **capValue**(`min`, `value`, `max`): `number`
+**capValue**(`min`, `value`, `max`): `number`
 
 #### Parameters
 
@@ -1271,13 +1271,13 @@ ___
 
 #### Defined in
 
-[src/util/misc/capValue.ts:1](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/capValue.ts#L1)
+[src/util/misc/capValue.ts:1](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/capValue.ts#L1)
 
 ___
 
 ### composeMatrix
 
-▸ **composeMatrix**(`options`): [`TMat2D`](/apidocs/modules.md#tmat2d)
+**composeMatrix**(`options`): [`TMat2D`](/apidocs/modules.md#tmat2d)
 
 Returns a transform matrix starting from an object of the same kind of
 the one returned from qrDecompose, useful also if you want to calculate some
@@ -1297,13 +1297,13 @@ transform matrix
 
 #### Defined in
 
-[src/util/misc/matrix.ts:306](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/matrix.ts#L306)
+[src/util/misc/matrix.ts:306](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/matrix.ts#L306)
 
 ___
 
 ### copyCanvasElement
 
-▸ **copyCanvasElement**(`canvas`): `HTMLCanvasElement`
+**copyCanvasElement**(`canvas`): `HTMLCanvasElement`
 
 Creates a canvas element that is a copy of another and is also painted
 
@@ -1321,13 +1321,13 @@ initialized canvas element
 
 #### Defined in
 
-[src/util/misc/dom.ts:28](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/dom.ts#L28)
+[src/util/misc/dom.ts:28](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/dom.ts#L28)
 
 ___
 
 ### cos
 
-▸ **cos**(`angle`): `number`
+**cos**(`angle`): `number`
 
 Calculate the cos of an angle, avoiding returning floats for known results
 This function is here just to avoid getting 0.999999999999999 when dealing
@@ -1347,13 +1347,13 @@ the cosin value for angle.
 
 #### Defined in
 
-[src/util/misc/cos.ts:11](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/cos.ts#L11)
+[src/util/misc/cos.ts:11](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/cos.ts#L11)
 
 ___
 
 ### createCanvasElement
 
-▸ **createCanvasElement**(): `HTMLCanvasElement`
+**createCanvasElement**(): `HTMLCanvasElement`
 
 Creates canvas element
 
@@ -1365,13 +1365,13 @@ initialized canvas element
 
 #### Defined in
 
-[src/util/misc/dom.ts:8](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/dom.ts#L8)
+[src/util/misc/dom.ts:8](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/dom.ts#L8)
 
 ___
 
 ### createImage
 
-▸ **createImage**(): `HTMLImageElement`
+**createImage**(): `HTMLImageElement`
 
 Creates image element (works on client and node)
 
@@ -1383,13 +1383,13 @@ HTML image element
 
 #### Defined in
 
-[src/util/misc/dom.ts:20](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/dom.ts#L20)
+[src/util/misc/dom.ts:20](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/dom.ts#L20)
 
 ___
 
 ### createRotateMatrix
 
-▸ **createRotateMatrix**(`angle?`, `pivotPoint?`): [`TMat2D`](/apidocs/modules.md#tmat2d)
+**createRotateMatrix**(`angle?`, `pivotPoint?`): [`TMat2D`](/apidocs/modules.md#tmat2d)
 
 Generate a rotation matrix around around a point (x,y), defaulting to (0,0)
 
@@ -1413,13 +1413,13 @@ matrix
 
 #### Defined in
 
-[src/util/misc/matrix.ts:167](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/matrix.ts#L167)
+[src/util/misc/matrix.ts:167](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/matrix.ts#L167)
 
 ___
 
 ### createScaleMatrix
 
-▸ **createScaleMatrix**(`x`, `y?`): [`TMat2D`](/apidocs/modules.md#tmat2d)
+**createScaleMatrix**(`x`, `y?`): [`TMat2D`](/apidocs/modules.md#tmat2d)
 
 Generate a scale matrix around the point (0,0)
 
@@ -1447,13 +1447,13 @@ https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform#scale
 
 #### Defined in
 
-[src/util/misc/matrix.ts:198](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/matrix.ts#L198)
+[src/util/misc/matrix.ts:198](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/matrix.ts#L198)
 
 ___
 
 ### createSkewXMatrix
 
-▸ **createSkewXMatrix**(`skewValue`): [`TMat2D`](/apidocs/modules.md#tmat2d)
+**createSkewXMatrix**(`skewValue`): [`TMat2D`](/apidocs/modules.md#tmat2d)
 
 Generate a skew matrix for the X axis
 
@@ -1480,13 +1480,13 @@ https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform#skewx
 
 #### Defined in
 
-[src/util/misc/matrix.ts:226](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/matrix.ts#L226)
+[src/util/misc/matrix.ts:226](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/matrix.ts#L226)
 
 ___
 
 ### createSkewYMatrix
 
-▸ **createSkewYMatrix**(`skewValue`): [`TMat2D`](/apidocs/modules.md#tmat2d)
+**createSkewYMatrix**(`skewValue`): [`TMat2D`](/apidocs/modules.md#tmat2d)
 
 Generate a skew matrix for the Y axis
 
@@ -1513,13 +1513,13 @@ https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform#skewy
 
 #### Defined in
 
-[src/util/misc/matrix.ts:248](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/matrix.ts#L248)
+[src/util/misc/matrix.ts:248](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/matrix.ts#L248)
 
 ___
 
 ### createTranslateMatrix
 
-▸ **createTranslateMatrix**(`x`, `y?`): [`TMat2D`](/apidocs/modules.md#tmat2d)
+**createTranslateMatrix**(`x`, `y?`): [`TMat2D`](/apidocs/modules.md#tmat2d)
 
 Generate a translation matrix
 
@@ -1549,13 +1549,13 @@ https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform#translate f
 
 #### Defined in
 
-[src/util/misc/matrix.ts:145](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/matrix.ts#L145)
+[src/util/misc/matrix.ts:145](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/matrix.ts#L145)
 
 ___
 
 ### createVector
 
-▸ **createVector**(`from`, `to`): [`Point`](/apidocs/classes/Point.md)
+**createVector**(`from`, `to`): [`Point`](/apidocs/classes/Point.md)
 
 Creates a vector from points represented as a point
 
@@ -1574,13 +1574,13 @@ vector
 
 #### Defined in
 
-[src/util/misc/vectors.ts:24](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/vectors.ts#L24)
+[src/util/misc/vectors.ts:24](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/vectors.ts#L24)
 
 ___
 
 ### crossProduct
 
-▸ **crossProduct**(`a`, `b`): `number`
+**crossProduct**(`a`, `b`): `number`
 
 Cross product of two vectors in 2D
 
@@ -1599,13 +1599,13 @@ the magnitude of Z vector
 
 #### Defined in
 
-[src/util/misc/vectors.ts:74](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/vectors.ts#L74)
+[src/util/misc/vectors.ts:74](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/vectors.ts#L74)
 
 ___
 
 ### degreesToRadians
 
-▸ **degreesToRadians**(`degrees`): [`TRadian`](/apidocs/modules.md#tradian)
+**degreesToRadians**(`degrees`): [`TRadian`](/apidocs/modules.md#tradian)
 
 Transforms degrees to radians.
 
@@ -1623,13 +1623,13 @@ value in radians
 
 #### Defined in
 
-[src/util/misc/radiansDegreesConversion.ts:9](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/radiansDegreesConversion.ts#L9)
+[src/util/misc/radiansDegreesConversion.ts:9](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/radiansDegreesConversion.ts#L9)
 
 ___
 
 ### dotProduct
 
-▸ **dotProduct**(`a`, `b`): `number`
+**dotProduct**(`a`, `b`): `number`
 
 Dot product of two vectors in 2D
 
@@ -1646,13 +1646,13 @@ Dot product of two vectors in 2D
 
 #### Defined in
 
-[src/util/misc/vectors.ts:83](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/vectors.ts#L83)
+[src/util/misc/vectors.ts:83](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/vectors.ts#L83)
 
 ___
 
 ### enlivenObjectEnlivables
 
-▸ **enlivenObjectEnlivables**\<`R`\>(`serializedObject`, `options?`): `Promise`\<`R`\>
+**enlivenObjectEnlivables**\<`R`\>(`serializedObject`, `options?`): `Promise`\<`R`\>
 
 Creates corresponding fabric instances residing in an object, e.g. `clipPath`
 
@@ -1677,13 +1677,13 @@ the input object with enlived values
 
 #### Defined in
 
-[src/util/misc/objectEnlive.ts:124](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/objectEnlive.ts#L124)
+[src/util/misc/objectEnlive.ts:124](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/objectEnlive.ts#L124)
 
 ___
 
 ### enlivenObjects
 
-▸ **enlivenObjects**\<`T`\>(`objects`, `options?`): `Promise`\<`T`[]\>
+**enlivenObjects**\<`T`\>(`objects`, `options?`): `Promise`\<`T`[]\>
 
 Creates corresponding fabric instances from their object representations
 
@@ -1706,13 +1706,13 @@ Creates corresponding fabric instances from their object representations
 
 #### Defined in
 
-[src/util/misc/objectEnlive.ts:79](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/objectEnlive.ts#L79)
+[src/util/misc/objectEnlive.ts:79](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/objectEnlive.ts#L79)
 
 ___
 
 ### findScaleToCover
 
-▸ **findScaleToCover**(`source`, `destination`): `number`
+**findScaleToCover**(`source`, `destination`): `number`
 
 Finds the scale for the object source to cover entirely the object destination,
 keeping aspect ratio intact.
@@ -1733,13 +1733,13 @@ scale factor to apply to source to cover destination
 
 #### Defined in
 
-[src/util/misc/findScaleTo.ts:25](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/findScaleTo.ts#L25)
+[src/util/misc/findScaleTo.ts:25](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/findScaleTo.ts#L25)
 
 ___
 
 ### findScaleToFit
 
-▸ **findScaleToFit**(`source`, `destination`): `number`
+**findScaleToFit**(`source`, `destination`): `number`
 
 Finds the scale for the object source to fit inside the object destination,
 keeping aspect ratio intact.
@@ -1760,13 +1760,13 @@ scale factor to apply to source to fit into destination
 
 #### Defined in
 
-[src/util/misc/findScaleTo.ts:11](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/findScaleTo.ts#L11)
+[src/util/misc/findScaleTo.ts:11](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/findScaleTo.ts#L11)
 
 ___
 
 ### getBoundsOfCurve
 
-▸ **getBoundsOfCurve**(`begx`, `begy`, `cp1x`, `cp1y`, `cp2x`, `cp2y`, `endx`, `endy`): [`TRectBounds`](/apidocs/modules.md#trectbounds)
+**getBoundsOfCurve**(`begx`, `begy`, `cp1x`, `cp1y`, `cp2x`, `cp2y`, `endx`, `endy`): [`TRectBounds`](/apidocs/modules.md#trectbounds)
 
 Calculate bounding box of a cubic Bezier curve
 Taken from http://jsbin.com/ivomiq/56/edit (no credits available)
@@ -1793,13 +1793,13 @@ the rectangular bounds
 
 #### Defined in
 
-[src/util/path/index.ts:221](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/index.ts#L221)
+[src/util/path/index.ts:221](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/index.ts#L221)
 
 ___
 
 ### getOrthonormalVector
 
-▸ **getOrthonormalVector**(`v`, `counterClockwise?`): [`Point`](/apidocs/classes/Point.md)
+**getOrthonormalVector**(`v`, `counterClockwise?`): [`Point`](/apidocs/classes/Point.md)
 
 #### Parameters
 
@@ -1816,13 +1816,13 @@ the unit orthogonal vector
 
 #### Defined in
 
-[src/util/misc/vectors.ts:62](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/vectors.ts#L62)
+[src/util/misc/vectors.ts:62](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/vectors.ts#L62)
 
 ___
 
 ### getPathSegmentsInfo
 
-▸ **getPathSegmentsInfo**(`path`): [`TPathSegmentInfo`](/apidocs/modules/util.md#tpathsegmentinfo)[]
+**getPathSegmentsInfo**(`path`): [`TPathSegmentInfo`](/apidocs/modules/util.md#tpathsegmentinfo)[]
 
 Run over a parsed and simplified path and extract some information (length of each command and starting point)
 
@@ -1840,13 +1840,13 @@ path commands information
 
 #### Defined in
 
-[src/util/path/index.ts:682](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/index.ts#L682)
+[src/util/path/index.ts:682](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/index.ts#L682)
 
 ___
 
 ### getPointOnPath
 
-▸ **getPointOnPath**(`path`, `distance`, `infos?`): `undefined` \| [`TPointAngle`](/apidocs/modules/util.md#tpointangle)
+**getPointOnPath**(`path`, `distance`, `infos?`): `undefined` \| [`TPointAngle`](/apidocs/modules/util.md#tpointangle)
 
 Get the point on the path that is distance along the path
 
@@ -1864,13 +1864,13 @@ Get the point on the path that is distance along the path
 
 #### Defined in
 
-[src/util/path/index.ts:790](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/index.ts#L790)
+[src/util/path/index.ts:790](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/index.ts#L790)
 
 ___
 
 ### getPointer
 
-▸ **getPointer**(`event`): [`Point`](/apidocs/classes/Point.md)
+**getPointer**(`event`): [`Point`](/apidocs/classes/Point.md)
 
 #### Parameters
 
@@ -1884,13 +1884,13 @@ ___
 
 #### Defined in
 
-[src/util/dom_event.ts:15](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/dom_event.ts#L15)
+[src/util/dom_event.ts:15](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/dom_event.ts#L15)
 
 ___
 
 ### getRandomInt
 
-▸ **getRandomInt**(`min`, `max`): `number`
+**getRandomInt**(`min`, `max`): `number`
 
 Returns random number between 2 specified ones.
 
@@ -1909,13 +1909,13 @@ random value (between min and max)
 
 #### Defined in
 
-[src/util/internals/getRandomInt.ts:7](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/internals/getRandomInt.ts#L7)
+[src/util/internals/getRandomInt.ts:7](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/internals/getRandomInt.ts#L7)
 
 ___
 
 ### getRegularPolygonPath
 
-▸ **getRegularPolygonPath**(`numVertexes`, `radius`): [`TSimplePathData`](/apidocs/modules/util.md#tsimplepathdata)
+**getRegularPolygonPath**(`numVertexes`, `radius`): [`TSimplePathData`](/apidocs/modules/util.md#tsimplepathdata)
 
 Returns an array of path commands to create a regular polygon
 
@@ -1934,13 +1934,13 @@ An array of SVG path commands
 
 #### Defined in
 
-[src/util/path/index.ts:1000](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/index.ts#L1000)
+[src/util/path/index.ts:1000](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/index.ts#L1000)
 
 ___
 
 ### getSmoothPathFromPoints
 
-▸ **getSmoothPathFromPoints**(`points`, `correction?`): [`TSimplePathData`](/apidocs/modules/util.md#tsimplepathdata)
+**getSmoothPathFromPoints**(`points`, `correction?`): [`TSimplePathData`](/apidocs/modules/util.md#tsimplepathdata)
 
 Converts points to a smooth SVG path
 
@@ -1959,13 +1959,13 @@ An array of SVG path commands
 
 #### Defined in
 
-[src/util/path/index.ts:905](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/index.ts#L905)
+[src/util/path/index.ts:905](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/index.ts#L905)
 
 ___
 
 ### getSvgAttributes
 
-▸ **getSvgAttributes**(`type`): `string`[]
+**getSvgAttributes**(`type`): `string`[]
 
 Returns array of attributes for given svg that fabric parses
 
@@ -1983,13 +1983,13 @@ string names of supported attributes
 
 #### Defined in
 
-[src/util/misc/svgParsing.ts:17](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/svgParsing.ts#L17)
+[src/util/misc/svgParsing.ts:17](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/svgParsing.ts#L17)
 
 ___
 
 ### getUnitVector
 
-▸ **getUnitVector**(`v`): [`Point`](/apidocs/classes/Point.md)
+**getUnitVector**(`v`): [`Point`](/apidocs/classes/Point.md)
 
 #### Parameters
 
@@ -2005,13 +2005,13 @@ vector representing the unit vector pointing to the direction of `v`
 
 #### Defined in
 
-[src/util/misc/vectors.ts:54](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/vectors.ts#L54)
+[src/util/misc/vectors.ts:54](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/vectors.ts#L54)
 
 ___
 
 ### groupSVGElements
 
-▸ **groupSVGElements**(`elements`): [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
+**groupSVGElements**(`elements`): [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
 
 Groups SVG elements (usually those retrieved from SVG document)
 
@@ -2029,13 +2029,13 @@ Groups SVG elements (usually those retrieved from SVG document)
 
 #### Defined in
 
-[src/util/misc/groupSVGElements.ts:10](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/groupSVGElements.ts#L10)
+[src/util/misc/groupSVGElements.ts:10](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/groupSVGElements.ts#L10)
 
 ___
 
 ### hasStyleChanged
 
-▸ **hasStyleChanged**(`prevStyle`, `thisStyle`, `forTextSpans?`): `boolean`
+**hasStyleChanged**(`prevStyle`, `thisStyle`, `forTextSpans?`): `boolean`
 
 #### Parameters
 
@@ -2053,13 +2053,13 @@ true if the style changed
 
 #### Defined in
 
-[src/util/misc/textStyles.ts:20](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/textStyles.ts#L20)
+[src/util/misc/textStyles.ts:20](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/textStyles.ts#L20)
 
 ___
 
 ### invertTransform
 
-▸ **invertTransform**(`t`): [`TMat2D`](/apidocs/modules.md#tmat2d)
+**invertTransform**(`t`): [`TMat2D`](/apidocs/modules.md#tmat2d)
 
 Invert transformation t
 
@@ -2077,13 +2077,13 @@ The inverted transform
 
 #### Defined in
 
-[src/util/misc/matrix.ts:57](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/matrix.ts#L57)
+[src/util/misc/matrix.ts:57](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/matrix.ts#L57)
 
 ___
 
 ### isBetweenVectors
 
-▸ **isBetweenVectors**(`t`, `a`, `b`): `boolean`
+**isBetweenVectors**(`t`, `a`, `b`): `boolean`
 
 Checks if the vector is between two others. It is considered
 to be inside when the vector to be tested is between the
@@ -2105,13 +2105,13 @@ true if the vector is among the others
 
 #### Defined in
 
-[src/util/misc/vectors.ts:94](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/vectors.ts#L94)
+[src/util/misc/vectors.ts:94](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/vectors.ts#L94)
 
 ___
 
 ### isIdentityMatrix
 
-▸ **isIdentityMatrix**(`mat`): `boolean`
+**isIdentityMatrix**(`mat`): `boolean`
 
 #### Parameters
 
@@ -2125,13 +2125,13 @@ ___
 
 #### Defined in
 
-[src/util/misc/matrix.ts:35](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/matrix.ts#L35)
+[src/util/misc/matrix.ts:35](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/matrix.ts#L35)
 
 ___
 
 ### isTouchEvent
 
-▸ **isTouchEvent**(`event`): `boolean`
+**isTouchEvent**(`event`): `boolean`
 
 #### Parameters
 
@@ -2145,13 +2145,13 @@ ___
 
 #### Defined in
 
-[src/util/dom_event.ts:22](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/dom_event.ts#L22)
+[src/util/dom_event.ts:22](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/dom_event.ts#L22)
 
 ___
 
 ### isTransparent
 
-▸ **isTransparent**(`ctx`, `x`, `y`, `tolerance`): `boolean`
+**isTransparent**(`ctx`, `x`, `y`, `tolerance`): `boolean`
 
 Returns true if context has transparent pixel
 at specified location (taking tolerance into account)
@@ -2173,13 +2173,13 @@ true if transparent
 
 #### Defined in
 
-[src/util/misc/isTransparent.ts:10](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/isTransparent.ts#L10)
+[src/util/misc/isTransparent.ts:10](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/isTransparent.ts#L10)
 
 ___
 
 ### joinPath
 
-▸ **joinPath**(`pathData`, `fractionDigits?`): `string`
+**joinPath**(`pathData`, `fractionDigits?`): `string`
 
 Join path commands to go back to svg format
 
@@ -2198,13 +2198,13 @@ joined path 'M 0 0 L 20 30'
 
 #### Defined in
 
-[src/util/path/index.ts:1027](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/index.ts#L1027)
+[src/util/path/index.ts:1027](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/index.ts#L1027)
 
 ___
 
 ### loadImage
 
-▸ **loadImage**(`url`, `options?`): `Promise`\<`HTMLImageElement`\>
+**loadImage**(`url`, `options?`): `Promise`\<`HTMLImageElement`\>
 
 Loads image element from given url and resolve it, or catch.
 
@@ -2223,13 +2223,13 @@ the loaded image.
 
 #### Defined in
 
-[src/util/misc/objectEnlive.ts:24](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/objectEnlive.ts#L24)
+[src/util/misc/objectEnlive.ts:24](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/objectEnlive.ts#L24)
 
 ___
 
 ### magnitude
 
-▸ **magnitude**(`point`): `number`
+**magnitude**(`point`): `number`
 
 return the magnitude of a vector
 
@@ -2245,13 +2245,13 @@ return the magnitude of a vector
 
 #### Defined in
 
-[src/util/misc/vectors.ts:31](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/vectors.ts#L31)
+[src/util/misc/vectors.ts:31](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/vectors.ts#L31)
 
 ___
 
 ### makeBoundingBoxFromPoints
 
-▸ **makeBoundingBoxFromPoints**(`points`): [`TBBox`](/apidocs/modules.md#tbbox)
+**makeBoundingBoxFromPoints**(`points`): [`TBBox`](/apidocs/modules.md#tbbox)
 
 Calculates bounding box (left, top, width, height) from given `points`
 
@@ -2269,13 +2269,13 @@ Object with left, top, width, height properties
 
 #### Defined in
 
-[src/util/misc/boundingBoxFromPoints.ts:10](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/boundingBoxFromPoints.ts#L10)
+[src/util/misc/boundingBoxFromPoints.ts:10](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/boundingBoxFromPoints.ts#L10)
 
 ___
 
 ### makePathSimpler
 
-▸ **makePathSimpler**(`path`): [`TSimplePathData`](/apidocs/modules/util.md#tsimplepathdata)
+**makePathSimpler**(`path`): [`TSimplePathData`](/apidocs/modules/util.md#tsimplepathdata)
 
 This function takes a parsed SVG path and makes it simpler for fabricJS logic.
 Simplification consist of:
@@ -2299,13 +2299,13 @@ TODO: figure out how to remove the type assertions in a nice way
 
 #### Defined in
 
-[src/util/path/index.ts:351](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/index.ts#L351)
+[src/util/path/index.ts:351](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/index.ts#L351)
 
 ___
 
 ### matrixToSVG
 
-▸ **matrixToSVG**(`transform`): `string`
+**matrixToSVG**(`transform`): `string`
 
 given an array of 6 number returns something like `"matrix(...numbers)"`
 
@@ -2323,13 +2323,13 @@ transform matrix for svg
 
 #### Defined in
 
-[src/util/misc/svgParsing.ts:128](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/svgParsing.ts#L128)
+[src/util/misc/svgParsing.ts:128](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/svgParsing.ts#L128)
 
 ___
 
 ### mergeClipPaths
 
-▸ **mergeClipPaths**(`c1`, `c2`): [`Group`](/apidocs/classes/Group.md)
+**mergeClipPaths**(`c1`, `c2`): [`Group`](/apidocs/classes/Group.md)
 
 Merges 2 clip paths into one visually equal clip path
 
@@ -2363,13 +2363,13 @@ fabric.util
 
 #### Defined in
 
-[src/util/misc/mergeClipPaths.ts:23](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/mergeClipPaths.ts#L23)
+[src/util/misc/mergeClipPaths.ts:23](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/mergeClipPaths.ts#L23)
 
 ___
 
 ### multiplyTransformMatrices
 
-▸ **multiplyTransformMatrices**(`a`, `b`, `is2x2?`): [`TMat2D`](/apidocs/modules.md#tmat2d)
+**multiplyTransformMatrices**(`a`, `b`, `is2x2?`): [`TMat2D`](/apidocs/modules.md#tmat2d)
 
 Multiply matrix A by matrix B to nest transformations
 
@@ -2389,13 +2389,13 @@ The product of the two transform matrices
 
 #### Defined in
 
-[src/util/misc/matrix.ts:73](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/matrix.ts#L73)
+[src/util/misc/matrix.ts:73](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/matrix.ts#L73)
 
 ___
 
 ### multiplyTransformMatrixArray
 
-▸ **multiplyTransformMatrixArray**(`matrices`, `is2x2?`): [`TMat2D`](/apidocs/modules.md#tmat2d)
+**multiplyTransformMatrixArray**(`matrices`, `is2x2?`): [`TMat2D`](/apidocs/modules.md#tmat2d)
 
 Multiplies matrices such that a matrix defines the plane for the rest of the matrices **after** it
 
@@ -2416,13 +2416,13 @@ the multiplication product
 
 #### Defined in
 
-[src/util/misc/matrix.ts:96](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/matrix.ts#L96)
+[src/util/misc/matrix.ts:96](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/matrix.ts#L96)
 
 ___
 
 ### parsePath
 
-▸ **parsePath**(`pathString`): [`TComplexPathData`](/apidocs/modules/util.md#tcomplexpathdata)
+**parsePath**(`pathString`): [`TComplexPathData`](/apidocs/modules/util.md#tcomplexpathdata)
 
 #### Parameters
 
@@ -2449,13 +2449,13 @@ parsePath('M 3 4 Q 3 5 2 1 4 0 Q 9 12 2 1 4 0') === [
 
 #### Defined in
 
-[src/util/path/index.ts:844](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/index.ts#L844)
+[src/util/path/index.ts:844](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/index.ts#L844)
 
 ___
 
 ### parsePreserveAspectRatioAttribute
 
-▸ **parsePreserveAspectRatioAttribute**(`attribute`): `TPreserveArParsed`
+**parsePreserveAspectRatioAttribute**(`attribute`): `TPreserveArParsed`
 
 Parse preserveAspectRatio attribute from element
 https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/preserveAspectRatio
@@ -2474,13 +2474,13 @@ an object containing align and meetOrSlice attribute
 
 #### Defined in
 
-[src/util/misc/svgParsing.ts:108](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/svgParsing.ts#L108)
+[src/util/misc/svgParsing.ts:108](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/svgParsing.ts#L108)
 
 ___
 
 ### parseUnit
 
-▸ **parseUnit**(`value`, `fontSize?`): `number`
+**parseUnit**(`value`, `fontSize?`): `number`
 
 Converts from attribute value to pixel value if applicable.
 Returns converted pixels or original value not converted.
@@ -2498,13 +2498,13 @@ Returns converted pixels or original value not converted.
 
 #### Defined in
 
-[src/util/misc/svgParsing.ts:53](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/svgParsing.ts#L53)
+[src/util/misc/svgParsing.ts:53](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/svgParsing.ts#L53)
 
 ___
 
 ### pick
 
-▸ **pick**\<`T`\>(`source`, `keys?`): `Partial`\<`T`\>
+**pick**\<`T`\>(`source`, `keys?`): `Partial`\<`T`\>
 
 Populates an object with properties of another object
 
@@ -2529,13 +2529,13 @@ object populated with the picked keys
 
 #### Defined in
 
-[src/util/misc/pick.ts:7](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/pick.ts#L7)
+[src/util/misc/pick.ts:7](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/pick.ts#L7)
 
 ___
 
 ### projectStrokeOnPoints
 
-▸ **projectStrokeOnPoints**(`points`, `options`, `openPath?`): [`TProjection`](/apidocs/modules/util.md#tprojection)[]
+**projectStrokeOnPoints**(`points`, `options`, `openPath?`): [`TProjection`](/apidocs/modules/util.md#tprojection)[]
 
 Used to calculate object's bounding box
 
@@ -2557,13 +2557,13 @@ https://github.com/fabricjs/fabric.js/pull/8344
 
 #### Defined in
 
-[src/util/misc/projectStroke/index.ts:16](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/projectStroke/index.ts#L16)
+[src/util/misc/projectStroke/index.ts:16](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/projectStroke/index.ts#L16)
 
 ___
 
 ### qrDecompose
 
-▸ **qrDecompose**(`a`): `Required`\<`Omit`\<[`TComposeMatrixArgs`](/apidocs/modules/util.md#tcomposematrixargs), ``"flipX"`` \| ``"flipY"``\>\>
+**qrDecompose**(`a`): `Required`\<`Omit`\<[`TComposeMatrixArgs`](/apidocs/modules/util.md#tcomposematrixargs), ``"flipX"`` \| ``"flipY"``\>\>
 
 Decomposes standard 2x3 matrix into transform components
 
@@ -2581,13 +2581,13 @@ Components of transform
 
 #### Defined in
 
-[src/util/misc/matrix.ts:114](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/matrix.ts#L114)
+[src/util/misc/matrix.ts:114](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/matrix.ts#L114)
 
 ___
 
 ### radiansToDegrees
 
-▸ **radiansToDegrees**(`radians`): [`TDegree`](/apidocs/modules.md#tdegree)
+**radiansToDegrees**(`radians`): [`TDegree`](/apidocs/modules.md#tdegree)
 
 Transforms radians to degrees.
 
@@ -2605,13 +2605,13 @@ value in degrees
 
 #### Defined in
 
-[src/util/misc/radiansDegreesConversion.ts:17](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/radiansDegreesConversion.ts#L17)
+[src/util/misc/radiansDegreesConversion.ts:17](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/radiansDegreesConversion.ts#L17)
 
 ___
 
 ### removeFromArray
 
-▸ **removeFromArray**\<`T`\>(`array`, `value`): `T`[]
+**removeFromArray**\<`T`\>(`array`, `value`): `T`[]
 
 Removes value from an array.
 Presence of value (and its position in an array) is determined via `Array.prototype.indexOf`
@@ -2637,13 +2637,13 @@ original array
 
 #### Defined in
 
-[src/util/internals/removeFromArray.ts:8](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/internals/removeFromArray.ts#L8)
+[src/util/internals/removeFromArray.ts:8](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/internals/removeFromArray.ts#L8)
 
 ___
 
 ### removeTransformFromObject
 
-▸ **removeTransformFromObject**(`object`, `transform`): `void`
+**removeTransformFromObject**(`object`, `transform`): `void`
 
 given an object and a transform, apply the inverse transform to the object,
 this is equivalent to remove from that object that transformation, so that
@@ -2666,13 +2666,13 @@ This util is used to add objects inside transformed groups or nested groups.
 
 #### Defined in
 
-[src/util/misc/objectTransforms.ts:25](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/objectTransforms.ts#L25)
+[src/util/misc/objectTransforms.ts:25](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/objectTransforms.ts#L25)
 
 ___
 
 ### removeTransformMatrixForSvgParsing
 
-▸ **removeTransformMatrixForSvgParsing**(`object`, `preserveAspectRatioOptions?`): `void`
+**removeTransformMatrixForSvgParsing**(`object`, `preserveAspectRatioOptions?`): `void`
 
 This function is an helper for svg import. it removes the transform matrix
 and set to object properties that fabricjs can handle
@@ -2690,13 +2690,13 @@ and set to object properties that fabricjs can handle
 
 #### Defined in
 
-[src/util/transform_matrix_removal.ts:40](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/transform_matrix_removal.ts#L40)
+[src/util/transform_matrix_removal.ts:40](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/transform_matrix_removal.ts#L40)
 
 ___
 
 ### request
 
-▸ **request**(`url`, `options?`): `XMLHttpRequest`
+**request**(`url`, `options?`): `XMLHttpRequest`
 
 Cross-browser abstraction for sending XMLHttpRequest
 
@@ -2719,13 +2719,13 @@ this has to go away, we can use a modern browser method to do the same.
 
 #### Defined in
 
-[src/util/internals/dom_request.ts:20](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/internals/dom_request.ts#L20)
+[src/util/internals/dom_request.ts:20](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/internals/dom_request.ts#L20)
 
 ___
 
 ### requestAnimFrame
 
-▸ **requestAnimFrame**(`callback`): `number`
+**requestAnimFrame**(`callback`): `number`
 
 #### Parameters
 
@@ -2739,13 +2739,13 @@ ___
 
 #### Defined in
 
-[src/util/animation/AnimationFrameProvider.ts:3](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/animation/AnimationFrameProvider.ts#L3)
+[src/util/animation/AnimationFrameProvider.ts:3](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/AnimationFrameProvider.ts#L3)
 
 ___
 
 ### resetObjectTransform
 
-▸ **resetObjectTransform**(`target`): `void`
+**resetObjectTransform**(`target`): `void`
 
 reset an object transform state to neutral. Top and left are not accounted for
 
@@ -2761,13 +2761,13 @@ reset an object transform state to neutral. Top and left are not accounted for
 
 #### Defined in
 
-[src/util/misc/objectTransforms.ts:73](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/objectTransforms.ts#L73)
+[src/util/misc/objectTransforms.ts:73](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/objectTransforms.ts#L73)
 
 ___
 
 ### rotatePoint
 
-▸ **rotatePoint**(`point`, `origin`, `radians`): [`Point`](/apidocs/classes/Point.md)
+**rotatePoint**(`point`, `origin`, `radians`): [`Point`](/apidocs/classes/Point.md)
 
 Rotates `point` around `origin` with `radians`
 
@@ -2791,13 +2791,13 @@ use the Point.rotate
 
 #### Defined in
 
-[src/util/misc/rotatePoint.ts:11](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/rotatePoint.ts#L11)
+[src/util/misc/rotatePoint.ts:11](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/rotatePoint.ts#L11)
 
 ___
 
 ### rotateVector
 
-▸ **rotateVector**(`vector`, `radians`): [`Point`](/apidocs/classes/Point.md)
+**rotateVector**(`vector`, `radians`): [`Point`](/apidocs/classes/Point.md)
 
 Rotates `vector` with `radians`
 
@@ -2816,13 +2816,13 @@ The new rotated point
 
 #### Defined in
 
-[src/util/misc/vectors.ts:14](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/vectors.ts#L14)
+[src/util/misc/vectors.ts:14](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/vectors.ts#L14)
 
 ___
 
 ### saveObjectTransform
 
-▸ **saveObjectTransform**(`target`): `Object`
+**saveObjectTransform**(`target`): `Object`
 
 Extract Object transform values
 
@@ -2852,13 +2852,13 @@ Components of transform
 
 #### Defined in
 
-[src/util/misc/objectTransforms.ts:88](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/objectTransforms.ts#L88)
+[src/util/misc/objectTransforms.ts:88](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/objectTransforms.ts#L88)
 
 ___
 
 ### sendObjectToPlane
 
-▸ **sendObjectToPlane**(`object`, `from?`, `to?`): [`TMat2D`](/apidocs/modules.md#tmat2d)
+**sendObjectToPlane**(`object`, `from?`, `to?`): [`TMat2D`](/apidocs/modules.md#tmat2d)
 
 A util that abstracts applying transform to objects.\
 Sends `object` to the destination coordinate plane by applying the relevant transformations.\
@@ -2907,13 +2907,13 @@ clipPath.clipPath = existingObj;
 
 #### Defined in
 
-[src/util/misc/planeChange.ts:75](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/planeChange.ts#L75)
+[src/util/misc/planeChange.ts:81](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/planeChange.ts#L81)
 
 ___
 
 ### sendPointToPlane
 
-▸ **sendPointToPlane**(`point`, `from?`, `to?`): [`Point`](/apidocs/classes/Point.md)
+**sendPointToPlane**(`point`, `from?`, `to?`): [`Point`](/apidocs/classes/Point.md)
 
 Sends a point from the source coordinate plane to the destination coordinate plane.\
 From the canvas/viewer's perspective the point remains unchanged.
@@ -2945,13 +2945,37 @@ console.log(sentPoint1, sentPoint2) //  both points print (0,0) which is the cen
 
 #### Defined in
 
-[src/util/misc/planeChange.ts:36](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/planeChange.ts#L36)
+[src/util/misc/planeChange.ts:36](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/planeChange.ts#L36)
+
+___
+
+### sendVectorToPlane
+
+**sendVectorToPlane**(`point`, `from?`, `to?`): [`Point`](/apidocs/classes/Point.md)
+
+See [sendPointToPlane](/apidocs/modules/util.md#sendpointtoplane)
+
+#### Parameters
+
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `point` | [`Point`](/apidocs/classes/Point.md) | `undefined` |
+| `from` | [`TMat2D`](/apidocs/modules.md#tmat2d) | `iMatrix` |
+| `to` | [`TMat2D`](/apidocs/modules.md#tmat2d) | `iMatrix` |
+
+#### Returns
+
+[`Point`](/apidocs/classes/Point.md)
+
+#### Defined in
+
+[src/util/misc/planeChange.ts:45](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/planeChange.ts#L45)
 
 ___
 
 ### setStyle
 
-▸ **setStyle**(`element`, `styles`): `void`
+**setStyle**(`element`, `styles`): `void`
 
 wrapper for setting element's style
 
@@ -2968,13 +2992,13 @@ wrapper for setting element's style
 
 #### Defined in
 
-[src/util/dom_style.ts:8](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/dom_style.ts#L8)
+[src/util/dom_style.ts:8](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/dom_style.ts#L8)
 
 ___
 
 ### sin
 
-▸ **sin**(`angle`): `number`
+**sin**(`angle`): `number`
 
 Calculate the cos of an angle, avoiding returning floats for known results
 This function is here just to avoid getting 0.999999999999999 when dealing
@@ -2994,13 +3018,13 @@ the sin value for angle.
 
 #### Defined in
 
-[src/util/misc/sin.ts:11](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/sin.ts#L11)
+[src/util/misc/sin.ts:11](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/sin.ts#L11)
 
 ___
 
 ### sizeAfterTransform
 
-▸ **sizeAfterTransform**(`width`, `height`, `options`): [`Point`](/apidocs/classes/Point.md)
+**sizeAfterTransform**(`width`, `height`, `options`): [`Point`](/apidocs/classes/Point.md)
 
 given a width and height, return the size of the bounding box
 that can contains the box with width/height with applied transform
@@ -3023,13 +3047,13 @@ size
 
 #### Defined in
 
-[src/util/misc/objectTransforms.ts:114](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/objectTransforms.ts#L114)
+[src/util/misc/objectTransforms.ts:114](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/objectTransforms.ts#L114)
 
 ___
 
 ### stylesFromArray
 
-▸ **stylesFromArray**(`styles`, `text`): [`TextStyle`](/apidocs/modules.md#textstyle)
+**stylesFromArray**(`styles`, `text`): [`TextStyle`](/apidocs/modules.md#textstyle)
 
 Returns the object form of the styles property with styles that are assigned per
 character rather than grouped by range. This format is more verbose, and is
@@ -3048,13 +3072,13 @@ only used during runtime (not for serialization/storage)
 
 #### Defined in
 
-[src/util/misc/textStyles.ts:97](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/textStyles.ts#L97)
+[src/util/misc/textStyles.ts:97](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/textStyles.ts#L97)
 
 ___
 
 ### stylesToArray
 
-▸ **stylesToArray**(`styles`, `text`): [`TextStyleArray`](/apidocs/modules/util.md#textstylearray)
+**stylesToArray**(`styles`, `text`): [`TextStyleArray`](/apidocs/modules/util.md#textstylearray)
 
 Returns the array form of a text object's inline styles property with styles grouped in ranges
 rather than per character. This format is less verbose, and is better suited for storage
@@ -3073,13 +3097,13 @@ so it is used in serialization (not during runtime).
 
 #### Defined in
 
-[src/util/misc/textStyles.ts:47](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/textStyles.ts#L47)
+[src/util/misc/textStyles.ts:47](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/textStyles.ts#L47)
 
 ___
 
 ### toDataURL
 
-▸ **toDataURL**(`canvasEl`, `format`, `quality`): `string`
+**toDataURL**(`canvasEl`, `format`, `quality`): `string`
 
 since 2.6.0 moved from canvas instance to utility.
 possibly useless
@@ -3100,13 +3124,13 @@ data url
 
 #### Defined in
 
-[src/util/misc/dom.ts:46](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/dom.ts#L46)
+[src/util/misc/dom.ts:46](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/dom.ts#L46)
 
 ___
 
 ### toFixed
 
-▸ **toFixed**(`number`, `fractionDigits`): `number`
+**toFixed**(`number`, `fractionDigits`): `number`
 
 A wrapper around Number#toFixed, which contrary to native method returns number, not string.
 
@@ -3123,13 +3147,13 @@ A wrapper around Number#toFixed, which contrary to native method returns number,
 
 #### Defined in
 
-[src/util/misc/toFixed.ts:7](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/toFixed.ts#L7)
+[src/util/misc/toFixed.ts:7](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/toFixed.ts#L7)
 
 ___
 
 ### transformPath
 
-▸ **transformPath**(`path`, `transform`, `pathOffset?`): [`TSimplePathData`](/apidocs/modules/util.md#tsimplepathdata)
+**transformPath**(`path`, `transform`, `pathOffset?`): [`TSimplePathData`](/apidocs/modules/util.md#tsimplepathdata)
 
 Transform a path by transforming each segment.
 it has to be a simplified path or it won't work.
@@ -3151,13 +3175,13 @@ the transformed path
 
 #### Defined in
 
-[src/util/path/index.ts:961](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/index.ts#L961)
+[src/util/path/index.ts:961](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/index.ts#L961)
 
 ___
 
 ### transformPoint
 
-▸ **transformPoint**(`p`, `t`, `ignoreOffset?`): [`Point`](/apidocs/classes/Point.md)
+**transformPoint**(`p`, `t`, `ignoreOffset?`): [`Point`](/apidocs/classes/Point.md)
 
 Apply transform t to point p
 
@@ -3181,4 +3205,4 @@ use [Point#transform](/apidocs/classes/Point.md#transform)
 
 #### Defined in
 
-[src/util/misc/matrix.ts:46](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/matrix.ts#L46)
+[src/util/misc/matrix.ts:46](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/matrix.ts#L46)

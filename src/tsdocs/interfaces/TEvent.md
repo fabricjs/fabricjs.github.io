@@ -22,8 +22,8 @@
 
 ### e
 
-• **e**: `E`
+ **e**: `E`
 
 #### Defined in
 
-[src/EventTypeDefs.ts:84](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L84)
+[src/EventTypeDefs.ts:84](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L84)

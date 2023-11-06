@@ -24,7 +24,7 @@ layout once layout completes
 
 ### constructor
 
-• **new Group**(`objects?`, `options?`, `objectsRelativeToGroup?`): [`Group`](/apidocs/classes/Group.md)
+**new Group**(`objects?`, `options?`, `objectsRelativeToGroup?`): [`Group`](/apidocs/classes/Group.md)
 
 Constructor
 
@@ -48,13 +48,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Group.ts:171](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L171)
+[src/shapes/Group.ts:171](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L171)
 
 ## Properties
 
 ### \_\_corner
 
-• `Optional` **\_\_corner**: `string`
+ `Optional` **\_\_corner**: `string`
 
 keeps the value of the last hovered corner during mouse move.
 0 is no corner, or 'mt', 'ml', 'mtr' etc..
@@ -70,17 +70,17 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:115](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L115)
+[src/shapes/Object/InteractiveObject.ts:115](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L115)
 
 ___
 
 ### \_\_objectSelectionDisposer
 
-• `Private` **\_\_objectSelectionDisposer**: (`ev`: `Partial`\<[`TEvent`](/apidocs/interfaces/TEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>\> & \{ `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  }) => `void`
+ `Private` **\_\_objectSelectionDisposer**: (`ev`: `Partial`\<[`TEvent`](/apidocs/interfaces/TEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>\> & \{ `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  }) => `void`
 
 #### Type declaration
 
-▸ (`ev`): `void`
+(`ev`): `void`
 
 ##### Parameters
 
@@ -94,17 +94,17 @@ ___
 
 #### Defined in
 
-[src/shapes/Group.ts:154](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L154)
+[src/shapes/Group.ts:154](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L154)
 
 ___
 
 ### \_\_objectSelectionTracker
 
-• `Private` **\_\_objectSelectionTracker**: (`ev`: `Partial`\<[`TEvent`](/apidocs/interfaces/TEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>\> & \{ `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  }) => `void`
+ `Private` **\_\_objectSelectionTracker**: (`ev`: `Partial`\<[`TEvent`](/apidocs/interfaces/TEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>\> & \{ `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  }) => `void`
 
 #### Type declaration
 
-▸ (`ev`): `void`
+(`ev`): `void`
 
 ##### Parameters
 
@@ -118,13 +118,13 @@ ___
 
 #### Defined in
 
-[src/shapes/Group.ts:153](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L153)
+[src/shapes/Group.ts:153](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L153)
 
 ___
 
 ### \_\_owningGroup
 
-• `Optional` **\_\_owningGroup**: [`Group`](/apidocs/classes/Group.md)
+ `Optional` **\_\_owningGroup**: [`Group`](/apidocs/classes/Group.md)
 
 A reference to the parent of the object
 Used to keep the original parent ref when the object has been added to an ActiveSelection, hence loosing the `group` ref
@@ -137,13 +137,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/StackedObject.ts:45](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/StackedObject.ts#L45)
+[src/shapes/Object/StackedObject.ts:45](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/StackedObject.ts#L45)
 
 ___
 
 ### \_activeObjects
 
-• `Private` **\_activeObjects**: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] = `[]`
+ `Private` **\_activeObjects**: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] = `[]`
 
 Used internally to optimize performance
 Once an object is selected, instance is rendered without the selected object.
@@ -151,13 +151,13 @@ This way instance is cached only once for the entire interaction with the select
 
 #### Defined in
 
-[src/shapes/Group.ts:143](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L143)
+[src/shapes/Group.ts:143](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L143)
 
 ___
 
 ### \_cacheCanvas
 
-• `Optional` `Private` **\_cacheCanvas**: `HTMLCanvasElement`
+ `Optional` `Private` **\_cacheCanvas**: `HTMLCanvasElement`
 
 A reference to the HTMLCanvasElement that is used to contain the cache of the object
 this canvas element is resized and cleared as needed
@@ -179,13 +179,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:184](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L184)
+[src/shapes/Object/Object.ts:184](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L184)
 
 ___
 
 ### \_cacheContext
 
-• `Private` **\_cacheContext**: ``null`` \| `CanvasRenderingContext2D` = `null`
+ `Private` **\_cacheContext**: ``null`` \| `CanvasRenderingContext2D` = `null`
 
 Quick access for the _cacheCanvas rendering context
 This is part of the objectCaching feature
@@ -206,13 +206,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:173](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L173)
+[src/shapes/Object/Object.ts:173](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L173)
 
 ___
 
 ### \_controlsVisibility
 
-• **\_controlsVisibility**: `Record`\<`string`, `boolean`\>
+ **\_controlsVisibility**: `Record`\<`string`, `boolean`\>
 
 a map of control visibility for this object.
 this was left when controls were introduced to not break the api too much
@@ -226,23 +226,23 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:122](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L122)
+[src/shapes/Object/InteractiveObject.ts:122](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L122)
 
 ___
 
 ### \_firstLayoutDone
 
-• `Private` **\_firstLayoutDone**: `boolean` = `false`
+ `Private` **\_firstLayoutDone**: `boolean` = `false`
 
 #### Defined in
 
-[src/shapes/Group.ts:155](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L155)
+[src/shapes/Group.ts:155](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L155)
 
 ___
 
 ### \_objects
 
-• **\_objects**: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] = `[]`
+ **\_objects**: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] = `[]`
 
 **`TODO`**
 
@@ -256,13 +256,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/Collection.ts:13](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L13)
+[src/Collection.ts:13](https://github.com/fabricjs/fabric.js/blob/078809453/src/Collection.ts#L13)
 
 ___
 
 ### \_scaling
 
-• `Optional` **\_scaling**: `boolean`
+ `Optional` **\_scaling**: `boolean`
 
 A boolean used from the gesture module to keep tracking of a scaling
 action when there is no scaling transform in place.
@@ -282,13 +282,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:144](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L144)
+[src/shapes/Object/InteractiveObject.ts:144](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L144)
 
 ___
 
 ### \_transformDone
 
-• `Optional` `Private` **\_transformDone**: `boolean`
+ `Optional` `Private` **\_transformDone**: `boolean`
 
 Private. indicates if the object inside a group is on a transformed context or not
 or is part of a larger cache for many object ( a group for example)
@@ -308,13 +308,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:264](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L264)
+[src/shapes/Object/Object.ts:264](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L264)
 
 ___
 
 ### aCoords
 
-• **aCoords**: [`TCornerPoint`](/apidocs/modules.md#tcornerpoint)
+ **aCoords**: [`TCornerPoint`](/apidocs/modules.md#tcornerpoint)
 
 Describe object's corner position in canvas object absolute coordinates
 properties are tl,tr,bl,br and describe the four main corner.
@@ -342,13 +342,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:58](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L58)
+[src/shapes/Object/ObjectGeometry.ts:57](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L57)
 
 ___
 
 ### absolutePositioned
 
-• **absolutePositioned**: `boolean`
+ **absolutePositioned**: `boolean`
 
 #### Inherited from
 
@@ -358,13 +358,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:137](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L137)
+[src/shapes/Object/Object.ts:137](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L137)
 
 ___
 
 ### activeOn
 
-• **activeOn**: ``"down"`` \| ``"up"``
+ **activeOn**: ``"down"`` \| ``"up"``
 
 #### Inherited from
 
@@ -374,13 +374,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:91](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L91)
+[src/shapes/Object/InteractiveObject.ts:91](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L91)
 
 ___
 
 ### angle
 
-• **angle**: [`TDegree`](/apidocs/modules.md#tdegree)
+ **angle**: [`TDegree`](/apidocs/modules.md#tdegree)
 
 #### Inherited from
 
@@ -390,13 +390,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:29](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L29)
+[src/shapes/Object/ObjectOrigin.ts:29](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L29)
 
 ___
 
 ### backgroundColor
 
-• **backgroundColor**: `string`
+ **backgroundColor**: `string`
 
 #### Inherited from
 
@@ -406,13 +406,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:124](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L124)
+[src/shapes/Object/Object.ts:124](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L124)
 
 ___
 
 ### borderColor
 
-• **borderColor**: `string`
+ **borderColor**: `string`
 
 #### Inherited from
 
@@ -422,13 +422,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:81](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L81)
+[src/shapes/Object/InteractiveObject.ts:81](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L81)
 
 ___
 
 ### borderDashArray
 
-• **borderDashArray**: ``null`` \| `number`[]
+ **borderDashArray**: ``null`` \| `number`[]
 
 #### Inherited from
 
@@ -438,13 +438,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:82](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L82)
+[src/shapes/Object/InteractiveObject.ts:82](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L82)
 
 ___
 
 ### borderOpacityWhenMoving
 
-• **borderOpacityWhenMoving**: `number`
+ **borderOpacityWhenMoving**: `number`
 
 #### Inherited from
 
@@ -454,13 +454,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:83](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L83)
+[src/shapes/Object/InteractiveObject.ts:83](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L83)
 
 ___
 
 ### borderScaleFactor
 
-• **borderScaleFactor**: `number`
+ **borderScaleFactor**: `number`
 
 #### Inherited from
 
@@ -470,13 +470,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:84](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L84)
+[src/shapes/Object/InteractiveObject.ts:84](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L84)
 
 ___
 
 ### cacheHeight
 
-• `Optional` `Private` **cacheHeight**: `number`
+ `Optional` `Private` **cacheHeight**: `number`
 
 Size of the cache canvas, height
 since 1.7.0
@@ -496,13 +496,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:202](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L202)
+[src/shapes/Object/Object.ts:202](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L202)
 
 ___
 
 ### cacheTranslationX
 
-• `Optional` `Private` **cacheTranslationX**: `number`
+ `Optional` `Private` **cacheTranslationX**: `number`
 
 zoom level used on the cacheCanvas to draw the cache, Y axe
 since 1.7.0
@@ -522,13 +522,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:229](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L229)
+[src/shapes/Object/Object.ts:229](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L229)
 
 ___
 
 ### cacheTranslationY
 
-• `Optional` `Private` **cacheTranslationY**: `number`
+ `Optional` `Private` **cacheTranslationY**: `number`
 
 translation of the cacheCanvas away from the center, for subpixel accuracy and crispness
 since 1.7.0
@@ -548,13 +548,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:238](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L238)
+[src/shapes/Object/Object.ts:238](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L238)
 
 ___
 
 ### cacheWidth
 
-• `Optional` `Private` **cacheWidth**: `number`
+ `Optional` `Private` **cacheWidth**: `number`
 
 Size of the cache canvas, width
 since 1.7.0
@@ -574,13 +574,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:193](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L193)
+[src/shapes/Object/Object.ts:193](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L193)
 
 ___
 
 ### canvas
 
-• `Optional` **canvas**: [`Canvas`](/apidocs/classes/Canvas.md)
+ `Optional` **canvas**: [`Canvas`](/apidocs/classes/Canvas.md)
 
 #### Inherited from
 
@@ -590,13 +590,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:146](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L146)
+[src/shapes/Object/InteractiveObject.ts:146](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L146)
 
 ___
 
 ### centeredRotation
 
-• **centeredRotation**: `boolean`
+ **centeredRotation**: `boolean`
 
 #### Inherited from
 
@@ -606,13 +606,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:138](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L138)
+[src/shapes/Object/Object.ts:138](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L138)
 
 ___
 
 ### centeredScaling
 
-• **centeredScaling**: `boolean`
+ **centeredScaling**: `boolean`
 
 #### Inherited from
 
@@ -622,13 +622,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:58](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L58)
+[src/shapes/Object/InteractiveObject.ts:58](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L58)
 
 ___
 
 ### clipPath
 
-• `Optional` **clipPath**: `FabricObject`\<`Partial`\<`ObjectProps`\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
+ `Optional` **clipPath**: `FabricObject`\<`Partial`\<`ObjectProps`\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
 
 #### Inherited from
 
@@ -638,13 +638,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:135](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L135)
+[src/shapes/Object/Object.ts:135](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L135)
 
 ___
 
 ### clipPathId
 
-• `Optional` **clipPathId**: `string`
+ `Optional` **clipPathId**: `string`
 
 When an object is being exported as SVG as a clippath, a reference inside the SVG is needed.
 This reference is a UID in the fabric namespace and is temporary stored here.
@@ -657,13 +657,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/FabricObjectSVGExportMixin.ts:14](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/FabricObjectSVGExportMixin.ts#L14)
+[src/shapes/Object/FabricObjectSVGExportMixin.ts:14](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/FabricObjectSVGExportMixin.ts#L14)
 
 ___
 
 ### colorProperties
 
-• **colorProperties**: `string`[]
+ **colorProperties**: `string`[]
 
 List of properties to consider for animating colors.
 
@@ -675,13 +675,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/AnimatableObject.ts:20](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/AnimatableObject.ts#L20)
+[src/shapes/Object/AnimatableObject.ts:20](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/AnimatableObject.ts#L20)
 
 ___
 
 ### controls
 
-• **controls**: `TControlSet`
+ **controls**: `TControlSet`
 
 holds the controls for the object.
 controls are added by default_controls.js
@@ -694,13 +694,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:128](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L128)
+[src/shapes/Object/InteractiveObject.ts:128](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L128)
 
 ___
 
 ### cornerColor
 
-• **cornerColor**: `string`
+ **cornerColor**: `string`
 
 #### Inherited from
 
@@ -710,13 +710,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:75](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L75)
+[src/shapes/Object/InteractiveObject.ts:75](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L75)
 
 ___
 
 ### cornerDashArray
 
-• **cornerDashArray**: ``null`` \| `number`[]
+ **cornerDashArray**: ``null`` \| `number`[]
 
 #### Inherited from
 
@@ -726,13 +726,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:78](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L78)
+[src/shapes/Object/InteractiveObject.ts:78](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L78)
 
 ___
 
 ### cornerSize
 
-• **cornerSize**: `number`
+ **cornerSize**: `number`
 
 #### Inherited from
 
@@ -742,13 +742,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:72](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L72)
+[src/shapes/Object/InteractiveObject.ts:72](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L72)
 
 ___
 
 ### cornerStrokeColor
 
-• **cornerStrokeColor**: `string`
+ **cornerStrokeColor**: `string`
 
 #### Inherited from
 
@@ -758,13 +758,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:76](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L76)
+[src/shapes/Object/InteractiveObject.ts:76](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L76)
 
 ___
 
 ### cornerStyle
 
-• **cornerStyle**: ``"circle"`` \| ``"rect"``
+ **cornerStyle**: ``"circle"`` \| ``"rect"``
 
 #### Inherited from
 
@@ -774,13 +774,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:77](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L77)
+[src/shapes/Object/InteractiveObject.ts:77](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L77)
 
 ___
 
 ### dirty
 
-• **dirty**: `boolean`
+ **dirty**: `boolean`
 
 When set to `true`, object's cache will be rerendered next render call.
 since 1.7.0
@@ -799,13 +799,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:163](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L163)
+[src/shapes/Object/Object.ts:163](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L163)
 
 ___
 
 ### evented
 
-• **evented**: `boolean`
+ **evented**: `boolean`
 
 #### Inherited from
 
@@ -815,13 +815,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:89](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L89)
+[src/shapes/Object/InteractiveObject.ts:89](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L89)
 
 ___
 
 ### excludeFromExport
 
-• **excludeFromExport**: `boolean`
+ **excludeFromExport**: `boolean`
 
 #### Inherited from
 
@@ -831,13 +831,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:131](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L131)
+[src/shapes/Object/Object.ts:131](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L131)
 
 ___
 
 ### fill
 
-• **fill**: ``null`` \| `string` \| [`TFiller`](/apidocs/modules.md#tfiller)
+ **fill**: ``null`` \| `string` \| [`TFiller`](/apidocs/modules.md#tfiller)
 
 #### Inherited from
 
@@ -847,13 +847,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:114](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L114)
+[src/shapes/Object/Object.ts:114](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L114)
 
 ___
 
 ### fillRule
 
-• **fillRule**: `CanvasFillRule`
+ **fillRule**: `CanvasFillRule`
 
 #### Inherited from
 
@@ -863,13 +863,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:115](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L115)
+[src/shapes/Object/Object.ts:115](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L115)
 
 ___
 
 ### flipX
 
-• **flipX**: `boolean`
+ **flipX**: `boolean`
 
 #### Inherited from
 
@@ -879,13 +879,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:21](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L21)
+[src/shapes/Object/ObjectOrigin.ts:21](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L21)
 
 ___
 
 ### flipY
 
-• **flipY**: `boolean`
+ **flipY**: `boolean`
 
 #### Inherited from
 
@@ -895,13 +895,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:22](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L22)
+[src/shapes/Object/ObjectOrigin.ts:22](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L22)
 
 ___
 
 ### globalCompositeOperation
 
-• **globalCompositeOperation**: `GlobalCompositeOperation`
+ **globalCompositeOperation**: `GlobalCompositeOperation`
 
 #### Inherited from
 
@@ -911,13 +911,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:123](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L123)
+[src/shapes/Object/Object.ts:123](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L123)
 
 ___
 
 ### group
 
-• `Optional` `Private` **group**: [`Group`](/apidocs/classes/Group.md)
+ `Optional` `Private` **group**: [`Group`](/apidocs/classes/Group.md)
 
 A reference to the parent of the object, usually a Group
 
@@ -936,13 +936,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:246](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L246)
+[src/shapes/Object/Object.ts:246](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L246)
 
 ___
 
 ### hasBorders
 
-• **hasBorders**: `boolean`
+ **hasBorders**: `boolean`
 
 #### Inherited from
 
@@ -952,13 +952,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:85](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L85)
+[src/shapes/Object/InteractiveObject.ts:85](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L85)
 
 ___
 
 ### hasControls
 
-• **hasControls**: `boolean`
+ **hasControls**: `boolean`
 
 #### Inherited from
 
@@ -968,13 +968,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:79](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L79)
+[src/shapes/Object/InteractiveObject.ts:79](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L79)
 
 ___
 
 ### height
 
-• **height**: `number`
+ **height**: `number`
 
 #### Inherited from
 
@@ -984,13 +984,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:20](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L20)
+[src/shapes/Object/ObjectOrigin.ts:20](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L20)
 
 ___
 
 ### hoverCursor
 
-• **hoverCursor**: ``null`` \| `string`
+ **hoverCursor**: ``null`` \| `string`
 
 #### Inherited from
 
@@ -1000,13 +1000,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:93](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L93)
+[src/shapes/Object/InteractiveObject.ts:93](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L93)
 
 ___
 
 ### includeDefaultValues
 
-• **includeDefaultValues**: `boolean`
+ **includeDefaultValues**: `boolean`
 
 #### Inherited from
 
@@ -1016,13 +1016,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:130](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L130)
+[src/shapes/Object/Object.ts:130](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L130)
 
 ___
 
 ### interactive
 
-• **interactive**: `boolean`
+ **interactive**: `boolean`
 
 Used to allow targeting of object inside groups.
 set to true if you want to select an object inside a group.\
@@ -1036,13 +1036,13 @@ set to true if you want to select an object inside a group.\
 
 #### Defined in
 
-[src/shapes/Group.ts:135](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L135)
+[src/shapes/Group.ts:135](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L135)
 
 ___
 
 ### inverted
 
-• **inverted**: `boolean`
+ **inverted**: `boolean`
 
 #### Inherited from
 
@@ -1052,13 +1052,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:136](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L136)
+[src/shapes/Object/Object.ts:136](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L136)
 
 ___
 
 ### isMoving
 
-• `Optional` **isMoving**: `boolean`
+ `Optional` **isMoving**: `boolean`
 
 internal boolean to signal the code that the object is
 part of the move action.
@@ -1071,13 +1071,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:134](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L134)
+[src/shapes/Object/InteractiveObject.ts:134](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L134)
 
 ___
 
 ### layout
 
-• **layout**: [`LayoutStrategy`](/apidocs/modules.md#layoutstrategy)
+ **layout**: [`LayoutStrategy`](/apidocs/modules.md#layoutstrategy)
 
 Specifies the **layout strategy** for instance
 Used by `getLayoutStrategyResult` to calculate layout
@@ -1091,13 +1091,13 @@ Used by `getLayoutStrategyResult` to calculate layout
 
 #### Defined in
 
-[src/shapes/Group.ts:118](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L118)
+[src/shapes/Group.ts:118](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L118)
 
 ___
 
 ### left
 
-• **left**: `number`
+ **left**: `number`
 
 #### Inherited from
 
@@ -1107,13 +1107,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:18](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L18)
+[src/shapes/Object/ObjectOrigin.ts:18](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L18)
 
 ___
 
 ### lineCoords
 
-• **lineCoords**: [`TCornerPoint`](/apidocs/modules.md#tcornerpoint)
+ **lineCoords**: [`TCornerPoint`](/apidocs/modules.md#tcornerpoint)
 
 Describe object's corner position in canvas element coordinates.
 includes padding. Used of object detection.
@@ -1132,13 +1132,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:67](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L67)
+[src/shapes/Object/ObjectGeometry.ts:66](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L66)
 
 ___
 
 ### lockMovementX
 
-• **lockMovementX**: `boolean`
+ **lockMovementX**: `boolean`
 
 #### Inherited from
 
@@ -1148,13 +1148,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:63](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L63)
+[src/shapes/Object/InteractiveObject.ts:63](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L63)
 
 ___
 
 ### lockMovementY
 
-• **lockMovementY**: `boolean`
+ **lockMovementY**: `boolean`
 
 #### Inherited from
 
@@ -1164,13 +1164,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:64](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L64)
+[src/shapes/Object/InteractiveObject.ts:64](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L64)
 
 ___
 
 ### lockRotation
 
-• **lockRotation**: `boolean`
+ **lockRotation**: `boolean`
 
 #### Inherited from
 
@@ -1180,13 +1180,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:65](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L65)
+[src/shapes/Object/InteractiveObject.ts:65](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L65)
 
 ___
 
 ### lockScalingFlip
 
-• **lockScalingFlip**: `boolean`
+ **lockScalingFlip**: `boolean`
 
 #### Inherited from
 
@@ -1196,13 +1196,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:70](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L70)
+[src/shapes/Object/InteractiveObject.ts:70](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L70)
 
 ___
 
 ### lockScalingX
 
-• **lockScalingX**: `boolean`
+ **lockScalingX**: `boolean`
 
 #### Inherited from
 
@@ -1212,13 +1212,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:66](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L66)
+[src/shapes/Object/InteractiveObject.ts:66](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L66)
 
 ___
 
 ### lockScalingY
 
-• **lockScalingY**: `boolean`
+ **lockScalingY**: `boolean`
 
 #### Inherited from
 
@@ -1228,13 +1228,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:67](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L67)
+[src/shapes/Object/InteractiveObject.ts:67](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L67)
 
 ___
 
 ### lockSkewingX
 
-• **lockSkewingX**: `boolean`
+ **lockSkewingX**: `boolean`
 
 #### Inherited from
 
@@ -1244,13 +1244,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:68](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L68)
+[src/shapes/Object/InteractiveObject.ts:68](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L68)
 
 ___
 
 ### lockSkewingY
 
-• **lockSkewingY**: `boolean`
+ **lockSkewingY**: `boolean`
 
 #### Inherited from
 
@@ -1260,13 +1260,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:69](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L69)
+[src/shapes/Object/InteractiveObject.ts:69](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L69)
 
 ___
 
 ### matrixCache
 
-• `Optional` **matrixCache**: `TMatrixCache`
+ `Optional` **matrixCache**: `TMatrixCache`
 
 storage cache for object full transform matrix
 
@@ -1278,13 +1278,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:77](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L77)
+[src/shapes/Object/ObjectGeometry.ts:76](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L76)
 
 ___
 
 ### minScaleLimit
 
-• **minScaleLimit**: `number`
+ **minScaleLimit**: `number`
 
 #### Inherited from
 
@@ -1294,13 +1294,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:109](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L109)
+[src/shapes/Object/Object.ts:109](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L109)
 
 ___
 
 ### moveCursor
 
-• **moveCursor**: ``null`` \| `string`
+ **moveCursor**: ``null`` \| `string`
 
 #### Inherited from
 
@@ -1310,13 +1310,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:94](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L94)
+[src/shapes/Object/InteractiveObject.ts:94](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L94)
 
 ___
 
 ### noScaleCache
 
-• **noScaleCache**: `boolean`
+ **noScaleCache**: `boolean`
 
 #### Inherited from
 
@@ -1326,13 +1326,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:57](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L57)
+[src/shapes/Object/InteractiveObject.ts:57](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L57)
 
 ___
 
 ### oCoords
 
-• **oCoords**: `Record`\<`string`, `TOCoord`\>
+ **oCoords**: `Record`\<`string`, `TOCoord`\>
 
 Describe object's corner position in canvas element coordinates.
 properties are depending on control keys and padding the main controls.
@@ -1350,13 +1350,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:105](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L105)
+[src/shapes/Object/InteractiveObject.ts:105](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L105)
 
 ___
 
 ### objectCaching
 
-• **objectCaching**: `boolean`
+ **objectCaching**: `boolean`
 
 #### Inherited from
 
@@ -1366,13 +1366,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:133](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L133)
+[src/shapes/Object/Object.ts:133](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L133)
 
 ___
 
 ### opacity
 
-• **opacity**: `number`
+ **opacity**: `number`
 
 #### Inherited from
 
@@ -1382,13 +1382,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:111](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L111)
+[src/shapes/Object/Object.ts:111](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L111)
 
 ___
 
 ### originX
 
-• **originX**: [`TOriginX`](/apidocs/modules.md#toriginx)
+ **originX**: [`TOriginX`](/apidocs/modules.md#toriginx)
 
 #### Inherited from
 
@@ -1398,13 +1398,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:27](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L27)
+[src/shapes/Object/ObjectOrigin.ts:27](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L27)
 
 ___
 
 ### originY
 
-• **originY**: [`TOriginY`](/apidocs/modules.md#toriginy)
+ **originY**: [`TOriginY`](/apidocs/modules.md#toriginy)
 
 #### Inherited from
 
@@ -1414,13 +1414,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:28](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L28)
+[src/shapes/Object/ObjectOrigin.ts:28](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L28)
 
 ___
 
 ### ownCaching
 
-• `Optional` `Private` **ownCaching**: `boolean`
+ `Optional` `Private` **ownCaching**: `boolean`
 
 Indicate if the object is sitting on a cache dedicated to it
 or is part of a larger cache for many object ( a group for example)
@@ -1440,13 +1440,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:255](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L255)
+[src/shapes/Object/Object.ts:255](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L255)
 
 ___
 
 ### ownMatrixCache
 
-• `Optional` **ownMatrixCache**: `TMatrixCache`
+ `Optional` **ownMatrixCache**: `TMatrixCache`
 
 storage cache for object transform matrix
 
@@ -1458,13 +1458,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:72](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L72)
+[src/shapes/Object/ObjectGeometry.ts:71](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L71)
 
 ___
 
 ### padding
 
-• **padding**: `number`
+ **padding**: `number`
 
 #### Inherited from
 
@@ -1474,13 +1474,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:45](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L45)
+[src/shapes/Object/ObjectGeometry.ts:44](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L44)
 
 ___
 
 ### paintFirst
 
-• **paintFirst**: ``"fill"`` \| ``"stroke"``
+ **paintFirst**: ``"fill"`` \| ``"stroke"``
 
 #### Inherited from
 
@@ -1490,13 +1490,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:113](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L113)
+[src/shapes/Object/Object.ts:113](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L113)
 
 ___
 
 ### perPixelTargetFind
 
-• **perPixelTargetFind**: `boolean`
+ **perPixelTargetFind**: `boolean`
 
 #### Inherited from
 
@@ -1506,13 +1506,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:90](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L90)
+[src/shapes/Object/InteractiveObject.ts:90](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L90)
 
 ___
 
 ### scaleX
 
-• **scaleX**: `number`
+ **scaleX**: `number`
 
 #### Inherited from
 
@@ -1522,13 +1522,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:23](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L23)
+[src/shapes/Object/ObjectOrigin.ts:23](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L23)
 
 ___
 
 ### scaleY
 
-• **scaleY**: `number`
+ **scaleY**: `number`
 
 #### Inherited from
 
@@ -1538,13 +1538,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:24](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L24)
+[src/shapes/Object/ObjectOrigin.ts:24](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L24)
 
 ___
 
 ### selectable
 
-• **selectable**: `boolean`
+ **selectable**: `boolean`
 
 #### Inherited from
 
@@ -1554,13 +1554,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:88](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L88)
+[src/shapes/Object/InteractiveObject.ts:88](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L88)
 
 ___
 
 ### selectionBackgroundColor
 
-• **selectionBackgroundColor**: `string`
+ **selectionBackgroundColor**: `string`
 
 #### Inherited from
 
@@ -1570,13 +1570,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:86](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L86)
+[src/shapes/Object/InteractiveObject.ts:86](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L86)
 
 ___
 
 ### shadow
 
-• **shadow**: ``null`` \| [`Shadow`](/apidocs/classes/Shadow.md)
+ **shadow**: ``null`` \| [`Shadow`](/apidocs/classes/Shadow.md)
 
 #### Inherited from
 
@@ -1586,13 +1586,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:126](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L126)
+[src/shapes/Object/Object.ts:126](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L126)
 
 ___
 
 ### skewX
 
-• **skewX**: `number`
+ **skewX**: `number`
 
 #### Inherited from
 
@@ -1602,13 +1602,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:25](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L25)
+[src/shapes/Object/ObjectOrigin.ts:25](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L25)
 
 ___
 
 ### skewY
 
-• **skewY**: `number`
+ **skewY**: `number`
 
 #### Inherited from
 
@@ -1618,13 +1618,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:26](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L26)
+[src/shapes/Object/ObjectOrigin.ts:26](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L26)
 
 ___
 
 ### snapAngle
 
-• `Optional` **snapAngle**: [`TDegree`](/apidocs/modules.md#tdegree)
+ `Optional` **snapAngle**: [`TDegree`](/apidocs/modules.md#tdegree)
 
 #### Inherited from
 
@@ -1634,13 +1634,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:60](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L60)
+[src/shapes/Object/InteractiveObject.ts:60](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L60)
 
 ___
 
 ### snapThreshold
 
-• `Optional` **snapThreshold**: [`TDegree`](/apidocs/modules.md#tdegree)
+ `Optional` **snapThreshold**: [`TDegree`](/apidocs/modules.md#tdegree)
 
 #### Inherited from
 
@@ -1650,13 +1650,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:61](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L61)
+[src/shapes/Object/InteractiveObject.ts:61](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L61)
 
 ___
 
 ### stroke
 
-• **stroke**: ``null`` \| `string` \| [`TFiller`](/apidocs/modules.md#tfiller)
+ **stroke**: ``null`` \| `string` \| [`TFiller`](/apidocs/modules.md#tfiller)
 
 #### Inherited from
 
@@ -1666,13 +1666,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:116](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L116)
+[src/shapes/Object/Object.ts:116](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L116)
 
 ___
 
 ### strokeDashArray
 
-• **strokeDashArray**: ``null`` \| `number`[]
+ **strokeDashArray**: ``null`` \| `number`[]
 
 #### Inherited from
 
@@ -1682,13 +1682,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:117](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L117)
+[src/shapes/Object/Object.ts:117](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L117)
 
 ___
 
 ### strokeDashOffset
 
-• **strokeDashOffset**: `number`
+ **strokeDashOffset**: `number`
 
 #### Inherited from
 
@@ -1698,13 +1698,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:118](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L118)
+[src/shapes/Object/Object.ts:118](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L118)
 
 ___
 
 ### strokeLineCap
 
-• **strokeLineCap**: `CanvasLineCap`
+ **strokeLineCap**: `CanvasLineCap`
 
 #### Inherited from
 
@@ -1714,13 +1714,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:119](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L119)
+[src/shapes/Object/Object.ts:119](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L119)
 
 ___
 
 ### strokeLineJoin
 
-• **strokeLineJoin**: `CanvasLineJoin`
+ **strokeLineJoin**: `CanvasLineJoin`
 
 #### Inherited from
 
@@ -1730,13 +1730,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:120](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L120)
+[src/shapes/Object/Object.ts:120](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L120)
 
 ___
 
 ### strokeMiterLimit
 
-• **strokeMiterLimit**: `number`
+ **strokeMiterLimit**: `number`
 
 #### Inherited from
 
@@ -1746,13 +1746,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:121](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L121)
+[src/shapes/Object/Object.ts:121](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L121)
 
 ___
 
 ### strokeUniform
 
-• **strokeUniform**: `boolean`
+ **strokeUniform**: `boolean`
 
 #### Inherited from
 
@@ -1762,13 +1762,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:31](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L31)
+[src/shapes/Object/ObjectOrigin.ts:31](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L31)
 
 ___
 
 ### strokeWidth
 
-• **strokeWidth**: `number`
+ **strokeWidth**: `number`
 
 #### Inherited from
 
@@ -1778,13 +1778,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:30](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L30)
+[src/shapes/Object/ObjectOrigin.ts:30](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L30)
 
 ___
 
 ### subTargetCheck
 
-• **subTargetCheck**: `boolean`
+ **subTargetCheck**: `boolean`
 
 Used to optimize performance
 set to `false` if you don't need contained objects to be targets of events
@@ -1797,13 +1797,13 @@ set to `false` if you don't need contained objects to be targets of events
 
 #### Defined in
 
-[src/shapes/Group.ts:126](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L126)
+[src/shapes/Group.ts:126](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L126)
 
 ___
 
 ### top
 
-• **top**: `number`
+ **top**: `number`
 
 #### Inherited from
 
@@ -1813,13 +1813,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:17](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L17)
+[src/shapes/Object/ObjectOrigin.ts:17](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L17)
 
 ___
 
 ### touchCornerSize
 
-• **touchCornerSize**: `number`
+ **touchCornerSize**: `number`
 
 #### Inherited from
 
@@ -1829,13 +1829,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:73](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L73)
+[src/shapes/Object/InteractiveObject.ts:73](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L73)
 
 ___
 
 ### transparentCorners
 
-• **transparentCorners**: `boolean`
+ **transparentCorners**: `boolean`
 
 #### Inherited from
 
@@ -1845,13 +1845,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:74](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L74)
+[src/shapes/Object/InteractiveObject.ts:74](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L74)
 
 ___
 
 ### visible
 
-• **visible**: `boolean`
+ **visible**: `boolean`
 
 #### Inherited from
 
@@ -1861,13 +1861,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:128](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L128)
+[src/shapes/Object/Object.ts:128](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L128)
 
 ___
 
 ### width
 
-• **width**: `number`
+ **width**: `number`
 
 #### Inherited from
 
@@ -1877,13 +1877,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:19](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L19)
+[src/shapes/Object/ObjectOrigin.ts:19](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L19)
 
 ___
 
 ### zoomX
 
-• `Optional` `Private` **zoomX**: `number`
+ `Optional` `Private` **zoomX**: `number`
 
 zoom level used on the cacheCanvas to draw the cache, X axe
 since 1.7.0
@@ -1903,13 +1903,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:211](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L211)
+[src/shapes/Object/Object.ts:211](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L211)
 
 ___
 
 ### zoomY
 
-• `Optional` `Private` **zoomY**: `number`
+ `Optional` `Private` **zoomY**: `number`
 
 zoom level used on the cacheCanvas to draw the cache, Y axe
 since 1.7.0
@@ -1929,13 +1929,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:220](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L220)
+[src/shapes/Object/Object.ts:220](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L220)
 
 ___
 
 ### cacheProperties
 
-▪ `Static` **cacheProperties**: `string`[] = `cacheProperties`
+ `Static` **cacheProperties**: `string`[] = `cacheProperties`
 
 List of properties to consider when checking if cache needs refresh
 Those properties are checked by
@@ -1950,13 +1950,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:155](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L155)
+[src/shapes/Object/Object.ts:155](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L155)
 
 ___
 
 ### ownDefaults
 
-▪ `Static` **ownDefaults**: `Record`\<`string`, `any`\> = `groupDefaultValues`
+ `Static` **ownDefaults**: `Record`\<`string`, `any`\> = `groupDefaultValues`
 
 #### Overrides
 
@@ -1966,13 +1966,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Group.ts:152](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L152)
+[src/shapes/Group.ts:152](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L152)
 
 ___
 
 ### stateProperties
 
-▪ `Static` **stateProperties**: `string`[]
+ `Static` **stateProperties**: `string`[]
 
 #### Overrides
 
@@ -1982,13 +1982,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Group.ts:145](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L145)
+[src/shapes/Group.ts:145](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L145)
 
 ___
 
 ### type
 
-▪ `Static` **type**: `string` = `'Group'`
+ `Static` **type**: `string` = `'Group'`
 
 #### Overrides
 
@@ -1998,13 +1998,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Group.ts:150](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L150)
+[src/shapes/Group.ts:150](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L150)
 
 ## Accessors
 
 ### type
 
-• `get` **type**(): `string`
+`get` **type**(): `string`
 
 Legacy identifier of the class. Prefer using utils like isType or instanceOf
 Will be removed in fabric 7 or 8.
@@ -2029,9 +2029,9 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:290](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L290)
+[src/shapes/Object/Object.ts:290](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L290)
 
-• `set` **type**(`value`): `void`
+`set` **type**(`value`): `void`
 
 #### Parameters
 
@@ -2051,13 +2051,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:298](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L298)
+[src/shapes/Object/Object.ts:298](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L298)
 
 ## Methods
 
 ### \_\_objectMonitor
 
-▸ **__objectMonitor**(`ev`): `void`
+**__objectMonitor**(`ev`): `void`
 
 invalidates layout on object modified
 
@@ -2073,13 +2073,13 @@ invalidates layout on object modified
 
 #### Defined in
 
-[src/shapes/Group.ts:356](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L356)
+[src/shapes/Group.ts:356](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L356)
 
 ___
 
 ### \_\_objectSelectionMonitor
 
-▸ **__objectSelectionMonitor**\<`T`\>(`selected`, `«destructured»`): `void`
+**__objectSelectionMonitor**\<`T`\>(`selected`, `«destructured»`): `void`
 
 keeps track of the selected objects
 
@@ -2102,13 +2102,13 @@ keeps track of the selected objects
 
 #### Defined in
 
-[src/shapes/Group.ts:365](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L365)
+[src/shapes/Group.ts:365](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L365)
 
 ___
 
 ### \_\_serializeObjects
 
-▸ **__serializeObjects**(`method?`, `propertiesToInclude?`): `any`[]
+**__serializeObjects**(`method?`, `propertiesToInclude?`): `any`[]
 
 #### Parameters
 
@@ -2125,13 +2125,13 @@ serialized objects
 
 #### Defined in
 
-[src/shapes/Group.ts:964](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L964)
+[src/shapes/Group.ts:964](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L964)
 
 ___
 
 ### \_adjustObjectPosition
 
-▸ **_adjustObjectPosition**(`object`, `diff`): `void`
+**_adjustObjectPosition**(`object`, `diff`): `void`
 
 #### Parameters
 
@@ -2146,13 +2146,13 @@ ___
 
 #### Defined in
 
-[src/shapes/Group.ts:588](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L588)
+[src/shapes/Group.ts:588](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L588)
 
 ___
 
 ### \_animate
 
-▸ **_animate**\<`T`\>(`key`, `endValue`, `options?`): [`TAnimation`](/apidocs/modules/util.md#tanimation)\<`T`\>
+**_animate**\<`T`\>(`key`, `endValue`, `options?`): [`TAnimation`](/apidocs/modules/util.md#tanimation)\<`T`\>
 
 #### Type parameters
 
@@ -2180,13 +2180,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/AnimatableObject.ts:50](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/AnimatableObject.ts#L50)
+[src/shapes/Object/AnimatableObject.ts:50](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/AnimatableObject.ts#L50)
 
 ___
 
 ### \_applyLayoutStrategy
 
-▸ **_applyLayoutStrategy**(`context`): `void`
+**_applyLayoutStrategy**(`context`): `void`
 
 initial layout logic:
 calculate bbox of objects (if necessary) and translate it according to options received from the constructor (left, top, width, height)
@@ -2204,13 +2204,13 @@ so it is placed in the center of the bbox received from the constructor
 
 #### Defined in
 
-[src/shapes/Group.ts:603](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L603)
+[src/shapes/Group.ts:603](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L603)
 
 ___
 
 ### \_applyPatternForTransformedGradient
 
-▸ **_applyPatternForTransformedGradient**(`ctx`, `filler`): `void`
+**_applyPatternForTransformedGradient**(`ctx`, `filler`): `void`
 
 This function try to patch the missing gradientTransform on canvas gradients.
 transforming a context to transform the gradient, is going to transform the stroke too.
@@ -2238,13 +2238,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1255](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1255)
+[src/shapes/Object/Object.ts:1255](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1255)
 
 ___
 
 ### \_applyPatternGradientTransform
 
-▸ **_applyPatternGradientTransform**(`ctx`, `filler`): `Object`
+**_applyPatternGradientTransform**(`ctx`, `filler`): `Object`
 
 #### Parameters
 
@@ -2270,13 +2270,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1152](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1152)
+[src/shapes/Object/Object.ts:1152](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1152)
 
 ___
 
 ### \_calculateCurrentDimensions
 
-▸ **_calculateCurrentDimensions**(`options?`): [`Point`](/apidocs/classes/Point.md)
+**_calculateCurrentDimensions**(`options?`): [`Point`](/apidocs/classes/Point.md)
 
 Calculate object dimensions for controls box, including padding and canvas zoom.
 and active selection
@@ -2301,13 +2301,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:697](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L697)
+[src/shapes/Object/ObjectGeometry.ts:633](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L633)
 
 ___
 
 ### \_constrainScale
 
-▸ **_constrainScale**(`value`): `number`
+**_constrainScale**(`value`): `number`
 
 Makes sure the scale is valid and modifies it if necessary
 @todo: this is a control action issue, not a geometry one
@@ -2332,13 +2332,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:675](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L675)
+[src/shapes/Object/Object.ts:675](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L675)
 
 ___
 
 ### \_createBaseClipPathSVGMarkup
 
-▸ **_createBaseClipPathSVGMarkup**(`this`, `objectMarkup`, `«destructured»?`): `string`
+**_createBaseClipPathSVGMarkup**(`this`, `objectMarkup`, `«destructured»?`): `string`
 
 #### Parameters
 
@@ -2362,13 +2362,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/FabricObjectSVGExportMixin.ts:158](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/FabricObjectSVGExportMixin.ts#L158)
+[src/shapes/Object/FabricObjectSVGExportMixin.ts:158](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/FabricObjectSVGExportMixin.ts#L158)
 
 ___
 
 ### \_createBaseSVGMarkup
 
-▸ **_createBaseSVGMarkup**(`this`, `objectMarkup`, `«destructured»?`): `string`
+**_createBaseSVGMarkup**(`this`, `objectMarkup`, `«destructured»?`): `string`
 
 #### Parameters
 
@@ -2394,13 +2394,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/FabricObjectSVGExportMixin.ts:179](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/FabricObjectSVGExportMixin.ts#L179)
+[src/shapes/Object/FabricObjectSVGExportMixin.ts:179](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/FabricObjectSVGExportMixin.ts#L179)
 
 ___
 
 ### \_createCacheCanvas
 
-▸ **_createCacheCanvas**(): `void`
+**_createCacheCanvas**(): `void`
 
 Create a the canvas used to keep the cached copy of the object
 
@@ -2416,13 +2416,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:319](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L319)
+[src/shapes/Object/Object.ts:319](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L319)
 
 ___
 
 ### \_createSVGBgRect
 
-▸ **_createSVGBgRect**(`reviver?`): `string`
+**_createSVGBgRect**(`reviver?`): `string`
 
 #### Parameters
 
@@ -2436,13 +2436,13 @@ ___
 
 #### Defined in
 
-[src/shapes/Group.ts:1025](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L1025)
+[src/shapes/Group.ts:1025](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L1025)
 
 ___
 
 ### \_drawBorders
 
-▸ **_drawBorders**(`ctx`, `size`, `styleOverride?`): `void`
+**_drawBorders**(`ctx`, `size`, `styleOverride?`): `void`
 
 #### Parameters
 
@@ -2464,13 +2464,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:376](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L376)
+[src/shapes/Object/InteractiveObject.ts:376](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L376)
 
 ___
 
 ### \_drawClipPath
 
-▸ **_drawClipPath**(`ctx`, `clipPath?`): `void`
+**_drawClipPath**(`ctx`, `clipPath?`): `void`
 
 Prepare clipPath state and cache and draw it on instance's cache
 
@@ -2493,13 +2493,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:944](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L944)
+[src/shapes/Object/Object.ts:944](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L944)
 
 ___
 
 ### \_enterGroup
 
-▸ **_enterGroup**(`object`, `removeParentTransform?`): `void`
+**_enterGroup**(`object`, `removeParentTransform?`): `void`
 
 #### Parameters
 
@@ -2514,13 +2514,13 @@ ___
 
 #### Defined in
 
-[src/shapes/Group.ts:419](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L419)
+[src/shapes/Group.ts:419](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L419)
 
 ___
 
 ### \_exitGroup
 
-▸ **_exitGroup**(`object`, `removeParentTransform?`): `void`
+**_exitGroup**(`object`, `removeParentTransform?`): `void`
 
 #### Parameters
 
@@ -2535,13 +2535,13 @@ ___
 
 #### Defined in
 
-[src/shapes/Group.ts:462](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L462)
+[src/shapes/Group.ts:462](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L462)
 
 ___
 
 ### \_filterObjectsBeforeEnteringGroup
 
-▸ **_filterObjectsBeforeEnteringGroup**(`objects`): [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]
+**_filterObjectsBeforeEnteringGroup**(`objects`): [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]
 
 Override this method to enhance performance (for groups with a lot of objects).
 If Overriding, be sure not pass illegal objects to group - it will break your app.
@@ -2558,13 +2558,13 @@ If Overriding, be sure not pass illegal objects to group - it will break your ap
 
 #### Defined in
 
-[src/shapes/Group.ts:229](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L229)
+[src/shapes/Group.ts:229](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L229)
 
 ___
 
 ### \_findCenterFromElement
 
-▸ **_findCenterFromElement**(): [`Point`](/apidocs/classes/Point.md)
+**_findCenterFromElement**(): [`Point`](/apidocs/classes/Point.md)
 
 This function is an helper for svg import. it returns the center of the object in the svg
 untransformed coordinates
@@ -2583,13 +2583,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1303](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1303)
+[src/shapes/Object/Object.ts:1303](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1303)
 
 ___
 
 ### \_findTargetCorner
 
-▸ **_findTargetCorner**(`pointer`, `forTouch?`): `string`
+**_findTargetCorner**(`pointer`, `forTouch?`): `string`
 
 Determines which corner is under the mouse cursor, represented by `pointer`.
 This function is return a corner only if the object is the active one.
@@ -2618,13 +2618,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:191](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L191)
+[src/shapes/Object/InteractiveObject.ts:191](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L191)
 
 ___
 
 ### \_getCacheCanvasDimensions
 
-▸ **_getCacheCanvasDimensions**(): [`TCacheCanvasDimensions`](/apidocs/modules.md#tcachecanvasdimensions)
+**_getCacheCanvasDimensions**(): [`TCacheCanvasDimensions`](/apidocs/modules.md#tcachecanvasdimensions)
 
 Return the dimension and the zoom level needed to create a cache canvas
 big enough to host the object to be cached.
@@ -2653,13 +2653,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:390](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L390)
+[src/shapes/Object/Object.ts:390](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L390)
 
 ___
 
 ### \_getLeftTopCoords
 
-▸ **_getLeftTopCoords**(): [`Point`](/apidocs/classes/Point.md)
+**_getLeftTopCoords**(): [`Point`](/apidocs/classes/Point.md)
 
 #### Returns
 
@@ -2673,13 +2673,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:222](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L222)
+[src/shapes/Object/ObjectOrigin.ts:222](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L222)
 
 ___
 
 ### \_getNonTransformedDimensions
 
-▸ **_getNonTransformedDimensions**(): [`Point`](/apidocs/classes/Point.md)
+**_getNonTransformedDimensions**(): [`Point`](/apidocs/classes/Point.md)
 
 Calculate object dimensions from its properties
 
@@ -2697,13 +2697,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:686](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L686)
+[src/shapes/Object/ObjectGeometry.ts:622](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L622)
 
 ___
 
 ### \_getTransformedDimensions
 
-▸ **_getTransformedDimensions**(`options?`): [`Point`](/apidocs/classes/Point.md)
+**_getTransformedDimensions**(`options?`): [`Point`](/apidocs/classes/Point.md)
 
 Calculate object bounding box dimensions from its properties scale, skew.
 
@@ -2727,13 +2727,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:49](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L49)
+[src/shapes/Object/ObjectOrigin.ts:49](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L49)
 
 ___
 
 ### \_limitCacheSize
 
-▸ **_limitCacheSize**(`dims`): `any`
+**_limitCacheSize**(`dims`): `any`
 
 Limit the cache dimensions so that X * Y do not cross config.perfLimitSizeTotal
 and each side do not cross fabric.cacheSideLimit
@@ -2766,13 +2766,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:342](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L342)
+[src/shapes/Object/Object.ts:342](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L342)
 
 ___
 
 ### \_onAfterObjectsChange
 
-▸ **_onAfterObjectsChange**(`type`, `targets`): `void`
+**_onAfterObjectsChange**(`type`, `targets`): `void`
 
 #### Parameters
 
@@ -2787,13 +2787,13 @@ ___
 
 #### Defined in
 
-[src/shapes/Group.ts:298](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L298)
+[src/shapes/Group.ts:298](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L298)
 
 ___
 
 ### \_onObjectAdded
 
-▸ **_onObjectAdded**(`object`): `void`
+**_onObjectAdded**(`object`): `void`
 
 #### Parameters
 
@@ -2813,13 +2813,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Group.ts:270](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L270)
+[src/shapes/Group.ts:270](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L270)
 
 ___
 
 ### \_onObjectRemoved
 
-▸ **_onObjectRemoved**(`object`, `removeParentTransform?`): `void`
+**_onObjectRemoved**(`object`, `removeParentTransform?`): `void`
 
 #### Parameters
 
@@ -2840,13 +2840,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Group.ts:287](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L287)
+[src/shapes/Group.ts:287](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L287)
 
 ___
 
 ### \_onRelativeObjectAdded
 
-▸ **_onRelativeObjectAdded**(`object`): `void`
+**_onRelativeObjectAdded**(`object`): `void`
 
 #### Parameters
 
@@ -2860,13 +2860,13 @@ ___
 
 #### Defined in
 
-[src/shapes/Group.ts:276](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L276)
+[src/shapes/Group.ts:276](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L276)
 
 ___
 
 ### \_onStackOrderChanged
 
-▸ **_onStackOrderChanged**(): `void`
+**_onStackOrderChanged**(): `void`
 
 #### Returns
 
@@ -2880,13 +2880,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Group.ts:306](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L306)
+[src/shapes/Group.ts:306](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L306)
 
 ___
 
 ### \_removeCacheCanvas
 
-▸ **_removeCacheCanvas**(): `void`
+**_removeCacheCanvas**(): `void`
 
 Remove cacheCanvas and its dimensions from the objects
 
@@ -2902,13 +2902,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:798](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L798)
+[src/shapes/Object/Object.ts:798](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L798)
 
 ___
 
 ### \_removeDefaultValues
 
-▸ **_removeDefaultValues**\<`T`\>(`object`): `Partial`\<`T`\>
+**_removeDefaultValues**\<`T`\>(`object`): `Partial`\<`T`\>
 
 #### Type parameters
 
@@ -2934,13 +2934,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:590](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L590)
+[src/shapes/Object/Object.ts:590](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L590)
 
 ___
 
 ### \_removeShadow
 
-▸ **_removeShadow**(`ctx`): `void`
+**_removeShadow**(`ctx`): `void`
 
 #### Parameters
 
@@ -2960,13 +2960,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1138](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1138)
+[src/shapes/Object/Object.ts:1138](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1138)
 
 ___
 
 ### \_render
 
-▸ **_render**(`ctx`): `void`
+**_render**(`ctx`): `void`
 
 function that actually render something on the context.
 empty here to allow Obects to work on tests to benchmark fabric functionalites
@@ -2990,13 +2990,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1197](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1197)
+[src/shapes/Object/Object.ts:1197](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1197)
 
 ___
 
 ### \_renderBackground
 
-▸ **_renderBackground**(`ctx`): `void`
+**_renderBackground**(`ctx`): `void`
 
 Draws a background for the object big as its untransformed dimensions
 
@@ -3018,13 +3018,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1006](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1006)
+[src/shapes/Object/Object.ts:1006](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1006)
 
 ___
 
 ### \_renderControls
 
-▸ **_renderControls**(`ctx`, `styleOverride?`): `void`
+**_renderControls**(`ctx`, `styleOverride?`): `void`
 
 Renders controls and borders for the object
 the context here is not transformed
@@ -3052,13 +3052,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:402](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L402)
+[src/shapes/Object/InteractiveObject.ts:402](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L402)
 
 ___
 
 ### \_renderFill
 
-▸ **_renderFill**(`ctx`): `void`
+**_renderFill**(`ctx`): `void`
 
 #### Parameters
 
@@ -3078,13 +3078,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1205](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1205)
+[src/shapes/Object/Object.ts:1205](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1205)
 
 ___
 
 ### \_renderPaintInOrder
 
-▸ **_renderPaintInOrder**(`ctx`): `void`
+**_renderPaintInOrder**(`ctx`): `void`
 
 #### Parameters
 
@@ -3104,13 +3104,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1180](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1180)
+[src/shapes/Object/Object.ts:1180](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1180)
 
 ___
 
 ### \_renderStroke
 
-▸ **_renderStroke**(`ctx`): `void`
+**_renderStroke**(`ctx`): `void`
 
 #### Parameters
 
@@ -3130,13 +3130,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1224](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1224)
+[src/shapes/Object/Object.ts:1224](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1224)
 
 ___
 
 ### \_set
 
-▸ **_set**(`key`, `value`): [`Group`](/apidocs/classes/Group.md)
+**_set**(`key`, `value`): [`Group`](/apidocs/classes/Group.md)
 
 #### Parameters
 
@@ -3157,13 +3157,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Group.ts:315](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L315)
+[src/shapes/Group.ts:315](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L315)
 
 ___
 
 ### \_setClippingProperties
 
-▸ **_setClippingProperties**(`ctx`): `void`
+**_setClippingProperties**(`ctx`): `void`
 
 #### Parameters
 
@@ -3183,13 +3183,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1084](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1084)
+[src/shapes/Object/Object.ts:1084](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1084)
 
 ___
 
 ### \_setFillStyles
 
-▸ **_setFillStyles**(`ctx`, `«destructured»`): `void`
+**_setFillStyles**(`ctx`, `«destructured»`): `void`
 
 #### Parameters
 
@@ -3210,13 +3210,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1073](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1073)
+[src/shapes/Object/Object.ts:1073](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1073)
 
 ___
 
 ### \_setLineDash
 
-▸ **_setLineDash**(`ctx`, `dashArray?`): `void`
+**_setLineDash**(`ctx`, `dashArray?`): `void`
 
 Sets line dash
 
@@ -3239,13 +3239,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1096](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1096)
+[src/shapes/Object/Object.ts:1096](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1096)
 
 ___
 
 ### \_setObject
 
-▸ **_setObject**(`obj`): `void`
+**_setObject**(`obj`): `void`
 
 #### Parameters
 
@@ -3265,13 +3265,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/CommonMethods.ts:18](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/CommonMethods.ts#L18)
+[src/CommonMethods.ts:18](https://github.com/fabricjs/fabric.js/blob/078809453/src/CommonMethods.ts#L18)
 
 ___
 
 ### \_setOpacity
 
-▸ **_setOpacity**(`ctx`): `void`
+**_setOpacity**(`ctx`): `void`
 
 #### Parameters
 
@@ -3291,13 +3291,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1023](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1023)
+[src/shapes/Object/Object.ts:1023](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1023)
 
 ___
 
 ### \_setOptions
 
-▸ **_setOptions**(`options?`): `void`
+**_setOptions**(`options?`): `void`
 
 Sets object's properties from options, for initialization only
 
@@ -3319,13 +3319,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/CommonMethods.ts:9](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/CommonMethods.ts#L9)
+[src/CommonMethods.ts:9](https://github.com/fabricjs/fabric.js/blob/078809453/src/CommonMethods.ts#L9)
 
 ___
 
 ### \_setShadow
 
-▸ **_setShadow**(`ctx`): `void`
+**_setShadow**(`ctx`): `void`
 
 #### Parameters
 
@@ -3345,13 +3345,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1111](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1111)
+[src/shapes/Object/Object.ts:1111](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1111)
 
 ___
 
 ### \_setStrokeStyles
 
-▸ **_setStrokeStyles**(`ctx`, `decl`): `void`
+**_setStrokeStyles**(`ctx`, `decl`): `void`
 
 #### Parameters
 
@@ -3372,13 +3372,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1031](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1031)
+[src/shapes/Object/Object.ts:1031](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1031)
 
 ___
 
 ### \_setupCompositeOperation
 
-▸ **_setupCompositeOperation**(`ctx`): `void`
+**_setupCompositeOperation**(`ctx`): `void`
 
 Sets canvas globalCompositeOperation for specific object
 custom composition operation for the particular object can be specified using globalCompositeOperation property
@@ -3401,13 +3401,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1535](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1535)
+[src/shapes/Object/Object.ts:1535](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1535)
 
 ___
 
 ### \_shouldSetNestedCoords
 
-▸ **_shouldSetNestedCoords**(): `boolean`
+**_shouldSetNestedCoords**(): `boolean`
 
 #### Returns
 
@@ -3415,13 +3415,13 @@ ___
 
 #### Defined in
 
-[src/shapes/Group.ts:339](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L339)
+[src/shapes/Group.ts:339](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L339)
 
 ___
 
 ### \_toSVG
 
-▸ **_toSVG**(`reviver?`): `string`[]
+**_toSVG**(`reviver?`): `string`[]
 
 Returns svg representation of an instance
 
@@ -3445,13 +3445,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Group.ts:1041](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L1041)
+[src/shapes/Group.ts:1041](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L1041)
 
 ___
 
 ### \_updateCacheCanvas
 
-▸ **_updateCacheCanvas**(): `boolean`
+**_updateCacheCanvas**(): `boolean`
 
 Update width and height of the canvas for cache
 returns true or false if canvas needed resize.
@@ -3470,13 +3470,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:164](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L164)
+[src/shapes/Object/InteractiveObject.ts:164](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L164)
 
 ___
 
 ### \_watchObject
 
-▸ **_watchObject**(`watch`, `object`): `void`
+**_watchObject**(`watch`, `object`): `void`
 
 #### Parameters
 
@@ -3491,13 +3491,13 @@ ___
 
 #### Defined in
 
-[src/shapes/Group.ts:386](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L386)
+[src/shapes/Group.ts:386](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L386)
 
 ___
 
 ### add
 
-▸ **add**(`...objects`): `number`
+**add**(`...objects`): `number`
 
 Add objects
 
@@ -3519,13 +3519,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Group.ts:240](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L240)
+[src/shapes/Group.ts:240](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L240)
 
 ___
 
 ### addPaintOrder
 
-▸ **addPaintOrder**(`this`): `string`
+**addPaintOrder**(`this`): `string`
 
 #### Parameters
 
@@ -3545,13 +3545,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/FabricObjectSVGExportMixin.ts:249](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/FabricObjectSVGExportMixin.ts#L249)
+[src/shapes/Object/FabricObjectSVGExportMixin.ts:249](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/FabricObjectSVGExportMixin.ts#L249)
 
 ___
 
 ### animate
 
-▸ **animate**\<`T`\>(`animatable`, `options?`): `Record`\<`string`, [`TAnimation`](/apidocs/modules/util.md#tanimation)\<`T`\>\>
+**animate**\<`T`\>(`animatable`, `options?`): `Record`\<`string`, [`TAnimation`](/apidocs/modules/util.md#tanimation)\<`T`\>\>
 
 Animates object's properties
 
@@ -3591,13 +3591,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/AnimatableObject.ts:34](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/AnimatableObject.ts#L34)
+[src/shapes/Object/AnimatableObject.ts:34](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/AnimatableObject.ts#L34)
 
 ___
 
 ### bringObjectForward
 
-▸ **bringObjectForward**(`object`, `intersecting?`): `boolean`
+**bringObjectForward**(`object`, `intersecting?`): `boolean`
 
 Moves an object or a selection up in stack of drawn objects
 An optional parameter, intersecting allows to move the object in front
@@ -3626,13 +3626,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/Collection.ts:232](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L232)
+[src/Collection.ts:232](https://github.com/fabricjs/fabric.js/blob/078809453/src/Collection.ts#L232)
 
 ___
 
 ### bringObjectToFront
 
-▸ **bringObjectToFront**(`object`): `boolean`
+**bringObjectToFront**(`object`): `boolean`
 
 Moves an object or the objects of a multiple selection
 to the top of the stack of drawn objects
@@ -3657,13 +3657,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/Collection.ts:186](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L186)
+[src/Collection.ts:186](https://github.com/fabricjs/fabric.js/blob/078809453/src/Collection.ts#L186)
 
 ___
 
 ### calcACoords
 
-▸ **calcACoords**(): [`TCornerPoint`](/apidocs/modules.md#tcornerpoint)
+**calcACoords**(): [`TCornerPoint`](/apidocs/modules.md#tcornerpoint)
 
 Calculates the coordinates of the 4 corner of the bbox, in absolute coordinates.
 those never change with zoom or viewport changes.
@@ -3680,36 +3680,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:552](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L552)
-
-___
-
-### calcLineCoords
-
-▸ **calcLineCoords**(): [`TCornerPoint`](/apidocs/modules.md#tcornerpoint)
-
-return the coordinate of the 4 corners of the bounding box in HTMLCanvasElement coordinates
-used for bounding box interactivity with the mouse
-
-#### Returns
-
-[`TCornerPoint`](/apidocs/modules.md#tcornerpoint)
-
-#### Inherited from
-
-createCollectionMixin(
-  FabricObject\<GroupProps, SerializedGroupProps, GroupEvents\>
-).calcLineCoords
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:506](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L506)
+[src/shapes/Object/ObjectGeometry.ts:491](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L491)
 
 ___
 
 ### calcOCoords
 
-▸ **calcOCoords**(): `Record`\<`string`, `TOCoord`\>
+**calcOCoords**(): `Record`\<`string`, `TOCoord`\>
 
 Calculates the coordinates of the center of each control plus the corners of the control itself
 This basically just delegates to each control positionHandler
@@ -3728,13 +3705,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:223](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L223)
+[src/shapes/Object/InteractiveObject.ts:223](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L223)
 
 ___
 
 ### calcOwnMatrix
 
-▸ **calcOwnMatrix**(): [`TMat2D`](/apidocs/modules.md#tmat2d)
+**calcOwnMatrix**(): [`TMat2D`](/apidocs/modules.md#tmat2d)
 
 calculate transform matrix that represents the current transformations from the
 object's properties, this matrix does not include the group transformation
@@ -3753,13 +3730,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:655](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L655)
+[src/shapes/Object/ObjectGeometry.ts:591](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L591)
 
 ___
 
 ### calcTransformMatrix
 
-▸ **calcTransformMatrix**(`skipGroup?`): [`TMat2D`](/apidocs/modules.md#tmat2d)
+**calcTransformMatrix**(`skipGroup?`): [`TMat2D`](/apidocs/modules.md#tmat2d)
 
 calculate transform matrix that represents the current transformations from the
 object's properties.
@@ -3784,13 +3761,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:627](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L627)
+[src/shapes/Object/ObjectGeometry.ts:563](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L563)
 
 ___
 
 ### canDrop
 
-▸ **canDrop**(`e`): `boolean`
+**canDrop**(`e`): `boolean`
 
 Override to customize drag and drop behavior
 return true if the object currently dragged can be dropped on the target
@@ -3813,13 +3790,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:639](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L639)
+[src/shapes/Object/InteractiveObject.ts:639](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L639)
 
 ___
 
 ### canEnterGroup
 
-▸ **canEnterGroup**(`object`): `boolean`
+**canEnterGroup**(`object`): `boolean`
 
 Checks if object can enter group and logs relevant warnings
 
@@ -3835,13 +3812,13 @@ Checks if object can enter group and logs relevant warnings
 
 #### Defined in
 
-[src/shapes/Group.ts:205](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L205)
+[src/shapes/Group.ts:205](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L205)
 
 ___
 
 ### clearContextTop
 
-▸ **clearContextTop**(`restoreManually?`): `undefined` \| `CanvasRenderingContext2D`
+**clearContextTop**(`restoreManually?`): `undefined` \| `CanvasRenderingContext2D`
 
 Clears the canvas.contextTop in a specific area that corresponds to the object's bounding box
 that is in the canvas.contextContainer.
@@ -3873,13 +3850,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:582](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L582)
+[src/shapes/Object/InteractiveObject.ts:582](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L582)
 
 ___
 
 ### clone
 
-▸ **clone**(`propertiesToInclude?`): `Promise`\<[`Group`](/apidocs/classes/Group.md)\>
+**clone**(`propertiesToInclude?`): `Promise`\<[`Group`](/apidocs/classes/Group.md)\>
 
 Clones an instance.
 
@@ -3901,13 +3878,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1312](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1312)
+[src/shapes/Object/Object.ts:1312](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1312)
 
 ___
 
 ### cloneAsImage
 
-▸ **cloneAsImage**(`options?`): [`FabricImage`](/apidocs/classes/FabricImage.md)\<`Partial`\<[`ImageProps`](/apidocs/interfaces/ImageProps.md)\>, [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
+**cloneAsImage**(`options?`): [`FabricImage`](/apidocs/classes/FabricImage.md)\<`Partial`\<[`ImageProps`](/apidocs/interfaces/ImageProps.md)\>, [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
 
 Creates an instance of Image out of an object
 makes use of toCanvasElement.
@@ -3940,13 +3917,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1338](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1338)
+[src/shapes/Object/Object.ts:1338](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1338)
 
 ___
 
 ### collectObjects
 
-▸ **collectObjects**(`«destructured»`, `«destructured»?`): `InteractiveFabricObject`\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]
+**collectObjects**(`bbox`, `options?`): `InteractiveFabricObject`\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]
 
 Given a bounding box, return all the objects of the collection that are contained in the bounding box.
 If `includeIntersecting` is true, return also the objects that intersect the bounding box as well.
@@ -3954,11 +3931,11 @@ This is meant to work with selection. Is not a generic method.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `«destructured»` | [`TBBox`](/apidocs/modules.md#tbbox) |
-| `«destructured»` | `Object` |
-| › `includeIntersecting?` | `boolean` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `bbox` | [`TBBox`](/apidocs/modules.md#tbbox) | a bounding box in scene coordinates |
+| `options` | `Object` | an object with includeIntersecting |
+| `options.includeIntersecting?` | `boolean` | - |
 
 #### Returns
 
@@ -3974,13 +3951,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/Collection.ts:316](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L316)
+[src/Collection.ts:318](https://github.com/fabricjs/fabric.js/blob/078809453/src/Collection.ts#L318)
 
 ___
 
 ### complexity
 
-▸ **complexity**(): `number`
+**complexity**(): `number`
 
 Returns number representation of a collection complexity
 
@@ -3998,13 +3975,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/Collection.ts:157](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L157)
+[src/Collection.ts:157](https://github.com/fabricjs/fabric.js/blob/078809453/src/Collection.ts#L157)
 
 ___
 
 ### contains
 
-▸ **contains**(`object`, `deep?`): `boolean`
+**contains**(`object`, `deep?`): `boolean`
 
 Returns true if collection contains an object.\
 **Prefer using [FabricObject#isDescendantOf](/apidocs/classes/FabricObject.md#isdescendantof) for performance reasons**
@@ -4031,13 +4008,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/Collection.ts:140](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L140)
+[src/Collection.ts:140](https://github.com/fabricjs/fabric.js/blob/078809453/src/Collection.ts#L140)
 
 ___
 
 ### containsPoint
 
-▸ **containsPoint**(`point`, `absolute?`, `calculate?`): `boolean`
+**containsPoint**(`point`, `calculate?`): `boolean`
 
 Checks if point is inside the object
 
@@ -4046,7 +4023,6 @@ Checks if point is inside the object
 | Name | Type | Default value | Description |
 | :------ | :------ | :------ | :------ |
 | `point` | [`Point`](/apidocs/classes/Point.md) | `undefined` | Point to check against |
-| `absolute?` | `boolean` | `false` | use coordinates without viewportTransform |
 | `calculate?` | `boolean` | `false` | use coordinates of current position instead of stored ones |
 
 #### Returns
@@ -4063,13 +4039,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:341](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L341)
+[src/shapes/Object/ObjectGeometry.ts:322](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L322)
 
 ___
 
 ### dispose
 
-▸ **dispose**(): `void`
+**dispose**(): `void`
 
 #### Returns
 
@@ -4083,13 +4059,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Group.ts:1013](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L1013)
+[src/shapes/Group.ts:1013](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L1013)
 
 ___
 
 ### drawBorders
 
-▸ **drawBorders**(`ctx`, `options`, `styleOverride?`): `void`
+**drawBorders**(`ctx`, `options`, `styleOverride?`): `void`
 
 Draws borders of an object's bounding box.
 Requires public properties: width, height
@@ -4115,13 +4091,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:440](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L440)
+[src/shapes/Object/InteractiveObject.ts:440](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L440)
 
 ___
 
 ### drawCacheOnCanvas
 
-▸ **drawCacheOnCanvas**(`this`, `ctx`): `void`
+**drawCacheOnCanvas**(`this`, `ctx`): `void`
 
 Paint the cached copy of the object on the target context.
 
@@ -4144,13 +4120,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:962](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L962)
+[src/shapes/Object/Object.ts:962](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L962)
 
 ___
 
 ### drawClipPathOnCache
 
-▸ **drawClipPathOnCache**(`ctx`, `clipPath`): `void`
+**drawClipPathOnCache**(`ctx`, `clipPath`): `void`
 
 Execute the drawing operation for an object clipPath
 
@@ -4173,13 +4149,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:891](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L891)
+[src/shapes/Object/Object.ts:891](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L891)
 
 ___
 
 ### drawControls
 
-▸ **drawControls**(`ctx`, `styleOverride?`): `void`
+**drawControls**(`ctx`, `styleOverride?`): `void`
 
 Draws corners of an object's bounding box.
 Requires public properties: width, height
@@ -4204,13 +4180,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:504](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L504)
+[src/shapes/Object/InteractiveObject.ts:504](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L504)
 
 ___
 
 ### drawControlsConnectingLines
 
-▸ **drawControlsConnectingLines**(`ctx`, `size`): `void`
+**drawControlsConnectingLines**(`ctx`, `size`): `void`
 
 Draws lines from a borders of an object's bounding box to controls that have `withConnection` property set.
 Requires public properties: width, height
@@ -4235,13 +4211,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:474](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L474)
+[src/shapes/Object/InteractiveObject.ts:474](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L474)
 
 ___
 
 ### drawObject
 
-▸ **drawObject**(`ctx`): `void`
+**drawObject**(`ctx`): `void`
 
 Execute the drawing operation for an object on a specified context
 
@@ -4263,13 +4239,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Group.ts:530](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L530)
+[src/shapes/Group.ts:530](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L530)
 
 ___
 
 ### drawSelectionBackground
 
-▸ **drawSelectionBackground**(`ctx`): `void`
+**drawSelectionBackground**(`ctx`): `void`
 
 Draws a colored layer behind the object, inside its selection borders.
 Requires public options: padding, selectionBackgroundColor
@@ -4300,13 +4276,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:342](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L342)
+[src/shapes/Object/InteractiveObject.ts:342](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L342)
 
 ___
 
 ### enterGroup
 
-▸ **enterGroup**(`object`, `removeParentTransform?`): `boolean`
+**enterGroup**(`object`, `removeParentTransform?`): `boolean`
 
 #### Parameters
 
@@ -4323,13 +4299,13 @@ true if object entered group
 
 #### Defined in
 
-[src/shapes/Group.ts:406](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L406)
+[src/shapes/Group.ts:406](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L406)
 
 ___
 
 ### exitGroup
 
-▸ **exitGroup**(`object`, `removeParentTransform?`): `void`
+**exitGroup**(`object`, `removeParentTransform?`): `void`
 
 #### Parameters
 
@@ -4344,13 +4320,13 @@ ___
 
 #### Defined in
 
-[src/shapes/Group.ts:452](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L452)
+[src/shapes/Group.ts:452](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L452)
 
 ___
 
 ### findCommonAncestors
 
-▸ **findCommonAncestors**\<`T`, `S`\>(`other`, `strict?`): `AncestryComparison`\<`S`\>
+**findCommonAncestors**\<`T`, `S`\>(`other`, `strict?`): `AncestryComparison`\<`S`\>
 
 Compare ancestors
 
@@ -4382,13 +4358,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/StackedObject.ts:99](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/StackedObject.ts#L99)
+[src/shapes/Object/StackedObject.ts:99](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/StackedObject.ts#L99)
 
 ___
 
 ### findNewLowerIndex
 
-▸ **findNewLowerIndex**(`object`, `idx`, `intersecting?`): `number`
+**findNewLowerIndex**(`object`, `idx`, `intersecting?`): `number`
 
 #### Parameters
 
@@ -4410,13 +4386,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/Collection.ts:264](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L264)
+[src/Collection.ts:264](https://github.com/fabricjs/fabric.js/blob/078809453/src/Collection.ts#L264)
 
 ___
 
 ### findNewUpperIndex
 
-▸ **findNewUpperIndex**(`object`, `idx`, `intersecting?`): `number`
+**findNewUpperIndex**(`object`, `idx`, `intersecting?`): `number`
 
 #### Parameters
 
@@ -4438,13 +4414,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/Collection.ts:287](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L287)
+[src/Collection.ts:287](https://github.com/fabricjs/fabric.js/blob/078809453/src/Collection.ts#L287)
 
 ___
 
 ### fire
 
-▸ **fire**\<`K`\>(`eventName`, `options?`): `void`
+**fire**\<`K`\>(`eventName`, `options?`): `void`
 
 Fires event with an optional options object
 
@@ -4473,13 +4449,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/Observable.ts:159](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L159)
+[src/Observable.ts:159](https://github.com/fabricjs/fabric.js/blob/078809453/src/Observable.ts#L159)
 
 ___
 
 ### forEachControl
 
-▸ **forEachControl**(`fn`): `void`
+**forEachControl**(`fn`): `void`
 
 Calls a function for each control. The function gets called,
 with the control, the control's key and the object that is calling the iterator
@@ -4502,13 +4478,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:320](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L320)
+[src/shapes/Object/InteractiveObject.ts:320](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L320)
 
 ___
 
 ### forEachObject
 
-▸ **forEachObject**(`callback`): `void`
+**forEachObject**(`callback`): `void`
 
 Executes given function for each object in this group
 A simple shortcut for getObjects().forEach, before es6 was more complicated,
@@ -4532,13 +4508,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/Collection.ts:83](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L83)
+[src/Collection.ts:83](https://github.com/fabricjs/fabric.js/blob/078809453/src/Collection.ts#L83)
 
 ___
 
 ### get
 
-▸ **get**(`property`): `any`
+**get**(`property`): `any`
 
 Basic getter
 
@@ -4562,13 +4538,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/CommonMethods.ts:59](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/CommonMethods.ts#L59)
+[src/CommonMethods.ts:59](https://github.com/fabricjs/fabric.js/blob/078809453/src/CommonMethods.ts#L59)
 
 ___
 
 ### getActiveControl
 
-▸ **getActiveControl**(): `undefined` \| `string`
+**getActiveControl**(): `undefined` \| `string`
 
 #### Returns
 
@@ -4582,13 +4558,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:176](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L176)
+[src/shapes/Object/InteractiveObject.ts:176](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L176)
 
 ___
 
 ### getAncestors
 
-▸ **getAncestors**\<`T`\>(`strict?`): `Ancestors`\<`T`\>
+**getAncestors**\<`T`\>(`strict?`): `Ancestors`\<`T`\>
 
 #### Type parameters
 
@@ -4616,13 +4592,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/StackedObject.ts:80](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/StackedObject.ts#L80)
+[src/shapes/Object/StackedObject.ts:80](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/StackedObject.ts#L80)
 
 ___
 
 ### getBoundingRect
 
-▸ **getBoundingRect**(`absolute?`, `calculate?`): [`TBBox`](/apidocs/modules.md#tbbox)
+**getBoundingRect**(`calculate?`): [`TBBox`](/apidocs/modules.md#tbbox)
 
 Returns coordinates of object's bounding rectangle (left, top, width, height)
 the box is intended as aligned to axis of canvas.
@@ -4631,7 +4607,6 @@ the box is intended as aligned to axis of canvas.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `absolute?` | `boolean` | use coordinates without viewportTransform |
 | `calculate?` | `boolean` | use coordinates of current position instead of .lineCoords / .aCoords |
 
 #### Returns
@@ -4648,13 +4623,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:428](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L428)
+[src/shapes/Object/ObjectGeometry.ts:405](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L405)
 
 ___
 
 ### getCanvasRetinaScaling
 
-▸ **getCanvasRetinaScaling**(): `number`
+**getCanvasRetinaScaling**(): `number`
 
 #### Returns
 
@@ -4668,13 +4643,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:487](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L487)
+[src/shapes/Object/ObjectGeometry.ts:462](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L462)
 
 ___
 
 ### getCenterPoint
 
-▸ **getCenterPoint**(): [`Point`](/apidocs/classes/Point.md)
+**getCenterPoint**(): [`Point`](/apidocs/classes/Point.md)
 
 Returns the center coordinates of the object relative to canvas
 
@@ -4690,13 +4665,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:169](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L169)
+[src/shapes/Object/ObjectOrigin.ts:169](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L169)
 
 ___
 
 ### getCoords
 
-▸ **getCoords**(`absolute?`, `calculate?`): [`Point`](/apidocs/classes/Point.md)[]
+**getCoords**(`calculate?`): [`Point`](/apidocs/classes/Point.md)[]
 
 return correct set of coordinates for intersection
 this will return either aCoords or lineCoords.
@@ -4706,7 +4681,6 @@ The coords are returned in an array.
 
 | Name | Type | Default value | Description |
 | :------ | :------ | :------ | :------ |
-| `absolute` | `boolean` | `false` | will return aCoords if true or lineCoords |
 | `calculate` | `boolean` | `false` | will return aCoords if true or lineCoords |
 
 #### Returns
@@ -4723,13 +4697,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:228](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L228)
+[src/shapes/Object/ObjectGeometry.ts:222](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L222)
 
 ___
 
 ### getLayoutStrategyResult
 
-▸ **getLayoutStrategyResult**\<`T`\>(`layoutDirective`, `objects`, `context`): `any`
+**getLayoutStrategyResult**\<`T`\>(`layoutDirective`, `objects`, `context`): `any`
 
 Override this method to customize layout.
 If you need to run logic once layout completes use `onLayout`
@@ -4754,13 +4728,13 @@ If you need to run logic once layout completes use `onLayout`
 
 #### Defined in
 
-[src/shapes/Group.ts:692](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L692)
+[src/shapes/Group.ts:692](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L692)
 
 ___
 
 ### getObjectOpacity
 
-▸ **getObjectOpacity**(): `number`
+**getObjectOpacity**(): `number`
 
 Return the object opacity counting also the group property
 
@@ -4776,13 +4750,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:660](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L660)
+[src/shapes/Object/Object.ts:660](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L660)
 
 ___
 
 ### getObjectScaling
 
-▸ **getObjectScaling**(): [`Point`](/apidocs/classes/Point.md)
+**getObjectScaling**(): [`Point`](/apidocs/classes/Point.md)
 
 Return the object scale factor counting also the group scaling
 
@@ -4798,13 +4772,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:629](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L629)
+[src/shapes/Object/Object.ts:629](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L629)
 
 ___
 
 ### getObjects
 
-▸ **getObjects**(`...types?`): [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]
+**getObjects**(`...types?`): [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]
 
 Returns an array of children objects of this instance
 
@@ -4826,13 +4800,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/Collection.ts:100](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L100)
+[src/Collection.ts:100](https://github.com/fabricjs/fabric.js/blob/078809453/src/Collection.ts#L100)
 
 ___
 
 ### getObjectsBoundingBox
 
-▸ **getObjectsBoundingBox**(`objects`, `ignoreOffset?`): ``null`` \| [`LayoutResult`](/apidocs/modules.md#layoutresult)
+**getObjectsBoundingBox**(`objects`, `ignoreOffset?`): ``null`` \| [`LayoutResult`](/apidocs/modules.md#layoutresult)
 
 Calculate the bbox of objects relative to instance's containing plane
 
@@ -4851,13 +4825,13 @@ bounding box
 
 #### Defined in
 
-[src/shapes/Group.ts:904](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L904)
+[src/shapes/Group.ts:904](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L904)
 
 ___
 
 ### getParent
 
-▸ **getParent**\<`T`\>(`strict?`): `undefined` \| `TAncestor`
+**getParent**\<`T`\>(`strict?`): `undefined` \| `TAncestor`
 
 Returns instance's parent **EXCLUDING** `ActiveSelection`
 
@@ -4885,13 +4859,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/StackedObject.ts:51](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/StackedObject.ts#L51)
+[src/shapes/Object/StackedObject.ts:51](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/StackedObject.ts#L51)
 
 ___
 
 ### getPointByOrigin
 
-▸ **getPointByOrigin**(`originX`, `originY`): [`Point`](/apidocs/classes/Point.md)
+**getPointByOrigin**(`originX`, `originY`): [`Point`](/apidocs/classes/Point.md)
 
 Returns the coordinates of the object as if it has a different origin
 
@@ -4914,13 +4888,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:194](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L194)
+[src/shapes/Object/ObjectOrigin.ts:194](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L194)
 
 ___
 
 ### getRelativeCenterPoint
 
-▸ **getRelativeCenterPoint**(): [`Point`](/apidocs/classes/Point.md)
+**getRelativeCenterPoint**(): [`Point`](/apidocs/classes/Point.md)
 
 Returns the center coordinates of the object relative to it's parent
 
@@ -4936,13 +4910,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:180](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L180)
+[src/shapes/Object/ObjectOrigin.ts:180](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L180)
 
 ___
 
 ### getRelativeX
 
-▸ **getRelativeX**(): `number`
+**getRelativeX**(): `number`
 
 #### Returns
 
@@ -4959,13 +4933,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:119](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L119)
+[src/shapes/Object/ObjectGeometry.ts:118](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L118)
 
 ___
 
 ### getRelativeXY
 
-▸ **getRelativeXY**(): [`Point`](/apidocs/classes/Point.md)
+**getRelativeXY**(): [`Point`](/apidocs/classes/Point.md)
 
 #### Returns
 
@@ -4981,13 +4955,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:180](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L180)
+[src/shapes/Object/ObjectGeometry.ts:179](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L179)
 
 ___
 
 ### getRelativeY
 
-▸ **getRelativeY**(): `number`
+**getRelativeY**(): `number`
 
 #### Returns
 
@@ -5004,13 +4978,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:135](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L135)
+[src/shapes/Object/ObjectGeometry.ts:134](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L134)
 
 ___
 
 ### getScaledHeight
 
-▸ **getScaledHeight**(): `number`
+**getScaledHeight**(): `number`
 
 Returns height of an object bounding box counting transformations
 
@@ -5032,13 +5006,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:446](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L446)
+[src/shapes/Object/ObjectGeometry.ts:423](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L423)
 
 ___
 
 ### getScaledWidth
 
-▸ **getScaledWidth**(): `number`
+**getScaledWidth**(): `number`
 
 Returns width of an object's bounding box counting transformations
 
@@ -5060,13 +5034,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:437](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L437)
+[src/shapes/Object/ObjectGeometry.ts:414](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L414)
 
 ___
 
 ### getSvgCommons
 
-▸ **getSvgCommons**(`this`): `string`
+**getSvgCommons**(`this`): `string`
 
 Returns id attribute for svg output
 
@@ -5088,13 +5062,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/FabricObjectSVGExportMixin.ts:84](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/FabricObjectSVGExportMixin.ts#L84)
+[src/shapes/Object/FabricObjectSVGExportMixin.ts:84](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/FabricObjectSVGExportMixin.ts#L84)
 
 ___
 
 ### getSvgFilter
 
-▸ **getSvgFilter**(`this`): `string`
+**getSvgFilter**(`this`): `string`
 
 Returns filter for svg shadow
 
@@ -5116,13 +5090,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/FabricObjectSVGExportMixin.ts:76](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/FabricObjectSVGExportMixin.ts#L76)
+[src/shapes/Object/FabricObjectSVGExportMixin.ts:76](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/FabricObjectSVGExportMixin.ts#L76)
 
 ___
 
 ### getSvgStyles
 
-▸ **getSvgStyles**(): `string`
+**getSvgStyles**(): `string`
 
 Returns styles-string for svg-export, specific version for group
 
@@ -5138,13 +5112,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Group.ts:1056](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L1056)
+[src/shapes/Group.ts:1056](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L1056)
 
 ___
 
 ### getSvgTransform
 
-▸ **getSvgTransform**(`this`, `full?`, `additionalTransform?`): `string`
+**getSvgTransform**(`this`, `full?`, `additionalTransform?`): `string`
 
 Returns transform-string for svg-export
 
@@ -5168,13 +5142,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/FabricObjectSVGExportMixin.ts:103](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/FabricObjectSVGExportMixin.ts#L103)
+[src/shapes/Object/FabricObjectSVGExportMixin.ts:103](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/FabricObjectSVGExportMixin.ts#L103)
 
 ___
 
 ### getTotalAngle
 
-▸ **getTotalAngle**(): [`TDegree`](/apidocs/modules.md#tdegree)
+**getTotalAngle**(): [`TDegree`](/apidocs/modules.md#tdegree)
 
 Returns the object angle relative to canvas counting also the group property
 
@@ -5190,13 +5164,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:495](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L495)
+[src/shapes/Object/ObjectGeometry.ts:470](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L470)
 
 ___
 
 ### getTotalObjectScaling
 
-▸ **getTotalObjectScaling**(): [`Point`](/apidocs/classes/Point.md)
+**getTotalObjectScaling**(): [`Point`](/apidocs/classes/Point.md)
 
 Return the object scale factor counting also the group scaling, zoom and retina
 
@@ -5214,13 +5188,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:646](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L646)
+[src/shapes/Object/Object.ts:646](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L646)
 
 ___
 
 ### getViewportTransform
 
-▸ **getViewportTransform**(): [`TMat2D`](/apidocs/modules.md#tmat2d)
+**getViewportTransform**(): [`TMat2D`](/apidocs/modules.md#tmat2d)
 
 Retrieves viewportTransform from Object's canvas if possible
 
@@ -5244,13 +5218,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:543](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L543)
+[src/shapes/Object/ObjectGeometry.ts:482](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L482)
 
 ___
 
 ### getX
 
-▸ **getX**(): `number`
+**getX**(): `number`
 
 #### Returns
 
@@ -5266,13 +5240,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:90](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L90)
+[src/shapes/Object/ObjectGeometry.ts:89](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L89)
 
 ___
 
 ### getXY
 
-▸ **getXY**(): [`Point`](/apidocs/classes/Point.md)
+**getXY**(): [`Point`](/apidocs/classes/Point.md)
 
 #### Returns
 
@@ -5288,13 +5262,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:150](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L150)
+[src/shapes/Object/ObjectGeometry.ts:149](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L149)
 
 ___
 
 ### getY
 
-▸ **getY**(): `number`
+**getY**(): `number`
 
 #### Returns
 
@@ -5310,13 +5284,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:104](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L104)
+[src/shapes/Object/ObjectGeometry.ts:103](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L103)
 
 ___
 
 ### hasCommonAncestors
 
-▸ **hasCommonAncestors**\<`T`\>(`other`, `strict?`): `boolean`
+**hasCommonAncestors**\<`T`\>(`other`, `strict?`): `boolean`
 
 #### Type parameters
 
@@ -5343,13 +5317,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/StackedObject.ts:168](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/StackedObject.ts#L168)
+[src/shapes/Object/StackedObject.ts:168](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/StackedObject.ts#L168)
 
 ___
 
 ### hasFill
 
-▸ **hasFill**(): ``null`` \| `boolean` \| ``""``
+**hasFill**(): ``null`` \| `boolean` \| ``""``
 
 return true if the object will draw a fill
 Does not consider text styles. This is just a shortcut used at rendering time
@@ -5376,13 +5350,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:831](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L831)
+[src/shapes/Object/Object.ts:831](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L831)
 
 ___
 
 ### hasStroke
 
-▸ **hasStroke**(): ``null`` \| `boolean` \| ``""``
+**hasStroke**(): ``null`` \| `boolean` \| ``""``
 
 return true if the object will draw a stroke
 Does not consider text styles. This is just a shortcut used at rendering time
@@ -5409,13 +5383,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:815](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L815)
+[src/shapes/Object/Object.ts:815](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L815)
 
 ___
 
 ### insertAt
 
-▸ **insertAt**(`index`, `...objects`): `number`
+**insertAt**(`index`, `...objects`): `number`
 
 Inserts an object into collection at specified index
 
@@ -5438,13 +5412,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Group.ts:252](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L252)
+[src/shapes/Group.ts:252](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L252)
 
 ___
 
 ### intersectsWithObject
 
-▸ **intersectsWithObject**(`other`, `absolute?`, `calculate?`): `boolean`
+**intersectsWithObject**(`other`, `calculate?`): `boolean`
 
 Checks if object intersects with another object
 
@@ -5453,7 +5427,6 @@ Checks if object intersects with another object
 | Name | Type | Default value | Description |
 | :------ | :------ | :------ | :------ |
 | `other` | `ObjectGeometry`\<[`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | `undefined` | Object to test |
-| `absolute?` | `boolean` | `false` | use coordinates without viewportTransform |
 | `calculate?` | `boolean` | `false` | use coordinates of current position instead of calculating them |
 
 #### Returns
@@ -5470,13 +5443,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:268](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L268)
+[src/shapes/Object/ObjectGeometry.ts:260](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L260)
 
 ___
 
 ### intersectsWithRect
 
-▸ **intersectsWithRect**(`pointTL`, `pointBR`, `absolute?`, `calculate?`): `boolean`
+**intersectsWithRect**(`pointTL`, `pointBR`, `calculate?`): `boolean`
 
 Checks if object intersects with an area formed by 2 points
 
@@ -5486,7 +5459,6 @@ Checks if object intersects with an area formed by 2 points
 | :------ | :------ | :------ |
 | `pointTL` | [`Point`](/apidocs/classes/Point.md) | top-left point of area |
 | `pointBR` | [`Point`](/apidocs/classes/Point.md) | bottom-right point of area |
-| `absolute?` | `boolean` | use coordinates without viewportTransform |
 | `calculate?` | `boolean` | use coordinates of current position instead of stored one |
 
 #### Returns
@@ -5503,13 +5475,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:246](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L246)
+[src/shapes/Object/ObjectGeometry.ts:239](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L239)
 
 ___
 
 ### isCacheDirty
 
-▸ **isCacheDirty**(`skipCanvas?`): `boolean`
+**isCacheDirty**(`skipCanvas?`): `boolean`
 
 Check if cache is dirty
 
@@ -5531,13 +5503,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:976](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L976)
+[src/shapes/Object/Object.ts:976](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L976)
 
 ___
 
 ### isContainedWithinObject
 
-▸ **isContainedWithinObject**(`other`, `absolute?`, `calculate?`): `boolean`
+**isContainedWithinObject**(`other`, `calculate?`): `boolean`
 
 Checks if object is fully contained within area of another object
 
@@ -5546,7 +5518,6 @@ Checks if object is fully contained within area of another object
 | Name | Type | Default value | Description |
 | :------ | :------ | :------ | :------ |
 | `other` | `ObjectGeometry`\<[`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | `undefined` | Object to test |
-| `absolute?` | `boolean` | `false` | use coordinates without viewportTransform |
 | `calculate?` | `boolean` | `false` | use coordinates of current position instead of stored ones |
 
 #### Returns
@@ -5563,15 +5534,15 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:293](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L293)
+[src/shapes/Object/ObjectGeometry.ts:281](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L281)
 
 ___
 
 ### isContainedWithinRect
 
-▸ **isContainedWithinRect**(`pointTL`, `pointBR`, `absolute?`, `calculate?`): `boolean`
+**isContainedWithinRect**(`pointTL`, `pointBR`, `calculate?`): `boolean`
 
-Checks if object is fully contained within area formed by 2 points
+Checks if object is fully contained within area formed by 2 points, aligned with scene axis.
 
 #### Parameters
 
@@ -5579,7 +5550,6 @@ Checks if object is fully contained within area formed by 2 points
 | :------ | :------ | :------ |
 | `pointTL` | [`Point`](/apidocs/classes/Point.md) | top-left point of area |
 | `pointBR` | [`Point`](/apidocs/classes/Point.md) | bottom-right point of area |
-| `absolute?` | `boolean` | use coordinates without viewportTransform |
 | `calculate?` | `boolean` | use coordinates of current position instead of stored one |
 
 #### Returns
@@ -5596,13 +5566,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:311](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L311)
+[src/shapes/Object/ObjectGeometry.ts:294](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L294)
 
 ___
 
 ### isControlVisible
 
-▸ **isControlVisible**(`controlKey`): `boolean`
+**isControlVisible**(`controlKey`): `boolean`
 
 Returns true if the specified control is visible, false otherwise.
 
@@ -5626,13 +5596,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:539](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L539)
+[src/shapes/Object/InteractiveObject.ts:539](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L539)
 
 ___
 
 ### isDescendantOf
 
-▸ **isDescendantOf**(`target`): `boolean`
+**isDescendantOf**(`target`): `boolean`
 
 Checks if object is descendant of target
 Should be used instead of [Group.contains](/apidocs/classes/StaticCanvas.md#contains) or [StaticCanvas.contains](/apidocs/classes/StaticCanvas.md#contains) for performance reasons
@@ -5655,13 +5625,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/StackedObject.ts:64](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/StackedObject.ts#L64)
+[src/shapes/Object/StackedObject.ts:64](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/StackedObject.ts#L64)
 
 ___
 
 ### isEmpty
 
-▸ **isEmpty**(): `boolean`
+**isEmpty**(): `boolean`
 
 Returns true if collection contains no objects
 
@@ -5679,13 +5649,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/Collection.ts:120](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L120)
+[src/Collection.ts:120](https://github.com/fabricjs/fabric.js/blob/078809453/src/Collection.ts#L120)
 
 ___
 
 ### isInFrontOf
 
-▸ **isInFrontOf**\<`T`\>(`other`): `undefined` \| `boolean`
+**isInFrontOf**\<`T`\>(`other`): `undefined` \| `boolean`
 
 #### Type parameters
 
@@ -5713,13 +5683,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/StackedObject.ts:178](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/StackedObject.ts#L178)
+[src/shapes/Object/StackedObject.ts:178](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/StackedObject.ts#L178)
 
 ___
 
 ### isNotVisible
 
-▸ **isNotVisible**(): `boolean`
+**isNotVisible**(): `boolean`
 
 #### Returns
 
@@ -5733,13 +5703,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:738](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L738)
+[src/shapes/Object/Object.ts:738](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L738)
 
 ___
 
 ### isOnACache
 
-▸ **isOnACache**(): `boolean`
+**isOnACache**(): `boolean`
 
 Check if instance or its group are caching, recursively up
 
@@ -5749,13 +5719,13 @@ Check if instance or its group are caching, recursively up
 
 #### Defined in
 
-[src/shapes/Group.ts:522](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L522)
+[src/shapes/Group.ts:522](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L522)
 
 ___
 
 ### isOnScreen
 
-▸ **isOnScreen**(`calculate?`): `boolean`
+**isOnScreen**(`calculate?`): `boolean`
 
 Checks if object is contained within the canvas with current viewportTransform
 the check is done stopping at first point that appears on screen
@@ -5780,13 +5750,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:354](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L354)
+[src/shapes/Object/ObjectGeometry.ts:332](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L332)
 
 ___
 
 ### isOverlapping
 
-▸ **isOverlapping**\<`T`\>(`other`): `boolean`
+**isOverlapping**\<`T`\>(`other`): `boolean`
 
 #### Type parameters
 
@@ -5812,13 +5782,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:326](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L326)
+[src/shapes/Object/ObjectGeometry.ts:308](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L308)
 
 ___
 
 ### isPartiallyOnScreen
 
-▸ **isPartiallyOnScreen**(`calculate?`): `boolean`
+**isPartiallyOnScreen**(`calculate?`): `boolean`
 
 Checks if object is partially contained within the canvas with current viewportTransform
 
@@ -5842,13 +5812,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:403](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L403)
+[src/shapes/Object/ObjectGeometry.ts:381](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L381)
 
 ___
 
 ### isType
 
-▸ **isType**(`...types`): `boolean`
+**isType**(`...types`): `boolean`
 
 Returns true if any of the specified types is identical to the type of an instance
 
@@ -5870,13 +5840,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1466](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1466)
+[src/shapes/Object/Object.ts:1466](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1466)
 
 ___
 
 ### item
 
-▸ **item**(`index`): [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
+**item**(`index`): [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
 
 Returns object at specified index
 
@@ -5900,13 +5870,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/Collection.ts:112](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L112)
+[src/Collection.ts:112](https://github.com/fabricjs/fabric.js/blob/078809453/src/Collection.ts#L112)
 
 ___
 
 ### moveObjectTo
 
-▸ **moveObjectTo**(`object`, `index`): `boolean`
+**moveObjectTo**(`object`, `index`): `boolean`
 
 Moves an object to specified level in stack of drawn objects
 
@@ -5931,13 +5901,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/Collection.ts:254](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L254)
+[src/Collection.ts:254](https://github.com/fabricjs/fabric.js/blob/078809453/src/Collection.ts#L254)
 
 ___
 
 ### needsItsOwnCache
 
-▸ **needsItsOwnCache**(): `boolean`
+**needsItsOwnCache**(): `boolean`
 
 When set to `true`, force the object to have its own cache, even if it is inside a group
 it may be needed when your object behave in a particular way on the cache and always needs
@@ -5959,13 +5929,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:843](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L843)
+[src/shapes/Object/Object.ts:843](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L843)
 
 ___
 
 ### off
 
-▸ **off**\<`K`\>(`eventName`, `handler`): `void`
+**off**\<`K`\>(`eventName`, `handler`): `void`
 
 unsubscribe an event listener
 
@@ -5994,9 +5964,9 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/Observable.ts:120](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L120)
+[src/Observable.ts:120](https://github.com/fabricjs/fabric.js/blob/078809453/src/Observable.ts#L120)
 
-▸ **off**(`handlers`): `void`
+**off**(`handlers`): `void`
 
 unsubscribe event listeners
 
@@ -6018,9 +5988,9 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/Observable.ts:125](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L125)
+[src/Observable.ts:125](https://github.com/fabricjs/fabric.js/blob/078809453/src/Observable.ts#L125)
 
-▸ **off**(): `void`
+**off**(): `void`
 
 unsubscribe all event listeners
 
@@ -6036,13 +6006,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/Observable.ts:129](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L129)
+[src/Observable.ts:129](https://github.com/fabricjs/fabric.js/blob/078809453/src/Observable.ts#L129)
 
 ___
 
 ### on
 
-▸ **on**\<`K`, `E`\>(`eventName`, `handler`): `VoidFunction`
+**on**\<`K`, `E`\>(`eventName`, `handler`): `VoidFunction`
 
 Observes specified event
 
@@ -6078,9 +6048,9 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/Observable.ts:23](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L23)
+[src/Observable.ts:23](https://github.com/fabricjs/fabric.js/blob/078809453/src/Observable.ts#L23)
 
-▸ **on**(`handlers`): `VoidFunction`
+**on**(`handlers`): `VoidFunction`
 
 #### Parameters
 
@@ -6100,13 +6070,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/Observable.ts:27](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L27)
+[src/Observable.ts:27](https://github.com/fabricjs/fabric.js/blob/078809453/src/Observable.ts#L27)
 
 ___
 
 ### onDeselect
 
-▸ **onDeselect**(`options?`): `boolean`
+**onDeselect**(`options?`): `boolean`
 
 This callback function is called every time _discardActiveObject or _setActiveObject
 try to to deselect this object. If the function returns true, the process is cancelled
@@ -6131,13 +6101,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:613](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L613)
+[src/shapes/Object/InteractiveObject.ts:613](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L613)
 
 ___
 
 ### onLayout
 
-▸ **onLayout**(`context`, `result`): `void`
+**onLayout**(`context`, `result`): `void`
 
 Hook that is called once layout has completed.
 Provided for layout customization, override if necessary.
@@ -6156,13 +6126,13 @@ Complements `getLayoutStrategyResult`, which is called at the beginning of layou
 
 #### Defined in
 
-[src/shapes/Group.ts:955](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L955)
+[src/shapes/Group.ts:955](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L955)
 
 ___
 
 ### onSelect
 
-▸ **onSelect**(`options?`): `boolean`
+**onSelect**(`options?`): `boolean`
 
 This callback function is called every time _discardActiveObject or _setActiveObject
 try to to select this object. If the function returns true, the process is cancelled
@@ -6186,13 +6156,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:627](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L627)
+[src/shapes/Object/InteractiveObject.ts:627](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L627)
 
 ___
 
 ### once
 
-▸ **once**\<`K`, `E`\>(`eventName`, `handler`): `VoidFunction`
+**once**\<`K`, `E`\>(`eventName`, `handler`): `VoidFunction`
 
 Observes specified event **once**
 
@@ -6228,9 +6198,9 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/Observable.ts:62](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L62)
+[src/Observable.ts:62](https://github.com/fabricjs/fabric.js/blob/078809453/src/Observable.ts#L62)
 
-▸ **once**(`handlers`): `VoidFunction`
+**once**(`handlers`): `VoidFunction`
 
 #### Parameters
 
@@ -6250,13 +6220,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/Observable.ts:66](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L66)
+[src/Observable.ts:66](https://github.com/fabricjs/fabric.js/blob/078809453/src/Observable.ts#L66)
 
 ___
 
 ### prepareBoundingBox
 
-▸ **prepareBoundingBox**\<`T`\>(`layoutDirective`, `objects`, `context`): `any`
+**prepareBoundingBox**\<`T`\>(`layoutDirective`, `objects`, `context`): `any`
 
 Override this method to customize layout.
 A wrapper around [Group#getObjectsBoundingBox](/apidocs/classes/Group.md#getobjectsboundingbox)
@@ -6281,13 +6251,13 @@ A wrapper around [Group#getObjectsBoundingBox](/apidocs/classes/Group.md#getobje
 
 #### Defined in
 
-[src/shapes/Group.ts:778](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L778)
+[src/shapes/Group.ts:778](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L778)
 
 ___
 
 ### prepareInitialBoundingBox
 
-▸ **prepareInitialBoundingBox**\<`T`\>(`layoutDirective`, `objects`, `context`): `undefined` \| \{ `centerX`: `number` = center.x; `centerY`: `number` = center.y; `correctionX`: `number` = correction.x; `correctionY`: `number` = correction.y; `height`: `number` = size.y; `width`: `number` = size.x }
+**prepareInitialBoundingBox**\<`T`\>(`layoutDirective`, `objects`, `context`): `undefined` \| \{ `centerX`: `number` = center.x; `centerY`: `number` = center.y; `correctionX`: `number` = correction.x; `correctionY`: `number` = correction.y; `height`: `number` = size.y; `width`: `number` = size.x }
 
 Calculates center taking into account originX, originY while not being sure that width/height are initialized
 
@@ -6311,13 +6281,13 @@ Calculates center taking into account originX, originY while not being sure that
 
 #### Defined in
 
-[src/shapes/Group.ts:803](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L803)
+[src/shapes/Group.ts:803](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L803)
 
 ___
 
 ### remove
 
-▸ **remove**(`...objects`): [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]
+**remove**(`...objects`): [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]
 
 Remove objects
 
@@ -6341,13 +6311,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Group.ts:264](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L264)
+[src/shapes/Group.ts:264](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L264)
 
 ___
 
 ### removeAll
 
-▸ **removeAll**(): [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]
+**removeAll**(): [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]
 
 Remove all objects
 
@@ -6359,13 +6329,13 @@ removed objects
 
 #### Defined in
 
-[src/shapes/Group.ts:347](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L347)
+[src/shapes/Group.ts:347](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L347)
 
 ___
 
 ### render
 
-▸ **render**(`ctx`): `void`
+**render**(`ctx`): `void`
 
 Renders instance on a given context
 
@@ -6387,13 +6357,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Group.ts:563](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L563)
+[src/shapes/Group.ts:563](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L563)
 
 ___
 
 ### renderCache
 
-▸ **renderCache**(`options?`): `void`
+**renderCache**(`options?`): `void`
 
 #### Parameters
 
@@ -6413,13 +6383,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:784](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L784)
+[src/shapes/Object/Object.ts:784](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L784)
 
 ___
 
 ### renderDragSourceEffect
 
-▸ **renderDragSourceEffect**(`e`): `void`
+**renderDragSourceEffect**(`e`): `void`
 
 Override to customize drag and drop behavior
 render a specific effect when an object is the source of a drag event
@@ -6443,13 +6413,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:651](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L651)
+[src/shapes/Object/InteractiveObject.ts:651](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L651)
 
 ___
 
 ### renderDropTargetEffect
 
-▸ **renderDropTargetEffect**(`e`): `void`
+**renderDropTargetEffect**(`e`): `void`
 
 Override to customize drag and drop behavior
 render a specific effect when an object is the target of a drag event
@@ -6474,13 +6444,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:664](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L664)
+[src/shapes/Object/InteractiveObject.ts:664](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L664)
 
 ___
 
 ### rotate
 
-▸ **rotate**(`angle`): `void`
+**rotate**(`angle`): `void`
 
 Sets "angle" of an instance with centered rotation
 
@@ -6502,13 +6472,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1494](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1494)
+[src/shapes/Object/Object.ts:1494](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1494)
 
 ___
 
 ### scale
 
-▸ **scale**(`value`): `void`
+**scale**(`value`): `void`
 
 Scales an object (equally by x and y)
 
@@ -6530,22 +6500,21 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:455](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L455)
+[src/shapes/Object/ObjectGeometry.ts:432](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L432)
 
 ___
 
 ### scaleToHeight
 
-▸ **scaleToHeight**(`value`, `absolute?`): `void`
+**scaleToHeight**(`value`): `void`
 
 Scales an object to a given height, with respect to bounding box (scaling by x/y equally)
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `value` | `number` | `undefined` | New height value |
-| `absolute` | `boolean` | `false` | ignore viewport |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `number` | New height value |
 
 #### Returns
 
@@ -6559,13 +6528,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:480](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L480)
+[src/shapes/Object/ObjectGeometry.ts:455](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L455)
 
 ___
 
 ### scaleToWidth
 
-▸ **scaleToWidth**(`value`, `absolute?`): `void`
+**scaleToWidth**(`value`): `void`
 
 Scales an object to a given width, with respect to bounding box (scaling by x/y equally)
 
@@ -6574,7 +6543,6 @@ Scales an object to a given width, with respect to bounding box (scaling by x/y 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | New width value |
-| `absolute?` | `boolean` | ignore viewport |
 
 #### Returns
 
@@ -6588,13 +6556,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:467](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L467)
+[src/shapes/Object/ObjectGeometry.ts:443](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L443)
 
 ___
 
 ### sendObjectBackwards
 
-▸ **sendObjectBackwards**(`object`, `intersecting?`): `boolean`
+**sendObjectBackwards**(`object`, `intersecting?`): `boolean`
 
 Moves an object or a selection down in stack of drawn objects
 An optional parameter, `intersecting` allows to move the object in behind
@@ -6623,13 +6591,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/Collection.ts:206](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L206)
+[src/Collection.ts:206](https://github.com/fabricjs/fabric.js/blob/078809453/src/Collection.ts#L206)
 
 ___
 
 ### sendObjectToBack
 
-▸ **sendObjectToBack**(`object`): `boolean`
+**sendObjectToBack**(`object`): `boolean`
 
 Moves an object or the objects of a multiple selection
 to the bottom of the stack of drawn objects
@@ -6654,13 +6622,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/Collection.ts:170](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L170)
+[src/Collection.ts:170](https://github.com/fabricjs/fabric.js/blob/078809453/src/Collection.ts#L170)
 
 ___
 
 ### set
 
-▸ **set**(`key`, `value?`): [`Group`](/apidocs/classes/Group.md)
+**set**(`key`, `value?`): [`Group`](/apidocs/classes/Group.md)
 
 Sets property to a given value. When changing position/dimension -related properties (left, top, scale, angle, etc.) `set` does not update position of object's borders/controls. If you need to update those, call `setCoords()`.
 
@@ -6683,13 +6651,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/CommonMethods.ts:29](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/CommonMethods.ts#L29)
+[src/CommonMethods.ts:29](https://github.com/fabricjs/fabric.js/blob/078809453/src/CommonMethods.ts#L29)
 
 ___
 
 ### setControlVisible
 
-▸ **setControlVisible**(`controlKey`, `visible`): `void`
+**setControlVisible**(`controlKey`, `visible`): `void`
 
 Sets the visibility of the specified control.
 please do not use.
@@ -6717,13 +6685,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:554](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L554)
+[src/shapes/Object/InteractiveObject.ts:554](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L554)
 
 ___
 
 ### setControlsVisibility
 
-▸ **setControlsVisibility**(`options?`): `void`
+**setControlsVisibility**(`options?`): `void`
 
 Sets the visibility state of object controls, this is just a bulk option for setControlVisible;
 
@@ -6745,13 +6713,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:566](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L566)
+[src/shapes/Object/InteractiveObject.ts:566](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L566)
 
 ___
 
 ### setCoords
 
-▸ **setCoords**(): `void`
+**setCoords**(): `void`
 
 #### Returns
 
@@ -6765,13 +6733,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Group.ts:553](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L553)
+[src/shapes/Group.ts:553](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L553)
 
 ___
 
 ### setOnGroup
 
-▸ **setOnGroup**(): `void`
+**setOnGroup**(): `void`
 
 This callback function is called by the parent group of an object every
 time a non-delegated property changes on the group. It is passed the key
@@ -6790,13 +6758,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1526](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1526)
+[src/shapes/Object/Object.ts:1526](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1526)
 
 ___
 
 ### setOptions
 
-▸ **setOptions**(`options?`): `void`
+**setOptions**(`options?`): `void`
 
 Sets object's properties from options, for class constructor only.
 Needs to be overridden for different defaults.
@@ -6819,13 +6787,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:495](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L495)
+[src/shapes/Object/Object.ts:495](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L495)
 
 ___
 
 ### setPositionByOrigin
 
-▸ **setPositionByOrigin**(`pos`, `originX`, `originY`): `void`
+**setPositionByOrigin**(`pos`, `originX`, `originY`): `void`
 
 Sets the position of the object taking into consideration the object's origin
 
@@ -6849,13 +6817,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:209](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L209)
+[src/shapes/Object/ObjectOrigin.ts:209](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L209)
 
 ___
 
 ### setRelativeX
 
-▸ **setRelativeX**(`value`): `void`
+**setRelativeX**(`value`): `void`
 
 #### Parameters
 
@@ -6875,13 +6843,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:127](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L127)
+[src/shapes/Object/ObjectGeometry.ts:126](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L126)
 
 ___
 
 ### setRelativeXY
 
-▸ **setRelativeXY**(`point`, `originX?`, `originY?`): `void`
+**setRelativeXY**(`point`, `originX?`, `originY?`): `void`
 
 As [setXY](/apidocs/classes/FabricObject.md#setxy), but in current parent's coordinate plane (the current group if any or the canvas)
 
@@ -6905,13 +6873,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:190](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L190)
+[src/shapes/Object/ObjectGeometry.ts:189](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L189)
 
 ___
 
 ### setRelativeY
 
-▸ **setRelativeY**(`value`): `void`
+**setRelativeY**(`value`): `void`
 
 #### Parameters
 
@@ -6931,13 +6899,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:143](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L143)
+[src/shapes/Object/ObjectGeometry.ts:142](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L142)
 
 ___
 
 ### setX
 
-▸ **setX**(`value`): `void`
+**setX**(`value`): `void`
 
 #### Parameters
 
@@ -6957,13 +6925,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:97](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L97)
+[src/shapes/Object/ObjectGeometry.ts:96](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L96)
 
 ___
 
 ### setXY
 
-▸ **setXY**(`point`, `originX?`, `originY?`): `void`
+**setXY**(`point`, `originX?`, `originY?`): `void`
 
 Set an object position to a particular point, the point is intended in absolute ( canvas ) coordinate.
 You can specify originX and originY values,
@@ -6996,13 +6964,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:167](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L167)
+[src/shapes/Object/ObjectGeometry.ts:166](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L166)
 
 ___
 
 ### setY
 
-▸ **setY**(`value`): `void`
+**setY**(`value`): `void`
 
 #### Parameters
 
@@ -7022,13 +6990,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:111](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L111)
+[src/shapes/Object/ObjectGeometry.ts:110](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L110)
 
 ___
 
 ### shouldCache
 
-▸ **shouldCache**(): `boolean`
+**shouldCache**(): `boolean`
 
 Decide if the object should cache or not. Create its own cache level
 needsItsOwnCache should be used when the object drawing method requires
@@ -7047,13 +7015,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Group.ts:489](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L489)
+[src/shapes/Group.ts:489](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L489)
 
 ___
 
 ### size
 
-▸ **size**(): `number`
+**size**(): `number`
 
 Returns a size of a collection (i.e: length of an array containing its objects)
 
@@ -7071,13 +7039,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/Collection.ts:128](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L128)
+[src/Collection.ts:128](https://github.com/fabricjs/fabric.js/blob/078809453/src/Collection.ts#L128)
 
 ___
 
 ### strokeBorders
 
-▸ **strokeBorders**(`ctx`, `size`): `void`
+**strokeBorders**(`ctx`, `size`): `void`
 
 override this function in order to customize the drawing of the control box, e.g. rounded corners, different border style.
 
@@ -7100,13 +7068,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:366](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L366)
+[src/shapes/Object/InteractiveObject.ts:366](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L366)
 
 ___
 
 ### toCanvasElement
 
-▸ **toCanvasElement**(`options?`): `HTMLCanvasElement`
+**toCanvasElement**(`options?`): `HTMLCanvasElement`
 
 Converts an object into a HTMLCanvas element
 
@@ -7130,13 +7098,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1359](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1359)
+[src/shapes/Object/Object.ts:1359](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1359)
 
 ___
 
 ### toClipPathSVG
 
-▸ **toClipPathSVG**(`reviver?`): `string`
+**toClipPathSVG**(`reviver?`): `string`
 
 Returns svg clipPath representation of an instance
 
@@ -7160,13 +7128,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Group.ts:1070](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L1070)
+[src/shapes/Group.ts:1070](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L1070)
 
 ___
 
 ### toDataURL
 
-▸ **toDataURL**(`options?`): `string`
+**toDataURL**(`options?`): `string`
 
 Converts an object into a data-url-like string
 
@@ -7190,13 +7158,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1453](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1453)
+[src/shapes/Object/Object.ts:1453](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1453)
 
 ___
 
 ### toDatalessObject
 
-▸ **toDatalessObject**(`propertiesToInclude?`): `any`
+**toDatalessObject**(`propertiesToInclude?`): `any`
 
 Returns (dataless) object representation of an instance
 
@@ -7220,13 +7188,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:581](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L581)
+[src/shapes/Object/Object.ts:581](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L581)
 
 ___
 
 ### toJSON
 
-▸ **toJSON**(): `any`
+**toJSON**(): `any`
 
 Returns a JSON representation of an instance
 
@@ -7244,13 +7212,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1485](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1485)
+[src/shapes/Object/Object.ts:1485](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1485)
 
 ___
 
 ### toObject
 
-▸ **toObject**\<`T`, `K`\>(`propertiesToInclude?`): `Pick`\<`T`, `K`\> & [`SerializedGroupProps`](/apidocs/interfaces/SerializedGroupProps.md)
+**toObject**\<`T`, `K`\>(`propertiesToInclude?`): `Pick`\<`T`, `K`\> & [`SerializedGroupProps`](/apidocs/interfaces/SerializedGroupProps.md)
 
 Returns object representation of an instance
 
@@ -7281,13 +7249,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Group.ts:988](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L988)
+[src/shapes/Group.ts:988](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L988)
 
 ___
 
 ### toSVG
 
-▸ **toSVG**(`this`, `reviver?`): `string`
+**toSVG**(`this`, `reviver?`): `string`
 
 Returns svg representation of an instance
 
@@ -7312,13 +7280,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/FabricObjectSVGExportMixin.ts:129](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/FabricObjectSVGExportMixin.ts#L129)
+[src/shapes/Object/FabricObjectSVGExportMixin.ts:129](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/FabricObjectSVGExportMixin.ts#L129)
 
 ___
 
 ### toString
 
-▸ **toString**(): `string`
+**toString**(): `string`
 
 #### Returns
 
@@ -7332,13 +7300,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Group.ts:1009](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L1009)
+[src/shapes/Group.ts:1009](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L1009)
 
 ___
 
 ### toggle
 
-▸ **toggle**(`property`): [`Group`](/apidocs/classes/Group.md)
+**toggle**(`property`): [`Group`](/apidocs/classes/Group.md)
 
 Toggles specified property from `true` to `false` or from `false` to `true`
 
@@ -7360,13 +7328,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/CommonMethods.ts:46](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/CommonMethods.ts#L46)
+[src/CommonMethods.ts:46](https://github.com/fabricjs/fabric.js/blob/078809453/src/CommonMethods.ts#L46)
 
 ___
 
 ### transform
 
-▸ **transform**(`ctx`): `void`
+**transform**(`ctx`): `void`
 
 Transforms context when rendering an object
 
@@ -7388,13 +7356,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:503](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L503)
+[src/shapes/Object/Object.ts:503](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L503)
 
 ___
 
 ### transformMatrixKey
 
-▸ **transformMatrixKey**(`skipGroup?`): `string`
+**transformMatrixKey**(`skipGroup?`): `string`
 
 #### Parameters
 
@@ -7414,13 +7382,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:584](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L584)
+[src/shapes/Object/ObjectGeometry.ts:520](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L520)
 
 ___
 
 ### translateToCenterPoint
 
-▸ **translateToCenterPoint**(`point`, `originX`, `originY`): [`Point`](/apidocs/classes/Point.md)
+**translateToCenterPoint**(`point`, `originX`, `originY`): [`Point`](/apidocs/classes/Point.md)
 
 Translates the coordinates from origin to center coordinates (based on the object's dimensions)
 
@@ -7444,13 +7412,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:122](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L122)
+[src/shapes/Object/ObjectOrigin.ts:122](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L122)
 
 ___
 
 ### translateToGivenOrigin
 
-▸ **translateToGivenOrigin**(`point`, `fromOriginX`, `fromOriginY`, `toOriginX`, `toOriginY`): [`Point`](/apidocs/classes/Point.md)
+**translateToGivenOrigin**(`point`, `fromOriginX`, `fromOriginY`, `toOriginX`, `toOriginY`): [`Point`](/apidocs/classes/Point.md)
 
 Translates the coordinates from a set of origin to another (based on the object's dimensions)
 
@@ -7476,13 +7444,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:94](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L94)
+[src/shapes/Object/ObjectOrigin.ts:94](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L94)
 
 ___
 
 ### translateToOriginPoint
 
-▸ **translateToOriginPoint**(`center`, `originX`, `originY`): [`Point`](/apidocs/classes/Point.md)
+**translateToOriginPoint**(`center`, `originX`, `originY`): [`Point`](/apidocs/classes/Point.md)
 
 Translates the coordinates from center to origin coordinates (based on the object's dimensions)
 
@@ -7506,13 +7474,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:147](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L147)
+[src/shapes/Object/ObjectOrigin.ts:147](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L147)
 
 ___
 
 ### triggerLayout
 
-▸ **triggerLayout**\<`T`\>(`context?`): `void`
+**triggerLayout**\<`T`\>(`context?`): `void`
 
 #### Type parameters
 
@@ -7532,13 +7500,13 @@ ___
 
 #### Defined in
 
-[src/shapes/Group.ts:573](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L573)
+[src/shapes/Group.ts:573](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L573)
 
 ___
 
 ### willDrawShadow
 
-▸ **willDrawShadow**(): `boolean`
+**willDrawShadow**(): `boolean`
 
 Check if this object or a child object will cast a shadow
 
@@ -7554,13 +7522,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Group.ts:506](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L506)
+[src/shapes/Group.ts:506](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L506)
 
 ___
 
 ### \_fromObject
 
-▸ **_fromObject**\<`S`\>(`object`, `«destructured»?`): `Promise`\<`S`\>
+**_fromObject**\<`S`\>(`object`, `«destructured»?`): `Promise`\<`S`\>
 
 #### Type parameters
 
@@ -7587,13 +7555,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1564](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1564)
+[src/shapes/Object/Object.ts:1564](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1564)
 
 ___
 
 ### fromObject
 
-▸ **fromObject**\<`T`\>(`object`): `Promise`\<[`Group`](/apidocs/classes/Group.md)\>
+**fromObject**\<`T`\>(`object`): `Promise`\<[`Group`](/apidocs/classes/Group.md)\>
 
 #### Type parameters
 
@@ -7629,13 +7597,13 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Group.ts:1090](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L1090)
+[src/shapes/Group.ts:1090](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L1090)
 
 ___
 
 ### getDefaults
 
-▸ **getDefaults**(): `Record`\<`string`, `any`\>
+**getDefaults**(): `Record`\<`string`, `any`\>
 
 #### Returns
 
@@ -7649,4 +7617,4 @@ createCollectionMixin(
 
 #### Defined in
 
-[src/shapes/Group.ts:157](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L157)
+[src/shapes/Group.ts:157](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L157)

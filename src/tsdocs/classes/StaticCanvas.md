@@ -46,7 +46,7 @@ object:removed
 
 ### constructor
 
-• **new StaticCanvas**\<`EventSpec`\>(`el?`, `options?`): [`StaticCanvas`](/apidocs/classes/StaticCanvas.md)\<`EventSpec`\>
+**new StaticCanvas**\<`EventSpec`\>(`el?`, `options?`): [`StaticCanvas`](/apidocs/classes/StaticCanvas.md)\<`EventSpec`\>
 
 #### Type parameters
 
@@ -71,17 +71,17 @@ createCollectionMixin(CommonMethods\&lt;CanvasEvents\&gt;).constructor
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:175](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L175)
+[src/canvas/StaticCanvas.ts:175](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L175)
 
 ## Properties
 
 ### \_\_cleanupTask
 
-• `Protected` `Optional` **\_\_cleanupTask**: `Object`
+ `Protected` `Optional` **\_\_cleanupTask**: `Object`
 
 #### Call signature
 
-▸ (): `void`
+(): `void`
 
 ##### Returns
 
@@ -95,13 +95,13 @@ createCollectionMixin(CommonMethods\&lt;CanvasEvents\&gt;).constructor
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:166](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L166)
+[src/canvas/StaticCanvas.ts:166](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L166)
 
 ___
 
 ### \_objects
 
-• **\_objects**: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] = `[]`
+ **\_objects**: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] = `[]`
 
 **`TODO`**
 
@@ -113,13 +113,13 @@ createCollectionMixin(CommonMethods\<CanvasEvents\>).\_objects
 
 #### Defined in
 
-[src/Collection.ts:13](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L13)
+[src/Collection.ts:13](https://github.com/fabricjs/fabric.js/blob/078809453/src/Collection.ts#L13)
 
 ___
 
 ### \_offset
 
-• **\_offset**: `Object`
+ **\_offset**: `Object`
 
 #### Type declaration
 
@@ -130,13 +130,13 @@ ___
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:157](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L157)
+[src/canvas/StaticCanvas.ts:157](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L157)
 
 ___
 
 ### allowTouchScrolling
 
-• **allowTouchScrolling**: `boolean`
+ **allowTouchScrolling**: `boolean`
 
 **`Todo`**
 
@@ -148,13 +148,13 @@ move to Canvas
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:117](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L117)
+[src/canvas/StaticCanvas.ts:117](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L117)
 
 ___
 
 ### backgroundColor
 
-• **backgroundColor**: `string` \| [`TFiller`](/apidocs/modules.md#tfiller)
+ **backgroundColor**: `string` \| [`TFiller`](/apidocs/modules.md#tfiller)
 
 Background color of canvas instance.
 
@@ -170,13 +170,13 @@ Background color of canvas instance.
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:92](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L92)
+[src/canvas/StaticCanvas.ts:92](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L92)
 
 ___
 
 ### backgroundImage
 
-• `Optional` **backgroundImage**: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
+ `Optional` **backgroundImage**: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
 
 Background image of canvas instance.
 since 2.4.0 image caching is active, please when putting an image as background, add to the
@@ -195,13 +195,13 @@ vale. As an alternative you can disable image objectCaching
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:93](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L93)
+[src/canvas/StaticCanvas.ts:93](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L93)
 
 ___
 
 ### backgroundVpt
 
-• **backgroundVpt**: `boolean`
+ **backgroundVpt**: `boolean`
 
 if set to false background image is not affected by viewport transform
 
@@ -225,13 +225,13 @@ we should really find a different way to do this
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:91](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L91)
+[src/canvas/StaticCanvas.ts:91](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L91)
 
 ___
 
 ### clipPath
 
-• `Optional` **clipPath**: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
+ `Optional` **clipPath**: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
 
 a fabricObject that, without stroke define a clipping area with their shape. filled in black
 the clipPath object gets used when the canvas has rendered, and the context is placed in the
@@ -244,13 +244,13 @@ clipPath will clip away controls, if you do not want this to happen use controls
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:99](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L99)
+[src/canvas/StaticCanvas.ts:99](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L99)
 
 ___
 
 ### controlsAboveOverlay
 
-• **controlsAboveOverlay**: `boolean`
+ **controlsAboveOverlay**: `boolean`
 
 **`Todo`**
 
@@ -262,49 +262,49 @@ move to Canvas
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:112](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L112)
+[src/canvas/StaticCanvas.ts:112](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L112)
 
 ___
 
 ### destroyed
 
-• `Optional` **destroyed**: `boolean`
+ `Optional` **destroyed**: `boolean`
 
 If true the Canvas is in the process or has been disposed/destroyed.
 No more rendering operation will be executed on this canvas.
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:148](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L148)
+[src/canvas/StaticCanvas.ts:148](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L148)
 
 ___
 
 ### disposed
 
-• `Optional` **disposed**: `boolean`
+ `Optional` **disposed**: `boolean`
 
 Started the process of disposing but not done yet.
 WIll likely complete the render cycle already scheduled but stopping adding more.
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:155](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L155)
+[src/canvas/StaticCanvas.ts:155](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L155)
 
 ___
 
 ### elements
 
-• **elements**: [`StaticCanvasDOMManager`](/apidocs/classes/StaticCanvasDOMManager.md)
+ **elements**: [`StaticCanvasDOMManager`](/apidocs/classes/StaticCanvasDOMManager.md)
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:161](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L161)
+[src/canvas/StaticCanvas.ts:161](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L161)
 
 ___
 
 ### enableRetinaScaling
 
-• **enableRetinaScaling**: `boolean`
+ **enableRetinaScaling**: `boolean`
 
 When true, canvas is scaled by devicePixelRatio for better rendering on retina screens
 
@@ -320,23 +320,23 @@ When true, canvas is scaled by devicePixelRatio for better rendering on retina s
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:106](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L106)
+[src/canvas/StaticCanvas.ts:106](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L106)
 
 ___
 
 ### hasLostContext
 
-• `Protected` **hasLostContext**: `boolean`
+ `Protected` **hasLostContext**: `boolean`
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:158](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L158)
+[src/canvas/StaticCanvas.ts:158](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L158)
 
 ___
 
 ### height
 
-• **height**: `number`
+ **height**: `number`
 
 Height in virtual/logical pixels of the canvas.
 The canvas can be taller than width if retina scaling is active
@@ -347,13 +347,13 @@ The canvas can be taller than width if retina scaling is active
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:88](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L88)
+[src/canvas/StaticCanvas.ts:88](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L88)
 
 ___
 
 ### imageSmoothingEnabled
 
-• **imageSmoothingEnabled**: `boolean`
+ **imageSmoothingEnabled**: `boolean`
 
 Indicates whether this canvas will use image smoothing, this is on by default in browsers
 
@@ -369,13 +369,13 @@ Indicates whether this canvas will use image smoothing, this is on by default in
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:107](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L107)
+[src/canvas/StaticCanvas.ts:107](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L107)
 
 ___
 
 ### includeDefaultValues
 
-• **includeDefaultValues**: `boolean`
+ **includeDefaultValues**: `boolean`
 
 Indicates whether toObject/toDatalessObject should include default values
 if set to false, takes precedence over the object value.
@@ -392,23 +392,23 @@ if set to false, takes precedence over the object value.
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:101](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L101)
+[src/canvas/StaticCanvas.ts:101](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L101)
 
 ___
 
 ### nextRenderHandle
 
-• `Protected` **nextRenderHandle**: `number`
+ `Protected` **nextRenderHandle**: `number`
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:159](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L159)
+[src/canvas/StaticCanvas.ts:159](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L159)
 
 ___
 
 ### overlayColor
 
-• **overlayColor**: `string` \| [`TFiller`](/apidocs/modules.md#tfiller)
+ **overlayColor**: `string` \| [`TFiller`](/apidocs/modules.md#tfiller)
 
 Overlay color of canvas instance.
 
@@ -428,13 +428,13 @@ Overlay color of canvas instance.
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:96](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L96)
+[src/canvas/StaticCanvas.ts:96](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L96)
 
 ___
 
 ### overlayImage
 
-• `Optional` **overlayImage**: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
+ `Optional` **overlayImage**: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
 
 Overlay image of canvas instance.
 since 2.4.0 image caching is active, please when putting an image as overlay, add to the
@@ -453,13 +453,13 @@ vale. As an alternative you can disable image objectCaching
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:97](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L97)
+[src/canvas/StaticCanvas.ts:97](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L97)
 
 ___
 
 ### overlayVpt
 
-• **overlayVpt**: `boolean`
+ **overlayVpt**: `boolean`
 
 if set to false overlay image is not affected by viewport transform
 
@@ -483,13 +483,13 @@ we should really find a different way to do this
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:95](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L95)
+[src/canvas/StaticCanvas.ts:95](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L95)
 
 ___
 
 ### renderOnAddRemove
 
-• **renderOnAddRemove**: `boolean`
+ **renderOnAddRemove**: `boolean`
 
 Indicates whether [StaticCanvas#add](/apidocs/classes/StaticCanvas.md#add), [StaticCanvas#insertAt](/apidocs/classes/StaticCanvas.md#insertat) and [StaticCanvas#remove](/apidocs/classes/StaticCanvas.md#remove),
 StaticCanvas#moveTo, [StaticCanvas#clear](/apidocs/classes/StaticCanvas.md#clear) and many more, should also re-render canvas.
@@ -510,13 +510,13 @@ Left default to true to do not break documentation and old app, fiddles.
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:104](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L104)
+[src/canvas/StaticCanvas.ts:104](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L104)
 
 ___
 
 ### skipOffscreen
 
-• **skipOffscreen**: `boolean`
+ **skipOffscreen**: `boolean`
 
 Based on vptCoords and object.aCoords, skip rendering of objects that
 are not included in current viewport.
@@ -536,13 +536,13 @@ true
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:105](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L105)
+[src/canvas/StaticCanvas.ts:105](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L105)
 
 ___
 
 ### svgViewportTransformation
 
-• **svgViewportTransformation**: `boolean`
+ **svgViewportTransformation**: `boolean`
 
 When true, getSvgTransform() will apply the StaticCanvas.viewportTransform to the SVG transformation. When true,
 a zoomed canvas will then produce zoomed SVG output.
@@ -559,13 +559,13 @@ a zoomed canvas will then produce zoomed SVG output.
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:942](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L942)
+[src/canvas/StaticCanvas.ts:942](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L942)
 
 ___
 
 ### viewportTransform
 
-• **viewportTransform**: [`TMat2D`](/apidocs/modules.md#tmat2d)
+ **viewportTransform**: [`TMat2D`](/apidocs/modules.md#tmat2d)
 
 The transformation (a Canvas 2D API transform matrix) which focuses the viewport
 
@@ -595,13 +595,13 @@ canvas.viewportTransform = [0.7, 0, 0, 0.7, 50, 50];
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:119](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L119)
+[src/canvas/StaticCanvas.ts:119](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L119)
 
 ___
 
 ### vptCoords
 
-• **vptCoords**: [`TCornerPoint`](/apidocs/modules.md#tcornerpoint)
+ **vptCoords**: [`TCornerPoint`](/apidocs/modules.md#tcornerpoint)
 
 Describe canvas element extension over design
 properties are tl,tr,bl,br.
@@ -616,13 +616,13 @@ calcViewportBoundaries.
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:128](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L128)
+[src/canvas/StaticCanvas.ts:128](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L128)
 
 ___
 
 ### width
 
-• **width**: `number`
+ **width**: `number`
 
 Width in virtual/logical pixels of the canvas.
 The canvas can be larger than width if retina scaling is active
@@ -633,23 +633,23 @@ The canvas can be larger than width if retina scaling is active
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:87](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L87)
+[src/canvas/StaticCanvas.ts:87](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L87)
 
 ___
 
 ### ownDefaults
 
-▪ `Static` **ownDefaults**: [`TOptions`](/apidocs/modules.md#toptions)\<[`StaticCanvasOptions`](/apidocs/interfaces/StaticCanvasOptions.md)\> = `staticCanvasDefaults`
+ `Static` **ownDefaults**: [`TOptions`](/apidocs/modules.md#toptions)\<[`StaticCanvasOptions`](/apidocs/interfaces/StaticCanvasOptions.md)\> = `staticCanvasDefaults`
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:163](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L163)
+[src/canvas/StaticCanvas.ts:163](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L163)
 
 ## Accessors
 
 ### contextContainer
 
-• `get` **contextContainer**(): `CanvasRenderingContext2D`
+`get` **contextContainer**(): `CanvasRenderingContext2D`
 
 #### Returns
 
@@ -657,13 +657,13 @@ ___
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:139](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L139)
+[src/canvas/StaticCanvas.ts:139](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L139)
 
 ___
 
 ### lowerCanvasEl
 
-• `get` **lowerCanvasEl**(): `HTMLCanvasElement`
+`get` **lowerCanvasEl**(): `HTMLCanvasElement`
 
 A reference to the canvas actual HTMLCanvasElement.
 Can be use to read the raw pixels, but never write or manipulate
@@ -674,13 +674,13 @@ Can be use to read the raw pixels, but never write or manipulate
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:135](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L135)
+[src/canvas/StaticCanvas.ts:135](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L135)
 
 ## Methods
 
 ### \_\_serializeBgOverlay
 
-▸ **__serializeBgOverlay**(`methodName`, `propertiesToInclude?`): `any`
+**__serializeBgOverlay**(`methodName`, `propertiesToInclude?`): `any`
 
 #### Parameters
 
@@ -695,13 +695,13 @@ Can be use to read the raw pixels, but never write or manipulate
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:896](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L896)
+[src/canvas/StaticCanvas.ts:896](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L896)
 
 ___
 
 ### \_centerObject
 
-▸ **_centerObject**(`object`, `center`): `void`
+**_centerObject**(`object`, `center`): `void`
 
 #### Parameters
 
@@ -716,13 +716,13 @@ ___
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:794](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L794)
+[src/canvas/StaticCanvas.ts:794](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L794)
 
 ___
 
 ### \_isRetinaScaling
 
-▸ **_isRetinaScaling**(): `boolean`
+**_isRetinaScaling**(): `boolean`
 
 #### Returns
 
@@ -730,13 +730,13 @@ ___
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:244](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L244)
+[src/canvas/StaticCanvas.ts:244](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L244)
 
 ___
 
 ### \_onObjectAdded
 
-▸ **_onObjectAdded**(`obj`): `void`
+**_onObjectAdded**(`obj`): `void`
 
 #### Parameters
 
@@ -754,13 +754,13 @@ createCollectionMixin(CommonMethods\&lt;CanvasEvents\&gt;).\_onObjectAdded
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:216](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L216)
+[src/canvas/StaticCanvas.ts:216](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L216)
 
 ___
 
 ### \_onObjectRemoved
 
-▸ **_onObjectRemoved**(`obj`): `void`
+**_onObjectRemoved**(`obj`): `void`
 
 #### Parameters
 
@@ -778,13 +778,13 @@ createCollectionMixin(CommonMethods\&lt;CanvasEvents\&gt;).\_onObjectRemoved
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:231](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L231)
+[src/canvas/StaticCanvas.ts:231](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L231)
 
 ___
 
 ### \_onStackOrderChanged
 
-▸ **_onStackOrderChanged**(): `void`
+**_onStackOrderChanged**(): `void`
 
 #### Returns
 
@@ -796,13 +796,13 @@ createCollectionMixin(CommonMethods\&lt;CanvasEvents\&gt;).\_onStackOrderChanged
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:237](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L237)
+[src/canvas/StaticCanvas.ts:237](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L237)
 
 ___
 
 ### \_renderBackground
 
-▸ **_renderBackground**(`ctx`): `void`
+**_renderBackground**(`ctx`): `void`
 
 #### Parameters
 
@@ -816,13 +816,13 @@ ___
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:686](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L686)
+[src/canvas/StaticCanvas.ts:686](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L686)
 
 ___
 
 ### \_renderBackgroundOrOverlay
 
-▸ **_renderBackgroundOrOverlay**(`ctx`, `property`): `void`
+**_renderBackgroundOrOverlay**(`ctx`, `property`): `void`
 
 #### Parameters
 
@@ -837,13 +837,13 @@ ___
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:634](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L634)
+[src/canvas/StaticCanvas.ts:634](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L634)
 
 ___
 
 ### \_renderObjects
 
-▸ **_renderObjects**(`ctx`, `objects`): `void`
+**_renderObjects**(`ctx`, `objects`): `void`
 
 #### Parameters
 
@@ -858,13 +858,13 @@ ___
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:623](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L623)
+[src/canvas/StaticCanvas.ts:623](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L623)
 
 ___
 
 ### \_renderOverlay
 
-▸ **_renderOverlay**(`ctx`): `void`
+**_renderOverlay**(`ctx`): `void`
 
 #### Parameters
 
@@ -878,13 +878,13 @@ ___
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:694](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L694)
+[src/canvas/StaticCanvas.ts:694](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L694)
 
 ___
 
 ### \_set
 
-▸ **_set**(`key`, `value`): `void`
+**_set**(`key`, `value`): `void`
 
 #### Parameters
 
@@ -903,13 +903,13 @@ createCollectionMixin(CommonMethods\<CanvasEvents\>).\_set
 
 #### Defined in
 
-[src/CommonMethods.ts:38](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/CommonMethods.ts#L38)
+[src/CommonMethods.ts:38](https://github.com/fabricjs/fabric.js/blob/078809453/src/CommonMethods.ts#L38)
 
 ___
 
 ### \_setDimensionsImpl
 
-▸ **_setDimensionsImpl**(`dimensions`, `«destructured»?`): `void`
+**_setDimensionsImpl**(`dimensions`, `«destructured»?`): `void`
 
 Internal use only
 
@@ -926,13 +926,13 @@ Internal use only
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:308](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L308)
+[src/canvas/StaticCanvas.ts:308](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L308)
 
 ___
 
 ### \_setObject
 
-▸ **_setObject**(`obj`): `void`
+**_setObject**(`obj`): `void`
 
 #### Parameters
 
@@ -950,13 +950,13 @@ createCollectionMixin(CommonMethods\<CanvasEvents\>).\_setObject
 
 #### Defined in
 
-[src/CommonMethods.ts:18](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/CommonMethods.ts#L18)
+[src/CommonMethods.ts:18](https://github.com/fabricjs/fabric.js/blob/078809453/src/CommonMethods.ts#L18)
 
 ___
 
 ### \_setOptions
 
-▸ **_setOptions**(`options?`): `void`
+**_setOptions**(`options?`): `void`
 
 Sets object's properties from options, for initialization only
 
@@ -976,13 +976,13 @@ createCollectionMixin(CommonMethods\<CanvasEvents\>).\_setOptions
 
 #### Defined in
 
-[src/CommonMethods.ts:9](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/CommonMethods.ts#L9)
+[src/CommonMethods.ts:9](https://github.com/fabricjs/fabric.js/blob/078809453/src/CommonMethods.ts#L9)
 
 ___
 
 ### \_setSVGBgOverlayColor
 
-▸ **_setSVGBgOverlayColor**(`markup`, `property`): `void`
+**_setSVGBgOverlayColor**(`markup`, `property`): `void`
 
 #### Parameters
 
@@ -1001,13 +1001,13 @@ this seems to handle patterns but fail at gradients.
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1199](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L1199)
+[src/canvas/StaticCanvas.ts:1199](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L1199)
 
 ___
 
 ### \_setSVGBgOverlayImage
 
-▸ **_setSVGBgOverlayImage**(`markup`, `property`, `reviver`): `void`
+**_setSVGBgOverlayImage**(`markup`, `property`, `reviver`): `void`
 
 #### Parameters
 
@@ -1023,13 +1023,13 @@ ___
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1184](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L1184)
+[src/canvas/StaticCanvas.ts:1184](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L1184)
 
 ___
 
 ### \_setSVGHeader
 
-▸ **_setSVGHeader**(`markup`, `options`): `void`
+**_setSVGHeader**(`markup`, `options`): `void`
 
 #### Parameters
 
@@ -1044,13 +1044,13 @@ ___
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1023](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L1023)
+[src/canvas/StaticCanvas.ts:1023](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L1023)
 
 ___
 
 ### \_setSVGObject
 
-▸ **_setSVGObject**(`markup`, `instance`, `reviver`): `void`
+**_setSVGObject**(`markup`, `instance`, `reviver`): `void`
 
 This is its own function because the Canvas ( non static ) requires extra code here
 
@@ -1068,13 +1068,13 @@ This is its own function because the Canvas ( non static ) requires extra code h
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1173](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L1173)
+[src/canvas/StaticCanvas.ts:1173](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L1173)
 
 ___
 
 ### \_setSVGObjects
 
-▸ **_setSVGObjects**(`markup`, `reviver`): `void`
+**_setSVGObjects**(`markup`, `reviver`): `void`
 
 #### Parameters
 
@@ -1089,13 +1089,13 @@ ___
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1160](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L1160)
+[src/canvas/StaticCanvas.ts:1160](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L1160)
 
 ___
 
 ### \_setSVGPreamble
 
-▸ **_setSVGPreamble**(`markup`, `options`): `void`
+**_setSVGPreamble**(`markup`, `options`): `void`
 
 #### Parameters
 
@@ -1110,13 +1110,13 @@ ___
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1007](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L1007)
+[src/canvas/StaticCanvas.ts:1007](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L1007)
 
 ___
 
 ### \_toObject
 
-▸ **_toObject**(`instance`, `methodName`, `propertiesToInclude?`): `any`
+**_toObject**(`instance`, `methodName`, `propertiesToInclude?`): `any`
 
 #### Parameters
 
@@ -1132,13 +1132,13 @@ ___
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:874](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L874)
+[src/canvas/StaticCanvas.ts:874](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L874)
 
 ___
 
 ### \_toObjectMethod
 
-▸ **_toObjectMethod**(`methodName`, `propertiesToInclude?`): `any`
+**_toObjectMethod**(`methodName`, `propertiesToInclude?`): `any`
 
 #### Parameters
 
@@ -1153,13 +1153,13 @@ ___
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:849](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L849)
+[src/canvas/StaticCanvas.ts:849](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L849)
 
 ___
 
 ### absolutePan
 
-▸ **absolutePan**(`point`): `void`
+**absolutePan**(`point`): `void`
 
 Pan viewport so as to place point at top left corner of canvas
 
@@ -1175,13 +1175,13 @@ Pan viewport so as to place point at top left corner of canvas
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:417](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L417)
+[src/canvas/StaticCanvas.ts:417](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L417)
 
 ___
 
 ### add
 
-▸ **add**(`...objects`): `number`
+**add**(`...objects`): `number`
 
 #### Parameters
 
@@ -1199,13 +1199,13 @@ createCollectionMixin(CommonMethods\&lt;CanvasEvents\&gt;).add
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:198](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L198)
+[src/canvas/StaticCanvas.ts:198](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L198)
 
 ___
 
 ### bringObjectForward
 
-▸ **bringObjectForward**(`object`, `intersecting?`): `boolean`
+**bringObjectForward**(`object`, `intersecting?`): `boolean`
 
 Moves an object or a selection up in stack of drawn objects
 An optional parameter, intersecting allows to move the object in front
@@ -1232,13 +1232,13 @@ createCollectionMixin(CommonMethods\<CanvasEvents\>).bringObjectForward
 
 #### Defined in
 
-[src/Collection.ts:232](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L232)
+[src/Collection.ts:232](https://github.com/fabricjs/fabric.js/blob/078809453/src/Collection.ts#L232)
 
 ___
 
 ### bringObjectToFront
 
-▸ **bringObjectToFront**(`object`): `boolean`
+**bringObjectToFront**(`object`): `boolean`
 
 Moves an object or the objects of a multiple selection
 to the top of the stack of drawn objects
@@ -1261,13 +1261,13 @@ createCollectionMixin(CommonMethods\<CanvasEvents\>).bringObjectToFront
 
 #### Defined in
 
-[src/Collection.ts:186](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L186)
+[src/Collection.ts:186](https://github.com/fabricjs/fabric.js/blob/078809453/src/Collection.ts#L186)
 
 ___
 
 ### calcOffset
 
-▸ **calcOffset**(): `Object`
+**calcOffset**(): `Object`
 
 Calculates canvas element offset relative to the document
 This method is also attached as "resize" event handler of window
@@ -1283,13 +1283,13 @@ This method is also attached as "resize" event handler of window
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:260](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L260)
+[src/canvas/StaticCanvas.ts:260](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L260)
 
 ___
 
 ### calcViewportBoundaries
 
-▸ **calcViewportBoundaries**(): [`TCornerPoint`](/apidocs/modules.md#tcornerpoint)
+**calcViewportBoundaries**(): [`TCornerPoint`](/apidocs/modules.md#tcornerpoint)
 
 Calculate the position of the 4 corner of canvas with current viewportTransform.
 helps to determinate when an object is in the current rendering viewport using
@@ -1305,13 +1305,13 @@ points.tl
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:517](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L517)
+[src/canvas/StaticCanvas.ts:517](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L517)
 
 ___
 
 ### cancelRequestedRender
 
-▸ **cancelRequestedRender**(): `void`
+**cancelRequestedRender**(): `void`
 
 #### Returns
 
@@ -1319,13 +1319,13 @@ ___
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:535](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L535)
+[src/canvas/StaticCanvas.ts:535](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L535)
 
 ___
 
 ### centerObject
 
-▸ **centerObject**(`object`): `void`
+**centerObject**(`object`): `void`
 
 Centers object vertically and horizontally in the canvas
 
@@ -1341,13 +1341,13 @@ Centers object vertically and horizontally in the canvas
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:744](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L744)
+[src/canvas/StaticCanvas.ts:744](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L744)
 
 ___
 
 ### centerObjectH
 
-▸ **centerObjectH**(`object`): `void`
+**centerObjectH**(`object`): `void`
 
 Centers object horizontally in the canvas
 
@@ -1363,13 +1363,13 @@ Centers object horizontally in the canvas
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:722](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L722)
+[src/canvas/StaticCanvas.ts:722](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L722)
 
 ___
 
 ### centerObjectV
 
-▸ **centerObjectV**(`object`): `void`
+**centerObjectV**(`object`): `void`
 
 Centers object vertically in the canvas
 
@@ -1385,13 +1385,13 @@ Centers object vertically in the canvas
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:733](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L733)
+[src/canvas/StaticCanvas.ts:733](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L733)
 
 ___
 
 ### clear
 
-▸ **clear**(): `void`
+**clear**(): `void`
 
 Clears all contexts (background, main, top) of an instance
 
@@ -1401,13 +1401,13 @@ Clears all contexts (background, main, top) of an instance
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:464](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L464)
+[src/canvas/StaticCanvas.ts:464](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L464)
 
 ___
 
 ### clearContext
 
-▸ **clearContext**(`ctx`): `void`
+**clearContext**(`ctx`): `void`
 
 Clears specified context of canvas element
 
@@ -1423,13 +1423,13 @@ Clears specified context of canvas element
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:449](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L449)
+[src/canvas/StaticCanvas.ts:449](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L449)
 
 ___
 
 ### clone
 
-▸ **clone**(`properties?`): `Promise`\<[`StaticCanvas`](/apidocs/classes/StaticCanvas.md)\<`EventSpec`\>\>
+**clone**(`properties?`): `Promise`\<[`StaticCanvas`](/apidocs/classes/StaticCanvas.md)\<`EventSpec`\>\>
 
 Clones canvas instance
 
@@ -1445,13 +1445,13 @@ Clones canvas instance
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1315](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L1315)
+[src/canvas/StaticCanvas.ts:1315](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L1315)
 
 ___
 
 ### cloneWithoutData
 
-▸ **cloneWithoutData**(): [`StaticCanvas`](/apidocs/classes/StaticCanvas.md)\<`EventSpec`\>
+**cloneWithoutData**(): [`StaticCanvas`](/apidocs/classes/StaticCanvas.md)\<`EventSpec`\>
 
 Clones canvas instance without cloning existing data.
 This essentially copies canvas dimensions since loadFromJSON does not affect canvas size.
@@ -1462,13 +1462,13 @@ This essentially copies canvas dimensions since loadFromJSON does not affect can
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1325](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L1325)
+[src/canvas/StaticCanvas.ts:1325](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L1325)
 
 ___
 
 ### collectObjects
 
-▸ **collectObjects**(`«destructured»`, `«destructured»?`): `InteractiveFabricObject`\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]
+**collectObjects**(`bbox`, `options?`): `InteractiveFabricObject`\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]
 
 Given a bounding box, return all the objects of the collection that are contained in the bounding box.
 If `includeIntersecting` is true, return also the objects that intersect the bounding box as well.
@@ -1476,11 +1476,11 @@ This is meant to work with selection. Is not a generic method.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `«destructured»` | [`TBBox`](/apidocs/modules.md#tbbox) |
-| `«destructured»` | `Object` |
-| › `includeIntersecting?` | `boolean` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `bbox` | [`TBBox`](/apidocs/modules.md#tbbox) | a bounding box in scene coordinates |
+| `options` | `Object` | an object with includeIntersecting |
+| `options.includeIntersecting?` | `boolean` | - |
 
 #### Returns
 
@@ -1494,13 +1494,13 @@ createCollectionMixin(CommonMethods\<CanvasEvents\>).collectObjects
 
 #### Defined in
 
-[src/Collection.ts:316](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L316)
+[src/Collection.ts:318](https://github.com/fabricjs/fabric.js/blob/078809453/src/Collection.ts#L318)
 
 ___
 
 ### complexity
 
-▸ **complexity**(): `number`
+**complexity**(): `number`
 
 Returns number representation of a collection complexity
 
@@ -1516,13 +1516,13 @@ createCollectionMixin(CommonMethods\<CanvasEvents\>).complexity
 
 #### Defined in
 
-[src/Collection.ts:157](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L157)
+[src/Collection.ts:157](https://github.com/fabricjs/fabric.js/blob/078809453/src/Collection.ts#L157)
 
 ___
 
 ### contains
 
-▸ **contains**(`object`, `deep?`): `boolean`
+**contains**(`object`, `deep?`): `boolean`
 
 Returns true if collection contains an object.\
 **Prefer using [FabricObject#isDescendantOf](/apidocs/classes/FabricObject.md#isdescendantof) for performance reasons**
@@ -1547,13 +1547,13 @@ createCollectionMixin(CommonMethods\<CanvasEvents\>).contains
 
 #### Defined in
 
-[src/Collection.ts:140](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L140)
+[src/Collection.ts:140](https://github.com/fabricjs/fabric.js/blob/078809453/src/Collection.ts#L140)
 
 ___
 
 ### createSVGClipPathMarkup
 
-▸ **createSVGClipPathMarkup**(`options`): `string`
+**createSVGClipPathMarkup**(`options`): `string`
 
 #### Parameters
 
@@ -1567,13 +1567,13 @@ ___
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1068](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L1068)
+[src/canvas/StaticCanvas.ts:1068](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L1068)
 
 ___
 
 ### createSVGFontFacesMarkup
 
-▸ **createSVGFontFacesMarkup**(): `string`
+**createSVGFontFacesMarkup**(): `string`
 
 Creates markup containing SVG font faces,
 font URLs for font faces must be collected by developers
@@ -1585,13 +1585,13 @@ and are not extracted from the DOM by fabricjs
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1111](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L1111)
+[src/canvas/StaticCanvas.ts:1111](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L1111)
 
 ___
 
 ### createSVGRefElementsMarkup
 
-▸ **createSVGRefElementsMarkup**(): `string`
+**createSVGRefElementsMarkup**(): `string`
 
 Creates markup containing SVG referenced elements like patterns, gradients etc.
 
@@ -1601,13 +1601,13 @@ Creates markup containing SVG referenced elements like patterns, gradients etc.
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1083](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L1083)
+[src/canvas/StaticCanvas.ts:1083](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L1083)
 
 ___
 
 ### destroy
 
-▸ **destroy**(): `void`
+**destroy**(): `void`
 
 Clears the canvas element, disposes objects and frees resources.
 
@@ -1626,13 +1626,13 @@ Consider using [dispose](/apidocs/classes/StaticCanvas.md#dispose) as it is **SA
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1480](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L1480)
+[src/canvas/StaticCanvas.ts:1480](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L1480)
 
 ___
 
 ### dispose
 
-▸ **dispose**(): `Promise`\<`boolean`\>
+**dispose**(): `Promise`\<`boolean`\>
 
 Waits until rendering has settled to destroy the canvas
 
@@ -1648,13 +1648,13 @@ if aborted by a consequent call
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1441](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L1441)
+[src/canvas/StaticCanvas.ts:1441](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L1441)
 
 ___
 
 ### drawClipPathOnCanvas
 
-▸ **drawClipPathOnCanvas**(`ctx`, `clipPath`): `void`
+**drawClipPathOnCanvas**(`ctx`, `clipPath`): `void`
 
 Paint the cached clipPath on the lowerCanvasEl
 
@@ -1671,13 +1671,13 @@ Paint the cached clipPath on the lowerCanvasEl
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:598](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L598)
+[src/canvas/StaticCanvas.ts:598](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L598)
 
 ___
 
 ### drawControls
 
-▸ **drawControls**(`ctx`): `void`
+**drawControls**(`ctx`): `void`
 
 #### Parameters
 
@@ -1691,13 +1691,13 @@ ___
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:542](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L542)
+[src/canvas/StaticCanvas.ts:542](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L542)
 
 ___
 
 ### findNewLowerIndex
 
-▸ **findNewLowerIndex**(`object`, `idx`, `intersecting?`): `number`
+**findNewLowerIndex**(`object`, `idx`, `intersecting?`): `number`
 
 #### Parameters
 
@@ -1717,13 +1717,13 @@ createCollectionMixin(CommonMethods\<CanvasEvents\>).findNewLowerIndex
 
 #### Defined in
 
-[src/Collection.ts:264](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L264)
+[src/Collection.ts:264](https://github.com/fabricjs/fabric.js/blob/078809453/src/Collection.ts#L264)
 
 ___
 
 ### findNewUpperIndex
 
-▸ **findNewUpperIndex**(`object`, `idx`, `intersecting?`): `number`
+**findNewUpperIndex**(`object`, `idx`, `intersecting?`): `number`
 
 #### Parameters
 
@@ -1743,13 +1743,13 @@ createCollectionMixin(CommonMethods\<CanvasEvents\>).findNewUpperIndex
 
 #### Defined in
 
-[src/Collection.ts:287](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L287)
+[src/Collection.ts:287](https://github.com/fabricjs/fabric.js/blob/078809453/src/Collection.ts#L287)
 
 ___
 
 ### fire
 
-▸ **fire**\<`K`\>(`eventName`, `options?`): `void`
+**fire**\<`K`\>(`eventName`, `options?`): `void`
 
 Fires event with an optional options object
 
@@ -1776,13 +1776,13 @@ createCollectionMixin(CommonMethods\<CanvasEvents\>).fire
 
 #### Defined in
 
-[src/Observable.ts:159](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L159)
+[src/Observable.ts:159](https://github.com/fabricjs/fabric.js/blob/078809453/src/Observable.ts#L159)
 
 ___
 
 ### forEachObject
 
-▸ **forEachObject**(`callback`): `void`
+**forEachObject**(`callback`): `void`
 
 Executes given function for each object in this group
 A simple shortcut for getObjects().forEach, before es6 was more complicated,
@@ -1804,13 +1804,13 @@ createCollectionMixin(CommonMethods\<CanvasEvents\>).forEachObject
 
 #### Defined in
 
-[src/Collection.ts:83](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L83)
+[src/Collection.ts:83](https://github.com/fabricjs/fabric.js/blob/078809453/src/Collection.ts#L83)
 
 ___
 
 ### get
 
-▸ **get**(`property`): `any`
+**get**(`property`): `any`
 
 Basic getter
 
@@ -1832,13 +1832,13 @@ createCollectionMixin(CommonMethods\<CanvasEvents\>).get
 
 #### Defined in
 
-[src/CommonMethods.ts:59](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/CommonMethods.ts#L59)
+[src/CommonMethods.ts:59](https://github.com/fabricjs/fabric.js/blob/078809453/src/CommonMethods.ts#L59)
 
 ___
 
 ### getCenter
 
-▸ **getCenter**(): `Object`
+**getCenter**(): `Object`
 
 Returns coordinates of a center of canvas.
 Returned value is an object with top and left properties
@@ -1860,13 +1860,13 @@ migrate to `getCenterPoint`
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:704](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L704)
+[src/canvas/StaticCanvas.ts:704](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L704)
 
 ___
 
 ### getCenterPoint
 
-▸ **getCenterPoint**(): [`Point`](/apidocs/classes/Point.md)
+**getCenterPoint**(): [`Point`](/apidocs/classes/Point.md)
 
 Returns coordinates of a center of canvas.
 
@@ -1876,13 +1876,13 @@ Returns coordinates of a center of canvas.
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:715](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L715)
+[src/canvas/StaticCanvas.ts:715](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L715)
 
 ___
 
 ### getContext
 
-▸ **getContext**(): `CanvasRenderingContext2D`
+**getContext**(): `CanvasRenderingContext2D`
 
 Returns context of canvas where objects are drawn
 
@@ -1892,13 +1892,13 @@ Returns context of canvas where objects are drawn
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:457](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L457)
+[src/canvas/StaticCanvas.ts:457](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L457)
 
 ___
 
 ### getElement
 
-▸ **getElement**(): `HTMLCanvasElement`
+**getElement**(): `HTMLCanvasElement`
 
 Returns &lt;canvas> element corresponding to this instance
 
@@ -1908,13 +1908,13 @@ Returns &lt;canvas> element corresponding to this instance
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:441](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L441)
+[src/canvas/StaticCanvas.ts:441](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L441)
 
 ___
 
 ### getHeight
 
-▸ **getHeight**(): `number`
+**getHeight**(): `number`
 
 Returns canvas height (in px)
 
@@ -1924,13 +1924,13 @@ Returns canvas height (in px)
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:276](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L276)
+[src/canvas/StaticCanvas.ts:276](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L276)
 
 ___
 
 ### getObjects
 
-▸ **getObjects**(`...types?`): [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]
+**getObjects**(`...types?`): [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]
 
 Returns an array of children objects of this instance
 
@@ -1950,13 +1950,13 @@ createCollectionMixin(CommonMethods\<CanvasEvents\>).getObjects
 
 #### Defined in
 
-[src/Collection.ts:100](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L100)
+[src/Collection.ts:100](https://github.com/fabricjs/fabric.js/blob/078809453/src/Collection.ts#L100)
 
 ___
 
 ### getRetinaScaling
 
-▸ **getRetinaScaling**(): `number`
+**getRetinaScaling**(): `number`
 
 #### Returns
 
@@ -1966,13 +1966,13 @@ retinaScaling if applied, otherwise 1;
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:252](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L252)
+[src/canvas/StaticCanvas.ts:252](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L252)
 
 ___
 
 ### getVpCenter
 
-▸ **getVpCenter**(): [`Point`](/apidocs/classes/Point.md)
+**getVpCenter**(): [`Point`](/apidocs/classes/Point.md)
 
 Calculate the point in canvas that correspond to the center of actual viewport.
 
@@ -1984,13 +1984,13 @@ vpCenter, viewport center
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:782](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L782)
+[src/canvas/StaticCanvas.ts:782](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L782)
 
 ___
 
 ### getWidth
 
-▸ **getWidth**(): `number`
+**getWidth**(): `number`
 
 Returns canvas width (in px)
 
@@ -2000,13 +2000,13 @@ Returns canvas width (in px)
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:268](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L268)
+[src/canvas/StaticCanvas.ts:268](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L268)
 
 ___
 
 ### getZoom
 
-▸ **getZoom**(): `number`
+**getZoom**(): `number`
 
 Returns canvas zoom level
 
@@ -2016,13 +2016,13 @@ Returns canvas zoom level
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:356](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L356)
+[src/canvas/StaticCanvas.ts:356](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L356)
 
 ___
 
 ### initElements
 
-▸ **initElements**(`el?`): `void`
+**initElements**(`el?`): `void`
 
 #### Parameters
 
@@ -2036,13 +2036,13 @@ ___
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:194](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L194)
+[src/canvas/StaticCanvas.ts:194](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L194)
 
 ___
 
 ### insertAt
 
-▸ **insertAt**(`index`, `...objects`): `number`
+**insertAt**(`index`, `...objects`): `number`
 
 #### Parameters
 
@@ -2061,13 +2061,13 @@ createCollectionMixin(CommonMethods\&lt;CanvasEvents\&gt;).insertAt
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:204](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L204)
+[src/canvas/StaticCanvas.ts:204](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L204)
 
 ___
 
 ### isEmpty
 
-▸ **isEmpty**(): `boolean`
+**isEmpty**(): `boolean`
 
 Returns true if collection contains no objects
 
@@ -2083,13 +2083,13 @@ createCollectionMixin(CommonMethods\<CanvasEvents\>).isEmpty
 
 #### Defined in
 
-[src/Collection.ts:120](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L120)
+[src/Collection.ts:120](https://github.com/fabricjs/fabric.js/blob/078809453/src/Collection.ts#L120)
 
 ___
 
 ### item
 
-▸ **item**(`index`): [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
+**item**(`index`): [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
 
 Returns object at specified index
 
@@ -2111,13 +2111,13 @@ createCollectionMixin(CommonMethods\<CanvasEvents\>).item
 
 #### Defined in
 
-[src/Collection.ts:112](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L112)
+[src/Collection.ts:112](https://github.com/fabricjs/fabric.js/blob/078809453/src/Collection.ts#L112)
 
 ___
 
 ### loadFromJSON
 
-▸ **loadFromJSON**(`json`, `reviver?`, `options?`): `Promise`\<[`StaticCanvas`](/apidocs/classes/StaticCanvas.md)\<`EventSpec`\>\>
+**loadFromJSON**(`json`, `reviver?`, `options?`): `Promise`\<[`StaticCanvas`](/apidocs/classes/StaticCanvas.md)\<`EventSpec`\>\>
 
 Populates canvas with data from the specified JSON.
 JSON format must conform to the one of fabric.Canvas#toJSON
@@ -2168,13 +2168,13 @@ canvas.loadFromJSON(json, function(o, object) {
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1264](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L1264)
+[src/canvas/StaticCanvas.ts:1264](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L1264)
 
 ___
 
 ### moveObjectTo
 
-▸ **moveObjectTo**(`object`, `index`): `boolean`
+**moveObjectTo**(`object`, `index`): `boolean`
 
 Moves an object to specified level in stack of drawn objects
 
@@ -2197,13 +2197,13 @@ createCollectionMixin(CommonMethods\<CanvasEvents\>).moveObjectTo
 
 #### Defined in
 
-[src/Collection.ts:254](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L254)
+[src/Collection.ts:254](https://github.com/fabricjs/fabric.js/blob/078809453/src/Collection.ts#L254)
 
 ___
 
 ### off
 
-▸ **off**\<`K`\>(`eventName`, `handler`): `void`
+**off**\<`K`\>(`eventName`, `handler`): `void`
 
 unsubscribe an event listener
 
@@ -2230,9 +2230,9 @@ createCollectionMixin(CommonMethods\<CanvasEvents\>).off
 
 #### Defined in
 
-[src/Observable.ts:120](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L120)
+[src/Observable.ts:120](https://github.com/fabricjs/fabric.js/blob/078809453/src/Observable.ts#L120)
 
-▸ **off**(`handlers`): `void`
+**off**(`handlers`): `void`
 
 unsubscribe event listeners
 
@@ -2252,9 +2252,9 @@ createCollectionMixin(CommonMethods\<CanvasEvents\>).off
 
 #### Defined in
 
-[src/Observable.ts:125](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L125)
+[src/Observable.ts:125](https://github.com/fabricjs/fabric.js/blob/078809453/src/Observable.ts#L125)
 
-▸ **off**(): `void`
+**off**(): `void`
 
 unsubscribe all event listeners
 
@@ -2268,13 +2268,13 @@ createCollectionMixin(CommonMethods\<CanvasEvents\>).off
 
 #### Defined in
 
-[src/Observable.ts:129](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L129)
+[src/Observable.ts:129](https://github.com/fabricjs/fabric.js/blob/078809453/src/Observable.ts#L129)
 
 ___
 
 ### on
 
-▸ **on**\<`K`, `E`\>(`eventName`, `handler`): `VoidFunction`
+**on**\<`K`, `E`\>(`eventName`, `handler`): `VoidFunction`
 
 Observes specified event
 
@@ -2308,9 +2308,9 @@ createCollectionMixin(CommonMethods\<CanvasEvents\>).on
 
 #### Defined in
 
-[src/Observable.ts:23](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L23)
+[src/Observable.ts:23](https://github.com/fabricjs/fabric.js/blob/078809453/src/Observable.ts#L23)
 
-▸ **on**(`handlers`): `VoidFunction`
+**on**(`handlers`): `VoidFunction`
 
 #### Parameters
 
@@ -2328,13 +2328,13 @@ createCollectionMixin(CommonMethods\<CanvasEvents\>).on
 
 #### Defined in
 
-[src/Observable.ts:27](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L27)
+[src/Observable.ts:27](https://github.com/fabricjs/fabric.js/blob/078809453/src/Observable.ts#L27)
 
 ___
 
 ### once
 
-▸ **once**\<`K`, `E`\>(`eventName`, `handler`): `VoidFunction`
+**once**\<`K`, `E`\>(`eventName`, `handler`): `VoidFunction`
 
 Observes specified event **once**
 
@@ -2368,9 +2368,9 @@ createCollectionMixin(CommonMethods\<CanvasEvents\>).once
 
 #### Defined in
 
-[src/Observable.ts:62](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L62)
+[src/Observable.ts:62](https://github.com/fabricjs/fabric.js/blob/078809453/src/Observable.ts#L62)
 
-▸ **once**(`handlers`): `VoidFunction`
+**once**(`handlers`): `VoidFunction`
 
 #### Parameters
 
@@ -2388,13 +2388,13 @@ createCollectionMixin(CommonMethods\<CanvasEvents\>).once
 
 #### Defined in
 
-[src/Observable.ts:66](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L66)
+[src/Observable.ts:66](https://github.com/fabricjs/fabric.js/blob/078809453/src/Observable.ts#L66)
 
 ___
 
 ### relativePan
 
-▸ **relativePan**(`point`): `void`
+**relativePan**(`point`): `void`
 
 Pans viewpoint relatively
 
@@ -2410,13 +2410,13 @@ Pans viewpoint relatively
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:428](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L428)
+[src/canvas/StaticCanvas.ts:428](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L428)
 
 ___
 
 ### remove
 
-▸ **remove**(`...objects`): [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]
+**remove**(`...objects`): [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]
 
 #### Parameters
 
@@ -2434,13 +2434,13 @@ createCollectionMixin(CommonMethods\&lt;CanvasEvents\&gt;).remove
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:210](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L210)
+[src/canvas/StaticCanvas.ts:210](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L210)
 
 ___
 
 ### renderAll
 
-▸ **renderAll**(): `void`
+**renderAll**(): `void`
 
 Renders the canvas
 
@@ -2450,13 +2450,13 @@ Renders the canvas
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:478](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L478)
+[src/canvas/StaticCanvas.ts:478](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L478)
 
 ___
 
 ### renderAndReset
 
-▸ **renderAndReset**(): `void`
+**renderAndReset**(): `void`
 
 Function created to be instance bound at initialization
 used in requestAnimationFrame rendering
@@ -2470,13 +2470,13 @@ for an imperative rendering, use canvas.renderAll
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:494](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L494)
+[src/canvas/StaticCanvas.ts:494](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L494)
 
 ___
 
 ### renderCanvas
 
-▸ **renderCanvas**(`ctx`, `objects`): `void`
+**renderCanvas**(`ctx`, `objects`): `void`
 
 Renders background, objects, overlay and controls.
 
@@ -2493,13 +2493,13 @@ Renders background, objects, overlay and controls.
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:551](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L551)
+[src/canvas/StaticCanvas.ts:551](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L551)
 
 ___
 
 ### requestRenderAll
 
-▸ **requestRenderAll**(): `void`
+**requestRenderAll**(): `void`
 
 Append a renderAll request to next animation frame.
 unless one is already in progress, in that case nothing is done
@@ -2511,13 +2511,13 @@ a boolean flag will avoid appending more.
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:504](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L504)
+[src/canvas/StaticCanvas.ts:504](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L504)
 
 ___
 
 ### sendObjectBackwards
 
-▸ **sendObjectBackwards**(`object`, `intersecting?`): `boolean`
+**sendObjectBackwards**(`object`, `intersecting?`): `boolean`
 
 Moves an object or a selection down in stack of drawn objects
 An optional parameter, `intersecting` allows to move the object in behind
@@ -2544,13 +2544,13 @@ createCollectionMixin(CommonMethods\<CanvasEvents\>).sendObjectBackwards
 
 #### Defined in
 
-[src/Collection.ts:206](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L206)
+[src/Collection.ts:206](https://github.com/fabricjs/fabric.js/blob/078809453/src/Collection.ts#L206)
 
 ___
 
 ### sendObjectToBack
 
-▸ **sendObjectToBack**(`object`): `boolean`
+**sendObjectToBack**(`object`): `boolean`
 
 Moves an object or the objects of a multiple selection
 to the bottom of the stack of drawn objects
@@ -2573,13 +2573,13 @@ createCollectionMixin(CommonMethods\<CanvasEvents\>).sendObjectToBack
 
 #### Defined in
 
-[src/Collection.ts:170](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L170)
+[src/Collection.ts:170](https://github.com/fabricjs/fabric.js/blob/078809453/src/Collection.ts#L170)
 
 ___
 
 ### set
 
-▸ **set**(`key`, `value?`): [`StaticCanvas`](/apidocs/classes/StaticCanvas.md)\<`EventSpec`\>
+**set**(`key`, `value?`): [`StaticCanvas`](/apidocs/classes/StaticCanvas.md)\<`EventSpec`\>
 
 Sets property to a given value. When changing position/dimension -related properties (left, top, scale, angle, etc.) `set` does not update position of object's borders/controls. If you need to update those, call `setCoords()`.
 
@@ -2600,13 +2600,13 @@ createCollectionMixin(CommonMethods\<CanvasEvents\>).set
 
 #### Defined in
 
-[src/CommonMethods.ts:29](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/CommonMethods.ts#L29)
+[src/CommonMethods.ts:29](https://github.com/fabricjs/fabric.js/blob/078809453/src/CommonMethods.ts#L29)
 
 ___
 
 ### setDimensions
 
-▸ **setDimensions**(`dimensions`, `options?`): `void`
+**setDimensions**(`dimensions`, `options?`): `void`
 
 Sets dimensions (width, height) of this canvas instance. when options.cssOnly flag active you should also supply the unit of measure (px/%/em)
 
@@ -2623,13 +2623,13 @@ Sets dimensions (width, height) of this canvas instance. when options.cssOnly fl
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:339](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L339)
+[src/canvas/StaticCanvas.ts:339](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L339)
 
 ___
 
 ### setHeight
 
-▸ **setHeight**(`value`, `options?`): `void`
+**setHeight**(`value`, `options?`): `void`
 
 Sets height of this canvas instance
 
@@ -2650,13 +2650,13 @@ will be removed in 7.0
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:300](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L300)
+[src/canvas/StaticCanvas.ts:300](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L300)
 
 ___
 
 ### setViewportTransform
 
-▸ **setViewportTransform**(`vpt`): `void`
+**setViewportTransform**(`vpt`): `void`
 
 Sets viewport transformation of this canvas instance
 
@@ -2672,13 +2672,13 @@ Sets viewport transformation of this canvas instance
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:364](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L364)
+[src/canvas/StaticCanvas.ts:364](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L364)
 
 ___
 
 ### setWidth
 
-▸ **setWidth**(`value`, `options?`): `void`
+**setWidth**(`value`, `options?`): `void`
 
 Sets width of this canvas instance
 
@@ -2699,13 +2699,13 @@ will be removed in 7.0
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:288](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L288)
+[src/canvas/StaticCanvas.ts:288](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L288)
 
 ___
 
 ### setZoom
 
-▸ **setZoom**(`value`): `void`
+**setZoom**(`value`): `void`
 
 Sets zoom level of this canvas instance
 
@@ -2721,13 +2721,13 @@ Sets zoom level of this canvas instance
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:409](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L409)
+[src/canvas/StaticCanvas.ts:409](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L409)
 
 ___
 
 ### size
 
-▸ **size**(): `number`
+**size**(): `number`
 
 Returns a size of a collection (i.e: length of an array containing its objects)
 
@@ -2743,13 +2743,13 @@ createCollectionMixin(CommonMethods\<CanvasEvents\>).size
 
 #### Defined in
 
-[src/Collection.ts:128](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L128)
+[src/Collection.ts:128](https://github.com/fabricjs/fabric.js/blob/078809453/src/Collection.ts#L128)
 
 ___
 
 ### toCanvasElement
 
-▸ **toCanvasElement**(`multiplier?`, `options?`): `HTMLCanvasElement`
+**toCanvasElement**(`multiplier?`, `options?`): `HTMLCanvasElement`
 
 Create a new HTMLCanvas element painted with the current canvas content.
 No need to resize the actual one or repaint it.
@@ -2770,13 +2770,13 @@ create quick image copies of a canvas without passing for the dataUrl string
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1401](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L1401)
+[src/canvas/StaticCanvas.ts:1401](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L1401)
 
 ___
 
 ### toDataURL
 
-▸ **toDataURL**(`options?`): `string`
+**toDataURL**(`options?`): `string`
 
 Exports canvas element to a dataurl image. Note that when multiplier is used, cropping is scaled appropriately
 
@@ -2841,13 +2841,13 @@ var dataURL = canvas.toDataURL({
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1370](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L1370)
+[src/canvas/StaticCanvas.ts:1370](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L1370)
 
 ___
 
 ### toDatalessJSON
 
-▸ **toDatalessJSON**(`propertiesToInclude?`): `any`
+**toDatalessJSON**(`propertiesToInclude?`): `any`
 
 Returns dataless JSON representation of canvas
 
@@ -2865,13 +2865,13 @@ json string
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:805](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L805)
+[src/canvas/StaticCanvas.ts:805](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L805)
 
 ___
 
 ### toDatalessObject
 
-▸ **toDatalessObject**(`propertiesToInclude?`): `any`
+**toDatalessObject**(`propertiesToInclude?`): `any`
 
 Returns dataless object representation of canvas
 
@@ -2889,13 +2889,13 @@ object representation of an instance
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:842](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L842)
+[src/canvas/StaticCanvas.ts:842](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L842)
 
 ___
 
 ### toJSON
 
-▸ **toJSON**(): `any`
+**toJSON**(): `any`
 
 Returns Object representation of canvas
 this alias is provided because if you call JSON.stringify on an instance,
@@ -2939,13 +2939,13 @@ var json = canvas.toJSON();
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:833](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L833)
+[src/canvas/StaticCanvas.ts:833](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L833)
 
 ___
 
 ### toObject
 
-▸ **toObject**(`propertiesToInclude?`): `any`
+**toObject**(`propertiesToInclude?`): `any`
 
 Returns object representation of canvas
 
@@ -2963,13 +2963,13 @@ object representation of an instance
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:814](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L814)
+[src/canvas/StaticCanvas.ts:814](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L814)
 
 ___
 
 ### toSVG
 
-▸ **toSVG**(`options?`, `reviver?`): `string`
+**toSVG**(`options?`, `reviver?`): `string`
 
 Returns SVG representation of canvas
 
@@ -3042,13 +3042,13 @@ var svg = canvas.toSVG(null, function(svg) {
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:981](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L981)
+[src/canvas/StaticCanvas.ts:981](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L981)
 
 ___
 
 ### toString
 
-▸ **toString**(): `string`
+**toString**(): `string`
 
 Returns a string representation of an instance
 
@@ -3060,13 +3060,13 @@ string representation of an instance
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1500](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L1500)
+[src/canvas/StaticCanvas.ts:1500](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L1500)
 
 ___
 
 ### toggle
 
-▸ **toggle**(`property`): [`StaticCanvas`](/apidocs/classes/StaticCanvas.md)\<`EventSpec`\>
+**toggle**(`property`): [`StaticCanvas`](/apidocs/classes/StaticCanvas.md)\<`EventSpec`\>
 
 Toggles specified property from `true` to `false` or from `false` to `true`
 
@@ -3086,13 +3086,13 @@ createCollectionMixin(CommonMethods\<CanvasEvents\>).toggle
 
 #### Defined in
 
-[src/CommonMethods.ts:46](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/CommonMethods.ts#L46)
+[src/CommonMethods.ts:46](https://github.com/fabricjs/fabric.js/blob/078809453/src/CommonMethods.ts#L46)
 
 ___
 
 ### viewportCenterObject
 
-▸ **viewportCenterObject**(`object`): `void`
+**viewportCenterObject**(`object`): `void`
 
 Centers object vertically and horizontally in the viewport
 
@@ -3108,13 +3108,13 @@ Centers object vertically and horizontally in the viewport
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:752](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L752)
+[src/canvas/StaticCanvas.ts:752](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L752)
 
 ___
 
 ### viewportCenterObjectH
 
-▸ **viewportCenterObjectH**(`object`): `void`
+**viewportCenterObjectH**(`object`): `void`
 
 Centers object horizontally in the viewport, object.top is unchanged
 
@@ -3130,13 +3130,13 @@ Centers object horizontally in the viewport, object.top is unchanged
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:760](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L760)
+[src/canvas/StaticCanvas.ts:760](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L760)
 
 ___
 
 ### viewportCenterObjectV
 
-▸ **viewportCenterObjectV**(`object`): `void`
+**viewportCenterObjectV**(`object`): `void`
 
 Centers object Vertically in the viewport, object.top is unchanged
 
@@ -3152,13 +3152,13 @@ Centers object Vertically in the viewport, object.top is unchanged
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:771](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L771)
+[src/canvas/StaticCanvas.ts:771](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L771)
 
 ___
 
 ### zoomToPoint
 
-▸ **zoomToPoint**(`point`, `value`): `void`
+**zoomToPoint**(`point`, `value`): `void`
 
 Sets zoom level of this canvas instance, the zoom centered around point
 meaning that following zoom to point with the same point will have the visual
@@ -3178,13 +3178,13 @@ It has nothing to do with canvas center or visual center of the viewport.
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:392](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L392)
+[src/canvas/StaticCanvas.ts:392](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L392)
 
 ___
 
 ### getDefaults
 
-▸ **getDefaults**(): `Record`\<`string`, `any`\>
+**getDefaults**(): `Record`\<`string`, `any`\>
 
 #### Returns
 
@@ -3192,4 +3192,4 @@ ___
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:171](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L171)
+[src/canvas/StaticCanvas.ts:171](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L171)

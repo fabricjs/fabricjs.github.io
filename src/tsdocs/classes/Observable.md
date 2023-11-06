@@ -18,7 +18,7 @@
 
 ### constructor
 
-• **new Observable**\<`EventSpec`\>(): [`Observable`](/apidocs/classes/Observable.md)\<`EventSpec`\>
+**new Observable**\<`EventSpec`\>(): [`Observable`](/apidocs/classes/Observable.md)\<`EventSpec`\>
 
 #### Type parameters
 
@@ -34,17 +34,17 @@
 
 ### \_\_eventListeners
 
-• `Private` **\_\_eventListeners**: `Record`\<keyof `EventSpec`, `TEventCallback`\<`any`\>[]\>
+ `Private` **\_\_eventListeners**: `Record`\<keyof `EventSpec`, `TEventCallback`\<`any`\>[]\>
 
 #### Defined in
 
-[src/Observable.ts:12](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L12)
+[src/Observable.ts:12](https://github.com/fabricjs/fabric.js/blob/078809453/src/Observable.ts#L12)
 
 ## Methods
 
 ### \_removeEventListener
 
-▸ **_removeEventListener**\<`K`\>(`eventName`, `handler?`): `void`
+**_removeEventListener**\<`K`\>(`eventName`, `handler?`): `void`
 
 #### Type parameters
 
@@ -65,13 +65,13 @@
 
 #### Defined in
 
-[src/Observable.ts:98](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L98)
+[src/Observable.ts:98](https://github.com/fabricjs/fabric.js/blob/078809453/src/Observable.ts#L98)
 
 ___
 
 ### fire
 
-▸ **fire**\<`K`\>(`eventName`, `options?`): `void`
+**fire**\<`K`\>(`eventName`, `options?`): `void`
 
 Fires event with an optional options object
 
@@ -94,13 +94,13 @@ Fires event with an optional options object
 
 #### Defined in
 
-[src/Observable.ts:159](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L159)
+[src/Observable.ts:159](https://github.com/fabricjs/fabric.js/blob/078809453/src/Observable.ts#L159)
 
 ___
 
 ### off
 
-▸ **off**\<`K`\>(`eventName`, `handler`): `void`
+**off**\<`K`\>(`eventName`, `handler`): `void`
 
 unsubscribe an event listener
 
@@ -123,9 +123,9 @@ unsubscribe an event listener
 
 #### Defined in
 
-[src/Observable.ts:120](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L120)
+[src/Observable.ts:120](https://github.com/fabricjs/fabric.js/blob/078809453/src/Observable.ts#L120)
 
-▸ **off**(`handlers`): `void`
+**off**(`handlers`): `void`
 
 unsubscribe event listeners
 
@@ -141,9 +141,9 @@ unsubscribe event listeners
 
 #### Defined in
 
-[src/Observable.ts:125](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L125)
+[src/Observable.ts:125](https://github.com/fabricjs/fabric.js/blob/078809453/src/Observable.ts#L125)
 
-▸ **off**(): `void`
+**off**(): `void`
 
 unsubscribe all event listeners
 
@@ -153,13 +153,13 @@ unsubscribe all event listeners
 
 #### Defined in
 
-[src/Observable.ts:129](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L129)
+[src/Observable.ts:129](https://github.com/fabricjs/fabric.js/blob/078809453/src/Observable.ts#L129)
 
 ___
 
 ### on
 
-▸ **on**\<`K`, `E`\>(`eventName`, `handler`): `VoidFunction`
+**on**\<`K`, `E`\>(`eventName`, `handler`): `VoidFunction`
 
 Observes specified event
 
@@ -189,9 +189,9 @@ on
 
 #### Defined in
 
-[src/Observable.ts:23](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L23)
+[src/Observable.ts:23](https://github.com/fabricjs/fabric.js/blob/078809453/src/Observable.ts#L23)
 
-▸ **on**(`handlers`): `VoidFunction`
+**on**(`handlers`): `VoidFunction`
 
 #### Parameters
 
@@ -205,13 +205,13 @@ on
 
 #### Defined in
 
-[src/Observable.ts:27](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L27)
+[src/Observable.ts:27](https://github.com/fabricjs/fabric.js/blob/078809453/src/Observable.ts#L27)
 
 ___
 
 ### once
 
-▸ **once**\<`K`, `E`\>(`eventName`, `handler`): `VoidFunction`
+**once**\<`K`, `E`\>(`eventName`, `handler`): `VoidFunction`
 
 Observes specified event **once**
 
@@ -241,9 +241,9 @@ once
 
 #### Defined in
 
-[src/Observable.ts:62](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L62)
+[src/Observable.ts:62](https://github.com/fabricjs/fabric.js/blob/078809453/src/Observable.ts#L62)
 
-▸ **once**(`handlers`): `VoidFunction`
+**once**(`handlers`): `VoidFunction`
 
 #### Parameters
 
@@ -257,4 +257,4 @@ once
 
 #### Defined in
 
-[src/Observable.ts:66](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L66)
+[src/Observable.ts:66](https://github.com/fabricjs/fabric.js/blob/078809453/src/Observable.ts#L66)

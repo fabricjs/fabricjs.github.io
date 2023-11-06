@@ -6,7 +6,7 @@
 
 ### capitalize
 
-▸ **capitalize**(`string`, `firstLetterOnly?`): `string`
+**capitalize**(`string`, `firstLetterOnly?`): `string`
 
 Capitalizes a string
 
@@ -25,13 +25,13 @@ Capitalized version of a string
 
 #### Defined in
 
-[src/util/lang_string.ts:9](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/lang_string.ts#L9)
+[src/util/lang_string.ts:9](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/lang_string.ts#L9)
 
 ___
 
 ### escapeXml
 
-▸ **escapeXml**(`string`): `string`
+**escapeXml**(`string`): `string`
 
 Escapes XML in a string
 
@@ -49,13 +49,13 @@ Escaped version of a string
 
 #### Defined in
 
-[src/util/lang_string.ts:19](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/lang_string.ts#L19)
+[src/util/lang_string.ts:19](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/lang_string.ts#L19)
 
 ___
 
 ### graphemeSplit
 
-▸ **graphemeSplit**(`textstring`): `string`[]
+**graphemeSplit**(`textstring`): `string`[]
 
 Divide a string in the user perceived single units
 
@@ -73,4 +73,4 @@ array containing the graphemes
 
 #### Defined in
 
-[src/util/lang_string.ts:32](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/lang_string.ts#L32)
+[src/util/lang_string.ts:32](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/lang_string.ts#L32)

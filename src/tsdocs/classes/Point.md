@@ -10,7 +10,7 @@ Adaptation of work of Kevin Lindsey(kevin@kevlindev.com)
 
 ### constructor
 
-• **new Point**(): [`Point`](/apidocs/classes/Point.md)
+**new Point**(): [`Point`](/apidocs/classes/Point.md)
 
 #### Returns
 
@@ -18,9 +18,9 @@ Adaptation of work of Kevin Lindsey(kevin@kevlindev.com)
 
 #### Defined in
 
-[src/Point.ts:18](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Point.ts#L18)
+[src/Point.ts:18](https://github.com/fabricjs/fabric.js/blob/078809453/src/Point.ts#L18)
 
-• **new Point**(`x`, `y`): [`Point`](/apidocs/classes/Point.md)
+**new Point**(`x`, `y`): [`Point`](/apidocs/classes/Point.md)
 
 #### Parameters
 
@@ -35,9 +35,9 @@ Adaptation of work of Kevin Lindsey(kevin@kevlindev.com)
 
 #### Defined in
 
-[src/Point.ts:19](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Point.ts#L19)
+[src/Point.ts:19](https://github.com/fabricjs/fabric.js/blob/078809453/src/Point.ts#L19)
 
-• **new Point**(`point`): [`Point`](/apidocs/classes/Point.md)
+**new Point**(`point`): [`Point`](/apidocs/classes/Point.md)
 
 #### Parameters
 
@@ -51,13 +51,13 @@ Adaptation of work of Kevin Lindsey(kevin@kevlindev.com)
 
 #### Defined in
 
-[src/Point.ts:20](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Point.ts#L20)
+[src/Point.ts:20](https://github.com/fabricjs/fabric.js/blob/078809453/src/Point.ts#L20)
 
 ## Properties
 
 ### x
 
-• **x**: `number`
+ **x**: `number`
 
 #### Implementation of
 
@@ -65,13 +65,13 @@ Adaptation of work of Kevin Lindsey(kevin@kevlindev.com)
 
 #### Defined in
 
-[src/Point.ts:14](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Point.ts#L14)
+[src/Point.ts:14](https://github.com/fabricjs/fabric.js/blob/078809453/src/Point.ts#L14)
 
 ___
 
 ### y
 
-• **y**: `number`
+ **y**: `number`
 
 #### Implementation of
 
@@ -79,13 +79,13 @@ ___
 
 #### Defined in
 
-[src/Point.ts:16](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Point.ts#L16)
+[src/Point.ts:16](https://github.com/fabricjs/fabric.js/blob/078809453/src/Point.ts#L16)
 
 ## Methods
 
 ### add
 
-▸ **add**(`that`): [`Point`](/apidocs/classes/Point.md)
+**add**(`that`): [`Point`](/apidocs/classes/Point.md)
 
 Adds another point to this one and returns another one
 
@@ -103,13 +103,13 @@ new Point instance with added values
 
 #### Defined in
 
-[src/Point.ts:36](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Point.ts#L36)
+[src/Point.ts:36](https://github.com/fabricjs/fabric.js/blob/078809453/src/Point.ts#L36)
 
 ___
 
 ### addEquals
 
-▸ **addEquals**(`that`): [`Point`](/apidocs/classes/Point.md)
+**addEquals**(`that`): [`Point`](/apidocs/classes/Point.md)
 
 Adds another point to this one
 
@@ -131,13 +131,13 @@ thisArg
 
 #### Defined in
 
-[src/Point.ts:47](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Point.ts#L47)
+[src/Point.ts:47](https://github.com/fabricjs/fabric.js/blob/078809453/src/Point.ts#L47)
 
 ___
 
 ### clone
 
-▸ **clone**(): [`Point`](/apidocs/classes/Point.md)
+**clone**(): [`Point`](/apidocs/classes/Point.md)
 
 return a cloned instance of the point
 
@@ -147,13 +147,13 @@ return a cloned instance of the point
 
 #### Defined in
 
-[src/Point.ts:347](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Point.ts#L347)
+[src/Point.ts:347](https://github.com/fabricjs/fabric.js/blob/078809453/src/Point.ts#L347)
 
 ___
 
 ### distanceFrom
 
-▸ **distanceFrom**(`that`): `number`
+**distanceFrom**(`that`): `number`
 
 Returns distance from this point and another one
 
@@ -169,13 +169,13 @@ Returns distance from this point and another one
 
 #### Defined in
 
-[src/Point.ts:246](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Point.ts#L246)
+[src/Point.ts:246](https://github.com/fabricjs/fabric.js/blob/078809453/src/Point.ts#L246)
 
 ___
 
 ### divide
 
-▸ **divide**(`that`): [`Point`](/apidocs/classes/Point.md)
+**divide**(`that`): [`Point`](/apidocs/classes/Point.md)
 
 Divides this point by another and returns a new one
 
@@ -191,13 +191,13 @@ Divides this point by another and returns a new one
 
 #### Defined in
 
-[src/Point.ts:155](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Point.ts#L155)
+[src/Point.ts:155](https://github.com/fabricjs/fabric.js/blob/078809453/src/Point.ts#L155)
 
 ___
 
 ### eq
 
-▸ **eq**(`that`): `boolean`
+**eq**(`that`): `boolean`
 
 Returns true if this point is equal to another one
 
@@ -213,13 +213,13 @@ Returns true if this point is equal to another one
 
 #### Defined in
 
-[src/Point.ts:186](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Point.ts#L186)
+[src/Point.ts:186](https://github.com/fabricjs/fabric.js/blob/078809453/src/Point.ts#L186)
 
 ___
 
 ### gt
 
-▸ **gt**(`that`): `boolean`
+**gt**(`that`): `boolean`
 
 Returns true if this point is greater another one
 
@@ -235,13 +235,13 @@ Returns true if this point is greater another one
 
 #### Defined in
 
-[src/Point.ts:214](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Point.ts#L214)
+[src/Point.ts:214](https://github.com/fabricjs/fabric.js/blob/078809453/src/Point.ts#L214)
 
 ___
 
 ### gte
 
-▸ **gte**(`that`): `boolean`
+**gte**(`that`): `boolean`
 
 Returns true if this point is greater than or equal to another one
 
@@ -257,13 +257,13 @@ Returns true if this point is greater than or equal to another one
 
 #### Defined in
 
-[src/Point.ts:223](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Point.ts#L223)
+[src/Point.ts:223](https://github.com/fabricjs/fabric.js/blob/078809453/src/Point.ts#L223)
 
 ___
 
 ### lerp
 
-▸ **lerp**(`that`, `t?`): [`Point`](/apidocs/classes/Point.md)
+**lerp**(`that`, `t?`): [`Point`](/apidocs/classes/Point.md)
 
 Returns new point which is the result of linear interpolation with this one and another one
 
@@ -280,13 +280,13 @@ Returns new point which is the result of linear interpolation with this one and 
 
 #### Defined in
 
-[src/Point.ts:233](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Point.ts#L233)
+[src/Point.ts:233](https://github.com/fabricjs/fabric.js/blob/078809453/src/Point.ts#L233)
 
 ___
 
 ### lt
 
-▸ **lt**(`that`): `boolean`
+**lt**(`that`): `boolean`
 
 Returns true if this point is less than another one
 
@@ -302,13 +302,13 @@ Returns true if this point is less than another one
 
 #### Defined in
 
-[src/Point.ts:195](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Point.ts#L195)
+[src/Point.ts:195](https://github.com/fabricjs/fabric.js/blob/078809453/src/Point.ts#L195)
 
 ___
 
 ### lte
 
-▸ **lte**(`that`): `boolean`
+**lte**(`that`): `boolean`
 
 Returns true if this point is less than or equal to another one
 
@@ -324,13 +324,13 @@ Returns true if this point is less than or equal to another one
 
 #### Defined in
 
-[src/Point.ts:204](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Point.ts#L204)
+[src/Point.ts:204](https://github.com/fabricjs/fabric.js/blob/078809453/src/Point.ts#L204)
 
 ___
 
 ### max
 
-▸ **max**(`that`): [`Point`](/apidocs/classes/Point.md)
+**max**(`that`): [`Point`](/apidocs/classes/Point.md)
 
 Returns a new point which is the max of this and another one
 
@@ -346,13 +346,13 @@ Returns a new point which is the max of this and another one
 
 #### Defined in
 
-[src/Point.ts:275](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Point.ts#L275)
+[src/Point.ts:275](https://github.com/fabricjs/fabric.js/blob/078809453/src/Point.ts#L275)
 
 ___
 
 ### midPointFrom
 
-▸ **midPointFrom**(`that`): [`Point`](/apidocs/classes/Point.md)
+**midPointFrom**(`that`): [`Point`](/apidocs/classes/Point.md)
 
 Returns the point between this point and another one
 
@@ -368,13 +368,13 @@ Returns the point between this point and another one
 
 #### Defined in
 
-[src/Point.ts:257](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Point.ts#L257)
+[src/Point.ts:257](https://github.com/fabricjs/fabric.js/blob/078809453/src/Point.ts#L257)
 
 ___
 
 ### min
 
-▸ **min**(`that`): [`Point`](/apidocs/classes/Point.md)
+**min**(`that`): [`Point`](/apidocs/classes/Point.md)
 
 Returns a new point which is the min of this and another one
 
@@ -390,13 +390,13 @@ Returns a new point which is the min of this and another one
 
 #### Defined in
 
-[src/Point.ts:266](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Point.ts#L266)
+[src/Point.ts:266](https://github.com/fabricjs/fabric.js/blob/078809453/src/Point.ts#L266)
 
 ___
 
 ### multiply
 
-▸ **multiply**(`that`): [`Point`](/apidocs/classes/Point.md)
+**multiply**(`that`): [`Point`](/apidocs/classes/Point.md)
 
 Multiplies this point by another value and returns a new one
 
@@ -412,13 +412,13 @@ Multiplies this point by another value and returns a new one
 
 #### Defined in
 
-[src/Point.ts:124](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Point.ts#L124)
+[src/Point.ts:124](https://github.com/fabricjs/fabric.js/blob/078809453/src/Point.ts#L124)
 
 ___
 
 ### rotate
 
-▸ **rotate**(`radians`, `origin?`): [`Point`](/apidocs/classes/Point.md)
+**rotate**(`radians`, `origin?`): [`Point`](/apidocs/classes/Point.md)
 
 Rotates `point` around `origin` with `radians`
 
@@ -443,13 +443,13 @@ fabric.util
 
 #### Defined in
 
-[src/Point.ts:359](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Point.ts#L359)
+[src/Point.ts:359](https://github.com/fabricjs/fabric.js/blob/078809453/src/Point.ts#L359)
 
 ___
 
 ### scalarAdd
 
-▸ **scalarAdd**(`scalar`): [`Point`](/apidocs/classes/Point.md)
+**scalarAdd**(`scalar`): [`Point`](/apidocs/classes/Point.md)
 
 Adds value to this point and returns a new one
 
@@ -467,13 +467,13 @@ new Point with added value
 
 #### Defined in
 
-[src/Point.ts:58](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Point.ts#L58)
+[src/Point.ts:58](https://github.com/fabricjs/fabric.js/blob/078809453/src/Point.ts#L58)
 
 ___
 
 ### scalarAddEquals
 
-▸ **scalarAddEquals**(`scalar`): [`Point`](/apidocs/classes/Point.md)
+**scalarAddEquals**(`scalar`): [`Point`](/apidocs/classes/Point.md)
 
 Adds value to this point
 
@@ -495,13 +495,13 @@ thisArg
 
 #### Defined in
 
-[src/Point.ts:69](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Point.ts#L69)
+[src/Point.ts:69](https://github.com/fabricjs/fabric.js/blob/078809453/src/Point.ts#L69)
 
 ___
 
 ### scalarDivide
 
-▸ **scalarDivide**(`scalar`): [`Point`](/apidocs/classes/Point.md)
+**scalarDivide**(`scalar`): [`Point`](/apidocs/classes/Point.md)
 
 Divides this point by a value and returns a new one
 
@@ -517,13 +517,13 @@ Divides this point by a value and returns a new one
 
 #### Defined in
 
-[src/Point.ts:164](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Point.ts#L164)
+[src/Point.ts:164](https://github.com/fabricjs/fabric.js/blob/078809453/src/Point.ts#L164)
 
 ___
 
 ### scalarDivideEquals
 
-▸ **scalarDivideEquals**(`scalar`): [`Point`](/apidocs/classes/Point.md)
+**scalarDivideEquals**(`scalar`): [`Point`](/apidocs/classes/Point.md)
 
 Divides this point by a value
 
@@ -545,13 +545,13 @@ thisArg
 
 #### Defined in
 
-[src/Point.ts:175](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Point.ts#L175)
+[src/Point.ts:175](https://github.com/fabricjs/fabric.js/blob/078809453/src/Point.ts#L175)
 
 ___
 
 ### scalarMultiply
 
-▸ **scalarMultiply**(`scalar`): [`Point`](/apidocs/classes/Point.md)
+**scalarMultiply**(`scalar`): [`Point`](/apidocs/classes/Point.md)
 
 Multiplies this point by a value and returns a new one
 
@@ -567,13 +567,13 @@ Multiplies this point by a value and returns a new one
 
 #### Defined in
 
-[src/Point.ts:133](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Point.ts#L133)
+[src/Point.ts:133](https://github.com/fabricjs/fabric.js/blob/078809453/src/Point.ts#L133)
 
 ___
 
 ### scalarMultiplyEquals
 
-▸ **scalarMultiplyEquals**(`scalar`): [`Point`](/apidocs/classes/Point.md)
+**scalarMultiplyEquals**(`scalar`): [`Point`](/apidocs/classes/Point.md)
 
 Multiplies this point by a value
 
@@ -595,13 +595,13 @@ thisArg
 
 #### Defined in
 
-[src/Point.ts:144](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Point.ts#L144)
+[src/Point.ts:144](https://github.com/fabricjs/fabric.js/blob/078809453/src/Point.ts#L144)
 
 ___
 
 ### scalarSubtract
 
-▸ **scalarSubtract**(`scalar`): [`Point`](/apidocs/classes/Point.md)
+**scalarSubtract**(`scalar`): [`Point`](/apidocs/classes/Point.md)
 
 Subtracts value from this point and returns a new one
 
@@ -617,13 +617,13 @@ Subtracts value from this point and returns a new one
 
 #### Defined in
 
-[src/Point.ts:102](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Point.ts#L102)
+[src/Point.ts:102](https://github.com/fabricjs/fabric.js/blob/078809453/src/Point.ts#L102)
 
 ___
 
 ### scalarSubtractEquals
 
-▸ **scalarSubtractEquals**(`scalar`): [`Point`](/apidocs/classes/Point.md)
+**scalarSubtractEquals**(`scalar`): [`Point`](/apidocs/classes/Point.md)
 
 Subtracts value from this point
 
@@ -645,13 +645,13 @@ thisArg
 
 #### Defined in
 
-[src/Point.ts:113](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Point.ts#L113)
+[src/Point.ts:113](https://github.com/fabricjs/fabric.js/blob/078809453/src/Point.ts#L113)
 
 ___
 
 ### setFromPoint
 
-▸ **setFromPoint**(`that`): [`Point`](/apidocs/classes/Point.md)
+**setFromPoint**(`that`): [`Point`](/apidocs/classes/Point.md)
 
 Sets x/y of this point from another point
 
@@ -669,13 +669,13 @@ Sets x/y of this point from another point
 
 #### Defined in
 
-[src/Point.ts:324](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Point.ts#L324)
+[src/Point.ts:324](https://github.com/fabricjs/fabric.js/blob/078809453/src/Point.ts#L324)
 
 ___
 
 ### setX
 
-▸ **setX**(`x`): [`Point`](/apidocs/classes/Point.md)
+**setX**(`x`): [`Point`](/apidocs/classes/Point.md)
 
 Sets x of this point
 
@@ -693,13 +693,13 @@ Sets x of this point
 
 #### Defined in
 
-[src/Point.ts:304](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Point.ts#L304)
+[src/Point.ts:304](https://github.com/fabricjs/fabric.js/blob/078809453/src/Point.ts#L304)
 
 ___
 
 ### setXY
 
-▸ **setXY**(`x`, `y`): [`Point`](/apidocs/classes/Point.md)
+**setXY**(`x`, `y`): [`Point`](/apidocs/classes/Point.md)
 
 Sets x/y of this point
 
@@ -718,13 +718,13 @@ Sets x/y of this point
 
 #### Defined in
 
-[src/Point.ts:293](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Point.ts#L293)
+[src/Point.ts:293](https://github.com/fabricjs/fabric.js/blob/078809453/src/Point.ts#L293)
 
 ___
 
 ### setY
 
-▸ **setY**(`y`): [`Point`](/apidocs/classes/Point.md)
+**setY**(`y`): [`Point`](/apidocs/classes/Point.md)
 
 Sets y of this point
 
@@ -742,13 +742,13 @@ Sets y of this point
 
 #### Defined in
 
-[src/Point.ts:314](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Point.ts#L314)
+[src/Point.ts:314](https://github.com/fabricjs/fabric.js/blob/078809453/src/Point.ts#L314)
 
 ___
 
 ### subtract
 
-▸ **subtract**(`that`): [`Point`](/apidocs/classes/Point.md)
+**subtract**(`that`): [`Point`](/apidocs/classes/Point.md)
 
 Subtracts another point from this point and returns a new one
 
@@ -766,13 +766,13 @@ new Point object with subtracted values
 
 #### Defined in
 
-[src/Point.ts:80](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Point.ts#L80)
+[src/Point.ts:80](https://github.com/fabricjs/fabric.js/blob/078809453/src/Point.ts#L80)
 
 ___
 
 ### subtractEquals
 
-▸ **subtractEquals**(`that`): [`Point`](/apidocs/classes/Point.md)
+**subtractEquals**(`that`): [`Point`](/apidocs/classes/Point.md)
 
 Subtracts another point from this point
 
@@ -794,13 +794,13 @@ thisArg
 
 #### Defined in
 
-[src/Point.ts:91](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Point.ts#L91)
+[src/Point.ts:91](https://github.com/fabricjs/fabric.js/blob/078809453/src/Point.ts#L91)
 
 ___
 
 ### swap
 
-▸ **swap**(`that`): `void`
+**swap**(`that`): `void`
 
 Swaps x/y of this point and another point
 
@@ -816,13 +816,13 @@ Swaps x/y of this point and another point
 
 #### Defined in
 
-[src/Point.ts:334](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Point.ts#L334)
+[src/Point.ts:334](https://github.com/fabricjs/fabric.js/blob/078809453/src/Point.ts#L334)
 
 ___
 
 ### toString
 
-▸ **toString**(): `string`
+**toString**(): `string`
 
 Returns string representation of this point
 
@@ -832,13 +832,13 @@ Returns string representation of this point
 
 #### Defined in
 
-[src/Point.ts:283](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Point.ts#L283)
+[src/Point.ts:283](https://github.com/fabricjs/fabric.js/blob/078809453/src/Point.ts#L283)
 
 ___
 
 ### transform
 
-▸ **transform**(`t`, `ignoreOffset?`): [`Point`](/apidocs/classes/Point.md)
+**transform**(`t`, `ignoreOffset?`): [`Point`](/apidocs/classes/Point.md)
 
 Apply transform t to point p
 
@@ -863,4 +863,4 @@ fabric.util
 
 #### Defined in
 
-[src/Point.ts:380](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Point.ts#L380)
+[src/Point.ts:380](https://github.com/fabricjs/fabric.js/blob/078809453/src/Point.ts#L380)

@@ -24,7 +24,7 @@ object.applyFilters();
 
 ### constructor
 
-• **new Contrast**(`options?`): [`Contrast`](/apidocs/classes/filters.Contrast.md)
+**new Contrast**(`options?`): [`Contrast`](/apidocs/classes/filters.Contrast.md)
 
 Constructor
 
@@ -44,13 +44,13 @@ Constructor
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:58](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L58)
+[src/filters/BaseFilter.ts:58](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/BaseFilter.ts#L58)
 
 ## Properties
 
 ### contrast
 
-• **contrast**: `number`
+ **contrast**: `number`
 
 contrast value, range from -1 to 1.
 
@@ -64,13 +64,13 @@ contrast value, range from -1 to 1.
 
 #### Defined in
 
-[src/filters/Contrast.ts:26](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/Contrast.ts#L26)
+[src/filters/Contrast.ts:26](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/Contrast.ts#L26)
 
 ___
 
 ### mainParameter
 
-• `Optional` `Private` **mainParameter**: keyof [`Contrast`](/apidocs/classes/filters.Contrast.md)
+ `Optional` `Private` **mainParameter**: keyof [`Contrast`](/apidocs/classes/filters.Contrast.md)
 
 Name of the parameter that can be changed in the filter.
 Some filters have more than one parameter and there is no
@@ -82,13 +82,13 @@ mainParameter
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:52](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L52)
+[src/filters/BaseFilter.ts:52](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/BaseFilter.ts#L52)
 
 ___
 
 ### vertexSource
 
-• `Private` **vertexSource**: `string` = `vertexSource`
+ `Private` **vertexSource**: `string` = `vertexSource`
 
 Array of attributes to send with buffers. do not modify
 
@@ -98,13 +98,13 @@ Array of attributes to send with buffers. do not modify
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:44](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L44)
+[src/filters/BaseFilter.ts:44](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/BaseFilter.ts#L44)
 
 ___
 
 ### defaults
 
-▪ `Static` **defaults**: `Partial`\<[`TClassProperties`](/apidocs/modules.md#tclassproperties)\<[`Contrast`](/apidocs/classes/filters.Contrast.md)\>\> = `contrastDefaultValues`
+ `Static` **defaults**: `Partial`\<[`TClassProperties`](/apidocs/modules.md#tclassproperties)\<[`Contrast`](/apidocs/classes/filters.Contrast.md)\>\> = `contrastDefaultValues`
 
 #### Overrides
 
@@ -112,13 +112,13 @@ ___
 
 #### Defined in
 
-[src/filters/Contrast.ts:30](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/Contrast.ts#L30)
+[src/filters/Contrast.ts:30](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/Contrast.ts#L30)
 
 ___
 
 ### type
 
-▪ `Static` **type**: `string` = `'Contrast'`
+ `Static` **type**: `string` = `'Contrast'`
 
 The class type. Used to identify which class this is.
 This is used for serialization purposes and internally it can be used
@@ -132,13 +132,13 @@ to avoid doing that.
 
 #### Defined in
 
-[src/filters/Contrast.ts:28](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/Contrast.ts#L28)
+[src/filters/Contrast.ts:28](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/Contrast.ts#L28)
 
 ## Accessors
 
 ### type
 
-• `get` **type**(): `string`
+`get` **type**(): `string`
 
 Filter type
 
@@ -158,13 +158,13 @@ BaseFilter.type
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:25](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L25)
+[src/filters/BaseFilter.ts:25](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/BaseFilter.ts#L25)
 
 ## Methods
 
 ### \_setupFrameBuffer
 
-▸ **_setupFrameBuffer**(`options`): `void`
+**_setupFrameBuffer**(`options`): `void`
 
 #### Parameters
 
@@ -182,13 +182,13 @@ BaseFilter.type
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:190](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L190)
+[src/filters/BaseFilter.ts:190](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/BaseFilter.ts#L190)
 
 ___
 
 ### \_swapTextures
 
-▸ **_swapTextures**(`options`): `void`
+**_swapTextures**(`options`): `void`
 
 #### Parameters
 
@@ -206,13 +206,13 @@ ___
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:217](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L217)
+[src/filters/BaseFilter.ts:217](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/BaseFilter.ts#L217)
 
 ___
 
 ### applyTo
 
-▸ **applyTo**(`options`): `void`
+**applyTo**(`options`): `void`
 
 Apply this filter to the input image data provided.
 
@@ -234,13 +234,13 @@ Determines whether to use WebGL or Canvas2D based on the options.webgl flag.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:265](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L265)
+[src/filters/BaseFilter.ts:265](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/BaseFilter.ts#L265)
 
 ___
 
 ### applyTo2d
 
-▸ **applyTo2d**(`options`): `void`
+**applyTo2d**(`options`): `void`
 
 Apply the Contrast operation to a Uint8Array representing the pixels of an image.
 
@@ -260,13 +260,13 @@ Apply the Contrast operation to a Uint8Array representing the pixels of an image
 
 #### Defined in
 
-[src/filters/Contrast.ts:41](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/Contrast.ts#L41)
+[src/filters/Contrast.ts:41](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/Contrast.ts#L41)
 
 ___
 
 ### applyToWebGL
 
-▸ **applyToWebGL**(`options`): `void`
+**applyToWebGL**(`options`): `void`
 
 Apply this filter using webgl.
 
@@ -286,13 +286,13 @@ Apply this filter using webgl.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:315](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L315)
+[src/filters/BaseFilter.ts:315](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/BaseFilter.ts#L315)
 
 ___
 
 ### bindAdditionalTexture
 
-▸ **bindAdditionalTexture**(`gl`, `texture`, `textureUnit`): `void`
+**bindAdditionalTexture**(`gl`, `texture`, `textureUnit`): `void`
 
 #### Parameters
 
@@ -312,13 +312,13 @@ ___
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:334](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L334)
+[src/filters/BaseFilter.ts:334](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/BaseFilter.ts#L334)
 
 ___
 
 ### createHelpLayer
 
-▸ **createHelpLayer**(`options`): `void`
+**createHelpLayer**(`options`): `void`
 
 If needed by a 2d filter, this functions can create an helper canvas to be used
 remember that options.targetCanvas is available for use till end of chain.
@@ -339,13 +339,13 @@ remember that options.targetCanvas is available for use till end of chain.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:380](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L380)
+[src/filters/BaseFilter.ts:380](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/BaseFilter.ts#L380)
 
 ___
 
 ### createProgram
 
-▸ **createProgram**(`gl`, `fragmentSource?`, `vertexSource?`): `Object`
+**createProgram**(`gl`, `fragmentSource?`, `vertexSource?`): `Object`
 
 Compile this filter's shader program.
 
@@ -373,13 +373,13 @@ Compile this filter's shader program.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:77](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L77)
+[src/filters/BaseFilter.ts:77](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/BaseFilter.ts#L77)
 
 ___
 
 ### getAttributeLocations
 
-▸ **getAttributeLocations**(`gl`, `program`): [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap)
+**getAttributeLocations**(`gl`, `program`): [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap)
 
 Return a map of attribute names to WebGLAttributeLocation objects.
 
@@ -402,13 +402,13 @@ A map of attribute names to attribute locations.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:146](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L146)
+[src/filters/BaseFilter.ts:146](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/BaseFilter.ts#L146)
 
 ___
 
 ### getCacheKey
 
-▸ **getCacheKey**(): `string`
+**getCacheKey**(): `string`
 
 Returns a string that represent the current selected shader code for the filter.
 Used to force recompilation when parameters change or to retrieve the shader from cache
@@ -423,13 +423,13 @@ Used to force recompilation when parameters change or to retrieve the shader fro
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:284](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L284)
+[src/filters/BaseFilter.ts:284](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/BaseFilter.ts#L284)
 
 ___
 
 ### getFragmentSource
 
-▸ **getFragmentSource**(): `string`
+**getFragmentSource**(): `string`
 
 #### Returns
 
@@ -441,13 +441,13 @@ ___
 
 #### Defined in
 
-[src/filters/Contrast.ts:32](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/Contrast.ts#L32)
+[src/filters/Contrast.ts:32](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/Contrast.ts#L32)
 
 ___
 
 ### getMainParameter
 
-▸ **getMainParameter**(): `undefined` \| `string` \| `number` \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => [`TWebGLProgramCacheItem`](/apidocs/modules.md#twebglprogramcacheitem) \| (`options?`: `any`) => `boolean` \| () => \{ `type`: `string`  } \| () => \{ `type`: `string`  } \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap) \| (`gl`: `WebGLRenderingContext`, `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)) => `void` \| () => `string` \| () => `string` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate) \| [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `fragmentSource`: `string`, `vertexSource`: `string`) => \{ `attributeLocations`: [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) ; `program`: `WebGLProgram` ; `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)  } \| (`gl`: `WebGLRenderingContext`, `attributeLocations`: `Record`\<`string`, `number`\>, `aPositionData`: `Float32Array`) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `texture`: `WebGLTexture`, `textureUnit`: `number`) => `void` \| (`gl`: `WebGLRenderingContext`, `textureUnit`: `number`) => `void` \| () => `undefined` \| `string` \| `number` \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => [`TWebGLProgramCacheItem`](/apidocs/modules.md#twebglprogramcacheitem) \| (`options?`: `any`) => `boolean` \| () => \{ `type`: `string`  } \| () => \{ `type`: `string`  } \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap) \| (`gl`: `WebGLRenderingContext`, `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)) => `void` \| () => `string` \| () => `string` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate) \| [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `fragmentSource`: `string`, `vertexSource`: `string`) => \{ `attributeLocations`: [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) ; `program`: `WebGLProgram` ; `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)  } \| (`gl`: `WebGLRenderingContext`, `attributeLocations`: `Record`\<`string`, `number`\>, `aPositionData`: `Float32Array`) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `texture`: `WebGLTexture`, `textureUnit`: `number`) => `void` \| (`gl`: `WebGLRenderingContext`, `textureUnit`: `number`) => `void` \| () =\> string \| number \| ((gl: WebGLRenderingContext, program: WebGLProgram) =\> TWebGLAttributeLocationMap) \| ... 20 more ... \| undefined \| (`value`: `any`) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`value`: `any`) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void`
+**getMainParameter**(): `undefined` \| `string` \| `number` \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => [`TWebGLProgramCacheItem`](/apidocs/modules.md#twebglprogramcacheitem) \| (`options?`: `any`) => `boolean` \| () => \{ `type`: `string`  } \| () => \{ `type`: `string`  } \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap) \| (`gl`: `WebGLRenderingContext`, `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)) => `void` \| () => `string` \| () => `string` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate) \| [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `fragmentSource`: `string`, `vertexSource`: `string`) => \{ `attributeLocations`: [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) ; `program`: `WebGLProgram` ; `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)  } \| (`gl`: `WebGLRenderingContext`, `attributeLocations`: `Record`\<`string`, `number`\>, `aPositionData`: `Float32Array`) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `texture`: `WebGLTexture`, `textureUnit`: `number`) => `void` \| (`gl`: `WebGLRenderingContext`, `textureUnit`: `number`) => `void` \| () => `undefined` \| `string` \| `number` \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => [`TWebGLProgramCacheItem`](/apidocs/modules.md#twebglprogramcacheitem) \| (`options?`: `any`) => `boolean` \| () => \{ `type`: `string`  } \| () => \{ `type`: `string`  } \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap) \| (`gl`: `WebGLRenderingContext`, `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)) => `void` \| () => `string` \| () => `string` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate) \| [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `fragmentSource`: `string`, `vertexSource`: `string`) => \{ `attributeLocations`: [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) ; `program`: `WebGLProgram` ; `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)  } \| (`gl`: `WebGLRenderingContext`, `attributeLocations`: `Record`\<`string`, `number`\>, `aPositionData`: `Float32Array`) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `texture`: `WebGLTexture`, `textureUnit`: `number`) => `void` \| (`gl`: `WebGLRenderingContext`, `textureUnit`: `number`) => `void` \| () =\> string \| number \| ((gl: WebGLRenderingContext, program: WebGLProgram) =\> TWebGLAttributeLocationMap) \| ... 20 more ... \| undefined \| (`value`: `any`) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`value`: `any`) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void`
 
 #### Returns
 
@@ -459,13 +459,13 @@ ___
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:351](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L351)
+[src/filters/BaseFilter.ts:351](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/BaseFilter.ts#L351)
 
 ___
 
 ### getUniformLocations
 
-▸ **getUniformLocations**(`gl`, `program`): [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)
+**getUniformLocations**(`gl`, `program`): [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)
 
 Return WebGL uniform locations for this filter's shader.
 
@@ -486,13 +486,13 @@ Return WebGL uniform locations for this filter's shader.
 
 #### Defined in
 
-[src/filters/Contrast.ts:61](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/Contrast.ts#L61)
+[src/filters/Contrast.ts:61](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/Contrast.ts#L61)
 
 ___
 
 ### isNeutralState
 
-▸ **isNeutralState**(`options?`): `boolean`
+**isNeutralState**(`options?`): `boolean`
 
 Generic isNeutral implementation for one parameter based filters.
 Used only in image applyFilters to discard filters that will not have an effect
@@ -515,13 +515,13 @@ Other filters may need their own version ( ColorMatrix, HueRotation, gamma, Comp
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:233](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L233)
+[src/filters/BaseFilter.ts:233](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/BaseFilter.ts#L233)
 
 ___
 
 ### retrieveShader
 
-▸ **retrieveShader**(`options`): [`TWebGLProgramCacheItem`](/apidocs/modules.md#twebglprogramcacheitem)
+**retrieveShader**(`options`): [`TWebGLProgramCacheItem`](/apidocs/modules.md#twebglprogramcacheitem)
 
 Retrieves the cached shader.
 
@@ -543,13 +543,13 @@ the compiled program shader
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:295](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L295)
+[src/filters/BaseFilter.ts:295](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/BaseFilter.ts#L295)
 
 ___
 
 ### sendAttributeData
 
-▸ **sendAttributeData**(`gl`, `attributeLocations`, `aPositionData`): `void`
+**sendAttributeData**(`gl`, `attributeLocations`, `aPositionData`): `void`
 
 Send attribute data from this filter to its shader program on the GPU.
 
@@ -571,13 +571,13 @@ Send attribute data from this filter to its shader program on the GPU.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:177](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L177)
+[src/filters/BaseFilter.ts:177](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/BaseFilter.ts#L177)
 
 ___
 
 ### sendUniformData
 
-▸ **sendUniformData**(`gl`, `uniformLocations`): `void`
+**sendUniformData**(`gl`, `uniformLocations`): `void`
 
 Send data from this filter to its shader program's uniforms.
 
@@ -598,13 +598,13 @@ Send data from this filter to its shader program's uniforms.
 
 #### Defined in
 
-[src/filters/Contrast.ts:76](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/Contrast.ts#L76)
+[src/filters/Contrast.ts:76](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/Contrast.ts#L76)
 
 ___
 
 ### setMainParameter
 
-▸ **setMainParameter**(`value`): `void`
+**setMainParameter**(`value`): `void`
 
 #### Parameters
 
@@ -622,13 +622,13 @@ ___
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:355](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L355)
+[src/filters/BaseFilter.ts:355](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/BaseFilter.ts#L355)
 
 ___
 
 ### toJSON
 
-▸ **toJSON**(): `Object`
+**toJSON**(): `Object`
 
 Returns a JSON representation of an instance
 
@@ -648,13 +648,13 @@ JSON
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:405](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L405)
+[src/filters/BaseFilter.ts:405](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/BaseFilter.ts#L405)
 
 ___
 
 ### toObject
 
-▸ **toObject**(): `Object`
+**toObject**(): `Object`
 
 Returns object representation of an instance
 
@@ -674,13 +674,13 @@ Object representation of an instance
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:393](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L393)
+[src/filters/BaseFilter.ts:393](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/BaseFilter.ts#L393)
 
 ___
 
 ### unbindAdditionalTexture
 
-▸ **unbindAdditionalTexture**(`gl`, `textureUnit`): `void`
+**unbindAdditionalTexture**(`gl`, `textureUnit`): `void`
 
 #### Parameters
 
@@ -699,13 +699,13 @@ ___
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:345](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L345)
+[src/filters/BaseFilter.ts:345](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/BaseFilter.ts#L345)
 
 ___
 
 ### fromObject
 
-▸ **fromObject**(`«destructured»`, `options`): `Promise`\<[`BaseFilter`](/apidocs/classes/filters.BaseFilter.md)\>
+**fromObject**(`«destructured»`, `options`): `Promise`\<[`BaseFilter`](/apidocs/classes/filters.BaseFilter.md)\>
 
 #### Parameters
 
@@ -724,4 +724,4 @@ ___
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:410](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L410)
+[src/filters/BaseFilter.ts:410](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/BaseFilter.ts#L410)

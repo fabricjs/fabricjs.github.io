@@ -9,7 +9,7 @@
 
 ### constructor
 
-• **new Pattern**(`options?`): [`Pattern`](/apidocs/classes/Pattern.md)
+**new Pattern**(`options?`): [`Pattern`](/apidocs/classes/Pattern.md)
 
 Constructor
 
@@ -25,13 +25,13 @@ Constructor
 
 #### Defined in
 
-[src/Pattern/Pattern.ts:95](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Pattern/Pattern.ts#L95)
+[src/Pattern/Pattern.ts:95](https://github.com/fabricjs/fabric.js/blob/078809453/src/Pattern/Pattern.ts#L95)
 
 ## Properties
 
 ### crossOrigin
 
-• **crossOrigin**: [`TCrossOrigin`](/apidocs/modules.md#tcrossorigin) = `''`
+ **crossOrigin**: [`TCrossOrigin`](/apidocs/modules.md#tcrossorigin) = `''`
 
 **`Default`**
 
@@ -41,37 +41,37 @@ Constructor
 
 #### Defined in
 
-[src/Pattern/Pattern.ts:63](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Pattern/Pattern.ts#L63)
+[src/Pattern/Pattern.ts:63](https://github.com/fabricjs/fabric.js/blob/078809453/src/Pattern/Pattern.ts#L63)
 
 ___
 
 ### excludeFromExport
 
-• `Optional` **excludeFromExport**: `boolean`
+ `Optional` **excludeFromExport**: `boolean`
 
 If true, this object will not be exported during the serialization of a canvas
 
 #### Defined in
 
-[src/Pattern/Pattern.ts:82](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Pattern/Pattern.ts#L82)
+[src/Pattern/Pattern.ts:82](https://github.com/fabricjs/fabric.js/blob/078809453/src/Pattern/Pattern.ts#L82)
 
 ___
 
 ### id
 
-• `Readonly` **id**: `number`
+ `Readonly` **id**: `number`
 
 ID used for SVG export functionalities
 
 #### Defined in
 
-[src/Pattern/Pattern.ts:88](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Pattern/Pattern.ts#L88)
+[src/Pattern/Pattern.ts:88](https://github.com/fabricjs/fabric.js/blob/078809453/src/Pattern/Pattern.ts#L88)
 
 ___
 
 ### offsetX
 
-• **offsetX**: `number` = `0`
+ **offsetX**: `number` = `0`
 
 Pattern horizontal offset from object's left/top corner
 
@@ -83,13 +83,13 @@ Pattern horizontal offset from object's left/top corner
 
 #### Defined in
 
-[src/Pattern/Pattern.ts:50](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Pattern/Pattern.ts#L50)
+[src/Pattern/Pattern.ts:50](https://github.com/fabricjs/fabric.js/blob/078809453/src/Pattern/Pattern.ts#L50)
 
 ___
 
 ### offsetY
 
-• **offsetY**: `number` = `0`
+ **offsetY**: `number` = `0`
 
 Pattern vertical offset from object's left/top corner
 
@@ -101,13 +101,13 @@ Pattern vertical offset from object's left/top corner
 
 #### Defined in
 
-[src/Pattern/Pattern.ts:57](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Pattern/Pattern.ts#L57)
+[src/Pattern/Pattern.ts:57](https://github.com/fabricjs/fabric.js/blob/078809453/src/Pattern/Pattern.ts#L57)
 
 ___
 
 ### patternTransform
 
-• **patternTransform**: ``null`` \| [`TMat2D`](/apidocs/modules.md#tmat2d) = `null`
+ **patternTransform**: ``null`` \| [`TMat2D`](/apidocs/modules.md#tmat2d) = `null`
 
 transform matrix to change the pattern, imported from svgs.
 
@@ -123,47 +123,47 @@ verify if using the identity matrix as default makes the rest of the code more e
 
 #### Defined in
 
-[src/Pattern/Pattern.ts:71](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Pattern/Pattern.ts#L71)
+[src/Pattern/Pattern.ts:71](https://github.com/fabricjs/fabric.js/blob/078809453/src/Pattern/Pattern.ts#L71)
 
 ___
 
 ### repeat
 
-• **repeat**: [`PatternRepeat`](/apidocs/modules.md#patternrepeat) = `'repeat'`
+ **repeat**: [`PatternRepeat`](/apidocs/modules.md#patternrepeat) = `'repeat'`
 
 **`Defaults`**
 
 #### Defined in
 
-[src/Pattern/Pattern.ts:43](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Pattern/Pattern.ts#L43)
+[src/Pattern/Pattern.ts:43](https://github.com/fabricjs/fabric.js/blob/078809453/src/Pattern/Pattern.ts#L43)
 
 ___
 
 ### source
 
-• **source**: `CanvasImageSource`
+ **source**: `CanvasImageSource`
 
 The actual pixel source of the pattern
 
 #### Defined in
 
-[src/Pattern/Pattern.ts:76](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Pattern/Pattern.ts#L76)
+[src/Pattern/Pattern.ts:76](https://github.com/fabricjs/fabric.js/blob/078809453/src/Pattern/Pattern.ts#L76)
 
 ___
 
 ### type
 
-▪ `Static` **type**: `string` = `'Pattern'`
+ `Static` **type**: `string` = `'Pattern'`
 
 #### Defined in
 
-[src/Pattern/Pattern.ts:21](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Pattern/Pattern.ts#L21)
+[src/Pattern/Pattern.ts:21](https://github.com/fabricjs/fabric.js/blob/078809453/src/Pattern/Pattern.ts#L21)
 
 ## Accessors
 
 ### type
 
-• `get` **type**(): `string`
+`get` **type**(): `string`
 
 Legacy identifier of the class. Prefer using this.constructor.type 'Pattern'
 or utils like isPattern, or instance of to indentify a pattern in your code.
@@ -181,9 +181,9 @@ add sustainable warning message
 
 #### Defined in
 
-[src/Pattern/Pattern.ts:31](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Pattern/Pattern.ts#L31)
+[src/Pattern/Pattern.ts:31](https://github.com/fabricjs/fabric.js/blob/078809453/src/Pattern/Pattern.ts#L31)
 
-• `set` **type**(`value`): `void`
+`set` **type**(`value`): `void`
 
 #### Parameters
 
@@ -197,13 +197,13 @@ add sustainable warning message
 
 #### Defined in
 
-[src/Pattern/Pattern.ts:35](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Pattern/Pattern.ts#L35)
+[src/Pattern/Pattern.ts:35](https://github.com/fabricjs/fabric.js/blob/078809453/src/Pattern/Pattern.ts#L35)
 
 ## Methods
 
 ### isCanvasSource
 
-▸ **isCanvasSource**(): this is Object
+**isCanvasSource**(): this is Object
 
 #### Returns
 
@@ -213,13 +213,13 @@ true if [source](/apidocs/classes/Pattern.md#source) is a <canvas> element
 
 #### Defined in
 
-[src/Pattern/Pattern.ts:112](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Pattern/Pattern.ts#L112)
+[src/Pattern/Pattern.ts:112](https://github.com/fabricjs/fabric.js/blob/078809453/src/Pattern/Pattern.ts#L112)
 
 ___
 
 ### isImageSource
 
-▸ **isImageSource**(): this is Object
+**isImageSource**(): this is Object
 
 #### Returns
 
@@ -229,13 +229,13 @@ true if [source](/apidocs/classes/Pattern.md#source) is an <img> element
 
 #### Defined in
 
-[src/Pattern/Pattern.ts:103](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Pattern/Pattern.ts#L103)
+[src/Pattern/Pattern.ts:103](https://github.com/fabricjs/fabric.js/blob/078809453/src/Pattern/Pattern.ts#L103)
 
 ___
 
 ### sourceToString
 
-▸ **sourceToString**(): `string`
+**sourceToString**(): `string`
 
 #### Returns
 
@@ -243,13 +243,13 @@ ___
 
 #### Defined in
 
-[src/Pattern/Pattern.ts:116](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Pattern/Pattern.ts#L116)
+[src/Pattern/Pattern.ts:116](https://github.com/fabricjs/fabric.js/blob/078809453/src/Pattern/Pattern.ts#L116)
 
 ___
 
 ### toLive
 
-▸ **toLive**(`ctx`): ``null`` \| `CanvasPattern`
+**toLive**(`ctx`): ``null`` \| `CanvasPattern`
 
 Returns an instance of CanvasPattern
 
@@ -265,13 +265,13 @@ Returns an instance of CanvasPattern
 
 #### Defined in
 
-[src/Pattern/Pattern.ts:129](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Pattern/Pattern.ts#L129)
+[src/Pattern/Pattern.ts:129](https://github.com/fabricjs/fabric.js/blob/078809453/src/Pattern/Pattern.ts#L129)
 
 ___
 
 ### toObject
 
-▸ **toObject**(`propertiesToInclude?`): `Record`\<`string`, `any`\>
+**toObject**(`propertiesToInclude?`): `Record`\<`string`, `any`\>
 
 Returns object representation of a pattern
 
@@ -289,13 +289,13 @@ Object representation of a pattern instance
 
 #### Defined in
 
-[src/Pattern/Pattern.ts:150](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Pattern/Pattern.ts#L150)
+[src/Pattern/Pattern.ts:150](https://github.com/fabricjs/fabric.js/blob/078809453/src/Pattern/Pattern.ts#L150)
 
 ___
 
 ### toSVG
 
-▸ **toSVG**(`«destructured»`): `string`
+**toSVG**(`«destructured»`): `string`
 
 Returns SVG representation of a pattern
 
@@ -311,13 +311,13 @@ Returns SVG representation of a pattern
 
 #### Defined in
 
-[src/Pattern/Pattern.ts:170](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Pattern/Pattern.ts#L170)
+[src/Pattern/Pattern.ts:170](https://github.com/fabricjs/fabric.js/blob/078809453/src/Pattern/Pattern.ts#L170)
 
 ___
 
 ### fromObject
 
-▸ **fromObject**(`«destructured»`, `options`): `Promise`\<[`Pattern`](/apidocs/classes/Pattern.md)\>
+**fromObject**(`«destructured»`, `options`): `Promise`\<[`Pattern`](/apidocs/classes/Pattern.md)\>
 
 #### Parameters
 
@@ -332,4 +332,4 @@ ___
 
 #### Defined in
 
-[src/Pattern/Pattern.ts:194](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Pattern/Pattern.ts#L194)
+[src/Pattern/Pattern.ts:194](https://github.com/fabricjs/fabric.js/blob/078809453/src/Pattern/Pattern.ts#L194)
