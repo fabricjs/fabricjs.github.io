@@ -8,7 +8,7 @@ import PrevNextLinks from '../components/prevNextPostLinks/prevNextLinks';
 
 export default function Apidoc({ pageContext, data }) {
   const { toc, mdFile, html } = data.apidocPage;
-
+  console.log(toc.items);
   return (
     <Layout
       leftSidebar={(setVisibility) => (
@@ -16,17 +16,6 @@ export default function Apidoc({ pageContext, data }) {
           <header>Guides</header>
           <nav id="topics" aria-label="Contents">
             <ol>
-              <li>
-                <Link
-                  onClick={() => {
-                    setVisibility(false);
-                  }}
-                  title="Introduction"
-                  to="/docs"
-                >
-                  Introduction
-                </Link>
-              </li>
               {pageContext.apidocList.map(({ title, slug }) => (
                 <li key={slug}>
                   <Link
