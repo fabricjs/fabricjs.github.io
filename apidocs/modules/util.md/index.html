@@ -1,0 +1,3617 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta name="generator" content="Gatsby 5.11.0"/><style data-href="/styles.d1410f635373098a2d3e.css" data-identity="gatsby-global-css">:root{--primary-color:#76cef4;--primary-color-tint:#f0f8ff;--offwhite-color:#fafafa;--padding-left-right:8%;--padding-above:15%;--font-size-smaller2:13px;--font-size-smaller:14px;--font-size-normal:16px;--font-size-bigger:18px;--font-size-bigger2:20px;--font-size-bigger3:24px;--font-color-light2:#7b93ab;--font-color-light:#5a7896;--font-color-normal:#445a71;--font-color-dark:#2d3c4b;--font-color-dark2:#171e26;--border-radius-normal:6px;--header-height:0;--bottom-nav-height:50px}@media (min-width:800px) and (orientation:landscape){:root{--padding-left-right:10%;--padding-above:8%;--font-size-smaller2:15px;--font-size-smaller:16px;--font-size-normal:18px;--font-size-bigger:21px;--font-size-bigger2:26px;--font-size-bigger3:32px;--header-height:65px}body{margin-bottom:0}}*{box-sizing:border-box}::selection{background-color:transparent}html{height:100%}body{background-color:#fff;color:var(--font-color-normal);cursor:default;direction:ltr;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,century gothic,sans-serif;font-size:var(--font-size-normal);font-weight:400;line-height:1.6;margin:0;margin-bottom:var(--bottom-nav-height);margin-top:var(--header-height);padding:0}a{color:var(--primary-color);text-decoration:none}:active,a:active{outline:none}:focus,a:focus{outline:0;outline-style:none}a img{border:0}ul{list-style-type:none;margin:0;padding:0}h1,h2{color:var(--font-color-dark2);font-weight:600}h1{font-size:var(--font-size-bigger3)}h2{font-size:var(--font-size-bigger2)}h3{color:var(--font-color-dark)}.darkBg{background-color:var(--offwhite-color)}main>#breadcrumb-nav{font-size:var(--font-size-smaller2);margin:0;padding:5px var(--padding-left-right)}main>*{margin:0;padding:20px max(var(--padding-left-right),160px) 20px var(--padding-left-right)}main>h1{position:relative;text-align:center}main>article>h2{border-left:3px solid var(--primary-color);margin:var(--padding-above) 0 3% 0;padding:0 0 0 20px}main>article>h2:first-child{margin-top:3%}main>article>h2:hover>a:before{content:"🔗";font-weight:400;margin-left:10px}main>article p{text-align:justify}main>article>p:first-child{margin-top:0}main>article>p>strong{color:var(--font-color-dark);font-weight:600}main>article>p>img{max-width:100%}article a{border-bottom:1px dashed var(--primary-color)}#code-editor{all:unset}code[class*=language-],pre[class*=language-]{word-wrap:normal;background:none;color:#f8f8f2;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;-webkit-hyphens:none;hyphens:none;line-height:1.5;tab-size:4;text-align:left;text-shadow:0 1px rgba(0,0,0,.3);white-space:pre;word-break:normal;word-spacing:normal}pre[class*=language-]{border-radius:.3em;margin:.5em 0;overflow:auto;padding:1em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#272822}:not(pre)>code[class*=language-]{border-radius:.3em;padding:.1em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#8292a2}.token.punctuation{color:#f8f8f2}.token.namespace{opacity:.7}.token.constant,.token.deleted,.token.property,.token.symbol,.token.tag{color:#f92672}.token.boolean,.token.number{color:#ae81ff}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#a6e22e}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url,.token.variable{color:#f8f8f2}.token.atrule,.token.attr-value,.token.class-name,.token.function{color:#e6db74}.token.keyword{color:#66d9ef}.token.important,.token.regex{color:#fd971f}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.demo-main{display:flex;flex-direction:row;justify-content:space-between}.column-main{max-width:600px}.column-events{font-size:16px}.column-events,.column-main{display:flex;flex-direction:column}.demo-body,.demo-header{display:flex;flex-direction:row}.log-entry{border-bottom:1px solid var(--primary-color);margin-bottom:3px;white-space:pre}.bold{font-weight:700}.log-entry>code{font-weight:400}.log-entry>button{margin:0 2px}[hidden]{display:none}#log1,.log-container{display:inline-block;font-family:monospace;font-size:11px;height:260px;overflow-x:scroll;overflow-y:scroll}#drag-me{background-color:purple;height:100px;width:100px}#drag-me,label{display:inline-block}label{margin-right:8px}.bold label{font-weight:700}label[for=green]{color:green}label[for=red]{color:red}label[for=blue]{color:blue}.log-container{display:flex;flex-direction:column;overflow:auto}.hidden{display:none}#drawing-mode-options{display:flex;flex-direction:column;max-width:350px;padding:10px}label{align-items:center;display:flex;flex-direction:row;justify-content:space-between}#drawing-mode{margin-bottom:10px;vertical-align:top}.info{display:inline-block;width:35px}#bd-wrapper{min-width:1500px}canvas{border:1px solid var(--primary-color)}#site-header{background:#fff;display:block;font-size:16px;line-height:1;z-index:9}#logo{align-self:flex-start;display:block;text-align:center}#site-header>nav{bottom:0;height:var(--bottom-nav-height);position:fixed;right:0;width:100%;z-index:999}#site-header>nav:before{background:linear-gradient(180deg,transparent 0,rgba(0,0,0,.15));bottom:0;content:"";height:80px;left:0;pointer-events:none;position:fixed;right:0;z-index:-1}#site-header>nav>ul{background-color:#fff;border-radius:15px 15px 0 0;box-shadow:0 -2px 10px rgba(0,0,0,.2);display:flex;justify-content:space-around;padding:0 20px;width:100%}#site-header>nav>ul>li>a{color:var(--font-color-normal);display:block;font-size:var(--font-size-smaller2);height:var(--bottom-nav-height);padding:12px 0}#site-header>nav>ul>li>a.active{box-shadow:0 3px 0 0 var(--primary-color) inset;color:var(--primary-color)}#site-header>nav>ul>li>a:hover{color:var(--primary-color)}@media (orientation:landscape){#site-header>nav{width:300px}#site-header>nav>ul{border-radius:30px 0 0}}@media (min-width:800px) and (orientation:landscape){#site-header{align-items:center;background:#fff;display:flex;flex-flow:row nowrap;height:var(--header-height);justify-content:space-between;left:0;padding:0 var(--padding-left-right);position:fixed;top:0;width:100%;z-index:9}#site-header>nav{background-color:unset;height:unset;position:unset;width:50%}#site-header>nav:before{display:none}#site-header>nav>ul{background-color:unset;border-radius:unset;box-shadow:unset;justify-content:space-between;padding:0}#site-header>nav>ul>li>a{font-size:unset;height:var(--header-height);padding:24px 0}#site-header>nav>ul>li>a.active{box-shadow:0 -3px 0 0 var(--primary-color) inset;color:var(--font-color-dark2)}}#carbonads,#gentle-reminder{position:fixed;right:5px;top:70px;width:144px}.reminder{background-color:pink!important;color:#fff;font-size:13px;padding:2px;text-align:center}#carbonads{background:#333;display:block;font-family:Verdana,Helvetica Neue,Helvetica,sans-serif;font-size:.9em;line-height:1.5;margin:1px;overflow:hidden;padding:3px}#carbonads a{color:#ffbfcb!important;margin:0;padding:0!important;text-decoration:none!important}#carbonads span{margin:0;overflow:hidden}#carbonads span,.carbon-img{display:block;padding:0!important}.carbon-img{margin:0 0 1em}.carbon-img img{display:block;margin:1px;padding:0}.carbon-text{display:block;margin:0 0 1em;padding:0;text-align:left}.carbon-poweredby{display:block;font-size:.8em;margin:0;padding:0;text-align:right}#featuredBanner{background-color:var(--primary-color);height:70vh;position:relative}h1>span{font-size:.6em}#featuresList{display:flex;flex-wrap:wrap;justify-content:center}#featuresList h2{border-bottom:2px solid #000;margin:0 44px;padding-bottom:10px}#featuresList .col{max-width:50%;padding:0 10px;text-align:center;width:300px}.canvas-banner{left:0;position:absolute;top:0}.horizontalPanCntnr{cursor:ew-resize;overflow-x:hidden;-webkit-user-select:none;-o-user-select:none;user-select:none}ul.horizontalPanList{text-align:center;white-space:nowrap;width:100%}ul.horizontalPanList>li{display:inline-block;padding:10px;vertical-align:top;width:70%}@media (min-width:600px) and (orientation:landscape){ul.horizontalPanList>li{width:40%}}@media (min-width:800px) and (orientation:landscape){ul.horizontalPanList>li{width:30%}}.team-member{align-items:start;display:flex}.team-member img.profile{display:inline-block;height:300px;margin:1rem;padding:8px}.team-member .content{display:flex;flex-direction:column;padding:8px}.team-member .sponsor-button{align-items:center;border:2px solid var(--primary-color);border-radius:var(--border-radius-normal);display:flex;justify-content:center;max-width:130px}.team-member .sponsor-button svg{stroke:var(--primary-color);fill:var(--primary-color);margin-right:16px}.svg-row{border:1px solid var(--font-color-light2);flex-direction:row}.svg-block,.svg-row{display:flex;margin:8px}.svg-block{align-items:center;flex-direction:column;justify-content:flex-start;width:33%}.svg-block canvas,.svg-block img,.svg-block svg{max-height:auto;max-width:100%}:root{--left-sidebar-width:85%}@media (min-width:400px){:root{--left-sidebar-width:300px}}@media (min-width:800px) and (orientation:landscape){:root{--left-sidebar-width:20%}}#sidebarLeft{bottom:0;left:0;position:fixed;top:0;transition:left .2s ease;width:var(--left-sidebar-width);z-index:999}#sidebarLeft.closed{left:-85%}#sidebarLeftModalBg{background-color:#000;bottom:0;left:0;opacity:0;pointer-events:none;position:fixed;right:0;top:0;transition:opacity .3s linear;z-index:-1}#sidebarLeft.open>#sidebarLeftModalBg{opacity:.4;pointer-events:all}#sidebarLeftModalBg+button{background-color:#fff;border:1px solid rgba(0,0,0,.2);border-radius:0 var(--border-radius-normal) var(--border-radius-normal) 0;bottom:var(--bottom-nav-height);box-shadow:2px 0 15px rgba(0,0,0,.25);cursor:pointer;height:50px;left:100%;margin-bottom:20px;position:absolute;width:50px}#sidebarLeftModalBg+button:before{content:">"}#sidebarLeft.open>#sidebarLeftModalBg+button:before{content:"<"}#sideBarLeftContentWrap{background-color:#fff;bottom:0;overflow:auto;padding:10%;position:absolute;top:0;width:100%}@media (min-width:400px){#sidebarLeft.closed{left:-300px}}@media (orientation:landscape){#sidebarLeftModalBg+button{border-radius:0 30px 0 0;bottom:0;margin-bottom:unset}}@media (min-width:800px) and (orientation:landscape){#sidebarLeft,#sidebarLeftModalBg{top:var(--header-height)}#sidebarLeft.closed{left:unset}#sidebarLeftModalBg,#sidebarLeftModalBg+button{display:none}#sideBarLeftContentWrap{border-right:1px solid #eee}#sidebarLeft~footer,#sidebarLeft~main{margin-left:var(--left-sidebar-width)}}#sideBarLeftContentWrap>header{color:var(--font-color-light2);font-size:var(--font-size-smaller2)}#topics{margin-bottom:10%}#topics>ol{list-style:none;margin:0;padding:0}#topics>ol>li a{border-radius:var(--border-radius-normal);color:var(--font-color-normal);display:block;font-size:var(--font-size-smaller);line-height:1.2;padding:6px 10px;position:relative}#topics>ol>li a:hover{background-color:var(--primary-color-tint)}#topics>ol>li a.active,#topics>ol>li a:hover{color:var(--primary-color)}#topics>ol>li>a.active{font-weight:600;position:relative}#topics>ol>li>a.active:before{background-color:var(--primary-color);border-radius:0 20px 20px 0;content:"";height:4px;margin-right:10px;margin-top:-2px;position:absolute;right:100%;top:50%;width:40px}#table-of-contents>ul{border-left:1px solid #eee;margin:0 0 16px 16px;padding-left:8px}#table-of-contents>ul>li>a{font-size:var(--font-size-smaller2);line-height:1.1}main>#prevNextPostLinks{padding:2% var(--padding-left-right)}#prevNextPostLinks>ul{border-top:1px solid #eee;padding-top:2%}#prevNextPostLinks>ul>li{display:block}li.nextPost{text-align:right}li.nextPost:before,li.prevPost:before{color:var(--font-color-dark);display:block;font-size:var(--font-size-smaller)}li.prevPost:before{content:"Previous"}li.nextPost:before{content:"Next"}#prevNextPostLinks>ul>li>a{position:relative}#prevNextPostLinks>ul>li>a:hover:before{background-color:var(--primary-color-tint);border-radius:var(--border-radius-normal);bottom:-5px;content:"";left:-10px;padding:5px 10px;position:absolute;right:-10px;top:-5px;z-index:-1}@media (min-width:480px) and (orientation:landscape){#prevNextPostLinks>ul>li{display:inline-block;width:50%}li.prevPost{float:left}li.nextPost{float:right}#prevNextPostLinks>ul:after{clear:both;content:"";display:block}}ul.thumbList{background-color:var(--offwhite-color);padding:30px var(--padding-left-right)}ul.thumbList>li{display:block}ul.thumbList>li+li{padding-top:20px}ul.thumbList>li>*{width:100%}@media (min-width:400px){ul.thumbList{align-items:stretch;display:flex;flex-direction:row;flex-wrap:wrap}ul.thumbList>li{display:flex;vertical-align:top;width:50%}ul.thumbList>li+li{padding-top:unset}ul.thumbList>li:nth-of-type(odd){padding:5px 5px 5px 0}ul.thumbList>li:nth-of-type(2n){padding:5px 0 5px 5px}}@media (min-width:800px) and (orientation:landscape){ul.thumbList>li{padding:10px!important;width:25%}}.card{background-color:#fff;border:1px solid #eef;border-radius:4px;padding:20px;position:relative}.card:after{border:1px dashed var(--primary-color);bottom:10px;content:"";display:block;left:10px;opacity:.5;pointer-events:none;position:absolute;right:10px;top:10px}.thumbCntnr{display:block;height:0;overflow:hidden;padding-bottom:60%;position:relative}.thumbCntnr>.gatsby-image-wrapper{height:auto;left:0;position:absolute!important;top:50%;transform:translateY(-50%);width:100%}.card h4{display:block;font-size:var(--font-size-smaller2);margin:0;padding:0}.card span.desc{color:var(--font-color-normal);display:block;font-size:14px;line-height:1.2;margin-top:5px;text-align:justify}.contributorCard{text-align:center}.contributorCard>img{border-radius:100px;width:90%}.contributorsList>ul>li{width:40%}@media (min-width:600px) and (orientation:landscape){.contributorsList>ul>li{width:22%}}@media (min-width:800px) and (orientation:landscape){.contributorsList>ul>li{width:8%}}#features{align-items:center;display:flex;flex-direction:column;justify-content:center}#features h2{display:block;font-size:40px}#features .features-list{display:flex;flex-direction:row;width:100%}#features .column-left li{align-items:flex-end;display:flex;flex-direction:column}#features .column-left{padding-left:0;padding-right:25px}#features .column-left,#features .column-right{display:flex;flex-direction:column;list-style:none;width:50%}#features .column-right{align-items:flex-start;padding-left:25px;padding-right:0}</style><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){const t=e.target;if(void 0===t.dataset.mainImage)return;if(void 0===t.dataset.gatsbyImageSsr)return;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><style type="text/css">
+    .anchor.before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(-100%);
+      padding-right: 4px;
+    }
+    .anchor.after {
+      display: inline-block;
+      padding-left: 4px;
+    }
+    h1 .anchor svg,
+    h2 .anchor svg,
+    h3 .anchor svg,
+    h4 .anchor svg,
+    h5 .anchor svg,
+    h6 .anchor svg {
+      visibility: hidden;
+    }
+    h1:hover .anchor svg,
+    h2:hover .anchor svg,
+    h3:hover .anchor svg,
+    h4:hover .anchor svg,
+    h5:hover .anchor svg,
+    h6:hover .anchor svg,
+    h1 .anchor:focus svg,
+    h2 .anchor:focus svg,
+    h3 .anchor:focus svg,
+    h4 .anchor:focus svg,
+    h5 .anchor:focus svg,
+    h6 .anchor:focus svg {
+      visibility: visible;
+    }
+  </style><script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var hash = window.decodeURI(location.hash.replace('#', ''))
+      if (hash !== '') {
+        var element = document.getElementById(hash)
+        if (element) {
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+          var clientTop = document.documentElement.clientTop || document.body.clientTop || 0
+          var offset = element.getBoundingClientRect().top + scrollTop - clientTop
+          // Wait for the browser to finish rendering before scrolling.
+          setTimeout((function() {
+            window.scrollTo(0, offset - 0)
+          }), 0)
+        }
+      }
+    })
+  </script></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><header id="site-header"><a id="logo" href="/"><img alt="FabricJS logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKoAAAAyCAMAAAD7nbCeAAAAPFBMVEVHcEx2zvR20PR7k6t2zvR2zvR7k6t6or17k6t7k6t43fH///9zvvl1yPea4Pd66O5ytPzf9P2T0Pq46PohTQEQAAAACnRSTlMAl///eMiaPcd4cxaYewAABFpJREFUaN7NmOFiqyAMhVuqohaowPu/6yVAQhB02487Rjc61NWvh5MQeQhqO7x4+8CrbY9RTegTrCik4bcDOw5VeGugs14IY601+x56v+/hkN0/8dDnA+eh9wNRtbDeCeGMCcB76IOWoQ+SfuIA+iClSW/ejkTVxl1aoJ3/oapqodGvextcn72JrYGomkXWfhY2gu5/BdW7gKpPrFxalrTMWANYdxL2rCqzgLF/AbXOr7VliXYwqneaybq3yxYPrbEGSK3oCkmfNX92wThUlUkJ9H1uHjPBYFSlnWbK+nenmaKrGR5W6IAu6duSrEPDSilLsgr37jefQmsfjAqqqsxqL1GzroNVLV4totqLLDDUq0pp+Imo6FRrTu3DCoKRqIlUMVTTNL4WDA0rlNVfiEqq7saORtXpZRHV9VWFsNp3/t8rb/L00TIcW3r33F6v13YFNM3zM/37cxZCzFNXVXupqiiqVqgv3hrUcGz9OWrAg/cnVU+SUI1WKjkWUX1pqGpm/fjfQp0Acp5nxqrUkQJLddOqp/mnYutXUCWAwgfGP9KZQykUVXVQs6q8LDyjyqubXqLetoQ6kZjyOclLA/DVn+Y/wfYMUKFuK/AtDHUJ3YYxuIThFi5a86HHstLlDep0zgAHhFUUtYPqEVUkC/TCStYzW8wQUdc4XPLF6wJTTwag67ceqpB91K6qns2/uMoAsh5muIyKY5lRXxxV9nxOXtVCzDT5yauI2qhKSas8cvdQc1YN914yQr63zHptWVZSEFHjl9jkUnk6Z4AZU1VJrMehDnVUqDanKWfyWkDPhncZAJi2Jd5yZah4FV68lQywoZwrlxXz6izOiVUdREqoLjYENfR0mHivUVMwyY2hcnQybUYlNeW2yWYJCMsWsaKqTqGuhBoJI6ujHa1s1nvUbWXm66FKhrp2kxmhwnfIuFNGtQ44j1ZVZxzOfpQ0PiTehVWOo+VG1cePUHGBnQtqq2qefufYBsFFWBVUvPc3Ue8NIMsOcIV6RBNkVI+SAijbz/pS1VOYECoLK4664YEqrJ5AJmc0aER9klePHFs2i6qdo0du2iBIbjViv0TF5CR5spJ1sqpqgBxnW2WEGazJVv4n8yo0FXVNqBofDJp9l8R7r+prWXhY4Vj2UJfTEjBNU6xRZS4B5zzGcuUosIBqNRVaqrCy/Vdx79W8emZUzAjLo4daWBecaoHTXcpVirLj8A5h7dsaKrOQVFT7Wf4ONd16wRmXcG4tJC1qTm74/FCtTvLZrlYxrEDV9Es1oVatrsbWqG3hJ79zqDorq4F8XA4R9cgZ60BVuV1J1y9R/2crBiBaZgGla12dH4rKOVntkmi5BzRfkMeioqxHE1qVXweiOsVJmaocVyRYZ4aiWh8AoT4JmKFXsQdGGGjoYefNGRdI/eCwghTgrfUB2Fqos6y1RikT3pSKh7SG81ob6/+OV4sVkhGqrCVi7fKXUFl+Pa+xULuMIv0H70KFD/dlzwIAAAAASUVORK5CYII="/></a><nav><ul><li><a href="/">Home</a></li><li><a href="/demos/">Demos</a></li><li><a href="/docs/">Docs</a></li><li><a href="/customize-build/">Customize build</a></li><li><a href="/support/">Support</a></li><li><a href="/team/">Team</a></li></ul></nav></header><div></div><aside class="closed" id="sidebarLeft"><div role="button" tabindex="0" id="sidebarLeftModalBg"></div><button></button><div id="sideBarLeftContentWrap"><header>Guides</header><nav id="topics" aria-label="Contents"><ol><li><a title="Introduction" href="/docs/">Introduction</a></li><li><a title="/apidocs/classes/BaseBrush.md" href="/apidocs/classes/BaseBrush.md/">/apidocs/classes/BaseBrush.md</a></li><li><a title="/apidocs/classes/Canvas2dFilterBackend.md" href="/apidocs/classes/Canvas2dFilterBackend.md/">/apidocs/classes/Canvas2dFilterBackend.md</a></li><li><a title="/apidocs/classes/CanvasDOMManager.md" href="/apidocs/classes/CanvasDOMManager.md/">/apidocs/classes/CanvasDOMManager.md</a></li><li><a title="/apidocs/classes/CircleBrush.md" href="/apidocs/classes/CircleBrush.md/">/apidocs/classes/CircleBrush.md</a></li><li><a title="/apidocs/classes/Color.md" href="/apidocs/classes/Color.md/">/apidocs/classes/Color.md</a></li><li><a title="/apidocs/classes/Control.md" href="/apidocs/classes/Control.md/">/apidocs/classes/Control.md</a></li><li><a title="/apidocs/classes/Gradient.md" href="/apidocs/classes/Gradient.md/">/apidocs/classes/Gradient.md</a></li><li><a title="/apidocs/classes/Intersection.md" href="/apidocs/classes/Intersection.md/">/apidocs/classes/Intersection.md</a></li><li><a title="/apidocs/classes/Observable.md" href="/apidocs/classes/Observable.md/">/apidocs/classes/Observable.md</a></li><li><a title="/apidocs/classes/Pattern.md" href="/apidocs/classes/Pattern.md/">/apidocs/classes/Pattern.md</a></li><li><a title="/apidocs/classes/PatternBrush.md" href="/apidocs/classes/PatternBrush.md/">/apidocs/classes/PatternBrush.md</a></li><li><a title="/apidocs/classes/Point.md" href="/apidocs/classes/Point.md/">/apidocs/classes/Point.md</a></li><li><a title="/apidocs/classes/PencilBrush.md" href="/apidocs/classes/PencilBrush.md/">/apidocs/classes/PencilBrush.md</a></li><li><a title="/apidocs/classes/Shadow.md" href="/apidocs/classes/Shadow.md/">/apidocs/classes/Shadow.md</a></li><li><a title="/apidocs/classes/SprayBrush.md" href="/apidocs/classes/SprayBrush.md/">/apidocs/classes/SprayBrush.md</a></li><li><a title="/apidocs/classes/StaticCanvasDOMManager.md" href="/apidocs/classes/StaticCanvasDOMManager.md/">/apidocs/classes/StaticCanvasDOMManager.md</a></li><li><a title="/apidocs/classes/WebGLFilterBackend.md" href="/apidocs/classes/WebGLFilterBackend.md/">/apidocs/classes/WebGLFilterBackend.md</a></li><li><a title="/apidocs/classes/filters.BaseFilter.md" href="/apidocs/classes/filters.BaseFilter.md/">/apidocs/classes/filters.BaseFilter.md</a></li><li><a title="/apidocs/classes/filters.BlendColor.md" href="/apidocs/classes/filters.BlendColor.md/">/apidocs/classes/filters.BlendColor.md</a></li><li><a title="/apidocs/classes/filters.Brightness.md" href="/apidocs/classes/filters.Brightness.md/">/apidocs/classes/filters.Brightness.md</a></li><li><a title="/apidocs/classes/filters.BlendImage.md" href="/apidocs/classes/filters.BlendImage.md/">/apidocs/classes/filters.BlendImage.md</a></li><li><a title="/apidocs/classes/filters.Blur.md" href="/apidocs/classes/filters.Blur.md/">/apidocs/classes/filters.Blur.md</a></li><li><a title="/apidocs/classes/filters.ColorMatrix.md" href="/apidocs/classes/filters.ColorMatrix.md/">/apidocs/classes/filters.ColorMatrix.md</a></li><li><a title="/apidocs/classes/filters.Contrast.md" href="/apidocs/classes/filters.Contrast.md/">/apidocs/classes/filters.Contrast.md</a></li><li><a title="/apidocs/classes/filters.Convolute.md" href="/apidocs/classes/filters.Convolute.md/">/apidocs/classes/filters.Convolute.md</a></li><li><a title="/apidocs/classes/filters.Composed.md" href="/apidocs/classes/filters.Composed.md/">/apidocs/classes/filters.Composed.md</a></li><li><a title="/apidocs/classes/filters.Grayscale.md" href="/apidocs/classes/filters.Grayscale.md/">/apidocs/classes/filters.Grayscale.md</a></li><li><a title="/apidocs/classes/filters.HueRotation.md" href="/apidocs/classes/filters.HueRotation.md/">/apidocs/classes/filters.HueRotation.md</a></li><li><a title="/apidocs/classes/filters.Gamma.md" href="/apidocs/classes/filters.Gamma.md/">/apidocs/classes/filters.Gamma.md</a></li><li><a title="/apidocs/classes/filters.Pixelate.md" href="/apidocs/classes/filters.Pixelate.md/">/apidocs/classes/filters.Pixelate.md</a></li><li><a title="/apidocs/classes/filters.Noise.md" href="/apidocs/classes/filters.Noise.md/">/apidocs/classes/filters.Noise.md</a></li><li><a title="/apidocs/classes/filters.Invert.md" href="/apidocs/classes/filters.Invert.md/">/apidocs/classes/filters.Invert.md</a></li><li><a title="/apidocs/classes/filters.Resize.md" href="/apidocs/classes/filters.Resize.md/">/apidocs/classes/filters.Resize.md</a></li><li><a title="/apidocs/classes/filters.Saturation.md" href="/apidocs/classes/filters.Saturation.md/">/apidocs/classes/filters.Saturation.md</a></li><li><a title="/apidocs/classes/filters.RemoveColor.md" href="/apidocs/classes/filters.RemoveColor.md/">/apidocs/classes/filters.RemoveColor.md</a></li><li><a title="/apidocs/interfaces/BasicTransformEvent.md" href="/apidocs/interfaces/BasicTransformEvent.md/">/apidocs/interfaces/BasicTransformEvent.md</a></li><li><a title="/apidocs/interfaces/ActiveSelectionOptions.md" href="/apidocs/interfaces/ActiveSelectionOptions.md/">/apidocs/interfaces/ActiveSelectionOptions.md</a></li><li><a title="/apidocs/classes/filters.Vibrance.md" href="/apidocs/classes/filters.Vibrance.md/">/apidocs/classes/filters.Vibrance.md</a></li><li><a title="/apidocs/interfaces/CanvasOptions.md" href="/apidocs/interfaces/CanvasOptions.md/">/apidocs/interfaces/CanvasOptions.md</a></li><li><a title="/apidocs/interfaces/CanvasEvents.md" href="/apidocs/interfaces/CanvasEvents.md/">/apidocs/interfaces/CanvasEvents.md</a></li><li><a title="/apidocs/interfaces/CollectionEvents.md" href="/apidocs/interfaces/CollectionEvents.md/">/apidocs/interfaces/CollectionEvents.md</a></li><li><a title="/apidocs/interfaces/DragEventData.md" href="/apidocs/interfaces/DragEventData.md/">/apidocs/interfaces/DragEventData.md</a></li><li><a title="/apidocs/interfaces/DropEventData.md" href="/apidocs/interfaces/DropEventData.md/">/apidocs/interfaces/DropEventData.md</a></li><li><a title="/apidocs/interfaces/CircleProps.md" href="/apidocs/interfaces/CircleProps.md/">/apidocs/interfaces/CircleProps.md</a></li><li><a title="/apidocs/interfaces/GroupEvents.md" href="/apidocs/interfaces/GroupEvents.md/">/apidocs/interfaces/GroupEvents.md</a></li><li><a title="/apidocs/interfaces/FabricObjectProps.md" href="/apidocs/interfaces/FabricObjectProps.md/">/apidocs/interfaces/FabricObjectProps.md</a></li><li><a title="/apidocs/interfaces/GroupOwnProps.md" href="/apidocs/interfaces/GroupOwnProps.md/">/apidocs/interfaces/GroupOwnProps.md</a></li><li><a title="/apidocs/interfaces/GroupProps.md" href="/apidocs/interfaces/GroupProps.md/">/apidocs/interfaces/GroupProps.md</a></li><li><a title="/apidocs/interfaces/EllipseProps.md" href="/apidocs/interfaces/EllipseProps.md/">/apidocs/interfaces/EllipseProps.md</a></li><li><a title="/apidocs/interfaces/ITextProps.md" href="/apidocs/interfaces/ITextProps.md/">/apidocs/interfaces/ITextProps.md</a></li><li><a title="/apidocs/interfaces/MiscEvents.md" href="/apidocs/interfaces/MiscEvents.md/">/apidocs/interfaces/MiscEvents.md</a></li><li><a title="/apidocs/interfaces/ModifiedEvent.md" href="/apidocs/interfaces/ModifiedEvent.md/">/apidocs/interfaces/ModifiedEvent.md</a></li><li><a title="/apidocs/interfaces/ObjectEvents.md" href="/apidocs/interfaces/ObjectEvents.md/">/apidocs/interfaces/ObjectEvents.md</a></li><li><a title="/apidocs/interfaces/RectProps.md" href="/apidocs/interfaces/RectProps.md/">/apidocs/interfaces/RectProps.md</a></li><li><a title="/apidocs/interfaces/ImageProps.md" href="/apidocs/interfaces/ImageProps.md/">/apidocs/interfaces/ImageProps.md</a></li><li><a title="/apidocs/interfaces/SerializedCircleProps.md" href="/apidocs/interfaces/SerializedCircleProps.md/">/apidocs/interfaces/SerializedCircleProps.md</a></li><li><a title="/apidocs/interfaces/SerializedEllipseProps.md" href="/apidocs/interfaces/SerializedEllipseProps.md/">/apidocs/interfaces/SerializedEllipseProps.md</a></li><li><a title="/apidocs/interfaces/PathProps.md" href="/apidocs/interfaces/PathProps.md/">/apidocs/interfaces/PathProps.md</a></li><li><a title="/apidocs/interfaces/SerializedGroupProps.md" href="/apidocs/interfaces/SerializedGroupProps.md/">/apidocs/interfaces/SerializedGroupProps.md</a></li><li><a title="/apidocs/interfaces/SerializedITextProps.md" href="/apidocs/interfaces/SerializedITextProps.md/">/apidocs/interfaces/SerializedITextProps.md</a></li><li><a title="/apidocs/interfaces/SerializedImageProps.md" href="/apidocs/interfaces/SerializedImageProps.md/">/apidocs/interfaces/SerializedImageProps.md</a></li><li><a title="/apidocs/interfaces/SerializedLineProps.md" href="/apidocs/interfaces/SerializedLineProps.md/">/apidocs/interfaces/SerializedLineProps.md</a></li><li><a title="/apidocs/interfaces/SerializedObjectProps.md" href="/apidocs/interfaces/SerializedObjectProps.md/">/apidocs/interfaces/SerializedObjectProps.md</a></li><li><a title="/apidocs/interfaces/SerializedPathProps.md" href="/apidocs/interfaces/SerializedPathProps.md/">/apidocs/interfaces/SerializedPathProps.md</a></li><li><a title="/apidocs/interfaces/SerializedRectProps.md" href="/apidocs/interfaces/SerializedRectProps.md/">/apidocs/interfaces/SerializedRectProps.md</a></li><li><a title="/apidocs/interfaces/SerializedPolylineProps.md" href="/apidocs/interfaces/SerializedPolylineProps.md/">/apidocs/interfaces/SerializedPolylineProps.md</a></li><li><a title="/apidocs/interfaces/StaticCanvasEvents.md" href="/apidocs/interfaces/StaticCanvasEvents.md/">/apidocs/interfaces/StaticCanvasEvents.md</a></li><li><a title="/apidocs/interfaces/SerializedTextProps.md" href="/apidocs/interfaces/SerializedTextProps.md/">/apidocs/interfaces/SerializedTextProps.md</a></li><li><a title="/apidocs/interfaces/StaticCanvasOptions.md" href="/apidocs/interfaces/StaticCanvasOptions.md/">/apidocs/interfaces/StaticCanvasOptions.md</a></li><li><a title="/apidocs/interfaces/TEvent.md" href="/apidocs/interfaces/TEvent.md/">/apidocs/interfaces/TEvent.md</a></li><li><a title="/apidocs/interfaces/SerializedTextboxProps.md" href="/apidocs/interfaces/SerializedTextboxProps.md/">/apidocs/interfaces/SerializedTextboxProps.md</a></li><li><a title="/apidocs/interfaces/TPointerEventInfo.md" href="/apidocs/interfaces/TPointerEventInfo.md/">/apidocs/interfaces/TPointerEventInfo.md</a></li><li><a title="/apidocs/interfaces/XY.md" href="/apidocs/interfaces/XY.md/">/apidocs/interfaces/XY.md</a></li><li><a title="/apidocs/interfaces/TextboxProps.md" href="/apidocs/interfaces/TextboxProps.md/">/apidocs/interfaces/TextboxProps.md</a></li><li><a title="/apidocs/interfaces/TextProps.md" href="/apidocs/interfaces/TextProps.md/">/apidocs/interfaces/TextProps.md</a></li><li><a title="/apidocs/modules/util.ease.md" href="/apidocs/modules/util.ease.md/">/apidocs/modules/util.ease.md</a></li><li><a title="/apidocs/modules/filters.md" href="/apidocs/modules/filters.md/">/apidocs/modules/filters.md</a></li><li><a title="/apidocs/modules/util.string.md" href="/apidocs/modules/util.string.md/">/apidocs/modules/util.string.md</a></li><li><a title="/apidocs/classes/StaticCanvas.md" href="/apidocs/classes/StaticCanvas.md/">/apidocs/classes/StaticCanvas.md</a></li><li><a title="/apidocs/classes/FabricObject.md" href="/apidocs/classes/FabricObject.md/">/apidocs/classes/FabricObject.md</a></li><li><a title="/apidocs/modules/controlsUtils.md" href="/apidocs/modules/controlsUtils.md/">/apidocs/modules/controlsUtils.md</a></li><li><a aria-current="page" title="/apidocs/modules/util.md" class="active" href="/apidocs/modules/util.md/">/apidocs/modules/util.md</a><nav role="button" id="table-of-contents"><ul></ul></nav></li><li><a title="/apidocs/classes/Canvas.md" href="/apidocs/classes/Canvas.md/">/apidocs/classes/Canvas.md</a></li><li><a title="/apidocs/classes/ActiveSelection.md" href="/apidocs/classes/ActiveSelection.md/">/apidocs/classes/ActiveSelection.md</a></li><li><a title="/apidocs/classes/Circle.md" href="/apidocs/classes/Circle.md/">/apidocs/classes/Circle.md</a></li><li><a title="/apidocs/classes/FabricImage.md" href="/apidocs/classes/FabricImage.md/">/apidocs/classes/FabricImage.md</a></li><li><a title="/apidocs/classes/FabricText.md" href="/apidocs/classes/FabricText.md/">/apidocs/classes/FabricText.md</a></li><li><a title="/apidocs/classes/Ellipse.md" href="/apidocs/classes/Ellipse.md/">/apidocs/classes/Ellipse.md</a></li><li><a title="/apidocs/classes/Group.md" href="/apidocs/classes/Group.md/">/apidocs/classes/Group.md</a></li><li><a title="/apidocs/classes/Line.md" href="/apidocs/classes/Line.md/">/apidocs/classes/Line.md</a></li><li><a title="/apidocs/classes/Path.md" href="/apidocs/classes/Path.md/">/apidocs/classes/Path.md</a></li><li><a title="/apidocs/classes/Polygon.md" href="/apidocs/classes/Polygon.md/">/apidocs/classes/Polygon.md</a></li><li><a title="/apidocs/classes/Rect.md" href="/apidocs/classes/Rect.md/">/apidocs/classes/Rect.md</a></li><li><a title="/apidocs/classes/Polyline.md" href="/apidocs/classes/Polyline.md/">/apidocs/classes/Polyline.md</a></li><li><a title="/apidocs/classes/Triangle.md" href="/apidocs/classes/Triangle.md/">/apidocs/classes/Triangle.md</a></li><li><a title="/apidocs/classes/IText.md" href="/apidocs/classes/IText.md/">/apidocs/classes/IText.md</a></li><li><a title="/apidocs/classes/Textbox.md" href="/apidocs/classes/Textbox.md/">/apidocs/classes/Textbox.md</a></li></ol></nav></div></aside><main><article><h1>Namespace: util</h1>
+<h2>Namespaces</h2>
+<ul>
+<li><a href="/apidocs/modules/util.ease.md">ease</a></li>
+<li><a href="/apidocs/modules/util.string.md">string</a></li>
+</ul>
+<h2>Type Aliases</h2>
+<h3>AnimationOptions</h3>
+<p>Ƭ <strong>AnimationOptions</strong>&#x3C;<code>T</code>>: <code>T</code> extends <a href="/apidocs/modules.md#tcolorarg"><code>TColorArg</code></a> ? <a href="/apidocs/modules/util.md#coloranimationoptions"><code>ColorAnimationOptions</code></a> : <code>T</code> extends <code>number</code>[] ? <a href="/apidocs/modules/util.md#arrayanimationoptions"><code>ArrayAnimationOptions</code></a> : <a href="/apidocs/modules/util.md#valueanimationoptions"><code>ValueAnimationOptions</code></a></p>
+<h4>Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>number</code> | <code>number</code>[] | <a href="/apidocs/modules.md#tcolorarg"><code>TColorArg</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/animation/types.ts#L132">src/util/animation/types.ts:132</a></p>
+<hr>
+<h3>AnimationState</h3>
+<p>Ƭ <strong>AnimationState</strong>: <code>"pending"</code> | <code>"running"</code> | <code>"completed"</code> | <code>"aborted"</code></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/animation/types.ts#L4">src/util/animation/types.ts:4</a></p>
+<hr>
+<h3>ArrayAnimationOptions</h3>
+<p>Ƭ <strong>ArrayAnimationOptions</strong>: <a href="/apidocs/modules/util.md#tanimationoptions"><code>TAnimationOptions</code></a>&#x3C;<code>number</code>[]></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/animation/types.ts#L124">src/util/animation/types.ts:124</a></p>
+<hr>
+<h3>ColorAnimationOptions</h3>
+<p>Ƭ <strong>ColorAnimationOptions</strong>: <a href="/apidocs/modules/util.md#tanimationoptions"><code>TAnimationOptions</code></a>&#x3C;<a href="/apidocs/modules.md#tcolorarg"><code>TColorArg</code></a>, <code>string</code>, <code>number</code>[]></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/animation/types.ts#L126">src/util/animation/types.ts:126</a></p>
+<hr>
+<h3>EnlivenObjectOptions</h3>
+<p>Ƭ <strong>EnlivenObjectOptions</strong>: <a href="/apidocs/modules.md#abortable"><code>Abortable</code></a> &#x26; { <code>reviver?</code>: &#x3C;T>(<code>serializedObj</code>: <code>Record</code>&#x3C;<code>string</code>, <code>any</code>>, <code>instance</code>: <code>T</code>) => <code>void</code>  }</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/objectEnlive.ts#L59">src/util/misc/objectEnlive.ts:59</a></p>
+<hr>
+<h3>LoadImageOptions</h3>
+<p>Ƭ <strong>LoadImageOptions</strong>: <a href="/apidocs/modules.md#abortable"><code>Abortable</code></a> &#x26; { <code>crossOrigin?</code>: <a href="/apidocs/modules.md#tcrossorigin"><code>TCrossOrigin</code></a>  }</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/objectEnlive.ts#L11">src/util/misc/objectEnlive.ts:11</a></p>
+<hr>
+<h3>TAbortCallback</h3>
+<p>Ƭ <strong>TAbortCallback</strong>&#x3C;<code>T</code>>: <a href="/apidocs/modules/util.md#tonanimationchangecallback"><code>TOnAnimationChangeCallback</code></a>&#x3C;<code>T</code>, <code>boolean</code>></p>
+<p>Called on each step to determine if animation should abort</p>
+<h4>Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+</tr>
+</tbody>
+</table>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/animation/types.ts#L23">src/util/animation/types.ts:23</a></p>
+<hr>
+<h3>TAnimation</h3>
+<p>Ƭ <strong>TAnimation</strong>&#x3C;<code>T</code>>: <code>T</code> extends <a href="/apidocs/modules.md#tcolorarg"><code>TColorArg</code></a> ? <code>ColorAnimation</code> : <code>T</code> extends <code>number</code>[] ? <code>ArrayAnimation</code> : <code>ValueAnimation</code></p>
+<h4>Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>number</code> | <code>number</code>[] | <a href="/apidocs/modules.md#tcolorarg"><code>TColorArg</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/animation/animate.ts#L11">src/util/animation/animate.ts:11</a></p>
+<hr>
+<h3>TAnimationBaseOptions</h3>
+<p>Ƭ <strong>TAnimationBaseOptions</strong>&#x3C;<code>T</code>>: <code>Object</code></p>
+<h4>Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+</tr>
+</tbody>
+</table>
+<h4>Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>delay</code></td>
+<td align="left"><code>number</code></td>
+<td align="left">Delay to start the animation in ms <strong><code>Default</code></strong> <code>ts 0 </code></td>
+</tr>
+<tr>
+<td align="left"><code>duration</code></td>
+<td align="left"><code>number</code></td>
+<td align="left">Duration of the animation in ms <strong><code>Default</code></strong> <code>ts 500 </code></td>
+</tr>
+<tr>
+<td align="left"><code>easing</code></td>
+<td align="left"><a href="/apidocs/modules/util.md#teasingfunction"><code>TEasingFunction</code></a>&#x3C;<code>T</code>></td>
+<td align="left">Easing function <strong><code>Default</code></strong> <code>ts {defaultEasing} </code></td>
+</tr>
+<tr>
+<td align="left"><code>target</code></td>
+<td align="left"><code>unknown</code></td>
+<td align="left">The object this animation is being performed on</td>
+</tr>
+</tbody>
+</table>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/animation/types.ts#L50">src/util/animation/types.ts:50</a></p>
+<hr>
+<h3>TAnimationCallbacks</h3>
+<p>Ƭ <strong>TAnimationCallbacks</strong>&#x3C;<code>T</code>>: <code>Object</code></p>
+<h4>Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+</tr>
+</tbody>
+</table>
+<h4>Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>abort</code></td>
+<td align="left"><a href="/apidocs/modules/util.md#tabortcallback"><code>TAbortCallback</code></a>&#x3C;<code>T</code>></td>
+<td align="left">Function called at each frame. If it returns true, abort</td>
+</tr>
+<tr>
+<td align="left"><code>onChange</code></td>
+<td align="left"><a href="/apidocs/modules/util.md#tonanimationchangecallback"><code>TOnAnimationChangeCallback</code></a>&#x3C;<code>T</code>></td>
+<td align="left">Called at each frame of the animation</td>
+</tr>
+<tr>
+<td align="left"><code>onComplete</code></td>
+<td align="left"><a href="/apidocs/modules/util.md#tonanimationchangecallback"><code>TOnAnimationChangeCallback</code></a>&#x3C;<code>T</code>></td>
+<td align="left">Called after the last frame of the animation</td>
+</tr>
+<tr>
+<td align="left"><code>onStart</code></td>
+<td align="left"><code>VoidFunction</code></td>
+<td align="left">Called when the animation starts</td>
+</tr>
+</tbody>
+</table>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/animation/types.ts#L75">src/util/animation/types.ts:75</a></p>
+<hr>
+<h3>TAnimationOptions</h3>
+<p>Ƭ <strong>TAnimationOptions</strong>&#x3C;<code>T</code>, <code>TCallback</code>, <code>TEasing</code>>: <code>Partial</code>&#x3C;<a href="/apidocs/modules/util.md#tanimationbaseoptions"><code>TAnimationBaseOptions</code></a>&#x3C;<code>TEasing</code>> &#x26; <a href="/apidocs/modules/util.md#tanimationcallbacks"><code>TAnimationCallbacks</code></a>&#x3C;<code>TCallback</code>> &#x26; { <code>endValue</code>: <code>T</code> ; <code>startValue</code>: <code>T</code>  }></p>
+<h4>Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left"><code>T</code></td>
+</tr>
+<tr>
+<td align="left"><code>TCallback</code></td>
+<td align="left"><code>T</code></td>
+</tr>
+<tr>
+<td align="left"><code>TEasing</code></td>
+<td align="left"><code>T</code></td>
+</tr>
+</tbody>
+</table>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/animation/types.ts#L105">src/util/animation/types.ts:105</a></p>
+<hr>
+<h3>TArcCommand</h3>
+<p>Ƭ <strong>TArcCommand</strong>: <code>TCommand8</code>&#x3C;<a href="/apidocs/modules/util.md#tparsedarccommand"><code>TParsedArcCommand</code></a>> | <a href="/apidocs/modules/util.md#tarccommandsingleflag"><code>TArcCommandSingleFlag</code></a>&#x3C;<a href="/apidocs/modules/util.md#tparsedarccommand"><code>TParsedArcCommand</code></a>></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L258">src/util/path/typedefs.ts:258</a></p>
+<hr>
+<h3>TArcCommandSingleFlag</h3>
+<p>Ƭ <strong>TArcCommandSingleFlag</strong>&#x3C;<code>T</code>>: `${T[0]} ${T[1]} ${T[2]} ${T[3]} ${T[4]}${T[5]} ${T[6]} ${T[7]}`</p>
+<h4>Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <a href="/apidocs/modules/util.md#tparsedarccommand"><code>TParsedArcCommand</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L256">src/util/path/typedefs.ts:256</a></p>
+<hr>
+<h3>TBaseAnimationOptions</h3>
+<p>Ƭ <strong>TBaseAnimationOptions</strong>&#x3C;<code>T</code>, <code>TCallback</code>, <code>TEasing</code>>: <code>Partial</code>&#x3C;<a href="/apidocs/modules/util.md#tanimationbaseoptions"><code>TAnimationBaseOptions</code></a>&#x3C;<code>TEasing</code>> &#x26; <a href="/apidocs/modules/util.md#tanimationcallbacks"><code>TAnimationCallbacks</code></a>&#x3C;<code>TCallback</code>>> &#x26; { <code>byValue</code>: <code>T</code> ; <code>startValue</code>: <code>T</code>  }</p>
+<h4>Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left"><code>T</code></td>
+</tr>
+<tr>
+<td align="left"><code>TCallback</code></td>
+<td align="left"><code>T</code></td>
+</tr>
+<tr>
+<td align="left"><code>TEasing</code></td>
+<td align="left"><code>T</code></td>
+</tr>
+</tbody>
+</table>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/animation/types.ts#L98">src/util/animation/types.ts:98</a></p>
+<hr>
+<h3>TClosePathCommand</h3>
+<p>Ƭ <strong>TClosePathCommand</strong>: <code>TCommand1</code>&#x3C;<a href="/apidocs/modules/util.md#tparsedclosepathcommand"><code>TParsedClosePathCommand</code></a>></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L147">src/util/path/typedefs.ts:147</a></p>
+<hr>
+<h3>TComplexParsedCommand</h3>
+<p>Ƭ <strong>TComplexParsedCommand</strong>: <a href="/apidocs/modules/util.md#tparsedmovetocommand"><code>TParsedMoveToCommand</code></a> | <a href="/apidocs/modules/util.md#tparsedlinecommand"><code>TParsedLineCommand</code></a> | <a href="/apidocs/modules/util.md#tparsedhorizontallinecommand"><code>TParsedHorizontalLineCommand</code></a> | <a href="/apidocs/modules/util.md#tparsedverticallinecommand"><code>TParsedVerticalLineCommand</code></a> | <a href="/apidocs/modules/util.md#tparsedclosepathcommand"><code>TParsedClosePathCommand</code></a> | <a href="/apidocs/modules/util.md#tparsedcubiccurvecommand"><code>TParsedCubicCurveCommand</code></a> | <a href="/apidocs/modules/util.md#tparsedcubiccurveshortcutcommand"><code>TParsedCubicCurveShortcutCommand</code></a> | <a href="/apidocs/modules/util.md#tparsedquadraticcurvecommand"><code>TParsedQuadraticCurveCommand</code></a> | <a href="/apidocs/modules/util.md#tparsedquadraticcurveshortcutcommand"><code>TParsedQuadraticCurveShortcutCommand</code></a> | <a href="/apidocs/modules/util.md#tparsedarccommand"><code>TParsedArcCommand</code></a></p>
+<p>Any old valid SVG path command</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L269">src/util/path/typedefs.ts:269</a></p>
+<hr>
+<h3>TComplexPathData</h3>
+<p>Ƭ <strong>TComplexPathData</strong>: <a href="/apidocs/modules/util.md#tcomplexparsedcommand"><code>TComplexParsedCommand</code></a>[]</p>
+<p>A series of path commands</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L284">src/util/path/typedefs.ts:284</a></p>
+<hr>
+<h3>TComposeMatrixArgs</h3>
+<p>Ƭ <strong>TComposeMatrixArgs</strong>: <a href="/apidocs/modules/util.md#ttranslatematrixargs"><code>TTranslateMatrixArgs</code></a> &#x26; <a href="/apidocs/modules/util.md#trotatematrixargs"><code>TRotateMatrixArgs</code></a> &#x26; <a href="/apidocs/modules/util.md#tscalematrixargs"><code>TScaleMatrixArgs</code></a></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/matrix.ts#L27">src/util/misc/matrix.ts:27</a></p>
+<hr>
+<h3>TCubicCurveCommand</h3>
+<p>Ƭ <strong>TCubicCurveCommand</strong>: <code>TCommand7</code>&#x3C;<a href="/apidocs/modules/util.md#tparsedcubiccurvecommand"><code>TParsedCubicCurveCommand</code></a>></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L171">src/util/path/typedefs.ts:171</a></p>
+<hr>
+<h3>TCubicCurveShortcutCommand</h3>
+<p>Ƭ <strong>TCubicCurveShortcutCommand</strong>: <code>TCommand5</code>&#x3C;<a href="/apidocs/modules/util.md#tparsedcubiccurveshortcutcommand"><code>TParsedCubicCurveShortcutCommand</code></a>></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L191">src/util/path/typedefs.ts:191</a></p>
+<hr>
+<h3>TCurveInfo</h3>
+<p>Ƭ <strong>TCurveInfo</strong>&#x3C;<code>C</code>>: <a href="/apidocs/modules/util.md#tpathsegmentinfocommon"><code>TPathSegmentInfoCommon</code></a>&#x3C;<code>C</code>> &#x26; { <code>angleFinder</code>: (<code>pct</code>: <code>number</code>) => <code>number</code> ; <code>iterator</code>: (<code>pct</code>: <code>number</code>) => <a href="/apidocs/classes/Point.md"><code>Point</code></a> ; <code>length</code>: <code>number</code>  }</p>
+<h4>Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>C</code></td>
+<td align="left">extends <code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L11">src/util/path/typedefs.ts:11</a></p>
+<hr>
+<h3>TEasingFunction</h3>
+<p>Ƭ <strong>TEasingFunction</strong>&#x3C;<code>T</code>>: <code>T</code> extends <code>number</code>[] ? (<code>timeElapsed</code>: <code>number</code>, <code>startValue</code>: <code>number</code>, <code>byValue</code>: <code>number</code>, <code>duration</code>: <code>number</code>, <code>index</code>: <code>number</code>) => <code>number</code> : (<code>timeElapsed</code>: <code>number</code>, <code>startValue</code>: <code>number</code>, <code>byValue</code>: <code>number</code>, <code>duration</code>: <code>number</code>) => <code>number</code></p>
+<p>An easing function used to calculate the current value</p>
+<p><strong><code>See</code></strong></p>
+<p>AnimationBase#calculate</p>
+<p><strong><code>Param</code></strong></p>
+<p>ms elapsed since start</p>
+<p><strong><code>Param</code></strong></p>
+<p><strong><code>Param</code></strong></p>
+<p><strong><code>Param</code></strong></p>
+<p>in ms</p>
+<h4>Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left"><code>unknown</code></td>
+</tr>
+</tbody>
+</table>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/animation/types.ts#L35">src/util/animation/types.ts:35</a></p>
+<hr>
+<h3>TEndPathInfo</h3>
+<p>Ƭ <strong>TEndPathInfo</strong>: <a href="/apidocs/modules/util.md#tpathsegmentinfocommon"><code>TPathSegmentInfoCommon</code></a>&#x3C;<code>"Z"</code>> &#x26; { <code>destX</code>: <code>number</code> ; <code>destY</code>: <code>number</code>  }</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L28">src/util/path/typedefs.ts:28</a></p>
+<hr>
+<h3>THorizontalLineCommand</h3>
+<p>Ƭ <strong>THorizontalLineCommand</strong>: <code>TCommand2</code>&#x3C;<a href="/apidocs/modules/util.md#tparsedhorizontallinecommand"><code>TParsedHorizontalLineCommand</code></a>></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L131">src/util/path/typedefs.ts:131</a></p>
+<hr>
+<h3>TLineCommand</h3>
+<p>Ƭ <strong>TLineCommand</strong>: <code>TCommand3</code>&#x3C;<a href="/apidocs/modules/util.md#tparsedlinecommand"><code>TParsedLineCommand</code></a>></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L123">src/util/path/typedefs.ts:123</a></p>
+<hr>
+<h3>TMoveToCommand</h3>
+<p>Ƭ <strong>TMoveToCommand</strong>: <code>TCommand3</code>&#x3C;<a href="/apidocs/modules/util.md#tparsedmovetocommand"><code>TParsedMoveToCommand</code></a>></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L115">src/util/path/typedefs.ts:115</a></p>
+<hr>
+<h3>TOnAnimationChangeCallback</h3>
+<p>Ƭ <strong>TOnAnimationChangeCallback</strong>&#x3C;<code>T</code>, <code>R</code>>: (<code>value</code>: <code>T</code>, <code>valueProgress</code>: <code>number</code>, <code>durationProgress</code>: <code>number</code>) => <code>R</code></p>
+<h4>Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left"><code>T</code></td>
+</tr>
+<tr>
+<td align="left"><code>R</code></td>
+<td align="left"><code>void</code></td>
+</tr>
+</tbody>
+</table>
+<h4>Type declaration</h4>
+<p>▸ (<code>value</code>, <code>valueProgress</code>, <code>durationProgress</code>): <code>R</code></p>
+<p>Callback called every frame</p>
+<h5>Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>value</code></td>
+<td align="left"><code>T</code></td>
+<td align="left">current value of the animation.</td>
+</tr>
+<tr>
+<td align="left"><code>valueProgress</code></td>
+<td align="left"><code>number</code></td>
+<td align="left">∈ [0, 1], the current animation progress reflected on value, normalized. 0 is the starting value and 1 is the ending value.</td>
+</tr>
+<tr>
+<td align="left"><code>durationProgress</code></td>
+<td align="left"><code>number</code></td>
+<td align="left">∈ [0, 1], the current animation duration normalized to 1.</td>
+</tr>
+</tbody>
+</table>
+<h5>Returns</h5>
+<p><code>R</code></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/animation/types.ts#L13">src/util/animation/types.ts:13</a></p>
+<hr>
+<h3>TParsedAbsoluteArcCommand</h3>
+<p>Ƭ <strong>TParsedAbsoluteArcCommand</strong>: [command: "A", radiusX: number, radiusY: number, rotation: TRadian, largeArc: 0 | 1, sweep: 0 | 1, endX: number, endY: number]</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L231">src/util/path/typedefs.ts:231</a></p>
+<hr>
+<h3>TParsedAbsoluteClosePathCommand</h3>
+<p>Ƭ <strong>TParsedAbsoluteClosePathCommand</strong>: [command: "Z"]</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L141">src/util/path/typedefs.ts:141</a></p>
+<hr>
+<h3>TParsedAbsoluteCubicCurveCommand</h3>
+<p>Ƭ <strong>TParsedAbsoluteCubicCurveCommand</strong>: [command: "C", controlPoint1X: number, controlPoint1Y: number, controlPoint2X: number, controlPoint2Y: number, endX: number, endY: number]</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L149">src/util/path/typedefs.ts:149</a></p>
+<hr>
+<h3>TParsedAbsoluteCubicCurveShortcutCommand</h3>
+<p>Ƭ <strong>TParsedAbsoluteCubicCurveShortcutCommand</strong>: [command: "S", controlPoint2X: number, controlPoint2Y: number, endX: number, endY: number]</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L173">src/util/path/typedefs.ts:173</a></p>
+<hr>
+<h3>TParsedAbsoluteHorizontalLineCommand</h3>
+<p>Ƭ <strong>TParsedAbsoluteHorizontalLineCommand</strong>: [command: "H", x: number]</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L125">src/util/path/typedefs.ts:125</a></p>
+<hr>
+<h3>TParsedAbsoluteLineCommand</h3>
+<p>Ƭ <strong>TParsedAbsoluteLineCommand</strong>: [command: "L", x: number, y: number]</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L117">src/util/path/typedefs.ts:117</a></p>
+<hr>
+<h3>TParsedAbsoluteMoveToCommand</h3>
+<p>Ƭ <strong>TParsedAbsoluteMoveToCommand</strong>: [command: "M", x: number, y: number]</p>
+<p>Begin parsed SVG path commands
+Read about commands at <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths%7CMDN">https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths|MDN</a></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L105">src/util/path/typedefs.ts:105</a></p>
+<hr>
+<h3>TParsedAbsoluteQuadraticCurveCommand</h3>
+<p>Ƭ <strong>TParsedAbsoluteQuadraticCurveCommand</strong>: [command: "Q", controlPointX: number, controlPointY: number, endX: number, endY: number]</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L194">src/util/path/typedefs.ts:194</a></p>
+<hr>
+<h3>TParsedAbsoluteQuadraticCurveShortcutCommand</h3>
+<p>Ƭ <strong>TParsedAbsoluteQuadraticCurveShortcutCommand</strong>: [command: "T", endX: number, endY: number]</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L214">src/util/path/typedefs.ts:214</a></p>
+<hr>
+<h3>TParsedAbsoluteVerticalLineCommand</h3>
+<p>Ƭ <strong>TParsedAbsoluteVerticalLineCommand</strong>: [command: "V", y: number]</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L133">src/util/path/typedefs.ts:133</a></p>
+<hr>
+<h3>TParsedArcCommand</h3>
+<p>Ƭ <strong>TParsedArcCommand</strong>: <a href="/apidocs/modules/util.md#tparsedabsolutearccommand"><code>TParsedAbsoluteArcCommand</code></a> | <a href="/apidocs/modules/util.md#tparsedrelativearccommand"><code>TParsedRelativeArcCommand</code></a></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L252">src/util/path/typedefs.ts:252</a></p>
+<hr>
+<h3>TParsedClosePathCommand</h3>
+<p>Ƭ <strong>TParsedClosePathCommand</strong>: <a href="/apidocs/modules/util.md#tparsedabsoluteclosepathcommand"><code>TParsedAbsoluteClosePathCommand</code></a> | <a href="/apidocs/modules/util.md#tparsedrelativeclosepathcommand"><code>TParsedRelativeClosePathCommand</code></a></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L143">src/util/path/typedefs.ts:143</a></p>
+<hr>
+<h3>TParsedCommand</h3>
+<p>Ƭ <strong>TParsedCommand</strong>: [command: string] | [command: string, arg1: number] | [command: string, arg1: number, arg2: number] | [command: string, arg1: number, arg2: number, arg3: number] | [command: string, arg1: number, arg2: number, arg3: number, arg4: number] | [command: string, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number] | [command: string, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number] | [command: string, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number]</p>
+<p>A parsed command of any length (even impossible ones)</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L51">src/util/path/typedefs.ts:51</a></p>
+<hr>
+<h3>TParsedCubicCurveCommand</h3>
+<p>Ƭ <strong>TParsedCubicCurveCommand</strong>: <a href="/apidocs/modules/util.md#tparsedabsolutecubiccurvecommand"><code>TParsedAbsoluteCubicCurveCommand</code></a> | <a href="/apidocs/modules/util.md#tparsedrelativecubiccurvecommand"><code>TParsedRelativeCubicCurveCommand</code></a></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L167">src/util/path/typedefs.ts:167</a></p>
+<hr>
+<h3>TParsedCubicCurveShortcutCommand</h3>
+<p>Ƭ <strong>TParsedCubicCurveShortcutCommand</strong>: <a href="/apidocs/modules/util.md#tparsedabsolutecubiccurveshortcutcommand"><code>TParsedAbsoluteCubicCurveShortcutCommand</code></a> | <a href="/apidocs/modules/util.md#tparsedrelativecubiccurveshortcutcommand"><code>TParsedRelativeCubicCurveShortcutCommand</code></a></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L187">src/util/path/typedefs.ts:187</a></p>
+<hr>
+<h3>TParsedHorizontalLineCommand</h3>
+<p>Ƭ <strong>TParsedHorizontalLineCommand</strong>: <a href="/apidocs/modules/util.md#tparsedabsolutehorizontallinecommand"><code>TParsedAbsoluteHorizontalLineCommand</code></a> | <a href="/apidocs/modules/util.md#tparsedrelativehorizontallinecommand"><code>TParsedRelativeHorizontalLineCommand</code></a></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L127">src/util/path/typedefs.ts:127</a></p>
+<hr>
+<h3>TParsedLineCommand</h3>
+<p>Ƭ <strong>TParsedLineCommand</strong>: <a href="/apidocs/modules/util.md#tparsedabsolutelinecommand"><code>TParsedAbsoluteLineCommand</code></a> | <a href="/apidocs/modules/util.md#tparsedrelativelinecommand"><code>TParsedRelativeLineCommand</code></a></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L119">src/util/path/typedefs.ts:119</a></p>
+<hr>
+<h3>TParsedMoveToCommand</h3>
+<p>Ƭ <strong>TParsedMoveToCommand</strong>: <a href="/apidocs/modules/util.md#tparsedabsolutemovetocommand"><code>TParsedAbsoluteMoveToCommand</code></a> | <a href="/apidocs/modules/util.md#tparsedrelativemovetocommand"><code>TParsedRelativeMoveToCommand</code></a></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L111">src/util/path/typedefs.ts:111</a></p>
+<hr>
+<h3>TParsedQuadraticCurveCommand</h3>
+<p>Ƭ <strong>TParsedQuadraticCurveCommand</strong>: <a href="/apidocs/modules/util.md#tparsedabsolutequadraticcurvecommand"><code>TParsedAbsoluteQuadraticCurveCommand</code></a> | <a href="/apidocs/modules/util.md#tparsedrelativequadraticcurvecommand"><code>TParsedRelativeQuadraticCurveCommand</code></a></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L208">src/util/path/typedefs.ts:208</a></p>
+<hr>
+<h3>TParsedQuadraticCurveShortcutCommand</h3>
+<p>Ƭ <strong>TParsedQuadraticCurveShortcutCommand</strong>: <a href="/apidocs/modules/util.md#tparsedabsolutequadraticcurveshortcutcommand"><code>TParsedAbsoluteQuadraticCurveShortcutCommand</code></a> | <a href="/apidocs/modules/util.md#tparsedrelativequadraticcurveshortcutcommand"><code>TParsedRelativeQuadraticCurveShortcutCommand</code></a></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L224">src/util/path/typedefs.ts:224</a></p>
+<hr>
+<h3>TParsedRelativeArcCommand</h3>
+<p>Ƭ <strong>TParsedRelativeArcCommand</strong>: [command: "a", radiusX: number, radiusY: number, rotation: TRadian, largeArc: 0 | 1, sweep: 0 | 1, endDX: number, endDY: number]</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L241">src/util/path/typedefs.ts:241</a></p>
+<hr>
+<h3>TParsedRelativeClosePathCommand</h3>
+<p>Ƭ <strong>TParsedRelativeClosePathCommand</strong>: [command: "z"]</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L142">src/util/path/typedefs.ts:142</a></p>
+<hr>
+<h3>TParsedRelativeCubicCurveCommand</h3>
+<p>Ƭ <strong>TParsedRelativeCubicCurveCommand</strong>: [command: "c", controlPoint1DX: number, controlPoint1DY: number, controlPoint2DX: number, controlPoint2DY: number, endDX: number, endDY: number]</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L158">src/util/path/typedefs.ts:158</a></p>
+<hr>
+<h3>TParsedRelativeCubicCurveShortcutCommand</h3>
+<p>Ƭ <strong>TParsedRelativeCubicCurveShortcutCommand</strong>: [command: "s", controlPoint2DX: number, controlPoint2DY: number, endDX: number, endDY: number]</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L180">src/util/path/typedefs.ts:180</a></p>
+<hr>
+<h3>TParsedRelativeHorizontalLineCommand</h3>
+<p>Ƭ <strong>TParsedRelativeHorizontalLineCommand</strong>: [command: "h", dx: number]</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L126">src/util/path/typedefs.ts:126</a></p>
+<hr>
+<h3>TParsedRelativeLineCommand</h3>
+<p>Ƭ <strong>TParsedRelativeLineCommand</strong>: [command: "l", dx: number, dy: number]</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L118">src/util/path/typedefs.ts:118</a></p>
+<hr>
+<h3>TParsedRelativeMoveToCommand</h3>
+<p>Ƭ <strong>TParsedRelativeMoveToCommand</strong>: [command: "m", dx: number, dy: number]</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L106">src/util/path/typedefs.ts:106</a></p>
+<hr>
+<h3>TParsedRelativeQuadraticCurveCommand</h3>
+<p>Ƭ <strong>TParsedRelativeQuadraticCurveCommand</strong>: [command: "q", controlPointDX: number, controlPointDY: number, endDX: number, endDY: number]</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L201">src/util/path/typedefs.ts:201</a></p>
+<hr>
+<h3>TParsedRelativeQuadraticCurveShortcutCommand</h3>
+<p>Ƭ <strong>TParsedRelativeQuadraticCurveShortcutCommand</strong>: [command: "t", endDX: number, endDY: number]</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L219">src/util/path/typedefs.ts:219</a></p>
+<hr>
+<h3>TParsedRelativeVerticalLineCommand</h3>
+<p>Ƭ <strong>TParsedRelativeVerticalLineCommand</strong>: [command: "v", dy: number]</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L134">src/util/path/typedefs.ts:134</a></p>
+<hr>
+<h3>TParsedVerticalLineCommand</h3>
+<p>Ƭ <strong>TParsedVerticalLineCommand</strong>: <a href="/apidocs/modules/util.md#tparsedabsoluteverticallinecommand"><code>TParsedAbsoluteVerticalLineCommand</code></a> | <a href="/apidocs/modules/util.md#tparsedrelativeverticallinecommand"><code>TParsedRelativeVerticalLineCommand</code></a></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L135">src/util/path/typedefs.ts:135</a></p>
+<hr>
+<h3>TPathSegmentCommandInfo</h3>
+<p>Ƭ <strong>TPathSegmentCommandInfo</strong>: <code>Object</code></p>
+<p>Relevant info to calculate path length/points on path
+for each command type in a simplified parsed path</p>
+<h4>Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>C</code></td>
+<td align="left"><a href="/apidocs/modules/util.md#tcurveinfo"><code>TCurveInfo</code></a>&#x3C;<code>"C"</code>></td>
+</tr>
+<tr>
+<td align="left"><code>L</code></td>
+<td align="left"><a href="/apidocs/modules/util.md#tpathsegmentinfocommon"><code>TPathSegmentInfoCommon</code></a>&#x3C;<code>"L"</code>></td>
+</tr>
+<tr>
+<td align="left"><code>M</code></td>
+<td align="left"><a href="/apidocs/modules/util.md#tpathsegmentinfocommon"><code>TPathSegmentInfoCommon</code></a>&#x3C;<code>"M"</code>></td>
+</tr>
+<tr>
+<td align="left"><code>Q</code></td>
+<td align="left"><a href="/apidocs/modules/util.md#tcurveinfo"><code>TCurveInfo</code></a>&#x3C;<code>"Q"</code>></td>
+</tr>
+<tr>
+<td align="left"><code>Z</code></td>
+<td align="left"><a href="/apidocs/modules/util.md#tendpathinfo"><code>TEndPathInfo</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L37">src/util/path/typedefs.ts:37</a></p>
+<hr>
+<h3>TPathSegmentInfo</h3>
+<p>Ƭ <strong>TPathSegmentInfo</strong>: <a href="/apidocs/modules/util.md#tpathsegmentcommandinfo"><code>TPathSegmentCommandInfo</code></a>[keyof <a href="/apidocs/modules/util.md#tpathsegmentcommandinfo"><code>TPathSegmentCommandInfo</code></a>]</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L45">src/util/path/typedefs.ts:45</a></p>
+<hr>
+<h3>TPathSegmentInfoCommon</h3>
+<p>Ƭ <strong>TPathSegmentInfoCommon</strong>&#x3C;<code>C</code>>: <code>Object</code></p>
+<h4>Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>C</code></td>
+<td align="left">extends <code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4>Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>command?</code></td>
+<td align="left"><code>C</code></td>
+</tr>
+<tr>
+<td align="left"><code>length</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>x</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>y</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+</tbody>
+</table>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L4">src/util/path/typedefs.ts:4</a></p>
+<hr>
+<h3>TPointAngle</h3>
+<p>Ƭ <strong>TPointAngle</strong>: <a href="/apidocs/interfaces/XY.md"><code>XY</code></a> &#x26; { <code>angle</code>: <a href="/apidocs/modules.md#tradian"><code>TRadian</code></a>  }</p>
+<p>A point (vector) and angle between the vector and x-axis</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L305">src/util/path/typedefs.ts:305</a></p>
+<hr>
+<h3>TProjectStrokeOnPointsOptions</h3>
+<p>Ƭ <strong>TProjectStrokeOnPointsOptions</strong>: <code>Object</code></p>
+<h4>Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>scaleX</code></td>
+<td align="left"><code>number</code></td>
+<td align="left">-</td>
+</tr>
+<tr>
+<td align="left"><code>scaleY</code></td>
+<td align="left"><code>number</code></td>
+<td align="left">-</td>
+</tr>
+<tr>
+<td align="left"><code>skewX</code></td>
+<td align="left"><a href="/apidocs/modules.md#tdegree"><code>TDegree</code></a></td>
+<td align="left">-</td>
+</tr>
+<tr>
+<td align="left"><code>skewY</code></td>
+<td align="left"><a href="/apidocs/modules.md#tdegree"><code>TDegree</code></a></td>
+<td align="left">-</td>
+</tr>
+<tr>
+<td align="left"><code>strokeLineCap</code></td>
+<td align="left"><code>CanvasLineCap</code></td>
+<td align="left">-</td>
+</tr>
+<tr>
+<td align="left"><code>strokeLineJoin</code></td>
+<td align="left"><code>CanvasLineJoin</code></td>
+<td align="left">-</td>
+</tr>
+<tr>
+<td align="left"><code>strokeMiterLimit</code></td>
+<td align="left"><code>number</code></td>
+<td align="left"><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/stroke-miterlimit">https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/stroke-miterlimit</a></td>
+</tr>
+<tr>
+<td align="left"><code>strokeUniform</code></td>
+<td align="left"><code>boolean</code></td>
+<td align="left">-</td>
+</tr>
+<tr>
+<td align="left"><code>strokeWidth</code></td>
+<td align="left"><code>number</code></td>
+<td align="left">-</td>
+</tr>
+</tbody>
+</table>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/projectStroke/types.ts#L4">src/util/misc/projectStroke/types.ts:4</a></p>
+<hr>
+<h3>TProjection</h3>
+<p>Ƭ <strong>TProjection</strong>: <code>Object</code></p>
+<h4>Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>angle?</code></td>
+<td align="left"><a href="/apidocs/modules.md#tradian"><code>TRadian</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>bisector?</code></td>
+<td align="left"><a href="/apidocs/classes/Point.md"><code>Point</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>originPoint</code></td>
+<td align="left"><a href="/apidocs/classes/Point.md"><code>Point</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>projectedPoint</code></td>
+<td align="left"><a href="/apidocs/classes/Point.md"><code>Point</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/projectStroke/types.ts#L19">src/util/misc/projectStroke/types.ts:19</a></p>
+<hr>
+<h3>TQrDecomposeOut</h3>
+<p>Ƭ <strong>TQrDecomposeOut</strong>: <code>Required</code>&#x3C;<code>Omit</code>&#x3C;<a href="/apidocs/modules/util.md#tcomposematrixargs"><code>TComposeMatrixArgs</code></a>, <code>"flipX"</code> | <code>"flipY"</code>>></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/matrix.ts#L31">src/util/misc/matrix.ts:31</a></p>
+<hr>
+<h3>TQuadraticCurveCommand</h3>
+<p>Ƭ <strong>TQuadraticCurveCommand</strong>: <code>TCommand5</code>&#x3C;<a href="/apidocs/modules/util.md#tparsedquadraticcurvecommand"><code>TParsedQuadraticCurveCommand</code></a>></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L212">src/util/path/typedefs.ts:212</a></p>
+<hr>
+<h3>TQuadraticCurveShortcutCommand</h3>
+<p>Ƭ <strong>TQuadraticCurveShortcutCommand</strong>: <code>TCommand3</code>&#x3C;<a href="/apidocs/modules/util.md#tparsedquadraticcurveshortcutcommand"><code>TParsedQuadraticCurveShortcutCommand</code></a>></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L228">src/util/path/typedefs.ts:228</a></p>
+<hr>
+<h3>TRotateMatrixArgs</h3>
+<p>Ƭ <strong>TRotateMatrixArgs</strong>: <code>Object</code></p>
+<h4>Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>angle?</code></td>
+<td align="left"><a href="/apidocs/modules.md#tdegree"><code>TDegree</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/matrix.ts#L9">src/util/misc/matrix.ts:9</a></p>
+<hr>
+<h3>TScaleMatrixArgs</h3>
+<p>Ƭ <strong>TScaleMatrixArgs</strong>: <code>Object</code></p>
+<h4>Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>flipX?</code></td>
+<td align="left"><code>boolean</code></td>
+</tr>
+<tr>
+<td align="left"><code>flipY?</code></td>
+<td align="left"><code>boolean</code></td>
+</tr>
+<tr>
+<td align="left"><code>scaleX?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>scaleY?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>skewX?</code></td>
+<td align="left"><a href="/apidocs/modules.md#tdegree"><code>TDegree</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>skewY?</code></td>
+<td align="left"><a href="/apidocs/modules.md#tdegree"><code>TDegree</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/matrix.ts#L18">src/util/misc/matrix.ts:18</a></p>
+<hr>
+<h3>TSimpleParsedCommand</h3>
+<p>Ƭ <strong>TSimpleParsedCommand</strong>: <a href="/apidocs/modules/util.md#tparsedabsolutemovetocommand"><code>TParsedAbsoluteMoveToCommand</code></a> | <a href="/apidocs/modules/util.md#tparsedabsolutelinecommand"><code>TParsedAbsoluteLineCommand</code></a> | <a href="/apidocs/modules/util.md#tparsedabsoluteclosepathcommand"><code>TParsedAbsoluteClosePathCommand</code></a> | <a href="/apidocs/modules/util.md#tparsedabsolutecubiccurvecommand"><code>TParsedAbsoluteCubicCurveCommand</code></a> | <a href="/apidocs/modules/util.md#tparsedabsolutequadraticcurvecommand"><code>TParsedAbsoluteQuadraticCurveCommand</code></a></p>
+<p>Any SVG command that all Fabric functions can understand</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L290">src/util/path/typedefs.ts:290</a></p>
+<hr>
+<h3>TSimplePathData</h3>
+<p>Ƭ <strong>TSimplePathData</strong>: <a href="/apidocs/modules/util.md#tsimpleparsedcommand"><code>TSimpleParsedCommand</code></a>[]</p>
+<p>A series of simple paths</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L300">src/util/path/typedefs.ts:300</a></p>
+<hr>
+<h3>TTranslateMatrixArgs</h3>
+<p>Ƭ <strong>TTranslateMatrixArgs</strong>: <code>Object</code></p>
+<h4>Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>translateX?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>translateY?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+</tbody>
+</table>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/matrix.ts#L13">src/util/misc/matrix.ts:13</a></p>
+<hr>
+<h3>TVerticalLineCommand</h3>
+<p>Ƭ <strong>TVerticalLineCommand</strong>: <code>TCommand2</code>&#x3C;<a href="/apidocs/modules/util.md#tparsedverticallinecommand"><code>TParsedVerticalLineCommand</code></a>></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/typedefs.ts#L139">src/util/path/typedefs.ts:139</a></p>
+<hr>
+<h3>TextStyleArray</h3>
+<p>Ƭ <strong>TextStyleArray</strong>: { <code>end</code>: <code>number</code> ; <code>start</code>: <code>number</code> ; <code>style</code>: <a href="/apidocs/modules.md#textstyledeclaration"><code>TextStyleDeclaration</code></a>  }[]</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/textStyles.ts#L8">src/util/misc/textStyles.ts:8</a></p>
+<hr>
+<h3>ValueAnimationOptions</h3>
+<p>Ƭ <strong>ValueAnimationOptions</strong>: <a href="/apidocs/modules/util.md#tanimationoptions"><code>TAnimationOptions</code></a>&#x3C;<code>number</code>></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/animation/types.ts#L122">src/util/animation/types.ts:122</a></p>
+<h2>Functions</h2>
+<h3>addTransformToObject</h3>
+<p>▸ <strong>addTransformToObject</strong>(<code>object</code>, <code>transform</code>): <code>void</code></p>
+<p>given an object and a transform, apply the transform to the object.
+this is equivalent to change the space where the object is drawn.
+Adding to an object a transform that scale by 2 is like scaling it by 2.
+This is used when removing an object from an active selection for example.</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>object</code></td>
+<td align="left"><code>FabricObject</code>&#x3C;<code>Partial</code>&#x3C;<code>ObjectProps</code>>, <a href="/apidocs/interfaces/SerializedObjectProps.md"><code>SerializedObjectProps</code></a>, <a href="/apidocs/interfaces/ObjectEvents.md"><code>ObjectEvents</code></a>></td>
+<td align="left">the object you want to transform</td>
+</tr>
+<tr>
+<td align="left"><code>transform</code></td>
+<td align="left"><a href="/apidocs/modules.md#tmat2d"><code>TMat2D</code></a></td>
+<td align="left">the destination transform</td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><code>void</code></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/objectTransforms.ts#L45">src/util/misc/objectTransforms.ts:45</a></p>
+<hr>
+<h3>animate</h3>
+<p>▸ <strong>animate</strong>(<code>options</code>): <code>ArrayAnimation</code></p>
+<p>Changes value(s) from startValue to endValue within a certain period of time,
+invoking callbacks as the value(s) change.</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>options</code></td>
+<td align="left"><code>Partial</code>&#x3C;<a href="/apidocs/modules/util.md#tanimationbaseoptions"><code>TAnimationBaseOptions</code></a>&#x3C;<code>number</code>[]> &#x26; <a href="/apidocs/modules/util.md#tanimationcallbacks"><code>TAnimationCallbacks</code></a>&#x3C;<code>number</code>[]> &#x26; { <code>endValue</code>: <code>number</code>[] ; <code>startValue</code>: <code>number</code>[]  }></td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><code>ArrayAnimation</code></p>
+<p><strong><code>Example</code></strong></p>
+<pre><code class="language-ts">animate({
+  startValue: 1,
+  endValue: 0,
+  onChange: (v) => {
+    obj.set('opacity', v);
+    // since we are running in a requested frame we should call `renderAll` and not `requestRenderAll`
+    canvas.renderAll();
+  }
+});
+</code></pre>
+<p><strong><code>Example</code></strong></p>
+<pre><code class="language-ts">Using lists:
+animate({
+  startValue: [1, 2, 3],
+  endValue: [2, 4, 6],
+  onChange: ([x, y, zoom]) => {
+    canvas.zoomToPoint(new Point(x, y), zoom);
+    canvas.renderAll();
+  }
+});
+</code></pre>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/animation/animate.ts#L50">src/util/animation/animate.ts:50</a></p>
+<p>▸ <strong>animate</strong>(<code>options</code>): <code>ValueAnimation</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>options</code></td>
+<td align="left"><code>Partial</code>&#x3C;<a href="/apidocs/modules/util.md#tanimationbaseoptions"><code>TAnimationBaseOptions</code></a>&#x3C;<code>number</code>> &#x26; <a href="/apidocs/modules/util.md#tanimationcallbacks"><code>TAnimationCallbacks</code></a>&#x3C;<code>number</code>> &#x26; { <code>endValue</code>: <code>number</code> ; <code>startValue</code>: <code>number</code>  }></td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><code>ValueAnimation</code></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/animation/animate.ts#L51">src/util/animation/animate.ts:51</a></p>
+<p>▸ <strong>animate</strong>&#x3C;<code>T</code>>(<code>options</code>): <code>T</code> extends <a href="/apidocs/modules/util.md#arrayanimationoptions"><code>ArrayAnimationOptions</code></a> ? <code>ArrayAnimation</code> : <code>ValueAnimation</code></p>
+<h4>Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>Partial</code>&#x3C;<a href="/apidocs/modules/util.md#tanimationbaseoptions"><code>TAnimationBaseOptions</code></a>&#x3C;<code>number</code>> &#x26; <a href="/apidocs/modules/util.md#tanimationcallbacks"><code>TAnimationCallbacks</code></a>&#x3C;<code>number</code>> &#x26; { <code>endValue</code>: <code>number</code> ; <code>startValue</code>: <code>number</code>  }> | <code>Partial</code>&#x3C;<a href="/apidocs/modules/util.md#tanimationbaseoptions"><code>TAnimationBaseOptions</code></a>&#x3C;<code>number</code>[]> &#x26; <a href="/apidocs/modules/util.md#tanimationcallbacks"><code>TAnimationCallbacks</code></a>&#x3C;<code>number</code>[]> &#x26; { <code>endValue</code>: <code>number</code>[] ; <code>startValue</code>: <code>number</code>[]  }></td>
+</tr>
+</tbody>
+</table>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>options</code></td>
+<td align="left"><code>T</code></td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><code>T</code> extends <a href="/apidocs/modules/util.md#arrayanimationoptions"><code>ArrayAnimationOptions</code></a> ? <code>ArrayAnimation</code> : <code>ValueAnimation</code></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/animation/animate.ts#L52">src/util/animation/animate.ts:52</a></p>
+<hr>
+<h3>animateColor</h3>
+<p>▸ <strong>animateColor</strong>(<code>options</code>): <code>ColorAnimation</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>options</code></td>
+<td align="left"><code>Partial</code>&#x3C;<a href="/apidocs/modules/util.md#tanimationbaseoptions"><code>TAnimationBaseOptions</code></a>&#x3C;<code>number</code>[]> &#x26; <a href="/apidocs/modules/util.md#tanimationcallbacks"><code>TAnimationCallbacks</code></a>&#x3C;<code>string</code>> &#x26; { <code>endValue</code>: <a href="/apidocs/modules.md#tcolorarg"><code>TColorArg</code></a> ; <code>startValue</code>: <a href="/apidocs/modules.md#tcolorarg"><code>TColorArg</code></a>  }></td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><code>ColorAnimation</code></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/animation/animate.ts#L70">src/util/animation/animate.ts:70</a></p>
+<hr>
+<h3>applyTransformToObject</h3>
+<p>▸ <strong>applyTransformToObject</strong>(<code>object</code>, <code>transform</code>): <code>void</code></p>
+<p>discard an object transform state and apply the one from the matrix.</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>object</code></td>
+<td align="left"><code>FabricObject</code>&#x3C;<code>Partial</code>&#x3C;<code>ObjectProps</code>>, <a href="/apidocs/interfaces/SerializedObjectProps.md"><code>SerializedObjectProps</code></a>, <a href="/apidocs/interfaces/ObjectEvents.md"><code>ObjectEvents</code></a>></td>
+<td align="left">the object you want to transform</td>
+</tr>
+<tr>
+<td align="left"><code>transform</code></td>
+<td align="left"><a href="/apidocs/modules.md#tmat2d"><code>TMat2D</code></a></td>
+<td align="left">the destination transform</td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><code>void</code></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/objectTransforms.ts#L56">src/util/misc/objectTransforms.ts:56</a></p>
+<hr>
+<h3>calcAngleBetweenVectors</h3>
+<p>▸ <strong>calcAngleBetweenVectors</strong>(<code>a</code>, <code>b</code>): <a href="/apidocs/modules.md#tradian"><code>TRadian</code></a></p>
+<p>Calculates the angle between 2 vectors</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>a</code></td>
+<td align="left"><a href="/apidocs/classes/Point.md"><code>Point</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>b</code></td>
+<td align="left"><a href="/apidocs/classes/Point.md"><code>Point</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><a href="/apidocs/modules.md#tradian"><code>TRadian</code></a></p>
+<p>the angle in radians from <code>a</code> to <code>b</code></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/vectors.ts#L39">src/util/misc/vectors.ts:39</a></p>
+<hr>
+<h3>calcDimensionsMatrix</h3>
+<p>▸ <strong>calcDimensionsMatrix</strong>(<code>options</code>): <a href="/apidocs/modules.md#tmat2d"><code>TMat2D</code></a></p>
+<p>Returns a transform matrix starting from an object of the same kind of
+the one returned from qrDecompose, useful also if you want to calculate some
+transformations from an object that is not enlived yet.
+is called DimensionsTransformMatrix because those properties are the one that influence
+the size of the resulting box of the object.</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>options</code></td>
+<td align="left"><a href="/apidocs/modules/util.md#tscalematrixargs"><code>TScaleMatrixArgs</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><a href="/apidocs/modules.md#tmat2d"><code>TMat2D</code></a></p>
+<p>transform matrix</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/matrix.ts#L272">src/util/misc/matrix.ts:272</a></p>
+<hr>
+<h3>calcPlaneChangeMatrix</h3>
+<p>▸ <strong>calcPlaneChangeMatrix</strong>(<code>from?</code>, <code>to?</code>): <a href="/apidocs/modules.md#tmat2d"><code>TMat2D</code></a></p>
+<p>We are actually looking for the transformation from the destination plane to the source plane (change of basis matrix)<br>
+The object will exist on the destination plane and we want it to seem unchanged by it so we invert the destination matrix (<code>to</code>) and then apply the source matrix (<code>from</code>)</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Default value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>from?</code></td>
+<td align="left"><a href="/apidocs/modules.md#tmat2d"><code>TMat2D</code></a></td>
+<td align="left"><code>iMatrix</code></td>
+</tr>
+<tr>
+<td align="left"><code>to?</code></td>
+<td align="left"><a href="/apidocs/modules.md#tmat2d"><code>TMat2D</code></a></td>
+<td align="left"><code>iMatrix</code></td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><a href="/apidocs/modules.md#tmat2d"><code>TMat2D</code></a></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/planeChange.ts#L15">src/util/misc/planeChange.ts:15</a></p>
+<hr>
+<h3>calcVectorRotation</h3>
+<p>▸ <strong>calcVectorRotation</strong>(<code>v</code>): <a href="/apidocs/modules.md#tradian"><code>TRadian</code></a></p>
+<p>Calculates the angle between the x axis and the vector</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>v</code></td>
+<td align="left"><a href="/apidocs/classes/Point.md"><code>Point</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><a href="/apidocs/modules.md#tradian"><code>TRadian</code></a></p>
+<p>the angle in radians of <code>v</code></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/vectors.ts#L47">src/util/misc/vectors.ts:47</a></p>
+<hr>
+<h3>cancelAnimFrame</h3>
+<p>▸ <strong>cancelAnimFrame</strong>(<code>handle</code>): <code>void</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>handle</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><code>void</code></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/animation/AnimationFrameProvider.ts#L7">src/util/animation/AnimationFrameProvider.ts:7</a></p>
+<hr>
+<h3>capValue</h3>
+<p>▸ <strong>capValue</strong>(<code>min</code>, <code>value</code>, <code>max</code>): <code>number</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>min</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>value</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>max</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><code>number</code></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/capValue.ts#L1">src/util/misc/capValue.ts:1</a></p>
+<hr>
+<h3>composeMatrix</h3>
+<p>▸ <strong>composeMatrix</strong>(<code>options</code>): <a href="/apidocs/modules.md#tmat2d"><code>TMat2D</code></a></p>
+<p>Returns a transform matrix starting from an object of the same kind of
+the one returned from qrDecompose, useful also if you want to calculate some
+transformations from an object that is not enlived yet</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>options</code></td>
+<td align="left"><a href="/apidocs/modules/util.md#tcomposematrixargs"><code>TComposeMatrixArgs</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><a href="/apidocs/modules.md#tmat2d"><code>TMat2D</code></a></p>
+<p>transform matrix</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/matrix.ts#L306">src/util/misc/matrix.ts:306</a></p>
+<hr>
+<h3>copyCanvasElement</h3>
+<p>▸ <strong>copyCanvasElement</strong>(<code>canvas</code>): <code>HTMLCanvasElement</code></p>
+<p>Creates a canvas element that is a copy of another and is also painted</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>canvas</code></td>
+<td align="left"><code>HTMLCanvasElement</code></td>
+<td align="left">to copy size and content of</td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><code>HTMLCanvasElement</code></p>
+<p>initialized canvas element</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/dom.ts#L28">src/util/misc/dom.ts:28</a></p>
+<hr>
+<h3>cos</h3>
+<p>▸ <strong>cos</strong>(<code>angle</code>): <code>number</code></p>
+<p>Calculate the cos of an angle, avoiding returning floats for known results
+This function is here just to avoid getting 0.999999999999999 when dealing
+with numbers that are really 1 or 0.</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>angle</code></td>
+<td align="left"><a href="/apidocs/modules.md#tradian"><code>TRadian</code></a></td>
+<td align="left">the angle</td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><code>number</code></p>
+<p>the cosin value for angle.</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/cos.ts#L11">src/util/misc/cos.ts:11</a></p>
+<hr>
+<h3>createCanvasElement</h3>
+<p>▸ <strong>createCanvasElement</strong>(): <code>HTMLCanvasElement</code></p>
+<p>Creates canvas element</p>
+<h4>Returns</h4>
+<p><code>HTMLCanvasElement</code></p>
+<p>initialized canvas element</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/dom.ts#L8">src/util/misc/dom.ts:8</a></p>
+<hr>
+<h3>createImage</h3>
+<p>▸ <strong>createImage</strong>(): <code>HTMLImageElement</code></p>
+<p>Creates image element (works on client and node)</p>
+<h4>Returns</h4>
+<p><code>HTMLImageElement</code></p>
+<p>HTML image element</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/dom.ts#L20">src/util/misc/dom.ts:20</a></p>
+<hr>
+<h3>createRotateMatrix</h3>
+<p>▸ <strong>createRotateMatrix</strong>(<code>angle?</code>, <code>pivotPoint?</code>): <a href="/apidocs/modules.md#tmat2d"><code>TMat2D</code></a></p>
+<p>Generate a rotation matrix around around a point (x,y), defaulting to (0,0)</p>
+<p>A matrix in the form of
+[cos(a) -sin(a) -x<em>cos(a)+y</em>sin(a)+x]
+[sin(a)  cos(a) -x<em>sin(a)-y</em>cos(a)+y]
+[0       0      1                 ]</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>angle</code></td>
+<td align="left"><a href="/apidocs/modules/util.md#trotatematrixargs"><code>TRotateMatrixArgs</code></a></td>
+<td align="left">rotation in degrees</td>
+</tr>
+<tr>
+<td align="left"><code>pivotPoint?</code></td>
+<td align="left"><code>Partial</code>&#x3C;<a href="/apidocs/interfaces/XY.md"><code>XY</code></a>></td>
+<td align="left">pivot point to rotate around</td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><a href="/apidocs/modules.md#tmat2d"><code>TMat2D</code></a></p>
+<p>matrix</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/matrix.ts#L167">src/util/misc/matrix.ts:167</a></p>
+<hr>
+<h3>createScaleMatrix</h3>
+<p>▸ <strong>createScaleMatrix</strong>(<code>x</code>, <code>y?</code>): <a href="/apidocs/modules.md#tmat2d"><code>TMat2D</code></a></p>
+<p>Generate a scale matrix around the point (0,0)</p>
+<p>A matrix in the form of
+[x 0 0]
+[0 y 0]
+[0 0 1]</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Default value</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>x</code></td>
+<td align="left"><code>number</code></td>
+<td align="left"><code>undefined</code></td>
+<td align="left">scale on X axis</td>
+</tr>
+<tr>
+<td align="left"><code>y?</code></td>
+<td align="left"><code>number</code></td>
+<td align="left"><code>x</code></td>
+<td align="left">scale on Y axis</td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><a href="/apidocs/modules.md#tmat2d"><code>TMat2D</code></a></p>
+<p>matrix</p>
+<p><strong><code>Link</code></strong></p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform#scale">https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform#scale</a></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/matrix.ts#L198">src/util/misc/matrix.ts:198</a></p>
+<hr>
+<h3>createSkewXMatrix</h3>
+<p>▸ <strong>createSkewXMatrix</strong>(<code>skewValue</code>): <a href="/apidocs/modules.md#tmat2d"><code>TMat2D</code></a></p>
+<p>Generate a skew matrix for the X axis</p>
+<p>A matrix in the form of
+[1 x 0]
+[0 1 0]
+[0 0 1]</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>skewValue</code></td>
+<td align="left"><a href="/apidocs/modules.md#tdegree"><code>TDegree</code></a></td>
+<td align="left">translation on X axis</td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><a href="/apidocs/modules.md#tmat2d"><code>TMat2D</code></a></p>
+<p>matrix</p>
+<p><strong><code>Link</code></strong></p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform#skewx">https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform#skewx</a></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/matrix.ts#L226">src/util/misc/matrix.ts:226</a></p>
+<hr>
+<h3>createSkewYMatrix</h3>
+<p>▸ <strong>createSkewYMatrix</strong>(<code>skewValue</code>): <a href="/apidocs/modules.md#tmat2d"><code>TMat2D</code></a></p>
+<p>Generate a skew matrix for the Y axis</p>
+<p>A matrix in the form of
+[1 0 0]
+[y 1 0]
+[0 0 1]</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>skewValue</code></td>
+<td align="left"><a href="/apidocs/modules.md#tdegree"><code>TDegree</code></a></td>
+<td align="left">translation on Y axis</td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><a href="/apidocs/modules.md#tmat2d"><code>TMat2D</code></a></p>
+<p>matrix</p>
+<p><strong><code>Link</code></strong></p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform#skewy">https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform#skewy</a></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/matrix.ts#L248">src/util/misc/matrix.ts:248</a></p>
+<hr>
+<h3>createTranslateMatrix</h3>
+<p>▸ <strong>createTranslateMatrix</strong>(<code>x</code>, <code>y?</code>): <a href="/apidocs/modules.md#tmat2d"><code>TMat2D</code></a></p>
+<p>Generate a translation matrix</p>
+<p>A translation matrix in the form of
+[ 1 0 x ]
+[ 0 1 y ]
+[ 0 0 1 ]</p>
+<p>See</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Default value</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>x</code></td>
+<td align="left"><code>number</code></td>
+<td align="left"><code>undefined</code></td>
+<td align="left">translation on X axis</td>
+</tr>
+<tr>
+<td align="left"><code>y?</code></td>
+<td align="left"><code>number</code></td>
+<td align="left"><code>0</code></td>
+<td align="left">translation on Y axis</td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><a href="/apidocs/modules.md#tmat2d"><code>TMat2D</code></a></p>
+<p>matrix</p>
+<p><strong><code>Link</code></strong></p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform#translate">https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform#translate</a> for more details</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/matrix.ts#L145">src/util/misc/matrix.ts:145</a></p>
+<hr>
+<h3>createVector</h3>
+<p>▸ <strong>createVector</strong>(<code>from</code>, <code>to</code>): <a href="/apidocs/classes/Point.md"><code>Point</code></a></p>
+<p>Creates a vector from points represented as a point</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>from</code></td>
+<td align="left"><a href="/apidocs/interfaces/XY.md"><code>XY</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>to</code></td>
+<td align="left"><a href="/apidocs/interfaces/XY.md"><code>XY</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><a href="/apidocs/classes/Point.md"><code>Point</code></a></p>
+<p>vector</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/vectors.ts#L24">src/util/misc/vectors.ts:24</a></p>
+<hr>
+<h3>crossProduct</h3>
+<p>▸ <strong>crossProduct</strong>(<code>a</code>, <code>b</code>): <code>number</code></p>
+<p>Cross product of two vectors in 2D</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>a</code></td>
+<td align="left"><a href="/apidocs/classes/Point.md"><code>Point</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>b</code></td>
+<td align="left"><a href="/apidocs/classes/Point.md"><code>Point</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><code>number</code></p>
+<p>the magnitude of Z vector</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/vectors.ts#L74">src/util/misc/vectors.ts:74</a></p>
+<hr>
+<h3>degreesToRadians</h3>
+<p>▸ <strong>degreesToRadians</strong>(<code>degrees</code>): <a href="/apidocs/modules.md#tradian"><code>TRadian</code></a></p>
+<p>Transforms degrees to radians.</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>degrees</code></td>
+<td align="left"><a href="/apidocs/modules.md#tdegree"><code>TDegree</code></a></td>
+<td align="left">value in degrees</td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><a href="/apidocs/modules.md#tradian"><code>TRadian</code></a></p>
+<p>value in radians</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/radiansDegreesConversion.ts#L9">src/util/misc/radiansDegreesConversion.ts:9</a></p>
+<hr>
+<h3>dotProduct</h3>
+<p>▸ <strong>dotProduct</strong>(<code>a</code>, <code>b</code>): <code>number</code></p>
+<p>Dot product of two vectors in 2D</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>a</code></td>
+<td align="left"><a href="/apidocs/classes/Point.md"><code>Point</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>b</code></td>
+<td align="left"><a href="/apidocs/classes/Point.md"><code>Point</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><code>number</code></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/vectors.ts#L83">src/util/misc/vectors.ts:83</a></p>
+<hr>
+<h3>enlivenObjectEnlivables</h3>
+<p>▸ <strong>enlivenObjectEnlivables</strong>&#x3C;<code>R</code>>(<code>serializedObject</code>, <code>options?</code>): <code>Promise</code>&#x3C;<code>R</code>></p>
+<p>Creates corresponding fabric instances residing in an object, e.g. <code>clipPath</code></p>
+<h4>Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>R</code></td>
+<td align="left"><code>Record</code>&#x3C;<code>string</code>, <code>null</code> | <a href="/apidocs/classes/FabricObject.md"><code>FabricObject</code></a>&#x3C;<code>Partial</code>&#x3C;<a href="/apidocs/interfaces/FabricObjectProps.md"><code>FabricObjectProps</code></a>>, <a href="/apidocs/interfaces/SerializedObjectProps.md"><code>SerializedObjectProps</code></a>, <a href="/apidocs/interfaces/ObjectEvents.md"><code>ObjectEvents</code></a>> | <a href="/apidocs/modules.md#tfiller"><code>TFiller</code></a>></td>
+</tr>
+</tbody>
+</table>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>serializedObject</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+<tr>
+<td align="left"><code>options?</code></td>
+<td align="left"><a href="/apidocs/modules.md#abortable"><code>Abortable</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><code>Promise</code>&#x3C;<code>R</code>></p>
+<p>the input object with enlived values</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/objectEnlive.ts#L124">src/util/misc/objectEnlive.ts:124</a></p>
+<hr>
+<h3>enlivenObjects</h3>
+<p>▸ <strong>enlivenObjects</strong>&#x3C;<code>T</code>>(<code>objects</code>, <code>options?</code>): <code>Promise</code>&#x3C;<code>T</code>[]></p>
+<p>Creates corresponding fabric instances from their object representations</p>
+<h4>Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <a href="/apidocs/classes/FabricObject.md"><code>FabricObject</code></a>&#x3C;<code>Partial</code>&#x3C;<a href="/apidocs/interfaces/FabricObjectProps.md"><code>FabricObjectProps</code></a>>, <a href="/apidocs/interfaces/SerializedObjectProps.md"><code>SerializedObjectProps</code></a>, <a href="/apidocs/interfaces/ObjectEvents.md"><code>ObjectEvents</code></a>> | <code>FabricObject</code>&#x3C;<code>Partial</code>&#x3C;<code>ObjectProps</code>>, <a href="/apidocs/interfaces/SerializedObjectProps.md"><code>SerializedObjectProps</code></a>, <a href="/apidocs/interfaces/ObjectEvents.md"><code>ObjectEvents</code></a>> | <a href="/apidocs/classes/filters.BaseFilter.md"><code>BaseFilter</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>objects</code></td>
+<td align="left"><code>any</code>[]</td>
+<td align="left">Objects to enliven</td>
+</tr>
+<tr>
+<td align="left"><code>options?</code></td>
+<td align="left"><a href="/apidocs/modules/util.md#enlivenobjectoptions"><code>EnlivenObjectOptions</code></a></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><code>Promise</code>&#x3C;<code>T</code>[]></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/objectEnlive.ts#L79">src/util/misc/objectEnlive.ts:79</a></p>
+<hr>
+<h3>findScaleToCover</h3>
+<p>▸ <strong>findScaleToCover</strong>(<code>source</code>, <code>destination</code>): <code>number</code></p>
+<p>Finds the scale for the object source to cover entirely the object destination,
+keeping aspect ratio intact.
+respect the total allowed area for the cache.</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>source</code></td>
+<td align="left"><a href="/apidocs/modules.md#tsize"><code>TSize</code></a></td>
+<td align="left">natural unscaled size of the object</td>
+</tr>
+<tr>
+<td align="left"><code>destination</code></td>
+<td align="left"><a href="/apidocs/modules.md#tsize"><code>TSize</code></a></td>
+<td align="left">natural unscaled size of the object</td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><code>number</code></p>
+<p>scale factor to apply to source to cover destination</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/findScaleTo.ts#L25">src/util/misc/findScaleTo.ts:25</a></p>
+<hr>
+<h3>findScaleToFit</h3>
+<p>▸ <strong>findScaleToFit</strong>(<code>source</code>, <code>destination</code>): <code>number</code></p>
+<p>Finds the scale for the object source to fit inside the object destination,
+keeping aspect ratio intact.
+respect the total allowed area for the cache.</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>source</code></td>
+<td align="left"><a href="/apidocs/modules.md#tsize"><code>TSize</code></a></td>
+<td align="left">natural unscaled size of the object</td>
+</tr>
+<tr>
+<td align="left"><code>destination</code></td>
+<td align="left"><a href="/apidocs/modules.md#tsize"><code>TSize</code></a></td>
+<td align="left">natural unscaled size of the object</td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><code>number</code></p>
+<p>scale factor to apply to source to fit into destination</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/findScaleTo.ts#L11">src/util/misc/findScaleTo.ts:11</a></p>
+<hr>
+<h3>getBoundsOfCurve</h3>
+<p>▸ <strong>getBoundsOfCurve</strong>(<code>begx</code>, <code>begy</code>, <code>cp1x</code>, <code>cp1y</code>, <code>cp2x</code>, <code>cp2y</code>, <code>endx</code>, <code>endy</code>): <a href="/apidocs/modules.md#trectbounds"><code>TRectBounds</code></a></p>
+<p>Calculate bounding box of a cubic Bezier curve
+Taken from <a href="http://jsbin.com/ivomiq/56/edit">http://jsbin.com/ivomiq/56/edit</a> (no credits available)
+TODO: can we normalize this with the starting points set at 0 and then translated the bbox?</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>begx</code></td>
+<td align="left"><code>number</code></td>
+<td align="left">starting point</td>
+</tr>
+<tr>
+<td align="left"><code>begy</code></td>
+<td align="left"><code>number</code></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>cp1x</code></td>
+<td align="left"><code>number</code></td>
+<td align="left">first control point</td>
+</tr>
+<tr>
+<td align="left"><code>cp1y</code></td>
+<td align="left"><code>number</code></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>cp2x</code></td>
+<td align="left"><code>number</code></td>
+<td align="left">second control point</td>
+</tr>
+<tr>
+<td align="left"><code>cp2y</code></td>
+<td align="left"><code>number</code></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>endx</code></td>
+<td align="left"><code>number</code></td>
+<td align="left">end of bezier</td>
+</tr>
+<tr>
+<td align="left"><code>endy</code></td>
+<td align="left"><code>number</code></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><a href="/apidocs/modules.md#trectbounds"><code>TRectBounds</code></a></p>
+<p>the rectangular bounds</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/index.ts#L221">src/util/path/index.ts:221</a></p>
+<hr>
+<h3>getOrthonormalVector</h3>
+<p>▸ <strong>getOrthonormalVector</strong>(<code>v</code>, <code>counterClockwise?</code>): <a href="/apidocs/classes/Point.md"><code>Point</code></a></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Default value</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>v</code></td>
+<td align="left"><a href="/apidocs/classes/Point.md"><code>Point</code></a></td>
+<td align="left"><code>undefined</code></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>counterClockwise?</code></td>
+<td align="left"><code>boolean</code></td>
+<td align="left"><code>true</code></td>
+<td align="left">the direction of the orthogonal vector, defaults to <code>true</code></td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><a href="/apidocs/classes/Point.md"><code>Point</code></a></p>
+<p>the unit orthogonal vector</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/vectors.ts#L62">src/util/misc/vectors.ts:62</a></p>
+<hr>
+<h3>getPathSegmentsInfo</h3>
+<p>▸ <strong>getPathSegmentsInfo</strong>(<code>path</code>): <a href="/apidocs/modules/util.md#tpathsegmentinfo"><code>TPathSegmentInfo</code></a>[]</p>
+<p>Run over a parsed and simplified path and extract some information (length of each command and starting point)</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>path</code></td>
+<td align="left"><a href="/apidocs/modules/util.md#tsimplepathdata"><code>TSimplePathData</code></a></td>
+<td align="left">parsed path commands</td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><a href="/apidocs/modules/util.md#tpathsegmentinfo"><code>TPathSegmentInfo</code></a>[]</p>
+<p>path commands information</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/index.ts#L682">src/util/path/index.ts:682</a></p>
+<hr>
+<h3>getPointOnPath</h3>
+<p>▸ <strong>getPointOnPath</strong>(<code>path</code>, <code>distance</code>, <code>infos?</code>): <code>undefined</code> | <a href="/apidocs/modules/util.md#tpointangle"><code>TPointAngle</code></a></p>
+<p>Get the point on the path that is distance along the path</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>path</code></td>
+<td align="left"><a href="/apidocs/modules/util.md#tsimplepathdata"><code>TSimplePathData</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>distance</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>infos</code></td>
+<td align="left"><a href="/apidocs/modules/util.md#tpathsegmentinfo"><code>TPathSegmentInfo</code></a>[]</td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><code>undefined</code> | <a href="/apidocs/modules/util.md#tpointangle"><code>TPointAngle</code></a></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/index.ts#L790">src/util/path/index.ts:790</a></p>
+<hr>
+<h3>getPointer</h3>
+<p>▸ <strong>getPointer</strong>(<code>event</code>): <a href="/apidocs/classes/Point.md"><code>Point</code></a></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>event</code></td>
+<td align="left"><a href="/apidocs/modules.md#tpointerevent"><code>TPointerEvent</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><a href="/apidocs/classes/Point.md"><code>Point</code></a></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/dom_event.ts#L15">src/util/dom_event.ts:15</a></p>
+<hr>
+<h3>getRandomInt</h3>
+<p>▸ <strong>getRandomInt</strong>(<code>min</code>, <code>max</code>): <code>number</code></p>
+<p>Returns random number between 2 specified ones.</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>min</code></td>
+<td align="left"><code>number</code></td>
+<td align="left">lower limit</td>
+</tr>
+<tr>
+<td align="left"><code>max</code></td>
+<td align="left"><code>number</code></td>
+<td align="left">upper limit</td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><code>number</code></p>
+<p>random value (between min and max)</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/internals/getRandomInt.ts#L7">src/util/internals/getRandomInt.ts:7</a></p>
+<hr>
+<h3>getRegularPolygonPath</h3>
+<p>▸ <strong>getRegularPolygonPath</strong>(<code>numVertexes</code>, <code>radius</code>): <a href="/apidocs/modules/util.md#tsimplepathdata"><code>TSimplePathData</code></a></p>
+<p>Returns an array of path commands to create a regular polygon</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>numVertexes</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>radius</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><a href="/apidocs/modules/util.md#tsimplepathdata"><code>TSimplePathData</code></a></p>
+<p>An array of SVG path commands</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/index.ts#L1000">src/util/path/index.ts:1000</a></p>
+<hr>
+<h3>getSmoothPathFromPoints</h3>
+<p>▸ <strong>getSmoothPathFromPoints</strong>(<code>points</code>, <code>correction?</code>): <a href="/apidocs/modules/util.md#tsimplepathdata"><code>TSimplePathData</code></a></p>
+<p>Converts points to a smooth SVG path</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Default value</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>points</code></td>
+<td align="left"><a href="/apidocs/classes/Point.md"><code>Point</code></a>[]</td>
+<td align="left"><code>undefined</code></td>
+<td align="left">Array of points</td>
+</tr>
+<tr>
+<td align="left"><code>correction?</code></td>
+<td align="left"><code>number</code></td>
+<td align="left"><code>0</code></td>
+<td align="left">Apply a correction to the path (usually we use <code>width / 1000</code>). If value is undefined 0 is used as the correction value.</td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><a href="/apidocs/modules/util.md#tsimplepathdata"><code>TSimplePathData</code></a></p>
+<p>An array of SVG path commands</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/index.ts#L905">src/util/path/index.ts:905</a></p>
+<hr>
+<h3>getSvgAttributes</h3>
+<p>▸ <strong>getSvgAttributes</strong>(<code>type</code>): <code>string</code>[]</p>
+<p>Returns array of attributes for given svg that fabric parses</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>type</code></td>
+<td align="left"><a href="/apidocs/modules.md#svgelementname"><code>SVGElementName</code></a></td>
+<td align="left">Type of svg element (eg. 'circle')</td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><code>string</code>[]</p>
+<p>string names of supported attributes</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/svgParsing.ts#L17">src/util/misc/svgParsing.ts:17</a></p>
+<hr>
+<h3>getUnitVector</h3>
+<p>▸ <strong>getUnitVector</strong>(<code>v</code>): <a href="/apidocs/classes/Point.md"><code>Point</code></a></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>v</code></td>
+<td align="left"><a href="/apidocs/classes/Point.md"><code>Point</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><a href="/apidocs/classes/Point.md"><code>Point</code></a></p>
+<p>vector representing the unit vector pointing to the direction of <code>v</code></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/vectors.ts#L54">src/util/misc/vectors.ts:54</a></p>
+<hr>
+<h3>groupSVGElements</h3>
+<p>▸ <strong>groupSVGElements</strong>(<code>elements</code>): <a href="/apidocs/classes/FabricObject.md"><code>FabricObject</code></a>&#x3C;<code>Partial</code>&#x3C;<a href="/apidocs/interfaces/FabricObjectProps.md"><code>FabricObjectProps</code></a>>, <a href="/apidocs/interfaces/SerializedObjectProps.md"><code>SerializedObjectProps</code></a>, <a href="/apidocs/interfaces/ObjectEvents.md"><code>ObjectEvents</code></a>></p>
+<p>Groups SVG elements (usually those retrieved from SVG document)</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>elements</code></td>
+<td align="left"><a href="/apidocs/classes/FabricObject.md"><code>FabricObject</code></a>&#x3C;<code>Partial</code>&#x3C;<a href="/apidocs/interfaces/FabricObjectProps.md"><code>FabricObjectProps</code></a>>, <a href="/apidocs/interfaces/SerializedObjectProps.md"><code>SerializedObjectProps</code></a>, <a href="/apidocs/interfaces/ObjectEvents.md"><code>ObjectEvents</code></a>>[]</td>
+<td align="left">FabricObject(s) parsed from svg, to group</td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><a href="/apidocs/classes/FabricObject.md"><code>FabricObject</code></a>&#x3C;<code>Partial</code>&#x3C;<a href="/apidocs/interfaces/FabricObjectProps.md"><code>FabricObjectProps</code></a>>, <a href="/apidocs/interfaces/SerializedObjectProps.md"><code>SerializedObjectProps</code></a>, <a href="/apidocs/interfaces/ObjectEvents.md"><code>ObjectEvents</code></a>></p>
+<p><strong><code>Static</code></strong></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/groupSVGElements.ts#L10">src/util/misc/groupSVGElements.ts:10</a></p>
+<hr>
+<h3>hasStyleChanged</h3>
+<p>▸ <strong>hasStyleChanged</strong>(<code>prevStyle</code>, <code>thisStyle</code>, <code>forTextSpans?</code>): <code>boolean</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Default value</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>prevStyle</code></td>
+<td align="left"><code>Partial</code>&#x3C;<a href="/apidocs/modules.md#completetextstyledeclaration"><code>CompleteTextStyleDeclaration</code></a>></td>
+<td align="left"><code>undefined</code></td>
+<td align="left">first style to compare</td>
+</tr>
+<tr>
+<td align="left"><code>thisStyle</code></td>
+<td align="left"><code>Partial</code>&#x3C;<a href="/apidocs/modules.md#completetextstyledeclaration"><code>CompleteTextStyleDeclaration</code></a>></td>
+<td align="left"><code>undefined</code></td>
+<td align="left">second style to compare</td>
+</tr>
+<tr>
+<td align="left"><code>forTextSpans</code></td>
+<td align="left"><code>boolean</code></td>
+<td align="left"><code>false</code></td>
+<td align="left">whether to check overline, underline, and line-through properties</td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><code>boolean</code></p>
+<p>true if the style changed</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/textStyles.ts#L20">src/util/misc/textStyles.ts:20</a></p>
+<hr>
+<h3>invertTransform</h3>
+<p>▸ <strong>invertTransform</strong>(<code>t</code>): <a href="/apidocs/modules.md#tmat2d"><code>TMat2D</code></a></p>
+<p>Invert transformation t</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>t</code></td>
+<td align="left"><a href="/apidocs/modules.md#tmat2d"><code>TMat2D</code></a></td>
+<td align="left">The transform</td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><a href="/apidocs/modules.md#tmat2d"><code>TMat2D</code></a></p>
+<p>The inverted transform</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/matrix.ts#L57">src/util/misc/matrix.ts:57</a></p>
+<hr>
+<h3>isBetweenVectors</h3>
+<p>▸ <strong>isBetweenVectors</strong>(<code>t</code>, <code>a</code>, <code>b</code>): <code>boolean</code></p>
+<p>Checks if the vector is between two others. It is considered
+to be inside when the vector to be tested is between the
+initial vector and the final vector (included) in a counterclockwise direction.</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>t</code></td>
+<td align="left"><a href="/apidocs/classes/Point.md"><code>Point</code></a></td>
+<td align="left">vector to be tested</td>
+</tr>
+<tr>
+<td align="left"><code>a</code></td>
+<td align="left"><a href="/apidocs/classes/Point.md"><code>Point</code></a></td>
+<td align="left">initial vector</td>
+</tr>
+<tr>
+<td align="left"><code>b</code></td>
+<td align="left"><a href="/apidocs/classes/Point.md"><code>Point</code></a></td>
+<td align="left">final vector</td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><code>boolean</code></p>
+<p>true if the vector is among the others</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/vectors.ts#L94">src/util/misc/vectors.ts:94</a></p>
+<hr>
+<h3>isIdentityMatrix</h3>
+<p>▸ <strong>isIdentityMatrix</strong>(<code>mat</code>): <code>boolean</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>mat</code></td>
+<td align="left"><a href="/apidocs/modules.md#tmat2d"><code>TMat2D</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><code>boolean</code></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/matrix.ts#L35">src/util/misc/matrix.ts:35</a></p>
+<hr>
+<h3>isTouchEvent</h3>
+<p>▸ <strong>isTouchEvent</strong>(<code>event</code>): <code>boolean</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>event</code></td>
+<td align="left"><a href="/apidocs/modules.md#tpointerevent"><code>TPointerEvent</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><code>boolean</code></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/dom_event.ts#L22">src/util/dom_event.ts:22</a></p>
+<hr>
+<h3>isTransparent</h3>
+<p>▸ <strong>isTransparent</strong>(<code>ctx</code>, <code>x</code>, <code>y</code>, <code>tolerance</code>): <code>boolean</code></p>
+<p>Returns true if context has transparent pixel
+at specified location (taking tolerance into account)</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ctx</code></td>
+<td align="left"><code>CanvasRenderingContext2D</code></td>
+<td align="left">context</td>
+</tr>
+<tr>
+<td align="left"><code>x</code></td>
+<td align="left"><code>number</code></td>
+<td align="left">x coordinate in canvasElementCoordinate, not fabric space. integer</td>
+</tr>
+<tr>
+<td align="left"><code>y</code></td>
+<td align="left"><code>number</code></td>
+<td align="left">y coordinate in canvasElementCoordinate, not fabric space. integer</td>
+</tr>
+<tr>
+<td align="left"><code>tolerance</code></td>
+<td align="left"><code>number</code></td>
+<td align="left">Tolerance pixels around the point, not alpha tolerance, integer</td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><code>boolean</code></p>
+<p>true if transparent</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/isTransparent.ts#L10">src/util/misc/isTransparent.ts:10</a></p>
+<hr>
+<h3>joinPath</h3>
+<p>▸ <strong>joinPath</strong>(<code>pathData</code>, <code>fractionDigits?</code>): <code>string</code></p>
+<p>Join path commands to go back to svg format</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>pathData</code></td>
+<td align="left"><a href="/apidocs/modules/util.md#tsimplepathdata"><code>TSimplePathData</code></a></td>
+<td align="left">fabricJS parsed path commands</td>
+</tr>
+<tr>
+<td align="left"><code>fractionDigits?</code></td>
+<td align="left"><code>number</code></td>
+<td align="left">number of fraction digits to "leave"</td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><code>string</code></p>
+<p>joined path 'M 0 0 L 20 30'</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/index.ts#L1027">src/util/path/index.ts:1027</a></p>
+<hr>
+<h3>loadImage</h3>
+<p>▸ <strong>loadImage</strong>(<code>url</code>, <code>options?</code>): <code>Promise</code>&#x3C;<code>HTMLImageElement</code>></p>
+<p>Loads image element from given url and resolve it, or catch.</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>url</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">URL representing an image</td>
+</tr>
+<tr>
+<td align="left"><code>options?</code></td>
+<td align="left"><a href="/apidocs/modules/util.md#loadimageoptions"><code>LoadImageOptions</code></a></td>
+<td align="left">image loading options</td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><code>Promise</code>&#x3C;<code>HTMLImageElement</code>></p>
+<p>the loaded image.</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/objectEnlive.ts#L24">src/util/misc/objectEnlive.ts:24</a></p>
+<hr>
+<h3>magnitude</h3>
+<p>▸ <strong>magnitude</strong>(<code>point</code>): <code>number</code></p>
+<p>return the magnitude of a vector</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>point</code></td>
+<td align="left"><a href="/apidocs/classes/Point.md"><code>Point</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><code>number</code></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/vectors.ts#L31">src/util/misc/vectors.ts:31</a></p>
+<hr>
+<h3>makeBoundingBoxFromPoints</h3>
+<p>▸ <strong>makeBoundingBoxFromPoints</strong>(<code>points</code>): <a href="/apidocs/modules.md#tbbox"><code>TBBox</code></a></p>
+<p>Calculates bounding box (left, top, width, height) from given <code>points</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>points</code></td>
+<td align="left"><a href="/apidocs/interfaces/XY.md"><code>XY</code></a>[]</td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><a href="/apidocs/modules.md#tbbox"><code>TBBox</code></a></p>
+<p>Object with left, top, width, height properties</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/boundingBoxFromPoints.ts#L10">src/util/misc/boundingBoxFromPoints.ts:10</a></p>
+<hr>
+<h3>makePathSimpler</h3>
+<p>▸ <strong>makePathSimpler</strong>(<code>path</code>): <a href="/apidocs/modules/util.md#tsimplepathdata"><code>TSimplePathData</code></a></p>
+<p>This function takes a parsed SVG path and makes it simpler for fabricJS logic.
+Simplification consist of:</p>
+<ul>
+<li>All commands converted to absolute (lowercase to uppercase)</li>
+<li>S converted to C</li>
+<li>T converted to Q</li>
+<li>A converted to C</li>
+</ul>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>path</code></td>
+<td align="left"><a href="/apidocs/modules/util.md#tcomplexpathdata"><code>TComplexPathData</code></a></td>
+<td align="left">the array of commands of a parsed SVG path for <code>Path</code></td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><a href="/apidocs/modules/util.md#tsimplepathdata"><code>TSimplePathData</code></a></p>
+<p>the simplified array of commands of a parsed SVG path for <code>Path</code>
+TODO: figure out how to remove the type assertions in a nice way</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/index.ts#L351">src/util/path/index.ts:351</a></p>
+<hr>
+<h3>matrixToSVG</h3>
+<p>▸ <strong>matrixToSVG</strong>(<code>transform</code>): <code>string</code></p>
+<p>given an array of 6 number returns something like <code>"matrix(...numbers)"</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>transform</code></td>
+<td align="left"><a href="/apidocs/modules.md#tmat2d"><code>TMat2D</code></a></td>
+<td align="left">an array with 6 numbers</td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><code>string</code></p>
+<p>transform matrix for svg</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/svgParsing.ts#L128">src/util/misc/svgParsing.ts:128</a></p>
+<hr>
+<h3>mergeClipPaths</h3>
+<p>▸ <strong>mergeClipPaths</strong>(<code>c1</code>, <code>c2</code>): <a href="/apidocs/classes/Group.md"><code>Group</code></a></p>
+<p>Merges 2 clip paths into one visually equal clip path</p>
+<p><strong>IMPORTANT</strong>:<br>
+Does <strong>NOT</strong> clone the arguments, clone them proir if necessary.</p>
+<p>Creates a wrapper (group) that contains one clip path and is clipped by the other so content is kept where both overlap.
+Use this method if both the clip paths may have nested clip paths of their own, so assigning one to the other's clip path property is not possible.</p>
+<p>In order to handle the <code>inverted</code> property we follow logic described in the following cases:<br>
+<strong>(1)</strong> both clip paths are inverted - the clip paths pass the inverted prop to the wrapper and loose it themselves.<br>
+<strong>(2)</strong> one is inverted and the other isn't - the wrapper shouldn't become inverted and the inverted clip path must clip the non inverted one to produce an identical visual effect.<br>
+<strong>(3)</strong> both clip paths are not inverted - wrapper and clip paths remain unchanged.</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>c1</code></td>
+<td align="left"><a href="/apidocs/classes/FabricObject.md"><code>FabricObject</code></a>&#x3C;<code>Partial</code>&#x3C;<a href="/apidocs/interfaces/FabricObjectProps.md"><code>FabricObjectProps</code></a>>, <a href="/apidocs/interfaces/SerializedObjectProps.md"><code>SerializedObjectProps</code></a>, <a href="/apidocs/interfaces/ObjectEvents.md"><code>ObjectEvents</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>c2</code></td>
+<td align="left"><a href="/apidocs/classes/FabricObject.md"><code>FabricObject</code></a>&#x3C;<code>Partial</code>&#x3C;<a href="/apidocs/interfaces/FabricObjectProps.md"><code>FabricObjectProps</code></a>>, <a href="/apidocs/interfaces/SerializedObjectProps.md"><code>SerializedObjectProps</code></a>, <a href="/apidocs/interfaces/ObjectEvents.md"><code>ObjectEvents</code></a>></td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><a href="/apidocs/classes/Group.md"><code>Group</code></a></p>
+<p>merged clip path</p>
+<p><strong><code>Member Of</code></strong></p>
+<p>fabric.util</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/mergeClipPaths.ts#L23">src/util/misc/mergeClipPaths.ts:23</a></p>
+<hr>
+<h3>multiplyTransformMatrices</h3>
+<p>▸ <strong>multiplyTransformMatrices</strong>(<code>a</code>, <code>b</code>, <code>is2x2?</code>): <a href="/apidocs/modules.md#tmat2d"><code>TMat2D</code></a></p>
+<p>Multiply matrix A by matrix B to nest transformations</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>a</code></td>
+<td align="left"><a href="/apidocs/modules.md#tmat2d"><code>TMat2D</code></a></td>
+<td align="left">First transformMatrix</td>
+</tr>
+<tr>
+<td align="left"><code>b</code></td>
+<td align="left"><a href="/apidocs/modules.md#tmat2d"><code>TMat2D</code></a></td>
+<td align="left">Second transformMatrix</td>
+</tr>
+<tr>
+<td align="left"><code>is2x2?</code></td>
+<td align="left"><code>boolean</code></td>
+<td align="left">flag to multiply matrices as 2x2 matrices</td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><a href="/apidocs/modules.md#tmat2d"><code>TMat2D</code></a></p>
+<p>The product of the two transform matrices</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/matrix.ts#L73">src/util/misc/matrix.ts:73</a></p>
+<hr>
+<h3>multiplyTransformMatrixArray</h3>
+<p>▸ <strong>multiplyTransformMatrixArray</strong>(<code>matrices</code>, <code>is2x2?</code>): <a href="/apidocs/modules.md#tmat2d"><code>TMat2D</code></a></p>
+<p>Multiplies matrices such that a matrix defines the plane for the rest of the matrices <strong>after</strong> it</p>
+<p><code>multiplyTransformMatrixArray([A, B, C, D])</code> is equivalent to <code>A(B(C(D)))</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>matrices</code></td>
+<td align="left">(<code>undefined</code> | <code>null</code> | <code>false</code> | <a href="/apidocs/modules.md#tmat2d"><code>TMat2D</code></a>)[]</td>
+<td align="left">an array of matrices</td>
+</tr>
+<tr>
+<td align="left"><code>is2x2?</code></td>
+<td align="left"><code>boolean</code></td>
+<td align="left">flag to multiply matrices as 2x2 matrices</td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><a href="/apidocs/modules.md#tmat2d"><code>TMat2D</code></a></p>
+<p>the multiplication product</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/matrix.ts#L96">src/util/misc/matrix.ts:96</a></p>
+<hr>
+<h3>parsePath</h3>
+<p>▸ <strong>parsePath</strong>(<code>pathString</code>): <a href="/apidocs/modules/util.md#tcomplexpathdata"><code>TComplexPathData</code></a></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>pathString</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><a href="/apidocs/modules/util.md#tcomplexpathdata"><code>TComplexPathData</code></a></p>
+<p>An array of SVG path commands</p>
+<p><strong><code>Example</code></strong></p>
+<p>Usage</p>
+<pre><code class="language-ts">parsePath('M 3 4 Q 3 5 2 1 4 0 Q 9 12 2 1 4 0') === [
+  ['M', 3, 4],
+  ['Q', 3, 5, 2, 1, 4, 0],
+  ['Q', 9, 12, 2, 1, 4, 0],
+];
+</code></pre>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/index.ts#L844">src/util/path/index.ts:844</a></p>
+<hr>
+<h3>parsePreserveAspectRatioAttribute</h3>
+<p>▸ <strong>parsePreserveAspectRatioAttribute</strong>(<code>attribute</code>): <code>TPreserveArParsed</code></p>
+<p>Parse preserveAspectRatio attribute from element
+<a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/preserveAspectRatio">https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/preserveAspectRatio</a></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>attribute</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">to be parsed</td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><code>TPreserveArParsed</code></p>
+<p>an object containing align and meetOrSlice attribute</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/svgParsing.ts#L108">src/util/misc/svgParsing.ts:108</a></p>
+<hr>
+<h3>parseUnit</h3>
+<p>▸ <strong>parseUnit</strong>(<code>value</code>, <code>fontSize?</code>): <code>number</code></p>
+<p>Converts from attribute value to pixel value if applicable.
+Returns converted pixels or original value not converted.</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Default value</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>value</code></td>
+<td align="left"><code>string</code></td>
+<td align="left"><code>undefined</code></td>
+<td align="left">number to operate on</td>
+</tr>
+<tr>
+<td align="left"><code>fontSize</code></td>
+<td align="left"><code>number</code></td>
+<td align="left"><code>DEFAULT_SVG_FONT_SIZE</code></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><code>number</code></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/svgParsing.ts#L53">src/util/misc/svgParsing.ts:53</a></p>
+<hr>
+<h3>pick</h3>
+<p>▸ <strong>pick</strong>&#x3C;<code>T</code>>(<code>source</code>, <code>keys?</code>): <code>Partial</code>&#x3C;<code>T</code>></p>
+<p>Populates an object with properties of another object</p>
+<h4>Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>Record</code>&#x3C;<code>string</code>, <code>any</code>></td>
+</tr>
+</tbody>
+</table>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Default value</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>source</code></td>
+<td align="left"><code>T</code></td>
+<td align="left"><code>undefined</code></td>
+<td align="left">Source object</td>
+</tr>
+<tr>
+<td align="left"><code>keys</code></td>
+<td align="left">keyof <code>T</code>[]</td>
+<td align="left"><code>[]</code></td>
+<td align="left">-</td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><code>Partial</code>&#x3C;<code>T</code>></p>
+<p>object populated with the picked keys</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/pick.ts#L7">src/util/misc/pick.ts:7</a></p>
+<hr>
+<h3>projectStrokeOnPoints</h3>
+<p>▸ <strong>projectStrokeOnPoints</strong>(<code>points</code>, <code>options</code>, <code>openPath?</code>): <a href="/apidocs/modules/util.md#tprojection"><code>TProjection</code></a>[]</p>
+<p>Used to calculate object's bounding box</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Default value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>points</code></td>
+<td align="left"><a href="/apidocs/interfaces/XY.md"><code>XY</code></a>[]</td>
+<td align="left"><code>undefined</code></td>
+</tr>
+<tr>
+<td align="left"><code>options</code></td>
+<td align="left"><a href="/apidocs/modules/util.md#tprojectstrokeonpointsoptions"><code>TProjectStrokeOnPointsOptions</code></a></td>
+<td align="left"><code>undefined</code></td>
+</tr>
+<tr>
+<td align="left"><code>openPath</code></td>
+<td align="left"><code>boolean</code></td>
+<td align="left"><code>false</code></td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><a href="/apidocs/modules/util.md#tprojection"><code>TProjection</code></a>[]</p>
+<p><strong><code>See</code></strong></p>
+<p><a href="https://github.com/fabricjs/fabric.js/pull/8344">https://github.com/fabricjs/fabric.js/pull/8344</a></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/projectStroke/index.ts#L16">src/util/misc/projectStroke/index.ts:16</a></p>
+<hr>
+<h3>qrDecompose</h3>
+<p>▸ <strong>qrDecompose</strong>(<code>a</code>): <code>Required</code>&#x3C;<code>Omit</code>&#x3C;<a href="/apidocs/modules/util.md#tcomposematrixargs"><code>TComposeMatrixArgs</code></a>, <code>"flipX"</code> | <code>"flipY"</code>>></p>
+<p>Decomposes standard 2x3 matrix into transform components</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>a</code></td>
+<td align="left"><a href="/apidocs/modules.md#tmat2d"><code>TMat2D</code></a></td>
+<td align="left">transformMatrix</td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><code>Required</code>&#x3C;<code>Omit</code>&#x3C;<a href="/apidocs/modules/util.md#tcomposematrixargs"><code>TComposeMatrixArgs</code></a>, <code>"flipX"</code> | <code>"flipY"</code>>></p>
+<p>Components of transform</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/matrix.ts#L114">src/util/misc/matrix.ts:114</a></p>
+<hr>
+<h3>radiansToDegrees</h3>
+<p>▸ <strong>radiansToDegrees</strong>(<code>radians</code>): <a href="/apidocs/modules.md#tdegree"><code>TDegree</code></a></p>
+<p>Transforms radians to degrees.</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>radians</code></td>
+<td align="left"><a href="/apidocs/modules.md#tradian"><code>TRadian</code></a></td>
+<td align="left">value in radians</td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><a href="/apidocs/modules.md#tdegree"><code>TDegree</code></a></p>
+<p>value in degrees</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/radiansDegreesConversion.ts#L17">src/util/misc/radiansDegreesConversion.ts:17</a></p>
+<hr>
+<h3>removeFromArray</h3>
+<p>▸ <strong>removeFromArray</strong>&#x3C;<code>T</code>>(<code>array</code>, <code>value</code>): <code>T</code>[]</p>
+<p>Removes value from an array.
+Presence of value (and its position in an array) is determined via <code>Array.prototype.indexOf</code></p>
+<h4>Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+</tr>
+</tbody>
+</table>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>array</code></td>
+<td align="left"><code>T</code>[]</td>
+</tr>
+<tr>
+<td align="left"><code>value</code></td>
+<td align="left"><code>T</code></td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><code>T</code>[]</p>
+<p>original array</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/internals/removeFromArray.ts#L8">src/util/internals/removeFromArray.ts:8</a></p>
+<hr>
+<h3>removeTransformFromObject</h3>
+<p>▸ <strong>removeTransformFromObject</strong>(<code>object</code>, <code>transform</code>): <code>void</code></p>
+<p>given an object and a transform, apply the inverse transform to the object,
+this is equivalent to remove from that object that transformation, so that
+added in a space with the removed transform, the object will be the same as before.
+Removing from an object a transform that scale by 2 is like scaling it by 1/2.
+Removing from an object a transform that rotate by 30deg is like rotating by 30deg
+in the opposite direction.
+This util is used to add objects inside transformed groups or nested groups.</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>object</code></td>
+<td align="left"><code>FabricObject</code>&#x3C;<code>Partial</code>&#x3C;<code>ObjectProps</code>>, <a href="/apidocs/interfaces/SerializedObjectProps.md"><code>SerializedObjectProps</code></a>, <a href="/apidocs/interfaces/ObjectEvents.md"><code>ObjectEvents</code></a>></td>
+<td align="left">the object you want to transform</td>
+</tr>
+<tr>
+<td align="left"><code>transform</code></td>
+<td align="left"><a href="/apidocs/modules.md#tmat2d"><code>TMat2D</code></a></td>
+<td align="left">the destination transform</td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><code>void</code></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/objectTransforms.ts#L25">src/util/misc/objectTransforms.ts:25</a></p>
+<hr>
+<h3>removeTransformMatrixForSvgParsing</h3>
+<p>▸ <strong>removeTransformMatrixForSvgParsing</strong>(<code>object</code>, <code>preserveAspectRatioOptions?</code>): <code>void</code></p>
+<p>This function is an helper for svg import. it removes the transform matrix
+and set to object properties that fabricjs can handle</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>object</code></td>
+<td align="left"><code>FabricObjectWithTransformMatrix</code></td>
+</tr>
+<tr>
+<td align="left"><code>preserveAspectRatioOptions?</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><code>void</code></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/transform_matrix_removal.ts#L40">src/util/transform_matrix_removal.ts:40</a></p>
+<hr>
+<h3>request</h3>
+<p>▸ <strong>request</strong>(<code>url</code>, <code>options?</code>): <code>XMLHttpRequest</code></p>
+<p>Cross-browser abstraction for sending XMLHttpRequest</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>url</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">URL to send XMLHttpRequest to</td>
+</tr>
+<tr>
+<td align="left"><code>options?</code></td>
+<td align="left"><code>requestOptions</code></td>
+<td align="left">Options object</td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><code>XMLHttpRequest</code></p>
+<p>request</p>
+<p><strong><code>Deprecated</code></strong></p>
+<p>this has to go away, we can use a modern browser method to do the same.</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/internals/dom_request.ts#L20">src/util/internals/dom_request.ts:20</a></p>
+<hr>
+<h3>requestAnimFrame</h3>
+<p>▸ <strong>requestAnimFrame</strong>(<code>callback</code>): <code>number</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>callback</code></td>
+<td align="left"><code>FrameRequestCallback</code></td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><code>number</code></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/animation/AnimationFrameProvider.ts#L3">src/util/animation/AnimationFrameProvider.ts:3</a></p>
+<hr>
+<h3>resetObjectTransform</h3>
+<p>▸ <strong>resetObjectTransform</strong>(<code>target</code>): <code>void</code></p>
+<p>reset an object transform state to neutral. Top and left are not accounted for</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>target</code></td>
+<td align="left"><code>FabricObject</code>&#x3C;<code>Partial</code>&#x3C;<code>ObjectProps</code>>, <a href="/apidocs/interfaces/SerializedObjectProps.md"><code>SerializedObjectProps</code></a>, <a href="/apidocs/interfaces/ObjectEvents.md"><code>ObjectEvents</code></a>></td>
+<td align="left">object to transform</td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><code>void</code></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/objectTransforms.ts#L73">src/util/misc/objectTransforms.ts:73</a></p>
+<hr>
+<h3>rotatePoint</h3>
+<p>▸ <strong>rotatePoint</strong>(<code>point</code>, <code>origin</code>, <code>radians</code>): <a href="/apidocs/classes/Point.md"><code>Point</code></a></p>
+<p>Rotates <code>point</code> around <code>origin</code> with <code>radians</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>point</code></td>
+<td align="left"><a href="/apidocs/classes/Point.md"><code>Point</code></a></td>
+<td align="left">-</td>
+</tr>
+<tr>
+<td align="left"><code>origin</code></td>
+<td align="left"><a href="/apidocs/classes/Point.md"><code>Point</code></a></td>
+<td align="left">The origin of the rotation</td>
+</tr>
+<tr>
+<td align="left"><code>radians</code></td>
+<td align="left"><a href="/apidocs/modules.md#tradian"><code>TRadian</code></a></td>
+<td align="left">The radians of the angle for the rotation</td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><a href="/apidocs/classes/Point.md"><code>Point</code></a></p>
+<p>The new rotated point</p>
+<p><strong><code>Deprecated</code></strong></p>
+<p>use the Point.rotate</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/rotatePoint.ts#L11">src/util/misc/rotatePoint.ts:11</a></p>
+<hr>
+<h3>rotateVector</h3>
+<p>▸ <strong>rotateVector</strong>(<code>vector</code>, <code>radians</code>): <a href="/apidocs/classes/Point.md"><code>Point</code></a></p>
+<p>Rotates <code>vector</code> with <code>radians</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>vector</code></td>
+<td align="left"><a href="/apidocs/classes/Point.md"><code>Point</code></a></td>
+<td align="left">The vector to rotate (x and y)</td>
+</tr>
+<tr>
+<td align="left"><code>radians</code></td>
+<td align="left"><a href="/apidocs/modules.md#tradian"><code>TRadian</code></a></td>
+<td align="left">The radians of the angle for the rotation</td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><a href="/apidocs/classes/Point.md"><code>Point</code></a></p>
+<p>The new rotated point</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/vectors.ts#L14">src/util/misc/vectors.ts:14</a></p>
+<hr>
+<h3>saveObjectTransform</h3>
+<p>▸ <strong>saveObjectTransform</strong>(<code>target</code>): <code>Object</code></p>
+<p>Extract Object transform values</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>target</code></td>
+<td align="left"><code>FabricObject</code>&#x3C;<code>Partial</code>&#x3C;<code>ObjectProps</code>>, <a href="/apidocs/interfaces/SerializedObjectProps.md"><code>SerializedObjectProps</code></a>, <a href="/apidocs/interfaces/ObjectEvents.md"><code>ObjectEvents</code></a>></td>
+<td align="left">object to read from</td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><code>Object</code></p>
+<p>Components of transform</p>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>angle</code></td>
+<td align="left"><a href="/apidocs/modules.md#tdegree"><code>TDegree</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>flipX</code></td>
+<td align="left"><code>boolean</code></td>
+</tr>
+<tr>
+<td align="left"><code>flipY</code></td>
+<td align="left"><code>boolean</code></td>
+</tr>
+<tr>
+<td align="left"><code>left</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>scaleX</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>scaleY</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>skewX</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>skewY</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>top</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+</tbody>
+</table>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/objectTransforms.ts#L88">src/util/misc/objectTransforms.ts:88</a></p>
+<hr>
+<h3>sendObjectToPlane</h3>
+<p>▸ <strong>sendObjectToPlane</strong>(<code>object</code>, <code>from?</code>, <code>to?</code>): <a href="/apidocs/modules.md#tmat2d"><code>TMat2D</code></a></p>
+<p>A util that abstracts applying transform to objects.<br>
+Sends <code>object</code> to the destination coordinate plane by applying the relevant transformations.<br>
+Changes the space/plane where <code>object</code> is drawn.<br>
+From the canvas/viewer's perspective <code>object</code> remains unchanged.</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>object</code></td>
+<td align="left"><code>FabricObject</code>&#x3C;<code>Partial</code>&#x3C;<code>ObjectProps</code>>, <a href="/apidocs/interfaces/SerializedObjectProps.md"><code>SerializedObjectProps</code></a>, <a href="/apidocs/interfaces/ObjectEvents.md"><code>ObjectEvents</code></a>></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>from?</code></td>
+<td align="left"><a href="/apidocs/modules.md#tmat2d"><code>TMat2D</code></a></td>
+<td align="left">plane matrix containing object. Passing <code>undefined</code> is equivalent to passing the identity matrix, which means <code>object</code> is a direct child of canvas.</td>
+</tr>
+<tr>
+<td align="left"><code>to?</code></td>
+<td align="left"><a href="/apidocs/modules.md#tmat2d"><code>TMat2D</code></a></td>
+<td align="left">destination plane matrix to contain object. Passing <code>undefined</code> means <code>object</code> should be sent to the canvas coordinate plane.</td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><a href="/apidocs/modules.md#tmat2d"><code>TMat2D</code></a></p>
+<p>the transform matrix that was applied to <code>object</code></p>
+<p><strong><code>Example</code></strong></p>
+<p>Move clip path from one object to another while preserving it's appearance as viewed by canvas/viewer</p>
+<pre><code class="language-ts">let obj, obj2;
+let clipPath = new Circle({ radius: 50 });
+obj.clipPath = clipPath;
+// render
+sendObjectToPlane(clipPath, obj.calcTransformMatrix(), obj2.calcTransformMatrix());
+obj.clipPath = undefined;
+obj2.clipPath = clipPath;
+// render, clipPath now clips obj2 but seems unchanged from the eyes of the viewer
+</code></pre>
+<p><strong><code>Example</code></strong></p>
+<p>Clip an object's clip path with an existing object</p>
+<pre><code class="language-ts">let obj, existingObj;
+let clipPath = new Circle({ radius: 50 });
+obj.clipPath = clipPath;
+let transformTo = multiplyTransformMatrices(obj.calcTransformMatrix(), clipPath.calcTransformMatrix());
+sendObjectToPlane(existingObj, existingObj.group?.calcTransformMatrix(), transformTo);
+clipPath.clipPath = existingObj;
+</code></pre>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/planeChange.ts#L75">src/util/misc/planeChange.ts:75</a></p>
+<hr>
+<h3>sendPointToPlane</h3>
+<p>▸ <strong>sendPointToPlane</strong>(<code>point</code>, <code>from?</code>, <code>to?</code>): <a href="/apidocs/classes/Point.md"><code>Point</code></a></p>
+<p>Sends a point from the source coordinate plane to the destination coordinate plane.<br>
+From the canvas/viewer's perspective the point remains unchanged.</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Default value</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>point</code></td>
+<td align="left"><a href="/apidocs/classes/Point.md"><code>Point</code></a></td>
+<td align="left"><code>undefined</code></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>from?</code></td>
+<td align="left"><a href="/apidocs/modules.md#tmat2d"><code>TMat2D</code></a></td>
+<td align="left"><code>iMatrix</code></td>
+<td align="left">plane matrix containing object. Passing <code>undefined</code> is equivalent to passing the identity matrix, which means <code>point</code> exists in the canvas coordinate plane.</td>
+</tr>
+<tr>
+<td align="left"><code>to?</code></td>
+<td align="left"><a href="/apidocs/modules.md#tmat2d"><code>TMat2D</code></a></td>
+<td align="left"><code>iMatrix</code></td>
+<td align="left">destination plane matrix to contain object. Passing <code>undefined</code> means <code>point</code> should be sent to the canvas coordinate plane.</td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><a href="/apidocs/classes/Point.md"><code>Point</code></a></p>
+<p>transformed point</p>
+<p><strong><code>Example</code></strong></p>
+<p>Send point from canvas plane to group plane</p>
+<pre><code class="language-ts">var obj = new Rect({ left: 20, top: 20, width: 60, height: 60, strokeWidth: 0 });
+var group = new Group([obj], { strokeWidth: 0 });
+var sentPoint1 = sendPointToPlane(new Point(50, 50), undefined, group.calcTransformMatrix());
+var sentPoint2 = sendPointToPlane(new Point(50, 50), iMatrix, group.calcTransformMatrix());
+console.log(sentPoint1, sentPoint2) //  both points print (0,0) which is the center of group
+</code></pre>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/planeChange.ts#L36">src/util/misc/planeChange.ts:36</a></p>
+<hr>
+<h3>setStyle</h3>
+<p>▸ <strong>setStyle</strong>(<code>element</code>, <code>styles</code>): <code>void</code></p>
+<p>wrapper for setting element's style</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>element</code></td>
+<td align="left"><code>HTMLElement</code></td>
+</tr>
+<tr>
+<td align="left"><code>styles</code></td>
+<td align="left"><code>string</code> | <code>Record</code>&#x3C;<code>string</code>, <code>string</code>></td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><code>void</code></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/dom_style.ts#L8">src/util/dom_style.ts:8</a></p>
+<hr>
+<h3>sin</h3>
+<p>▸ <strong>sin</strong>(<code>angle</code>): <code>number</code></p>
+<p>Calculate the cos of an angle, avoiding returning floats for known results
+This function is here just to avoid getting 0.999999999999999 when dealing
+with numbers that are really 1 or 0.</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>angle</code></td>
+<td align="left"><a href="/apidocs/modules.md#tradian"><code>TRadian</code></a></td>
+<td align="left">the angle</td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><code>number</code></p>
+<p>the sin value for angle.</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/sin.ts#L11">src/util/misc/sin.ts:11</a></p>
+<hr>
+<h3>sizeAfterTransform</h3>
+<p>▸ <strong>sizeAfterTransform</strong>(<code>width</code>, <code>height</code>, <code>options</code>): <a href="/apidocs/classes/Point.md"><code>Point</code></a></p>
+<p>given a width and height, return the size of the bounding box
+that can contains the box with width/height with applied transform
+described in options.
+Use to calculate the boxes around objects for controls.</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>width</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>height</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>options</code></td>
+<td align="left"><a href="/apidocs/modules/util.md#tscalematrixargs"><code>TScaleMatrixArgs</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><a href="/apidocs/classes/Point.md"><code>Point</code></a></p>
+<p>size</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/objectTransforms.ts#L114">src/util/misc/objectTransforms.ts:114</a></p>
+<hr>
+<h3>stylesFromArray</h3>
+<p>▸ <strong>stylesFromArray</strong>(<code>styles</code>, <code>text</code>): <a href="/apidocs/modules.md#textstyle"><code>TextStyle</code></a></p>
+<p>Returns the object form of the styles property with styles that are assigned per
+character rather than grouped by range. This format is more verbose, and is
+only used during runtime (not for serialization/storage)</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>styles</code></td>
+<td align="left"><a href="/apidocs/modules.md#textstyle"><code>TextStyle</code></a> | <a href="/apidocs/modules/util.md#textstylearray"><code>TextStyleArray</code></a></td>
+<td align="left">the serialized form of a text object's styles</td>
+</tr>
+<tr>
+<td align="left"><code>text</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">the text string that the styles are applied to</td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><a href="/apidocs/modules.md#textstyle"><code>TextStyle</code></a></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/textStyles.ts#L97">src/util/misc/textStyles.ts:97</a></p>
+<hr>
+<h3>stylesToArray</h3>
+<p>▸ <strong>stylesToArray</strong>(<code>styles</code>, <code>text</code>): <a href="/apidocs/modules/util.md#textstylearray"><code>TextStyleArray</code></a></p>
+<p>Returns the array form of a text object's inline styles property with styles grouped in ranges
+rather than per character. This format is less verbose, and is better suited for storage
+so it is used in serialization (not during runtime).</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>styles</code></td>
+<td align="left"><a href="/apidocs/modules.md#textstyle"><code>TextStyle</code></a></td>
+<td align="left">per character styles for a text object</td>
+</tr>
+<tr>
+<td align="left"><code>text</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">the text string that the styles are applied to</td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><a href="/apidocs/modules/util.md#textstylearray"><code>TextStyleArray</code></a></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/textStyles.ts#L47">src/util/misc/textStyles.ts:47</a></p>
+<hr>
+<h3>toDataURL</h3>
+<p>▸ <strong>toDataURL</strong>(<code>canvasEl</code>, <code>format</code>, <code>quality</code>): <code>string</code></p>
+<p>since 2.6.0 moved from canvas instance to utility.
+possibly useless</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>canvasEl</code></td>
+<td align="left"><code>HTMLCanvasElement</code></td>
+<td align="left">to copy size and content of</td>
+</tr>
+<tr>
+<td align="left"><code>format</code></td>
+<td align="left"><a href="/apidocs/modules.md#imageformat"><code>ImageFormat</code></a></td>
+<td align="left">'jpeg' or 'png', in some browsers 'webp' is ok too</td>
+</tr>
+<tr>
+<td align="left"><code>quality</code></td>
+<td align="left"><code>number</code></td>
+<td align="left">&#x3C;= 1 and > 0</td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><code>string</code></p>
+<p>data url</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/dom.ts#L46">src/util/misc/dom.ts:46</a></p>
+<hr>
+<h3>toFixed</h3>
+<p>▸ <strong>toFixed</strong>(<code>number</code>, <code>fractionDigits</code>): <code>number</code></p>
+<p>A wrapper around Number#toFixed, which contrary to native method returns number, not string.</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>number</code></td>
+<td align="left"><code>string</code> | <code>number</code></td>
+<td align="left">number to operate on</td>
+</tr>
+<tr>
+<td align="left"><code>fractionDigits</code></td>
+<td align="left"><code>number</code></td>
+<td align="left">number of fraction digits to "leave"</td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><code>number</code></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/toFixed.ts#L7">src/util/misc/toFixed.ts:7</a></p>
+<hr>
+<h3>transformPath</h3>
+<p>▸ <strong>transformPath</strong>(<code>path</code>, <code>transform</code>, <code>pathOffset?</code>): <a href="/apidocs/modules/util.md#tsimplepathdata"><code>TSimplePathData</code></a></p>
+<p>Transform a path by transforming each segment.
+it has to be a simplified path or it won't work.
+WARNING: this depends from pathOffset for correct operation</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>path</code></td>
+<td align="left"><a href="/apidocs/modules/util.md#tsimplepathdata"><code>TSimplePathData</code></a></td>
+<td align="left">fabricJS parsed and simplified path commands</td>
+</tr>
+<tr>
+<td align="left"><code>transform</code></td>
+<td align="left"><a href="/apidocs/modules.md#tmat2d"><code>TMat2D</code></a></td>
+<td align="left">matrix that represent the transformation</td>
+</tr>
+<tr>
+<td align="left"><code>pathOffset?</code></td>
+<td align="left"><a href="/apidocs/classes/Point.md"><code>Point</code></a></td>
+<td align="left"><code>Path.pathOffset</code></td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><a href="/apidocs/modules/util.md#tsimplepathdata"><code>TSimplePathData</code></a></p>
+<p>the transformed path</p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/path/index.ts#L961">src/util/path/index.ts:961</a></p>
+<hr>
+<h3>transformPoint</h3>
+<p>▸ <strong>transformPoint</strong>(<code>p</code>, <code>t</code>, <code>ignoreOffset?</code>): <a href="/apidocs/classes/Point.md"><code>Point</code></a></p>
+<p>Apply transform t to point p</p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>p</code></td>
+<td align="left"><a href="/apidocs/interfaces/XY.md"><code>XY</code></a></td>
+<td align="left">The point to transform</td>
+</tr>
+<tr>
+<td align="left"><code>t</code></td>
+<td align="left"><a href="/apidocs/modules.md#tmat2d"><code>TMat2D</code></a></td>
+<td align="left">The transform</td>
+</tr>
+<tr>
+<td align="left"><code>ignoreOffset?</code></td>
+<td align="left"><code>boolean</code></td>
+<td align="left">Indicates that the offset should not be applied</td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><a href="/apidocs/classes/Point.md"><code>Point</code></a></p>
+<p>The transformed point</p>
+<p><strong><code>Deprecated</code></strong></p>
+<p>use <a href="/apidocs/classes/Point.md#transform">Point#transform</a></p>
+<h4>Defined in</h4>
+<p><a href="https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/misc/matrix.ts#L46">src/util/misc/matrix.ts:46</a></p></article><a class="github-edit-link" target="_blank" rel="noreferrer" href="https://github.com/fabricjs/fabricjs.github.io/tree/development/src/content/modules/util.md">Edit this page on Github</a><nav id="prevNextPostLinks"><ul><li class="prevPost"><a href="/apidocs/modules/controlsUtils.md/"></a></li><li class="nextPost"><a href="/apidocs/classes/Canvas.md/"></a></li></ul></nav></main><footer>Copyright text and sitelinks here</footer></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/apidocs/modules/util.md/";/*]]>*/</script><!-- slice-start id="_gatsby-scripts-1" -->
+          <script
+            id="gatsby-chunk-mapping"
+          >
+            window.___chunkMapping="{\"app\":[\"/app-e9bc185a0e865bd346cb.js\"],\"component---src-pages-404-js\":[\"/component---src-pages-404-js-e60febda413b3ffd74e1.js\"],\"component---src-pages-customize-build-index-js\":[\"/component---src-pages-customize-build-index-js-87616154e0dfc1dd2938.js\"],\"component---src-pages-index-js\":[\"/component---src-pages-index-js-10b1a472b1b9f804ab99.js\"],\"component---src-pages-support-js\":[\"/component---src-pages-support-js-954a30bce83a63d91f17.js\"],\"component---src-pages-team-js\":[\"/component---src-pages-team-js-345ade99127c58ca6ec0.js\"],\"component---src-pages-tests-svg-import-index-jsx\":[\"/component---src-pages-tests-svg-import-index-jsx-d975da59224c46ac618b.js\"],\"component---src-templates-apidoc-jsx\":[\"/component---src-templates-apidoc-jsx-640f6dd5d010dd85c4dd.js\"],\"component---src-templates-demo-jsx-content-file-path-src-content-demo-animating-crosses-index-md\":[\"/component---src-templates-demo-jsx-content-file-path-src-content-demo-animating-crosses-index-md-e8984e94376fe1b6176c.js\"],\"component---src-templates-demo-jsx-content-file-path-src-content-demo-animation-easing-index-md\":[\"/component---src-templates-demo-jsx-content-file-path-src-content-demo-animation-easing-index-md-2dd7d59e4c86a8df286c.js\"],\"component---src-templates-demo-jsx-content-file-path-src-content-demo-clipping-index-md\":[\"/component---src-templates-demo-jsx-content-file-path-src-content-demo-clipping-index-md-deac8607e368d18a040e.js\"],\"component---src-templates-demo-jsx-content-file-path-src-content-demo-copy-and-paste-index-md\":[\"/component---src-templates-demo-jsx-content-file-path-src-content-demo-copy-and-paste-index-md-a96c2894f59a84cad1e0.js\"],\"component---src-templates-demo-jsx-content-file-path-src-content-demo-custom-controls-index-md\":[\"/component---src-templates-demo-jsx-content-file-path-src-content-demo-custom-controls-index-md-8eb0624ee70f4ee5b56c.js\"],\"component---src-templates-demo-jsx-content-file-path-src-content-demo-events-inspector-index-md\":[\"/component---src-templates-demo-jsx-content-file-path-src-content-demo-events-inspector-index-md-144c99d052e1f5ce7311.js\"],\"component---src-templates-demo-jsx-content-file-path-src-content-demo-free-drawing-index-md\":[\"/component---src-templates-demo-jsx-content-file-path-src-content-demo-free-drawing-index-md-eb2face5cd68c445a1a3.js\"],\"component---src-templates-demo-jsx-content-file-path-src-content-demo-intersection-index-md\":[\"/component---src-templates-demo-jsx-content-file-path-src-content-demo-intersection-index-md-6b3b59ab84723532262a.js\"],\"component---src-templates-demo-jsx-content-file-path-src-content-demo-loading-custom-fonts-index-md\":[\"/component---src-templates-demo-jsx-content-file-path-src-content-demo-loading-custom-fonts-index-md-3367484756064cf71318.js\"],\"component---src-templates-demo-jsx-content-file-path-src-content-demo-poly-controls-index-md\":[\"/component---src-templates-demo-jsx-content-file-path-src-content-demo-poly-controls-index-md-3fc2c23705b352aea893.js\"],\"component---src-templates-demo-jsx-content-file-path-src-content-demo-simple-test-index-md\":[\"/component---src-templates-demo-jsx-content-file-path-src-content-demo-simple-test-index-md-f61883cb31eae4e05b22.js\"],\"component---src-templates-demo-jsx-content-file-path-src-content-demo-stroke-uniform-property-index-md\":[\"/component---src-templates-demo-jsx-content-file-path-src-content-demo-stroke-uniform-property-index-md-beeb7ff05a53066f2104.js\"],\"component---src-templates-demos-jsx\":[\"/component---src-templates-demos-jsx-694e0db8b0fe1ce21489.js\"],\"component---src-templates-doc-jsx-content-file-path-src-content-docs-getting-started-index-md\":[\"/component---src-templates-doc-jsx-content-file-path-src-content-docs-getting-started-index-md-ced25e0fa7cf0ab91dcf.js\"],\"component---src-templates-doc-jsx-content-file-path-src-content-docs-understanding-fabricjs-index-md\":[\"/component---src-templates-doc-jsx-content-file-path-src-content-docs-understanding-fabricjs-index-md-8f0c0c5dc27fb7eb8252.js\"],\"component---src-templates-docs-jsx\":[\"/component---src-templates-docs-jsx-8d29a9bf82ace1a4f278.js\"]}";
+          </script>
+        <script>window.___webpackCompilationHash="d17125fe5e0ca062ff7d";</script><script src="/webpack-runtime-9f2edadfb1ccaba9a500.js" async></script><script src="/framework-f64cad4c45f2765d83d9.js" async></script><script src="/app-e9bc185a0e865bd346cb.js" async></script><!-- slice-end id="_gatsby-scripts-1" --></body></html>
