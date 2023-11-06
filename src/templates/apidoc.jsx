@@ -7,11 +7,11 @@ import GithubEditLink from '../components/githubEditLink/githubEditLink';
 import PrevNextLinks from '../components/prevNextPostLinks/prevNextLinks';
 
 export default function Apidoc({ pageContext, data }) {
-  const { toc, mdFile, html } = data.apidocPage;
+  const { /* toc,*/ mdFile, html } = data.apidocPage;
 
   const apiDocList = pageContext.apidocList.reduce((acc, current) => {
     const { title, slug } = current;
-    const [_, root, classname] = title.split(' ');
+    const [, root, classname] = title.split(' ');
     if (!acc[root]) {
       acc[root] = [];
     }
