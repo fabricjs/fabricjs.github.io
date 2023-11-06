@@ -65,7 +65,10 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       value: slug.replace(/ +/g, '-').replace(/-+/g, '-'), // slug.replace(/\/$/,"")    //also remove trailing slash if any (this is not req coz while creating the slug using createFilePath(), we have already set 'trailingSlash' as false)
     });
   }
-  if (node.internal.type === 'MarkdownRemark') {
+  if (
+    node.internal.type === 'Mdx' &&
+    node.internal.contentFilePath.includes('/tsdocs/')
+  ) {
     const { createNodeField } = actions;
     const slug = createFilePath({
       node,
@@ -264,17 +267,21 @@ exports.createPages = async ({ graphql, actions }) => {
   /// /fetch the 'doc' md files and create pages for them
   const apiDocQueryResult = await graphql(`
     query apidocPagesQueryResult {
-      allApidocPagesMD: allMarkdownRemark(
+      allApidocPagesMD: allMdx(
         filter: {
-          fileAbsolutePath: {
-            regex: "//tsdocs/[a-zA-Z0-9-]+/[a-zA-Z0-9-.]+.md/"
+          internal: {
+            contentFilePath: {
+              regex: "//tsdocs/[a-zA-Z0-9-]+/[a-zA-Z0-9-.]+.md/"
+            }
           }
         }
       ) {
         apidocPages: nodes {
-          html
           fields {
             slug
+          }
+          internal {
+            contentFilePath
           }
         }
       }
@@ -292,12 +299,14 @@ exports.createPages = async ({ graphql, actions }) => {
   }));
 
   // create each 'doc' page
-  apidocPages.forEach(({ fields }, di) => {
+  apidocPages.forEach(({ fields, internal }, di) => {
     fields.slug !== null &&
       fields.slug.trim() !== '' &&
       createPage({
         path: fields.slug,
-        component: `${path.resolve('./src/templates/apidoc.jsx')}`,
+        component: `${path.resolve(
+          './src/templates/apidoc.jsx'
+        )}?__contentFilePath=${internal.contentFilePath}`,
         context: {
           slug: fields.slug,
           prev:

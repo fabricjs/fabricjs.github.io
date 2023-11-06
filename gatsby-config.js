@@ -26,6 +26,13 @@ module.exports = {
       __key: 'content',
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `tsdocs`,
+        path: `${__dirname}/src/tsdocs`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-mdx`,
       options: {
         extensions: [`.md`, `.mdx`],
@@ -61,13 +68,5 @@ module.exports = {
         ],
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `tsdocs`,
-        path: `${__dirname}/src/tsdocs`,
-      },
-    },
-    `gatsby-transformer-remark`,
   ],
 };
