@@ -1,65 +1,30 @@
 # Class: Control
 
-## Table of contents
-
-### Constructors
-
-- [constructor](/apidocs/classes/Control.md#constructor)
-
-### Properties
-
-- [actionHandler](/apidocs/classes/Control.md#actionhandler)
-- [actionName](/apidocs/classes/Control.md#actionname)
-- [angle](/apidocs/classes/Control.md#angle)
-- [cursorStyle](/apidocs/classes/Control.md#cursorstyle)
-- [mouseDownHandler](/apidocs/classes/Control.md#mousedownhandler)
-- [mouseUpHandler](/apidocs/classes/Control.md#mouseuphandler)
-- [offsetX](/apidocs/classes/Control.md#offsetx)
-- [offsetY](/apidocs/classes/Control.md#offsety)
-- [sizeX](/apidocs/classes/Control.md#sizex)
-- [sizeY](/apidocs/classes/Control.md#sizey)
-- [touchSizeX](/apidocs/classes/Control.md#touchsizex)
-- [touchSizeY](/apidocs/classes/Control.md#touchsizey)
-- [visible](/apidocs/classes/Control.md#visible)
-- [withConnection](/apidocs/classes/Control.md#withconnection)
-- [x](/apidocs/classes/Control.md#x)
-- [y](/apidocs/classes/Control.md#y)
-
-### Methods
-
-- [calcCornerCoords](/apidocs/classes/Control.md#calccornercoords)
-- [cursorStyleHandler](/apidocs/classes/Control.md#cursorstylehandler)
-- [getActionHandler](/apidocs/classes/Control.md#getactionhandler)
-- [getActionName](/apidocs/classes/Control.md#getactionname)
-- [getMouseDownHandler](/apidocs/classes/Control.md#getmousedownhandler)
-- [getMouseUpHandler](/apidocs/classes/Control.md#getmouseuphandler)
-- [getVisibility](/apidocs/classes/Control.md#getvisibility)
-- [positionHandler](/apidocs/classes/Control.md#positionhandler)
-- [render](/apidocs/classes/Control.md#render)
-- [setVisibility](/apidocs/classes/Control.md#setvisibility)
-- [shouldActivate](/apidocs/classes/Control.md#shouldactivate)
-
 ## Constructors
 
 ### constructor
 
-• **new Control**(`options?`)
+• **new Control**(`options?`): [`Control`](/apidocs/classes/Control.md)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `options?` | `Partial`<[`Control`](/apidocs/classes/Control.md)\> |
+| `options?` | `Partial`\<[`Control`](/apidocs/classes/Control.md)\> |
+
+#### Returns
+
+[`Control`](/apidocs/classes/Control.md)
 
 #### Defined in
 
-[src/controls/Control.ts:141](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/controls/Control.ts#L141)
+[src/controls/Control.ts:141](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/controls/Control.ts#L141)
 
 ## Properties
 
 ### actionHandler
 
-• **actionHandler**: [`TransformActionHandler`](/apidocs/modules.md#transformactionhandler)<[`Transform`](/apidocs/modules.md#transform)\>
+• **actionHandler**: [`TransformActionHandler`](/apidocs/modules.md#transformactionhandler)\<[`Transform`](/apidocs/modules.md#transform)\>
 
 The control actionHandler, provide one to handle action ( control being moved )
 
@@ -81,7 +46,7 @@ y position of the cursor
 
 #### Defined in
 
-[src/controls/Control.ts:153](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/controls/Control.ts#L153)
+[src/controls/Control.ts:153](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/controls/Control.ts#L153)
 
 ___
 
@@ -105,7 +70,7 @@ default to scale since is the most common, used on 4 corners by default
 
 #### Defined in
 
-[src/controls/Control.ts:42](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/controls/Control.ts#L42)
+[src/controls/Control.ts:42](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/controls/Control.ts#L42)
 
 ___
 
@@ -125,7 +90,7 @@ example: to reuse the same drawing function for different rotated controls
 
 #### Defined in
 
-[src/controls/Control.ts:51](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/controls/Control.ts#L51)
+[src/controls/Control.ts:51](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/controls/Control.ts#L51)
 
 ___
 
@@ -144,7 +109,7 @@ if the method `cursorStyleHandler` is provided, this property is ignored.
 
 #### Defined in
 
-[src/controls/Control.ts:131](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/controls/Control.ts#L131)
+[src/controls/Control.ts:131](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/controls/Control.ts#L131)
 
 ___
 
@@ -172,7 +137,7 @@ y position of the cursor
 
 #### Defined in
 
-[src/controls/Control.ts:163](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/controls/Control.ts#L163)
+[src/controls/Control.ts:163](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/controls/Control.ts#L163)
 
 ___
 
@@ -200,7 +165,7 @@ y position of the cursor
 
 #### Defined in
 
-[src/controls/Control.ts:173](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/controls/Control.ts#L173)
+[src/controls/Control.ts:173](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/controls/Control.ts#L173)
 
 ___
 
@@ -225,7 +190,7 @@ of the bounding box.
 
 #### Defined in
 
-[src/controls/Control.ts:83](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/controls/Control.ts#L83)
+[src/controls/Control.ts:83](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/controls/Control.ts#L83)
 
 ___
 
@@ -244,7 +209,7 @@ Positive offset moves the control to the bottom, negative to the top.
 
 #### Defined in
 
-[src/controls/Control.ts:91](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/controls/Control.ts#L91)
+[src/controls/Control.ts:91](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/controls/Control.ts#L91)
 
 ___
 
@@ -263,7 +228,7 @@ null
 
 #### Defined in
 
-[src/controls/Control.ts:99](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/controls/Control.ts#L99)
+[src/controls/Control.ts:99](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/controls/Control.ts#L99)
 
 ___
 
@@ -282,7 +247,7 @@ null
 
 #### Defined in
 
-[src/controls/Control.ts:107](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/controls/Control.ts#L107)
+[src/controls/Control.ts:107](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/controls/Control.ts#L107)
 
 ___
 
@@ -301,7 +266,7 @@ null
 
 #### Defined in
 
-[src/controls/Control.ts:115](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/controls/Control.ts#L115)
+[src/controls/Control.ts:115](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/controls/Control.ts#L115)
 
 ___
 
@@ -320,7 +285,7 @@ null
 
 #### Defined in
 
-[src/controls/Control.ts:123](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/controls/Control.ts#L123)
+[src/controls/Control.ts:123](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/controls/Control.ts#L123)
 
 ___
 
@@ -341,7 +306,7 @@ true
 
 #### Defined in
 
-[src/controls/Control.ts:29](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/controls/Control.ts#L29)
+[src/controls/Control.ts:29](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/controls/Control.ts#L29)
 
 ___
 
@@ -360,7 +325,7 @@ false
 
 #### Defined in
 
-[src/controls/Control.ts:139](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/controls/Control.ts#L139)
+[src/controls/Control.ts:139](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/controls/Control.ts#L139)
 
 ___
 
@@ -380,7 +345,7 @@ of the bounding box.
 
 #### Defined in
 
-[src/controls/Control.ts:60](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/controls/Control.ts#L60)
+[src/controls/Control.ts:60](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/controls/Control.ts#L60)
 
 ___
 
@@ -400,7 +365,7 @@ of the bounding box.
 
 #### Defined in
 
-[src/controls/Control.ts:69](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/controls/Control.ts#L69)
+[src/controls/Control.ts:69](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/controls/Control.ts#L69)
 
 ## Methods
 
@@ -419,7 +384,7 @@ Returns the coords for this control based on object values.
 | `centerX` | `number` | x coordinate where the control center should be |
 | `centerY` | `number` | y coordinate where the control center should be |
 | `isTouch` | `boolean` | true if touch corner, false if normal corner |
-| `fabricObject` | `InteractiveFabricObject`<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | - |
+| `fabricObject` | `InteractiveFabricObject`\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | - |
 
 #### Returns
 
@@ -434,7 +399,7 @@ Returns the coords for this control based on object values.
 
 #### Defined in
 
-[src/controls/Control.ts:311](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/controls/Control.ts#L311)
+[src/controls/Control.ts:311](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/controls/Control.ts#L311)
 
 ___
 
@@ -452,7 +417,7 @@ the cursorStyle property
 | :------ | :------ | :------ |
 | `eventData` | [`TPointerEvent`](/apidocs/modules.md#tpointerevent) | the native mouse event |
 | `control` | [`Control`](/apidocs/classes/Control.md) | the current control ( likely this) |
-| `fabricObject` | `InteractiveFabricObject`<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | - |
+| `fabricObject` | `InteractiveFabricObject`\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | - |
 
 #### Returns
 
@@ -460,13 +425,13 @@ the cursorStyle property
 
 #### Defined in
 
-[src/controls/Control.ts:244](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/controls/Control.ts#L244)
+[src/controls/Control.ts:244](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/controls/Control.ts#L244)
 
 ___
 
 ### getActionHandler
 
-▸ **getActionHandler**(`eventData`, `fabricObject`, `control`): `undefined` \| [`TransformActionHandler`](/apidocs/modules.md#transformactionhandler)<[`Transform`](/apidocs/modules.md#transform)\>
+▸ **getActionHandler**(`eventData`, `fabricObject`, `control`): `undefined` \| [`TransformActionHandler`](/apidocs/modules.md#transformactionhandler)\<[`Transform`](/apidocs/modules.md#transform)\>
 
 Returns control actionHandler
 
@@ -475,18 +440,18 @@ Returns control actionHandler
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `eventData` | [`TPointerEvent`](/apidocs/modules.md#tpointerevent) | the native mouse event |
-| `fabricObject` | `InteractiveFabricObject`<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | on which the control is displayed |
+| `fabricObject` | `InteractiveFabricObject`\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | on which the control is displayed |
 | `control` | [`Control`](/apidocs/classes/Control.md) | control for which the action handler is being asked |
 
 #### Returns
 
-`undefined` \| [`TransformActionHandler`](/apidocs/modules.md#transformactionhandler)<[`Transform`](/apidocs/modules.md#transform)\>
+`undefined` \| [`TransformActionHandler`](/apidocs/modules.md#transformactionhandler)\<[`Transform`](/apidocs/modules.md#transform)\>
 
 the action handler
 
 #### Defined in
 
-[src/controls/Control.ts:196](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/controls/Control.ts#L196)
+[src/controls/Control.ts:196](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/controls/Control.ts#L196)
 
 ___
 
@@ -502,7 +467,7 @@ Returns the action name. The basic implementation just return the actionName pro
 | :------ | :------ | :------ |
 | `eventData` | [`TPointerEvent`](/apidocs/modules.md#tpointerevent) | the native mouse event |
 | `control` | [`Control`](/apidocs/classes/Control.md) | the current control ( likely this) |
-| `fabricObject` | `InteractiveFabricObject`<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | - |
+| `fabricObject` | `InteractiveFabricObject`\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | - |
 
 #### Returns
 
@@ -510,7 +475,7 @@ Returns the action name. The basic implementation just return the actionName pro
 
 #### Defined in
 
-[src/controls/Control.ts:259](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/controls/Control.ts#L259)
+[src/controls/Control.ts:259](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/controls/Control.ts#L259)
 
 ___
 
@@ -525,7 +490,7 @@ Returns control mouseDown handler
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `eventData` | [`TPointerEvent`](/apidocs/modules.md#tpointerevent) | the native mouse event |
-| `fabricObject` | `InteractiveFabricObject`<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | on which the control is displayed |
+| `fabricObject` | `InteractiveFabricObject`\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | on which the control is displayed |
 | `control` | [`Control`](/apidocs/classes/Control.md) | control for which the action handler is being asked |
 
 #### Returns
@@ -536,7 +501,7 @@ the action handler
 
 #### Defined in
 
-[src/controls/Control.ts:211](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/controls/Control.ts#L211)
+[src/controls/Control.ts:211](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/controls/Control.ts#L211)
 
 ___
 
@@ -552,7 +517,7 @@ During actions the fabricObject or the control can be of different obj
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `eventData` | [`TPointerEvent`](/apidocs/modules.md#tpointerevent) | the native mouse event |
-| `fabricObject` | `InteractiveFabricObject`<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | on which the control is displayed |
+| `fabricObject` | `InteractiveFabricObject`\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | on which the control is displayed |
 | `control` | [`Control`](/apidocs/classes/Control.md) | control for which the action handler is being asked |
 
 #### Returns
@@ -563,7 +528,7 @@ the action handler
 
 #### Defined in
 
-[src/controls/Control.ts:227](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/controls/Control.ts#L227)
+[src/controls/Control.ts:227](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/controls/Control.ts#L227)
 
 ___
 
@@ -577,7 +542,7 @@ Returns controls visibility
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `fabricObject` | `InteractiveFabricObject`<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | - |
+| `fabricObject` | `InteractiveFabricObject`\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | - |
 | `controlKey` | `string` | key where the control is memorized on the |
 
 #### Returns
@@ -586,7 +551,7 @@ Returns controls visibility
 
 #### Defined in
 
-[src/controls/Control.ts:273](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/controls/Control.ts#L273)
+[src/controls/Control.ts:273](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/controls/Control.ts#L273)
 
 ___
 
@@ -600,7 +565,7 @@ ___
 | :------ | :------ |
 | `dim` | [`Point`](/apidocs/classes/Point.md) |
 | `finalMatrix` | [`TMat2D`](/apidocs/modules.md#tmat2d) |
-| `fabricObject` | `InteractiveFabricObject`<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
+| `fabricObject` | `InteractiveFabricObject`\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
 | `currentControl` | [`Control`](/apidocs/classes/Control.md) |
 
 #### Returns
@@ -609,7 +574,7 @@ ___
 
 #### Defined in
 
-[src/controls/Control.ts:290](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/controls/Control.ts#L290)
+[src/controls/Control.ts:290](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/controls/Control.ts#L290)
 
 ___
 
@@ -630,8 +595,8 @@ left and top are the result of the positionHandler function
 | `ctx` | `CanvasRenderingContext2D` | the context where the control will be drawn |
 | `left` | `number` | position of the canvas where we are about to render the control. |
 | `top` | `number` | position of the canvas where we are about to render the control. |
-| `styleOverride` | `undefined` \| `Partial`<`Pick`<`InteractiveFabricObject`<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>, ``"cornerStyle"`` \| ``"cornerSize"`` \| ``"cornerColor"`` \| ``"cornerStrokeColor"`` \| ``"cornerDashArray"`` \| ``"transparentCorners"``\>\> |  |
-| `fabricObject` | `InteractiveFabricObject`<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | the object where the control is about to be rendered |
+| `styleOverride` | `undefined` \| `Partial`\<`Pick`\<`InteractiveFabricObject`\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>, ``"cornerStyle"`` \| ``"cornerSize"`` \| ``"cornerColor"`` \| ``"cornerStrokeColor"`` \| ``"cornerDashArray"`` \| ``"transparentCorners"``\>\> |  |
+| `fabricObject` | `InteractiveFabricObject`\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | the object where the control is about to be rendered |
 
 #### Returns
 
@@ -639,7 +604,7 @@ left and top are the result of the positionHandler function
 
 #### Defined in
 
-[src/controls/Control.ts:347](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/controls/Control.ts#L347)
+[src/controls/Control.ts:347](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/controls/Control.ts#L347)
 
 ___
 
@@ -655,7 +620,7 @@ Sets controls visibility
 | :------ | :------ | :------ |
 | `visibility` | `boolean` | for the object |
 | `name` | `string` | - |
-| `fabricObject` | `InteractiveFabricObject`<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | - |
+| `fabricObject` | `InteractiveFabricObject`\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | - |
 
 #### Returns
 
@@ -663,7 +628,7 @@ Sets controls visibility
 
 #### Defined in
 
-[src/controls/Control.ts:282](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/controls/Control.ts#L282)
+[src/controls/Control.ts:282](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/controls/Control.ts#L282)
 
 ___
 
@@ -676,7 +641,7 @@ ___
 | Name | Type |
 | :------ | :------ |
 | `controlKey` | `string` |
-| `fabricObject` | `InteractiveFabricObject`<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
+| `fabricObject` | `InteractiveFabricObject`\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
 | `pointer` | [`Point`](/apidocs/classes/Point.md) |
 | `«destructured»` | [`TCornerPoint`](/apidocs/modules.md#tcornerpoint) |
 
@@ -686,4 +651,4 @@ ___
 
 #### Defined in
 
-[src/controls/Control.ts:175](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/controls/Control.ts#L175)
+[src/controls/Control.ts:175](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/controls/Control.ts#L175)

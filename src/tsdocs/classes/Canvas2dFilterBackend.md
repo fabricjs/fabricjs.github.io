@@ -1,24 +1,14 @@
 # Class: Canvas2dFilterBackend
 
-## Table of contents
-
-### Constructors
-
-- [constructor](/apidocs/classes/Canvas2dFilterBackend.md#constructor)
-
-### Properties
-
-- [resources](/apidocs/classes/Canvas2dFilterBackend.md#resources)
-
-### Methods
-
-- [applyFilters](/apidocs/classes/Canvas2dFilterBackend.md#applyfilters)
-
 ## Constructors
 
 ### constructor
 
-• **new Canvas2dFilterBackend**()
+• **new Canvas2dFilterBackend**(): [`Canvas2dFilterBackend`](/apidocs/classes/Canvas2dFilterBackend.md)
+
+#### Returns
+
+[`Canvas2dFilterBackend`](/apidocs/classes/Canvas2dFilterBackend.md)
 
 ## Properties
 
@@ -34,7 +24,7 @@ cleared never. Clearing is left to the developer.
 
 #### Defined in
 
-[src/filters/Canvas2dFilterBackend.ts:15](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/Canvas2dFilterBackend.ts#L15)
+[src/filters/Canvas2dFilterBackend.ts:15](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/Canvas2dFilterBackend.ts#L15)
 
 ## Methods
 
@@ -61,4 +51,4 @@ to the provided destination canvas.
 
 #### Defined in
 
-[src/filters/Canvas2dFilterBackend.ts:27](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/Canvas2dFilterBackend.ts#L27)
+[src/filters/Canvas2dFilterBackend.ts:27](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/Canvas2dFilterBackend.ts#L27)

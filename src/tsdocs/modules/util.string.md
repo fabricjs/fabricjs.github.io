@@ -2,14 +2,6 @@
 
 [util](/apidocs/modules/util.md).string
 
-## Table of contents
-
-### Functions
-
-- [capitalize](/apidocs/modules/util.string.md#capitalize)
-- [escapeXml](/apidocs/modules/util.string.md#escapexml)
-- [graphemeSplit](/apidocs/modules/util.string.md#graphemesplit)
-
 ## Functions
 
 ### capitalize
@@ -33,7 +25,7 @@ Capitalized version of a string
 
 #### Defined in
 
-[src/util/lang_string.ts:9](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/util/lang_string.ts#L9)
+[src/util/lang_string.ts:9](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/lang_string.ts#L9)
 
 ___
 
@@ -57,7 +49,7 @@ Escaped version of a string
 
 #### Defined in
 
-[src/util/lang_string.ts:19](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/util/lang_string.ts#L19)
+[src/util/lang_string.ts:19](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/lang_string.ts#L19)
 
 ___
 
@@ -81,4 +73,4 @@ array containing the graphemes
 
 #### Defined in
 
-[src/util/lang_string.ts:32](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/util/lang_string.ts#L32)
+[src/util/lang_string.ts:32](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/lang_string.ts#L32)

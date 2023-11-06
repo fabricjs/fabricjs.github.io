@@ -1,4 +1,4 @@
-# Class: Observable<EventSpec\>
+# Class: Observable\<EventSpec\>
 
 **`Tutorial`**
 
@@ -14,29 +14,11 @@
 | :------ |
 | `EventSpec` |
 
-## Table of contents
-
-### Constructors
-
-- [constructor](/apidocs/classes/Observable.md#constructor)
-
-### Properties
-
-- [\_\_eventListeners](/apidocs/classes/Observable.md#__eventlisteners)
-
-### Methods
-
-- [\_removeEventListener](/apidocs/classes/Observable.md#_removeeventlistener)
-- [fire](/apidocs/classes/Observable.md#fire)
-- [off](/apidocs/classes/Observable.md#off)
-- [on](/apidocs/classes/Observable.md#on)
-- [once](/apidocs/classes/Observable.md#once)
-
 ## Constructors
 
 ### constructor
 
-• **new Observable**<`EventSpec`\>()
+• **new Observable**\<`EventSpec`\>(): [`Observable`](/apidocs/classes/Observable.md)\<`EventSpec`\>
 
 #### Type parameters
 
@@ -44,21 +26,25 @@
 | :------ |
 | `EventSpec` |
 
+#### Returns
+
+[`Observable`](/apidocs/classes/Observable.md)\<`EventSpec`\>
+
 ## Properties
 
 ### \_\_eventListeners
 
-• `Private` **\_\_eventListeners**: `Record`<keyof `EventSpec`, `TEventCallback`<`any`\>[]\>
+• `Private` **\_\_eventListeners**: `Record`\<keyof `EventSpec`, `TEventCallback`\<`any`\>[]\>
 
 #### Defined in
 
-[src/Observable.ts:12](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Observable.ts#L12)
+[src/Observable.ts:12](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L12)
 
 ## Methods
 
 ### \_removeEventListener
 
-▸ `Private` **_removeEventListener**<`K`\>(`eventName`, `handler?`): `void`
+▸ **_removeEventListener**\<`K`\>(`eventName`, `handler?`): `void`
 
 #### Type parameters
 
@@ -71,7 +57,7 @@
 | Name | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `handler?` | `TEventCallback`<`any`\> |
+| `handler?` | `TEventCallback`\<`any`\> |
 
 #### Returns
 
@@ -79,13 +65,13 @@
 
 #### Defined in
 
-[src/Observable.ts:98](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Observable.ts#L98)
+[src/Observable.ts:98](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L98)
 
 ___
 
 ### fire
 
-▸ **fire**<`K`\>(`eventName`, `options?`): `void`
+▸ **fire**\<`K`\>(`eventName`, `options?`): `void`
 
 Fires event with an optional options object
 
@@ -108,13 +94,13 @@ Fires event with an optional options object
 
 #### Defined in
 
-[src/Observable.ts:159](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Observable.ts#L159)
+[src/Observable.ts:159](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L159)
 
 ___
 
 ### off
 
-▸ **off**<`K`\>(`eventName`, `handler`): `void`
+▸ **off**\<`K`\>(`eventName`, `handler`): `void`
 
 unsubscribe an event listener
 
@@ -129,7 +115,7 @@ unsubscribe an event listener
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `eventName` | `K` | event name (eg. 'after:render') |
-| `handler` | `TEventCallback`<`any`\> | event listener to unsubscribe |
+| `handler` | `TEventCallback`\<`any`\> | event listener to unsubscribe |
 
 #### Returns
 
@@ -137,7 +123,7 @@ unsubscribe an event listener
 
 #### Defined in
 
-[src/Observable.ts:120](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Observable.ts#L120)
+[src/Observable.ts:120](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L120)
 
 ▸ **off**(`handlers`): `void`
 
@@ -147,7 +133,7 @@ unsubscribe event listeners
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `handlers` | `EventRegistryObject`<`EventSpec`\> | handlers key/value pairs (eg. {'after:render': handler, 'selection:cleared': handler}) |
+| `handlers` | `EventRegistryObject`\<`EventSpec`\> | handlers key/value pairs (eg. {'after:render': handler, 'selection:cleared': handler}) |
 
 #### Returns
 
@@ -155,7 +141,7 @@ unsubscribe event listeners
 
 #### Defined in
 
-[src/Observable.ts:125](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Observable.ts#L125)
+[src/Observable.ts:125](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L125)
 
 ▸ **off**(): `void`
 
@@ -167,13 +153,13 @@ unsubscribe all event listeners
 
 #### Defined in
 
-[src/Observable.ts:129](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Observable.ts#L129)
+[src/Observable.ts:129](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L129)
 
 ___
 
 ### on
 
-▸ **on**<`K`, `E`\>(`eventName`, `handler`): `VoidFunction`
+▸ **on**\<`K`, `E`\>(`eventName`, `handler`): `VoidFunction`
 
 Observes specified event
 
@@ -189,7 +175,7 @@ Observes specified event
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `eventName` | `K` | Event name (eg. 'after:render') |
-| `handler` | `TEventCallback`<`E`\> | Function that receives a notification when an event of the specified type occurs |
+| `handler` | `TEventCallback`\<`E`\> | Function that receives a notification when an event of the specified type occurs |
 
 #### Returns
 
@@ -203,7 +189,7 @@ on
 
 #### Defined in
 
-[src/Observable.ts:23](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Observable.ts#L23)
+[src/Observable.ts:23](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L23)
 
 ▸ **on**(`handlers`): `VoidFunction`
 
@@ -211,7 +197,7 @@ on
 
 | Name | Type |
 | :------ | :------ |
-| `handlers` | `EventRegistryObject`<`EventSpec`\> |
+| `handlers` | `EventRegistryObject`\<`EventSpec`\> |
 
 #### Returns
 
@@ -219,13 +205,13 @@ on
 
 #### Defined in
 
-[src/Observable.ts:27](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Observable.ts#L27)
+[src/Observable.ts:27](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L27)
 
 ___
 
 ### once
 
-▸ **once**<`K`, `E`\>(`eventName`, `handler`): `VoidFunction`
+▸ **once**\<`K`, `E`\>(`eventName`, `handler`): `VoidFunction`
 
 Observes specified event **once**
 
@@ -241,7 +227,7 @@ Observes specified event **once**
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `eventName` | `K` | Event name (eg. 'after:render') |
-| `handler` | `TEventCallback`<`E`\> | Function that receives a notification when an event of the specified type occurs |
+| `handler` | `TEventCallback`\<`E`\> | Function that receives a notification when an event of the specified type occurs |
 
 #### Returns
 
@@ -255,7 +241,7 @@ once
 
 #### Defined in
 
-[src/Observable.ts:62](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Observable.ts#L62)
+[src/Observable.ts:62](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L62)
 
 ▸ **once**(`handlers`): `VoidFunction`
 
@@ -263,7 +249,7 @@ once
 
 | Name | Type |
 | :------ | :------ |
-| `handlers` | `EventRegistryObject`<`EventSpec`\> |
+| `handlers` | `EventRegistryObject`\<`EventSpec`\> |
 
 #### Returns
 
@@ -271,4 +257,4 @@ once
 
 #### Defined in
 
-[src/Observable.ts:66](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Observable.ts#L66)
+[src/Observable.ts:66](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L66)

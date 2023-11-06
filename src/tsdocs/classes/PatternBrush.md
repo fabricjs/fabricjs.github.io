@@ -10,56 +10,11 @@
 
   ↳ **`PatternBrush`**
 
-## Table of contents
-
-### Constructors
-
-- [constructor](/apidocs/classes/PatternBrush.md#constructor)
-
-### Properties
-
-- [canvas](/apidocs/classes/PatternBrush.md#canvas)
-- [color](/apidocs/classes/PatternBrush.md#color)
-- [decimate](/apidocs/classes/PatternBrush.md#decimate)
-- [drawStraightLine](/apidocs/classes/PatternBrush.md#drawstraightline)
-- [limitedToCanvasSize](/apidocs/classes/PatternBrush.md#limitedtocanvassize)
-- [shadow](/apidocs/classes/PatternBrush.md#shadow)
-- [source](/apidocs/classes/PatternBrush.md#source)
-- [straightLineKey](/apidocs/classes/PatternBrush.md#straightlinekey)
-- [strokeDashArray](/apidocs/classes/PatternBrush.md#strokedasharray)
-- [strokeLineCap](/apidocs/classes/PatternBrush.md#strokelinecap)
-- [strokeLineJoin](/apidocs/classes/PatternBrush.md#strokelinejoin)
-- [strokeMiterLimit](/apidocs/classes/PatternBrush.md#strokemiterlimit)
-- [width](/apidocs/classes/PatternBrush.md#width)
-
-### Methods
-
-- [\_addPoint](/apidocs/classes/PatternBrush.md#_addpoint)
-- [\_finalizeAndAddPath](/apidocs/classes/PatternBrush.md#_finalizeandaddpath)
-- [\_isOutSideCanvas](/apidocs/classes/PatternBrush.md#_isoutsidecanvas)
-- [\_prepareForDrawing](/apidocs/classes/PatternBrush.md#_preparefordrawing)
-- [\_render](/apidocs/classes/PatternBrush.md#_render)
-- [\_reset](/apidocs/classes/PatternBrush.md#_reset)
-- [\_resetShadow](/apidocs/classes/PatternBrush.md#_resetshadow)
-- [\_saveAndTransform](/apidocs/classes/PatternBrush.md#_saveandtransform)
-- [\_setBrushStyles](/apidocs/classes/PatternBrush.md#_setbrushstyles)
-- [\_setShadow](/apidocs/classes/PatternBrush.md#_setshadow)
-- [convertPointsToSVGPath](/apidocs/classes/PatternBrush.md#convertpointstosvgpath)
-- [createPath](/apidocs/classes/PatternBrush.md#createpath)
-- [decimatePoints](/apidocs/classes/PatternBrush.md#decimatepoints)
-- [getPattern](/apidocs/classes/PatternBrush.md#getpattern)
-- [getPatternSrc](/apidocs/classes/PatternBrush.md#getpatternsrc)
-- [needsFullRender](/apidocs/classes/PatternBrush.md#needsfullrender)
-- [onMouseDown](/apidocs/classes/PatternBrush.md#onmousedown)
-- [onMouseMove](/apidocs/classes/PatternBrush.md#onmousemove)
-- [onMouseUp](/apidocs/classes/PatternBrush.md#onmouseup)
-- [drawSegment](/apidocs/classes/PatternBrush.md#drawsegment)
-
 ## Constructors
 
 ### constructor
 
-• **new PatternBrush**(`canvas`)
+• **new PatternBrush**(`canvas`): [`PatternBrush`](/apidocs/classes/PatternBrush.md)
 
 #### Parameters
 
@@ -67,13 +22,17 @@
 | :------ | :------ |
 | `canvas` | [`Canvas`](/apidocs/classes/Canvas.md) |
 
+#### Returns
+
+[`PatternBrush`](/apidocs/classes/PatternBrush.md)
+
 #### Overrides
 
 [PencilBrush](/apidocs/classes/PencilBrush.md).[constructor](/apidocs/classes/PencilBrush.md#constructor)
 
 #### Defined in
 
-[src/brushes/PatternBrush.ts:10](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/brushes/PatternBrush.ts#L10)
+[src/brushes/PatternBrush.ts:10](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/brushes/PatternBrush.ts#L10)
 
 ## Properties
 
@@ -91,7 +50,7 @@ add type
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:73](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/brushes/BaseBrush.ts#L73)
+[src/brushes/BaseBrush.ts:73](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/brushes/BaseBrush.ts#L73)
 
 ___
 
@@ -113,7 +72,7 @@ Color of a brush
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:16](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/brushes/BaseBrush.ts#L16)
+[src/brushes/BaseBrush.ts:16](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/brushes/BaseBrush.ts#L16)
 
 ___
 
@@ -135,7 +94,7 @@ Discard points that are less than `decimate` pixel distant from each other
 
 #### Defined in
 
-[src/brushes/PencilBrush.ts:25](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/brushes/PencilBrush.ts#L25)
+[src/brushes/PencilBrush.ts:25](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/brushes/PencilBrush.ts#L25)
 
 ___
 
@@ -158,7 +117,7 @@ false
 
 #### Defined in
 
-[src/brushes/PencilBrush.ts:34](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/brushes/PencilBrush.ts#L34)
+[src/brushes/PencilBrush.ts:34](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/brushes/PencilBrush.ts#L34)
 
 ___
 
@@ -180,7 +139,7 @@ false
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:68](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/brushes/BaseBrush.ts#L68)
+[src/brushes/BaseBrush.ts:68](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/brushes/BaseBrush.ts#L68)
 
 ___
 
@@ -204,7 +163,7 @@ Shadow object representing shadow of this shape.
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:32](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/brushes/BaseBrush.ts#L32)
+[src/brushes/BaseBrush.ts:32](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/brushes/BaseBrush.ts#L32)
 
 ___
 
@@ -214,7 +173,7 @@ ___
 
 #### Defined in
 
-[src/brushes/PatternBrush.ts:8](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/brushes/PatternBrush.ts#L8)
+[src/brushes/PatternBrush.ts:8](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/brushes/PatternBrush.ts#L8)
 
 ___
 
@@ -231,7 +190,7 @@ If `null` or 'none' or any other string that is not a modifier key the feature i
 
 #### Defined in
 
-[src/brushes/PencilBrush.ts:41](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/brushes/PencilBrush.ts#L41)
+[src/brushes/PencilBrush.ts:41](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/brushes/PencilBrush.ts#L41)
 
 ___
 
@@ -253,7 +212,7 @@ Stroke Dash Array.
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:60](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/brushes/BaseBrush.ts#L60)
+[src/brushes/BaseBrush.ts:60](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/brushes/BaseBrush.ts#L60)
 
 ___
 
@@ -275,7 +234,7 @@ Line endings style of a brush (one of "butt", "round", "square")
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:39](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/brushes/BaseBrush.ts#L39)
+[src/brushes/BaseBrush.ts:39](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/brushes/BaseBrush.ts#L39)
 
 ___
 
@@ -297,7 +256,7 @@ Corner style of a brush (one of "bevel", "round", "miter")
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:46](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/brushes/BaseBrush.ts#L46)
+[src/brushes/BaseBrush.ts:46](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/brushes/BaseBrush.ts#L46)
 
 ___
 
@@ -319,7 +278,7 @@ Maximum miter length (used for strokeLineJoin = "miter") of a brush's
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:53](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/brushes/BaseBrush.ts#L53)
+[src/brushes/BaseBrush.ts:53](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/brushes/BaseBrush.ts#L53)
 
 ___
 
@@ -341,13 +300,13 @@ Width of a brush, has to be a Number, no string literals
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:23](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/brushes/BaseBrush.ts#L23)
+[src/brushes/BaseBrush.ts:23](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/brushes/BaseBrush.ts#L23)
 
 ## Methods
 
 ### \_addPoint
 
-▸ `Private` **_addPoint**(`point`): `boolean`
+▸ **_addPoint**(`point`): `boolean`
 
 #### Parameters
 
@@ -365,7 +324,7 @@ Width of a brush, has to be a Number, no string literals
 
 #### Defined in
 
-[src/brushes/PencilBrush.ts:145](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/brushes/PencilBrush.ts#L145)
+[src/brushes/PencilBrush.ts:145](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/brushes/PencilBrush.ts#L145)
 
 ___
 
@@ -387,13 +346,13 @@ and add it to the canvas.
 
 #### Defined in
 
-[src/brushes/PencilBrush.ts:273](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/brushes/PencilBrush.ts#L273)
+[src/brushes/PencilBrush.ts:273](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/brushes/PencilBrush.ts#L273)
 
 ___
 
 ### \_isOutSideCanvas
 
-▸ `Private` **_isOutSideCanvas**(`pointer`): `boolean`
+▸ **_isOutSideCanvas**(`pointer`): `boolean`
 
 Check is pointer is outside canvas boundaries
 
@@ -413,13 +372,13 @@ Check is pointer is outside canvas boundaries
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:153](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/brushes/BaseBrush.ts#L153)
+[src/brushes/BaseBrush.ts:153](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/brushes/BaseBrush.ts#L153)
 
 ___
 
 ### \_prepareForDrawing
 
-▸ `Private` **_prepareForDrawing**(`pointer`): `void`
+▸ **_prepareForDrawing**(`pointer`): `void`
 
 #### Parameters
 
@@ -437,13 +396,13 @@ ___
 
 #### Defined in
 
-[src/brushes/PencilBrush.ts:135](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/brushes/PencilBrush.ts#L135)
+[src/brushes/PencilBrush.ts:135](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/brushes/PencilBrush.ts#L135)
 
 ___
 
 ### \_render
 
-▸ `Private` **_render**(`ctx?`): `void`
+▸ **_render**(`ctx?`): `void`
 
 Draw a smooth path on the topCanvas using quadraticCurveTo
 
@@ -463,13 +422,13 @@ Draw a smooth path on the topCanvas using quadraticCurveTo
 
 #### Defined in
 
-[src/brushes/PencilBrush.ts:176](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/brushes/PencilBrush.ts#L176)
+[src/brushes/PencilBrush.ts:176](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/brushes/PencilBrush.ts#L176)
 
 ___
 
 ### \_reset
 
-▸ `Private` **_reset**(): `void`
+▸ **_reset**(): `void`
 
 Clear points array and set contextTop canvas style.
 
@@ -483,13 +442,13 @@ Clear points array and set contextTop canvas style.
 
 #### Defined in
 
-[src/brushes/PencilBrush.ts:164](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/brushes/PencilBrush.ts#L164)
+[src/brushes/PencilBrush.ts:164](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/brushes/PencilBrush.ts#L164)
 
 ___
 
 ### \_resetShadow
 
-▸ `Private` **_resetShadow**(): `void`
+▸ **_resetShadow**(): `void`
 
 Removes brush shadow styles
 
@@ -503,13 +462,13 @@ Removes brush shadow styles
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:141](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/brushes/BaseBrush.ts#L141)
+[src/brushes/BaseBrush.ts:141](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/brushes/BaseBrush.ts#L141)
 
 ___
 
 ### \_saveAndTransform
 
-▸ `Private` **_saveAndTransform**(`ctx`): `void`
+▸ **_saveAndTransform**(`ctx`): `void`
 
 Sets the transformation on given context
 
@@ -529,7 +488,7 @@ Sets the transformation on given context
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:106](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/brushes/BaseBrush.ts#L106)
+[src/brushes/BaseBrush.ts:106](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/brushes/BaseBrush.ts#L106)
 
 ___
 
@@ -555,13 +514,13 @@ Sets brush styles
 
 #### Defined in
 
-[src/brushes/PatternBrush.ts:50](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/brushes/PatternBrush.ts#L50)
+[src/brushes/PatternBrush.ts:50](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/brushes/PatternBrush.ts#L50)
 
 ___
 
 ### \_setShadow
 
-▸ `Private` **_setShadow**(): `void`
+▸ **_setShadow**(): `void`
 
 Sets brush shadow styles
 
@@ -575,7 +534,7 @@ Sets brush shadow styles
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:121](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/brushes/BaseBrush.ts#L121)
+[src/brushes/BaseBrush.ts:121](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/brushes/BaseBrush.ts#L121)
 
 ___
 
@@ -603,13 +562,13 @@ SVG path commands
 
 #### Defined in
 
-[src/brushes/PencilBrush.ts:212](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/brushes/PencilBrush.ts#L212)
+[src/brushes/PencilBrush.ts:212](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/brushes/PencilBrush.ts#L212)
 
 ___
 
 ### createPath
 
-▸ **createPath**(`pathData`): [`Path`](/apidocs/classes/Path.md)<`Partial`<[`PathProps`](/apidocs/interfaces/PathProps.md)\>, [`SerializedPathProps`](/apidocs/interfaces/SerializedPathProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
+▸ **createPath**(`pathData`): [`Path`](/apidocs/classes/Path.md)\<`Partial`\<[`PathProps`](/apidocs/interfaces/PathProps.md)\>, [`SerializedPathProps`](/apidocs/interfaces/SerializedPathProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
 
 Creates path
 
@@ -621,7 +580,7 @@ Creates path
 
 #### Returns
 
-[`Path`](/apidocs/classes/Path.md)<`Partial`<[`PathProps`](/apidocs/interfaces/PathProps.md)\>, [`SerializedPathProps`](/apidocs/interfaces/SerializedPathProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
+[`Path`](/apidocs/classes/Path.md)\<`Partial`\<[`PathProps`](/apidocs/interfaces/PathProps.md)\>, [`SerializedPathProps`](/apidocs/interfaces/SerializedPathProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
 
 #### Overrides
 
@@ -629,7 +588,7 @@ Creates path
 
 #### Defined in
 
-[src/brushes/PatternBrush.ts:59](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/brushes/PatternBrush.ts#L59)
+[src/brushes/PatternBrush.ts:59](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/brushes/PatternBrush.ts#L59)
 
 ___
 
@@ -656,7 +615,7 @@ Decimate points array with the decimate value
 
 #### Defined in
 
-[src/brushes/PencilBrush.ts:243](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/brushes/PencilBrush.ts#L243)
+[src/brushes/PencilBrush.ts:243](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/brushes/PencilBrush.ts#L243)
 
 ___
 
@@ -678,7 +637,7 @@ Creates "pattern" instance property
 
 #### Defined in
 
-[src/brushes/PatternBrush.ts:42](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/brushes/PatternBrush.ts#L42)
+[src/brushes/PatternBrush.ts:42](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/brushes/PatternBrush.ts#L42)
 
 ___
 
@@ -692,7 +651,7 @@ ___
 
 #### Defined in
 
-[src/brushes/PatternBrush.ts:14](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/brushes/PatternBrush.ts#L14)
+[src/brushes/PatternBrush.ts:14](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/brushes/PatternBrush.ts#L14)
 
 ___
 
@@ -710,7 +669,7 @@ ___
 
 #### Defined in
 
-[src/brushes/PencilBrush.ts:53](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/brushes/PencilBrush.ts#L53)
+[src/brushes/PencilBrush.ts:53](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/brushes/PencilBrush.ts#L53)
 
 ___
 
@@ -725,7 +684,7 @@ Invoked on mouse down
 | Name | Type |
 | :------ | :------ |
 | `pointer` | [`Point`](/apidocs/classes/Point.md) |
-| `«destructured»` | [`TEvent`](/apidocs/interfaces/TEvent.md)<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> |
+| `«destructured»` | [`TEvent`](/apidocs/interfaces/TEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> |
 
 #### Returns
 
@@ -737,7 +696,7 @@ Invoked on mouse down
 
 #### Defined in
 
-[src/brushes/PencilBrush.ts:67](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/brushes/PencilBrush.ts#L67)
+[src/brushes/PencilBrush.ts:67](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/brushes/PencilBrush.ts#L67)
 
 ___
 
@@ -752,7 +711,7 @@ Invoked on mouse move
 | Name | Type |
 | :------ | :------ |
 | `pointer` | [`Point`](/apidocs/classes/Point.md) |
-| `«destructured»` | [`TEvent`](/apidocs/interfaces/TEvent.md)<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> |
+| `«destructured»` | [`TEvent`](/apidocs/interfaces/TEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> |
 
 #### Returns
 
@@ -764,7 +723,7 @@ Invoked on mouse move
 
 #### Defined in
 
-[src/brushes/PencilBrush.ts:83](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/brushes/PencilBrush.ts#L83)
+[src/brushes/PencilBrush.ts:83](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/brushes/PencilBrush.ts#L83)
 
 ___
 
@@ -778,7 +737,7 @@ Invoked on mouse up
 
 | Name | Type |
 | :------ | :------ |
-| `«destructured»` | [`TEvent`](/apidocs/interfaces/TEvent.md)<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> |
+| `«destructured»` | [`TEvent`](/apidocs/interfaces/TEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> |
 
 #### Returns
 
@@ -790,13 +749,13 @@ Invoked on mouse up
 
 #### Defined in
 
-[src/brushes/PencilBrush.ts:121](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/brushes/PencilBrush.ts#L121)
+[src/brushes/PencilBrush.ts:121](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/brushes/PencilBrush.ts#L121)
 
 ___
 
 ### drawSegment
 
-▸ `Static` **drawSegment**(`ctx`, `p1`, `p2`): [`Point`](/apidocs/classes/Point.md)
+▸ **drawSegment**(`ctx`, `p1`, `p2`): [`Point`](/apidocs/classes/Point.md)
 
 #### Parameters
 
@@ -816,4 +775,4 @@ ___
 
 #### Defined in
 
-[src/brushes/PencilBrush.ts:57](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/brushes/PencilBrush.ts#L57)
+[src/brushes/PencilBrush.ts:57](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/brushes/PencilBrush.ts#L57)

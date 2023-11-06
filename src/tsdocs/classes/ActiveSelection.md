@@ -21,330 +21,11 @@ const canvas = new Canvas(el, {
 
   ↳ **`ActiveSelection`**
 
-## Table of contents
-
-### Constructors
-
-- [constructor](/apidocs/classes/ActiveSelection.md#constructor)
-
-### Properties
-
-- [\_\_corner](/apidocs/classes/ActiveSelection.md#__corner)
-- [\_\_owningGroup](/apidocs/classes/ActiveSelection.md#__owninggroup)
-- [\_activeObjects](/apidocs/classes/ActiveSelection.md#_activeobjects)
-- [\_cacheCanvas](/apidocs/classes/ActiveSelection.md#_cachecanvas)
-- [\_cacheContext](/apidocs/classes/ActiveSelection.md#_cachecontext)
-- [\_controlsVisibility](/apidocs/classes/ActiveSelection.md#_controlsvisibility)
-- [\_objects](/apidocs/classes/ActiveSelection.md#_objects)
-- [\_scaling](/apidocs/classes/ActiveSelection.md#_scaling)
-- [\_transformDone](/apidocs/classes/ActiveSelection.md#_transformdone)
-- [aCoords](/apidocs/classes/ActiveSelection.md#acoords)
-- [absolutePositioned](/apidocs/classes/ActiveSelection.md#absolutepositioned)
-- [activeOn](/apidocs/classes/ActiveSelection.md#activeon)
-- [angle](/apidocs/classes/ActiveSelection.md#angle)
-- [backgroundColor](/apidocs/classes/ActiveSelection.md#backgroundcolor)
-- [borderColor](/apidocs/classes/ActiveSelection.md#bordercolor)
-- [borderDashArray](/apidocs/classes/ActiveSelection.md#borderdasharray)
-- [borderOpacityWhenMoving](/apidocs/classes/ActiveSelection.md#borderopacitywhenmoving)
-- [borderScaleFactor](/apidocs/classes/ActiveSelection.md#borderscalefactor)
-- [cacheHeight](/apidocs/classes/ActiveSelection.md#cacheheight)
-- [cacheTranslationX](/apidocs/classes/ActiveSelection.md#cachetranslationx)
-- [cacheTranslationY](/apidocs/classes/ActiveSelection.md#cachetranslationy)
-- [cacheWidth](/apidocs/classes/ActiveSelection.md#cachewidth)
-- [canvas](/apidocs/classes/ActiveSelection.md#canvas)
-- [centeredRotation](/apidocs/classes/ActiveSelection.md#centeredrotation)
-- [centeredScaling](/apidocs/classes/ActiveSelection.md#centeredscaling)
-- [clipPath](/apidocs/classes/ActiveSelection.md#clippath)
-- [clipPathId](/apidocs/classes/ActiveSelection.md#clippathid)
-- [colorProperties](/apidocs/classes/ActiveSelection.md#colorproperties)
-- [controls](/apidocs/classes/ActiveSelection.md#controls)
-- [cornerColor](/apidocs/classes/ActiveSelection.md#cornercolor)
-- [cornerDashArray](/apidocs/classes/ActiveSelection.md#cornerdasharray)
-- [cornerSize](/apidocs/classes/ActiveSelection.md#cornersize)
-- [cornerStrokeColor](/apidocs/classes/ActiveSelection.md#cornerstrokecolor)
-- [cornerStyle](/apidocs/classes/ActiveSelection.md#cornerstyle)
-- [dirty](/apidocs/classes/ActiveSelection.md#dirty)
-- [evented](/apidocs/classes/ActiveSelection.md#evented)
-- [excludeFromExport](/apidocs/classes/ActiveSelection.md#excludefromexport)
-- [fill](/apidocs/classes/ActiveSelection.md#fill)
-- [fillRule](/apidocs/classes/ActiveSelection.md#fillrule)
-- [flipX](/apidocs/classes/ActiveSelection.md#flipx)
-- [flipY](/apidocs/classes/ActiveSelection.md#flipy)
-- [globalCompositeOperation](/apidocs/classes/ActiveSelection.md#globalcompositeoperation)
-- [group](/apidocs/classes/ActiveSelection.md#group)
-- [hasBorders](/apidocs/classes/ActiveSelection.md#hasborders)
-- [hasControls](/apidocs/classes/ActiveSelection.md#hascontrols)
-- [height](/apidocs/classes/ActiveSelection.md#height)
-- [hoverCursor](/apidocs/classes/ActiveSelection.md#hovercursor)
-- [includeDefaultValues](/apidocs/classes/ActiveSelection.md#includedefaultvalues)
-- [interactive](/apidocs/classes/ActiveSelection.md#interactive)
-- [inverted](/apidocs/classes/ActiveSelection.md#inverted)
-- [isMoving](/apidocs/classes/ActiveSelection.md#ismoving)
-- [layout](/apidocs/classes/ActiveSelection.md#layout)
-- [left](/apidocs/classes/ActiveSelection.md#left)
-- [lineCoords](/apidocs/classes/ActiveSelection.md#linecoords)
-- [lockMovementX](/apidocs/classes/ActiveSelection.md#lockmovementx)
-- [lockMovementY](/apidocs/classes/ActiveSelection.md#lockmovementy)
-- [lockRotation](/apidocs/classes/ActiveSelection.md#lockrotation)
-- [lockScalingFlip](/apidocs/classes/ActiveSelection.md#lockscalingflip)
-- [lockScalingX](/apidocs/classes/ActiveSelection.md#lockscalingx)
-- [lockScalingY](/apidocs/classes/ActiveSelection.md#lockscalingy)
-- [lockSkewingX](/apidocs/classes/ActiveSelection.md#lockskewingx)
-- [lockSkewingY](/apidocs/classes/ActiveSelection.md#lockskewingy)
-- [matrixCache](/apidocs/classes/ActiveSelection.md#matrixcache)
-- [minScaleLimit](/apidocs/classes/ActiveSelection.md#minscalelimit)
-- [moveCursor](/apidocs/classes/ActiveSelection.md#movecursor)
-- [multiSelectionStacking](/apidocs/classes/ActiveSelection.md#multiselectionstacking)
-- [noScaleCache](/apidocs/classes/ActiveSelection.md#noscalecache)
-- [oCoords](/apidocs/classes/ActiveSelection.md#ocoords)
-- [objectCaching](/apidocs/classes/ActiveSelection.md#objectcaching)
-- [opacity](/apidocs/classes/ActiveSelection.md#opacity)
-- [originX](/apidocs/classes/ActiveSelection.md#originx)
-- [originY](/apidocs/classes/ActiveSelection.md#originy)
-- [ownCaching](/apidocs/classes/ActiveSelection.md#owncaching)
-- [ownMatrixCache](/apidocs/classes/ActiveSelection.md#ownmatrixcache)
-- [padding](/apidocs/classes/ActiveSelection.md#padding)
-- [paintFirst](/apidocs/classes/ActiveSelection.md#paintfirst)
-- [perPixelTargetFind](/apidocs/classes/ActiveSelection.md#perpixeltargetfind)
-- [scaleX](/apidocs/classes/ActiveSelection.md#scalex)
-- [scaleY](/apidocs/classes/ActiveSelection.md#scaley)
-- [selectable](/apidocs/classes/ActiveSelection.md#selectable)
-- [selectionBackgroundColor](/apidocs/classes/ActiveSelection.md#selectionbackgroundcolor)
-- [shadow](/apidocs/classes/ActiveSelection.md#shadow)
-- [skewX](/apidocs/classes/ActiveSelection.md#skewx)
-- [skewY](/apidocs/classes/ActiveSelection.md#skewy)
-- [snapAngle](/apidocs/classes/ActiveSelection.md#snapangle)
-- [snapThreshold](/apidocs/classes/ActiveSelection.md#snapthreshold)
-- [stroke](/apidocs/classes/ActiveSelection.md#stroke)
-- [strokeDashArray](/apidocs/classes/ActiveSelection.md#strokedasharray)
-- [strokeDashOffset](/apidocs/classes/ActiveSelection.md#strokedashoffset)
-- [strokeLineCap](/apidocs/classes/ActiveSelection.md#strokelinecap)
-- [strokeLineJoin](/apidocs/classes/ActiveSelection.md#strokelinejoin)
-- [strokeMiterLimit](/apidocs/classes/ActiveSelection.md#strokemiterlimit)
-- [strokeUniform](/apidocs/classes/ActiveSelection.md#strokeuniform)
-- [strokeWidth](/apidocs/classes/ActiveSelection.md#strokewidth)
-- [subTargetCheck](/apidocs/classes/ActiveSelection.md#subtargetcheck)
-- [top](/apidocs/classes/ActiveSelection.md#top)
-- [touchCornerSize](/apidocs/classes/ActiveSelection.md#touchcornersize)
-- [transparentCorners](/apidocs/classes/ActiveSelection.md#transparentcorners)
-- [visible](/apidocs/classes/ActiveSelection.md#visible)
-- [width](/apidocs/classes/ActiveSelection.md#width)
-- [zoomX](/apidocs/classes/ActiveSelection.md#zoomx)
-- [zoomY](/apidocs/classes/ActiveSelection.md#zoomy)
-- [cacheProperties](/apidocs/classes/ActiveSelection.md#cacheproperties)
-- [ownDefaults](/apidocs/classes/ActiveSelection.md#owndefaults)
-- [stateProperties](/apidocs/classes/ActiveSelection.md#stateproperties)
-- [type](/apidocs/classes/ActiveSelection.md#type)
-
-### Accessors
-
-- [type](/apidocs/classes/ActiveSelection.md#type-1)
-
-### Methods
-
-- [\_\_objectMonitor](/apidocs/classes/ActiveSelection.md#__objectmonitor)
-- [\_\_objectSelectionMonitor](/apidocs/classes/ActiveSelection.md#__objectselectionmonitor)
-- [\_\_serializeObjects](/apidocs/classes/ActiveSelection.md#__serializeobjects)
-- [\_adjustObjectPosition](/apidocs/classes/ActiveSelection.md#_adjustobjectposition)
-- [\_animate](/apidocs/classes/ActiveSelection.md#_animate)
-- [\_applyLayoutStrategy](/apidocs/classes/ActiveSelection.md#_applylayoutstrategy)
-- [\_applyPatternForTransformedGradient](/apidocs/classes/ActiveSelection.md#_applypatternfortransformedgradient)
-- [\_applyPatternGradientTransform](/apidocs/classes/ActiveSelection.md#_applypatterngradienttransform)
-- [\_calculateCurrentDimensions](/apidocs/classes/ActiveSelection.md#_calculatecurrentdimensions)
-- [\_constrainScale](/apidocs/classes/ActiveSelection.md#_constrainscale)
-- [\_createBaseClipPathSVGMarkup](/apidocs/classes/ActiveSelection.md#_createbaseclippathsvgmarkup)
-- [\_createBaseSVGMarkup](/apidocs/classes/ActiveSelection.md#_createbasesvgmarkup)
-- [\_createCacheCanvas](/apidocs/classes/ActiveSelection.md#_createcachecanvas)
-- [\_createSVGBgRect](/apidocs/classes/ActiveSelection.md#_createsvgbgrect)
-- [\_drawBorders](/apidocs/classes/ActiveSelection.md#_drawborders)
-- [\_drawClipPath](/apidocs/classes/ActiveSelection.md#_drawclippath)
-- [\_enterGroup](/apidocs/classes/ActiveSelection.md#_entergroup)
-- [\_exitGroup](/apidocs/classes/ActiveSelection.md#_exitgroup)
-- [\_filterObjectsBeforeEnteringGroup](/apidocs/classes/ActiveSelection.md#_filterobjectsbeforeenteringgroup)
-- [\_findCenterFromElement](/apidocs/classes/ActiveSelection.md#_findcenterfromelement)
-- [\_findTargetCorner](/apidocs/classes/ActiveSelection.md#_findtargetcorner)
-- [\_getCacheCanvasDimensions](/apidocs/classes/ActiveSelection.md#_getcachecanvasdimensions)
-- [\_getLeftTopCoords](/apidocs/classes/ActiveSelection.md#_getlefttopcoords)
-- [\_getNonTransformedDimensions](/apidocs/classes/ActiveSelection.md#_getnontransformeddimensions)
-- [\_getTransformedDimensions](/apidocs/classes/ActiveSelection.md#_gettransformeddimensions)
-- [\_limitCacheSize](/apidocs/classes/ActiveSelection.md#_limitcachesize)
-- [\_onAfterObjectsChange](/apidocs/classes/ActiveSelection.md#_onafterobjectschange)
-- [\_onObjectAdded](/apidocs/classes/ActiveSelection.md#_onobjectadded)
-- [\_onObjectRemoved](/apidocs/classes/ActiveSelection.md#_onobjectremoved)
-- [\_onRelativeObjectAdded](/apidocs/classes/ActiveSelection.md#_onrelativeobjectadded)
-- [\_onStackOrderChanged](/apidocs/classes/ActiveSelection.md#_onstackorderchanged)
-- [\_removeCacheCanvas](/apidocs/classes/ActiveSelection.md#_removecachecanvas)
-- [\_removeDefaultValues](/apidocs/classes/ActiveSelection.md#_removedefaultvalues)
-- [\_removeShadow](/apidocs/classes/ActiveSelection.md#_removeshadow)
-- [\_render](/apidocs/classes/ActiveSelection.md#_render)
-- [\_renderBackground](/apidocs/classes/ActiveSelection.md#_renderbackground)
-- [\_renderControls](/apidocs/classes/ActiveSelection.md#_rendercontrols)
-- [\_renderFill](/apidocs/classes/ActiveSelection.md#_renderfill)
-- [\_renderPaintInOrder](/apidocs/classes/ActiveSelection.md#_renderpaintinorder)
-- [\_renderStroke](/apidocs/classes/ActiveSelection.md#_renderstroke)
-- [\_set](/apidocs/classes/ActiveSelection.md#_set)
-- [\_setClippingProperties](/apidocs/classes/ActiveSelection.md#_setclippingproperties)
-- [\_setFillStyles](/apidocs/classes/ActiveSelection.md#_setfillstyles)
-- [\_setLineDash](/apidocs/classes/ActiveSelection.md#_setlinedash)
-- [\_setObject](/apidocs/classes/ActiveSelection.md#_setobject)
-- [\_setOpacity](/apidocs/classes/ActiveSelection.md#_setopacity)
-- [\_setOptions](/apidocs/classes/ActiveSelection.md#_setoptions)
-- [\_setShadow](/apidocs/classes/ActiveSelection.md#_setshadow)
-- [\_setStrokeStyles](/apidocs/classes/ActiveSelection.md#_setstrokestyles)
-- [\_setupCompositeOperation](/apidocs/classes/ActiveSelection.md#_setupcompositeoperation)
-- [\_shouldSetNestedCoords](/apidocs/classes/ActiveSelection.md#_shouldsetnestedcoords)
-- [\_toSVG](/apidocs/classes/ActiveSelection.md#_tosvg)
-- [\_updateCacheCanvas](/apidocs/classes/ActiveSelection.md#_updatecachecanvas)
-- [\_watchObject](/apidocs/classes/ActiveSelection.md#_watchobject)
-- [add](/apidocs/classes/ActiveSelection.md#add)
-- [addPaintOrder](/apidocs/classes/ActiveSelection.md#addpaintorder)
-- [animate](/apidocs/classes/ActiveSelection.md#animate)
-- [bringObjectForward](/apidocs/classes/ActiveSelection.md#bringobjectforward)
-- [bringObjectToFront](/apidocs/classes/ActiveSelection.md#bringobjecttofront)
-- [calcACoords](/apidocs/classes/ActiveSelection.md#calcacoords)
-- [calcLineCoords](/apidocs/classes/ActiveSelection.md#calclinecoords)
-- [calcOCoords](/apidocs/classes/ActiveSelection.md#calcocoords)
-- [calcOwnMatrix](/apidocs/classes/ActiveSelection.md#calcownmatrix)
-- [calcTransformMatrix](/apidocs/classes/ActiveSelection.md#calctransformmatrix)
-- [canDrop](/apidocs/classes/ActiveSelection.md#candrop)
-- [canEnterGroup](/apidocs/classes/ActiveSelection.md#canentergroup)
-- [clearContextTop](/apidocs/classes/ActiveSelection.md#clearcontexttop)
-- [clone](/apidocs/classes/ActiveSelection.md#clone)
-- [cloneAsImage](/apidocs/classes/ActiveSelection.md#cloneasimage)
-- [collectObjects](/apidocs/classes/ActiveSelection.md#collectobjects)
-- [complexity](/apidocs/classes/ActiveSelection.md#complexity)
-- [contains](/apidocs/classes/ActiveSelection.md#contains)
-- [containsPoint](/apidocs/classes/ActiveSelection.md#containspoint)
-- [dispose](/apidocs/classes/ActiveSelection.md#dispose)
-- [drawBorders](/apidocs/classes/ActiveSelection.md#drawborders)
-- [drawCacheOnCanvas](/apidocs/classes/ActiveSelection.md#drawcacheoncanvas)
-- [drawClipPathOnCache](/apidocs/classes/ActiveSelection.md#drawclippathoncache)
-- [drawControls](/apidocs/classes/ActiveSelection.md#drawcontrols)
-- [drawControlsConnectingLines](/apidocs/classes/ActiveSelection.md#drawcontrolsconnectinglines)
-- [drawObject](/apidocs/classes/ActiveSelection.md#drawobject)
-- [drawSelectionBackground](/apidocs/classes/ActiveSelection.md#drawselectionbackground)
-- [enterGroup](/apidocs/classes/ActiveSelection.md#entergroup)
-- [exitGroup](/apidocs/classes/ActiveSelection.md#exitgroup)
-- [findCommonAncestors](/apidocs/classes/ActiveSelection.md#findcommonancestors)
-- [findNewLowerIndex](/apidocs/classes/ActiveSelection.md#findnewlowerindex)
-- [findNewUpperIndex](/apidocs/classes/ActiveSelection.md#findnewupperindex)
-- [fire](/apidocs/classes/ActiveSelection.md#fire)
-- [forEachControl](/apidocs/classes/ActiveSelection.md#foreachcontrol)
-- [forEachObject](/apidocs/classes/ActiveSelection.md#foreachobject)
-- [get](/apidocs/classes/ActiveSelection.md#get)
-- [getActiveControl](/apidocs/classes/ActiveSelection.md#getactivecontrol)
-- [getAncestors](/apidocs/classes/ActiveSelection.md#getancestors)
-- [getBoundingRect](/apidocs/classes/ActiveSelection.md#getboundingrect)
-- [getCanvasRetinaScaling](/apidocs/classes/ActiveSelection.md#getcanvasretinascaling)
-- [getCenterPoint](/apidocs/classes/ActiveSelection.md#getcenterpoint)
-- [getCoords](/apidocs/classes/ActiveSelection.md#getcoords)
-- [getLayoutStrategyResult](/apidocs/classes/ActiveSelection.md#getlayoutstrategyresult)
-- [getObjectOpacity](/apidocs/classes/ActiveSelection.md#getobjectopacity)
-- [getObjectScaling](/apidocs/classes/ActiveSelection.md#getobjectscaling)
-- [getObjects](/apidocs/classes/ActiveSelection.md#getobjects)
-- [getObjectsBoundingBox](/apidocs/classes/ActiveSelection.md#getobjectsboundingbox)
-- [getParent](/apidocs/classes/ActiveSelection.md#getparent)
-- [getPointByOrigin](/apidocs/classes/ActiveSelection.md#getpointbyorigin)
-- [getRelativeCenterPoint](/apidocs/classes/ActiveSelection.md#getrelativecenterpoint)
-- [getRelativeX](/apidocs/classes/ActiveSelection.md#getrelativex)
-- [getRelativeXY](/apidocs/classes/ActiveSelection.md#getrelativexy)
-- [getRelativeY](/apidocs/classes/ActiveSelection.md#getrelativey)
-- [getScaledHeight](/apidocs/classes/ActiveSelection.md#getscaledheight)
-- [getScaledWidth](/apidocs/classes/ActiveSelection.md#getscaledwidth)
-- [getSvgCommons](/apidocs/classes/ActiveSelection.md#getsvgcommons)
-- [getSvgFilter](/apidocs/classes/ActiveSelection.md#getsvgfilter)
-- [getSvgStyles](/apidocs/classes/ActiveSelection.md#getsvgstyles)
-- [getSvgTransform](/apidocs/classes/ActiveSelection.md#getsvgtransform)
-- [getTotalAngle](/apidocs/classes/ActiveSelection.md#gettotalangle)
-- [getTotalObjectScaling](/apidocs/classes/ActiveSelection.md#gettotalobjectscaling)
-- [getViewportTransform](/apidocs/classes/ActiveSelection.md#getviewporttransform)
-- [getX](/apidocs/classes/ActiveSelection.md#getx)
-- [getXY](/apidocs/classes/ActiveSelection.md#getxy)
-- [getY](/apidocs/classes/ActiveSelection.md#gety)
-- [hasCommonAncestors](/apidocs/classes/ActiveSelection.md#hascommonancestors)
-- [hasFill](/apidocs/classes/ActiveSelection.md#hasfill)
-- [hasStroke](/apidocs/classes/ActiveSelection.md#hasstroke)
-- [insertAt](/apidocs/classes/ActiveSelection.md#insertat)
-- [intersectsWithObject](/apidocs/classes/ActiveSelection.md#intersectswithobject)
-- [intersectsWithRect](/apidocs/classes/ActiveSelection.md#intersectswithrect)
-- [isCacheDirty](/apidocs/classes/ActiveSelection.md#iscachedirty)
-- [isContainedWithinObject](/apidocs/classes/ActiveSelection.md#iscontainedwithinobject)
-- [isContainedWithinRect](/apidocs/classes/ActiveSelection.md#iscontainedwithinrect)
-- [isControlVisible](/apidocs/classes/ActiveSelection.md#iscontrolvisible)
-- [isDescendantOf](/apidocs/classes/ActiveSelection.md#isdescendantof)
-- [isEmpty](/apidocs/classes/ActiveSelection.md#isempty)
-- [isInFrontOf](/apidocs/classes/ActiveSelection.md#isinfrontof)
-- [isNotVisible](/apidocs/classes/ActiveSelection.md#isnotvisible)
-- [isOnACache](/apidocs/classes/ActiveSelection.md#isonacache)
-- [isOnScreen](/apidocs/classes/ActiveSelection.md#isonscreen)
-- [isOverlapping](/apidocs/classes/ActiveSelection.md#isoverlapping)
-- [isPartiallyOnScreen](/apidocs/classes/ActiveSelection.md#ispartiallyonscreen)
-- [isType](/apidocs/classes/ActiveSelection.md#istype)
-- [item](/apidocs/classes/ActiveSelection.md#item)
-- [moveObjectTo](/apidocs/classes/ActiveSelection.md#moveobjectto)
-- [multiSelectAdd](/apidocs/classes/ActiveSelection.md#multiselectadd)
-- [needsItsOwnCache](/apidocs/classes/ActiveSelection.md#needsitsowncache)
-- [off](/apidocs/classes/ActiveSelection.md#off)
-- [on](/apidocs/classes/ActiveSelection.md#on)
-- [onDeselect](/apidocs/classes/ActiveSelection.md#ondeselect)
-- [onLayout](/apidocs/classes/ActiveSelection.md#onlayout)
-- [onSelect](/apidocs/classes/ActiveSelection.md#onselect)
-- [once](/apidocs/classes/ActiveSelection.md#once)
-- [prepareBoundingBox](/apidocs/classes/ActiveSelection.md#prepareboundingbox)
-- [prepareInitialBoundingBox](/apidocs/classes/ActiveSelection.md#prepareinitialboundingbox)
-- [remove](/apidocs/classes/ActiveSelection.md#remove)
-- [removeAll](/apidocs/classes/ActiveSelection.md#removeall)
-- [render](/apidocs/classes/ActiveSelection.md#render)
-- [renderCache](/apidocs/classes/ActiveSelection.md#rendercache)
-- [renderDragSourceEffect](/apidocs/classes/ActiveSelection.md#renderdragsourceeffect)
-- [renderDropTargetEffect](/apidocs/classes/ActiveSelection.md#renderdroptargeteffect)
-- [rotate](/apidocs/classes/ActiveSelection.md#rotate)
-- [scale](/apidocs/classes/ActiveSelection.md#scale)
-- [scaleToHeight](/apidocs/classes/ActiveSelection.md#scaletoheight)
-- [scaleToWidth](/apidocs/classes/ActiveSelection.md#scaletowidth)
-- [sendObjectBackwards](/apidocs/classes/ActiveSelection.md#sendobjectbackwards)
-- [sendObjectToBack](/apidocs/classes/ActiveSelection.md#sendobjecttoback)
-- [set](/apidocs/classes/ActiveSelection.md#set)
-- [setControlVisible](/apidocs/classes/ActiveSelection.md#setcontrolvisible)
-- [setControlsVisibility](/apidocs/classes/ActiveSelection.md#setcontrolsvisibility)
-- [setCoords](/apidocs/classes/ActiveSelection.md#setcoords)
-- [setOnGroup](/apidocs/classes/ActiveSelection.md#setongroup)
-- [setOptions](/apidocs/classes/ActiveSelection.md#setoptions)
-- [setPositionByOrigin](/apidocs/classes/ActiveSelection.md#setpositionbyorigin)
-- [setRelativeX](/apidocs/classes/ActiveSelection.md#setrelativex)
-- [setRelativeXY](/apidocs/classes/ActiveSelection.md#setrelativexy)
-- [setRelativeY](/apidocs/classes/ActiveSelection.md#setrelativey)
-- [setX](/apidocs/classes/ActiveSelection.md#setx)
-- [setXY](/apidocs/classes/ActiveSelection.md#setxy)
-- [setY](/apidocs/classes/ActiveSelection.md#sety)
-- [shouldCache](/apidocs/classes/ActiveSelection.md#shouldcache)
-- [size](/apidocs/classes/ActiveSelection.md#size)
-- [strokeBorders](/apidocs/classes/ActiveSelection.md#strokeborders)
-- [toCanvasElement](/apidocs/classes/ActiveSelection.md#tocanvaselement)
-- [toClipPathSVG](/apidocs/classes/ActiveSelection.md#toclippathsvg)
-- [toDataURL](/apidocs/classes/ActiveSelection.md#todataurl)
-- [toDatalessObject](/apidocs/classes/ActiveSelection.md#todatalessobject)
-- [toJSON](/apidocs/classes/ActiveSelection.md#tojson)
-- [toObject](/apidocs/classes/ActiveSelection.md#toobject)
-- [toSVG](/apidocs/classes/ActiveSelection.md#tosvg)
-- [toString](/apidocs/classes/ActiveSelection.md#tostring)
-- [toggle](/apidocs/classes/ActiveSelection.md#toggle)
-- [transform](/apidocs/classes/ActiveSelection.md#transform)
-- [transformMatrixKey](/apidocs/classes/ActiveSelection.md#transformmatrixkey)
-- [translateToCenterPoint](/apidocs/classes/ActiveSelection.md#translatetocenterpoint)
-- [translateToGivenOrigin](/apidocs/classes/ActiveSelection.md#translatetogivenorigin)
-- [translateToOriginPoint](/apidocs/classes/ActiveSelection.md#translatetooriginpoint)
-- [triggerLayout](/apidocs/classes/ActiveSelection.md#triggerlayout)
-- [willDrawShadow](/apidocs/classes/ActiveSelection.md#willdrawshadow)
-- [\_fromObject](/apidocs/classes/ActiveSelection.md#_fromobject)
-- [fromObject](/apidocs/classes/ActiveSelection.md#fromobject)
-- [getDefaults](/apidocs/classes/ActiveSelection.md#getdefaults)
-
 ## Constructors
 
 ### constructor
 
-• **new ActiveSelection**(`objects?`, `options?`, `objectsRelativeToGroup?`)
+• **new ActiveSelection**(`objects?`, `options?`, `objectsRelativeToGroup?`): [`ActiveSelection`](/apidocs/classes/ActiveSelection.md)
 
 Constructor
 
@@ -352,9 +33,13 @@ Constructor
 
 | Name | Type | Default value | Description |
 | :------ | :------ | :------ | :------ |
-| `objects?` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] | `[]` | instance objects |
-| `options?` | `Partial`<[`GroupProps`](/apidocs/interfaces/GroupProps.md)\> | `{}` | Options object |
+| `objects?` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] | `[]` | instance objects |
+| `options?` | `Partial`\<[`GroupProps`](/apidocs/interfaces/GroupProps.md)\> | `{}` | Options object |
 | `objectsRelativeToGroup?` | `boolean` | `undefined` | true if objects exist in group coordinate plane |
+
+#### Returns
+
+[`ActiveSelection`](/apidocs/classes/ActiveSelection.md)
 
 #### Inherited from
 
@@ -362,7 +47,7 @@ Constructor
 
 #### Defined in
 
-[src/shapes/Group.ts:171](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Group.ts#L171)
+[src/shapes/Group.ts:171](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L171)
 
 ## Properties
 
@@ -382,7 +67,7 @@ this isn't cleaned automatically. Non selected objects may have wrong values
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:115](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L115)
+[src/shapes/Object/InteractiveObject.ts:115](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L115)
 
 ___
 
@@ -399,13 +84,13 @@ Used to keep the original parent ref when the object has been added to an Active
 
 #### Defined in
 
-[src/shapes/Object/StackedObject.ts:45](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/StackedObject.ts#L45)
+[src/shapes/Object/StackedObject.ts:45](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/StackedObject.ts#L45)
 
 ___
 
 ### \_activeObjects
 
-• `Private` **\_activeObjects**: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] = `[]`
+• `Private` **\_activeObjects**: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] = `[]`
 
 Used internally to optimize performance
 Once an object is selected, instance is rendered without the selected object.
@@ -417,7 +102,7 @@ This way instance is cached only once for the entire interaction with the select
 
 #### Defined in
 
-[src/shapes/Group.ts:143](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Group.ts#L143)
+[src/shapes/Group.ts:143](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L143)
 
 ___
 
@@ -443,7 +128,7 @@ undefined
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:184](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L184)
+[src/shapes/Object/Object.ts:184](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L184)
 
 ___
 
@@ -468,13 +153,13 @@ undefined
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:173](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L173)
+[src/shapes/Object/Object.ts:173](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L173)
 
 ___
 
 ### \_controlsVisibility
 
-• **\_controlsVisibility**: `Record`<`string`, `boolean`\>
+• **\_controlsVisibility**: `Record`\<`string`, `boolean`\>
 
 a map of control visibility for this object.
 this was left when controls were introduced to not break the api too much
@@ -486,13 +171,13 @@ this takes priority over the generic control visibility
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:122](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L122)
+[src/shapes/Object/InteractiveObject.ts:122](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L122)
 
 ___
 
 ### \_objects
 
-• **\_objects**: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]
+• **\_objects**: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]
 
 **`TODO`**
 
@@ -504,7 +189,7 @@ needs to end up in the constructor too
 
 #### Defined in
 
-[src/shapes/ActiveSelection.ts:27](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/ActiveSelection.ts#L27)
+[src/shapes/ActiveSelection.ts:27](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/ActiveSelection.ts#L27)
 
 ___
 
@@ -528,7 +213,7 @@ DON'T USE IT. WE WILL TRY TO REMOVE IT
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:144](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L144)
+[src/shapes/Object/InteractiveObject.ts:144](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L144)
 
 ___
 
@@ -552,7 +237,7 @@ undefined
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:264](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L264)
+[src/shapes/Object/Object.ts:264](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L264)
 
 ___
 
@@ -584,7 +269,7 @@ calcACoords();
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:58](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectGeometry.ts#L58)
+[src/shapes/Object/ObjectGeometry.ts:58](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L58)
 
 ___
 
@@ -598,7 +283,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:137](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L137)
+[src/shapes/Object/Object.ts:137](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L137)
 
 ___
 
@@ -612,7 +297,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:91](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L91)
+[src/shapes/Object/InteractiveObject.ts:91](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L91)
 
 ___
 
@@ -626,7 +311,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:29](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectOrigin.ts#L29)
+[src/shapes/Object/ObjectOrigin.ts:29](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L29)
 
 ___
 
@@ -640,7 +325,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:124](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L124)
+[src/shapes/Object/Object.ts:124](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L124)
 
 ___
 
@@ -654,7 +339,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:81](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L81)
+[src/shapes/Object/InteractiveObject.ts:81](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L81)
 
 ___
 
@@ -668,7 +353,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:82](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L82)
+[src/shapes/Object/InteractiveObject.ts:82](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L82)
 
 ___
 
@@ -682,7 +367,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:83](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L83)
+[src/shapes/Object/InteractiveObject.ts:83](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L83)
 
 ___
 
@@ -696,7 +381,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:84](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L84)
+[src/shapes/Object/InteractiveObject.ts:84](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L84)
 
 ___
 
@@ -720,7 +405,7 @@ undefined
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:202](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L202)
+[src/shapes/Object/Object.ts:202](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L202)
 
 ___
 
@@ -744,7 +429,7 @@ undefined
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:229](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L229)
+[src/shapes/Object/Object.ts:229](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L229)
 
 ___
 
@@ -768,7 +453,7 @@ undefined
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:238](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L238)
+[src/shapes/Object/Object.ts:238](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L238)
 
 ___
 
@@ -792,7 +477,7 @@ undefined
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:193](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L193)
+[src/shapes/Object/Object.ts:193](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L193)
 
 ___
 
@@ -806,7 +491,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:146](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L146)
+[src/shapes/Object/InteractiveObject.ts:146](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L146)
 
 ___
 
@@ -820,7 +505,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:138](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L138)
+[src/shapes/Object/Object.ts:138](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L138)
 
 ___
 
@@ -834,13 +519,13 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:58](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L58)
+[src/shapes/Object/InteractiveObject.ts:58](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L58)
 
 ___
 
 ### clipPath
 
-• `Optional` **clipPath**: `FabricObject`<`Partial`<`ObjectProps`\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
+• `Optional` **clipPath**: `FabricObject`\<`Partial`\<`ObjectProps`\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
 
 #### Inherited from
 
@@ -848,7 +533,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:135](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L135)
+[src/shapes/Object/Object.ts:135](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L135)
 
 ___
 
@@ -865,7 +550,7 @@ This reference is a UID in the fabric namespace and is temporary stored here.
 
 #### Defined in
 
-[src/shapes/Object/FabricObjectSVGExportMixin.ts:14](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/FabricObjectSVGExportMixin.ts#L14)
+[src/shapes/Object/FabricObjectSVGExportMixin.ts:14](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/FabricObjectSVGExportMixin.ts#L14)
 
 ___
 
@@ -881,7 +566,7 @@ List of properties to consider for animating colors.
 
 #### Defined in
 
-[src/shapes/Object/AnimatableObject.ts:20](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/AnimatableObject.ts#L20)
+[src/shapes/Object/AnimatableObject.ts:20](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/AnimatableObject.ts#L20)
 
 ___
 
@@ -898,7 +583,7 @@ controls are added by default_controls.js
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:128](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L128)
+[src/shapes/Object/InteractiveObject.ts:128](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L128)
 
 ___
 
@@ -912,7 +597,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:75](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L75)
+[src/shapes/Object/InteractiveObject.ts:75](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L75)
 
 ___
 
@@ -926,7 +611,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:78](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L78)
+[src/shapes/Object/InteractiveObject.ts:78](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L78)
 
 ___
 
@@ -940,7 +625,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:72](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L72)
+[src/shapes/Object/InteractiveObject.ts:72](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L72)
 
 ___
 
@@ -954,7 +639,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:76](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L76)
+[src/shapes/Object/InteractiveObject.ts:76](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L76)
 
 ___
 
@@ -968,7 +653,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:77](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L77)
+[src/shapes/Object/InteractiveObject.ts:77](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L77)
 
 ___
 
@@ -991,7 +676,7 @@ true
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:163](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L163)
+[src/shapes/Object/Object.ts:163](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L163)
 
 ___
 
@@ -1005,7 +690,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:89](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L89)
+[src/shapes/Object/InteractiveObject.ts:89](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L89)
 
 ___
 
@@ -1019,7 +704,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:131](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L131)
+[src/shapes/Object/Object.ts:131](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L131)
 
 ___
 
@@ -1033,7 +718,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:114](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L114)
+[src/shapes/Object/Object.ts:114](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L114)
 
 ___
 
@@ -1047,7 +732,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:115](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L115)
+[src/shapes/Object/Object.ts:115](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L115)
 
 ___
 
@@ -1061,7 +746,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:21](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectOrigin.ts#L21)
+[src/shapes/Object/ObjectOrigin.ts:21](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L21)
 
 ___
 
@@ -1075,7 +760,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:22](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectOrigin.ts#L22)
+[src/shapes/Object/ObjectOrigin.ts:22](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L22)
 
 ___
 
@@ -1089,7 +774,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:123](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L123)
+[src/shapes/Object/Object.ts:123](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L123)
 
 ___
 
@@ -1112,7 +797,7 @@ undefined
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:246](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L246)
+[src/shapes/Object/Object.ts:246](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L246)
 
 ___
 
@@ -1126,7 +811,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:85](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L85)
+[src/shapes/Object/InteractiveObject.ts:85](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L85)
 
 ___
 
@@ -1140,7 +825,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:79](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L79)
+[src/shapes/Object/InteractiveObject.ts:79](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L79)
 
 ___
 
@@ -1154,7 +839,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:20](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectOrigin.ts#L20)
+[src/shapes/Object/ObjectOrigin.ts:20](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L20)
 
 ___
 
@@ -1168,7 +853,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:93](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L93)
+[src/shapes/Object/InteractiveObject.ts:93](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L93)
 
 ___
 
@@ -1182,7 +867,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:130](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L130)
+[src/shapes/Object/Object.ts:130](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L130)
 
 ___
 
@@ -1206,7 +891,7 @@ set to true if you want to select an object inside a group.\
 
 #### Defined in
 
-[src/shapes/Group.ts:135](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Group.ts#L135)
+[src/shapes/Group.ts:135](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L135)
 
 ___
 
@@ -1220,7 +905,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:136](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L136)
+[src/shapes/Object/Object.ts:136](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L136)
 
 ___
 
@@ -1237,7 +922,7 @@ part of the move action.
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:134](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L134)
+[src/shapes/Object/InteractiveObject.ts:134](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L134)
 
 ___
 
@@ -1261,7 +946,7 @@ Used by `getLayoutStrategyResult` to calculate layout
 
 #### Defined in
 
-[src/shapes/Group.ts:118](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Group.ts#L118)
+[src/shapes/Group.ts:118](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L118)
 
 ___
 
@@ -1275,7 +960,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:18](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectOrigin.ts#L18)
+[src/shapes/Object/ObjectOrigin.ts:18](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L18)
 
 ___
 
@@ -1298,7 +983,7 @@ investigate how to get rid of those
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:67](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectGeometry.ts#L67)
+[src/shapes/Object/ObjectGeometry.ts:67](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L67)
 
 ___
 
@@ -1312,7 +997,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:63](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L63)
+[src/shapes/Object/InteractiveObject.ts:63](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L63)
 
 ___
 
@@ -1326,7 +1011,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:64](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L64)
+[src/shapes/Object/InteractiveObject.ts:64](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L64)
 
 ___
 
@@ -1340,7 +1025,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:65](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L65)
+[src/shapes/Object/InteractiveObject.ts:65](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L65)
 
 ___
 
@@ -1354,7 +1039,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:70](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L70)
+[src/shapes/Object/InteractiveObject.ts:70](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L70)
 
 ___
 
@@ -1368,7 +1053,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:66](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L66)
+[src/shapes/Object/InteractiveObject.ts:66](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L66)
 
 ___
 
@@ -1382,7 +1067,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:67](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L67)
+[src/shapes/Object/InteractiveObject.ts:67](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L67)
 
 ___
 
@@ -1396,7 +1081,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:68](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L68)
+[src/shapes/Object/InteractiveObject.ts:68](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L68)
 
 ___
 
@@ -1410,7 +1095,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:69](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L69)
+[src/shapes/Object/InteractiveObject.ts:69](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L69)
 
 ___
 
@@ -1426,7 +1111,7 @@ storage cache for object full transform matrix
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:77](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectGeometry.ts#L77)
+[src/shapes/Object/ObjectGeometry.ts:77](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L77)
 
 ___
 
@@ -1440,7 +1125,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:109](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L109)
+[src/shapes/Object/Object.ts:109](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L109)
 
 ___
 
@@ -1454,7 +1139,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:94](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L94)
+[src/shapes/Object/InteractiveObject.ts:94](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L94)
 
 ___
 
@@ -1473,7 +1158,7 @@ meaning that the stack is ordered by the order in which objects were selected
 
 #### Defined in
 
-[src/shapes/ActiveSelection.ts:37](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/ActiveSelection.ts#L37)
+[src/shapes/ActiveSelection.ts:37](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/ActiveSelection.ts#L37)
 
 ___
 
@@ -1487,13 +1172,13 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:57](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L57)
+[src/shapes/Object/InteractiveObject.ts:57](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L57)
 
 ___
 
 ### oCoords
 
-• **oCoords**: `Record`<`string`, `TOCoord`\>
+• **oCoords**: `Record`\<`string`, `TOCoord`\>
 
 Describe object's corner position in canvas element coordinates.
 properties are depending on control keys and padding the main controls.
@@ -1509,7 +1194,7 @@ to draw and locate controls
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:105](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L105)
+[src/shapes/Object/InteractiveObject.ts:105](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L105)
 
 ___
 
@@ -1523,7 +1208,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:133](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L133)
+[src/shapes/Object/Object.ts:133](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L133)
 
 ___
 
@@ -1537,7 +1222,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:111](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L111)
+[src/shapes/Object/Object.ts:111](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L111)
 
 ___
 
@@ -1551,7 +1236,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:27](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectOrigin.ts#L27)
+[src/shapes/Object/ObjectOrigin.ts:27](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L27)
 
 ___
 
@@ -1565,7 +1250,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:28](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectOrigin.ts#L28)
+[src/shapes/Object/ObjectOrigin.ts:28](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L28)
 
 ___
 
@@ -1589,7 +1274,7 @@ undefined
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:255](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L255)
+[src/shapes/Object/Object.ts:255](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L255)
 
 ___
 
@@ -1605,7 +1290,7 @@ storage cache for object transform matrix
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:72](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectGeometry.ts#L72)
+[src/shapes/Object/ObjectGeometry.ts:72](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L72)
 
 ___
 
@@ -1619,7 +1304,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:45](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectGeometry.ts#L45)
+[src/shapes/Object/ObjectGeometry.ts:45](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L45)
 
 ___
 
@@ -1633,7 +1318,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:113](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L113)
+[src/shapes/Object/Object.ts:113](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L113)
 
 ___
 
@@ -1647,7 +1332,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:90](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L90)
+[src/shapes/Object/InteractiveObject.ts:90](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L90)
 
 ___
 
@@ -1661,7 +1346,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:23](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectOrigin.ts#L23)
+[src/shapes/Object/ObjectOrigin.ts:23](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L23)
 
 ___
 
@@ -1675,7 +1360,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:24](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectOrigin.ts#L24)
+[src/shapes/Object/ObjectOrigin.ts:24](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L24)
 
 ___
 
@@ -1689,7 +1374,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:88](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L88)
+[src/shapes/Object/InteractiveObject.ts:88](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L88)
 
 ___
 
@@ -1703,7 +1388,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:86](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L86)
+[src/shapes/Object/InteractiveObject.ts:86](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L86)
 
 ___
 
@@ -1717,7 +1402,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:126](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L126)
+[src/shapes/Object/Object.ts:126](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L126)
 
 ___
 
@@ -1731,7 +1416,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:25](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectOrigin.ts#L25)
+[src/shapes/Object/ObjectOrigin.ts:25](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L25)
 
 ___
 
@@ -1745,7 +1430,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:26](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectOrigin.ts#L26)
+[src/shapes/Object/ObjectOrigin.ts:26](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L26)
 
 ___
 
@@ -1759,7 +1444,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:60](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L60)
+[src/shapes/Object/InteractiveObject.ts:60](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L60)
 
 ___
 
@@ -1773,7 +1458,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:61](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L61)
+[src/shapes/Object/InteractiveObject.ts:61](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L61)
 
 ___
 
@@ -1787,7 +1472,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:116](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L116)
+[src/shapes/Object/Object.ts:116](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L116)
 
 ___
 
@@ -1801,7 +1486,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:117](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L117)
+[src/shapes/Object/Object.ts:117](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L117)
 
 ___
 
@@ -1815,7 +1500,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:118](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L118)
+[src/shapes/Object/Object.ts:118](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L118)
 
 ___
 
@@ -1829,7 +1514,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:119](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L119)
+[src/shapes/Object/Object.ts:119](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L119)
 
 ___
 
@@ -1843,7 +1528,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:120](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L120)
+[src/shapes/Object/Object.ts:120](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L120)
 
 ___
 
@@ -1857,7 +1542,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:121](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L121)
+[src/shapes/Object/Object.ts:121](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L121)
 
 ___
 
@@ -1871,7 +1556,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:31](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectOrigin.ts#L31)
+[src/shapes/Object/ObjectOrigin.ts:31](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L31)
 
 ___
 
@@ -1885,7 +1570,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:30](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectOrigin.ts#L30)
+[src/shapes/Object/ObjectOrigin.ts:30](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L30)
 
 ___
 
@@ -1908,7 +1593,7 @@ set to `false` if you don't need contained objects to be targets of events
 
 #### Defined in
 
-[src/shapes/Group.ts:126](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Group.ts#L126)
+[src/shapes/Group.ts:126](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L126)
 
 ___
 
@@ -1922,7 +1607,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:17](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectOrigin.ts#L17)
+[src/shapes/Object/ObjectOrigin.ts:17](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L17)
 
 ___
 
@@ -1936,7 +1621,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:73](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L73)
+[src/shapes/Object/InteractiveObject.ts:73](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L73)
 
 ___
 
@@ -1950,7 +1635,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:74](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L74)
+[src/shapes/Object/InteractiveObject.ts:74](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L74)
 
 ___
 
@@ -1964,7 +1649,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:128](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L128)
+[src/shapes/Object/Object.ts:128](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L128)
 
 ___
 
@@ -1978,7 +1663,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:19](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectOrigin.ts#L19)
+[src/shapes/Object/ObjectOrigin.ts:19](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L19)
 
 ___
 
@@ -2002,7 +1687,7 @@ undefined
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:211](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L211)
+[src/shapes/Object/Object.ts:211](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L211)
 
 ___
 
@@ -2026,7 +1711,7 @@ undefined
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:220](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L220)
+[src/shapes/Object/Object.ts:220](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L220)
 
 ___
 
@@ -2045,13 +1730,13 @@ and refreshed at the next render
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:155](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L155)
+[src/shapes/Object/Object.ts:155](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L155)
 
 ___
 
 ### ownDefaults
 
-▪ `Static` **ownDefaults**: `Record`<`string`, `any`\> = `groupDefaultValues`
+▪ `Static` **ownDefaults**: `Record`\<`string`, `any`\> = `groupDefaultValues`
 
 #### Inherited from
 
@@ -2059,7 +1744,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Group.ts:152](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Group.ts#L152)
+[src/shapes/Group.ts:152](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L152)
 
 ___
 
@@ -2073,7 +1758,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Group.ts:145](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Group.ts#L145)
+[src/shapes/Group.ts:145](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L145)
 
 ___
 
@@ -2087,7 +1772,7 @@ ___
 
 #### Defined in
 
-[src/shapes/ActiveSelection.ts:39](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/ActiveSelection.ts#L39)
+[src/shapes/ActiveSelection.ts:39](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/ActiveSelection.ts#L39)
 
 ## Accessors
 
@@ -2116,7 +1801,7 @@ Group.type
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:290](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L290)
+[src/shapes/Object/Object.ts:290](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L290)
 
 • `set` **type**(`value`): `void`
 
@@ -2136,13 +1821,13 @@ Group.type
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:298](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L298)
+[src/shapes/Object/Object.ts:298](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L298)
 
 ## Methods
 
 ### \_\_objectMonitor
 
-▸ `Private` **__objectMonitor**(`ev`): `void`
+▸ **__objectMonitor**(`ev`): `void`
 
 invalidates layout on object modified
 
@@ -2150,7 +1835,7 @@ invalidates layout on object modified
 
 | Name | Type |
 | :------ | :------ |
-| `ev` | [`ModifiedEvent`](/apidocs/interfaces/ModifiedEvent.md)<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> |
+| `ev` | [`ModifiedEvent`](/apidocs/interfaces/ModifiedEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> |
 
 #### Returns
 
@@ -2162,13 +1847,13 @@ invalidates layout on object modified
 
 #### Defined in
 
-[src/shapes/Group.ts:356](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Group.ts#L356)
+[src/shapes/Group.ts:356](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L356)
 
 ___
 
 ### \_\_objectSelectionMonitor
 
-▸ `Private` **__objectSelectionMonitor**(): `void`
+▸ **__objectSelectionMonitor**(): `void`
 
 we don't want the selection monitor to be active
 
@@ -2182,13 +1867,13 @@ we don't want the selection monitor to be active
 
 #### Defined in
 
-[src/shapes/ActiveSelection.ts:52](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/ActiveSelection.ts#L52)
+[src/shapes/ActiveSelection.ts:52](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/ActiveSelection.ts#L52)
 
 ___
 
 ### \_\_serializeObjects
 
-▸ `Private` **__serializeObjects**(`method?`, `propertiesToInclude?`): `any`[]
+▸ **__serializeObjects**(`method?`, `propertiesToInclude?`): `any`[]
 
 #### Parameters
 
@@ -2209,19 +1894,19 @@ serialized objects
 
 #### Defined in
 
-[src/shapes/Group.ts:964](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Group.ts#L964)
+[src/shapes/Group.ts:964](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L964)
 
 ___
 
 ### \_adjustObjectPosition
 
-▸ `Private` **_adjustObjectPosition**(`object`, `diff`): `void`
+▸ **_adjustObjectPosition**(`object`, `diff`): `void`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
+| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
 | `diff` | [`Point`](/apidocs/classes/Point.md) |
 
 #### Returns
@@ -2234,13 +1919,13 @@ ___
 
 #### Defined in
 
-[src/shapes/Group.ts:588](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Group.ts#L588)
+[src/shapes/Group.ts:588](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L588)
 
 ___
 
 ### \_animate
 
-▸ `Private` **_animate**<`T`\>(`key`, `endValue`, `options?`): [`TAnimation`](/apidocs/modules/util.md#tanimation)<`T`\>
+▸ **_animate**\<`T`\>(`key`, `endValue`, `options?`): [`TAnimation`](/apidocs/modules/util.md#tanimation)\<`T`\>
 
 #### Type parameters
 
@@ -2254,11 +1939,11 @@ ___
 | :------ | :------ | :------ |
 | `key` | `string` | Property to animate |
 | `endValue` | `T` | - |
-| `options?` | `Partial`<[`AnimationOptions`](/apidocs/modules/util.md#animationoptions)<`T`\>\> | Options object |
+| `options?` | `Partial`\<[`AnimationOptions`](/apidocs/modules/util.md#animationoptions)\<`T`\>\> | Options object |
 
 #### Returns
 
-[`TAnimation`](/apidocs/modules/util.md#tanimation)<`T`\>
+[`TAnimation`](/apidocs/modules/util.md#tanimation)\<`T`\>
 
 #### Inherited from
 
@@ -2266,7 +1951,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/AnimatableObject.ts:50](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/AnimatableObject.ts#L50)
+[src/shapes/Object/AnimatableObject.ts:50](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/AnimatableObject.ts#L50)
 
 ___
 
@@ -2294,13 +1979,13 @@ so it is placed in the center of the bbox received from the constructor
 
 #### Defined in
 
-[src/shapes/ActiveSelection.ts:149](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/ActiveSelection.ts#L149)
+[src/shapes/ActiveSelection.ts:149](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/ActiveSelection.ts#L149)
 
 ___
 
 ### \_applyPatternForTransformedGradient
 
-▸ `Private` **_applyPatternForTransformedGradient**(`ctx`, `filler`): `void`
+▸ **_applyPatternForTransformedGradient**(`ctx`, `filler`): `void`
 
 This function try to patch the missing gradientTransform on canvas gradients.
 transforming a context to transform the gradient, is going to transform the stroke too.
@@ -2326,13 +2011,13 @@ is limited.
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1255](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L1255)
+[src/shapes/Object/Object.ts:1255](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1255)
 
 ___
 
 ### \_applyPatternGradientTransform
 
-▸ `Private` **_applyPatternGradientTransform**(`ctx`, `filler`): `Object`
+▸ **_applyPatternGradientTransform**(`ctx`, `filler`): `Object`
 
 #### Parameters
 
@@ -2356,13 +2041,13 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1152](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L1152)
+[src/shapes/Object/Object.ts:1152](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1152)
 
 ___
 
 ### \_calculateCurrentDimensions
 
-▸ `Private` **_calculateCurrentDimensions**(`options?`): [`Point`](/apidocs/classes/Point.md)
+▸ **_calculateCurrentDimensions**(`options?`): [`Point`](/apidocs/classes/Point.md)
 
 Calculate object dimensions for controls box, including padding and canvas zoom.
 and active selection
@@ -2385,13 +2070,13 @@ dimensions
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:697](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectGeometry.ts#L697)
+[src/shapes/Object/ObjectGeometry.ts:697](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L697)
 
 ___
 
 ### \_constrainScale
 
-▸ `Private` **_constrainScale**(`value`): `number`
+▸ **_constrainScale**(`value`): `number`
 
 Makes sure the scale is valid and modifies it if necessary
 @todo: this is a control action issue, not a geometry one
@@ -2414,19 +2099,19 @@ constrained value;
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:675](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L675)
+[src/shapes/Object/Object.ts:675](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L675)
 
 ___
 
 ### \_createBaseClipPathSVGMarkup
 
-▸ `Private` **_createBaseClipPathSVGMarkup**(`this`, `objectMarkup`, `«destructured»?`): `string`
+▸ **_createBaseClipPathSVGMarkup**(`this`, `objectMarkup`, `«destructured»?`): `string`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `this` | `FabricObjectSVGExportMixin` & [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
+| `this` | `FabricObjectSVGExportMixin` & [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
 | `objectMarkup` | `string`[] |
 | `«destructured»` | `Object` |
 | › `additionalTransform?` | `string` |
@@ -2442,19 +2127,19 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/FabricObjectSVGExportMixin.ts:158](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/FabricObjectSVGExportMixin.ts#L158)
+[src/shapes/Object/FabricObjectSVGExportMixin.ts:158](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/FabricObjectSVGExportMixin.ts#L158)
 
 ___
 
 ### \_createBaseSVGMarkup
 
-▸ `Private` **_createBaseSVGMarkup**(`this`, `objectMarkup`, `«destructured»?`): `string`
+▸ **_createBaseSVGMarkup**(`this`, `objectMarkup`, `«destructured»?`): `string`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `this` | `FabricObjectSVGExportMixin` & [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
+| `this` | `FabricObjectSVGExportMixin` & [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
 | `objectMarkup` | `string`[] |
 | `«destructured»` | `Object` |
 | › `additionalTransform?` | `string` |
@@ -2472,13 +2157,13 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/FabricObjectSVGExportMixin.ts:179](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/FabricObjectSVGExportMixin.ts#L179)
+[src/shapes/Object/FabricObjectSVGExportMixin.ts:179](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/FabricObjectSVGExportMixin.ts#L179)
 
 ___
 
 ### \_createCacheCanvas
 
-▸ `Private` **_createCacheCanvas**(): `void`
+▸ **_createCacheCanvas**(): `void`
 
 Create a the canvas used to keep the cached copy of the object
 
@@ -2492,13 +2177,13 @@ Create a the canvas used to keep the cached copy of the object
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:319](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L319)
+[src/shapes/Object/Object.ts:319](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L319)
 
 ___
 
 ### \_createSVGBgRect
 
-▸ `Private` **_createSVGBgRect**(`reviver?`): `string`
+▸ **_createSVGBgRect**(`reviver?`): `string`
 
 #### Parameters
 
@@ -2516,13 +2201,13 @@ ___
 
 #### Defined in
 
-[src/shapes/Group.ts:1025](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Group.ts#L1025)
+[src/shapes/Group.ts:1025](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L1025)
 
 ___
 
 ### \_drawBorders
 
-▸ `Private` **_drawBorders**(`ctx`, `size`, `styleOverride?`): `void`
+▸ **_drawBorders**(`ctx`, `size`, `styleOverride?`): `void`
 
 #### Parameters
 
@@ -2542,7 +2227,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:376](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L376)
+[src/shapes/Object/InteractiveObject.ts:376](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L376)
 
 ___
 
@@ -2557,7 +2242,7 @@ Prepare clipPath state and cache and draw it on instance's cache
 | Name | Type |
 | :------ | :------ |
 | `ctx` | `CanvasRenderingContext2D` |
-| `clipPath?` | `FabricObject`<`Partial`<`ObjectProps`\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
+| `clipPath?` | `FabricObject`\<`Partial`\<`ObjectProps`\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
 
 #### Returns
 
@@ -2569,19 +2254,19 @@ Prepare clipPath state and cache and draw it on instance's cache
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:944](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L944)
+[src/shapes/Object/Object.ts:944](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L944)
 
 ___
 
 ### \_enterGroup
 
-▸ `Private` **_enterGroup**(`object`, `removeParentTransform?`): `void`
+▸ **_enterGroup**(`object`, `removeParentTransform?`): `void`
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |  |
+| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |  |
 | `removeParentTransform?` | `boolean` | true if object is in canvas coordinate plane |
 
 #### Returns
@@ -2594,19 +2279,19 @@ ___
 
 #### Defined in
 
-[src/shapes/Group.ts:419](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Group.ts#L419)
+[src/shapes/Group.ts:419](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L419)
 
 ___
 
 ### \_exitGroup
 
-▸ `Private` **_exitGroup**(`object`, `removeParentTransform?`): `void`
+▸ **_exitGroup**(`object`, `removeParentTransform?`): `void`
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |  |
+| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |  |
 | `removeParentTransform?` | `boolean` | true if object should exit group without applying group's transform to it |
 
 #### Returns
@@ -2619,13 +2304,13 @@ ___
 
 #### Defined in
 
-[src/shapes/Group.ts:462](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Group.ts#L462)
+[src/shapes/Group.ts:462](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L462)
 
 ___
 
 ### \_filterObjectsBeforeEnteringGroup
 
-▸ `Private` **_filterObjectsBeforeEnteringGroup**(`objects`): [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]
+▸ **_filterObjectsBeforeEnteringGroup**(`objects`): [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]
 
 Override this method to enhance performance (for groups with a lot of objects).
 If Overriding, be sure not pass illegal objects to group - it will break your app.
@@ -2634,11 +2319,11 @@ If Overriding, be sure not pass illegal objects to group - it will break your ap
 
 | Name | Type |
 | :------ | :------ |
-| `objects` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] |
+| `objects` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] |
 
 #### Returns
 
-[`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]
+[`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]
 
 #### Inherited from
 
@@ -2646,13 +2331,13 @@ If Overriding, be sure not pass illegal objects to group - it will break your ap
 
 #### Defined in
 
-[src/shapes/Group.ts:229](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Group.ts#L229)
+[src/shapes/Group.ts:229](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L229)
 
 ___
 
 ### \_findCenterFromElement
 
-▸ `Private` **_findCenterFromElement**(): [`Point`](/apidocs/classes/Point.md)
+▸ **_findCenterFromElement**(): [`Point`](/apidocs/classes/Point.md)
 
 This function is an helper for svg import. it returns the center of the object in the svg
 untransformed coordinates
@@ -2669,13 +2354,13 @@ center point from element coordinates
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1303](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L1303)
+[src/shapes/Object/Object.ts:1303](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1303)
 
 ___
 
 ### \_findTargetCorner
 
-▸ `Private` **_findTargetCorner**(`pointer`, `forTouch?`): `string`
+▸ **_findTargetCorner**(`pointer`, `forTouch?`): `string`
 
 Determines which corner is under the mouse cursor, represented by `pointer`.
 This function is return a corner only if the object is the active one.
@@ -2702,13 +2387,13 @@ corner code (tl, tr, bl, br, etc.), or 0 if nothing is found.
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:191](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L191)
+[src/shapes/Object/InteractiveObject.ts:191](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L191)
 
 ___
 
 ### \_getCacheCanvasDimensions
 
-▸ `Private` **_getCacheCanvasDimensions**(): [`TCacheCanvasDimensions`](/apidocs/modules.md#tcachecanvasdimensions)
+▸ **_getCacheCanvasDimensions**(): [`TCacheCanvasDimensions`](/apidocs/modules.md#tcachecanvasdimensions)
 
 Return the dimension and the zoom level needed to create a cache canvas
 big enough to host the object to be cached.
@@ -2735,13 +2420,13 @@ big enough to host the object to be cached.
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:390](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L390)
+[src/shapes/Object/Object.ts:390](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L390)
 
 ___
 
 ### \_getLeftTopCoords
 
-▸ `Private` **_getLeftTopCoords**(): [`Point`](/apidocs/classes/Point.md)
+▸ **_getLeftTopCoords**(): [`Point`](/apidocs/classes/Point.md)
 
 #### Returns
 
@@ -2753,13 +2438,13 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:222](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectOrigin.ts#L222)
+[src/shapes/Object/ObjectOrigin.ts:222](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L222)
 
 ___
 
 ### \_getNonTransformedDimensions
 
-▸ `Private` **_getNonTransformedDimensions**(): [`Point`](/apidocs/classes/Point.md)
+▸ **_getNonTransformedDimensions**(): [`Point`](/apidocs/classes/Point.md)
 
 Calculate object dimensions from its properties
 
@@ -2775,13 +2460,13 @@ dimensions
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:686](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectGeometry.ts#L686)
+[src/shapes/Object/ObjectGeometry.ts:686](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L686)
 
 ___
 
 ### \_getTransformedDimensions
 
-▸ `Private` **_getTransformedDimensions**(`options?`): [`Point`](/apidocs/classes/Point.md)
+▸ **_getTransformedDimensions**(`options?`): [`Point`](/apidocs/classes/Point.md)
 
 Calculate object bounding box dimensions from its properties scale, skew.
 
@@ -2803,7 +2488,7 @@ dimensions
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:49](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectOrigin.ts#L49)
+[src/shapes/Object/ObjectOrigin.ts:49](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L49)
 
 ___
 
@@ -2840,20 +2525,20 @@ making bargain with performances.
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:342](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L342)
+[src/shapes/Object/Object.ts:342](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L342)
 
 ___
 
 ### \_onAfterObjectsChange
 
-▸ `Private` **_onAfterObjectsChange**(`type`, `targets`): `void`
+▸ **_onAfterObjectsChange**(`type`, `targets`): `void`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `type` | ``"added"`` \| ``"removed"`` |
-| `targets` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] |
+| `targets` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] |
 
 #### Returns
 
@@ -2865,7 +2550,7 @@ ___
 
 #### Defined in
 
-[src/shapes/ActiveSelection.ts:118](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/ActiveSelection.ts#L118)
+[src/shapes/ActiveSelection.ts:118](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/ActiveSelection.ts#L118)
 
 ___
 
@@ -2877,7 +2562,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
+| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
 
 #### Returns
 
@@ -2889,19 +2574,19 @@ ___
 
 #### Defined in
 
-[src/shapes/Group.ts:270](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Group.ts#L270)
+[src/shapes/Group.ts:270](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L270)
 
 ___
 
 ### \_onObjectRemoved
 
-▸ `Private` **_onObjectRemoved**(`object`, `removeParentTransform?`): `void`
+▸ **_onObjectRemoved**(`object`, `removeParentTransform?`): `void`
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |  |
+| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |  |
 | `removeParentTransform?` | `boolean` | true if object should exit group without applying group's transform to it |
 
 #### Returns
@@ -2914,7 +2599,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Group.ts:287](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Group.ts#L287)
+[src/shapes/Group.ts:287](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L287)
 
 ___
 
@@ -2926,7 +2611,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
+| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
 
 #### Returns
 
@@ -2938,7 +2623,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Group.ts:276](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Group.ts#L276)
+[src/shapes/Group.ts:276](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L276)
 
 ___
 
@@ -2956,7 +2641,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Group.ts:306](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Group.ts#L306)
+[src/shapes/Group.ts:306](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L306)
 
 ___
 
@@ -2976,13 +2661,13 @@ Remove cacheCanvas and its dimensions from the objects
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:798](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L798)
+[src/shapes/Object/Object.ts:798](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L798)
 
 ___
 
 ### \_removeDefaultValues
 
-▸ `Private` **_removeDefaultValues**<`T`\>(`object`): `Partial`<`T`\>
+▸ **_removeDefaultValues**\<`T`\>(`object`): `Partial`\<`T`\>
 
 #### Type parameters
 
@@ -2998,7 +2683,7 @@ ___
 
 #### Returns
 
-`Partial`<`T`\>
+`Partial`\<`T`\>
 
 #### Inherited from
 
@@ -3006,13 +2691,13 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:590](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L590)
+[src/shapes/Object/Object.ts:590](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L590)
 
 ___
 
 ### \_removeShadow
 
-▸ `Private` **_removeShadow**(`ctx`): `void`
+▸ **_removeShadow**(`ctx`): `void`
 
 #### Parameters
 
@@ -3030,13 +2715,13 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1138](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L1138)
+[src/shapes/Object/Object.ts:1138](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1138)
 
 ___
 
 ### \_render
 
-▸ `Private` **_render**(`ctx`): `void`
+▸ **_render**(`ctx`): `void`
 
 function that actually render something on the context.
 empty here to allow Obects to work on tests to benchmark fabric functionalites
@@ -3058,13 +2743,13 @@ not related to rendering
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1197](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L1197)
+[src/shapes/Object/Object.ts:1197](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1197)
 
 ___
 
 ### \_renderBackground
 
-▸ `Private` **_renderBackground**(`ctx`): `void`
+▸ **_renderBackground**(`ctx`): `void`
 
 Draws a background for the object big as its untransformed dimensions
 
@@ -3084,7 +2769,7 @@ Draws a background for the object big as its untransformed dimensions
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1006](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L1006)
+[src/shapes/Object/Object.ts:1006](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1006)
 
 ___
 
@@ -3099,8 +2784,8 @@ Renders controls and borders for the object
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `ctx` | `CanvasRenderingContext2D` | Context to render on |
-| `styleOverride?` | `Partial`<`Pick`<`InteractiveFabricObject`<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>, ``"cornerStyle"`` \| ``"cornerSize"`` \| ``"cornerColor"`` \| ``"cornerStrokeColor"`` \| ``"cornerDashArray"`` \| ``"transparentCorners"``\>\> | properties to override the object style |
-| `childrenOverride?` | `Partial`<`Pick`<`InteractiveFabricObject`<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>, ``"cornerStyle"`` \| ``"cornerSize"`` \| ``"cornerColor"`` \| ``"cornerStrokeColor"`` \| ``"cornerDashArray"`` \| ``"transparentCorners"``\>\> | properties to override the children overrides |
+| `styleOverride?` | `Partial`\<`Pick`\<`InteractiveFabricObject`\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>, ``"cornerStyle"`` \| ``"cornerSize"`` \| ``"cornerColor"`` \| ``"cornerStrokeColor"`` \| ``"cornerDashArray"`` \| ``"transparentCorners"``\>\> | properties to override the object style |
+| `childrenOverride?` | `Partial`\<`Pick`\<`InteractiveFabricObject`\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>, ``"cornerStyle"`` \| ``"cornerSize"`` \| ``"cornerColor"`` \| ``"cornerStrokeColor"`` \| ``"cornerDashArray"`` \| ``"transparentCorners"``\>\> | properties to override the children overrides |
 
 #### Returns
 
@@ -3112,13 +2797,13 @@ Renders controls and borders for the object
 
 #### Defined in
 
-[src/shapes/ActiveSelection.ts:202](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/ActiveSelection.ts#L202)
+[src/shapes/ActiveSelection.ts:202](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/ActiveSelection.ts#L202)
 
 ___
 
 ### \_renderFill
 
-▸ `Private` **_renderFill**(`ctx`): `void`
+▸ **_renderFill**(`ctx`): `void`
 
 #### Parameters
 
@@ -3136,13 +2821,13 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1205](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L1205)
+[src/shapes/Object/Object.ts:1205](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1205)
 
 ___
 
 ### \_renderPaintInOrder
 
-▸ `Private` **_renderPaintInOrder**(`ctx`): `void`
+▸ **_renderPaintInOrder**(`ctx`): `void`
 
 #### Parameters
 
@@ -3160,13 +2845,13 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1180](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L1180)
+[src/shapes/Object/Object.ts:1180](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1180)
 
 ___
 
 ### \_renderStroke
 
-▸ `Private` **_renderStroke**(`ctx`): `void`
+▸ **_renderStroke**(`ctx`): `void`
 
 #### Parameters
 
@@ -3184,13 +2869,13 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1224](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L1224)
+[src/shapes/Object/Object.ts:1224](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1224)
 
 ___
 
 ### \_set
 
-▸ `Private` **_set**(`key`, `value`): [`ActiveSelection`](/apidocs/classes/ActiveSelection.md)
+▸ **_set**(`key`, `value`): [`ActiveSelection`](/apidocs/classes/ActiveSelection.md)
 
 #### Parameters
 
@@ -3209,7 +2894,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Group.ts:315](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Group.ts#L315)
+[src/shapes/Group.ts:315](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L315)
 
 ___
 
@@ -3233,7 +2918,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1084](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L1084)
+[src/shapes/Object/Object.ts:1084](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1084)
 
 ___
 
@@ -3246,7 +2931,7 @@ ___
 | Name | Type |
 | :------ | :------ |
 | `ctx` | `CanvasRenderingContext2D` |
-| `«destructured»` | `Pick`<[`ActiveSelection`](/apidocs/classes/ActiveSelection.md), ``"fill"``\> |
+| `«destructured»` | `Pick`\<[`ActiveSelection`](/apidocs/classes/ActiveSelection.md), ``"fill"``\> |
 
 #### Returns
 
@@ -3258,13 +2943,13 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1073](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L1073)
+[src/shapes/Object/Object.ts:1073](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1073)
 
 ___
 
 ### \_setLineDash
 
-▸ `Private` **_setLineDash**(`ctx`, `dashArray?`): `void`
+▸ **_setLineDash**(`ctx`, `dashArray?`): `void`
 
 Sets line dash
 
@@ -3285,19 +2970,19 @@ Sets line dash
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1096](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L1096)
+[src/shapes/Object/Object.ts:1096](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1096)
 
 ___
 
 ### \_setObject
 
-▸ `Private` **_setObject**(`obj`): `void`
+▸ **_setObject**(`obj`): `void`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `obj` | `Record`<`string`, `any`\> |
+| `obj` | `Record`\<`string`, `any`\> |
 
 #### Returns
 
@@ -3309,13 +2994,13 @@ ___
 
 #### Defined in
 
-[src/CommonMethods.ts:18](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/CommonMethods.ts#L18)
+[src/CommonMethods.ts:18](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/CommonMethods.ts#L18)
 
 ___
 
 ### \_setOpacity
 
-▸ `Private` **_setOpacity**(`ctx`): `void`
+▸ **_setOpacity**(`ctx`): `void`
 
 #### Parameters
 
@@ -3333,13 +3018,13 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1023](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L1023)
+[src/shapes/Object/Object.ts:1023](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1023)
 
 ___
 
 ### \_setOptions
 
-▸ `Protected` **_setOptions**(`options?`): `void`
+▸ **_setOptions**(`options?`): `void`
 
 Sets object's properties from options, for initialization only
 
@@ -3359,13 +3044,13 @@ Sets object's properties from options, for initialization only
 
 #### Defined in
 
-[src/CommonMethods.ts:9](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/CommonMethods.ts#L9)
+[src/CommonMethods.ts:9](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/CommonMethods.ts#L9)
 
 ___
 
 ### \_setShadow
 
-▸ `Private` **_setShadow**(`ctx`): `void`
+▸ **_setShadow**(`ctx`): `void`
 
 #### Parameters
 
@@ -3383,7 +3068,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1111](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L1111)
+[src/shapes/Object/Object.ts:1111](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1111)
 
 ___
 
@@ -3396,7 +3081,7 @@ ___
 | Name | Type |
 | :------ | :------ |
 | `ctx` | `CanvasRenderingContext2D` |
-| `decl` | `Pick`<[`ActiveSelection`](/apidocs/classes/ActiveSelection.md), ``"strokeDashOffset"`` \| ``"strokeLineCap"`` \| ``"strokeLineJoin"`` \| ``"strokeMiterLimit"`` \| ``"strokeWidth"`` \| ``"stroke"``\> |
+| `decl` | `Pick`\<[`ActiveSelection`](/apidocs/classes/ActiveSelection.md), ``"strokeDashOffset"`` \| ``"strokeLineCap"`` \| ``"strokeLineJoin"`` \| ``"strokeMiterLimit"`` \| ``"strokeWidth"`` \| ``"stroke"``\> |
 
 #### Returns
 
@@ -3408,7 +3093,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1031](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L1031)
+[src/shapes/Object/Object.ts:1031](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1031)
 
 ___
 
@@ -3435,13 +3120,13 @@ custom composition operation for the particular object can be specified using gl
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1535](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L1535)
+[src/shapes/Object/Object.ts:1535](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1535)
 
 ___
 
 ### \_shouldSetNestedCoords
 
-▸ `Private` **_shouldSetNestedCoords**(): `boolean`
+▸ **_shouldSetNestedCoords**(): `boolean`
 
 #### Returns
 
@@ -3453,7 +3138,7 @@ ___
 
 #### Defined in
 
-[src/shapes/ActiveSelection.ts:44](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/ActiveSelection.ts#L44)
+[src/shapes/ActiveSelection.ts:44](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/ActiveSelection.ts#L44)
 
 ___
 
@@ -3481,13 +3166,13 @@ svg representation of an instance
 
 #### Defined in
 
-[src/shapes/Group.ts:1041](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Group.ts#L1041)
+[src/shapes/Group.ts:1041](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L1041)
 
 ___
 
 ### \_updateCacheCanvas
 
-▸ `Private` **_updateCacheCanvas**(): `boolean`
+▸ **_updateCacheCanvas**(): `boolean`
 
 Update width and height of the canvas for cache
 returns true or false if canvas needed resize.
@@ -3504,20 +3189,20 @@ true if the canvas has been resized
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:164](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L164)
+[src/shapes/Object/InteractiveObject.ts:164](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L164)
 
 ___
 
 ### \_watchObject
 
-▸ `Private` **_watchObject**(`watch`, `object`): `void`
+▸ **_watchObject**(`watch`, `object`): `void`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `watch` | `boolean` |
-| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
+| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
 
 #### Returns
 
@@ -3529,7 +3214,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Group.ts:386](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Group.ts#L386)
+[src/shapes/Group.ts:386](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L386)
 
 ___
 
@@ -3543,7 +3228,7 @@ Add objects
 
 | Name | Type |
 | :------ | :------ |
-| `...objects` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] |
+| `...objects` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] |
 
 #### Returns
 
@@ -3555,7 +3240,7 @@ Add objects
 
 #### Defined in
 
-[src/shapes/Group.ts:240](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Group.ts#L240)
+[src/shapes/Group.ts:240](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L240)
 
 ___
 
@@ -3567,7 +3252,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `this` | `FabricObjectSVGExportMixin` & [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
+| `this` | `FabricObjectSVGExportMixin` & [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
 
 #### Returns
 
@@ -3579,13 +3264,13 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/FabricObjectSVGExportMixin.ts:249](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/FabricObjectSVGExportMixin.ts#L249)
+[src/shapes/Object/FabricObjectSVGExportMixin.ts:249](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/FabricObjectSVGExportMixin.ts#L249)
 
 ___
 
 ### animate
 
-▸ **animate**<`T`\>(`animatable`, `options?`): `Record`<`string`, [`TAnimation`](/apidocs/modules/util.md#tanimation)<`T`\>\>
+▸ **animate**\<`T`\>(`animatable`, `options?`): `Record`\<`string`, [`TAnimation`](/apidocs/modules/util.md#tanimation)\<`T`\>\>
 
 Animates object's properties
 
@@ -3599,12 +3284,12 @@ Animates object's properties
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `animatable` | `Record`<`string`, `T`\> | map of keys and end values |
-| `options?` | `Partial`<[`AnimationOptions`](/apidocs/modules/util.md#animationoptions)<`T`\>\> |  |
+| `animatable` | `Record`\<`string`, `T`\> | map of keys and end values |
+| `options?` | `Partial`\<[`AnimationOptions`](/apidocs/modules/util.md#animationoptions)\<`T`\>\> |  |
 
 #### Returns
 
-`Record`<`string`, [`TAnimation`](/apidocs/modules/util.md#tanimation)<`T`\>\>
+`Record`\<`string`, [`TAnimation`](/apidocs/modules/util.md#tanimation)\<`T`\>\>
 
 map of animation contexts
 
@@ -3623,7 +3308,7 @@ object.animate({ left: ..., top: ... }, { duration: ... });
 
 #### Defined in
 
-[src/shapes/Object/AnimatableObject.ts:34](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/AnimatableObject.ts#L34)
+[src/shapes/Object/AnimatableObject.ts:34](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/AnimatableObject.ts#L34)
 
 ___
 
@@ -3641,7 +3326,7 @@ stack.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | Object to send |
+| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | Object to send |
 | `intersecting?` | `boolean` | If `true`, send object in front of next upper intersecting object |
 
 #### Returns
@@ -3656,7 +3341,7 @@ true if change occurred
 
 #### Defined in
 
-[src/Collection.ts:232](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Collection.ts#L232)
+[src/Collection.ts:232](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L232)
 
 ___
 
@@ -3671,7 +3356,7 @@ to the top of the stack of drawn objects
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | Object to send |
+| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | Object to send |
 
 #### Returns
 
@@ -3685,7 +3370,7 @@ true if change occurred
 
 #### Defined in
 
-[src/Collection.ts:186](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Collection.ts#L186)
+[src/Collection.ts:186](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L186)
 
 ___
 
@@ -3706,7 +3391,7 @@ those never change with zoom or viewport changes.
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:552](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectGeometry.ts#L552)
+[src/shapes/Object/ObjectGeometry.ts:552](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L552)
 
 ___
 
@@ -3727,13 +3412,13 @@ used for bounding box interactivity with the mouse
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:506](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectGeometry.ts#L506)
+[src/shapes/Object/ObjectGeometry.ts:506](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L506)
 
 ___
 
 ### calcOCoords
 
-▸ **calcOCoords**(): `Record`<`string`, `TOCoord`\>
+▸ **calcOCoords**(): `Record`\<`string`, `TOCoord`\>
 
 Calculates the coordinates of the center of each control plus the corners of the control itself
 This basically just delegates to each control positionHandler
@@ -3742,7 +3427,7 @@ is a public api and should be done just if extremely necessary
 
 #### Returns
 
-`Record`<`string`, `TOCoord`\>
+`Record`\<`string`, `TOCoord`\>
 
 #### Inherited from
 
@@ -3750,7 +3435,7 @@ is a public api and should be done just if extremely necessary
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:223](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L223)
+[src/shapes/Object/InteractiveObject.ts:223](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L223)
 
 ___
 
@@ -3773,7 +3458,7 @@ transform matrix for the object
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:655](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectGeometry.ts#L655)
+[src/shapes/Object/ObjectGeometry.ts:655](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L655)
 
 ___
 
@@ -3802,7 +3487,7 @@ transform matrix for the object
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:627](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectGeometry.ts#L627)
+[src/shapes/Object/ObjectGeometry.ts:627](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L627)
 
 ___
 
@@ -3829,13 +3514,13 @@ return true if the object currently dragged can be dropped on the target
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:639](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L639)
+[src/shapes/Object/InteractiveObject.ts:639](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L639)
 
 ___
 
 ### canEnterGroup
 
-▸ `Private` **canEnterGroup**(`object`): `boolean`
+▸ **canEnterGroup**(`object`): `boolean`
 
 Checks if object can enter group and logs relevant warnings
 
@@ -3843,7 +3528,7 @@ Checks if object can enter group and logs relevant warnings
 
 | Name | Type |
 | :------ | :------ |
-| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
+| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
 
 #### Returns
 
@@ -3855,7 +3540,7 @@ Checks if object can enter group and logs relevant warnings
 
 #### Defined in
 
-[src/shapes/Group.ts:205](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Group.ts#L205)
+[src/shapes/Group.ts:205](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L205)
 
 ___
 
@@ -3891,13 +3576,13 @@ discuss swapping restoreManually with a renderCallback, but think of async issue
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:582](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L582)
+[src/shapes/Object/InteractiveObject.ts:582](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L582)
 
 ___
 
 ### clone
 
-▸ **clone**(`propertiesToInclude?`): `Promise`<[`ActiveSelection`](/apidocs/classes/ActiveSelection.md)\>
+▸ **clone**(`propertiesToInclude?`): `Promise`\<[`ActiveSelection`](/apidocs/classes/ActiveSelection.md)\>
 
 Clones an instance.
 
@@ -3909,7 +3594,7 @@ Clones an instance.
 
 #### Returns
 
-`Promise`<[`ActiveSelection`](/apidocs/classes/ActiveSelection.md)\>
+`Promise`\<[`ActiveSelection`](/apidocs/classes/ActiveSelection.md)\>
 
 #### Inherited from
 
@@ -3917,13 +3602,13 @@ Clones an instance.
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1312](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L1312)
+[src/shapes/Object/Object.ts:1312](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1312)
 
 ___
 
 ### cloneAsImage
 
-▸ **cloneAsImage**(`options?`): [`FabricImage`](/apidocs/classes/FabricImage.md)<`Partial`<[`ImageProps`](/apidocs/interfaces/ImageProps.md)\>, [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
+▸ **cloneAsImage**(`options?`): [`FabricImage`](/apidocs/classes/FabricImage.md)\<`Partial`\<[`ImageProps`](/apidocs/interfaces/ImageProps.md)\>, [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
 
 Creates an instance of Image out of an object
 makes use of toCanvasElement.
@@ -3940,7 +3625,7 @@ toCanvasElement and then toBlob from the obtained canvas is also a good option.
 
 #### Returns
 
-[`FabricImage`](/apidocs/classes/FabricImage.md)<`Partial`<[`ImageProps`](/apidocs/interfaces/ImageProps.md)\>, [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
+[`FabricImage`](/apidocs/classes/FabricImage.md)\<`Partial`\<[`ImageProps`](/apidocs/interfaces/ImageProps.md)\>, [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
 
 Object cloned as image.
 
@@ -3954,13 +3639,13 @@ fix the export type, it could not be Image but the type that getClass return for
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1338](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L1338)
+[src/shapes/Object/Object.ts:1338](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1338)
 
 ___
 
 ### collectObjects
 
-▸ **collectObjects**(`«destructured»`, `«destructured»?`): `InteractiveFabricObject`<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]
+▸ **collectObjects**(`«destructured»`, `«destructured»?`): `InteractiveFabricObject`\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]
 
 Given a bounding box, return all the objects of the collection that are contained in the bounding box.
 If `includeIntersecting` is true, return also the objects that intersect the bounding box as well.
@@ -3976,7 +3661,7 @@ This is meant to work with selection. Is not a generic method.
 
 #### Returns
 
-`InteractiveFabricObject`<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]
+`InteractiveFabricObject`\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]
 
 array of objects contained in the bounding box, ordered from top to bottom stacking wise
 
@@ -3986,7 +3671,7 @@ array of objects contained in the bounding box, ordered from top to bottom stack
 
 #### Defined in
 
-[src/Collection.ts:316](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Collection.ts#L316)
+[src/Collection.ts:316](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L316)
 
 ___
 
@@ -4008,7 +3693,7 @@ complexity
 
 #### Defined in
 
-[src/Collection.ts:157](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Collection.ts#L157)
+[src/Collection.ts:157](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L157)
 
 ___
 
@@ -4024,7 +3709,7 @@ instead of `a.contains(b)` use `b.isDescendantOf(a)`
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | Object to check against |
+| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | Object to check against |
 | `deep?` | `boolean` | `true` to check all descendants, `false` to check only `_objects` |
 
 #### Returns
@@ -4039,7 +3724,7 @@ instead of `a.contains(b)` use `b.isDescendantOf(a)`
 
 #### Defined in
 
-[src/Collection.ts:140](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Collection.ts#L140)
+[src/Collection.ts:140](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L140)
 
 ___
 
@@ -4069,7 +3754,7 @@ true if point is inside the object
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:341](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectGeometry.ts#L341)
+[src/shapes/Object/ObjectGeometry.ts:341](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L341)
 
 ___
 
@@ -4087,7 +3772,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Group.ts:1013](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Group.ts#L1013)
+[src/shapes/Group.ts:1013](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L1013)
 
 ___
 
@@ -4104,7 +3789,7 @@ Requires public options: padding, borderColor
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `ctx` | `CanvasRenderingContext2D` | Context to draw on |
-| `options` | `Required`<`Omit`<[`TComposeMatrixArgs`](/apidocs/modules/util.md#tcomposematrixargs), ``"flipX"`` \| ``"flipY"``\>\> | object representing current object parameters |
+| `options` | `Required`\<`Omit`\<[`TComposeMatrixArgs`](/apidocs/modules/util.md#tcomposematrixargs), ``"flipX"`` \| ``"flipY"``\>\> | object representing current object parameters |
 | `styleOverride?` | `TStyleOverride` | object to override the object style |
 
 #### Returns
@@ -4117,7 +3802,7 @@ Requires public options: padding, borderColor
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:440](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L440)
+[src/shapes/Object/InteractiveObject.ts:440](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L440)
 
 ___
 
@@ -4131,7 +3816,7 @@ Paint the cached copy of the object on the target context.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `this` | `TCachedFabricObject`<`FabricObject`<`Partial`<`ObjectProps`\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>\> | - |
+| `this` | `TCachedFabricObject`\<`FabricObject`\<`Partial`\<`ObjectProps`\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>\> | - |
 | `ctx` | `CanvasRenderingContext2D` | Context to render on |
 
 #### Returns
@@ -4144,7 +3829,7 @@ Paint the cached copy of the object on the target context.
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:962](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L962)
+[src/shapes/Object/Object.ts:962](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L962)
 
 ___
 
@@ -4159,7 +3844,7 @@ Execute the drawing operation for an object clipPath
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `ctx` | `CanvasRenderingContext2D` | Context to render on |
-| `clipPath` | `TCachedFabricObject`<`FabricObject`<`Partial`<`ObjectProps`\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>\> |  |
+| `clipPath` | `TCachedFabricObject`\<`FabricObject`\<`Partial`\<`ObjectProps`\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>\> |  |
 
 #### Returns
 
@@ -4171,7 +3856,7 @@ Execute the drawing operation for an object clipPath
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:891](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L891)
+[src/shapes/Object/Object.ts:891](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L891)
 
 ___
 
@@ -4188,7 +3873,7 @@ Requires public options: cornerSize, padding
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `ctx` | `CanvasRenderingContext2D` | Context to draw on |
-| `styleOverride` | `Partial`<`Pick`<`InteractiveFabricObject`<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>, ``"cornerStyle"`` \| ``"cornerSize"`` \| ``"cornerColor"`` \| ``"cornerStrokeColor"`` \| ``"cornerDashArray"`` \| ``"transparentCorners"``\>\> | object to override the object style |
+| `styleOverride` | `Partial`\<`Pick`\<`InteractiveFabricObject`\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>, ``"cornerStyle"`` \| ``"cornerSize"`` \| ``"cornerColor"`` \| ``"cornerStrokeColor"`` \| ``"cornerDashArray"`` \| ``"transparentCorners"``\>\> | object to override the object style |
 
 #### Returns
 
@@ -4200,7 +3885,7 @@ Requires public options: cornerSize, padding
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:504](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L504)
+[src/shapes/Object/InteractiveObject.ts:504](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L504)
 
 ___
 
@@ -4229,7 +3914,7 @@ Requires public options: padding, borderColor
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:474](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L474)
+[src/shapes/Object/InteractiveObject.ts:474](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L474)
 
 ___
 
@@ -4255,7 +3940,7 @@ Execute the drawing operation for an object on a specified context
 
 #### Defined in
 
-[src/shapes/Group.ts:530](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Group.ts#L530)
+[src/shapes/Group.ts:530](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L530)
 
 ___
 
@@ -4290,19 +3975,19 @@ it seemed a good option, now is an edge case
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:342](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L342)
+[src/shapes/Object/InteractiveObject.ts:342](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L342)
 
 ___
 
 ### enterGroup
 
-▸ `Private` **enterGroup**(`object`, `removeParentTransform?`): `boolean`
+▸ **enterGroup**(`object`, `removeParentTransform?`): `boolean`
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |  |
+| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |  |
 | `removeParentTransform?` | `boolean` | true if object is in canvas coordinate plane |
 
 #### Returns
@@ -4317,13 +4002,13 @@ true if object entered group
 
 #### Defined in
 
-[src/shapes/ActiveSelection.ts:84](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/ActiveSelection.ts#L84)
+[src/shapes/ActiveSelection.ts:84](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/ActiveSelection.ts#L84)
 
 ___
 
 ### exitGroup
 
-▸ `Private` **exitGroup**(`object`, `removeParentTransform?`): `void`
+▸ **exitGroup**(`object`, `removeParentTransform?`): `void`
 
 we want objects to retain their canvas ref when exiting instance
 
@@ -4331,7 +4016,7 @@ we want objects to retain their canvas ref when exiting instance
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |  |
+| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |  |
 | `removeParentTransform?` | `boolean` | true if object should exit group without applying group's transform to it |
 
 #### Returns
@@ -4344,13 +4029,13 @@ we want objects to retain their canvas ref when exiting instance
 
 #### Defined in
 
-[src/shapes/ActiveSelection.ts:103](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/ActiveSelection.ts#L103)
+[src/shapes/ActiveSelection.ts:103](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/ActiveSelection.ts#L103)
 
 ___
 
 ### findCommonAncestors
 
-▸ **findCommonAncestors**<`T`, `S`\>(`other`, `strict?`): `AncestryComparison`<`S`\>
+▸ **findCommonAncestors**\<`T`, `S`\>(`other`, `strict?`): `AncestryComparison`\<`S`\>
 
 Compare ancestors
 
@@ -4358,7 +4043,7 @@ Compare ancestors
 
 | Name | Type |
 | :------ | :------ |
-| `T` | extends [`ActiveSelection`](/apidocs/classes/ActiveSelection.md)<`T`\> |
+| `T` | extends [`ActiveSelection`](/apidocs/classes/ActiveSelection.md)\<`T`\> |
 | `S` | extends `boolean` |
 
 #### Parameters
@@ -4370,7 +4055,7 @@ Compare ancestors
 
 #### Returns
 
-`AncestryComparison`<`S`\>
+`AncestryComparison`\<`S`\>
 
 an object that represent the ancestry situation.
 
@@ -4380,7 +4065,7 @@ an object that represent the ancestry situation.
 
 #### Defined in
 
-[src/shapes/Object/StackedObject.ts:99](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/StackedObject.ts#L99)
+[src/shapes/Object/StackedObject.ts:99](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/StackedObject.ts#L99)
 
 ___
 
@@ -4392,7 +4077,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
+| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
 | `idx` | `number` |
 | `intersecting?` | `boolean` |
 
@@ -4406,7 +4091,7 @@ ___
 
 #### Defined in
 
-[src/Collection.ts:264](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Collection.ts#L264)
+[src/Collection.ts:264](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L264)
 
 ___
 
@@ -4418,7 +4103,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
+| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
 | `idx` | `number` |
 | `intersecting?` | `boolean` |
 
@@ -4432,13 +4117,13 @@ ___
 
 #### Defined in
 
-[src/Collection.ts:287](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Collection.ts#L287)
+[src/Collection.ts:287](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L287)
 
 ___
 
 ### fire
 
-▸ **fire**<`K`\>(`eventName`, `options?`): `void`
+▸ **fire**\<`K`\>(`eventName`, `options?`): `void`
 
 Fires event with an optional options object
 
@@ -4465,7 +4150,7 @@ Fires event with an optional options object
 
 #### Defined in
 
-[src/Observable.ts:159](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Observable.ts#L159)
+[src/Observable.ts:159](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L159)
 
 ___
 
@@ -4480,7 +4165,7 @@ with the control, the control's key and the object that is calling the iterator
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `fn` | (`control`: [`Control`](/apidocs/classes/Control.md), `key`: `string`, `fabricObject`: `InteractiveFabricObject`<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>) => `any` | function to iterate over the controls over |
+| `fn` | (`control`: [`Control`](/apidocs/classes/Control.md), `key`: `string`, `fabricObject`: `InteractiveFabricObject`\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>) => `any` | function to iterate over the controls over |
 
 #### Returns
 
@@ -4492,7 +4177,7 @@ with the control, the control's key and the object that is calling the iterator
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:320](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L320)
+[src/shapes/Object/InteractiveObject.ts:320](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L320)
 
 ___
 
@@ -4508,7 +4193,7 @@ now is just a shortcut.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `callback` | (`object`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>, `index`: `number`, `array`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]) => `any` | Callback invoked with current object as first argument, index - as second and an array of all objects - as third. |
+| `callback` | (`object`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>, `index`: `number`, `array`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]) => `any` | Callback invoked with current object as first argument, index - as second and an array of all objects - as third. |
 
 #### Returns
 
@@ -4520,7 +4205,7 @@ now is just a shortcut.
 
 #### Defined in
 
-[src/Collection.ts:83](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Collection.ts#L83)
+[src/Collection.ts:83](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L83)
 
 ___
 
@@ -4548,7 +4233,7 @@ value of a property
 
 #### Defined in
 
-[src/CommonMethods.ts:59](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/CommonMethods.ts#L59)
+[src/CommonMethods.ts:59](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/CommonMethods.ts#L59)
 
 ___
 
@@ -4566,13 +4251,13 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:176](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L176)
+[src/shapes/Object/InteractiveObject.ts:176](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L176)
 
 ___
 
 ### getAncestors
 
-▸ **getAncestors**<`T`\>(`strict?`): `Ancestors`<`T`\>
+▸ **getAncestors**\<`T`\>(`strict?`): `Ancestors`\<`T`\>
 
 #### Type parameters
 
@@ -4588,7 +4273,7 @@ ___
 
 #### Returns
 
-`Ancestors`<`T`\>
+`Ancestors`\<`T`\>
 
 ancestors (excluding `ActiveSelection`) from bottom to top
 
@@ -4598,7 +4283,7 @@ ancestors (excluding `ActiveSelection`) from bottom to top
 
 #### Defined in
 
-[src/shapes/Object/StackedObject.ts:80](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/StackedObject.ts#L80)
+[src/shapes/Object/StackedObject.ts:80](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/StackedObject.ts#L80)
 
 ___
 
@@ -4628,7 +4313,7 @@ Object with left, top, width, height properties
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:428](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectGeometry.ts#L428)
+[src/shapes/Object/ObjectGeometry.ts:428](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L428)
 
 ___
 
@@ -4646,7 +4331,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:487](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectGeometry.ts#L487)
+[src/shapes/Object/ObjectGeometry.ts:487](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L487)
 
 ___
 
@@ -4666,7 +4351,7 @@ Returns the center coordinates of the object relative to canvas
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:169](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectOrigin.ts#L169)
+[src/shapes/Object/ObjectOrigin.ts:169](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L169)
 
 ___
 
@@ -4697,13 +4382,13 @@ The coords are returned in an array.
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:228](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectGeometry.ts#L228)
+[src/shapes/Object/ObjectGeometry.ts:228](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L228)
 
 ___
 
 ### getLayoutStrategyResult
 
-▸ **getLayoutStrategyResult**<`T`\>(`layoutDirective`, `objects`, `context`): `any`
+▸ **getLayoutStrategyResult**\<`T`\>(`layoutDirective`, `objects`, `context`): `any`
 
 Override this method to customize layout.
 If you need to run logic once layout completes use `onLayout`
@@ -4719,7 +4404,7 @@ If you need to run logic once layout completes use `onLayout`
 | Name | Type |
 | :------ | :------ |
 | `layoutDirective` | `T` |
-| `objects` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] |
+| `objects` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] |
 | `context` | [`LayoutContext`](/apidocs/modules.md#layoutcontext) |
 
 #### Returns
@@ -4732,7 +4417,7 @@ If you need to run logic once layout completes use `onLayout`
 
 #### Defined in
 
-[src/shapes/Group.ts:692](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Group.ts#L692)
+[src/shapes/Group.ts:692](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L692)
 
 ___
 
@@ -4752,7 +4437,7 @@ Return the object opacity counting also the group property
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:660](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L660)
+[src/shapes/Object/Object.ts:660](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L660)
 
 ___
 
@@ -4772,13 +4457,13 @@ Return the object scale factor counting also the group scaling
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:629](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L629)
+[src/shapes/Object/Object.ts:629](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L629)
 
 ___
 
 ### getObjects
 
-▸ **getObjects**(`...types?`): [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]
+▸ **getObjects**(`...types?`): [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]
 
 Returns an array of children objects of this instance
 
@@ -4790,7 +4475,7 @@ Returns an array of children objects of this instance
 
 #### Returns
 
-[`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]
+[`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]
 
 #### Inherited from
 
@@ -4798,7 +4483,7 @@ Returns an array of children objects of this instance
 
 #### Defined in
 
-[src/Collection.ts:100](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Collection.ts#L100)
+[src/Collection.ts:100](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L100)
 
 ___
 
@@ -4812,7 +4497,7 @@ Calculate the bbox of objects relative to instance's containing plane
 
 | Name | Type |
 | :------ | :------ |
-| `objects` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] |
+| `objects` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] |
 | `ignoreOffset?` | `boolean` |
 
 #### Returns
@@ -4827,13 +4512,13 @@ bounding box
 
 #### Defined in
 
-[src/shapes/Group.ts:904](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Group.ts#L904)
+[src/shapes/Group.ts:904](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L904)
 
 ___
 
 ### getParent
 
-▸ **getParent**<`T`\>(`strict?`): `undefined` \| `TAncestor`
+▸ **getParent**\<`T`\>(`strict?`): `undefined` \| `TAncestor`
 
 Returns instance's parent **EXCLUDING** `ActiveSelection`
 
@@ -4859,7 +4544,7 @@ Returns instance's parent **EXCLUDING** `ActiveSelection`
 
 #### Defined in
 
-[src/shapes/Object/StackedObject.ts:51](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/StackedObject.ts#L51)
+[src/shapes/Object/StackedObject.ts:51](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/StackedObject.ts#L51)
 
 ___
 
@@ -4886,7 +4571,7 @@ Returns the coordinates of the object as if it has a different origin
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:194](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectOrigin.ts#L194)
+[src/shapes/Object/ObjectOrigin.ts:194](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L194)
 
 ___
 
@@ -4906,7 +4591,7 @@ Returns the center coordinates of the object relative to it's parent
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:180](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectOrigin.ts#L180)
+[src/shapes/Object/ObjectOrigin.ts:180](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L180)
 
 ___
 
@@ -4927,7 +4612,7 @@ if parent is canvas then this property is identical to [getX](/apidocs/classes/F
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:119](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectGeometry.ts#L119)
+[src/shapes/Object/ObjectGeometry.ts:119](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L119)
 
 ___
 
@@ -4947,7 +4632,7 @@ x,y position according to object's [originX](/apidocs/classes/FabricObject.md#or
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:180](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectGeometry.ts#L180)
+[src/shapes/Object/ObjectGeometry.ts:180](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L180)
 
 ___
 
@@ -4968,7 +4653,7 @@ if parent is canvas then this property is identical to [getY](/apidocs/classes/F
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:135](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectGeometry.ts#L135)
+[src/shapes/Object/ObjectGeometry.ts:135](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L135)
 
 ___
 
@@ -4994,7 +4679,7 @@ shouldn't this account for group transform and return the actual size in canvas 
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:446](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectGeometry.ts#L446)
+[src/shapes/Object/ObjectGeometry.ts:446](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L446)
 
 ___
 
@@ -5020,7 +4705,7 @@ shouldn't this account for group transform and return the actual size in canvas 
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:437](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectGeometry.ts#L437)
+[src/shapes/Object/ObjectGeometry.ts:437](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L437)
 
 ___
 
@@ -5034,7 +4719,7 @@ Returns id attribute for svg output
 
 | Name | Type |
 | :------ | :------ |
-| `this` | `FabricObjectSVGExportMixin` & [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> & { `id?`: `string`  } |
+| `this` | `FabricObjectSVGExportMixin` & [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> & \{ `id?`: `string`  } |
 
 #### Returns
 
@@ -5046,7 +4731,7 @@ Returns id attribute for svg output
 
 #### Defined in
 
-[src/shapes/Object/FabricObjectSVGExportMixin.ts:84](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/FabricObjectSVGExportMixin.ts#L84)
+[src/shapes/Object/FabricObjectSVGExportMixin.ts:84](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/FabricObjectSVGExportMixin.ts#L84)
 
 ___
 
@@ -5060,7 +4745,7 @@ Returns filter for svg shadow
 
 | Name | Type |
 | :------ | :------ |
-| `this` | `FabricObjectSVGExportMixin` & [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
+| `this` | `FabricObjectSVGExportMixin` & [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
 
 #### Returns
 
@@ -5072,7 +4757,7 @@ Returns filter for svg shadow
 
 #### Defined in
 
-[src/shapes/Object/FabricObjectSVGExportMixin.ts:76](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/FabricObjectSVGExportMixin.ts#L76)
+[src/shapes/Object/FabricObjectSVGExportMixin.ts:76](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/FabricObjectSVGExportMixin.ts#L76)
 
 ___
 
@@ -5092,7 +4777,7 @@ Returns styles-string for svg-export, specific version for group
 
 #### Defined in
 
-[src/shapes/Group.ts:1056](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Group.ts#L1056)
+[src/shapes/Group.ts:1056](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L1056)
 
 ___
 
@@ -5106,7 +4791,7 @@ Returns transform-string for svg-export
 
 | Name | Type | Default value |
 | :------ | :------ | :------ |
-| `this` | `FabricObjectSVGExportMixin` & [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | `undefined` |
+| `this` | `FabricObjectSVGExportMixin` & [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | `undefined` |
 | `full?` | `boolean` | `undefined` |
 | `additionalTransform` | `string` | `''` |
 
@@ -5120,7 +4805,7 @@ Returns transform-string for svg-export
 
 #### Defined in
 
-[src/shapes/Object/FabricObjectSVGExportMixin.ts:103](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/FabricObjectSVGExportMixin.ts#L103)
+[src/shapes/Object/FabricObjectSVGExportMixin.ts:103](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/FabricObjectSVGExportMixin.ts#L103)
 
 ___
 
@@ -5140,7 +4825,7 @@ Returns the object angle relative to canvas counting also the group property
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:495](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectGeometry.ts#L495)
+[src/shapes/Object/ObjectGeometry.ts:495](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L495)
 
 ___
 
@@ -5162,7 +4847,7 @@ object with scaleX and scaleY properties
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:646](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L646)
+[src/shapes/Object/Object.ts:646](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L646)
 
 ___
 
@@ -5190,7 +4875,7 @@ FabricObject.prototype
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:543](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectGeometry.ts#L543)
+[src/shapes/Object/ObjectGeometry.ts:543](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L543)
 
 ___
 
@@ -5210,7 +4895,7 @@ x position according to object's [originX](/apidocs/classes/FabricObject.md#orig
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:90](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectGeometry.ts#L90)
+[src/shapes/Object/ObjectGeometry.ts:90](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L90)
 
 ___
 
@@ -5230,7 +4915,7 @@ x position according to object's [originX](/apidocs/classes/FabricObject.md#orig
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:150](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectGeometry.ts#L150)
+[src/shapes/Object/ObjectGeometry.ts:150](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L150)
 
 ___
 
@@ -5250,19 +4935,19 @@ y position according to object's [originY](/apidocs/classes/FabricObject.md#orig
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:104](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectGeometry.ts#L104)
+[src/shapes/Object/ObjectGeometry.ts:104](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L104)
 
 ___
 
 ### hasCommonAncestors
 
-▸ **hasCommonAncestors**<`T`\>(`other`, `strict?`): `boolean`
+▸ **hasCommonAncestors**\<`T`\>(`other`, `strict?`): `boolean`
 
 #### Type parameters
 
 | Name | Type |
 | :------ | :------ |
-| `T` | extends [`ActiveSelection`](/apidocs/classes/ActiveSelection.md)<`T`\> |
+| `T` | extends [`ActiveSelection`](/apidocs/classes/ActiveSelection.md)\<`T`\> |
 
 #### Parameters
 
@@ -5281,7 +4966,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/StackedObject.ts:168](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/StackedObject.ts#L168)
+[src/shapes/Object/StackedObject.ts:168](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/StackedObject.ts#L168)
 
 ___
 
@@ -5312,7 +4997,7 @@ Boolean
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:831](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L831)
+[src/shapes/Object/Object.ts:831](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L831)
 
 ___
 
@@ -5343,7 +5028,7 @@ Boolean
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:815](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L815)
+[src/shapes/Object/Object.ts:815](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L815)
 
 ___
 
@@ -5358,7 +5043,7 @@ Inserts an object into collection at specified index
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `index` | `number` | Index to insert object at |
-| `...objects` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] | Object to insert |
+| `...objects` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] | Object to insert |
 
 #### Returns
 
@@ -5370,7 +5055,7 @@ Inserts an object into collection at specified index
 
 #### Defined in
 
-[src/shapes/Group.ts:252](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Group.ts#L252)
+[src/shapes/Group.ts:252](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L252)
 
 ___
 
@@ -5384,7 +5069,7 @@ Checks if object intersects with another object
 
 | Name | Type | Default value | Description |
 | :------ | :------ | :------ | :------ |
-| `other` | `ObjectGeometry`<[`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | `undefined` | Object to test |
+| `other` | `ObjectGeometry`\<[`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | `undefined` | Object to test |
 | `absolute?` | `boolean` | `false` | use coordinates without viewportTransform |
 | `calculate?` | `boolean` | `false` | use coordinates of current position instead of calculating them |
 
@@ -5400,7 +5085,7 @@ true if object intersects with another object
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:268](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectGeometry.ts#L268)
+[src/shapes/Object/ObjectGeometry.ts:268](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L268)
 
 ___
 
@@ -5431,7 +5116,7 @@ true if object intersects with an area formed by 2 points
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:246](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectGeometry.ts#L246)
+[src/shapes/Object/ObjectGeometry.ts:246](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L246)
 
 ___
 
@@ -5457,7 +5142,7 @@ Check if cache is dirty
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:976](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L976)
+[src/shapes/Object/Object.ts:976](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L976)
 
 ___
 
@@ -5471,7 +5156,7 @@ Checks if object is fully contained within area of another object
 
 | Name | Type | Default value | Description |
 | :------ | :------ | :------ | :------ |
-| `other` | `ObjectGeometry`<[`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | `undefined` | Object to test |
+| `other` | `ObjectGeometry`\<[`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | `undefined` | Object to test |
 | `absolute?` | `boolean` | `false` | use coordinates without viewportTransform |
 | `calculate?` | `boolean` | `false` | use coordinates of current position instead of stored ones |
 
@@ -5487,7 +5172,7 @@ true if object is fully contained within area of another object
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:293](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectGeometry.ts#L293)
+[src/shapes/Object/ObjectGeometry.ts:293](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L293)
 
 ___
 
@@ -5518,7 +5203,7 @@ true if object is fully contained within area formed by 2 points
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:311](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectGeometry.ts#L311)
+[src/shapes/Object/ObjectGeometry.ts:311](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L311)
 
 ___
 
@@ -5546,7 +5231,7 @@ true if the specified control is visible, false otherwise
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:539](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L539)
+[src/shapes/Object/InteractiveObject.ts:539](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L539)
 
 ___
 
@@ -5573,7 +5258,7 @@ Should be used instead of [Group.contains](/apidocs/classes/StaticCanvas.md#cont
 
 #### Defined in
 
-[src/shapes/Object/StackedObject.ts:64](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/StackedObject.ts#L64)
+[src/shapes/Object/StackedObject.ts:64](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/StackedObject.ts#L64)
 
 ___
 
@@ -5595,19 +5280,19 @@ true if collection is empty
 
 #### Defined in
 
-[src/Collection.ts:120](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Collection.ts#L120)
+[src/Collection.ts:120](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L120)
 
 ___
 
 ### isInFrontOf
 
-▸ **isInFrontOf**<`T`\>(`other`): `undefined` \| `boolean`
+▸ **isInFrontOf**\<`T`\>(`other`): `undefined` \| `boolean`
 
 #### Type parameters
 
 | Name | Type |
 | :------ | :------ |
-| `T` | extends [`ActiveSelection`](/apidocs/classes/ActiveSelection.md)<`T`\> |
+| `T` | extends [`ActiveSelection`](/apidocs/classes/ActiveSelection.md)\<`T`\> |
 
 #### Parameters
 
@@ -5627,7 +5312,7 @@ if objects do not share a common ancestor or they are strictly equal it is impos
 
 #### Defined in
 
-[src/shapes/Object/StackedObject.ts:178](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/StackedObject.ts#L178)
+[src/shapes/Object/StackedObject.ts:178](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/StackedObject.ts#L178)
 
 ___
 
@@ -5645,7 +5330,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:738](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L738)
+[src/shapes/Object/Object.ts:738](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L738)
 
 ___
 
@@ -5665,7 +5350,7 @@ Check if this group or its parent group are caching, recursively up
 
 #### Defined in
 
-[src/shapes/ActiveSelection.ts:192](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/ActiveSelection.ts#L192)
+[src/shapes/ActiveSelection.ts:192](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/ActiveSelection.ts#L192)
 
 ___
 
@@ -5694,19 +5379,19 @@ true if object is fully or partially contained within canvas
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:354](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectGeometry.ts#L354)
+[src/shapes/Object/ObjectGeometry.ts:354](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L354)
 
 ___
 
 ### isOverlapping
 
-▸ **isOverlapping**<`T`\>(`other`): `boolean`
+▸ **isOverlapping**\<`T`\>(`other`): `boolean`
 
 #### Type parameters
 
 | Name | Type |
 | :------ | :------ |
-| `T` | extends `ObjectGeometry`<[`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md), `T`\> |
+| `T` | extends `ObjectGeometry`\<[`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md), `T`\> |
 
 #### Parameters
 
@@ -5724,7 +5409,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:326](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectGeometry.ts#L326)
+[src/shapes/Object/ObjectGeometry.ts:326](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L326)
 
 ___
 
@@ -5752,7 +5437,7 @@ true if object is partially contained within canvas
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:403](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectGeometry.ts#L403)
+[src/shapes/Object/ObjectGeometry.ts:403](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L403)
 
 ___
 
@@ -5778,13 +5463,13 @@ Returns true if any of the specified types is identical to the type of an instan
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1466](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L1466)
+[src/shapes/Object/Object.ts:1466](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1466)
 
 ___
 
 ### item
 
-▸ **item**(`index`): [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
+▸ **item**(`index`): [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
 
 Returns object at specified index
 
@@ -5796,7 +5481,7 @@ Returns object at specified index
 
 #### Returns
 
-[`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
+[`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
 
 object at index
 
@@ -5806,7 +5491,7 @@ object at index
 
 #### Defined in
 
-[src/Collection.ts:112](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Collection.ts#L112)
+[src/Collection.ts:112](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L112)
 
 ___
 
@@ -5820,7 +5505,7 @@ Moves an object to specified level in stack of drawn objects
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | Object to send |
+| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | Object to send |
 | `index` | `number` | Position to move to |
 
 #### Returns
@@ -5835,7 +5520,7 @@ true if change occurred
 
 #### Defined in
 
-[src/Collection.ts:254](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Collection.ts#L254)
+[src/Collection.ts:254](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L254)
 
 ___
 
@@ -5849,7 +5534,7 @@ Adds objects with respect to [multiSelectionStacking](/apidocs/classes/ActiveSel
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `...targets` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] | object to add to selection |
+| `...targets` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] | object to add to selection |
 
 #### Returns
 
@@ -5857,7 +5542,7 @@ Adds objects with respect to [multiSelectionStacking](/apidocs/classes/ActiveSel
 
 #### Defined in
 
-[src/shapes/ActiveSelection.ts:60](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/ActiveSelection.ts#L60)
+[src/shapes/ActiveSelection.ts:60](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/ActiveSelection.ts#L60)
 
 ___
 
@@ -5883,13 +5568,13 @@ Boolean
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:843](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L843)
+[src/shapes/Object/Object.ts:843](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L843)
 
 ___
 
 ### off
 
-▸ **off**<`K`\>(`eventName`, `handler`): `void`
+▸ **off**\<`K`\>(`eventName`, `handler`): `void`
 
 unsubscribe an event listener
 
@@ -5904,7 +5589,7 @@ unsubscribe an event listener
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `eventName` | `K` | event name (eg. 'after:render') |
-| `handler` | `TEventCallback`<`any`\> | event listener to unsubscribe |
+| `handler` | `TEventCallback`\<`any`\> | event listener to unsubscribe |
 
 #### Returns
 
@@ -5916,7 +5601,7 @@ unsubscribe an event listener
 
 #### Defined in
 
-[src/Observable.ts:120](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Observable.ts#L120)
+[src/Observable.ts:120](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L120)
 
 ▸ **off**(`handlers`): `void`
 
@@ -5926,7 +5611,7 @@ unsubscribe event listeners
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `handlers` | `EventRegistryObject`<[`GroupEvents`](/apidocs/interfaces/GroupEvents.md)\> | handlers key/value pairs (eg. {'after:render': handler, 'selection:cleared': handler}) |
+| `handlers` | `EventRegistryObject`\<[`GroupEvents`](/apidocs/interfaces/GroupEvents.md)\> | handlers key/value pairs (eg. {'after:render': handler, 'selection:cleared': handler}) |
 
 #### Returns
 
@@ -5938,7 +5623,7 @@ unsubscribe event listeners
 
 #### Defined in
 
-[src/Observable.ts:125](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Observable.ts#L125)
+[src/Observable.ts:125](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L125)
 
 ▸ **off**(): `void`
 
@@ -5954,13 +5639,13 @@ unsubscribe all event listeners
 
 #### Defined in
 
-[src/Observable.ts:129](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Observable.ts#L129)
+[src/Observable.ts:129](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L129)
 
 ___
 
 ### on
 
-▸ **on**<`K`, `E`\>(`eventName`, `handler`): `VoidFunction`
+▸ **on**\<`K`, `E`\>(`eventName`, `handler`): `VoidFunction`
 
 Observes specified event
 
@@ -5969,14 +5654,14 @@ Observes specified event
 | Name | Type |
 | :------ | :------ |
 | `K` | extends keyof [`GroupEvents`](/apidocs/interfaces/GroupEvents.md) |
-| `E` | extends [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> \| [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & { `currentSubTargets`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] ; `currentTarget?`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> ; `isClick`: `boolean`  } \| [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)<`WheelEvent`\> \| [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & `InEvent` \| [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & `OutEvent` \| [`BasicTransformEvent`](/apidocs/interfaces/BasicTransformEvent.md)<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> \| [`ModifiedEvent`](/apidocs/interfaces/ModifiedEvent.md)<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> \| `TEventWithTarget`<`DragEvent`\> \| [`DragEventData`](/apidocs/interfaces/DragEventData.md) \| [`DragEventData`](/apidocs/interfaces/DragEventData.md) & `InEvent` \| [`DragEventData`](/apidocs/interfaces/DragEventData.md) & `OutEvent` \| [`DropEventData`](/apidocs/interfaces/DropEventData.md) \| `SimpleEventHandler`<`Event`\> \| { `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| { `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| `Partial`<[`TEvent`](/apidocs/interfaces/TEvent.md)<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>\> & { `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| `Partial`<[`TEvent`](/apidocs/interfaces/TEvent.md)<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>\> & { `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| { `target`: [`Canvas`](/apidocs/classes/Canvas.md) \| [`Group`](/apidocs/classes/Group.md) \| [`StaticCanvas`](/apidocs/classes/StaticCanvas.md)<[`StaticCanvasEvents`](/apidocs/interfaces/StaticCanvasEvents.md)\>  } \| { `target`: [`Canvas`](/apidocs/classes/Canvas.md) \| [`Group`](/apidocs/classes/Group.md) \| [`StaticCanvas`](/apidocs/classes/StaticCanvas.md)<[`StaticCanvasEvents`](/apidocs/interfaces/StaticCanvasEvents.md)\>  } \| { `path`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| { `context`: [`LayoutContext`](/apidocs/modules.md#layoutcontext) ; `diff`: [`Point`](/apidocs/classes/Point.md) ; `result`: [`LayoutResult`](/apidocs/modules.md#layoutresult)  } |
+| `E` | extends [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> \| [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & \{ `currentSubTargets`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] ; `currentTarget?`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> ; `isClick`: `boolean`  } \| [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<`WheelEvent`\> \| [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & `InEvent` \| [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & `OutEvent` \| [`BasicTransformEvent`](/apidocs/interfaces/BasicTransformEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> \| [`ModifiedEvent`](/apidocs/interfaces/ModifiedEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> \| `TEventWithTarget`\<`DragEvent`\> \| [`DragEventData`](/apidocs/interfaces/DragEventData.md) \| [`DragEventData`](/apidocs/interfaces/DragEventData.md) & `InEvent` \| [`DragEventData`](/apidocs/interfaces/DragEventData.md) & `OutEvent` \| [`DropEventData`](/apidocs/interfaces/DropEventData.md) \| `SimpleEventHandler`\<`Event`\> \| \{ `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| \{ `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| `Partial`\<[`TEvent`](/apidocs/interfaces/TEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>\> & \{ `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| `Partial`\<[`TEvent`](/apidocs/interfaces/TEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>\> & \{ `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| \{ `target`: [`Canvas`](/apidocs/classes/Canvas.md) \| [`Group`](/apidocs/classes/Group.md) \| [`StaticCanvas`](/apidocs/classes/StaticCanvas.md)\<[`StaticCanvasEvents`](/apidocs/interfaces/StaticCanvasEvents.md)\>  } \| \{ `target`: [`Canvas`](/apidocs/classes/Canvas.md) \| [`Group`](/apidocs/classes/Group.md) \| [`StaticCanvas`](/apidocs/classes/StaticCanvas.md)\<[`StaticCanvasEvents`](/apidocs/interfaces/StaticCanvasEvents.md)\>  } \| \{ `path`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| \{ `context`: [`LayoutContext`](/apidocs/modules.md#layoutcontext) ; `diff`: [`Point`](/apidocs/classes/Point.md) ; `result`: [`LayoutResult`](/apidocs/modules.md#layoutresult)  } |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `eventName` | `K` | Event name (eg. 'after:render') |
-| `handler` | `TEventCallback`<`E`\> | Function that receives a notification when an event of the specified type occurs |
+| `handler` | `TEventCallback`\<`E`\> | Function that receives a notification when an event of the specified type occurs |
 
 #### Returns
 
@@ -5994,7 +5679,7 @@ on
 
 #### Defined in
 
-[src/Observable.ts:23](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Observable.ts#L23)
+[src/Observable.ts:23](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L23)
 
 ▸ **on**(`handlers`): `VoidFunction`
 
@@ -6002,7 +5687,7 @@ on
 
 | Name | Type |
 | :------ | :------ |
-| `handlers` | `EventRegistryObject`<[`GroupEvents`](/apidocs/interfaces/GroupEvents.md)\> |
+| `handlers` | `EventRegistryObject`\<[`GroupEvents`](/apidocs/interfaces/GroupEvents.md)\> |
 
 #### Returns
 
@@ -6014,7 +5699,7 @@ on
 
 #### Defined in
 
-[src/Observable.ts:27](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Observable.ts#L27)
+[src/Observable.ts:27](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L27)
 
 ___
 
@@ -6040,7 +5725,7 @@ If returns true, deselection is cancelled.
 
 #### Defined in
 
-[src/shapes/ActiveSelection.ts:144](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/ActiveSelection.ts#L144)
+[src/shapes/ActiveSelection.ts:144](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/ActiveSelection.ts#L144)
 
 ___
 
@@ -6069,7 +5754,7 @@ Complements `getLayoutStrategyResult`, which is called at the beginning of layou
 
 #### Defined in
 
-[src/shapes/Group.ts:955](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Group.ts#L955)
+[src/shapes/Group.ts:955](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L955)
 
 ___
 
@@ -6097,13 +5782,13 @@ try to to select this object. If the function returns true, the process is cance
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:627](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L627)
+[src/shapes/Object/InteractiveObject.ts:627](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L627)
 
 ___
 
 ### once
 
-▸ **once**<`K`, `E`\>(`eventName`, `handler`): `VoidFunction`
+▸ **once**\<`K`, `E`\>(`eventName`, `handler`): `VoidFunction`
 
 Observes specified event **once**
 
@@ -6112,14 +5797,14 @@ Observes specified event **once**
 | Name | Type |
 | :------ | :------ |
 | `K` | extends keyof [`GroupEvents`](/apidocs/interfaces/GroupEvents.md) |
-| `E` | extends [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> \| [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & { `currentSubTargets`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] ; `currentTarget?`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> ; `isClick`: `boolean`  } \| [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)<`WheelEvent`\> \| [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & `InEvent` \| [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & `OutEvent` \| [`BasicTransformEvent`](/apidocs/interfaces/BasicTransformEvent.md)<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> \| [`ModifiedEvent`](/apidocs/interfaces/ModifiedEvent.md)<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> \| `TEventWithTarget`<`DragEvent`\> \| [`DragEventData`](/apidocs/interfaces/DragEventData.md) \| [`DragEventData`](/apidocs/interfaces/DragEventData.md) & `InEvent` \| [`DragEventData`](/apidocs/interfaces/DragEventData.md) & `OutEvent` \| [`DropEventData`](/apidocs/interfaces/DropEventData.md) \| `SimpleEventHandler`<`Event`\> \| { `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| { `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| `Partial`<[`TEvent`](/apidocs/interfaces/TEvent.md)<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>\> & { `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| `Partial`<[`TEvent`](/apidocs/interfaces/TEvent.md)<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>\> & { `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| { `target`: [`Canvas`](/apidocs/classes/Canvas.md) \| [`Group`](/apidocs/classes/Group.md) \| [`StaticCanvas`](/apidocs/classes/StaticCanvas.md)<[`StaticCanvasEvents`](/apidocs/interfaces/StaticCanvasEvents.md)\>  } \| { `target`: [`Canvas`](/apidocs/classes/Canvas.md) \| [`Group`](/apidocs/classes/Group.md) \| [`StaticCanvas`](/apidocs/classes/StaticCanvas.md)<[`StaticCanvasEvents`](/apidocs/interfaces/StaticCanvasEvents.md)\>  } \| { `path`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| { `context`: [`LayoutContext`](/apidocs/modules.md#layoutcontext) ; `diff`: [`Point`](/apidocs/classes/Point.md) ; `result`: [`LayoutResult`](/apidocs/modules.md#layoutresult)  } |
+| `E` | extends [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> \| [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & \{ `currentSubTargets`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] ; `currentTarget?`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> ; `isClick`: `boolean`  } \| [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<`WheelEvent`\> \| [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & `InEvent` \| [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & `OutEvent` \| [`BasicTransformEvent`](/apidocs/interfaces/BasicTransformEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> \| [`ModifiedEvent`](/apidocs/interfaces/ModifiedEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> \| `TEventWithTarget`\<`DragEvent`\> \| [`DragEventData`](/apidocs/interfaces/DragEventData.md) \| [`DragEventData`](/apidocs/interfaces/DragEventData.md) & `InEvent` \| [`DragEventData`](/apidocs/interfaces/DragEventData.md) & `OutEvent` \| [`DropEventData`](/apidocs/interfaces/DropEventData.md) \| `SimpleEventHandler`\<`Event`\> \| \{ `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| \{ `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| `Partial`\<[`TEvent`](/apidocs/interfaces/TEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>\> & \{ `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| `Partial`\<[`TEvent`](/apidocs/interfaces/TEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>\> & \{ `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| \{ `target`: [`Canvas`](/apidocs/classes/Canvas.md) \| [`Group`](/apidocs/classes/Group.md) \| [`StaticCanvas`](/apidocs/classes/StaticCanvas.md)\<[`StaticCanvasEvents`](/apidocs/interfaces/StaticCanvasEvents.md)\>  } \| \{ `target`: [`Canvas`](/apidocs/classes/Canvas.md) \| [`Group`](/apidocs/classes/Group.md) \| [`StaticCanvas`](/apidocs/classes/StaticCanvas.md)\<[`StaticCanvasEvents`](/apidocs/interfaces/StaticCanvasEvents.md)\>  } \| \{ `path`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| \{ `context`: [`LayoutContext`](/apidocs/modules.md#layoutcontext) ; `diff`: [`Point`](/apidocs/classes/Point.md) ; `result`: [`LayoutResult`](/apidocs/modules.md#layoutresult)  } |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `eventName` | `K` | Event name (eg. 'after:render') |
-| `handler` | `TEventCallback`<`E`\> | Function that receives a notification when an event of the specified type occurs |
+| `handler` | `TEventCallback`\<`E`\> | Function that receives a notification when an event of the specified type occurs |
 
 #### Returns
 
@@ -6137,7 +5822,7 @@ once
 
 #### Defined in
 
-[src/Observable.ts:62](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Observable.ts#L62)
+[src/Observable.ts:62](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L62)
 
 ▸ **once**(`handlers`): `VoidFunction`
 
@@ -6145,7 +5830,7 @@ once
 
 | Name | Type |
 | :------ | :------ |
-| `handlers` | `EventRegistryObject`<[`GroupEvents`](/apidocs/interfaces/GroupEvents.md)\> |
+| `handlers` | `EventRegistryObject`\<[`GroupEvents`](/apidocs/interfaces/GroupEvents.md)\> |
 
 #### Returns
 
@@ -6157,13 +5842,13 @@ once
 
 #### Defined in
 
-[src/Observable.ts:66](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Observable.ts#L66)
+[src/Observable.ts:66](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L66)
 
 ___
 
 ### prepareBoundingBox
 
-▸ **prepareBoundingBox**<`T`\>(`layoutDirective`, `objects`, `context`): `any`
+▸ **prepareBoundingBox**\<`T`\>(`layoutDirective`, `objects`, `context`): `any`
 
 Override this method to customize layout.
 A wrapper around [Group#getObjectsBoundingBox](/apidocs/classes/Group.md#getobjectsboundingbox)
@@ -6179,7 +5864,7 @@ A wrapper around [Group#getObjectsBoundingBox](/apidocs/classes/Group.md#getobje
 | Name | Type |
 | :------ | :------ |
 | `layoutDirective` | `T` |
-| `objects` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] |
+| `objects` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] |
 | `context` | [`LayoutContext`](/apidocs/modules.md#layoutcontext) |
 
 #### Returns
@@ -6192,13 +5877,13 @@ A wrapper around [Group#getObjectsBoundingBox](/apidocs/classes/Group.md#getobje
 
 #### Defined in
 
-[src/shapes/Group.ts:778](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Group.ts#L778)
+[src/shapes/Group.ts:778](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L778)
 
 ___
 
 ### prepareInitialBoundingBox
 
-▸ **prepareInitialBoundingBox**<`T`\>(`layoutDirective`, `objects`, `context`): `undefined` \| { `centerX`: `number` = center.x; `centerY`: `number` = center.y; `correctionX`: `number` = correction.x; `correctionY`: `number` = correction.y; `height`: `number` = size.y; `width`: `number` = size.x }
+▸ **prepareInitialBoundingBox**\<`T`\>(`layoutDirective`, `objects`, `context`): `undefined` \| \{ `centerX`: `number` = center.x; `centerY`: `number` = center.y; `correctionX`: `number` = correction.x; `correctionY`: `number` = correction.y; `height`: `number` = size.y; `width`: `number` = size.x }
 
 Calculates center taking into account originX, originY while not being sure that width/height are initialized
 
@@ -6213,12 +5898,12 @@ Calculates center taking into account originX, originY while not being sure that
 | Name | Type |
 | :------ | :------ |
 | `layoutDirective` | `T` |
-| `objects` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] |
+| `objects` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] |
 | `context` | [`LayoutContext`](/apidocs/modules.md#layoutcontext) |
 
 #### Returns
 
-`undefined` \| { `centerX`: `number` = center.x; `centerY`: `number` = center.y; `correctionX`: `number` = correction.x; `correctionY`: `number` = correction.y; `height`: `number` = size.y; `width`: `number` = size.x }
+`undefined` \| \{ `centerX`: `number` = center.x; `centerY`: `number` = center.y; `correctionX`: `number` = correction.x; `correctionY`: `number` = correction.y; `height`: `number` = size.y; `width`: `number` = size.x }
 
 #### Inherited from
 
@@ -6226,13 +5911,13 @@ Calculates center taking into account originX, originY while not being sure that
 
 #### Defined in
 
-[src/shapes/Group.ts:803](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Group.ts#L803)
+[src/shapes/Group.ts:803](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L803)
 
 ___
 
 ### remove
 
-▸ **remove**(`...objects`): [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]
+▸ **remove**(`...objects`): [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]
 
 Remove objects
 
@@ -6240,11 +5925,11 @@ Remove objects
 
 | Name | Type |
 | :------ | :------ |
-| `...objects` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] |
+| `...objects` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] |
 
 #### Returns
 
-[`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]
+[`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]
 
 removed objects
 
@@ -6254,19 +5939,19 @@ removed objects
 
 #### Defined in
 
-[src/shapes/Group.ts:264](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Group.ts#L264)
+[src/shapes/Group.ts:264](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L264)
 
 ___
 
 ### removeAll
 
-▸ **removeAll**(): [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]
+▸ **removeAll**(): [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]
 
 Remove all objects
 
 #### Returns
 
-[`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]
+[`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]
 
 removed objects
 
@@ -6276,7 +5961,7 @@ removed objects
 
 #### Defined in
 
-[src/shapes/Group.ts:347](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Group.ts#L347)
+[src/shapes/Group.ts:347](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L347)
 
 ___
 
@@ -6302,7 +5987,7 @@ Renders instance on a given context
 
 #### Defined in
 
-[src/shapes/Group.ts:563](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Group.ts#L563)
+[src/shapes/Group.ts:563](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L563)
 
 ___
 
@@ -6326,7 +6011,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:784](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L784)
+[src/shapes/Object/Object.ts:784](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L784)
 
 ___
 
@@ -6354,7 +6039,7 @@ example: render the selection status for the part of text that is being dragged 
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:651](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L651)
+[src/shapes/Object/InteractiveObject.ts:651](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L651)
 
 ___
 
@@ -6383,7 +6068,7 @@ object will change when dropping. example: show the cursor where the text is abo
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:664](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L664)
+[src/shapes/Object/InteractiveObject.ts:664](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L664)
 
 ___
 
@@ -6409,7 +6094,7 @@ Sets "angle" of an instance with centered rotation
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1494](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L1494)
+[src/shapes/Object/Object.ts:1494](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1494)
 
 ___
 
@@ -6435,7 +6120,7 @@ Scales an object (equally by x and y)
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:455](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectGeometry.ts#L455)
+[src/shapes/Object/ObjectGeometry.ts:455](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L455)
 
 ___
 
@@ -6462,7 +6147,7 @@ Scales an object to a given height, with respect to bounding box (scaling by x/y
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:480](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectGeometry.ts#L480)
+[src/shapes/Object/ObjectGeometry.ts:480](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L480)
 
 ___
 
@@ -6489,7 +6174,7 @@ Scales an object to a given width, with respect to bounding box (scaling by x/y 
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:467](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectGeometry.ts#L467)
+[src/shapes/Object/ObjectGeometry.ts:467](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L467)
 
 ___
 
@@ -6507,7 +6192,7 @@ stack.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | Object to send |
+| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | Object to send |
 | `intersecting?` | `boolean` | If `true`, send object behind next lower intersecting object |
 
 #### Returns
@@ -6522,7 +6207,7 @@ true if change occurred
 
 #### Defined in
 
-[src/Collection.ts:206](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Collection.ts#L206)
+[src/Collection.ts:206](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L206)
 
 ___
 
@@ -6537,7 +6222,7 @@ to the bottom of the stack of drawn objects
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | Object to send to back |
+| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | Object to send to back |
 
 #### Returns
 
@@ -6551,7 +6236,7 @@ true if change occurred
 
 #### Defined in
 
-[src/Collection.ts:170](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Collection.ts#L170)
+[src/Collection.ts:170](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L170)
 
 ___
 
@@ -6565,7 +6250,7 @@ Sets property to a given value. When changing position/dimension -related proper
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `key` | `string` \| `Record`<`string`, `any`\> | Property name or object (if object, iterate over the object properties) |
+| `key` | `string` \| `Record`\<`string`, `any`\> | Property name or object (if object, iterate over the object properties) |
 | `value?` | `any` | Property value (if function, the value is passed into it and its return value is used as a new one) |
 
 #### Returns
@@ -6578,7 +6263,7 @@ Sets property to a given value. When changing position/dimension -related proper
 
 #### Defined in
 
-[src/CommonMethods.ts:29](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/CommonMethods.ts#L29)
+[src/CommonMethods.ts:29](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/CommonMethods.ts#L29)
 
 ___
 
@@ -6610,7 +6295,7 @@ discuss this overlap of priority here with the team. Andrea Bogazzi for details
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:554](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L554)
+[src/shapes/Object/InteractiveObject.ts:554](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L554)
 
 ___
 
@@ -6624,7 +6309,7 @@ Sets the visibility state of object controls, this is just a bulk option for set
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `options?` | `Record`<`string`, `boolean`\> | with an optional key per control example: {Boolean} [options.bl] true to enable the bottom-left control, false to disable it |
+| `options?` | `Record`\<`string`, `boolean`\> | with an optional key per control example: {Boolean} [options.bl] true to enable the bottom-left control, false to disable it |
 
 #### Returns
 
@@ -6636,7 +6321,7 @@ Sets the visibility state of object controls, this is just a bulk option for set
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:566](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L566)
+[src/shapes/Object/InteractiveObject.ts:566](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L566)
 
 ___
 
@@ -6654,7 +6339,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Group.ts:553](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Group.ts#L553)
+[src/shapes/Group.ts:553](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L553)
 
 ___
 
@@ -6677,13 +6362,13 @@ Travis build error about unused variables.
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1526](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L1526)
+[src/shapes/Object/Object.ts:1526](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1526)
 
 ___
 
 ### setOptions
 
-▸ `Protected` **setOptions**(`options?`): `void`
+▸ **setOptions**(`options?`): `void`
 
 Sets object's properties from options, for class constructor only.
 Needs to be overridden for different defaults.
@@ -6692,7 +6377,7 @@ Needs to be overridden for different defaults.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `options?` | `Record`<`string`, `any`\> | Options object |
+| `options?` | `Record`\<`string`, `any`\> | Options object |
 
 #### Returns
 
@@ -6704,7 +6389,7 @@ Needs to be overridden for different defaults.
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:495](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L495)
+[src/shapes/Object/Object.ts:495](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L495)
 
 ___
 
@@ -6732,7 +6417,7 @@ Sets the position of the object taking into consideration the object's origin
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:209](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectOrigin.ts#L209)
+[src/shapes/Object/ObjectOrigin.ts:209](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L209)
 
 ___
 
@@ -6756,7 +6441,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:127](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectGeometry.ts#L127)
+[src/shapes/Object/ObjectGeometry.ts:127](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L127)
 
 ___
 
@@ -6784,7 +6469,7 @@ As [setXY](/apidocs/classes/FabricObject.md#setxy), but in current parent's coor
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:190](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectGeometry.ts#L190)
+[src/shapes/Object/ObjectGeometry.ts:190](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L190)
 
 ___
 
@@ -6808,7 +6493,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:143](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectGeometry.ts#L143)
+[src/shapes/Object/ObjectGeometry.ts:143](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L143)
 
 ___
 
@@ -6832,7 +6517,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:97](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectGeometry.ts#L97)
+[src/shapes/Object/ObjectGeometry.ts:97](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L97)
 
 ___
 
@@ -6869,7 +6554,7 @@ object.setXY(new Point(5, 5), 'left', 'bottom').
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:167](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectGeometry.ts#L167)
+[src/shapes/Object/ObjectGeometry.ts:167](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L167)
 
 ___
 
@@ -6893,7 +6578,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:111](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectGeometry.ts#L111)
+[src/shapes/Object/ObjectGeometry.ts:111](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L111)
 
 ___
 
@@ -6917,7 +6602,7 @@ Generally you do not cache objects in groups because the group outside is cached
 
 #### Defined in
 
-[src/shapes/ActiveSelection.ts:184](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/ActiveSelection.ts#L184)
+[src/shapes/ActiveSelection.ts:184](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/ActiveSelection.ts#L184)
 
 ___
 
@@ -6939,7 +6624,7 @@ Collection size
 
 #### Defined in
 
-[src/Collection.ts:128](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Collection.ts#L128)
+[src/Collection.ts:128](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L128)
 
 ___
 
@@ -6966,7 +6651,7 @@ override this function in order to customize the drawing of the control box, e.g
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:366](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/InteractiveObject.ts#L366)
+[src/shapes/Object/InteractiveObject.ts:366](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/InteractiveObject.ts#L366)
 
 ___
 
@@ -6994,7 +6679,7 @@ Returns DOM element <canvas> with the FabricObject
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1359](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L1359)
+[src/shapes/Object/Object.ts:1359](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1359)
 
 ___
 
@@ -7022,7 +6707,7 @@ svg representation of an instance
 
 #### Defined in
 
-[src/shapes/Group.ts:1070](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Group.ts#L1070)
+[src/shapes/Group.ts:1070](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L1070)
 
 ___
 
@@ -7050,7 +6735,7 @@ Returns a data: URL containing a representation of the object in the format spec
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1453](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L1453)
+[src/shapes/Object/Object.ts:1453](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1453)
 
 ___
 
@@ -7078,7 +6763,7 @@ Object representation of an instance
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:581](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L581)
+[src/shapes/Object/Object.ts:581](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L581)
 
 ___
 
@@ -7100,13 +6785,13 @@ JSON
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1485](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L1485)
+[src/shapes/Object/Object.ts:1485](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1485)
 
 ___
 
 ### toObject
 
-▸ **toObject**<`T`, `K`\>(`propertiesToInclude?`): `Pick`<`T`, `K`\> & [`SerializedGroupProps`](/apidocs/interfaces/SerializedGroupProps.md)
+▸ **toObject**\<`T`, `K`\>(`propertiesToInclude?`): `Pick`\<`T`, `K`\> & [`SerializedGroupProps`](/apidocs/interfaces/SerializedGroupProps.md)
 
 Returns object representation of an instance
 
@@ -7114,7 +6799,7 @@ Returns object representation of an instance
 
 | Name | Type |
 | :------ | :------ |
-| `T` | extends `Omit`<[`GroupProps`](/apidocs/interfaces/GroupProps.md) & [`TClassProperties`](/apidocs/modules.md#tclassproperties)<[`ActiveSelection`](/apidocs/classes/ActiveSelection.md)\>, keyof [`SerializedGroupProps`](/apidocs/interfaces/SerializedGroupProps.md)\> |
+| `T` | extends `Omit`\<[`GroupProps`](/apidocs/interfaces/GroupProps.md) & [`TClassProperties`](/apidocs/modules.md#tclassproperties)\<[`ActiveSelection`](/apidocs/classes/ActiveSelection.md)\>, keyof [`SerializedGroupProps`](/apidocs/interfaces/SerializedGroupProps.md)\> |
 | `K` | extends `string` \| `number` \| `symbol` = `never` |
 
 #### Parameters
@@ -7125,7 +6810,7 @@ Returns object representation of an instance
 
 #### Returns
 
-`Pick`<`T`, `K`\> & [`SerializedGroupProps`](/apidocs/interfaces/SerializedGroupProps.md)
+`Pick`\<`T`, `K`\> & [`SerializedGroupProps`](/apidocs/interfaces/SerializedGroupProps.md)
 
 object representation of an instance
 
@@ -7135,7 +6820,7 @@ object representation of an instance
 
 #### Defined in
 
-[src/shapes/Group.ts:988](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Group.ts#L988)
+[src/shapes/Group.ts:988](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L988)
 
 ___
 
@@ -7149,7 +6834,7 @@ Returns svg representation of an instance
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `this` | `FabricObjectSVGExportMixin` & [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | - |
+| `this` | `FabricObjectSVGExportMixin` & [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | - |
 | `reviver?` | [`TSVGReviver`](/apidocs/modules.md#tsvgreviver) | Method for further parsing of svg representation. |
 
 #### Returns
@@ -7164,7 +6849,7 @@ svg representation of an instance
 
 #### Defined in
 
-[src/shapes/Object/FabricObjectSVGExportMixin.ts:129](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/FabricObjectSVGExportMixin.ts#L129)
+[src/shapes/Object/FabricObjectSVGExportMixin.ts:129](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/FabricObjectSVGExportMixin.ts#L129)
 
 ___
 
@@ -7184,7 +6869,7 @@ Returns string representation of a group
 
 #### Defined in
 
-[src/shapes/ActiveSelection.ts:172](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/ActiveSelection.ts#L172)
+[src/shapes/ActiveSelection.ts:172](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/ActiveSelection.ts#L172)
 
 ___
 
@@ -7210,7 +6895,7 @@ Toggles specified property from `true` to `false` or from `false` to `true`
 
 #### Defined in
 
-[src/CommonMethods.ts:46](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/CommonMethods.ts#L46)
+[src/CommonMethods.ts:46](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/CommonMethods.ts#L46)
 
 ___
 
@@ -7236,7 +6921,7 @@ Transforms context when rendering an object
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:503](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L503)
+[src/shapes/Object/Object.ts:503](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L503)
 
 ___
 
@@ -7260,7 +6945,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:584](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectGeometry.ts#L584)
+[src/shapes/Object/ObjectGeometry.ts:584](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectGeometry.ts#L584)
 
 ___
 
@@ -7288,7 +6973,7 @@ Translates the coordinates from origin to center coordinates (based on the objec
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:122](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectOrigin.ts#L122)
+[src/shapes/Object/ObjectOrigin.ts:122](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L122)
 
 ___
 
@@ -7318,7 +7003,7 @@ Translates the coordinates from a set of origin to another (based on the object'
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:94](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectOrigin.ts#L94)
+[src/shapes/Object/ObjectOrigin.ts:94](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L94)
 
 ___
 
@@ -7346,13 +7031,13 @@ Translates the coordinates from center to origin coordinates (based on the objec
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:147](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/ObjectOrigin.ts#L147)
+[src/shapes/Object/ObjectOrigin.ts:147](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/ObjectOrigin.ts#L147)
 
 ___
 
 ### triggerLayout
 
-▸ **triggerLayout**<`T`\>(`context?`): `void`
+▸ **triggerLayout**\<`T`\>(`context?`): `void`
 
 #### Type parameters
 
@@ -7364,7 +7049,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `context?` | `Partial`<[`LayoutResult`](/apidocs/modules.md#layoutresult)\> & { `layout?`: `T`  } | pass values to use for layout calculations |
+| `context?` | `Partial`\<[`LayoutResult`](/apidocs/modules.md#layoutresult)\> & \{ `layout?`: `T`  } | pass values to use for layout calculations |
 
 #### Returns
 
@@ -7376,7 +7061,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Group.ts:573](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Group.ts#L573)
+[src/shapes/Group.ts:573](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L573)
 
 ___
 
@@ -7396,30 +7081,30 @@ Check if this object or a child object will cast a shadow
 
 #### Defined in
 
-[src/shapes/Group.ts:506](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Group.ts#L506)
+[src/shapes/Group.ts:506](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L506)
 
 ___
 
 ### \_fromObject
 
-▸ `Static` **_fromObject**<`S`\>(`object`, `«destructured»?`): `Promise`<`S`\>
+▸ **_fromObject**\<`S`\>(`object`, `«destructured»?`): `Promise`\<`S`\>
 
 #### Type parameters
 
 | Name | Type |
 | :------ | :------ |
-| `S` | extends `FabricObject`<`Partial`<`ObjectProps`\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md), `S`\> |
+| `S` | extends `FabricObject`\<`Partial`\<`ObjectProps`\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md), `S`\> |
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `object` | `Record`<`string`, `unknown`\> |
-| `«destructured»` | [`Abortable`](/apidocs/modules.md#abortable) & { `extraParam?`: `string`  } |
+| `object` | `Record`\<`string`, `unknown`\> |
+| `«destructured»` | [`Abortable`](/apidocs/modules.md#abortable) & \{ `extraParam?`: `string`  } |
 
 #### Returns
 
-`Promise`<`S`\>
+`Promise`\<`S`\>
 
 #### Inherited from
 
@@ -7427,19 +7112,19 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1564](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Object/Object.ts#L1564)
+[src/shapes/Object/Object.ts:1564](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/Object.ts#L1564)
 
 ___
 
 ### fromObject
 
-▸ `Static` `Private` **fromObject**<`T`\>(`object`): `Promise`<[`Group`](/apidocs/classes/Group.md)\>
+▸ **fromObject**\<`T`\>(`object`): `Promise`\<[`Group`](/apidocs/classes/Group.md)\>
 
 #### Type parameters
 
 | Name | Type |
 | :------ | :------ |
-| `T` | extends [`TOptions`](/apidocs/modules.md#toptions)<[`SerializedGroupProps`](/apidocs/interfaces/SerializedGroupProps.md)\> |
+| `T` | extends [`TOptions`](/apidocs/modules.md#toptions)\<[`SerializedGroupProps`](/apidocs/interfaces/SerializedGroupProps.md)\> |
 
 #### Parameters
 
@@ -7449,7 +7134,7 @@ ___
 
 #### Returns
 
-`Promise`<[`Group`](/apidocs/classes/Group.md)\>
+`Promise`\<[`Group`](/apidocs/classes/Group.md)\>
 
 **`Todo`**
 
@@ -7467,17 +7152,17 @@ Group
 
 #### Defined in
 
-[src/shapes/Group.ts:1090](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Group.ts#L1090)
+[src/shapes/Group.ts:1090](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L1090)
 
 ___
 
 ### getDefaults
 
-▸ `Static` **getDefaults**(): `Record`<`string`, `any`\>
+▸ **getDefaults**(): `Record`\<`string`, `any`\>
 
 #### Returns
 
-`Record`<`string`, `any`\>
+`Record`\<`string`, `any`\>
 
 #### Inherited from
 
@@ -7485,4 +7170,4 @@ ___
 
 #### Defined in
 
-[src/shapes/Group.ts:157](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/shapes/Group.ts#L157)
+[src/shapes/Group.ts:157](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L157)

@@ -20,57 +20,6 @@
 
 - [`Canvas`](/apidocs/classes/Canvas.md)
 
-## Table of contents
-
-### Properties
-
-- [allowTouchScrolling](/apidocs/interfaces/CanvasOptions.md#allowtouchscrolling)
-- [altActionKey](/apidocs/interfaces/CanvasOptions.md#altactionkey)
-- [altSelectionKey](/apidocs/interfaces/CanvasOptions.md#altselectionkey)
-- [backgroundColor](/apidocs/interfaces/CanvasOptions.md#backgroundcolor)
-- [backgroundImage](/apidocs/interfaces/CanvasOptions.md#backgroundimage)
-- [backgroundVpt](/apidocs/interfaces/CanvasOptions.md#backgroundvpt)
-- [centeredKey](/apidocs/interfaces/CanvasOptions.md#centeredkey)
-- [centeredRotation](/apidocs/interfaces/CanvasOptions.md#centeredrotation)
-- [centeredScaling](/apidocs/interfaces/CanvasOptions.md#centeredscaling)
-- [clipPath](/apidocs/interfaces/CanvasOptions.md#clippath)
-- [containerClass](/apidocs/interfaces/CanvasOptions.md#containerclass)
-- [controlsAboveOverlay](/apidocs/interfaces/CanvasOptions.md#controlsaboveoverlay)
-- [defaultCursor](/apidocs/interfaces/CanvasOptions.md#defaultcursor)
-- [enablePointerEvents](/apidocs/interfaces/CanvasOptions.md#enablepointerevents)
-- [enableRetinaScaling](/apidocs/interfaces/CanvasOptions.md#enableretinascaling)
-- [fireMiddleClick](/apidocs/interfaces/CanvasOptions.md#firemiddleclick)
-- [fireRightClick](/apidocs/interfaces/CanvasOptions.md#firerightclick)
-- [freeDrawingCursor](/apidocs/interfaces/CanvasOptions.md#freedrawingcursor)
-- [height](/apidocs/interfaces/CanvasOptions.md#height)
-- [hoverCursor](/apidocs/interfaces/CanvasOptions.md#hovercursor)
-- [imageSmoothingEnabled](/apidocs/interfaces/CanvasOptions.md#imagesmoothingenabled)
-- [includeDefaultValues](/apidocs/interfaces/CanvasOptions.md#includedefaultvalues)
-- [moveCursor](/apidocs/interfaces/CanvasOptions.md#movecursor)
-- [notAllowedCursor](/apidocs/interfaces/CanvasOptions.md#notallowedcursor)
-- [overlayColor](/apidocs/interfaces/CanvasOptions.md#overlaycolor)
-- [overlayImage](/apidocs/interfaces/CanvasOptions.md#overlayimage)
-- [overlayVpt](/apidocs/interfaces/CanvasOptions.md#overlayvpt)
-- [perPixelTargetFind](/apidocs/interfaces/CanvasOptions.md#perpixeltargetfind)
-- [preserveObjectStacking](/apidocs/interfaces/CanvasOptions.md#preserveobjectstacking)
-- [renderOnAddRemove](/apidocs/interfaces/CanvasOptions.md#renderonaddremove)
-- [selection](/apidocs/interfaces/CanvasOptions.md#selection)
-- [selectionBorderColor](/apidocs/interfaces/CanvasOptions.md#selectionbordercolor)
-- [selectionColor](/apidocs/interfaces/CanvasOptions.md#selectioncolor)
-- [selectionDashArray](/apidocs/interfaces/CanvasOptions.md#selectiondasharray)
-- [selectionFullyContained](/apidocs/interfaces/CanvasOptions.md#selectionfullycontained)
-- [selectionKey](/apidocs/interfaces/CanvasOptions.md#selectionkey)
-- [selectionLineWidth](/apidocs/interfaces/CanvasOptions.md#selectionlinewidth)
-- [skipOffscreen](/apidocs/interfaces/CanvasOptions.md#skipoffscreen)
-- [skipTargetFind](/apidocs/interfaces/CanvasOptions.md#skiptargetfind)
-- [stopContextMenu](/apidocs/interfaces/CanvasOptions.md#stopcontextmenu)
-- [svgViewportTransformation](/apidocs/interfaces/CanvasOptions.md#svgviewporttransformation)
-- [targetFindTolerance](/apidocs/interfaces/CanvasOptions.md#targetfindtolerance)
-- [uniScaleKey](/apidocs/interfaces/CanvasOptions.md#uniscalekey)
-- [uniformScaling](/apidocs/interfaces/CanvasOptions.md#uniformscaling)
-- [viewportTransform](/apidocs/interfaces/CanvasOptions.md#viewporttransform)
-- [width](/apidocs/interfaces/CanvasOptions.md#width)
-
 ## Properties
 
 ### allowTouchScrolling
@@ -95,7 +44,7 @@ move to Canvas
 
 #### Defined in
 
-[src/canvas/StaticCanvasOptions.ts:161](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvasOptions.ts#L161)
+[src/canvas/StaticCanvasOptions.ts:161](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvasOptions.ts#L161)
 
 ___
 
@@ -124,7 +73,7 @@ CanvasTransformOptions.altActionKey
 
 #### Defined in
 
-[src/canvas/CanvasOptions.ts:68](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/CanvasOptions.ts#L68)
+[src/canvas/CanvasOptions.ts:68](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/CanvasOptions.ts#L68)
 
 ___
 
@@ -156,7 +105,7 @@ CanvasSelectionOptions.altSelectionKey
 
 #### Defined in
 
-[src/canvas/CanvasOptions.ts:103](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/CanvasOptions.ts#L103)
+[src/canvas/CanvasOptions.ts:103](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/CanvasOptions.ts#L103)
 
 ___
 
@@ -178,13 +127,13 @@ Background color of canvas instance.
 
 #### Defined in
 
-[src/canvas/StaticCanvasOptions.ts:21](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvasOptions.ts#L21)
+[src/canvas/StaticCanvasOptions.ts:21](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvasOptions.ts#L21)
 
 ___
 
 ### backgroundImage
 
-• `Optional` **backgroundImage**: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
+• `Optional` **backgroundImage**: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
 
 Background image of canvas instance.
 since 2.4.0 image caching is active, please when putting an image as background, add to the
@@ -203,7 +152,7 @@ vale. As an alternative you can disable image objectCaching
 
 #### Defined in
 
-[src/canvas/StaticCanvasOptions.ts:31](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvasOptions.ts#L31)
+[src/canvas/StaticCanvasOptions.ts:31](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvasOptions.ts#L31)
 
 ___
 
@@ -233,7 +182,7 @@ we should really find a different way to do this
 
 #### Defined in
 
-[src/canvas/StaticCanvasOptions.ts:14](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvasOptions.ts#L14)
+[src/canvas/StaticCanvasOptions.ts:14](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvasOptions.ts#L14)
 
 ___
 
@@ -262,7 +211,7 @@ CanvasTransformOptions.centeredKey
 
 #### Defined in
 
-[src/canvas/CanvasOptions.ts:57](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/CanvasOptions.ts#L57)
+[src/canvas/CanvasOptions.ts:57](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/CanvasOptions.ts#L57)
 
 ___
 
@@ -289,7 +238,7 @@ CanvasTransformOptions.centeredRotation
 
 #### Defined in
 
-[src/canvas/CanvasOptions.ts:46](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/CanvasOptions.ts#L46)
+[src/canvas/CanvasOptions.ts:46](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/CanvasOptions.ts#L46)
 
 ___
 
@@ -316,13 +265,13 @@ CanvasTransformOptions.centeredScaling
 
 #### Defined in
 
-[src/canvas/CanvasOptions.ts:37](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/CanvasOptions.ts#L37)
+[src/canvas/CanvasOptions.ts:37](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/CanvasOptions.ts#L37)
 
 ___
 
 ### clipPath
 
-• `Optional` **clipPath**: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
+• `Optional` **clipPath**: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
 
 a fabricObject that, without stroke define a clipping area with their shape. filled in black
 the clipPath object gets used when the canvas has rendered, and the context is placed in the
@@ -335,7 +284,7 @@ clipPath will clip away controls, if you do not want this to happen use controls
 
 #### Defined in
 
-[src/canvas/StaticCanvasOptions.ts:106](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvasOptions.ts#L106)
+[src/canvas/StaticCanvasOptions.ts:106](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvasOptions.ts#L106)
 
 ___
 
@@ -357,7 +306,7 @@ customize [CanvasDOMManager](/apidocs/classes/CanvasDOMManager.md) instead or ac
 
 #### Defined in
 
-[src/canvas/CanvasOptions.ts:252](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/CanvasOptions.ts#L252)
+[src/canvas/CanvasOptions.ts:252](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/CanvasOptions.ts#L252)
 
 ___
 
@@ -383,7 +332,7 @@ move to Canvas
 
 #### Defined in
 
-[src/canvas/StaticCanvasOptions.ts:152](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvasOptions.ts#L152)
+[src/canvas/StaticCanvasOptions.ts:152](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvasOptions.ts#L152)
 
 ___
 
@@ -405,7 +354,7 @@ CanvasCursorOptions.defaultCursor
 
 #### Defined in
 
-[src/canvas/CanvasOptions.ts:161](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/CanvasOptions.ts#L161)
+[src/canvas/CanvasOptions.ts:161](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/CanvasOptions.ts#L161)
 
 ___
 
@@ -427,7 +376,7 @@ CanvasEventsOptions.enablePointerEvents
 
 #### Defined in
 
-[src/canvas/CanvasOptions.ts:236](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/CanvasOptions.ts#L236)
+[src/canvas/CanvasOptions.ts:236](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/CanvasOptions.ts#L236)
 
 ___
 
@@ -449,7 +398,7 @@ When true, canvas is scaled by devicePixelRatio for better rendering on retina s
 
 #### Defined in
 
-[src/canvas/StaticCanvasOptions.ts:90](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvasOptions.ts#L90)
+[src/canvas/StaticCanvasOptions.ts:90](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvasOptions.ts#L90)
 
 ___
 
@@ -475,7 +424,7 @@ CanvasEventsOptions.fireMiddleClick
 
 #### Defined in
 
-[src/canvas/CanvasOptions.ts:229](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/CanvasOptions.ts#L229)
+[src/canvas/CanvasOptions.ts:229](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/CanvasOptions.ts#L229)
 
 ___
 
@@ -501,7 +450,7 @@ CanvasEventsOptions.fireRightClick
 
 #### Defined in
 
-[src/canvas/CanvasOptions.ts:221](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/CanvasOptions.ts#L221)
+[src/canvas/CanvasOptions.ts:221](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/CanvasOptions.ts#L221)
 
 ___
 
@@ -523,7 +472,7 @@ CanvasCursorOptions.freeDrawingCursor
 
 #### Defined in
 
-[src/canvas/CanvasOptions.ts:168](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/CanvasOptions.ts#L168)
+[src/canvas/CanvasOptions.ts:168](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/CanvasOptions.ts#L168)
 
 ___
 
@@ -540,7 +489,7 @@ The canvas can be taller than width if retina scaling is active
 
 #### Defined in
 
-[src/canvas/StaticCanvasOptions.ts:143](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvasOptions.ts#L143)
+[src/canvas/StaticCanvasOptions.ts:143](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvasOptions.ts#L143)
 
 ___
 
@@ -562,7 +511,7 @@ CanvasCursorOptions.hoverCursor
 
 #### Defined in
 
-[src/canvas/CanvasOptions.ts:147](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/CanvasOptions.ts#L147)
+[src/canvas/CanvasOptions.ts:147](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/CanvasOptions.ts#L147)
 
 ___
 
@@ -584,7 +533,7 @@ Indicates whether this canvas will use image smoothing, this is on by default in
 
 #### Defined in
 
-[src/canvas/StaticCanvasOptions.ts:97](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvasOptions.ts#L97)
+[src/canvas/StaticCanvasOptions.ts:97](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvasOptions.ts#L97)
 
 ___
 
@@ -607,7 +556,7 @@ if set to false, takes precedence over the object value.
 
 #### Defined in
 
-[src/canvas/StaticCanvasOptions.ts:116](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvasOptions.ts#L116)
+[src/canvas/StaticCanvasOptions.ts:116](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvasOptions.ts#L116)
 
 ___
 
@@ -629,7 +578,7 @@ CanvasCursorOptions.moveCursor
 
 #### Defined in
 
-[src/canvas/CanvasOptions.ts:154](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/CanvasOptions.ts#L154)
+[src/canvas/CanvasOptions.ts:154](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/CanvasOptions.ts#L154)
 
 ___
 
@@ -655,7 +604,7 @@ CanvasCursorOptions.notAllowedCursor
 
 #### Defined in
 
-[src/canvas/CanvasOptions.ts:176](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/CanvasOptions.ts#L176)
+[src/canvas/CanvasOptions.ts:176](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/CanvasOptions.ts#L176)
 
 ___
 
@@ -681,13 +630,13 @@ Overlay color of canvas instance.
 
 #### Defined in
 
-[src/canvas/StaticCanvasOptions.ts:48](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvasOptions.ts#L48)
+[src/canvas/StaticCanvasOptions.ts:48](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvasOptions.ts#L48)
 
 ___
 
 ### overlayImage
 
-• `Optional` **overlayImage**: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
+• `Optional` **overlayImage**: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
 
 Overlay image of canvas instance.
 since 2.4.0 image caching is active, please when putting an image as overlay, add to the
@@ -706,7 +655,7 @@ vale. As an alternative you can disable image objectCaching
 
 #### Defined in
 
-[src/canvas/StaticCanvasOptions.ts:58](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvasOptions.ts#L58)
+[src/canvas/StaticCanvasOptions.ts:58](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvasOptions.ts#L58)
 
 ___
 
@@ -736,7 +685,7 @@ we should really find a different way to do this
 
 #### Defined in
 
-[src/canvas/StaticCanvasOptions.ts:40](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvasOptions.ts#L40)
+[src/canvas/StaticCanvasOptions.ts:40](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvasOptions.ts#L40)
 
 ___
 
@@ -758,7 +707,7 @@ TargetFindOptions.perPixelTargetFind
 
 #### Defined in
 
-[src/canvas/CanvasOptions.ts:185](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/CanvasOptions.ts#L185)
+[src/canvas/CanvasOptions.ts:185](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/CanvasOptions.ts#L185)
 
 ___
 
@@ -777,7 +726,7 @@ When false objects are brought to top and rendered as part of the selection grou
 
 #### Defined in
 
-[src/canvas/CanvasOptions.ts:260](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/CanvasOptions.ts#L260)
+[src/canvas/CanvasOptions.ts:260](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/CanvasOptions.ts#L260)
 
 ___
 
@@ -804,7 +753,7 @@ Left default to true to do not break documentation and old app, fiddles.
 
 #### Defined in
 
-[src/canvas/StaticCanvasOptions.ts:72](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvasOptions.ts#L72)
+[src/canvas/StaticCanvasOptions.ts:72](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvasOptions.ts#L72)
 
 ___
 
@@ -826,7 +775,7 @@ CanvasSelectionOptions.selection
 
 #### Defined in
 
-[src/canvas/CanvasOptions.ts:77](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/CanvasOptions.ts#L77)
+[src/canvas/CanvasOptions.ts:77](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/CanvasOptions.ts#L77)
 
 ___
 
@@ -848,7 +797,7 @@ CanvasSelectionOptions.selectionBorderColor
 
 #### Defined in
 
-[src/canvas/CanvasOptions.ts:124](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/CanvasOptions.ts#L124)
+[src/canvas/CanvasOptions.ts:124](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/CanvasOptions.ts#L124)
 
 ___
 
@@ -870,7 +819,7 @@ CanvasSelectionOptions.selectionColor
 
 #### Defined in
 
-[src/canvas/CanvasOptions.ts:110](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/CanvasOptions.ts#L110)
+[src/canvas/CanvasOptions.ts:110](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/CanvasOptions.ts#L110)
 
 ___
 
@@ -887,7 +836,7 @@ CanvasSelectionOptions.selectionDashArray
 
 #### Defined in
 
-[src/canvas/CanvasOptions.ts:117](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/CanvasOptions.ts#L117)
+[src/canvas/CanvasOptions.ts:117](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/CanvasOptions.ts#L117)
 
 ___
 
@@ -909,7 +858,7 @@ CanvasSelectionOptions.selectionFullyContained
 
 #### Defined in
 
-[src/canvas/CanvasOptions.ts:138](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/CanvasOptions.ts#L138)
+[src/canvas/CanvasOptions.ts:138](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/CanvasOptions.ts#L138)
 
 ___
 
@@ -939,7 +888,7 @@ CanvasSelectionOptions.selectionKey
 
 #### Defined in
 
-[src/canvas/CanvasOptions.ts:89](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/CanvasOptions.ts#L89)
+[src/canvas/CanvasOptions.ts:89](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/CanvasOptions.ts#L89)
 
 ___
 
@@ -961,7 +910,7 @@ CanvasSelectionOptions.selectionLineWidth
 
 #### Defined in
 
-[src/canvas/CanvasOptions.ts:131](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/CanvasOptions.ts#L131)
+[src/canvas/CanvasOptions.ts:131](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/CanvasOptions.ts#L131)
 
 ___
 
@@ -987,7 +936,7 @@ true
 
 #### Defined in
 
-[src/canvas/StaticCanvasOptions.ts:83](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvasOptions.ts#L83)
+[src/canvas/StaticCanvasOptions.ts:83](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvasOptions.ts#L83)
 
 ___
 
@@ -1013,7 +962,7 @@ TargetFindOptions.skipTargetFind
 
 #### Defined in
 
-[src/canvas/CanvasOptions.ts:203](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/CanvasOptions.ts#L203)
+[src/canvas/CanvasOptions.ts:203](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/CanvasOptions.ts#L203)
 
 ___
 
@@ -1039,7 +988,7 @@ CanvasEventsOptions.stopContextMenu
 
 #### Defined in
 
-[src/canvas/CanvasOptions.ts:213](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/CanvasOptions.ts#L213)
+[src/canvas/CanvasOptions.ts:213](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/CanvasOptions.ts#L213)
 
 ___
 
@@ -1062,7 +1011,7 @@ a zoomed canvas will then produce zoomed SVG output.
 
 #### Defined in
 
-[src/canvas/StaticCanvasOptions.ts:124](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvasOptions.ts#L124)
+[src/canvas/StaticCanvasOptions.ts:124](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvasOptions.ts#L124)
 
 ___
 
@@ -1084,7 +1033,7 @@ TargetFindOptions.targetFindTolerance
 
 #### Defined in
 
-[src/canvas/CanvasOptions.ts:192](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/CanvasOptions.ts#L192)
+[src/canvas/CanvasOptions.ts:192](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/CanvasOptions.ts#L192)
 
 ___
 
@@ -1116,7 +1065,7 @@ CanvasTransformOptions.uniScaleKey
 
 #### Defined in
 
-[src/canvas/CanvasOptions.ts:28](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/CanvasOptions.ts#L28)
+[src/canvas/CanvasOptions.ts:28](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/CanvasOptions.ts#L28)
 
 ___
 
@@ -1143,7 +1092,7 @@ CanvasTransformOptions.uniformScaling
 
 #### Defined in
 
-[src/canvas/CanvasOptions.ts:14](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/CanvasOptions.ts#L14)
+[src/canvas/CanvasOptions.ts:14](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/CanvasOptions.ts#L14)
 
 ___
 
@@ -1179,7 +1128,7 @@ canvas.viewportTransform = [0.7, 0, 0, 0.7, 50, 50];
 
 #### Defined in
 
-[src/canvas/StaticCanvasOptions.ts:172](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvasOptions.ts#L172)
+[src/canvas/StaticCanvasOptions.ts:172](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvasOptions.ts#L172)
 
 ___
 
@@ -1196,4 +1145,4 @@ The canvas can be larger than width if retina scaling is active
 
 #### Defined in
 
-[src/canvas/StaticCanvasOptions.ts:136](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvasOptions.ts#L136)
+[src/canvas/StaticCanvasOptions.ts:136](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvasOptions.ts#L136)

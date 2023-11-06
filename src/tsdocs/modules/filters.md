@@ -1,8 +1,6 @@
 # Namespace: filters
 
-## Table of contents
-
-### Classes
+## Classes
 
 - [BaseFilter](/apidocs/classes/filters.BaseFilter.md)
 - [BlendColor](/apidocs/classes/filters.BlendColor.md)
@@ -24,21 +22,6 @@
 - [Saturation](/apidocs/classes/filters.Saturation.md)
 - [Vibrance](/apidocs/classes/filters.Vibrance.md)
 
-### Type Aliases
-
-- [TBlendMode](/apidocs/modules/filters.md#tblendmode)
-- [TResizeType](/apidocs/modules/filters.md#tresizetype)
-
-### Variables
-
-- [BlackWhite](/apidocs/modules/filters.md#blackwhite)
-- [Brownie](/apidocs/modules/filters.md#brownie)
-- [Kodachrome](/apidocs/modules/filters.md#kodachrome)
-- [Polaroid](/apidocs/modules/filters.md#polaroid)
-- [Sepia](/apidocs/modules/filters.md#sepia)
-- [Technicolor](/apidocs/modules/filters.md#technicolor)
-- [Vintage](/apidocs/modules/filters.md#vintage)
-
 ## Type Aliases
 
 ### TBlendMode
@@ -47,7 +30,7 @@
 
 #### Defined in
 
-[src/filters/BlendColor.ts:8](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BlendColor.ts#L8)
+[src/filters/BlendColor.ts:8](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BlendColor.ts#L8)
 
 ___
 
@@ -57,7 +40,7 @@ ___
 
 #### Defined in
 
-[src/filters/Resize.ts:26](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/Resize.ts#L26)
+[src/filters/Resize.ts:26](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/Resize.ts#L26)
 
 ## Variables
 
@@ -67,7 +50,7 @@ ___
 
 #### Defined in
 
-[src/filters/ColorMatrixFilters.ts:69](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/ColorMatrixFilters.ts#L69)
+[src/filters/ColorMatrixFilters.ts:69](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/ColorMatrixFilters.ts#L69)
 
 ___
 
@@ -77,7 +60,7 @@ ___
 
 #### Defined in
 
-[src/filters/ColorMatrixFilters.ts:21](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/ColorMatrixFilters.ts#L21)
+[src/filters/ColorMatrixFilters.ts:21](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/ColorMatrixFilters.ts#L21)
 
 ___
 
@@ -87,7 +70,7 @@ ___
 
 #### Defined in
 
-[src/filters/ColorMatrixFilters.ts:37](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/ColorMatrixFilters.ts#L37)
+[src/filters/ColorMatrixFilters.ts:37](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/ColorMatrixFilters.ts#L37)
 
 ___
 
@@ -97,7 +80,7 @@ ___
 
 #### Defined in
 
-[src/filters/ColorMatrixFilters.ts:53](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/ColorMatrixFilters.ts#L53)
+[src/filters/ColorMatrixFilters.ts:53](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/ColorMatrixFilters.ts#L53)
 
 ___
 
@@ -107,7 +90,7 @@ ___
 
 #### Defined in
 
-[src/filters/ColorMatrixFilters.ts:61](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/ColorMatrixFilters.ts#L61)
+[src/filters/ColorMatrixFilters.ts:61](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/ColorMatrixFilters.ts#L61)
 
 ___
 
@@ -117,7 +100,7 @@ ___
 
 #### Defined in
 
-[src/filters/ColorMatrixFilters.ts:45](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/ColorMatrixFilters.ts#L45)
+[src/filters/ColorMatrixFilters.ts:45](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/ColorMatrixFilters.ts#L45)
 
 ___
 
@@ -127,4 +110,4 @@ ___
 
 #### Defined in
 
-[src/filters/ColorMatrixFilters.ts:29](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/ColorMatrixFilters.ts#L29)
+[src/filters/ColorMatrixFilters.ts:29](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/ColorMatrixFilters.ts#L29)

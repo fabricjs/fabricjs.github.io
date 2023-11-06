@@ -1,4 +1,4 @@
-# Class: StaticCanvas<EventSpec\>
+# Class: StaticCanvas\<EventSpec\>
 
 Static canvas class
 
@@ -34,7 +34,7 @@ object:removed
 
 ## Hierarchy
 
-- `Collection`<`Object`, `this`\> & `CommonMethods`<[`CanvasEvents`](/apidocs/interfaces/CanvasEvents.md), `this`\>
+- `Collection`\<() => `CommonMethods`\<[`CanvasEvents`](/apidocs/interfaces/CanvasEvents.md)\>, `this`\> & `CommonMethods`\<[`CanvasEvents`](/apidocs/interfaces/CanvasEvents.md), `this`\>
 
   ↳ **`StaticCanvas`**
 
@@ -42,155 +42,11 @@ object:removed
 
 - [`StaticCanvasOptions`](/apidocs/interfaces/StaticCanvasOptions.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](/apidocs/classes/StaticCanvas.md#constructor)
-
-### Properties
-
-- [\_\_cleanupTask](/apidocs/classes/StaticCanvas.md#__cleanuptask)
-- [\_objects](/apidocs/classes/StaticCanvas.md#_objects)
-- [\_offset](/apidocs/classes/StaticCanvas.md#_offset)
-- [allowTouchScrolling](/apidocs/classes/StaticCanvas.md#allowtouchscrolling)
-- [backgroundColor](/apidocs/classes/StaticCanvas.md#backgroundcolor)
-- [backgroundImage](/apidocs/classes/StaticCanvas.md#backgroundimage)
-- [backgroundVpt](/apidocs/classes/StaticCanvas.md#backgroundvpt)
-- [clipPath](/apidocs/classes/StaticCanvas.md#clippath)
-- [controlsAboveOverlay](/apidocs/classes/StaticCanvas.md#controlsaboveoverlay)
-- [destroyed](/apidocs/classes/StaticCanvas.md#destroyed)
-- [disposed](/apidocs/classes/StaticCanvas.md#disposed)
-- [elements](/apidocs/classes/StaticCanvas.md#elements)
-- [enableRetinaScaling](/apidocs/classes/StaticCanvas.md#enableretinascaling)
-- [hasLostContext](/apidocs/classes/StaticCanvas.md#haslostcontext)
-- [height](/apidocs/classes/StaticCanvas.md#height)
-- [imageSmoothingEnabled](/apidocs/classes/StaticCanvas.md#imagesmoothingenabled)
-- [includeDefaultValues](/apidocs/classes/StaticCanvas.md#includedefaultvalues)
-- [nextRenderHandle](/apidocs/classes/StaticCanvas.md#nextrenderhandle)
-- [overlayColor](/apidocs/classes/StaticCanvas.md#overlaycolor)
-- [overlayImage](/apidocs/classes/StaticCanvas.md#overlayimage)
-- [overlayVpt](/apidocs/classes/StaticCanvas.md#overlayvpt)
-- [renderOnAddRemove](/apidocs/classes/StaticCanvas.md#renderonaddremove)
-- [skipOffscreen](/apidocs/classes/StaticCanvas.md#skipoffscreen)
-- [svgViewportTransformation](/apidocs/classes/StaticCanvas.md#svgviewporttransformation)
-- [viewportTransform](/apidocs/classes/StaticCanvas.md#viewporttransform)
-- [vptCoords](/apidocs/classes/StaticCanvas.md#vptcoords)
-- [width](/apidocs/classes/StaticCanvas.md#width)
-- [ownDefaults](/apidocs/classes/StaticCanvas.md#owndefaults)
-
-### Accessors
-
-- [contextContainer](/apidocs/classes/StaticCanvas.md#contextcontainer)
-- [lowerCanvasEl](/apidocs/classes/StaticCanvas.md#lowercanvasel)
-
-### Methods
-
-- [\_\_serializeBgOverlay](/apidocs/classes/StaticCanvas.md#__serializebgoverlay)
-- [\_centerObject](/apidocs/classes/StaticCanvas.md#_centerobject)
-- [\_isRetinaScaling](/apidocs/classes/StaticCanvas.md#_isretinascaling)
-- [\_onObjectAdded](/apidocs/classes/StaticCanvas.md#_onobjectadded)
-- [\_onObjectRemoved](/apidocs/classes/StaticCanvas.md#_onobjectremoved)
-- [\_onStackOrderChanged](/apidocs/classes/StaticCanvas.md#_onstackorderchanged)
-- [\_renderBackground](/apidocs/classes/StaticCanvas.md#_renderbackground)
-- [\_renderBackgroundOrOverlay](/apidocs/classes/StaticCanvas.md#_renderbackgroundoroverlay)
-- [\_renderObjects](/apidocs/classes/StaticCanvas.md#_renderobjects)
-- [\_renderOverlay](/apidocs/classes/StaticCanvas.md#_renderoverlay)
-- [\_set](/apidocs/classes/StaticCanvas.md#_set)
-- [\_setDimensionsImpl](/apidocs/classes/StaticCanvas.md#_setdimensionsimpl)
-- [\_setObject](/apidocs/classes/StaticCanvas.md#_setobject)
-- [\_setOptions](/apidocs/classes/StaticCanvas.md#_setoptions)
-- [\_setSVGBgOverlayColor](/apidocs/classes/StaticCanvas.md#_setsvgbgoverlaycolor)
-- [\_setSVGBgOverlayImage](/apidocs/classes/StaticCanvas.md#_setsvgbgoverlayimage)
-- [\_setSVGHeader](/apidocs/classes/StaticCanvas.md#_setsvgheader)
-- [\_setSVGObject](/apidocs/classes/StaticCanvas.md#_setsvgobject)
-- [\_setSVGObjects](/apidocs/classes/StaticCanvas.md#_setsvgobjects)
-- [\_setSVGPreamble](/apidocs/classes/StaticCanvas.md#_setsvgpreamble)
-- [\_toObject](/apidocs/classes/StaticCanvas.md#_toobject)
-- [\_toObjectMethod](/apidocs/classes/StaticCanvas.md#_toobjectmethod)
-- [absolutePan](/apidocs/classes/StaticCanvas.md#absolutepan)
-- [add](/apidocs/classes/StaticCanvas.md#add)
-- [bringObjectForward](/apidocs/classes/StaticCanvas.md#bringobjectforward)
-- [bringObjectToFront](/apidocs/classes/StaticCanvas.md#bringobjecttofront)
-- [calcOffset](/apidocs/classes/StaticCanvas.md#calcoffset)
-- [calcViewportBoundaries](/apidocs/classes/StaticCanvas.md#calcviewportboundaries)
-- [cancelRequestedRender](/apidocs/classes/StaticCanvas.md#cancelrequestedrender)
-- [centerObject](/apidocs/classes/StaticCanvas.md#centerobject)
-- [centerObjectH](/apidocs/classes/StaticCanvas.md#centerobjecth)
-- [centerObjectV](/apidocs/classes/StaticCanvas.md#centerobjectv)
-- [clear](/apidocs/classes/StaticCanvas.md#clear)
-- [clearContext](/apidocs/classes/StaticCanvas.md#clearcontext)
-- [clone](/apidocs/classes/StaticCanvas.md#clone)
-- [cloneWithoutData](/apidocs/classes/StaticCanvas.md#clonewithoutdata)
-- [collectObjects](/apidocs/classes/StaticCanvas.md#collectobjects)
-- [complexity](/apidocs/classes/StaticCanvas.md#complexity)
-- [contains](/apidocs/classes/StaticCanvas.md#contains)
-- [createSVGClipPathMarkup](/apidocs/classes/StaticCanvas.md#createsvgclippathmarkup)
-- [createSVGFontFacesMarkup](/apidocs/classes/StaticCanvas.md#createsvgfontfacesmarkup)
-- [createSVGRefElementsMarkup](/apidocs/classes/StaticCanvas.md#createsvgrefelementsmarkup)
-- [destroy](/apidocs/classes/StaticCanvas.md#destroy)
-- [dispose](/apidocs/classes/StaticCanvas.md#dispose)
-- [drawClipPathOnCanvas](/apidocs/classes/StaticCanvas.md#drawclippathoncanvas)
-- [drawControls](/apidocs/classes/StaticCanvas.md#drawcontrols)
-- [findNewLowerIndex](/apidocs/classes/StaticCanvas.md#findnewlowerindex)
-- [findNewUpperIndex](/apidocs/classes/StaticCanvas.md#findnewupperindex)
-- [fire](/apidocs/classes/StaticCanvas.md#fire)
-- [forEachObject](/apidocs/classes/StaticCanvas.md#foreachobject)
-- [get](/apidocs/classes/StaticCanvas.md#get)
-- [getCenter](/apidocs/classes/StaticCanvas.md#getcenter)
-- [getCenterPoint](/apidocs/classes/StaticCanvas.md#getcenterpoint)
-- [getContext](/apidocs/classes/StaticCanvas.md#getcontext)
-- [getElement](/apidocs/classes/StaticCanvas.md#getelement)
-- [getHeight](/apidocs/classes/StaticCanvas.md#getheight)
-- [getObjects](/apidocs/classes/StaticCanvas.md#getobjects)
-- [getRetinaScaling](/apidocs/classes/StaticCanvas.md#getretinascaling)
-- [getVpCenter](/apidocs/classes/StaticCanvas.md#getvpcenter)
-- [getWidth](/apidocs/classes/StaticCanvas.md#getwidth)
-- [getZoom](/apidocs/classes/StaticCanvas.md#getzoom)
-- [initElements](/apidocs/classes/StaticCanvas.md#initelements)
-- [insertAt](/apidocs/classes/StaticCanvas.md#insertat)
-- [isEmpty](/apidocs/classes/StaticCanvas.md#isempty)
-- [item](/apidocs/classes/StaticCanvas.md#item)
-- [loadFromJSON](/apidocs/classes/StaticCanvas.md#loadfromjson)
-- [moveObjectTo](/apidocs/classes/StaticCanvas.md#moveobjectto)
-- [off](/apidocs/classes/StaticCanvas.md#off)
-- [on](/apidocs/classes/StaticCanvas.md#on)
-- [once](/apidocs/classes/StaticCanvas.md#once)
-- [relativePan](/apidocs/classes/StaticCanvas.md#relativepan)
-- [remove](/apidocs/classes/StaticCanvas.md#remove)
-- [renderAll](/apidocs/classes/StaticCanvas.md#renderall)
-- [renderAndReset](/apidocs/classes/StaticCanvas.md#renderandreset)
-- [renderCanvas](/apidocs/classes/StaticCanvas.md#rendercanvas)
-- [requestRenderAll](/apidocs/classes/StaticCanvas.md#requestrenderall)
-- [sendObjectBackwards](/apidocs/classes/StaticCanvas.md#sendobjectbackwards)
-- [sendObjectToBack](/apidocs/classes/StaticCanvas.md#sendobjecttoback)
-- [set](/apidocs/classes/StaticCanvas.md#set)
-- [setDimensions](/apidocs/classes/StaticCanvas.md#setdimensions)
-- [setHeight](/apidocs/classes/StaticCanvas.md#setheight)
-- [setViewportTransform](/apidocs/classes/StaticCanvas.md#setviewporttransform)
-- [setWidth](/apidocs/classes/StaticCanvas.md#setwidth)
-- [setZoom](/apidocs/classes/StaticCanvas.md#setzoom)
-- [size](/apidocs/classes/StaticCanvas.md#size)
-- [toCanvasElement](/apidocs/classes/StaticCanvas.md#tocanvaselement)
-- [toDataURL](/apidocs/classes/StaticCanvas.md#todataurl)
-- [toDatalessJSON](/apidocs/classes/StaticCanvas.md#todatalessjson)
-- [toDatalessObject](/apidocs/classes/StaticCanvas.md#todatalessobject)
-- [toJSON](/apidocs/classes/StaticCanvas.md#tojson)
-- [toObject](/apidocs/classes/StaticCanvas.md#toobject)
-- [toSVG](/apidocs/classes/StaticCanvas.md#tosvg)
-- [toString](/apidocs/classes/StaticCanvas.md#tostring)
-- [toggle](/apidocs/classes/StaticCanvas.md#toggle)
-- [viewportCenterObject](/apidocs/classes/StaticCanvas.md#viewportcenterobject)
-- [viewportCenterObjectH](/apidocs/classes/StaticCanvas.md#viewportcenterobjecth)
-- [viewportCenterObjectV](/apidocs/classes/StaticCanvas.md#viewportcenterobjectv)
-- [zoomToPoint](/apidocs/classes/StaticCanvas.md#zoomtopoint)
-- [getDefaults](/apidocs/classes/StaticCanvas.md#getdefaults)
-
 ## Constructors
 
 ### constructor
 
-• **new StaticCanvas**<`EventSpec`\>(`el?`, `options?`)
+• **new StaticCanvas**\<`EventSpec`\>(`el?`, `options?`): [`StaticCanvas`](/apidocs/classes/StaticCanvas.md)\<`EventSpec`\>
 
 #### Type parameters
 
@@ -203,15 +59,19 @@ object:removed
 | Name | Type |
 | :------ | :------ |
 | `el?` | `string` \| `HTMLCanvasElement` |
-| `options` | [`TOptions`](/apidocs/modules.md#toptions)<[`StaticCanvasOptions`](/apidocs/interfaces/StaticCanvasOptions.md)\> |
+| `options` | [`TOptions`](/apidocs/modules.md#toptions)\<[`StaticCanvasOptions`](/apidocs/interfaces/StaticCanvasOptions.md)\> |
+
+#### Returns
+
+[`StaticCanvas`](/apidocs/classes/StaticCanvas.md)\<`EventSpec`\>
 
 #### Overrides
 
-createCollectionMixin(CommonMethods&lt;CanvasEvents\&gt;).constructor
+createCollectionMixin(CommonMethods\&lt;CanvasEvents\&gt;).constructor
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:175](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L175)
+[src/canvas/StaticCanvas.ts:175](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L175)
 
 ## Properties
 
@@ -235,13 +95,13 @@ createCollectionMixin(CommonMethods&lt;CanvasEvents\&gt;).constructor
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:166](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L166)
+[src/canvas/StaticCanvas.ts:166](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L166)
 
 ___
 
 ### \_objects
 
-• **\_objects**: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] = `[]`
+• **\_objects**: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] = `[]`
 
 **`TODO`**
 
@@ -249,11 +109,11 @@ needs to end up in the constructor too
 
 #### Inherited from
 
-createCollectionMixin(CommonMethods<CanvasEvents\>).\_objects
+createCollectionMixin(CommonMethods\<CanvasEvents\>).\_objects
 
 #### Defined in
 
-[src/Collection.ts:13](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Collection.ts#L13)
+[src/Collection.ts:13](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L13)
 
 ___
 
@@ -270,7 +130,7 @@ ___
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:157](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L157)
+[src/canvas/StaticCanvas.ts:157](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L157)
 
 ___
 
@@ -288,7 +148,7 @@ move to Canvas
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:117](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L117)
+[src/canvas/StaticCanvas.ts:117](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L117)
 
 ___
 
@@ -310,13 +170,13 @@ Background color of canvas instance.
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:92](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L92)
+[src/canvas/StaticCanvas.ts:92](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L92)
 
 ___
 
 ### backgroundImage
 
-• `Optional` **backgroundImage**: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
+• `Optional` **backgroundImage**: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
 
 Background image of canvas instance.
 since 2.4.0 image caching is active, please when putting an image as background, add to the
@@ -335,7 +195,7 @@ vale. As an alternative you can disable image objectCaching
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:93](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L93)
+[src/canvas/StaticCanvas.ts:93](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L93)
 
 ___
 
@@ -365,13 +225,13 @@ we should really find a different way to do this
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:91](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L91)
+[src/canvas/StaticCanvas.ts:91](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L91)
 
 ___
 
 ### clipPath
 
-• `Optional` **clipPath**: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
+• `Optional` **clipPath**: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
 
 a fabricObject that, without stroke define a clipping area with their shape. filled in black
 the clipPath object gets used when the canvas has rendered, and the context is placed in the
@@ -384,7 +244,7 @@ clipPath will clip away controls, if you do not want this to happen use controls
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:99](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L99)
+[src/canvas/StaticCanvas.ts:99](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L99)
 
 ___
 
@@ -402,7 +262,7 @@ move to Canvas
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:112](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L112)
+[src/canvas/StaticCanvas.ts:112](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L112)
 
 ___
 
@@ -415,7 +275,7 @@ No more rendering operation will be executed on this canvas.
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:148](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L148)
+[src/canvas/StaticCanvas.ts:148](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L148)
 
 ___
 
@@ -428,7 +288,7 @@ WIll likely complete the render cycle already scheduled but stopping adding more
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:155](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L155)
+[src/canvas/StaticCanvas.ts:155](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L155)
 
 ___
 
@@ -438,7 +298,7 @@ ___
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:161](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L161)
+[src/canvas/StaticCanvas.ts:161](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L161)
 
 ___
 
@@ -460,7 +320,7 @@ When true, canvas is scaled by devicePixelRatio for better rendering on retina s
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:106](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L106)
+[src/canvas/StaticCanvas.ts:106](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L106)
 
 ___
 
@@ -470,7 +330,7 @@ ___
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:158](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L158)
+[src/canvas/StaticCanvas.ts:158](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L158)
 
 ___
 
@@ -487,7 +347,7 @@ The canvas can be taller than width if retina scaling is active
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:88](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L88)
+[src/canvas/StaticCanvas.ts:88](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L88)
 
 ___
 
@@ -509,7 +369,7 @@ Indicates whether this canvas will use image smoothing, this is on by default in
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:107](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L107)
+[src/canvas/StaticCanvas.ts:107](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L107)
 
 ___
 
@@ -532,7 +392,7 @@ if set to false, takes precedence over the object value.
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:101](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L101)
+[src/canvas/StaticCanvas.ts:101](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L101)
 
 ___
 
@@ -542,7 +402,7 @@ ___
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:159](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L159)
+[src/canvas/StaticCanvas.ts:159](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L159)
 
 ___
 
@@ -568,13 +428,13 @@ Overlay color of canvas instance.
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:96](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L96)
+[src/canvas/StaticCanvas.ts:96](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L96)
 
 ___
 
 ### overlayImage
 
-• `Optional` **overlayImage**: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
+• `Optional` **overlayImage**: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
 
 Overlay image of canvas instance.
 since 2.4.0 image caching is active, please when putting an image as overlay, add to the
@@ -593,7 +453,7 @@ vale. As an alternative you can disable image objectCaching
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:97](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L97)
+[src/canvas/StaticCanvas.ts:97](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L97)
 
 ___
 
@@ -623,7 +483,7 @@ we should really find a different way to do this
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:95](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L95)
+[src/canvas/StaticCanvas.ts:95](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L95)
 
 ___
 
@@ -650,7 +510,7 @@ Left default to true to do not break documentation and old app, fiddles.
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:104](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L104)
+[src/canvas/StaticCanvas.ts:104](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L104)
 
 ___
 
@@ -676,7 +536,7 @@ true
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:105](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L105)
+[src/canvas/StaticCanvas.ts:105](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L105)
 
 ___
 
@@ -699,7 +559,7 @@ a zoomed canvas will then produce zoomed SVG output.
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:942](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L942)
+[src/canvas/StaticCanvas.ts:942](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L942)
 
 ___
 
@@ -735,7 +595,7 @@ canvas.viewportTransform = [0.7, 0, 0, 0.7, 50, 50];
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:119](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L119)
+[src/canvas/StaticCanvas.ts:119](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L119)
 
 ___
 
@@ -756,7 +616,7 @@ calcViewportBoundaries.
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:128](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L128)
+[src/canvas/StaticCanvas.ts:128](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L128)
 
 ___
 
@@ -773,17 +633,17 @@ The canvas can be larger than width if retina scaling is active
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:87](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L87)
+[src/canvas/StaticCanvas.ts:87](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L87)
 
 ___
 
 ### ownDefaults
 
-▪ `Static` **ownDefaults**: [`TOptions`](/apidocs/modules.md#toptions)<[`StaticCanvasOptions`](/apidocs/interfaces/StaticCanvasOptions.md)\> = `staticCanvasDefaults`
+▪ `Static` **ownDefaults**: [`TOptions`](/apidocs/modules.md#toptions)\<[`StaticCanvasOptions`](/apidocs/interfaces/StaticCanvasOptions.md)\> = `staticCanvasDefaults`
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:163](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L163)
+[src/canvas/StaticCanvas.ts:163](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L163)
 
 ## Accessors
 
@@ -797,7 +657,7 @@ ___
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:139](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L139)
+[src/canvas/StaticCanvas.ts:139](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L139)
 
 ___
 
@@ -814,13 +674,13 @@ Can be use to read the raw pixels, but never write or manipulate
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:135](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L135)
+[src/canvas/StaticCanvas.ts:135](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L135)
 
 ## Methods
 
 ### \_\_serializeBgOverlay
 
-▸ `Private` **__serializeBgOverlay**(`methodName`, `propertiesToInclude?`): `any`
+▸ **__serializeBgOverlay**(`methodName`, `propertiesToInclude?`): `any`
 
 #### Parameters
 
@@ -835,19 +695,19 @@ Can be use to read the raw pixels, but never write or manipulate
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:896](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L896)
+[src/canvas/StaticCanvas.ts:896](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L896)
 
 ___
 
 ### \_centerObject
 
-▸ `Private` **_centerObject**(`object`, `center`): `void`
+▸ **_centerObject**(`object`, `center`): `void`
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | Object to center |
+| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | Object to center |
 | `center` | [`Point`](/apidocs/classes/Point.md) | Center point |
 
 #### Returns
@@ -856,13 +716,13 @@ ___
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:794](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L794)
+[src/canvas/StaticCanvas.ts:794](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L794)
 
 ___
 
 ### \_isRetinaScaling
 
-▸ `Private` **_isRetinaScaling**(): `boolean`
+▸ **_isRetinaScaling**(): `boolean`
 
 #### Returns
 
@@ -870,7 +730,7 @@ ___
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:244](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L244)
+[src/canvas/StaticCanvas.ts:244](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L244)
 
 ___
 
@@ -882,7 +742,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `obj` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
+| `obj` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
 
 #### Returns
 
@@ -890,11 +750,11 @@ ___
 
 #### Overrides
 
-createCollectionMixin(CommonMethods&lt;CanvasEvents\&gt;).\_onObjectAdded
+createCollectionMixin(CommonMethods\&lt;CanvasEvents\&gt;).\_onObjectAdded
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:216](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L216)
+[src/canvas/StaticCanvas.ts:216](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L216)
 
 ___
 
@@ -906,7 +766,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `obj` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
+| `obj` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
 
 #### Returns
 
@@ -914,11 +774,11 @@ ___
 
 #### Overrides
 
-createCollectionMixin(CommonMethods&lt;CanvasEvents\&gt;).\_onObjectRemoved
+createCollectionMixin(CommonMethods\&lt;CanvasEvents\&gt;).\_onObjectRemoved
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:231](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L231)
+[src/canvas/StaticCanvas.ts:231](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L231)
 
 ___
 
@@ -932,17 +792,17 @@ ___
 
 #### Overrides
 
-createCollectionMixin(CommonMethods&lt;CanvasEvents\&gt;).\_onStackOrderChanged
+createCollectionMixin(CommonMethods\&lt;CanvasEvents\&gt;).\_onStackOrderChanged
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:237](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L237)
+[src/canvas/StaticCanvas.ts:237](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L237)
 
 ___
 
 ### \_renderBackground
 
-▸ `Private` **_renderBackground**(`ctx`): `void`
+▸ **_renderBackground**(`ctx`): `void`
 
 #### Parameters
 
@@ -956,13 +816,13 @@ ___
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:686](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L686)
+[src/canvas/StaticCanvas.ts:686](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L686)
 
 ___
 
 ### \_renderBackgroundOrOverlay
 
-▸ `Private` **_renderBackgroundOrOverlay**(`ctx`, `property`): `void`
+▸ **_renderBackgroundOrOverlay**(`ctx`, `property`): `void`
 
 #### Parameters
 
@@ -977,20 +837,20 @@ ___
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:634](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L634)
+[src/canvas/StaticCanvas.ts:634](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L634)
 
 ___
 
 ### \_renderObjects
 
-▸ `Private` **_renderObjects**(`ctx`, `objects`): `void`
+▸ **_renderObjects**(`ctx`, `objects`): `void`
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `ctx` | `CanvasRenderingContext2D` | Context to render on |
-| `objects` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] | to render |
+| `objects` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] | to render |
 
 #### Returns
 
@@ -998,13 +858,13 @@ ___
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:623](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L623)
+[src/canvas/StaticCanvas.ts:623](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L623)
 
 ___
 
 ### \_renderOverlay
 
-▸ `Private` **_renderOverlay**(`ctx`): `void`
+▸ **_renderOverlay**(`ctx`): `void`
 
 #### Parameters
 
@@ -1018,7 +878,7 @@ ___
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:694](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L694)
+[src/canvas/StaticCanvas.ts:694](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L694)
 
 ___
 
@@ -1039,17 +899,17 @@ ___
 
 #### Inherited from
 
-createCollectionMixin(CommonMethods<CanvasEvents\>).\_set
+createCollectionMixin(CommonMethods\<CanvasEvents\>).\_set
 
 #### Defined in
 
-[src/CommonMethods.ts:38](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/CommonMethods.ts#L38)
+[src/CommonMethods.ts:38](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/CommonMethods.ts#L38)
 
 ___
 
 ### \_setDimensionsImpl
 
-▸ `Protected` **_setDimensionsImpl**(`dimensions`, `«destructured»?`): `void`
+▸ **_setDimensionsImpl**(`dimensions`, `«destructured»?`): `void`
 
 Internal use only
 
@@ -1057,7 +917,7 @@ Internal use only
 
 | Name | Type |
 | :------ | :------ |
-| `dimensions` | `Partial`<[`TSize`](/apidocs/modules.md#tsize) \| `CSSDimensions`\> |
+| `dimensions` | `Partial`\<[`TSize`](/apidocs/modules.md#tsize) \| `CSSDimensions`\> |
 | `«destructured»` | [`TCanvasSizeOptions`](/apidocs/modules.md#tcanvassizeoptions) |
 
 #### Returns
@@ -1066,19 +926,19 @@ Internal use only
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:308](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L308)
+[src/canvas/StaticCanvas.ts:308](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L308)
 
 ___
 
 ### \_setObject
 
-▸ `Private` **_setObject**(`obj`): `void`
+▸ **_setObject**(`obj`): `void`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `obj` | `Record`<`string`, `any`\> |
+| `obj` | `Record`\<`string`, `any`\> |
 
 #### Returns
 
@@ -1086,17 +946,17 @@ ___
 
 #### Inherited from
 
-createCollectionMixin(CommonMethods<CanvasEvents\>).\_setObject
+createCollectionMixin(CommonMethods\<CanvasEvents\>).\_setObject
 
 #### Defined in
 
-[src/CommonMethods.ts:18](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/CommonMethods.ts#L18)
+[src/CommonMethods.ts:18](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/CommonMethods.ts#L18)
 
 ___
 
 ### \_setOptions
 
-▸ `Protected` **_setOptions**(`options?`): `void`
+▸ **_setOptions**(`options?`): `void`
 
 Sets object's properties from options, for initialization only
 
@@ -1112,17 +972,17 @@ Sets object's properties from options, for initialization only
 
 #### Inherited from
 
-createCollectionMixin(CommonMethods<CanvasEvents\>).\_setOptions
+createCollectionMixin(CommonMethods\<CanvasEvents\>).\_setOptions
 
 #### Defined in
 
-[src/CommonMethods.ts:9](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/CommonMethods.ts#L9)
+[src/CommonMethods.ts:9](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/CommonMethods.ts#L9)
 
 ___
 
 ### \_setSVGBgOverlayColor
 
-▸ `Private` **_setSVGBgOverlayColor**(`markup`, `property`): `void`
+▸ **_setSVGBgOverlayColor**(`markup`, `property`): `void`
 
 #### Parameters
 
@@ -1141,13 +1001,13 @@ this seems to handle patterns but fail at gradients.
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1199](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L1199)
+[src/canvas/StaticCanvas.ts:1199](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L1199)
 
 ___
 
 ### \_setSVGBgOverlayImage
 
-▸ `Private` **_setSVGBgOverlayImage**(`markup`, `property`, `reviver`): `void`
+▸ **_setSVGBgOverlayImage**(`markup`, `property`, `reviver`): `void`
 
 #### Parameters
 
@@ -1163,13 +1023,13 @@ ___
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1184](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L1184)
+[src/canvas/StaticCanvas.ts:1184](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L1184)
 
 ___
 
 ### \_setSVGHeader
 
-▸ `Private` **_setSVGHeader**(`markup`, `options`): `void`
+▸ **_setSVGHeader**(`markup`, `options`): `void`
 
 #### Parameters
 
@@ -1184,13 +1044,13 @@ ___
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1023](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L1023)
+[src/canvas/StaticCanvas.ts:1023](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L1023)
 
 ___
 
 ### \_setSVGObject
 
-▸ `Private` **_setSVGObject**(`markup`, `instance`, `reviver`): `void`
+▸ **_setSVGObject**(`markup`, `instance`, `reviver`): `void`
 
 This is its own function because the Canvas ( non static ) requires extra code here
 
@@ -1199,7 +1059,7 @@ This is its own function because the Canvas ( non static ) requires extra code h
 | Name | Type |
 | :------ | :------ |
 | `markup` | `string`[] |
-| `instance` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
+| `instance` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
 | `reviver` | [`TSVGReviver`](/apidocs/modules.md#tsvgreviver) |
 
 #### Returns
@@ -1208,13 +1068,13 @@ This is its own function because the Canvas ( non static ) requires extra code h
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1173](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L1173)
+[src/canvas/StaticCanvas.ts:1173](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L1173)
 
 ___
 
 ### \_setSVGObjects
 
-▸ `Private` **_setSVGObjects**(`markup`, `reviver`): `void`
+▸ **_setSVGObjects**(`markup`, `reviver`): `void`
 
 #### Parameters
 
@@ -1229,13 +1089,13 @@ ___
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1160](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L1160)
+[src/canvas/StaticCanvas.ts:1160](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L1160)
 
 ___
 
 ### \_setSVGPreamble
 
-▸ `Private` **_setSVGPreamble**(`markup`, `options`): `void`
+▸ **_setSVGPreamble**(`markup`, `options`): `void`
 
 #### Parameters
 
@@ -1250,19 +1110,19 @@ ___
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1007](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L1007)
+[src/canvas/StaticCanvas.ts:1007](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L1007)
 
 ___
 
 ### \_toObject
 
-▸ `Private` **_toObject**(`instance`, `methodName`, `propertiesToInclude?`): `any`
+▸ **_toObject**(`instance`, `methodName`, `propertiesToInclude?`): `any`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `instance` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
+| `instance` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
 | `methodName` | [`TValidToObjectMethod`](/apidocs/modules.md#tvalidtoobjectmethod) |
 | `propertiesToInclude?` | `string`[] |
 
@@ -1272,13 +1132,13 @@ ___
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:874](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L874)
+[src/canvas/StaticCanvas.ts:874](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L874)
 
 ___
 
 ### \_toObjectMethod
 
-▸ `Private` **_toObjectMethod**(`methodName`, `propertiesToInclude?`): `any`
+▸ **_toObjectMethod**(`methodName`, `propertiesToInclude?`): `any`
 
 #### Parameters
 
@@ -1293,7 +1153,7 @@ ___
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:849](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L849)
+[src/canvas/StaticCanvas.ts:849](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L849)
 
 ___
 
@@ -1315,7 +1175,7 @@ Pan viewport so as to place point at top left corner of canvas
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:417](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L417)
+[src/canvas/StaticCanvas.ts:417](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L417)
 
 ___
 
@@ -1327,7 +1187,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `...objects` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] |
+| `...objects` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] |
 
 #### Returns
 
@@ -1335,11 +1195,11 @@ ___
 
 #### Overrides
 
-createCollectionMixin(CommonMethods&lt;CanvasEvents\&gt;).add
+createCollectionMixin(CommonMethods\&lt;CanvasEvents\&gt;).add
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:198](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L198)
+[src/canvas/StaticCanvas.ts:198](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L198)
 
 ___
 
@@ -1357,7 +1217,7 @@ stack.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | Object to send |
+| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | Object to send |
 | `intersecting?` | `boolean` | If `true`, send object in front of next upper intersecting object |
 
 #### Returns
@@ -1368,11 +1228,11 @@ true if change occurred
 
 #### Inherited from
 
-createCollectionMixin(CommonMethods<CanvasEvents\>).bringObjectForward
+createCollectionMixin(CommonMethods\<CanvasEvents\>).bringObjectForward
 
 #### Defined in
 
-[src/Collection.ts:232](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Collection.ts#L232)
+[src/Collection.ts:232](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L232)
 
 ___
 
@@ -1387,7 +1247,7 @@ to the top of the stack of drawn objects
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | Object to send |
+| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | Object to send |
 
 #### Returns
 
@@ -1397,11 +1257,11 @@ true if change occurred
 
 #### Inherited from
 
-createCollectionMixin(CommonMethods<CanvasEvents\>).bringObjectToFront
+createCollectionMixin(CommonMethods\<CanvasEvents\>).bringObjectToFront
 
 #### Defined in
 
-[src/Collection.ts:186](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Collection.ts#L186)
+[src/Collection.ts:186](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L186)
 
 ___
 
@@ -1423,7 +1283,7 @@ This method is also attached as "resize" event handler of window
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:260](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L260)
+[src/canvas/StaticCanvas.ts:260](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L260)
 
 ___
 
@@ -1445,7 +1305,7 @@ points.tl
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:517](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L517)
+[src/canvas/StaticCanvas.ts:517](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L517)
 
 ___
 
@@ -1459,7 +1319,7 @@ ___
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:535](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L535)
+[src/canvas/StaticCanvas.ts:535](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L535)
 
 ___
 
@@ -1473,7 +1333,7 @@ Centers object vertically and horizontally in the canvas
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | Object to center vertically and horizontally |
+| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | Object to center vertically and horizontally |
 
 #### Returns
 
@@ -1481,7 +1341,7 @@ Centers object vertically and horizontally in the canvas
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:744](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L744)
+[src/canvas/StaticCanvas.ts:744](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L744)
 
 ___
 
@@ -1495,7 +1355,7 @@ Centers object horizontally in the canvas
 
 | Name | Type |
 | :------ | :------ |
-| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
+| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
 
 #### Returns
 
@@ -1503,7 +1363,7 @@ Centers object horizontally in the canvas
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:722](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L722)
+[src/canvas/StaticCanvas.ts:722](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L722)
 
 ___
 
@@ -1517,7 +1377,7 @@ Centers object vertically in the canvas
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | Object to center vertically |
+| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | Object to center vertically |
 
 #### Returns
 
@@ -1525,7 +1385,7 @@ Centers object vertically in the canvas
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:733](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L733)
+[src/canvas/StaticCanvas.ts:733](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L733)
 
 ___
 
@@ -1541,7 +1401,7 @@ Clears all contexts (background, main, top) of an instance
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:464](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L464)
+[src/canvas/StaticCanvas.ts:464](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L464)
 
 ___
 
@@ -1563,13 +1423,13 @@ Clears specified context of canvas element
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:449](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L449)
+[src/canvas/StaticCanvas.ts:449](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L449)
 
 ___
 
 ### clone
 
-▸ **clone**(`properties?`): `Promise`<[`StaticCanvas`](/apidocs/classes/StaticCanvas.md)<`EventSpec`\>\>
+▸ **clone**(`properties?`): `Promise`\<[`StaticCanvas`](/apidocs/classes/StaticCanvas.md)\<`EventSpec`\>\>
 
 Clones canvas instance
 
@@ -1581,34 +1441,34 @@ Clones canvas instance
 
 #### Returns
 
-`Promise`<[`StaticCanvas`](/apidocs/classes/StaticCanvas.md)<`EventSpec`\>\>
+`Promise`\<[`StaticCanvas`](/apidocs/classes/StaticCanvas.md)\<`EventSpec`\>\>
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1315](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L1315)
+[src/canvas/StaticCanvas.ts:1315](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L1315)
 
 ___
 
 ### cloneWithoutData
 
-▸ **cloneWithoutData**(): [`StaticCanvas`](/apidocs/classes/StaticCanvas.md)<`EventSpec`\>
+▸ **cloneWithoutData**(): [`StaticCanvas`](/apidocs/classes/StaticCanvas.md)\<`EventSpec`\>
 
 Clones canvas instance without cloning existing data.
 This essentially copies canvas dimensions since loadFromJSON does not affect canvas size.
 
 #### Returns
 
-[`StaticCanvas`](/apidocs/classes/StaticCanvas.md)<`EventSpec`\>
+[`StaticCanvas`](/apidocs/classes/StaticCanvas.md)\<`EventSpec`\>
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1325](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L1325)
+[src/canvas/StaticCanvas.ts:1325](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L1325)
 
 ___
 
 ### collectObjects
 
-▸ **collectObjects**(`«destructured»`, `«destructured»?`): `InteractiveFabricObject`<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]
+▸ **collectObjects**(`«destructured»`, `«destructured»?`): `InteractiveFabricObject`\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]
 
 Given a bounding box, return all the objects of the collection that are contained in the bounding box.
 If `includeIntersecting` is true, return also the objects that intersect the bounding box as well.
@@ -1624,17 +1484,17 @@ This is meant to work with selection. Is not a generic method.
 
 #### Returns
 
-`InteractiveFabricObject`<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]
+`InteractiveFabricObject`\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]
 
 array of objects contained in the bounding box, ordered from top to bottom stacking wise
 
 #### Inherited from
 
-createCollectionMixin(CommonMethods<CanvasEvents\>).collectObjects
+createCollectionMixin(CommonMethods\<CanvasEvents\>).collectObjects
 
 #### Defined in
 
-[src/Collection.ts:316](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Collection.ts#L316)
+[src/Collection.ts:316](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L316)
 
 ___
 
@@ -1652,11 +1512,11 @@ complexity
 
 #### Inherited from
 
-createCollectionMixin(CommonMethods<CanvasEvents\>).complexity
+createCollectionMixin(CommonMethods\<CanvasEvents\>).complexity
 
 #### Defined in
 
-[src/Collection.ts:157](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Collection.ts#L157)
+[src/Collection.ts:157](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L157)
 
 ___
 
@@ -1672,7 +1532,7 @@ instead of `a.contains(b)` use `b.isDescendantOf(a)`
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | Object to check against |
+| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | Object to check against |
 | `deep?` | `boolean` | `true` to check all descendants, `false` to check only `_objects` |
 
 #### Returns
@@ -1683,11 +1543,11 @@ instead of `a.contains(b)` use `b.isDescendantOf(a)`
 
 #### Inherited from
 
-createCollectionMixin(CommonMethods<CanvasEvents\>).contains
+createCollectionMixin(CommonMethods\<CanvasEvents\>).contains
 
 #### Defined in
 
-[src/Collection.ts:140](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Collection.ts#L140)
+[src/Collection.ts:140](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L140)
 
 ___
 
@@ -1707,7 +1567,7 @@ ___
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1068](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L1068)
+[src/canvas/StaticCanvas.ts:1068](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L1068)
 
 ___
 
@@ -1725,7 +1585,7 @@ and are not extracted from the DOM by fabricjs
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1111](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L1111)
+[src/canvas/StaticCanvas.ts:1111](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L1111)
 
 ___
 
@@ -1741,13 +1601,13 @@ Creates markup containing SVG referenced elements like patterns, gradients etc.
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1083](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L1083)
+[src/canvas/StaticCanvas.ts:1083](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L1083)
 
 ___
 
 ### destroy
 
-▸ `Private` **destroy**(): `void`
+▸ **destroy**(): `void`
 
 Clears the canvas element, disposes objects and frees resources.
 
@@ -1766,19 +1626,19 @@ Consider using [dispose](/apidocs/classes/StaticCanvas.md#dispose) as it is **SA
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1480](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L1480)
+[src/canvas/StaticCanvas.ts:1480](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L1480)
 
 ___
 
 ### dispose
 
-▸ **dispose**(): `Promise`<`boolean`\>
+▸ **dispose**(): `Promise`\<`boolean`\>
 
 Waits until rendering has settled to destroy the canvas
 
 #### Returns
 
-`Promise`<`boolean`\>
+`Promise`\<`boolean`\>
 
 a promise resolving to `true` once the canvas has been destroyed or to `false` if the canvas has was already destroyed
 
@@ -1788,7 +1648,7 @@ if aborted by a consequent call
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1441](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L1441)
+[src/canvas/StaticCanvas.ts:1441](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L1441)
 
 ___
 
@@ -1803,7 +1663,7 @@ Paint the cached clipPath on the lowerCanvasEl
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `ctx` | `CanvasRenderingContext2D` | Context to render on |
-| `clipPath` | `TCachedFabricObject`<`FabricObject`<`Partial`<`ObjectProps`\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>\> | - |
+| `clipPath` | `TCachedFabricObject`\<`FabricObject`\<`Partial`\<`ObjectProps`\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>\> | - |
 
 #### Returns
 
@@ -1811,7 +1671,7 @@ Paint the cached clipPath on the lowerCanvasEl
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:598](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L598)
+[src/canvas/StaticCanvas.ts:598](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L598)
 
 ___
 
@@ -1831,7 +1691,7 @@ ___
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:542](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L542)
+[src/canvas/StaticCanvas.ts:542](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L542)
 
 ___
 
@@ -1843,7 +1703,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
+| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
 | `idx` | `number` |
 | `intersecting?` | `boolean` |
 
@@ -1853,11 +1713,11 @@ ___
 
 #### Inherited from
 
-createCollectionMixin(CommonMethods<CanvasEvents\>).findNewLowerIndex
+createCollectionMixin(CommonMethods\<CanvasEvents\>).findNewLowerIndex
 
 #### Defined in
 
-[src/Collection.ts:264](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Collection.ts#L264)
+[src/Collection.ts:264](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L264)
 
 ___
 
@@ -1869,7 +1729,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
+| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
 | `idx` | `number` |
 | `intersecting?` | `boolean` |
 
@@ -1879,17 +1739,17 @@ ___
 
 #### Inherited from
 
-createCollectionMixin(CommonMethods<CanvasEvents\>).findNewUpperIndex
+createCollectionMixin(CommonMethods\<CanvasEvents\>).findNewUpperIndex
 
 #### Defined in
 
-[src/Collection.ts:287](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Collection.ts#L287)
+[src/Collection.ts:287](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L287)
 
 ___
 
 ### fire
 
-▸ **fire**<`K`\>(`eventName`, `options?`): `void`
+▸ **fire**\<`K`\>(`eventName`, `options?`): `void`
 
 Fires event with an optional options object
 
@@ -1912,11 +1772,11 @@ Fires event with an optional options object
 
 #### Inherited from
 
-createCollectionMixin(CommonMethods<CanvasEvents\>).fire
+createCollectionMixin(CommonMethods\<CanvasEvents\>).fire
 
 #### Defined in
 
-[src/Observable.ts:159](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Observable.ts#L159)
+[src/Observable.ts:159](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L159)
 
 ___
 
@@ -1932,7 +1792,7 @@ now is just a shortcut.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `callback` | (`object`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>, `index`: `number`, `array`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]) => `any` | Callback invoked with current object as first argument, index - as second and an array of all objects - as third. |
+| `callback` | (`object`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>, `index`: `number`, `array`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]) => `any` | Callback invoked with current object as first argument, index - as second and an array of all objects - as third. |
 
 #### Returns
 
@@ -1940,11 +1800,11 @@ now is just a shortcut.
 
 #### Inherited from
 
-createCollectionMixin(CommonMethods<CanvasEvents\>).forEachObject
+createCollectionMixin(CommonMethods\<CanvasEvents\>).forEachObject
 
 #### Defined in
 
-[src/Collection.ts:83](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Collection.ts#L83)
+[src/Collection.ts:83](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L83)
 
 ___
 
@@ -1968,11 +1828,11 @@ value of a property
 
 #### Inherited from
 
-createCollectionMixin(CommonMethods<CanvasEvents\>).get
+createCollectionMixin(CommonMethods\<CanvasEvents\>).get
 
 #### Defined in
 
-[src/CommonMethods.ts:59](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/CommonMethods.ts#L59)
+[src/CommonMethods.ts:59](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/CommonMethods.ts#L59)
 
 ___
 
@@ -2000,7 +1860,7 @@ migrate to `getCenterPoint`
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:704](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L704)
+[src/canvas/StaticCanvas.ts:704](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L704)
 
 ___
 
@@ -2016,7 +1876,7 @@ Returns coordinates of a center of canvas.
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:715](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L715)
+[src/canvas/StaticCanvas.ts:715](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L715)
 
 ___
 
@@ -2032,7 +1892,7 @@ Returns context of canvas where objects are drawn
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:457](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L457)
+[src/canvas/StaticCanvas.ts:457](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L457)
 
 ___
 
@@ -2048,7 +1908,7 @@ Returns &lt;canvas> element corresponding to this instance
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:441](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L441)
+[src/canvas/StaticCanvas.ts:441](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L441)
 
 ___
 
@@ -2064,13 +1924,13 @@ Returns canvas height (in px)
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:276](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L276)
+[src/canvas/StaticCanvas.ts:276](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L276)
 
 ___
 
 ### getObjects
 
-▸ **getObjects**(`...types?`): [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]
+▸ **getObjects**(`...types?`): [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]
 
 Returns an array of children objects of this instance
 
@@ -2082,21 +1942,21 @@ Returns an array of children objects of this instance
 
 #### Returns
 
-[`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]
+[`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]
 
 #### Inherited from
 
-createCollectionMixin(CommonMethods<CanvasEvents\>).getObjects
+createCollectionMixin(CommonMethods\<CanvasEvents\>).getObjects
 
 #### Defined in
 
-[src/Collection.ts:100](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Collection.ts#L100)
+[src/Collection.ts:100](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L100)
 
 ___
 
 ### getRetinaScaling
 
-▸ `Private` **getRetinaScaling**(): `number`
+▸ **getRetinaScaling**(): `number`
 
 #### Returns
 
@@ -2106,7 +1966,7 @@ retinaScaling if applied, otherwise 1;
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:252](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L252)
+[src/canvas/StaticCanvas.ts:252](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L252)
 
 ___
 
@@ -2124,7 +1984,7 @@ vpCenter, viewport center
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:782](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L782)
+[src/canvas/StaticCanvas.ts:782](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L782)
 
 ___
 
@@ -2140,7 +2000,7 @@ Returns canvas width (in px)
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:268](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L268)
+[src/canvas/StaticCanvas.ts:268](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L268)
 
 ___
 
@@ -2156,13 +2016,13 @@ Returns canvas zoom level
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:356](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L356)
+[src/canvas/StaticCanvas.ts:356](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L356)
 
 ___
 
 ### initElements
 
-▸ `Protected` **initElements**(`el?`): `void`
+▸ **initElements**(`el?`): `void`
 
 #### Parameters
 
@@ -2176,7 +2036,7 @@ ___
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:194](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L194)
+[src/canvas/StaticCanvas.ts:194](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L194)
 
 ___
 
@@ -2189,7 +2049,7 @@ ___
 | Name | Type |
 | :------ | :------ |
 | `index` | `number` |
-| `...objects` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] |
+| `...objects` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] |
 
 #### Returns
 
@@ -2197,11 +2057,11 @@ ___
 
 #### Overrides
 
-createCollectionMixin(CommonMethods&lt;CanvasEvents\&gt;).insertAt
+createCollectionMixin(CommonMethods\&lt;CanvasEvents\&gt;).insertAt
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:204](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L204)
+[src/canvas/StaticCanvas.ts:204](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L204)
 
 ___
 
@@ -2219,17 +2079,17 @@ true if collection is empty
 
 #### Inherited from
 
-createCollectionMixin(CommonMethods<CanvasEvents\>).isEmpty
+createCollectionMixin(CommonMethods\<CanvasEvents\>).isEmpty
 
 #### Defined in
 
-[src/Collection.ts:120](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Collection.ts#L120)
+[src/Collection.ts:120](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L120)
 
 ___
 
 ### item
 
-▸ **item**(`index`): [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
+▸ **item**(`index`): [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
 
 Returns object at specified index
 
@@ -2241,23 +2101,23 @@ Returns object at specified index
 
 #### Returns
 
-[`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
+[`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
 
 object at index
 
 #### Inherited from
 
-createCollectionMixin(CommonMethods<CanvasEvents\>).item
+createCollectionMixin(CommonMethods\<CanvasEvents\>).item
 
 #### Defined in
 
-[src/Collection.ts:112](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Collection.ts#L112)
+[src/Collection.ts:112](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L112)
 
 ___
 
 ### loadFromJSON
 
-▸ **loadFromJSON**(`json`, `reviver?`, `options?`): `Promise`<[`StaticCanvas`](/apidocs/classes/StaticCanvas.md)<`EventSpec`\>\>
+▸ **loadFromJSON**(`json`, `reviver?`, `options?`): `Promise`\<[`StaticCanvas`](/apidocs/classes/StaticCanvas.md)\<`EventSpec`\>\>
 
 Populates canvas with data from the specified JSON.
 JSON format must conform to the one of fabric.Canvas#toJSON
@@ -2268,13 +2128,13 @@ JSON format must conform to the one of fabric.Canvas#toJSON
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `json` | `string` \| `Record`<`string`, `any`\> | JSON string or object |
-| `reviver?` | <T\>(`serializedObj`: `Record`<`string`, `any`\>, `instance`: `T`) => `void` | Method for further parsing of object elements, called after each fabric object created. |
+| `json` | `string` \| `Record`\<`string`, `any`\> | JSON string or object |
+| `reviver?` | \<T\>(`serializedObj`: `Record`\<`string`, `any`\>, `instance`: `T`) => `void` | Method for further parsing of object elements, called after each fabric object created. |
 | `options?` | [`Abortable`](/apidocs/modules.md#abortable) | options |
 
 #### Returns
 
-`Promise`<[`StaticCanvas`](/apidocs/classes/StaticCanvas.md)<`EventSpec`\>\>
+`Promise`\<[`StaticCanvas`](/apidocs/classes/StaticCanvas.md)\<`EventSpec`\>\>
 
 instance
 
@@ -2308,7 +2168,7 @@ canvas.loadFromJSON(json, function(o, object) {
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1264](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L1264)
+[src/canvas/StaticCanvas.ts:1264](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L1264)
 
 ___
 
@@ -2322,7 +2182,7 @@ Moves an object to specified level in stack of drawn objects
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | Object to send |
+| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | Object to send |
 | `index` | `number` | Position to move to |
 
 #### Returns
@@ -2333,17 +2193,17 @@ true if change occurred
 
 #### Inherited from
 
-createCollectionMixin(CommonMethods<CanvasEvents\>).moveObjectTo
+createCollectionMixin(CommonMethods\<CanvasEvents\>).moveObjectTo
 
 #### Defined in
 
-[src/Collection.ts:254](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Collection.ts#L254)
+[src/Collection.ts:254](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L254)
 
 ___
 
 ### off
 
-▸ **off**<`K`\>(`eventName`, `handler`): `void`
+▸ **off**\<`K`\>(`eventName`, `handler`): `void`
 
 unsubscribe an event listener
 
@@ -2358,7 +2218,7 @@ unsubscribe an event listener
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `eventName` | `K` | event name (eg. 'after:render') |
-| `handler` | `TEventCallback`<`any`\> | event listener to unsubscribe |
+| `handler` | `TEventCallback`\<`any`\> | event listener to unsubscribe |
 
 #### Returns
 
@@ -2366,11 +2226,11 @@ unsubscribe an event listener
 
 #### Inherited from
 
-createCollectionMixin(CommonMethods<CanvasEvents\>).off
+createCollectionMixin(CommonMethods\<CanvasEvents\>).off
 
 #### Defined in
 
-[src/Observable.ts:120](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Observable.ts#L120)
+[src/Observable.ts:120](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L120)
 
 ▸ **off**(`handlers`): `void`
 
@@ -2380,7 +2240,7 @@ unsubscribe event listeners
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `handlers` | `EventRegistryObject`<[`CanvasEvents`](/apidocs/interfaces/CanvasEvents.md)\> | handlers key/value pairs (eg. {'after:render': handler, 'selection:cleared': handler}) |
+| `handlers` | `EventRegistryObject`\<[`CanvasEvents`](/apidocs/interfaces/CanvasEvents.md)\> | handlers key/value pairs (eg. {'after:render': handler, 'selection:cleared': handler}) |
 
 #### Returns
 
@@ -2388,11 +2248,11 @@ unsubscribe event listeners
 
 #### Inherited from
 
-createCollectionMixin(CommonMethods<CanvasEvents\>).off
+createCollectionMixin(CommonMethods\<CanvasEvents\>).off
 
 #### Defined in
 
-[src/Observable.ts:125](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Observable.ts#L125)
+[src/Observable.ts:125](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L125)
 
 ▸ **off**(): `void`
 
@@ -2404,17 +2264,17 @@ unsubscribe all event listeners
 
 #### Inherited from
 
-createCollectionMixin(CommonMethods<CanvasEvents\>).off
+createCollectionMixin(CommonMethods\<CanvasEvents\>).off
 
 #### Defined in
 
-[src/Observable.ts:129](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Observable.ts#L129)
+[src/Observable.ts:129](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L129)
 
 ___
 
 ### on
 
-▸ **on**<`K`, `E`\>(`eventName`, `handler`): `VoidFunction`
+▸ **on**\<`K`, `E`\>(`eventName`, `handler`): `VoidFunction`
 
 Observes specified event
 
@@ -2423,14 +2283,14 @@ Observes specified event
 | Name | Type |
 | :------ | :------ |
 | `K` | extends keyof [`CanvasEvents`](/apidocs/interfaces/CanvasEvents.md) |
-| `E` | extends [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> \| [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & { `currentSubTargets`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] ; `currentTarget?`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> ; `isClick`: `boolean`  } \| [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)<`WheelEvent`\> \| [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & `InEvent` \| [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & `OutEvent` \| [`BasicTransformEvent`](/apidocs/interfaces/BasicTransformEvent.md)<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & { `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| [`ModifiedEvent`](/apidocs/interfaces/ModifiedEvent.md)<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> \| { `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| { `drawables`: { `backgroundImage?`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> ; `overlayImage?`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } ; `path`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> ; `subTargets`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] ; `targets`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]  } \| `TEventWithTarget`<`DragEvent`\> \| [`DragEventData`](/apidocs/interfaces/DragEventData.md) \| [`DragEventData`](/apidocs/interfaces/DragEventData.md) & `InEvent` \| [`DragEventData`](/apidocs/interfaces/DragEventData.md) & `OutEvent` \| [`DropEventData`](/apidocs/interfaces/DropEventData.md) \| `SimpleEventHandler`<`Event`\> \| { `path`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| { `path`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| { `target`: [`IText`](/apidocs/classes/IText.md)<`Partial`<[`ITextProps`](/apidocs/interfaces/ITextProps.md)\>, [`SerializedITextProps`](/apidocs/interfaces/SerializedITextProps.md), `ITextEvents`\>  } \| { `target`: [`IText`](/apidocs/classes/IText.md)<`Partial`<[`ITextProps`](/apidocs/interfaces/ITextProps.md)\>, [`SerializedITextProps`](/apidocs/interfaces/SerializedITextProps.md), `ITextEvents`\>  } \| { `target`: [`IText`](/apidocs/classes/IText.md)<`Partial`<[`ITextProps`](/apidocs/interfaces/ITextProps.md)\>, [`SerializedITextProps`](/apidocs/interfaces/SerializedITextProps.md), `ITextEvents`\>  } \| { `target`: [`IText`](/apidocs/classes/IText.md)<`Partial`<[`ITextProps`](/apidocs/interfaces/ITextProps.md)\>, [`SerializedITextProps`](/apidocs/interfaces/SerializedITextProps.md), `ITextEvents`\>  } \| { `ctx`: `CanvasRenderingContext2D`  } \| { `ctx`: `CanvasRenderingContext2D`  } \| { `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| { `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| [`TEvent`](/apidocs/interfaces/TEvent.md)<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & { `transform`: [`Transform`](/apidocs/modules.md#transform)  } \| `Partial`<[`TEvent`](/apidocs/interfaces/TEvent.md)<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>\> & { `selected`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]  } \| `Partial`<[`TEvent`](/apidocs/interfaces/TEvent.md)<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>\> & { `deselected`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] ; `selected`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]  } \| `Partial`<[`TEvent`](/apidocs/interfaces/TEvent.md)<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>\> & { `deselected`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]  } \| `Partial`<[`TEvent`](/apidocs/interfaces/TEvent.md)<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>\> & { `deselected`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]  } |
+| `E` | extends [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> \| [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & \{ `currentSubTargets`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] ; `currentTarget?`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> ; `isClick`: `boolean`  } \| [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<`WheelEvent`\> \| [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & `InEvent` \| [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & `OutEvent` \| [`BasicTransformEvent`](/apidocs/interfaces/BasicTransformEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & \{ `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| [`ModifiedEvent`](/apidocs/interfaces/ModifiedEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> \| \{ `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| \{ `drawables`: \{ `backgroundImage?`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> ; `overlayImage?`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } ; `path`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> ; `subTargets`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] ; `targets`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]  } \| `TEventWithTarget`\<`DragEvent`\> \| [`DragEventData`](/apidocs/interfaces/DragEventData.md) \| [`DragEventData`](/apidocs/interfaces/DragEventData.md) & `InEvent` \| [`DragEventData`](/apidocs/interfaces/DragEventData.md) & `OutEvent` \| [`DropEventData`](/apidocs/interfaces/DropEventData.md) \| `SimpleEventHandler`\<`Event`\> \| \{ `path`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| \{ `path`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| \{ `target`: [`IText`](/apidocs/classes/IText.md)\<`Partial`\<[`ITextProps`](/apidocs/interfaces/ITextProps.md)\>, [`SerializedITextProps`](/apidocs/interfaces/SerializedITextProps.md), `ITextEvents`\>  } \| \{ `target`: [`IText`](/apidocs/classes/IText.md)\<`Partial`\<[`ITextProps`](/apidocs/interfaces/ITextProps.md)\>, [`SerializedITextProps`](/apidocs/interfaces/SerializedITextProps.md), `ITextEvents`\>  } \| \{ `target`: [`IText`](/apidocs/classes/IText.md)\<`Partial`\<[`ITextProps`](/apidocs/interfaces/ITextProps.md)\>, [`SerializedITextProps`](/apidocs/interfaces/SerializedITextProps.md), `ITextEvents`\>  } \| \{ `target`: [`IText`](/apidocs/classes/IText.md)\<`Partial`\<[`ITextProps`](/apidocs/interfaces/ITextProps.md)\>, [`SerializedITextProps`](/apidocs/interfaces/SerializedITextProps.md), `ITextEvents`\>  } \| \{ `ctx`: `CanvasRenderingContext2D`  } \| \{ `ctx`: `CanvasRenderingContext2D`  } \| \{ `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| \{ `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| [`TEvent`](/apidocs/interfaces/TEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & \{ `transform`: [`Transform`](/apidocs/modules.md#transform)  } \| `Partial`\<[`TEvent`](/apidocs/interfaces/TEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>\> & \{ `selected`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]  } \| `Partial`\<[`TEvent`](/apidocs/interfaces/TEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>\> & \{ `deselected`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] ; `selected`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]  } \| `Partial`\<[`TEvent`](/apidocs/interfaces/TEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>\> & \{ `deselected`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]  } \| `Partial`\<[`TEvent`](/apidocs/interfaces/TEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>\> & \{ `deselected`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]  } |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `eventName` | `K` | Event name (eg. 'after:render') |
-| `handler` | `TEventCallback`<`E`\> | Function that receives a notification when an event of the specified type occurs |
+| `handler` | `TEventCallback`\<`E`\> | Function that receives a notification when an event of the specified type occurs |
 
 #### Returns
 
@@ -2444,11 +2304,11 @@ on
 
 #### Inherited from
 
-createCollectionMixin(CommonMethods<CanvasEvents\>).on
+createCollectionMixin(CommonMethods\<CanvasEvents\>).on
 
 #### Defined in
 
-[src/Observable.ts:23](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Observable.ts#L23)
+[src/Observable.ts:23](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L23)
 
 ▸ **on**(`handlers`): `VoidFunction`
 
@@ -2456,7 +2316,7 @@ createCollectionMixin(CommonMethods<CanvasEvents\>).on
 
 | Name | Type |
 | :------ | :------ |
-| `handlers` | `EventRegistryObject`<[`CanvasEvents`](/apidocs/interfaces/CanvasEvents.md)\> |
+| `handlers` | `EventRegistryObject`\<[`CanvasEvents`](/apidocs/interfaces/CanvasEvents.md)\> |
 
 #### Returns
 
@@ -2464,17 +2324,17 @@ createCollectionMixin(CommonMethods<CanvasEvents\>).on
 
 #### Inherited from
 
-createCollectionMixin(CommonMethods<CanvasEvents\>).on
+createCollectionMixin(CommonMethods\<CanvasEvents\>).on
 
 #### Defined in
 
-[src/Observable.ts:27](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Observable.ts#L27)
+[src/Observable.ts:27](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L27)
 
 ___
 
 ### once
 
-▸ **once**<`K`, `E`\>(`eventName`, `handler`): `VoidFunction`
+▸ **once**\<`K`, `E`\>(`eventName`, `handler`): `VoidFunction`
 
 Observes specified event **once**
 
@@ -2483,14 +2343,14 @@ Observes specified event **once**
 | Name | Type |
 | :------ | :------ |
 | `K` | extends keyof [`CanvasEvents`](/apidocs/interfaces/CanvasEvents.md) |
-| `E` | extends [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> \| [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & { `currentSubTargets`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] ; `currentTarget?`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> ; `isClick`: `boolean`  } \| [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)<`WheelEvent`\> \| [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & `InEvent` \| [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & `OutEvent` \| [`BasicTransformEvent`](/apidocs/interfaces/BasicTransformEvent.md)<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & { `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| [`ModifiedEvent`](/apidocs/interfaces/ModifiedEvent.md)<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> \| { `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| { `drawables`: { `backgroundImage?`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> ; `overlayImage?`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } ; `path`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> ; `subTargets`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] ; `targets`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]  } \| `TEventWithTarget`<`DragEvent`\> \| [`DragEventData`](/apidocs/interfaces/DragEventData.md) \| [`DragEventData`](/apidocs/interfaces/DragEventData.md) & `InEvent` \| [`DragEventData`](/apidocs/interfaces/DragEventData.md) & `OutEvent` \| [`DropEventData`](/apidocs/interfaces/DropEventData.md) \| `SimpleEventHandler`<`Event`\> \| { `path`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| { `path`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| { `target`: [`IText`](/apidocs/classes/IText.md)<`Partial`<[`ITextProps`](/apidocs/interfaces/ITextProps.md)\>, [`SerializedITextProps`](/apidocs/interfaces/SerializedITextProps.md), `ITextEvents`\>  } \| { `target`: [`IText`](/apidocs/classes/IText.md)<`Partial`<[`ITextProps`](/apidocs/interfaces/ITextProps.md)\>, [`SerializedITextProps`](/apidocs/interfaces/SerializedITextProps.md), `ITextEvents`\>  } \| { `target`: [`IText`](/apidocs/classes/IText.md)<`Partial`<[`ITextProps`](/apidocs/interfaces/ITextProps.md)\>, [`SerializedITextProps`](/apidocs/interfaces/SerializedITextProps.md), `ITextEvents`\>  } \| { `target`: [`IText`](/apidocs/classes/IText.md)<`Partial`<[`ITextProps`](/apidocs/interfaces/ITextProps.md)\>, [`SerializedITextProps`](/apidocs/interfaces/SerializedITextProps.md), `ITextEvents`\>  } \| { `ctx`: `CanvasRenderingContext2D`  } \| { `ctx`: `CanvasRenderingContext2D`  } \| { `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| { `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| [`TEvent`](/apidocs/interfaces/TEvent.md)<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & { `transform`: [`Transform`](/apidocs/modules.md#transform)  } \| `Partial`<[`TEvent`](/apidocs/interfaces/TEvent.md)<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>\> & { `selected`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]  } \| `Partial`<[`TEvent`](/apidocs/interfaces/TEvent.md)<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>\> & { `deselected`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] ; `selected`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]  } \| `Partial`<[`TEvent`](/apidocs/interfaces/TEvent.md)<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>\> & { `deselected`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]  } \| `Partial`<[`TEvent`](/apidocs/interfaces/TEvent.md)<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>\> & { `deselected`: [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]  } |
+| `E` | extends [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> \| [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & \{ `currentSubTargets`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] ; `currentTarget?`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> ; `isClick`: `boolean`  } \| [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<`WheelEvent`\> \| [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & `InEvent` \| [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & `OutEvent` \| [`BasicTransformEvent`](/apidocs/interfaces/BasicTransformEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & \{ `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| [`ModifiedEvent`](/apidocs/interfaces/ModifiedEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> \| \{ `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| \{ `drawables`: \{ `backgroundImage?`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> ; `overlayImage?`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } ; `path`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> ; `subTargets`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] ; `targets`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]  } \| `TEventWithTarget`\<`DragEvent`\> \| [`DragEventData`](/apidocs/interfaces/DragEventData.md) \| [`DragEventData`](/apidocs/interfaces/DragEventData.md) & `InEvent` \| [`DragEventData`](/apidocs/interfaces/DragEventData.md) & `OutEvent` \| [`DropEventData`](/apidocs/interfaces/DropEventData.md) \| `SimpleEventHandler`\<`Event`\> \| \{ `path`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| \{ `path`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| \{ `target`: [`IText`](/apidocs/classes/IText.md)\<`Partial`\<[`ITextProps`](/apidocs/interfaces/ITextProps.md)\>, [`SerializedITextProps`](/apidocs/interfaces/SerializedITextProps.md), `ITextEvents`\>  } \| \{ `target`: [`IText`](/apidocs/classes/IText.md)\<`Partial`\<[`ITextProps`](/apidocs/interfaces/ITextProps.md)\>, [`SerializedITextProps`](/apidocs/interfaces/SerializedITextProps.md), `ITextEvents`\>  } \| \{ `target`: [`IText`](/apidocs/classes/IText.md)\<`Partial`\<[`ITextProps`](/apidocs/interfaces/ITextProps.md)\>, [`SerializedITextProps`](/apidocs/interfaces/SerializedITextProps.md), `ITextEvents`\>  } \| \{ `target`: [`IText`](/apidocs/classes/IText.md)\<`Partial`\<[`ITextProps`](/apidocs/interfaces/ITextProps.md)\>, [`SerializedITextProps`](/apidocs/interfaces/SerializedITextProps.md), `ITextEvents`\>  } \| \{ `ctx`: `CanvasRenderingContext2D`  } \| \{ `ctx`: `CanvasRenderingContext2D`  } \| \{ `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| \{ `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| [`TEvent`](/apidocs/interfaces/TEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & \{ `transform`: [`Transform`](/apidocs/modules.md#transform)  } \| `Partial`\<[`TEvent`](/apidocs/interfaces/TEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>\> & \{ `selected`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]  } \| `Partial`\<[`TEvent`](/apidocs/interfaces/TEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>\> & \{ `deselected`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] ; `selected`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]  } \| `Partial`\<[`TEvent`](/apidocs/interfaces/TEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>\> & \{ `deselected`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]  } \| `Partial`\<[`TEvent`](/apidocs/interfaces/TEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>\> & \{ `deselected`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]  } |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `eventName` | `K` | Event name (eg. 'after:render') |
-| `handler` | `TEventCallback`<`E`\> | Function that receives a notification when an event of the specified type occurs |
+| `handler` | `TEventCallback`\<`E`\> | Function that receives a notification when an event of the specified type occurs |
 
 #### Returns
 
@@ -2504,11 +2364,11 @@ once
 
 #### Inherited from
 
-createCollectionMixin(CommonMethods<CanvasEvents\>).once
+createCollectionMixin(CommonMethods\<CanvasEvents\>).once
 
 #### Defined in
 
-[src/Observable.ts:62](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Observable.ts#L62)
+[src/Observable.ts:62](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L62)
 
 ▸ **once**(`handlers`): `VoidFunction`
 
@@ -2516,7 +2376,7 @@ createCollectionMixin(CommonMethods<CanvasEvents\>).once
 
 | Name | Type |
 | :------ | :------ |
-| `handlers` | `EventRegistryObject`<[`CanvasEvents`](/apidocs/interfaces/CanvasEvents.md)\> |
+| `handlers` | `EventRegistryObject`\<[`CanvasEvents`](/apidocs/interfaces/CanvasEvents.md)\> |
 
 #### Returns
 
@@ -2524,11 +2384,11 @@ createCollectionMixin(CommonMethods<CanvasEvents\>).once
 
 #### Inherited from
 
-createCollectionMixin(CommonMethods<CanvasEvents\>).once
+createCollectionMixin(CommonMethods\<CanvasEvents\>).once
 
 #### Defined in
 
-[src/Observable.ts:66](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Observable.ts#L66)
+[src/Observable.ts:66](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Observable.ts#L66)
 
 ___
 
@@ -2550,31 +2410,31 @@ Pans viewpoint relatively
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:428](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L428)
+[src/canvas/StaticCanvas.ts:428](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L428)
 
 ___
 
 ### remove
 
-▸ **remove**(`...objects`): [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]
+▸ **remove**(`...objects`): [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `...objects` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] |
+| `...objects` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] |
 
 #### Returns
 
-[`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]
+[`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]
 
 #### Overrides
 
-createCollectionMixin(CommonMethods&lt;CanvasEvents\&gt;).remove
+createCollectionMixin(CommonMethods\&lt;CanvasEvents\&gt;).remove
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:210](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L210)
+[src/canvas/StaticCanvas.ts:210](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L210)
 
 ___
 
@@ -2590,13 +2450,13 @@ Renders the canvas
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:478](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L478)
+[src/canvas/StaticCanvas.ts:478](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L478)
 
 ___
 
 ### renderAndReset
 
-▸ `Private` **renderAndReset**(): `void`
+▸ **renderAndReset**(): `void`
 
 Function created to be instance bound at initialization
 used in requestAnimationFrame rendering
@@ -2610,7 +2470,7 @@ for an imperative rendering, use canvas.renderAll
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:494](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L494)
+[src/canvas/StaticCanvas.ts:494](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L494)
 
 ___
 
@@ -2625,7 +2485,7 @@ Renders background, objects, overlay and controls.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `ctx` | `CanvasRenderingContext2D` |  |
-| `objects` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] | to render |
+| `objects` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] | to render |
 
 #### Returns
 
@@ -2633,7 +2493,7 @@ Renders background, objects, overlay and controls.
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:551](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L551)
+[src/canvas/StaticCanvas.ts:551](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L551)
 
 ___
 
@@ -2651,7 +2511,7 @@ a boolean flag will avoid appending more.
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:504](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L504)
+[src/canvas/StaticCanvas.ts:504](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L504)
 
 ___
 
@@ -2669,7 +2529,7 @@ stack.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | Object to send |
+| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | Object to send |
 | `intersecting?` | `boolean` | If `true`, send object behind next lower intersecting object |
 
 #### Returns
@@ -2680,11 +2540,11 @@ true if change occurred
 
 #### Inherited from
 
-createCollectionMixin(CommonMethods<CanvasEvents\>).sendObjectBackwards
+createCollectionMixin(CommonMethods\<CanvasEvents\>).sendObjectBackwards
 
 #### Defined in
 
-[src/Collection.ts:206](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Collection.ts#L206)
+[src/Collection.ts:206](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L206)
 
 ___
 
@@ -2699,7 +2559,7 @@ to the bottom of the stack of drawn objects
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | Object to send to back |
+| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | Object to send to back |
 
 #### Returns
 
@@ -2709,17 +2569,17 @@ true if change occurred
 
 #### Inherited from
 
-createCollectionMixin(CommonMethods<CanvasEvents\>).sendObjectToBack
+createCollectionMixin(CommonMethods\<CanvasEvents\>).sendObjectToBack
 
 #### Defined in
 
-[src/Collection.ts:170](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Collection.ts#L170)
+[src/Collection.ts:170](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L170)
 
 ___
 
 ### set
 
-▸ **set**(`key`, `value?`): [`StaticCanvas`](/apidocs/classes/StaticCanvas.md)<`EventSpec`\>
+▸ **set**(`key`, `value?`): [`StaticCanvas`](/apidocs/classes/StaticCanvas.md)\<`EventSpec`\>
 
 Sets property to a given value. When changing position/dimension -related properties (left, top, scale, angle, etc.) `set` does not update position of object's borders/controls. If you need to update those, call `setCoords()`.
 
@@ -2727,20 +2587,20 @@ Sets property to a given value. When changing position/dimension -related proper
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `key` | `string` \| `Record`<`string`, `any`\> | Property name or object (if object, iterate over the object properties) |
+| `key` | `string` \| `Record`\<`string`, `any`\> | Property name or object (if object, iterate over the object properties) |
 | `value?` | `any` | Property value (if function, the value is passed into it and its return value is used as a new one) |
 
 #### Returns
 
-[`StaticCanvas`](/apidocs/classes/StaticCanvas.md)<`EventSpec`\>
+[`StaticCanvas`](/apidocs/classes/StaticCanvas.md)\<`EventSpec`\>
 
 #### Inherited from
 
-createCollectionMixin(CommonMethods<CanvasEvents\>).set
+createCollectionMixin(CommonMethods\<CanvasEvents\>).set
 
 #### Defined in
 
-[src/CommonMethods.ts:29](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/CommonMethods.ts#L29)
+[src/CommonMethods.ts:29](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/CommonMethods.ts#L29)
 
 ___
 
@@ -2754,7 +2614,7 @@ Sets dimensions (width, height) of this canvas instance. when options.cssOnly fl
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `dimensions` | `Partial`<[`TSize`](/apidocs/modules.md#tsize)\> | Object with width/height properties |
+| `dimensions` | `Partial`\<[`TSize`](/apidocs/modules.md#tsize)\> | Object with width/height properties |
 | `options?` | [`TCanvasSizeOptions`](/apidocs/modules.md#tcanvassizeoptions) | Options object |
 
 #### Returns
@@ -2763,7 +2623,7 @@ Sets dimensions (width, height) of this canvas instance. when options.cssOnly fl
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:339](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L339)
+[src/canvas/StaticCanvas.ts:339](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L339)
 
 ___
 
@@ -2790,7 +2650,7 @@ will be removed in 7.0
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:300](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L300)
+[src/canvas/StaticCanvas.ts:300](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L300)
 
 ___
 
@@ -2812,7 +2672,7 @@ Sets viewport transformation of this canvas instance
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:364](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L364)
+[src/canvas/StaticCanvas.ts:364](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L364)
 
 ___
 
@@ -2839,7 +2699,7 @@ will be removed in 7.0
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:288](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L288)
+[src/canvas/StaticCanvas.ts:288](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L288)
 
 ___
 
@@ -2861,7 +2721,7 @@ Sets zoom level of this canvas instance
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:409](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L409)
+[src/canvas/StaticCanvas.ts:409](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L409)
 
 ___
 
@@ -2879,11 +2739,11 @@ Collection size
 
 #### Inherited from
 
-createCollectionMixin(CommonMethods<CanvasEvents\>).size
+createCollectionMixin(CommonMethods\<CanvasEvents\>).size
 
 #### Defined in
 
-[src/Collection.ts:128](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Collection.ts#L128)
+[src/Collection.ts:128](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L128)
 
 ___
 
@@ -2902,7 +2762,7 @@ create quick image copies of a canvas without passing for the dataUrl string
 | Name | Type | Default value | Description |
 | :------ | :------ | :------ | :------ |
 | `multiplier?` | `number` | `1` | a zoom factor. |
-| `options?` | [`TToCanvasElementOptions`](/apidocs/modules.md#ttocanvaselementoptions)<`FabricObject`<`Partial`<`ObjectProps`\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>\> | `undefined` | Cropping informations |
+| `options?` | [`TToCanvasElementOptions`](/apidocs/modules.md#ttocanvaselementoptions)\<`FabricObject`\<`Partial`\<`ObjectProps`\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>\> | `undefined` | Cropping informations |
 
 #### Returns
 
@@ -2910,7 +2770,7 @@ create quick image copies of a canvas without passing for the dataUrl string
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1401](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L1401)
+[src/canvas/StaticCanvas.ts:1401](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L1401)
 
 ___
 
@@ -2924,7 +2784,7 @@ Exports canvas element to a dataurl image. Note that when multiplier is used, cr
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `options?` | [`TDataUrlOptions`](/apidocs/modules.md#tdataurloptions)<`FabricObject`<`Partial`<`ObjectProps`\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>\> | Options object |
+| `options?` | [`TDataUrlOptions`](/apidocs/modules.md#tdataurloptions)\<`FabricObject`\<`Partial`\<`ObjectProps`\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>\> | Options object |
 
 #### Returns
 
@@ -2981,7 +2841,7 @@ var dataURL = canvas.toDataURL({
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1370](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L1370)
+[src/canvas/StaticCanvas.ts:1370](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L1370)
 
 ___
 
@@ -3005,7 +2865,7 @@ json string
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:805](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L805)
+[src/canvas/StaticCanvas.ts:805](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L805)
 
 ___
 
@@ -3029,7 +2889,7 @@ object representation of an instance
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:842](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L842)
+[src/canvas/StaticCanvas.ts:842](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L842)
 
 ___
 
@@ -3079,7 +2939,7 @@ var json = canvas.toJSON();
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:833](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L833)
+[src/canvas/StaticCanvas.ts:833](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L833)
 
 ___
 
@@ -3103,7 +2963,7 @@ object representation of an instance
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:814](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L814)
+[src/canvas/StaticCanvas.ts:814](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L814)
 
 ___
 
@@ -3182,7 +3042,7 @@ var svg = canvas.toSVG(null, function(svg) {
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:981](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L981)
+[src/canvas/StaticCanvas.ts:981](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L981)
 
 ___
 
@@ -3200,13 +3060,13 @@ string representation of an instance
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1500](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L1500)
+[src/canvas/StaticCanvas.ts:1500](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L1500)
 
 ___
 
 ### toggle
 
-▸ **toggle**(`property`): [`StaticCanvas`](/apidocs/classes/StaticCanvas.md)<`EventSpec`\>
+▸ **toggle**(`property`): [`StaticCanvas`](/apidocs/classes/StaticCanvas.md)\<`EventSpec`\>
 
 Toggles specified property from `true` to `false` or from `false` to `true`
 
@@ -3218,15 +3078,15 @@ Toggles specified property from `true` to `false` or from `false` to `true`
 
 #### Returns
 
-[`StaticCanvas`](/apidocs/classes/StaticCanvas.md)<`EventSpec`\>
+[`StaticCanvas`](/apidocs/classes/StaticCanvas.md)\<`EventSpec`\>
 
 #### Inherited from
 
-createCollectionMixin(CommonMethods<CanvasEvents\>).toggle
+createCollectionMixin(CommonMethods\<CanvasEvents\>).toggle
 
 #### Defined in
 
-[src/CommonMethods.ts:46](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/CommonMethods.ts#L46)
+[src/CommonMethods.ts:46](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/CommonMethods.ts#L46)
 
 ___
 
@@ -3240,7 +3100,7 @@ Centers object vertically and horizontally in the viewport
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | Object to center vertically and horizontally |
+| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | Object to center vertically and horizontally |
 
 #### Returns
 
@@ -3248,7 +3108,7 @@ Centers object vertically and horizontally in the viewport
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:752](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L752)
+[src/canvas/StaticCanvas.ts:752](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L752)
 
 ___
 
@@ -3262,7 +3122,7 @@ Centers object horizontally in the viewport, object.top is unchanged
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | Object to center vertically and horizontally |
+| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | Object to center vertically and horizontally |
 
 #### Returns
 
@@ -3270,7 +3130,7 @@ Centers object horizontally in the viewport, object.top is unchanged
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:760](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L760)
+[src/canvas/StaticCanvas.ts:760](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L760)
 
 ___
 
@@ -3284,7 +3144,7 @@ Centers object Vertically in the viewport, object.top is unchanged
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | Object to center vertically and horizontally |
+| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | Object to center vertically and horizontally |
 
 #### Returns
 
@@ -3292,7 +3152,7 @@ Centers object Vertically in the viewport, object.top is unchanged
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:771](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L771)
+[src/canvas/StaticCanvas.ts:771](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L771)
 
 ___
 
@@ -3318,18 +3178,18 @@ It has nothing to do with canvas center or visual center of the viewport.
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:392](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L392)
+[src/canvas/StaticCanvas.ts:392](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L392)
 
 ___
 
 ### getDefaults
 
-▸ `Static` **getDefaults**(): `Record`<`string`, `any`\>
+▸ **getDefaults**(): `Record`\<`string`, `any`\>
 
 #### Returns
 
-`Record`<`string`, `any`\>
+`Record`\<`string`, `any`\>
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:171](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/StaticCanvas.ts#L171)
+[src/canvas/StaticCanvas.ts:171](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L171)

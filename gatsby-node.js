@@ -77,7 +77,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     createNodeField({
       node,
       name: 'slug',
-      value: `/apidocs${slug.replace(/ +/g, '-').replace(/-+/g, '-')}`,
+      value: `/apidocs${slug.replace(/ +/g, '-').replace(/-+/g, '-')}.md`,
     });
   }
 };
@@ -267,7 +267,7 @@ exports.createPages = async ({ graphql, actions }) => {
       allApidocPagesMD: allMarkdownRemark(
         filter: {
           fileAbsolutePath: {
-            regex: "//tsdocs/[a-zA-Z0-9-]+/[a-zA-Z0-9-]+.md/"
+            regex: "//tsdocs/[a-zA-Z0-9-]+/[a-zA-Z0-9-.]+.md/"
           }
         }
       ) {

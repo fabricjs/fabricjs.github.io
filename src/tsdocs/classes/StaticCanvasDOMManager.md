@@ -6,31 +6,11 @@
 
   ↳ [`CanvasDOMManager`](/apidocs/classes/CanvasDOMManager.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](/apidocs/classes/StaticCanvasDOMManager.md#constructor)
-
-### Properties
-
-- [\_originalCanvasStyle](/apidocs/classes/StaticCanvasDOMManager.md#_originalcanvasstyle)
-- [lower](/apidocs/classes/StaticCanvasDOMManager.md#lower)
-
-### Methods
-
-- [calcOffset](/apidocs/classes/StaticCanvasDOMManager.md#calcoffset)
-- [cleanupDOM](/apidocs/classes/StaticCanvasDOMManager.md#cleanupdom)
-- [createLowerCanvas](/apidocs/classes/StaticCanvasDOMManager.md#createlowercanvas)
-- [dispose](/apidocs/classes/StaticCanvasDOMManager.md#dispose)
-- [setCSSDimensions](/apidocs/classes/StaticCanvasDOMManager.md#setcssdimensions)
-- [setDimensions](/apidocs/classes/StaticCanvasDOMManager.md#setdimensions)
-
 ## Constructors
 
 ### constructor
 
-• **new StaticCanvasDOMManager**(`arg0?`)
+• **new StaticCanvasDOMManager**(`arg0?`): [`StaticCanvasDOMManager`](/apidocs/classes/StaticCanvasDOMManager.md)
 
 #### Parameters
 
@@ -38,9 +18,13 @@
 | :------ | :------ |
 | `arg0?` | `string` \| `HTMLCanvasElement` |
 
+#### Returns
+
+[`StaticCanvasDOMManager`](/apidocs/classes/StaticCanvasDOMManager.md)
+
 #### Defined in
 
-[src/canvas/DOMManagers/StaticCanvasDOMManager.ts:24](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/DOMManagers/StaticCanvasDOMManager.ts#L24)
+[src/canvas/DOMManagers/StaticCanvasDOMManager.ts:24](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/DOMManagers/StaticCanvasDOMManager.ts#L24)
 
 ## Properties
 
@@ -53,7 +37,7 @@ in order to return it to original state on dispose
 
 #### Defined in
 
-[src/canvas/DOMManagers/StaticCanvasDOMManager.ts:20](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/DOMManagers/StaticCanvasDOMManager.ts#L20)
+[src/canvas/DOMManagers/StaticCanvasDOMManager.ts:20](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/DOMManagers/StaticCanvasDOMManager.ts#L20)
 
 ___
 
@@ -63,7 +47,7 @@ ___
 
 #### Defined in
 
-[src/canvas/DOMManagers/StaticCanvasDOMManager.ts:22](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/DOMManagers/StaticCanvasDOMManager.ts#L22)
+[src/canvas/DOMManagers/StaticCanvasDOMManager.ts:22](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/DOMManagers/StaticCanvasDOMManager.ts#L22)
 
 ## Methods
 
@@ -84,7 +68,7 @@ Calculates canvas element offset relative to the document
 
 #### Defined in
 
-[src/canvas/DOMManagers/StaticCanvasDOMManager.ts:71](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/DOMManagers/StaticCanvasDOMManager.ts#L71)
+[src/canvas/DOMManagers/StaticCanvasDOMManager.ts:71](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/DOMManagers/StaticCanvasDOMManager.ts#L71)
 
 ___
 
@@ -104,13 +88,13 @@ ___
 
 #### Defined in
 
-[src/canvas/DOMManagers/StaticCanvasDOMManager.ts:47](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/DOMManagers/StaticCanvasDOMManager.ts#L47)
+[src/canvas/DOMManagers/StaticCanvasDOMManager.ts:47](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/DOMManagers/StaticCanvasDOMManager.ts#L47)
 
 ___
 
 ### createLowerCanvas
 
-▸ `Protected` **createLowerCanvas**(`arg0?`): `HTMLCanvasElement`
+▸ **createLowerCanvas**(`arg0?`): `HTMLCanvasElement`
 
 #### Parameters
 
@@ -124,7 +108,7 @@ ___
 
 #### Defined in
 
-[src/canvas/DOMManagers/StaticCanvasDOMManager.ts:29](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/DOMManagers/StaticCanvasDOMManager.ts#L29)
+[src/canvas/DOMManagers/StaticCanvasDOMManager.ts:29](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/DOMManagers/StaticCanvasDOMManager.ts#L29)
 
 ___
 
@@ -138,7 +122,7 @@ ___
 
 #### Defined in
 
-[src/canvas/DOMManagers/StaticCanvasDOMManager.ts:75](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/DOMManagers/StaticCanvasDOMManager.ts#L75)
+[src/canvas/DOMManagers/StaticCanvasDOMManager.ts:75](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/DOMManagers/StaticCanvasDOMManager.ts#L75)
 
 ___
 
@@ -150,7 +134,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `size` | `Partial`<`CSSDimensions`\> |
+| `size` | `Partial`\<`CSSDimensions`\> |
 
 #### Returns
 
@@ -158,7 +142,7 @@ ___
 
 #### Defined in
 
-[src/canvas/DOMManagers/StaticCanvasDOMManager.ts:64](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/DOMManagers/StaticCanvasDOMManager.ts#L64)
+[src/canvas/DOMManagers/StaticCanvasDOMManager.ts:64](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/DOMManagers/StaticCanvasDOMManager.ts#L64)
 
 ___
 
@@ -179,4 +163,4 @@ ___
 
 #### Defined in
 
-[src/canvas/DOMManagers/StaticCanvasDOMManager.ts:59](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/canvas/DOMManagers/StaticCanvasDOMManager.ts#L59)
+[src/canvas/DOMManagers/StaticCanvasDOMManager.ts:59](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/DOMManagers/StaticCanvasDOMManager.ts#L59)

@@ -67,55 +67,11 @@ canvas.renderAll();
 
   ↳ **`Convolute`**
 
-## Table of contents
-
-### Constructors
-
-- [constructor](/apidocs/classes/filters.Convolute.md#constructor)
-
-### Properties
-
-- [mainParameter](/apidocs/classes/filters.Convolute.md#mainparameter)
-- [matrix](/apidocs/classes/filters.Convolute.md#matrix)
-- [opaque](/apidocs/classes/filters.Convolute.md#opaque)
-- [vertexSource](/apidocs/classes/filters.Convolute.md#vertexsource)
-- [defaults](/apidocs/classes/filters.Convolute.md#defaults)
-- [type](/apidocs/classes/filters.Convolute.md#type)
-
-### Accessors
-
-- [type](/apidocs/classes/filters.Convolute.md#type-1)
-
-### Methods
-
-- [\_setupFrameBuffer](/apidocs/classes/filters.Convolute.md#_setupframebuffer)
-- [\_swapTextures](/apidocs/classes/filters.Convolute.md#_swaptextures)
-- [applyTo](/apidocs/classes/filters.Convolute.md#applyto)
-- [applyTo2d](/apidocs/classes/filters.Convolute.md#applyto2d)
-- [applyToWebGL](/apidocs/classes/filters.Convolute.md#applytowebgl)
-- [bindAdditionalTexture](/apidocs/classes/filters.Convolute.md#bindadditionaltexture)
-- [createHelpLayer](/apidocs/classes/filters.Convolute.md#createhelplayer)
-- [createProgram](/apidocs/classes/filters.Convolute.md#createprogram)
-- [getAttributeLocations](/apidocs/classes/filters.Convolute.md#getattributelocations)
-- [getCacheKey](/apidocs/classes/filters.Convolute.md#getcachekey)
-- [getFragmentSource](/apidocs/classes/filters.Convolute.md#getfragmentsource)
-- [getMainParameter](/apidocs/classes/filters.Convolute.md#getmainparameter)
-- [getUniformLocations](/apidocs/classes/filters.Convolute.md#getuniformlocations)
-- [isNeutralState](/apidocs/classes/filters.Convolute.md#isneutralstate)
-- [retrieveShader](/apidocs/classes/filters.Convolute.md#retrieveshader)
-- [sendAttributeData](/apidocs/classes/filters.Convolute.md#sendattributedata)
-- [sendUniformData](/apidocs/classes/filters.Convolute.md#senduniformdata)
-- [setMainParameter](/apidocs/classes/filters.Convolute.md#setmainparameter)
-- [toJSON](/apidocs/classes/filters.Convolute.md#tojson)
-- [toObject](/apidocs/classes/filters.Convolute.md#toobject)
-- [unbindAdditionalTexture](/apidocs/classes/filters.Convolute.md#unbindadditionaltexture)
-- [fromObject](/apidocs/classes/filters.Convolute.md#fromobject)
-
 ## Constructors
 
 ### constructor
 
-• **new Convolute**(`options?`)
+• **new Convolute**(`options?`): [`Convolute`](/apidocs/classes/filters.Convolute.md)
 
 Constructor
 
@@ -123,7 +79,11 @@ Constructor
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `options?` | `Record`<`string`, `any`\> | Options object |
+| `options?` | `Record`\<`string`, `any`\> | Options object |
+
+#### Returns
+
+[`Convolute`](/apidocs/classes/filters.Convolute.md)
 
 #### Inherited from
 
@@ -131,7 +91,7 @@ Constructor
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:58](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L58)
+[src/filters/BaseFilter.ts:58](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L58)
 
 ## Properties
 
@@ -149,7 +109,7 @@ mainParameter
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:52](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L52)
+[src/filters/BaseFilter.ts:52](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L52)
 
 ___
 
@@ -159,7 +119,7 @@ ___
 
 #### Defined in
 
-[src/filters/Convolute.ts:61](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/Convolute.ts#L61)
+[src/filters/Convolute.ts:61](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/Convolute.ts#L61)
 
 ___
 
@@ -169,7 +129,7 @@ ___
 
 #### Defined in
 
-[src/filters/Convolute.ts:56](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/Convolute.ts#L56)
+[src/filters/Convolute.ts:56](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/Convolute.ts#L56)
 
 ___
 
@@ -185,13 +145,13 @@ Array of attributes to send with buffers. do not modify
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:44](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L44)
+[src/filters/BaseFilter.ts:44](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L44)
 
 ___
 
 ### defaults
 
-▪ `Static` **defaults**: `Partial`<[`TClassProperties`](/apidocs/modules.md#tclassproperties)<[`Convolute`](/apidocs/classes/filters.Convolute.md)\>\> = `convoluteDefaultValues`
+▪ `Static` **defaults**: `Partial`\<[`TClassProperties`](/apidocs/modules.md#tclassproperties)\<[`Convolute`](/apidocs/classes/filters.Convolute.md)\>\> = `convoluteDefaultValues`
 
 #### Overrides
 
@@ -199,7 +159,7 @@ ___
 
 #### Defined in
 
-[src/filters/Convolute.ts:65](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/Convolute.ts#L65)
+[src/filters/Convolute.ts:65](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/Convolute.ts#L65)
 
 ___
 
@@ -219,7 +179,7 @@ to avoid doing that.
 
 #### Defined in
 
-[src/filters/Convolute.ts:63](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/Convolute.ts#L63)
+[src/filters/Convolute.ts:63](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/Convolute.ts#L63)
 
 ## Accessors
 
@@ -245,7 +205,7 @@ BaseFilter.type
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:25](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L25)
+[src/filters/BaseFilter.ts:25](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L25)
 
 ## Methods
 
@@ -269,7 +229,7 @@ BaseFilter.type
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:190](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L190)
+[src/filters/BaseFilter.ts:190](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L190)
 
 ___
 
@@ -293,7 +253,7 @@ ___
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:217](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L217)
+[src/filters/BaseFilter.ts:217](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L217)
 
 ___
 
@@ -321,7 +281,7 @@ Determines whether to use WebGL or Canvas2D based on the options.webgl flag.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:265](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L265)
+[src/filters/BaseFilter.ts:265](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L265)
 
 ___
 
@@ -347,7 +307,7 @@ Apply the Brightness operation to a Uint8ClampedArray representing the pixels of
 
 #### Defined in
 
-[src/filters/Convolute.ts:83](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/Convolute.ts#L83)
+[src/filters/Convolute.ts:83](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/Convolute.ts#L83)
 
 ___
 
@@ -373,7 +333,7 @@ Apply this filter using webgl.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:315](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L315)
+[src/filters/BaseFilter.ts:315](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L315)
 
 ___
 
@@ -399,7 +359,7 @@ ___
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:334](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L334)
+[src/filters/BaseFilter.ts:334](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L334)
 
 ___
 
@@ -426,7 +386,7 @@ remember that options.targetCanvas is available for use till end of chain.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:380](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L380)
+[src/filters/BaseFilter.ts:380](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L380)
 
 ___
 
@@ -460,7 +420,7 @@ Compile this filter's shader program.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:77](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L77)
+[src/filters/BaseFilter.ts:77](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L77)
 
 ___
 
@@ -489,7 +449,7 @@ A map of attribute names to attribute locations.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:146](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L146)
+[src/filters/BaseFilter.ts:146](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L146)
 
 ___
 
@@ -510,7 +470,7 @@ Used to force recompilation when parameters change or to retrieve the shader fro
 
 #### Defined in
 
-[src/filters/Convolute.ts:67](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/Convolute.ts#L67)
+[src/filters/Convolute.ts:67](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/Convolute.ts#L67)
 
 ___
 
@@ -528,17 +488,17 @@ ___
 
 #### Defined in
 
-[src/filters/Convolute.ts:73](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/Convolute.ts#L73)
+[src/filters/Convolute.ts:73](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/Convolute.ts#L73)
 
 ___
 
 ### getMainParameter
 
-▸ **getMainParameter**(): `undefined` \| `string` \| `boolean` \| `number`[] \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => [`TWebGLProgramCacheItem`](/apidocs/modules.md#twebglprogramcacheitem) \| (`options?`: `any`) => `boolean` \| () => { `matrix`: `number`[] ; `opaque`: `boolean` ; `type`: `string`  } \| () => { `type`: `string`  } \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap) \| (`gl`: `WebGLRenderingContext`, `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)) => `void` \| () => ``"Convolute_3_1"`` \| ``"Convolute_3_0"`` \| ``"Convolute_5_1"`` \| ``"Convolute_5_0"`` \| ``"Convolute_7_1"`` \| ``"Convolute_7_0"`` \| ``"Convolute_9_1"`` \| ``"Convolute_9_0"`` \| () => `string` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate) \| [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `fragmentSource`: `string`, `vertexSource`: `string`) => { `attributeLocations`: [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) ; `program`: `WebGLProgram` ; `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)  } \| (`gl`: `WebGLRenderingContext`, `attributeLocations`: `Record`<`string`, `number`\>, `aPositionData`: `Float32Array`) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `texture`: `WebGLTexture`, `textureUnit`: `number`) => `void` \| (`gl`: `WebGLRenderingContext`, `textureUnit`: `number`) => `void` \| () => `undefined` \| `string` \| `boolean` \| `number`[] \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => [`TWebGLProgramCacheItem`](/apidocs/modules.md#twebglprogramcacheitem) \| (`options?`: `any`) => `boolean` \| () => { `matrix`: `number`[] ; `opaque`: `boolean` ; `type`: `string`  } \| () => { `type`: `string`  } \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap) \| (`gl`: `WebGLRenderingContext`, `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)) => `void` \| () => ``"Convolute_3_1"`` \| ``"Convolute_3_0"`` \| ``"Convolute_5_1"`` \| ``"Convolute_5_0"`` \| ``"Convolute_7_1"`` \| ``"Convolute_7_0"`` \| ``"Convolute_9_1"`` \| ``"Convolute_9_0"`` \| () => `string` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate) \| [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `fragmentSource`: `string`, `vertexSource`: `string`) => { `attributeLocations`: [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) ; `program`: `WebGLProgram` ; `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)  } \| (`gl`: `WebGLRenderingContext`, `attributeLocations`: `Record`<`string`, `number`\>, `aPositionData`: `Float32Array`) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `texture`: `WebGLTexture`, `textureUnit`: `number`) => `void` \| (`gl`: `WebGLRenderingContext`, `textureUnit`: `number`) => `void` \| () =\> string \| boolean \| number[] \| ((gl: WebGLRenderingContext, program: WebGLProgram) =\> TWebGLAttributeLocationMap) \| ... 20 more ... \| undefined \| (`value`: `any`) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`value`: `any`) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void`
+▸ **getMainParameter**(): `undefined` \| `string` \| `boolean` \| `number`[] \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => [`TWebGLProgramCacheItem`](/apidocs/modules.md#twebglprogramcacheitem) \| (`options?`: `any`) => `boolean` \| () => \{ `matrix`: `number`[] ; `opaque`: `boolean` ; `type`: `string`  } \| () => \{ `type`: `string`  } \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap) \| (`gl`: `WebGLRenderingContext`, `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)) => `void` \| () => ``"Convolute_3_1"`` \| ``"Convolute_3_0"`` \| ``"Convolute_5_1"`` \| ``"Convolute_5_0"`` \| ``"Convolute_7_1"`` \| ``"Convolute_7_0"`` \| ``"Convolute_9_1"`` \| ``"Convolute_9_0"`` \| () => `string` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate) \| [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `fragmentSource`: `string`, `vertexSource`: `string`) => \{ `attributeLocations`: [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) ; `program`: `WebGLProgram` ; `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)  } \| (`gl`: `WebGLRenderingContext`, `attributeLocations`: `Record`\<`string`, `number`\>, `aPositionData`: `Float32Array`) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `texture`: `WebGLTexture`, `textureUnit`: `number`) => `void` \| (`gl`: `WebGLRenderingContext`, `textureUnit`: `number`) => `void` \| () => `undefined` \| `string` \| `boolean` \| `number`[] \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => [`TWebGLProgramCacheItem`](/apidocs/modules.md#twebglprogramcacheitem) \| (`options?`: `any`) => `boolean` \| () => \{ `matrix`: `number`[] ; `opaque`: `boolean` ; `type`: `string`  } \| () => \{ `type`: `string`  } \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap) \| (`gl`: `WebGLRenderingContext`, `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)) => `void` \| () => ``"Convolute_3_1"`` \| ``"Convolute_3_0"`` \| ``"Convolute_5_1"`` \| ``"Convolute_5_0"`` \| ``"Convolute_7_1"`` \| ``"Convolute_7_0"`` \| ``"Convolute_9_1"`` \| ``"Convolute_9_0"`` \| () => `string` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate) \| [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `fragmentSource`: `string`, `vertexSource`: `string`) => \{ `attributeLocations`: [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) ; `program`: `WebGLProgram` ; `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)  } \| (`gl`: `WebGLRenderingContext`, `attributeLocations`: `Record`\<`string`, `number`\>, `aPositionData`: `Float32Array`) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `texture`: `WebGLTexture`, `textureUnit`: `number`) => `void` \| (`gl`: `WebGLRenderingContext`, `textureUnit`: `number`) => `void` \| () =\> string \| boolean \| number[] \| ((gl: WebGLRenderingContext, program: WebGLProgram) =\> TWebGLAttributeLocationMap) \| ... 20 more ... \| undefined \| (`value`: `any`) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`value`: `any`) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void`
 
 #### Returns
 
-`undefined` \| `string` \| `boolean` \| `number`[] \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => [`TWebGLProgramCacheItem`](/apidocs/modules.md#twebglprogramcacheitem) \| (`options?`: `any`) => `boolean` \| () => { `matrix`: `number`[] ; `opaque`: `boolean` ; `type`: `string`  } \| () => { `type`: `string`  } \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap) \| (`gl`: `WebGLRenderingContext`, `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)) => `void` \| () => ``"Convolute_3_1"`` \| ``"Convolute_3_0"`` \| ``"Convolute_5_1"`` \| ``"Convolute_5_0"`` \| ``"Convolute_7_1"`` \| ``"Convolute_7_0"`` \| ``"Convolute_9_1"`` \| ``"Convolute_9_0"`` \| () => `string` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate) \| [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `fragmentSource`: `string`, `vertexSource`: `string`) => { `attributeLocations`: [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) ; `program`: `WebGLProgram` ; `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)  } \| (`gl`: `WebGLRenderingContext`, `attributeLocations`: `Record`<`string`, `number`\>, `aPositionData`: `Float32Array`) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `texture`: `WebGLTexture`, `textureUnit`: `number`) => `void` \| (`gl`: `WebGLRenderingContext`, `textureUnit`: `number`) => `void` \| () => `undefined` \| `string` \| `boolean` \| `number`[] \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => [`TWebGLProgramCacheItem`](/apidocs/modules.md#twebglprogramcacheitem) \| (`options?`: `any`) => `boolean` \| () => { `matrix`: `number`[] ; `opaque`: `boolean` ; `type`: `string`  } \| () => { `type`: `string`  } \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap) \| (`gl`: `WebGLRenderingContext`, `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)) => `void` \| () => ``"Convolute_3_1"`` \| ``"Convolute_3_0"`` \| ``"Convolute_5_1"`` \| ``"Convolute_5_0"`` \| ``"Convolute_7_1"`` \| ``"Convolute_7_0"`` \| ``"Convolute_9_1"`` \| ``"Convolute_9_0"`` \| () => `string` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate) \| [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `fragmentSource`: `string`, `vertexSource`: `string`) => { `attributeLocations`: [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) ; `program`: `WebGLProgram` ; `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)  } \| (`gl`: `WebGLRenderingContext`, `attributeLocations`: `Record`<`string`, `number`\>, `aPositionData`: `Float32Array`) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `texture`: `WebGLTexture`, `textureUnit`: `number`) => `void` \| (`gl`: `WebGLRenderingContext`, `textureUnit`: `number`) => `void` \| () =\> string \| boolean \| number[] \| ((gl: WebGLRenderingContext, program: WebGLProgram) =\> TWebGLAttributeLocationMap) \| ... 20 more ... \| undefined \| (`value`: `any`) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`value`: `any`) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void`
+`undefined` \| `string` \| `boolean` \| `number`[] \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => [`TWebGLProgramCacheItem`](/apidocs/modules.md#twebglprogramcacheitem) \| (`options?`: `any`) => `boolean` \| () => \{ `matrix`: `number`[] ; `opaque`: `boolean` ; `type`: `string`  } \| () => \{ `type`: `string`  } \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap) \| (`gl`: `WebGLRenderingContext`, `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)) => `void` \| () => ``"Convolute_3_1"`` \| ``"Convolute_3_0"`` \| ``"Convolute_5_1"`` \| ``"Convolute_5_0"`` \| ``"Convolute_7_1"`` \| ``"Convolute_7_0"`` \| ``"Convolute_9_1"`` \| ``"Convolute_9_0"`` \| () => `string` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate) \| [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `fragmentSource`: `string`, `vertexSource`: `string`) => \{ `attributeLocations`: [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) ; `program`: `WebGLProgram` ; `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)  } \| (`gl`: `WebGLRenderingContext`, `attributeLocations`: `Record`\<`string`, `number`\>, `aPositionData`: `Float32Array`) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `texture`: `WebGLTexture`, `textureUnit`: `number`) => `void` \| (`gl`: `WebGLRenderingContext`, `textureUnit`: `number`) => `void` \| () => `undefined` \| `string` \| `boolean` \| `number`[] \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => [`TWebGLProgramCacheItem`](/apidocs/modules.md#twebglprogramcacheitem) \| (`options?`: `any`) => `boolean` \| () => \{ `matrix`: `number`[] ; `opaque`: `boolean` ; `type`: `string`  } \| () => \{ `type`: `string`  } \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap) \| (`gl`: `WebGLRenderingContext`, `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)) => `void` \| () => ``"Convolute_3_1"`` \| ``"Convolute_3_0"`` \| ``"Convolute_5_1"`` \| ``"Convolute_5_0"`` \| ``"Convolute_7_1"`` \| ``"Convolute_7_0"`` \| ``"Convolute_9_1"`` \| ``"Convolute_9_0"`` \| () => `string` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate) \| [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `fragmentSource`: `string`, `vertexSource`: `string`) => \{ `attributeLocations`: [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) ; `program`: `WebGLProgram` ; `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)  } \| (`gl`: `WebGLRenderingContext`, `attributeLocations`: `Record`\<`string`, `number`\>, `aPositionData`: `Float32Array`) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `texture`: `WebGLTexture`, `textureUnit`: `number`) => `void` \| (`gl`: `WebGLRenderingContext`, `textureUnit`: `number`) => `void` \| () =\> string \| boolean \| number[] \| ((gl: WebGLRenderingContext, program: WebGLProgram) =\> TWebGLAttributeLocationMap) \| ... 20 more ... \| undefined \| (`value`: `any`) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`value`: `any`) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void`
 
 #### Inherited from
 
@@ -546,7 +506,7 @@ ___
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:351](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L351)
+[src/filters/BaseFilter.ts:351](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L351)
 
 ___
 
@@ -573,7 +533,7 @@ Return WebGL uniform locations for this filter's shader.
 
 #### Defined in
 
-[src/filters/Convolute.ts:148](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/Convolute.ts#L148)
+[src/filters/Convolute.ts:148](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/Convolute.ts#L148)
 
 ___
 
@@ -602,7 +562,7 @@ Other filters may need their own version ( ColorMatrix, HueRotation, gamma, Comp
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:233](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L233)
+[src/filters/BaseFilter.ts:233](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L233)
 
 ___
 
@@ -630,7 +590,7 @@ the compiled program shader
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:295](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L295)
+[src/filters/BaseFilter.ts:295](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L295)
 
 ___
 
@@ -645,7 +605,7 @@ Send attribute data from this filter to its shader program on the GPU.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `gl` | `WebGLRenderingContext` | The canvas context used to compile the shader program. |
-| `attributeLocations` | `Record`<`string`, `number`\> | A map of shader attribute names to their locations. |
+| `attributeLocations` | `Record`\<`string`, `number`\> | A map of shader attribute names to their locations. |
 | `aPositionData` | `Float32Array` | - |
 
 #### Returns
@@ -658,7 +618,7 @@ Send attribute data from this filter to its shader program on the GPU.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:177](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L177)
+[src/filters/BaseFilter.ts:177](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L177)
 
 ___
 
@@ -685,7 +645,7 @@ Send data from this filter to its shader program's uniforms.
 
 #### Defined in
 
-[src/filters/Convolute.ts:166](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/Convolute.ts#L166)
+[src/filters/Convolute.ts:166](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/Convolute.ts#L166)
 
 ___
 
@@ -709,7 +669,7 @@ ___
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:355](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L355)
+[src/filters/BaseFilter.ts:355](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L355)
 
 ___
 
@@ -735,7 +695,7 @@ JSON
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:405](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L405)
+[src/filters/BaseFilter.ts:405](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L405)
 
 ___
 
@@ -763,7 +723,7 @@ Object representation of an instance
 
 #### Defined in
 
-[src/filters/Convolute.ts:177](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/Convolute.ts#L177)
+[src/filters/Convolute.ts:177](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/Convolute.ts#L177)
 
 ___
 
@@ -788,24 +748,24 @@ ___
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:345](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L345)
+[src/filters/BaseFilter.ts:345](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L345)
 
 ___
 
 ### fromObject
 
-▸ `Static` **fromObject**(`«destructured»`, `options`): `Promise`<[`BaseFilter`](/apidocs/classes/filters.BaseFilter.md)\>
+▸ **fromObject**(`«destructured»`, `options`): `Promise`\<[`BaseFilter`](/apidocs/classes/filters.BaseFilter.md)\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `«destructured»` | `Record`<`string`, `any`\> |
+| `«destructured»` | `Record`\<`string`, `any`\> |
 | `options` | [`Abortable`](/apidocs/modules.md#abortable) |
 
 #### Returns
 
-`Promise`<[`BaseFilter`](/apidocs/classes/filters.BaseFilter.md)\>
+`Promise`\<[`BaseFilter`](/apidocs/classes/filters.BaseFilter.md)\>
 
 #### Inherited from
 
@@ -813,4 +773,4 @@ ___
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:410](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L410)
+[src/filters/BaseFilter.ts:410](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L410)

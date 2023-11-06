@@ -1,38 +1,5 @@
 # Namespace: controlsUtils
 
-## Table of contents
-
-### Functions
-
-- [changeWidth](/apidocs/modules/controlsUtils.md#changewidth)
-- [createObjectDefaultControls](/apidocs/modules/controlsUtils.md#createobjectdefaultcontrols)
-- [createPolyActionHandler](/apidocs/modules/controlsUtils.md#createpolyactionhandler)
-- [createPolyControls](/apidocs/modules/controlsUtils.md#createpolycontrols)
-- [createPolyPositionHandler](/apidocs/modules/controlsUtils.md#createpolypositionhandler)
-- [createResizeControls](/apidocs/modules/controlsUtils.md#createresizecontrols)
-- [createTextboxDefaultControls](/apidocs/modules/controlsUtils.md#createtextboxdefaultcontrols)
-- [dragHandler](/apidocs/modules/controlsUtils.md#draghandler)
-- [factoryPolyActionHandler](/apidocs/modules/controlsUtils.md#factorypolyactionhandler)
-- [getLocalPoint](/apidocs/modules/controlsUtils.md#getlocalpoint)
-- [polyActionHandler](/apidocs/modules/controlsUtils.md#polyactionhandler)
-- [renderCircleControl](/apidocs/modules/controlsUtils.md#rendercirclecontrol)
-- [renderSquareControl](/apidocs/modules/controlsUtils.md#rendersquarecontrol)
-- [rotationStyleHandler](/apidocs/modules/controlsUtils.md#rotationstylehandler)
-- [rotationWithSnapping](/apidocs/modules/controlsUtils.md#rotationwithsnapping)
-- [scaleCursorStyleHandler](/apidocs/modules/controlsUtils.md#scalecursorstylehandler)
-- [scaleOrSkewActionName](/apidocs/modules/controlsUtils.md#scaleorskewactionname)
-- [scaleSkewCursorStyleHandler](/apidocs/modules/controlsUtils.md#scaleskewcursorstylehandler)
-- [scalingEqually](/apidocs/modules/controlsUtils.md#scalingequally)
-- [scalingX](/apidocs/modules/controlsUtils.md#scalingx)
-- [scalingXOrSkewingY](/apidocs/modules/controlsUtils.md#scalingxorskewingy)
-- [scalingY](/apidocs/modules/controlsUtils.md#scalingy)
-- [scalingYOrSkewingX](/apidocs/modules/controlsUtils.md#scalingyorskewingx)
-- [skewCursorStyleHandler](/apidocs/modules/controlsUtils.md#skewcursorstylehandler)
-- [skewHandlerX](/apidocs/modules/controlsUtils.md#skewhandlerx)
-- [skewHandlerY](/apidocs/modules/controlsUtils.md#skewhandlery)
-- [wrapWithFireEvent](/apidocs/modules/controlsUtils.md#wrapwithfireevent)
-- [wrapWithFixedAnchor](/apidocs/modules/controlsUtils.md#wrapwithfixedanchor)
-
 ## Functions
 
 ### changeWidth
@@ -54,7 +21,7 @@
 
 #### Defined in
 
-[src/EventTypeDefs.ts:20](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/EventTypeDefs.ts#L20)
+[src/EventTypeDefs.ts:20](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L20)
 
 ___
 
@@ -80,7 +47,7 @@ ___
 
 #### Defined in
 
-[src/controls/commonControls.ts:13](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/controls/commonControls.ts#L13)
+[src/controls/commonControls.ts:13](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/controls/commonControls.ts#L13)
 
 ___
 
@@ -115,51 +82,51 @@ ___
 
 #### Defined in
 
-[src/controls/polyControl.ts:107](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/controls/polyControl.ts#L107)
+[src/controls/polyControl.ts:107](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/controls/polyControl.ts#L107)
 
 ___
 
 ### createPolyControls
 
-▸ **createPolyControls**(`poly`, `options?`): `Record`<`string`, [`Control`](/apidocs/classes/Control.md)\>
+▸ **createPolyControls**(`poly`, `options?`): `Record`\<`string`, [`Control`](/apidocs/classes/Control.md)\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `poly` | [`Polyline`](/apidocs/classes/Polyline.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedPolylineProps`](/apidocs/interfaces/SerializedPolylineProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
-| `options?` | `Partial`<[`Control`](/apidocs/classes/Control.md)\> |
+| `poly` | [`Polyline`](/apidocs/classes/Polyline.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedPolylineProps`](/apidocs/interfaces/SerializedPolylineProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
+| `options?` | `Partial`\<[`Control`](/apidocs/classes/Control.md)\> |
 
 #### Returns
 
-`Record`<`string`, [`Control`](/apidocs/classes/Control.md)\>
+`Record`\<`string`, [`Control`](/apidocs/classes/Control.md)\>
 
 #### Defined in
 
-[src/controls/polyControl.ts:110](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/controls/polyControl.ts#L110)
+[src/controls/polyControl.ts:110](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/controls/polyControl.ts#L110)
 
-▸ **createPolyControls**(`numOfControls`, `options?`): `Record`<`string`, [`Control`](/apidocs/classes/Control.md)\>
+▸ **createPolyControls**(`numOfControls`, `options?`): `Record`\<`string`, [`Control`](/apidocs/classes/Control.md)\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `numOfControls` | `number` |
-| `options?` | `Partial`<[`Control`](/apidocs/classes/Control.md)\> |
+| `options?` | `Partial`\<[`Control`](/apidocs/classes/Control.md)\> |
 
 #### Returns
 
-`Record`<`string`, [`Control`](/apidocs/classes/Control.md)\>
+`Record`\<`string`, [`Control`](/apidocs/classes/Control.md)\>
 
 #### Defined in
 
-[src/controls/polyControl.ts:114](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/controls/polyControl.ts#L114)
+[src/controls/polyControl.ts:114](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/controls/polyControl.ts#L114)
 
 ___
 
 ### createPolyPositionHandler
 
-▸ **createPolyPositionHandler**(`pointIndex`): (`dim`: [`Point`](/apidocs/classes/Point.md), `finalMatrix`: [`TMat2D`](/apidocs/modules.md#tmat2d), `polyObject`: [`Polyline`](/apidocs/classes/Polyline.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedPolylineProps`](/apidocs/interfaces/SerializedPolylineProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>) => [`Point`](/apidocs/classes/Point.md)
+▸ **createPolyPositionHandler**(`pointIndex`): (`dim`: [`Point`](/apidocs/classes/Point.md), `finalMatrix`: [`TMat2D`](/apidocs/modules.md#tmat2d), `polyObject`: [`Polyline`](/apidocs/classes/Polyline.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedPolylineProps`](/apidocs/interfaces/SerializedPolylineProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>) => [`Point`](/apidocs/classes/Point.md)
 
 This function locates the controls.
 It'll be used both for drawing and for interaction.
@@ -182,7 +149,7 @@ It'll be used both for drawing and for interaction.
 | :------ | :------ |
 | `dim` | [`Point`](/apidocs/classes/Point.md) |
 | `finalMatrix` | [`TMat2D`](/apidocs/modules.md#tmat2d) |
-| `polyObject` | [`Polyline`](/apidocs/classes/Polyline.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedPolylineProps`](/apidocs/interfaces/SerializedPolylineProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
+| `polyObject` | [`Polyline`](/apidocs/classes/Polyline.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedPolylineProps`](/apidocs/interfaces/SerializedPolylineProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
 
 ##### Returns
 
@@ -190,7 +157,7 @@ It'll be used both for drawing and for interaction.
 
 #### Defined in
 
-[src/controls/polyControl.ts:24](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/controls/polyControl.ts#L24)
+[src/controls/polyControl.ts:24](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/controls/polyControl.ts#L24)
 
 ___
 
@@ -209,7 +176,7 @@ ___
 
 #### Defined in
 
-[src/controls/commonControls.ts:85](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/controls/commonControls.ts#L85)
+[src/controls/commonControls.ts:85](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/controls/commonControls.ts#L85)
 
 ___
 
@@ -235,13 +202,13 @@ ___
 
 #### Defined in
 
-[src/controls/commonControls.ts:102](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/controls/commonControls.ts#L102)
+[src/controls/commonControls.ts:102](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/controls/commonControls.ts#L102)
 
 ___
 
 ### dragHandler
 
-▸ `Private` **dragHandler**(`eventData`, `transform`, `x`, `y`): `boolean`
+▸ **dragHandler**(`eventData`, `transform`, `x`, `y`): `boolean`
 
 Action handler
 
@@ -262,7 +229,7 @@ true if the translation occurred
 
 #### Defined in
 
-[src/EventTypeDefs.ts:20](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/EventTypeDefs.ts#L20)
+[src/EventTypeDefs.ts:20](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L20)
 
 ___
 
@@ -277,7 +244,7 @@ Keep the polygon in the same position when we change its `width`/`height`/`top`/
 | Name | Type |
 | :------ | :------ |
 | `pointIndex` | `number` |
-| `fn` | [`TransformActionHandler`](/apidocs/modules.md#transformactionhandler)<`TTransformAnchor`\> |
+| `fn` | [`TransformActionHandler`](/apidocs/modules.md#transformactionhandler)\<`TTransformAnchor`\> |
 
 #### Returns
 
@@ -300,7 +267,7 @@ Keep the polygon in the same position when we change its `width`/`height`/`top`/
 
 #### Defined in
 
-[src/controls/polyControl.ts:72](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/controls/polyControl.ts#L72)
+[src/controls/polyControl.ts:72](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/controls/polyControl.ts#L72)
 
 ___
 
@@ -328,7 +295,7 @@ the normalized point
 
 #### Defined in
 
-[src/controls/util.ts:129](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/controls/util.ts#L129)
+[src/controls/util.ts:129](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/controls/util.ts#L129)
 
 ___
 
@@ -357,7 +324,7 @@ current object being transformed.
 
 #### Defined in
 
-[src/controls/polyControl.ts:44](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/controls/polyControl.ts#L44)
+[src/controls/polyControl.ts:44](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/controls/polyControl.ts#L44)
 
 ___
 
@@ -378,8 +345,8 @@ plus the addition of offsetY and offsetX.
 | `ctx` | `CanvasRenderingContext2D` | context to render on |
 | `left` | `number` | x coordinate where the control center should be |
 | `top` | `number` | y coordinate where the control center should be |
-| `styleOverride` | `Partial`<`Pick`<`InteractiveFabricObject`<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>, ``"cornerStyle"`` \| ``"cornerSize"`` \| ``"cornerColor"`` \| ``"cornerStrokeColor"`` \| ``"cornerDashArray"`` \| ``"transparentCorners"``\>\> | override for FabricObject controls style |
-| `fabricObject` | `InteractiveFabricObject`<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | the fabric object for which we are rendering controls |
+| `styleOverride` | `Partial`\<`Pick`\<`InteractiveFabricObject`\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>, ``"cornerStyle"`` \| ``"cornerSize"`` \| ``"cornerColor"`` \| ``"cornerStrokeColor"`` \| ``"cornerDashArray"`` \| ``"transparentCorners"``\>\> | override for FabricObject controls style |
+| `fabricObject` | `InteractiveFabricObject`\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | the fabric object for which we are rendering controls |
 
 #### Returns
 
@@ -387,7 +354,7 @@ plus the addition of offsetY and offsetX.
 
 #### Defined in
 
-[src/controls/controlRendering.ts:37](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/controls/controlRendering.ts#L37)
+[src/controls/controlRendering.ts:37](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/controls/controlRendering.ts#L37)
 
 ___
 
@@ -408,8 +375,8 @@ plus the addition of offsetY and offsetX.
 | `ctx` | `CanvasRenderingContext2D` | context to render on |
 | `left` | `number` | x coordinate where the control center should be |
 | `top` | `number` | y coordinate where the control center should be |
-| `styleOverride` | `Partial`<`Pick`<`InteractiveFabricObject`<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>, ``"cornerStyle"`` \| ``"cornerSize"`` \| ``"cornerColor"`` \| ``"cornerStrokeColor"`` \| ``"cornerDashArray"`` \| ``"transparentCorners"``\>\> | override for FabricObject controls style |
-| `fabricObject` | `InteractiveFabricObject`<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | the fabric object for which we are rendering controls |
+| `styleOverride` | `Partial`\<`Pick`\<`InteractiveFabricObject`\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>, ``"cornerStyle"`` \| ``"cornerSize"`` \| ``"cornerColor"`` \| ``"cornerStrokeColor"`` \| ``"cornerDashArray"`` \| ``"transparentCorners"``\>\> | override for FabricObject controls style |
+| `fabricObject` | `InteractiveFabricObject`\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | the fabric object for which we are rendering controls |
 
 #### Returns
 
@@ -417,7 +384,7 @@ plus the addition of offsetY and offsetX.
 
 #### Defined in
 
-[src/controls/controlRendering.ts:98](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/controls/controlRendering.ts#L98)
+[src/controls/controlRendering.ts:98](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/controls/controlRendering.ts#L98)
 
 ___
 
@@ -434,7 +401,7 @@ this function is very simple and it just take care of not-allowed or standard cu
 | :------ | :------ | :------ |
 | `eventData` | [`TPointerEvent`](/apidocs/modules.md#tpointerevent) | the javascript event that is causing the scale |
 | `control` | [`Control`](/apidocs/classes/Control.md) | the control that is interested in the action |
-| `fabricObject` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | the fabric object that is interested in the action |
+| `fabricObject` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | the fabric object that is interested in the action |
 
 #### Returns
 
@@ -444,7 +411,7 @@ a valid css string for the cursor
 
 #### Defined in
 
-[src/EventTypeDefs.ts:40](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/EventTypeDefs.ts#L40)
+[src/EventTypeDefs.ts:40](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L40)
 
 ___
 
@@ -467,7 +434,7 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:20](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/EventTypeDefs.ts#L20)
+[src/EventTypeDefs.ts:20](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L20)
 
 ___
 
@@ -483,7 +450,7 @@ return the correct cursor style for the scale action
 | :------ | :------ | :------ |
 | `eventData` | [`TPointerEvent`](/apidocs/modules.md#tpointerevent) | the javascript event that is causing the scale |
 | `control` | [`Control`](/apidocs/classes/Control.md) | the control that is interested in the action |
-| `fabricObject` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | the fabric object that is interested in the action |
+| `fabricObject` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | the fabric object that is interested in the action |
 
 #### Returns
 
@@ -493,7 +460,7 @@ a valid css string for the cursor
 
 #### Defined in
 
-[src/EventTypeDefs.ts:40](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/EventTypeDefs.ts#L40)
+[src/EventTypeDefs.ts:40](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L40)
 
 ___
 
@@ -509,7 +476,7 @@ Inspect event, control and fabricObject to return the correct action name
 | :------ | :------ | :------ |
 | `eventData` | [`TPointerEvent`](/apidocs/modules.md#tpointerevent) | the javascript event that is causing the scale |
 | `control` | [`Control`](/apidocs/classes/Control.md) | the control that is interested in the action |
-| `fabricObject` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | the fabric object that is interested in the action |
+| `fabricObject` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | the fabric object that is interested in the action |
 
 #### Returns
 
@@ -519,7 +486,7 @@ an action name
 
 #### Defined in
 
-[src/EventTypeDefs.ts:40](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/EventTypeDefs.ts#L40)
+[src/EventTypeDefs.ts:40](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L40)
 
 ___
 
@@ -535,7 +502,7 @@ Combine skew and scale style handlers to cover fabric standard use case
 | :------ | :------ | :------ |
 | `eventData` | [`TPointerEvent`](/apidocs/modules.md#tpointerevent) | the javascript event that is causing the scale |
 | `control` | [`Control`](/apidocs/classes/Control.md) | the control that is interested in the action |
-| `fabricObject` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | the fabric object that is interested in the action |
+| `fabricObject` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | the fabric object that is interested in the action |
 
 #### Returns
 
@@ -545,7 +512,7 @@ a valid css string for the cursor
 
 #### Defined in
 
-[src/EventTypeDefs.ts:40](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/EventTypeDefs.ts#L40)
+[src/EventTypeDefs.ts:40](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L40)
 
 ___
 
@@ -568,7 +535,7 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:20](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/EventTypeDefs.ts#L20)
+[src/EventTypeDefs.ts:20](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L20)
 
 ___
 
@@ -591,7 +558,7 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:20](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/EventTypeDefs.ts#L20)
+[src/EventTypeDefs.ts:20](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L20)
 
 ___
 
@@ -619,7 +586,7 @@ true if some change happened
 
 #### Defined in
 
-[src/EventTypeDefs.ts:20](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/EventTypeDefs.ts#L20)
+[src/EventTypeDefs.ts:20](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L20)
 
 ___
 
@@ -642,7 +609,7 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:20](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/EventTypeDefs.ts#L20)
+[src/EventTypeDefs.ts:20](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L20)
 
 ___
 
@@ -670,7 +637,7 @@ true if some change happened
 
 #### Defined in
 
-[src/EventTypeDefs.ts:20](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/EventTypeDefs.ts#L20)
+[src/EventTypeDefs.ts:20](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L20)
 
 ___
 
@@ -686,7 +653,7 @@ return the correct cursor style for the skew action
 | :------ | :------ | :------ |
 | `eventData` | [`TPointerEvent`](/apidocs/modules.md#tpointerevent) | the javascript event that is causing the scale |
 | `control` | [`Control`](/apidocs/classes/Control.md) | the control that is interested in the action |
-| `fabricObject` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | the fabric object that is interested in the action |
+| `fabricObject` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | the fabric object that is interested in the action |
 
 #### Returns
 
@@ -696,7 +663,7 @@ a valid css string for the cursor
 
 #### Defined in
 
-[src/EventTypeDefs.ts:40](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/EventTypeDefs.ts#L40)
+[src/EventTypeDefs.ts:40](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L40)
 
 ___
 
@@ -724,7 +691,7 @@ true if some change happened
 
 #### Defined in
 
-[src/EventTypeDefs.ts:20](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/EventTypeDefs.ts#L20)
+[src/EventTypeDefs.ts:20](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L20)
 
 ___
 
@@ -752,13 +719,13 @@ true if some change happened
 
 #### Defined in
 
-[src/EventTypeDefs.ts:20](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/EventTypeDefs.ts#L20)
+[src/EventTypeDefs.ts:20](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L20)
 
 ___
 
 ### wrapWithFireEvent
 
-▸ **wrapWithFireEvent**<`T`\>(`eventName`, `actionHandler`): [`TransformActionHandler`](/apidocs/modules.md#transformactionhandler)<`T`\>
+▸ **wrapWithFireEvent**\<`T`\>(`eventName`, `actionHandler`): [`TransformActionHandler`](/apidocs/modules.md#transformactionhandler)\<`T`\>
 
 Wrap an action handler with firing an event if the action is performed
 
@@ -773,23 +740,23 @@ Wrap an action handler with firing an event if the action is performed
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `eventName` | [`TModificationEvents`](/apidocs/modules.md#tmodificationevents) | - |
-| `actionHandler` | [`TransformActionHandler`](/apidocs/modules.md#transformactionhandler)<`T`\> | the function to wrap |
+| `actionHandler` | [`TransformActionHandler`](/apidocs/modules.md#transformactionhandler)\<`T`\> | the function to wrap |
 
 #### Returns
 
-[`TransformActionHandler`](/apidocs/modules.md#transformactionhandler)<`T`\>
+[`TransformActionHandler`](/apidocs/modules.md#transformactionhandler)\<`T`\>
 
 a function with an action handler signature
 
 #### Defined in
 
-[src/controls/wrapWithFireEvent.ts:14](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/controls/wrapWithFireEvent.ts#L14)
+[src/controls/wrapWithFireEvent.ts:14](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/controls/wrapWithFireEvent.ts#L14)
 
 ___
 
 ### wrapWithFixedAnchor
 
-▸ **wrapWithFixedAnchor**<`T`\>(`actionHandler`): [`TransformActionHandler`](/apidocs/modules.md#transformactionhandler)<`T`\>
+▸ **wrapWithFixedAnchor**\<`T`\>(`actionHandler`): [`TransformActionHandler`](/apidocs/modules.md#transformactionhandler)\<`T`\>
 
 Wrap an action handler with saving/restoring object position on the transform.
 this is the code that permits to objects to keep their position while transforming.
@@ -804,14 +771,14 @@ this is the code that permits to objects to keep their position while transformi
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `actionHandler` | [`TransformActionHandler`](/apidocs/modules.md#transformactionhandler)<`T`\> | the function to wrap |
+| `actionHandler` | [`TransformActionHandler`](/apidocs/modules.md#transformactionhandler)\<`T`\> | the function to wrap |
 
 #### Returns
 
-[`TransformActionHandler`](/apidocs/modules.md#transformactionhandler)<`T`\>
+[`TransformActionHandler`](/apidocs/modules.md#transformactionhandler)\<`T`\>
 
 a function with an action handler signature
 
 #### Defined in
 
-[src/controls/wrapWithFixedAnchor.ts:9](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/controls/wrapWithFixedAnchor.ts#L9)
+[src/controls/wrapWithFixedAnchor.ts:9](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/controls/wrapWithFixedAnchor.ts#L9)

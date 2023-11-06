@@ -8,29 +8,22 @@
 
   ↳ [`CanvasEvents`](/apidocs/interfaces/CanvasEvents.md)
 
-## Table of contents
-
-### Properties
-
-- [contextmenu](/apidocs/interfaces/MiscEvents.md#contextmenu)
-- [contextmenu:before](/apidocs/interfaces/MiscEvents.md#contextmenu:before)
-
 ## Properties
 
 ### contextmenu
 
-• **contextmenu**: `SimpleEventHandler`<`Event`\>
+• **contextmenu**: `SimpleEventHandler`\<`Event`\>
 
 #### Defined in
 
-[src/EventTypeDefs.ts:261](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/EventTypeDefs.ts#L261)
+[src/EventTypeDefs.ts:261](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L261)
 
 ___
 
 ### contextmenu:before
 
-• **contextmenu:before**: `SimpleEventHandler`<`Event`\>
+• **contextmenu:before**: `SimpleEventHandler`\<`Event`\>
 
 #### Defined in
 
-[src/EventTypeDefs.ts:260](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/EventTypeDefs.ts#L260)
+[src/EventTypeDefs.ts:260](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L260)

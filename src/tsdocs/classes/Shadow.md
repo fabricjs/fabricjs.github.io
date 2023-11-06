@@ -1,42 +1,20 @@
 # Class: Shadow
 
-## Table of contents
-
-### Constructors
-
-- [constructor](/apidocs/classes/Shadow.md#constructor)
-
-### Properties
-
-- [affectStroke](/apidocs/classes/Shadow.md#affectstroke)
-- [blur](/apidocs/classes/Shadow.md#blur)
-- [color](/apidocs/classes/Shadow.md#color)
-- [id](/apidocs/classes/Shadow.md#id)
-- [includeDefaultValues](/apidocs/classes/Shadow.md#includedefaultvalues)
-- [nonScaling](/apidocs/classes/Shadow.md#nonscaling)
-- [offsetX](/apidocs/classes/Shadow.md#offsetx)
-- [offsetY](/apidocs/classes/Shadow.md#offsety)
-- [ownDefaults](/apidocs/classes/Shadow.md#owndefaults)
-- [reOffsetsAndBlur](/apidocs/classes/Shadow.md#reoffsetsandblur)
-
-### Methods
-
-- [toObject](/apidocs/classes/Shadow.md#toobject)
-- [toSVG](/apidocs/classes/Shadow.md#tosvg)
-- [toString](/apidocs/classes/Shadow.md#tostring)
-- [parseShadow](/apidocs/classes/Shadow.md#parseshadow)
-
 ## Constructors
 
 ### constructor
 
-• **new Shadow**(`options?`)
+• **new Shadow**(`options?`): [`Shadow`](/apidocs/classes/Shadow.md)
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `options?` | `Partial`<[`TClassProperties`](/apidocs/modules.md#tclassproperties)<[`Shadow`](/apidocs/classes/Shadow.md)\>\> | Options object with any of color, blur, offsetX, offsetY properties or string (e.g. "rgba(0,0,0,0.2) 2px 2px 10px") |
+| `options?` | `Partial`\<[`TClassProperties`](/apidocs/modules.md#tclassproperties)\<[`Shadow`](/apidocs/classes/Shadow.md)\>\> | Options object with any of color, blur, offsetX, offsetY properties or string (e.g. "rgba(0,0,0,0.2) 2px 2px 10px") |
+
+#### Returns
+
+[`Shadow`](/apidocs/classes/Shadow.md)
 
 **`See`**
 
@@ -44,9 +22,9 @@
 
 #### Defined in
 
-[src/Shadow.ts:89](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Shadow.ts#L89)
+[src/Shadow.ts:89](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Shadow.ts#L89)
 
-• **new Shadow**(`svgAttribute`)
+• **new Shadow**(`svgAttribute`): [`Shadow`](/apidocs/classes/Shadow.md)
 
 #### Parameters
 
@@ -54,9 +32,13 @@
 | :------ | :------ |
 | `svgAttribute` | `string` |
 
+#### Returns
+
+[`Shadow`](/apidocs/classes/Shadow.md)
+
 #### Defined in
 
-[src/Shadow.ts:90](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Shadow.ts#L90)
+[src/Shadow.ts:90](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Shadow.ts#L90)
 
 ## Properties
 
@@ -74,7 +56,7 @@ Whether the shadow should affect stroke operations
 
 #### Defined in
 
-[src/Shadow.ts:64](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Shadow.ts#L64)
+[src/Shadow.ts:64](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Shadow.ts#L64)
 
 ___
 
@@ -86,7 +68,7 @@ Shadow blur
 
 #### Defined in
 
-[src/Shadow.ts:43](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Shadow.ts#L43)
+[src/Shadow.ts:43](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Shadow.ts#L43)
 
 ___
 
@@ -104,7 +86,7 @@ Shadow color
 
 #### Defined in
 
-[src/Shadow.ts:37](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Shadow.ts#L37)
+[src/Shadow.ts:37](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Shadow.ts#L37)
 
 ___
 
@@ -114,7 +96,7 @@ ___
 
 #### Defined in
 
-[src/Shadow.ts:82](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Shadow.ts#L82)
+[src/Shadow.ts:82](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Shadow.ts#L82)
 
 ___
 
@@ -132,7 +114,7 @@ Indicates whether toObject should include default values
 
 #### Defined in
 
-[src/Shadow.ts:71](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Shadow.ts#L71)
+[src/Shadow.ts:71](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Shadow.ts#L71)
 
 ___
 
@@ -152,7 +134,7 @@ default to false
 
 #### Defined in
 
-[src/Shadow.ts:80](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Shadow.ts#L80)
+[src/Shadow.ts:80](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Shadow.ts#L80)
 
 ___
 
@@ -170,7 +152,7 @@ Shadow horizontal offset
 
 #### Defined in
 
-[src/Shadow.ts:50](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Shadow.ts#L50)
+[src/Shadow.ts:50](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Shadow.ts#L50)
 
 ___
 
@@ -188,17 +170,17 @@ Shadow vertical offset
 
 #### Defined in
 
-[src/Shadow.ts:57](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Shadow.ts#L57)
+[src/Shadow.ts:57](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Shadow.ts#L57)
 
 ___
 
 ### ownDefaults
 
-▪ `Static` **ownDefaults**: `Partial`<[`TClassProperties`](/apidocs/modules.md#tclassproperties)<[`Shadow`](/apidocs/classes/Shadow.md)\>\> = `shadowDefaultValues`
+▪ `Static` **ownDefaults**: `Partial`\<[`TClassProperties`](/apidocs/modules.md#tclassproperties)\<[`Shadow`](/apidocs/classes/Shadow.md)\>\> = `shadowDefaultValues`
 
 #### Defined in
 
-[src/Shadow.ts:84](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Shadow.ts#L84)
+[src/Shadow.ts:84](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Shadow.ts#L84)
 
 ___
 
@@ -210,25 +192,25 @@ Regex matching shadow offsetX, offsetY and blur (ex: "2px 2px 10px rgba(0,0,0,0.
 
 #### Defined in
 
-[src/Shadow.ts:212](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Shadow.ts#L212)
+[src/Shadow.ts:212](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Shadow.ts#L212)
 
 ## Methods
 
 ### toObject
 
-▸ **toObject**(): `Partial`<[`SerializedShadowOptions`](/apidocs/modules.md#serializedshadowoptions)\>
+▸ **toObject**(): `Partial`\<[`SerializedShadowOptions`](/apidocs/modules.md#serializedshadowoptions)\>
 
 Returns object representation of a shadow
 
 #### Returns
 
-`Partial`<[`SerializedShadowOptions`](/apidocs/modules.md#serializedshadowoptions)\>
+`Partial`\<[`SerializedShadowOptions`](/apidocs/modules.md#serializedshadowoptions)\>
 
 Object representation of a shadow instance
 
 #### Defined in
 
-[src/Shadow.ts:193](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Shadow.ts#L193)
+[src/Shadow.ts:193](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Shadow.ts#L193)
 
 ___
 
@@ -242,7 +224,7 @@ Returns SVG representation of a shadow
 
 | Name | Type |
 | :------ | :------ |
-| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
+| `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
 
 #### Returns
 
@@ -252,7 +234,7 @@ SVG representation of a shadow
 
 #### Defined in
 
-[src/Shadow.ts:138](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Shadow.ts#L138)
+[src/Shadow.ts:138](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Shadow.ts#L138)
 
 ___
 
@@ -274,13 +256,13 @@ http://www.w3.org/TR/css-text-decor-3/#text-shadow
 
 #### Defined in
 
-[src/Shadow.ts:129](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Shadow.ts#L129)
+[src/Shadow.ts:129](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Shadow.ts#L129)
 
 ___
 
 ### parseShadow
 
-▸ `Static` **parseShadow**(`value`): `Object`
+▸ **parseShadow**(`value`): `Object`
 
 #### Parameters
 
@@ -303,4 +285,4 @@ Shadow object with color, offsetX, offsetY and blur
 
 #### Defined in
 
-[src/Shadow.ts:107](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Shadow.ts#L107)
+[src/Shadow.ts:107](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Shadow.ts#L107)

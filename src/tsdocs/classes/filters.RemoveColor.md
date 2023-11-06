@@ -21,57 +21,11 @@ canvas.renderAll();
 
   ↳ **`RemoveColor`**
 
-## Table of contents
-
-### Constructors
-
-- [constructor](/apidocs/classes/filters.RemoveColor.md#constructor)
-
-### Properties
-
-- [color](/apidocs/classes/filters.RemoveColor.md#color)
-- [distance](/apidocs/classes/filters.RemoveColor.md#distance)
-- [mainParameter](/apidocs/classes/filters.RemoveColor.md#mainparameter)
-- [useAlpha](/apidocs/classes/filters.RemoveColor.md#usealpha)
-- [vertexSource](/apidocs/classes/filters.RemoveColor.md#vertexsource)
-- [defaults](/apidocs/classes/filters.RemoveColor.md#defaults)
-- [type](/apidocs/classes/filters.RemoveColor.md#type)
-
-### Accessors
-
-- [type](/apidocs/classes/filters.RemoveColor.md#type-1)
-
-### Methods
-
-- [\_setupFrameBuffer](/apidocs/classes/filters.RemoveColor.md#_setupframebuffer)
-- [\_swapTextures](/apidocs/classes/filters.RemoveColor.md#_swaptextures)
-- [applyTo](/apidocs/classes/filters.RemoveColor.md#applyto)
-- [applyTo2d](/apidocs/classes/filters.RemoveColor.md#applyto2d)
-- [applyToWebGL](/apidocs/classes/filters.RemoveColor.md#applytowebgl)
-- [bindAdditionalTexture](/apidocs/classes/filters.RemoveColor.md#bindadditionaltexture)
-- [createHelpLayer](/apidocs/classes/filters.RemoveColor.md#createhelplayer)
-- [createProgram](/apidocs/classes/filters.RemoveColor.md#createprogram)
-- [getAttributeLocations](/apidocs/classes/filters.RemoveColor.md#getattributelocations)
-- [getCacheKey](/apidocs/classes/filters.RemoveColor.md#getcachekey)
-- [getFragmentShader](/apidocs/classes/filters.RemoveColor.md#getfragmentshader)
-- [getFragmentSource](/apidocs/classes/filters.RemoveColor.md#getfragmentsource)
-- [getMainParameter](/apidocs/classes/filters.RemoveColor.md#getmainparameter)
-- [getUniformLocations](/apidocs/classes/filters.RemoveColor.md#getuniformlocations)
-- [isNeutralState](/apidocs/classes/filters.RemoveColor.md#isneutralstate)
-- [retrieveShader](/apidocs/classes/filters.RemoveColor.md#retrieveshader)
-- [sendAttributeData](/apidocs/classes/filters.RemoveColor.md#sendattributedata)
-- [sendUniformData](/apidocs/classes/filters.RemoveColor.md#senduniformdata)
-- [setMainParameter](/apidocs/classes/filters.RemoveColor.md#setmainparameter)
-- [toJSON](/apidocs/classes/filters.RemoveColor.md#tojson)
-- [toObject](/apidocs/classes/filters.RemoveColor.md#toobject)
-- [unbindAdditionalTexture](/apidocs/classes/filters.RemoveColor.md#unbindadditionaltexture)
-- [fromObject](/apidocs/classes/filters.RemoveColor.md#fromobject)
-
 ## Constructors
 
 ### constructor
 
-• **new RemoveColor**(`options?`)
+• **new RemoveColor**(`options?`): [`RemoveColor`](/apidocs/classes/filters.RemoveColor.md)
 
 Constructor
 
@@ -79,7 +33,11 @@ Constructor
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `options?` | `Record`<`string`, `any`\> | Options object |
+| `options?` | `Record`\<`string`, `any`\> | Options object |
+
+#### Returns
+
+[`RemoveColor`](/apidocs/classes/filters.RemoveColor.md)
 
 #### Inherited from
 
@@ -87,7 +45,7 @@ Constructor
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:58](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L58)
+[src/filters/BaseFilter.ts:58](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L58)
 
 ## Properties
 
@@ -107,7 +65,7 @@ Color to remove, in any format understood by [Color](/apidocs/classes/Color.md).
 
 #### Defined in
 
-[src/filters/RemoveColor.ts:30](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/RemoveColor.ts#L30)
+[src/filters/RemoveColor.ts:30](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/RemoveColor.ts#L30)
 
 ___
 
@@ -120,7 +78,7 @@ between 0 and 1
 
 #### Defined in
 
-[src/filters/RemoveColor.ts:36](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/RemoveColor.ts#L36)
+[src/filters/RemoveColor.ts:36](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/RemoveColor.ts#L36)
 
 ___
 
@@ -138,7 +96,7 @@ mainParameter
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:52](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L52)
+[src/filters/BaseFilter.ts:52](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L52)
 
 ___
 
@@ -151,7 +109,7 @@ NOT IMPLEMENTED YET
 
 #### Defined in
 
-[src/filters/RemoveColor.ts:42](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/RemoveColor.ts#L42)
+[src/filters/RemoveColor.ts:42](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/RemoveColor.ts#L42)
 
 ___
 
@@ -167,13 +125,13 @@ Array of attributes to send with buffers. do not modify
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:44](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L44)
+[src/filters/BaseFilter.ts:44](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L44)
 
 ___
 
 ### defaults
 
-▪ `Static` **defaults**: `Partial`<[`TClassProperties`](/apidocs/modules.md#tclassproperties)<[`RemoveColor`](/apidocs/classes/filters.RemoveColor.md)\>\> = `removeColorDefaultValues`
+▪ `Static` **defaults**: `Partial`\<[`TClassProperties`](/apidocs/modules.md#tclassproperties)\<[`RemoveColor`](/apidocs/classes/filters.RemoveColor.md)\>\> = `removeColorDefaultValues`
 
 #### Overrides
 
@@ -181,7 +139,7 @@ ___
 
 #### Defined in
 
-[src/filters/RemoveColor.ts:46](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/RemoveColor.ts#L46)
+[src/filters/RemoveColor.ts:46](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/RemoveColor.ts#L46)
 
 ___
 
@@ -201,7 +159,7 @@ to avoid doing that.
 
 #### Defined in
 
-[src/filters/RemoveColor.ts:44](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/RemoveColor.ts#L44)
+[src/filters/RemoveColor.ts:44](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/RemoveColor.ts#L44)
 
 ## Accessors
 
@@ -227,7 +185,7 @@ BaseFilter.type
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:25](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L25)
+[src/filters/BaseFilter.ts:25](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L25)
 
 ## Methods
 
@@ -251,7 +209,7 @@ BaseFilter.type
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:190](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L190)
+[src/filters/BaseFilter.ts:190](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L190)
 
 ___
 
@@ -275,7 +233,7 @@ ___
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:217](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L217)
+[src/filters/BaseFilter.ts:217](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L217)
 
 ___
 
@@ -303,7 +261,7 @@ Determines whether to use WebGL or Canvas2D based on the options.webgl flag.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:265](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L265)
+[src/filters/BaseFilter.ts:265](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L265)
 
 ___
 
@@ -329,7 +287,7 @@ Applies filter to canvas element
 
 #### Defined in
 
-[src/filters/RemoveColor.ts:56](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/RemoveColor.ts#L56)
+[src/filters/RemoveColor.ts:56](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/RemoveColor.ts#L56)
 
 ___
 
@@ -355,7 +313,7 @@ Apply this filter using webgl.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:315](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L315)
+[src/filters/BaseFilter.ts:315](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L315)
 
 ___
 
@@ -381,7 +339,7 @@ ___
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:334](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L334)
+[src/filters/BaseFilter.ts:334](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L334)
 
 ___
 
@@ -408,7 +366,7 @@ remember that options.targetCanvas is available for use till end of chain.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:380](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L380)
+[src/filters/BaseFilter.ts:380](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L380)
 
 ___
 
@@ -442,7 +400,7 @@ Compile this filter's shader program.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:77](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L77)
+[src/filters/BaseFilter.ts:77](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L77)
 
 ___
 
@@ -471,7 +429,7 @@ A map of attribute names to attribute locations.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:146](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L146)
+[src/filters/BaseFilter.ts:146](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L146)
 
 ___
 
@@ -492,7 +450,7 @@ Used to force recompilation when parameters change or to retrieve the shader fro
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:284](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L284)
+[src/filters/BaseFilter.ts:284](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L284)
 
 ___
 
@@ -506,13 +464,13 @@ ___
 
 #### Defined in
 
-[src/filters/RemoveColor.ts:48](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/RemoveColor.ts#L48)
+[src/filters/RemoveColor.ts:48](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/RemoveColor.ts#L48)
 
 ___
 
 ### getFragmentSource
 
-▸ `Protected` **getFragmentSource**(): `string`
+▸ **getFragmentSource**(): `string`
 
 #### Returns
 
@@ -524,17 +482,17 @@ ___
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:66](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L66)
+[src/filters/BaseFilter.ts:66](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L66)
 
 ___
 
 ### getMainParameter
 
-▸ **getMainParameter**(): `undefined` \| `string` \| `number` \| `boolean` \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => [`TWebGLProgramCacheItem`](/apidocs/modules.md#twebglprogramcacheitem) \| (`options?`: `any`) => `boolean` \| () => { `color`: `string` ; `distance`: `number` ; `type`: `string`  } \| () => { `type`: `string`  } \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap) \| (`gl`: `WebGLRenderingContext`, `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)) => `void` \| () => `string` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate) \| [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`canvasEl`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `fragmentSource`: `string`, `vertexSource`: `string`) => { `attributeLocations`: [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) ; `program`: `WebGLProgram` ; `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)  } \| (`gl`: `WebGLRenderingContext`, `attributeLocations`: `Record`<`string`, `number`\>, `aPositionData`: `Float32Array`) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `texture`: `WebGLTexture`, `textureUnit`: `number`) => `void` \| (`gl`: `WebGLRenderingContext`, `textureUnit`: `number`) => `void` \| () => `undefined` \| `string` \| `number` \| `boolean` \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => [`TWebGLProgramCacheItem`](/apidocs/modules.md#twebglprogramcacheitem) \| (`options?`: `any`) => `boolean` \| () => { `color`: `string` ; `distance`: `number` ; `type`: `string`  } \| () => { `type`: `string`  } \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap) \| (`gl`: `WebGLRenderingContext`, `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)) => `void` \| () => `string` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate) \| [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`canvasEl`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `fragmentSource`: `string`, `vertexSource`: `string`) => { `attributeLocations`: [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) ; `program`: `WebGLProgram` ; `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)  } \| (`gl`: `WebGLRenderingContext`, `attributeLocations`: `Record`<`string`, `number`\>, `aPositionData`: `Float32Array`) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `texture`: `WebGLTexture`, `textureUnit`: `number`) => `void` \| (`gl`: `WebGLRenderingContext`, `textureUnit`: `number`) => `void` \| () =\> string \| number \| boolean \| ((gl: WebGLRenderingContext, program: WebGLProgram) =\> TWebGLAttributeLocationMap) \| ... 20 more ... \| undefined \| (`value`: `any`) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| () => `string` \| (`value`: `any`) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| () => `string`
+▸ **getMainParameter**(): `undefined` \| `string` \| `number` \| `boolean` \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => [`TWebGLProgramCacheItem`](/apidocs/modules.md#twebglprogramcacheitem) \| (`options?`: `any`) => `boolean` \| () => \{ `color`: `string` ; `distance`: `number` ; `type`: `string`  } \| () => \{ `type`: `string`  } \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap) \| (`gl`: `WebGLRenderingContext`, `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)) => `void` \| () => `string` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate) \| [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`canvasEl`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `fragmentSource`: `string`, `vertexSource`: `string`) => \{ `attributeLocations`: [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) ; `program`: `WebGLProgram` ; `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)  } \| (`gl`: `WebGLRenderingContext`, `attributeLocations`: `Record`\<`string`, `number`\>, `aPositionData`: `Float32Array`) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `texture`: `WebGLTexture`, `textureUnit`: `number`) => `void` \| (`gl`: `WebGLRenderingContext`, `textureUnit`: `number`) => `void` \| () => `undefined` \| `string` \| `number` \| `boolean` \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => [`TWebGLProgramCacheItem`](/apidocs/modules.md#twebglprogramcacheitem) \| (`options?`: `any`) => `boolean` \| () => \{ `color`: `string` ; `distance`: `number` ; `type`: `string`  } \| () => \{ `type`: `string`  } \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap) \| (`gl`: `WebGLRenderingContext`, `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)) => `void` \| () => `string` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate) \| [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`canvasEl`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `fragmentSource`: `string`, `vertexSource`: `string`) => \{ `attributeLocations`: [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) ; `program`: `WebGLProgram` ; `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)  } \| (`gl`: `WebGLRenderingContext`, `attributeLocations`: `Record`\<`string`, `number`\>, `aPositionData`: `Float32Array`) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `texture`: `WebGLTexture`, `textureUnit`: `number`) => `void` \| (`gl`: `WebGLRenderingContext`, `textureUnit`: `number`) => `void` \| () =\> string \| number \| boolean \| ((gl: WebGLRenderingContext, program: WebGLProgram) =\> TWebGLAttributeLocationMap) \| ... 20 more ... \| undefined \| (`value`: `any`) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| () => `string` \| (`value`: `any`) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| () => `string`
 
 #### Returns
 
-`undefined` \| `string` \| `number` \| `boolean` \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => [`TWebGLProgramCacheItem`](/apidocs/modules.md#twebglprogramcacheitem) \| (`options?`: `any`) => `boolean` \| () => { `color`: `string` ; `distance`: `number` ; `type`: `string`  } \| () => { `type`: `string`  } \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap) \| (`gl`: `WebGLRenderingContext`, `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)) => `void` \| () => `string` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate) \| [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`canvasEl`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `fragmentSource`: `string`, `vertexSource`: `string`) => { `attributeLocations`: [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) ; `program`: `WebGLProgram` ; `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)  } \| (`gl`: `WebGLRenderingContext`, `attributeLocations`: `Record`<`string`, `number`\>, `aPositionData`: `Float32Array`) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `texture`: `WebGLTexture`, `textureUnit`: `number`) => `void` \| (`gl`: `WebGLRenderingContext`, `textureUnit`: `number`) => `void` \| () => `undefined` \| `string` \| `number` \| `boolean` \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => [`TWebGLProgramCacheItem`](/apidocs/modules.md#twebglprogramcacheitem) \| (`options?`: `any`) => `boolean` \| () => { `color`: `string` ; `distance`: `number` ; `type`: `string`  } \| () => { `type`: `string`  } \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap) \| (`gl`: `WebGLRenderingContext`, `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)) => `void` \| () => `string` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate) \| [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`canvasEl`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `fragmentSource`: `string`, `vertexSource`: `string`) => { `attributeLocations`: [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) ; `program`: `WebGLProgram` ; `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)  } \| (`gl`: `WebGLRenderingContext`, `attributeLocations`: `Record`<`string`, `number`\>, `aPositionData`: `Float32Array`) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `texture`: `WebGLTexture`, `textureUnit`: `number`) => `void` \| (`gl`: `WebGLRenderingContext`, `textureUnit`: `number`) => `void` \| () =\> string \| number \| boolean \| ((gl: WebGLRenderingContext, program: WebGLProgram) =\> TWebGLAttributeLocationMap) \| ... 20 more ... \| undefined \| (`value`: `any`) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| () => `string` \| (`value`: `any`) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| () => `string`
+`undefined` \| `string` \| `number` \| `boolean` \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => [`TWebGLProgramCacheItem`](/apidocs/modules.md#twebglprogramcacheitem) \| (`options?`: `any`) => `boolean` \| () => \{ `color`: `string` ; `distance`: `number` ; `type`: `string`  } \| () => \{ `type`: `string`  } \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap) \| (`gl`: `WebGLRenderingContext`, `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)) => `void` \| () => `string` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate) \| [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`canvasEl`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `fragmentSource`: `string`, `vertexSource`: `string`) => \{ `attributeLocations`: [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) ; `program`: `WebGLProgram` ; `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)  } \| (`gl`: `WebGLRenderingContext`, `attributeLocations`: `Record`\<`string`, `number`\>, `aPositionData`: `Float32Array`) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `texture`: `WebGLTexture`, `textureUnit`: `number`) => `void` \| (`gl`: `WebGLRenderingContext`, `textureUnit`: `number`) => `void` \| () => `undefined` \| `string` \| `number` \| `boolean` \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => [`TWebGLProgramCacheItem`](/apidocs/modules.md#twebglprogramcacheitem) \| (`options?`: `any`) => `boolean` \| () => \{ `color`: `string` ; `distance`: `number` ; `type`: `string`  } \| () => \{ `type`: `string`  } \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap) \| (`gl`: `WebGLRenderingContext`, `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)) => `void` \| () => `string` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate) \| [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`canvasEl`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `fragmentSource`: `string`, `vertexSource`: `string`) => \{ `attributeLocations`: [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) ; `program`: `WebGLProgram` ; `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)  } \| (`gl`: `WebGLRenderingContext`, `attributeLocations`: `Record`\<`string`, `number`\>, `aPositionData`: `Float32Array`) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `texture`: `WebGLTexture`, `textureUnit`: `number`) => `void` \| (`gl`: `WebGLRenderingContext`, `textureUnit`: `number`) => `void` \| () =\> string \| number \| boolean \| ((gl: WebGLRenderingContext, program: WebGLProgram) =\> TWebGLAttributeLocationMap) \| ... 20 more ... \| undefined \| (`value`: `any`) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| () => `string` \| (`value`: `any`) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| () => `string`
 
 #### Inherited from
 
@@ -542,7 +500,7 @@ ___
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:351](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L351)
+[src/filters/BaseFilter.ts:351](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L351)
 
 ___
 
@@ -569,7 +527,7 @@ Return WebGL uniform locations for this filter's shader.
 
 #### Defined in
 
-[src/filters/RemoveColor.ts:90](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/RemoveColor.ts#L90)
+[src/filters/RemoveColor.ts:90](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/RemoveColor.ts#L90)
 
 ___
 
@@ -598,7 +556,7 @@ Other filters may need their own version ( ColorMatrix, HueRotation, gamma, Comp
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:233](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L233)
+[src/filters/BaseFilter.ts:233](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L233)
 
 ___
 
@@ -626,7 +584,7 @@ the compiled program shader
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:295](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L295)
+[src/filters/BaseFilter.ts:295](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L295)
 
 ___
 
@@ -641,7 +599,7 @@ Send attribute data from this filter to its shader program on the GPU.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `gl` | `WebGLRenderingContext` | The canvas context used to compile the shader program. |
-| `attributeLocations` | `Record`<`string`, `number`\> | A map of shader attribute names to their locations. |
+| `attributeLocations` | `Record`\<`string`, `number`\> | A map of shader attribute names to their locations. |
 | `aPositionData` | `Float32Array` | - |
 
 #### Returns
@@ -654,7 +612,7 @@ Send attribute data from this filter to its shader program on the GPU.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:177](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L177)
+[src/filters/BaseFilter.ts:177](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L177)
 
 ___
 
@@ -681,7 +639,7 @@ Send data from this filter to its shader program's uniforms.
 
 #### Defined in
 
-[src/filters/RemoveColor.ts:106](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/RemoveColor.ts#L106)
+[src/filters/RemoveColor.ts:106](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/RemoveColor.ts#L106)
 
 ___
 
@@ -705,7 +663,7 @@ ___
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:355](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L355)
+[src/filters/BaseFilter.ts:355](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L355)
 
 ___
 
@@ -731,7 +689,7 @@ JSON
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:405](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L405)
+[src/filters/BaseFilter.ts:405](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L405)
 
 ___
 
@@ -759,7 +717,7 @@ Object representation of an instance
 
 #### Defined in
 
-[src/filters/RemoveColor.ts:132](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/RemoveColor.ts#L132)
+[src/filters/RemoveColor.ts:132](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/RemoveColor.ts#L132)
 
 ___
 
@@ -784,24 +742,24 @@ ___
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:345](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L345)
+[src/filters/BaseFilter.ts:345](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L345)
 
 ___
 
 ### fromObject
 
-▸ `Static` **fromObject**(`«destructured»`, `options`): `Promise`<[`BaseFilter`](/apidocs/classes/filters.BaseFilter.md)\>
+▸ **fromObject**(`«destructured»`, `options`): `Promise`\<[`BaseFilter`](/apidocs/classes/filters.BaseFilter.md)\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `«destructured»` | `Record`<`string`, `any`\> |
+| `«destructured»` | `Record`\<`string`, `any`\> |
 | `options` | [`Abortable`](/apidocs/modules.md#abortable) |
 
 #### Returns
 
-`Promise`<[`BaseFilter`](/apidocs/classes/filters.BaseFilter.md)\>
+`Promise`\<[`BaseFilter`](/apidocs/classes/filters.BaseFilter.md)\>
 
 #### Inherited from
 
@@ -809,4 +767,4 @@ ___
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:410](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L410)
+[src/filters/BaseFilter.ts:410](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L410)

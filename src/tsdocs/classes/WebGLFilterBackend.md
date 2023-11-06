@@ -1,42 +1,10 @@
 # Class: WebGLFilterBackend
 
-## Table of contents
-
-### Constructors
-
-- [constructor](/apidocs/classes/WebGLFilterBackend.md#constructor)
-
-### Properties
-
-- [aPosition](/apidocs/classes/WebGLFilterBackend.md#aposition)
-- [canvas](/apidocs/classes/WebGLFilterBackend.md#canvas)
-- [gl](/apidocs/classes/WebGLFilterBackend.md#gl)
-- [gpuInfo](/apidocs/classes/WebGLFilterBackend.md#gpuinfo)
-- [imageBuffer](/apidocs/classes/WebGLFilterBackend.md#imagebuffer)
-- [programCache](/apidocs/classes/WebGLFilterBackend.md#programcache)
-- [resources](/apidocs/classes/WebGLFilterBackend.md#resources)
-- [textureCache](/apidocs/classes/WebGLFilterBackend.md#texturecache)
-- [tileSize](/apidocs/classes/WebGLFilterBackend.md#tilesize)
-
-### Methods
-
-- [applyFilters](/apidocs/classes/WebGLFilterBackend.md#applyfilters)
-- [captureGPUInfo](/apidocs/classes/WebGLFilterBackend.md#capturegpuinfo)
-- [chooseFastestCopyGLTo2DMethod](/apidocs/classes/WebGLFilterBackend.md#choosefastestcopyglto2dmethod)
-- [clearWebGLCaches](/apidocs/classes/WebGLFilterBackend.md#clearwebglcaches)
-- [copyGLTo2D](/apidocs/classes/WebGLFilterBackend.md#copyglto2d)
-- [createTexture](/apidocs/classes/WebGLFilterBackend.md#createtexture)
-- [createWebGLCanvas](/apidocs/classes/WebGLFilterBackend.md#createwebglcanvas)
-- [dispose](/apidocs/classes/WebGLFilterBackend.md#dispose)
-- [evictCachesForKey](/apidocs/classes/WebGLFilterBackend.md#evictcachesforkey)
-- [getCachedTexture](/apidocs/classes/WebGLFilterBackend.md#getcachedtexture)
-- [setupGLContext](/apidocs/classes/WebGLFilterBackend.md#setupglcontext)
-
 ## Constructors
 
 ### constructor
 
-• **new WebGLFilterBackend**(`«destructured»?`)
+• **new WebGLFilterBackend**(`«destructured»?`): [`WebGLFilterBackend`](/apidocs/classes/WebGLFilterBackend.md)
 
 #### Parameters
 
@@ -45,9 +13,13 @@
 | `«destructured»` | `Object` |
 | › `tileSize` | `undefined` \| `number` |
 
+#### Returns
+
+[`WebGLFilterBackend`](/apidocs/classes/WebGLFilterBackend.md)
+
 #### Defined in
 
-[src/filters/WebGLFilterBackend.ts:57](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/WebGLFilterBackend.ts#L57)
+[src/filters/WebGLFilterBackend.ts:57](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/WebGLFilterBackend.ts#L57)
 
 ## Properties
 
@@ -59,7 +31,7 @@ Define ...
 
 #### Defined in
 
-[src/filters/WebGLFilterBackend.ts:18](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/WebGLFilterBackend.ts#L18)
+[src/filters/WebGLFilterBackend.ts:18](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/WebGLFilterBackend.ts#L18)
 
 ___
 
@@ -69,7 +41,7 @@ ___
 
 #### Defined in
 
-[src/filters/WebGLFilterBackend.ts:26](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/WebGLFilterBackend.ts#L26)
+[src/filters/WebGLFilterBackend.ts:26](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/WebGLFilterBackend.ts#L26)
 
 ___
 
@@ -81,7 +53,7 @@ The Webgl context that will execute the operations for filtering
 
 #### Defined in
 
-[src/filters/WebGLFilterBackend.ts:31](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/WebGLFilterBackend.ts#L31)
+[src/filters/WebGLFilterBackend.ts:31](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/WebGLFilterBackend.ts#L31)
 
 ___
 
@@ -93,7 +65,7 @@ Contains GPU info for debug
 
 #### Defined in
 
-[src/filters/WebGLFilterBackend.ts:46](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/WebGLFilterBackend.ts#L46)
+[src/filters/WebGLFilterBackend.ts:46](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/WebGLFilterBackend.ts#L46)
 
 ___
 
@@ -106,7 +78,7 @@ to transfer the data back in the 2d logic
 
 #### Defined in
 
-[src/filters/WebGLFilterBackend.ts:24](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/WebGLFilterBackend.ts#L24)
+[src/filters/WebGLFilterBackend.ts:24](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/WebGLFilterBackend.ts#L24)
 
 ___
 
@@ -118,7 +90,7 @@ Keyed map for shader cache
 
 #### Defined in
 
-[src/filters/WebGLFilterBackend.ts:36](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/WebGLFilterBackend.ts#L36)
+[src/filters/WebGLFilterBackend.ts:36](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/WebGLFilterBackend.ts#L36)
 
 ___
 
@@ -134,7 +106,7 @@ cleared never. Clearing is left to the developer.
 
 #### Defined in
 
-[src/filters/WebGLFilterBackend.ts:55](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/WebGLFilterBackend.ts#L55)
+[src/filters/WebGLFilterBackend.ts:55](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/WebGLFilterBackend.ts#L55)
 
 ___
 
@@ -146,7 +118,7 @@ Keyed map for texture cache
 
 #### Defined in
 
-[src/filters/WebGLFilterBackend.ts:41](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/WebGLFilterBackend.ts#L41)
+[src/filters/WebGLFilterBackend.ts:41](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/WebGLFilterBackend.ts#L41)
 
 ___
 
@@ -156,7 +128,7 @@ ___
 
 #### Defined in
 
-[src/filters/WebGLFilterBackend.ts:13](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/WebGLFilterBackend.ts#L13)
+[src/filters/WebGLFilterBackend.ts:13](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/WebGLFilterBackend.ts#L13)
 
 ## Methods
 
@@ -184,7 +156,7 @@ to the provided target canvas.
 
 #### Defined in
 
-[src/filters/WebGLFilterBackend.ts:153](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/WebGLFilterBackend.ts#L153)
+[src/filters/WebGLFilterBackend.ts:153](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/WebGLFilterBackend.ts#L153)
 
 ___
 
@@ -204,7 +176,7 @@ A GPU info object with renderer and vendor strings.
 
 #### Defined in
 
-[src/filters/WebGLFilterBackend.ts:398](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/WebGLFilterBackend.ts#L398)
+[src/filters/WebGLFilterBackend.ts:398](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/WebGLFilterBackend.ts#L398)
 
 ___
 
@@ -230,7 +202,7 @@ putImageData is faster than drawImage for that specific operation.
 
 #### Defined in
 
-[src/filters/WebGLFilterBackend.ts:79](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/WebGLFilterBackend.ts#L79)
+[src/filters/WebGLFilterBackend.ts:79](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/WebGLFilterBackend.ts#L79)
 
 ___
 
@@ -246,7 +218,7 @@ Wipe out WebGL-related caches.
 
 #### Defined in
 
-[src/filters/WebGLFilterBackend.ts:242](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/WebGLFilterBackend.ts#L242)
+[src/filters/WebGLFilterBackend.ts:242](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/WebGLFilterBackend.ts#L242)
 
 ___
 
@@ -272,7 +244,7 @@ desired output image appearing in the bottom-left corner of the WebGL canvas.
 
 #### Defined in
 
-[src/filters/WebGLFilterBackend.ts:367](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/WebGLFilterBackend.ts#L367)
+[src/filters/WebGLFilterBackend.ts:367](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/WebGLFilterBackend.ts#L367)
 
 ___
 
@@ -300,7 +272,7 @@ Accepts specific dimensions to initialize the texture to or a source image.
 
 #### Defined in
 
-[src/filters/WebGLFilterBackend.ts:260](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/WebGLFilterBackend.ts#L260)
+[src/filters/WebGLFilterBackend.ts:260](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/WebGLFilterBackend.ts#L260)
 
 ___
 
@@ -324,7 +296,7 @@ class properties to the GLFilterBackend class.
 
 #### Defined in
 
-[src/filters/WebGLFilterBackend.ts:119](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/WebGLFilterBackend.ts#L119)
+[src/filters/WebGLFilterBackend.ts:119](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/WebGLFilterBackend.ts#L119)
 
 ___
 
@@ -340,7 +312,7 @@ Detach event listeners, remove references, and clean up caches.
 
 #### Defined in
 
-[src/filters/WebGLFilterBackend.ts:227](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/WebGLFilterBackend.ts#L227)
+[src/filters/WebGLFilterBackend.ts:227](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/WebGLFilterBackend.ts#L227)
 
 ___
 
@@ -363,7 +335,7 @@ filtered previously.
 
 #### Defined in
 
-[src/filters/WebGLFilterBackend.ts:351](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/WebGLFilterBackend.ts#L351)
+[src/filters/WebGLFilterBackend.ts:351](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/WebGLFilterBackend.ts#L351)
 
 ___
 
@@ -389,7 +361,7 @@ If an existing texture is not found, a new texture is created and cached.
 
 #### Defined in
 
-[src/filters/WebGLFilterBackend.ts:320](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/WebGLFilterBackend.ts#L320)
+[src/filters/WebGLFilterBackend.ts:320](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/WebGLFilterBackend.ts#L320)
 
 ___
 
@@ -412,4 +384,4 @@ Setup a WebGL context suitable for filtering, and bind any needed event handlers
 
 #### Defined in
 
-[src/filters/WebGLFilterBackend.ts:66](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/WebGLFilterBackend.ts#L66)
+[src/filters/WebGLFilterBackend.ts:66](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/WebGLFilterBackend.ts#L66)

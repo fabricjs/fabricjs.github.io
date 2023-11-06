@@ -28,58 +28,11 @@ canvas.renderAll();
 
   ↳ **`BlendImage`**
 
-## Table of contents
-
-### Constructors
-
-- [constructor](/apidocs/classes/filters.BlendImage.md#constructor)
-
-### Properties
-
-- [alpha](/apidocs/classes/filters.BlendImage.md#alpha)
-- [image](/apidocs/classes/filters.BlendImage.md#image)
-- [mainParameter](/apidocs/classes/filters.BlendImage.md#mainparameter)
-- [mode](/apidocs/classes/filters.BlendImage.md#mode)
-- [vertexSource](/apidocs/classes/filters.BlendImage.md#vertexsource)
-- [defaults](/apidocs/classes/filters.BlendImage.md#defaults)
-- [type](/apidocs/classes/filters.BlendImage.md#type)
-
-### Accessors
-
-- [type](/apidocs/classes/filters.BlendImage.md#type-1)
-
-### Methods
-
-- [\_setupFrameBuffer](/apidocs/classes/filters.BlendImage.md#_setupframebuffer)
-- [\_swapTextures](/apidocs/classes/filters.BlendImage.md#_swaptextures)
-- [applyTo](/apidocs/classes/filters.BlendImage.md#applyto)
-- [applyTo2d](/apidocs/classes/filters.BlendImage.md#applyto2d)
-- [applyToWebGL](/apidocs/classes/filters.BlendImage.md#applytowebgl)
-- [bindAdditionalTexture](/apidocs/classes/filters.BlendImage.md#bindadditionaltexture)
-- [calculateMatrix](/apidocs/classes/filters.BlendImage.md#calculatematrix)
-- [createHelpLayer](/apidocs/classes/filters.BlendImage.md#createhelplayer)
-- [createProgram](/apidocs/classes/filters.BlendImage.md#createprogram)
-- [createTexture](/apidocs/classes/filters.BlendImage.md#createtexture)
-- [getAttributeLocations](/apidocs/classes/filters.BlendImage.md#getattributelocations)
-- [getCacheKey](/apidocs/classes/filters.BlendImage.md#getcachekey)
-- [getFragmentSource](/apidocs/classes/filters.BlendImage.md#getfragmentsource)
-- [getMainParameter](/apidocs/classes/filters.BlendImage.md#getmainparameter)
-- [getUniformLocations](/apidocs/classes/filters.BlendImage.md#getuniformlocations)
-- [isNeutralState](/apidocs/classes/filters.BlendImage.md#isneutralstate)
-- [retrieveShader](/apidocs/classes/filters.BlendImage.md#retrieveshader)
-- [sendAttributeData](/apidocs/classes/filters.BlendImage.md#sendattributedata)
-- [sendUniformData](/apidocs/classes/filters.BlendImage.md#senduniformdata)
-- [setMainParameter](/apidocs/classes/filters.BlendImage.md#setmainparameter)
-- [toJSON](/apidocs/classes/filters.BlendImage.md#tojson)
-- [toObject](/apidocs/classes/filters.BlendImage.md#toobject)
-- [unbindAdditionalTexture](/apidocs/classes/filters.BlendImage.md#unbindadditionaltexture)
-- [fromObject](/apidocs/classes/filters.BlendImage.md#fromobject)
-
 ## Constructors
 
 ### constructor
 
-• **new BlendImage**(`options?`)
+• **new BlendImage**(`options?`): [`BlendImage`](/apidocs/classes/filters.BlendImage.md)
 
 Constructor
 
@@ -87,7 +40,11 @@ Constructor
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `options?` | `Record`<`string`, `any`\> | Options object |
+| `options?` | `Record`\<`string`, `any`\> | Options object |
+
+#### Returns
+
+[`BlendImage`](/apidocs/classes/filters.BlendImage.md)
 
 #### Inherited from
 
@@ -95,7 +52,7 @@ Constructor
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:58](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L58)
+[src/filters/BaseFilter.ts:58](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L58)
 
 ## Properties
 
@@ -108,20 +65,20 @@ not implemented.
 
 #### Defined in
 
-[src/filters/BlendImage.ts:62](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BlendImage.ts#L62)
+[src/filters/BlendImage.ts:62](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BlendImage.ts#L62)
 
 ___
 
 ### image
 
-• **image**: [`FabricImage`](/apidocs/classes/FabricImage.md)<`Partial`<[`ImageProps`](/apidocs/interfaces/ImageProps.md)\>, [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
+• **image**: [`FabricImage`](/apidocs/classes/FabricImage.md)\<`Partial`\<[`ImageProps`](/apidocs/interfaces/ImageProps.md)\>, [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
 
 Color to make the blend operation with. default to a reddish color since black or white
 gives always strong result.
 
 #### Defined in
 
-[src/filters/BlendImage.ts:54](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BlendImage.ts#L54)
+[src/filters/BlendImage.ts:54](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BlendImage.ts#L54)
 
 ___
 
@@ -139,7 +96,7 @@ mainParameter
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:52](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L52)
+[src/filters/BaseFilter.ts:52](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L52)
 
 ___
 
@@ -149,7 +106,7 @@ ___
 
 #### Defined in
 
-[src/filters/BlendImage.ts:56](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BlendImage.ts#L56)
+[src/filters/BlendImage.ts:56](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BlendImage.ts#L56)
 
 ___
 
@@ -165,13 +122,13 @@ Array of attributes to send with buffers. do not modify
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:44](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L44)
+[src/filters/BaseFilter.ts:44](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L44)
 
 ___
 
 ### defaults
 
-▪ `Static` **defaults**: `Partial`<[`TClassProperties`](/apidocs/modules.md#tclassproperties)<[`BlendImage`](/apidocs/classes/filters.BlendImage.md)\>\> = `blendImageDefaultValues`
+▪ `Static` **defaults**: `Partial`\<[`TClassProperties`](/apidocs/modules.md#tclassproperties)\<[`BlendImage`](/apidocs/classes/filters.BlendImage.md)\>\> = `blendImageDefaultValues`
 
 #### Overrides
 
@@ -179,7 +136,7 @@ ___
 
 #### Defined in
 
-[src/filters/BlendImage.ts:66](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BlendImage.ts#L66)
+[src/filters/BlendImage.ts:66](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BlendImage.ts#L66)
 
 ___
 
@@ -199,7 +156,7 @@ to avoid doing that.
 
 #### Defined in
 
-[src/filters/BlendImage.ts:64](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BlendImage.ts#L64)
+[src/filters/BlendImage.ts:64](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BlendImage.ts#L64)
 
 ## Accessors
 
@@ -225,7 +182,7 @@ BaseFilter.type
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:25](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L25)
+[src/filters/BaseFilter.ts:25](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L25)
 
 ## Methods
 
@@ -249,7 +206,7 @@ BaseFilter.type
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:190](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L190)
+[src/filters/BaseFilter.ts:190](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L190)
 
 ___
 
@@ -273,7 +230,7 @@ ___
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:217](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L217)
+[src/filters/BaseFilter.ts:217](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L217)
 
 ___
 
@@ -301,7 +258,7 @@ Determines whether to use WebGL or Canvas2D based on the options.webgl flag.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:265](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L265)
+[src/filters/BaseFilter.ts:265](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L265)
 
 ___
 
@@ -327,7 +284,7 @@ Apply the Blend operation to a Uint8ClampedArray representing the pixels of an i
 
 #### Defined in
 
-[src/filters/BlendImage.ts:116](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BlendImage.ts#L116)
+[src/filters/BlendImage.ts:116](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BlendImage.ts#L116)
 
 ___
 
@@ -353,7 +310,7 @@ Apply this filter using webgl.
 
 #### Defined in
 
-[src/filters/BlendImage.ts:76](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BlendImage.ts#L76)
+[src/filters/BlendImage.ts:76](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BlendImage.ts#L76)
 
 ___
 
@@ -379,7 +336,7 @@ ___
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:334](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L334)
+[src/filters/BaseFilter.ts:334](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L334)
 
 ___
 
@@ -395,7 +352,7 @@ Calculate a transformMatrix to adapt the image to blend over
 
 #### Defined in
 
-[src/filters/BlendImage.ts:94](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BlendImage.ts#L94)
+[src/filters/BlendImage.ts:94](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BlendImage.ts#L94)
 
 ___
 
@@ -422,7 +379,7 @@ remember that options.targetCanvas is available for use till end of chain.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:380](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L380)
+[src/filters/BaseFilter.ts:380](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L380)
 
 ___
 
@@ -456,7 +413,7 @@ Compile this filter's shader program.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:77](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L77)
+[src/filters/BaseFilter.ts:77](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L77)
 
 ___
 
@@ -469,7 +426,7 @@ ___
 | Name | Type |
 | :------ | :------ |
 | `backend` | [`WebGLFilterBackend`](/apidocs/classes/WebGLFilterBackend.md) |
-| `image` | [`FabricImage`](/apidocs/classes/FabricImage.md)<`Partial`<[`ImageProps`](/apidocs/interfaces/ImageProps.md)\>, [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
+| `image` | [`FabricImage`](/apidocs/classes/FabricImage.md)\<`Partial`\<[`ImageProps`](/apidocs/interfaces/ImageProps.md)\>, [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
 
 #### Returns
 
@@ -477,7 +434,7 @@ ___
 
 #### Defined in
 
-[src/filters/BlendImage.ts:84](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BlendImage.ts#L84)
+[src/filters/BlendImage.ts:84](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BlendImage.ts#L84)
 
 ___
 
@@ -506,7 +463,7 @@ A map of attribute names to attribute locations.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:146](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L146)
+[src/filters/BaseFilter.ts:146](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L146)
 
 ___
 
@@ -527,7 +484,7 @@ Used to force recompilation when parameters change or to retrieve the shader fro
 
 #### Defined in
 
-[src/filters/BlendImage.ts:68](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BlendImage.ts#L68)
+[src/filters/BlendImage.ts:68](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BlendImage.ts#L68)
 
 ___
 
@@ -545,17 +502,17 @@ ___
 
 #### Defined in
 
-[src/filters/BlendImage.ts:72](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BlendImage.ts#L72)
+[src/filters/BlendImage.ts:72](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BlendImage.ts#L72)
 
 ___
 
 ### getMainParameter
 
-▸ **getMainParameter**(): `undefined` \| `string` \| `number` \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => [`TWebGLProgramCacheItem`](/apidocs/modules.md#twebglprogramcacheitem) \| [`FabricImage`](/apidocs/classes/FabricImage.md)<`Partial`<[`ImageProps`](/apidocs/interfaces/ImageProps.md)\>, [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> \| (`options?`: `any`) => `boolean` \| () => { `alpha`: `number` ; `image`: `Pick`<`Omit`<`Partial`<[`ImageProps`](/apidocs/interfaces/ImageProps.md)\> & [`TClassProperties`](/apidocs/modules.md#tclassproperties)<[`FabricImage`](/apidocs/classes/FabricImage.md)<`Partial`<[`ImageProps`](/apidocs/interfaces/ImageProps.md)\>, [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>\>, keyof [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md)\>, `never`\> & [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md) ; `mode`: `TBlendImageMode` ; `type`: `string`  } \| (`backend`: [`WebGLFilterBackend`](/apidocs/classes/WebGLFilterBackend.md), `image`: [`FabricImage`](/apidocs/classes/FabricImage.md)<`Partial`<[`ImageProps`](/apidocs/interfaces/ImageProps.md)\>, [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>) => ``null`` \| `WebGLTexture` \| () => { `type`: `string`  } \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap) \| (`gl`: `WebGLRenderingContext`, `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)) => `void` \| () => `string` \| () => `string` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate) \| [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `fragmentSource`: `string`, `vertexSource`: `string`) => { `attributeLocations`: [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) ; `program`: `WebGLProgram` ; `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)  } \| (`gl`: `WebGLRenderingContext`, `attributeLocations`: `Record`<`string`, `number`\>, `aPositionData`: `Float32Array`) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `texture`: `WebGLTexture`, `textureUnit`: `number`) => `void` \| (`gl`: `WebGLRenderingContext`, `textureUnit`: `number`) => `void` \| () => `undefined` \| `string` \| `number` \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => [`TWebGLProgramCacheItem`](/apidocs/modules.md#twebglprogramcacheitem) \| [`FabricImage`](/apidocs/classes/FabricImage.md)<`Partial`<[`ImageProps`](/apidocs/interfaces/ImageProps.md)\>, [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> \| (`options?`: `any`) => `boolean` \| () => { `alpha`: `number` ; `image`: `Pick`<`Omit`<`Partial`<[`ImageProps`](/apidocs/interfaces/ImageProps.md)\> & [`TClassProperties`](/apidocs/modules.md#tclassproperties)<[`FabricImage`](/apidocs/classes/FabricImage.md)<`Partial`<[`ImageProps`](/apidocs/interfaces/ImageProps.md)\>, [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>\>, keyof [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md)\>, `never`\> & [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md) ; `mode`: `TBlendImageMode` ; `type`: `string`  } \| (`backend`: [`WebGLFilterBackend`](/apidocs/classes/WebGLFilterBackend.md), `image`: [`FabricImage`](/apidocs/classes/FabricImage.md)<`Partial`<[`ImageProps`](/apidocs/interfaces/ImageProps.md)\>, [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>) => ``null`` \| `WebGLTexture` \| () => { `type`: `string`  } \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap) \| (`gl`: `WebGLRenderingContext`, `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)) => `void` \| () => `string` \| () => `string` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate) \| [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `fragmentSource`: `string`, `vertexSource`: `string`) => { `attributeLocations`: [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) ; `program`: `WebGLProgram` ; `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)  } \| (`gl`: `WebGLRenderingContext`, `attributeLocations`: `Record`<`string`, `number`\>, `aPositionData`: `Float32Array`) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `texture`: `WebGLTexture`, `textureUnit`: `number`) => `void` \| (`gl`: `WebGLRenderingContext`, `textureUnit`: `number`) => `void` \| () =\> string \| number \| ((gl: WebGLRenderingContext, program: WebGLProgram) =\> TWebGLAttributeLocationMap) \| ... 23 more ... \| undefined \| (`value`: `any`) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| () => `number`[] \| (`value`: `any`) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| () => `number`[]
+▸ **getMainParameter**(): `undefined` \| `string` \| `number` \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => [`TWebGLProgramCacheItem`](/apidocs/modules.md#twebglprogramcacheitem) \| [`FabricImage`](/apidocs/classes/FabricImage.md)\<`Partial`\<[`ImageProps`](/apidocs/interfaces/ImageProps.md)\>, [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> \| (`options?`: `any`) => `boolean` \| () => \{ `alpha`: `number` ; `image`: `Pick`\<`Omit`\<`Partial`\<[`ImageProps`](/apidocs/interfaces/ImageProps.md)\> & [`TClassProperties`](/apidocs/modules.md#tclassproperties)\<[`FabricImage`](/apidocs/classes/FabricImage.md)\<`Partial`\<[`ImageProps`](/apidocs/interfaces/ImageProps.md)\>, [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>\>, keyof [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md)\>, `never`\> & [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md) ; `mode`: `TBlendImageMode` ; `type`: `string`  } \| (`backend`: [`WebGLFilterBackend`](/apidocs/classes/WebGLFilterBackend.md), `image`: [`FabricImage`](/apidocs/classes/FabricImage.md)\<`Partial`\<[`ImageProps`](/apidocs/interfaces/ImageProps.md)\>, [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>) => ``null`` \| `WebGLTexture` \| () => \{ `type`: `string`  } \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap) \| (`gl`: `WebGLRenderingContext`, `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)) => `void` \| () => `string` \| () => `string` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate) \| [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `fragmentSource`: `string`, `vertexSource`: `string`) => \{ `attributeLocations`: [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) ; `program`: `WebGLProgram` ; `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)  } \| (`gl`: `WebGLRenderingContext`, `attributeLocations`: `Record`\<`string`, `number`\>, `aPositionData`: `Float32Array`) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `texture`: `WebGLTexture`, `textureUnit`: `number`) => `void` \| (`gl`: `WebGLRenderingContext`, `textureUnit`: `number`) => `void` \| () => `undefined` \| `string` \| `number` \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => [`TWebGLProgramCacheItem`](/apidocs/modules.md#twebglprogramcacheitem) \| [`FabricImage`](/apidocs/classes/FabricImage.md)\<`Partial`\<[`ImageProps`](/apidocs/interfaces/ImageProps.md)\>, [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> \| (`options?`: `any`) => `boolean` \| () => \{ `alpha`: `number` ; `image`: `Pick`\<`Omit`\<`Partial`\<[`ImageProps`](/apidocs/interfaces/ImageProps.md)\> & [`TClassProperties`](/apidocs/modules.md#tclassproperties)\<[`FabricImage`](/apidocs/classes/FabricImage.md)\<`Partial`\<[`ImageProps`](/apidocs/interfaces/ImageProps.md)\>, [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>\>, keyof [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md)\>, `never`\> & [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md) ; `mode`: `TBlendImageMode` ; `type`: `string`  } \| (`backend`: [`WebGLFilterBackend`](/apidocs/classes/WebGLFilterBackend.md), `image`: [`FabricImage`](/apidocs/classes/FabricImage.md)\<`Partial`\<[`ImageProps`](/apidocs/interfaces/ImageProps.md)\>, [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>) => ``null`` \| `WebGLTexture` \| () => \{ `type`: `string`  } \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap) \| (`gl`: `WebGLRenderingContext`, `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)) => `void` \| () => `string` \| () => `string` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate) \| [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `fragmentSource`: `string`, `vertexSource`: `string`) => \{ `attributeLocations`: [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) ; `program`: `WebGLProgram` ; `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)  } \| (`gl`: `WebGLRenderingContext`, `attributeLocations`: `Record`\<`string`, `number`\>, `aPositionData`: `Float32Array`) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `texture`: `WebGLTexture`, `textureUnit`: `number`) => `void` \| (`gl`: `WebGLRenderingContext`, `textureUnit`: `number`) => `void` \| () =\> string \| number \| ((gl: WebGLRenderingContext, program: WebGLProgram) =\> TWebGLAttributeLocationMap) \| ... 23 more ... \| undefined \| (`value`: `any`) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| () => `number`[] \| (`value`: `any`) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| () => `number`[]
 
 #### Returns
 
-`undefined` \| `string` \| `number` \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => [`TWebGLProgramCacheItem`](/apidocs/modules.md#twebglprogramcacheitem) \| [`FabricImage`](/apidocs/classes/FabricImage.md)<`Partial`<[`ImageProps`](/apidocs/interfaces/ImageProps.md)\>, [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> \| (`options?`: `any`) => `boolean` \| () => { `alpha`: `number` ; `image`: `Pick`<`Omit`<`Partial`<[`ImageProps`](/apidocs/interfaces/ImageProps.md)\> & [`TClassProperties`](/apidocs/modules.md#tclassproperties)<[`FabricImage`](/apidocs/classes/FabricImage.md)<`Partial`<[`ImageProps`](/apidocs/interfaces/ImageProps.md)\>, [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>\>, keyof [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md)\>, `never`\> & [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md) ; `mode`: `TBlendImageMode` ; `type`: `string`  } \| (`backend`: [`WebGLFilterBackend`](/apidocs/classes/WebGLFilterBackend.md), `image`: [`FabricImage`](/apidocs/classes/FabricImage.md)<`Partial`<[`ImageProps`](/apidocs/interfaces/ImageProps.md)\>, [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>) => ``null`` \| `WebGLTexture` \| () => { `type`: `string`  } \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap) \| (`gl`: `WebGLRenderingContext`, `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)) => `void` \| () => `string` \| () => `string` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate) \| [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `fragmentSource`: `string`, `vertexSource`: `string`) => { `attributeLocations`: [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) ; `program`: `WebGLProgram` ; `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)  } \| (`gl`: `WebGLRenderingContext`, `attributeLocations`: `Record`<`string`, `number`\>, `aPositionData`: `Float32Array`) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `texture`: `WebGLTexture`, `textureUnit`: `number`) => `void` \| (`gl`: `WebGLRenderingContext`, `textureUnit`: `number`) => `void` \| () => `undefined` \| `string` \| `number` \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => [`TWebGLProgramCacheItem`](/apidocs/modules.md#twebglprogramcacheitem) \| [`FabricImage`](/apidocs/classes/FabricImage.md)<`Partial`<[`ImageProps`](/apidocs/interfaces/ImageProps.md)\>, [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> \| (`options?`: `any`) => `boolean` \| () => { `alpha`: `number` ; `image`: `Pick`<`Omit`<`Partial`<[`ImageProps`](/apidocs/interfaces/ImageProps.md)\> & [`TClassProperties`](/apidocs/modules.md#tclassproperties)<[`FabricImage`](/apidocs/classes/FabricImage.md)<`Partial`<[`ImageProps`](/apidocs/interfaces/ImageProps.md)\>, [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>\>, keyof [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md)\>, `never`\> & [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md) ; `mode`: `TBlendImageMode` ; `type`: `string`  } \| (`backend`: [`WebGLFilterBackend`](/apidocs/classes/WebGLFilterBackend.md), `image`: [`FabricImage`](/apidocs/classes/FabricImage.md)<`Partial`<[`ImageProps`](/apidocs/interfaces/ImageProps.md)\>, [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>) => ``null`` \| `WebGLTexture` \| () => { `type`: `string`  } \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap) \| (`gl`: `WebGLRenderingContext`, `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)) => `void` \| () => `string` \| () => `string` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate) \| [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `fragmentSource`: `string`, `vertexSource`: `string`) => { `attributeLocations`: [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) ; `program`: `WebGLProgram` ; `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)  } \| (`gl`: `WebGLRenderingContext`, `attributeLocations`: `Record`<`string`, `number`\>, `aPositionData`: `Float32Array`) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `texture`: `WebGLTexture`, `textureUnit`: `number`) => `void` \| (`gl`: `WebGLRenderingContext`, `textureUnit`: `number`) => `void` \| () =\> string \| number \| ((gl: WebGLRenderingContext, program: WebGLProgram) =\> TWebGLAttributeLocationMap) \| ... 23 more ... \| undefined \| (`value`: `any`) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| () => `number`[] \| (`value`: `any`) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| () => `number`[]
+`undefined` \| `string` \| `number` \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => [`TWebGLProgramCacheItem`](/apidocs/modules.md#twebglprogramcacheitem) \| [`FabricImage`](/apidocs/classes/FabricImage.md)\<`Partial`\<[`ImageProps`](/apidocs/interfaces/ImageProps.md)\>, [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> \| (`options?`: `any`) => `boolean` \| () => \{ `alpha`: `number` ; `image`: `Pick`\<`Omit`\<`Partial`\<[`ImageProps`](/apidocs/interfaces/ImageProps.md)\> & [`TClassProperties`](/apidocs/modules.md#tclassproperties)\<[`FabricImage`](/apidocs/classes/FabricImage.md)\<`Partial`\<[`ImageProps`](/apidocs/interfaces/ImageProps.md)\>, [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>\>, keyof [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md)\>, `never`\> & [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md) ; `mode`: `TBlendImageMode` ; `type`: `string`  } \| (`backend`: [`WebGLFilterBackend`](/apidocs/classes/WebGLFilterBackend.md), `image`: [`FabricImage`](/apidocs/classes/FabricImage.md)\<`Partial`\<[`ImageProps`](/apidocs/interfaces/ImageProps.md)\>, [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>) => ``null`` \| `WebGLTexture` \| () => \{ `type`: `string`  } \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap) \| (`gl`: `WebGLRenderingContext`, `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)) => `void` \| () => `string` \| () => `string` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate) \| [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `fragmentSource`: `string`, `vertexSource`: `string`) => \{ `attributeLocations`: [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) ; `program`: `WebGLProgram` ; `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)  } \| (`gl`: `WebGLRenderingContext`, `attributeLocations`: `Record`\<`string`, `number`\>, `aPositionData`: `Float32Array`) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `texture`: `WebGLTexture`, `textureUnit`: `number`) => `void` \| (`gl`: `WebGLRenderingContext`, `textureUnit`: `number`) => `void` \| () => `undefined` \| `string` \| `number` \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => [`TWebGLProgramCacheItem`](/apidocs/modules.md#twebglprogramcacheitem) \| [`FabricImage`](/apidocs/classes/FabricImage.md)\<`Partial`\<[`ImageProps`](/apidocs/interfaces/ImageProps.md)\>, [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> \| (`options?`: `any`) => `boolean` \| () => \{ `alpha`: `number` ; `image`: `Pick`\<`Omit`\<`Partial`\<[`ImageProps`](/apidocs/interfaces/ImageProps.md)\> & [`TClassProperties`](/apidocs/modules.md#tclassproperties)\<[`FabricImage`](/apidocs/classes/FabricImage.md)\<`Partial`\<[`ImageProps`](/apidocs/interfaces/ImageProps.md)\>, [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>\>, keyof [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md)\>, `never`\> & [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md) ; `mode`: `TBlendImageMode` ; `type`: `string`  } \| (`backend`: [`WebGLFilterBackend`](/apidocs/classes/WebGLFilterBackend.md), `image`: [`FabricImage`](/apidocs/classes/FabricImage.md)\<`Partial`\<[`ImageProps`](/apidocs/interfaces/ImageProps.md)\>, [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>) => ``null`` \| `WebGLTexture` \| () => \{ `type`: `string`  } \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap) \| (`gl`: `WebGLRenderingContext`, `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)) => `void` \| () => `string` \| () => `string` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate) \| [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `fragmentSource`: `string`, `vertexSource`: `string`) => \{ `attributeLocations`: [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) ; `program`: `WebGLProgram` ; `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)  } \| (`gl`: `WebGLRenderingContext`, `attributeLocations`: `Record`\<`string`, `number`\>, `aPositionData`: `Float32Array`) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `texture`: `WebGLTexture`, `textureUnit`: `number`) => `void` \| (`gl`: `WebGLRenderingContext`, `textureUnit`: `number`) => `void` \| () =\> string \| number \| ((gl: WebGLRenderingContext, program: WebGLProgram) =\> TWebGLAttributeLocationMap) \| ... 23 more ... \| undefined \| (`value`: `any`) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| () => `number`[] \| (`value`: `any`) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| () => `number`[]
 
 #### Inherited from
 
@@ -563,7 +520,7 @@ ___
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:351](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L351)
+[src/filters/BaseFilter.ts:351](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L351)
 
 ___
 
@@ -590,7 +547,7 @@ Return WebGL uniform locations for this filter's shader.
 
 #### Defined in
 
-[src/filters/BlendImage.ts:173](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BlendImage.ts#L173)
+[src/filters/BlendImage.ts:173](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BlendImage.ts#L173)
 
 ___
 
@@ -619,7 +576,7 @@ Other filters may need their own version ( ColorMatrix, HueRotation, gamma, Comp
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:233](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L233)
+[src/filters/BaseFilter.ts:233](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L233)
 
 ___
 
@@ -647,7 +604,7 @@ the compiled program shader
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:295](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L295)
+[src/filters/BaseFilter.ts:295](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L295)
 
 ___
 
@@ -662,7 +619,7 @@ Send attribute data from this filter to its shader program on the GPU.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `gl` | `WebGLRenderingContext` | The canvas context used to compile the shader program. |
-| `attributeLocations` | `Record`<`string`, `number`\> | A map of shader attribute names to their locations. |
+| `attributeLocations` | `Record`\<`string`, `number`\> | A map of shader attribute names to their locations. |
 | `aPositionData` | `Float32Array` | - |
 
 #### Returns
@@ -675,7 +632,7 @@ Send attribute data from this filter to its shader program on the GPU.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:177](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L177)
+[src/filters/BaseFilter.ts:177](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L177)
 
 ___
 
@@ -702,7 +659,7 @@ Send data from this filter to its shader program's uniforms.
 
 #### Defined in
 
-[src/filters/BlendImage.ts:189](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BlendImage.ts#L189)
+[src/filters/BlendImage.ts:189](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BlendImage.ts#L189)
 
 ___
 
@@ -726,7 +683,7 @@ ___
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:355](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L355)
+[src/filters/BaseFilter.ts:355](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L355)
 
 ___
 
@@ -752,7 +709,7 @@ JSON
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:405](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L405)
+[src/filters/BaseFilter.ts:405](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L405)
 
 ___
 
@@ -771,7 +728,7 @@ Object representation of an instance
 | Name | Type |
 | :------ | :------ |
 | `alpha` | `number` |
-| `image` | `Pick`<`Omit`<`Partial`<[`ImageProps`](/apidocs/interfaces/ImageProps.md)\> & [`TClassProperties`](/apidocs/modules.md#tclassproperties)<[`FabricImage`](/apidocs/classes/FabricImage.md)<`Partial`<[`ImageProps`](/apidocs/interfaces/ImageProps.md)\>, [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>\>, keyof [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md)\>, `never`\> & [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md) |
+| `image` | `Pick`\<`Omit`\<`Partial`\<[`ImageProps`](/apidocs/interfaces/ImageProps.md)\> & [`TClassProperties`](/apidocs/modules.md#tclassproperties)\<[`FabricImage`](/apidocs/classes/FabricImage.md)\<`Partial`\<[`ImageProps`](/apidocs/interfaces/ImageProps.md)\>, [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>\>, keyof [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md)\>, `never`\> & [`SerializedImageProps`](/apidocs/interfaces/SerializedImageProps.md) |
 | `mode` | `TBlendImageMode` |
 | `type` | `string` |
 
@@ -781,7 +738,7 @@ Object representation of an instance
 
 #### Defined in
 
-[src/filters/BlendImage.ts:202](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BlendImage.ts#L202)
+[src/filters/BlendImage.ts:202](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BlendImage.ts#L202)
 
 ___
 
@@ -806,13 +763,13 @@ ___
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:345](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BaseFilter.ts#L345)
+[src/filters/BaseFilter.ts:345](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L345)
 
 ___
 
 ### fromObject
 
-▸ `Static` **fromObject**(`object`, `options?`): `Promise`<[`BaseFilter`](/apidocs/classes/filters.BaseFilter.md)\>
+▸ **fromObject**(`object`, `options?`): `Promise`\<[`BaseFilter`](/apidocs/classes/filters.BaseFilter.md)\>
 
 Create filter instance from an object representation
 
@@ -820,13 +777,13 @@ Create filter instance from an object representation
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `object` | `Record`<`string`, `any`\> | Object to create an instance from |
+| `object` | `Record`\<`string`, `any`\> | Object to create an instance from |
 | `options?` | `Object` |  |
 | `options.signal` | `AbortSignal` | handle aborting image loading, see https://developer.mozilla.org/en-US/docs/Web/API/AbortController/signal |
 
 #### Returns
 
-`Promise`<[`BaseFilter`](/apidocs/classes/filters.BaseFilter.md)\>
+`Promise`\<[`BaseFilter`](/apidocs/classes/filters.BaseFilter.md)\>
 
 **`Static`**
 
@@ -836,4 +793,4 @@ Create filter instance from an object representation
 
 #### Defined in
 
-[src/filters/BlendImage.ts:219](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/filters/BlendImage.ts#L219)
+[src/filters/BlendImage.ts:219](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BlendImage.ts#L219)

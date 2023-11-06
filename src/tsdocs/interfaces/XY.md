@@ -4,13 +4,6 @@
 
 - [`Point`](/apidocs/classes/Point.md)
 
-## Table of contents
-
-### Properties
-
-- [x](/apidocs/interfaces/XY.md#x)
-- [y](/apidocs/interfaces/XY.md#y)
-
 ## Properties
 
 ### x
@@ -19,7 +12,7 @@
 
 #### Defined in
 
-[src/Point.ts:6](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Point.ts#L6)
+[src/Point.ts:6](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Point.ts#L6)
 
 ___
 
@@ -29,4 +22,4 @@ ___
 
 #### Defined in
 
-[src/Point.ts:7](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/Point.ts#L7)
+[src/Point.ts:7](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Point.ts#L7)

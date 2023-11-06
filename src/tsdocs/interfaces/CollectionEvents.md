@@ -8,13 +8,6 @@
 
   ↳ [`StaticCanvasEvents`](/apidocs/interfaces/StaticCanvasEvents.md)
 
-## Table of contents
-
-### Properties
-
-- [object:added](/apidocs/interfaces/CollectionEvents.md#object:added)
-- [object:removed](/apidocs/interfaces/CollectionEvents.md#object:removed)
-
 ## Properties
 
 ### object:added
@@ -25,11 +18,11 @@
 
 | Name | Type |
 | :------ | :------ |
-| `target` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
+| `target` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
 
 #### Defined in
 
-[src/EventTypeDefs.ts:223](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/EventTypeDefs.ts#L223)
+[src/EventTypeDefs.ts:223](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L223)
 
 ___
 
@@ -41,8 +34,8 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `target` | [`FabricObject`](/apidocs/classes/FabricObject.md)<`Partial`<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
+| `target` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
 
 #### Defined in
 
-[src/EventTypeDefs.ts:224](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/EventTypeDefs.ts#L224)
+[src/EventTypeDefs.ts:224](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L224)

@@ -1,4 +1,4 @@
-# Interface: TEvent<E\>
+# Interface: TEvent\<E\>
 
 ## Type parameters
 
@@ -18,12 +18,6 @@
 
   ↳ [`DragEventData`](/apidocs/interfaces/DragEventData.md)
 
-## Table of contents
-
-### Properties
-
-- [e](/apidocs/interfaces/TEvent.md#e)
-
 ## Properties
 
 ### e
@@ -32,4 +26,4 @@
 
 #### Defined in
 
-[src/EventTypeDefs.ts:84](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/EventTypeDefs.ts#L84)
+[src/EventTypeDefs.ts:84](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L84)

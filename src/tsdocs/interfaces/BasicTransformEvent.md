@@ -1,4 +1,4 @@
-# Interface: BasicTransformEvent<E\>
+# Interface: BasicTransformEvent\<E\>
 
 ## Type parameters
 
@@ -8,17 +8,9 @@
 
 ## Hierarchy
 
-- [`TEvent`](/apidocs/interfaces/TEvent.md)<`E`\>
+- [`TEvent`](/apidocs/interfaces/TEvent.md)\<`E`\>
 
   ↳ **`BasicTransformEvent`**
-
-## Table of contents
-
-### Properties
-
-- [e](/apidocs/interfaces/BasicTransformEvent.md#e)
-- [pointer](/apidocs/interfaces/BasicTransformEvent.md#pointer)
-- [transform](/apidocs/interfaces/BasicTransformEvent.md#transform)
 
 ## Properties
 
@@ -32,7 +24,7 @@
 
 #### Defined in
 
-[src/EventTypeDefs.ts:84](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/EventTypeDefs.ts#L84)
+[src/EventTypeDefs.ts:84](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L84)
 
 ___
 
@@ -42,7 +34,7 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:94](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/EventTypeDefs.ts#L94)
+[src/EventTypeDefs.ts:94](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L94)
 
 ___
 
@@ -52,4 +44,4 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:93](https://github.com/fabricjs/fabric.js/blob/7d0e39dd9/src/EventTypeDefs.ts#L93)
+[src/EventTypeDefs.ts:93](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L93)
