@@ -61,5 +61,13 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `tsdocs`,
+        path: `${__dirname}/src/tsdocs`,
+      },
+    },
+    `gatsby-transformer-remark`,
   ],
 };

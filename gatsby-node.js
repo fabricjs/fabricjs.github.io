@@ -19,36 +19,12 @@ exports.sourceNodes = async ({
     'https://api.github.com/repos/fabricjs/fabric.js/contributors?per_page=10'
   );
   const jsonData = await result.json();
-  // Commented out, since we also require the 'name' which is not available until we query user-details of each contributor
-  /* jsonData.forEach((datum) => {
-    createNode({
-      // arbitrary fields from the data
-      name: datum.login,
-      picUrl: datum.avatar_url, // maybe later create remote file-nodes from this so as for Sharp to optimize the img delivery
-      url: datum.html_url,
-      // required fields
-      id: createNodeId(`fabricjs-contributor-${datum.login}`),
-      parent: null,
-      children: [],
-      internal: {
-        type: 'Contributor',
-        contentDigest: createContentDigest(datum),
-      },
-    });
-  });// */
-
-  const numUsers = jsonData.length;
-
-  // https://zellwk.com/blog/async-await-in-loops/
-
-  for (let userIndex = 0; userIndex < numUsers; userIndex++) {
-    /* eslint-disable-line no-plusplus */
+  for (const jsonUser of jsonData) {
     // console.log(`Creating node for ${jsonData[userIndex].login}`);
     const userData = await fetch(
-      `https://api.github.com/users/${jsonData[userIndex].login}`
-    ); /* eslint-disable-line no-await-in-loop */
-    const user =
-      await userData.json(); /* eslint-disable-line no-await-in-loop */
+      `https://api.github.com/users/${jsonUser.login}`
+    );
+    const user = await userData.json();
     createNode({
       // arbitrary fields from the data
       name: user.name || user.login,
@@ -87,6 +63,21 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       node,
       name: 'slug',
       value: slug.replace(/ +/g, '-').replace(/-+/g, '-'), // slug.replace(/\/$/,"")    //also remove trailing slash if any (this is not req coz while creating the slug using createFilePath(), we have already set 'trailingSlash' as false)
+    });
+  }
+  if (node.internal.type === 'MarkdownRemark') {
+    const { createNodeField } = actions;
+    const slug = createFilePath({
+      node,
+      getNode,
+      basePath: 'tsdocs',
+      trailingSlash: false,
+    }); /* basePath -- path inside src folder to act as base path */
+
+    createNodeField({
+      node,
+      name: 'slug',
+      value: `/apidocs${slug.replace(/ +/g, '-').replace(/-+/g, '-')}.md`,
     });
   }
 };
@@ -264,5 +255,67 @@ exports.createPages = async ({ graphql, actions }) => {
     path: '/docs',
     component: path.resolve('./src/templates/docs.jsx'),
     context: { docList },
+  });
+
+  // +------------------------------------------------------------------+
+  // | Create pages for 'tsdocs'                                       |
+  // +------------------------------------------------------------------+
+
+  /// /fetch the 'doc' md files and create pages for them
+  const apiDocQueryResult = await graphql(`
+    query apidocPagesQueryResult {
+      allApidocPagesMD: allMarkdownRemark(
+        filter: {
+          fileAbsolutePath: {
+            regex: "//tsdocs/[a-zA-Z0-9-]+/[a-zA-Z0-9-.]+.md/"
+          }
+        }
+      ) {
+        apidocPages: nodes {
+          html
+          fields {
+            slug
+          }
+        }
+      }
+    }
+  `);
+  const { apidocPages } = apiDocQueryResult.data.allApidocPagesMD;
+  // collect all doc titles and links in a array which we'll pass as context when creating each doc page
+  /* let docList = [];
+  docPages.forEach(({frontmatter,fields})=>{
+    fields.slug!==null && fields.slug.trim()!=='' && docList.push({'title':frontmatter.title,'slug':fields.slug})
+  }) */
+  const apidocList = apidocPages.map(({ fields }) => ({
+    title: fields.slug,
+    slug: fields.slug,
+  }));
+
+  // create each 'doc' page
+  apidocPages.forEach(({ fields }, di) => {
+    fields.slug !== null &&
+      fields.slug.trim() !== '' &&
+      createPage({
+        path: fields.slug,
+        component: `${path.resolve('./src/templates/apidoc.jsx')}`,
+        context: {
+          slug: fields.slug,
+          prev:
+            di === 0
+              ? null
+              : {
+                  title: apidocPages[di - 1].fields.title,
+                  slug: apidocPages[di - 1].fields.slug,
+                },
+          next:
+            di === apidocPages.length - 1
+              ? null
+              : {
+                  title: apidocPages[di + 1].fields.title,
+                  slug: apidocPages[di + 1].fields.slug,
+                },
+          apidocList,
+        },
+      });
   });
 };
