@@ -15,16 +15,21 @@
 - [CanvasDOMManager](/apidocs/classes/CanvasDOMManager.md)
 - [Circle](/apidocs/classes/Circle.md)
 - [CircleBrush](/apidocs/classes/CircleBrush.md)
+- [ClipPathLayout](/apidocs/classes/ClipPathLayout.md)
 - [Color](/apidocs/classes/Color.md)
 - [Control](/apidocs/classes/Control.md)
 - [Ellipse](/apidocs/classes/Ellipse.md)
 - [FabricImage](/apidocs/classes/FabricImage.md)
 - [FabricObject](/apidocs/classes/FabricObject.md)
 - [FabricText](/apidocs/classes/FabricText.md)
+- [FitContentLayout](/apidocs/classes/FitContentLayout.md)
+- [FixedLayout](/apidocs/classes/FixedLayout.md)
 - [Gradient](/apidocs/classes/Gradient.md)
 - [Group](/apidocs/classes/Group.md)
 - [IText](/apidocs/classes/IText.md)
 - [Intersection](/apidocs/classes/Intersection.md)
+- [LayoutManager](/apidocs/classes/LayoutManager.md)
+- [LayoutStrategy](/apidocs/classes/LayoutStrategy.md)
 - [Line](/apidocs/classes/Line.md)
 - [Observable](/apidocs/classes/Observable.md)
 - [Path](/apidocs/classes/Path.md)
@@ -107,7 +112,7 @@ Renames and re-exports [FabricText](/apidocs/classes/FabricText.md)
 
 ### Abortable
 
-Ƭ **Abortable**: `Object`
+ **Abortable**: `Object`
 
 #### Type declaration
 
@@ -117,23 +122,23 @@ Renames and re-exports [FabricText](/apidocs/classes/FabricText.md)
 
 #### Defined in
 
-[src/typedefs.ts:118](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/typedefs.ts#L118)
+[src/typedefs.ts:118](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/typedefs.ts#L118)
 
 ___
 
 ### CanvasPointerEvents
 
-Ƭ **CanvasPointerEvents**: `TPointerEvents`\<``"mouse:"``\>
+ **CanvasPointerEvents**: `TPointerEvents`\<``"mouse:"``\>
 
 #### Defined in
 
-[src/EventTypeDefs.ts:257](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L257)
+[src/EventTypeDefs.ts:262](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L262)
 
 ___
 
 ### CircleBrushPoint
 
-Ƭ **CircleBrushPoint**: `Object`
+ **CircleBrushPoint**: `Object`
 
 #### Type declaration
 
@@ -146,13 +151,23 @@ ___
 
 #### Defined in
 
-[src/brushes/typedefs.ts:6](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/brushes/typedefs.ts#L6)
+[src/brushes/typedefs.ts:6](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/brushes/typedefs.ts#L6)
+
+___
+
+### CollectionChangeLayoutContext
+
+ **CollectionChangeLayoutContext**: [`CommonLayoutContext`](/apidocs/modules.md#commonlayoutcontext) & \{ `targets`: [`FabricObject`](/apidocs/classes/FabricObject.md)[] ; `type`: typeof `LAYOUT_TYPE_ADDED` \| typeof `LAYOUT_TYPE_REMOVED`  }
+
+#### Defined in
+
+[src/LayoutManager/types.ts:91](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/LayoutManager/types.ts#L91)
 
 ___
 
 ### ColorStop
 
-Ƭ **ColorStop**: `Object`
+ **ColorStop**: `Object`
 
 #### Type declaration
 
@@ -164,23 +179,42 @@ ___
 
 #### Defined in
 
-[src/gradient/typedefs.ts:9](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/gradient/typedefs.ts#L9)
+[src/gradient/typedefs.ts:9](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/gradient/typedefs.ts#L9)
+
+___
+
+### CommonLayoutContext
+
+ **CommonLayoutContext**: `Object`
+
+#### Type declaration
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `path?` | [`Group`](/apidocs/classes/Group.md)[] | array of objects starting from the object that triggered the call to the current one |
+| `strategy?` | [`LayoutStrategy`](/apidocs/classes/LayoutStrategy.md) | - |
+| `target` | [`Group`](/apidocs/classes/Group.md) | - |
+| `type` | [`LayoutTrigger`](/apidocs/modules.md#layouttrigger) | - |
+
+#### Defined in
+
+[src/LayoutManager/types.ts:74](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/LayoutManager/types.ts#L74)
 
 ___
 
 ### CompleteTextStyleDeclaration
 
-Ƭ **CompleteTextStyleDeclaration**: `Pick`\<[`FabricText`](/apidocs/classes/FabricText.md), `StylePropertiesType`\>
+ **CompleteTextStyleDeclaration**: `Pick`\<[`FabricText`](/apidocs/classes/FabricText.md), `StylePropertiesType`\>
 
 #### Defined in
 
-[src/shapes/Text/StyledText.ts:10](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/StyledText.ts#L10)
+[src/shapes/Text/StyledText.ts:10](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/StyledText.ts#L10)
 
 ___
 
 ### Constructor
 
-Ƭ **Constructor**\<`T`\>: (...`args`: `any`[]) => `T`
+ **Constructor**\<`T`\>: (...`args`: `any`[]) => `T`
 
 #### Type parameters
 
@@ -190,7 +224,7 @@ ___
 
 #### Type declaration
 
-• (`...args`): `T`
+(`...args`): `T`
 
 ##### Parameters
 
@@ -204,26 +238,26 @@ ___
 
 #### Defined in
 
-[src/typedefs.ts:20](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/typedefs.ts#L20)
+[src/typedefs.ts:20](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/typedefs.ts#L20)
 
 ___
 
 ### ControlActionHandler
 
-Ƭ **ControlActionHandler**: [`TransformAction`](/apidocs/modules.md#transformaction)\<[`Transform`](/apidocs/modules.md#transform), `any`\>
+ **ControlActionHandler**: [`TransformAction`](/apidocs/modules.md#transformaction)\<[`Transform`](/apidocs/modules.md#transform), `any`\>
 
 Control handlers that run on control click/down/up
 Those handlers run with or without a transform defined
 
 #### Defined in
 
-[src/EventTypeDefs.ts:38](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L38)
+[src/EventTypeDefs.ts:42](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L42)
 
 ___
 
 ### ControlCallback
 
-Ƭ **ControlCallback**\<`R`\>: (`eventData`: [`TPointerEvent`](/apidocs/modules.md#tpointerevent), `control`: [`Control`](/apidocs/classes/Control.md), `fabricObject`: [`FabricObject`](/apidocs/classes/FabricObject.md)) => `R`
+ **ControlCallback**\<`R`\>: (`eventData`: [`TPointerEvent`](/apidocs/modules.md#tpointerevent), `control`: [`Control`](/apidocs/classes/Control.md), `fabricObject`: [`FabricObject`](/apidocs/classes/FabricObject.md)) => `R`
 
 #### Type parameters
 
@@ -233,7 +267,7 @@ ___
 
 #### Type declaration
 
-▸ (`eventData`, `control`, `fabricObject`): `R`
+(`eventData`, `control`, `fabricObject`): `R`
 
 ##### Parameters
 
@@ -249,33 +283,33 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:40](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L40)
+[src/EventTypeDefs.ts:44](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L44)
 
 ___
 
 ### ControlCursorCallback
 
-Ƭ **ControlCursorCallback**: [`ControlCallback`](/apidocs/modules.md#controlcallback)\<`string`\>
+ **ControlCursorCallback**: [`ControlCallback`](/apidocs/modules.md#controlcallback)\<`string`\>
 
 #### Defined in
 
-[src/EventTypeDefs.ts:46](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L46)
+[src/EventTypeDefs.ts:50](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L50)
 
 ___
 
 ### GradientCoordValue
 
-Ƭ **GradientCoordValue**: `number` \| [`Percent`](/apidocs/modules.md#percent) \| `string`
+ **GradientCoordValue**: `number` \| [`Percent`](/apidocs/modules.md#percent) \| `string`
 
 #### Defined in
 
-[src/gradient/typedefs.ts:7](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/gradient/typedefs.ts#L7)
+[src/gradient/typedefs.ts:7](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/gradient/typedefs.ts#L7)
 
 ___
 
 ### GradientCoords
 
-Ƭ **GradientCoords**\<`T`\>: `T` extends ``"linear"`` ? [`LinearGradientCoords`](/apidocs/modules.md#lineargradientcoords)\<`number`\> : [`RadialGradientCoords`](/apidocs/modules.md#radialgradientcoords)\<`number`\>
+ **GradientCoords**\<`T`\>: `T` extends ``"linear"`` ? [`LinearGradientCoords`](/apidocs/modules.md#lineargradientcoords)\<`number`\> : [`RadialGradientCoords`](/apidocs/modules.md#radialgradientcoords)\<`number`\>
 
 #### Type parameters
 
@@ -285,13 +319,13 @@ ___
 
 #### Defined in
 
-[src/gradient/typedefs.ts:61](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/gradient/typedefs.ts#L61)
+[src/gradient/typedefs.ts:61](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/gradient/typedefs.ts#L61)
 
 ___
 
 ### GradientOptions
 
-Ƭ **GradientOptions**\<`T`\>: `Object`
+ **GradientOptions**\<`T`\>: `Object`
 
 #### Type parameters
 
@@ -304,7 +338,7 @@ ___
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `colorStops?` | [`ColorStop`](/apidocs/modules.md#colorstop)[] | - |
-| `coords` | `Partial`\<[`GradientCoords`](/apidocs/modules.md#gradientcoords)\<`T`\>\> | - |
+| `coords?` | `Partial`\<[`GradientCoords`](/apidocs/modules.md#gradientcoords)\<`T`\>\> | - |
 | `gradientTransform?` | [`TMat2D`](/apidocs/modules.md#tmat2d) | **`Todo`** rename? |
 | `gradientUnits?` | [`GradientUnits`](/apidocs/modules.md#gradientunits) | - |
 | `id?` | `string` | - |
@@ -314,33 +348,33 @@ ___
 
 #### Defined in
 
-[src/gradient/typedefs.ts:65](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/gradient/typedefs.ts#L65)
+[src/gradient/typedefs.ts:65](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/gradient/typedefs.ts#L65)
 
 ___
 
 ### GradientType
 
-Ƭ **GradientType**: ``"linear"`` \| ``"radial"``
+ **GradientType**: ``"linear"`` \| ``"radial"``
 
 #### Defined in
 
-[src/gradient/typedefs.ts:5](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/gradient/typedefs.ts#L5)
+[src/gradient/typedefs.ts:5](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/gradient/typedefs.ts#L5)
 
 ___
 
 ### GradientUnits
 
-Ƭ **GradientUnits**: ``"pixels"`` \| ``"percentage"``
+ **GradientUnits**: ``"pixels"`` \| ``"percentage"``
 
 #### Defined in
 
-[src/gradient/typedefs.ts:3](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/gradient/typedefs.ts#L3)
+[src/gradient/typedefs.ts:3](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/gradient/typedefs.ts#L3)
 
 ___
 
 ### GraphemeBBox
 
-Ƭ **GraphemeBBox**: `Object`
+ **GraphemeBBox**: `Object`
 
 Measure and return the info of a single grapheme.
 needs the the info of previous graphemes already filled
@@ -361,13 +395,13 @@ Override to customize measuring
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:79](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L79)
+[src/shapes/Text/Text.ts:79](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L79)
 
 ___
 
 ### GraphemeData
 
-Ƭ **GraphemeData**: `Object`
+ **GraphemeData**: `Object`
 
 #### Type declaration
 
@@ -378,108 +412,164 @@ ___
 
 #### Defined in
 
-[src/shapes/Textbox.ts:23](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Textbox.ts#L23)
+[src/shapes/Textbox.ts:23](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Textbox.ts#L23)
 
 ___
 
 ### ImageFormat
 
-Ƭ **ImageFormat**: ``"jpeg"`` \| ``"png"``
+ **ImageFormat**: ``"jpeg"`` \| ``"png"``
 
 #### Defined in
 
-[src/typedefs.ts:46](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/typedefs.ts#L46)
+[src/typedefs.ts:46](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/typedefs.ts#L46)
 
 ___
 
 ### ImageSource
 
-Ƭ **ImageSource**: `HTMLImageElement` \| `HTMLVideoElement` \| `HTMLCanvasElement`
+ **ImageSource**: `HTMLImageElement` \| `HTMLVideoElement` \| `HTMLCanvasElement`
 
 #### Defined in
 
-[src/shapes/Image.ts:37](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Image.ts#L37)
+[src/shapes/Image.ts:37](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Image.ts#L37)
+
+___
+
+### ImperativeLayoutContext
+
+ **ImperativeLayoutContext**: [`CommonLayoutContext`](/apidocs/modules.md#commonlayoutcontext) & `ImperativeLayoutCommonOptions` & \{ `type`: typeof `LAYOUT_TYPE_IMPERATIVE`  }
+
+#### Defined in
+
+[src/LayoutManager/types.ts:116](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/LayoutManager/types.ts#L116)
+
+___
+
+### ImperativeLayoutOptions
+
+ **ImperativeLayoutOptions**: `ImperativeLayoutCommonOptions` & \{ `strategy?`: [`LayoutStrategy`](/apidocs/classes/LayoutStrategy.md)  }
+
+#### Defined in
+
+[src/LayoutManager/types.ts:70](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/LayoutManager/types.ts#L70)
+
+___
+
+### InitializationLayoutContext
+
+ **InitializationLayoutContext**: [`CommonLayoutContext`](/apidocs/modules.md#commonlayoutcontext) & \{ `targets`: [`FabricObject`](/apidocs/classes/FabricObject.md)[] ; `type`: typeof `LAYOUT_TYPE_INITIALIZATION` ; `x?`: `number` ; `y?`: `number`  }
+
+#### Defined in
+
+[src/LayoutManager/types.ts:84](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/LayoutManager/types.ts#L84)
 
 ___
 
 ### IntersectionType
 
-Ƭ **IntersectionType**: ``"Intersection"`` \| ``"Coincident"`` \| ``"Parallel"``
+ **IntersectionType**: ``"Intersection"`` \| ``"Coincident"`` \| ``"Parallel"``
 
 #### Defined in
 
-[src/Intersection.ts:6](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Intersection.ts#L6)
+[src/Intersection.ts:6](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Intersection.ts#L6)
+
+___
+
+### LayoutAfterEvent
+
+ **LayoutAfterEvent**: `Object`
+
+#### Type declaration
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `context` | [`StrictLayoutContext`](/apidocs/modules.md#strictlayoutcontext) | - |
+| `result?` | [`LayoutResult`](/apidocs/modules.md#layoutresult) | will be undefined if layout was skipped |
+
+#### Defined in
+
+[src/LayoutManager/types.ts:139](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/LayoutManager/types.ts#L139)
+
+___
+
+### LayoutBeforeEvent
+
+ **LayoutBeforeEvent**: `Object`
+
+#### Type declaration
+
+| Name | Type |
+| :------ | :------ |
+| `context` | [`StrictLayoutContext`](/apidocs/modules.md#strictlayoutcontext) |
+
+#### Defined in
+
+[src/LayoutManager/types.ts:135](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/LayoutManager/types.ts#L135)
 
 ___
 
 ### LayoutContext
 
-Ƭ **LayoutContext**: `Object`
-
-#### Index signature
-
-▪ [key: `string`]: `any`
-
-#### Type declaration
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `path?` | [`Group`](/apidocs/classes/Group.md)[] | array of objects starting from the object that triggered the call to the current one |
-| `type` | [`LayoutContextType`](/apidocs/modules.md#layoutcontexttype) | - |
+ **LayoutContext**: [`InitializationLayoutContext`](/apidocs/modules.md#initializationlayoutcontext) \| [`CollectionChangeLayoutContext`](/apidocs/modules.md#collectionchangelayoutcontext) \| [`ObjectModifiedLayoutContext`](/apidocs/modules.md#objectmodifiedlayoutcontext) \| [`ObjectModifyingLayoutContext`](/apidocs/modules.md#objectmodifyinglayoutcontext) \| [`ImperativeLayoutContext`](/apidocs/modules.md#imperativelayoutcontext)
 
 #### Defined in
 
-[src/shapes/Group.ts:35](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L35)
-
-___
-
-### LayoutContextType
-
-Ƭ **LayoutContextType**: ``"initialization"`` \| ``"object_modified"`` \| ``"added"`` \| ``"removed"`` \| ``"layout_change"`` \| ``"imperative"``
-
-#### Defined in
-
-[src/shapes/Group.ts:27](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L27)
+[src/LayoutManager/types.ts:121](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/LayoutManager/types.ts#L121)
 
 ___
 
 ### LayoutResult
 
-Ƭ **LayoutResult**: `Object`
-
-positioning and layout data **relative** to instance's parent
+ **LayoutResult**: `Object`
 
 #### Type declaration
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `centerX` | `number` | new centerX as measured by the containing plane (same as `left` with `originX` set to `center`) |
-| `centerY` | `number` | new centerY as measured by the containing plane (same as `top` with `originY` set to `center`) |
-| `correctionX?` | `number` | correctionX to translate objects by, measured as `centerX` |
-| `correctionY?` | `number` | correctionY to translate objects by, measured as `centerY` |
-| `height` | `number` | - |
-| `prevLayout?` | [`LayoutStrategy`](/apidocs/modules.md#layoutstrategy) | - |
-| `width` | `number` | - |
+| `nextCenter` | [`Point`](/apidocs/classes/Point.md) | - |
+| `offset` | [`Point`](/apidocs/classes/Point.md) | The vector used to offset objects by, as measured by the plane |
+| `prevCenter` | [`Point`](/apidocs/classes/Point.md) | - |
+| `result?` | [`LayoutStrategyResult`](/apidocs/modules.md#layoutstrategyresult) | - |
 
 #### Defined in
 
-[src/shapes/Group.ts:61](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L61)
+[src/LayoutManager/types.ts:54](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/LayoutManager/types.ts#L54)
 
 ___
 
-### LayoutStrategy
+### LayoutStrategyResult
 
-Ƭ **LayoutStrategy**: ``"fit-content"`` \| ``"fit-content-lazy"`` \| ``"fixed"`` \| ``"clip-path"``
+ **LayoutStrategyResult**: `Object`
+
+#### Type declaration
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `center` | [`Point`](/apidocs/classes/Point.md) | new center point as measured by the **containing** plane (same as `left` with `originX` set to `center`) |
+| `correction?` | [`Point`](/apidocs/classes/Point.md) | correction vector to translate objects by, measured in the same plane as `center` Since objects are measured relative to the group's center, once the group's size changes we must apply a correction to the objects' positions so that they relate to the new center. In other words, this value makes it possible to layout objects relative to the tl corner, for instance, but not only. |
+| `relativeCorrection?` | [`Point`](/apidocs/classes/Point.md) | correction vector to translate objects by as measured by the plane |
+| `size` | [`Point`](/apidocs/classes/Point.md) | new width and height of the layout target |
 
 #### Defined in
 
-[src/shapes/Group.ts:52](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L52)
+[src/LayoutManager/types.ts:28](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/LayoutManager/types.ts#L28)
+
+___
+
+### LayoutTrigger
+
+ **LayoutTrigger**: typeof `LAYOUT_TYPE_INITIALIZATION` \| typeof `LAYOUT_TYPE_OBJECT_MODIFYING` \| typeof `LAYOUT_TYPE_OBJECT_MODIFIED` \| typeof `LAYOUT_TYPE_ADDED` \| typeof `LAYOUT_TYPE_REMOVED` \| typeof `LAYOUT_TYPE_IMPERATIVE`
+
+#### Defined in
+
+[src/LayoutManager/types.ts:20](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/LayoutManager/types.ts#L20)
 
 ___
 
 ### LinearGradientCoords
 
-Ƭ **LinearGradientCoords**\<`T`\>: `Object`
+ **LinearGradientCoords**\<`T`\>: `Object`
 
 #### Type parameters
 
@@ -498,73 +588,93 @@ ___
 
 #### Defined in
 
-[src/gradient/typedefs.ts:15](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/gradient/typedefs.ts#L15)
+[src/gradient/typedefs.ts:15](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/gradient/typedefs.ts#L15)
 
 ___
 
 ### ModifierKey
 
-Ƭ **ModifierKey**: keyof `Pick`\<`MouseEvent` \| `PointerEvent` \| `TouchEvent`, ``"altKey"`` \| ``"shiftKey"`` \| ``"ctrlKey"`` \| ``"metaKey"``\>
+ **ModifierKey**: keyof `Pick`\<`MouseEvent` \| `PointerEvent` \| `TouchEvent`, ``"altKey"`` \| ``"shiftKey"`` \| ``"ctrlKey"`` \| ``"metaKey"``\>
 
 #### Defined in
 
-[src/EventTypeDefs.ts:11](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L11)
+[src/EventTypeDefs.ts:15](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L15)
 
 ___
 
 ### MultiSelectionStacking
 
-Ƭ **MultiSelectionStacking**: ``"canvas-stacking"`` \| ``"selection-order"``
+ **MultiSelectionStacking**: ``"canvas-stacking"`` \| ``"selection-order"``
 
 #### Defined in
 
-[src/shapes/ActiveSelection.ts:7](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/ActiveSelection.ts#L7)
+[src/shapes/ActiveSelection.ts:11](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/ActiveSelection.ts#L11)
+
+___
+
+### ObjectModifiedLayoutContext
+
+ **ObjectModifiedLayoutContext**: [`CommonLayoutContext`](/apidocs/modules.md#commonlayoutcontext) & \{ `e`: [`ModifiedEvent`](/apidocs/interfaces/ModifiedEvent.md) ; `trigger`: ``"modified"`` ; `type`: typeof `LAYOUT_TYPE_OBJECT_MODIFIED`  }
+
+#### Defined in
+
+[src/LayoutManager/types.ts:96](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/LayoutManager/types.ts#L96)
+
+___
+
+### ObjectModifyingLayoutContext
+
+ **ObjectModifyingLayoutContext**: [`CommonLayoutContext`](/apidocs/modules.md#commonlayoutcontext) & \{ `type`: typeof `LAYOUT_TYPE_OBJECT_MODIFYING`  } & \{ `e`: [`BasicTransformEvent`](/apidocs/interfaces/BasicTransformEvent.md) & \{ `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)  } ; `trigger`: [`TModificationEvents`](/apidocs/modules.md#tmodificationevents)  } \| \{ `e`: `ITextEvents`[``"changed"``] & \{ `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)  } ; `trigger`: ``"changed"``  }
+
+#### Defined in
+
+[src/LayoutManager/types.ts:102](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/LayoutManager/types.ts#L102)
 
 ___
 
 ### ObjectPointerEvents
 
-Ƭ **ObjectPointerEvents**: `TPointerEvents`\<``"mouse"``\>
+ **ObjectPointerEvents**: `TPointerEvents`\<``"mouse"``\>
 
 #### Defined in
 
-[src/EventTypeDefs.ts:256](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L256)
+[src/EventTypeDefs.ts:261](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L261)
 
 ___
 
 ### PatternOptions
 
-Ƭ **PatternOptions**: `Partial`\<`Pick`\<[`Pattern`](/apidocs/classes/Pattern.md), `ExportedKeys`\>\>
+ **PatternOptions**: `Partial`\<`Pick`\<[`Pattern`](/apidocs/classes/Pattern.md), `ExportedKeys`\>\> & \{ `source`: `CanvasImageSource`  }
 
 #### Defined in
 
-[src/Pattern/types.ts:13](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Pattern/types.ts#L13)
+[src/Pattern/types.ts:13](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Pattern/types.ts#L13)
 
 ___
 
 ### PatternRepeat
 
-Ƭ **PatternRepeat**: ``"repeat"`` \| ``"repeat-x"`` \| ``"repeat-y"`` \| ``"no-repeat"``
+ **PatternRepeat**: ``"repeat"`` \| ``"repeat-x"`` \| ``"repeat-y"`` \| ``"no-repeat"``
 
 #### Defined in
 
-[src/Pattern/types.ts:3](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Pattern/types.ts#L3)
+[src/Pattern/types.ts:3](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Pattern/types.ts#L3)
 
 ___
 
 ### Percent
 
-Ƭ **Percent**: \`$\{number}%\`
+ **Percent**: \`$\{number}%\`
 
 #### Defined in
 
-[src/typedefs.ts:44](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/typedefs.ts#L44)
+[src/typedefs.ts:44](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/typedefs.ts#L44)
 
 ___
 
 ### RadialGradientCoords
 
-Ƭ **RadialGradientCoords**\<`T`\>: `Object`
+ **RadialGradientCoords**\<`T`\>: `Object`
 
 #### Type parameters
 
@@ -585,23 +695,23 @@ ___
 
 #### Defined in
 
-[src/gradient/typedefs.ts:34](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/gradient/typedefs.ts#L34)
+[src/gradient/typedefs.ts:34](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/gradient/typedefs.ts#L34)
 
 ___
 
 ### SVGElementName
 
-Ƭ **SVGElementName**: ``"linearGradient"`` \| ``"radialGradient"`` \| ``"stop"``
+ **SVGElementName**: ``"linearGradient"`` \| ``"radialGradient"`` \| ``"stop"``
 
 #### Defined in
 
-[src/typedefs.ts:48](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/typedefs.ts#L48)
+[src/typedefs.ts:48](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/typedefs.ts#L48)
 
 ___
 
 ### SVGOptions
 
-Ƭ **SVGOptions**: `Object`
+ **SVGOptions**: `Object`
 
 #### Type declaration
 
@@ -615,23 +725,40 @@ ___
 
 #### Defined in
 
-[src/gradient/typedefs.ts:85](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/gradient/typedefs.ts#L85)
+[src/gradient/typedefs.ts:85](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/gradient/typedefs.ts#L85)
+
+___
+
+### SerializedLayoutManager
+
+ **SerializedLayoutManager**: `Object`
+
+#### Type declaration
+
+| Name | Type |
+| :------ | :------ |
+| `strategy` | `string` |
+| `type` | `string` |
+
+#### Defined in
+
+[src/LayoutManager/LayoutManager.ts:24](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/LayoutManager/LayoutManager.ts#L24)
 
 ___
 
 ### SerializedPatternOptions
 
-Ƭ **SerializedPatternOptions**: [`PatternOptions`](/apidocs/modules.md#patternoptions) & \{ `source`: `string`  }
+ **SerializedPatternOptions**: [`PatternOptions`](/apidocs/modules.md#patternoptions) & \{ `source`: `string` ; `type`: ``"pattern"``  }
 
 #### Defined in
 
-[src/Pattern/types.ts:15](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Pattern/types.ts#L15)
+[src/Pattern/types.ts:17](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Pattern/types.ts#L17)
 
 ___
 
 ### SerializedShadowOptions
 
-Ƭ **SerializedShadowOptions**: `Object`
+ **SerializedShadowOptions**: `Object`
 
 #### Type declaration
 
@@ -646,13 +773,13 @@ ___
 
 #### Defined in
 
-[src/Shadow.ts:22](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Shadow.ts#L22)
+[src/Shadow.ts:22](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Shadow.ts#L22)
 
 ___
 
 ### SprayBrushPoint
 
-Ƭ **SprayBrushPoint**: `Object`
+ **SprayBrushPoint**: `Object`
 
 #### Type declaration
 
@@ -665,23 +792,33 @@ ___
 
 #### Defined in
 
-[src/brushes/typedefs.ts:13](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/brushes/typedefs.ts#L13)
+[src/brushes/typedefs.ts:13](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/brushes/typedefs.ts#L13)
+
+___
+
+### StrictLayoutContext
+
+ **StrictLayoutContext**: [`LayoutContext`](/apidocs/modules.md#layoutcontext) & \{ `bubbles`: `boolean` ; `prevStrategy?`: [`LayoutStrategy`](/apidocs/classes/LayoutStrategy.md) ; `strategy`: [`LayoutStrategy`](/apidocs/classes/LayoutStrategy.md) ; `stopPropagation`: () => `void`  }
+
+#### Defined in
+
+[src/LayoutManager/types.ts:128](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/LayoutManager/types.ts#L128)
 
 ___
 
 ### SupportedSVGUnit
 
-Ƭ **SupportedSVGUnit**: ``"mm"`` \| ``"cm"`` \| ``"in"`` \| ``"pt"`` \| ``"pc"`` \| ``"em"``
+ **SupportedSVGUnit**: ``"mm"`` \| ``"cm"`` \| ``"in"`` \| ``"pt"`` \| ``"pc"`` \| ``"em"``
 
 #### Defined in
 
-[src/typedefs.ts:50](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/typedefs.ts#L50)
+[src/typedefs.ts:50](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/typedefs.ts#L50)
 
 ___
 
 ### T2DPipelineState
 
-Ƭ **T2DPipelineState**: `Object`
+ **T2DPipelineState**: `Object`
 
 #### Type declaration
 
@@ -699,33 +836,33 @@ ___
 
 #### Defined in
 
-[src/filters/typedefs.ts:35](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/typedefs.ts#L35)
+[src/filters/typedefs.ts:35](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/typedefs.ts#L35)
 
 ___
 
 ### TApplyFilterArgs
 
-Ƭ **TApplyFilterArgs**: `Object`
+ **TApplyFilterArgs**: `Object`
 
 #### Defined in
 
-[src/filters/typedefs.ts:60](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/typedefs.ts#L60)
+[src/filters/typedefs.ts:60](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/typedefs.ts#L60)
 
 ___
 
 ### TAxis
 
-Ƭ **TAxis**: ``"x"`` \| ``"y"``
+ **TAxis**: ``"x"`` \| ``"y"``
 
 #### Defined in
 
-[src/typedefs.ts:28](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/typedefs.ts#L28)
+[src/typedefs.ts:28](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/typedefs.ts#L28)
 
 ___
 
 ### TAxisKey
 
-Ƭ **TAxisKey**\<`T`\>: \`$\{T}$\{Capitalize\<TAxis\>}\`
+ **TAxisKey**\<`T`\>: \`$\{T}$\{Capitalize\<TAxis\>}\`
 
 #### Type parameters
 
@@ -735,33 +872,33 @@ ___
 
 #### Defined in
 
-[src/typedefs.ts:30](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/typedefs.ts#L30)
+[src/typedefs.ts:30](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/typedefs.ts#L30)
 
 ___
 
 ### TBBox
 
-Ƭ **TBBox**: \{ `left`: `number` ; `top`: `number`  } & [`TSize`](/apidocs/modules.md#tsize)
+ **TBBox**: \{ `left`: `number` ; `top`: `number`  } & [`TSize`](/apidocs/modules.md#tsize)
 
 #### Defined in
 
-[src/typedefs.ts:39](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/typedefs.ts#L39)
+[src/typedefs.ts:39](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/typedefs.ts#L39)
 
 ___
 
 ### TBrushEventData
 
-Ƭ **TBrushEventData**: [`TEvent`](/apidocs/interfaces/TEvent.md) & \{ `pointer`: [`Point`](/apidocs/classes/Point.md)  }
+ **TBrushEventData**: [`TEvent`](/apidocs/interfaces/TEvent.md) & \{ `pointer`: [`Point`](/apidocs/classes/Point.md)  }
 
 #### Defined in
 
-[src/brushes/typedefs.ts:4](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/brushes/typedefs.ts#L4)
+[src/brushes/typedefs.ts:4](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/brushes/typedefs.ts#L4)
 
 ___
 
 ### TCacheCanvasDimensions
 
-Ƭ **TCacheCanvasDimensions**: `Object`
+ **TCacheCanvasDimensions**: `Object`
 
 #### Type declaration
 
@@ -776,13 +913,13 @@ ___
 
 #### Defined in
 
-[src/typedefs.ts:89](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/typedefs.ts#L89)
+[src/typedefs.ts:89](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/typedefs.ts#L89)
 
 ___
 
 ### TCanvasSizeOptions
 
-Ƭ **TCanvasSizeOptions**: `Object`
+ **TCanvasSizeOptions**: `Object`
 
 #### Type declaration
 
@@ -793,13 +930,13 @@ ___
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:52](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L52)
+[src/canvas/StaticCanvas.ts:47](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L47)
 
 ___
 
 ### TClassProperties
 
-Ƭ **TClassProperties**\<`T`\>: `Pick`\<`T`, `TNonFunctionPropertyNames`\<`T`\>\>
+ **TClassProperties**\<`T`\>: `Pick`\<`T`, `TNonFunctionPropertyNames`\<`T`\>\>
 
 #### Type parameters
 
@@ -809,23 +946,23 @@ ___
 
 #### Defined in
 
-[src/typedefs.ts:17](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/typedefs.ts#L17)
+[src/typedefs.ts:17](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/typedefs.ts#L17)
 
 ___
 
 ### TColorArg
 
-Ƭ **TColorArg**: `string` \| [`TRGBColorSource`](/apidocs/modules.md#trgbcolorsource) \| [`TRGBAColorSource`](/apidocs/modules.md#trgbacolorsource) \| [`Color`](/apidocs/classes/Color.md)
+ **TColorArg**: `string` \| [`TRGBColorSource`](/apidocs/modules.md#trgbcolorsource) \| [`TRGBAColorSource`](/apidocs/modules.md#trgbacolorsource) \| [`Color`](/apidocs/classes/Color.md)
 
 #### Defined in
 
-[src/color/typedefs.ts:18](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/color/typedefs.ts#L18)
+[src/color/typedefs.ts:18](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/color/typedefs.ts#L18)
 
 ___
 
 ### TCornerPoint
 
-Ƭ **TCornerPoint**: `Object`
+ **TCornerPoint**: `Object`
 
 #### Type declaration
 
@@ -838,13 +975,13 @@ ___
 
 #### Defined in
 
-[src/typedefs.ts:78](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/typedefs.ts#L78)
+[src/typedefs.ts:78](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/typedefs.ts#L78)
 
 ___
 
 ### TCrossOrigin
 
-Ƭ **TCrossOrigin**: ``""`` \| ``"anonymous"`` \| ``"use-credentials"`` \| ``null``
+ **TCrossOrigin**: ``""`` \| ``"anonymous"`` \| ``"use-credentials"`` \| ``null``
 
 An invalid keyword and an empty string will be handled as the `anonymous` keyword.
 
@@ -854,13 +991,13 @@ https://developer.mozilla.org/en-US/docs/HTML/CORS_settings_attributes
 
 #### Defined in
 
-[src/typedefs.ts:73](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/typedefs.ts#L73)
+[src/typedefs.ts:73](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/typedefs.ts#L73)
 
 ___
 
 ### TDataUrlOptions
 
-Ƭ **TDataUrlOptions**\<`T`\>: [`TToCanvasElementOptions`](/apidocs/modules.md#ttocanvaselementoptions)\<`T`\> & \{ `enableRetinaScaling?`: `boolean` ; `format?`: [`ImageFormat`](/apidocs/modules.md#imageformat) ; `multiplier`: `number` ; `quality?`: `number`  }
+ **TDataUrlOptions**\<`T`\>: [`TToCanvasElementOptions`](/apidocs/modules.md#ttocanvaselementoptions)\<`T`\> & \{ `enableRetinaScaling?`: `boolean` ; `format?`: [`ImageFormat`](/apidocs/modules.md#imageformat) ; `multiplier`: `number` ; `quality?`: `number`  }
 
 #### Type parameters
 
@@ -870,43 +1007,43 @@ ___
 
 #### Defined in
 
-[src/typedefs.ts:110](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/typedefs.ts#L110)
+[src/typedefs.ts:110](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/typedefs.ts#L110)
 
 ___
 
 ### TDegree
 
-Ƭ **TDegree**: `Nominal`\<`number`, `Degree`\>
+ **TDegree**: `Nominal`\<`number`, `Degree`\>
 
 #### Defined in
 
-[src/typedefs.ts:25](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/typedefs.ts#L25)
+[src/typedefs.ts:25](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/typedefs.ts#L25)
 
 ___
 
 ### TFabricObjectProps
 
-Ƭ **TFabricObjectProps**: [`TOptions`](/apidocs/modules.md#toptions)\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>
+ **TFabricObjectProps**: [`TOptions`](/apidocs/modules.md#toptions)\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>
 
 #### Defined in
 
-[src/shapes/Object/types/index.ts:7](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Object/types/index.ts#L7)
+[src/shapes/Object/types/index.ts:7](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/types/index.ts#L7)
 
 ___
 
 ### TFiller
 
-Ƭ **TFiller**: [`Gradient`](/apidocs/classes/Gradient.md)\<``"linear"``\> \| [`Gradient`](/apidocs/classes/Gradient.md)\<``"radial"``\> \| [`Pattern`](/apidocs/classes/Pattern.md)
+ **TFiller**: [`Gradient`](/apidocs/classes/Gradient.md)\<``"linear"``\> \| [`Gradient`](/apidocs/classes/Gradient.md)\<``"radial"``\> \| [`Pattern`](/apidocs/classes/Pattern.md)
 
 #### Defined in
 
-[src/typedefs.ts:32](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/typedefs.ts#L32)
+[src/typedefs.ts:32](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/typedefs.ts#L32)
 
 ___
 
 ### TMat2D
 
-Ƭ **TMat2D**: [a: number, b: number, c: number, d: number, e: number, f: number]
+ **TMat2D**: [a: number, b: number, c: number, d: number, e: number, f: number]
 
 A transform matrix.
 Basically a matrix in the form
@@ -921,33 +1058,33 @@ https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform#matrix
 
 #### Defined in
 
-[src/typedefs.ts:60](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/typedefs.ts#L60)
+[src/typedefs.ts:60](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/typedefs.ts#L60)
 
 ___
 
 ### TModificationEvents
 
-Ƭ **TModificationEvents**: ``"moving"`` \| ``"scaling"`` \| ``"rotating"`` \| ``"skewing"`` \| ``"resizing"``
+ **TModificationEvents**: ``"moving"`` \| ``"scaling"`` \| ``"rotating"`` \| ``"skewing"`` \| ``"resizing"`` \| ``"modifyPoly"``
 
 #### Defined in
 
-[src/EventTypeDefs.ts:97](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L97)
+[src/EventTypeDefs.ts:101](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L101)
 
 ___
 
 ### TOptionalModifierKey
 
-Ƭ **TOptionalModifierKey**: [`ModifierKey`](/apidocs/modules.md#modifierkey) \| ``null`` \| `undefined`
+ **TOptionalModifierKey**: [`ModifierKey`](/apidocs/modules.md#modifierkey) \| ``null`` \| `undefined`
 
 #### Defined in
 
-[src/EventTypeDefs.ts:16](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L16)
+[src/EventTypeDefs.ts:20](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L20)
 
 ___
 
 ### TOptions
 
-Ƭ **TOptions**\<`T`\>: `Partial`\<`T`\> & `Record`\<`string`, `any`\>
+ **TOptions**\<`T`\>: `Partial`\<`T`\> & `Record`\<`string`, `any`\>
 
 #### Type parameters
 
@@ -957,137 +1094,137 @@ ___
 
 #### Defined in
 
-[src/typedefs.ts:126](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/typedefs.ts#L126)
+[src/typedefs.ts:126](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/typedefs.ts#L126)
 
 ___
 
 ### TOriginX
 
-Ƭ **TOriginX**: ``"center"`` \| ``"left"`` \| ``"right"`` \| `number`
+ **TOriginX**: ``"center"`` \| ``"left"`` \| ``"right"`` \| `number`
 
 #### Defined in
 
-[src/typedefs.ts:75](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/typedefs.ts#L75)
+[src/typedefs.ts:75](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/typedefs.ts#L75)
 
 ___
 
 ### TOriginY
 
-Ƭ **TOriginY**: ``"center"`` \| ``"top"`` \| ``"bottom"`` \| `number`
+ **TOriginY**: ``"center"`` \| ``"top"`` \| ``"bottom"`` \| `number`
 
 #### Defined in
 
-[src/typedefs.ts:76](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/typedefs.ts#L76)
+[src/typedefs.ts:76](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/typedefs.ts#L76)
 
 ___
 
 ### TPathAlign
 
-Ƭ **TPathAlign**: ``"baseline"`` \| ``"center"`` \| ``"ascender"`` \| ``"descender"``
+ **TPathAlign**: ``"baseline"`` \| ``"center"`` \| ``"ascender"`` \| ``"descender"``
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:65](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L65)
+[src/shapes/Text/Text.ts:65](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L65)
 
 ___
 
 ### TPathSide
 
-Ƭ **TPathSide**: ``"left"`` \| ``"right"``
+ **TPathSide**: ``"left"`` \| ``"right"``
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:63](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/Text.ts#L63)
+[src/shapes/Text/Text.ts:63](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L63)
 
 ___
 
 ### TPipelineResources
 
-Ƭ **TPipelineResources**: \{ `blendImage?`: `HTMLCanvasElement` ; `blurLayer1?`: `HTMLCanvasElement` ; `blurLayer2?`: `HTMLCanvasElement` ; `sliceByTwo?`: `HTMLCanvasElement`  } & `Record`\<`string`, `unknown`\>
+ **TPipelineResources**: \{ `blendImage?`: `HTMLCanvasElement` ; `blurLayer1?`: `HTMLCanvasElement` ; `blurLayer2?`: `HTMLCanvasElement` ; `sliceByTwo?`: `HTMLCanvasElement`  } & `Record`\<`string`, `unknown`\>
 
 #### Defined in
 
-[src/filters/typedefs.ts:8](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/typedefs.ts#L8)
+[src/filters/typedefs.ts:8](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/typedefs.ts#L8)
 
 ___
 
 ### TPointerEvent
 
-Ƭ **TPointerEvent**: `MouseEvent` \| `TouchEvent` \| `PointerEvent`
+ **TPointerEvent**: `MouseEvent` \| `TouchEvent` \| `PointerEvent`
 
 #### Defined in
 
-[src/EventTypeDefs.ts:18](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L18)
+[src/EventTypeDefs.ts:22](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L22)
 
 ___
 
 ### TPointerEventNames
 
-Ƭ **TPointerEventNames**: `WithBeforeSuffix`\<``"down"``\> \| `WithBeforeSuffix`\<``"move"``\> \| `WithBeforeSuffix`\<``"up"``\> \| ``"dblclick"`` \| ``"wheel"``
+ **TPointerEventNames**: `WithBeforeSuffix`\<``"down"``\> \| `WithBeforeSuffix`\<``"move"``\> \| `WithBeforeSuffix`\<``"up"``\> \| ``"dblclick"`` \| ``"wheel"``
 
 #### Defined in
 
-[src/EventTypeDefs.ts:249](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L249)
+[src/EventTypeDefs.ts:254](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L254)
 
 ___
 
 ### TProgramCache
 
-Ƭ **TProgramCache**: `any`
+ **TProgramCache**: `any`
 
 #### Defined in
 
-[src/filters/typedefs.ts:4](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/typedefs.ts#L4)
+[src/filters/typedefs.ts:4](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/typedefs.ts#L4)
 
 ___
 
 ### TRGBAColorSource
 
-Ƭ **TRGBAColorSource**: [red: number, green: number, blue: number, alpha: number]
+ **TRGBAColorSource**: [red: number, green: number, blue: number, alpha: number]
 
 RGBA format
 
 #### Defined in
 
-[src/color/typedefs.ts:11](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/color/typedefs.ts#L11)
+[src/color/typedefs.ts:11](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/color/typedefs.ts#L11)
 
 ___
 
 ### TRGBColorSource
 
-Ƭ **TRGBColorSource**: [red: number, green: number, blue: number]
+ **TRGBColorSource**: [red: number, green: number, blue: number]
 
 RGB format
 
 #### Defined in
 
-[src/color/typedefs.ts:6](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/color/typedefs.ts#L6)
+[src/color/typedefs.ts:6](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/color/typedefs.ts#L6)
 
 ___
 
 ### TRadian
 
-Ƭ **TRadian**: `Nominal`\<`number`, `Radian`\>
+ **TRadian**: `Nominal`\<`number`, `Radian`\>
 
 #### Defined in
 
-[src/typedefs.ts:26](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/typedefs.ts#L26)
+[src/typedefs.ts:26](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/typedefs.ts#L26)
 
 ___
 
 ### TRectBounds
 
-Ƭ **TRectBounds**: [min: XY, max: XY]
+ **TRectBounds**: [min: XY, max: XY]
 
 #### Defined in
 
-[src/typedefs.ts:98](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/typedefs.ts#L98)
+[src/typedefs.ts:98](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/typedefs.ts#L98)
 
 ___
 
 ### TSVGExportOptions
 
-Ƭ **TSVGExportOptions**: `Object`
+ **TSVGExportOptions**: `Object`
 
 #### Type declaration
 
@@ -1106,17 +1243,17 @@ ___
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:57](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/canvas/StaticCanvas.ts#L57)
+[src/canvas/StaticCanvas.ts:52](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L52)
 
 ___
 
 ### TSVGReviver
 
-Ƭ **TSVGReviver**: (`markup`: `string`) => `string`
+ **TSVGReviver**: (`markup`: `string`) => `string`
 
 #### Type declaration
 
-▸ (`markup`): `string`
+(`markup`): `string`
 
 ##### Parameters
 
@@ -1130,13 +1267,13 @@ ___
 
 #### Defined in
 
-[src/typedefs.ts:85](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/typedefs.ts#L85)
+[src/typedefs.ts:85](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/typedefs.ts#L85)
 
 ___
 
 ### TSize
 
-Ƭ **TSize**: `Object`
+ **TSize**: `Object`
 
 #### Type declaration
 
@@ -1147,23 +1284,23 @@ ___
 
 #### Defined in
 
-[src/typedefs.ts:34](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/typedefs.ts#L34)
+[src/typedefs.ts:34](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/typedefs.ts#L34)
 
 ___
 
 ### TTextureCache
 
-Ƭ **TTextureCache**: `Record`\<`string`, `WebGLTexture`\>
+ **TTextureCache**: `Record`\<`string`, `WebGLTexture`\>
 
 #### Defined in
 
-[src/filters/typedefs.ts:6](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/typedefs.ts#L6)
+[src/filters/typedefs.ts:6](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/typedefs.ts#L6)
 
 ___
 
 ### TToCanvasElementOptions
 
-Ƭ **TToCanvasElementOptions**\<`T`\>: `Object`
+ **TToCanvasElementOptions**\<`T`\>: `Object`
 
 #### Type parameters
 
@@ -1183,33 +1320,33 @@ ___
 
 #### Defined in
 
-[src/typedefs.ts:100](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/typedefs.ts#L100)
+[src/typedefs.ts:100](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/typedefs.ts#L100)
 
 ___
 
 ### TValidToObjectMethod
 
-Ƭ **TValidToObjectMethod**: ``"toDatalessObject"`` \| ``"toObject"``
+ **TValidToObjectMethod**: ``"toDatalessObject"`` \| ``"toObject"``
 
 #### Defined in
 
-[src/typedefs.ts:87](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/typedefs.ts#L87)
+[src/typedefs.ts:87](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/typedefs.ts#L87)
 
 ___
 
 ### TWebGLAttributeLocationMap
 
-Ƭ **TWebGLAttributeLocationMap**: `Record`\<`string`, `number`\>
+ **TWebGLAttributeLocationMap**: `Record`\<`string`, `number`\>
 
 #### Defined in
 
-[src/filters/typedefs.ts:52](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/typedefs.ts#L52)
+[src/filters/typedefs.ts:52](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/typedefs.ts#L52)
 
 ___
 
 ### TWebGLPipelineState
 
-Ƭ **TWebGLPipelineState**: `Object`
+ **TWebGLPipelineState**: `Object`
 
 #### Type declaration
 
@@ -1235,13 +1372,13 @@ ___
 
 #### Defined in
 
-[src/filters/typedefs.ts:15](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/typedefs.ts#L15)
+[src/filters/typedefs.ts:15](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/typedefs.ts#L15)
 
 ___
 
 ### TWebGLProgramCacheItem
 
-Ƭ **TWebGLProgramCacheItem**: `Object`
+ **TWebGLProgramCacheItem**: `Object`
 
 #### Type declaration
 
@@ -1253,23 +1390,23 @@ ___
 
 #### Defined in
 
-[src/filters/typedefs.ts:54](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/typedefs.ts#L54)
+[src/filters/typedefs.ts:54](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/typedefs.ts#L54)
 
 ___
 
 ### TWebGLUniformLocationMap
 
-Ƭ **TWebGLUniformLocationMap**: `Record`\<`string`, `WebGLUniformLocation` \| ``null``\>
+ **TWebGLUniformLocationMap**: `Record`\<`string`, `WebGLUniformLocation` \| ``null``\>
 
 #### Defined in
 
-[src/filters/typedefs.ts:47](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/typedefs.ts#L47)
+[src/filters/typedefs.ts:47](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/typedefs.ts#L47)
 
 ___
 
 ### TextStyle
 
-Ƭ **TextStyle**: `Object`
+ **TextStyle**: `Object`
 
 #### Index signature
 
@@ -1277,23 +1414,23 @@ ___
 
 #### Defined in
 
-[src/shapes/Text/StyledText.ts:17](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/StyledText.ts#L17)
+[src/shapes/Text/StyledText.ts:17](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/StyledText.ts#L17)
 
 ___
 
 ### TextStyleDeclaration
 
-Ƭ **TextStyleDeclaration**: `Partial`\<[`CompleteTextStyleDeclaration`](/apidocs/modules.md#completetextstyledeclaration)\>
+ **TextStyleDeclaration**: `Partial`\<[`CompleteTextStyleDeclaration`](/apidocs/modules.md#completetextstyledeclaration)\>
 
 #### Defined in
 
-[src/shapes/Text/StyledText.ts:15](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Text/StyledText.ts#L15)
+[src/shapes/Text/StyledText.ts:15](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/StyledText.ts#L15)
 
 ___
 
 ### Transform
 
-Ƭ **Transform**: `Object`
+ **Transform**: `Object`
 
 relative to target's containing coordinate plane
 both agree on every point
@@ -1306,7 +1443,7 @@ both agree on every point
 | `actionHandler?` | [`TransformActionHandler`](/apidocs/modules.md#transformactionhandler) |
 | `actionPerformed` | `boolean` |
 | `altKey` | `boolean` |
-| `corner` | `string` \| ``0`` |
+| `corner` | `string` |
 | `ex` | `number` |
 | `ey` | `number` |
 | `height` | `number` |
@@ -1329,13 +1466,13 @@ both agree on every point
 
 #### Defined in
 
-[src/EventTypeDefs.ts:52](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L52)
+[src/EventTypeDefs.ts:56](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L56)
 
 ___
 
 ### TransformAction
 
-Ƭ **TransformAction**\<`T`, `R`\>: (`eventData`: [`TPointerEvent`](/apidocs/modules.md#tpointerevent), `transform`: `T`, `x`: `number`, `y`: `number`) => `R`
+ **TransformAction**\<`T`, `R`\>: (`eventData`: [`TPointerEvent`](/apidocs/modules.md#tpointerevent), `transform`: `T`, `x`: `number`, `y`: `number`) => `R`
 
 #### Type parameters
 
@@ -1346,7 +1483,7 @@ ___
 
 #### Type declaration
 
-▸ (`eventData`, `transform`, `x`, `y`): `R`
+(`eventData`, `transform`, `x`, `y`): `R`
 
 ##### Parameters
 
@@ -1363,13 +1500,13 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:20](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L20)
+[src/EventTypeDefs.ts:24](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L24)
 
 ___
 
 ### TransformActionHandler
 
-Ƭ **TransformActionHandler**\<`T`\>: [`TransformAction`](/apidocs/modules.md#transformaction)\<`T`, `boolean`\>
+ **TransformActionHandler**\<`T`\>: [`TransformAction`](/apidocs/modules.md#transformaction)\<`T`, `boolean`\>
 
 Control handlers that define a transformation
 Those handlers run when the user starts a transform and during a transform
@@ -1382,73 +1519,73 @@ Those handlers run when the user starts a transform and during a transform
 
 #### Defined in
 
-[src/EventTypeDefs.ts:31](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L31)
+[src/EventTypeDefs.ts:35](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L35)
 
 ## Variables
 
 ### cache
 
-• `Const` **cache**: `Cache`
+ `Const` **cache**: `Cache`
 
 #### Defined in
 
-[src/cache.ts:90](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/cache.ts#L90)
+[src/cache.ts:90](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/cache.ts#L90)
 
 ___
 
 ### classRegistry
 
-• `Const` **classRegistry**: `ClassRegistry`
+ `Const` **classRegistry**: `ClassRegistry`
 
 #### Defined in
 
-[src/ClassRegistry.ts:58](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/ClassRegistry.ts#L58)
+[src/ClassRegistry.ts:58](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/ClassRegistry.ts#L58)
 
 ___
 
 ### config
 
-• `Const` **config**: `Configuration`
+ `Const` **config**: `Configuration`
 
 #### Defined in
 
-[src/config.ts:159](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/config.ts#L159)
+[src/config.ts:160](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/config.ts#L160)
 
 ___
 
 ### iMatrix
 
-• `Const` **iMatrix**: [`TMat2D`](/apidocs/modules.md#tmat2d)
+ `Const` **iMatrix**: [`TMat2D`](/apidocs/modules.md#tmat2d)
 
 #### Defined in
 
-[src/constants.ts:13](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/constants.ts#L13)
+[src/constants.ts:13](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/constants.ts#L13)
 
 ___
 
 ### runningAnimations
 
-• `Const` **runningAnimations**: `AnimationRegistry`
+ `Const` **runningAnimations**: `AnimationRegistry`
 
 #### Defined in
 
-[src/util/animation/AnimationRegistry.ts:59](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/util/animation/AnimationRegistry.ts#L59)
+[src/util/animation/AnimationRegistry.ts:59](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/animation/AnimationRegistry.ts#L59)
 
 ___
 
 ### version
 
-• `Const` **version**: `string` = `version`
+ `Const` **version**: `string` = `version`
 
 #### Defined in
 
-[src/constants.ts:5](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/constants.ts#L5)
+[src/constants.ts:5](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/constants.ts#L5)
 
 ## Functions
 
 ### createCollectionMixin
 
-▸ **createCollectionMixin**\<`TBase`\>(`Base`): (...`args`: `any`[]) => `Collection`\<`TBase`\> & `TBase`
+**createCollectionMixin**\<`TBase`\>(`Base`): (...`args`: `any`[]) => `Collection`\<`TBase`\> & `TBase`
 
 #### Type parameters
 
@@ -1468,13 +1605,13 @@ ___
 
 #### Defined in
 
-[src/Collection.ts:7](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/Collection.ts#L7)
+[src/Collection.ts:15](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Collection.ts#L15)
 
 ___
 
 ### getCSSRules
 
-▸ **getCSSRules**(`doc`): `CSSRules`
+**getCSSRules**(`doc`): `CSSRules`
 
 Returns CSS rules for a given SVG document
 
@@ -1492,13 +1629,13 @@ CSS rules of this document
 
 #### Defined in
 
-[src/parser/getCSSRules.ts:8](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/parser/getCSSRules.ts#L8)
+[src/parser/getCSSRules.ts:8](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/parser/getCSSRules.ts#L8)
 
 ___
 
 ### getEnv
 
-▸ **getEnv**(): `TFabricEnv`
+**getEnv**(): `TFabricEnv`
 
 #### Returns
 
@@ -1506,13 +1643,13 @@ ___
 
 #### Defined in
 
-[src/env/index.ts:33](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/env/index.ts#L33)
+[src/env/index.ts:33](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/env/index.ts#L33)
 
 ___
 
 ### getFabricDocument
 
-▸ **getFabricDocument**(): `Document`
+**getFabricDocument**(): `Document`
 
 #### Returns
 
@@ -1520,13 +1657,13 @@ ___
 
 #### Defined in
 
-[src/env/index.ts:35](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/env/index.ts#L35)
+[src/env/index.ts:35](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/env/index.ts#L35)
 
 ___
 
 ### getFabricWindow
 
-▸ **getFabricWindow**(): `Window` & typeof `globalThis` \| `DOMWindow`
+**getFabricWindow**(): `Window` & typeof `globalThis` \| `DOMWindow`
 
 #### Returns
 
@@ -1534,13 +1671,13 @@ ___
 
 #### Defined in
 
-[src/env/index.ts:37](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/env/index.ts#L37)
+[src/env/index.ts:37](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/env/index.ts#L37)
 
 ___
 
 ### getFilterBackend
 
-▸ **getFilterBackend**(`strict?`): `FilterBackend`
+**getFilterBackend**(`strict?`): `FilterBackend`
 
 Get the current fabricJS filter backend  or initialize one if not available yet
 
@@ -1556,13 +1693,13 @@ Get the current fabricJS filter backend  or initialize one if not available yet
 
 #### Defined in
 
-[src/filters/FilterBackend.ts:29](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/FilterBackend.ts#L29)
+[src/filters/FilterBackend.ts:29](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/FilterBackend.ts#L29)
 
 ___
 
 ### initFilterBackend
 
-▸ **initFilterBackend**(): `FilterBackend`
+**initFilterBackend**(): `FilterBackend`
 
 Verifies if it is possible to initialize webgl or fallback on a canvas2d filtering backend
 
@@ -1572,13 +1709,13 @@ Verifies if it is possible to initialize webgl or fallback on a canvas2d filteri
 
 #### Defined in
 
-[src/filters/FilterBackend.ts:14](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/FilterBackend.ts#L14)
+[src/filters/FilterBackend.ts:14](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/FilterBackend.ts#L14)
 
 ___
 
 ### isWebGLPipelineState
 
-▸ **isWebGLPipelineState**(`options`): options is TWebGLPipelineState
+**isWebGLPipelineState**(`options`): options is TWebGLPipelineState
 
 #### Parameters
 
@@ -1592,13 +1729,13 @@ options is TWebGLPipelineState
 
 #### Defined in
 
-[src/filters/utils.ts:3](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/utils.ts#L3)
+[src/filters/utils.ts:3](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/utils.ts#L3)
 
 ___
 
 ### loadSVGFromString
 
-▸ **loadSVGFromString**(`string`, `reviver?`, `options?`): `Promise`\<`SVGParsingOutput`\>
+**loadSVGFromString**(`string`, `reviver?`, `options?`): `Promise`\<`SVGParsingOutput`\>
 
 Takes string corresponding to an SVG document, and parses it into a set of fabric objects
 
@@ -1620,13 +1757,13 @@ fabric
 
 #### Defined in
 
-[src/parser/loadSVGFromString.ts:20](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/parser/loadSVGFromString.ts#L20)
+[src/parser/loadSVGFromString.ts:20](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/parser/loadSVGFromString.ts#L20)
 
 ___
 
 ### loadSVGFromURL
 
-▸ **loadSVGFromURL**(`url`, `reviver?`, `options?`): `Promise`\<`SVGParsingOutput`\>
+**loadSVGFromURL**(`url`, `reviver?`, `options?`): `Promise`\<`SVGParsingOutput`\>
 
 Takes url corresponding to an SVG document, and parses it into a set of fabric objects.
 Note that SVG is fetched via XMLHttpRequest, so it needs to conform to SOP (Same Origin Policy)
@@ -1649,13 +1786,13 @@ fabric
 
 #### Defined in
 
-[src/parser/loadSVGFromURL.ts:21](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/parser/loadSVGFromURL.ts#L21)
+[src/parser/loadSVGFromURL.ts:21](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/parser/loadSVGFromURL.ts#L21)
 
 ___
 
 ### parseAttributes
 
-▸ **parseAttributes**(`element`, `attributes`, `cssRules?`): `Record`\<`string`, `any`\>
+**parseAttributes**(`element`, `attributes`, `cssRules?`): `Record`\<`string`, `any`\>
 
 Returns an object of attributes' name/value, given element and an array of attribute names;
 Parses parent "g" nodes recursively upwards.
@@ -1676,13 +1813,13 @@ object containing parsed attributes' names/values
 
 #### Defined in
 
-[src/parser/parseAttributes.ts:19](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/parser/parseAttributes.ts#L19)
+[src/parser/parseAttributes.ts:19](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/parser/parseAttributes.ts#L19)
 
 ___
 
 ### parseFontDeclaration
 
-▸ **parseFontDeclaration**(`value`, `oStyle`): `void`
+**parseFontDeclaration**(`value`, `oStyle`): `void`
 
 Parses a short font declaration, building adding its properties to a style object
 
@@ -1707,13 +1844,13 @@ fabric
 
 #### Defined in
 
-[src/parser/parseFontDeclaration.ts:12](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/parser/parseFontDeclaration.ts#L12)
+[src/parser/parseFontDeclaration.ts:12](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/parser/parseFontDeclaration.ts#L12)
 
 ___
 
 ### parsePointsAttribute
 
-▸ **parsePointsAttribute**(`points`): [`XY`](/apidocs/interfaces/XY.md)[]
+**parsePointsAttribute**(`points`): [`XY`](/apidocs/interfaces/XY.md)[]
 
 Parses "points" attribute, returning an array of values
 
@@ -1737,13 +1874,13 @@ fabric
 
 #### Defined in
 
-[src/parser/parsePointsAttribute.ts:10](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/parser/parsePointsAttribute.ts#L10)
+[src/parser/parsePointsAttribute.ts:10](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/parser/parsePointsAttribute.ts#L10)
 
 ___
 
 ### parseSVGDocument
 
-▸ **parseSVGDocument**(`doc`, `reviver?`, `«destructured»?`): `Promise`\<`SVGParsingOutput`\>
+**parseSVGDocument**(`doc`, `reviver?`, `«destructured»?`): `Promise`\<`SVGParsingOutput`\>
 
 Parses an SVG document, converts it to an array of corresponding fabric.* instances and passes them to a callback
 
@@ -1772,13 +1909,13 @@ fabric
 
 #### Defined in
 
-[src/parser/parseSVGDocument.ts:37](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/parser/parseSVGDocument.ts#L37)
+[src/parser/parseSVGDocument.ts:37](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/parser/parseSVGDocument.ts#L37)
 
 ___
 
 ### parseStyleAttribute
 
-▸ **parseStyleAttribute**(`element`): `Record`\<`string`, `any`\>
+**parseStyleAttribute**(`element`): `Record`\<`string`, `any`\>
 
 Parses "style" attribute, retuning an object with values
 
@@ -1802,13 +1939,13 @@ fabric
 
 #### Defined in
 
-[src/parser/parseStyleAttribute.ts:11](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/parser/parseStyleAttribute.ts#L11)
+[src/parser/parseStyleAttribute.ts:11](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/parser/parseStyleAttribute.ts#L11)
 
 ___
 
 ### parseTransformAttribute
 
-▸ **parseTransformAttribute**(`attributeValue`): [`TMat2D`](/apidocs/modules.md#tmat2d)
+**parseTransformAttribute**(`attributeValue`): [`TMat2D`](/apidocs/modules.md#tmat2d)
 
 Parses "transform" attribute, returning an array of values
 
@@ -1834,13 +1971,13 @@ fabric
 
 #### Defined in
 
-[src/parser/parseTransformAttribute.ts:38](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/parser/parseTransformAttribute.ts#L38)
+[src/parser/parseTransformAttribute.ts:38](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/parser/parseTransformAttribute.ts#L38)
 
 ___
 
 ### setEnv
 
-▸ **setEnv**(`value`): `void`
+**setEnv**(`value`): `void`
 
 Sets the environment variables used by fabric.\
 This is exposed for special cases, such as configuring a test environment, and should be used with care.
@@ -1859,7 +1996,6 @@ This is exposed for special cases, such as configuring a test environment, and s
 
 **`Example`**
 
-Passing `window` and `document` objects to fabric (in case they are mocked or something)
 ```ts
 import { getEnv, setEnv } from 'fabric';
 // we want fabric to use the `window` and `document` objects exposed by the environment we are running in.
@@ -1869,13 +2005,13 @@ setEnv({ ...getEnv(), window, document });
 
 #### Defined in
 
-[src/env/index.ts:29](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/env/index.ts#L29)
+[src/env/index.ts:29](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/env/index.ts#L29)
 
 ___
 
 ### setFilterBackend
 
-▸ **setFilterBackend**(`backend`): `void`
+**setFilterBackend**(`backend`): `void`
 
 #### Parameters
 
@@ -1889,4 +2025,4 @@ ___
 
 #### Defined in
 
-[src/filters/FilterBackend.ts:36](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/FilterBackend.ts#L36)
+[src/filters/FilterBackend.ts:36](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/FilterBackend.ts#L36)

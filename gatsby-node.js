@@ -74,10 +74,17 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       trailingSlash: false,
     }); /* basePath -- path inside src folder to act as base path */
 
+    const title = slug.split('/').join(' ');
+
     createNodeField({
       node,
       name: 'slug',
       value: `/apidocs${slug.replace(/ +/g, '-').replace(/-+/g, '-')}.md`,
+    });
+    createNodeField({
+      node,
+      name: 'title',
+      value: title,
     });
   }
 };
@@ -267,7 +274,7 @@ exports.createPages = async ({ graphql, actions }) => {
       allApidocPagesMD: allMarkdownRemark(
         filter: {
           fileAbsolutePath: {
-            regex: "//tsdocs/[a-zA-Z0-9-]+/[a-zA-Z0-9-.]+.md/"
+            regex: "//tsdocs/[a-zA-Z0-9-]+[/[a-zA-Z0-9-.]+]*.md/"
           }
         }
       ) {
@@ -275,6 +282,7 @@ exports.createPages = async ({ graphql, actions }) => {
           html
           fields {
             slug
+            title
           }
         }
       }
@@ -287,7 +295,7 @@ exports.createPages = async ({ graphql, actions }) => {
     fields.slug!==null && fields.slug.trim()!=='' && docList.push({'title':frontmatter.title,'slug':fields.slug})
   }) */
   const apidocList = apidocPages.map(({ fields }) => ({
-    title: fields.slug,
+    title: fields.title,
     slug: fields.slug,
   }));
 
@@ -300,6 +308,7 @@ exports.createPages = async ({ graphql, actions }) => {
         component: `${path.resolve('./src/templates/apidoc.jsx')}`,
         context: {
           slug: fields.slug,
+          title: fields.title,
           prev:
             di === 0
               ? null

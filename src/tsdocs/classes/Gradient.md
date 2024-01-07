@@ -17,7 +17,7 @@ Gradient class
 
 ### constructor
 
-• **new Gradient**\<`S`, `T`\>(`«destructured»`): [`Gradient`](/apidocs/classes/Gradient.md)\<`S`, `T`\>
+**new Gradient**\<`S`, `T`\>(`«destructured»`): [`Gradient`](/apidocs/classes/Gradient.md)\<`S`, `T`\>
 
 #### Type parameters
 
@@ -38,50 +38,50 @@ Gradient class
 
 #### Defined in
 
-[src/gradient/Gradient.ts:102](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/gradient/Gradient.ts#L102)
+[src/gradient/Gradient.ts:102](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/gradient/Gradient.ts#L102)
 
 ## Properties
 
 ### colorStops
 
-• **colorStops**: [`ColorStop`](/apidocs/modules.md#colorstop)[]
+ **colorStops**: [`ColorStop`](/apidocs/modules.md#colorstop)[]
 
 Defines how many colors a gradient has and how they are located on the axis
 defined by coords
 
 #### Defined in
 
-[src/gradient/Gradient.ts:86](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/gradient/Gradient.ts#L86)
+[src/gradient/Gradient.ts:86](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/gradient/Gradient.ts#L86)
 
 ___
 
 ### coords
 
-• **coords**: [`GradientCoords`](/apidocs/modules.md#gradientcoords)\<`T`\>
+ **coords**: [`GradientCoords`](/apidocs/modules.md#gradientcoords)\<`T`\>
 
 Defines how the gradient is located in space and spread
 
 #### Defined in
 
-[src/gradient/Gradient.ts:79](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/gradient/Gradient.ts#L79)
+[src/gradient/Gradient.ts:79](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/gradient/Gradient.ts#L79)
 
 ___
 
 ### excludeFromExport
 
-• `Optional` **excludeFromExport**: `boolean`
+ `Optional` **excludeFromExport**: `boolean`
 
 If true, this object will not be exported during the serialization of a canvas
 
 #### Defined in
 
-[src/gradient/Gradient.ts:92](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/gradient/Gradient.ts#L92)
+[src/gradient/Gradient.ts:92](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/gradient/Gradient.ts#L92)
 
 ___
 
 ### gradientTransform
 
-• `Optional` **gradientTransform**: [`TMat2D`](/apidocs/modules.md#tmat2d)
+ `Optional` **gradientTransform**: [`TMat2D`](/apidocs/modules.md#tmat2d)
 
 A transform matrix to apply to the gradient before painting.
 Imported from svg gradients, is not applied with the current transform in the center.
@@ -96,13 +96,13 @@ null
 
 #### Defined in
 
-[src/gradient/Gradient.ts:55](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/gradient/Gradient.ts#L55)
+[src/gradient/Gradient.ts:55](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/gradient/Gradient.ts#L55)
 
 ___
 
 ### gradientUnits
 
-• **gradientUnits**: [`GradientUnits`](/apidocs/modules.md#gradientunits)
+ **gradientUnits**: [`GradientUnits`](/apidocs/modules.md#gradientunits)
 
 coordinates units for coords.
 If `pixels`, the number of coords are in the same unit of width / height.
@@ -118,25 +118,25 @@ allowed values pixels or percentage.
 
 #### Defined in
 
-[src/gradient/Gradient.ts:66](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/gradient/Gradient.ts#L66)
+[src/gradient/Gradient.ts:66](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/gradient/Gradient.ts#L66)
 
 ___
 
 ### id
 
-• `Readonly` **id**: `string` \| `number`
+ `Readonly` **id**: `string` \| `number`
 
 ID used for SVG export functionalities
 
 #### Defined in
 
-[src/gradient/Gradient.ts:98](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/gradient/Gradient.ts#L98)
+[src/gradient/Gradient.ts:98](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/gradient/Gradient.ts#L98)
 
 ___
 
 ### offsetX
 
-• **offsetX**: `number`
+ **offsetX**: `number`
 
 Horizontal offset for aligning gradients coming from SVG when outside pathgroups
 
@@ -148,13 +148,13 @@ Horizontal offset for aligning gradients coming from SVG when outside pathgroups
 
 #### Defined in
 
-[src/gradient/Gradient.ts:38](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/gradient/Gradient.ts#L38)
+[src/gradient/Gradient.ts:38](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/gradient/Gradient.ts#L38)
 
 ___
 
 ### offsetY
 
-• **offsetY**: `number`
+ **offsetY**: `number`
 
 Vertical offset for aligning gradients coming from SVG when outside pathgroups
 
@@ -166,13 +166,13 @@ Vertical offset for aligning gradients coming from SVG when outside pathgroups
 
 #### Defined in
 
-[src/gradient/Gradient.ts:45](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/gradient/Gradient.ts#L45)
+[src/gradient/Gradient.ts:45](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/gradient/Gradient.ts#L45)
 
 ___
 
 ### type
 
-• **type**: `T`
+ **type**: `T`
 
 Gradient type linear or radial
 
@@ -184,23 +184,23 @@ Gradient type linear or radial
 
 #### Defined in
 
-[src/gradient/Gradient.ts:73](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/gradient/Gradient.ts#L73)
+[src/gradient/Gradient.ts:73](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/gradient/Gradient.ts#L73)
 
 ___
 
 ### type
 
-▪ `Static` **type**: `string` = `'Gradient'`
+ `Static` **type**: `string` = `'Gradient'`
 
 #### Defined in
 
-[src/gradient/Gradient.ts:100](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/gradient/Gradient.ts#L100)
+[src/gradient/Gradient.ts:100](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/gradient/Gradient.ts#L100)
 
 ## Methods
 
 ### addColorStop
 
-▸ **addColorStop**(`colorStops`): [`Gradient`](/apidocs/classes/Gradient.md)\<`S`, `T`\>
+**addColorStop**(`colorStops`): [`Gradient`](/apidocs/classes/Gradient.md)\<`S`, `T`\>
 
 Adds another colorStop
 
@@ -218,13 +218,13 @@ thisArg
 
 #### Defined in
 
-[src/gradient/Gradient.ts:134](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/gradient/Gradient.ts#L134)
+[src/gradient/Gradient.ts:134](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/gradient/Gradient.ts#L134)
 
 ___
 
 ### toLive
 
-▸ **toLive**(`ctx`): `CanvasGradient`
+**toLive**(`ctx`): `CanvasGradient`
 
 Returns an instance of CanvasGradient
 
@@ -240,13 +240,13 @@ Returns an instance of CanvasGradient
 
 #### Defined in
 
-[src/gradient/Gradient.ts:298](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/gradient/Gradient.ts#L298)
+[src/gradient/Gradient.ts:298](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/gradient/Gradient.ts#L298)
 
 ___
 
 ### toObject
 
-▸ **toObject**(`propertiesToInclude?`): `Partial`\<[`Gradient`](/apidocs/classes/Gradient.md)\<`S`, `T`\>\> & \{ `colorStops`: [`ColorStop`](/apidocs/modules.md#colorstop)[] ; `coords`: [`GradientCoords`](/apidocs/modules.md#gradientcoords)\<`T`\> ; `gradientTransform`: `undefined` \| `number`[] ; `gradientUnits`: [`GradientUnits`](/apidocs/modules.md#gradientunits) ; `offsetX`: `number` ; `offsetY`: `number` ; `type`: `T`  }
+**toObject**(`propertiesToInclude?`): `Partial`\<[`Gradient`](/apidocs/classes/Gradient.md)\<`S`, `T`\>\> & \{ `colorStops`: [`ColorStop`](/apidocs/modules.md#colorstop)[] ; `coords`: [`GradientCoords`](/apidocs/modules.md#gradientcoords)\<`T`\> ; `gradientTransform`: `undefined` \| `number`[] ; `gradientUnits`: [`GradientUnits`](/apidocs/modules.md#gradientunits) ; `offsetX`: `number` ; `offsetY`: `number` ; `type`: `T`  }
 
 Returns object representation of a gradient
 
@@ -262,13 +262,13 @@ Returns object representation of a gradient
 
 #### Defined in
 
-[src/gradient/Gradient.ts:151](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/gradient/Gradient.ts#L151)
+[src/gradient/Gradient.ts:151](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/gradient/Gradient.ts#L151)
 
 ___
 
 ### toSVG
 
-▸ **toSVG**(`object`, `«destructured»?`): `string`
+**toSVG**(`object`, `«destructured»?`): `string`
 
 Returns SVG representation of an gradient
 
@@ -288,13 +288,13 @@ SVG representation of an gradient (linear/radial)
 
 #### Defined in
 
-[src/gradient/Gradient.ts:172](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/gradient/Gradient.ts#L172)
+[src/gradient/Gradient.ts:172](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/gradient/Gradient.ts#L172)
 
 ___
 
 ### fromElement
 
-▸ **fromElement**(`el`, `instance`, `svgOptions`): [`Gradient`](/apidocs/classes/Gradient.md)\<[`GradientType`](/apidocs/modules.md#gradienttype), [`GradientType`](/apidocs/modules.md#gradienttype)\>
+**fromElement**(`el`, `instance`, `svgOptions`): [`Gradient`](/apidocs/classes/Gradient.md)\<[`GradientType`](/apidocs/modules.md#gradienttype), [`GradientType`](/apidocs/modules.md#gradienttype)\>
 
 Returns [Gradient](/apidocs/classes/Gradient.md) instance from an SVG element
 
@@ -357,4 +357,4 @@ Gradient
 
 #### Defined in
 
-[src/gradient/Gradient.ts:369](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/gradient/Gradient.ts#L369)
+[src/gradient/Gradient.ts:369](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/gradient/Gradient.ts#L369)

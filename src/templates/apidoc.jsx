@@ -7,7 +7,20 @@ import GithubEditLink from '../components/githubEditLink/githubEditLink';
 import PrevNextLinks from '../components/prevNextPostLinks/prevNextLinks';
 
 export default function Apidoc({ pageContext, data }) {
-  const { toc, mdFile, html } = data.apidocPage;
+  const { /* toc,*/ mdFile, html } = data.apidocPage;
+
+  const apiDocList = pageContext.apidocList.reduce((acc, current) => {
+    const { title, slug } = current;
+    const [, root, classname] = title.split(' ');
+    if (!acc[root]) {
+      acc[root] = [];
+    }
+    acc[root].push({
+      title: classname,
+      url: slug,
+    });
+    return acc;
+  }, {});
 
   return (
     <Layout
@@ -16,37 +29,25 @@ export default function Apidoc({ pageContext, data }) {
           <header>Guides</header>
           <nav id="topics" aria-label="Contents">
             <ol>
-              <li>
-                <Link
-                  onClick={() => {
-                    setVisibility(false);
-                  }}
-                  title="Introduction"
-                  to="/docs"
-                >
-                  Introduction
-                </Link>
-              </li>
-              {pageContext.apidocList.map(({ title, slug }) => (
-                <li key={slug}>
-                  <Link
-                    onClick={() => {
+              {Object.entries(apiDocList).map(([root, smallerList]) => (
+                <li key={root}>
+                  <Link activeClassName="active" title={root} to="#">
+                    {root}
+                  </Link>
+                  <TableOfContents
+                    hideSidebar={() => {
                       setVisibility(false);
                     }}
-                    activeClassName="active"
-                    title={title}
-                    to={slug}
-                  >
-                    {title}
-                  </Link>
-                  {pageContext.slug === slug && (
+                    toc={smallerList}
+                  />
+                  {/* {pageContext.slug === slug && (
                     <TableOfContents
                       hideSidebar={() => {
                         setVisibility(false);
                       }}
                       toc={toc.items}
                     />
-                  )}
+                  )} */}
                 </li>
               ))}
             </ol>

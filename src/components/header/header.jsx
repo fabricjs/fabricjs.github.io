@@ -1,8 +1,8 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import './header.css'
-import logo from '../../images/fabricjs-logo.png'
-import CarbonAd from '../CarbonAd/CarbonAd'
+import React from 'react';
+import { Link } from 'gatsby';
+import './header.css';
+import logo from '../../images/fabricjs-logo.png';
+import CarbonAd from '../CarbonAd/CarbonAd';
 
 export default function Header() {
   return (
@@ -29,8 +29,8 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <Link activeClassName="active" to="/customize-build">
-                Customize build
+              <Link activeClassName="active" to="/apidocs/modules.md">
+                Api specs
               </Link>
             </li>
             <li>
@@ -49,5 +49,5 @@ export default function Header() {
       </header>
       <CarbonAd />
     </>
-  )
+  );
 }

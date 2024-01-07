@@ -22,7 +22,7 @@ object.applyFilters(canvas.renderAll.bind(canvas));
 
 ### constructor
 
-• **new Resize**(`options?`): [`Resize`](/apidocs/classes/filters.Resize.md)
+**new Resize**(`options?`): [`Resize`](/apidocs/classes/filters.Resize.md)
 
 Constructor
 
@@ -42,23 +42,23 @@ Constructor
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:58](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L58)
+[src/filters/BaseFilter.ts:58](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/BaseFilter.ts#L58)
 
 ## Properties
 
 ### fragmentSourceTOP
 
-• **fragmentSourceTOP**: `string`
+ **fragmentSourceTOP**: `string`
 
 #### Defined in
 
-[src/filters/Resize.ts:82](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/Resize.ts#L82)
+[src/filters/Resize.ts:82](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/Resize.ts#L82)
 
 ___
 
 ### lanczosLobes
 
-• **lanczosLobes**: `number`
+ **lanczosLobes**: `number`
 
 LanczosLobes parameter for lanczos filter, valid for resizeType lanczos
 
@@ -72,13 +72,13 @@ LanczosLobes parameter for lanczos filter, valid for resizeType lanczos
 
 #### Defined in
 
-[src/filters/Resize.ts:80](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/Resize.ts#L80)
+[src/filters/Resize.ts:80](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/Resize.ts#L80)
 
 ___
 
 ### mainParameter
 
-• `Optional` `Private` **mainParameter**: keyof [`Resize`](/apidocs/classes/filters.Resize.md)
+ `Optional` `Private` **mainParameter**: ``"scaleX"`` \| ``"scaleY"`` \| ``"type"`` \| ``"toObject"`` \| ``"toJSON"`` \| ``"resizeType"`` \| ``"lanczosLobes"`` \| ``"fragmentSourceTOP"`` \| ``"getUniformLocations"`` \| ``"sendUniformData"`` \| ``"getFilterWindow"`` \| ``"getCacheKey"`` \| ``"getFragmentSource"`` \| ``"getTaps"`` \| ``"generateShader"`` \| ``"applyToForWebgl"`` \| ``"applyTo"`` \| ``"isNeutralState"`` \| ``"lanczosCreate"`` \| ``"applyTo2d"`` \| ``"sliceByTwo"`` \| ``"lanczosResize"`` \| ``"bilinearFiltering"`` \| ``"hermiteFastResize"`` \| ``"vertexSource"`` \| ``"mainParameter"`` \| ``"createProgram"`` \| ``"getAttributeLocations"`` \| ``"sendAttributeData"`` \| ``"_setupFrameBuffer"`` \| ``"_swapTextures"`` \| ``"retrieveShader"`` \| ``"applyToWebGL"`` \| ``"bindAdditionalTexture"`` \| ``"unbindAdditionalTexture"`` \| ``"getMainParameter"`` \| ``"setMainParameter"`` \| ``"createHelpLayer"``
 
 Name of the parameter that can be changed in the filter.
 Some filters have more than one parameter and there is no
@@ -90,13 +90,13 @@ mainParameter
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:52](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L52)
+[src/filters/BaseFilter.ts:52](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/BaseFilter.ts#L52)
 
 ___
 
 ### resizeType
 
-• **resizeType**: [`TResizeType`](/apidocs/modules/filters.md#tresizetype)
+ **resizeType**: [`TResizeType`](/apidocs/modules/filters.md#tresizetype)
 
 Resize type
 for webgl resizeType is just lanczos, for canvas2d can be:
@@ -110,13 +110,13 @@ bilinear, hermite, sliceHack, lanczos.
 
 #### Defined in
 
-[src/filters/Resize.ts:59](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/Resize.ts#L59)
+[src/filters/Resize.ts:59](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/Resize.ts#L59)
 
 ___
 
 ### scaleX
 
-• **scaleX**: `number`
+ **scaleX**: `number`
 
 Scale factor for resizing, x axis
 
@@ -130,13 +130,13 @@ Scale factor for resizing, x axis
 
 #### Defined in
 
-[src/filters/Resize.ts:66](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/Resize.ts#L66)
+[src/filters/Resize.ts:66](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/Resize.ts#L66)
 
 ___
 
 ### scaleY
 
-• **scaleY**: `number`
+ **scaleY**: `number`
 
 Scale factor for resizing, y axis
 
@@ -150,13 +150,13 @@ Scale factor for resizing, y axis
 
 #### Defined in
 
-[src/filters/Resize.ts:73](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/Resize.ts#L73)
+[src/filters/Resize.ts:73](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/Resize.ts#L73)
 
 ___
 
 ### vertexSource
 
-• `Private` **vertexSource**: `string` = `vertexSource`
+ `Private` **vertexSource**: `string` = `vertexSource`
 
 Array of attributes to send with buffers. do not modify
 
@@ -166,13 +166,13 @@ Array of attributes to send with buffers. do not modify
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:44](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L44)
+[src/filters/BaseFilter.ts:44](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/BaseFilter.ts#L44)
 
 ___
 
 ### defaults
 
-▪ `Static` **defaults**: `Partial`\<[`TClassProperties`](/apidocs/modules.md#tclassproperties)\<[`Resize`](/apidocs/classes/filters.Resize.md)\>\> = `resizeDefaultValues`
+ `Static` **defaults**: `Partial`\<[`TClassProperties`](/apidocs/modules.md#tclassproperties)\<[`Resize`](/apidocs/classes/filters.Resize.md)\>\> = `resizeDefaultValues`
 
 #### Overrides
 
@@ -180,13 +180,13 @@ ___
 
 #### Defined in
 
-[src/filters/Resize.ts:86](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/Resize.ts#L86)
+[src/filters/Resize.ts:86](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/Resize.ts#L86)
 
 ___
 
 ### type
 
-▪ `Static` **type**: `string` = `'Resize'`
+ `Static` **type**: `string` = `'Resize'`
 
 The class type. Used to identify which class this is.
 This is used for serialization purposes and internally it can be used
@@ -200,13 +200,13 @@ to avoid doing that.
 
 #### Defined in
 
-[src/filters/Resize.ts:84](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/Resize.ts#L84)
+[src/filters/Resize.ts:84](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/Resize.ts#L84)
 
 ## Accessors
 
 ### type
 
-• `get` **type**(): `string`
+`get` **type**(): `string`
 
 Filter type
 
@@ -226,13 +226,13 @@ BaseFilter.type
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:25](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L25)
+[src/filters/BaseFilter.ts:25](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/BaseFilter.ts#L25)
 
 ## Methods
 
 ### \_setupFrameBuffer
 
-▸ **_setupFrameBuffer**(`options`): `void`
+**_setupFrameBuffer**(`options`): `void`
 
 #### Parameters
 
@@ -250,13 +250,13 @@ BaseFilter.type
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:190](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L190)
+[src/filters/BaseFilter.ts:190](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/BaseFilter.ts#L190)
 
 ___
 
 ### \_swapTextures
 
-▸ **_swapTextures**(`options`): `void`
+**_swapTextures**(`options`): `void`
 
 #### Parameters
 
@@ -274,13 +274,13 @@ ___
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:217](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L217)
+[src/filters/BaseFilter.ts:217](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/BaseFilter.ts#L217)
 
 ___
 
 ### applyTo
 
-▸ **applyTo**(`options`): `void`
+**applyTo**(`options`): `void`
 
 Apply the resize filter to the image
 Determines whether to use WebGL or Canvas2D based on the options.webgl flag.
@@ -301,13 +301,13 @@ Determines whether to use WebGL or Canvas2D based on the options.webgl flag.
 
 #### Defined in
 
-[src/filters/Resize.ts:207](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/Resize.ts#L207)
+[src/filters/Resize.ts:207](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/Resize.ts#L207)
 
 ___
 
 ### applyTo2d
 
-▸ **applyTo2d**(`this`, `options`): `void`
+**applyTo2d**(`this`, `options`): `void`
 
 #### Parameters
 
@@ -326,13 +326,13 @@ ___
 
 #### Defined in
 
-[src/filters/Resize.ts:233](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/Resize.ts#L233)
+[src/filters/Resize.ts:233](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/Resize.ts#L233)
 
 ___
 
 ### applyToForWebgl
 
-▸ **applyToForWebgl**(`this`, `options`): `void`
+**applyToForWebgl**(`this`, `options`): `void`
 
 #### Parameters
 
@@ -347,13 +347,13 @@ ___
 
 #### Defined in
 
-[src/filters/Resize.ts:173](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/Resize.ts#L173)
+[src/filters/Resize.ts:173](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/Resize.ts#L173)
 
 ___
 
 ### applyToWebGL
 
-▸ **applyToWebGL**(`options`): `void`
+**applyToWebGL**(`options`): `void`
 
 Apply this filter using webgl.
 
@@ -373,13 +373,13 @@ Apply this filter using webgl.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:315](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L315)
+[src/filters/BaseFilter.ts:315](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/BaseFilter.ts#L315)
 
 ___
 
 ### bilinearFiltering
 
-▸ **bilinearFiltering**(`this`, `options`, `oW`, `oH`, `dW`, `dH`): `ImageData`
+**bilinearFiltering**(`this`, `options`, `oW`, `oH`, `dW`, `dH`): `ImageData`
 
 bilinearFiltering
 
@@ -400,13 +400,13 @@ bilinearFiltering
 
 #### Defined in
 
-[src/filters/Resize.ts:427](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/Resize.ts#L427)
+[src/filters/Resize.ts:427](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/Resize.ts#L427)
 
 ___
 
 ### bindAdditionalTexture
 
-▸ **bindAdditionalTexture**(`gl`, `texture`, `textureUnit`): `void`
+**bindAdditionalTexture**(`gl`, `texture`, `textureUnit`): `void`
 
 #### Parameters
 
@@ -426,13 +426,13 @@ ___
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:334](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L334)
+[src/filters/BaseFilter.ts:334](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/BaseFilter.ts#L334)
 
 ___
 
 ### createHelpLayer
 
-▸ **createHelpLayer**(`options`): `void`
+**createHelpLayer**(`options`): `void`
 
 If needed by a 2d filter, this functions can create an helper canvas to be used
 remember that options.targetCanvas is available for use till end of chain.
@@ -453,13 +453,13 @@ remember that options.targetCanvas is available for use till end of chain.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:380](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L380)
+[src/filters/BaseFilter.ts:380](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/BaseFilter.ts#L380)
 
 ___
 
 ### createProgram
 
-▸ **createProgram**(`gl`, `fragmentSource?`, `vertexSource?`): `Object`
+**createProgram**(`gl`, `fragmentSource?`, `vertexSource?`): `Object`
 
 Compile this filter's shader program.
 
@@ -487,13 +487,13 @@ Compile this filter's shader program.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:77](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L77)
+[src/filters/BaseFilter.ts:77](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/BaseFilter.ts#L77)
 
 ___
 
 ### generateShader
 
-▸ **generateShader**(`filterWindow`): `string`
+**generateShader**(`filterWindow`): `string`
 
 Generate vertex and shader sources from the necessary steps numbers
 
@@ -509,13 +509,13 @@ Generate vertex and shader sources from the necessary steps numbers
 
 #### Defined in
 
-[src/filters/Resize.ts:149](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/Resize.ts#L149)
+[src/filters/Resize.ts:149](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/Resize.ts#L149)
 
 ___
 
 ### getAttributeLocations
 
-▸ **getAttributeLocations**(`gl`, `program`): [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap)
+**getAttributeLocations**(`gl`, `program`): [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap)
 
 Return a map of attribute names to WebGLAttributeLocation objects.
 
@@ -538,13 +538,13 @@ A map of attribute names to attribute locations.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:146](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L146)
+[src/filters/BaseFilter.ts:146](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/BaseFilter.ts#L146)
 
 ___
 
 ### getCacheKey
 
-▸ **getCacheKey**(`this`): `string`
+**getCacheKey**(`this`): `string`
 
 Returns a string that represent the current selected shader code for the filter.
 Used to force recompilation when parameters change or to retrieve the shader from cache
@@ -565,13 +565,13 @@ Used to force recompilation when parameters change or to retrieve the shader fro
 
 #### Defined in
 
-[src/filters/Resize.ts:124](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/Resize.ts#L124)
+[src/filters/Resize.ts:124](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/Resize.ts#L124)
 
 ___
 
 ### getFilterWindow
 
-▸ **getFilterWindow**(`this`): `number`
+**getFilterWindow**(`this`): `number`
 
 #### Parameters
 
@@ -585,13 +585,13 @@ ___
 
 #### Defined in
 
-[src/filters/Resize.ts:119](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/Resize.ts#L119)
+[src/filters/Resize.ts:119](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/Resize.ts#L119)
 
 ___
 
 ### getFragmentSource
 
-▸ **getFragmentSource**(`this`): `string`
+**getFragmentSource**(`this`): `string`
 
 #### Parameters
 
@@ -609,17 +609,17 @@ ___
 
 #### Defined in
 
-[src/filters/Resize.ts:129](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/Resize.ts#L129)
+[src/filters/Resize.ts:129](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/Resize.ts#L129)
 
 ___
 
 ### getMainParameter
 
-▸ **getMainParameter**(): `undefined` \| `string` \| `number` \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => [`TWebGLProgramCacheItem`](/apidocs/modules.md#twebglprogramcacheitem) \| () => \{ `lanczosLobes`: `number` ; `resizeType`: [`TResizeType`](/apidocs/modules/filters.md#tresizetype) ; `scaleX`: `number` ; `scaleY`: `number` ; `type`: `string`  } \| () => \{ `type`: `string`  } \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => \{ `uDelta`: ``null`` \| `WebGLUniformLocation` ; `uTaps`: ``null`` \| `WebGLUniformLocation`  } \| (`this`: `ResizeDuringWEBGLResize`, `gl`: `WebGLRenderingContext`, `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)) => `void` \| (`this`: `ResizeDuringWEBGLResize`) => `number` \| (`this`: `ResizeDuringWEBGLResize`) => `string` \| (`this`: `ResizeDuringWEBGLResize`) => `string` \| (`this`: `ResizeDuringWEBGLResize`) => `any`[] \| (`filterWindow`: `number`) => `string` \| (`this`: `ResizeDuringWEBGLResize`, `options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate) \| [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| () => `boolean` \| (`lobes`: `number`) => (`x`: `number`) => `number` \| (`this`: `ResizeDuring2DResize`, `options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate), `oW`: `number`, `oH`: `number`, `dW`: `number`, `dH`: `number`) => `ImageData` \| (`this`: `ResizeDuring2DResize`, `options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate), `oW`: `number`, `oH`: `number`, `dW`: `number`, `dH`: `number`) => `ImageData` \| (`this`: `ResizeDuring2DResize`, `options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate), `oW`: `number`, `oH`: `number`, `dW`: `number`, `dH`: `number`) => `ImageData` \| (`this`: `ResizeDuring2DResize`, `options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate), `oW`: `number`, `oH`: `number`, `dW`: `number`, `dH`: `number`) => `ImageData` \| (`gl`: `WebGLRenderingContext`, `fragmentSource`: `string`, `vertexSource`: `string`) => \{ `attributeLocations`: [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) ; `program`: `WebGLProgram` ; `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)  } \| (`gl`: `WebGLRenderingContext`, `attributeLocations`: `Record`\<`string`, `number`\>, `aPositionData`: `Float32Array`) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `texture`: `WebGLTexture`, `textureUnit`: `number`) => `void` \| (`gl`: `WebGLRenderingContext`, `textureUnit`: `number`) => `void` \| () => `undefined` \| `string` \| `number` \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => [`TWebGLProgramCacheItem`](/apidocs/modules.md#twebglprogramcacheitem) \| () => \{ `lanczosLobes`: `number` ; `resizeType`: [`TResizeType`](/apidocs/modules/filters.md#tresizetype) ; `scaleX`: `number` ; `scaleY`: `number` ; `type`: `string`  } \| () => \{ `type`: `string`  } \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => \{ `uDelta`: ``null`` \| `WebGLUniformLocation` ; `uTaps`: ``null`` \| `WebGLUniformLocation`  } \| (`this`: `ResizeDuringWEBGLResize`, `gl`: `WebGLRenderingContext`, `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)) => `void` \| (`this`: `ResizeDuringWEBGLResize`) => `number` \| (`this`: `ResizeDuringWEBGLResize`) => `string` \| (`this`: `ResizeDuringWEBGLResize`) => `string` \| (`this`: `ResizeDuringWEBGLResize`) => `any`[] \| (`filterWindow`: `number`) => `string` \| (`this`: `ResizeDuringWEBGLResize`, `options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate) \| [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| () => `boolean` \| (`lobes`: `number`) => (`x`: `number`) => `number` \| (`this`: `ResizeDuring2DResize`, `options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate), `oW`: `number`, `oH`: `number`, `dW`: `number`, `dH`: `number`) => `ImageData` \| (`this`: `ResizeDuring2DResize`, `options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate), `oW`: `number`, `oH`: `number`, `dW`: `number`, `dH`: `number`) => `ImageData` \| (`this`: `ResizeDuring2DResize`, `options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate), `oW`: `number`, `oH`: `number`, `dW`: `number`, `dH`: `number`) => `ImageData` \| (`this`: `ResizeDuring2DResize`, `options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate), `oW`: `number`, `oH`: `number`, `dW`: `number`, `dH`: `number`) => `ImageData` \| (`gl`: `WebGLRenderingContext`, `fragmentSource`: `string`, `vertexSource`: `string`) => \{ `attributeLocations`: [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) ; `program`: `WebGLProgram` ; `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)  } \| (`gl`: `WebGLRenderingContext`, `attributeLocations`: `Record`\<`string`, `number`\>, `aPositionData`: `Float32Array`) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `texture`: `WebGLTexture`, `textureUnit`: `number`) => `void` \| (`gl`: `WebGLRenderingContext`, `textureUnit`: `number`) => `void` \| () =\> string \| number \| ((gl: WebGLRenderingContext, program: WebGLProgram) =\> TWebGLAttributeLocationMap) \| ... 29 more ... \| undefined \| (`value`: `any`) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`value`: `any`) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void`
+**getMainParameter**(): `undefined` \| `string` \| `number` \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => [`TWebGLProgramCacheItem`](/apidocs/modules.md#twebglprogramcacheitem) \| () => \{ `lanczosLobes`: `number` ; `resizeType`: [`TResizeType`](/apidocs/modules/filters.md#tresizetype) ; `scaleX`: `number` ; `scaleY`: `number` ; `type`: `string`  } \| () => \{ `type`: `string`  } \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => \{ `uDelta`: ``null`` \| `WebGLUniformLocation` ; `uTaps`: ``null`` \| `WebGLUniformLocation`  } \| (`this`: `ResizeDuringWEBGLResize`, `gl`: `WebGLRenderingContext`, `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)) => `void` \| (`this`: `ResizeDuringWEBGLResize`) => `number` \| (`this`: `ResizeDuringWEBGLResize`) => `string` \| (`this`: `ResizeDuringWEBGLResize`) => `string` \| (`this`: `ResizeDuringWEBGLResize`) => `any`[] \| (`filterWindow`: `number`) => `string` \| (`this`: `ResizeDuringWEBGLResize`, `options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate) \| [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| () => `boolean` \| (`lobes`: `number`) => (`x`: `number`) => `number` \| (`this`: `ResizeDuring2DResize`, `options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate), `oW`: `number`, `oH`: `number`, `dW`: `number`, `dH`: `number`) => `ImageData` \| (`this`: `ResizeDuring2DResize`, `options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate), `oW`: `number`, `oH`: `number`, `dW`: `number`, `dH`: `number`) => `ImageData` \| (`this`: `ResizeDuring2DResize`, `options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate), `oW`: `number`, `oH`: `number`, `dW`: `number`, `dH`: `number`) => `ImageData` \| (`this`: `ResizeDuring2DResize`, `options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate), `oW`: `number`, `oH`: `number`, `dW`: `number`, `dH`: `number`) => `ImageData` \| (`gl`: `WebGLRenderingContext`, `fragmentSource`: `string`, `vertexSource`: `string`) => \{ `attributeLocations`: [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) ; `program`: `WebGLProgram` ; `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)  } \| (`gl`: `WebGLRenderingContext`, `attributeLocations`: `Record`\<`string`, `number`\>, `aPositionData`: `Float32Array`) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `texture`: `WebGLTexture`, `textureUnit`: `number`) => `void` \| (`gl`: `WebGLRenderingContext`, `textureUnit`: `number`) => `void` \| () => string \| number \| ((gl: WebGLRenderingContext, program: WebGLProgram) =\> TWebGLAttributeLocationMap) \| ((options: TWebGLPipelineState) =\> TWebGLProgramCacheItem) \| ... 28 more ... \| undefined \| (`value`: `any`) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void`
 
 #### Returns
 
-`undefined` \| `string` \| `number` \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => [`TWebGLProgramCacheItem`](/apidocs/modules.md#twebglprogramcacheitem) \| () => \{ `lanczosLobes`: `number` ; `resizeType`: [`TResizeType`](/apidocs/modules/filters.md#tresizetype) ; `scaleX`: `number` ; `scaleY`: `number` ; `type`: `string`  } \| () => \{ `type`: `string`  } \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => \{ `uDelta`: ``null`` \| `WebGLUniformLocation` ; `uTaps`: ``null`` \| `WebGLUniformLocation`  } \| (`this`: `ResizeDuringWEBGLResize`, `gl`: `WebGLRenderingContext`, `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)) => `void` \| (`this`: `ResizeDuringWEBGLResize`) => `number` \| (`this`: `ResizeDuringWEBGLResize`) => `string` \| (`this`: `ResizeDuringWEBGLResize`) => `string` \| (`this`: `ResizeDuringWEBGLResize`) => `any`[] \| (`filterWindow`: `number`) => `string` \| (`this`: `ResizeDuringWEBGLResize`, `options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate) \| [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| () => `boolean` \| (`lobes`: `number`) => (`x`: `number`) => `number` \| (`this`: `ResizeDuring2DResize`, `options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate), `oW`: `number`, `oH`: `number`, `dW`: `number`, `dH`: `number`) => `ImageData` \| (`this`: `ResizeDuring2DResize`, `options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate), `oW`: `number`, `oH`: `number`, `dW`: `number`, `dH`: `number`) => `ImageData` \| (`this`: `ResizeDuring2DResize`, `options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate), `oW`: `number`, `oH`: `number`, `dW`: `number`, `dH`: `number`) => `ImageData` \| (`this`: `ResizeDuring2DResize`, `options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate), `oW`: `number`, `oH`: `number`, `dW`: `number`, `dH`: `number`) => `ImageData` \| (`gl`: `WebGLRenderingContext`, `fragmentSource`: `string`, `vertexSource`: `string`) => \{ `attributeLocations`: [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) ; `program`: `WebGLProgram` ; `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)  } \| (`gl`: `WebGLRenderingContext`, `attributeLocations`: `Record`\<`string`, `number`\>, `aPositionData`: `Float32Array`) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `texture`: `WebGLTexture`, `textureUnit`: `number`) => `void` \| (`gl`: `WebGLRenderingContext`, `textureUnit`: `number`) => `void` \| () => `undefined` \| `string` \| `number` \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => [`TWebGLProgramCacheItem`](/apidocs/modules.md#twebglprogramcacheitem) \| () => \{ `lanczosLobes`: `number` ; `resizeType`: [`TResizeType`](/apidocs/modules/filters.md#tresizetype) ; `scaleX`: `number` ; `scaleY`: `number` ; `type`: `string`  } \| () => \{ `type`: `string`  } \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => \{ `uDelta`: ``null`` \| `WebGLUniformLocation` ; `uTaps`: ``null`` \| `WebGLUniformLocation`  } \| (`this`: `ResizeDuringWEBGLResize`, `gl`: `WebGLRenderingContext`, `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)) => `void` \| (`this`: `ResizeDuringWEBGLResize`) => `number` \| (`this`: `ResizeDuringWEBGLResize`) => `string` \| (`this`: `ResizeDuringWEBGLResize`) => `string` \| (`this`: `ResizeDuringWEBGLResize`) => `any`[] \| (`filterWindow`: `number`) => `string` \| (`this`: `ResizeDuringWEBGLResize`, `options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate) \| [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| () => `boolean` \| (`lobes`: `number`) => (`x`: `number`) => `number` \| (`this`: `ResizeDuring2DResize`, `options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate), `oW`: `number`, `oH`: `number`, `dW`: `number`, `dH`: `number`) => `ImageData` \| (`this`: `ResizeDuring2DResize`, `options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate), `oW`: `number`, `oH`: `number`, `dW`: `number`, `dH`: `number`) => `ImageData` \| (`this`: `ResizeDuring2DResize`, `options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate), `oW`: `number`, `oH`: `number`, `dW`: `number`, `dH`: `number`) => `ImageData` \| (`this`: `ResizeDuring2DResize`, `options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate), `oW`: `number`, `oH`: `number`, `dW`: `number`, `dH`: `number`) => `ImageData` \| (`gl`: `WebGLRenderingContext`, `fragmentSource`: `string`, `vertexSource`: `string`) => \{ `attributeLocations`: [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) ; `program`: `WebGLProgram` ; `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)  } \| (`gl`: `WebGLRenderingContext`, `attributeLocations`: `Record`\<`string`, `number`\>, `aPositionData`: `Float32Array`) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `texture`: `WebGLTexture`, `textureUnit`: `number`) => `void` \| (`gl`: `WebGLRenderingContext`, `textureUnit`: `number`) => `void` \| () =\> string \| number \| ((gl: WebGLRenderingContext, program: WebGLProgram) =\> TWebGLAttributeLocationMap) \| ... 29 more ... \| undefined \| (`value`: `any`) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`value`: `any`) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void`
+`undefined` \| `string` \| `number` \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => [`TWebGLProgramCacheItem`](/apidocs/modules.md#twebglprogramcacheitem) \| () => \{ `lanczosLobes`: `number` ; `resizeType`: [`TResizeType`](/apidocs/modules/filters.md#tresizetype) ; `scaleX`: `number` ; `scaleY`: `number` ; `type`: `string`  } \| () => \{ `type`: `string`  } \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => \{ `uDelta`: ``null`` \| `WebGLUniformLocation` ; `uTaps`: ``null`` \| `WebGLUniformLocation`  } \| (`this`: `ResizeDuringWEBGLResize`, `gl`: `WebGLRenderingContext`, `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)) => `void` \| (`this`: `ResizeDuringWEBGLResize`) => `number` \| (`this`: `ResizeDuringWEBGLResize`) => `string` \| (`this`: `ResizeDuringWEBGLResize`) => `string` \| (`this`: `ResizeDuringWEBGLResize`) => `any`[] \| (`filterWindow`: `number`) => `string` \| (`this`: `ResizeDuringWEBGLResize`, `options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate) \| [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| () => `boolean` \| (`lobes`: `number`) => (`x`: `number`) => `number` \| (`this`: `ResizeDuring2DResize`, `options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate), `oW`: `number`, `oH`: `number`, `dW`: `number`, `dH`: `number`) => `ImageData` \| (`this`: `ResizeDuring2DResize`, `options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate), `oW`: `number`, `oH`: `number`, `dW`: `number`, `dH`: `number`) => `ImageData` \| (`this`: `ResizeDuring2DResize`, `options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate), `oW`: `number`, `oH`: `number`, `dW`: `number`, `dH`: `number`) => `ImageData` \| (`this`: `ResizeDuring2DResize`, `options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate), `oW`: `number`, `oH`: `number`, `dW`: `number`, `dH`: `number`) => `ImageData` \| (`gl`: `WebGLRenderingContext`, `fragmentSource`: `string`, `vertexSource`: `string`) => \{ `attributeLocations`: [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) ; `program`: `WebGLProgram` ; `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)  } \| (`gl`: `WebGLRenderingContext`, `attributeLocations`: `Record`\<`string`, `number`\>, `aPositionData`: `Float32Array`) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `texture`: `WebGLTexture`, `textureUnit`: `number`) => `void` \| (`gl`: `WebGLRenderingContext`, `textureUnit`: `number`) => `void` \| () => string \| number \| ((gl: WebGLRenderingContext, program: WebGLProgram) =\> TWebGLAttributeLocationMap) \| ((options: TWebGLPipelineState) =\> TWebGLProgramCacheItem) \| ... 28 more ... \| undefined \| (`value`: `any`) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void`
 
 #### Inherited from
 
@@ -627,13 +627,13 @@ ___
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:351](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L351)
+[src/filters/BaseFilter.ts:351](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/BaseFilter.ts#L351)
 
 ___
 
 ### getTaps
 
-▸ **getTaps**(`this`): `any`[]
+**getTaps**(`this`): `any`[]
 
 #### Parameters
 
@@ -647,13 +647,13 @@ ___
 
 #### Defined in
 
-[src/filters/Resize.ts:134](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/Resize.ts#L134)
+[src/filters/Resize.ts:134](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/Resize.ts#L134)
 
 ___
 
 ### getUniformLocations
 
-▸ **getUniformLocations**(`gl`, `program`): `Object`
+**getUniformLocations**(`gl`, `program`): `Object`
 
 Return WebGL uniform locations for this filter's shader.
 
@@ -679,13 +679,13 @@ Return WebGL uniform locations for this filter's shader.
 
 #### Defined in
 
-[src/filters/Resize.ts:94](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/Resize.ts#L94)
+[src/filters/Resize.ts:94](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/Resize.ts#L94)
 
 ___
 
 ### hermiteFastResize
 
-▸ **hermiteFastResize**(`this`, `options`, `oW`, `oH`, `dW`, `dH`): `ImageData`
+**hermiteFastResize**(`this`, `options`, `oW`, `oH`, `dW`, `dH`): `ImageData`
 
 hermiteFastResize
 
@@ -706,13 +706,13 @@ hermiteFastResize
 
 #### Defined in
 
-[src/filters/Resize.ts:490](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/Resize.ts#L490)
+[src/filters/Resize.ts:490](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/Resize.ts#L490)
 
 ___
 
 ### isNeutralState
 
-▸ **isNeutralState**(): `boolean`
+**isNeutralState**(): `boolean`
 
 Generic isNeutral implementation for one parameter based filters.
 Used only in image applyFilters to discard filters that will not have an effect
@@ -729,13 +729,13 @@ Other filters may need their own version ( ColorMatrix, HueRotation, gamma, Comp
 
 #### Defined in
 
-[src/filters/Resize.ts:215](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/Resize.ts#L215)
+[src/filters/Resize.ts:215](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/Resize.ts#L215)
 
 ___
 
 ### lanczosCreate
 
-▸ **lanczosCreate**(`lobes`): (`x`: `number`) => `number`
+**lanczosCreate**(`lobes`): (`x`: `number`) => `number`
 
 #### Parameters
 
@@ -747,7 +747,7 @@ ___
 
 `fn`
 
-▸ (`x`): `number`
+(`x`): `number`
 
 ##### Parameters
 
@@ -761,13 +761,13 @@ ___
 
 #### Defined in
 
-[src/filters/Resize.ts:219](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/Resize.ts#L219)
+[src/filters/Resize.ts:219](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/Resize.ts#L219)
 
 ___
 
 ### lanczosResize
 
-▸ **lanczosResize**(`this`, `options`, `oW`, `oH`, `dW`, `dH`): `ImageData`
+**lanczosResize**(`this`, `options`, `oW`, `oH`, `dW`, `dH`): `ImageData`
 
 Filter lanczosResize
 
@@ -788,13 +788,13 @@ Filter lanczosResize
 
 #### Defined in
 
-[src/filters/Resize.ts:336](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/Resize.ts#L336)
+[src/filters/Resize.ts:336](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/Resize.ts#L336)
 
 ___
 
 ### retrieveShader
 
-▸ **retrieveShader**(`options`): [`TWebGLProgramCacheItem`](/apidocs/modules.md#twebglprogramcacheitem)
+**retrieveShader**(`options`): [`TWebGLProgramCacheItem`](/apidocs/modules.md#twebglprogramcacheitem)
 
 Retrieves the cached shader.
 
@@ -816,13 +816,13 @@ the compiled program shader
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:295](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L295)
+[src/filters/BaseFilter.ts:295](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/BaseFilter.ts#L295)
 
 ___
 
 ### sendAttributeData
 
-▸ **sendAttributeData**(`gl`, `attributeLocations`, `aPositionData`): `void`
+**sendAttributeData**(`gl`, `attributeLocations`, `aPositionData`): `void`
 
 Send attribute data from this filter to its shader program on the GPU.
 
@@ -844,13 +844,13 @@ Send attribute data from this filter to its shader program on the GPU.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:177](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L177)
+[src/filters/BaseFilter.ts:177](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/BaseFilter.ts#L177)
 
 ___
 
 ### sendUniformData
 
-▸ **sendUniformData**(`this`, `gl`, `uniformLocations`): `void`
+**sendUniformData**(`this`, `gl`, `uniformLocations`): `void`
 
 Send data from this filter to its shader program's uniforms.
 
@@ -872,13 +872,13 @@ Send data from this filter to its shader program's uniforms.
 
 #### Defined in
 
-[src/filters/Resize.ts:107](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/Resize.ts#L107)
+[src/filters/Resize.ts:107](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/Resize.ts#L107)
 
 ___
 
 ### setMainParameter
 
-▸ **setMainParameter**(`value`): `void`
+**setMainParameter**(`value`): `void`
 
 #### Parameters
 
@@ -896,13 +896,13 @@ ___
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:355](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L355)
+[src/filters/BaseFilter.ts:355](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/BaseFilter.ts#L355)
 
 ___
 
 ### sliceByTwo
 
-▸ **sliceByTwo**(`options`, `oW`, `oH`, `dW`, `dH`): `ImageData`
+**sliceByTwo**(`options`, `oW`, `oH`, `dW`, `dH`): `ImageData`
 
 Filter sliceByTwo
 
@@ -922,13 +922,13 @@ Filter sliceByTwo
 
 #### Defined in
 
-[src/filters/Resize.ts:271](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/Resize.ts#L271)
+[src/filters/Resize.ts:271](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/Resize.ts#L271)
 
 ___
 
 ### toJSON
 
-▸ **toJSON**(): `Object`
+**toJSON**(): `Object`
 
 Returns a JSON representation of an instance
 
@@ -948,13 +948,13 @@ JSON
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:405](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L405)
+[src/filters/BaseFilter.ts:405](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/BaseFilter.ts#L405)
 
 ___
 
 ### toObject
 
-▸ **toObject**(): `Object`
+**toObject**(): `Object`
 
 Returns object representation of an instance
 
@@ -978,13 +978,13 @@ Object representation of an instance
 
 #### Defined in
 
-[src/filters/Resize.ts:560](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/Resize.ts#L560)
+[src/filters/Resize.ts:560](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/Resize.ts#L560)
 
 ___
 
 ### unbindAdditionalTexture
 
-▸ **unbindAdditionalTexture**(`gl`, `textureUnit`): `void`
+**unbindAdditionalTexture**(`gl`, `textureUnit`): `void`
 
 #### Parameters
 
@@ -1003,13 +1003,13 @@ ___
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:345](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L345)
+[src/filters/BaseFilter.ts:345](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/BaseFilter.ts#L345)
 
 ___
 
 ### fromObject
 
-▸ **fromObject**(`«destructured»`, `options`): `Promise`\<[`BaseFilter`](/apidocs/classes/filters.BaseFilter.md)\>
+**fromObject**(`«destructured»`, `options`): `Promise`\<[`BaseFilter`](/apidocs/classes/filters.BaseFilter.md)\>
 
 #### Parameters
 
@@ -1028,4 +1028,4 @@ ___
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:410](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/filters/BaseFilter.ts#L410)
+[src/filters/BaseFilter.ts:410](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/BaseFilter.ts#L410)

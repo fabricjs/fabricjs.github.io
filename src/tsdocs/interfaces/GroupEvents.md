@@ -12,7 +12,7 @@
 
 ### added
 
-• **added**: `Object`
+ **added**: `Object`
 
 #### Type declaration
 
@@ -26,13 +26,13 @@
 
 #### Defined in
 
-[src/EventTypeDefs.ts:278](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L278)
+[src/EventTypeDefs.ts:283](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L283)
 
 ___
 
 ### contextmenu
 
-• **contextmenu**: `SimpleEventHandler`\<`Event`\>
+ **contextmenu**: `SimpleEventHandler`\<`Event`\>
 
 #### Inherited from
 
@@ -40,13 +40,13 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:261](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L261)
+[src/EventTypeDefs.ts:266](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L266)
 
 ___
 
 ### contextmenu:before
 
-• **contextmenu:before**: `SimpleEventHandler`\<`Event`\>
+ **contextmenu:before**: `SimpleEventHandler`\<`Event`\>
 
 #### Inherited from
 
@@ -54,13 +54,13 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:260](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L260)
+[src/EventTypeDefs.ts:265](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L265)
 
 ___
 
 ### deselected
 
-• **deselected**: `Partial`\<[`TEvent`](/apidocs/interfaces/TEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>\> & \{ `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  }
+ **deselected**: `Partial`\<[`TEvent`](/apidocs/interfaces/TEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>\> & \{ `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  }
 
 #### Inherited from
 
@@ -68,13 +68,13 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:273](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L273)
+[src/EventTypeDefs.ts:278](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L278)
 
 ___
 
 ### drag
 
-• **drag**: [`DragEventData`](/apidocs/interfaces/DragEventData.md)
+ **drag**: [`DragEventData`](/apidocs/interfaces/DragEventData.md)
 
 #### Inherited from
 
@@ -82,13 +82,13 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:191](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L191)
+[src/EventTypeDefs.ts:196](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L196)
 
 ___
 
 ### dragend
 
-• **dragend**: [`DragEventData`](/apidocs/interfaces/DragEventData.md)
+ **dragend**: [`DragEventData`](/apidocs/interfaces/DragEventData.md)
 
 #### Inherited from
 
@@ -96,13 +96,13 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:195](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L195)
+[src/EventTypeDefs.ts:200](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L200)
 
 ___
 
 ### dragenter
 
-• **dragenter**: [`DragEventData`](/apidocs/interfaces/DragEventData.md) & `InEvent`
+ **dragenter**: [`DragEventData`](/apidocs/interfaces/DragEventData.md) & `InEvent`
 
 #### Inherited from
 
@@ -110,13 +110,13 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:193](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L193)
+[src/EventTypeDefs.ts:198](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L198)
 
 ___
 
 ### dragleave
 
-• **dragleave**: [`DragEventData`](/apidocs/interfaces/DragEventData.md) & `OutEvent`
+ **dragleave**: [`DragEventData`](/apidocs/interfaces/DragEventData.md) & `OutEvent`
 
 #### Inherited from
 
@@ -124,13 +124,13 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:194](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L194)
+[src/EventTypeDefs.ts:199](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L199)
 
 ___
 
 ### dragover
 
-• **dragover**: [`DragEventData`](/apidocs/interfaces/DragEventData.md)
+ **dragover**: [`DragEventData`](/apidocs/interfaces/DragEventData.md)
 
 #### Inherited from
 
@@ -138,13 +138,13 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:192](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L192)
+[src/EventTypeDefs.ts:197](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L197)
 
 ___
 
 ### dragstart
 
-• **dragstart**: `TEventWithTarget`\<`DragEvent`\>
+ **dragstart**: `TEventWithTarget`\<`DragEvent`\>
 
 #### Inherited from
 
@@ -152,13 +152,13 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:190](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L190)
+[src/EventTypeDefs.ts:195](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L195)
 
 ___
 
 ### drop
 
-• **drop**: [`DropEventData`](/apidocs/interfaces/DropEventData.md)
+ **drop**: [`DropEventData`](/apidocs/interfaces/DropEventData.md)
 
 #### Inherited from
 
@@ -166,13 +166,13 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:197](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L197)
+[src/EventTypeDefs.ts:202](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L202)
 
 ___
 
 ### drop:after
 
-• **drop:after**: [`DropEventData`](/apidocs/interfaces/DropEventData.md)
+ **drop:after**: [`DropEventData`](/apidocs/interfaces/DropEventData.md)
 
 #### Inherited from
 
@@ -180,13 +180,13 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:198](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L198)
+[src/EventTypeDefs.ts:203](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L203)
 
 ___
 
 ### drop:before
 
-• **drop:before**: [`DropEventData`](/apidocs/interfaces/DropEventData.md)
+ **drop:before**: [`DropEventData`](/apidocs/interfaces/DropEventData.md)
 
 #### Inherited from
 
@@ -194,13 +194,13 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:196](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L196)
+[src/EventTypeDefs.ts:201](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L201)
 
 ___
 
 ### erasing:end
 
-• **erasing:end**: `Object`
+ **erasing:end**: `Object`
 
 #### Type declaration
 
@@ -214,31 +214,33 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:282](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L282)
+[src/EventTypeDefs.ts:287](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L287)
 
 ___
 
-### layout
+### layout:after
 
-• **layout**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `context` | [`LayoutContext`](/apidocs/modules.md#layoutcontext) |
-| `diff` | [`Point`](/apidocs/classes/Point.md) |
-| `result` | [`LayoutResult`](/apidocs/modules.md#layoutresult) |
+ **layout:after**: [`LayoutAfterEvent`](/apidocs/modules.md#layoutafterevent)
 
 #### Defined in
 
-[src/shapes/Group.ts:45](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/shapes/Group.ts#L45)
+[src/shapes/Group.ts:45](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Group.ts#L45)
+
+___
+
+### layout:before
+
+ **layout:before**: [`LayoutBeforeEvent`](/apidocs/modules.md#layoutbeforeevent)
+
+#### Defined in
+
+[src/shapes/Group.ts:44](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Group.ts#L44)
 
 ___
 
 ### modified
 
-• **modified**: [`ModifiedEvent`](/apidocs/interfaces/ModifiedEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>
+ **modified**: [`ModifiedEvent`](/apidocs/interfaces/ModifiedEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>
 
 #### Inherited from
 
@@ -246,9 +248,19 @@ ___
 
 ___
 
+### modifyPoly
+
+ **modifyPoly**: [`BasicTransformEvent`](/apidocs/interfaces/BasicTransformEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>
+
+#### Inherited from
+
+[ObjectEvents](/apidocs/interfaces/ObjectEvents.md).[modifyPoly](/apidocs/interfaces/ObjectEvents.md#modifypoly)
+
+___
+
 ### mousedblclick
 
-• **mousedblclick**: [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>
+ **mousedblclick**: [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>
 
 #### Inherited from
 
@@ -258,7 +270,7 @@ ___
 
 ### mousedown
 
-• **mousedown**: [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>
+ **mousedown**: [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>
 
 #### Inherited from
 
@@ -268,7 +280,7 @@ ___
 
 ### mousedown:before
 
-• **mousedown:before**: [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>
+ **mousedown:before**: [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>
 
 #### Inherited from
 
@@ -278,7 +290,7 @@ ___
 
 ### mousemove
 
-• **mousemove**: [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>
+ **mousemove**: [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>
 
 #### Inherited from
 
@@ -288,7 +300,7 @@ ___
 
 ### mousemove:before
 
-• **mousemove:before**: [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>
+ **mousemove:before**: [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>
 
 #### Inherited from
 
@@ -298,7 +310,7 @@ ___
 
 ### mouseout
 
-• **mouseout**: [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & `OutEvent`
+ **mouseout**: [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & `OutEvent`
 
 #### Inherited from
 
@@ -308,7 +320,7 @@ ___
 
 ### mouseover
 
-• **mouseover**: [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & `InEvent`
+ **mouseover**: [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & `InEvent`
 
 #### Inherited from
 
@@ -318,7 +330,7 @@ ___
 
 ### mouseup
 
-• **mouseup**: [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & \{ `currentSubTargets`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] ; `currentTarget?`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> ; `isClick`: `boolean`  }
+ **mouseup**: [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & \{ `currentSubTargets`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] ; `currentTarget?`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> ; `isClick`: `boolean`  }
 
 #### Inherited from
 
@@ -328,7 +340,7 @@ ___
 
 ### mouseup:before
 
-• **mouseup:before**: [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & \{ `currentSubTargets`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] ; `currentTarget?`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> ; `isClick`: `boolean`  }
+ **mouseup:before**: [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & \{ `currentSubTargets`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] ; `currentTarget?`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> ; `isClick`: `boolean`  }
 
 #### Inherited from
 
@@ -338,7 +350,7 @@ ___
 
 ### mousewheel
 
-• **mousewheel**: [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<`WheelEvent`\>
+ **mousewheel**: [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<`WheelEvent`\>
 
 #### Inherited from
 
@@ -348,7 +360,7 @@ ___
 
 ### moving
 
-• **moving**: [`BasicTransformEvent`](/apidocs/interfaces/BasicTransformEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>
+ **moving**: [`BasicTransformEvent`](/apidocs/interfaces/BasicTransformEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>
 
 #### Inherited from
 
@@ -358,7 +370,7 @@ ___
 
 ### object:added
 
-• **object:added**: `Object`
+ **object:added**: `Object`
 
 #### Type declaration
 
@@ -372,13 +384,13 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:223](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L223)
+[src/EventTypeDefs.ts:228](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L228)
 
 ___
 
 ### object:removed
 
-• **object:removed**: `Object`
+ **object:removed**: `Object`
 
 #### Type declaration
 
@@ -392,13 +404,13 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:224](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L224)
+[src/EventTypeDefs.ts:229](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L229)
 
 ___
 
 ### removed
 
-• **removed**: `Object`
+ **removed**: `Object`
 
 #### Type declaration
 
@@ -412,13 +424,13 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:279](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L279)
+[src/EventTypeDefs.ts:284](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L284)
 
 ___
 
 ### resizing
 
-• **resizing**: [`BasicTransformEvent`](/apidocs/interfaces/BasicTransformEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>
+ **resizing**: [`BasicTransformEvent`](/apidocs/interfaces/BasicTransformEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>
 
 #### Inherited from
 
@@ -428,7 +440,7 @@ ___
 
 ### rotating
 
-• **rotating**: [`BasicTransformEvent`](/apidocs/interfaces/BasicTransformEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>
+ **rotating**: [`BasicTransformEvent`](/apidocs/interfaces/BasicTransformEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>
 
 #### Inherited from
 
@@ -438,7 +450,7 @@ ___
 
 ### scaling
 
-• **scaling**: [`BasicTransformEvent`](/apidocs/interfaces/BasicTransformEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>
+ **scaling**: [`BasicTransformEvent`](/apidocs/interfaces/BasicTransformEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>
 
 #### Inherited from
 
@@ -448,7 +460,7 @@ ___
 
 ### selected
 
-• **selected**: `Partial`\<[`TEvent`](/apidocs/interfaces/TEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>\> & \{ `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  }
+ **selected**: `Partial`\<[`TEvent`](/apidocs/interfaces/TEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>\> & \{ `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  }
 
 #### Inherited from
 
@@ -456,13 +468,13 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:270](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L270)
+[src/EventTypeDefs.ts:275](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L275)
 
 ___
 
 ### skewing
 
-• **skewing**: [`BasicTransformEvent`](/apidocs/interfaces/BasicTransformEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>
+ **skewing**: [`BasicTransformEvent`](/apidocs/interfaces/BasicTransformEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>
 
 #### Inherited from
 

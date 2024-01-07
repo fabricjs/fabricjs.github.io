@@ -42,15 +42,18 @@ export default class TableOfContents extends React.Component {
 
   handleClick = (e) => {
     if (typeof window === 'undefined') return;
-    e.preventDefault();
     // console.log(e.target.tagName);
     if (e.target.tagName === 'A') {
-      const { hideSidebar } = this.props;
-      const scrolToEl = document.getElementById(e.target.href.split('#')[1]); // eslint-disable-line no-undef
-      scrolToEl && this.doScrolling(scrolToEl, 500); // eslint-disable-line no-unused-expressions
-      hideSidebar && typeof hideSidebar === 'function' && hideSidebar(); // eslint-disable-line no-unused-expressions
-      // this.props.hideSidebar();
-      // console.log(this.props);
+      const isInDocLink = e.target.href.startsWith('#');
+      if (isInDocLink) {
+        e.preventDefault();
+        const { hideSidebar } = this.props;
+        const scrolToEl = document.getElementById(e.target.href.split('#')[1]); // eslint-disable-line no-undef
+        scrolToEl && this.doScrolling(scrolToEl, 500); // eslint-disable-line no-unused-expressions
+        hideSidebar && typeof hideSidebar === 'function' && hideSidebar(); // eslint-disable-line no-unused-expressions
+        // this.props.hideSidebar();
+        // console.log(this.props);
+      }
     }
   };
 

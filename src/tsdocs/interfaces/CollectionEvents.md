@@ -12,7 +12,7 @@
 
 ### object:added
 
-• **object:added**: `Object`
+ **object:added**: `Object`
 
 #### Type declaration
 
@@ -22,13 +22,13 @@
 
 #### Defined in
 
-[src/EventTypeDefs.ts:223](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L223)
+[src/EventTypeDefs.ts:228](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L228)
 
 ___
 
 ### object:removed
 
-• **object:removed**: `Object`
+ **object:removed**: `Object`
 
 #### Type declaration
 
@@ -38,4 +38,4 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:224](https://github.com/fabricjs/fabric.js/blob/d47d51d01/src/EventTypeDefs.ts#L224)
+[src/EventTypeDefs.ts:229](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L229)
