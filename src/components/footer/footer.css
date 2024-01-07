@@ -1,0 +1,100 @@
+footer {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: azure;
+  background-color: #111;
+  height: auto;
+  padding-bottom: 10px;
+}
+
+.main {
+  background-color: #222;
+  display: flex;
+  align-items: center;
+  height: min-content;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.icons {
+  background-color: #76cef4;
+  width: min-content;
+  padding: 4px;
+  border-radius: 50%;
+}
+
+.icons img {
+  width: 20px;
+  position: relative;
+  margin-bottom: 1px;
+}
+
+.icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons a:hover {
+  color: azure;
+  filter: invert(100%);
+  transition: 1s;
+}
+
+.text {
+  line-height: 100%;
+  font-size: 20px;
+  text-align: center;
+}
+
+.more {
+  display: flex;
+  justify-content: space-evenly;
+  height: auto;
+  background-color: #111;
+  text-align: justify;
+}
+
+.tab {
+  width: 300px;
+  padding: 10px;
+}
+
+.tab img {
+  height: 40px;
+}
+
+.tab p {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+#second.tab {
+  width: 180px;
+}
+
+.tab h5 {
+  padding: 10px 0 0 0;
+  margin: 0px;
+}
+
+.tab a {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.tab a:hover {
+  color: azure;
+  transition: 0.5s;
+}
+
+.copyright {
+  height: 15px;
+  font-size: 12px;
+  text-align: center;
+}
