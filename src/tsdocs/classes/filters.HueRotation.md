@@ -44,7 +44,7 @@ Constructor
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:58](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/BaseFilter.ts#L58)
+[src/filters/BaseFilter.ts:58](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/BaseFilter.ts#L58)
 
 ## Properties
 
@@ -67,13 +67,13 @@ true
 
 #### Defined in
 
-[src/filters/ColorMatrix.ts:46](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/ColorMatrix.ts#L46)
+[src/filters/ColorMatrix.ts:46](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/ColorMatrix.ts#L46)
 
 ___
 
 ### mainParameter
 
- `Optional` `Private` **mainParameter**: keyof [`HueRotation`](/apidocs/classes/filters.HueRotation.md)
+ `Optional` `Private` **mainParameter**: ``"matrix"`` \| ``"type"`` \| ``"toObject"`` \| ``"toJSON"`` \| ``"setOptions"`` \| ``"getUniformLocations"`` \| ``"sendUniformData"`` \| ``"getCacheKey"`` \| ``"getFragmentSource"`` \| ``"applyTo"`` \| ``"isNeutralState"`` \| ``"applyTo2d"`` \| ``"vertexSource"`` \| ``"mainParameter"`` \| ``"createProgram"`` \| ``"getAttributeLocations"`` \| ``"sendAttributeData"`` \| ``"_setupFrameBuffer"`` \| ``"_swapTextures"`` \| ``"retrieveShader"`` \| ``"applyToWebGL"`` \| ``"bindAdditionalTexture"`` \| ``"unbindAdditionalTexture"`` \| ``"getMainParameter"`` \| ``"setMainParameter"`` \| ``"createHelpLayer"`` \| ``"calculateMatrix"`` \| ``"colorsOnly"`` \| ``"rotation"``
 
 Name of the parameter that can be changed in the filter.
 Some filters have more than one parameter and there is no
@@ -85,7 +85,7 @@ mainParameter
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:52](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/BaseFilter.ts#L52)
+[src/filters/BaseFilter.ts:52](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/BaseFilter.ts#L52)
 
 ___
 
@@ -114,7 +114,7 @@ array of 20 numbers.
 
 #### Defined in
 
-[src/filters/ColorMatrix.ts:38](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/ColorMatrix.ts#L38)
+[src/filters/ColorMatrix.ts:38](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/ColorMatrix.ts#L38)
 
 ___
 
@@ -126,7 +126,7 @@ HueRotation value, from -1 to 1.
 
 #### Defined in
 
-[src/filters/HueRotation.ts:28](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/HueRotation.ts#L28)
+[src/filters/HueRotation.ts:28](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/HueRotation.ts#L28)
 
 ___
 
@@ -142,7 +142,7 @@ Array of attributes to send with buffers. do not modify
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:44](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/BaseFilter.ts#L44)
+[src/filters/BaseFilter.ts:44](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/BaseFilter.ts#L44)
 
 ___
 
@@ -156,7 +156,7 @@ ___
 
 #### Defined in
 
-[src/filters/HueRotation.ts:32](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/HueRotation.ts#L32)
+[src/filters/HueRotation.ts:32](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/HueRotation.ts#L32)
 
 ___
 
@@ -176,7 +176,7 @@ to avoid doing that.
 
 #### Defined in
 
-[src/filters/HueRotation.ts:30](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/HueRotation.ts#L30)
+[src/filters/HueRotation.ts:30](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/HueRotation.ts#L30)
 
 ## Accessors
 
@@ -202,7 +202,7 @@ ColorMatrix.type
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:25](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/BaseFilter.ts#L25)
+[src/filters/BaseFilter.ts:25](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/BaseFilter.ts#L25)
 
 ## Methods
 
@@ -226,7 +226,7 @@ ColorMatrix.type
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:190](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/BaseFilter.ts#L190)
+[src/filters/BaseFilter.ts:190](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/BaseFilter.ts#L190)
 
 ___
 
@@ -250,7 +250,7 @@ ___
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:217](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/BaseFilter.ts#L217)
+[src/filters/BaseFilter.ts:217](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/BaseFilter.ts#L217)
 
 ___
 
@@ -278,7 +278,7 @@ Determines whether to use WebGL or Canvas2D based on the options.webgl flag.
 
 #### Defined in
 
-[src/filters/HueRotation.ts:58](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/HueRotation.ts#L58)
+[src/filters/HueRotation.ts:58](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/HueRotation.ts#L58)
 
 ___
 
@@ -304,7 +304,7 @@ Apply the ColorMatrix operation to a Uint8Array representing the pixels of an im
 
 #### Defined in
 
-[src/filters/ColorMatrix.ts:70](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/ColorMatrix.ts#L70)
+[src/filters/ColorMatrix.ts:70](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/ColorMatrix.ts#L70)
 
 ___
 
@@ -330,7 +330,7 @@ Apply this filter using webgl.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:315](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/BaseFilter.ts#L315)
+[src/filters/BaseFilter.ts:315](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/BaseFilter.ts#L315)
 
 ___
 
@@ -356,7 +356,7 @@ ___
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:334](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/BaseFilter.ts#L334)
+[src/filters/BaseFilter.ts:334](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/BaseFilter.ts#L334)
 
 ___
 
@@ -370,7 +370,7 @@ ___
 
 #### Defined in
 
-[src/filters/HueRotation.ts:34](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/HueRotation.ts#L34)
+[src/filters/HueRotation.ts:34](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/HueRotation.ts#L34)
 
 ___
 
@@ -397,7 +397,7 @@ remember that options.targetCanvas is available for use till end of chain.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:380](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/BaseFilter.ts#L380)
+[src/filters/BaseFilter.ts:380](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/BaseFilter.ts#L380)
 
 ___
 
@@ -431,7 +431,7 @@ Compile this filter's shader program.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:77](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/BaseFilter.ts#L77)
+[src/filters/BaseFilter.ts:77](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/BaseFilter.ts#L77)
 
 ___
 
@@ -460,7 +460,7 @@ A map of attribute names to attribute locations.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:146](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/BaseFilter.ts#L146)
+[src/filters/BaseFilter.ts:146](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/BaseFilter.ts#L146)
 
 ___
 
@@ -481,7 +481,7 @@ Used to force recompilation when parameters change or to retrieve the shader fro
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:284](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/BaseFilter.ts#L284)
+[src/filters/BaseFilter.ts:284](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/BaseFilter.ts#L284)
 
 ___
 
@@ -499,17 +499,17 @@ ___
 
 #### Defined in
 
-[src/filters/ColorMatrix.ts:60](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/ColorMatrix.ts#L60)
+[src/filters/ColorMatrix.ts:60](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/ColorMatrix.ts#L60)
 
 ___
 
 ### getMainParameter
 
-**getMainParameter**(): `undefined` \| `string` \| `number` \| `boolean` \| `number`[] \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => [`TWebGLProgramCacheItem`](/apidocs/modules.md#twebglprogramcacheitem) \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap) \| () => `string` \| () => \{ `type`: `string`  } \| () => \{ `type`: `string`  } \| (`__namedParameters`: `Record`\<`string`, `any`\>) => `void` \| (`gl`: `WebGLRenderingContext`, `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)) => `void` \| () => `string` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate) \| [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| () => `boolean` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `fragmentSource`: `string`, `vertexSource`: `string`) => \{ `attributeLocations`: [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) ; `program`: `WebGLProgram` ; `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)  } \| (`gl`: `WebGLRenderingContext`, `attributeLocations`: `Record`\<`string`, `number`\>, `aPositionData`: `Float32Array`) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `texture`: `WebGLTexture`, `textureUnit`: `number`) => `void` \| (`gl`: `WebGLRenderingContext`, `textureUnit`: `number`) => `void` \| () => `undefined` \| `string` \| `number` \| `boolean` \| `number`[] \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => [`TWebGLProgramCacheItem`](/apidocs/modules.md#twebglprogramcacheitem) \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap) \| () => `string` \| () => \{ `type`: `string`  } \| () => \{ `type`: `string`  } \| (`__namedParameters`: `Record`\<`string`, `any`\>) => `void` \| (`gl`: `WebGLRenderingContext`, `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)) => `void` \| () => `string` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate) \| [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| () => `boolean` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `fragmentSource`: `string`, `vertexSource`: `string`) => \{ `attributeLocations`: [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) ; `program`: `WebGLProgram` ; `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)  } \| (`gl`: `WebGLRenderingContext`, `attributeLocations`: `Record`\<`string`, `number`\>, `aPositionData`: `Float32Array`) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `texture`: `WebGLTexture`, `textureUnit`: `number`) => `void` \| (`gl`: `WebGLRenderingContext`, `textureUnit`: `number`) => `void` \| () =\> string \| number \| boolean \| number[] \| ((gl: WebGLRenderingContext, program: WebGLProgram) =\> TWebGLAttributeLocationMap) \| ... 22 more ... \| undefined \| (`value`: `any`) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| () => `void` \| (`value`: `any`) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| () => `void`
+**getMainParameter**(): `undefined` \| `string` \| `number` \| `boolean` \| `number`[] \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => [`TWebGLProgramCacheItem`](/apidocs/modules.md#twebglprogramcacheitem) \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap) \| () => `string` \| () => \{ `type`: `string`  } \| () => \{ `type`: `string`  } \| (`__namedParameters`: `Record`\<`string`, `any`\>) => `void` \| (`gl`: `WebGLRenderingContext`, `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)) => `void` \| () => `string` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate) \| [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| () => `boolean` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `fragmentSource`: `string`, `vertexSource`: `string`) => \{ `attributeLocations`: [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) ; `program`: `WebGLProgram` ; `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)  } \| (`gl`: `WebGLRenderingContext`, `attributeLocations`: `Record`\<`string`, `number`\>, `aPositionData`: `Float32Array`) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `texture`: `WebGLTexture`, `textureUnit`: `number`) => `void` \| (`gl`: `WebGLRenderingContext`, `textureUnit`: `number`) => `void` \| () => string \| number \| boolean \| number[] \| ((gl: WebGLRenderingContext, program: WebGLProgram) =\> TWebGLAttributeLocationMap) \| ... 22 more ... \| undefined \| (`value`: `any`) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| () => `void`
 
 #### Returns
 
-`undefined` \| `string` \| `number` \| `boolean` \| `number`[] \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => [`TWebGLProgramCacheItem`](/apidocs/modules.md#twebglprogramcacheitem) \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap) \| () => `string` \| () => \{ `type`: `string`  } \| () => \{ `type`: `string`  } \| (`__namedParameters`: `Record`\<`string`, `any`\>) => `void` \| (`gl`: `WebGLRenderingContext`, `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)) => `void` \| () => `string` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate) \| [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| () => `boolean` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `fragmentSource`: `string`, `vertexSource`: `string`) => \{ `attributeLocations`: [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) ; `program`: `WebGLProgram` ; `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)  } \| (`gl`: `WebGLRenderingContext`, `attributeLocations`: `Record`\<`string`, `number`\>, `aPositionData`: `Float32Array`) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `texture`: `WebGLTexture`, `textureUnit`: `number`) => `void` \| (`gl`: `WebGLRenderingContext`, `textureUnit`: `number`) => `void` \| () => `undefined` \| `string` \| `number` \| `boolean` \| `number`[] \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => [`TWebGLProgramCacheItem`](/apidocs/modules.md#twebglprogramcacheitem) \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap) \| () => `string` \| () => \{ `type`: `string`  } \| () => \{ `type`: `string`  } \| (`__namedParameters`: `Record`\<`string`, `any`\>) => `void` \| (`gl`: `WebGLRenderingContext`, `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)) => `void` \| () => `string` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate) \| [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| () => `boolean` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `fragmentSource`: `string`, `vertexSource`: `string`) => \{ `attributeLocations`: [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) ; `program`: `WebGLProgram` ; `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)  } \| (`gl`: `WebGLRenderingContext`, `attributeLocations`: `Record`\<`string`, `number`\>, `aPositionData`: `Float32Array`) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `texture`: `WebGLTexture`, `textureUnit`: `number`) => `void` \| (`gl`: `WebGLRenderingContext`, `textureUnit`: `number`) => `void` \| () =\> string \| number \| boolean \| number[] \| ((gl: WebGLRenderingContext, program: WebGLProgram) =\> TWebGLAttributeLocationMap) \| ... 22 more ... \| undefined \| (`value`: `any`) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| () => `void` \| (`value`: `any`) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| () => `void`
+`undefined` \| `string` \| `number` \| `boolean` \| `number`[] \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => [`TWebGLProgramCacheItem`](/apidocs/modules.md#twebglprogramcacheitem) \| (`gl`: `WebGLRenderingContext`, `program`: `WebGLProgram`) => [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap) \| () => `string` \| () => \{ `type`: `string`  } \| () => \{ `type`: `string`  } \| (`__namedParameters`: `Record`\<`string`, `any`\>) => `void` \| (`gl`: `WebGLRenderingContext`, `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)) => `void` \| () => `string` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate) \| [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| () => `boolean` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `fragmentSource`: `string`, `vertexSource`: `string`) => \{ `attributeLocations`: [`TWebGLAttributeLocationMap`](/apidocs/modules.md#twebglattributelocationmap) ; `program`: `WebGLProgram` ; `uniformLocations`: [`TWebGLUniformLocationMap`](/apidocs/modules.md#twebgluniformlocationmap)  } \| (`gl`: `WebGLRenderingContext`, `attributeLocations`: `Record`\<`string`, `number`\>, `aPositionData`: `Float32Array`) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`options`: [`TWebGLPipelineState`](/apidocs/modules.md#twebglpipelinestate)) => `void` \| (`gl`: `WebGLRenderingContext`, `texture`: `WebGLTexture`, `textureUnit`: `number`) => `void` \| (`gl`: `WebGLRenderingContext`, `textureUnit`: `number`) => `void` \| () => string \| number \| boolean \| number[] \| ((gl: WebGLRenderingContext, program: WebGLProgram) =\> TWebGLAttributeLocationMap) \| ... 22 more ... \| undefined \| (`value`: `any`) => `void` \| (`options`: [`T2DPipelineState`](/apidocs/modules.md#t2dpipelinestate)) => `void` \| () => `void`
 
 #### Inherited from
 
@@ -517,7 +517,7 @@ ___
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:351](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/BaseFilter.ts#L351)
+[src/filters/BaseFilter.ts:351](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/BaseFilter.ts#L351)
 
 ___
 
@@ -544,7 +544,7 @@ Return WebGL uniform locations for this filter's shader.
 
 #### Defined in
 
-[src/filters/ColorMatrix.ts:102](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/ColorMatrix.ts#L102)
+[src/filters/ColorMatrix.ts:102](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/ColorMatrix.ts#L102)
 
 ___
 
@@ -567,7 +567,7 @@ Other filters may need their own version ( ColorMatrix, HueRotation, gamma, Comp
 
 #### Defined in
 
-[src/filters/HueRotation.ts:53](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/HueRotation.ts#L53)
+[src/filters/HueRotation.ts:53](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/HueRotation.ts#L53)
 
 ___
 
@@ -595,7 +595,7 @@ the compiled program shader
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:295](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/BaseFilter.ts#L295)
+[src/filters/BaseFilter.ts:295](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/BaseFilter.ts#L295)
 
 ___
 
@@ -623,7 +623,7 @@ Send attribute data from this filter to its shader program on the GPU.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:177](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/BaseFilter.ts#L177)
+[src/filters/BaseFilter.ts:177](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/BaseFilter.ts#L177)
 
 ___
 
@@ -650,7 +650,7 @@ Send data from this filter to its shader program's uniforms.
 
 #### Defined in
 
-[src/filters/ColorMatrix.ts:118](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/ColorMatrix.ts#L118)
+[src/filters/ColorMatrix.ts:118](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/ColorMatrix.ts#L118)
 
 ___
 
@@ -674,7 +674,7 @@ ___
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:355](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/BaseFilter.ts#L355)
+[src/filters/BaseFilter.ts:355](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/BaseFilter.ts#L355)
 
 ___
 
@@ -698,7 +698,7 @@ ___
 
 #### Defined in
 
-[src/filters/ColorMatrix.ts:52](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/ColorMatrix.ts#L52)
+[src/filters/ColorMatrix.ts:52](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/ColorMatrix.ts#L52)
 
 ___
 
@@ -724,7 +724,7 @@ JSON
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:405](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/BaseFilter.ts#L405)
+[src/filters/BaseFilter.ts:405](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/BaseFilter.ts#L405)
 
 ___
 
@@ -750,7 +750,7 @@ Object representation of an instance
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:393](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/BaseFilter.ts#L393)
+[src/filters/BaseFilter.ts:393](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/BaseFilter.ts#L393)
 
 ___
 
@@ -775,7 +775,7 @@ ___
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:345](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/BaseFilter.ts#L345)
+[src/filters/BaseFilter.ts:345](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/BaseFilter.ts#L345)
 
 ___
 
@@ -800,4 +800,4 @@ ___
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:410](https://github.com/fabricjs/fabric.js/blob/078809453/src/filters/BaseFilter.ts#L410)
+[src/filters/BaseFilter.ts:410](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/filters/BaseFilter.ts#L410)

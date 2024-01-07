@@ -25,7 +25,7 @@ Default sinusoidal easing
 
 #### Defined in
 
-[src/util/animation/types.ts:43](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L43)
+[src/util/animation/easing.ts:36](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/animation/easing.ts#L36)
 
 ___
 
@@ -50,7 +50,7 @@ Backwards easing in
 
 #### Defined in
 
-[src/util/animation/types.ts:43](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L43)
+[src/util/animation/easing.ts:258](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/animation/easing.ts#L258)
 
 ___
 
@@ -75,7 +75,7 @@ Bouncing easing in
 
 #### Defined in
 
-[src/util/animation/types.ts:43](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L43)
+[src/util/animation/easing.ts:296](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/animation/easing.ts#L296)
 
 ___
 
@@ -100,7 +100,7 @@ Circular easing in
 
 #### Defined in
 
-[src/util/animation/types.ts:43](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L43)
+[src/util/animation/easing.ts:158](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/animation/easing.ts#L158)
 
 ___
 
@@ -125,7 +125,7 @@ Cubic easing in
 
 #### Defined in
 
-[src/util/animation/types.ts:43](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L43)
+[src/util/animation/easing.ts:42](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/animation/easing.ts#L42)
 
 ___
 
@@ -150,7 +150,7 @@ Elastic easing in
 
 #### Defined in
 
-[src/util/animation/types.ts:43](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L43)
+[src/util/animation/easing.ts:181](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/animation/easing.ts#L181)
 
 ___
 
@@ -175,7 +175,7 @@ Exponential easing in
 
 #### Defined in
 
-[src/util/animation/types.ts:43](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L43)
+[src/util/animation/easing.ts:129](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/animation/easing.ts#L129)
 
 ___
 
@@ -200,7 +200,7 @@ Backwards easing in and out
 
 #### Defined in
 
-[src/util/animation/types.ts:43](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L43)
+[src/util/animation/easing.ts:270](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/animation/easing.ts#L270)
 
 ___
 
@@ -225,7 +225,7 @@ Bouncing easing in and out
 
 #### Defined in
 
-[src/util/animation/types.ts:43](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L43)
+[src/util/animation/easing.ts:302](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/animation/easing.ts#L302)
 
 ___
 
@@ -250,7 +250,7 @@ Circular easing in and out
 
 #### Defined in
 
-[src/util/animation/types.ts:43](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L43)
+[src/util/animation/easing.ts:170](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/animation/easing.ts#L170)
 
 ___
 
@@ -275,7 +275,7 @@ Cubic easing in and out
 
 #### Defined in
 
-[src/util/animation/types.ts:43](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L43)
+[src/util/animation/easing.ts:54](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/animation/easing.ts#L54)
 
 ___
 
@@ -300,7 +300,7 @@ Elastic easing in and out
 
 #### Defined in
 
-[src/util/animation/types.ts:43](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L43)
+[src/util/animation/easing.ts:227](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/animation/easing.ts#L227)
 
 ___
 
@@ -325,7 +325,7 @@ Exponential easing in and out
 
 #### Defined in
 
-[src/util/animation/types.ts:43](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L43)
+[src/util/animation/easing.ts:141](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/animation/easing.ts#L141)
 
 ___
 
@@ -350,7 +350,7 @@ Quadratic easing in and out
 
 #### Defined in
 
-[src/util/animation/types.ts:43](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L43)
+[src/util/animation/easing.ts:321](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/animation/easing.ts#L321)
 
 ___
 
@@ -375,7 +375,7 @@ Quartic easing in and out
 
 #### Defined in
 
-[src/util/animation/types.ts:43](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L43)
+[src/util/animation/easing.ts:77](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/animation/easing.ts#L77)
 
 ___
 
@@ -400,7 +400,7 @@ Quintic easing in and out
 
 #### Defined in
 
-[src/util/animation/types.ts:43](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L43)
+[src/util/animation/easing.ts:100](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/animation/easing.ts#L100)
 
 ___
 
@@ -425,7 +425,7 @@ Sinusoidal easing in and out
 
 #### Defined in
 
-[src/util/animation/types.ts:43](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L43)
+[src/util/animation/easing.ts:123](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/animation/easing.ts#L123)
 
 ___
 
@@ -450,7 +450,7 @@ Quadratic easing in
 
 #### Defined in
 
-[src/util/animation/types.ts:43](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L43)
+[src/util/animation/easing.ts:310](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/animation/easing.ts#L310)
 
 ___
 
@@ -475,7 +475,7 @@ Quartic easing in
 
 #### Defined in
 
-[src/util/animation/types.ts:43](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L43)
+[src/util/animation/easing.ts:65](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/animation/easing.ts#L65)
 
 ___
 
@@ -500,7 +500,7 @@ Quintic easing in
 
 #### Defined in
 
-[src/util/animation/types.ts:43](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L43)
+[src/util/animation/easing.ts:88](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/animation/easing.ts#L88)
 
 ___
 
@@ -525,7 +525,7 @@ Sinusoidal easing in
 
 #### Defined in
 
-[src/util/animation/types.ts:43](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L43)
+[src/util/animation/easing.ts:111](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/animation/easing.ts#L111)
 
 ___
 
@@ -550,7 +550,7 @@ Backwards easing out
 
 #### Defined in
 
-[src/util/animation/types.ts:43](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L43)
+[src/util/animation/easing.ts:264](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/animation/easing.ts#L264)
 
 ___
 
@@ -575,7 +575,7 @@ Bouncing easing out
 
 #### Defined in
 
-[src/util/animation/types.ts:43](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L43)
+[src/util/animation/easing.ts:281](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/animation/easing.ts#L281)
 
 ___
 
@@ -600,7 +600,7 @@ Circular easing out
 
 #### Defined in
 
-[src/util/animation/types.ts:43](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L43)
+[src/util/animation/easing.ts:164](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/animation/easing.ts#L164)
 
 ___
 
@@ -625,7 +625,7 @@ Cubic easing out
 
 #### Defined in
 
-[src/util/animation/types.ts:43](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L43)
+[src/util/animation/easing.ts:48](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/animation/easing.ts#L48)
 
 ___
 
@@ -650,7 +650,7 @@ Elastic easing out
 
 #### Defined in
 
-[src/util/animation/types.ts:43](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L43)
+[src/util/animation/easing.ts:202](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/animation/easing.ts#L202)
 
 ___
 
@@ -675,7 +675,7 @@ Exponential easing out
 
 #### Defined in
 
-[src/util/animation/types.ts:43](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L43)
+[src/util/animation/easing.ts:135](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/animation/easing.ts#L135)
 
 ___
 
@@ -700,7 +700,7 @@ Quadratic easing out
 
 #### Defined in
 
-[src/util/animation/types.ts:43](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L43)
+[src/util/animation/easing.ts:315](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/animation/easing.ts#L315)
 
 ___
 
@@ -725,7 +725,7 @@ Quartic easing out
 
 #### Defined in
 
-[src/util/animation/types.ts:43](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L43)
+[src/util/animation/easing.ts:71](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/animation/easing.ts#L71)
 
 ___
 
@@ -750,7 +750,7 @@ Quintic easing out
 
 #### Defined in
 
-[src/util/animation/types.ts:43](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L43)
+[src/util/animation/easing.ts:94](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/animation/easing.ts#L94)
 
 ___
 
@@ -775,4 +775,4 @@ Sinusoidal easing out
 
 #### Defined in
 
-[src/util/animation/types.ts:43](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L43)
+[src/util/animation/easing.ts:117](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/animation/easing.ts#L117)

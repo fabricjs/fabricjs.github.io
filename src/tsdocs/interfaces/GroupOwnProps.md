@@ -16,17 +16,7 @@
 
 #### Defined in
 
-[src/shapes/Group.ts:86](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L86)
-
-___
-
-### layout
-
- **layout**: [`LayoutStrategy`](/apidocs/modules.md#layoutstrategy)
-
-#### Defined in
-
-[src/shapes/Group.ts:84](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L84)
+[src/shapes/Group.ts:50](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Group.ts#L50)
 
 ___
 
@@ -36,4 +26,4 @@ ___
 
 #### Defined in
 
-[src/shapes/Group.ts:85](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L85)
+[src/shapes/Group.ts:49](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Group.ts#L49)

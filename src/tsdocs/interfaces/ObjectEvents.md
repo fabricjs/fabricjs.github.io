@@ -28,7 +28,7 @@
 
 #### Defined in
 
-[src/EventTypeDefs.ts:278](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L278)
+[src/EventTypeDefs.ts:283](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L283)
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:261](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L261)
+[src/EventTypeDefs.ts:266](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L266)
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:260](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L260)
+[src/EventTypeDefs.ts:265](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L265)
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:273](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L273)
+[src/EventTypeDefs.ts:278](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L278)
 
 ___
 
@@ -80,7 +80,7 @@ DnDEvents.drag
 
 #### Defined in
 
-[src/EventTypeDefs.ts:191](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L191)
+[src/EventTypeDefs.ts:196](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L196)
 
 ___
 
@@ -94,7 +94,7 @@ DnDEvents.dragend
 
 #### Defined in
 
-[src/EventTypeDefs.ts:195](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L195)
+[src/EventTypeDefs.ts:200](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L200)
 
 ___
 
@@ -108,7 +108,7 @@ DnDEvents.dragenter
 
 #### Defined in
 
-[src/EventTypeDefs.ts:193](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L193)
+[src/EventTypeDefs.ts:198](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L198)
 
 ___
 
@@ -122,7 +122,7 @@ DnDEvents.dragleave
 
 #### Defined in
 
-[src/EventTypeDefs.ts:194](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L194)
+[src/EventTypeDefs.ts:199](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L199)
 
 ___
 
@@ -136,7 +136,7 @@ DnDEvents.dragover
 
 #### Defined in
 
-[src/EventTypeDefs.ts:192](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L192)
+[src/EventTypeDefs.ts:197](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L197)
 
 ___
 
@@ -150,7 +150,7 @@ DnDEvents.dragstart
 
 #### Defined in
 
-[src/EventTypeDefs.ts:190](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L190)
+[src/EventTypeDefs.ts:195](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L195)
 
 ___
 
@@ -164,7 +164,7 @@ DnDEvents.drop
 
 #### Defined in
 
-[src/EventTypeDefs.ts:197](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L197)
+[src/EventTypeDefs.ts:202](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L202)
 
 ___
 
@@ -178,7 +178,7 @@ DnDEvents.drop:after
 
 #### Defined in
 
-[src/EventTypeDefs.ts:198](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L198)
+[src/EventTypeDefs.ts:203](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L203)
 
 ___
 
@@ -192,7 +192,7 @@ DnDEvents.drop:before
 
 #### Defined in
 
-[src/EventTypeDefs.ts:196](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L196)
+[src/EventTypeDefs.ts:201](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L201)
 
 ___
 
@@ -208,7 +208,7 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:282](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L282)
+[src/EventTypeDefs.ts:287](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L287)
 
 ___
 
@@ -219,6 +219,16 @@ ___
 #### Inherited from
 
 ObjectModificationEvents.modified
+
+___
+
+### modifyPoly
+
+ **modifyPoly**: [`BasicTransformEvent`](/apidocs/interfaces/BasicTransformEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>
+
+#### Inherited from
+
+ObjectModificationEvents.modifyPoly
 
 ___
 
@@ -344,7 +354,7 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:279](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L279)
+[src/EventTypeDefs.ts:284](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L284)
 
 ___
 
@@ -384,7 +394,7 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:270](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L270)
+[src/EventTypeDefs.ts:275](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L275)
 
 ___
 

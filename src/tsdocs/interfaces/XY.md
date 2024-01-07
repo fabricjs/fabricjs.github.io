@@ -12,7 +12,7 @@
 
 #### Defined in
 
-[src/Point.ts:6](https://github.com/fabricjs/fabric.js/blob/078809453/src/Point.ts#L6)
+[src/Point.ts:6](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Point.ts#L6)
 
 ___
 
@@ -22,4 +22,4 @@ ___
 
 #### Defined in
 
-[src/Point.ts:7](https://github.com/fabricjs/fabric.js/blob/078809453/src/Point.ts#L7)
+[src/Point.ts:7](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Point.ts#L7)

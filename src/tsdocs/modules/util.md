@@ -19,7 +19,7 @@
 
 #### Defined in
 
-[src/util/animation/types.ts:132](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L132)
+[src/util/animation/types.ts:132](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/animation/types.ts#L132)
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 #### Defined in
 
-[src/util/animation/types.ts:4](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L4)
+[src/util/animation/types.ts:4](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/animation/types.ts#L4)
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 #### Defined in
 
-[src/util/animation/types.ts:124](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L124)
+[src/util/animation/types.ts:124](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/animation/types.ts#L124)
 
 ___
 
@@ -49,7 +49,7 @@ ___
 
 #### Defined in
 
-[src/util/animation/types.ts:126](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L126)
+[src/util/animation/types.ts:126](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/animation/types.ts#L126)
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 #### Defined in
 
-[src/util/misc/objectEnlive.ts:59](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/objectEnlive.ts#L59)
+[src/util/misc/objectEnlive.ts:59](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/objectEnlive.ts#L59)
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 #### Defined in
 
-[src/util/misc/objectEnlive.ts:11](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/objectEnlive.ts#L11)
+[src/util/misc/objectEnlive.ts:11](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/objectEnlive.ts#L11)
 
 ___
 
@@ -87,7 +87,7 @@ Called on each step to determine if animation should abort
 
 #### Defined in
 
-[src/util/animation/types.ts:23](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L23)
+[src/util/animation/types.ts:23](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/animation/types.ts#L23)
 
 ___
 
@@ -103,7 +103,7 @@ ___
 
 #### Defined in
 
-[src/util/animation/animate.ts:11](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/animate.ts#L11)
+[src/util/animation/animate.ts:11](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/animation/animate.ts#L11)
 
 ___
 
@@ -128,7 +128,7 @@ ___
 
 #### Defined in
 
-[src/util/animation/types.ts:50](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L50)
+[src/util/animation/types.ts:50](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/animation/types.ts#L50)
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-[src/util/animation/types.ts:75](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L75)
+[src/util/animation/types.ts:75](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/animation/types.ts#L75)
 
 ___
 
@@ -171,7 +171,7 @@ ___
 
 #### Defined in
 
-[src/util/animation/types.ts:105](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L105)
+[src/util/animation/types.ts:105](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/animation/types.ts#L105)
 
 ___
 
@@ -181,7 +181,7 @@ ___
 
 #### Defined in
 
-[src/util/path/typedefs.ts:258](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L258)
+[src/util/path/typedefs.ts:258](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/typedefs.ts#L258)
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-[src/util/path/typedefs.ts:256](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L256)
+[src/util/path/typedefs.ts:256](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/typedefs.ts#L256)
 
 ___
 
@@ -215,7 +215,7 @@ ___
 
 #### Defined in
 
-[src/util/animation/types.ts:98](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L98)
+[src/util/animation/types.ts:98](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/animation/types.ts#L98)
 
 ___
 
@@ -225,7 +225,7 @@ ___
 
 #### Defined in
 
-[src/util/path/typedefs.ts:147](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L147)
+[src/util/path/typedefs.ts:147](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/typedefs.ts#L147)
 
 ___
 
@@ -237,7 +237,7 @@ Any old valid SVG path command
 
 #### Defined in
 
-[src/util/path/typedefs.ts:269](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L269)
+[src/util/path/typedefs.ts:269](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/typedefs.ts#L269)
 
 ___
 
@@ -249,7 +249,7 @@ A series of path commands
 
 #### Defined in
 
-[src/util/path/typedefs.ts:284](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L284)
+[src/util/path/typedefs.ts:284](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/typedefs.ts#L284)
 
 ___
 
@@ -259,7 +259,7 @@ ___
 
 #### Defined in
 
-[src/util/misc/matrix.ts:27](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/matrix.ts#L27)
+[src/util/misc/matrix.ts:27](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/matrix.ts#L27)
 
 ___
 
@@ -269,7 +269,7 @@ ___
 
 #### Defined in
 
-[src/util/path/typedefs.ts:171](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L171)
+[src/util/path/typedefs.ts:171](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/typedefs.ts#L171)
 
 ___
 
@@ -279,7 +279,7 @@ ___
 
 #### Defined in
 
-[src/util/path/typedefs.ts:191](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L191)
+[src/util/path/typedefs.ts:191](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/typedefs.ts#L191)
 
 ___
 
@@ -295,7 +295,7 @@ ___
 
 #### Defined in
 
-[src/util/path/typedefs.ts:11](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L11)
+[src/util/path/typedefs.ts:11](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/typedefs.ts#L11)
 
 ___
 
@@ -329,7 +329,7 @@ in ms
 
 #### Defined in
 
-[src/util/animation/types.ts:35](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L35)
+[src/util/animation/types.ts:35](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/animation/types.ts#L35)
 
 ___
 
@@ -339,7 +339,7 @@ ___
 
 #### Defined in
 
-[src/util/path/typedefs.ts:28](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L28)
+[src/util/path/typedefs.ts:28](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/typedefs.ts#L28)
 
 ___
 
@@ -349,7 +349,7 @@ ___
 
 #### Defined in
 
-[src/util/path/typedefs.ts:131](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L131)
+[src/util/path/typedefs.ts:131](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/typedefs.ts#L131)
 
 ___
 
@@ -359,7 +359,7 @@ ___
 
 #### Defined in
 
-[src/util/path/typedefs.ts:123](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L123)
+[src/util/path/typedefs.ts:123](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/typedefs.ts#L123)
 
 ___
 
@@ -369,13 +369,15 @@ ___
 
 #### Defined in
 
-[src/util/path/typedefs.ts:115](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L115)
+[src/util/path/typedefs.ts:115](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/typedefs.ts#L115)
 
 ___
 
 ### TOnAnimationChangeCallback
 
  **TOnAnimationChangeCallback**\<`T`, `R`\>: (`value`: `T`, `valueProgress`: `number`, `durationProgress`: `number`) => `R`
+
+Callback called every frame
 
 #### Type parameters
 
@@ -387,8 +389,6 @@ ___
 #### Type declaration
 
 (`value`, `valueProgress`, `durationProgress`): `R`
-
-Callback called every frame
 
 ##### Parameters
 
@@ -404,7 +404,7 @@ Callback called every frame
 
 #### Defined in
 
-[src/util/animation/types.ts:13](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L13)
+[src/util/animation/types.ts:13](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/animation/types.ts#L13)
 
 ___
 
@@ -414,7 +414,7 @@ ___
 
 #### Defined in
 
-[src/util/path/typedefs.ts:231](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L231)
+[src/util/path/typedefs.ts:231](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/typedefs.ts#L231)
 
 ___
 
@@ -424,7 +424,7 @@ ___
 
 #### Defined in
 
-[src/util/path/typedefs.ts:141](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L141)
+[src/util/path/typedefs.ts:141](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/typedefs.ts#L141)
 
 ___
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-[src/util/path/typedefs.ts:149](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L149)
+[src/util/path/typedefs.ts:149](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/typedefs.ts#L149)
 
 ___
 
@@ -444,7 +444,7 @@ ___
 
 #### Defined in
 
-[src/util/path/typedefs.ts:173](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L173)
+[src/util/path/typedefs.ts:173](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/typedefs.ts#L173)
 
 ___
 
@@ -454,7 +454,7 @@ ___
 
 #### Defined in
 
-[src/util/path/typedefs.ts:125](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L125)
+[src/util/path/typedefs.ts:125](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/typedefs.ts#L125)
 
 ___
 
@@ -464,7 +464,7 @@ ___
 
 #### Defined in
 
-[src/util/path/typedefs.ts:117](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L117)
+[src/util/path/typedefs.ts:117](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/typedefs.ts#L117)
 
 ___
 
@@ -477,7 +477,7 @@ Read about commands at [https://developer.mozilla.org/en-US/docs/Web/SVG/Tutoria
 
 #### Defined in
 
-[src/util/path/typedefs.ts:105](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L105)
+[src/util/path/typedefs.ts:105](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/typedefs.ts#L105)
 
 ___
 
@@ -487,7 +487,7 @@ ___
 
 #### Defined in
 
-[src/util/path/typedefs.ts:194](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L194)
+[src/util/path/typedefs.ts:194](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/typedefs.ts#L194)
 
 ___
 
@@ -497,7 +497,7 @@ ___
 
 #### Defined in
 
-[src/util/path/typedefs.ts:214](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L214)
+[src/util/path/typedefs.ts:214](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/typedefs.ts#L214)
 
 ___
 
@@ -507,7 +507,7 @@ ___
 
 #### Defined in
 
-[src/util/path/typedefs.ts:133](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L133)
+[src/util/path/typedefs.ts:133](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/typedefs.ts#L133)
 
 ___
 
@@ -517,7 +517,7 @@ ___
 
 #### Defined in
 
-[src/util/path/typedefs.ts:252](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L252)
+[src/util/path/typedefs.ts:252](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/typedefs.ts#L252)
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-[src/util/path/typedefs.ts:143](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L143)
+[src/util/path/typedefs.ts:143](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/typedefs.ts#L143)
 
 ___
 
@@ -539,7 +539,7 @@ A parsed command of any length (even impossible ones)
 
 #### Defined in
 
-[src/util/path/typedefs.ts:51](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L51)
+[src/util/path/typedefs.ts:51](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/typedefs.ts#L51)
 
 ___
 
@@ -549,7 +549,7 @@ ___
 
 #### Defined in
 
-[src/util/path/typedefs.ts:167](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L167)
+[src/util/path/typedefs.ts:167](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/typedefs.ts#L167)
 
 ___
 
@@ -559,7 +559,7 @@ ___
 
 #### Defined in
 
-[src/util/path/typedefs.ts:187](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L187)
+[src/util/path/typedefs.ts:187](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/typedefs.ts#L187)
 
 ___
 
@@ -569,7 +569,7 @@ ___
 
 #### Defined in
 
-[src/util/path/typedefs.ts:127](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L127)
+[src/util/path/typedefs.ts:127](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/typedefs.ts#L127)
 
 ___
 
@@ -579,7 +579,7 @@ ___
 
 #### Defined in
 
-[src/util/path/typedefs.ts:119](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L119)
+[src/util/path/typedefs.ts:119](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/typedefs.ts#L119)
 
 ___
 
@@ -589,7 +589,7 @@ ___
 
 #### Defined in
 
-[src/util/path/typedefs.ts:111](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L111)
+[src/util/path/typedefs.ts:111](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/typedefs.ts#L111)
 
 ___
 
@@ -599,7 +599,7 @@ ___
 
 #### Defined in
 
-[src/util/path/typedefs.ts:208](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L208)
+[src/util/path/typedefs.ts:208](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/typedefs.ts#L208)
 
 ___
 
@@ -609,7 +609,7 @@ ___
 
 #### Defined in
 
-[src/util/path/typedefs.ts:224](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L224)
+[src/util/path/typedefs.ts:224](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/typedefs.ts#L224)
 
 ___
 
@@ -619,7 +619,7 @@ ___
 
 #### Defined in
 
-[src/util/path/typedefs.ts:241](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L241)
+[src/util/path/typedefs.ts:241](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/typedefs.ts#L241)
 
 ___
 
@@ -629,7 +629,7 @@ ___
 
 #### Defined in
 
-[src/util/path/typedefs.ts:142](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L142)
+[src/util/path/typedefs.ts:142](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/typedefs.ts#L142)
 
 ___
 
@@ -639,7 +639,7 @@ ___
 
 #### Defined in
 
-[src/util/path/typedefs.ts:158](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L158)
+[src/util/path/typedefs.ts:158](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/typedefs.ts#L158)
 
 ___
 
@@ -649,7 +649,7 @@ ___
 
 #### Defined in
 
-[src/util/path/typedefs.ts:180](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L180)
+[src/util/path/typedefs.ts:180](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/typedefs.ts#L180)
 
 ___
 
@@ -659,7 +659,7 @@ ___
 
 #### Defined in
 
-[src/util/path/typedefs.ts:126](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L126)
+[src/util/path/typedefs.ts:126](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/typedefs.ts#L126)
 
 ___
 
@@ -669,7 +669,7 @@ ___
 
 #### Defined in
 
-[src/util/path/typedefs.ts:118](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L118)
+[src/util/path/typedefs.ts:118](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/typedefs.ts#L118)
 
 ___
 
@@ -679,7 +679,7 @@ ___
 
 #### Defined in
 
-[src/util/path/typedefs.ts:106](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L106)
+[src/util/path/typedefs.ts:106](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/typedefs.ts#L106)
 
 ___
 
@@ -689,7 +689,7 @@ ___
 
 #### Defined in
 
-[src/util/path/typedefs.ts:201](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L201)
+[src/util/path/typedefs.ts:201](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/typedefs.ts#L201)
 
 ___
 
@@ -699,7 +699,7 @@ ___
 
 #### Defined in
 
-[src/util/path/typedefs.ts:219](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L219)
+[src/util/path/typedefs.ts:219](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/typedefs.ts#L219)
 
 ___
 
@@ -709,7 +709,7 @@ ___
 
 #### Defined in
 
-[src/util/path/typedefs.ts:134](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L134)
+[src/util/path/typedefs.ts:134](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/typedefs.ts#L134)
 
 ___
 
@@ -719,7 +719,7 @@ ___
 
 #### Defined in
 
-[src/util/path/typedefs.ts:135](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L135)
+[src/util/path/typedefs.ts:135](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/typedefs.ts#L135)
 
 ___
 
@@ -742,7 +742,7 @@ for each command type in a simplified parsed path
 
 #### Defined in
 
-[src/util/path/typedefs.ts:37](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L37)
+[src/util/path/typedefs.ts:37](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/typedefs.ts#L37)
 
 ___
 
@@ -752,7 +752,7 @@ ___
 
 #### Defined in
 
-[src/util/path/typedefs.ts:45](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L45)
+[src/util/path/typedefs.ts:45](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/typedefs.ts#L45)
 
 ___
 
@@ -777,7 +777,7 @@ ___
 
 #### Defined in
 
-[src/util/path/typedefs.ts:4](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L4)
+[src/util/path/typedefs.ts:4](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/typedefs.ts#L4)
 
 ___
 
@@ -789,7 +789,7 @@ A point (vector) and angle between the vector and x-axis
 
 #### Defined in
 
-[src/util/path/typedefs.ts:305](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L305)
+[src/util/path/typedefs.ts:305](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/typedefs.ts#L305)
 
 ___
 
@@ -813,7 +813,7 @@ ___
 
 #### Defined in
 
-[src/util/misc/projectStroke/types.ts:4](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/projectStroke/types.ts#L4)
+[src/util/misc/projectStroke/types.ts:4](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/projectStroke/types.ts#L4)
 
 ___
 
@@ -832,7 +832,7 @@ ___
 
 #### Defined in
 
-[src/util/misc/projectStroke/types.ts:19](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/projectStroke/types.ts#L19)
+[src/util/misc/projectStroke/types.ts:19](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/projectStroke/types.ts#L19)
 
 ___
 
@@ -842,7 +842,7 @@ ___
 
 #### Defined in
 
-[src/util/misc/matrix.ts:31](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/matrix.ts#L31)
+[src/util/misc/matrix.ts:31](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/matrix.ts#L31)
 
 ___
 
@@ -852,7 +852,7 @@ ___
 
 #### Defined in
 
-[src/util/path/typedefs.ts:212](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L212)
+[src/util/path/typedefs.ts:212](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/typedefs.ts#L212)
 
 ___
 
@@ -862,7 +862,7 @@ ___
 
 #### Defined in
 
-[src/util/path/typedefs.ts:228](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L228)
+[src/util/path/typedefs.ts:228](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/typedefs.ts#L228)
 
 ___
 
@@ -878,7 +878,7 @@ ___
 
 #### Defined in
 
-[src/util/misc/matrix.ts:9](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/matrix.ts#L9)
+[src/util/misc/matrix.ts:9](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/matrix.ts#L9)
 
 ___
 
@@ -899,7 +899,7 @@ ___
 
 #### Defined in
 
-[src/util/misc/matrix.ts:18](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/matrix.ts#L18)
+[src/util/misc/matrix.ts:18](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/matrix.ts#L18)
 
 ___
 
@@ -911,7 +911,7 @@ Any SVG command that all Fabric functions can understand
 
 #### Defined in
 
-[src/util/path/typedefs.ts:290](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L290)
+[src/util/path/typedefs.ts:290](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/typedefs.ts#L290)
 
 ___
 
@@ -923,7 +923,7 @@ A series of simple paths
 
 #### Defined in
 
-[src/util/path/typedefs.ts:300](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L300)
+[src/util/path/typedefs.ts:300](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/typedefs.ts#L300)
 
 ___
 
@@ -940,7 +940,7 @@ ___
 
 #### Defined in
 
-[src/util/misc/matrix.ts:13](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/matrix.ts#L13)
+[src/util/misc/matrix.ts:13](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/matrix.ts#L13)
 
 ___
 
@@ -950,7 +950,7 @@ ___
 
 #### Defined in
 
-[src/util/path/typedefs.ts:139](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/typedefs.ts#L139)
+[src/util/path/typedefs.ts:139](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/typedefs.ts#L139)
 
 ___
 
@@ -960,7 +960,7 @@ ___
 
 #### Defined in
 
-[src/util/misc/textStyles.ts:8](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/textStyles.ts#L8)
+[src/util/misc/textStyles.ts:8](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/textStyles.ts#L8)
 
 ___
 
@@ -970,7 +970,7 @@ ___
 
 #### Defined in
 
-[src/util/animation/types.ts:122](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/types.ts#L122)
+[src/util/animation/types.ts:122](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/animation/types.ts#L122)
 
 ## Functions
 
@@ -996,7 +996,7 @@ This is used when removing an object from an active selection for example.
 
 #### Defined in
 
-[src/util/misc/objectTransforms.ts:45](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/objectTransforms.ts#L45)
+[src/util/misc/objectTransforms.ts:43](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/objectTransforms.ts#L43)
 
 ___
 
@@ -1047,7 +1047,7 @@ animate({
 
 #### Defined in
 
-[src/util/animation/animate.ts:50](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/animate.ts#L50)
+[src/util/animation/animate.ts:50](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/animation/animate.ts#L50)
 
 **animate**(`options`): `ValueAnimation`
 
@@ -1063,7 +1063,7 @@ animate({
 
 #### Defined in
 
-[src/util/animation/animate.ts:51](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/animate.ts#L51)
+[src/util/animation/animate.ts:51](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/animation/animate.ts#L51)
 
 **animate**\<`T`\>(`options`): `T` extends [`ArrayAnimationOptions`](/apidocs/modules/util.md#arrayanimationoptions) ? `ArrayAnimation` : `ValueAnimation`
 
@@ -1085,7 +1085,7 @@ animate({
 
 #### Defined in
 
-[src/util/animation/animate.ts:52](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/animate.ts#L52)
+[src/util/animation/animate.ts:52](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/animation/animate.ts#L52)
 
 ___
 
@@ -1105,7 +1105,7 @@ ___
 
 #### Defined in
 
-[src/util/animation/animate.ts:70](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/animate.ts#L70)
+[src/util/animation/animate.ts:70](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/animation/animate.ts#L70)
 
 ___
 
@@ -1128,7 +1128,7 @@ discard an object transform state and apply the one from the matrix.
 
 #### Defined in
 
-[src/util/misc/objectTransforms.ts:56](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/objectTransforms.ts#L56)
+[src/util/misc/objectTransforms.ts:54](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/objectTransforms.ts#L54)
 
 ___
 
@@ -1153,7 +1153,7 @@ the angle in radians from `a` to `b`
 
 #### Defined in
 
-[src/util/misc/vectors.ts:39](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/vectors.ts#L39)
+[src/util/misc/vectors.ts:39](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/vectors.ts#L39)
 
 ___
 
@@ -1181,7 +1181,7 @@ transform matrix
 
 #### Defined in
 
-[src/util/misc/matrix.ts:272](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/matrix.ts#L272)
+[src/util/misc/matrix.ts:272](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/matrix.ts#L272)
 
 ___
 
@@ -1205,7 +1205,7 @@ The object will exist on the destination plane and we want it to seem unchanged 
 
 #### Defined in
 
-[src/util/misc/planeChange.ts:15](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/planeChange.ts#L15)
+[src/util/misc/planeChange.ts:15](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/planeChange.ts#L15)
 
 ___
 
@@ -1229,7 +1229,7 @@ the angle in radians of `v`
 
 #### Defined in
 
-[src/util/misc/vectors.ts:47](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/vectors.ts#L47)
+[src/util/misc/vectors.ts:47](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/vectors.ts#L47)
 
 ___
 
@@ -1249,7 +1249,7 @@ ___
 
 #### Defined in
 
-[src/util/animation/AnimationFrameProvider.ts:7](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/AnimationFrameProvider.ts#L7)
+[src/util/animation/AnimationFrameProvider.ts:7](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/animation/AnimationFrameProvider.ts#L7)
 
 ___
 
@@ -1271,7 +1271,7 @@ ___
 
 #### Defined in
 
-[src/util/misc/capValue.ts:1](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/capValue.ts#L1)
+[src/util/misc/capValue.ts:1](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/capValue.ts#L1)
 
 ___
 
@@ -1297,7 +1297,7 @@ transform matrix
 
 #### Defined in
 
-[src/util/misc/matrix.ts:306](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/matrix.ts#L306)
+[src/util/misc/matrix.ts:306](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/matrix.ts#L306)
 
 ___
 
@@ -1321,7 +1321,7 @@ initialized canvas element
 
 #### Defined in
 
-[src/util/misc/dom.ts:28](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/dom.ts#L28)
+[src/util/misc/dom.ts:28](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/dom.ts#L28)
 
 ___
 
@@ -1347,7 +1347,7 @@ the cosin value for angle.
 
 #### Defined in
 
-[src/util/misc/cos.ts:11](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/cos.ts#L11)
+[src/util/misc/cos.ts:11](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/cos.ts#L11)
 
 ___
 
@@ -1365,7 +1365,7 @@ initialized canvas element
 
 #### Defined in
 
-[src/util/misc/dom.ts:8](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/dom.ts#L8)
+[src/util/misc/dom.ts:8](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/dom.ts#L8)
 
 ___
 
@@ -1383,7 +1383,7 @@ HTML image element
 
 #### Defined in
 
-[src/util/misc/dom.ts:20](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/dom.ts#L20)
+[src/util/misc/dom.ts:20](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/dom.ts#L20)
 
 ___
 
@@ -1413,7 +1413,7 @@ matrix
 
 #### Defined in
 
-[src/util/misc/matrix.ts:167](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/matrix.ts#L167)
+[src/util/misc/matrix.ts:167](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/matrix.ts#L167)
 
 ___
 
@@ -1447,7 +1447,7 @@ https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform#scale
 
 #### Defined in
 
-[src/util/misc/matrix.ts:198](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/matrix.ts#L198)
+[src/util/misc/matrix.ts:198](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/matrix.ts#L198)
 
 ___
 
@@ -1480,7 +1480,7 @@ https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform#skewx
 
 #### Defined in
 
-[src/util/misc/matrix.ts:226](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/matrix.ts#L226)
+[src/util/misc/matrix.ts:226](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/matrix.ts#L226)
 
 ___
 
@@ -1513,7 +1513,7 @@ https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform#skewy
 
 #### Defined in
 
-[src/util/misc/matrix.ts:248](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/matrix.ts#L248)
+[src/util/misc/matrix.ts:248](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/matrix.ts#L248)
 
 ___
 
@@ -1549,7 +1549,7 @@ https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform#translate f
 
 #### Defined in
 
-[src/util/misc/matrix.ts:145](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/matrix.ts#L145)
+[src/util/misc/matrix.ts:145](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/matrix.ts#L145)
 
 ___
 
@@ -1574,7 +1574,7 @@ vector
 
 #### Defined in
 
-[src/util/misc/vectors.ts:24](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/vectors.ts#L24)
+[src/util/misc/vectors.ts:24](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/vectors.ts#L24)
 
 ___
 
@@ -1599,7 +1599,7 @@ the magnitude of Z vector
 
 #### Defined in
 
-[src/util/misc/vectors.ts:74](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/vectors.ts#L74)
+[src/util/misc/vectors.ts:74](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/vectors.ts#L74)
 
 ___
 
@@ -1623,7 +1623,7 @@ value in radians
 
 #### Defined in
 
-[src/util/misc/radiansDegreesConversion.ts:9](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/radiansDegreesConversion.ts#L9)
+[src/util/misc/radiansDegreesConversion.ts:9](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/radiansDegreesConversion.ts#L9)
 
 ___
 
@@ -1646,7 +1646,7 @@ Dot product of two vectors in 2D
 
 #### Defined in
 
-[src/util/misc/vectors.ts:83](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/vectors.ts#L83)
+[src/util/misc/vectors.ts:83](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/vectors.ts#L83)
 
 ___
 
@@ -1660,7 +1660,7 @@ Creates corresponding fabric instances residing in an object, e.g. `clipPath`
 
 | Name | Type |
 | :------ | :------ |
-| `R` | `Record`\<`string`, ``null`` \| [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> \| [`TFiller`](/apidocs/modules.md#tfiller)\> |
+| `R` | `Record`\<`string`, ``null`` \| [`Pattern`](/apidocs/classes/Pattern.md) \| [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> \| [`Gradient`](/apidocs/classes/Gradient.md)\<``"linear"``, ``"linear"``\> \| [`Gradient`](/apidocs/classes/Gradient.md)\<``"radial"``, ``"radial"``\>\> |
 
 #### Parameters
 
@@ -1677,7 +1677,7 @@ the input object with enlived values
 
 #### Defined in
 
-[src/util/misc/objectEnlive.ts:124](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/objectEnlive.ts#L124)
+[src/util/misc/objectEnlive.ts:124](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/objectEnlive.ts#L124)
 
 ___
 
@@ -1691,7 +1691,7 @@ Creates corresponding fabric instances from their object representations
 
 | Name | Type |
 | :------ | :------ |
-| `T` | extends [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> \| `FabricObject`\<`Partial`\<`ObjectProps`\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> \| [`BaseFilter`](/apidocs/classes/filters.BaseFilter.md) |
+| `T` | extends `FabricObject`\<`Partial`\<`ObjectProps`\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> \| [`BaseFilter`](/apidocs/classes/filters.BaseFilter.md) \| [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
 
 #### Parameters
 
@@ -1706,7 +1706,7 @@ Creates corresponding fabric instances from their object representations
 
 #### Defined in
 
-[src/util/misc/objectEnlive.ts:79](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/objectEnlive.ts#L79)
+[src/util/misc/objectEnlive.ts:79](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/objectEnlive.ts#L79)
 
 ___
 
@@ -1733,7 +1733,7 @@ scale factor to apply to source to cover destination
 
 #### Defined in
 
-[src/util/misc/findScaleTo.ts:25](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/findScaleTo.ts#L25)
+[src/util/misc/findScaleTo.ts:25](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/findScaleTo.ts#L25)
 
 ___
 
@@ -1760,7 +1760,7 @@ scale factor to apply to source to fit into destination
 
 #### Defined in
 
-[src/util/misc/findScaleTo.ts:11](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/findScaleTo.ts#L11)
+[src/util/misc/findScaleTo.ts:11](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/findScaleTo.ts#L11)
 
 ___
 
@@ -1793,7 +1793,7 @@ the rectangular bounds
 
 #### Defined in
 
-[src/util/path/index.ts:221](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/index.ts#L221)
+[src/util/path/index.ts:221](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/index.ts#L221)
 
 ___
 
@@ -1816,7 +1816,7 @@ the unit orthogonal vector
 
 #### Defined in
 
-[src/util/misc/vectors.ts:62](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/vectors.ts#L62)
+[src/util/misc/vectors.ts:62](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/vectors.ts#L62)
 
 ___
 
@@ -1840,7 +1840,7 @@ path commands information
 
 #### Defined in
 
-[src/util/path/index.ts:682](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/index.ts#L682)
+[src/util/path/index.ts:682](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/index.ts#L682)
 
 ___
 
@@ -1864,7 +1864,7 @@ Get the point on the path that is distance along the path
 
 #### Defined in
 
-[src/util/path/index.ts:790](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/index.ts#L790)
+[src/util/path/index.ts:790](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/index.ts#L790)
 
 ___
 
@@ -1884,7 +1884,7 @@ ___
 
 #### Defined in
 
-[src/util/dom_event.ts:15](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/dom_event.ts#L15)
+[src/util/dom_event.ts:15](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/dom_event.ts#L15)
 
 ___
 
@@ -1909,7 +1909,7 @@ random value (between min and max)
 
 #### Defined in
 
-[src/util/internals/getRandomInt.ts:7](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/internals/getRandomInt.ts#L7)
+[src/util/internals/getRandomInt.ts:7](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/internals/getRandomInt.ts#L7)
 
 ___
 
@@ -1934,7 +1934,7 @@ An array of SVG path commands
 
 #### Defined in
 
-[src/util/path/index.ts:1000](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/index.ts#L1000)
+[src/util/path/index.ts:1000](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/index.ts#L1000)
 
 ___
 
@@ -1959,7 +1959,7 @@ An array of SVG path commands
 
 #### Defined in
 
-[src/util/path/index.ts:905](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/index.ts#L905)
+[src/util/path/index.ts:905](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/index.ts#L905)
 
 ___
 
@@ -1983,7 +1983,7 @@ string names of supported attributes
 
 #### Defined in
 
-[src/util/misc/svgParsing.ts:17](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/svgParsing.ts#L17)
+[src/util/misc/svgParsing.ts:17](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/svgParsing.ts#L17)
 
 ___
 
@@ -2005,14 +2005,15 @@ vector representing the unit vector pointing to the direction of `v`
 
 #### Defined in
 
-[src/util/misc/vectors.ts:54](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/vectors.ts#L54)
+[src/util/misc/vectors.ts:54](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/vectors.ts#L54)
 
 ___
 
 ### groupSVGElements
 
-**groupSVGElements**(`elements`): [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
+**groupSVGElements**(`elements`, `options?`): [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>
 
+TODO experiment with different layout manager and svg results ( fixed fit content )
 Groups SVG elements (usually those retrieved from SVG document)
 
 #### Parameters
@@ -2020,6 +2021,7 @@ Groups SVG elements (usually those retrieved from SVG document)
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `elements` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] | FabricObject(s) parsed from svg, to group |
+| `options?` | `Partial`\<[`GroupProps`](/apidocs/interfaces/GroupProps.md)\> | - |
 
 #### Returns
 
@@ -2029,7 +2031,7 @@ Groups SVG elements (usually those retrieved from SVG document)
 
 #### Defined in
 
-[src/util/misc/groupSVGElements.ts:10](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/groupSVGElements.ts#L10)
+[src/util/misc/groupSVGElements.ts:12](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/groupSVGElements.ts#L12)
 
 ___
 
@@ -2053,7 +2055,7 @@ true if the style changed
 
 #### Defined in
 
-[src/util/misc/textStyles.ts:20](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/textStyles.ts#L20)
+[src/util/misc/textStyles.ts:20](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/textStyles.ts#L20)
 
 ___
 
@@ -2077,7 +2079,7 @@ The inverted transform
 
 #### Defined in
 
-[src/util/misc/matrix.ts:57](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/matrix.ts#L57)
+[src/util/misc/matrix.ts:57](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/matrix.ts#L57)
 
 ___
 
@@ -2105,7 +2107,7 @@ true if the vector is among the others
 
 #### Defined in
 
-[src/util/misc/vectors.ts:94](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/vectors.ts#L94)
+[src/util/misc/vectors.ts:94](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/vectors.ts#L94)
 
 ___
 
@@ -2125,7 +2127,7 @@ ___
 
 #### Defined in
 
-[src/util/misc/matrix.ts:35](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/matrix.ts#L35)
+[src/util/misc/matrix.ts:35](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/matrix.ts#L35)
 
 ___
 
@@ -2145,7 +2147,7 @@ ___
 
 #### Defined in
 
-[src/util/dom_event.ts:22](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/dom_event.ts#L22)
+[src/util/dom_event.ts:22](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/dom_event.ts#L22)
 
 ___
 
@@ -2173,7 +2175,7 @@ true if transparent
 
 #### Defined in
 
-[src/util/misc/isTransparent.ts:10](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/isTransparent.ts#L10)
+[src/util/misc/isTransparent.ts:10](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/isTransparent.ts#L10)
 
 ___
 
@@ -2198,7 +2200,7 @@ joined path 'M 0 0 L 20 30'
 
 #### Defined in
 
-[src/util/path/index.ts:1027](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/index.ts#L1027)
+[src/util/path/index.ts:1027](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/index.ts#L1027)
 
 ___
 
@@ -2223,7 +2225,7 @@ the loaded image.
 
 #### Defined in
 
-[src/util/misc/objectEnlive.ts:24](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/objectEnlive.ts#L24)
+[src/util/misc/objectEnlive.ts:24](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/objectEnlive.ts#L24)
 
 ___
 
@@ -2245,7 +2247,7 @@ return the magnitude of a vector
 
 #### Defined in
 
-[src/util/misc/vectors.ts:31](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/vectors.ts#L31)
+[src/util/misc/vectors.ts:31](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/vectors.ts#L31)
 
 ___
 
@@ -2269,7 +2271,7 @@ Object with left, top, width, height properties
 
 #### Defined in
 
-[src/util/misc/boundingBoxFromPoints.ts:10](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/boundingBoxFromPoints.ts#L10)
+[src/util/misc/boundingBoxFromPoints.ts:10](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/boundingBoxFromPoints.ts#L10)
 
 ___
 
@@ -2299,7 +2301,7 @@ TODO: figure out how to remove the type assertions in a nice way
 
 #### Defined in
 
-[src/util/path/index.ts:351](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/index.ts#L351)
+[src/util/path/index.ts:351](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/index.ts#L351)
 
 ___
 
@@ -2323,7 +2325,7 @@ transform matrix for svg
 
 #### Defined in
 
-[src/util/misc/svgParsing.ts:128](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/svgParsing.ts#L128)
+[src/util/misc/svgParsing.ts:128](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/svgParsing.ts#L128)
 
 ___
 
@@ -2363,7 +2365,7 @@ fabric.util
 
 #### Defined in
 
-[src/util/misc/mergeClipPaths.ts:23](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/mergeClipPaths.ts#L23)
+[src/util/misc/mergeClipPaths.ts:23](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/mergeClipPaths.ts#L23)
 
 ___
 
@@ -2389,7 +2391,7 @@ The product of the two transform matrices
 
 #### Defined in
 
-[src/util/misc/matrix.ts:73](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/matrix.ts#L73)
+[src/util/misc/matrix.ts:73](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/matrix.ts#L73)
 
 ___
 
@@ -2416,7 +2418,7 @@ the multiplication product
 
 #### Defined in
 
-[src/util/misc/matrix.ts:96](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/matrix.ts#L96)
+[src/util/misc/matrix.ts:96](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/matrix.ts#L96)
 
 ___
 
@@ -2438,7 +2440,6 @@ An array of SVG path commands
 
 **`Example`**
 
-Usage
 ```ts
 parsePath('M 3 4 Q 3 5 2 1 4 0 Q 9 12 2 1 4 0') === [
   ['M', 3, 4],
@@ -2449,7 +2450,7 @@ parsePath('M 3 4 Q 3 5 2 1 4 0 Q 9 12 2 1 4 0') === [
 
 #### Defined in
 
-[src/util/path/index.ts:844](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/index.ts#L844)
+[src/util/path/index.ts:844](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/index.ts#L844)
 
 ___
 
@@ -2474,7 +2475,7 @@ an object containing align and meetOrSlice attribute
 
 #### Defined in
 
-[src/util/misc/svgParsing.ts:108](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/svgParsing.ts#L108)
+[src/util/misc/svgParsing.ts:108](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/svgParsing.ts#L108)
 
 ___
 
@@ -2498,7 +2499,7 @@ Returns converted pixels or original value not converted.
 
 #### Defined in
 
-[src/util/misc/svgParsing.ts:53](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/svgParsing.ts#L53)
+[src/util/misc/svgParsing.ts:53](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/svgParsing.ts#L53)
 
 ___
 
@@ -2529,7 +2530,7 @@ object populated with the picked keys
 
 #### Defined in
 
-[src/util/misc/pick.ts:7](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/pick.ts#L7)
+[src/util/misc/pick.ts:7](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/pick.ts#L7)
 
 ___
 
@@ -2557,7 +2558,7 @@ https://github.com/fabricjs/fabric.js/pull/8344
 
 #### Defined in
 
-[src/util/misc/projectStroke/index.ts:16](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/projectStroke/index.ts#L16)
+[src/util/misc/projectStroke/index.ts:16](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/projectStroke/index.ts#L16)
 
 ___
 
@@ -2581,7 +2582,7 @@ Components of transform
 
 #### Defined in
 
-[src/util/misc/matrix.ts:114](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/matrix.ts#L114)
+[src/util/misc/matrix.ts:114](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/matrix.ts#L114)
 
 ___
 
@@ -2605,7 +2606,7 @@ value in degrees
 
 #### Defined in
 
-[src/util/misc/radiansDegreesConversion.ts:17](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/radiansDegreesConversion.ts#L17)
+[src/util/misc/radiansDegreesConversion.ts:17](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/radiansDegreesConversion.ts#L17)
 
 ___
 
@@ -2637,7 +2638,7 @@ original array
 
 #### Defined in
 
-[src/util/internals/removeFromArray.ts:8](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/internals/removeFromArray.ts#L8)
+[src/util/internals/removeFromArray.ts:8](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/internals/removeFromArray.ts#L8)
 
 ___
 
@@ -2666,7 +2667,7 @@ This util is used to add objects inside transformed groups or nested groups.
 
 #### Defined in
 
-[src/util/misc/objectTransforms.ts:25](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/objectTransforms.ts#L25)
+[src/util/misc/objectTransforms.ts:23](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/objectTransforms.ts#L23)
 
 ___
 
@@ -2690,7 +2691,7 @@ and set to object properties that fabricjs can handle
 
 #### Defined in
 
-[src/util/transform_matrix_removal.ts:40](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/transform_matrix_removal.ts#L40)
+[src/util/transform_matrix_removal.ts:40](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/transform_matrix_removal.ts#L40)
 
 ___
 
@@ -2719,7 +2720,7 @@ this has to go away, we can use a modern browser method to do the same.
 
 #### Defined in
 
-[src/util/internals/dom_request.ts:20](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/internals/dom_request.ts#L20)
+[src/util/internals/dom_request.ts:20](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/internals/dom_request.ts#L20)
 
 ___
 
@@ -2739,7 +2740,7 @@ ___
 
 #### Defined in
 
-[src/util/animation/AnimationFrameProvider.ts:3](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/animation/AnimationFrameProvider.ts#L3)
+[src/util/animation/AnimationFrameProvider.ts:3](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/animation/AnimationFrameProvider.ts#L3)
 
 ___
 
@@ -2761,7 +2762,7 @@ reset an object transform state to neutral. Top and left are not accounted for
 
 #### Defined in
 
-[src/util/misc/objectTransforms.ts:73](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/objectTransforms.ts#L73)
+[src/util/misc/objectTransforms.ts:71](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/objectTransforms.ts#L71)
 
 ___
 
@@ -2791,7 +2792,7 @@ use the Point.rotate
 
 #### Defined in
 
-[src/util/misc/rotatePoint.ts:11](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/rotatePoint.ts#L11)
+[src/util/misc/rotatePoint.ts:11](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/rotatePoint.ts#L11)
 
 ___
 
@@ -2816,7 +2817,7 @@ The new rotated point
 
 #### Defined in
 
-[src/util/misc/vectors.ts:14](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/vectors.ts#L14)
+[src/util/misc/vectors.ts:14](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/vectors.ts#L14)
 
 ___
 
@@ -2852,7 +2853,7 @@ Components of transform
 
 #### Defined in
 
-[src/util/misc/objectTransforms.ts:88](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/objectTransforms.ts#L88)
+[src/util/misc/objectTransforms.ts:86](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/objectTransforms.ts#L86)
 
 ___
 
@@ -2881,7 +2882,6 @@ the transform matrix that was applied to `object`
 
 **`Example`**
 
-Move clip path from one object to another while preserving it's appearance as viewed by canvas/viewer
 ```ts
 let obj, obj2;
 let clipPath = new Circle({ radius: 50 });
@@ -2895,7 +2895,6 @@ obj2.clipPath = clipPath;
 
 **`Example`**
 
-Clip an object's clip path with an existing object
 ```ts
 let obj, existingObj;
 let clipPath = new Circle({ radius: 50 });
@@ -2907,7 +2906,7 @@ clipPath.clipPath = existingObj;
 
 #### Defined in
 
-[src/util/misc/planeChange.ts:81](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/planeChange.ts#L81)
+[src/util/misc/planeChange.ts:81](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/planeChange.ts#L81)
 
 ___
 
@@ -2934,7 +2933,6 @@ transformed point
 
 **`Example`**
 
-Send point from canvas plane to group plane
 ```ts
 var obj = new Rect({ left: 20, top: 20, width: 60, height: 60, strokeWidth: 0 });
 var group = new Group([obj], { strokeWidth: 0 });
@@ -2945,7 +2943,7 @@ console.log(sentPoint1, sentPoint2) //  both points print (0,0) which is the cen
 
 #### Defined in
 
-[src/util/misc/planeChange.ts:36](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/planeChange.ts#L36)
+[src/util/misc/planeChange.ts:36](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/planeChange.ts#L36)
 
 ___
 
@@ -2969,7 +2967,7 @@ See [sendPointToPlane](/apidocs/modules/util.md#sendpointtoplane)
 
 #### Defined in
 
-[src/util/misc/planeChange.ts:45](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/planeChange.ts#L45)
+[src/util/misc/planeChange.ts:45](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/planeChange.ts#L45)
 
 ___
 
@@ -2992,7 +2990,7 @@ wrapper for setting element's style
 
 #### Defined in
 
-[src/util/dom_style.ts:8](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/dom_style.ts#L8)
+[src/util/dom_style.ts:8](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/dom_style.ts#L8)
 
 ___
 
@@ -3018,17 +3016,16 @@ the sin value for angle.
 
 #### Defined in
 
-[src/util/misc/sin.ts:11](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/sin.ts#L11)
+[src/util/misc/sin.ts:11](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/sin.ts#L11)
 
 ___
 
 ### sizeAfterTransform
 
-**sizeAfterTransform**(`width`, `height`, `options`): [`Point`](/apidocs/classes/Point.md)
+**sizeAfterTransform**(`width`, `height`, `t`): [`Point`](/apidocs/classes/Point.md)
 
 given a width and height, return the size of the bounding box
-that can contains the box with width/height with applied transform
-described in options.
+that can contains the box with width/height with applied transform.
 Use to calculate the boxes around objects for controls.
 
 #### Parameters
@@ -3037,7 +3034,7 @@ Use to calculate the boxes around objects for controls.
 | :------ | :------ |
 | `width` | `number` |
 | `height` | `number` |
-| `options` | [`TScaleMatrixArgs`](/apidocs/modules/util.md#tscalematrixargs) |
+| `t` | [`TMat2D`](/apidocs/modules.md#tmat2d) |
 
 #### Returns
 
@@ -3047,7 +3044,7 @@ size
 
 #### Defined in
 
-[src/util/misc/objectTransforms.ts:114](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/objectTransforms.ts#L114)
+[src/util/misc/objectTransforms.ts:107](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/objectTransforms.ts#L107)
 
 ___
 
@@ -3072,7 +3069,7 @@ only used during runtime (not for serialization/storage)
 
 #### Defined in
 
-[src/util/misc/textStyles.ts:97](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/textStyles.ts#L97)
+[src/util/misc/textStyles.ts:97](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/textStyles.ts#L97)
 
 ___
 
@@ -3097,7 +3094,7 @@ so it is used in serialization (not during runtime).
 
 #### Defined in
 
-[src/util/misc/textStyles.ts:47](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/textStyles.ts#L47)
+[src/util/misc/textStyles.ts:47](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/textStyles.ts#L47)
 
 ___
 
@@ -3124,7 +3121,7 @@ data url
 
 #### Defined in
 
-[src/util/misc/dom.ts:46](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/dom.ts#L46)
+[src/util/misc/dom.ts:46](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/dom.ts#L46)
 
 ___
 
@@ -3147,7 +3144,7 @@ A wrapper around Number#toFixed, which contrary to native method returns number,
 
 #### Defined in
 
-[src/util/misc/toFixed.ts:7](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/toFixed.ts#L7)
+[src/util/misc/toFixed.ts:7](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/toFixed.ts#L7)
 
 ___
 
@@ -3175,7 +3172,7 @@ the transformed path
 
 #### Defined in
 
-[src/util/path/index.ts:961](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/path/index.ts#L961)
+[src/util/path/index.ts:961](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/path/index.ts#L961)
 
 ___
 
@@ -3205,4 +3202,4 @@ use [Point#transform](/apidocs/classes/Point.md#transform)
 
 #### Defined in
 
-[src/util/misc/matrix.ts:46](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/misc/matrix.ts#L46)
+[src/util/misc/matrix.ts:46](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/misc/matrix.ts#L46)

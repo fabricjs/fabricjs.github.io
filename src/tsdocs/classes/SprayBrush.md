@@ -36,7 +36,7 @@ Instance of a spray brush
 
 #### Defined in
 
-[src/brushes/SprayBrush.ts:83](https://github.com/fabricjs/fabric.js/blob/078809453/src/brushes/SprayBrush.ts#L83)
+[src/brushes/SprayBrush.ts:83](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/brushes/SprayBrush.ts#L83)
 
 ## Properties
 
@@ -54,7 +54,7 @@ add type
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:73](https://github.com/fabricjs/fabric.js/blob/078809453/src/brushes/BaseBrush.ts#L73)
+[src/brushes/BaseBrush.ts:73](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/brushes/BaseBrush.ts#L73)
 
 ___
 
@@ -76,7 +76,7 @@ Color of a brush
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:16](https://github.com/fabricjs/fabric.js/blob/078809453/src/brushes/BaseBrush.ts#L16)
+[src/brushes/BaseBrush.ts:16](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/brushes/BaseBrush.ts#L16)
 
 ___
 
@@ -94,7 +94,7 @@ Density of a spray (number of dots per chunk)
 
 #### Defined in
 
-[src/brushes/SprayBrush.ts:44](https://github.com/fabricjs/fabric.js/blob/078809453/src/brushes/SprayBrush.ts#L44)
+[src/brushes/SprayBrush.ts:44](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/brushes/SprayBrush.ts#L44)
 
 ___
 
@@ -112,7 +112,7 @@ Width of spray dots
 
 #### Defined in
 
-[src/brushes/SprayBrush.ts:51](https://github.com/fabricjs/fabric.js/blob/078809453/src/brushes/SprayBrush.ts#L51)
+[src/brushes/SprayBrush.ts:51](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/brushes/SprayBrush.ts#L51)
 
 ___
 
@@ -130,7 +130,7 @@ Width variance of spray dots
 
 #### Defined in
 
-[src/brushes/SprayBrush.ts:58](https://github.com/fabricjs/fabric.js/blob/078809453/src/brushes/SprayBrush.ts#L58)
+[src/brushes/SprayBrush.ts:58](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/brushes/SprayBrush.ts#L58)
 
 ___
 
@@ -152,7 +152,7 @@ false
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:68](https://github.com/fabricjs/fabric.js/blob/078809453/src/brushes/BaseBrush.ts#L68)
+[src/brushes/BaseBrush.ts:68](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/brushes/BaseBrush.ts#L68)
 
 ___
 
@@ -170,7 +170,7 @@ Whether overlapping dots (rectangles) should be removed (for performance reasons
 
 #### Defined in
 
-[src/brushes/SprayBrush.ts:72](https://github.com/fabricjs/fabric.js/blob/078809453/src/brushes/SprayBrush.ts#L72)
+[src/brushes/SprayBrush.ts:72](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/brushes/SprayBrush.ts#L72)
 
 ___
 
@@ -188,7 +188,7 @@ Whether opacity of a dot should be random
 
 #### Defined in
 
-[src/brushes/SprayBrush.ts:65](https://github.com/fabricjs/fabric.js/blob/078809453/src/brushes/SprayBrush.ts#L65)
+[src/brushes/SprayBrush.ts:65](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/brushes/SprayBrush.ts#L65)
 
 ___
 
@@ -212,7 +212,7 @@ Shadow object representing shadow of this shape.
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:32](https://github.com/fabricjs/fabric.js/blob/078809453/src/brushes/BaseBrush.ts#L32)
+[src/brushes/BaseBrush.ts:32](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/brushes/BaseBrush.ts#L32)
 
 ___
 
@@ -222,7 +222,7 @@ ___
 
 #### Defined in
 
-[src/brushes/SprayBrush.ts:76](https://github.com/fabricjs/fabric.js/blob/078809453/src/brushes/SprayBrush.ts#L76)
+[src/brushes/SprayBrush.ts:76](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/brushes/SprayBrush.ts#L76)
 
 ___
 
@@ -232,7 +232,7 @@ ___
 
 #### Defined in
 
-[src/brushes/SprayBrush.ts:74](https://github.com/fabricjs/fabric.js/blob/078809453/src/brushes/SprayBrush.ts#L74)
+[src/brushes/SprayBrush.ts:74](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/brushes/SprayBrush.ts#L74)
 
 ___
 
@@ -254,7 +254,7 @@ Stroke Dash Array.
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:60](https://github.com/fabricjs/fabric.js/blob/078809453/src/brushes/BaseBrush.ts#L60)
+[src/brushes/BaseBrush.ts:60](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/brushes/BaseBrush.ts#L60)
 
 ___
 
@@ -276,7 +276,7 @@ Line endings style of a brush (one of "butt", "round", "square")
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:39](https://github.com/fabricjs/fabric.js/blob/078809453/src/brushes/BaseBrush.ts#L39)
+[src/brushes/BaseBrush.ts:39](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/brushes/BaseBrush.ts#L39)
 
 ___
 
@@ -298,7 +298,7 @@ Corner style of a brush (one of "bevel", "round", "miter")
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:46](https://github.com/fabricjs/fabric.js/blob/078809453/src/brushes/BaseBrush.ts#L46)
+[src/brushes/BaseBrush.ts:46](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/brushes/BaseBrush.ts#L46)
 
 ___
 
@@ -320,7 +320,7 @@ Maximum miter length (used for strokeLineJoin = "miter") of a brush's
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:53](https://github.com/fabricjs/fabric.js/blob/078809453/src/brushes/BaseBrush.ts#L53)
+[src/brushes/BaseBrush.ts:53](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/brushes/BaseBrush.ts#L53)
 
 ___
 
@@ -342,7 +342,7 @@ Width of a spray
 
 #### Defined in
 
-[src/brushes/SprayBrush.ts:37](https://github.com/fabricjs/fabric.js/blob/078809453/src/brushes/SprayBrush.ts#L37)
+[src/brushes/SprayBrush.ts:37](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/brushes/SprayBrush.ts#L37)
 
 ## Methods
 
@@ -368,7 +368,7 @@ Check is pointer is outside canvas boundaries
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:153](https://github.com/fabricjs/fabric.js/blob/078809453/src/brushes/BaseBrush.ts#L153)
+[src/brushes/BaseBrush.ts:153](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/brushes/BaseBrush.ts#L153)
 
 ___
 
@@ -388,7 +388,7 @@ Render all spray chunks
 
 #### Defined in
 
-[src/brushes/SprayBrush.ts:178](https://github.com/fabricjs/fabric.js/blob/078809453/src/brushes/SprayBrush.ts#L178)
+[src/brushes/SprayBrush.ts:177](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/brushes/SprayBrush.ts#L177)
 
 ___
 
@@ -408,7 +408,7 @@ Removes brush shadow styles
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:141](https://github.com/fabricjs/fabric.js/blob/078809453/src/brushes/BaseBrush.ts#L141)
+[src/brushes/BaseBrush.ts:141](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/brushes/BaseBrush.ts#L141)
 
 ___
 
@@ -434,7 +434,7 @@ Sets the transformation on given context
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:106](https://github.com/fabricjs/fabric.js/blob/078809453/src/brushes/BaseBrush.ts#L106)
+[src/brushes/BaseBrush.ts:106](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/brushes/BaseBrush.ts#L106)
 
 ___
 
@@ -460,7 +460,7 @@ Sets brush styles
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:92](https://github.com/fabricjs/fabric.js/blob/078809453/src/brushes/BaseBrush.ts#L92)
+[src/brushes/BaseBrush.ts:92](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/brushes/BaseBrush.ts#L92)
 
 ___
 
@@ -480,7 +480,7 @@ Sets brush shadow styles
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:121](https://github.com/fabricjs/fabric.js/blob/078809453/src/brushes/BaseBrush.ts#L121)
+[src/brushes/BaseBrush.ts:121](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/brushes/BaseBrush.ts#L121)
 
 ___
 
@@ -500,7 +500,7 @@ ___
 
 #### Defined in
 
-[src/brushes/SprayBrush.ts:193](https://github.com/fabricjs/fabric.js/blob/078809453/src/brushes/SprayBrush.ts#L193)
+[src/brushes/SprayBrush.ts:192](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/brushes/SprayBrush.ts#L192)
 
 ___
 
@@ -518,7 +518,7 @@ ___
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:112](https://github.com/fabricjs/fabric.js/blob/078809453/src/brushes/BaseBrush.ts#L112)
+[src/brushes/BaseBrush.ts:112](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/brushes/BaseBrush.ts#L112)
 
 ___
 
@@ -544,7 +544,7 @@ Invoked on mouse down
 
 #### Defined in
 
-[src/brushes/SprayBrush.ts:93](https://github.com/fabricjs/fabric.js/blob/078809453/src/brushes/SprayBrush.ts#L93)
+[src/brushes/SprayBrush.ts:93](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/brushes/SprayBrush.ts#L93)
 
 ___
 
@@ -570,7 +570,7 @@ Invoked on mouse move
 
 #### Defined in
 
-[src/brushes/SprayBrush.ts:106](https://github.com/fabricjs/fabric.js/blob/078809453/src/brushes/SprayBrush.ts#L106)
+[src/brushes/SprayBrush.ts:106](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/brushes/SprayBrush.ts#L106)
 
 ___
 
@@ -590,7 +590,7 @@ Invoked on mouse up
 
 #### Defined in
 
-[src/brushes/SprayBrush.ts:117](https://github.com/fabricjs/fabric.js/blob/078809453/src/brushes/SprayBrush.ts#L117)
+[src/brushes/SprayBrush.ts:117](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/brushes/SprayBrush.ts#L117)
 
 ___
 
@@ -610,4 +610,4 @@ ___
 
 #### Defined in
 
-[src/brushes/SprayBrush.ts:160](https://github.com/fabricjs/fabric.js/blob/078809453/src/brushes/SprayBrush.ts#L160)
+[src/brushes/SprayBrush.ts:159](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/brushes/SprayBrush.ts#L159)

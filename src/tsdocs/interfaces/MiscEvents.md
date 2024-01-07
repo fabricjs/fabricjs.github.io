@@ -16,7 +16,7 @@
 
 #### Defined in
 
-[src/EventTypeDefs.ts:261](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L261)
+[src/EventTypeDefs.ts:266](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L266)
 
 ___
 
@@ -26,4 +26,4 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:260](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L260)
+[src/EventTypeDefs.ts:265](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L265)

@@ -32,7 +32,7 @@
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:75](https://github.com/fabricjs/fabric.js/blob/078809453/src/brushes/BaseBrush.ts#L75)
+[src/brushes/BaseBrush.ts:75](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/brushes/BaseBrush.ts#L75)
 
 ## Properties
 
@@ -46,7 +46,7 @@ add type
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:73](https://github.com/fabricjs/fabric.js/blob/078809453/src/brushes/BaseBrush.ts#L73)
+[src/brushes/BaseBrush.ts:73](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/brushes/BaseBrush.ts#L73)
 
 ___
 
@@ -64,7 +64,7 @@ Color of a brush
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:16](https://github.com/fabricjs/fabric.js/blob/078809453/src/brushes/BaseBrush.ts#L16)
+[src/brushes/BaseBrush.ts:16](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/brushes/BaseBrush.ts#L16)
 
 ___
 
@@ -82,7 +82,7 @@ false
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:68](https://github.com/fabricjs/fabric.js/blob/078809453/src/brushes/BaseBrush.ts#L68)
+[src/brushes/BaseBrush.ts:68](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/brushes/BaseBrush.ts#L68)
 
 ___
 
@@ -102,7 +102,7 @@ Shadow object representing shadow of this shape.
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:32](https://github.com/fabricjs/fabric.js/blob/078809453/src/brushes/BaseBrush.ts#L32)
+[src/brushes/BaseBrush.ts:32](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/brushes/BaseBrush.ts#L32)
 
 ___
 
@@ -120,7 +120,7 @@ Stroke Dash Array.
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:60](https://github.com/fabricjs/fabric.js/blob/078809453/src/brushes/BaseBrush.ts#L60)
+[src/brushes/BaseBrush.ts:60](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/brushes/BaseBrush.ts#L60)
 
 ___
 
@@ -138,7 +138,7 @@ Line endings style of a brush (one of "butt", "round", "square")
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:39](https://github.com/fabricjs/fabric.js/blob/078809453/src/brushes/BaseBrush.ts#L39)
+[src/brushes/BaseBrush.ts:39](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/brushes/BaseBrush.ts#L39)
 
 ___
 
@@ -156,7 +156,7 @@ Corner style of a brush (one of "bevel", "round", "miter")
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:46](https://github.com/fabricjs/fabric.js/blob/078809453/src/brushes/BaseBrush.ts#L46)
+[src/brushes/BaseBrush.ts:46](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/brushes/BaseBrush.ts#L46)
 
 ___
 
@@ -174,7 +174,7 @@ Maximum miter length (used for strokeLineJoin = "miter") of a brush's
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:53](https://github.com/fabricjs/fabric.js/blob/078809453/src/brushes/BaseBrush.ts#L53)
+[src/brushes/BaseBrush.ts:53](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/brushes/BaseBrush.ts#L53)
 
 ___
 
@@ -192,7 +192,7 @@ Width of a brush, has to be a Number, no string literals
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:23](https://github.com/fabricjs/fabric.js/blob/078809453/src/brushes/BaseBrush.ts#L23)
+[src/brushes/BaseBrush.ts:23](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/brushes/BaseBrush.ts#L23)
 
 ## Methods
 
@@ -214,7 +214,7 @@ Check is pointer is outside canvas boundaries
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:153](https://github.com/fabricjs/fabric.js/blob/078809453/src/brushes/BaseBrush.ts#L153)
+[src/brushes/BaseBrush.ts:153](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/brushes/BaseBrush.ts#L153)
 
 ___
 
@@ -228,7 +228,7 @@ ___
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:79](https://github.com/fabricjs/fabric.js/blob/078809453/src/brushes/BaseBrush.ts#L79)
+[src/brushes/BaseBrush.ts:79](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/brushes/BaseBrush.ts#L79)
 
 ___
 
@@ -244,7 +244,7 @@ Removes brush shadow styles
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:141](https://github.com/fabricjs/fabric.js/blob/078809453/src/brushes/BaseBrush.ts#L141)
+[src/brushes/BaseBrush.ts:141](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/brushes/BaseBrush.ts#L141)
 
 ___
 
@@ -266,7 +266,7 @@ Sets the transformation on given context
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:106](https://github.com/fabricjs/fabric.js/blob/078809453/src/brushes/BaseBrush.ts#L106)
+[src/brushes/BaseBrush.ts:106](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/brushes/BaseBrush.ts#L106)
 
 ___
 
@@ -288,7 +288,7 @@ Sets brush styles
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:92](https://github.com/fabricjs/fabric.js/blob/078809453/src/brushes/BaseBrush.ts#L92)
+[src/brushes/BaseBrush.ts:92](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/brushes/BaseBrush.ts#L92)
 
 ___
 
@@ -304,7 +304,7 @@ Sets brush shadow styles
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:121](https://github.com/fabricjs/fabric.js/blob/078809453/src/brushes/BaseBrush.ts#L121)
+[src/brushes/BaseBrush.ts:121](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/brushes/BaseBrush.ts#L121)
 
 ___
 
@@ -318,7 +318,7 @@ ___
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:112](https://github.com/fabricjs/fabric.js/blob/078809453/src/brushes/BaseBrush.ts#L112)
+[src/brushes/BaseBrush.ts:112](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/brushes/BaseBrush.ts#L112)
 
 ___
 
@@ -339,7 +339,7 @@ ___
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:80](https://github.com/fabricjs/fabric.js/blob/078809453/src/brushes/BaseBrush.ts#L80)
+[src/brushes/BaseBrush.ts:80](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/brushes/BaseBrush.ts#L80)
 
 ___
 
@@ -360,7 +360,7 @@ ___
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:81](https://github.com/fabricjs/fabric.js/blob/078809453/src/brushes/BaseBrush.ts#L81)
+[src/brushes/BaseBrush.ts:81](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/brushes/BaseBrush.ts#L81)
 
 ___
 
@@ -382,4 +382,4 @@ true if brush should continue blocking interaction
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:85](https://github.com/fabricjs/fabric.js/blob/078809453/src/brushes/BaseBrush.ts#L85)
+[src/brushes/BaseBrush.ts:85](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/brushes/BaseBrush.ts#L85)

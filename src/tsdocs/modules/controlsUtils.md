@@ -21,7 +21,7 @@
 
 #### Defined in
 
-[src/EventTypeDefs.ts:20](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L20)
+[src/controls/changeWidth.ts:50](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/changeWidth.ts#L50)
 
 ___
 
@@ -47,13 +47,13 @@ ___
 
 #### Defined in
 
-[src/controls/commonControls.ts:13](https://github.com/fabricjs/fabric.js/blob/078809453/src/controls/commonControls.ts#L13)
+[src/controls/commonControls.ts:13](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/commonControls.ts#L13)
 
 ___
 
 ### createPolyActionHandler
 
-**createPolyActionHandler**(`pointIndex`): (`eventData`: [`TPointerEvent`](/apidocs/modules.md#tpointerevent), `transform`: [`Transform`](/apidocs/modules.md#transform), `x`: `number`, `y`: `number`) => `boolean`
+**createPolyActionHandler**(`pointIndex`): [`TransformActionHandler`](/apidocs/modules.md#transformactionhandler)\<[`Transform`](/apidocs/modules.md#transform)\>
 
 #### Parameters
 
@@ -63,26 +63,11 @@ ___
 
 #### Returns
 
-`fn`
-
-(`eventData`, `transform`, `x`, `y`): `boolean`
-
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `eventData` | [`TPointerEvent`](/apidocs/modules.md#tpointerevent) |
-| `transform` | [`Transform`](/apidocs/modules.md#transform) |
-| `x` | `number` |
-| `y` | `number` |
-
-##### Returns
-
-`boolean`
+[`TransformActionHandler`](/apidocs/modules.md#transformactionhandler)\<[`Transform`](/apidocs/modules.md#transform)\>
 
 #### Defined in
 
-[src/controls/polyControl.ts:107](https://github.com/fabricjs/fabric.js/blob/078809453/src/controls/polyControl.ts#L107)
+[src/controls/polyControl.ts:98](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/polyControl.ts#L98)
 
 ___
 
@@ -103,7 +88,7 @@ ___
 
 #### Defined in
 
-[src/controls/polyControl.ts:110](https://github.com/fabricjs/fabric.js/blob/078809453/src/controls/polyControl.ts#L110)
+[src/controls/polyControl.ts:104](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/polyControl.ts#L104)
 
 **createPolyControls**(`numOfControls`, `options?`): `Record`\<`string`, [`Control`](/apidocs/classes/Control.md)\>
 
@@ -120,7 +105,7 @@ ___
 
 #### Defined in
 
-[src/controls/polyControl.ts:114](https://github.com/fabricjs/fabric.js/blob/078809453/src/controls/polyControl.ts#L114)
+[src/controls/polyControl.ts:108](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/polyControl.ts#L108)
 
 ___
 
@@ -157,7 +142,7 @@ It'll be used both for drawing and for interaction.
 
 #### Defined in
 
-[src/controls/polyControl.ts:24](https://github.com/fabricjs/fabric.js/blob/078809453/src/controls/polyControl.ts#L24)
+[src/controls/polyControl.ts:23](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/polyControl.ts#L23)
 
 ___
 
@@ -176,7 +161,7 @@ ___
 
 #### Defined in
 
-[src/controls/commonControls.ts:85](https://github.com/fabricjs/fabric.js/blob/078809453/src/controls/commonControls.ts#L85)
+[src/controls/commonControls.ts:85](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/commonControls.ts#L85)
 
 ___
 
@@ -202,7 +187,7 @@ ___
 
 #### Defined in
 
-[src/controls/commonControls.ts:102](https://github.com/fabricjs/fabric.js/blob/078809453/src/controls/commonControls.ts#L102)
+[src/controls/commonControls.ts:102](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/commonControls.ts#L102)
 
 ___
 
@@ -229,7 +214,7 @@ true if the translation occurred
 
 #### Defined in
 
-[src/EventTypeDefs.ts:20](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L20)
+[src/controls/drag.ts:15](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/drag.ts#L15)
 
 ___
 
@@ -267,7 +252,7 @@ Keep the polygon in the same position when we change its `width`/`height`/`top`/
 
 #### Defined in
 
-[src/controls/polyControl.ts:72](https://github.com/fabricjs/fabric.js/blob/078809453/src/controls/polyControl.ts#L72)
+[src/controls/polyControl.ts:67](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/polyControl.ts#L67)
 
 ___
 
@@ -295,7 +280,7 @@ the normalized point
 
 #### Defined in
 
-[src/controls/util.ts:129](https://github.com/fabricjs/fabric.js/blob/078809453/src/controls/util.ts#L129)
+[src/controls/util.ts:129](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/util.ts#L129)
 
 ___
 
@@ -324,7 +309,7 @@ current object being transformed.
 
 #### Defined in
 
-[src/controls/polyControl.ts:44](https://github.com/fabricjs/fabric.js/blob/078809453/src/controls/polyControl.ts#L44)
+[src/controls/polyControl.ts:44](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/polyControl.ts#L44)
 
 ___
 
@@ -354,7 +339,7 @@ plus the addition of offsetY and offsetX.
 
 #### Defined in
 
-[src/controls/controlRendering.ts:37](https://github.com/fabricjs/fabric.js/blob/078809453/src/controls/controlRendering.ts#L37)
+[src/controls/controlRendering.ts:37](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/controlRendering.ts#L37)
 
 ___
 
@@ -384,7 +369,7 @@ plus the addition of offsetY and offsetX.
 
 #### Defined in
 
-[src/controls/controlRendering.ts:98](https://github.com/fabricjs/fabric.js/blob/078809453/src/controls/controlRendering.ts#L98)
+[src/controls/controlRendering.ts:98](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/controlRendering.ts#L98)
 
 ___
 
@@ -411,7 +396,7 @@ a valid css string for the cursor
 
 #### Defined in
 
-[src/EventTypeDefs.ts:40](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L40)
+[src/controls/rotate.ts:18](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/rotate.ts#L18)
 
 ___
 
@@ -434,7 +419,7 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:20](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L20)
+[src/controls/rotate.ts:84](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/rotate.ts#L84)
 
 ___
 
@@ -460,7 +445,7 @@ a valid css string for the cursor
 
 #### Defined in
 
-[src/EventTypeDefs.ts:40](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L40)
+[src/controls/scale.ts:85](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/scale.ts#L85)
 
 ___
 
@@ -486,7 +471,7 @@ an action name
 
 #### Defined in
 
-[src/EventTypeDefs.ts:40](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L40)
+[src/controls/scaleSkew.ts:23](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/scaleSkew.ts#L23)
 
 ___
 
@@ -512,7 +497,7 @@ a valid css string for the cursor
 
 #### Defined in
 
-[src/EventTypeDefs.ts:40](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L40)
+[src/controls/scaleSkew.ts:45](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/scaleSkew.ts#L45)
 
 ___
 
@@ -535,7 +520,7 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:20](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L20)
+[src/controls/scale.ts:264](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/scale.ts#L264)
 
 ___
 
@@ -558,7 +543,7 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:20](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L20)
+[src/controls/scale.ts:269](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/scale.ts#L269)
 
 ___
 
@@ -586,7 +571,7 @@ true if some change happened
 
 #### Defined in
 
-[src/EventTypeDefs.ts:20](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L20)
+[src/controls/scaleSkew.ts:63](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/scaleSkew.ts#L63)
 
 ___
 
@@ -609,7 +594,7 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:20](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L20)
+[src/controls/scale.ts:274](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/scale.ts#L274)
 
 ___
 
@@ -637,7 +622,7 @@ true if some change happened
 
 #### Defined in
 
-[src/EventTypeDefs.ts:20](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L20)
+[src/controls/scaleSkew.ts:83](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/scaleSkew.ts#L83)
 
 ___
 
@@ -663,7 +648,7 @@ a valid css string for the cursor
 
 #### Defined in
 
-[src/EventTypeDefs.ts:40](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L40)
+[src/controls/skew.ts:64](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/skew.ts#L64)
 
 ___
 
@@ -691,7 +676,7 @@ true if some change happened
 
 #### Defined in
 
-[src/EventTypeDefs.ts:20](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L20)
+[src/controls/skew.ts:218](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/skew.ts#L218)
 
 ___
 
@@ -719,7 +704,7 @@ true if some change happened
 
 #### Defined in
 
-[src/EventTypeDefs.ts:20](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L20)
+[src/controls/skew.ts:236](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/skew.ts#L236)
 
 ___
 
@@ -750,7 +735,7 @@ a function with an action handler signature
 
 #### Defined in
 
-[src/controls/wrapWithFireEvent.ts:14](https://github.com/fabricjs/fabric.js/blob/078809453/src/controls/wrapWithFireEvent.ts#L14)
+[src/controls/wrapWithFireEvent.ts:14](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/wrapWithFireEvent.ts#L14)
 
 ___
 
@@ -781,4 +766,4 @@ a function with an action handler signature
 
 #### Defined in
 
-[src/controls/wrapWithFixedAnchor.ts:9](https://github.com/fabricjs/fabric.js/blob/078809453/src/controls/wrapWithFixedAnchor.ts#L9)
+[src/controls/wrapWithFixedAnchor.ts:9](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/wrapWithFixedAnchor.ts#L9)

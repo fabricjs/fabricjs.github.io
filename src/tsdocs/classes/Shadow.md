@@ -22,7 +22,7 @@
 
 #### Defined in
 
-[src/Shadow.ts:89](https://github.com/fabricjs/fabric.js/blob/078809453/src/Shadow.ts#L89)
+[src/Shadow.ts:89](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Shadow.ts#L89)
 
 **new Shadow**(`svgAttribute`): [`Shadow`](/apidocs/classes/Shadow.md)
 
@@ -38,7 +38,7 @@
 
 #### Defined in
 
-[src/Shadow.ts:90](https://github.com/fabricjs/fabric.js/blob/078809453/src/Shadow.ts#L90)
+[src/Shadow.ts:90](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Shadow.ts#L90)
 
 ## Properties
 
@@ -56,7 +56,7 @@ Whether the shadow should affect stroke operations
 
 #### Defined in
 
-[src/Shadow.ts:64](https://github.com/fabricjs/fabric.js/blob/078809453/src/Shadow.ts#L64)
+[src/Shadow.ts:64](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Shadow.ts#L64)
 
 ___
 
@@ -68,7 +68,7 @@ Shadow blur
 
 #### Defined in
 
-[src/Shadow.ts:43](https://github.com/fabricjs/fabric.js/blob/078809453/src/Shadow.ts#L43)
+[src/Shadow.ts:43](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Shadow.ts#L43)
 
 ___
 
@@ -86,7 +86,7 @@ Shadow color
 
 #### Defined in
 
-[src/Shadow.ts:37](https://github.com/fabricjs/fabric.js/blob/078809453/src/Shadow.ts#L37)
+[src/Shadow.ts:37](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Shadow.ts#L37)
 
 ___
 
@@ -96,7 +96,7 @@ ___
 
 #### Defined in
 
-[src/Shadow.ts:82](https://github.com/fabricjs/fabric.js/blob/078809453/src/Shadow.ts#L82)
+[src/Shadow.ts:82](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Shadow.ts#L82)
 
 ___
 
@@ -114,7 +114,7 @@ Indicates whether toObject should include default values
 
 #### Defined in
 
-[src/Shadow.ts:71](https://github.com/fabricjs/fabric.js/blob/078809453/src/Shadow.ts#L71)
+[src/Shadow.ts:71](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Shadow.ts#L71)
 
 ___
 
@@ -134,7 +134,7 @@ default to false
 
 #### Defined in
 
-[src/Shadow.ts:80](https://github.com/fabricjs/fabric.js/blob/078809453/src/Shadow.ts#L80)
+[src/Shadow.ts:80](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Shadow.ts#L80)
 
 ___
 
@@ -152,7 +152,7 @@ Shadow horizontal offset
 
 #### Defined in
 
-[src/Shadow.ts:50](https://github.com/fabricjs/fabric.js/blob/078809453/src/Shadow.ts#L50)
+[src/Shadow.ts:50](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Shadow.ts#L50)
 
 ___
 
@@ -170,7 +170,7 @@ Shadow vertical offset
 
 #### Defined in
 
-[src/Shadow.ts:57](https://github.com/fabricjs/fabric.js/blob/078809453/src/Shadow.ts#L57)
+[src/Shadow.ts:57](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Shadow.ts#L57)
 
 ___
 
@@ -180,7 +180,7 @@ ___
 
 #### Defined in
 
-[src/Shadow.ts:84](https://github.com/fabricjs/fabric.js/blob/078809453/src/Shadow.ts#L84)
+[src/Shadow.ts:84](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Shadow.ts#L84)
 
 ___
 
@@ -192,7 +192,7 @@ Regex matching shadow offsetX, offsetY and blur (ex: "2px 2px 10px rgba(0,0,0,0.
 
 #### Defined in
 
-[src/Shadow.ts:212](https://github.com/fabricjs/fabric.js/blob/078809453/src/Shadow.ts#L212)
+[src/Shadow.ts:212](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Shadow.ts#L212)
 
 ## Methods
 
@@ -210,7 +210,7 @@ Object representation of a shadow instance
 
 #### Defined in
 
-[src/Shadow.ts:193](https://github.com/fabricjs/fabric.js/blob/078809453/src/Shadow.ts#L193)
+[src/Shadow.ts:193](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Shadow.ts#L193)
 
 ___
 
@@ -234,7 +234,7 @@ SVG representation of a shadow
 
 #### Defined in
 
-[src/Shadow.ts:138](https://github.com/fabricjs/fabric.js/blob/078809453/src/Shadow.ts#L138)
+[src/Shadow.ts:138](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Shadow.ts#L138)
 
 ___
 
@@ -256,7 +256,7 @@ http://www.w3.org/TR/css-text-decor-3/#text-shadow
 
 #### Defined in
 
-[src/Shadow.ts:129](https://github.com/fabricjs/fabric.js/blob/078809453/src/Shadow.ts#L129)
+[src/Shadow.ts:129](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Shadow.ts#L129)
 
 ___
 
@@ -285,4 +285,4 @@ Shadow object with color, offsetX, offsetY and blur
 
 #### Defined in
 
-[src/Shadow.ts:107](https://github.com/fabricjs/fabric.js/blob/078809453/src/Shadow.ts#L107)
+[src/Shadow.ts:107](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Shadow.ts#L107)

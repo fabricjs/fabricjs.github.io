@@ -25,7 +25,7 @@ Capitalized version of a string
 
 #### Defined in
 
-[src/util/lang_string.ts:9](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/lang_string.ts#L9)
+[src/util/lang_string.ts:9](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/lang_string.ts#L9)
 
 ___
 
@@ -49,7 +49,7 @@ Escaped version of a string
 
 #### Defined in
 
-[src/util/lang_string.ts:19](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/lang_string.ts#L19)
+[src/util/lang_string.ts:19](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/lang_string.ts#L19)
 
 ___
 
@@ -73,4 +73,4 @@ array containing the graphemes
 
 #### Defined in
 
-[src/util/lang_string.ts:32](https://github.com/fabricjs/fabric.js/blob/078809453/src/util/lang_string.ts#L32)
+[src/util/lang_string.ts:32](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/util/lang_string.ts#L32)

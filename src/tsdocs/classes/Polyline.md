@@ -68,7 +68,7 @@ var poly = new Polyline([
 
 #### Defined in
 
-[src/shapes/Polyline.ts:110](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Polyline.ts#L110)
+[src/shapes/Polyline.ts:113](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Polyline.ts#L113)
 
 ## Properties
 
@@ -83,6 +83,8 @@ maybe will be left in as an optimization since calculations may be slow
 
 **`Deprecated`**
 
+transient option soon to be removed in favor of a different design
+
 **`Default`**
 
 ```ts
@@ -91,7 +93,7 @@ false
 
 #### Defined in
 
-[src/shapes/Polyline.ts:54](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Polyline.ts#L54)
+[src/shapes/Polyline.ts:57](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Polyline.ts#L57)
 
 ___
 
@@ -101,7 +103,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Polyline.ts:56](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Polyline.ts#L56)
+[src/shapes/Polyline.ts:59](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Polyline.ts#L59)
 
 ___
 
@@ -111,7 +113,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Polyline.ts:83](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Polyline.ts#L83)
+[src/shapes/Polyline.ts:86](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Polyline.ts#L86)
 
 ___
 
@@ -129,7 +131,7 @@ Points array
 
 #### Defined in
 
-[src/shapes/Polyline.ts:43](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Polyline.ts#L43)
+[src/shapes/Polyline.ts:46](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Polyline.ts#L46)
 
 ___
 
@@ -139,7 +141,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Polyline.ts:89](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Polyline.ts#L89)
+[src/shapes/Polyline.ts:92](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Polyline.ts#L92)
 
 ___
 
@@ -149,7 +151,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Polyline.ts:85](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Polyline.ts#L85)
+[src/shapes/Polyline.ts:88](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Polyline.ts#L88)
 
 ___
 
@@ -168,7 +170,7 @@ Polyline
 
 #### Defined in
 
-[src/shapes/Polyline.ts:369](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Polyline.ts#L369)
+[src/shapes/Polyline.ts:383](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Polyline.ts#L383)
 
 ___
 
@@ -187,7 +189,7 @@ and refreshed at the next render
 
 #### Defined in
 
-[src/shapes/Polyline.ts:87](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Polyline.ts#L87)
+[src/shapes/Polyline.ts:90](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Polyline.ts#L90)
 
 ___
 
@@ -203,7 +205,7 @@ check if you really need to recalculate for all cases
 
 #### Defined in
 
-[src/shapes/Polyline.ts:72](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Polyline.ts#L72)
+[src/shapes/Polyline.ts:75](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Polyline.ts#L75)
 
 ___
 
@@ -217,7 +219,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Polyline.ts:58](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Polyline.ts#L58)
+[src/shapes/Polyline.ts:61](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Polyline.ts#L61)
 
 ___
 
@@ -237,7 +239,7 @@ to avoid doing that.
 
 #### Defined in
 
-[src/shapes/Polyline.ts:60](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Polyline.ts#L60)
+[src/shapes/Polyline.ts:63](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Polyline.ts#L63)
 
 ## Methods
 
@@ -269,7 +271,7 @@ Calculate the polygon bounding box
 
 #### Defined in
 
-[src/shapes/Polyline.ts:131](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Polyline.ts#L131)
+[src/shapes/Polyline.ts:134](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Polyline.ts#L134)
 
 ___
 
@@ -292,7 +294,7 @@ center point from element coordinates
 
 #### Defined in
 
-[src/shapes/Polyline.ts:190](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Polyline.ts#L190)
+[src/shapes/Polyline.ts:197](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Polyline.ts#L197)
 
 ___
 
@@ -312,7 +314,7 @@ stroke is taken in account in size
 
 #### Defined in
 
-[src/shapes/Polyline.ts:214](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Polyline.ts#L214)
+[src/shapes/Polyline.ts:228](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Polyline.ts#L228)
 
 ___
 
@@ -340,7 +342,7 @@ Though it is possible to pass `width` and `height` in `options`, doing so is ver
 
 #### Defined in
 
-[src/shapes/Polyline.ts:228](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Polyline.ts#L228)
+[src/shapes/Polyline.ts:242](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Polyline.ts#L242)
 
 ___
 
@@ -360,7 +362,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Polyline.ts:123](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Polyline.ts#L123)
+[src/shapes/Polyline.ts:126](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Polyline.ts#L126)
 
 ___
 
@@ -384,7 +386,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Polyline.ts:333](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Polyline.ts#L333)
+[src/shapes/Polyline.ts:347](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Polyline.ts#L347)
 
 ___
 
@@ -411,7 +413,7 @@ Recalculates dimensions when changing skew and scale
 
 #### Defined in
 
-[src/shapes/Polyline.ts:264](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Polyline.ts#L264)
+[src/shapes/Polyline.ts:278](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Polyline.ts#L278)
 
 ___
 
@@ -434,7 +436,7 @@ of the instance
 
 #### Defined in
 
-[src/shapes/Polyline.ts:304](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Polyline.ts#L304)
+[src/shapes/Polyline.ts:318](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Polyline.ts#L318)
 
 ___
 
@@ -456,7 +458,7 @@ complexity of this instance
 
 #### Defined in
 
-[src/shapes/Polyline.ts:357](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Polyline.ts#L357)
+[src/shapes/Polyline.ts:371](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Polyline.ts#L371)
 
 ___
 
@@ -470,7 +472,29 @@ ___
 
 #### Defined in
 
-[src/shapes/Polyline.ts:119](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Polyline.ts#L119)
+[src/shapes/Polyline.ts:122](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Polyline.ts#L122)
+
+___
+
+### isStrokeAccountedForInDimensions
+
+**isStrokeAccountedForInDimensions**(): `boolean`
+
+#### Returns
+
+`boolean`
+
+**`Deprecated`**
+
+intermidiate method to be removed, do not use
+
+#### Overrides
+
+[FabricObject](/apidocs/classes/FabricObject.md).[isStrokeAccountedForInDimensions](/apidocs/classes/FabricObject.md#isstrokeaccountedforindimensions)
+
+#### Defined in
+
+[src/shapes/Polyline.ts:221](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Polyline.ts#L221)
 
 ___
 
@@ -490,7 +514,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Polyline.ts:199](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Polyline.ts#L199)
+[src/shapes/Polyline.ts:206](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Polyline.ts#L206)
 
 ___
 
@@ -504,7 +528,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Polyline.ts:195](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Polyline.ts#L195)
+[src/shapes/Polyline.ts:202](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Polyline.ts#L202)
 
 ___
 
@@ -539,7 +563,7 @@ Object representation of an instance
 
 #### Defined in
 
-[src/shapes/Polyline.ts:289](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Polyline.ts#L289)
+[src/shapes/Polyline.ts:303](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Polyline.ts#L303)
 
 ___
 
@@ -569,7 +593,7 @@ Polyline
 
 #### Defined in
 
-[src/shapes/Polyline.ts:378](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Polyline.ts#L378)
+[src/shapes/Polyline.ts:392](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Polyline.ts#L392)
 
 ___
 
@@ -607,7 +631,7 @@ Polyline
 
 #### Defined in
 
-[src/shapes/Polyline.ts:406](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Polyline.ts#L406)
+[src/shapes/Polyline.ts:420](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Polyline.ts#L420)
 
 ___
 
@@ -625,4 +649,4 @@ ___
 
 #### Defined in
 
-[src/shapes/Polyline.ts:62](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Polyline.ts#L62)
+[src/shapes/Polyline.ts:65](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Polyline.ts#L65)

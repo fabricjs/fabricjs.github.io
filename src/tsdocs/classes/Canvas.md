@@ -33,7 +33,7 @@ SelectableCanvas.constructor
 
 #### Defined in
 
-[src/canvas/Canvas.ts:118](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L118)
+[src/canvas/Canvas.ts:114](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L114)
 
 ## Properties
 
@@ -61,7 +61,7 @@ SelectableCanvas.\_\_cleanupTask
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:166](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L166)
+[src/canvas/StaticCanvas.ts:157](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L157)
 
 ___
 
@@ -80,7 +80,7 @@ SelectableCanvas.\_absolutePointer
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:256](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L256)
+[src/canvas/SelectableCanvas.ts:256](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L256)
 
 ___
 
@@ -94,7 +94,7 @@ SelectableCanvas.\_activeObject
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:296](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L296)
+[src/canvas/SelectableCanvas.ts:296](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L296)
 
 ___
 
@@ -108,7 +108,7 @@ SelectableCanvas.\_activeSelection
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:297](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L297)
+[src/canvas/SelectableCanvas.ts:297](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L297)
 
 ___
 
@@ -125,7 +125,7 @@ SelectableCanvas.\_currentTransform
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:224](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L224)
+[src/canvas/SelectableCanvas.ts:224](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L224)
 
 ___
 
@@ -137,7 +137,7 @@ Holds a reference to an object on the canvas from where the drag operation start
 
 #### Defined in
 
-[src/canvas/Canvas.ts:103](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L103)
+[src/canvas/Canvas.ts:99](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L99)
 
 ___
 
@@ -149,7 +149,7 @@ Holds a reference to an object on the canvas that is receiving the drag over eve
 
 #### Defined in
 
-[src/canvas/Canvas.ts:96](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L96)
+[src/canvas/Canvas.ts:92](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L92)
 
 ___
 
@@ -166,7 +166,7 @@ inspect whether [_draggedoverTarget](/apidocs/classes/Canvas.md#_draggedovertarg
 
 #### Defined in
 
-[src/canvas/Canvas.ts:112](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L112)
+[src/canvas/Canvas.ts:108](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L108)
 
 ___
 
@@ -185,7 +185,7 @@ SelectableCanvas.\_groupSelector
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:234](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L234)
+[src/canvas/SelectableCanvas.ts:234](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L234)
 
 ___
 
@@ -201,7 +201,7 @@ SelectableCanvas.\_hoveredTarget
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:202](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L202)
+[src/canvas/SelectableCanvas.ts:202](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L202)
 
 ___
 
@@ -217,7 +217,7 @@ SelectableCanvas.\_hoveredTargets
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:209](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L209)
+[src/canvas/SelectableCanvas.ts:209](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L209)
 
 ___
 
@@ -227,7 +227,7 @@ ___
 
 #### Defined in
 
-[src/canvas/Canvas.ts:114](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L114)
+[src/canvas/Canvas.ts:110](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L110)
 
 ___
 
@@ -241,7 +241,7 @@ SelectableCanvas.\_isCurrentlyDrawing
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:294](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L294)
+[src/canvas/SelectableCanvas.ts:294](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L294)
 
 ___
 
@@ -255,7 +255,7 @@ SelectableCanvas.\_objects
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:140](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L140)
+[src/canvas/SelectableCanvas.ts:140](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L140)
 
 ___
 
@@ -271,7 +271,7 @@ SelectableCanvas.\_objectsToRender
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:216](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L216)
+[src/canvas/SelectableCanvas.ts:216](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L216)
 
 ___
 
@@ -292,7 +292,7 @@ SelectableCanvas.\_offset
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:157](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L157)
+[src/canvas/StaticCanvas.ts:148](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L148)
 
 ___
 
@@ -311,7 +311,7 @@ SelectableCanvas.\_pointer
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:265](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L265)
+[src/canvas/SelectableCanvas.ts:265](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L265)
 
 ___
 
@@ -329,7 +329,7 @@ SelectableCanvas.\_target
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:273](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L273)
+[src/canvas/SelectableCanvas.ts:273](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L273)
 
 ___
 
@@ -341,7 +341,7 @@ Holds a reference to a setTimeout timer for event synchronization
 
 #### Defined in
 
-[src/canvas/Canvas.ts:89](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L89)
+[src/canvas/Canvas.ts:85](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L85)
 
 ___
 
@@ -363,7 +363,7 @@ SelectableCanvas.allowTouchScrolling
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:117](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L117)
+[src/canvas/StaticCanvas.ts:112](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L112)
 
 ___
 
@@ -396,7 +396,7 @@ SelectableCanvas.altActionKey
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:148](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L148)
+[src/canvas/SelectableCanvas.ts:148](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L148)
 
 ___
 
@@ -432,13 +432,13 @@ SelectableCanvas.altSelectionKey
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:153](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L153)
+[src/canvas/SelectableCanvas.ts:153](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L153)
 
 ___
 
 ### backgroundColor
 
- **backgroundColor**: `string` \| [`TFiller`](/apidocs/modules.md#tfiller)
+ **backgroundColor**: `string` \| [`Pattern`](/apidocs/classes/Pattern.md) \| [`Gradient`](/apidocs/classes/Gradient.md)\<``"linear"``, ``"linear"``\> \| [`Gradient`](/apidocs/classes/Gradient.md)\<``"radial"``, ``"radial"``\>
 
 Background color of canvas instance.
 
@@ -458,7 +458,7 @@ SelectableCanvas.backgroundColor
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:92](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L92)
+[src/canvas/StaticCanvas.ts:87](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L87)
 
 ___
 
@@ -487,7 +487,7 @@ SelectableCanvas.backgroundImage
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:93](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L93)
+[src/canvas/StaticCanvas.ts:88](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L88)
 
 ___
 
@@ -521,7 +521,7 @@ SelectableCanvas.backgroundVpt
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:91](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L91)
+[src/canvas/StaticCanvas.ts:86](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L86)
 
 ___
 
@@ -554,7 +554,7 @@ SelectableCanvas.centeredKey
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:147](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L147)
+[src/canvas/SelectableCanvas.ts:147](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L147)
 
 ___
 
@@ -585,7 +585,7 @@ SelectableCanvas.centeredRotation
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:146](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L146)
+[src/canvas/SelectableCanvas.ts:146](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L146)
 
 ___
 
@@ -616,7 +616,7 @@ SelectableCanvas.centeredScaling
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:145](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L145)
+[src/canvas/SelectableCanvas.ts:145](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L145)
 
 ___
 
@@ -639,7 +639,7 @@ SelectableCanvas.clipPath
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:99](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L99)
+[src/canvas/StaticCanvas.ts:94](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L94)
 
 ___
 
@@ -669,7 +669,7 @@ SelectableCanvas.containerClass
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:167](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L167)
+[src/canvas/SelectableCanvas.ts:167](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L167)
 
 ___
 
@@ -686,7 +686,7 @@ SelectableCanvas.contextTopDirty
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:247](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L247)
+[src/canvas/SelectableCanvas.ts:247](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L247)
 
 ___
 
@@ -708,7 +708,7 @@ SelectableCanvas.controlsAboveOverlay
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:112](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L112)
+[src/canvas/StaticCanvas.ts:107](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L107)
 
 ___
 
@@ -734,7 +734,7 @@ SelectableCanvas.defaultCursor
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:163](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L163)
+[src/canvas/SelectableCanvas.ts:163](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L163)
 
 ___
 
@@ -751,7 +751,7 @@ SelectableCanvas.destroyed
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:148](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L148)
+[src/canvas/StaticCanvas.ts:139](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L139)
 
 ___
 
@@ -768,7 +768,7 @@ SelectableCanvas.disposed
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:155](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L155)
+[src/canvas/StaticCanvas.ts:146](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L146)
 
 ___
 
@@ -782,7 +782,7 @@ SelectableCanvas.elements
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:281](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L281)
+[src/canvas/SelectableCanvas.ts:281](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L281)
 
 ___
 
@@ -804,7 +804,7 @@ When the option is enabled, PointerEvent is used instead of TPointerEvent.
 
 #### Defined in
 
-[src/canvas/Canvas.ts:82](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L82)
+[src/canvas/Canvas.ts:78](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L78)
 
 ___
 
@@ -830,7 +830,7 @@ SelectableCanvas.enableRetinaScaling
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:106](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L106)
+[src/canvas/StaticCanvas.ts:101](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L101)
 
 ___
 
@@ -860,7 +860,7 @@ SelectableCanvas.fireMiddleClick
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:189](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L189)
+[src/canvas/SelectableCanvas.ts:189](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L189)
 
 ___
 
@@ -890,7 +890,7 @@ SelectableCanvas.fireRightClick
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:188](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L188)
+[src/canvas/SelectableCanvas.ts:188](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L188)
 
 ___
 
@@ -904,7 +904,7 @@ SelectableCanvas.freeDrawingBrush
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:295](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L295)
+[src/canvas/SelectableCanvas.ts:295](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L295)
 
 ___
 
@@ -930,7 +930,7 @@ SelectableCanvas.freeDrawingCursor
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:164](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L164)
+[src/canvas/SelectableCanvas.ts:164](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L164)
 
 ___
 
@@ -944,7 +944,7 @@ SelectableCanvas.hasLostContext
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:158](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L158)
+[src/canvas/StaticCanvas.ts:149](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L149)
 
 ___
 
@@ -965,7 +965,7 @@ SelectableCanvas.height
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:88](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L88)
+[src/canvas/StaticCanvas.ts:83](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L83)
 
 ___
 
@@ -991,7 +991,7 @@ SelectableCanvas.hoverCursor
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:161](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L161)
+[src/canvas/SelectableCanvas.ts:161](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L161)
 
 ___
 
@@ -1017,7 +1017,7 @@ SelectableCanvas.imageSmoothingEnabled
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:107](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L107)
+[src/canvas/StaticCanvas.ts:102](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L102)
 
 ___
 
@@ -1044,7 +1044,7 @@ SelectableCanvas.includeDefaultValues
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:101](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L101)
+[src/canvas/StaticCanvas.ts:96](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L96)
 
 ___
 
@@ -1072,7 +1072,7 @@ SelectableCanvas.isDrawingMode
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:182](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L182)
+[src/canvas/SelectableCanvas.ts:182](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L182)
 
 ___
 
@@ -1084,7 +1084,7 @@ Contains the id of the touch event that owns the fabric transform
 
 #### Defined in
 
-[src/canvas/Canvas.ts:80](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L80)
+[src/canvas/Canvas.ts:76](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L76)
 
 ___
 
@@ -1110,7 +1110,7 @@ SelectableCanvas.moveCursor
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:162](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L162)
+[src/canvas/SelectableCanvas.ts:162](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L162)
 
 ___
 
@@ -1124,7 +1124,7 @@ SelectableCanvas.nextRenderHandle
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:159](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L159)
+[src/canvas/StaticCanvas.ts:150](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L150)
 
 ___
 
@@ -1154,13 +1154,13 @@ SelectableCanvas.notAllowedCursor
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:165](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L165)
+[src/canvas/SelectableCanvas.ts:165](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L165)
 
 ___
 
 ### overlayColor
 
- **overlayColor**: `string` \| [`TFiller`](/apidocs/modules.md#tfiller)
+ **overlayColor**: `string` \| [`Pattern`](/apidocs/classes/Pattern.md) \| [`Gradient`](/apidocs/classes/Gradient.md)\<``"linear"``, ``"linear"``\> \| [`Gradient`](/apidocs/classes/Gradient.md)\<``"radial"``, ``"radial"``\>
 
 Overlay color of canvas instance.
 
@@ -1184,7 +1184,7 @@ SelectableCanvas.overlayColor
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:96](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L96)
+[src/canvas/StaticCanvas.ts:91](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L91)
 
 ___
 
@@ -1213,7 +1213,7 @@ SelectableCanvas.overlayImage
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:97](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L97)
+[src/canvas/StaticCanvas.ts:92](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L92)
 
 ___
 
@@ -1247,7 +1247,7 @@ SelectableCanvas.overlayVpt
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:95](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L95)
+[src/canvas/StaticCanvas.ts:90](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L90)
 
 ___
 
@@ -1273,7 +1273,7 @@ SelectableCanvas.perPixelTargetFind
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:170](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L170)
+[src/canvas/SelectableCanvas.ts:170](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L170)
 
 ___
 
@@ -1300,7 +1300,7 @@ SelectableCanvas.preserveObjectStacking
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:184](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L184)
+[src/canvas/SelectableCanvas.ts:184](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L184)
 
 ___
 
@@ -1331,7 +1331,7 @@ SelectableCanvas.renderOnAddRemove
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:104](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L104)
+[src/canvas/StaticCanvas.ts:99](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L99)
 
 ___
 
@@ -1357,7 +1357,7 @@ SelectableCanvas.selection
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:151](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L151)
+[src/canvas/SelectableCanvas.ts:151](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L151)
 
 ___
 
@@ -1383,7 +1383,7 @@ SelectableCanvas.selectionBorderColor
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:156](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L156)
+[src/canvas/SelectableCanvas.ts:156](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L156)
 
 ___
 
@@ -1409,7 +1409,7 @@ SelectableCanvas.selectionColor
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:154](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L154)
+[src/canvas/SelectableCanvas.ts:154](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L154)
 
 ___
 
@@ -1430,7 +1430,7 @@ SelectableCanvas.selectionDashArray
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:155](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L155)
+[src/canvas/SelectableCanvas.ts:155](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L155)
 
 ___
 
@@ -1456,13 +1456,13 @@ SelectableCanvas.selectionFullyContained
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:158](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L158)
+[src/canvas/SelectableCanvas.ts:158](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L158)
 
 ___
 
 ### selectionKey
 
- **selectionKey**: [`TOptionalModifierKey`](/apidocs/modules.md#toptionalmodifierkey) \| (``"altKey"`` \| ``"shiftKey"`` \| ``"ctrlKey"`` \| ``"metaKey"``)[]
+ **selectionKey**: `undefined` \| ``null`` \| ``"altKey"`` \| ``"shiftKey"`` \| ``"ctrlKey"`` \| ``"metaKey"`` \| (``"altKey"`` \| ``"shiftKey"`` \| ``"ctrlKey"`` \| ``"metaKey"``)[]
 
 Indicates which key or keys enable multiple click selection
 Pass value as a string or array of strings
@@ -1490,7 +1490,7 @@ SelectableCanvas.selectionKey
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:152](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L152)
+[src/canvas/SelectableCanvas.ts:152](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L152)
 
 ___
 
@@ -1516,7 +1516,7 @@ SelectableCanvas.selectionLineWidth
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:157](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L157)
+[src/canvas/SelectableCanvas.ts:157](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L157)
 
 ___
 
@@ -1546,7 +1546,7 @@ SelectableCanvas.skipOffscreen
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:105](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L105)
+[src/canvas/StaticCanvas.ts:100](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L100)
 
 ___
 
@@ -1576,7 +1576,7 @@ SelectableCanvas.skipTargetFind
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:172](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L172)
+[src/canvas/SelectableCanvas.ts:172](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L172)
 
 ___
 
@@ -1606,7 +1606,7 @@ SelectableCanvas.stopContextMenu
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:187](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L187)
+[src/canvas/SelectableCanvas.ts:187](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L187)
 
 ___
 
@@ -1633,7 +1633,7 @@ SelectableCanvas.svgViewportTransformation
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:942](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L942)
+[src/canvas/StaticCanvas.ts:930](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L930)
 
 ___
 
@@ -1659,7 +1659,7 @@ SelectableCanvas.targetFindTolerance
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:171](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L171)
+[src/canvas/SelectableCanvas.ts:171](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L171)
 
 ___
 
@@ -1675,7 +1675,7 @@ SelectableCanvas.targets
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:195](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L195)
+[src/canvas/SelectableCanvas.ts:195](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L195)
 
 ___
 
@@ -1685,7 +1685,7 @@ ___
 
 #### Defined in
 
-[src/canvas/Canvas.ts:116](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L116)
+[src/canvas/Canvas.ts:112](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L112)
 
 ___
 
@@ -1721,7 +1721,7 @@ SelectableCanvas.uniScaleKey
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:144](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L144)
+[src/canvas/SelectableCanvas.ts:144](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L144)
 
 ___
 
@@ -1752,7 +1752,7 @@ SelectableCanvas.uniformScaling
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:143](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L143)
+[src/canvas/SelectableCanvas.ts:143](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L143)
 
 ___
 
@@ -1764,14 +1764,12 @@ The transformation (a Canvas 2D API transform matrix) which focuses the viewport
 
 **`Example`**
 
-Default transform
 ```ts
 canvas.viewportTransform = [1, 0, 0, 1, 0, 0];
 ```
 
 **`Example`**
 
-Scale by 70% and translate toward bottom-right by 50, without skewing
 ```ts
 canvas.viewportTransform = [0.7, 0, 0, 0.7, 50, 50];
 ```
@@ -1792,7 +1790,7 @@ SelectableCanvas.viewportTransform
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:119](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L119)
+[src/canvas/StaticCanvas.ts:114](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L114)
 
 ___
 
@@ -1800,16 +1798,7 @@ ___
 
  **vptCoords**: [`TCornerPoint`](/apidocs/modules.md#tcornerpoint)
 
-Describe canvas element extension over design
-properties are tl,tr,bl,br.
-if canvas is not zoomed/panned those points are the four corner of canvas
-if canvas is viewportTransformed you those points indicate the extension
-of canvas element in plain untrasformed coordinates
-The coordinates get updated with
-
-**`Method`**
-
-calcViewportBoundaries.
+The viewport bounding box in scene plane coordinates, see [calcViewportBoundaries](/apidocs/classes/Canvas.md#calcviewportboundaries)
 
 #### Inherited from
 
@@ -1817,7 +1806,7 @@ SelectableCanvas.vptCoords
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:128](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L128)
+[src/canvas/StaticCanvas.ts:119](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L119)
 
 ___
 
@@ -1838,7 +1827,7 @@ SelectableCanvas.width
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:87](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L87)
+[src/canvas/StaticCanvas.ts:82](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L82)
 
 ___
 
@@ -1852,7 +1841,7 @@ SelectableCanvas.ownDefaults
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:275](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L275)
+[src/canvas/SelectableCanvas.ts:275](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L275)
 
 ## Accessors
 
@@ -1870,7 +1859,7 @@ SelectableCanvas.contextContainer
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:139](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L139)
+[src/canvas/StaticCanvas.ts:130](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L130)
 
 ___
 
@@ -1888,7 +1877,7 @@ SelectableCanvas.contextTop
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:285](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L285)
+[src/canvas/SelectableCanvas.ts:285](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L285)
 
 ___
 
@@ -1909,7 +1898,7 @@ SelectableCanvas.lowerCanvasEl
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:135](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L135)
+[src/canvas/StaticCanvas.ts:126](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L126)
 
 ___
 
@@ -1927,7 +1916,7 @@ SelectableCanvas.upperCanvasEl
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:282](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L282)
+[src/canvas/SelectableCanvas.ts:282](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L282)
 
 ___
 
@@ -1945,7 +1934,7 @@ SelectableCanvas.wrapperEl
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:288](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L288)
+[src/canvas/SelectableCanvas.ts:288](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L288)
 
 ## Methods
 
@@ -1970,7 +1959,7 @@ in on the container one.
 
 #### Defined in
 
-[src/canvas/Canvas.ts:1046](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L1046)
+[src/canvas/Canvas.ts:1023](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L1023)
 
 ___
 
@@ -1996,7 +1985,7 @@ In case of an image transformation only the top canvas will be rendered.
 
 #### Defined in
 
-[src/canvas/Canvas.ts:1192](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L1192)
+[src/canvas/Canvas.ts:1169](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L1169)
 
 ___
 
@@ -2020,7 +2009,7 @@ position in the image object and render the canvas on top.
 
 #### Defined in
 
-[src/canvas/Canvas.ts:786](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L786)
+[src/canvas/Canvas.ts:769](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L769)
 
 ___
 
@@ -2042,7 +2031,7 @@ Method that defines actions when an Event Mouse Wheel
 
 #### Defined in
 
-[src/canvas/Canvas.ts:1345](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L1345)
+[src/canvas/Canvas.ts:1320](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L1320)
 
 ___
 
@@ -2067,7 +2056,7 @@ SelectableCanvas.\_\_serializeBgOverlay
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:896](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L896)
+[src/canvas/StaticCanvas.ts:884](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L884)
 
 ___
 
@@ -2094,7 +2083,7 @@ ___
 
 #### Defined in
 
-[src/canvas/Canvas.ts:895](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L895)
+[src/canvas/Canvas.ts:872](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L872)
 
 ___
 
@@ -2114,7 +2103,7 @@ ___
 
 #### Defined in
 
-[src/canvas/Canvas.ts:1175](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L1175)
+[src/canvas/Canvas.ts:1152](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L1152)
 
 ___
 
@@ -2136,7 +2125,7 @@ Cache common information needed during event processing
 
 #### Defined in
 
-[src/canvas/Canvas.ts:1158](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L1158)
+[src/canvas/Canvas.ts:1135](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L1135)
 
 ___
 
@@ -2161,7 +2150,7 @@ SelectableCanvas.\_centerObject
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:794](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L794)
+[src/canvas/StaticCanvas.ts:782](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L782)
 
 ___
 
@@ -2191,7 +2180,7 @@ SelectableCanvas.\_checkTarget
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:806](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L806)
+[src/canvas/SelectableCanvas.ts:806](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L806)
 
 ___
 
@@ -2214,7 +2203,7 @@ SelectableCanvas.\_chooseObjectsToRender
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:358](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L358)
+[src/canvas/SelectableCanvas.ts:358](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L358)
 
 ___
 
@@ -2232,7 +2221,7 @@ SelectableCanvas.\_createCacheCanvas
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:991](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L991)
+[src/canvas/SelectableCanvas.ts:991](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L991)
 
 ___
 
@@ -2248,7 +2237,7 @@ This is the functional part of discardActiveObject.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `e?` | [`TPointerEvent`](/apidocs/modules.md#tpointerevent) | Event (passed along when firing "object:deselected") |
+| `e?` | `MouseEvent` \| `TouchEvent` \| `PointerEvent` | Event (passed along when firing "object:deselected") |
 | `object?` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | the next object to set as active, reason why we are discarding this |
 
 #### Returns
@@ -2263,7 +2252,7 @@ SelectableCanvas.\_discardActiveObject
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:1166](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L1166)
+[src/canvas/SelectableCanvas.ts:1166](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L1166)
 
 ___
 
@@ -2287,7 +2276,7 @@ SelectableCanvas.\_drawSelection
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:663](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L663)
+[src/canvas/SelectableCanvas.ts:663](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L663)
 
 ___
 
@@ -2307,7 +2296,7 @@ ___
 
 #### Defined in
 
-[src/canvas/Canvas.ts:963](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L963)
+[src/canvas/Canvas.ts:940](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L940)
 
 ___
 
@@ -2330,7 +2319,7 @@ Manage the dragEnter, dragLeave events for the fabric objects on the canvas
 
 #### Defined in
 
-[src/canvas/Canvas.ts:1263](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L1263)
+[src/canvas/Canvas.ts:1240](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L1240)
 
 ___
 
@@ -2353,7 +2342,7 @@ Manage the mouseout, mouseover events for the fabric object on the canvas
 
 #### Defined in
 
-[src/canvas/Canvas.ts:1234](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L1234)
+[src/canvas/Canvas.ts:1211](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L1211)
 
 ___
 
@@ -2368,7 +2357,7 @@ Compares the old activeObject with the current one and fires correct events
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `oldObjects` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] | old activeObject |
-| `e?` | [`TPointerEvent`](/apidocs/modules.md#tpointerevent) | mouse event triggering the selection events |
+| `e?` | `MouseEvent` \| `TouchEvent` \| `PointerEvent` | mouse event triggering the selection events |
 
 #### Returns
 
@@ -2380,7 +2369,7 @@ SelectableCanvas.\_fireSelectionEvents
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:1061](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L1061)
+[src/canvas/SelectableCanvas.ts:1061](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L1061)
 
 ___
 
@@ -2396,7 +2385,7 @@ return an event prefix pointer or mouse.
 
 #### Defined in
 
-[src/canvas/Canvas.ts:158](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L158)
+[src/canvas/Canvas.ts:154](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L154)
 
 ___
 
@@ -2432,7 +2421,7 @@ SelectableCanvas.\_getOriginFromCorner
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:552](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L552)
+[src/canvas/SelectableCanvas.ts:552](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L552)
 
 ___
 
@@ -2461,7 +2450,7 @@ Handle event firing for target and subtargets
 
 #### Defined in
 
-[src/canvas/Canvas.ts:917](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L917)
+[src/canvas/Canvas.ts:894](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L894)
 
 ___
 
@@ -2483,7 +2472,7 @@ Determines if an event has the id of the event that is considered main
 
 #### Defined in
 
-[src/canvas/Canvas.ts:581](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L581)
+[src/canvas/Canvas.ts:573](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L573)
 
 ___
 
@@ -2501,7 +2490,7 @@ SelectableCanvas.\_isRetinaScaling
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:244](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L244)
+[src/canvas/StaticCanvas.ts:235](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L235)
 
 ___
 
@@ -2527,7 +2516,7 @@ SelectableCanvas.\_isSelectionKeyPressed
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:470](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L470)
+[src/canvas/SelectableCanvas.ts:470](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L470)
 
 ___
 
@@ -2547,7 +2536,7 @@ ___
 
 #### Defined in
 
-[src/canvas/Canvas.ts:532](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L532)
+[src/canvas/Canvas.ts:524](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L524)
 
 ___
 
@@ -2567,7 +2556,7 @@ ___
 
 #### Defined in
 
-[src/canvas/Canvas.ts:550](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L550)
+[src/canvas/Canvas.ts:542](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L542)
 
 ___
 
@@ -2590,7 +2579,7 @@ https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API/Drag_ope
 
 #### Defined in
 
-[src/canvas/Canvas.ts:357](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L357)
+[src/canvas/Canvas.ts:349](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L349)
 
 ___
 
@@ -2612,7 +2601,7 @@ fire `dragleave` on `dragover` targets
 
 #### Defined in
 
-[src/canvas/Canvas.ts:463](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L463)
+[src/canvas/Canvas.ts:455](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L455)
 
 ___
 
@@ -2634,7 +2623,7 @@ fire `dragleave` on `dragover` targets
 
 #### Defined in
 
-[src/canvas/Canvas.ts:481](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L481)
+[src/canvas/Canvas.ts:473](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L473)
 
 ___
 
@@ -2657,7 +2646,7 @@ https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API/Drag_ope
 
 #### Defined in
 
-[src/canvas/Canvas.ts:418](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L418)
+[src/canvas/Canvas.ts:410](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L410)
 
 ___
 
@@ -2679,7 +2668,7 @@ fire `drag` event on canvas and drag source
 
 #### Defined in
 
-[src/canvas/Canvas.ts:385](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L385)
+[src/canvas/Canvas.ts:377](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L377)
 
 ___
 
@@ -2701,7 +2690,7 @@ supports native like text dragging
 
 #### Defined in
 
-[src/canvas/Canvas.ts:288](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L288)
+[src/canvas/Canvas.ts:283](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L283)
 
 ___
 
@@ -2726,7 +2715,7 @@ to handle event handlers ordering, use `drop:before`
 
 #### Defined in
 
-[src/canvas/Canvas.ts:507](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L507)
+[src/canvas/Canvas.ts:499](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L499)
 
 ___
 
@@ -2746,7 +2735,7 @@ ___
 
 #### Defined in
 
-[src/canvas/Canvas.ts:637](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L637)
+[src/canvas/Canvas.ts:629](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L629)
 
 ___
 
@@ -2766,7 +2755,7 @@ ___
 
 #### Defined in
 
-[src/canvas/Canvas.ts:989](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L989)
+[src/canvas/Canvas.ts:966](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L966)
 
 ___
 
@@ -2786,7 +2775,7 @@ ___
 
 #### Defined in
 
-[src/canvas/Canvas.ts:266](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L266)
+[src/canvas/Canvas.ts:261](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L261)
 
 ___
 
@@ -2806,7 +2795,7 @@ ___
 
 #### Defined in
 
-[src/canvas/Canvas.ts:734](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L734)
+[src/canvas/Canvas.ts:726](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L726)
 
 ___
 
@@ -2826,7 +2815,7 @@ ___
 
 #### Defined in
 
-[src/canvas/Canvas.ts:1006](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L1006)
+[src/canvas/Canvas.ts:983](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L983)
 
 ___
 
@@ -2846,7 +2835,7 @@ ___
 
 #### Defined in
 
-[src/canvas/Canvas.ts:245](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L245)
+[src/canvas/Canvas.ts:241](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L241)
 
 ___
 
@@ -2866,7 +2855,7 @@ ___
 
 #### Defined in
 
-[src/canvas/Canvas.ts:703](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L703)
+[src/canvas/Canvas.ts:695](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L695)
 
 ___
 
@@ -2886,7 +2875,7 @@ ___
 
 #### Defined in
 
-[src/canvas/Canvas.ts:1024](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L1024)
+[src/canvas/Canvas.ts:1001](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L1001)
 
 ___
 
@@ -2906,7 +2895,7 @@ ___
 
 #### Defined in
 
-[src/canvas/Canvas.ts:237](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L237)
+[src/canvas/Canvas.ts:233](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L233)
 
 ___
 
@@ -2930,7 +2919,7 @@ SelectableCanvas.\_onObjectAdded
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:321](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L321)
+[src/canvas/SelectableCanvas.ts:321](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L321)
 
 ___
 
@@ -2954,7 +2943,7 @@ SelectableCanvas.\_onObjectRemoved
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:330](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L330)
+[src/canvas/SelectableCanvas.ts:330](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L330)
 
 ___
 
@@ -2968,7 +2957,7 @@ ___
 
 #### Defined in
 
-[src/canvas/Canvas.ts:750](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L750)
+[src/canvas/Canvas.ts:741](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L741)
 
 ___
 
@@ -2986,7 +2975,7 @@ SelectableCanvas.\_onStackOrderChanged
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:348](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L348)
+[src/canvas/SelectableCanvas.ts:348](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L348)
 
 ___
 
@@ -3006,7 +2995,7 @@ ___
 
 #### Defined in
 
-[src/canvas/Canvas.ts:662](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L662)
+[src/canvas/Canvas.ts:654](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L654)
 
 ___
 
@@ -3026,7 +3015,7 @@ ___
 
 #### Defined in
 
-[src/canvas/Canvas.ts:603](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L603)
+[src/canvas/Canvas.ts:595](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L595)
 
 ___
 
@@ -3048,7 +3037,7 @@ ___
 
 #### Defined in
 
-[src/canvas/Canvas.ts:1381](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L1381)
+[src/canvas/Canvas.ts:1356](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L1356)
 
 ___
 
@@ -3076,7 +3065,7 @@ SelectableCanvas.\_realizeGroupTransformOnObject
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:1296](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L1296)
+[src/canvas/SelectableCanvas.ts:1296](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L1296)
 
 ___
 
@@ -3100,7 +3089,7 @@ SelectableCanvas.\_renderBackground
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:686](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L686)
+[src/canvas/StaticCanvas.ts:674](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L674)
 
 ___
 
@@ -3125,7 +3114,7 @@ SelectableCanvas.\_renderBackgroundOrOverlay
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:634](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L634)
+[src/canvas/StaticCanvas.ts:622](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L622)
 
 ___
 
@@ -3151,7 +3140,7 @@ Doing so will render the correct effect for all cases including an overlap betwe
 
 #### Defined in
 
-[src/canvas/Canvas.ts:315](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L315)
+[src/canvas/Canvas.ts:307](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L307)
 
 ___
 
@@ -3176,7 +3165,7 @@ SelectableCanvas.\_renderObjects
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:623](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L623)
+[src/canvas/StaticCanvas.ts:611](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L611)
 
 ___
 
@@ -3200,7 +3189,7 @@ SelectableCanvas.\_renderOverlay
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:694](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L694)
+[src/canvas/StaticCanvas.ts:682](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L682)
 
 ___
 
@@ -3216,7 +3205,7 @@ reset cache form common information needed during event processing
 
 #### Defined in
 
-[src/canvas/Canvas.ts:1147](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L1147)
+[src/canvas/Canvas.ts:1124](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L1124)
 
 ___
 
@@ -3245,7 +3234,7 @@ SelectableCanvas.\_searchPossibleTargets
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:837](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L837)
+[src/canvas/SelectableCanvas.ts:837](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L837)
 
 ___
 
@@ -3270,7 +3259,7 @@ SelectableCanvas.\_set
 
 #### Defined in
 
-[src/CommonMethods.ts:38](https://github.com/fabricjs/fabric.js/blob/078809453/src/CommonMethods.ts#L38)
+[src/CommonMethods.ts:38](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/CommonMethods.ts#L38)
 
 ___
 
@@ -3287,7 +3276,7 @@ This is the functional part of setActiveObject.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | to set as active |
-| `e?` | [`TPointerEvent`](/apidocs/modules.md#tpointerevent) | Event (passed along when firing "object:selected") |
+| `e?` | `MouseEvent` \| `TouchEvent` \| `PointerEvent` | Event (passed along when firing "object:selected") |
 
 #### Returns
 
@@ -3301,7 +3290,7 @@ SelectableCanvas.\_setActiveObject
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:1136](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L1136)
+[src/canvas/SelectableCanvas.ts:1136](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L1136)
 
 ___
 
@@ -3325,7 +3314,7 @@ Note: very buggy in Opera
 
 #### Defined in
 
-[src/canvas/Canvas.ts:1409](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L1409)
+[src/canvas/Canvas.ts:1384](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L1384)
 
 ___
 
@@ -3352,7 +3341,7 @@ SelectableCanvas.\_setDimensionsImpl
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:978](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L978)
+[src/canvas/SelectableCanvas.ts:978](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L978)
 
 ___
 
@@ -3376,7 +3365,7 @@ SelectableCanvas.\_setObject
 
 #### Defined in
 
-[src/CommonMethods.ts:18](https://github.com/fabricjs/fabric.js/blob/078809453/src/CommonMethods.ts#L18)
+[src/CommonMethods.ts:18](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/CommonMethods.ts#L18)
 
 ___
 
@@ -3402,7 +3391,7 @@ SelectableCanvas.\_setOptions
 
 #### Defined in
 
-[src/CommonMethods.ts:9](https://github.com/fabricjs/fabric.js/blob/078809453/src/CommonMethods.ts#L9)
+[src/CommonMethods.ts:9](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/CommonMethods.ts#L9)
 
 ___
 
@@ -3431,7 +3420,7 @@ SelectableCanvas.\_setSVGBgOverlayColor
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1199](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L1199)
+[src/canvas/StaticCanvas.ts:1187](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L1187)
 
 ___
 
@@ -3457,7 +3446,7 @@ SelectableCanvas.\_setSVGBgOverlayImage
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1184](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L1184)
+[src/canvas/StaticCanvas.ts:1172](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L1172)
 
 ___
 
@@ -3482,7 +3471,7 @@ SelectableCanvas.\_setSVGHeader
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1023](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L1023)
+[src/canvas/StaticCanvas.ts:1011](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L1011)
 
 ___
 
@@ -3508,7 +3497,7 @@ SelectableCanvas.\_setSVGObject
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:1326](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L1326)
+[src/canvas/SelectableCanvas.ts:1326](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L1326)
 
 ___
 
@@ -3533,7 +3522,7 @@ SelectableCanvas.\_setSVGObjects
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1160](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L1160)
+[src/canvas/StaticCanvas.ts:1148](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L1148)
 
 ___
 
@@ -3558,7 +3547,7 @@ SelectableCanvas.\_setSVGPreamble
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1007](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L1007)
+[src/canvas/StaticCanvas.ts:995](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L995)
 
 ___
 
@@ -3584,7 +3573,7 @@ SelectableCanvas.\_setupCurrentTransform
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:582](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L582)
+[src/canvas/SelectableCanvas.ts:582](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L582)
 
 ___
 
@@ -3609,13 +3598,13 @@ SelectableCanvas.\_shouldClearSelection
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:487](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L487)
+[src/canvas/SelectableCanvas.ts:487](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L487)
 
 ___
 
 ### \_shouldRender
 
-**_shouldRender**(`target`): `boolean`
+**_shouldRender**(`target`): `undefined` \| `boolean`
 
 Decides whether the canvas should be redrawn in mouseup and mousedown events.
 
@@ -3627,11 +3616,11 @@ Decides whether the canvas should be redrawn in mouseup and mousedown events.
 
 #### Returns
 
-`boolean`
+`undefined` \| `boolean`
 
 #### Defined in
 
-[src/canvas/Canvas.ts:760](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L760)
+[src/canvas/Canvas.ts:751](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L751)
 
 ___
 
@@ -3657,7 +3646,7 @@ SelectableCanvas.\_toObject
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:1274](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L1274)
+[src/canvas/SelectableCanvas.ts:1274](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L1274)
 
 ___
 
@@ -3682,7 +3671,7 @@ SelectableCanvas.\_toObjectMethod
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:849](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L849)
+[src/canvas/StaticCanvas.ts:837](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L837)
 
 ___
 
@@ -3702,7 +3691,7 @@ ___
 
 #### Defined in
 
-[src/canvas/Canvas.ts:1355](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L1355)
+[src/canvas/Canvas.ts:1330](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L1330)
 
 ___
 
@@ -3728,7 +3717,7 @@ SelectableCanvas.absolutePan
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:417](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L417)
+[src/canvas/StaticCanvas.ts:408](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L408)
 
 ___
 
@@ -3752,7 +3741,7 @@ SelectableCanvas.add
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:198](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L198)
+[src/canvas/StaticCanvas.ts:189](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L189)
 
 ___
 
@@ -3773,7 +3762,7 @@ ___
 
 #### Defined in
 
-[src/canvas/Canvas.ts:162](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L162)
+[src/canvas/Canvas.ts:158](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L158)
 
 ___
 
@@ -3806,7 +3795,7 @@ SelectableCanvas.bringObjectForward
 
 #### Defined in
 
-[src/Collection.ts:232](https://github.com/fabricjs/fabric.js/blob/078809453/src/Collection.ts#L232)
+[src/Collection.ts:240](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Collection.ts#L240)
 
 ___
 
@@ -3835,7 +3824,7 @@ SelectableCanvas.bringObjectToFront
 
 #### Defined in
 
-[src/Collection.ts:186](https://github.com/fabricjs/fabric.js/blob/078809453/src/Collection.ts#L186)
+[src/Collection.ts:194](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Collection.ts#L194)
 
 ___
 
@@ -3861,7 +3850,7 @@ SelectableCanvas.calcOffset
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:260](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L260)
+[src/canvas/StaticCanvas.ts:251](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L251)
 
 ___
 
@@ -3870,16 +3859,11 @@ ___
 **calcViewportBoundaries**(): [`TCornerPoint`](/apidocs/modules.md#tcornerpoint)
 
 Calculate the position of the 4 corner of canvas with current viewportTransform.
-helps to determinate when an object is in the current rendering viewport using
-object absolute coordinates ( aCoords )
+helps to determinate when an object is in the current rendering viewport
 
 #### Returns
 
 [`TCornerPoint`](/apidocs/modules.md#tcornerpoint)
-
-points.tl
-
-**`Chainable`**
 
 #### Inherited from
 
@@ -3887,7 +3871,7 @@ SelectableCanvas.calcViewportBoundaries
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:517](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L517)
+[src/canvas/StaticCanvas.ts:505](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L505)
 
 ___
 
@@ -3905,7 +3889,7 @@ SelectableCanvas.cancelRequestedRender
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:535](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L535)
+[src/canvas/StaticCanvas.ts:523](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L523)
 
 ___
 
@@ -3931,7 +3915,7 @@ SelectableCanvas.centerObject
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:744](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L744)
+[src/canvas/StaticCanvas.ts:732](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L732)
 
 ___
 
@@ -3957,7 +3941,7 @@ SelectableCanvas.centerObjectH
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:722](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L722)
+[src/canvas/StaticCanvas.ts:710](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L710)
 
 ___
 
@@ -3983,7 +3967,7 @@ SelectableCanvas.centerObjectV
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:733](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L733)
+[src/canvas/StaticCanvas.ts:721](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L721)
 
 ___
 
@@ -4003,7 +3987,7 @@ SelectableCanvas.clear
 
 #### Defined in
 
-[src/canvas/Canvas.ts:1585](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L1585)
+[src/canvas/Canvas.ts:1564](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L1564)
 
 ___
 
@@ -4029,7 +4013,7 @@ SelectableCanvas.clearContext
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:449](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L449)
+[src/canvas/StaticCanvas.ts:440](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L440)
 
 ___
 
@@ -4055,7 +4039,7 @@ SelectableCanvas.clone
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1315](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L1315)
+[src/canvas/StaticCanvas.ts:1303](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L1303)
 
 ___
 
@@ -4076,7 +4060,7 @@ SelectableCanvas.cloneWithoutData
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1325](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L1325)
+[src/canvas/StaticCanvas.ts:1313](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L1313)
 
 ___
 
@@ -4090,11 +4074,11 @@ This is meant to work with selection. Is not a generic method.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `bbox` | [`TBBox`](/apidocs/modules.md#tbbox) | a bounding box in scene coordinates |
-| `options` | `Object` | an object with includeIntersecting |
-| `options.includeIntersecting?` | `boolean` | - |
+| Name | Type | Default value | Description |
+| :------ | :------ | :------ | :------ |
+| `bbox` | [`TBBox`](/apidocs/modules.md#tbbox) | `undefined` | a bounding box in scene coordinates |
+| `options` | `Object` | `{}` | an object with includeIntersecting |
+| `options.includeIntersecting?` | `boolean` | `true` | - |
 
 #### Returns
 
@@ -4108,7 +4092,7 @@ SelectableCanvas.collectObjects
 
 #### Defined in
 
-[src/Collection.ts:318](https://github.com/fabricjs/fabric.js/blob/078809453/src/Collection.ts#L318)
+[src/Collection.ts:326](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Collection.ts#L326)
 
 ___
 
@@ -4130,7 +4114,7 @@ SelectableCanvas.complexity
 
 #### Defined in
 
-[src/Collection.ts:157](https://github.com/fabricjs/fabric.js/blob/078809453/src/Collection.ts#L157)
+[src/Collection.ts:165](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Collection.ts#L165)
 
 ___
 
@@ -4161,7 +4145,7 @@ SelectableCanvas.contains
 
 #### Defined in
 
-[src/Collection.ts:140](https://github.com/fabricjs/fabric.js/blob/078809453/src/Collection.ts#L140)
+[src/Collection.ts:148](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Collection.ts#L148)
 
 ___
 
@@ -4185,7 +4169,7 @@ SelectableCanvas.createSVGClipPathMarkup
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1068](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L1068)
+[src/canvas/StaticCanvas.ts:1056](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L1056)
 
 ___
 
@@ -4207,7 +4191,7 @@ SelectableCanvas.createSVGFontFacesMarkup
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1111](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L1111)
+[src/canvas/StaticCanvas.ts:1099](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L1099)
 
 ___
 
@@ -4227,7 +4211,7 @@ SelectableCanvas.createSVGRefElementsMarkup
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1083](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L1083)
+[src/canvas/StaticCanvas.ts:1071](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L1071)
 
 ___
 
@@ -4247,7 +4231,7 @@ SelectableCanvas.destroy
 
 #### Defined in
 
-[src/canvas/Canvas.ts:1593](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L1593)
+[src/canvas/Canvas.ts:1572](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L1572)
 
 ___
 
@@ -4264,7 +4248,7 @@ e param does not have any application.
 
 | Name | Type |
 | :------ | :------ |
-| `e?` | [`TPointerEvent`](/apidocs/modules.md#tpointerevent) |
+| `e?` | `MouseEvent` \| `TouchEvent` \| `PointerEvent` |
 
 #### Returns
 
@@ -4278,7 +4262,7 @@ SelectableCanvas.discardActiveObject
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:1199](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L1199)
+[src/canvas/SelectableCanvas.ts:1199](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L1199)
 
 ___
 
@@ -4304,7 +4288,7 @@ SelectableCanvas.dispose
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1441](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L1441)
+[src/canvas/StaticCanvas.ts:1429](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L1429)
 
 ___
 
@@ -4331,7 +4315,7 @@ SelectableCanvas.drawClipPathOnCanvas
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:598](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L598)
+[src/canvas/StaticCanvas.ts:586](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L586)
 
 ___
 
@@ -4357,7 +4341,7 @@ SelectableCanvas.drawControls
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:1263](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L1263)
+[src/canvas/SelectableCanvas.ts:1263](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L1263)
 
 ___
 
@@ -4381,7 +4365,7 @@ because of some other event ( a press of key combination, or something that bloc
 
 #### Defined in
 
-[src/canvas/Canvas.ts:949](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L949)
+[src/canvas/Canvas.ts:926](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L926)
 
 ___
 
@@ -4409,7 +4393,7 @@ Override at will
 
 #### Defined in
 
-[src/canvas/Canvas.ts:400](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L400)
+[src/canvas/Canvas.ts:392](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L392)
 
 ___
 
@@ -4435,7 +4419,7 @@ SelectableCanvas.findNewLowerIndex
 
 #### Defined in
 
-[src/Collection.ts:264](https://github.com/fabricjs/fabric.js/blob/078809453/src/Collection.ts#L264)
+[src/Collection.ts:272](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Collection.ts#L272)
 
 ___
 
@@ -4461,7 +4445,7 @@ SelectableCanvas.findNewUpperIndex
 
 #### Defined in
 
-[src/Collection.ts:287](https://github.com/fabricjs/fabric.js/blob/078809453/src/Collection.ts#L287)
+[src/Collection.ts:295](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Collection.ts#L295)
 
 ___
 
@@ -4491,7 +4475,7 @@ SelectableCanvas.findTarget
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:707](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L707)
+[src/canvas/SelectableCanvas.ts:707](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L707)
 
 ___
 
@@ -4524,7 +4508,7 @@ SelectableCanvas.fire
 
 #### Defined in
 
-[src/Observable.ts:159](https://github.com/fabricjs/fabric.js/blob/078809453/src/Observable.ts#L159)
+[src/Observable.ts:159](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Observable.ts#L159)
 
 ___
 
@@ -4553,7 +4537,7 @@ Manage the synthetic in/out events for the fabric objects on the canvas
 
 #### Defined in
 
-[src/canvas/Canvas.ts:1297](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L1297)
+[src/canvas/Canvas.ts:1274](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L1274)
 
 ___
 
@@ -4581,7 +4565,7 @@ SelectableCanvas.forEachObject
 
 #### Defined in
 
-[src/Collection.ts:83](https://github.com/fabricjs/fabric.js/blob/078809453/src/Collection.ts#L83)
+[src/Collection.ts:91](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Collection.ts#L91)
 
 ___
 
@@ -4609,7 +4593,7 @@ SelectableCanvas.get
 
 #### Defined in
 
-[src/CommonMethods.ts:59](https://github.com/fabricjs/fabric.js/blob/078809453/src/CommonMethods.ts#L59)
+[src/CommonMethods.ts:59](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/CommonMethods.ts#L59)
 
 ___
 
@@ -4631,7 +4615,7 @@ SelectableCanvas.getActiveObject
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:1028](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L1028)
+[src/canvas/SelectableCanvas.ts:1028](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L1028)
 
 ___
 
@@ -4653,7 +4637,7 @@ SelectableCanvas.getActiveObjects
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:1043](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L1043)
+[src/canvas/SelectableCanvas.ts:1043](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L1043)
 
 ___
 
@@ -4673,7 +4657,7 @@ SelectableCanvas.getActiveSelection
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:1035](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L1035)
+[src/canvas/SelectableCanvas.ts:1035](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L1035)
 
 ___
 
@@ -4705,7 +4689,7 @@ SelectableCanvas.getCenter
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:704](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L704)
+[src/canvas/StaticCanvas.ts:692](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L692)
 
 ___
 
@@ -4725,7 +4709,7 @@ SelectableCanvas.getCenterPoint
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:715](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L715)
+[src/canvas/StaticCanvas.ts:703](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L703)
 
 ___
 
@@ -4745,7 +4729,7 @@ SelectableCanvas.getContext
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:457](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L457)
+[src/canvas/StaticCanvas.ts:448](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L448)
 
 ___
 
@@ -4765,7 +4749,7 @@ SelectableCanvas.getElement
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:441](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L441)
+[src/canvas/StaticCanvas.ts:432](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L432)
 
 ___
 
@@ -4785,7 +4769,7 @@ SelectableCanvas.getHeight
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:276](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L276)
+[src/canvas/StaticCanvas.ts:267](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L267)
 
 ___
 
@@ -4811,7 +4795,7 @@ SelectableCanvas.getObjects
 
 #### Defined in
 
-[src/Collection.ts:100](https://github.com/fabricjs/fabric.js/blob/078809453/src/Collection.ts#L100)
+[src/Collection.ts:108](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Collection.ts#L108)
 
 ___
 
@@ -4843,7 +4827,7 @@ SelectableCanvas.getPointer
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:933](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L933)
+[src/canvas/SelectableCanvas.ts:933](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L933)
 
 ___
 
@@ -4866,7 +4850,7 @@ returns either the pointerId or the identifier or 0 for the mouse event
 
 #### Defined in
 
-[src/canvas/Canvas.ts:562](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L562)
+[src/canvas/Canvas.ts:554](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L554)
 
 ___
 
@@ -4886,7 +4870,7 @@ SelectableCanvas.getRetinaScaling
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:252](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L252)
+[src/canvas/StaticCanvas.ts:243](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L243)
 
 ___
 
@@ -4923,7 +4907,7 @@ SelectableCanvas.getScenePoint
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:916](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L916)
+[src/canvas/SelectableCanvas.ts:916](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L916)
 
 ___
 
@@ -4945,7 +4929,7 @@ SelectableCanvas.getSelectionContext
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:1012](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L1012)
+[src/canvas/SelectableCanvas.ts:1012](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L1012)
 
 ___
 
@@ -4965,7 +4949,7 @@ SelectableCanvas.getSelectionElement
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:1020](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L1020)
+[src/canvas/SelectableCanvas.ts:1020](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L1020)
 
 ___
 
@@ -4985,7 +4969,7 @@ SelectableCanvas.getTopContext
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:1003](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L1003)
+[src/canvas/SelectableCanvas.ts:1003](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L1003)
 
 ___
 
@@ -5024,7 +5008,7 @@ SelectableCanvas.getViewportPoint
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:897](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L897)
+[src/canvas/SelectableCanvas.ts:897](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L897)
 
 ___
 
@@ -5046,7 +5030,7 @@ SelectableCanvas.getVpCenter
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:782](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L782)
+[src/canvas/StaticCanvas.ts:770](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L770)
 
 ___
 
@@ -5066,7 +5050,7 @@ SelectableCanvas.getWidth
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:268](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L268)
+[src/canvas/StaticCanvas.ts:259](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L259)
 
 ___
 
@@ -5086,7 +5070,7 @@ SelectableCanvas.getZoom
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:356](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L356)
+[src/canvas/StaticCanvas.ts:347](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L347)
 
 ___
 
@@ -5116,7 +5100,7 @@ true if grouping occurred
 
 #### Defined in
 
-[src/canvas/Canvas.ts:1457](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L1457)
+[src/canvas/Canvas.ts:1432](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L1432)
 
 ___
 
@@ -5128,7 +5112,7 @@ ___
 - selects objects that are contained in (and possibly intersecting) the selection bounding box
 - sets the active object
 ---
-runs on mouse up
+runs on mouse up after a mouse move
 
 #### Parameters
 
@@ -5142,7 +5126,7 @@ runs on mouse up
 
 #### Defined in
 
-[src/canvas/Canvas.ts:1537](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L1537)
+[src/canvas/Canvas.ts:1513](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L1513)
 
 ___
 
@@ -5166,7 +5150,7 @@ SelectableCanvas.initElements
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:309](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L309)
+[src/canvas/SelectableCanvas.ts:309](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L309)
 
 ___
 
@@ -5191,7 +5175,7 @@ SelectableCanvas.insertAt
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:204](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L204)
+[src/canvas/StaticCanvas.ts:195](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L195)
 
 ___
 
@@ -5213,7 +5197,7 @@ SelectableCanvas.isEmpty
 
 #### Defined in
 
-[src/Collection.ts:120](https://github.com/fabricjs/fabric.js/blob/078809453/src/Collection.ts#L120)
+[src/Collection.ts:128](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Collection.ts#L128)
 
 ___
 
@@ -5247,7 +5231,7 @@ SelectableCanvas.isTargetTransparent
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:442](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L442)
+[src/canvas/SelectableCanvas.ts:442](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L442)
 
 ___
 
@@ -5275,7 +5259,7 @@ SelectableCanvas.item
 
 #### Defined in
 
-[src/Collection.ts:112](https://github.com/fabricjs/fabric.js/blob/078809453/src/Collection.ts#L112)
+[src/Collection.ts:120](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Collection.ts#L120)
 
 ___
 
@@ -5293,7 +5277,7 @@ JSON format must conform to the one of fabric.Canvas#toJSON
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `json` | `string` \| `Record`\<`string`, `any`\> | JSON string or object |
-| `reviver?` | \<T\>(`serializedObj`: `Record`\<`string`, `any`\>, `instance`: `T`) => `void` | Method for further parsing of object elements, called after each fabric object created. |
+| `reviver?` | \<T\>(`serializedObj`: `Record`\<`string`, `any`\>, `instance`: `T`) => `void` | Method for further parsing of JSON elements, called after each fabric object created. |
 | `options?` | [`Abortable`](/apidocs/modules.md#abortable) | options |
 
 #### Returns
@@ -5312,14 +5296,12 @@ instance
 
 **`Example`**
 
-loadFromJSON
 ```ts
 canvas.loadFromJSON(json).then((canvas) => canvas.requestRenderAll());
 ```
 
 **`Example`**
 
-loadFromJSON with reviver
 ```ts
 canvas.loadFromJSON(json, function(o, object) {
   // `o` = json object
@@ -5336,7 +5318,7 @@ SelectableCanvas.loadFromJSON
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1264](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L1264)
+[src/canvas/StaticCanvas.ts:1252](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L1252)
 
 ___
 
@@ -5365,7 +5347,7 @@ SelectableCanvas.moveObjectTo
 
 #### Defined in
 
-[src/Collection.ts:254](https://github.com/fabricjs/fabric.js/blob/078809453/src/Collection.ts#L254)
+[src/Collection.ts:262](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Collection.ts#L262)
 
 ___
 
@@ -5398,7 +5380,7 @@ SelectableCanvas.off
 
 #### Defined in
 
-[src/Observable.ts:120](https://github.com/fabricjs/fabric.js/blob/078809453/src/Observable.ts#L120)
+[src/Observable.ts:120](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Observable.ts#L120)
 
 **off**(`handlers`): `void`
 
@@ -5420,7 +5402,7 @@ SelectableCanvas.off
 
 #### Defined in
 
-[src/Observable.ts:125](https://github.com/fabricjs/fabric.js/blob/078809453/src/Observable.ts#L125)
+[src/Observable.ts:125](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Observable.ts#L125)
 
 **off**(): `void`
 
@@ -5436,7 +5418,7 @@ SelectableCanvas.off
 
 #### Defined in
 
-[src/Observable.ts:129](https://github.com/fabricjs/fabric.js/blob/078809453/src/Observable.ts#L129)
+[src/Observable.ts:129](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Observable.ts#L129)
 
 ___
 
@@ -5451,7 +5433,7 @@ Observes specified event
 | Name | Type |
 | :------ | :------ |
 | `K` | extends keyof [`CanvasEvents`](/apidocs/interfaces/CanvasEvents.md) |
-| `E` | extends [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> \| [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & \{ `currentSubTargets`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] ; `currentTarget?`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> ; `isClick`: `boolean`  } \| [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<`WheelEvent`\> \| [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & `InEvent` \| [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & `OutEvent` \| [`BasicTransformEvent`](/apidocs/interfaces/BasicTransformEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & \{ `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| [`ModifiedEvent`](/apidocs/interfaces/ModifiedEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> \| \{ `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| \{ `drawables`: \{ `backgroundImage?`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> ; `overlayImage?`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } ; `path`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> ; `subTargets`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] ; `targets`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]  } \| `TEventWithTarget`\<`DragEvent`\> \| [`DragEventData`](/apidocs/interfaces/DragEventData.md) \| [`DragEventData`](/apidocs/interfaces/DragEventData.md) & `InEvent` \| [`DragEventData`](/apidocs/interfaces/DragEventData.md) & `OutEvent` \| [`DropEventData`](/apidocs/interfaces/DropEventData.md) \| `SimpleEventHandler`\<`Event`\> \| \{ `path`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| \{ `path`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| \{ `target`: [`IText`](/apidocs/classes/IText.md)\<`Partial`\<[`ITextProps`](/apidocs/interfaces/ITextProps.md)\>, [`SerializedITextProps`](/apidocs/interfaces/SerializedITextProps.md), `ITextEvents`\>  } \| \{ `target`: [`IText`](/apidocs/classes/IText.md)\<`Partial`\<[`ITextProps`](/apidocs/interfaces/ITextProps.md)\>, [`SerializedITextProps`](/apidocs/interfaces/SerializedITextProps.md), `ITextEvents`\>  } \| \{ `target`: [`IText`](/apidocs/classes/IText.md)\<`Partial`\<[`ITextProps`](/apidocs/interfaces/ITextProps.md)\>, [`SerializedITextProps`](/apidocs/interfaces/SerializedITextProps.md), `ITextEvents`\>  } \| \{ `target`: [`IText`](/apidocs/classes/IText.md)\<`Partial`\<[`ITextProps`](/apidocs/interfaces/ITextProps.md)\>, [`SerializedITextProps`](/apidocs/interfaces/SerializedITextProps.md), `ITextEvents`\>  } \| \{ `ctx`: `CanvasRenderingContext2D`  } \| \{ `ctx`: `CanvasRenderingContext2D`  } \| \{ `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| \{ `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| [`TEvent`](/apidocs/interfaces/TEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & \{ `transform`: [`Transform`](/apidocs/modules.md#transform)  } \| `Partial`\<[`TEvent`](/apidocs/interfaces/TEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>\> & \{ `selected`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]  } \| `Partial`\<[`TEvent`](/apidocs/interfaces/TEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>\> & \{ `deselected`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] ; `selected`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]  } \| `Partial`\<[`TEvent`](/apidocs/interfaces/TEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>\> & \{ `deselected`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]  } \| `Partial`\<[`TEvent`](/apidocs/interfaces/TEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>\> & \{ `deselected`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]  } |
+| `E` | extends [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> \| [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & \{ `currentSubTargets`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] ; `currentTarget?`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> ; `isClick`: `boolean`  } \| [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<`WheelEvent`\> \| [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & `InEvent` \| [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & `OutEvent` \| [`BasicTransformEvent`](/apidocs/interfaces/BasicTransformEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & \{ `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| [`ModifiedEvent`](/apidocs/interfaces/ModifiedEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> \| \{ `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| `TEventWithTarget`\<`DragEvent`\> \| [`DragEventData`](/apidocs/interfaces/DragEventData.md) \| [`DragEventData`](/apidocs/interfaces/DragEventData.md) & `InEvent` \| [`DragEventData`](/apidocs/interfaces/DragEventData.md) & `OutEvent` \| [`DropEventData`](/apidocs/interfaces/DropEventData.md) \| `SimpleEventHandler`\<`Event`\> \| \{ `drawables`: \{ `backgroundImage?`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> ; `overlayImage?`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } ; `path`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> ; `subTargets`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] ; `targets`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]  } \| \{ `path`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| \{ `path`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| \{ `target`: [`IText`](/apidocs/classes/IText.md)\<`Partial`\<[`ITextProps`](/apidocs/interfaces/ITextProps.md)\>, [`SerializedITextProps`](/apidocs/interfaces/SerializedITextProps.md), `ITextEvents`\>  } \| \{ `target`: [`IText`](/apidocs/classes/IText.md)\<`Partial`\<[`ITextProps`](/apidocs/interfaces/ITextProps.md)\>, [`SerializedITextProps`](/apidocs/interfaces/SerializedITextProps.md), `ITextEvents`\>  } \| \{ `target`: [`IText`](/apidocs/classes/IText.md)\<`Partial`\<[`ITextProps`](/apidocs/interfaces/ITextProps.md)\>, [`SerializedITextProps`](/apidocs/interfaces/SerializedITextProps.md), `ITextEvents`\>  } \| \{ `target`: [`IText`](/apidocs/classes/IText.md)\<`Partial`\<[`ITextProps`](/apidocs/interfaces/ITextProps.md)\>, [`SerializedITextProps`](/apidocs/interfaces/SerializedITextProps.md), `ITextEvents`\>  } \| \{ `ctx`: `CanvasRenderingContext2D`  } \| \{ `ctx`: `CanvasRenderingContext2D`  } \| [`LayoutBeforeEvent`](/apidocs/modules.md#layoutbeforeevent) & \{ `target`: [`Group`](/apidocs/classes/Group.md)  } \| [`LayoutAfterEvent`](/apidocs/modules.md#layoutafterevent) & \{ `target`: [`Group`](/apidocs/classes/Group.md)  } \| \{ `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| \{ `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| [`TEvent`](/apidocs/interfaces/TEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & \{ `transform`: [`Transform`](/apidocs/modules.md#transform)  } \| `Partial`\<[`TEvent`](/apidocs/interfaces/TEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>\> & \{ `selected`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]  } \| `Partial`\<[`TEvent`](/apidocs/interfaces/TEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>\> & \{ `deselected`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] ; `selected`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]  } \| `Partial`\<[`TEvent`](/apidocs/interfaces/TEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>\> & \{ `deselected`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]  } \| `Partial`\<[`TEvent`](/apidocs/interfaces/TEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>\> & \{ `deselected`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]  } |
 
 #### Parameters
 
@@ -5476,7 +5458,7 @@ SelectableCanvas.on
 
 #### Defined in
 
-[src/Observable.ts:23](https://github.com/fabricjs/fabric.js/blob/078809453/src/Observable.ts#L23)
+[src/Observable.ts:23](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Observable.ts#L23)
 
 **on**(`handlers`): `VoidFunction`
 
@@ -5496,7 +5478,7 @@ SelectableCanvas.on
 
 #### Defined in
 
-[src/Observable.ts:27](https://github.com/fabricjs/fabric.js/blob/078809453/src/Observable.ts#L27)
+[src/Observable.ts:27](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Observable.ts#L27)
 
 ___
 
@@ -5511,7 +5493,7 @@ Observes specified event **once**
 | Name | Type |
 | :------ | :------ |
 | `K` | extends keyof [`CanvasEvents`](/apidocs/interfaces/CanvasEvents.md) |
-| `E` | extends [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> \| [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & \{ `currentSubTargets`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] ; `currentTarget?`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> ; `isClick`: `boolean`  } \| [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<`WheelEvent`\> \| [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & `InEvent` \| [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & `OutEvent` \| [`BasicTransformEvent`](/apidocs/interfaces/BasicTransformEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & \{ `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| [`ModifiedEvent`](/apidocs/interfaces/ModifiedEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> \| \{ `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| \{ `drawables`: \{ `backgroundImage?`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> ; `overlayImage?`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } ; `path`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> ; `subTargets`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] ; `targets`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]  } \| `TEventWithTarget`\<`DragEvent`\> \| [`DragEventData`](/apidocs/interfaces/DragEventData.md) \| [`DragEventData`](/apidocs/interfaces/DragEventData.md) & `InEvent` \| [`DragEventData`](/apidocs/interfaces/DragEventData.md) & `OutEvent` \| [`DropEventData`](/apidocs/interfaces/DropEventData.md) \| `SimpleEventHandler`\<`Event`\> \| \{ `path`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| \{ `path`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| \{ `target`: [`IText`](/apidocs/classes/IText.md)\<`Partial`\<[`ITextProps`](/apidocs/interfaces/ITextProps.md)\>, [`SerializedITextProps`](/apidocs/interfaces/SerializedITextProps.md), `ITextEvents`\>  } \| \{ `target`: [`IText`](/apidocs/classes/IText.md)\<`Partial`\<[`ITextProps`](/apidocs/interfaces/ITextProps.md)\>, [`SerializedITextProps`](/apidocs/interfaces/SerializedITextProps.md), `ITextEvents`\>  } \| \{ `target`: [`IText`](/apidocs/classes/IText.md)\<`Partial`\<[`ITextProps`](/apidocs/interfaces/ITextProps.md)\>, [`SerializedITextProps`](/apidocs/interfaces/SerializedITextProps.md), `ITextEvents`\>  } \| \{ `target`: [`IText`](/apidocs/classes/IText.md)\<`Partial`\<[`ITextProps`](/apidocs/interfaces/ITextProps.md)\>, [`SerializedITextProps`](/apidocs/interfaces/SerializedITextProps.md), `ITextEvents`\>  } \| \{ `ctx`: `CanvasRenderingContext2D`  } \| \{ `ctx`: `CanvasRenderingContext2D`  } \| \{ `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| \{ `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| [`TEvent`](/apidocs/interfaces/TEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & \{ `transform`: [`Transform`](/apidocs/modules.md#transform)  } \| `Partial`\<[`TEvent`](/apidocs/interfaces/TEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>\> & \{ `selected`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]  } \| `Partial`\<[`TEvent`](/apidocs/interfaces/TEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>\> & \{ `deselected`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] ; `selected`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]  } \| `Partial`\<[`TEvent`](/apidocs/interfaces/TEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>\> & \{ `deselected`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]  } \| `Partial`\<[`TEvent`](/apidocs/interfaces/TEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>\> & \{ `deselected`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]  } |
+| `E` | extends [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> \| [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & \{ `currentSubTargets`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] ; `currentTarget?`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> ; `isClick`: `boolean`  } \| [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<`WheelEvent`\> \| [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & `InEvent` \| [`TPointerEventInfo`](/apidocs/interfaces/TPointerEventInfo.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & `OutEvent` \| [`BasicTransformEvent`](/apidocs/interfaces/BasicTransformEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & \{ `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| [`ModifiedEvent`](/apidocs/interfaces/ModifiedEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> \| \{ `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| `TEventWithTarget`\<`DragEvent`\> \| [`DragEventData`](/apidocs/interfaces/DragEventData.md) \| [`DragEventData`](/apidocs/interfaces/DragEventData.md) & `InEvent` \| [`DragEventData`](/apidocs/interfaces/DragEventData.md) & `OutEvent` \| [`DropEventData`](/apidocs/interfaces/DropEventData.md) \| `SimpleEventHandler`\<`Event`\> \| \{ `drawables`: \{ `backgroundImage?`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> ; `overlayImage?`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } ; `path`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> ; `subTargets`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] ; `targets`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]  } \| \{ `path`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| \{ `path`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| \{ `target`: [`IText`](/apidocs/classes/IText.md)\<`Partial`\<[`ITextProps`](/apidocs/interfaces/ITextProps.md)\>, [`SerializedITextProps`](/apidocs/interfaces/SerializedITextProps.md), `ITextEvents`\>  } \| \{ `target`: [`IText`](/apidocs/classes/IText.md)\<`Partial`\<[`ITextProps`](/apidocs/interfaces/ITextProps.md)\>, [`SerializedITextProps`](/apidocs/interfaces/SerializedITextProps.md), `ITextEvents`\>  } \| \{ `target`: [`IText`](/apidocs/classes/IText.md)\<`Partial`\<[`ITextProps`](/apidocs/interfaces/ITextProps.md)\>, [`SerializedITextProps`](/apidocs/interfaces/SerializedITextProps.md), `ITextEvents`\>  } \| \{ `target`: [`IText`](/apidocs/classes/IText.md)\<`Partial`\<[`ITextProps`](/apidocs/interfaces/ITextProps.md)\>, [`SerializedITextProps`](/apidocs/interfaces/SerializedITextProps.md), `ITextEvents`\>  } \| \{ `ctx`: `CanvasRenderingContext2D`  } \| \{ `ctx`: `CanvasRenderingContext2D`  } \| [`LayoutBeforeEvent`](/apidocs/modules.md#layoutbeforeevent) & \{ `target`: [`Group`](/apidocs/classes/Group.md)  } \| [`LayoutAfterEvent`](/apidocs/modules.md#layoutafterevent) & \{ `target`: [`Group`](/apidocs/classes/Group.md)  } \| \{ `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| \{ `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  } \| [`TEvent`](/apidocs/interfaces/TEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & \{ `transform`: [`Transform`](/apidocs/modules.md#transform)  } \| `Partial`\<[`TEvent`](/apidocs/interfaces/TEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>\> & \{ `selected`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]  } \| `Partial`\<[`TEvent`](/apidocs/interfaces/TEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>\> & \{ `deselected`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[] ; `selected`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]  } \| `Partial`\<[`TEvent`](/apidocs/interfaces/TEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>\> & \{ `deselected`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]  } \| `Partial`\<[`TEvent`](/apidocs/interfaces/TEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>\> & \{ `deselected`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>[]  } |
 
 #### Parameters
 
@@ -5536,7 +5518,7 @@ SelectableCanvas.once
 
 #### Defined in
 
-[src/Observable.ts:62](https://github.com/fabricjs/fabric.js/blob/078809453/src/Observable.ts#L62)
+[src/Observable.ts:62](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Observable.ts#L62)
 
 **once**(`handlers`): `VoidFunction`
 
@@ -5556,7 +5538,7 @@ SelectableCanvas.once
 
 #### Defined in
 
-[src/Observable.ts:66](https://github.com/fabricjs/fabric.js/blob/078809453/src/Observable.ts#L66)
+[src/Observable.ts:66](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Observable.ts#L66)
 
 ___
 
@@ -5582,7 +5564,7 @@ SelectableCanvas.relativePan
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:428](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L428)
+[src/canvas/StaticCanvas.ts:419](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L419)
 
 ___
 
@@ -5606,7 +5588,7 @@ SelectableCanvas.remove
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:210](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L210)
+[src/canvas/StaticCanvas.ts:201](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L201)
 
 ___
 
@@ -5622,7 +5604,7 @@ Removes all event listeners
 
 #### Defined in
 
-[src/canvas/Canvas.ts:203](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/Canvas.ts#L203)
+[src/canvas/Canvas.ts:199](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/Canvas.ts#L199)
 
 ___
 
@@ -5642,7 +5624,7 @@ SelectableCanvas.renderAll
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:370](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L370)
+[src/canvas/SelectableCanvas.ts:370](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L370)
 
 ___
 
@@ -5666,7 +5648,7 @@ SelectableCanvas.renderAndReset
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:494](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L494)
+[src/canvas/StaticCanvas.ts:485](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L485)
 
 ___
 
@@ -5693,7 +5675,7 @@ SelectableCanvas.renderCanvas
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:551](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L551)
+[src/canvas/StaticCanvas.ts:539](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L539)
 
 ___
 
@@ -5715,7 +5697,7 @@ SelectableCanvas.renderTop
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:410](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L410)
+[src/canvas/SelectableCanvas.ts:410](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L410)
 
 ___
 
@@ -5741,7 +5723,7 @@ SelectableCanvas.renderTopLayer
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:391](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L391)
+[src/canvas/SelectableCanvas.ts:391](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L391)
 
 ___
 
@@ -5763,7 +5745,7 @@ SelectableCanvas.requestRenderAll
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:504](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L504)
+[src/canvas/StaticCanvas.ts:495](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L495)
 
 ___
 
@@ -5796,7 +5778,7 @@ SelectableCanvas.searchPossibleTargets
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:867](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L867)
+[src/canvas/SelectableCanvas.ts:867](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L867)
 
 ___
 
@@ -5829,7 +5811,7 @@ SelectableCanvas.sendObjectBackwards
 
 #### Defined in
 
-[src/Collection.ts:206](https://github.com/fabricjs/fabric.js/blob/078809453/src/Collection.ts#L206)
+[src/Collection.ts:214](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Collection.ts#L214)
 
 ___
 
@@ -5858,7 +5840,7 @@ SelectableCanvas.sendObjectToBack
 
 #### Defined in
 
-[src/Collection.ts:170](https://github.com/fabricjs/fabric.js/blob/078809453/src/Collection.ts#L170)
+[src/Collection.ts:178](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Collection.ts#L178)
 
 ___
 
@@ -5885,7 +5867,7 @@ SelectableCanvas.set
 
 #### Defined in
 
-[src/CommonMethods.ts:29](https://github.com/fabricjs/fabric.js/blob/078809453/src/CommonMethods.ts#L29)
+[src/CommonMethods.ts:29](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/CommonMethods.ts#L29)
 
 ___
 
@@ -5900,7 +5882,7 @@ Sets given object as the only active object on canvas
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `object` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | Object to set as an active one |
-| `e?` | [`TPointerEvent`](/apidocs/modules.md#tpointerevent) | Event (passed along when firing "object:selected") |
+| `e?` | `MouseEvent` \| `TouchEvent` \| `PointerEvent` | Event (passed along when firing "object:selected") |
 
 #### Returns
 
@@ -5914,7 +5896,7 @@ SelectableCanvas.setActiveObject
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:1120](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L1120)
+[src/canvas/SelectableCanvas.ts:1120](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L1120)
 
 ___
 
@@ -5944,7 +5926,7 @@ SelectableCanvas.setCursor
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:655](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L655)
+[src/canvas/SelectableCanvas.ts:655](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L655)
 
 ___
 
@@ -5971,7 +5953,7 @@ SelectableCanvas.setDimensions
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:339](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L339)
+[src/canvas/StaticCanvas.ts:330](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L330)
 
 ___
 
@@ -6002,7 +5984,7 @@ SelectableCanvas.setHeight
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:300](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L300)
+[src/canvas/StaticCanvas.ts:291](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L291)
 
 ___
 
@@ -6029,7 +6011,7 @@ SelectableCanvas.setTargetFindTolerance
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:423](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L423)
+[src/canvas/SelectableCanvas.ts:423](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L423)
 
 ___
 
@@ -6055,7 +6037,7 @@ SelectableCanvas.setViewportTransform
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:1217](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L1217)
+[src/canvas/SelectableCanvas.ts:1217](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L1217)
 
 ___
 
@@ -6086,7 +6068,7 @@ SelectableCanvas.setWidth
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:288](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L288)
+[src/canvas/StaticCanvas.ts:279](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L279)
 
 ___
 
@@ -6112,7 +6094,7 @@ SelectableCanvas.setZoom
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:409](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L409)
+[src/canvas/StaticCanvas.ts:400](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L400)
 
 ___
 
@@ -6134,7 +6116,7 @@ SelectableCanvas.size
 
 #### Defined in
 
-[src/Collection.ts:128](https://github.com/fabricjs/fabric.js/blob/078809453/src/Collection.ts#L128)
+[src/Collection.ts:136](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Collection.ts#L136)
 
 ___
 
@@ -6165,7 +6147,7 @@ SelectableCanvas.toCanvasElement
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1401](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L1401)
+[src/canvas/StaticCanvas.ts:1389](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L1389)
 
 ___
 
@@ -6193,7 +6175,6 @@ Returns a data: URL containing a representation of the object in the format spec
 
 **`Example`**
 
-Generate jpeg dataURL with lower quality
 ```ts
 var dataURL = canvas.toDataURL({
   format: 'jpeg',
@@ -6203,7 +6184,6 @@ var dataURL = canvas.toDataURL({
 
 **`Example`**
 
-Generate cropped png dataURL (clipping of canvas)
 ```ts
 var dataURL = canvas.toDataURL({
   format: 'png',
@@ -6216,7 +6196,6 @@ var dataURL = canvas.toDataURL({
 
 **`Example`**
 
-Generate double scaled png dataURL
 ```ts
 var dataURL = canvas.toDataURL({
   format: 'png',
@@ -6226,7 +6205,6 @@ var dataURL = canvas.toDataURL({
 
 **`Example`**
 
-Generate dataURL with objects that overlap a specified object
 ```ts
 var myObject;
 var dataURL = canvas.toDataURL({
@@ -6240,7 +6218,7 @@ SelectableCanvas.toDataURL
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1370](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L1370)
+[src/canvas/StaticCanvas.ts:1358](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L1358)
 
 ___
 
@@ -6268,7 +6246,7 @@ SelectableCanvas.toDatalessJSON
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:805](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L805)
+[src/canvas/StaticCanvas.ts:793](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L793)
 
 ___
 
@@ -6296,7 +6274,7 @@ SelectableCanvas.toDatalessObject
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:842](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L842)
+[src/canvas/StaticCanvas.ts:830](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L830)
 
 ___
 
@@ -6325,21 +6303,18 @@ JSON compatible object
 
 **`Example`**
 
-JSON without additional properties
 ```ts
 var json = canvas.toJSON();
 ```
 
 **`Example`**
 
-JSON with additional properties included
 ```ts
 var json = canvas.toJSON(['lockMovementX', 'lockMovementY', 'lockRotation', 'lockScalingX', 'lockScalingY']);
 ```
 
 **`Example`**
 
-JSON without default values
 ```ts
 var json = canvas.toJSON();
 ```
@@ -6350,7 +6325,7 @@ SelectableCanvas.toJSON
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:833](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L833)
+[src/canvas/StaticCanvas.ts:821](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L821)
 
 ___
 
@@ -6378,7 +6353,7 @@ SelectableCanvas.toObject
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:814](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L814)
+[src/canvas/StaticCanvas.ts:802](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L802)
 
 ___
 
@@ -6413,21 +6388,18 @@ SVG string
 
 **`Example`**
 
-Normal SVG output
 ```ts
 var svg = canvas.toSVG();
 ```
 
 **`Example`**
 
-SVG output without preamble (without &lt;?xml ../>)
 ```ts
 var svg = canvas.toSVG({suppressPreamble: true});
 ```
 
 **`Example`**
 
-SVG output with viewBox attribute
 ```ts
 var svg = canvas.toSVG({
   viewBox: {
@@ -6441,14 +6413,12 @@ var svg = canvas.toSVG({
 
 **`Example`**
 
-SVG output with different encoding (default: UTF-8)
 ```ts
 var svg = canvas.toSVG({encoding: 'ISO-8859-1'});
 ```
 
 **`Example`**
 
-Modify SVG output with reviver function
 ```ts
 var svg = canvas.toSVG(null, function(svg) {
   return svg.replace('stroke-dasharray: ; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; ', '');
@@ -6461,7 +6431,7 @@ SelectableCanvas.toSVG
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:981](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L981)
+[src/canvas/StaticCanvas.ts:969](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L969)
 
 ___
 
@@ -6483,7 +6453,7 @@ SelectableCanvas.toString
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1500](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L1500)
+[src/canvas/StaticCanvas.ts:1488](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L1488)
 
 ___
 
@@ -6509,7 +6479,7 @@ SelectableCanvas.toggle
 
 #### Defined in
 
-[src/CommonMethods.ts:46](https://github.com/fabricjs/fabric.js/blob/078809453/src/CommonMethods.ts#L46)
+[src/CommonMethods.ts:46](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/CommonMethods.ts#L46)
 
 ___
 
@@ -6535,7 +6505,7 @@ SelectableCanvas.viewportCenterObject
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:752](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L752)
+[src/canvas/StaticCanvas.ts:740](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L740)
 
 ___
 
@@ -6561,7 +6531,7 @@ SelectableCanvas.viewportCenterObjectH
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:760](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L760)
+[src/canvas/StaticCanvas.ts:748](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L748)
 
 ___
 
@@ -6587,7 +6557,7 @@ SelectableCanvas.viewportCenterObjectV
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:771](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L771)
+[src/canvas/StaticCanvas.ts:759](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L759)
 
 ___
 
@@ -6617,7 +6587,7 @@ SelectableCanvas.zoomToPoint
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:392](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/StaticCanvas.ts#L392)
+[src/canvas/StaticCanvas.ts:383](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/StaticCanvas.ts#L383)
 
 ___
 
@@ -6635,4 +6605,4 @@ SelectableCanvas.getDefaults
 
 #### Defined in
 
-[src/canvas/SelectableCanvas.ts:277](https://github.com/fabricjs/fabric.js/blob/078809453/src/canvas/SelectableCanvas.ts#L277)
+[src/canvas/SelectableCanvas.ts:277](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/canvas/SelectableCanvas.ts#L277)

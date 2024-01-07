@@ -26,7 +26,7 @@
 
 #### Defined in
 
-[src/EventTypeDefs.ts:278](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L278)
+[src/EventTypeDefs.ts:283](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L283)
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:261](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L261)
+[src/EventTypeDefs.ts:266](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L266)
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:260](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L260)
+[src/EventTypeDefs.ts:265](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L265)
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:273](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L273)
+[src/EventTypeDefs.ts:278](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L278)
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:191](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L191)
+[src/EventTypeDefs.ts:196](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L196)
 
 ___
 
@@ -96,7 +96,7 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:195](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L195)
+[src/EventTypeDefs.ts:200](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L200)
 
 ___
 
@@ -110,7 +110,7 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:193](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L193)
+[src/EventTypeDefs.ts:198](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L198)
 
 ___
 
@@ -124,7 +124,7 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:194](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L194)
+[src/EventTypeDefs.ts:199](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L199)
 
 ___
 
@@ -138,7 +138,7 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:192](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L192)
+[src/EventTypeDefs.ts:197](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L197)
 
 ___
 
@@ -152,7 +152,7 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:190](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L190)
+[src/EventTypeDefs.ts:195](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L195)
 
 ___
 
@@ -166,7 +166,7 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:197](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L197)
+[src/EventTypeDefs.ts:202](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L202)
 
 ___
 
@@ -180,7 +180,7 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:198](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L198)
+[src/EventTypeDefs.ts:203](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L203)
 
 ___
 
@@ -194,7 +194,7 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:196](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L196)
+[src/EventTypeDefs.ts:201](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L201)
 
 ___
 
@@ -214,25 +214,27 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:282](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L282)
+[src/EventTypeDefs.ts:287](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L287)
 
 ___
 
-### layout
+### layout:after
 
- **layout**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `context` | [`LayoutContext`](/apidocs/modules.md#layoutcontext) |
-| `diff` | [`Point`](/apidocs/classes/Point.md) |
-| `result` | [`LayoutResult`](/apidocs/modules.md#layoutresult) |
+ **layout:after**: [`LayoutAfterEvent`](/apidocs/modules.md#layoutafterevent)
 
 #### Defined in
 
-[src/shapes/Group.ts:45](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Group.ts#L45)
+[src/shapes/Group.ts:45](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Group.ts#L45)
+
+___
+
+### layout:before
+
+ **layout:before**: [`LayoutBeforeEvent`](/apidocs/modules.md#layoutbeforeevent)
+
+#### Defined in
+
+[src/shapes/Group.ts:44](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Group.ts#L44)
 
 ___
 
@@ -243,6 +245,16 @@ ___
 #### Inherited from
 
 [ObjectEvents](/apidocs/interfaces/ObjectEvents.md).[modified](/apidocs/interfaces/ObjectEvents.md#modified)
+
+___
+
+### modifyPoly
+
+ **modifyPoly**: [`BasicTransformEvent`](/apidocs/interfaces/BasicTransformEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\>
+
+#### Inherited from
+
+[ObjectEvents](/apidocs/interfaces/ObjectEvents.md).[modifyPoly](/apidocs/interfaces/ObjectEvents.md#modifypoly)
 
 ___
 
@@ -372,7 +384,7 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:223](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L223)
+[src/EventTypeDefs.ts:228](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L228)
 
 ___
 
@@ -392,7 +404,7 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:224](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L224)
+[src/EventTypeDefs.ts:229](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L229)
 
 ___
 
@@ -412,7 +424,7 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:279](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L279)
+[src/EventTypeDefs.ts:284](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L284)
 
 ___
 
@@ -456,7 +468,7 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:270](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L270)
+[src/EventTypeDefs.ts:275](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L275)
 
 ___
 

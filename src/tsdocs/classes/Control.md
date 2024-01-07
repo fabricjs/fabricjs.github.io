@@ -18,7 +18,7 @@
 
 #### Defined in
 
-[src/controls/Control.ts:141](https://github.com/fabricjs/fabric.js/blob/078809453/src/controls/Control.ts#L141)
+[src/controls/Control.ts:141](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/Control.ts#L141)
 
 ## Properties
 
@@ -46,7 +46,7 @@ y position of the cursor
 
 #### Defined in
 
-[src/controls/Control.ts:153](https://github.com/fabricjs/fabric.js/blob/078809453/src/controls/Control.ts#L153)
+[src/controls/Control.ts:153](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/Control.ts#L153)
 
 ___
 
@@ -70,7 +70,7 @@ default to scale since is the most common, used on 4 corners by default
 
 #### Defined in
 
-[src/controls/Control.ts:42](https://github.com/fabricjs/fabric.js/blob/078809453/src/controls/Control.ts#L42)
+[src/controls/Control.ts:42](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/Control.ts#L42)
 
 ___
 
@@ -90,7 +90,7 @@ example: to reuse the same drawing function for different rotated controls
 
 #### Defined in
 
-[src/controls/Control.ts:51](https://github.com/fabricjs/fabric.js/blob/078809453/src/controls/Control.ts#L51)
+[src/controls/Control.ts:51](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/Control.ts#L51)
 
 ___
 
@@ -109,7 +109,7 @@ if the method `cursorStyleHandler` is provided, this property is ignored.
 
 #### Defined in
 
-[src/controls/Control.ts:131](https://github.com/fabricjs/fabric.js/blob/078809453/src/controls/Control.ts#L131)
+[src/controls/Control.ts:131](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/Control.ts#L131)
 
 ___
 
@@ -137,7 +137,7 @@ y position of the cursor
 
 #### Defined in
 
-[src/controls/Control.ts:163](https://github.com/fabricjs/fabric.js/blob/078809453/src/controls/Control.ts#L163)
+[src/controls/Control.ts:163](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/Control.ts#L163)
 
 ___
 
@@ -165,7 +165,7 @@ y position of the cursor
 
 #### Defined in
 
-[src/controls/Control.ts:173](https://github.com/fabricjs/fabric.js/blob/078809453/src/controls/Control.ts#L173)
+[src/controls/Control.ts:173](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/Control.ts#L173)
 
 ___
 
@@ -190,7 +190,7 @@ of the bounding box.
 
 #### Defined in
 
-[src/controls/Control.ts:83](https://github.com/fabricjs/fabric.js/blob/078809453/src/controls/Control.ts#L83)
+[src/controls/Control.ts:83](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/Control.ts#L83)
 
 ___
 
@@ -209,7 +209,7 @@ Positive offset moves the control to the bottom, negative to the top.
 
 #### Defined in
 
-[src/controls/Control.ts:91](https://github.com/fabricjs/fabric.js/blob/078809453/src/controls/Control.ts#L91)
+[src/controls/Control.ts:91](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/Control.ts#L91)
 
 ___
 
@@ -228,7 +228,7 @@ null
 
 #### Defined in
 
-[src/controls/Control.ts:99](https://github.com/fabricjs/fabric.js/blob/078809453/src/controls/Control.ts#L99)
+[src/controls/Control.ts:99](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/Control.ts#L99)
 
 ___
 
@@ -247,7 +247,7 @@ null
 
 #### Defined in
 
-[src/controls/Control.ts:107](https://github.com/fabricjs/fabric.js/blob/078809453/src/controls/Control.ts#L107)
+[src/controls/Control.ts:107](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/Control.ts#L107)
 
 ___
 
@@ -266,7 +266,7 @@ null
 
 #### Defined in
 
-[src/controls/Control.ts:115](https://github.com/fabricjs/fabric.js/blob/078809453/src/controls/Control.ts#L115)
+[src/controls/Control.ts:115](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/Control.ts#L115)
 
 ___
 
@@ -285,7 +285,7 @@ null
 
 #### Defined in
 
-[src/controls/Control.ts:123](https://github.com/fabricjs/fabric.js/blob/078809453/src/controls/Control.ts#L123)
+[src/controls/Control.ts:123](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/Control.ts#L123)
 
 ___
 
@@ -306,7 +306,7 @@ true
 
 #### Defined in
 
-[src/controls/Control.ts:29](https://github.com/fabricjs/fabric.js/blob/078809453/src/controls/Control.ts#L29)
+[src/controls/Control.ts:29](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/Control.ts#L29)
 
 ___
 
@@ -325,7 +325,7 @@ false
 
 #### Defined in
 
-[src/controls/Control.ts:139](https://github.com/fabricjs/fabric.js/blob/078809453/src/controls/Control.ts#L139)
+[src/controls/Control.ts:139](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/Control.ts#L139)
 
 ___
 
@@ -345,7 +345,7 @@ of the bounding box.
 
 #### Defined in
 
-[src/controls/Control.ts:60](https://github.com/fabricjs/fabric.js/blob/078809453/src/controls/Control.ts#L60)
+[src/controls/Control.ts:60](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/Control.ts#L60)
 
 ___
 
@@ -365,7 +365,7 @@ of the bounding box.
 
 #### Defined in
 
-[src/controls/Control.ts:69](https://github.com/fabricjs/fabric.js/blob/078809453/src/controls/Control.ts#L69)
+[src/controls/Control.ts:69](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/Control.ts#L69)
 
 ## Methods
 
@@ -399,7 +399,7 @@ Returns the coords for this control based on object values.
 
 #### Defined in
 
-[src/controls/Control.ts:311](https://github.com/fabricjs/fabric.js/blob/078809453/src/controls/Control.ts#L311)
+[src/controls/Control.ts:311](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/Control.ts#L311)
 
 ___
 
@@ -425,7 +425,7 @@ the cursorStyle property
 
 #### Defined in
 
-[src/controls/Control.ts:244](https://github.com/fabricjs/fabric.js/blob/078809453/src/controls/Control.ts#L244)
+[src/controls/Control.ts:244](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/Control.ts#L244)
 
 ___
 
@@ -451,7 +451,7 @@ the action handler
 
 #### Defined in
 
-[src/controls/Control.ts:196](https://github.com/fabricjs/fabric.js/blob/078809453/src/controls/Control.ts#L196)
+[src/controls/Control.ts:196](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/Control.ts#L196)
 
 ___
 
@@ -475,7 +475,7 @@ Returns the action name. The basic implementation just return the actionName pro
 
 #### Defined in
 
-[src/controls/Control.ts:259](https://github.com/fabricjs/fabric.js/blob/078809453/src/controls/Control.ts#L259)
+[src/controls/Control.ts:259](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/Control.ts#L259)
 
 ___
 
@@ -501,7 +501,7 @@ the action handler
 
 #### Defined in
 
-[src/controls/Control.ts:211](https://github.com/fabricjs/fabric.js/blob/078809453/src/controls/Control.ts#L211)
+[src/controls/Control.ts:211](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/Control.ts#L211)
 
 ___
 
@@ -528,7 +528,7 @@ the action handler
 
 #### Defined in
 
-[src/controls/Control.ts:227](https://github.com/fabricjs/fabric.js/blob/078809453/src/controls/Control.ts#L227)
+[src/controls/Control.ts:227](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/Control.ts#L227)
 
 ___
 
@@ -551,7 +551,7 @@ Returns controls visibility
 
 #### Defined in
 
-[src/controls/Control.ts:273](https://github.com/fabricjs/fabric.js/blob/078809453/src/controls/Control.ts#L273)
+[src/controls/Control.ts:273](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/Control.ts#L273)
 
 ___
 
@@ -574,7 +574,7 @@ ___
 
 #### Defined in
 
-[src/controls/Control.ts:290](https://github.com/fabricjs/fabric.js/blob/078809453/src/controls/Control.ts#L290)
+[src/controls/Control.ts:290](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/Control.ts#L290)
 
 ___
 
@@ -604,7 +604,7 @@ left and top are the result of the positionHandler function
 
 #### Defined in
 
-[src/controls/Control.ts:347](https://github.com/fabricjs/fabric.js/blob/078809453/src/controls/Control.ts#L347)
+[src/controls/Control.ts:347](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/Control.ts#L347)
 
 ___
 
@@ -628,7 +628,7 @@ Sets controls visibility
 
 #### Defined in
 
-[src/controls/Control.ts:282](https://github.com/fabricjs/fabric.js/blob/078809453/src/controls/Control.ts#L282)
+[src/controls/Control.ts:282](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/Control.ts#L282)
 
 ___
 
@@ -651,4 +651,4 @@ ___
 
 #### Defined in
 
-[src/controls/Control.ts:175](https://github.com/fabricjs/fabric.js/blob/078809453/src/controls/Control.ts#L175)
+[src/controls/Control.ts:175](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/controls/Control.ts#L175)

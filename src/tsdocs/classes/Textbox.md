@@ -56,7 +56,7 @@ Constructor
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:219](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L219)
+[src/shapes/IText/IText.ts:219](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/IText.ts#L219)
 
 ## Properties
 
@@ -79,7 +79,7 @@ use this size when measuring text. To avoid IE11 rounding errors
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:380](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L380)
+[src/shapes/Text/Text.ts:380](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L380)
 
 ___
 
@@ -101,7 +101,7 @@ contains the min text width to avoid getting 0
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:387](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L387)
+[src/shapes/Text/Text.ts:387](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L387)
 
 ___
 
@@ -119,7 +119,7 @@ But for how mixins are implemented right now, we can't leave it private
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:371](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L371)
+[src/shapes/Text/Text.ts:371](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L371)
 
 ___
 
@@ -139,7 +139,7 @@ this isn't cleaned automatically. Non selected objects may have wrong values
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:115](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L115)
+[src/shapes/Object/InteractiveObject.ts:104](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L104)
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:407](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L407)
+[src/shapes/Text/Text.ts:407](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L407)
 
 ___
 
@@ -167,24 +167,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:408](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L408)
-
-___
-
-### \_\_owningGroup
-
- `Optional` **\_\_owningGroup**: [`Group`](/apidocs/classes/Group.md)
-
-A reference to the parent of the object
-Used to keep the original parent ref when the object has been added to an ActiveSelection, hence loosing the `group` ref
-
-#### Inherited from
-
-[IText](/apidocs/classes/IText.md).[__owningGroup](/apidocs/classes/IText.md#__owninggroup)
-
-#### Defined in
-
-[src/shapes/Object/StackedObject.ts:45](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/StackedObject.ts#L45)
+[src/shapes/Text/Text.ts:408](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L408)
 
 ___
 
@@ -198,7 +181,7 @@ ___
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:71](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L71)
+[src/shapes/IText/ITextBehavior.ts:71](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextBehavior.ts#L71)
 
 ___
 
@@ -224,7 +207,7 @@ undefined
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:184](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L184)
+[src/shapes/Object/Object.ts:185](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L185)
 
 ___
 
@@ -249,7 +232,7 @@ undefined
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:173](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L173)
+[src/shapes/Object/Object.ts:174](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L174)
 
 ___
 
@@ -267,7 +250,7 @@ this takes priority over the generic control visibility
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:122](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L122)
+[src/shapes/Object/InteractiveObject.ts:111](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L111)
 
 ___
 
@@ -281,7 +264,7 @@ ___
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:69](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L69)
+[src/shapes/IText/ITextBehavior.ts:69](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextBehavior.ts#L69)
 
 ___
 
@@ -295,7 +278,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:323](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L323)
+[src/shapes/Text/Text.ts:323](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L323)
 
 ___
 
@@ -317,7 +300,7 @@ Text Line proportion to font Size (in pixels)
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:335](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L335)
+[src/shapes/Text/Text.ts:335](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L335)
 
 ___
 
@@ -331,7 +314,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Text/StyledText.ts:28](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/StyledText.ts#L28)
+[src/shapes/Text/StyledText.ts:28](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/StyledText.ts#L28)
 
 ___
 
@@ -345,7 +328,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:140](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L140)
+[src/shapes/Text/Text.ts:140](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L140)
 
 ___
 
@@ -359,7 +342,7 @@ ___
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:66](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L66)
+[src/shapes/IText/ITextBehavior.ts:66](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextBehavior.ts#L66)
 
 ___
 
@@ -376,7 +359,7 @@ Mostly used when text is 'justify' aligned.
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:154](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L154)
+[src/shapes/Text/Text.ts:154](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L154)
 
 ___
 
@@ -393,7 +376,7 @@ Mostly used when text is 'justify' aligned.
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:147](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L147)
+[src/shapes/Text/Text.ts:147](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L147)
 
 ___
 
@@ -410,7 +393,7 @@ Mostly used when text is 'justify' aligned.
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:161](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L161)
+[src/shapes/Text/Text.ts:161](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L161)
 
 ___
 
@@ -437,7 +420,7 @@ ___
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:75](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L75)
+[src/shapes/IText/ITextBehavior.ts:75](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextBehavior.ts#L75)
 
 ___
 
@@ -461,7 +444,7 @@ DON'T USE IT. WE WILL TRY TO REMOVE IT
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:144](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L144)
+[src/shapes/Object/InteractiveObject.ts:133](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L133)
 
 ___
 
@@ -475,7 +458,7 @@ ___
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:85](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L85)
+[src/shapes/IText/ITextBehavior.ts:85](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextBehavior.ts#L85)
 
 ___
 
@@ -485,7 +468,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Textbox.ts:87](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Textbox.ts#L87)
+[src/shapes/Textbox.ts:87](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Textbox.ts#L87)
 
 ___
 
@@ -499,7 +482,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:405](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L405)
+[src/shapes/Text/Text.ts:405](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L405)
 
 ___
 
@@ -521,7 +504,7 @@ same as textlines, but each line is an array of graphemes as split by splitByGra
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:402](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L402)
+[src/shapes/Text/Text.ts:402](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L402)
 
 ___
 
@@ -545,7 +528,7 @@ undefined
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:264](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L264)
+[src/shapes/Object/Object.ts:265](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L265)
 
 ___
 
@@ -559,7 +542,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:404](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L404)
+[src/shapes/Text/Text.ts:404](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L404)
 
 ___
 
@@ -573,7 +556,7 @@ UniqueTextboxProps.\_wordJoiners
 
 #### Defined in
 
-[src/shapes/Textbox.ts:85](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Textbox.ts#L85)
+[src/shapes/Textbox.ts:85](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Textbox.ts#L85)
 
 ___
 
@@ -581,23 +564,12 @@ ___
 
  **aCoords**: [`TCornerPoint`](/apidocs/modules.md#tcornerpoint)
 
-Describe object's corner position in canvas object absolute coordinates
-properties are tl,tr,bl,br and describe the four main corner.
-each property is an object with x, y, instance of Fabric.Point.
-The coordinates depends from this properties: width, height, scaleX, scaleY
-skewX, skewY, angle, strokeWidth, top, left.
-Those coordinates are useful to understand where an object is. They get updated
-with lineCoords or oCoords in interactive cases but they do not need to be updated when zoom or panning change.
-The coordinates get updated with
-
-**`Method`**
-
-setCoords.
-You can calculate them without updating with
-
-**`Method`**
-
-calcACoords();
+Describe object's corner position in scene coordinates.
+The coordinates are derived from the following:
+left, top, width, height, scaleX, scaleY, skewX, skewY, angle, strokeWidth.
+The coordinates do not depend on viewport changes.
+The coordinates get updated with [setCoords](/apidocs/classes/Textbox.md#setcoords).
+You can calculate them without updating with [()](/apidocs/classes/Textbox.md#calcacoords)
 
 #### Inherited from
 
@@ -605,7 +577,7 @@ calcACoords();
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:57](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L57)
+[src/shapes/Object/ObjectGeometry.ts:50](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectGeometry.ts#L50)
 
 ___
 
@@ -619,7 +591,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:137](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L137)
+[src/shapes/Object/Object.ts:137](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L137)
 
 ___
 
@@ -633,7 +605,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:91](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L91)
+[src/shapes/Object/InteractiveObject.ts:83](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L83)
 
 ___
 
@@ -647,7 +619,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:29](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L29)
+[src/shapes/Object/ObjectOrigin.ts:29](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectOrigin.ts#L29)
 
 ___
 
@@ -661,7 +633,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:124](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L124)
+[src/shapes/Object/Object.ts:124](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L124)
 
 ___
 
@@ -675,7 +647,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:81](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L81)
+[src/shapes/Object/InteractiveObject.ts:73](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L73)
 
 ___
 
@@ -689,7 +661,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:82](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L82)
+[src/shapes/Object/InteractiveObject.ts:74](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L74)
 
 ___
 
@@ -703,7 +675,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:83](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L83)
+[src/shapes/Object/InteractiveObject.ts:75](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L75)
 
 ___
 
@@ -717,7 +689,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:84](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L84)
+[src/shapes/Object/InteractiveObject.ts:76](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L76)
 
 ___
 
@@ -741,7 +713,7 @@ undefined
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:202](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L202)
+[src/shapes/Object/Object.ts:203](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L203)
 
 ___
 
@@ -765,7 +737,7 @@ undefined
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:229](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L229)
+[src/shapes/Object/Object.ts:230](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L230)
 
 ___
 
@@ -789,7 +761,7 @@ undefined
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:238](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L238)
+[src/shapes/Object/Object.ts:239](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L239)
 
 ___
 
@@ -813,7 +785,7 @@ undefined
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:193](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L193)
+[src/shapes/Object/Object.ts:194](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L194)
 
 ___
 
@@ -835,7 +807,7 @@ Indicates whether internal text char widths can be cached
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:197](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L197)
+[src/shapes/IText/IText.ts:197](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/IText.ts#L197)
 
 ___
 
@@ -849,7 +821,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:146](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L146)
+[src/shapes/Object/InteractiveObject.ts:135](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L135)
 
 ___
 
@@ -863,7 +835,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:138](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L138)
+[src/shapes/Object/Object.ts:138](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L138)
 
 ___
 
@@ -877,7 +849,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:58](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L58)
+[src/shapes/Object/Object.ts:139](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L139)
 
 ___
 
@@ -900,7 +872,7 @@ expressed in thousands of em unit
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:343](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L343)
+[src/shapes/Text/Text.ts:343](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L343)
 
 ___
 
@@ -914,7 +886,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:135](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L135)
+[src/shapes/Object/Object.ts:135](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L135)
 
 ___
 
@@ -931,23 +903,7 @@ This reference is a UID in the fabric namespace and is temporary stored here.
 
 #### Defined in
 
-[src/shapes/Object/FabricObjectSVGExportMixin.ts:14](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/FabricObjectSVGExportMixin.ts#L14)
-
-___
-
-### colorProperties
-
- **colorProperties**: `string`[]
-
-List of properties to consider for animating colors.
-
-#### Inherited from
-
-[IText](/apidocs/classes/IText.md).[colorProperties](/apidocs/classes/IText.md#colorproperties)
-
-#### Defined in
-
-[src/shapes/Object/AnimatableObject.ts:20](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/AnimatableObject.ts#L20)
+[src/shapes/Object/FabricObjectSVGExportMixin.ts:14](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/FabricObjectSVGExportMixin.ts#L14)
 
 ___
 
@@ -961,7 +917,7 @@ ___
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:190](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L190)
+[src/shapes/IText/IText.ts:190](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/IText.ts#L190)
 
 ___
 
@@ -975,7 +931,7 @@ ___
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:129](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L129)
+[src/shapes/IText/IText.ts:129](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/IText.ts#L129)
 
 ___
 
@@ -989,7 +945,7 @@ ___
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:127](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L127)
+[src/shapes/IText/IText.ts:127](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/IText.ts#L127)
 
 ___
 
@@ -1006,7 +962,7 @@ controls are added by default_controls.js
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:128](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L128)
+[src/shapes/Object/InteractiveObject.ts:117](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L117)
 
 ___
 
@@ -1020,7 +976,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:75](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L75)
+[src/shapes/Object/InteractiveObject.ts:67](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L67)
 
 ___
 
@@ -1034,7 +990,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:78](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L78)
+[src/shapes/Object/InteractiveObject.ts:70](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L70)
 
 ___
 
@@ -1048,7 +1004,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:72](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L72)
+[src/shapes/Object/InteractiveObject.ts:64](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L64)
 
 ___
 
@@ -1062,7 +1018,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:76](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L76)
+[src/shapes/Object/InteractiveObject.ts:68](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L68)
 
 ___
 
@@ -1076,7 +1032,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:77](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L77)
+[src/shapes/Object/InteractiveObject.ts:69](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L69)
 
 ___
 
@@ -1092,7 +1048,7 @@ For functionalities on keyDown + ctrl || cmd
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:42](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L42)
+[src/shapes/IText/ITextKeyBehavior.ts:42](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextKeyBehavior.ts#L42)
 
 ___
 
@@ -1108,7 +1064,7 @@ For functionalities on keyUp + ctrl || cmd
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:37](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L37)
+[src/shapes/IText/ITextKeyBehavior.ts:37](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextKeyBehavior.ts#L37)
 
 ___
 
@@ -1133,7 +1089,7 @@ be used instead of the color of the text at the current position.
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:174](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L174)
+[src/shapes/IText/IText.ts:174](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/IText.ts#L174)
 
 ___
 
@@ -1155,7 +1111,7 @@ Delay between cursor blink (in ms)
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:181](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L181)
+[src/shapes/IText/IText.ts:181](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/IText.ts#L181)
 
 ___
 
@@ -1177,7 +1133,7 @@ Duration of cursor fade in (in ms)
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:188](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L188)
+[src/shapes/IText/IText.ts:188](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/IText.ts#L188)
 
 ___
 
@@ -1198,7 +1154,7 @@ ___
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:74](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L74)
+[src/shapes/IText/ITextBehavior.ts:74](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextBehavior.ts#L74)
 
 ___
 
@@ -1220,7 +1176,7 @@ Width of cursor (in px)
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:164](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L164)
+[src/shapes/IText/IText.ts:164](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/IText.ts#L164)
 
 ___
 
@@ -1242,7 +1198,7 @@ Baseline shift, styles only, keep at 0 for the main text object
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:350](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L350)
+[src/shapes/Text/Text.ts:350](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L350)
 
 ___
 
@@ -1273,7 +1229,7 @@ https://www.w3.org/International/questions/qa-bidi-unicode-controls
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:363](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L363)
+[src/shapes/Text/Text.ts:363](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L363)
 
 ___
 
@@ -1296,7 +1252,7 @@ true
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:163](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L163)
+[src/shapes/Object/Object.ts:164](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L164)
 
 ___
 
@@ -1310,7 +1266,7 @@ ___
 
 #### Defined in
 
-[src/shapes/IText/ITextClickBehavior.ts:32](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextClickBehavior.ts#L32)
+[src/shapes/IText/ITextClickBehavior.ts:28](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextClickBehavior.ts#L28)
 
 ___
 
@@ -1334,7 +1290,7 @@ UniqueTextboxProps.dynamicMinWidth
 
 #### Defined in
 
-[src/shapes/Textbox.ts:75](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Textbox.ts#L75)
+[src/shapes/Textbox.ts:75](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Textbox.ts#L75)
 
 ___
 
@@ -1356,7 +1312,7 @@ Indicates whether a text can be edited
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:150](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L150)
+[src/shapes/IText/IText.ts:150](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/IText.ts#L150)
 
 ___
 
@@ -1378,7 +1334,7 @@ Border color of text object while it's in editing mode
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:157](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L157)
+[src/shapes/IText/IText.ts:157](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/IText.ts#L157)
 
 ___
 
@@ -1392,7 +1348,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:89](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L89)
+[src/shapes/Object/InteractiveObject.ts:81](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L81)
 
 ___
 
@@ -1406,13 +1362,13 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:131](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L131)
+[src/shapes/Object/Object.ts:131](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L131)
 
 ___
 
 ### fill
 
- **fill**: ``null`` \| `string` \| [`TFiller`](/apidocs/modules.md#tfiller)
+ **fill**: ``null`` \| `string` \| [`Pattern`](/apidocs/classes/Pattern.md) \| [`Gradient`](/apidocs/classes/Gradient.md)\<``"linear"``, ``"linear"``\> \| [`Gradient`](/apidocs/classes/Gradient.md)\<``"radial"``, ``"radial"``\>
 
 #### Inherited from
 
@@ -1420,7 +1376,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:114](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L114)
+[src/shapes/Object/Object.ts:114](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L114)
 
 ___
 
@@ -1434,7 +1390,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:115](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L115)
+[src/shapes/Object/Object.ts:115](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L115)
 
 ___
 
@@ -1448,7 +1404,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:21](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L21)
+[src/shapes/Object/ObjectOrigin.ts:21](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectOrigin.ts#L21)
 
 ___
 
@@ -1462,7 +1418,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:22](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L22)
+[src/shapes/Object/ObjectOrigin.ts:22](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectOrigin.ts#L22)
 
 ___
 
@@ -1484,7 +1440,7 @@ Font family
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:184](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L184)
+[src/shapes/Text/Text.ts:184](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L184)
 
 ___
 
@@ -1506,7 +1462,7 @@ Font size (in pixels)
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:170](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L170)
+[src/shapes/Text/Text.ts:170](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L170)
 
 ___
 
@@ -1528,7 +1484,7 @@ Font style . Possible values: "", "normal", "italic" or "oblique".
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:220](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L220)
+[src/shapes/Text/Text.ts:220](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L220)
 
 ___
 
@@ -1550,7 +1506,7 @@ Font weight (e.g. bold, normal, 400, 600, 800)
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:177](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L177)
+[src/shapes/Text/Text.ts:177](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L177)
 
 ___
 
@@ -1564,7 +1520,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:123](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L123)
+[src/shapes/Object/Object.ts:123](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L123)
 
 ___
 
@@ -1587,7 +1543,7 @@ undefined
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:246](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L246)
+[src/shapes/Object/Object.ts:247](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L247)
 
 ___
 
@@ -1601,7 +1557,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:85](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L85)
+[src/shapes/Object/InteractiveObject.ts:77](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L77)
 
 ___
 
@@ -1615,7 +1571,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:79](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L79)
+[src/shapes/Object/InteractiveObject.ts:71](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L71)
 
 ___
 
@@ -1629,7 +1585,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:20](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L20)
+[src/shapes/Object/ObjectOrigin.ts:20](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectOrigin.ts#L20)
 
 ___
 
@@ -1643,7 +1599,7 @@ ___
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:44](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L44)
+[src/shapes/IText/ITextKeyBehavior.ts:44](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextKeyBehavior.ts#L44)
 
 ___
 
@@ -1668,7 +1624,7 @@ also with modals event capturing that won't let the textarea take focus.
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:54](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L54)
+[src/shapes/IText/ITextKeyBehavior.ts:54](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextKeyBehavior.ts#L54)
 
 ___
 
@@ -1682,7 +1638,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:93](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L93)
+[src/shapes/Object/InteractiveObject.ts:85](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L85)
 
 ___
 
@@ -1699,7 +1655,7 @@ rendering is altered.
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:64](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L64)
+[src/shapes/IText/ITextBehavior.ts:64](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextBehavior.ts#L64)
 
 ___
 
@@ -1713,7 +1669,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:130](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L130)
+[src/shapes/Object/Object.ts:130](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L130)
 
 ___
 
@@ -1727,7 +1683,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:409](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L409)
+[src/shapes/Text/Text.ts:409](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L409)
 
 ___
 
@@ -1741,7 +1697,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:136](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L136)
+[src/shapes/Object/Object.ts:136](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L136)
 
 ___
 
@@ -1763,7 +1719,7 @@ Indicates whether text is in editing mode
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:143](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L143)
+[src/shapes/IText/IText.ts:143](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/IText.ts#L143)
 
 ___
 
@@ -1780,7 +1736,7 @@ part of the move action.
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:134](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L134)
+[src/shapes/Object/InteractiveObject.ts:123](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L123)
 
 ___
 
@@ -1790,7 +1746,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Textbox.ts:89](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Textbox.ts#L89)
+[src/shapes/Textbox.ts:89](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Textbox.ts#L89)
 
 ___
 
@@ -1814,7 +1770,7 @@ The function must be in IText.prototype.myFunction And will receive event as arg
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:30](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L30)
+[src/shapes/IText/ITextKeyBehavior.ts:30](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextKeyBehavior.ts#L30)
 
 ___
 
@@ -1828,7 +1784,7 @@ ___
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:32](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L32)
+[src/shapes/IText/ITextKeyBehavior.ts:32](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextKeyBehavior.ts#L32)
 
 ___
 
@@ -1842,30 +1798,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:18](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L18)
-
-___
-
-### lineCoords
-
- **lineCoords**: [`TCornerPoint`](/apidocs/modules.md#tcornerpoint)
-
-Describe object's corner position in canvas element coordinates.
-includes padding. Used of object detection.
-set and refreshed with setCoords.
-Those could go away
-
-**`Todo`**
-
-investigate how to get rid of those
-
-#### Inherited from
-
-[IText](/apidocs/classes/IText.md).[lineCoords](/apidocs/classes/IText.md#linecoords)
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:66](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L66)
+[src/shapes/Object/ObjectOrigin.ts:18](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectOrigin.ts#L18)
 
 ___
 
@@ -1887,7 +1820,7 @@ Line height
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:227](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L227)
+[src/shapes/Text/Text.ts:227](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L227)
 
 ___
 
@@ -1909,7 +1842,7 @@ Text decoration linethrough.
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:205](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L205)
+[src/shapes/Text/Text.ts:205](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L205)
 
 ___
 
@@ -1923,7 +1856,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:63](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L63)
+[src/shapes/Object/InteractiveObject.ts:55](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L55)
 
 ___
 
@@ -1937,7 +1870,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:64](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L64)
+[src/shapes/Object/InteractiveObject.ts:56](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L56)
 
 ___
 
@@ -1951,7 +1884,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:65](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L65)
+[src/shapes/Object/InteractiveObject.ts:57](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L57)
 
 ___
 
@@ -1965,7 +1898,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:70](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L70)
+[src/shapes/Object/InteractiveObject.ts:62](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L62)
 
 ___
 
@@ -1979,7 +1912,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:66](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L66)
+[src/shapes/Object/InteractiveObject.ts:58](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L58)
 
 ___
 
@@ -1993,7 +1926,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:67](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L67)
+[src/shapes/Object/InteractiveObject.ts:59](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L59)
 
 ___
 
@@ -2007,7 +1940,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:68](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L68)
+[src/shapes/Object/InteractiveObject.ts:60](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L60)
 
 ___
 
@@ -2021,7 +1954,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:69](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L69)
+[src/shapes/Object/InteractiveObject.ts:61](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L61)
 
 ___
 
@@ -2037,7 +1970,7 @@ storage cache for object full transform matrix
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:76](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L76)
+[src/shapes/Object/ObjectGeometry.ts:60](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectGeometry.ts#L60)
 
 ___
 
@@ -2051,7 +1984,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:109](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L109)
+[src/shapes/Object/Object.ts:109](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L109)
 
 ___
 
@@ -2073,7 +2006,7 @@ UniqueTextboxProps.minWidth
 
 #### Defined in
 
-[src/shapes/Textbox.ts:66](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Textbox.ts#L66)
+[src/shapes/Textbox.ts:66](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Textbox.ts#L66)
 
 ___
 
@@ -2087,7 +2020,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:94](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L94)
+[src/shapes/Object/InteractiveObject.ts:86](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L86)
 
 ___
 
@@ -2101,7 +2034,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:57](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L57)
+[src/shapes/Object/InteractiveObject.ts:50](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L50)
 
 ___
 
@@ -2109,13 +2042,10 @@ ___
 
  **oCoords**: `Record`\<`string`, `TOCoord`\>
 
-Describe object's corner position in canvas element coordinates.
-properties are depending on control keys and padding the main controls.
-each property is an object with x, y and corner.
-The `corner` property contains in a similar manner the 4 points of the
-interactive area of the corner.
-The coordinates depends from the controls positionHandler and are used
-to draw and locate controls
+The object's controls' position in viewport coordinates
+Calculated by [Control#positionHandler](/apidocs/classes/Control.md#positionhandler) and [Control#calcCornerCoords](/apidocs/classes/Control.md#calccornercoords), depending on [padding](/apidocs/classes/FabricObject.md#padding).
+`corner/touchCorner` describe the 4 points forming the interactive area of the corner.
+Used to draw and locate controls.
 
 #### Inherited from
 
@@ -2123,7 +2053,7 @@ to draw and locate controls
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:105](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L105)
+[src/shapes/Object/InteractiveObject.ts:94](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L94)
 
 ___
 
@@ -2137,7 +2067,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:133](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L133)
+[src/shapes/Object/Object.ts:133](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L133)
 
 ___
 
@@ -2159,7 +2089,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:328](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L328)
+[src/shapes/Text/Text.ts:328](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L328)
 
 ___
 
@@ -2173,7 +2103,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:111](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L111)
+[src/shapes/Object/Object.ts:111](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L111)
 
 ___
 
@@ -2187,7 +2117,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:27](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L27)
+[src/shapes/Object/ObjectOrigin.ts:27](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectOrigin.ts#L27)
 
 ___
 
@@ -2201,7 +2131,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:28](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L28)
+[src/shapes/Object/ObjectOrigin.ts:28](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectOrigin.ts#L28)
 
 ___
 
@@ -2223,7 +2153,7 @@ Text decoration overline.
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:198](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L198)
+[src/shapes/Text/Text.ts:198](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L198)
 
 ___
 
@@ -2247,7 +2177,7 @@ undefined
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:255](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L255)
+[src/shapes/Object/Object.ts:256](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L256)
 
 ___
 
@@ -2263,7 +2193,7 @@ storage cache for object transform matrix
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:71](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L71)
+[src/shapes/Object/ObjectGeometry.ts:55](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectGeometry.ts#L55)
 
 ___
 
@@ -2277,7 +2207,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:44](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L44)
+[src/shapes/Object/ObjectGeometry.ts:40](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectGeometry.ts#L40)
 
 ___
 
@@ -2291,7 +2221,24 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:113](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L113)
+[src/shapes/Object/Object.ts:113](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L113)
+
+___
+
+### parent
+
+ `Optional` **parent**: [`Group`](/apidocs/classes/Group.md)
+
+A reference to the parent of the object
+Used to keep the original parent ref when the object has been added to an ActiveSelection, hence loosing the `group` ref
+
+#### Inherited from
+
+[IText](/apidocs/classes/IText.md).[parent](/apidocs/classes/IText.md#parent)
+
+#### Defined in
+
+[src/shapes/Object/StackedObject.ts:44](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/StackedObject.ts#L44)
 
 ___
 
@@ -2334,7 +2281,7 @@ const textPath = new Text('Text on a path', {
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:292](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L292)
+[src/shapes/Text/Text.ts:292](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L292)
 
 ___
 
@@ -2359,7 +2306,7 @@ This feature is in BETA, and its behavior may change
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:318](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L318)
+[src/shapes/Text/Text.ts:318](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L318)
 
 ___
 
@@ -2382,7 +2329,7 @@ Only used when text has a path
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:308](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L308)
+[src/shapes/Text/Text.ts:308](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L308)
 
 ___
 
@@ -2405,7 +2352,7 @@ Only used when text has a path
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:300](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L300)
+[src/shapes/Text/Text.ts:300](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L300)
 
 ___
 
@@ -2419,7 +2366,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:90](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L90)
+[src/shapes/Object/InteractiveObject.ts:82](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L82)
 
 ___
 
@@ -2433,7 +2380,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:23](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L23)
+[src/shapes/Object/ObjectOrigin.ts:23](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectOrigin.ts#L23)
 
 ___
 
@@ -2447,7 +2394,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:24](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L24)
+[src/shapes/Object/ObjectOrigin.ts:24](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectOrigin.ts#L24)
 
 ___
 
@@ -2461,7 +2408,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:88](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L88)
+[src/shapes/Object/InteractiveObject.ts:80](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L80)
 
 ___
 
@@ -2475,7 +2422,7 @@ ___
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:73](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L73)
+[src/shapes/IText/ITextBehavior.ts:73](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextBehavior.ts#L73)
 
 ___
 
@@ -2489,7 +2436,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:86](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L86)
+[src/shapes/Object/InteractiveObject.ts:78](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L78)
 
 ___
 
@@ -2511,7 +2458,7 @@ Color of text selection
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:136](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L136)
+[src/shapes/IText/IText.ts:136](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/IText.ts#L136)
 
 ___
 
@@ -2533,7 +2480,7 @@ Index where text selection ends
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:125](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L125)
+[src/shapes/IText/IText.ts:125](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/IText.ts#L125)
 
 ___
 
@@ -2555,7 +2502,7 @@ Index where text selection starts (or where cursor is when there is no selection
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:118](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L118)
+[src/shapes/IText/IText.ts:118](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/IText.ts#L118)
 
 ___
 
@@ -2569,7 +2516,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:126](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L126)
+[src/shapes/Object/Object.ts:126](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L126)
 
 ___
 
@@ -2583,7 +2530,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:25](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L25)
+[src/shapes/Object/ObjectOrigin.ts:25](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectOrigin.ts#L25)
 
 ___
 
@@ -2597,7 +2544,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:26](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L26)
+[src/shapes/Object/ObjectOrigin.ts:26](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectOrigin.ts#L26)
 
 ___
 
@@ -2611,7 +2558,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:60](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L60)
+[src/shapes/Object/InteractiveObject.ts:52](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L52)
 
 ___
 
@@ -2625,7 +2572,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:61](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L61)
+[src/shapes/Object/InteractiveObject.ts:53](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L53)
 
 ___
 
@@ -2646,13 +2593,13 @@ UniqueTextboxProps.splitByGrapheme
 
 #### Defined in
 
-[src/shapes/Textbox.ts:83](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Textbox.ts#L83)
+[src/shapes/Textbox.ts:83](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Textbox.ts#L83)
 
 ___
 
 ### stroke
 
- **stroke**: ``null`` \| `string` \| [`TFiller`](/apidocs/modules.md#tfiller)
+ **stroke**: ``null`` \| `string` \| [`Pattern`](/apidocs/classes/Pattern.md) \| [`Gradient`](/apidocs/classes/Gradient.md)\<``"linear"``, ``"linear"``\> \| [`Gradient`](/apidocs/classes/Gradient.md)\<``"radial"``, ``"radial"``\>
 
 #### Inherited from
 
@@ -2660,7 +2607,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:116](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L116)
+[src/shapes/Object/Object.ts:116](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L116)
 
 ___
 
@@ -2674,7 +2621,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:117](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L117)
+[src/shapes/Object/Object.ts:117](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L117)
 
 ___
 
@@ -2688,7 +2635,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:118](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L118)
+[src/shapes/Object/Object.ts:118](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L118)
 
 ___
 
@@ -2702,7 +2649,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:119](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L119)
+[src/shapes/Object/Object.ts:119](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L119)
 
 ___
 
@@ -2716,7 +2663,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:120](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L120)
+[src/shapes/Object/Object.ts:120](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L120)
 
 ___
 
@@ -2730,7 +2677,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:121](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L121)
+[src/shapes/Object/Object.ts:121](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L121)
 
 ___
 
@@ -2744,7 +2691,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:31](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L31)
+[src/shapes/Object/ObjectOrigin.ts:31](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectOrigin.ts#L31)
 
 ___
 
@@ -2758,7 +2705,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:30](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L30)
+[src/shapes/Object/ObjectOrigin.ts:30](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectOrigin.ts#L30)
 
 ___
 
@@ -2772,7 +2719,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:268](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L268)
+[src/shapes/Text/Text.ts:268](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L268)
 
 ___
 
@@ -2795,7 +2742,7 @@ Subscript schema object (minimum overlap)
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:248](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L248)
+[src/shapes/Text/Text.ts:248](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L248)
 
 ___
 
@@ -2818,7 +2765,7 @@ Superscript schema object (minimum overlap)
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:232](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L232)
+[src/shapes/Text/Text.ts:232](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L232)
 
 ___
 
@@ -2832,7 +2779,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:163](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L163)
+[src/shapes/Text/Text.ts:163](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L163)
 
 ___
 
@@ -2855,7 +2802,7 @@ Text alignment. Possible values: "left", "center", "right", "justify",
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:213](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L213)
+[src/shapes/Text/Text.ts:213](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L213)
 
 ___
 
@@ -2877,7 +2824,7 @@ Background color of text lines
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:266](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L266)
+[src/shapes/Text/Text.ts:266](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L266)
 
 ___
 
@@ -2900,7 +2847,7 @@ on screen. Wrapping will divide the text independently of line breaks
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:395](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L395)
+[src/shapes/Text/Text.ts:395](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L395)
 
 ___
 
@@ -2914,7 +2861,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:17](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L17)
+[src/shapes/Object/ObjectOrigin.ts:17](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectOrigin.ts#L17)
 
 ___
 
@@ -2928,7 +2875,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:73](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L73)
+[src/shapes/Object/InteractiveObject.ts:65](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L65)
 
 ___
 
@@ -2942,7 +2889,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:74](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L74)
+[src/shapes/Object/InteractiveObject.ts:66](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L66)
 
 ___
 
@@ -2964,7 +2911,7 @@ Text decoration underline.
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:191](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L191)
+[src/shapes/Text/Text.ts:191](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L191)
 
 ___
 
@@ -2978,7 +2925,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:128](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L128)
+[src/shapes/Object/Object.ts:128](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L128)
 
 ___
 
@@ -2992,7 +2939,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:19](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L19)
+[src/shapes/Object/ObjectOrigin.ts:19](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectOrigin.ts#L19)
 
 ___
 
@@ -3016,7 +2963,7 @@ undefined
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:211](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L211)
+[src/shapes/Object/Object.ts:212](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L212)
 
 ___
 
@@ -3040,7 +2987,7 @@ undefined
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:220](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L220)
+[src/shapes/Object/Object.ts:221](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L221)
 
 ___
 
@@ -3063,7 +3010,7 @@ Text
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1801](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1801)
+[src/shapes/Text/Text.ts:1801](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L1801)
 
 ___
 
@@ -3077,7 +3024,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Text/StyledText.ts:29](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/StyledText.ts#L29)
+[src/shapes/Text/StyledText.ts:29](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/StyledText.ts#L29)
 
 ___
 
@@ -3091,7 +3038,23 @@ ___
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:411](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L411)
+[src/shapes/Text/Text.ts:411](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L411)
+
+___
+
+### colorProperties
+
+ `Static` **colorProperties**: `string`[]
+
+List of properties to consider for animating colors.
+
+#### Inherited from
+
+[IText](/apidocs/classes/IText.md).[colorProperties](/apidocs/classes/IText.md#colorproperties)
+
+#### Defined in
+
+[src/shapes/Object/AnimatableObject.ts:20](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/AnimatableObject.ts#L20)
 
 ___
 
@@ -3105,7 +3068,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1785](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1785)
+[src/shapes/Text/Text.ts:1785](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L1785)
 
 ___
 
@@ -3119,7 +3082,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Textbox.ts:95](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Textbox.ts#L95)
+[src/shapes/Textbox.ts:95](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Textbox.ts#L95)
 
 ___
 
@@ -3137,7 +3100,7 @@ needs its cache regenerated during a .set call
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:146](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L146)
+[src/shapes/Object/Object.ts:147](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L147)
 
 ___
 
@@ -3153,7 +3116,7 @@ Properties that requires a text layout recalculation when changed
 
 #### Defined in
 
-[src/shapes/Textbox.ts:93](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Textbox.ts#L93)
+[src/shapes/Textbox.ts:93](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Textbox.ts#L93)
 
 ___
 
@@ -3167,7 +3130,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Textbox.ts:91](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Textbox.ts#L91)
+[src/shapes/Textbox.ts:91](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Textbox.ts#L91)
 
 ## Accessors
 
@@ -3185,7 +3148,7 @@ IText.type
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:207](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L207)
+[src/shapes/IText/IText.ts:207](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/IText.ts#L207)
 
 ## Methods
 
@@ -3216,7 +3179,7 @@ Calculates cursor left/top offset relative to instance's center point
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:434](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L434)
+[src/shapes/IText/IText.ts:434](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/IText.ts#L434)
 
 ___
 
@@ -3228,7 +3191,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `T` | extends `number` \| [`TColorArg`](/apidocs/modules.md#tcolorarg) \| `number`[] |
+| `T` | extends `string` \| `number` \| [`TRGBColorSource`](/apidocs/modules.md#trgbcolorsource) \| [`TRGBAColorSource`](/apidocs/modules.md#trgbacolorsource) \| [`Color`](/apidocs/classes/Color.md) \| `number`[] |
 
 #### Parameters
 
@@ -3248,7 +3211,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/AnimatableObject.ts:50](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/AnimatableObject.ts#L50)
+[src/shapes/Object/AnimatableObject.ts:50](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/AnimatableObject.ts#L50)
 
 ___
 
@@ -3276,7 +3239,7 @@ ___
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:120](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L120)
+[src/shapes/IText/ITextBehavior.ts:120](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextBehavior.ts#L120)
 
 ___
 
@@ -3308,7 +3271,7 @@ is limited.
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1255](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1255)
+[src/shapes/Object/Object.ts:1259](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L1259)
 
 ___
 
@@ -3338,7 +3301,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1152](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1152)
+[src/shapes/Object/Object.ts:1156](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L1156)
 
 ___
 
@@ -3371,7 +3334,7 @@ a pattern to use as fill/stroke style
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1245](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1245)
+[src/shapes/Text/Text.ts:1245](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L1245)
 
 ___
 
@@ -3391,7 +3354,7 @@ style contains style for hiddenTextarea
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:559](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L559)
+[src/shapes/IText/ITextBehavior.ts:559](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextBehavior.ts#L559)
 
 ___
 
@@ -3420,7 +3383,7 @@ dimensions
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:633](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L633)
+[src/shapes/Object/ObjectGeometry.ts:553](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectGeometry.ts#L553)
 
 ___
 
@@ -3438,7 +3401,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1491](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1491)
+[src/shapes/Text/Text.ts:1491](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L1491)
 
 ___
 
@@ -3467,7 +3430,7 @@ constrained value;
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:675](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L675)
+[src/shapes/Object/Object.ts:676](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L676)
 
 ___
 
@@ -3477,13 +3440,13 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `this` | `FabricObjectSVGExportMixin` & [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
-| `objectMarkup` | `string`[] |
-| `«destructured»` | `Object` |
-| › `additionalTransform?` | `string` |
-| › `reviver?` | [`TSVGReviver`](/apidocs/modules.md#tsvgreviver) |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `this` | `FabricObjectSVGExportMixin` & [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | `undefined` |
+| `objectMarkup` | `string`[] | `undefined` |
+| `«destructured»` | `Object` | `{}` |
+| › `additionalTransform?` | `string` | `''` |
+| › `reviver?` | [`TSVGReviver`](/apidocs/modules.md#tsvgreviver) | `undefined` |
 
 #### Returns
 
@@ -3495,7 +3458,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/FabricObjectSVGExportMixin.ts:158](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/FabricObjectSVGExportMixin.ts#L158)
+[src/shapes/Object/FabricObjectSVGExportMixin.ts:158](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/FabricObjectSVGExportMixin.ts#L158)
 
 ___
 
@@ -3525,7 +3488,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/FabricObjectSVGExportMixin.ts:179](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/FabricObjectSVGExportMixin.ts#L179)
+[src/shapes/Object/FabricObjectSVGExportMixin.ts:179](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/FabricObjectSVGExportMixin.ts#L179)
 
 ___
 
@@ -3545,7 +3508,7 @@ Create a the canvas used to keep the cached copy of the object
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:319](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L319)
+[src/shapes/Object/Object.ts:320](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L320)
 
 ___
 
@@ -3569,7 +3532,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Text/StyledText.ts:320](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/StyledText.ts#L320)
+[src/shapes/Text/StyledText.ts:320](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/StyledText.ts#L320)
 
 ___
 
@@ -3594,7 +3557,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Textbox.ts:270](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Textbox.ts#L270)
+[src/shapes/Textbox.ts:270](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Textbox.ts#L270)
 
 ___
 
@@ -3620,7 +3583,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:376](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L376)
+[src/shapes/Object/InteractiveObject.ts:361](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L361)
 
 ___
 
@@ -3647,7 +3610,7 @@ Prepare clipPath state and cache and draw it on instance's cache
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:944](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L944)
+[src/shapes/Object/Object.ts:948](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L948)
 
 ___
 
@@ -3655,7 +3618,7 @@ ___
 
 **_exitEditing**(): `void`
 
-runs the actual logic that exits from editing state, see [exitEditing](/apidocs/classes/IText.md#exitediting)
+runs the actual logic that exits from editing state, see [exitEditing](/apidocs/classes/Textbox.md#exitediting)
 
 #### Returns
 
@@ -3667,7 +3630,7 @@ runs the actual logic that exits from editing state, see [exitEditing](/apidocs/
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:663](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L663)
+[src/shapes/IText/ITextBehavior.ts:663](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextBehavior.ts#L663)
 
 ___
 
@@ -3690,7 +3653,7 @@ center point from element coordinates
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1303](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1303)
+[src/shapes/Object/Object.ts:1307](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L1307)
 
 ___
 
@@ -3723,7 +3686,7 @@ corner code (tl, tr, bl, br, etc.), or 0 if nothing is found.
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:191](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L191)
+[src/shapes/Object/InteractiveObject.ts:180](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L180)
 
 ___
 
@@ -3743,7 +3706,7 @@ Fires the even of selection changed
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:282](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L282)
+[src/shapes/IText/IText.ts:282](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/IText.ts#L282)
 
 ___
 
@@ -3768,7 +3731,7 @@ which is only sufficient for Text / IText
 
 #### Defined in
 
-[src/shapes/Textbox.ts:140](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Textbox.ts#L140)
+[src/shapes/Textbox.ts:140](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Textbox.ts#L140)
 
 ___
 
@@ -3797,7 +3760,7 @@ big enough to host the object to be cached.
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:588](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L588)
+[src/shapes/Text/Text.ts:588](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L588)
 
 ___
 
@@ -3822,7 +3785,7 @@ Returns the cursor position for the getCurrent.. functions
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:682](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L682)
+[src/shapes/IText/IText.ts:682](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/IText.ts#L682)
 
 ___
 
@@ -3851,7 +3814,7 @@ leftOffset/topOffset are offset from that left/top point of a text box
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:395](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L395)
+[src/shapes/IText/IText.ts:395](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/IText.ts#L395)
 
 ___
 
@@ -3883,7 +3846,7 @@ Caches and returns cursor left/top offset relative to instance's center point
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:416](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L416)
+[src/shapes/IText/IText.ts:416](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/IText.ts#L416)
 
 ___
 
@@ -3912,7 +3875,7 @@ font declaration formatted for canvas context.
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1648](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1648)
+[src/shapes/Text/Text.ts:1648](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L1648)
 
 ___
 
@@ -3942,7 +3905,7 @@ grapheme bbox
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:973](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L973)
+[src/shapes/Text/Text.ts:973](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L973)
 
 ___
 
@@ -3969,7 +3932,7 @@ for a given width it founds the matching character.
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:416](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L416)
+[src/shapes/IText/ITextKeyBehavior.ts:416](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextKeyBehavior.ts#L416)
 
 ___
 
@@ -3989,7 +3952,7 @@ Left offset
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1048](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1048)
+[src/shapes/Text/Text.ts:1048](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L1048)
 
 ___
 
@@ -4007,7 +3970,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:222](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L222)
+[src/shapes/Object/ObjectOrigin.ts:227](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectOrigin.ts#L227)
 
 ___
 
@@ -4033,7 +3996,7 @@ Line left offset
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1445](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1445)
+[src/shapes/Text/Text.ts:1445](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L1445)
 
 ___
 
@@ -4063,7 +4026,7 @@ if the line exists or not
 
 #### Defined in
 
-[src/shapes/Textbox.ts:285](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Textbox.ts#L285)
+[src/shapes/Textbox.ts:285](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Textbox.ts#L285)
 
 ___
 
@@ -4085,7 +4048,7 @@ dimensions
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:622](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L622)
+[src/shapes/Object/ObjectGeometry.ts:542](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectGeometry.ts#L542)
 
 ___
 
@@ -4113,7 +4076,7 @@ Helps finding if the offset should be counted from Start or End
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:377](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L377)
+[src/shapes/IText/ITextKeyBehavior.ts:377](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextKeyBehavior.ts#L377)
 
 ___
 
@@ -4138,7 +4101,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Textbox.ts:232](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Textbox.ts#L232)
+[src/shapes/Textbox.ts:232](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Textbox.ts#L232)
 
 ___
 
@@ -4158,7 +4121,7 @@ Top offset
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1056](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1056)
+[src/shapes/Text/Text.ts:1056](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L1056)
 
 ___
 
@@ -4167,6 +4130,7 @@ ___
 **_getTransformedDimensions**(`options?`): [`Point`](/apidocs/classes/Point.md)
 
 Calculate object bounding box dimensions from its properties scale, skew.
+This bounding box is aligned with object angle and not with canvas axis or screen.
 
 #### Parameters
 
@@ -4186,7 +4150,7 @@ dimensions
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:49](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L49)
+[src/shapes/Object/ObjectOrigin.ts:50](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectOrigin.ts#L50)
 
 ___
 
@@ -4215,7 +4179,7 @@ widthBeforeCursor width before cursor
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:328](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L328)
+[src/shapes/IText/ITextKeyBehavior.ts:328](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextKeyBehavior.ts#L328)
 
 ___
 
@@ -4233,7 +4197,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1515](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1515)
+[src/shapes/Text/Text.ts:1515](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L1515)
 
 ___
 
@@ -4270,7 +4234,7 @@ making bargain with performances.
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:342](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L342)
+[src/shapes/Object/Object.ts:343](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L343)
 
 ___
 
@@ -4306,7 +4270,7 @@ to hook some external lib for character measurement
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:792](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L792)
+[src/shapes/Text/Text.ts:792](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L792)
 
 ___
 
@@ -4341,7 +4305,7 @@ object.numOfSpaces length of chars that match this._reSpacesAndTabs
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:881](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L881)
+[src/shapes/Text/Text.ts:881](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L881)
 
 ___
 
@@ -4368,7 +4332,7 @@ Use with [Textbox#wordSplit](/apidocs/classes/Textbox.md#wordsplit)
 
 #### Defined in
 
-[src/shapes/Textbox.ts:375](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Textbox.ts#L375)
+[src/shapes/Textbox.ts:375](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Textbox.ts#L375)
 
 ___
 
@@ -4399,7 +4363,7 @@ current compositionMode. It will be set to false.
 
 #### Defined in
 
-[src/shapes/IText/ITextClickBehavior.ts:131](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextClickBehavior.ts#L131)
+[src/shapes/IText/ITextClickBehavior.ts:127](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextClickBehavior.ts#L127)
 
 ___
 
@@ -4427,7 +4391,7 @@ Scope of this implementation is: verify the object is already selected when mous
 
 #### Defined in
 
-[src/shapes/IText/ITextClickBehavior.ts:166](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextClickBehavior.ts#L166)
+[src/shapes/IText/ITextClickBehavior.ts:162](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextClickBehavior.ts#L162)
 
 ___
 
@@ -4459,7 +4423,7 @@ refactor not to use method name composition
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:548](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L548)
+[src/shapes/IText/ITextKeyBehavior.ts:548](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextKeyBehavior.ts#L548)
 
 ___
 
@@ -4486,7 +4450,7 @@ Moves cursor right or Left, fires event
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:638](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L638)
+[src/shapes/IText/ITextKeyBehavior.ts:638](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextKeyBehavior.ts#L638)
 
 ___
 
@@ -4513,7 +4477,7 @@ Moves cursor up or down, fires the events
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:477](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L477)
+[src/shapes/IText/ITextKeyBehavior.ts:477](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextKeyBehavior.ts#L477)
 
 ___
 
@@ -4538,7 +4502,7 @@ ___
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:572](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L572)
+[src/shapes/IText/ITextKeyBehavior.ts:572](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextKeyBehavior.ts#L572)
 
 ___
 
@@ -4563,7 +4527,7 @@ ___
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:579](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L579)
+[src/shapes/IText/ITextKeyBehavior.ts:579](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextKeyBehavior.ts#L579)
 
 ___
 
@@ -4583,7 +4547,7 @@ Remove cacheCanvas and its dimensions from the objects
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:798](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L798)
+[src/shapes/Object/Object.ts:802](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L802)
 
 ___
 
@@ -4613,7 +4577,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:590](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L590)
+[src/shapes/Object/Object.ts:591](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L591)
 
 ___
 
@@ -4631,7 +4595,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Textbox.ts:535](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Textbox.ts#L535)
+[src/shapes/Textbox.ts:535](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Textbox.ts#L535)
 
 ___
 
@@ -4655,7 +4619,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1138](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1138)
+[src/shapes/Object/Object.ts:1142](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L1142)
 
 ___
 
@@ -4679,7 +4643,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:600](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L600)
+[src/shapes/Text/Text.ts:600](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L600)
 
 ___
 
@@ -4705,7 +4669,7 @@ Draws a background for the object big as its untransformed dimensions
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1006](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1006)
+[src/shapes/Object/Object.ts:1010](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L1010)
 
 ___
 
@@ -4735,7 +4699,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1343](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1343)
+[src/shapes/Text/Text.ts:1343](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L1343)
 
 ___
 
@@ -4764,7 +4728,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1132](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1132)
+[src/shapes/Text/Text.ts:1132](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L1132)
 
 ___
 
@@ -4796,7 +4760,7 @@ move to interactivity
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:402](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L402)
+[src/shapes/Object/InteractiveObject.ts:387](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L387)
 
 ___
 
@@ -4822,7 +4786,7 @@ ___
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:493](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L493)
+[src/shapes/IText/IText.ts:493](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/IText.ts#L493)
 
 ___
 
@@ -4846,7 +4810,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1205](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1205)
+[src/shapes/Object/Object.ts:1209](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L1209)
 
 ___
 
@@ -4870,7 +4834,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1180](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1180)
+[src/shapes/Object/Object.ts:1184](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L1184)
 
 ___
 
@@ -4900,7 +4864,7 @@ Renders text selection
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:571](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L571)
+[src/shapes/IText/IText.ts:571](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/IText.ts#L571)
 
 ___
 
@@ -4924,7 +4888,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1224](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1224)
+[src/shapes/Object/Object.ts:1228](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L1228)
 
 ___
 
@@ -4948,7 +4912,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:615](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L615)
+[src/shapes/Text/Text.ts:615](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L615)
 
 ___
 
@@ -4973,7 +4937,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1065](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1065)
+[src/shapes/Text/Text.ts:1065](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L1065)
 
 ___
 
@@ -4986,7 +4950,7 @@ ___
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `ctx` | `CanvasRenderingContext2D` | Context to render on |
-| `type` | ``"underline"`` \| ``"overline"`` \| ``"linethrough"`` | - |
+| `type` | ``"overline"`` \| ``"underline"`` \| ``"linethrough"`` | - |
 
 #### Returns
 
@@ -4998,7 +4962,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1542](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1542)
+[src/shapes/Text/Text.ts:1542](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L1542)
 
 ___
 
@@ -5022,7 +4986,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1094](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1094)
+[src/shapes/Text/Text.ts:1094](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L1094)
 
 ___
 
@@ -5051,7 +5015,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:684](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L684)
+[src/shapes/Text/Text.ts:684](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L684)
 
 ___
 
@@ -5077,7 +5041,7 @@ Renders the text background for lines, taking care of style
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:700](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L700)
+[src/shapes/Text/Text.ts:700](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L700)
 
 ___
 
@@ -5101,7 +5065,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1106](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1106)
+[src/shapes/Text/Text.ts:1106](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L1106)
 
 ___
 
@@ -5119,7 +5083,7 @@ ___
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:638](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L638)
+[src/shapes/IText/ITextBehavior.ts:638](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextBehavior.ts#L638)
 
 ___
 
@@ -5137,7 +5101,7 @@ ___
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:622](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L622)
+[src/shapes/IText/ITextBehavior.ts:622](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextBehavior.ts#L622)
 
 ___
 
@@ -5164,7 +5128,7 @@ While editing handle differently
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:230](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L230)
+[src/shapes/IText/IText.ts:230](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/IText.ts#L230)
 
 ___
 
@@ -5188,7 +5152,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1084](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1084)
+[src/shapes/Object/Object.ts:1088](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L1088)
 
 ___
 
@@ -5206,7 +5170,7 @@ ___
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:449](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L449)
+[src/shapes/IText/ITextBehavior.ts:449](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextBehavior.ts#L449)
 
 ___
 
@@ -5239,7 +5203,7 @@ need to be sent in as defined
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1328](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1328)
+[src/shapes/Text/Text.ts:1328](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L1328)
 
 ___
 
@@ -5267,7 +5231,7 @@ It appends it to graphemeInfo to be reused later at rendering
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:954](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L954)
+[src/shapes/Text/Text.ts:954](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L954)
 
 ___
 
@@ -5294,7 +5258,7 @@ Sets line dash
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1096](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1096)
+[src/shapes/Object/Object.ts:1100](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L1100)
 
 ___
 
@@ -5320,7 +5284,7 @@ Set the line style to an empty object so that is initialized
 
 #### Defined in
 
-[src/shapes/Textbox.ts:296](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Textbox.ts#L296)
+[src/shapes/Textbox.ts:296](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Textbox.ts#L296)
 
 ___
 
@@ -5344,7 +5308,7 @@ ___
 
 #### Defined in
 
-[src/CommonMethods.ts:18](https://github.com/fabricjs/fabric.js/blob/078809453/src/CommonMethods.ts#L18)
+[src/CommonMethods.ts:18](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/CommonMethods.ts#L18)
 
 ___
 
@@ -5368,7 +5332,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1023](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1023)
+[src/shapes/Object/Object.ts:1027](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L1027)
 
 ___
 
@@ -5394,7 +5358,7 @@ Sets object's properties from options, for initialization only
 
 #### Defined in
 
-[src/CommonMethods.ts:9](https://github.com/fabricjs/fabric.js/blob/078809453/src/CommonMethods.ts#L9)
+[src/CommonMethods.ts:9](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/CommonMethods.ts#L9)
 
 ___
 
@@ -5424,7 +5388,7 @@ Applies 'schema' at given position
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1418](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1418)
+[src/shapes/Text/Text.ts:1418](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L1418)
 
 ___
 
@@ -5448,7 +5412,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1111](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1111)
+[src/shapes/Object/Object.ts:1115](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L1115)
 
 ___
 
@@ -5481,7 +5445,7 @@ need to be sent in as defined
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1306](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1306)
+[src/shapes/Text/Text.ts:1306](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L1306)
 
 ___
 
@@ -5507,7 +5471,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Textbox.ts:253](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Textbox.ts#L253)
+[src/shapes/Textbox.ts:253](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Textbox.ts#L253)
 
 ___
 
@@ -5535,7 +5499,7 @@ Set the font parameter of the context with the object properties or with charSty
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:635](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L635)
+[src/shapes/Text/Text.ts:635](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L635)
 
 ___
 
@@ -5562,7 +5526,7 @@ custom composition operation for the particular object can be specified using gl
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1535](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1535)
+[src/shapes/Object/Object.ts:1539](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L1539)
 
 ___
 
@@ -5582,7 +5546,7 @@ Divides text into lines of text and lines of graphemes.
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:446](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L446)
+[src/shapes/Text/Text.ts:446](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L446)
 
 ___
 
@@ -5611,7 +5575,7 @@ Array of lines in the Textbox.
 
 #### Defined in
 
-[src/shapes/Textbox.ts:519](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Textbox.ts#L519)
+[src/shapes/Textbox.ts:519](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Textbox.ts#L519)
 
 ___
 
@@ -5642,7 +5606,7 @@ of the instance
 
 #### Defined in
 
-[src/shapes/Object/FabricObjectSVGExportMixin.ts:120](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/FabricObjectSVGExportMixin.ts#L120)
+[src/shapes/Object/FabricObjectSVGExportMixin.ts:120](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/FabricObjectSVGExportMixin.ts#L120)
 
 ___
 
@@ -5667,7 +5631,7 @@ ___
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:267](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L267)
+[src/shapes/IText/IText.ts:267](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/IText.ts#L267)
 
 ___
 
@@ -5690,7 +5654,7 @@ true if the canvas has been resized
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:164](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L164)
+[src/shapes/Object/InteractiveObject.ts:153](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L153)
 
 ___
 
@@ -5708,7 +5672,7 @@ ___
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:502](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L502)
+[src/shapes/IText/ITextBehavior.ts:502](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextBehavior.ts#L502)
 
 ___
 
@@ -5737,7 +5701,7 @@ to.
 
 #### Defined in
 
-[src/shapes/Textbox.ts:414](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Textbox.ts#L414)
+[src/shapes/Textbox.ts:414](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Textbox.ts#L414)
 
 ___
 
@@ -5765,7 +5729,7 @@ Array of lines
 
 #### Defined in
 
-[src/shapes/Textbox.ts:310](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Textbox.ts#L310)
+[src/shapes/Textbox.ts:310](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Textbox.ts#L310)
 
 ___
 
@@ -5785,7 +5749,7 @@ Aborts cursor animation, clears all timeouts and clear textarea context if neces
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:181](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L181)
+[src/shapes/IText/ITextBehavior.ts:181](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextBehavior.ts#L181)
 
 ___
 
@@ -5809,7 +5773,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/FabricObjectSVGExportMixin.ts:249](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/FabricObjectSVGExportMixin.ts#L249)
+[src/shapes/Object/FabricObjectSVGExportMixin.ts:249](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/FabricObjectSVGExportMixin.ts#L249)
 
 ___
 
@@ -5823,7 +5787,7 @@ Animates object's properties
 
 | Name | Type |
 | :------ | :------ |
-| `T` | extends `number` \| [`TColorArg`](/apidocs/modules.md#tcolorarg) \| `number`[] |
+| `T` | extends `string` \| `number` \| [`TRGBColorSource`](/apidocs/modules.md#trgbcolorsource) \| [`TRGBAColorSource`](/apidocs/modules.md#trgbacolorsource) \| [`Color`](/apidocs/classes/Color.md) \| `number`[] |
 
 #### Parameters
 
@@ -5853,7 +5817,7 @@ object.animate({ left: ..., top: ... }, { duration: ... });
 
 #### Defined in
 
-[src/shapes/Object/AnimatableObject.ts:34](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/AnimatableObject.ts#L34)
+[src/shapes/Object/AnimatableObject.ts:34](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/AnimatableObject.ts#L34)
 
 ___
 
@@ -5873,7 +5837,7 @@ Override this method to customize cursor behavior on textbox blur
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:106](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L106)
+[src/shapes/IText/ITextKeyBehavior.ts:106](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextKeyBehavior.ts#L106)
 
 ___
 
@@ -5894,7 +5858,7 @@ those never change with zoom or viewport changes.
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:491](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L491)
+[src/shapes/Object/ObjectGeometry.ts:414](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectGeometry.ts#L414)
 
 ___
 
@@ -5917,7 +5881,7 @@ is a public api and should be done just if extremely necessary
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:223](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L223)
+[src/shapes/Object/InteractiveObject.ts:212](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L212)
 
 ___
 
@@ -5940,7 +5904,7 @@ transform matrix for the object
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:591](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L591)
+[src/shapes/Object/ObjectGeometry.ts:511](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectGeometry.ts#L511)
 
 ___
 
@@ -5960,7 +5924,7 @@ Calculate text box height
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1034](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1034)
+[src/shapes/Text/Text.ts:1034](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L1034)
 
 ___
 
@@ -5982,7 +5946,7 @@ Maximum width of Text object
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:663](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L663)
+[src/shapes/Text/Text.ts:663](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L663)
 
 ___
 
@@ -6011,7 +5975,7 @@ transform matrix for the object
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:563](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L563)
+[src/shapes/Object/ObjectGeometry.ts:483](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectGeometry.ts#L483)
 
 ___
 
@@ -6037,7 +6001,7 @@ override this method to control whether instance should/shouldn't become a drop 
 
 #### Defined in
 
-[src/shapes/IText/ITextClickBehavior.ts:70](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextClickBehavior.ts#L70)
+[src/shapes/IText/ITextClickBehavior.ts:66](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextClickBehavior.ts#L66)
 
 ___
 
@@ -6068,7 +6032,7 @@ then it also is deleted.
 
 #### Defined in
 
-[src/shapes/Text/StyledText.ts:102](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/StyledText.ts#L102)
+[src/shapes/Text/StyledText.ts:102](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/StyledText.ts#L102)
 
 ___
 
@@ -6104,7 +6068,7 @@ discuss swapping restoreManually with a renderCallback, but think of async issue
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:582](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L582)
+[src/shapes/Object/InteractiveObject.ts:572](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L572)
 
 ___
 
@@ -6130,7 +6094,7 @@ Clones an instance.
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1312](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1312)
+[src/shapes/Object/Object.ts:1316](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L1316)
 
 ___
 
@@ -6167,7 +6131,7 @@ fix the export type, it could not be Image but the type that getClass return for
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1338](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1338)
+[src/shapes/Object/Object.ts:1342](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L1342)
 
 ___
 
@@ -6189,22 +6153,21 @@ complexity
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1781](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1781)
+[src/shapes/Text/Text.ts:1781](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L1781)
 
 ___
 
 ### containsPoint
 
-**containsPoint**(`point`, `calculate?`): `boolean`
+**containsPoint**(`point`): `boolean`
 
 Checks if point is inside the object
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `point` | [`Point`](/apidocs/classes/Point.md) | `undefined` | Point to check against |
-| `calculate?` | `boolean` | `false` | use coordinates of current position instead of stored ones |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `point` | [`Point`](/apidocs/classes/Point.md) | Point to check against |
 
 #### Returns
 
@@ -6218,7 +6181,7 @@ true if point is inside the object
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:322](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L322)
+[src/shapes/Object/ObjectGeometry.ts:269](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectGeometry.ts#L269)
 
 ___
 
@@ -6238,7 +6201,7 @@ Copies selected text
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:295](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L295)
+[src/shapes/IText/ITextKeyBehavior.ts:295](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextKeyBehavior.ts#L295)
 
 ___
 
@@ -6256,7 +6219,7 @@ ___
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:689](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L689)
+[src/shapes/IText/IText.ts:689](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/IText.ts#L689)
 
 ___
 
@@ -6282,7 +6245,7 @@ Default handler for double click, select a word
 
 #### Defined in
 
-[src/shapes/IText/ITextClickBehavior.ts:106](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextClickBehavior.ts#L106)
+[src/shapes/IText/ITextClickBehavior.ts:102](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextClickBehavior.ts#L102)
 
 ___
 
@@ -6312,7 +6275,7 @@ Requires public options: padding, borderColor
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:440](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L440)
+[src/shapes/Object/InteractiveObject.ts:425](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L425)
 
 ___
 
@@ -6339,7 +6302,7 @@ Paint the cached copy of the object on the target context.
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:962](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L962)
+[src/shapes/Object/Object.ts:966](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L966)
 
 ___
 
@@ -6366,7 +6329,7 @@ Execute the drawing operation for an object clipPath
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:891](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L891)
+[src/shapes/Object/Object.ts:895](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L895)
 
 ___
 
@@ -6395,7 +6358,7 @@ Requires public options: cornerSize, padding
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:504](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L504)
+[src/shapes/Object/InteractiveObject.ts:494](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L494)
 
 ___
 
@@ -6424,7 +6387,7 @@ Requires public options: padding, borderColor
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:474](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L474)
+[src/shapes/Object/InteractiveObject.ts:464](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L464)
 
 ___
 
@@ -6451,7 +6414,7 @@ Execute the drawing operation for an object on a specified context
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:923](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L923)
+[src/shapes/Object/Object.ts:927](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L927)
 
 ___
 
@@ -6486,7 +6449,7 @@ it seemed a good option, now is an edge case
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:342](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L342)
+[src/shapes/Object/InteractiveObject.ts:327](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L327)
 
 ___
 
@@ -6506,7 +6469,7 @@ Enlarge space boxes and shift the others
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:481](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L481)
+[src/shapes/Text/Text.ts:481](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L481)
 
 ___
 
@@ -6520,7 +6483,7 @@ Enters editing state
 
 | Name | Type |
 | :------ | :------ |
-| `e?` | [`TPointerEvent`](/apidocs/modules.md#tpointerevent) |
+| `e?` | `MouseEvent` \| `TouchEvent` \| `PointerEvent` |
 
 #### Returns
 
@@ -6532,7 +6495,7 @@ Enters editing state
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:378](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L378)
+[src/shapes/IText/ITextBehavior.ts:378](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextBehavior.ts#L378)
 
 ___
 
@@ -6552,7 +6515,7 @@ Exits from editing state and fires relevant events
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:681](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L681)
+[src/shapes/IText/ITextBehavior.ts:681](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextBehavior.ts#L681)
 
 ___
 
@@ -6588,7 +6551,7 @@ an object that represent the ancestry situation.
 
 #### Defined in
 
-[src/shapes/Object/StackedObject.ts:99](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/StackedObject.ts#L99)
+[src/shapes/Object/StackedObject.ts:90](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/StackedObject.ts#L90)
 
 ___
 
@@ -6616,7 +6579,7 @@ New selection index
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:282](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L282)
+[src/shapes/IText/ITextBehavior.ts:282](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextBehavior.ts#L282)
 
 ___
 
@@ -6644,7 +6607,7 @@ New selection index
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:299](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L299)
+[src/shapes/IText/ITextBehavior.ts:299](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextBehavior.ts#L299)
 
 ___
 
@@ -6672,7 +6635,7 @@ New selection index
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:234](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L234)
+[src/shapes/IText/ITextBehavior.ts:234](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextBehavior.ts#L234)
 
 ___
 
@@ -6700,7 +6663,7 @@ New selection index
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:258](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L258)
+[src/shapes/IText/ITextBehavior.ts:258](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextBehavior.ts#L258)
 
 ___
 
@@ -6733,7 +6696,7 @@ Fires event with an optional options object
 
 #### Defined in
 
-[src/Observable.ts:159](https://github.com/fabricjs/fabric.js/blob/078809453/src/Observable.ts#L159)
+[src/Observable.ts:159](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Observable.ts#L159)
 
 ___
 
@@ -6760,7 +6723,7 @@ with the control, the control's key and the object that is calling the iterator
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:320](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L320)
+[src/shapes/Object/InteractiveObject.ts:305](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L305)
 
 ___
 
@@ -6793,7 +6756,7 @@ convert from fabric to textarea values
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:481](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L481)
+[src/shapes/IText/ITextBehavior.ts:481](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextBehavior.ts#L481)
 
 ___
 
@@ -6826,7 +6789,7 @@ convert from textarea to grapheme indexes
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:464](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L464)
+[src/shapes/IText/ITextBehavior.ts:464](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextBehavior.ts#L464)
 
 ___
 
@@ -6854,7 +6817,7 @@ value of a property
 
 #### Defined in
 
-[src/CommonMethods.ts:59](https://github.com/fabricjs/fabric.js/blob/078809453/src/CommonMethods.ts#L59)
+[src/CommonMethods.ts:59](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/CommonMethods.ts#L59)
 
 ___
 
@@ -6886,7 +6849,7 @@ Returns 2d representation (lineIndex and charIndex) of cursor (or selection star
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:334](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L334)
+[src/shapes/IText/IText.ts:334](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/IText.ts#L334)
 
 ___
 
@@ -6904,7 +6867,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:176](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L176)
+[src/shapes/Object/InteractiveObject.ts:165](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L165)
 
 ___
 
@@ -6936,22 +6899,16 @@ ancestors (excluding `ActiveSelection`) from bottom to top
 
 #### Defined in
 
-[src/shapes/Object/StackedObject.ts:80](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/StackedObject.ts#L80)
+[src/shapes/Object/StackedObject.ts:69](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/StackedObject.ts#L69)
 
 ___
 
 ### getBoundingRect
 
-**getBoundingRect**(`calculate?`): [`TBBox`](/apidocs/modules.md#tbbox)
+**getBoundingRect**(): [`TBBox`](/apidocs/modules.md#tbbox)
 
 Returns coordinates of object's bounding rectangle (left, top, width, height)
 the box is intended as aligned to axis of canvas.
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `calculate?` | `boolean` | use coordinates of current position instead of .lineCoords / .aCoords |
 
 #### Returns
 
@@ -6965,7 +6922,7 @@ Object with left, top, width, height properties
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:405](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L405)
+[src/shapes/Object/ObjectGeometry.ts:330](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectGeometry.ts#L330)
 
 ___
 
@@ -6983,7 +6940,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:462](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L462)
+[src/shapes/Object/ObjectGeometry.ts:387](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectGeometry.ts#L387)
 
 ___
 
@@ -7003,7 +6960,7 @@ Returns the center coordinates of the object relative to canvas
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:169](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L169)
+[src/shapes/Object/ObjectOrigin.ts:174](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectOrigin.ts#L174)
 
 ___
 
@@ -7033,29 +6990,19 @@ style object
 
 #### Defined in
 
-[src/shapes/Text/StyledText.ts:267](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/StyledText.ts#L267)
+[src/shapes/Text/StyledText.ts:267](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/StyledText.ts#L267)
 
 ___
 
 ### getCoords
 
-**getCoords**(`calculate?`): [`Point`](/apidocs/classes/Point.md)[]
-
-return correct set of coordinates for intersection
-this will return either aCoords or lineCoords.
-The coords are returned in an array.
-
-#### Parameters
-
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `calculate` | `boolean` | `false` | will return aCoords if true or lineCoords |
+**getCoords**(): [`Point`](/apidocs/classes/Point.md)[]
 
 #### Returns
 
 [`Point`](/apidocs/classes/Point.md)[]
 
-[tl, tr, br, bl] of points
+[tl, tr, br, bl] in the scene plane
 
 #### Inherited from
 
@@ -7063,13 +7010,13 @@ The coords are returned in an array.
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:222](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L222)
+[src/shapes/Object/ObjectGeometry.ts:191](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectGeometry.ts#L191)
 
 ___
 
 ### getCurrentCharColor
 
-**getCurrentCharColor**(): ``null`` \| `string` \| [`TFiller`](/apidocs/modules.md#tfiller)
+**getCurrentCharColor**(): ``null`` \| `string` \| [`Pattern`](/apidocs/classes/Pattern.md) \| [`Gradient`](/apidocs/classes/Gradient.md)\<``"linear"``, ``"linear"``\> \| [`Gradient`](/apidocs/classes/Gradient.md)\<``"radial"``, ``"radial"``\>
 
 High level function to know the color of the cursor.
 the currentChar is the one that precedes the cursor
@@ -7079,7 +7026,7 @@ Unused by the library, is for the end user
 
 #### Returns
 
-``null`` \| `string` \| [`TFiller`](/apidocs/modules.md#tfiller)
+``null`` \| `string` \| [`Pattern`](/apidocs/classes/Pattern.md) \| [`Gradient`](/apidocs/classes/Gradient.md)\<``"linear"``, ``"linear"``\> \| [`Gradient`](/apidocs/classes/Gradient.md)\<``"radial"``, ``"radial"``\>
 
 Character color (fill)
 
@@ -7089,7 +7036,7 @@ Character color (fill)
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:673](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L673)
+[src/shapes/IText/IText.ts:673](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/IText.ts#L673)
 
 ___
 
@@ -7114,7 +7061,7 @@ Character font size
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:660](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L660)
+[src/shapes/IText/IText.ts:660](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/IText.ts#L660)
 
 ___
 
@@ -7141,7 +7088,7 @@ Gets start offset of a selection
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:345](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L345)
+[src/shapes/IText/ITextKeyBehavior.ts:345](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextKeyBehavior.ts#L345)
 
 ___
 
@@ -7165,7 +7112,7 @@ The returned words here are the one that at the end will be rendered.
 
 #### Defined in
 
-[src/shapes/Textbox.ts:329](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Textbox.ts#L329)
+[src/shapes/Textbox.ts:329](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Textbox.ts#L329)
 
 ___
 
@@ -7194,7 +7141,7 @@ fontSize of the character
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:856](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L856)
+[src/shapes/Text/Text.ts:856](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L856)
 
 ___
 
@@ -7220,7 +7167,7 @@ Calculate height of line at 'lineIndex'
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1015](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1015)
+[src/shapes/Text/Text.ts:1015](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L1015)
 
 ___
 
@@ -7249,7 +7196,7 @@ Line width
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1505](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1505)
+[src/shapes/Text/Text.ts:1505](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L1505)
 
 ___
 
@@ -7263,7 +7210,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Textbox.ts:531](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Textbox.ts#L531)
+[src/shapes/Textbox.ts:531](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Textbox.ts#L531)
 
 ___
 
@@ -7283,7 +7230,7 @@ Return the object opacity counting also the group property
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:660](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L660)
+[src/shapes/Object/Object.ts:661](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L661)
 
 ___
 
@@ -7303,39 +7250,7 @@ Return the object scale factor counting also the group scaling
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:629](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L629)
-
-___
-
-### getParent
-
-**getParent**\<`T`\>(`strict?`): `undefined` \| `TAncestor`
-
-Returns instance's parent **EXCLUDING** `ActiveSelection`
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `T` | extends `boolean` |
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `strict?` | `T` | exclude canvas as well |
-
-#### Returns
-
-`undefined` \| `TAncestor`
-
-#### Inherited from
-
-[IText](/apidocs/classes/IText.md).[getParent](/apidocs/classes/IText.md#getparent)
-
-#### Defined in
-
-[src/shapes/Object/StackedObject.ts:51](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/StackedObject.ts#L51)
+[src/shapes/Object/Object.ts:630](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L630)
 
 ___
 
@@ -7362,7 +7277,7 @@ Returns the coordinates of the object as if it has a different origin
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:194](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L194)
+[src/shapes/Object/ObjectOrigin.ts:199](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectOrigin.ts#L199)
 
 ___
 
@@ -7382,7 +7297,7 @@ Returns the center coordinates of the object relative to it's parent
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:180](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L180)
+[src/shapes/Object/ObjectOrigin.ts:185](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectOrigin.ts#L185)
 
 ___
 
@@ -7395,7 +7310,7 @@ ___
 `number`
 
 x position according to object's [originX](/apidocs/classes/FabricObject.md#originx) property in parent's coordinate plane\
-if parent is canvas then this property is identical to [getX](/apidocs/classes/FabricObject.md#getx)
+if parent is canvas then this property is identical to [getX](/apidocs/classes/Textbox.md#getx)
 
 #### Inherited from
 
@@ -7403,7 +7318,7 @@ if parent is canvas then this property is identical to [getX](/apidocs/classes/F
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:118](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L118)
+[src/shapes/Object/ObjectGeometry.ts:102](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectGeometry.ts#L102)
 
 ___
 
@@ -7423,7 +7338,7 @@ x,y position according to object's [originX](/apidocs/classes/FabricObject.md#or
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:179](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L179)
+[src/shapes/Object/ObjectGeometry.ts:163](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectGeometry.ts#L163)
 
 ___
 
@@ -7436,7 +7351,7 @@ ___
 `number`
 
 y position according to object's [originY](/apidocs/classes/FabricObject.md#originy) property in parent's coordinate plane\
-if parent is canvas then this property is identical to [getY](/apidocs/classes/FabricObject.md#gety)
+if parent is canvas then this property is identical to [getY](/apidocs/classes/Textbox.md#gety)
 
 #### Inherited from
 
@@ -7444,7 +7359,7 @@ if parent is canvas then this property is identical to [getY](/apidocs/classes/F
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:134](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L134)
+[src/shapes/Object/ObjectGeometry.ts:118](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectGeometry.ts#L118)
 
 ___
 
@@ -7470,7 +7385,7 @@ shouldn't this account for group transform and return the actual size in canvas 
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:423](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L423)
+[src/shapes/Object/ObjectGeometry.ts:348](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectGeometry.ts#L348)
 
 ___
 
@@ -7496,7 +7411,7 @@ shouldn't this account for group transform and return the actual size in canvas 
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:414](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L414)
+[src/shapes/Object/ObjectGeometry.ts:339](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectGeometry.ts#L339)
 
 ___
 
@@ -7516,7 +7431,7 @@ Returns selected text
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:225](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L225)
+[src/shapes/IText/ITextBehavior.ts:225](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextBehavior.ts#L225)
 
 ___
 
@@ -7544,7 +7459,7 @@ Index of a character
 
 #### Defined in
 
-[src/shapes/IText/ITextClickBehavior.ts:241](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextClickBehavior.ts#L241)
+[src/shapes/IText/ITextClickBehavior.ts:237](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextClickBehavior.ts#L237)
 
 ___
 
@@ -7575,7 +7490,7 @@ styles an array with one, zero or more Style objects
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:307](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L307)
+[src/shapes/IText/IText.ts:307](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/IText.ts#L307)
 
 ___
 
@@ -7604,7 +7519,7 @@ style Style object at a specified index
 
 #### Defined in
 
-[src/shapes/Text/StyledText.ts:224](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/StyledText.ts#L224)
+[src/shapes/Text/StyledText.ts:224](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/StyledText.ts#L224)
 
 ___
 
@@ -7630,7 +7545,7 @@ Returns id attribute for svg output
 
 #### Defined in
 
-[src/shapes/Object/FabricObjectSVGExportMixin.ts:84](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/FabricObjectSVGExportMixin.ts#L84)
+[src/shapes/Object/FabricObjectSVGExportMixin.ts:84](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/FabricObjectSVGExportMixin.ts#L84)
 
 ___
 
@@ -7656,7 +7571,7 @@ Returns filter for svg shadow
 
 #### Defined in
 
-[src/shapes/Object/FabricObjectSVGExportMixin.ts:76](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/FabricObjectSVGExportMixin.ts#L76)
+[src/shapes/Object/FabricObjectSVGExportMixin.ts:76](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/FabricObjectSVGExportMixin.ts#L76)
 
 ___
 
@@ -7683,7 +7598,7 @@ Returns styles-string for svg-export
 
 #### Defined in
 
-[src/shapes/Object/FabricObjectSVGExportMixin.ts:21](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/FabricObjectSVGExportMixin.ts#L21)
+[src/shapes/Object/FabricObjectSVGExportMixin.ts:21](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/FabricObjectSVGExportMixin.ts#L21)
 
 ___
 
@@ -7711,7 +7626,7 @@ Returns transform-string for svg-export
 
 #### Defined in
 
-[src/shapes/Object/FabricObjectSVGExportMixin.ts:103](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/FabricObjectSVGExportMixin.ts#L103)
+[src/shapes/Object/FabricObjectSVGExportMixin.ts:103](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/FabricObjectSVGExportMixin.ts#L103)
 
 ___
 
@@ -7731,7 +7646,7 @@ Returns the object angle relative to canvas counting also the group property
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:470](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L470)
+[src/shapes/Object/ObjectGeometry.ts:395](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectGeometry.ts#L395)
 
 ___
 
@@ -7753,7 +7668,7 @@ object with scaleX and scaleY properties
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:646](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L646)
+[src/shapes/Object/Object.ts:647](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L647)
 
 ___
 
@@ -7778,7 +7693,7 @@ ___
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:390](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L390)
+[src/shapes/IText/ITextKeyBehavior.ts:390](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextKeyBehavior.ts#L390)
 
 ___
 
@@ -7814,7 +7729,7 @@ the value of 'property'
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1529](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1529)
+[src/shapes/Text/Text.ts:1529](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L1529)
 
 ___
 
@@ -7822,19 +7737,11 @@ ___
 
 **getViewportTransform**(): [`TMat2D`](/apidocs/modules.md#tmat2d)
 
-Retrieves viewportTransform from Object's canvas if possible
+Retrieves viewportTransform from Object's canvas if available
 
 #### Returns
 
 [`TMat2D`](/apidocs/modules.md#tmat2d)
-
-**`Method`**
-
-getViewportTransform
-
-**`Member Of`**
-
-FabricObject.prototype
 
 #### Inherited from
 
@@ -7842,7 +7749,7 @@ FabricObject.prototype
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:482](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L482)
+[src/shapes/Object/ObjectGeometry.ts:405](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectGeometry.ts#L405)
 
 ___
 
@@ -7862,7 +7769,7 @@ x position according to object's [originX](/apidocs/classes/FabricObject.md#orig
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:89](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L89)
+[src/shapes/Object/ObjectGeometry.ts:73](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectGeometry.ts#L73)
 
 ___
 
@@ -7882,7 +7789,7 @@ x position according to object's [originX](/apidocs/classes/FabricObject.md#orig
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:149](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L149)
+[src/shapes/Object/ObjectGeometry.ts:133](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectGeometry.ts#L133)
 
 ___
 
@@ -7902,7 +7809,7 @@ y position according to object's [originY](/apidocs/classes/FabricObject.md#orig
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:103](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L103)
+[src/shapes/Object/ObjectGeometry.ts:87](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectGeometry.ts#L87)
 
 ___
 
@@ -7936,7 +7843,7 @@ in the middle of the prototype chain
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1707](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1707)
+[src/shapes/Text/Text.ts:1707](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L1707)
 
 ___
 
@@ -7956,7 +7863,7 @@ ___
 | :------ | :------ |
 | `ctx` | `CanvasRenderingContext2D` |
 | `property` | \`$\{T}Style\` |
-| `filler` | `string` \| [`TFiller`](/apidocs/modules.md#tfiller) |
+| `filler` | `string` \| [`Pattern`](/apidocs/classes/Pattern.md) \| [`Gradient`](/apidocs/classes/Gradient.md)\<``"linear"``, ``"linear"``\> \| [`Gradient`](/apidocs/classes/Gradient.md)\<``"radial"``, ``"radial"``\> |
 
 #### Returns
 
@@ -7973,7 +7880,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1266](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1266)
+[src/shapes/Text/Text.ts:1266](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L1266)
 
 ___
 
@@ -8004,7 +7911,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/StackedObject.ts:168](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/StackedObject.ts#L168)
+[src/shapes/Object/StackedObject.ts:159](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/StackedObject.ts#L159)
 
 ___
 
@@ -8035,7 +7942,7 @@ Boolean
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:831](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L831)
+[src/shapes/Object/Object.ts:835](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L835)
 
 ___
 
@@ -8066,7 +7973,7 @@ Boolean
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:815](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L815)
+[src/shapes/Object/Object.ts:819](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L819)
 
 ___
 
@@ -8084,7 +7991,7 @@ ___
 
 #### Defined in
 
-[src/shapes/IText/ITextClickBehavior.ts:34](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextClickBehavior.ts#L34)
+[src/shapes/IText/ITextClickBehavior.ts:30](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextClickBehavior.ts#L30)
 
 ___
 
@@ -8110,7 +8017,7 @@ Initializes delayed cursor
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:173](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L173)
+[src/shapes/IText/ITextBehavior.ts:173](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextBehavior.ts#L173)
 
 ___
 
@@ -8131,7 +8038,7 @@ its width.
 
 #### Defined in
 
-[src/shapes/Textbox.ts:111](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Textbox.ts#L111)
+[src/shapes/Textbox.ts:111](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Textbox.ts#L111)
 
 ___
 
@@ -8151,7 +8058,7 @@ Initializes hidden textarea (needed to bring up keyboard in iOS)
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:63](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L63)
+[src/shapes/IText/ITextKeyBehavior.ts:63](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextKeyBehavior.ts#L63)
 
 ___
 
@@ -8180,7 +8087,7 @@ Inserts style object for a given line/char index
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:867](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L867)
+[src/shapes/IText/ITextBehavior.ts:867](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextBehavior.ts#L867)
 
 ___
 
@@ -8213,7 +8120,7 @@ start/end ar per grapheme position in _text array.
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:1017](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L1017)
+[src/shapes/IText/ITextBehavior.ts:1017](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextBehavior.ts#L1017)
 
 ___
 
@@ -8241,7 +8148,7 @@ Inserts style object(s)
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:925](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L925)
+[src/shapes/IText/ITextBehavior.ts:925](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextBehavior.ts#L925)
 
 ___
 
@@ -8273,22 +8180,21 @@ new lines from the last to the first.
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:801](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L801)
+[src/shapes/IText/ITextBehavior.ts:801](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextBehavior.ts#L801)
 
 ___
 
 ### intersectsWithObject
 
-**intersectsWithObject**(`other`, `calculate?`): `boolean`
+**intersectsWithObject**(`other`): `boolean`
 
 Checks if object intersects with another object
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `other` | `ObjectGeometry`\<[`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | `undefined` | Object to test |
-| `calculate?` | `boolean` | `false` | use coordinates of current position instead of calculating them |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `other` | `ObjectGeometry`\<[`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | Object to test |
 
 #### Returns
 
@@ -8302,29 +8208,26 @@ true if object intersects with another object
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:260](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L260)
+[src/shapes/Object/ObjectGeometry.ts:219](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectGeometry.ts#L219)
 
 ___
 
 ### intersectsWithRect
 
-**intersectsWithRect**(`pointTL`, `pointBR`, `calculate?`): `boolean`
+**intersectsWithRect**(`tl`, `br`): `boolean`
 
-Checks if object intersects with an area formed by 2 points
+Checks if object intersects with the scene rect formed by tl and br
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `pointTL` | [`Point`](/apidocs/classes/Point.md) | top-left point of area |
-| `pointBR` | [`Point`](/apidocs/classes/Point.md) | bottom-right point of area |
-| `calculate?` | `boolean` | use coordinates of current position instead of stored one |
+| Name | Type |
+| :------ | :------ |
+| `tl` | [`Point`](/apidocs/classes/Point.md) |
+| `br` | [`Point`](/apidocs/classes/Point.md) |
 
 #### Returns
 
 `boolean`
-
-true if object intersects with an area formed by 2 points
 
 #### Inherited from
 
@@ -8332,7 +8235,7 @@ true if object intersects with an area formed by 2 points
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:239](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L239)
+[src/shapes/Object/ObjectGeometry.ts:205](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectGeometry.ts#L205)
 
 ___
 
@@ -8358,22 +8261,21 @@ Check if cache is dirty
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:976](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L976)
+[src/shapes/Object/Object.ts:980](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L980)
 
 ___
 
 ### isContainedWithinObject
 
-**isContainedWithinObject**(`other`, `calculate?`): `boolean`
+**isContainedWithinObject**(`other`): `boolean`
 
 Checks if object is fully contained within area of another object
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `other` | `ObjectGeometry`\<[`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | `undefined` | Object to test |
-| `calculate?` | `boolean` | `false` | use coordinates of current position instead of stored ones |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `other` | `ObjectGeometry`\<[`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> | Object to test |
 
 #### Returns
 
@@ -8387,29 +8289,26 @@ true if object is fully contained within area of another object
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:281](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L281)
+[src/shapes/Object/ObjectGeometry.ts:238](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectGeometry.ts#L238)
 
 ___
 
 ### isContainedWithinRect
 
-**isContainedWithinRect**(`pointTL`, `pointBR`, `calculate?`): `boolean`
+**isContainedWithinRect**(`tl`, `br`): `boolean`
 
-Checks if object is fully contained within area formed by 2 points, aligned with scene axis.
+Checks if object is fully contained within the scene rect formed by tl and br
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `pointTL` | [`Point`](/apidocs/classes/Point.md) | top-left point of area |
-| `pointBR` | [`Point`](/apidocs/classes/Point.md) | bottom-right point of area |
-| `calculate?` | `boolean` | use coordinates of current position instead of stored one |
+| Name | Type |
+| :------ | :------ |
+| `tl` | [`Point`](/apidocs/classes/Point.md) |
+| `br` | [`Point`](/apidocs/classes/Point.md) |
 
 #### Returns
 
 `boolean`
-
-true if object is fully contained within area formed by 2 points
 
 #### Inherited from
 
@@ -8417,7 +8316,7 @@ true if object is fully contained within area formed by 2 points
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:294](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L294)
+[src/shapes/Object/ObjectGeometry.ts:246](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectGeometry.ts#L246)
 
 ___
 
@@ -8445,7 +8344,7 @@ true if the specified control is visible, false otherwise
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:539](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L539)
+[src/shapes/Object/InteractiveObject.ts:529](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L529)
 
 ___
 
@@ -8454,7 +8353,7 @@ ___
 **isDescendantOf**(`target`): `boolean`
 
 Checks if object is descendant of target
-Should be used instead of [Group.contains](/apidocs/classes/StaticCanvas.md#contains) or [StaticCanvas.contains](/apidocs/classes/StaticCanvas.md#contains) for performance reasons
+Should be used instead of [Group.contains](/apidocs/classes/Group.md#contains) or [StaticCanvas.contains](/apidocs/classes/StaticCanvas.md#contains) for performance reasons
 
 #### Parameters
 
@@ -8472,7 +8371,7 @@ Should be used instead of [Group.contains](/apidocs/classes/StaticCanvas.md#cont
 
 #### Defined in
 
-[src/shapes/Object/StackedObject.ts:64](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/StackedObject.ts#L64)
+[src/shapes/Object/StackedObject.ts:52](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/StackedObject.ts#L52)
 
 ___
 
@@ -8498,7 +8397,7 @@ Returns true if object has no styling or no styling in a line
 
 #### Defined in
 
-[src/shapes/Textbox.ts:190](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Textbox.ts#L190)
+[src/shapes/Textbox.ts:190](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Textbox.ts#L190)
 
 ___
 
@@ -8525,7 +8424,7 @@ text and itext do not have wrapping, return false
 
 #### Defined in
 
-[src/shapes/Textbox.ts:486](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Textbox.ts#L486)
+[src/shapes/Textbox.ts:486](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Textbox.ts#L486)
 
 ___
 
@@ -8557,7 +8456,7 @@ if objects do not share a common ancestor or they are strictly equal it is impos
 
 #### Defined in
 
-[src/shapes/Object/StackedObject.ts:178](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/StackedObject.ts#L178)
+[src/shapes/Object/StackedObject.ts:169](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/StackedObject.ts#L169)
 
 ___
 
@@ -8575,22 +8474,16 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:738](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L738)
+[src/shapes/Object/Object.ts:742](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L742)
 
 ___
 
 ### isOnScreen
 
-**isOnScreen**(`calculate?`): `boolean`
+**isOnScreen**(): `boolean`
 
 Checks if object is contained within the canvas with current viewportTransform
 the check is done stopping at first point that appears on screen
-
-#### Parameters
-
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `calculate?` | `boolean` | `false` | use coordinates of current position instead of .aCoords |
 
 #### Returns
 
@@ -8604,7 +8497,7 @@ true if object is fully or partially contained within canvas
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:332](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L332)
+[src/shapes/Object/ObjectGeometry.ts:278](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectGeometry.ts#L278)
 
 ___
 
@@ -8634,21 +8527,15 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:308](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L308)
+[src/shapes/Object/ObjectGeometry.ts:256](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectGeometry.ts#L256)
 
 ___
 
 ### isPartiallyOnScreen
 
-**isPartiallyOnScreen**(`calculate?`): `boolean`
+**isPartiallyOnScreen**(): `boolean`
 
 Checks if object is partially contained within the canvas with current viewportTransform
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `calculate?` | `boolean` | use coordinates of current position instead of stored ones |
 
 #### Returns
 
@@ -8662,7 +8549,29 @@ true if object is partially contained within canvas
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:381](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L381)
+[src/shapes/Object/ObjectGeometry.ts:308](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectGeometry.ts#L308)
+
+___
+
+### isStrokeAccountedForInDimensions
+
+**isStrokeAccountedForInDimensions**(): `boolean`
+
+#### Returns
+
+`boolean`
+
+**`Deprecated`**
+
+intermidiate method to be removed, do not use
+
+#### Inherited from
+
+[IText](/apidocs/classes/IText.md).[isStrokeAccountedForInDimensions](/apidocs/classes/IText.md#isstrokeaccountedforindimensions)
+
+#### Defined in
+
+[src/shapes/Object/ObjectGeometry.ts:184](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectGeometry.ts#L184)
 
 ___
 
@@ -8686,7 +8595,7 @@ ___
 
 #### Defined in
 
-[src/shapes/IText/ITextClickBehavior.ts:94](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextClickBehavior.ts#L94)
+[src/shapes/IText/ITextClickBehavior.ts:90](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextClickBehavior.ts#L90)
 
 ___
 
@@ -8712,7 +8621,7 @@ Returns true if any of the specified types is identical to the type of an instan
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1466](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1466)
+[src/shapes/Object/Object.ts:1470](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L1470)
 
 ___
 
@@ -8743,7 +8652,7 @@ measure a text line measuring all characters.
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:864](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L864)
+[src/shapes/Text/Text.ts:864](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L864)
 
 ___
 
@@ -8775,7 +8684,7 @@ Number
 
 #### Defined in
 
-[src/shapes/Textbox.ts:505](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Textbox.ts#L505)
+[src/shapes/Textbox.ts:505](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Textbox.ts#L505)
 
 ___
 
@@ -8801,7 +8710,7 @@ standard handler for mouse up, overridable
 
 #### Defined in
 
-[src/shapes/IText/ITextClickBehavior.ts:179](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextClickBehavior.ts#L179)
+[src/shapes/IText/ITextClickBehavior.ts:175](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextClickBehavior.ts#L175)
 
 ___
 
@@ -8827,7 +8736,7 @@ Moves cursor down
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:451](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L451)
+[src/shapes/IText/ITextKeyBehavior.ts:451](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextKeyBehavior.ts#L451)
 
 ___
 
@@ -8853,7 +8762,7 @@ Moves cursor left
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:535](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L535)
+[src/shapes/IText/ITextKeyBehavior.ts:535](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextKeyBehavior.ts#L535)
 
 ___
 
@@ -8879,7 +8788,7 @@ Moves cursor left while keeping selection
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:607](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L607)
+[src/shapes/IText/ITextKeyBehavior.ts:607](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextKeyBehavior.ts#L607)
 
 ___
 
@@ -8905,7 +8814,7 @@ Moves cursor left without keeping selection
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:587](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L587)
+[src/shapes/IText/ITextKeyBehavior.ts:587](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextKeyBehavior.ts#L587)
 
 ___
 
@@ -8931,7 +8840,7 @@ Moves cursor right
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:623](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L623)
+[src/shapes/IText/ITextKeyBehavior.ts:623](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextKeyBehavior.ts#L623)
 
 ___
 
@@ -8957,7 +8866,7 @@ Moves cursor right while keeping selection
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:655](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L655)
+[src/shapes/IText/ITextKeyBehavior.ts:655](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextKeyBehavior.ts#L655)
 
 ___
 
@@ -8983,7 +8892,7 @@ Moves cursor right without keeping selection
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:671](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L671)
+[src/shapes/IText/ITextKeyBehavior.ts:671](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextKeyBehavior.ts#L671)
 
 ___
 
@@ -9009,7 +8918,7 @@ Moves cursor up
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:465](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L465)
+[src/shapes/IText/ITextKeyBehavior.ts:465](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextKeyBehavior.ts#L465)
 
 ___
 
@@ -9035,7 +8944,7 @@ Moves cursor with shift
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:503](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L503)
+[src/shapes/IText/ITextKeyBehavior.ts:503](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextKeyBehavior.ts#L503)
 
 ___
 
@@ -9061,7 +8970,7 @@ Moves cursor up without shift
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:520](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L520)
+[src/shapes/IText/ITextKeyBehavior.ts:520](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextKeyBehavior.ts#L520)
 
 ___
 
@@ -9087,7 +8996,7 @@ Boolean
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:843](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L843)
+[src/shapes/Object/Object.ts:847](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L847)
 
 ___
 
@@ -9120,7 +9029,7 @@ unsubscribe an event listener
 
 #### Defined in
 
-[src/Observable.ts:120](https://github.com/fabricjs/fabric.js/blob/078809453/src/Observable.ts#L120)
+[src/Observable.ts:120](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Observable.ts#L120)
 
 **off**(`handlers`): `void`
 
@@ -9142,7 +9051,7 @@ unsubscribe event listeners
 
 #### Defined in
 
-[src/Observable.ts:125](https://github.com/fabricjs/fabric.js/blob/078809453/src/Observable.ts#L125)
+[src/Observable.ts:125](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Observable.ts#L125)
 
 **off**(): `void`
 
@@ -9158,7 +9067,7 @@ unsubscribe all event listeners
 
 #### Defined in
 
-[src/Observable.ts:129](https://github.com/fabricjs/fabric.js/blob/078809453/src/Observable.ts#L129)
+[src/Observable.ts:129](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Observable.ts#L129)
 
 ___
 
@@ -9198,7 +9107,7 @@ on
 
 #### Defined in
 
-[src/Observable.ts:23](https://github.com/fabricjs/fabric.js/blob/078809453/src/Observable.ts#L23)
+[src/Observable.ts:23](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Observable.ts#L23)
 
 **on**(`handlers`): `VoidFunction`
 
@@ -9218,7 +9127,7 @@ on
 
 #### Defined in
 
-[src/Observable.ts:27](https://github.com/fabricjs/fabric.js/blob/078809453/src/Observable.ts#L27)
+[src/Observable.ts:27](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Observable.ts#L27)
 
 ___
 
@@ -9238,7 +9147,7 @@ Composition end
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:281](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L281)
+[src/shapes/IText/ITextKeyBehavior.ts:281](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextKeyBehavior.ts#L281)
 
 ___
 
@@ -9258,7 +9167,7 @@ Composition start
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:274](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L274)
+[src/shapes/IText/ITextKeyBehavior.ts:274](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextKeyBehavior.ts#L274)
 
 ___
 
@@ -9282,7 +9191,7 @@ ___
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:285](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L285)
+[src/shapes/IText/ITextKeyBehavior.ts:285](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextKeyBehavior.ts#L285)
 
 ___
 
@@ -9295,7 +9204,7 @@ ___
 | Name | Type |
 | :------ | :------ |
 | `options?` | `Object` |
-| `options.e?` | [`TPointerEvent`](/apidocs/modules.md#tpointerevent) |
+| `options.e?` | `MouseEvent` \| `TouchEvent` \| `PointerEvent` |
 | `options.object?` | [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\> |
 
 #### Returns
@@ -9308,7 +9217,7 @@ ___
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:111](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L111)
+[src/shapes/IText/ITextBehavior.ts:111](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextBehavior.ts#L111)
 
 ___
 
@@ -9340,7 +9249,7 @@ also DraggableTextDelegate#isActive
 
 #### Defined in
 
-[src/shapes/IText/ITextClickBehavior.ts:63](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextClickBehavior.ts#L63)
+[src/shapes/IText/ITextClickBehavior.ts:59](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextClickBehavior.ts#L59)
 
 ___
 
@@ -9367,7 +9276,7 @@ Handles onInput event
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:167](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L167)
+[src/shapes/IText/ITextKeyBehavior.ts:167](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextKeyBehavior.ts#L167)
 
 ___
 
@@ -9394,7 +9303,7 @@ only used for arrows and combination of modifier keys.
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:115](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L115)
+[src/shapes/IText/ITextKeyBehavior.ts:115](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextKeyBehavior.ts#L115)
 
 ___
 
@@ -9422,7 +9331,7 @@ if a copy/cut event fired, keyup is dismissed
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:147](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L147)
+[src/shapes/IText/ITextKeyBehavior.ts:147](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextKeyBehavior.ts#L147)
 
 ___
 
@@ -9448,7 +9357,7 @@ Default event handler to simulate triple click
 
 #### Defined in
 
-[src/shapes/IText/ITextClickBehavior.ts:78](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextClickBehavior.ts#L78)
+[src/shapes/IText/ITextClickBehavior.ts:74](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextClickBehavior.ts#L74)
 
 ___
 
@@ -9464,7 +9373,7 @@ try to to select this object. If the function returns true, the process is cance
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `options?` | `Object` | options sent from the upper functions |
-| `options.e?` | [`TPointerEvent`](/apidocs/modules.md#tpointerevent) | event if the process is generated by an event |
+| `options.e?` | `MouseEvent` \| `TouchEvent` \| `PointerEvent` | event if the process is generated by an event |
 
 #### Returns
 
@@ -9476,7 +9385,7 @@ try to to select this object. If the function returns true, the process is cance
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:627](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L627)
+[src/shapes/Object/InteractiveObject.ts:617](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L617)
 
 ___
 
@@ -9516,7 +9425,7 @@ once
 
 #### Defined in
 
-[src/Observable.ts:62](https://github.com/fabricjs/fabric.js/blob/078809453/src/Observable.ts#L62)
+[src/Observable.ts:62](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Observable.ts#L62)
 
 **once**(`handlers`): `VoidFunction`
 
@@ -9536,7 +9445,7 @@ once
 
 #### Defined in
 
-[src/Observable.ts:66](https://github.com/fabricjs/fabric.js/blob/078809453/src/Observable.ts#L66)
+[src/Observable.ts:66](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Observable.ts#L66)
 
 ___
 
@@ -9556,7 +9465,7 @@ Pastes text
 
 #### Defined in
 
-[src/shapes/IText/ITextKeyBehavior.ts:317](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextKeyBehavior.ts#L317)
+[src/shapes/IText/ITextKeyBehavior.ts:317](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextKeyBehavior.ts#L317)
 
 ___
 
@@ -9584,7 +9493,7 @@ start/end ar per grapheme position in _text array.
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:995](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L995)
+[src/shapes/IText/ITextBehavior.ts:995](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextBehavior.ts#L995)
 
 ___
 
@@ -9612,7 +9521,7 @@ props.  Deletes a line style object if it contains no other character styles.
 
 #### Defined in
 
-[src/shapes/Text/StyledText.ts:164](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/StyledText.ts#L164)
+[src/shapes/Text/StyledText.ts:164](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/StyledText.ts#L164)
 
 ___
 
@@ -9639,7 +9548,7 @@ remove and reflow a style block from start to end.
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:716](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L716)
+[src/shapes/IText/ITextBehavior.ts:716](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextBehavior.ts#L716)
 
 ___
 
@@ -9663,7 +9572,7 @@ ___
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:345](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L345)
+[src/shapes/IText/IText.ts:345](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/IText.ts#L345)
 
 ___
 
@@ -9687,7 +9596,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:784](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L784)
+[src/shapes/Object/Object.ts:788](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L788)
 
 ___
 
@@ -9714,7 +9623,7 @@ Renders cursor
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:489](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L489)
+[src/shapes/IText/IText.ts:489](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/IText.ts#L489)
 
 ___
 
@@ -9742,7 +9651,7 @@ If contextTop is not available, do nothing.
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:479](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L479)
+[src/shapes/IText/IText.ts:479](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/IText.ts#L479)
 
 ___
 
@@ -9763,7 +9672,7 @@ it does on the contextTop. If contextTop is not available, do nothing.
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:369](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L369)
+[src/shapes/IText/IText.ts:369](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/IText.ts#L369)
 
 ___
 
@@ -9783,7 +9692,7 @@ Renders drag start text selection
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:549](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L549)
+[src/shapes/IText/IText.ts:549](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/IText.ts#L549)
 
 ___
 
@@ -9807,7 +9716,7 @@ ___
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:559](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L559)
+[src/shapes/IText/IText.ts:559](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/IText.ts#L559)
 
 ___
 
@@ -9834,7 +9743,7 @@ Renders text selection
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:534](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L534)
+[src/shapes/IText/IText.ts:534](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/IText.ts#L534)
 
 ___
 
@@ -9852,7 +9761,7 @@ ___
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:200](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L200)
+[src/shapes/IText/ITextBehavior.ts:200](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextBehavior.ts#L200)
 
 ___
 
@@ -9878,7 +9787,7 @@ Sets "angle" of an instance with centered rotation
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1494](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1494)
+[src/shapes/Object/Object.ts:1498](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L1498)
 
 ___
 
@@ -9904,7 +9813,7 @@ Scales an object (equally by x and y)
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:432](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L432)
+[src/shapes/Object/ObjectGeometry.ts:357](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectGeometry.ts#L357)
 
 ___
 
@@ -9930,7 +9839,7 @@ Scales an object to a given height, with respect to bounding box (scaling by x/y
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:455](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L455)
+[src/shapes/Object/ObjectGeometry.ts:380](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectGeometry.ts#L380)
 
 ___
 
@@ -9956,7 +9865,7 @@ Scales an object to a given width, with respect to bounding box (scaling by x/y 
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:443](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L443)
+[src/shapes/Object/ObjectGeometry.ts:368](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectGeometry.ts#L368)
 
 ___
 
@@ -9985,7 +9894,7 @@ Index of the beginning or end of a word
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:317](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L317)
+[src/shapes/IText/ITextBehavior.ts:317](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextBehavior.ts#L317)
 
 ___
 
@@ -10005,7 +9914,7 @@ Selects entire text
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:213](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L213)
+[src/shapes/IText/ITextBehavior.ts:213](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextBehavior.ts#L213)
 
 ___
 
@@ -10031,7 +9940,7 @@ Selects a line based on the index
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:363](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L363)
+[src/shapes/IText/ITextBehavior.ts:363](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextBehavior.ts#L363)
 
 ___
 
@@ -10057,7 +9966,7 @@ Selects a word based on the index
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:342](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L342)
+[src/shapes/IText/ITextBehavior.ts:342](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextBehavior.ts#L342)
 
 ___
 
@@ -10082,7 +9991,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1750](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1750)
+[src/shapes/Text/Text.ts:1750](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L1750)
 
 ___
 
@@ -10114,7 +10023,7 @@ discuss this overlap of priority here with the team. Andrea Bogazzi for details
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:554](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L554)
+[src/shapes/Object/InteractiveObject.ts:544](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L544)
 
 ___
 
@@ -10140,7 +10049,7 @@ Sets the visibility state of object controls, this is just a bulk option for set
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:566](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L566)
+[src/shapes/Object/InteractiveObject.ts:556](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L556)
 
 ___
 
@@ -10148,10 +10057,7 @@ ___
 
 **setCoords**(): `void`
 
-Sets corner and controls position coordinates based on current angle, width and height, left and top.
-oCoords are used to find the corners
-aCoords are used to quickly find an object on the canvas
-lineCoords are used to quickly find object during pointer events.
+set controls' coordinates as well
 See [https://github.com/fabricjs/fabric.js/wiki/When-to-call-setCoords](https://github.com/fabricjs/fabric.js/wiki/When-to-call-setCoords) and [http://fabricjs.com/fabric-gotchas](http://fabricjs.com/fabric-gotchas)
 
 #### Returns
@@ -10164,7 +10070,7 @@ See [https://github.com/fabricjs/fabric.js/wiki/When-to-call-setCoords](https://
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:309](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L309)
+[src/shapes/Object/InteractiveObject.ts:295](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L295)
 
 ___
 
@@ -10190,7 +10096,7 @@ Changes cursor location in a text depending on passed pointer (x/y) object
 
 #### Defined in
 
-[src/shapes/IText/ITextClickBehavior.ts:220](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextClickBehavior.ts#L220)
+[src/shapes/IText/ITextClickBehavior.ts:216](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextClickBehavior.ts#L216)
 
 ___
 
@@ -10213,7 +10119,7 @@ Travis build error about unused variables.
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1526](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1526)
+[src/shapes/Object/Object.ts:1530](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L1530)
 
 ___
 
@@ -10240,7 +10146,7 @@ Needs to be overridden for different defaults.
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:495](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L495)
+[src/shapes/Object/Object.ts:496](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L496)
 
 ___
 
@@ -10261,7 +10167,7 @@ for path and text calculations
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:435](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L435)
+[src/shapes/Text/Text.ts:435](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L435)
 
 ___
 
@@ -10289,7 +10195,7 @@ Sets the position of the object taking into consideration the object's origin
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:209](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L209)
+[src/shapes/Object/ObjectOrigin.ts:214](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectOrigin.ts#L214)
 
 ___
 
@@ -10301,7 +10207,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `value` | `number` | x position according to object's [originX](/apidocs/classes/FabricObject.md#originx) property in parent's coordinate plane\ if parent is canvas then this method is identical to [setX](/apidocs/classes/FabricObject.md#setx) |
+| `value` | `number` | x position according to object's [originX](/apidocs/classes/FabricObject.md#originx) property in parent's coordinate plane\ if parent is canvas then this method is identical to [setX](/apidocs/classes/Textbox.md#setx) |
 
 #### Returns
 
@@ -10313,7 +10219,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:126](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L126)
+[src/shapes/Object/ObjectGeometry.ts:110](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectGeometry.ts#L110)
 
 ___
 
@@ -10321,7 +10227,7 @@ ___
 
 **setRelativeXY**(`point`, `originX?`, `originY?`): `void`
 
-As [setXY](/apidocs/classes/FabricObject.md#setxy), but in current parent's coordinate plane (the current group if any or the canvas)
+As [setXY](/apidocs/classes/Textbox.md#setxy), but in current parent's coordinate plane (the current group if any or the canvas)
 
 #### Parameters
 
@@ -10341,7 +10247,7 @@ As [setXY](/apidocs/classes/FabricObject.md#setxy), but in current parent's coor
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:189](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L189)
+[src/shapes/Object/ObjectGeometry.ts:173](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectGeometry.ts#L173)
 
 ___
 
@@ -10353,7 +10259,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `value` | `number` | y position according to object's [originY](/apidocs/classes/FabricObject.md#originy) property in parent's coordinate plane\ if parent is canvas then this property is identical to [setY](/apidocs/classes/FabricObject.md#sety) |
+| `value` | `number` | y position according to object's [originY](/apidocs/classes/FabricObject.md#originy) property in parent's coordinate plane\ if parent is canvas then this property is identical to [setY](/apidocs/classes/Textbox.md#sety) |
 
 #### Returns
 
@@ -10365,7 +10271,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:142](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L142)
+[src/shapes/Object/ObjectGeometry.ts:126](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectGeometry.ts#L126)
 
 ___
 
@@ -10391,7 +10297,7 @@ Sets selection end (right boundary of a selection)
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:257](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L257)
+[src/shapes/IText/IText.ts:257](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/IText.ts#L257)
 
 ___
 
@@ -10417,7 +10323,7 @@ Sets selection start (left boundary of a selection)
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:248](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L248)
+[src/shapes/IText/IText.ts:248](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/IText.ts#L248)
 
 ___
 
@@ -10446,7 +10352,7 @@ mimic the key - mouse navigation when shift is pressed.
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:1044](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L1044)
+[src/shapes/IText/ITextBehavior.ts:1044](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextBehavior.ts#L1044)
 
 ___
 
@@ -10474,7 +10380,7 @@ Sets style of a current selection, if no selection exist, do not set anything.
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:321](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L321)
+[src/shapes/IText/IText.ts:321](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/IText.ts#L321)
 
 ___
 
@@ -10501,7 +10407,7 @@ Turns the character into an 'inferior figure' (i.e. 'subscript')
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1407](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1407)
+[src/shapes/Text/Text.ts:1407](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L1407)
 
 ___
 
@@ -10528,7 +10434,7 @@ Turns the character into a 'superior figure' (i.e. 'superscript')
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1398](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1398)
+[src/shapes/Text/Text.ts:1398](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L1398)
 
 ___
 
@@ -10552,7 +10458,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:96](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L96)
+[src/shapes/Object/ObjectGeometry.ts:80](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectGeometry.ts#L80)
 
 ___
 
@@ -10569,8 +10475,8 @@ that otherwise are the object's current values.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `point` | [`Point`](/apidocs/classes/Point.md) | position in canvas coordinate plane |
-| `originX?` | [`TOriginX`](/apidocs/modules.md#toriginx) | Horizontal origin: 'left', 'center' or 'right' |
-| `originY?` | [`TOriginY`](/apidocs/modules.md#toriginy) | Vertical origin: 'top', 'center' or 'bottom' |
+| `originX?` | `number` \| ``"center"`` \| ``"left"`` \| ``"right"`` | Horizontal origin: 'left', 'center' or 'right' |
+| `originY?` | `number` \| ``"center"`` \| ``"top"`` \| ``"bottom"`` | Vertical origin: 'top', 'center' or 'bottom' |
 
 #### Returns
 
@@ -10578,7 +10484,6 @@ that otherwise are the object's current values.
 
 **`Example`**
 
-Set object's bottom left corner to point (5,5) on canvas
 ```ts
 object.setXY(new Point(5, 5), 'left', 'bottom').
 ```
@@ -10589,7 +10494,7 @@ object.setXY(new Point(5, 5), 'left', 'bottom').
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:166](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L166)
+[src/shapes/Object/ObjectGeometry.ts:150](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectGeometry.ts#L150)
 
 ___
 
@@ -10613,7 +10518,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:110](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L110)
+[src/shapes/Object/ObjectGeometry.ts:94](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectGeometry.ts#L94)
 
 ___
 
@@ -10640,7 +10545,7 @@ Shifts line styles up or down
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:778](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L778)
+[src/shapes/IText/ITextBehavior.ts:778](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextBehavior.ts#L778)
 
 ___
 
@@ -10665,7 +10570,7 @@ Read as: cache if is needed, or if the feature is enabled but we are not already
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:867](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L867)
+[src/shapes/Object/Object.ts:871](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L871)
 
 ___
 
@@ -10683,7 +10588,7 @@ ___
 
 #### Defined in
 
-[src/shapes/IText/ITextClickBehavior.ts:55](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextClickBehavior.ts#L55)
+[src/shapes/IText/ITextClickBehavior.ts:51](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextClickBehavior.ts#L51)
 
 ___
 
@@ -10710,7 +10615,7 @@ override this function in order to customize the drawing of the control box, e.g
 
 #### Defined in
 
-[src/shapes/Object/InteractiveObject.ts:366](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/InteractiveObject.ts#L366)
+[src/shapes/Object/InteractiveObject.ts:351](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/InteractiveObject.ts#L351)
 
 ___
 
@@ -10737,7 +10642,7 @@ Returns true if object has a style property or has it on a specified line
 
 #### Defined in
 
-[src/shapes/Textbox.ts:175](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Textbox.ts#L175)
+[src/shapes/Textbox.ts:175](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Textbox.ts#L175)
 
 ___
 
@@ -10767,7 +10672,7 @@ this workaround should be replaced with a more robust solution
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:357](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/IText.ts#L357)
+[src/shapes/IText/IText.ts:357](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/IText.ts#L357)
 
 ___
 
@@ -10796,7 +10701,7 @@ svg representation of an instance
 
 #### Defined in
 
-[src/shapes/Object/FabricObjectSVGExportMixin.ts:143](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/FabricObjectSVGExportMixin.ts#L143)
+[src/shapes/Object/FabricObjectSVGExportMixin.ts:143](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/FabricObjectSVGExportMixin.ts#L143)
 
 ___
 
@@ -10824,7 +10729,7 @@ Returns a data: URL containing a representation of the object in the format spec
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1453](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1453)
+[src/shapes/Object/Object.ts:1457](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L1457)
 
 ___
 
@@ -10852,7 +10757,7 @@ Object representation of an instance
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:581](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L581)
+[src/shapes/Object/Object.ts:582](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L582)
 
 ___
 
@@ -10874,7 +10779,7 @@ JSON
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1485](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1485)
+[src/shapes/Object/Object.ts:1489](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L1489)
 
 ___
 
@@ -10913,7 +10818,7 @@ toObject
 
 #### Defined in
 
-[src/shapes/Textbox.ts:558](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Textbox.ts#L558)
+[src/shapes/Textbox.ts:558](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Textbox.ts#L558)
 
 ___
 
@@ -10942,7 +10847,7 @@ svg representation of an instance
 
 #### Defined in
 
-[src/shapes/Object/FabricObjectSVGExportMixin.ts:129](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/FabricObjectSVGExportMixin.ts#L129)
+[src/shapes/Object/FabricObjectSVGExportMixin.ts:129](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/FabricObjectSVGExportMixin.ts#L129)
 
 ___
 
@@ -10964,7 +10869,7 @@ String representation of text object
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:571](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L571)
+[src/shapes/Text/Text.ts:571](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L571)
 
 ___
 
@@ -10990,7 +10895,7 @@ Toggles specified property from `true` to `false` or from `false` to `true`
 
 #### Defined in
 
-[src/CommonMethods.ts:46](https://github.com/fabricjs/fabric.js/blob/078809453/src/CommonMethods.ts#L46)
+[src/CommonMethods.ts:46](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/CommonMethods.ts#L46)
 
 ___
 
@@ -11016,7 +10921,7 @@ Transforms context when rendering an object
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:503](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L503)
+[src/shapes/Object/Object.ts:504](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L504)
 
 ___
 
@@ -11040,7 +10945,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/ObjectGeometry.ts:520](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectGeometry.ts#L520)
+[src/shapes/Object/ObjectGeometry.ts:440](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectGeometry.ts#L440)
 
 ___
 
@@ -11068,7 +10973,7 @@ Translates the coordinates from origin to center coordinates (based on the objec
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:122](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L122)
+[src/shapes/Object/ObjectOrigin.ts:127](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectOrigin.ts#L127)
 
 ___
 
@@ -11098,7 +11003,7 @@ Translates the coordinates from a set of origin to another (based on the object'
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:94](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L94)
+[src/shapes/Object/ObjectOrigin.ts:99](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectOrigin.ts#L99)
 
 ___
 
@@ -11126,7 +11031,7 @@ Translates the coordinates from center to origin coordinates (based on the objec
 
 #### Defined in
 
-[src/shapes/Object/ObjectOrigin.ts:147](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/ObjectOrigin.ts#L147)
+[src/shapes/Object/ObjectOrigin.ts:152](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/ObjectOrigin.ts#L152)
 
 ___
 
@@ -11152,7 +11057,7 @@ Default handler for triple click, select a line
 
 #### Defined in
 
-[src/shapes/IText/ITextClickBehavior.ts:116](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextClickBehavior.ts#L116)
+[src/shapes/IText/ITextClickBehavior.ts:112](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextClickBehavior.ts#L112)
 
 ___
 
@@ -11170,7 +11075,7 @@ ___
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:522](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L522)
+[src/shapes/IText/ITextBehavior.ts:522](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextBehavior.ts#L522)
 
 ___
 
@@ -11196,7 +11101,7 @@ called by [Canvas#textEditingManager](/apidocs/classes/Canvas.md#texteditingmana
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:410](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L410)
+[src/shapes/IText/ITextBehavior.ts:410](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextBehavior.ts#L410)
 
 ___
 
@@ -11214,7 +11119,7 @@ ___
 
 #### Defined in
 
-[src/shapes/IText/ITextBehavior.ts:547](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/IText/ITextBehavior.ts#L547)
+[src/shapes/IText/ITextBehavior.ts:547](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/IText/ITextBehavior.ts#L547)
 
 ___
 
@@ -11222,7 +11127,7 @@ ___
 
 **willDrawShadow**(): `boolean`
 
-Check if this object or a child object will cast a shadow
+Check if this object will cast a shadow with an offset.
 used by Group.shouldCache to know if child has a shadow recursively
 
 #### Returns
@@ -11237,7 +11142,7 @@ used by Group.shouldCache to know if child has a shadow recursively
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:880](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L880)
+[src/shapes/Object/Object.ts:884](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L884)
 
 ___
 
@@ -11262,13 +11167,13 @@ array of words
 
 #### Defined in
 
-[src/shapes/Textbox.ts:399](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Textbox.ts#L399)
+[src/shapes/Textbox.ts:399](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Textbox.ts#L399)
 
 ___
 
 ### \_fromObject
 
-**_fromObject**\<`S`\>(`object`, `«destructured»?`): `Promise`\<`S`\>
+**_fromObject**\<`S`\>(`«destructured»`, `«destructured»?`): `Promise`\<`S`\>
 
 #### Type parameters
 
@@ -11280,7 +11185,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `object` | `Record`\<`string`, `unknown`\> |
+| `«destructured»` | `Record`\<`string`, `unknown`\> |
 | `«destructured»` | [`Abortable`](/apidocs/modules.md#abortable) & \{ `extraParam?`: `string`  } |
 
 #### Returns
@@ -11293,7 +11198,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Object/Object.ts:1564](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Object/Object.ts#L1564)
+[src/shapes/Object/Object.ts:1568](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Object/Object.ts#L1568)
 
 ___
 
@@ -11327,7 +11232,7 @@ Text
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1822](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1822)
+[src/shapes/Text/Text.ts:1822](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L1822)
 
 ___
 
@@ -11360,7 +11265,7 @@ Returns FabricText instance from an object representation
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:1899](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Text/Text.ts#L1899)
+[src/shapes/Text/Text.ts:1899](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Text/Text.ts#L1899)
 
 ___
 
@@ -11391,4 +11296,4 @@ ___
 
 #### Defined in
 
-[src/shapes/Textbox.ts:97](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Textbox.ts#L97)
+[src/shapes/Textbox.ts:97](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Textbox.ts#L97)

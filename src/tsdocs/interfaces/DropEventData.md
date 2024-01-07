@@ -19,7 +19,7 @@ Kept for compatibility
 
 #### Defined in
 
-[src/EventTypeDefs.ts:184](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L184)
+[src/EventTypeDefs.ts:189](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L189)
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:167](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L167)
+[src/EventTypeDefs.ts:172](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L172)
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:168](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L168)
+[src/EventTypeDefs.ts:173](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L173)
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:166](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L166)
+[src/EventTypeDefs.ts:171](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L171)
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:169](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L169)
+[src/EventTypeDefs.ts:174](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L174)
 
 ___
 
@@ -89,7 +89,7 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:84](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L84)
+[src/EventTypeDefs.ts:88](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L88)
 
 ___
 
@@ -104,7 +104,7 @@ Kept for compatibility
 
 #### Defined in
 
-[src/EventTypeDefs.ts:178](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L178)
+[src/EventTypeDefs.ts:183](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L183)
 
 ___
 
@@ -114,7 +114,7 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:185](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L185)
+[src/EventTypeDefs.ts:190](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L190)
 
 ___
 
@@ -128,7 +128,7 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:165](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L165)
+[src/EventTypeDefs.ts:170](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L170)
 
 ___
 
@@ -142,7 +142,7 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:164](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L164)
+[src/EventTypeDefs.ts:169](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L169)
 
 ___
 
@@ -152,4 +152,4 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:186](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L186)
+[src/EventTypeDefs.ts:191](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L191)

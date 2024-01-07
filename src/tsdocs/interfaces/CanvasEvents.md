@@ -34,7 +34,7 @@
 
 #### Defined in
 
-[src/EventTypeDefs.ts:291](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L291)
+[src/EventTypeDefs.ts:296](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L296)
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:302](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L302)
+[src/EventTypeDefs.ts:309](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L309)
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:290](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L290)
+[src/EventTypeDefs.ts:295](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L295)
 
 ___
 
@@ -84,7 +84,7 @@ CanvasSelectionEvents.before:selection:cleared
 
 #### Defined in
 
-[src/EventTypeDefs.ts:214](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L214)
+[src/EventTypeDefs.ts:219](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L219)
 
 ___
 
@@ -98,7 +98,7 @@ CanvasModificationEvents.before:transform
 
 #### Defined in
 
-[src/EventTypeDefs.ts:125](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L125)
+[src/EventTypeDefs.ts:130](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L130)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:287](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L287)
+[src/EventTypeDefs.ts:292](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L292)
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:261](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L261)
+[src/EventTypeDefs.ts:266](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L266)
 
 ___
 
@@ -140,7 +140,7 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:260](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L260)
+[src/EventTypeDefs.ts:265](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L265)
 
 ___
 
@@ -154,7 +154,7 @@ CanvasDnDEvents.drag
 
 #### Defined in
 
-[src/EventTypeDefs.ts:191](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L191)
+[src/EventTypeDefs.ts:196](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L196)
 
 ___
 
@@ -168,7 +168,7 @@ CanvasDnDEvents.drag:enter
 
 #### Defined in
 
-[src/EventTypeDefs.ts:202](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L202)
+[src/EventTypeDefs.ts:207](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L207)
 
 ___
 
@@ -182,7 +182,7 @@ CanvasDnDEvents.drag:leave
 
 #### Defined in
 
-[src/EventTypeDefs.ts:203](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L203)
+[src/EventTypeDefs.ts:208](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L208)
 
 ___
 
@@ -196,7 +196,7 @@ CanvasDnDEvents.dragend
 
 #### Defined in
 
-[src/EventTypeDefs.ts:195](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L195)
+[src/EventTypeDefs.ts:200](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L200)
 
 ___
 
@@ -210,7 +210,7 @@ CanvasDnDEvents.dragenter
 
 #### Defined in
 
-[src/EventTypeDefs.ts:193](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L193)
+[src/EventTypeDefs.ts:198](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L198)
 
 ___
 
@@ -224,7 +224,7 @@ CanvasDnDEvents.dragleave
 
 #### Defined in
 
-[src/EventTypeDefs.ts:194](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L194)
+[src/EventTypeDefs.ts:199](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L199)
 
 ___
 
@@ -238,7 +238,7 @@ CanvasDnDEvents.dragover
 
 #### Defined in
 
-[src/EventTypeDefs.ts:192](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L192)
+[src/EventTypeDefs.ts:197](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L197)
 
 ___
 
@@ -252,7 +252,7 @@ CanvasDnDEvents.dragstart
 
 #### Defined in
 
-[src/EventTypeDefs.ts:190](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L190)
+[src/EventTypeDefs.ts:195](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L195)
 
 ___
 
@@ -266,7 +266,7 @@ CanvasDnDEvents.drop
 
 #### Defined in
 
-[src/EventTypeDefs.ts:197](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L197)
+[src/EventTypeDefs.ts:202](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L202)
 
 ___
 
@@ -280,7 +280,7 @@ CanvasDnDEvents.drop:after
 
 #### Defined in
 
-[src/EventTypeDefs.ts:198](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L198)
+[src/EventTypeDefs.ts:203](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L203)
 
 ___
 
@@ -294,7 +294,7 @@ CanvasDnDEvents.drop:before
 
 #### Defined in
 
-[src/EventTypeDefs.ts:196](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L196)
+[src/EventTypeDefs.ts:201](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L201)
 
 ___
 
@@ -315,7 +315,7 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:307](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L307)
+[src/EventTypeDefs.ts:314](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L314)
 
 ___
 
@@ -325,7 +325,7 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:306](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L306)
+[src/EventTypeDefs.ts:313](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L313)
 
 ___
 
@@ -445,7 +445,35 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:223](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L223)
+[src/EventTypeDefs.ts:228](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L228)
+
+___
+
+### object:layout:after
+
+ **object:layout:after**: [`LayoutAfterEvent`](/apidocs/modules.md#layoutafterevent) & \{ `target`: [`Group`](/apidocs/classes/Group.md)  }
+
+#### Inherited from
+
+[StaticCanvasEvents](/apidocs/interfaces/StaticCanvasEvents.md).[object:layout:after](/apidocs/interfaces/StaticCanvasEvents.md#object:layout:after)
+
+#### Defined in
+
+[src/EventTypeDefs.ts:298](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L298)
+
+___
+
+### object:layout:before
+
+ **object:layout:before**: [`LayoutBeforeEvent`](/apidocs/modules.md#layoutbeforeevent) & \{ `target`: [`Group`](/apidocs/classes/Group.md)  }
+
+#### Inherited from
+
+[StaticCanvasEvents](/apidocs/interfaces/StaticCanvasEvents.md).[object:layout:before](/apidocs/interfaces/StaticCanvasEvents.md#object:layout:before)
+
+#### Defined in
+
+[src/EventTypeDefs.ts:297](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L297)
 
 ___
 
@@ -456,6 +484,16 @@ ___
 #### Inherited from
 
 CanvasModificationEvents.object:modified
+
+___
+
+### object:modifyPoly
+
+ **object:modifyPoly**: [`BasicTransformEvent`](/apidocs/interfaces/BasicTransformEvent.md)\<[`TPointerEvent`](/apidocs/modules.md#tpointerevent)\> & \{ `target`: [`FabricObject`](/apidocs/classes/FabricObject.md)\<`Partial`\<[`FabricObjectProps`](/apidocs/interfaces/FabricObjectProps.md)\>, [`SerializedObjectProps`](/apidocs/interfaces/SerializedObjectProps.md), [`ObjectEvents`](/apidocs/interfaces/ObjectEvents.md)\>  }
+
+#### Inherited from
+
+CanvasModificationEvents.object:modifyPoly
 
 ___
 
@@ -485,7 +523,7 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:224](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L224)
+[src/EventTypeDefs.ts:229](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L229)
 
 ___
 
@@ -541,7 +579,7 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:303](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L303)
+[src/EventTypeDefs.ts:310](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L310)
 
 ___
 
@@ -555,7 +593,7 @@ CanvasSelectionEvents.selection:cleared
 
 #### Defined in
 
-[src/EventTypeDefs.ts:217](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L217)
+[src/EventTypeDefs.ts:222](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L222)
 
 ___
 
@@ -569,7 +607,7 @@ CanvasSelectionEvents.selection:created
 
 #### Defined in
 
-[src/EventTypeDefs.ts:207](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L207)
+[src/EventTypeDefs.ts:212](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L212)
 
 ___
 
@@ -583,7 +621,7 @@ CanvasSelectionEvents.selection:updated
 
 #### Defined in
 
-[src/EventTypeDefs.ts:210](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L210)
+[src/EventTypeDefs.ts:215](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L215)
 
 ___
 
@@ -599,7 +637,7 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:321](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L321)
+[src/EventTypeDefs.ts:328](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L328)
 
 ___
 
@@ -615,7 +653,7 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:322](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L322)
+[src/EventTypeDefs.ts:329](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L329)
 
 ___
 
@@ -631,7 +669,7 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:323](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L323)
+[src/EventTypeDefs.ts:330](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L330)
 
 ___
 
@@ -647,4 +685,4 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:320](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L320)
+[src/EventTypeDefs.ts:327](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L327)

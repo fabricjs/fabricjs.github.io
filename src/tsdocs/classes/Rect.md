@@ -52,7 +52,7 @@ thisArg
 
 #### Defined in
 
-[src/shapes/Rect.ts:72](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Rect.ts#L72)
+[src/shapes/Rect.ts:72](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Rect.ts#L72)
 
 ## Properties
 
@@ -74,7 +74,7 @@ Horizontal border radius
 
 #### Defined in
 
-[src/shapes/Rect.ts:45](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Rect.ts#L45)
+[src/shapes/Rect.ts:45](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Rect.ts#L45)
 
 ___
 
@@ -96,7 +96,7 @@ Vertical border radius
 
 #### Defined in
 
-[src/shapes/Rect.ts:52](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Rect.ts#L52)
+[src/shapes/Rect.ts:52](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Rect.ts#L52)
 
 ___
 
@@ -115,7 +115,7 @@ Rect
 
 #### Defined in
 
-[src/shapes/Rect.ts:182](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Rect.ts#L182)
+[src/shapes/Rect.ts:182](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Rect.ts#L182)
 
 ___
 
@@ -134,7 +134,7 @@ and refreshed at the next render
 
 #### Defined in
 
-[src/shapes/Rect.ts:56](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Rect.ts#L56)
+[src/shapes/Rect.ts:56](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Rect.ts#L56)
 
 ___
 
@@ -148,7 +148,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Rect.ts:58](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Rect.ts#L58)
+[src/shapes/Rect.ts:58](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Rect.ts#L58)
 
 ___
 
@@ -168,7 +168,7 @@ to avoid doing that.
 
 #### Defined in
 
-[src/shapes/Rect.ts:54](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Rect.ts#L54)
+[src/shapes/Rect.ts:54](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Rect.ts#L54)
 
 ## Methods
 
@@ -184,7 +184,7 @@ Initializes rx/ry attributes
 
 #### Defined in
 
-[src/shapes/Rect.ts:81](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Rect.ts#L81)
+[src/shapes/Rect.ts:81](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Rect.ts#L81)
 
 ___
 
@@ -208,7 +208,7 @@ ___
 
 #### Defined in
 
-[src/shapes/Rect.ts:94](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Rect.ts#L94)
+[src/shapes/Rect.ts:94](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Rect.ts#L94)
 
 ___
 
@@ -231,7 +231,7 @@ of the instance
 
 #### Defined in
 
-[src/shapes/Rect.ts:165](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Rect.ts#L165)
+[src/shapes/Rect.ts:165](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Rect.ts#L165)
 
 ___
 
@@ -266,7 +266,7 @@ object representation of an instance
 
 #### Defined in
 
-[src/shapes/Rect.ts:153](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Rect.ts#L153)
+[src/shapes/Rect.ts:153](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Rect.ts#L153)
 
 ___
 
@@ -296,7 +296,7 @@ Rect
 
 #### Defined in
 
-[src/shapes/Rect.ts:201](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Rect.ts#L201)
+[src/shapes/Rect.ts:201](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Rect.ts#L201)
 
 ___
 
@@ -314,4 +314,4 @@ ___
 
 #### Defined in
 
-[src/shapes/Rect.ts:60](https://github.com/fabricjs/fabric.js/blob/078809453/src/shapes/Rect.ts#L60)
+[src/shapes/Rect.ts:60](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/shapes/Rect.ts#L60)

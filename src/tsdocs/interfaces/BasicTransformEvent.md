@@ -24,7 +24,7 @@
 
 #### Defined in
 
-[src/EventTypeDefs.ts:84](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L84)
+[src/EventTypeDefs.ts:88](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L88)
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:94](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L94)
+[src/EventTypeDefs.ts:98](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L98)
 
 ___
 
@@ -44,4 +44,4 @@ ___
 
 #### Defined in
 
-[src/EventTypeDefs.ts:93](https://github.com/fabricjs/fabric.js/blob/078809453/src/EventTypeDefs.ts#L93)
+[src/EventTypeDefs.ts:97](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/EventTypeDefs.ts#L97)

@@ -10,7 +10,7 @@
 
 | Name | Type |
 | :------ | :------ |
-| `status?` | [`IntersectionType`](/apidocs/modules.md#intersectiontype) |
+| `status?` | ``"Intersection"`` \| ``"Coincident"`` \| ``"Parallel"`` |
 
 #### Returns
 
@@ -18,7 +18,7 @@
 
 #### Defined in
 
-[src/Intersection.ts:13](https://github.com/fabricjs/fabric.js/blob/078809453/src/Intersection.ts#L13)
+[src/Intersection.ts:13](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Intersection.ts#L13)
 
 ## Properties
 
@@ -28,17 +28,17 @@
 
 #### Defined in
 
-[src/Intersection.ts:9](https://github.com/fabricjs/fabric.js/blob/078809453/src/Intersection.ts#L9)
+[src/Intersection.ts:9](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Intersection.ts#L9)
 
 ___
 
 ### status
 
- `Optional` **status**: [`IntersectionType`](/apidocs/modules.md#intersectiontype)
+ `Optional` **status**: ``"Intersection"`` \| ``"Coincident"`` \| ``"Parallel"``
 
 #### Defined in
 
-[src/Intersection.ts:11](https://github.com/fabricjs/fabric.js/blob/078809453/src/Intersection.ts#L11)
+[src/Intersection.ts:11](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Intersection.ts#L11)
 
 ## Methods
 
@@ -64,7 +64,7 @@ thisArg
 
 #### Defined in
 
-[src/Intersection.ts:33](https://github.com/fabricjs/fabric.js/blob/078809453/src/Intersection.ts#L33)
+[src/Intersection.ts:33](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Intersection.ts#L33)
 
 ___
 
@@ -86,7 +86,7 @@ Used to verify if a point is alredy in the collection
 
 #### Defined in
 
-[src/Intersection.ts:23](https://github.com/fabricjs/fabric.js/blob/078809453/src/Intersection.ts#L23)
+[src/Intersection.ts:23](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Intersection.ts#L23)
 
 ___
 
@@ -120,7 +120,7 @@ Checks if a line intersects another
 
 #### Defined in
 
-[src/Intersection.ts:127](https://github.com/fabricjs/fabric.js/blob/078809453/src/Intersection.ts#L127)
+[src/Intersection.ts:127](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Intersection.ts#L127)
 
 ___
 
@@ -155,7 +155,7 @@ account for stroke
 
 #### Defined in
 
-[src/Intersection.ts:224](https://github.com/fabricjs/fabric.js/blob/078809453/src/Intersection.ts#L224)
+[src/Intersection.ts:224](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Intersection.ts#L224)
 
 ___
 
@@ -184,7 +184,7 @@ account for stroke
 
 #### Defined in
 
-[src/Intersection.ts:277](https://github.com/fabricjs/fabric.js/blob/078809453/src/Intersection.ts#L277)
+[src/Intersection.ts:277](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Intersection.ts#L277)
 
 ___
 
@@ -214,7 +214,7 @@ Checks if polygon intersects rectangle
 
 #### Defined in
 
-[src/Intersection.ts:315](https://github.com/fabricjs/fabric.js/blob/078809453/src/Intersection.ts#L315)
+[src/Intersection.ts:315](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Intersection.ts#L315)
 
 ___
 
@@ -245,7 +245,7 @@ Checks if a segment intersects a line
 
 #### Defined in
 
-[src/Intersection.ts:183](https://github.com/fabricjs/fabric.js/blob/078809453/src/Intersection.ts#L183)
+[src/Intersection.ts:183](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Intersection.ts#L183)
 
 ___
 
@@ -275,7 +275,7 @@ Checks if segment intersects polygon
 
 #### Defined in
 
-[src/Intersection.ts:259](https://github.com/fabricjs/fabric.js/blob/078809453/src/Intersection.ts#L259)
+[src/Intersection.ts:259](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Intersection.ts#L259)
 
 ___
 
@@ -306,7 +306,7 @@ Checks if a segment intersects another
 
 #### Defined in
 
-[src/Intersection.ts:202](https://github.com/fabricjs/fabric.js/blob/078809453/src/Intersection.ts#L202)
+[src/Intersection.ts:202](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Intersection.ts#L202)
 
 ___
 
@@ -333,7 +333,7 @@ true if `T` is contained
 
 #### Defined in
 
-[src/Intersection.ts:51](https://github.com/fabricjs/fabric.js/blob/078809453/src/Intersection.ts#L51)
+[src/Intersection.ts:51](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Intersection.ts#L51)
 
 ___
 
@@ -360,4 +360,4 @@ https://en.wikipedia.org/wiki/Point_in_polygon
 
 #### Defined in
 
-[src/Intersection.ts:91](https://github.com/fabricjs/fabric.js/blob/078809453/src/Intersection.ts#L91)
+[src/Intersection.ts:91](https://github.com/fabricjs/fabric.js/blob/b24e8cbdf/src/Intersection.ts#L91)
