@@ -114,7 +114,7 @@ fabric.minCacheSideLimit = 256;
 
 Example of a cache canvas that is bigger than the drawn object (256x256 is the minimum by default):
 
-![](../article_assets/carMinCache.png)
+![](/article_assets/carMinCache.png)
 
 Example of the biggest size cache canvas at default values ( 2 Mega pixels ). Scroll to see something:
 
@@ -135,13 +135,18 @@ to override the standard value and cache will be disabled for your project.
 
 Below you can see 2 fabric canvases. The left one is the default cached one, while the right one is drawn with cache disabled as it was on previous versions.  
 The canvases are loaded with heavy pathgroups, the snowwhite, the heaviest I could find is in 3 copies and makes the render speed cripple down. Try to drag around one of the shapes on the left or right canvas and notice the speed difference.
-```js
+<canvas id="normal1" width="450" height="400"></canvas>
+<canvas id="nocache1" width="450" height="400"></canvas>
+
+<script>
 var canvas1 = new fabric.Canvas('normal1'); var canvas2 = new fabric.Canvas('nocache1'); fabric.loadSVGFromURL('../assets/176.svg', function(objects, options) { var svg1 = fabric.util.groupSVGElements(objects, options); canvas1.add(svg1); }); fabric.loadSVGFromURL('../assets/48.svg', function(objects, options) { var svg1 = fabric.util.groupSVGElements(objects, options); canvas1.add(svg1); }); fabric.loadSVGFromURL('../assets/48.svg', function(objects, options) { var svg1 = fabric.util.groupSVGElements(objects, options); canvas1.add(svg1); }); fabric.loadSVGFromURL('../assets/48.svg', function(objects, options) { var svg1 = fabric.util.groupSVGElements(objects, options); canvas1.add(svg1); }); fabric.loadSVGFromURL('../assets/171.svg', function(objects, options) { var svg1 = fabric.util.groupSVGElements(objects, options); svg1.scale(0.4); canvas1.add(svg1); }); fabric.loadSVGFromURL('../assets/176.svg', function(objects, options) { var svg1 = fabric.util.groupSVGElements(objects, options); svg1.objectCaching = false; canvas2.add(svg1); }); fabric.loadSVGFromURL('../assets/48.svg', function(objects, options) { var svg1 = fabric.util.groupSVGElements(objects, options); svg1.objectCaching = false; canvas2.add(svg1); }); fabric.loadSVGFromURL('../assets/48.svg', function(objects, options) { var svg1 = fabric.util.groupSVGElements(objects, options); svg1.objectCaching = false; canvas2.add(svg1); }); fabric.loadSVGFromURL('../assets/48.svg', function(objects, options) { var svg1 = fabric.util.groupSVGElements(objects, options); svg1.objectCaching = false; canvas2.add(svg1); }); fabric.loadSVGFromURL('../assets/171.svg', function(objects, options) { var svg1 = fabric.util.groupSVGElements(objects, options); svg1.objectCaching = false; svg1.scale(0.4); canvas2.add(svg1); });
-```
+</script>
+
 Also spot differences in scaling between `noScaleCache` with values true or false.  
 In canvases below Left canvas is `false`, that means that during the scaling tasnformation the obect is not regenerated. if you scale an object more than 3 times the original size you will notice blurring that then gets fixed with a new cached copy as soon as you perform a mouse up. Try it by yourself:
-
+<script>
 var canvas3 = new fabric.Canvas('normal2'); fabric.loadSVGFromURL('../assets/171.svg', function(objects, options) { var svg1 = fabric.util.groupSVGElements(objects, options); svg1.scale(0.05); canvas3.add(svg1); });
+</script>
 
 ### When does the cache gets updated with a new version?
 
