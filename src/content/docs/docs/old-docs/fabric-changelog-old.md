@@ -37,14 +37,14 @@ Fabric 1.x is in manteinence mode. Just bugfixes backported from ongoing 2.x
 
 Fabric 1.x is in manteinence mode. Just bugfixes no features or improvements.
 
-Fixed drawing path displacement #4318
-Fixed the flip of images with scale equally #4313
-Fixed touch touch detection #4302
+    Fixed drawing path displacement #4318
+    Fixed the flip of images with scale equally #4313
+    Fixed touch touch detection #4302
 
 ### Version 1.7.18
 
-Fixed doubling of subtargets for preserveObjectStacking = true #4297
-Added a dirty set to objects in group destroy.
+    Fixed doubling of subtargets for preserveObjectStacking = true #4297
+    Added a dirty set to objects in group destroy.
 
 ### Version 1.7.17
 
@@ -64,10 +64,10 @@ Small bugix release, mostly selection and text bugfixes reported by users
 
 Small bugix release.
 
-  Improvement: Add information to onChange and onComplete animation function #4068
-  Improvement: avoid multiplying identity matrices in calcTransformMatrix function
-  Fix: ativeGroup did not destroy correctly if a toObject was happening
-  Improvement: Pass the event to object:modified when available. #4061
+    Improvement: Add information to onChange and onComplete animation function #4068
+    Improvement: avoid multiplying identity matrices in calcTransformMatrix function
+    Fix: ativeGroup did not destroy correctly if a toObject was happening
+    Improvement: Pass the event to object:modified when available. #4061
   
 
 ### Version 1.7.15
@@ -75,8 +75,8 @@ Small bugix release.
 Quick bug fix release and and 2 improvements. Shadow with no offset can be cached, and this is a speed boost if you are using shadow to do halos.  
 Added a note in text docs that allow devs to ovveride some custom key behaviour
 
-  Improvement: Made iText keymap public. #4053
-  Improvement: Fix a bug in updateCacheCanvas that was returning always true #4051
+    Improvement: Made iText keymap public. #4053
+    Improvement: Fix a bug in updateCacheCanvas that was returning always true #4051
   
 
 ### Version 1.7.14
@@ -107,20 +107,20 @@ Small bugfix release
 
 Bug fixes and some new properties added to mouse events.
 
-  Fix: removed possible memleaks from window resize event. #3984
-  Fix: restored default cursor to noTarget only. unselectable objects get the standard hovercursor. #3953
-  Cache fixes: fix uncached pathGroup, removed cache creation at initialize time #3982
-  Improvement: nextTarget to mouseOut and prevTarget to mouseOver #3900
-  Improvement: add isClick boolean to left mouse up #3898
-  Fix: can start selection on top of non selectable object #3892
-  Improvement: better management of right/middle click #3888
-  Fix: subTargetCheck on activeObject/activeGroup was firing too many events #3909
-  Fix: After addWithUpdate or removeWithUpdate object coords must be updated. #3911
+    Fix: removed possible memleaks from window resize event. #3984
+    Fix: restored default cursor to noTarget only. unselectable objects get the standard hovercursor. #3953
+    Cache fixes: fix uncached pathGroup, removed cache creation at initialize time #3982
+    Improvement: nextTarget to mouseOut and prevTarget to mouseOver #3900
+    Improvement: add isClick boolean to left mouse up #3898
+    Fix: can start selection on top of non selectable object #3892
+    Improvement: better management of right/middle click #3888
+    Fix: subTargetCheck on activeObject/activeGroup was firing too many events #3909
+    Fix: After addWithUpdate or removeWithUpdate object coords must be updated. #3911
   
 
 ### Version 1.7.11
 
-Hotifx for broken PathGroups (SVGs)
+    Hotifx for broken PathGroups (SVGs)
 
 ### Version 1.7.10
 
@@ -416,20 +416,20 @@ To control those feature you can use those new properties:
 Small bugfixes includes: Itext firing `object:modified` on text change, possibility to restore custom canvas properties other than objects during canvas loadFromJSON, some SVG color output fix and some dataURL improvements.  
 This is the raw changelog:
 
-  Fix: restore canvas properties on loadFromJSON with includeProperties. #2921
-  Fix: Allow hoverCursor on non selectable objects, moveCursor does not appear if the object is not moveable. Added object.moveCursor to specify a cursor for moving per object. #2924
-  Fix: Add missing stroke.live translation, allow gradientTransform for dashed line. #2926
-  Improvement: Allow customization of keys that iteract with mouse action ( multiselect key, free tranform key, alternative action key, centered transform key ) #2925
-  Added: Make iText fires object:modified on text change on exit editing #2927
-  Added: \[control customization part 1\] cornerDashArray, borderDashArray. Now borderScaleFactor influences both border and controls, changed default corner size to 13 #2932
-  Fix: createSVGFontFacesMarkup was failing to retrieve fonts in style #2935
-  Fix: shadow not scaled with dataUrl to multiplier #2940
-  Added: \[control customization part 2\] cornerStrokeColor. Now is possible to specify separate stroke and fill color for the controls #2933
-  Fix: Itext width calculation with caching false was returning nan. #2943
-  Added: \[control customization part 3\] Rounded corners. It is possible to specify cornerStyle for the object. 'rect' or 'circle' #2942
-  Added: \[control customization part 4\] Selection background. It is possible to specify selectionBackgroundColor for the object. #2950
-  Fix: Behaviour of image with filters with resize effects and Object to/from json #2954
-  Fix: Svg export should not output color notation in rgba format #2955
-  Fix: minScaleLimit rounding bug #2964
-  Fix: Itext spacing in justify mode bug #2971
-  Fix: Object.toDataUrl export when some window.devicepixelRatio is present (retina or browser zoom) #2972
+    Fix: restore canvas properties on loadFromJSON with includeProperties. #2921
+    Fix: Allow hoverCursor on non selectable objects, moveCursor does not appear if the object is not moveable. Added object.moveCursor to specify a cursor for moving per object. #2924
+    Fix: Add missing stroke.live translation, allow gradientTransform for dashed line. #2926
+    Improvement: Allow customization of keys that iteract with mouse action ( multiselect key, free tranform key, alternative action key, centered transform key ) #2925
+    Added: Make iText fires object:modified on text change on exit editing #2927
+    Added: \[control customization part 1\] cornerDashArray, borderDashArray. Now borderScaleFactor influences both border and controls, changed default corner size to 13 #2932
+    Fix: createSVGFontFacesMarkup was failing to retrieve fonts in style #2935
+    Fix: shadow not scaled with dataUrl to multiplier #2940
+    Added: \[control customization part 2\] cornerStrokeColor. Now is possible to specify separate stroke and fill color for the controls #2933
+    Fix: Itext width calculation with caching false was returning nan. #2943
+    Added: \[control customization part 3\] Rounded corners. It is possible to specify cornerStyle for the object. 'rect' or 'circle' #2942
+    Added: \[control customization part 4\] Selection background. It is possible to specify selectionBackgroundColor for the object. #2950
+    Fix: Behaviour of image with filters with resize effects and Object to/from json #2954
+    Fix: Svg export should not output color notation in rgba format #2955
+    Fix: minScaleLimit rounding bug #2964
+    Fix: Itext spacing in justify mode bug #2971
+    Fix: Object.toDataUrl export when some window.devicepixelRatio is present (retina or browser zoom) #2972
