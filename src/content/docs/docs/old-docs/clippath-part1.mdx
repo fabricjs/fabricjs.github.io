@@ -1,9 +1,9 @@
 ---
 date: 2018-06-23
-description: ClipPath in 2.4.0 - Introduction to FabricJS - Part 1
-title: ClipPath in 2.4.0 - Introduction to FabricJS - Part 1
+description: ClipPath introdcution
+title: ClipPath introdcution
 ---
-import { Example1, Example2, Example3, codeString1 } from './clippath-part1';
+import { Example1, Example2, Example3 } from './clippath-part1';
 
 ### The new clipPath property
 
@@ -18,16 +18,12 @@ Let's start with some basic examples.
 In this first example, a red rectangle is clipped with a circle, making only the area inside the circle visible.  
 Please note: the clipPath is positioned starting from the center of the object. The object's originX and originY values do not play any role, while clipPath originX and originY do. This is the same positioning logic used for `fabric.Group`.
 
-We can clip a group:
-
-Or We can clip using groups. In the case of groups, remember that each object in the group will be logically OR with others, there is no `nonzero` or `evenodd` clip-rule
-
-[Continue with more examples](clippath-part2)
-
-{codeString1}
-
 <Example1 client:idle />
 
+We can clip a group:
+
 <Example2 client:idle />
+
+Or We can clip using groups. In the case of groups, remember that each object in the group will be logically OR with others, there is no `nonzero` or `evenodd` clip-rule
 
 <Example3 client:idle />
