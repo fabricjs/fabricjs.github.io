@@ -1,7 +1,7 @@
 ---
 date: '2017-06-17'
 description: 'Understanding what FabricJS is in order to better use it in your projects'
-title: Introduction to Fabric.js. Part 5.
+title: Introduction to Fabric.js. Part 5
 ---
 
 ## Zoom and pan, introduction to FabricJS part 5
