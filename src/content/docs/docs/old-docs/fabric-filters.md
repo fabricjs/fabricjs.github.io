@@ -128,9 +128,9 @@ In fabricjs this means we have to populate the apply2d function of the filter wi
            data = imageData.data, i, len = data.length;
        for (i = 0; i < len; i += 4) {
          // we iterate 4 bytes at once to represent a pixel in rgba 8,8,8,8 format.
-         data\[i\] += this.brightess;
-         data\[i + 1\] += this.brightess;
-         data\[i + 2\] += this.brightess;
+         data[i] += this.brightess;
+         data[i + 1] += this.brightess;
+         data[i + 2] += this.brightess;
        }
      },
 ```
@@ -265,13 +265,13 @@ fabric.Image.filters.BaseFilter.fromObject = function(object, callback) {
     // Color matrix in 1.x where made for imageData and the column of the costants
     // was in the -255 to 255 range, now is in the -1 to 1
     case 'ColorMatrix':
-      object.matrix\[4\] = object.matrix\[4\] / 255;
-      object.matrix\[9\] = object.matrix\[9\] / 255;
-      object.matrix\[14\] = object.matrix\[14\] / 255;
-      object.matrix\[19\] = object.matrix\[19\] / 255;
+      object.matrix[4] = object.matrix[4] / 255;
+      object.matrix[9] = object.matrix[9] / 255;
+      object.matrix[14] = object.matrix[14] / 255;
+      object.matrix[19] = object.matrix[19] / 255;
     break;
   }
-  var filter = new fabric.Image.filters\[object.type\](object);
+  var filter = new fabric.Image.filters[object.type](object);
   callback && callback(filter);
   return filter;
 };

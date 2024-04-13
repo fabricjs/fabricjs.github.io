@@ -73,4 +73,4 @@ Each of this options now got a boolean and textDecoration property is gone.
     underline: true,
     overline: true
   });
-  ```
+```
