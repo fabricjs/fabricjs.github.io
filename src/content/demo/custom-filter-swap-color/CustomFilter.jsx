@@ -1,5 +1,3 @@
-
-
 import { useEffect } from "react";
 import * as fabric from 'fabric';
 import { SwapColor } from './colorSwapFilter';
