@@ -10,7 +10,7 @@ export const InputEventAttacher = () => {
 
     let globalImage;
     const swapColorFilter = new SwapColor();
-    var canvas = new fabric.Canvas('canvas');
+    const canvas = new fabric.Canvas('canvas');
 
     fabric.FabricImage.fromURL('/assets/mononoke.jpg', { crossOrigin: 'anonymous' }).then((image) => {
       globalImage = image;
