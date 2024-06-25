@@ -37,8 +37,8 @@ export default defineConfig({
     plugins: [
       // Generate the documentation.
       starlightTypeDoc({
-        entryPoints: ['./node_modules/fabric/fabric.ts'],
-        tsconfig: './node_modules/fabric/typedoc.config.json',
+        entryPoints: ['./fabric.js/fabric.ts'],
+        tsconfig: './fabric.js/typedoc.config.json',
         typeDoc: {
           plugin: ['typedoc-plugin-no-inherit'],
           readme: 'none',
