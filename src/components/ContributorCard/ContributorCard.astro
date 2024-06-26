@@ -16,7 +16,7 @@ const { name, picUrl, url } = Astro.props;
     href={url}
     
     draggable="false"
-    onDragStart={(e) => {
+    ondragstart={(e) => {
     e.preventDefault()
         return false
     }}
