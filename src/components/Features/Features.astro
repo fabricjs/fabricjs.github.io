@@ -1,3 +1,4 @@
+---
 import './features.css'
 
 const leftFeatures = [
@@ -22,10 +23,7 @@ const leftFeatures = [
   {
     title: 'Clip paths',
     description: 'Create a clipping region for an object, group, or the whole canvas from any other Fabric object',
-  }
-];
-
-const rightFeatures = [
+  },
   {
     title: 'Flexible controls',
     description: 'On-canvas controls for scale, rotation, and skew, and a powerful custom control API',
@@ -47,29 +45,16 @@ const rightFeatures = [
     description: 'A powerful caching system for fast drawing of complex paths & images',
   },
 ];
+---
 
-export default function Features() {
-  return (
-    <section id="features">
-      <h2>Fabric.js Features</h2>
-      <div className="features-list">
-        <ul className="column-left">
-          {leftFeatures.map((feature, index) => (
-            <li key={`${index}`}>
-              <h3>{feature.title}</h3>
-              <p>{feature.description}</p>
-            </li>
-          ))}
-        </ul>
-        <ul className="column-right">
-          {rightFeatures.map((feature, index) => (
-            <li key={`${index}`}>
-              <h3>{feature.title}</h3>
-              <p>{feature.description}</p>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </section>
-  )
-}
+<section id="features">
+    <h2>Fabric.js Features</h2>
+    <div class="container">
+        {leftFeatures.map((feature, index) => (
+        <div class="grid-item">
+            <h3>{feature.title}</h3>
+            <p>{feature.description}</p>
+        </div>
+        ))}
+    </div>
+</section>

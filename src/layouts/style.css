@@ -99,7 +99,7 @@
   }
   
   main > * {
-    padding: 20px max(var(--padding-left-right), 160px) 20px
+    padding: 20px max(var(--padding-left-right), var(--padding-advert)) 20px
       var(--padding-left-right);
     margin: 0;
   }

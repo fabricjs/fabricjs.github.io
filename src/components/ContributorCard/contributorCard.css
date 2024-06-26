@@ -1,0 +1,9 @@
+.contributorCard {
+  text-align: center;
+  width: 200px;
+}
+
+.contributorCard img {
+  border-radius: 50%;
+  width: 90%;
+}
