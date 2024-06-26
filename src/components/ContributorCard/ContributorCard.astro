@@ -1,0 +1,26 @@
+---
+import './contributorCard.css'
+
+export interface Props {
+    name: string;
+    picUrl: string;
+    url: string;
+}
+
+const { name, picUrl, url } = Astro.props;
+---
+
+<a
+  rel="noreferrer"
+  target="_blank"
+  href={url}
+  class="contributorCard"
+  draggable="false"
+  onDragStart={(e) => {
+   e.preventDefault()
+    return false
+  }}
+>
+  <img src={picUrl} alt={name} />
+  <h4>{name}</h4>
+</a>
