@@ -9,18 +9,19 @@ export interface Props {
 
 const { name, picUrl, url } = Astro.props;
 ---
-
-<a
-  rel="noreferrer"
-  target="_blank"
-  href={url}
-  class="contributorCard"
-  draggable="false"
-  onDragStart={(e) => {
-   e.preventDefault()
-    return false
-  }}
->
-  <img src={picUrl} alt={name} />
-  <h4>{name}</h4>
-</a>
+<div class="contributorCard">
+    <a
+    rel="noreferrer"
+    target="_blank"
+    href={url}
+    
+    draggable="false"
+    onDragStart={(e) => {
+    e.preventDefault()
+        return false
+    }}
+    >
+        <img src={picUrl} alt={name} />
+        <h4>{name}</h4>
+    </a>
+</div>

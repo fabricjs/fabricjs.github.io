@@ -4,6 +4,7 @@
     --primary-color-tint: #f0f8ff;
     --offwhite-color: #fafafa;
     --padding-left-right: 8%;
+    --padding-advert: 0;
     --padding-above: 15%;
     --font-size-smaller2: 13px;
     --font-size-smaller: 14px;
@@ -75,6 +76,7 @@
   @media (min-width: 800px) and (orientation: landscape) {
     :root {
       --padding-left-right: 10%;
+      --padding-advert: 160px;
       --padding-above: 8%;
       --font-size-smaller2: 15px;
       --font-size-smaller: 16px;

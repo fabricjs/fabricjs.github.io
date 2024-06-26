@@ -1,0 +1,15 @@
+.contributor-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-flow: column;
+    overflow-x: scroll;
+    height: 300px;
+}
+
+#contributors {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
