@@ -1,4 +1,3 @@
-export const code = `
 const canvas = new fabric.Canvas(canvasEl);
 
 fabric.Object.ownDefaults.transparentCorners = false;
@@ -99,4 +98,3 @@ function onChange({ target }) {
     }
   });
 }
-`;

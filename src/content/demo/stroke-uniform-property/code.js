@@ -1,4 +1,3 @@
-export const code = `
 const canvas = new fabric.Canvas(canvasEl);
 
 fabric.Object.prototype.noScaleCache = false;
@@ -57,4 +56,3 @@ const circle2 = new fabric.Circle({
 
 canvas.add(circle1);
 canvas.add(circle2);
-`;
