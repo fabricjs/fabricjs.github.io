@@ -1,4 +1,3 @@
-export const code = `
   const $ = (id) => document.getElementById(id);
 
   const canvas = new fabric.Canvas(canvasEl, {
@@ -174,4 +173,4 @@ export const code = `
       color: drawingShadowColorEl.value,
     });
   }
-`;
+
