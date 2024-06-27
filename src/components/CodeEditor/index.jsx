@@ -9,6 +9,7 @@ import * as fabric from 'fabric';
 import { debounce } from '../../utils/debounce';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { Helmet } from 'react-helmet';
+import { espresso } from 'thememirror';
 
 export const CodeEditor = ({ code: codeProp, children, canvasId }) => {
   const divRef = useRef();
@@ -64,6 +65,7 @@ export const CodeEditor = ({ code: codeProp, children, canvasId }) => {
           autocomplete: scopeCompletionSource(globalThis),
         }),
         onChangeHook,
+        espresso,
       ],
     });
 
