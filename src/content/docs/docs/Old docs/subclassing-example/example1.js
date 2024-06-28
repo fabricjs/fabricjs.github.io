@@ -1,7 +1,6 @@
 import * as fabric from 'fabric';
-import { generateExample } from '../../../../utils/generateExample';
 
-const Example1Code = function (id) {
+export default function (id) {
     var canvas = new fabric.Canvas(id, {
         width: 500,
         height: 500,
@@ -67,5 +66,3 @@ const Example1Code = function (id) {
       var text = new BitmapText('Hello i am a bitmap text', { scaleX: 5, scaleY: 5 });    
       canvas.add(text);
 }
-
-export const Example1 = generateExample(Example1Code, 'example1');

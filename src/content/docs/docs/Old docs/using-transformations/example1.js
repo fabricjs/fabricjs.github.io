@@ -1,7 +1,6 @@
 import * as fabric from 'fabric';
-import { generateExample } from '../../../../utils/generateExample';
 
-const Example1Code = function (id) {
+export default function (id) {
     var canvas = new fabric.Canvas(id, {
         width: 350,
         height: 400,
@@ -49,6 +48,3 @@ const Example1Code = function (id) {
         });
     }
 }
-
-
-export const Example1 = generateExample(Example1Code, 'example1');

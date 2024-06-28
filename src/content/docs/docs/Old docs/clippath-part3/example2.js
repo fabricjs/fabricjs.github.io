@@ -1,3 +1,5 @@
+import * as fabric from 'fabric';
+
 export default function (id) {
     var canvas = new fabric.Canvas(id, { width: 300, height: 200 });
     canvas.controlsAboveOverlay = true;
