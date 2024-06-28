@@ -28,6 +28,7 @@
     "react-helmet": "^6.1.0",
     "react-load-script": "^0.0.6",
     "starlight-typedoc": "^0.13.0",
+    "thememirror": "^2.0.1",
     "typedoc": "^0.26.2",
     "typedoc-plugin-markdown": "^4.0.0-next.54",
     "typedoc-plugin-no-inherit": "^1.4.0",
