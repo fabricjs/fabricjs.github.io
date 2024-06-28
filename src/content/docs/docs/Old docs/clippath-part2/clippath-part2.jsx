@@ -1,5 +1,5 @@
 import * as fabric from 'fabric';
-import { generateExample } from '../../../../utils/generateExample';
+import { generateExample } from '../../../../../utils/generateExample';
 
 const Example1Code = function (id) {
     var canvas = new fabric.Canvas(id, {
