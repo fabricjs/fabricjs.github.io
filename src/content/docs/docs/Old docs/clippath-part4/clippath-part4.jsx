@@ -1,4 +1,4 @@
-import { generateExample } from '../../../../utils/generateExample';
+import { generateExample } from '../../../../../utils/generateExample';
 
 import example1 from './example1';
 import example2 from './example2';
