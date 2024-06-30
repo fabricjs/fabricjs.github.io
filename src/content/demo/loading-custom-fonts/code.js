@@ -48,7 +48,7 @@ Promise.all([
     fontSize: 60,
     fontFamily: 'Pacifico',
   });
-  const vt323 = new fabric.Textbox('Correctly loaded Pacifico', {
+  const vt323 = new fabric.Textbox('Correctly loaded VT323', {
     left: 350,
     top: 10,
     width: 200,
