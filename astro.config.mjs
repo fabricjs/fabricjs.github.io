@@ -10,7 +10,7 @@ export default defineConfig({
     title: 'Docs and Guides',
     disable404Route: true,
     logo: {
-      src: './src/assets/fabricjs-logo.png',
+      src: './src/assets/logo.svg',
     },
     components: {
       // Override the default `SocialIcons` component.
