@@ -111,9 +111,3 @@
     outline: 0; /*-moz-outline-style:none;*/
     outline-style: none;
   }
-  
-  ul {
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-  }
