@@ -1,10 +1,14 @@
 import { defineConfig } from 'astro/config';
 import react from "@astrojs/react";
 import starlight from "@astrojs/starlight";
-import starlightTypeDoc, { typeDocSidebarGroup } from 'starlight-typedoc';
+import starlightTypeDoc from 'starlight-typedoc';
+import { remarkSandpack } from 'remark-sandpack';
 
 // https://astro.build/config
 export default defineConfig({
+  markdown: {
+    remarkPlugins: [remarkSandpack],
+  },
   integrations: [starlight({
     favicon: '/favicon.ico',
     title: 'Docs and Guides',

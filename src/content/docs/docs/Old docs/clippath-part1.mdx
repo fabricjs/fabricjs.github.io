@@ -4,6 +4,7 @@ description: ClipPath introdcution
 title: ClipPath introdcution
 ---
 import { Example1, Example2, Example3 } from './clippath-part1/clippath-part1';
+import { Sandpack } from '@codesandbox/sandpack-react';
 
 ### The new clipPath property
 
@@ -27,3 +28,26 @@ We can clip a group:
 Or We can clip using groups. In the case of groups, remember that each object in the group will be logically OR with others, there is no `nonzero` or `evenodd` clip-rule
 
 <Example3 client:idle />
+
+<Sandpack template="vanilla" client:load>
+```js src/index.js
+import "./styles.css";
+
+document.getElementById("app").innerHTML = `
+<h1>Hello Sandpack</h1>
+`;
+
+```
+
+// import code from file, path should relative to process.cwd().
+```css src/styles.css file=styles/globals.css
+// those code will be ignored
+h1{
+  background: red;
+}
+```
+
+```js readonly-file.js readOnly
+// I'm  readonly
+```
+</Sandpack>
