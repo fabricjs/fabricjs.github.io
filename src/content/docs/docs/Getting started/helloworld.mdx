@@ -6,7 +6,7 @@ sidebar:
   order: 2
 ---
 
-import { CodeEditor } from '../../../../components/CodeEditor';
+import Sandpack from '../../../../components/Sandpack/Sandpack';
 import code from './helloworld?raw';
 
 ## Your first basic application
@@ -36,4 +36,13 @@ window.open(canvas.toDataURL())
 
 now try it:
 
-<CodeEditor code={code} canvasId="" client:idle />
+<Sandpack client:load>
+```js index.js
+import { StaticCanvas, FabricText } from 'fabric'
+const canvas = new StaticCanvas();
+const helloWorld = new FabricText('Hello world!');
+canvas.add(helloWorld);
+canvas.centerObject(helloWorld);
+window.canvas = canvas;
+```
+</Sandpack>
