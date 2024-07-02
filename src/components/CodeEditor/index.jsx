@@ -11,14 +11,15 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { espresso } from 'thememirror';
 
-export const CodeEditor = ({ code: codeProp, children, canvasId }) => {
+export const CodeEditor = ({ code: codeProp, children, canvasId, autoRun = true, runOnChange = true }) => {
   const divRef = useRef();
   const editorRef = useRef();
 
   const [code, setCode] = useState('');
 
   const runCallback = useCallback(
-    debounce((code = [codeProp]) => {
+    debounce((newcode = [codeProp]) => {
+      console.log(newcode)
       if (window.canvasesId[canvasId]) {
         window.canvasesId[canvasId].dispose();
       }
@@ -27,7 +28,7 @@ export const CodeEditor = ({ code: codeProp, children, canvasId }) => {
         `const canvasEl = document.getElementById('${canvasId}');`,
       ];
       const exec = `try {
-          ${code.join('\n')}
+          ${newcode.join('\n')}
           window.canvasesId['${canvasId}'] = canvas;
         } catch (error) {
           console.error(error);
@@ -49,7 +50,7 @@ export const CodeEditor = ({ code: codeProp, children, canvasId }) => {
       create: () => null,
       update: (value, transaction) => {
         if (transaction.docChanged) {
-          runCallback(transaction.newDoc.toJSON());
+          runOnChange && runCallback(transaction.newDoc.toJSON());
         }
         return null;
       },
@@ -73,7 +74,7 @@ export const CodeEditor = ({ code: codeProp, children, canvasId }) => {
       state: startState,
       parent: divRef.current,
     }));
-    runCallback([parsedCode]);
+    autoRun && runCallback([parsedCode]);
     return () => editor.destroy();
   }, []);
 
@@ -89,8 +90,8 @@ export const CodeEditor = ({ code: codeProp, children, canvasId }) => {
         <script type="module">{code}</script>
       </Helmet>
       {children}
-      <div ref={divRef} />
-      <button onClick={() => runCallback()}>runMe</button>
+      <div ref={divRef} className='not-content' style={{ marginTop: '1rem' }} />
+      <button onClick={() => runCallback([editorRef.current.state.doc.toString()])}>runMe</button>
     </>
   );
 };

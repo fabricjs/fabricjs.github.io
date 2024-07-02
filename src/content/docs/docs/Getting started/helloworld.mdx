@@ -31,9 +31,16 @@ canvas.centerObject(helloWorld);
 Then you want to download your PNG file with it
 
 ```ts
-window.open(canvas.toDataURL())
+const imageSrc = canvas.toDataURL();
+// some download code down here
+const a = document.createElement('a');
+a.href = imageSrc;
+a.download = 'image.png';
+document.body.appendChild(a);
+a.click();
+document.body.removeChild(a);
 ```
 
-now try it:
+Now try it:
 
-<CodeEditor code={code} canvasId="" client:idle />
+<CodeEditor code={code} canvasId="" client:idle autoRun={false} runOnChange={false} />
