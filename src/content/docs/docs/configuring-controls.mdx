@@ -7,6 +7,7 @@ sidebar:
 ---
 
 import { CodeEditor } from '../../../components/CodeEditor';
+import code from './configuring-controls/code1.js?raw';
 
 ## Configuring control handles
 
@@ -120,5 +121,9 @@ Those have default values that makes the controls looks like this:
 
 ![](/article_assets/default_controls.png)
 
+Now let's change 
 
-<CodeEditor code="" canvasId="" client:idle autoRun={false} runOnChange={false} />
+
+<CodeEditor code={code} canvasId="c" client:idle runOnChange={false} >
+  <canvas  width="400" height="200" id="c"></canvas>
+</CodeEditor>
