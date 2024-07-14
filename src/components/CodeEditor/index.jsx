@@ -11,7 +11,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { espresso } from 'thememirror';
 
-export const CodeEditor = ({ code: codeProp, children, canvasId, autoRun = true, runOnChange = true }) => {
+export const CodeEditor = ({ code: codeProp, children, canvasId, autoRun = true, runOnChange = true, canvasDown = false }) => {
   const divRef = useRef();
   const editorRef = useRef();
 
@@ -19,7 +19,6 @@ export const CodeEditor = ({ code: codeProp, children, canvasId, autoRun = true,
 
   const runCallback = useCallback(
     debounce((newcode = [codeProp]) => {
-      console.log(newcode)
       if (window.canvasesId[canvasId]) {
         window.canvasesId[canvasId].dispose();
       }
@@ -85,13 +84,14 @@ export const CodeEditor = ({ code: codeProp, children, canvasId, autoRun = true,
   });
 
   return (
-    <>
+    <div className='not-content'>
       <Helmet>
         <script type="module">{code}</script>
       </Helmet>
-      {children}
-      <div ref={divRef} className='not-content' style={{ marginTop: '1rem' }} />
+      {canvasDown || children}
+      <div ref={divRef} style={{ marginTop: '1rem' }} />
       <button onClick={() => runCallback([editorRef.current.state.doc.toString()])}>runMe</button>
-    </>
+      {canvasDown && children}
+    </div>
   );
 };
