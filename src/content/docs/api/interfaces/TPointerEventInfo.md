@@ -26,7 +26,7 @@ Kept for compatibility
 
 #### Defined in
 
-[src/EventTypeDefs.ts:151](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L151)
+[src/EventTypeDefs.ts:159](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L159)
 
 ***
 
@@ -40,7 +40,7 @@ Kept for compatibility
 
 #### Defined in
 
-[src/EventTypeDefs.ts:86](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L86)
+[src/EventTypeDefs.ts:94](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L94)
 
 ***
 
@@ -55,7 +55,7 @@ Kept for compatibility
 
 #### Defined in
 
-[src/EventTypeDefs.ts:145](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L145)
+[src/EventTypeDefs.ts:153](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L153)
 
 ***
 
@@ -65,7 +65,7 @@ Kept for compatibility
 
 #### Defined in
 
-[src/EventTypeDefs.ts:152](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L152)
+[src/EventTypeDefs.ts:160](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L160)
 
 ***
 
@@ -75,7 +75,7 @@ Kept for compatibility
 
 #### Defined in
 
-[src/EventTypeDefs.ts:138](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L138)
+[src/EventTypeDefs.ts:146](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L146)
 
 ***
 
@@ -85,7 +85,7 @@ Kept for compatibility
 
 #### Defined in
 
-[src/EventTypeDefs.ts:137](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L137)
+[src/EventTypeDefs.ts:145](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L145)
 
 ***
 
@@ -95,7 +95,7 @@ Kept for compatibility
 
 #### Defined in
 
-[src/EventTypeDefs.ts:139](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L139)
+[src/EventTypeDefs.ts:147](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L147)
 
 ***
 
@@ -105,4 +105,4 @@ Kept for compatibility
 
 #### Defined in
 
-[src/EventTypeDefs.ts:153](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L153)
+[src/EventTypeDefs.ts:161](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L161)

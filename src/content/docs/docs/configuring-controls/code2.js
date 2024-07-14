@@ -1,5 +1,5 @@
 const canvas = new fabric.Canvas(canvasEl);
-console.log(fabric.InteractiveObject);
+
 fabric.InteractiveFabricObject.ownDefaults = {
     ...fabric.InteractiveFabricObject.ownDefaults,
     cornerStyle: 'round',

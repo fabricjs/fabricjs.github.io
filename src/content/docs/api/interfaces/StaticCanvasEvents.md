@@ -25,7 +25,7 @@ title: "StaticCanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:298](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L298)
+[src/EventTypeDefs.ts:306](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L306)
 
 ***
 
@@ -39,7 +39,7 @@ title: "StaticCanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:297](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L297)
+[src/EventTypeDefs.ts:305](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L305)
 
 ***
 
@@ -49,7 +49,7 @@ title: "StaticCanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:294](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L294)
+[src/EventTypeDefs.ts:302](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L302)
 
 ***
 
@@ -67,7 +67,7 @@ title: "StaticCanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:230](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L230)
+[src/EventTypeDefs.ts:238](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L238)
 
 ***
 
@@ -83,7 +83,7 @@ title: "StaticCanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:300](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L300)
+[src/EventTypeDefs.ts:308](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L308)
 
 ***
 
@@ -99,7 +99,7 @@ title: "StaticCanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:299](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L299)
+[src/EventTypeDefs.ts:307](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L307)
 
 ***
 
@@ -117,4 +117,4 @@ title: "StaticCanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:231](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L231)
+[src/EventTypeDefs.ts:239](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L239)

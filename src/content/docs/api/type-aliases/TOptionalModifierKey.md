@@ -9,4 +9,4 @@ title: "TOptionalModifierKey"
 
 ## Defined in
 
-[src/EventTypeDefs.ts:20](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L20)
+[src/EventTypeDefs.ts:28](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L28)

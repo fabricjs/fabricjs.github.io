@@ -330,7 +330,7 @@ Determines if the fill or the stroke is drawn first (one of "fill" or "stroke")
 
 #### Defined in
 
-[src/shapes/Polyline.ts:30](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Polyline.ts#L30)
+[src/shapes/Polyline.ts:38](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Polyline.ts#L38)
 
 ***
 

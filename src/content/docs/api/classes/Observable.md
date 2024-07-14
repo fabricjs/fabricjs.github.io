@@ -55,11 +55,41 @@ Options object
 
 #### Defined in
 
-[src/Observable.ts:159](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/Observable.ts#L159)
+[src/Observable.ts:167](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/Observable.ts#L167)
 
 ***
 
 ### off()
+
+#### off(eventName)
+
+> **off**\<`K`\>(`eventName`): `void`
+
+Unsubscribe all event listeners for eventname.
+Do not use this pattern. You could kill internal fabricJS events.
+We know we should have protected events for internal flows, but we don't have yet
+
+:::caution[Deprecated]
+This API is no longer supported and may be removed in a future release.
+:::
+
+##### Type Parameters
+
+• **K** *extends* `string` \| `number` \| `symbol`
+
+##### Parameters
+
+• **eventName**: `K`
+
+event name (eg. 'after:render')
+
+##### Returns
+
+`void`
+
+##### Defined in
+
+[src/Observable.ts:122](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/Observable.ts#L122)
 
 #### off(eventName, handler)
 
@@ -87,7 +117,7 @@ event listener to unsubscribe
 
 ##### Defined in
 
-[src/Observable.ts:120](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/Observable.ts#L120)
+[src/Observable.ts:128](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/Observable.ts#L128)
 
 #### off(handlers)
 
@@ -107,7 +137,7 @@ handlers key/value pairs (eg. {'after:render': handler, 'selection:cleared': han
 
 ##### Defined in
 
-[src/Observable.ts:125](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/Observable.ts#L125)
+[src/Observable.ts:133](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/Observable.ts#L133)
 
 #### off()
 
@@ -121,7 +151,7 @@ unsubscribe all event listeners
 
 ##### Defined in
 
-[src/Observable.ts:129](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/Observable.ts#L129)
+[src/Observable.ts:137](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/Observable.ts#L137)
 
 ***
 

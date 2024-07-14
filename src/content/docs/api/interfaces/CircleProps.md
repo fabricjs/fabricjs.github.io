@@ -294,13 +294,19 @@ Array specifying dash pattern of an object's control (hasBorder must be true)
 
 1.6.2
 
+#### Default
+
+```ts
+null
+```
+
 #### Inherited from
 
 [`FabricObjectProps`](/api/interfaces/fabricobjectprops/).[`cornerDashArray`](/api/interfaces/fabricobjectprops/#cornerdasharray)
 
 #### Defined in
 
-[src/shapes/Object/types/ControlProps.ts:54](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Object/types/ControlProps.ts#L54)
+[src/shapes/Object/types/ControlProps.ts:55](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Object/types/ControlProps.ts#L55)
 
 ***
 
@@ -339,7 +345,7 @@ Color of controlling corners of an object (when it's active and transparentCorne
 #### Default
 
 ```ts
-null
+''
 ```
 
 #### Inherited from
@@ -367,7 +373,7 @@ And you can swap it with one of the alternative proposed with the control api
 #### Default
 
 ```ts
-rect
+'rect'
 ```
 
 :::caution[Deprecated]
@@ -404,7 +410,7 @@ false
 
 #### Defined in
 
-[src/shapes/Circle.ts:41](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Circle.ts#L41)
+[src/shapes/Circle.ts:42](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Circle.ts#L42)
 
 ***
 
@@ -426,7 +432,7 @@ Angle for the end of the circle, in degrees
 
 #### Defined in
 
-[src/shapes/Circle.ts:33](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Circle.ts#L33)
+[src/shapes/Circle.ts:34](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Circle.ts#L34)
 
 ***
 
@@ -622,7 +628,7 @@ When set to `false`, object's controls are not displayed and can not be used to 
 #### Default
 
 ```ts
-
+true
 ```
 
 #### Inherited from
@@ -631,7 +637,7 @@ When set to `false`, object's controls are not displayed and can not be used to 
 
 #### Defined in
 
-[src/shapes/Object/types/ControlProps.ts:68](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Object/types/ControlProps.ts#L68)
+[src/shapes/Object/types/ControlProps.ts:69](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Object/types/ControlProps.ts#L69)
 
 ***
 
@@ -1109,7 +1115,7 @@ Padding between object and its controlling borders (in pixels)
 
 #### Defined in
 
-[src/shapes/Object/types/ControlProps.ts:61](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Object/types/ControlProps.ts#L61)
+[src/shapes/Object/types/ControlProps.ts:62](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Object/types/ControlProps.ts#L62)
 
 ***
 
@@ -1175,7 +1181,7 @@ Radius of this circle
 
 #### Defined in
 
-[src/shapes/Circle.ts:19](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Circle.ts#L19)
+[src/shapes/Circle.ts:20](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Circle.ts#L20)
 
 ***
 
@@ -1390,7 +1396,7 @@ Angle for the start of the circle, in degrees.
 
 #### Defined in
 
-[src/shapes/Circle.ts:26](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Circle.ts#L26)
+[src/shapes/Circle.ts:27](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Circle.ts#L27)
 
 ***
 

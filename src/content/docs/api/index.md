@@ -33,6 +33,7 @@ title: "fabric"
 - [Gradient](/api/classes/gradient/)
 - [Group](/api/classes/group/)
 - [IText](/api/classes/itext/)
+- [InteractiveFabricObject](/api/classes/interactivefabricobject/)
 - [Intersection](/api/classes/intersection/)
 - [LayoutManager](/api/classes/layoutmanager/)
 - [LayoutStrategy](/api/classes/layoutstrategy/)

@@ -25,7 +25,7 @@ title: "GroupEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:285](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L285)
+[src/EventTypeDefs.ts:293](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L293)
 
 ***
 
@@ -39,7 +39,7 @@ title: "GroupEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:268](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L268)
+[src/EventTypeDefs.ts:276](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L276)
 
 ***
 
@@ -53,7 +53,7 @@ title: "GroupEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:267](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L267)
+[src/EventTypeDefs.ts:275](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L275)
 
 ***
 
@@ -73,7 +73,7 @@ title: "GroupEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:280](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L280)
+[src/EventTypeDefs.ts:288](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L288)
 
 ***
 
@@ -87,7 +87,7 @@ title: "GroupEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:198](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L198)
+[src/EventTypeDefs.ts:206](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L206)
 
 ***
 
@@ -101,7 +101,7 @@ title: "GroupEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:202](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L202)
+[src/EventTypeDefs.ts:210](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L210)
 
 ***
 
@@ -115,7 +115,7 @@ title: "GroupEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:200](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L200)
+[src/EventTypeDefs.ts:208](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L208)
 
 ***
 
@@ -129,7 +129,7 @@ title: "GroupEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:201](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L201)
+[src/EventTypeDefs.ts:209](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L209)
 
 ***
 
@@ -143,7 +143,7 @@ title: "GroupEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:199](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L199)
+[src/EventTypeDefs.ts:207](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L207)
 
 ***
 
@@ -157,7 +157,7 @@ title: "GroupEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:197](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L197)
+[src/EventTypeDefs.ts:205](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L205)
 
 ***
 
@@ -171,7 +171,7 @@ title: "GroupEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:204](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L204)
+[src/EventTypeDefs.ts:212](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L212)
 
 ***
 
@@ -185,7 +185,7 @@ title: "GroupEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:205](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L205)
+[src/EventTypeDefs.ts:213](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L213)
 
 ***
 
@@ -199,7 +199,7 @@ title: "GroupEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:203](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L203)
+[src/EventTypeDefs.ts:211](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L211)
 
 ***
 
@@ -217,7 +217,7 @@ title: "GroupEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:289](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L289)
+[src/EventTypeDefs.ts:297](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L297)
 
 ***
 
@@ -251,7 +251,7 @@ title: "GroupEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:121](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L121)
+[src/EventTypeDefs.ts:129](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L129)
 
 ***
 
@@ -265,7 +265,7 @@ title: "GroupEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:120](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L120)
+[src/EventTypeDefs.ts:128](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L128)
 
 ***
 
@@ -407,7 +407,7 @@ title: "GroupEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:115](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L115)
+[src/EventTypeDefs.ts:123](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L123)
 
 ***
 
@@ -425,7 +425,7 @@ title: "GroupEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:230](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L230)
+[src/EventTypeDefs.ts:238](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L238)
 
 ***
 
@@ -443,7 +443,7 @@ title: "GroupEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:231](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L231)
+[src/EventTypeDefs.ts:239](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L239)
 
 ***
 
@@ -461,7 +461,7 @@ title: "GroupEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:286](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L286)
+[src/EventTypeDefs.ts:294](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L294)
 
 ***
 
@@ -475,7 +475,7 @@ title: "GroupEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:119](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L119)
+[src/EventTypeDefs.ts:127](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L127)
 
 ***
 
@@ -489,7 +489,7 @@ title: "GroupEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:117](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L117)
+[src/EventTypeDefs.ts:125](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L125)
 
 ***
 
@@ -503,7 +503,7 @@ title: "GroupEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:116](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L116)
+[src/EventTypeDefs.ts:124](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L124)
 
 ***
 
@@ -523,7 +523,7 @@ title: "GroupEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:277](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L277)
+[src/EventTypeDefs.ts:285](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L285)
 
 ***
 
@@ -537,4 +537,4 @@ title: "GroupEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:118](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L118)
+[src/EventTypeDefs.ts:126](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L126)

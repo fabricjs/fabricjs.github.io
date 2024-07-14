@@ -1017,7 +1017,7 @@ This essentially copies canvas dimensions since loadFromJSON does not affect can
 
 ### collectObjects()
 
-> **collectObjects**(`bbox`, `options`): `InteractiveFabricObject`\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[]
+> **collectObjects**(`bbox`, `options`): [`InteractiveFabricObject`](/api/classes/interactivefabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[]
 
 Given a bounding box, return all the objects of the collection that are contained in the bounding box.
 If `includeIntersecting` is true, return also the objects that intersect the bounding box as well.
@@ -1037,7 +1037,7 @@ an object with includeIntersecting
 
 #### Returns
 
-`InteractiveFabricObject`\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[]
+[`InteractiveFabricObject`](/api/classes/interactivefabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[]
 
 array of objects contained in the bounding box, ordered from top to bottom stacking wise
 
@@ -1305,7 +1305,7 @@ Options object
 
 #### Defined in
 
-[src/Observable.ts:159](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/Observable.ts#L159)
+[src/Observable.ts:167](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/Observable.ts#L167)
 
 ***
 
@@ -1710,6 +1710,40 @@ true if change occurred
 
 ### off()
 
+#### off(eventName)
+
+> **off**\<`K`\>(`eventName`): `void`
+
+Unsubscribe all event listeners for eventname.
+Do not use this pattern. You could kill internal fabricJS events.
+We know we should have protected events for internal flows, but we don't have yet
+
+:::caution[Deprecated]
+This API is no longer supported and may be removed in a future release.
+:::
+
+##### Type Parameters
+
+• **K** *extends* keyof [`CanvasEvents`](/api/interfaces/canvasevents/)
+
+##### Parameters
+
+• **eventName**: `K`
+
+event name (eg. 'after:render')
+
+##### Returns
+
+`void`
+
+##### Inherited from
+
+`createCollectionMixin(CommonMethods<CanvasEvents>).off`
+
+##### Defined in
+
+[src/Observable.ts:122](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/Observable.ts#L122)
+
 #### off(eventName, handler)
 
 > **off**\<`K`\>(`eventName`, `handler`): `void`
@@ -1740,7 +1774,7 @@ event listener to unsubscribe
 
 ##### Defined in
 
-[src/Observable.ts:120](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/Observable.ts#L120)
+[src/Observable.ts:128](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/Observable.ts#L128)
 
 #### off(handlers)
 
@@ -1764,7 +1798,7 @@ handlers key/value pairs (eg. {'after:render': handler, 'selection:cleared': han
 
 ##### Defined in
 
-[src/Observable.ts:125](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/Observable.ts#L125)
+[src/Observable.ts:133](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/Observable.ts#L133)
 
 #### off()
 
@@ -1782,7 +1816,7 @@ unsubscribe all event listeners
 
 ##### Defined in
 
-[src/Observable.ts:129](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/Observable.ts#L129)
+[src/Observable.ts:137](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/Observable.ts#L137)
 
 ***
 

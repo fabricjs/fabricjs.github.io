@@ -25,7 +25,7 @@ title: "CanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:298](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L298)
+[src/EventTypeDefs.ts:306](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L306)
 
 ***
 
@@ -39,7 +39,7 @@ title: "CanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:311](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L311)
+[src/EventTypeDefs.ts:319](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L319)
 
 ***
 
@@ -57,7 +57,7 @@ title: "CanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:297](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L297)
+[src/EventTypeDefs.ts:305](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L305)
 
 ***
 
@@ -77,7 +77,7 @@ title: "CanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:221](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L221)
+[src/EventTypeDefs.ts:229](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L229)
 
 ***
 
@@ -97,7 +97,7 @@ title: "CanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:125](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L125)
+[src/EventTypeDefs.ts:133](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L133)
 
 ***
 
@@ -111,7 +111,7 @@ title: "CanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:294](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L294)
+[src/EventTypeDefs.ts:302](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L302)
 
 ***
 
@@ -125,7 +125,7 @@ title: "CanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:268](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L268)
+[src/EventTypeDefs.ts:276](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L276)
 
 ***
 
@@ -139,7 +139,7 @@ title: "CanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:267](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L267)
+[src/EventTypeDefs.ts:275](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L275)
 
 ***
 
@@ -153,7 +153,7 @@ title: "CanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:198](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L198)
+[src/EventTypeDefs.ts:206](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L206)
 
 ***
 
@@ -167,7 +167,7 @@ title: "CanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:209](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L209)
+[src/EventTypeDefs.ts:217](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L217)
 
 ***
 
@@ -181,7 +181,7 @@ title: "CanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:210](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L210)
+[src/EventTypeDefs.ts:218](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L218)
 
 ***
 
@@ -195,7 +195,7 @@ title: "CanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:202](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L202)
+[src/EventTypeDefs.ts:210](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L210)
 
 ***
 
@@ -209,7 +209,7 @@ title: "CanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:200](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L200)
+[src/EventTypeDefs.ts:208](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L208)
 
 ***
 
@@ -223,7 +223,7 @@ title: "CanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:201](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L201)
+[src/EventTypeDefs.ts:209](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L209)
 
 ***
 
@@ -237,7 +237,7 @@ title: "CanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:199](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L199)
+[src/EventTypeDefs.ts:207](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L207)
 
 ***
 
@@ -251,7 +251,7 @@ title: "CanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:197](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L197)
+[src/EventTypeDefs.ts:205](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L205)
 
 ***
 
@@ -265,7 +265,7 @@ title: "CanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:204](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L204)
+[src/EventTypeDefs.ts:212](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L212)
 
 ***
 
@@ -279,7 +279,7 @@ title: "CanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:205](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L205)
+[src/EventTypeDefs.ts:213](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L213)
 
 ***
 
@@ -293,7 +293,7 @@ title: "CanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:203](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L203)
+[src/EventTypeDefs.ts:211](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L211)
 
 ***
 
@@ -327,7 +327,7 @@ title: "CanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:316](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L316)
+[src/EventTypeDefs.ts:324](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L324)
 
 ***
 
@@ -337,7 +337,7 @@ title: "CanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:315](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L315)
+[src/EventTypeDefs.ts:323](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L323)
 
 ***
 
@@ -483,7 +483,7 @@ title: "CanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:230](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L230)
+[src/EventTypeDefs.ts:238](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L238)
 
 ***
 
@@ -503,7 +503,7 @@ title: "CanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:300](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L300)
+[src/EventTypeDefs.ts:308](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L308)
 
 ***
 
@@ -523,7 +523,7 @@ title: "CanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:299](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L299)
+[src/EventTypeDefs.ts:307](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L307)
 
 ***
 
@@ -537,7 +537,7 @@ title: "CanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:132](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L132)
+[src/EventTypeDefs.ts:140](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L140)
 
 ***
 
@@ -557,7 +557,7 @@ title: "CanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:131](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L131)
+[src/EventTypeDefs.ts:139](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L139)
 
 ***
 
@@ -577,7 +577,7 @@ title: "CanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:126](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L126)
+[src/EventTypeDefs.ts:134](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L134)
 
 ***
 
@@ -595,7 +595,7 @@ title: "CanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:231](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L231)
+[src/EventTypeDefs.ts:239](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L239)
 
 ***
 
@@ -615,7 +615,7 @@ title: "CanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:130](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L130)
+[src/EventTypeDefs.ts:138](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L138)
 
 ***
 
@@ -635,7 +635,7 @@ title: "CanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:128](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L128)
+[src/EventTypeDefs.ts:136](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L136)
 
 ***
 
@@ -655,7 +655,7 @@ title: "CanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:127](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L127)
+[src/EventTypeDefs.ts:135](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L135)
 
 ***
 
@@ -675,7 +675,7 @@ title: "CanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:129](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L129)
+[src/EventTypeDefs.ts:137](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L137)
 
 ***
 
@@ -689,7 +689,7 @@ title: "CanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:312](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L312)
+[src/EventTypeDefs.ts:320](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L320)
 
 ***
 
@@ -709,7 +709,7 @@ title: "CanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:224](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L224)
+[src/EventTypeDefs.ts:232](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L232)
 
 ***
 
@@ -729,7 +729,7 @@ title: "CanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:214](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L214)
+[src/EventTypeDefs.ts:222](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L222)
 
 ***
 
@@ -753,7 +753,7 @@ title: "CanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:217](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L217)
+[src/EventTypeDefs.ts:225](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L225)
 
 ***
 
@@ -767,7 +767,7 @@ title: "CanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:330](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L330)
+[src/EventTypeDefs.ts:338](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L338)
 
 ***
 
@@ -781,7 +781,7 @@ title: "CanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:331](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L331)
+[src/EventTypeDefs.ts:339](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L339)
 
 ***
 
@@ -795,7 +795,7 @@ title: "CanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:332](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L332)
+[src/EventTypeDefs.ts:340](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L340)
 
 ***
 
@@ -809,4 +809,4 @@ title: "CanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:329](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L329)
+[src/EventTypeDefs.ts:337](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L337)

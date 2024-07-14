@@ -238,7 +238,7 @@ false
 
 ### fontWeight
 
-> **fontWeight**: `string`
+> **fontWeight**: `string` \| `number`
 
 #### Inherited from
 

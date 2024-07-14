@@ -128,7 +128,7 @@ Those have default values that makes the controls looks like this:
 Now let's change some of those basic properties.
 Comment and change properties in the example below to see the effect:
 
-<CodeEditor code={code1} canvasId="c" client:idle runOnChange={false} canvasDown >
+<CodeEditor code={code1} canvasId="c" client:idle canvasDown >
   <canvas  width="400" height="200" id="c"></canvas>
 </CodeEditor>
 
@@ -136,7 +136,7 @@ Comment and change properties in the example below to see the effect:
 
 Now doing this for every object requires you to pass the options every single object creation, you can create a function to do so or you can change FabricJS default values.
 
-<CodeEditor code={code2} canvasId="d" client:idle runOnChange={false} canvasDown >
+<CodeEditor code={code2} canvasId="d" client:idle canvasDown >
   <canvas  width="400" height="200" id="d"></canvas>
 </CodeEditor>
 
@@ -145,27 +145,33 @@ Now doing this for every object requires you to pass the options every single ob
 Now if you have to add extra or different controls for objects, you know you can append a control to the controls object.
 The controls object on your object is created by the constructor and is different for every instance, this avoids unexpected mutation side effects.
 
-<CodeEditor code={code3} canvasId="e" client:idle runOnChange={false} canvasDown >
+<CodeEditor code={code3} canvasId="e" client:idle canvasDown >
   <canvas  width="400" height="200" id="e"></canvas>
 </CodeEditor>
 
 If this is not of your liking you can also just change the output of the `createControls` static function:
 
-<CodeEditor code={code4} canvasId="f" client:idle runOnChange={false} canvasDown >
+<CodeEditor code={code4} canvasId="f" client:idle canvasDown >
   <canvas  width="400" height="200" id="f"></canvas>
 </CodeEditor>
 
 This setup is still giving you separate controls objects for every object to avoid mutation side effects.
+The above example is probably the best approach if you are looking for a set and forget type of setup.
+
+
+You can go deeper with sharing and side effects if you need.
 If you prefer to have shared controls among instances, you have to act on the defaults again.
 This will let you configure the controls once for all class types, and let you add controls globally at runtime.
 
 Each setup comes with pros and cons that depends on your personal preference and project's functionalities.
+For this snippet you have to press the runMe button. Once you run it, the above snippets are affected too.
 
-<CodeEditor code={code5} canvasId="g" client:idle runOnChange={false} canvasDown >
+<CodeEditor code={code5} canvasId="g" client:idle autoRun={false} canvasDown >
   <canvas  width="400" height="200" id="g"></canvas>
 </CodeEditor>
 
 You can add and delete controls globally on all objects, this means that every object share the same control set.
 **There is no way to edit a single object at this point** without swapping the control set entirely.
 You can have premade controlsets that you swap depending on your needs.
+
 

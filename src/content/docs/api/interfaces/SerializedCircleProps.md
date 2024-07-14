@@ -95,7 +95,7 @@ false
 
 #### Defined in
 
-[src/shapes/Circle.ts:41](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Circle.ts#L41)
+[src/shapes/Circle.ts:42](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Circle.ts#L42)
 
 ***
 
@@ -117,7 +117,7 @@ Angle for the end of the circle, in degrees
 
 #### Defined in
 
-[src/shapes/Circle.ts:33](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Circle.ts#L33)
+[src/shapes/Circle.ts:34](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Circle.ts#L34)
 
 ***
 
@@ -388,7 +388,7 @@ Radius of this circle
 
 #### Defined in
 
-[src/shapes/Circle.ts:19](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Circle.ts#L19)
+[src/shapes/Circle.ts:20](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Circle.ts#L20)
 
 ***
 
@@ -520,7 +520,7 @@ Angle for the start of the circle, in degrees.
 
 #### Defined in
 
-[src/shapes/Circle.ts:26](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Circle.ts#L26)
+[src/shapes/Circle.ts:27](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Circle.ts#L27)
 
 ***
 

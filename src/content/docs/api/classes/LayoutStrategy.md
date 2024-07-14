@@ -128,11 +128,11 @@ layout result **OR** `undefined` to skip layout
 
 ### shouldPerformLayout()
 
-> **shouldPerformLayout**(`context`): `boolean`
+> **shouldPerformLayout**(`__namedParameters`): `boolean`
 
 #### Parameters
 
-• **context**: [`StrictLayoutContext`](/api/type-aliases/strictlayoutcontext/)
+• **\_\_namedParameters**: [`StrictLayoutContext`](/api/type-aliases/strictlayoutcontext/)
 
 #### Returns
 

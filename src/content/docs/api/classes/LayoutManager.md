@@ -21,7 +21,7 @@ title: "LayoutManager"
 
 #### Defined in
 
-[src/LayoutManager/LayoutManager.ts:39](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/LayoutManager/LayoutManager.ts#L39)
+[src/LayoutManager/LayoutManager.ts:50](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/LayoutManager/LayoutManager.ts#L50)
 
 ## Properties
 
@@ -31,7 +31,7 @@ title: "LayoutManager"
 
 #### Defined in
 
-[src/LayoutManager/LayoutManager.ts:37](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/LayoutManager/LayoutManager.ts#L37)
+[src/LayoutManager/LayoutManager.ts:48](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/LayoutManager/LayoutManager.ts#L48)
 
 ## Methods
 
@@ -45,7 +45,7 @@ title: "LayoutManager"
 
 #### Defined in
 
-[src/LayoutManager/LayoutManager.ts:330](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/LayoutManager/LayoutManager.ts#L330)
+[src/LayoutManager/LayoutManager.ts:338](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/LayoutManager/LayoutManager.ts#L338)
 
 ***
 
@@ -63,7 +63,7 @@ title: "LayoutManager"
 
 #### Defined in
 
-[src/LayoutManager/LayoutManager.ts:44](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/LayoutManager/LayoutManager.ts#L44)
+[src/LayoutManager/LayoutManager.ts:55](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/LayoutManager/LayoutManager.ts#L55)
 
 ***
 
@@ -81,7 +81,7 @@ title: "LayoutManager"
 
 #### Defined in
 
-[src/LayoutManager/LayoutManager.ts:143](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/LayoutManager/LayoutManager.ts#L143)
+[src/LayoutManager/LayoutManager.ts:154](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/LayoutManager/LayoutManager.ts#L154)
 
 ***
 
@@ -103,7 +103,7 @@ title: "LayoutManager"
 
 #### Defined in
 
-[src/LayoutManager/LayoutManager.ts:342](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/LayoutManager/LayoutManager.ts#L342)
+[src/LayoutManager/LayoutManager.ts:351](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/LayoutManager/LayoutManager.ts#L351)
 
 ***
 
@@ -125,7 +125,7 @@ title: "LayoutManager"
 
 #### Defined in
 
-[src/LayoutManager/LayoutManager.ts:335](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/LayoutManager/LayoutManager.ts#L335)
+[src/LayoutManager/LayoutManager.ts:344](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/LayoutManager/LayoutManager.ts#L344)
 
 ***
 
@@ -143,4 +143,4 @@ title: "LayoutManager"
 
 #### Defined in
 
-[src/LayoutManager/LayoutManager.ts:137](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/LayoutManager/LayoutManager.ts#L137)
+[src/LayoutManager/LayoutManager.ts:148](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/LayoutManager/LayoutManager.ts#L148)
