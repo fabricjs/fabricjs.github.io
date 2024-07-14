@@ -7,6 +7,10 @@ const text = new fabric.FabricText('Fabric.JS', {
   cornerStyle: 'circle',
   padding: 10,
   transparentCorners: false,
+  cornerDashArray: [2, 2],
+  borderColor: 'orange',
+  borderDashArray: [3, 1, 3],
+  borderScaleFactor: 2,
 });
 canvas.add(text);
 canvas.centerObject(text);
