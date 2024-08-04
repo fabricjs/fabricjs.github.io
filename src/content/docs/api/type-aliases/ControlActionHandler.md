@@ -12,4 +12,4 @@ Those handlers run with or without a transform defined
 
 ## Defined in
 
-[src/EventTypeDefs.ts:50](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L50)
+[src/EventTypeDefs.ts:52](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L52)

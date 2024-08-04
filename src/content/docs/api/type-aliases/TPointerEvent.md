@@ -9,4 +9,4 @@ title: "TPointerEvent"
 
 ## Defined in
 
-[src/EventTypeDefs.ts:30](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L30)
+[src/EventTypeDefs.ts:32](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L32)

@@ -9,4 +9,4 @@ title: "ObjectPointerEvents"
 
 ## Defined in
 
-[src/EventTypeDefs.ts:271](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L271)
+[src/EventTypeDefs.ts:283](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L283)

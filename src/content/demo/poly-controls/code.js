@@ -54,9 +54,9 @@ const points = [
 const poly = new fabric.Polygon(points, {
   left: 200,
   top: 50,
-  fill: '#D81B60',
-  strokeWidth: 4,
-  stroke: 'green',
+  fill: 'yellow',
+  strokeWidth: 1,
+  stroke: 'grey',
   scaleX: 5,
   scaleY: 5,
   objectCaching: false,
@@ -73,12 +73,13 @@ poly.on('mousedblclick', () => {
     poly.cornerStyle = 'circle';
     poly.cornerColor = 'rgba(0,0,255,0.5)';
     poly.hasBorders = false;
-    poly.controls = fabric.controlsUtils.createPolyControls(points.length);
+    poly.controls = fabric.controlsUtils.createPolyControls(poly);
   } else {
     poly.cornerColor = 'blue';
     poly.cornerStyle = 'rect';
     poly.hasBorders = true;
     poly.controls = fabric.controlsUtils.createObjectDefaultControls();
   }
+  poly.setCoords();
   canvas.requestRenderAll();
 });
