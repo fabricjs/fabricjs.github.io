@@ -6,5 +6,5 @@
     "strictNullChecks": true,
     "allowJs": true,
   },
-  "exclude": ["fabric.js"],
+  "exclude": ["fabric.js", "src/content/", "dist", "**/*.astro"],
 }

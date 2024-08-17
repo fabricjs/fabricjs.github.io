@@ -118,6 +118,7 @@ title: "fabric"
 - [GradientUnits](/api/type-aliases/gradientunits/)
 - [GraphemeBBox](/api/type-aliases/graphemebbox/)
 - [GraphemeData](/api/type-aliases/graphemedata/)
+- [ITextEvents](/api/type-aliases/itextevents/)
 - [ImageFormat](/api/type-aliases/imageformat/)
 - [ImageSource](/api/type-aliases/imagesource/)
 - [ImperativeLayoutContext](/api/type-aliases/imperativelayoutcontext/)
