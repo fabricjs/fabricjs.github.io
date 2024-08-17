@@ -13,7 +13,6 @@ export default defineConfig({
       src: './src/assets/logo.svg',
     },
     components: {
-      // Override the default `SocialIcons` component.
       Header: './src/components/Header/Header.astro',
       PageTitle: './src/components/PageTitleDocs/PageTitle.astro',
     },
