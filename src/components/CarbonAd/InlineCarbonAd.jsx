@@ -55,6 +55,7 @@ const CarbonAd = () => {
             If you want it continue running and you do not mind tech related ads,
             please allow this website in your adblocker.
             <br />
+            The ad is actually smaller than this nag screen!
             <br />
             ❤️ Thank You!
           </div>
