@@ -23,10 +23,6 @@ title: "PatternBrush"
 
 • **canvas**: [`Canvas`](/api/classes/canvas/)
 
-**Todo**
-
-add type
-
 #### Returns
 
 [`PatternBrush`](/api/classes/patternbrush/)

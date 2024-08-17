@@ -195,11 +195,11 @@ Apply this container's filters to the input image provided.
 
 ### applyTo2d()
 
-> **applyTo2d**(`options`): `void`
+> **applyTo2d**(`_options`): `void`
 
 #### Parameters
 
-• **options**: [`T2DPipelineState`](/api/type-aliases/t2dpipelinestate/)
+• **\_options**: [`T2DPipelineState`](/api/type-aliases/t2dpipelinestate/)
 
 #### Returns
 
@@ -522,7 +522,7 @@ A map of shader attribute names to their locations.
 
 ### sendUniformData()
 
-> **sendUniformData**(`gl`, `uniformLocations`): `void`
+> **sendUniformData**(`_gl`, `_uniformLocations`): `void`
 
 Send uniform data from this filter to its shader program on the GPU.
 
@@ -530,11 +530,11 @@ Intended to be overridden by subclasses.
 
 #### Parameters
 
-• **gl**: `WebGLRenderingContext`
+• **\_gl**: `WebGLRenderingContext`
 
 The canvas context used to compile the shader program.
 
-• **uniformLocations**: [`TWebGLUniformLocationMap`](/api/type-aliases/twebgluniformlocationmap/)
+• **\_uniformLocations**: [`TWebGLUniformLocationMap`](/api/type-aliases/twebgluniformlocationmap/)
 
 A map of shader uniform names to their locations.
 
@@ -570,7 +570,7 @@ JSON
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:401](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/BaseFilter.ts#L401)
+[src/filters/BaseFilter.ts:402](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/BaseFilter.ts#L402)
 
 ***
 

@@ -9,4 +9,4 @@ title: "CanvasPointerEvents"
 
 ## Defined in
 
-[src/EventTypeDefs.ts:272](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L272)
+[src/EventTypeDefs.ts:284](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L284)

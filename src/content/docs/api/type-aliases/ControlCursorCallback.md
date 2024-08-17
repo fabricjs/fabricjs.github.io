@@ -9,4 +9,4 @@ title: "ControlCursorCallback"
 
 ## Defined in
 
-[src/EventTypeDefs.ts:58](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L58)
+[src/EventTypeDefs.ts:60](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L60)

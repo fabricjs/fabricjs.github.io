@@ -686,7 +686,7 @@ JSON
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:401](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/BaseFilter.ts#L401)
+[src/filters/BaseFilter.ts:402](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/BaseFilter.ts#L402)
 
 ***
 

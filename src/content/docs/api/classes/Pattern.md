@@ -110,9 +110,9 @@ Pattern vertical offset from object's left/top corner
 
 ***
 
-### patternTransform
+### patternTransform?
 
-> **patternTransform**: `null` \| [`TMat2D`](/api/type-aliases/tmat2d/) = `null`
+> `optional` **patternTransform**: [`TMat2D`](/api/type-aliases/tmat2d/)
 
 transform matrix to change the pattern, imported from svgs.
 

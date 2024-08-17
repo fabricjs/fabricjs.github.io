@@ -21,7 +21,7 @@ title: "DragEventData"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:182](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L182)
+[src/EventTypeDefs.ts:194](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L194)
 
 ***
 
@@ -31,7 +31,7 @@ title: "DragEventData"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:183](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L183)
+[src/EventTypeDefs.ts:195](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L195)
 
 ***
 
@@ -41,7 +41,7 @@ title: "DragEventData"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:181](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L181)
+[src/EventTypeDefs.ts:193](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L193)
 
 ***
 
@@ -51,7 +51,7 @@ title: "DragEventData"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:184](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L184)
+[src/EventTypeDefs.ts:196](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L196)
 
 ***
 
@@ -65,7 +65,7 @@ title: "DragEventData"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:94](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L94)
+[src/EventTypeDefs.ts:96](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L96)
 
 ***
 
@@ -75,7 +75,7 @@ title: "DragEventData"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:180](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L180)
+[src/EventTypeDefs.ts:192](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L192)
 
 ***
 
@@ -85,4 +85,4 @@ title: "DragEventData"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:179](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L179)
+[src/EventTypeDefs.ts:191](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L191)

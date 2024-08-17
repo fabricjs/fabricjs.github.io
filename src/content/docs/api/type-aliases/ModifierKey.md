@@ -9,4 +9,4 @@ title: "ModifierKey"
 
 ## Defined in
 
-[src/EventTypeDefs.ts:23](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L23)
+[src/EventTypeDefs.ts:25](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L25)

@@ -177,11 +177,11 @@ Determines whether to use WebGL or Canvas2D based on the options.webgl flag.
 
 ### applyTo2d()
 
-> **applyTo2d**(`options`): `void`
+> **applyTo2d**(`_options`): `void`
 
 #### Parameters
 
-• **options**: [`T2DPipelineState`](/api/type-aliases/t2dpipelinestate/)
+• **\_options**: [`T2DPipelineState`](/api/type-aliases/t2dpipelinestate/)
 
 #### Returns
 
@@ -460,7 +460,7 @@ A map of shader attribute names to their locations.
 
 ### sendUniformData()
 
-> **sendUniformData**(`gl`, `uniformLocations`): `void`
+> **sendUniformData**(`_gl`, `_uniformLocations`): `void`
 
 Send uniform data from this filter to its shader program on the GPU.
 
@@ -468,11 +468,11 @@ Intended to be overridden by subclasses.
 
 #### Parameters
 
-• **gl**: `WebGLRenderingContext`
+• **\_gl**: `WebGLRenderingContext`
 
 The canvas context used to compile the shader program.
 
-• **uniformLocations**: [`TWebGLUniformLocationMap`](/api/type-aliases/twebgluniformlocationmap/)
+• **\_uniformLocations**: [`TWebGLUniformLocationMap`](/api/type-aliases/twebgluniformlocationmap/)
 
 A map of shader uniform names to their locations.
 
@@ -500,7 +500,7 @@ JSON
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:401](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/BaseFilter.ts#L401)
+[src/filters/BaseFilter.ts:402](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/BaseFilter.ts#L402)
 
 ***
 
@@ -544,13 +544,13 @@ Object representation of an instance
 
 ### fromObject()
 
-> `static` **fromObject**(`__namedParameters`, `options`): `Promise`\<[`BaseFilter`](/api/namespaces/filters/classes/basefilter/)\<`string`, `object`\>\>
+> `static` **fromObject**(`__namedParameters`, `_options`): `Promise`\<[`BaseFilter`](/api/namespaces/filters/classes/basefilter/)\<`string`, `object`\>\>
 
 #### Parameters
 
 • **\_\_namedParameters**: `Record`\<`string`, `any`\>
 
-• **options**: [`Abortable`](/api/type-aliases/abortable/)
+• **\_options**: [`Abortable`](/api/type-aliases/abortable/)
 
 #### Returns
 
@@ -558,4 +558,4 @@ Object representation of an instance
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:406](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/BaseFilter.ts#L406)
+[src/filters/BaseFilter.ts:407](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/BaseFilter.ts#L407)

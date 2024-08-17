@@ -17,7 +17,7 @@ title: "ModifiedEvent"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:119](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L119)
+[src/EventTypeDefs.ts:122](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L122)
 
 ***
 
@@ -27,7 +27,7 @@ title: "ModifiedEvent"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:116](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L116)
+[src/EventTypeDefs.ts:119](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L119)
 
 ***
 
@@ -37,7 +37,7 @@ title: "ModifiedEvent"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:118](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L118)
+[src/EventTypeDefs.ts:121](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L121)
 
 ***
 
@@ -47,4 +47,4 @@ title: "ModifiedEvent"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:117](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L117)
+[src/EventTypeDefs.ts:120](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L120)

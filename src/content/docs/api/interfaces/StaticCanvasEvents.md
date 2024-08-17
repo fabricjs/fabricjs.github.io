@@ -25,7 +25,7 @@ title: "StaticCanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:306](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L306)
+[src/EventTypeDefs.ts:318](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L318)
 
 ***
 
@@ -39,7 +39,7 @@ title: "StaticCanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:305](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L305)
+[src/EventTypeDefs.ts:317](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L317)
 
 ***
 
@@ -49,7 +49,7 @@ title: "StaticCanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:302](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L302)
+[src/EventTypeDefs.ts:314](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L314)
 
 ***
 
@@ -67,7 +67,7 @@ title: "StaticCanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:238](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L238)
+[src/EventTypeDefs.ts:250](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L250)
 
 ***
 
@@ -83,7 +83,7 @@ title: "StaticCanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:308](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L308)
+[src/EventTypeDefs.ts:320](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L320)
 
 ***
 
@@ -99,7 +99,7 @@ title: "StaticCanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:307](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L307)
+[src/EventTypeDefs.ts:319](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L319)
 
 ***
 
@@ -117,4 +117,4 @@ title: "StaticCanvasEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:239](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L239)
+[src/EventTypeDefs.ts:251](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L251)
