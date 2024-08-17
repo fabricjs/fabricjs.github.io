@@ -19,7 +19,11 @@
     --border-radius-normal: 6px;
     --header-height: 0 /*50px*/;
     --bottom-nav-height: 50px;
-    /*--left-sidebar-width:85%;*/
+    /**
+      for starlight header
+    */
+    --sl-nav-height: 66px;
+    --sl-nav-pad-y: 0px;
   }
 
 :root[data-theme='light'] {
@@ -39,6 +43,7 @@
 	--sl-color-bg-accent: var(--sl-color-accent);
 	--sl-color-hairline-light: var(--sl-color-gray-6);
 	--sl-color-hairline-shade: var(--sl-color-gray-6);
+  --sl-color-bg-nav: white;
 
     /* text sizes starlight */
     	/* Text size and line height */
@@ -79,7 +84,10 @@
       --font-size-bigger2: 26px;
       --font-size-bigger3: 32px;
       --header-height: 65px;
-      /*--left-sidebar-width:17%;*/
+      /**
+        for starlight header
+      */
+      --sl-nav-height: 65px;
     }
     body {
       margin-bottom: 0;
