@@ -1,0 +1,82 @@
+#gentle-reminder, #carbonads {
+  width: 100%;
+}
+
+.reminder {
+  font-size: 13px;
+  text-align: center;
+  padding: 2px;
+  background-color: var(--primary-color) !important;
+}
+
+#carbonads span {
+    display: flex;
+    flex-direction: row;
+}
+
+#carbonads > span {
+    width: 100%;
+    justify-content: space-between;
+}
+
+#carbonads > span > a {
+    display: flex;
+    align-items: flex-end;
+    width: 100px;
+    justify-content: flex-end;
+}
+
+#carbonads .carbon-wrap {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+#carbonads {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid var(--primary-color);
+  background-color: var(--primary-color-tint);
+  font-size: 0.9em;
+  line-height: 1.5;
+  
+}
+
+#carbonads a {
+  text-decoration: none !important;
+  padding: 0 !important;
+  margin: 0;
+}
+
+.carbon-img {
+  display: block;
+  padding: 0 !important;
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+.carbon-img img {
+  padding: 0;
+  margin: 0;
+  display: block;
+  margin: 1px;
+}
+
+.carbon-text {
+  padding: 0;
+  margin: 0;
+  display: block;
+  margin-bottom: 1em;
+  text-align: left;
+}
+
+.carbon-poweredby {
+  padding: 0;
+  margin: 0;
+  display: block;
+  text-align: right;
+  font-size: 0.8em;
+}
