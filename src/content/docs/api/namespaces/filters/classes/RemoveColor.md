@@ -645,7 +645,7 @@ JSON
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:401](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/BaseFilter.ts#L401)
+[src/filters/BaseFilter.ts:402](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/BaseFilter.ts#L402)
 
 ***
 
@@ -697,13 +697,13 @@ Object representation of an instance
 
 ### fromObject()
 
-> `static` **fromObject**(`__namedParameters`, `options`): `Promise`\<[`BaseFilter`](/api/namespaces/filters/classes/basefilter/)\<`string`, `object`\>\>
+> `static` **fromObject**(`__namedParameters`, `_options`): `Promise`\<[`BaseFilter`](/api/namespaces/filters/classes/basefilter/)\<`string`, `object`\>\>
 
 #### Parameters
 
 • **\_\_namedParameters**: `Record`\<`string`, `any`\>
 
-• **options**: [`Abortable`](/api/type-aliases/abortable/)
+• **\_options**: [`Abortable`](/api/type-aliases/abortable/)
 
 #### Returns
 
@@ -715,4 +715,4 @@ Object representation of an instance
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:406](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/BaseFilter.ts#L406)
+[src/filters/BaseFilter.ts:407](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/BaseFilter.ts#L407)

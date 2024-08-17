@@ -33,7 +33,7 @@ move to Canvas
 
 #### Defined in
 
-[src/canvas/StaticCanvasOptions.ts:161](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvasOptions.ts#L161)
+[src/canvas/StaticCanvasOptions.ts:160](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvasOptions.ts#L160)
 
 ***
 
@@ -116,7 +116,7 @@ Background color of canvas instance.
 
 #### Defined in
 
-[src/canvas/StaticCanvasOptions.ts:21](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvasOptions.ts#L21)
+[src/canvas/StaticCanvasOptions.ts:20](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvasOptions.ts#L20)
 
 ***
 
@@ -141,7 +141,7 @@ vale. As an alternative you can disable image objectCaching
 
 #### Defined in
 
-[src/canvas/StaticCanvasOptions.ts:31](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvasOptions.ts#L31)
+[src/canvas/StaticCanvasOptions.ts:30](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvasOptions.ts#L30)
 
 ***
 
@@ -171,7 +171,7 @@ we should really find a different way to do this
 
 #### Defined in
 
-[src/canvas/StaticCanvasOptions.ts:14](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvasOptions.ts#L14)
+[src/canvas/StaticCanvasOptions.ts:13](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvasOptions.ts#L13)
 
 ***
 
@@ -273,7 +273,7 @@ clipPath will clip away controls, if you do not want this to happen use controls
 
 #### Defined in
 
-[src/canvas/StaticCanvasOptions.ts:106](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvasOptions.ts#L106)
+[src/canvas/StaticCanvasOptions.ts:105](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvasOptions.ts#L105)
 
 ***
 
@@ -321,7 +321,7 @@ move to Canvas
 
 #### Defined in
 
-[src/canvas/StaticCanvasOptions.ts:152](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvasOptions.ts#L152)
+[src/canvas/StaticCanvasOptions.ts:151](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvasOptions.ts#L151)
 
 ***
 
@@ -387,7 +387,7 @@ When true, canvas is scaled by devicePixelRatio for better rendering on retina s
 
 #### Defined in
 
-[src/canvas/StaticCanvasOptions.ts:90](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvasOptions.ts#L90)
+[src/canvas/StaticCanvasOptions.ts:89](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvasOptions.ts#L89)
 
 ***
 
@@ -478,7 +478,7 @@ The canvas can be taller than width if retina scaling is active
 
 #### Defined in
 
-[src/canvas/StaticCanvasOptions.ts:143](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvasOptions.ts#L143)
+[src/canvas/StaticCanvasOptions.ts:142](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvasOptions.ts#L142)
 
 ***
 
@@ -522,7 +522,7 @@ Indicates whether this canvas will use image smoothing, this is on by default in
 
 #### Defined in
 
-[src/canvas/StaticCanvasOptions.ts:97](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvasOptions.ts#L97)
+[src/canvas/StaticCanvasOptions.ts:96](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvasOptions.ts#L96)
 
 ***
 
@@ -545,7 +545,7 @@ if set to false, takes precedence over the object value.
 
 #### Defined in
 
-[src/canvas/StaticCanvasOptions.ts:116](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvasOptions.ts#L116)
+[src/canvas/StaticCanvasOptions.ts:115](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvasOptions.ts#L115)
 
 ***
 
@@ -619,7 +619,7 @@ Overlay color of canvas instance.
 
 #### Defined in
 
-[src/canvas/StaticCanvasOptions.ts:48](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvasOptions.ts#L48)
+[src/canvas/StaticCanvasOptions.ts:47](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvasOptions.ts#L47)
 
 ***
 
@@ -644,7 +644,7 @@ vale. As an alternative you can disable image objectCaching
 
 #### Defined in
 
-[src/canvas/StaticCanvasOptions.ts:58](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvasOptions.ts#L58)
+[src/canvas/StaticCanvasOptions.ts:57](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvasOptions.ts#L57)
 
 ***
 
@@ -674,7 +674,7 @@ we should really find a different way to do this
 
 #### Defined in
 
-[src/canvas/StaticCanvasOptions.ts:40](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvasOptions.ts#L40)
+[src/canvas/StaticCanvasOptions.ts:39](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvasOptions.ts#L39)
 
 ***
 
@@ -742,7 +742,7 @@ Left default to true to do not break documentation and old app, fiddles.
 
 #### Defined in
 
-[src/canvas/StaticCanvasOptions.ts:72](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvasOptions.ts#L72)
+[src/canvas/StaticCanvasOptions.ts:71](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvasOptions.ts#L71)
 
 ***
 
@@ -925,7 +925,7 @@ true
 
 #### Defined in
 
-[src/canvas/StaticCanvasOptions.ts:83](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvasOptions.ts#L83)
+[src/canvas/StaticCanvasOptions.ts:82](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvasOptions.ts#L82)
 
 ***
 
@@ -1000,7 +1000,7 @@ a zoomed canvas will then produce zoomed SVG output.
 
 #### Defined in
 
-[src/canvas/StaticCanvasOptions.ts:124](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvasOptions.ts#L124)
+[src/canvas/StaticCanvasOptions.ts:123](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvasOptions.ts#L123)
 
 ***
 
@@ -1113,7 +1113,7 @@ canvas.viewportTransform = [0.7, 0, 0, 0.7, 50, 50];
 
 #### Defined in
 
-[src/canvas/StaticCanvasOptions.ts:172](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvasOptions.ts#L172)
+[src/canvas/StaticCanvasOptions.ts:171](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvasOptions.ts#L171)
 
 ***
 
@@ -1130,4 +1130,4 @@ The canvas can be larger than width if retina scaling is active
 
 #### Defined in
 
-[src/canvas/StaticCanvasOptions.ts:136](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvasOptions.ts#L136)
+[src/canvas/StaticCanvasOptions.ts:135](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvasOptions.ts#L135)

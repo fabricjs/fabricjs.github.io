@@ -83,6 +83,7 @@ title: "util"
 - [TQuadraticCurveShortcutCommand](/api/namespaces/util/type-aliases/tquadraticcurveshortcutcommand/)
 - [TRotateMatrixArgs](/api/namespaces/util/type-aliases/trotatematrixargs/)
 - [TScaleMatrixArgs](/api/namespaces/util/type-aliases/tscalematrixargs/)
+- [TSimpleParseCommandType](/api/namespaces/util/type-aliases/tsimpleparsecommandtype/)
 - [TSimpleParsedCommand](/api/namespaces/util/type-aliases/tsimpleparsedcommand/)
 - [TSimplePathData](/api/namespaces/util/type-aliases/tsimplepathdata/)
 - [TTranslateMatrixArgs](/api/namespaces/util/type-aliases/ttranslatematrixargs/)

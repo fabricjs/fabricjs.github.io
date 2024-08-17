@@ -27,10 +27,6 @@ title: "PencilBrush"
 
 • **canvas**: [`Canvas`](/api/classes/canvas/)
 
-**Todo**
-
-add type
-
 #### Returns
 
 [`PencilBrush`](/api/classes/pencilbrush/)

@@ -22,11 +22,11 @@ Gradient class
 
 ### new Gradient()
 
-> **new Gradient**\<`S`, `T`\>(`__namedParameters`): [`Gradient`](/api/classes/gradient/)\<`S`, `T`\>
+> **new Gradient**\<`S`, `T`\>(`options`): [`Gradient`](/api/classes/gradient/)\<`S`, `T`\>
 
 #### Parameters
 
-• **\_\_namedParameters**: [`GradientOptions`](/api/type-aliases/gradientoptions/)\<`T`\>
+• **options**: [`GradientOptions`](/api/type-aliases/gradientoptions/)\<`T`\>
 
 #### Returns
 
@@ -212,7 +212,7 @@ thisArg
 
 #### Defined in
 
-[src/gradient/Gradient.ts:134](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/gradient/Gradient.ts#L134)
+[src/gradient/Gradient.ts:133](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/gradient/Gradient.ts#L133)
 
 ***
 
@@ -234,7 +234,7 @@ Context to render on
 
 #### Defined in
 
-[src/gradient/Gradient.ts:298](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/gradient/Gradient.ts#L298)
+[src/gradient/Gradient.ts:299](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/gradient/Gradient.ts#L299)
 
 ***
 
@@ -256,7 +256,7 @@ Any properties that you might want to additionally include in the output
 
 #### Defined in
 
-[src/gradient/Gradient.ts:151](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/gradient/Gradient.ts#L151)
+[src/gradient/Gradient.ts:150](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/gradient/Gradient.ts#L150)
 
 ***
 
@@ -284,7 +284,7 @@ SVG representation of an gradient (linear/radial)
 
 #### Defined in
 
-[src/gradient/Gradient.ts:172](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/gradient/Gradient.ts#L172)
+[src/gradient/Gradient.ts:171](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/gradient/Gradient.ts#L171)
 
 ***
 
@@ -358,7 +358,7 @@ Gradient
 
 #### Defined in
 
-[src/gradient/Gradient.ts:381](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/gradient/Gradient.ts#L381)
+[src/gradient/Gradient.ts:382](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/gradient/Gradient.ts#L382)
 
 ***
 
@@ -378,7 +378,7 @@ Gradient
 
 ##### Defined in
 
-[src/gradient/Gradient.ts:324](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/gradient/Gradient.ts#L324)
+[src/gradient/Gradient.ts:318](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/gradient/Gradient.ts#L318)
 
 #### fromObject(options)
 
@@ -394,4 +394,4 @@ Gradient
 
 ##### Defined in
 
-[src/gradient/Gradient.ts:327](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/gradient/Gradient.ts#L327)
+[src/gradient/Gradient.ts:321](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/gradient/Gradient.ts#L321)

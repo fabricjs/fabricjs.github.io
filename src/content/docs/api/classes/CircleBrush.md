@@ -23,10 +23,6 @@ title: "CircleBrush"
 
 • **canvas**: [`Canvas`](/api/classes/canvas/)
 
-**Todo**
-
-add type
-
 #### Returns
 
 [`CircleBrush`](/api/classes/circlebrush/)

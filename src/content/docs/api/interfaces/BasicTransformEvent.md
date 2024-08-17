@@ -25,7 +25,7 @@ title: "BasicTransformEvent"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:94](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L94)
+[src/EventTypeDefs.ts:96](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L96)
 
 ***
 
@@ -35,7 +35,7 @@ title: "BasicTransformEvent"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:104](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L104)
+[src/EventTypeDefs.ts:106](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L106)
 
 ***
 
@@ -45,4 +45,4 @@ title: "BasicTransformEvent"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:103](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L103)
+[src/EventTypeDefs.ts:105](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L105)
