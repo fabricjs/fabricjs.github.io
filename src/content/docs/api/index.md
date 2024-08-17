@@ -151,7 +151,6 @@ title: "fabric"
 - [StrictLayoutContext](/api/type-aliases/strictlayoutcontext/)
 - [SupportedSVGUnit](/api/type-aliases/supportedsvgunit/)
 - [T2DPipelineState](/api/type-aliases/t2dpipelinestate/)
-- [TApplyFilterArgs](/api/type-aliases/tapplyfilterargs/)
 - [TAxis](/api/type-aliases/taxis/)
 - [TAxisKey](/api/type-aliases/taxiskey/)
 - [TBBox](/api/type-aliases/tbbox/)

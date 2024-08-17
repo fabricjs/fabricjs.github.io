@@ -793,9 +793,11 @@ title: "CanvasEvents"
 
 ### text:editing:entered
 
-> **text:editing:entered**: `object`
+> **text:editing:entered**: `object` & `Partial`\<[`TEvent`](/api/interfaces/tevent/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\>\>
 
-#### target
+#### Type declaration
+
+##### target
 
 > **target**: [`IText`](/api/classes/itext/)\<`Partial`\<[`ITextProps`](/api/interfaces/itextprops/)\>, [`SerializedITextProps`](/api/interfaces/serializeditextprops/), `ITextEvents`\>
 

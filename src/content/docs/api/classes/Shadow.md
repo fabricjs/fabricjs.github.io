@@ -213,7 +213,7 @@ Object representation of a shadow instance
 
 #### Defined in
 
-[src/Shadow.ts:226](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/Shadow.ts#L226)
+[src/Shadow.ts:221](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/Shadow.ts#L221)
 
 ***
 
@@ -235,7 +235,7 @@ SVG representation of a shadow
 
 #### Defined in
 
-[src/Shadow.ts:171](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/Shadow.ts#L171)
+[src/Shadow.ts:166](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/Shadow.ts#L166)
 
 ***
 
@@ -257,7 +257,7 @@ http://www.w3.org/TR/css-text-decor-3/#text-shadow
 
 #### Defined in
 
-[src/Shadow.ts:162](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/Shadow.ts#L162)
+[src/Shadow.ts:157](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/Shadow.ts#L157)
 
 ***
 
@@ -275,7 +275,7 @@ http://www.w3.org/TR/css-text-decor-3/#text-shadow
 
 #### Defined in
 
-[src/Shadow.ts:242](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/Shadow.ts#L242)
+[src/Shadow.ts:237](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/Shadow.ts#L237)
 
 ***
 
@@ -313,4 +313,4 @@ Shadow object with color, offsetX, offsetY and blur
 
 #### Defined in
 
-[src/Shadow.ts:142](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/Shadow.ts#L142)
+[src/Shadow.ts:137](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/Shadow.ts#L137)

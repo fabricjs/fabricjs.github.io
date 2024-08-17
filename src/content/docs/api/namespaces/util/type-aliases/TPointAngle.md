@@ -17,4 +17,4 @@ A point (vector) and angle between the vector and x-axis
 
 ## Defined in
 
-[src/util/path/typedefs.ts:307](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/util/path/typedefs.ts#L307)
+[src/util/path/typedefs.ts:304](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/util/path/typedefs.ts#L304)
