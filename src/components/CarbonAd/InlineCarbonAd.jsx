@@ -39,7 +39,7 @@ const CarbonAd = () => {
   return (
     <main>
       <div ref={containerRef} >
-        {/* {showReminder || (
+        {showReminder || (
           <script
             async
             id="_carbonads_js"
@@ -47,7 +47,7 @@ const CarbonAd = () => {
             type="text/javascript"
             src="//cdn.carbonads.com/carbon.js?serve=CKYIEK7E&placement=fabricjscom"
           />
-        )} */}
+        )}
         {showReminder && (
           <div id="gentle-reminder" className="reminder">
             Do you like fabricJS?
