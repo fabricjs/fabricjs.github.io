@@ -1,12 +1,14 @@
 #gentle-reminder, #carbonads {
   width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--primary-color);
+  background-color: var(--primary-color-tint);
 }
 
 .reminder {
-  font-size: 13px;
+  padding: 16px;
   text-align: center;
-  padding: 2px;
-  background-color: var(--primary-color) !important;
+  line-height: 2;
 }
 
 #carbonads span {
@@ -33,16 +35,10 @@
 }
 
 #carbonads {
+  padding: 8px;
   display: flex;
   flex-direction: row;
   overflow: hidden;
-  padding: 8px;
-  border-radius: 8px;
-  border: 1px solid var(--primary-color);
-  background-color: var(--primary-color-tint);
-  font-size: 0.9em;
-  line-height: 1.5;
-  
 }
 
 #carbonads a {
