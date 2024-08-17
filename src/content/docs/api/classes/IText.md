@@ -90,7 +90,7 @@ paste
 
 • **SProps** *extends* [`SerializedITextProps`](/api/interfaces/serializeditextprops/) = [`SerializedITextProps`](/api/interfaces/serializeditextprops/)
 
-• **EventSpec** *extends* `ITextEvents` = `ITextEvents`
+• **EventSpec** *extends* [`ITextEvents`](/api/type-aliases/itextevents/) = [`ITextEvents`](/api/type-aliases/itextevents/)
 
 ## Implements
 
@@ -3080,7 +3080,7 @@ instance.toObject() gets called
 
 ### ownDefaults
 
-> `static` **ownDefaults**: `Partial`\<[`TClassProperties`](/api/type-aliases/tclassproperties/)\<[`IText`](/api/classes/itext/)\<`Partial`\<[`ITextProps`](/api/interfaces/itextprops/)\>, [`SerializedITextProps`](/api/interfaces/serializeditextprops/), `ITextEvents`\>\>\> = `iTextDefaultValues`
+> `static` **ownDefaults**: `Partial`\<[`TClassProperties`](/api/type-aliases/tclassproperties/)\<[`IText`](/api/classes/itext/)\<`Partial`\<[`ITextProps`](/api/interfaces/itextprops/)\>, [`SerializedITextProps`](/api/interfaces/serializeditextprops/), [`ITextEvents`](/api/type-aliases/itextevents/)\>\>\> = `iTextDefaultValues`
 
 #### Overrides
 

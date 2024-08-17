@@ -20,7 +20,7 @@ wrapping of lines.
 
 • **SProps** *extends* [`SerializedTextboxProps`](/api/interfaces/serializedtextboxprops/) = [`SerializedTextboxProps`](/api/interfaces/serializedtextboxprops/)
 
-• **EventSpec** *extends* `ITextEvents` = `ITextEvents`
+• **EventSpec** *extends* [`ITextEvents`](/api/type-aliases/itextevents/) = [`ITextEvents`](/api/type-aliases/itextevents/)
 
 ## Implements
 
@@ -3119,7 +3119,7 @@ instance.toObject() gets called
 
 ### ownDefaults
 
-> `static` **ownDefaults**: `Partial`\<[`TClassProperties`](/api/type-aliases/tclassproperties/)\<[`Textbox`](/api/classes/textbox/)\<`Partial`\<[`TextboxProps`](/api/interfaces/textboxprops/)\>, [`SerializedTextboxProps`](/api/interfaces/serializedtextboxprops/), `ITextEvents`\>\>\> = `textboxDefaultValues`
+> `static` **ownDefaults**: `Partial`\<[`TClassProperties`](/api/type-aliases/tclassproperties/)\<[`Textbox`](/api/classes/textbox/)\<`Partial`\<[`TextboxProps`](/api/interfaces/textboxprops/)\>, [`SerializedTextboxProps`](/api/interfaces/serializedtextboxprops/), [`ITextEvents`](/api/type-aliases/itextevents/)\>\>\> = `textboxDefaultValues`
 
 #### Overrides
 
