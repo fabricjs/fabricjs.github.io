@@ -1,5 +1,5 @@
 const canvas = new fabric.Canvas(canvasEl);
-const demoImg = 'http://fabricjs.com/assets/pug.jpg';
+const demoImg = 'https://fabricjs.github.io/assets/pug.jpg';
 
 let radius = 300;
 
