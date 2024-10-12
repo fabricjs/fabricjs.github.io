@@ -28,6 +28,7 @@ export const CodeEditor = ({ code: codeProp, children, canvasId, autoRun = true,
       ];
       const exec = `try {
           ${newcode.join('\n')}
+          canvas.setDimensions({ width: '100%', height: 'auto'}, { cssOnly: true });
           window.canvasesId['${canvasId}'] = canvas;
         } catch (error) {
           console.error(error);

@@ -32,6 +32,7 @@ export const setupCanvasBanner = ({ canvasEl, container }) => {
 
   const canvas = new Canvas(canvasEl, {
     containerClass: 'canvas-banner',
+    allowTouchScrolling: true,
   });
   canvas.wrapperEl.style.position = 'absolute';
   resizeObserver.observe(container);
