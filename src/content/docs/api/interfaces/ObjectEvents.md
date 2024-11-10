@@ -25,7 +25,7 @@ title: "ObjectEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:305](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L305)
+[src/EventTypeDefs.ts:305](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/EventTypeDefs.ts#L305)
 
 ***
 
@@ -39,7 +39,7 @@ title: "ObjectEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:288](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L288)
+[src/EventTypeDefs.ts:288](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/EventTypeDefs.ts#L288)
 
 ***
 
@@ -53,7 +53,7 @@ title: "ObjectEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:287](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L287)
+[src/EventTypeDefs.ts:287](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/EventTypeDefs.ts#L287)
 
 ***
 
@@ -69,7 +69,7 @@ title: "ObjectEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:300](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L300)
+[src/EventTypeDefs.ts:300](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/EventTypeDefs.ts#L300)
 
 ***
 
@@ -83,7 +83,7 @@ title: "ObjectEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:218](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L218)
+[src/EventTypeDefs.ts:218](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/EventTypeDefs.ts#L218)
 
 ***
 
@@ -97,7 +97,7 @@ title: "ObjectEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:222](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L222)
+[src/EventTypeDefs.ts:222](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/EventTypeDefs.ts#L222)
 
 ***
 
@@ -111,7 +111,7 @@ title: "ObjectEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:220](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L220)
+[src/EventTypeDefs.ts:220](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/EventTypeDefs.ts#L220)
 
 ***
 
@@ -125,7 +125,7 @@ title: "ObjectEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:221](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L221)
+[src/EventTypeDefs.ts:221](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/EventTypeDefs.ts#L221)
 
 ***
 
@@ -139,7 +139,7 @@ title: "ObjectEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:219](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L219)
+[src/EventTypeDefs.ts:219](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/EventTypeDefs.ts#L219)
 
 ***
 
@@ -153,7 +153,7 @@ title: "ObjectEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:217](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L217)
+[src/EventTypeDefs.ts:217](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/EventTypeDefs.ts#L217)
 
 ***
 
@@ -167,7 +167,7 @@ title: "ObjectEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:224](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L224)
+[src/EventTypeDefs.ts:224](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/EventTypeDefs.ts#L224)
 
 ***
 
@@ -181,7 +181,7 @@ title: "ObjectEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:225](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L225)
+[src/EventTypeDefs.ts:225](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/EventTypeDefs.ts#L225)
 
 ***
 
@@ -195,7 +195,7 @@ title: "ObjectEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:223](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L223)
+[src/EventTypeDefs.ts:223](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/EventTypeDefs.ts#L223)
 
 ***
 
@@ -209,7 +209,7 @@ title: "ObjectEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:309](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L309)
+[src/EventTypeDefs.ts:309](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/EventTypeDefs.ts#L309)
 
 ***
 
@@ -223,7 +223,7 @@ title: "ObjectEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:138](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L138)
+[src/EventTypeDefs.ts:138](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/EventTypeDefs.ts#L138)
 
 ***
 
@@ -237,7 +237,7 @@ title: "ObjectEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:137](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L137)
+[src/EventTypeDefs.ts:137](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/EventTypeDefs.ts#L137)
 
 ***
 
@@ -251,7 +251,7 @@ title: "ObjectEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:136](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L136)
+[src/EventTypeDefs.ts:136](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/EventTypeDefs.ts#L136)
 
 ***
 
@@ -393,7 +393,7 @@ title: "ObjectEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:131](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L131)
+[src/EventTypeDefs.ts:131](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/EventTypeDefs.ts#L131)
 
 ***
 
@@ -407,7 +407,7 @@ title: "ObjectEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:306](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L306)
+[src/EventTypeDefs.ts:306](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/EventTypeDefs.ts#L306)
 
 ***
 
@@ -421,7 +421,7 @@ title: "ObjectEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:135](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L135)
+[src/EventTypeDefs.ts:135](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/EventTypeDefs.ts#L135)
 
 ***
 
@@ -435,7 +435,7 @@ title: "ObjectEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:133](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L133)
+[src/EventTypeDefs.ts:133](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/EventTypeDefs.ts#L133)
 
 ***
 
@@ -449,7 +449,7 @@ title: "ObjectEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:132](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L132)
+[src/EventTypeDefs.ts:132](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/EventTypeDefs.ts#L132)
 
 ***
 
@@ -465,7 +465,7 @@ title: "ObjectEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:297](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L297)
+[src/EventTypeDefs.ts:297](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/EventTypeDefs.ts#L297)
 
 ***
 
@@ -479,4 +479,4 @@ title: "ObjectEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:134](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L134)
+[src/EventTypeDefs.ts:134](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/EventTypeDefs.ts#L134)

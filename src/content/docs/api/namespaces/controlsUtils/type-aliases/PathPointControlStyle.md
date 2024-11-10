@@ -23,4 +23,4 @@ title: "PathPointControlStyle"
 
 ## Defined in
 
-[src/controls/pathControl.ts:21](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/controls/pathControl.ts#L21)
+[src/controls/pathControl.ts:21](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/controls/pathControl.ts#L21)

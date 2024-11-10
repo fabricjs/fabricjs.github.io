@@ -31,4 +31,4 @@ title: "ITextEvents"
 
 ## Defined in
 
-[src/shapes/IText/ITextBehavior.ts:34](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/IText/ITextBehavior.ts#L34)
+[src/shapes/IText/ITextBehavior.ts:34](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/shapes/IText/ITextBehavior.ts#L34)

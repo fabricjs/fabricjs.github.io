@@ -9,4 +9,4 @@ title: "runningAnimations"
 
 ## Defined in
 
-[src/util/animation/AnimationRegistry.ts:59](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/util/animation/AnimationRegistry.ts#L59)
+[src/util/animation/AnimationRegistry.ts:59](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/util/animation/AnimationRegistry.ts#L59)

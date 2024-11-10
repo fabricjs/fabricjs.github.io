@@ -23,4 +23,4 @@ Used to calculate object's bounding box
 
 ## Defined in
 
-[src/util/misc/projectStroke/index.ts:16](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/util/misc/projectStroke/index.ts#L16)
+[src/util/misc/projectStroke/index.ts:16](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/util/misc/projectStroke/index.ts#L16)
