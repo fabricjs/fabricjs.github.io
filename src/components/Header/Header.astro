@@ -1,12 +1,15 @@
 ---
 import Search from '@astrojs/starlight/components/Search.astro';
+import config from '@astrojs/starlight/user-config';
+
+const shouldRenderSearch = config.pagefind;
 ---
 
 <header id="site-header">
     <a id="logo" href="/">
       <img alt="FabricJS logo" src="/logo.svg" />
     </a>
-    <Search {...Astro.props} />
+    {shouldRenderSearch && <Search {...Astro.props} />}
     <nav>
       <ul>
         <li>
