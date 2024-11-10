@@ -760,11 +760,11 @@ handle aborting image loading, see https://developer.mozilla.org/en-US/docs/Web/
 
 `Promise`\<[`BaseFilter`](/api/namespaces/filters/classes/basefilter/)\<`"BlendImage"`, `BlendImageOwnProps`\>\>
 
+#### Static
+
 #### Overrides
 
 [`BaseFilter`](/api/namespaces/filters/classes/basefilter/).[`fromObject`](/api/namespaces/filters/classes/basefilter/#fromobject)
-
-#### Static
 
 #### Defined in
 

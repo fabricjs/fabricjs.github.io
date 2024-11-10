@@ -650,11 +650,11 @@ handle aborting `BlendImage` filter loading, see https://developer.mozilla.org/e
 
 `Promise`\<[`Composed`](/api/namespaces/filters/classes/composed/)\>
 
+#### Static
+
 #### Overrides
 
 [`BaseFilter`](/api/namespaces/filters/classes/basefilter/).[`fromObject`](/api/namespaces/filters/classes/basefilter/#fromobject)
-
-#### Static
 
 #### Defined in
 

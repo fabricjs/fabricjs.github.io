@@ -28,7 +28,7 @@
     "react-load-script": "^0.0.6",
     "thememirror": "^2.0.1",
     "typedoc": "^0.26.2",
-    "typedoc-plugin-markdown": "^4.0.0-next.54",
+    "typedoc-plugin-markdown": "^4.1.1",
     "typedoc-plugin-no-inherit": "^1.4.0",
     "typescript": "^5.4.2"
   },
@@ -37,6 +37,6 @@
   },
   "packageManager": "npm@10.8.1+sha512.0e9d42e92bd2318408ed81eaff2da5f78baf23ee7d12a6eed44a6e2901d0f29d7ab715d1b918ade601f72e769a824d9a5c322383f22bbbda5dd396e79de2a077",
   "devDependencies": {
-    "starlight-typedoc": "^0.15.0"
+    "starlight-typedoc": "^0.17.0"
   }
 }

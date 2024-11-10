@@ -3521,13 +3521,13 @@ properties to override the object style
 
 `void`
 
-#### Inherited from
-
-`ITextClickBehavior._renderControls`
-
 #### Todo
 
 move to interactivity
+
+#### Inherited from
+
+`ITextClickBehavior._renderControls`
 
 #### Defined in
 
@@ -3810,13 +3810,13 @@ As object — multiple properties
 object.animate({ left: ..., top: ... });
 object.animate({ left: ..., top: ... }, { duration: ... });
 
-#### Inherited from
-
-`ITextClickBehavior.animate`
-
 #### Tutorial
 
 [http://fabricjs.com/fabric-intro-part-2#animation](http://fabricjs.com/fabric-intro-part-2#animation)
+
+#### Inherited from
+
+`ITextClickBehavior.animate`
 
 #### Defined in
 
@@ -4038,13 +4038,13 @@ When true won't restore the context after clear, in order to draw something else
 canvas.contextTop that is either still transformed
 with the object transformMatrix, or restored to neutral transform
 
-#### Inherited from
-
-`ITextClickBehavior.clearContextTop`
-
 #### Todo
 
 discuss swapping restoreManually with a renderCallback, but think of async issues
+
+#### Inherited from
+
+`ITextClickBehavior.clearContextTop`
 
 #### Defined in
 
@@ -4101,13 +4101,13 @@ for clone as image, passed to toDataURL
 
 Object cloned as image.
 
-#### Inherited from
-
-`ITextClickBehavior.cloneAsImage`
-
 #### Todo
 
 fix the export type, it could not be Image but the type that getClass return for 'image'.
+
+#### Inherited from
+
+`ITextClickBehavior.cloneAsImage`
 
 #### Defined in
 
@@ -4444,15 +4444,15 @@ Context to draw on
 
 `void`
 
-#### Inherited from
-
-`ITextClickBehavior.drawSelectionBackground`
-
 #### Todo
 
 evaluate if make this disappear in favor of a pre-render hook for objects
 this was added by Andrea Bogazzi to make possible some feature for work reasons
 it seemed a good option, now is an edge case
+
+#### Inherited from
+
+`ITextClickBehavior.drawSelectionBackground`
 
 #### Defined in
 
@@ -5381,13 +5381,13 @@ Returns height of an object bounding box counting transformations
 
 height value
 
-#### Inherited from
-
-`ITextClickBehavior.getScaledHeight`
-
 #### Todo
 
 shouldn't this account for group transform and return the actual size in canvas coordinate plane?
+
+#### Inherited from
+
+`ITextClickBehavior.getScaledHeight`
 
 #### Defined in
 
@@ -5407,13 +5407,13 @@ Returns width of an object's bounding box counting transformations
 
 width value
 
-#### Inherited from
-
-`ITextClickBehavior.getScaledWidth`
-
 #### Todo
 
 shouldn't this account for group transform and return the actual size in canvas coordinate plane?
+
+#### Inherited from
+
+`ITextClickBehavior.getScaledWidth`
 
 #### Defined in
 
@@ -5814,15 +5814,15 @@ Override this method to customize grapheme splitting
 
 array of graphemes
 
-#### Inherited from
-
-`ITextClickBehavior.graphemeSplit`
-
 #### Todo
 
 the util `graphemeSplit` needs to be injectable in some way.
 is more comfortable to inject the correct util rather than having to override text
 in the middle of the prototype chain
+
+#### Inherited from
+
+`ITextClickBehavior.graphemeSplit`
 
 #### Defined in
 
@@ -5911,13 +5911,13 @@ some use case where the fill is invisible.
 
 Boolean
 
-#### Inherited from
-
-`ITextClickBehavior.hasFill`
-
 #### Since
 
 3.0.0
+
+#### Inherited from
+
+`ITextClickBehavior.hasFill`
 
 #### Defined in
 
@@ -5942,13 +5942,13 @@ some use case where the stroke is invisible.
 
 Boolean
 
-#### Inherited from
-
-`ITextClickBehavior.hasStroke`
-
 #### Since
 
 3.0.0
+
+#### Inherited from
+
+`ITextClickBehavior.hasStroke`
 
 #### Defined in
 
@@ -7060,13 +7060,13 @@ Function that receives a notification when an event of the specified type occurs
 
 disposer
 
-##### Inherited from
-
-`ITextClickBehavior.on`
-
 ##### Alias
 
 on
+
+##### Inherited from
+
+`ITextClickBehavior.on`
 
 ##### Defined in
 
@@ -7206,14 +7206,14 @@ override this method to control whether instance should/shouldn't become a drag 
 
 should handle event
 
-#### Inherited from
-
-`ITextClickBehavior.onDragStart`
-
 #### See
 
 also DraggableTextDelegate#isActive
 To prevent drag and drop between objects both shouldStartDragging and onDragStart should return false
+
+#### Inherited from
+
+`ITextClickBehavior.onDragStart`
 
 #### Defined in
 
@@ -7365,13 +7365,13 @@ Function that receives a notification when an event of the specified type occurs
 
 disposer
 
-##### Inherited from
-
-`ITextClickBehavior.once`
-
 ##### Alias
 
 once
+
+##### Inherited from
+
+`ITextClickBehavior.once`
 
 ##### Defined in
 
@@ -7951,13 +7951,13 @@ true to set the specified control visible, false otherwise
 
 `void`
 
-#### Inherited from
-
-`ITextClickBehavior.setControlVisible`
-
 #### Todo
 
 discuss this overlap of priority here with the team. Andrea Bogazzi for details
+
+#### Inherited from
+
+`ITextClickBehavior.setControlVisible`
 
 #### Defined in
 
@@ -8418,15 +8418,15 @@ Vertical origin: 'top', 'center' or 'bottom'
 
 `void`
 
-#### Inherited from
-
-`ITextClickBehavior.setXY`
-
 #### Example
 
 ```ts
 object.setXY(new Point(5, 5), 'left', 'bottom').
 ```
+
+#### Inherited from
+
+`ITextClickBehavior.setXY`
 
 #### Defined in
 
@@ -8611,13 +8611,13 @@ block cursor/selection logic while rendering the exported canvas
 
 `HTMLCanvasElement`
 
-#### Overrides
-
-`ITextClickBehavior.toCanvasElement`
-
 #### Todo
 
 this workaround should be replaced with a more robust solution
+
+#### Overrides
+
+`ITextClickBehavior.toCanvasElement`
 
 #### Defined in
 
@@ -9152,15 +9152,15 @@ Options object
 
 `Promise`\<[`FabricText`](/api/classes/fabrictext/)\<`object`, [`SerializedTextProps`](/api/interfaces/serializedtextprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>\>
 
-#### Inherited from
-
-`ITextClickBehavior.fromElement`
-
 #### Static
 
 #### Member Of
 
 Text
+
+#### Inherited from
+
+`ITextClickBehavior.fromElement`
 
 #### Defined in
 

@@ -2464,13 +2464,13 @@ As object — multiple properties
 object.animate({ left: ..., top: ... });
 object.animate({ left: ..., top: ... }, { duration: ... });
 
-#### Inherited from
-
-[`Group`](/api/classes/group/).[`animate`](/api/classes/group/#animate)
-
 #### Tutorial
 
 [http://fabricjs.com/fabric-intro-part-2#animation](http://fabricjs.com/fabric-intro-part-2#animation)
+
+#### Inherited from
+
+[`Group`](/api/classes/group/).[`animate`](/api/classes/group/#animate)
 
 #### Defined in
 
@@ -2712,13 +2712,13 @@ When true won't restore the context after clear, in order to draw something else
 canvas.contextTop that is either still transformed
 with the object transformMatrix, or restored to neutral transform
 
-#### Inherited from
-
-[`Group`](/api/classes/group/).[`clearContextTop`](/api/classes/group/#clearcontexttop)
-
 #### Todo
 
 discuss swapping restoreManually with a renderCallback, but think of async issues
+
+#### Inherited from
+
+[`Group`](/api/classes/group/).[`clearContextTop`](/api/classes/group/#clearcontexttop)
 
 #### Defined in
 
@@ -2775,13 +2775,13 @@ for clone as image, passed to toDataURL
 
 Object cloned as image.
 
-#### Inherited from
-
-[`Group`](/api/classes/group/).[`cloneAsImage`](/api/classes/group/#cloneasimage)
-
 #### Todo
 
 fix the export type, it could not be Image but the type that getClass return for 'image'.
+
+#### Inherited from
+
+[`Group`](/api/classes/group/).[`cloneAsImage`](/api/classes/group/#cloneasimage)
 
 #### Defined in
 
@@ -3138,15 +3138,15 @@ Context to draw on
 
 `void`
 
-#### Inherited from
-
-[`Group`](/api/classes/group/).[`drawSelectionBackground`](/api/classes/group/#drawselectionbackground)
-
 #### Todo
 
 evaluate if make this disappear in favor of a pre-render hook for objects
 this was added by Andrea Bogazzi to make possible some feature for work reasons
 it seemed a good option, now is an edge case
+
+#### Inherited from
+
+[`Group`](/api/classes/group/).[`drawSelectionBackground`](/api/classes/group/#drawselectionbackground)
 
 #### Defined in
 
@@ -3668,13 +3668,13 @@ Returns height of an object bounding box counting transformations
 
 height value
 
-#### Inherited from
-
-[`Group`](/api/classes/group/).[`getScaledHeight`](/api/classes/group/#getscaledheight)
-
 #### Todo
 
 shouldn't this account for group transform and return the actual size in canvas coordinate plane?
+
+#### Inherited from
+
+[`Group`](/api/classes/group/).[`getScaledHeight`](/api/classes/group/#getscaledheight)
 
 #### Defined in
 
@@ -3694,13 +3694,13 @@ Returns width of an object's bounding box counting transformations
 
 width value
 
-#### Inherited from
-
-[`Group`](/api/classes/group/).[`getScaledWidth`](/api/classes/group/#getscaledwidth)
-
 #### Todo
 
 shouldn't this account for group transform and return the actual size in canvas coordinate plane?
+
+#### Inherited from
+
+[`Group`](/api/classes/group/).[`getScaledWidth`](/api/classes/group/#getscaledwidth)
 
 #### Defined in
 
@@ -3969,13 +3969,13 @@ some use case where the fill is invisible.
 
 Boolean
 
-#### Inherited from
-
-[`Group`](/api/classes/group/).[`hasFill`](/api/classes/group/#hasfill)
-
 #### Since
 
 3.0.0
+
+#### Inherited from
+
+[`Group`](/api/classes/group/).[`hasFill`](/api/classes/group/#hasfill)
 
 #### Defined in
 
@@ -4000,13 +4000,13 @@ some use case where the stroke is invisible.
 
 Boolean
 
-#### Inherited from
-
-[`Group`](/api/classes/group/).[`hasStroke`](/api/classes/group/#hasstroke)
-
 #### Since
 
 3.0.0
+
+#### Inherited from
+
+[`Group`](/api/classes/group/).[`hasStroke`](/api/classes/group/#hasstroke)
 
 #### Defined in
 
@@ -4666,13 +4666,13 @@ Function that receives a notification when an event of the specified type occurs
 
 disposer
 
-##### Inherited from
-
-[`Group`](/api/classes/group/).[`on`](/api/classes/group/#on)
-
 ##### Alias
 
 on
+
+##### Inherited from
+
+[`Group`](/api/classes/group/).[`on`](/api/classes/group/#on)
 
 ##### Defined in
 
@@ -4808,13 +4808,13 @@ Function that receives a notification when an event of the specified type occurs
 
 disposer
 
-##### Inherited from
-
-[`Group`](/api/classes/group/).[`once`](/api/classes/group/#once)
-
 ##### Alias
 
 once
+
+##### Inherited from
+
+[`Group`](/api/classes/group/).[`once`](/api/classes/group/#once)
 
 ##### Defined in
 
@@ -5214,13 +5214,13 @@ true to set the specified control visible, false otherwise
 
 `void`
 
-#### Inherited from
-
-[`Group`](/api/classes/group/).[`setControlVisible`](/api/classes/group/#setcontrolvisible)
-
 #### Todo
 
 discuss this overlap of priority here with the team. Andrea Bogazzi for details
+
+#### Inherited from
+
+[`Group`](/api/classes/group/).[`setControlVisible`](/api/classes/group/#setcontrolvisible)
 
 #### Defined in
 
@@ -5464,15 +5464,15 @@ Vertical origin: 'top', 'center' or 'bottom'
 
 `void`
 
-#### Inherited from
-
-[`Group`](/api/classes/group/).[`setXY`](/api/classes/group/#setxy)
-
 #### Example
 
 ```ts
 object.setXY(new Point(5, 5), 'left', 'bottom').
 ```
+
+#### Inherited from
+
+[`Group`](/api/classes/group/).[`setXY`](/api/classes/group/#setxy)
 
 #### Defined in
 

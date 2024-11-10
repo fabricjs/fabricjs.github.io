@@ -115,10 +115,6 @@ Options object
 
 thisArg
 
-#### Inherited from
-
-[`Polyline`](/api/classes/polyline/).[`constructor`](/api/classes/polyline/#constructors)
-
 #### Example
 
 ```ts
@@ -135,6 +131,10 @@ var poly = new Polyline([
   top: 100
 });
 ```
+
+#### Inherited from
+
+[`Polyline`](/api/classes/polyline/).[`constructor`](/api/classes/polyline/#constructors)
 
 #### Defined in
 
@@ -2348,13 +2348,13 @@ properties to override the object style
 
 `void`
 
-#### Inherited from
-
-[`Polyline`](/api/classes/polyline/).[`_renderControls`](/api/classes/polyline/#_rendercontrols)
-
 #### Todo
 
 move to interactivity
+
+#### Inherited from
+
+[`Polyline`](/api/classes/polyline/).[`_renderControls`](/api/classes/polyline/#_rendercontrols)
 
 #### Defined in
 
@@ -2533,13 +2533,13 @@ As object — multiple properties
 object.animate({ left: ..., top: ... });
 object.animate({ left: ..., top: ... }, { duration: ... });
 
-#### Inherited from
-
-[`Polyline`](/api/classes/polyline/).[`animate`](/api/classes/polyline/#animate)
-
 #### Tutorial
 
 [http://fabricjs.com/fabric-intro-part-2#animation](http://fabricjs.com/fabric-intro-part-2#animation)
+
+#### Inherited from
+
+[`Polyline`](/api/classes/polyline/).[`animate`](/api/classes/polyline/#animate)
 
 #### Defined in
 
@@ -2692,13 +2692,13 @@ When true won't restore the context after clear, in order to draw something else
 canvas.contextTop that is either still transformed
 with the object transformMatrix, or restored to neutral transform
 
-#### Inherited from
-
-[`Polyline`](/api/classes/polyline/).[`clearContextTop`](/api/classes/polyline/#clearcontexttop)
-
 #### Todo
 
 discuss swapping restoreManually with a renderCallback, but think of async issues
+
+#### Inherited from
+
+[`Polyline`](/api/classes/polyline/).[`clearContextTop`](/api/classes/polyline/#clearcontexttop)
 
 #### Defined in
 
@@ -2755,13 +2755,13 @@ for clone as image, passed to toDataURL
 
 Object cloned as image.
 
-#### Inherited from
-
-[`Polyline`](/api/classes/polyline/).[`cloneAsImage`](/api/classes/polyline/#cloneasimage)
-
 #### Todo
 
 fix the export type, it could not be Image but the type that getClass return for 'image'.
+
+#### Inherited from
+
+[`Polyline`](/api/classes/polyline/).[`cloneAsImage`](/api/classes/polyline/#cloneasimage)
 
 #### Defined in
 
@@ -3054,15 +3054,15 @@ Context to draw on
 
 `void`
 
-#### Inherited from
-
-[`Polyline`](/api/classes/polyline/).[`drawSelectionBackground`](/api/classes/polyline/#drawselectionbackground)
-
 #### Todo
 
 evaluate if make this disappear in favor of a pre-render hook for objects
 this was added by Andrea Bogazzi to make possible some feature for work reasons
 it seemed a good option, now is an edge case
+
+#### Inherited from
+
+[`Polyline`](/api/classes/polyline/).[`drawSelectionBackground`](/api/classes/polyline/#drawselectionbackground)
 
 #### Defined in
 
@@ -3477,13 +3477,13 @@ Returns height of an object bounding box counting transformations
 
 height value
 
-#### Inherited from
-
-[`Polyline`](/api/classes/polyline/).[`getScaledHeight`](/api/classes/polyline/#getscaledheight)
-
 #### Todo
 
 shouldn't this account for group transform and return the actual size in canvas coordinate plane?
+
+#### Inherited from
+
+[`Polyline`](/api/classes/polyline/).[`getScaledHeight`](/api/classes/polyline/#getscaledheight)
 
 #### Defined in
 
@@ -3503,13 +3503,13 @@ Returns width of an object's bounding box counting transformations
 
 width value
 
-#### Inherited from
-
-[`Polyline`](/api/classes/polyline/).[`getScaledWidth`](/api/classes/polyline/#getscaledwidth)
-
 #### Todo
 
 shouldn't this account for group transform and return the actual size in canvas coordinate plane?
+
+#### Inherited from
+
+[`Polyline`](/api/classes/polyline/).[`getScaledWidth`](/api/classes/polyline/#getscaledwidth)
 
 #### Defined in
 
@@ -3786,13 +3786,13 @@ some use case where the fill is invisible.
 
 Boolean
 
-#### Inherited from
-
-[`Polyline`](/api/classes/polyline/).[`hasFill`](/api/classes/polyline/#hasfill)
-
 #### Since
 
 3.0.0
+
+#### Inherited from
+
+[`Polyline`](/api/classes/polyline/).[`hasFill`](/api/classes/polyline/#hasfill)
 
 #### Defined in
 
@@ -3817,13 +3817,13 @@ some use case where the stroke is invisible.
 
 Boolean
 
-#### Inherited from
-
-[`Polyline`](/api/classes/polyline/).[`hasStroke`](/api/classes/polyline/#hasstroke)
-
 #### Since
 
 3.0.0
+
+#### Inherited from
+
+[`Polyline`](/api/classes/polyline/).[`hasStroke`](/api/classes/polyline/#hasstroke)
 
 #### Defined in
 
@@ -4331,13 +4331,13 @@ Function that receives a notification when an event of the specified type occurs
 
 disposer
 
-##### Inherited from
-
-[`Polyline`](/api/classes/polyline/).[`on`](/api/classes/polyline/#on)
-
 ##### Alias
 
 on
+
+##### Inherited from
+
+[`Polyline`](/api/classes/polyline/).[`on`](/api/classes/polyline/#on)
 
 ##### Defined in
 
@@ -4484,13 +4484,13 @@ Function that receives a notification when an event of the specified type occurs
 
 disposer
 
-##### Inherited from
-
-[`Polyline`](/api/classes/polyline/).[`once`](/api/classes/polyline/#once)
-
 ##### Alias
 
 once
+
+##### Inherited from
+
+[`Polyline`](/api/classes/polyline/).[`once`](/api/classes/polyline/#once)
 
 ##### Defined in
 
@@ -4799,13 +4799,13 @@ true to set the specified control visible, false otherwise
 
 `void`
 
-#### Inherited from
-
-[`Polyline`](/api/classes/polyline/).[`setControlVisible`](/api/classes/polyline/#setcontrolvisible)
-
 #### Todo
 
 discuss this overlap of priority here with the team. Andrea Bogazzi for details
+
+#### Inherited from
+
+[`Polyline`](/api/classes/polyline/).[`setControlVisible`](/api/classes/polyline/#setcontrolvisible)
 
 #### Defined in
 
@@ -5070,15 +5070,15 @@ Vertical origin: 'top', 'center' or 'bottom'
 
 `void`
 
-#### Inherited from
-
-[`Polyline`](/api/classes/polyline/).[`setXY`](/api/classes/polyline/#setxy)
-
 #### Example
 
 ```ts
 object.setXY(new Point(5, 5), 'left', 'bottom').
 ```
+
+#### Inherited from
+
+[`Polyline`](/api/classes/polyline/).[`setXY`](/api/classes/polyline/#setxy)
 
 #### Defined in
 
@@ -5697,15 +5697,15 @@ Options object
 
 `Promise`\<[`Polyline`](/api/classes/polyline/)\<`object`, [`SerializedPolylineProps`](/api/interfaces/serializedpolylineprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>\>
 
-#### Inherited from
-
-[`Polyline`](/api/classes/polyline/).[`fromElement`](/api/classes/polyline/#fromelement)
-
 #### Static
 
 #### Member Of
 
 Polyline
+
+#### Inherited from
+
+[`Polyline`](/api/classes/polyline/).[`fromElement`](/api/classes/polyline/#fromelement)
 
 #### Defined in
 
@@ -5733,15 +5733,15 @@ Object to create an instance from
 
 `Promise`\<[`Polyline`](/api/classes/polyline/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedPolylineProps`](/api/interfaces/serializedpolylineprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>\>
 
-#### Inherited from
-
-[`Polyline`](/api/classes/polyline/).[`fromObject`](/api/classes/polyline/#fromobject)
-
 #### Static
 
 #### Member Of
 
 Polyline
+
+#### Inherited from
+
+[`Polyline`](/api/classes/polyline/).[`fromObject`](/api/classes/polyline/#fromobject)
 
 #### Defined in
 

@@ -2188,13 +2188,13 @@ properties to override the object style
 
 `void`
 
-#### Inherited from
-
-[`InteractiveFabricObject`](/api/classes/interactivefabricobject/).[`_renderControls`](/api/classes/interactivefabricobject/#_rendercontrols)
-
 #### Todo
 
 move to interactivity
+
+#### Inherited from
+
+[`InteractiveFabricObject`](/api/classes/interactivefabricobject/).[`_renderControls`](/api/classes/interactivefabricobject/#_rendercontrols)
 
 #### Defined in
 
@@ -2379,13 +2379,13 @@ As object — multiple properties
 object.animate({ left: ..., top: ... });
 object.animate({ left: ..., top: ... }, { duration: ... });
 
-#### Inherited from
-
-[`InteractiveFabricObject`](/api/classes/interactivefabricobject/).[`animate`](/api/classes/interactivefabricobject/#animate)
-
 #### Tutorial
 
 [http://fabricjs.com/fabric-intro-part-2#animation](http://fabricjs.com/fabric-intro-part-2#animation)
+
+#### Inherited from
+
+[`InteractiveFabricObject`](/api/classes/interactivefabricobject/).[`animate`](/api/classes/interactivefabricobject/#animate)
 
 #### Defined in
 
@@ -2538,13 +2538,13 @@ When true won't restore the context after clear, in order to draw something else
 canvas.contextTop that is either still transformed
 with the object transformMatrix, or restored to neutral transform
 
-#### Inherited from
-
-[`InteractiveFabricObject`](/api/classes/interactivefabricobject/).[`clearContextTop`](/api/classes/interactivefabricobject/#clearcontexttop)
-
 #### Todo
 
 discuss swapping restoreManually with a renderCallback, but think of async issues
+
+#### Inherited from
+
+[`InteractiveFabricObject`](/api/classes/interactivefabricobject/).[`clearContextTop`](/api/classes/interactivefabricobject/#clearcontexttop)
 
 #### Defined in
 
@@ -2601,13 +2601,13 @@ for clone as image, passed to toDataURL
 
 Object cloned as image.
 
-#### Inherited from
-
-[`InteractiveFabricObject`](/api/classes/interactivefabricobject/).[`cloneAsImage`](/api/classes/interactivefabricobject/#cloneasimage)
-
 #### Todo
 
 fix the export type, it could not be Image but the type that getClass return for 'image'.
+
+#### Inherited from
+
+[`InteractiveFabricObject`](/api/classes/interactivefabricobject/).[`cloneAsImage`](/api/classes/interactivefabricobject/#cloneasimage)
 
 #### Defined in
 
@@ -2900,15 +2900,15 @@ Context to draw on
 
 `void`
 
-#### Inherited from
-
-[`InteractiveFabricObject`](/api/classes/interactivefabricobject/).[`drawSelectionBackground`](/api/classes/interactivefabricobject/#drawselectionbackground)
-
 #### Todo
 
 evaluate if make this disappear in favor of a pre-render hook for objects
 this was added by Andrea Bogazzi to make possible some feature for work reasons
 it seemed a good option, now is an edge case
+
+#### Inherited from
+
+[`InteractiveFabricObject`](/api/classes/interactivefabricobject/).[`drawSelectionBackground`](/api/classes/interactivefabricobject/#drawselectionbackground)
 
 #### Defined in
 
@@ -3323,13 +3323,13 @@ Returns height of an object bounding box counting transformations
 
 height value
 
-#### Inherited from
-
-[`InteractiveFabricObject`](/api/classes/interactivefabricobject/).[`getScaledHeight`](/api/classes/interactivefabricobject/#getscaledheight)
-
 #### Todo
 
 shouldn't this account for group transform and return the actual size in canvas coordinate plane?
+
+#### Inherited from
+
+[`InteractiveFabricObject`](/api/classes/interactivefabricobject/).[`getScaledHeight`](/api/classes/interactivefabricobject/#getscaledheight)
 
 #### Defined in
 
@@ -3349,13 +3349,13 @@ Returns width of an object's bounding box counting transformations
 
 width value
 
-#### Inherited from
-
-[`InteractiveFabricObject`](/api/classes/interactivefabricobject/).[`getScaledWidth`](/api/classes/interactivefabricobject/#getscaledwidth)
-
 #### Todo
 
 shouldn't this account for group transform and return the actual size in canvas coordinate plane?
+
+#### Inherited from
+
+[`InteractiveFabricObject`](/api/classes/interactivefabricobject/).[`getScaledWidth`](/api/classes/interactivefabricobject/#getscaledwidth)
 
 #### Defined in
 
@@ -3632,13 +3632,13 @@ some use case where the fill is invisible.
 
 Boolean
 
-#### Inherited from
-
-[`InteractiveFabricObject`](/api/classes/interactivefabricobject/).[`hasFill`](/api/classes/interactivefabricobject/#hasfill)
-
 #### Since
 
 3.0.0
+
+#### Inherited from
+
+[`InteractiveFabricObject`](/api/classes/interactivefabricobject/).[`hasFill`](/api/classes/interactivefabricobject/#hasfill)
 
 #### Defined in
 
@@ -3663,13 +3663,13 @@ some use case where the stroke is invisible.
 
 Boolean
 
-#### Inherited from
-
-[`InteractiveFabricObject`](/api/classes/interactivefabricobject/).[`hasStroke`](/api/classes/interactivefabricobject/#hasstroke)
-
 #### Since
 
 3.0.0
+
+#### Inherited from
+
+[`InteractiveFabricObject`](/api/classes/interactivefabricobject/).[`hasStroke`](/api/classes/interactivefabricobject/#hasstroke)
 
 #### Defined in
 
@@ -4177,13 +4177,13 @@ Function that receives a notification when an event of the specified type occurs
 
 disposer
 
-##### Inherited from
-
-[`InteractiveFabricObject`](/api/classes/interactivefabricobject/).[`on`](/api/classes/interactivefabricobject/#on)
-
 ##### Alias
 
 on
+
+##### Inherited from
+
+[`InteractiveFabricObject`](/api/classes/interactivefabricobject/).[`on`](/api/classes/interactivefabricobject/#on)
 
 ##### Defined in
 
@@ -4330,13 +4330,13 @@ Function that receives a notification when an event of the specified type occurs
 
 disposer
 
-##### Inherited from
-
-[`InteractiveFabricObject`](/api/classes/interactivefabricobject/).[`once`](/api/classes/interactivefabricobject/#once)
-
 ##### Alias
 
 once
+
+##### Inherited from
+
+[`InteractiveFabricObject`](/api/classes/interactivefabricobject/).[`once`](/api/classes/interactivefabricobject/#once)
 
 ##### Defined in
 
@@ -4623,13 +4623,13 @@ true to set the specified control visible, false otherwise
 
 `void`
 
-#### Inherited from
-
-[`InteractiveFabricObject`](/api/classes/interactivefabricobject/).[`setControlVisible`](/api/classes/interactivefabricobject/#setcontrolvisible)
-
 #### Todo
 
 discuss this overlap of priority here with the team. Andrea Bogazzi for details
+
+#### Inherited from
+
+[`InteractiveFabricObject`](/api/classes/interactivefabricobject/).[`setControlVisible`](/api/classes/interactivefabricobject/#setcontrolvisible)
 
 #### Defined in
 
@@ -4876,15 +4876,15 @@ Vertical origin: 'top', 'center' or 'bottom'
 
 `void`
 
-#### Inherited from
-
-[`InteractiveFabricObject`](/api/classes/interactivefabricobject/).[`setXY`](/api/classes/interactivefabricobject/#setxy)
-
 #### Example
 
 ```ts
 object.setXY(new Point(5, 5), 'left', 'bottom').
 ```
+
+#### Inherited from
+
+[`InteractiveFabricObject`](/api/classes/interactivefabricobject/).[`setXY`](/api/classes/interactivefabricobject/#setxy)
 
 #### Defined in
 

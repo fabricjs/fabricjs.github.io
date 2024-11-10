@@ -2712,15 +2712,15 @@ properties to override the object style
 
 `void`
 
+#### Todo
+
+move to interactivity
+
 #### Inherited from
 
 `createCollectionMixin(
     FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
   )._renderControls`
-
-#### Todo
-
-move to interactivity
 
 #### Defined in
 
@@ -2942,15 +2942,15 @@ As object — multiple properties
 object.animate({ left: ..., top: ... });
 object.animate({ left: ..., top: ... }, { duration: ... });
 
+#### Tutorial
+
+[http://fabricjs.com/fabric-intro-part-2#animation](http://fabricjs.com/fabric-intro-part-2#animation)
+
 #### Inherited from
 
 `createCollectionMixin(
     FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
   ).animate`
-
-#### Tutorial
-
-[http://fabricjs.com/fabric-intro-part-2#animation](http://fabricjs.com/fabric-intro-part-2#animation)
 
 #### Defined in
 
@@ -3182,15 +3182,15 @@ When true won't restore the context after clear, in order to draw something else
 canvas.contextTop that is either still transformed
 with the object transformMatrix, or restored to neutral transform
 
+#### Todo
+
+discuss swapping restoreManually with a renderCallback, but think of async issues
+
 #### Inherited from
 
 `createCollectionMixin(
     FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
   ).clearContextTop`
-
-#### Todo
-
-discuss swapping restoreManually with a renderCallback, but think of async issues
 
 #### Defined in
 
@@ -3249,15 +3249,15 @@ for clone as image, passed to toDataURL
 
 Object cloned as image.
 
+#### Todo
+
+fix the export type, it could not be Image but the type that getClass return for 'image'.
+
 #### Inherited from
 
 `createCollectionMixin(
     FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
   ).cloneAsImage`
-
-#### Todo
-
-fix the export type, it could not be Image but the type that getClass return for 'image'.
 
 #### Defined in
 
@@ -3636,17 +3636,17 @@ Context to draw on
 
 `void`
 
-#### Inherited from
-
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).drawSelectionBackground`
-
 #### Todo
 
 evaluate if make this disappear in favor of a pre-render hook for objects
 this was added by Andrea Bogazzi to make possible some feature for work reasons
 it seemed a good option, now is an edge case
+
+#### Inherited from
+
+`createCollectionMixin(
+    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
+  ).drawSelectionBackground`
 
 #### Defined in
 
@@ -4210,15 +4210,15 @@ Returns height of an object bounding box counting transformations
 
 height value
 
+#### Todo
+
+shouldn't this account for group transform and return the actual size in canvas coordinate plane?
+
 #### Inherited from
 
 `createCollectionMixin(
     FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
   ).getScaledHeight`
-
-#### Todo
-
-shouldn't this account for group transform and return the actual size in canvas coordinate plane?
 
 #### Defined in
 
@@ -4238,15 +4238,15 @@ Returns width of an object's bounding box counting transformations
 
 width value
 
+#### Todo
+
+shouldn't this account for group transform and return the actual size in canvas coordinate plane?
+
 #### Inherited from
 
 `createCollectionMixin(
     FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
   ).getScaledWidth`
-
-#### Todo
-
-shouldn't this account for group transform and return the actual size in canvas coordinate plane?
 
 #### Defined in
 
@@ -4537,15 +4537,15 @@ some use case where the fill is invisible.
 
 Boolean
 
+#### Since
+
+3.0.0
+
 #### Inherited from
 
 `createCollectionMixin(
     FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
   ).hasFill`
-
-#### Since
-
-3.0.0
 
 #### Defined in
 
@@ -4570,15 +4570,15 @@ some use case where the stroke is invisible.
 
 Boolean
 
+#### Since
+
+3.0.0
+
 #### Inherited from
 
 `createCollectionMixin(
     FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
   ).hasStroke`
-
-#### Since
-
-3.0.0
 
 #### Defined in
 
@@ -5256,15 +5256,15 @@ Function that receives a notification when an event of the specified type occurs
 
 disposer
 
+##### Alias
+
+on
+
 ##### Inherited from
 
 `createCollectionMixin(
     FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
   ).on`
-
-##### Alias
-
-on
 
 ##### Defined in
 
@@ -5419,15 +5419,15 @@ Function that receives a notification when an event of the specified type occurs
 
 disposer
 
+##### Alias
+
+once
+
 ##### Inherited from
 
 `createCollectionMixin(
     FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
   ).once`
-
-##### Alias
-
-once
 
 ##### Defined in
 
@@ -5849,15 +5849,15 @@ true to set the specified control visible, false otherwise
 
 `void`
 
+#### Todo
+
+discuss this overlap of priority here with the team. Andrea Bogazzi for details
+
 #### Inherited from
 
 `createCollectionMixin(
     FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
   ).setControlVisible`
-
-#### Todo
-
-discuss this overlap of priority here with the team. Andrea Bogazzi for details
 
 #### Defined in
 
@@ -6117,17 +6117,17 @@ Vertical origin: 'top', 'center' or 'bottom'
 
 `void`
 
-#### Inherited from
-
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).setXY`
-
 #### Example
 
 ```ts
 object.setXY(new Point(5, 5), 'left', 'bottom').
 ```
+
+#### Inherited from
+
+`createCollectionMixin(
+    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
+  ).setXY`
 
 #### Defined in
 

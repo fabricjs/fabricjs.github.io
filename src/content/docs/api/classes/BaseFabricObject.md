@@ -2091,13 +2091,13 @@ Returns height of an object bounding box counting transformations
 
 height value
 
-#### Inherited from
-
-`ObjectGeometry.getScaledHeight`
-
 #### Todo
 
 shouldn't this account for group transform and return the actual size in canvas coordinate plane?
+
+#### Inherited from
+
+`ObjectGeometry.getScaledHeight`
 
 #### Defined in
 
@@ -2117,13 +2117,13 @@ Returns width of an object's bounding box counting transformations
 
 width value
 
-#### Inherited from
-
-`ObjectGeometry.getScaledWidth`
-
 #### Todo
 
 shouldn't this account for group transform and return the actual size in canvas coordinate plane?
+
+#### Inherited from
+
+`ObjectGeometry.getScaledWidth`
 
 #### Defined in
 
@@ -2772,13 +2772,13 @@ Function that receives a notification when an event of the specified type occurs
 
 disposer
 
-##### Inherited from
-
-`ObjectGeometry.on`
-
 ##### Alias
 
 on
+
+##### Inherited from
+
+`ObjectGeometry.on`
 
 ##### Defined in
 
@@ -2836,13 +2836,13 @@ Function that receives a notification when an event of the specified type occurs
 
 disposer
 
-##### Inherited from
-
-`ObjectGeometry.once`
-
 ##### Alias
 
 once
+
+##### Inherited from
+
+`ObjectGeometry.once`
 
 ##### Defined in
 
@@ -3251,15 +3251,15 @@ Vertical origin: 'top', 'center' or 'bottom'
 
 `void`
 
-#### Inherited from
-
-`ObjectGeometry.setXY`
-
 #### Example
 
 ```ts
 object.setXY(new Point(5, 5), 'left', 'bottom').
 ```
+
+#### Inherited from
+
+`ObjectGeometry.setXY`
 
 #### Defined in
 

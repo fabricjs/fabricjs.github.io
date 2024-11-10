@@ -2520,13 +2520,13 @@ properties to override the object style
 
 `void`
 
-#### Inherited from
-
-[`FabricObject`](/api/classes/fabricobject/).[`_renderControls`](/api/classes/fabricobject/#_rendercontrols)
-
 #### Todo
 
 move to interactivity
+
+#### Inherited from
+
+[`FabricObject`](/api/classes/fabricobject/).[`_renderControls`](/api/classes/fabricobject/#_rendercontrols)
 
 #### Defined in
 
@@ -2705,13 +2705,13 @@ As object — multiple properties
 object.animate({ left: ..., top: ... });
 object.animate({ left: ..., top: ... }, { duration: ... });
 
-#### Inherited from
-
-[`FabricObject`](/api/classes/fabricobject/).[`animate`](/api/classes/fabricobject/#animate)
-
 #### Tutorial
 
 [http://fabricjs.com/fabric-intro-part-2#animation](http://fabricjs.com/fabric-intro-part-2#animation)
+
+#### Inherited from
+
+[`FabricObject`](/api/classes/fabricobject/).[`animate`](/api/classes/fabricobject/#animate)
 
 #### Defined in
 
@@ -2864,13 +2864,13 @@ When true won't restore the context after clear, in order to draw something else
 canvas.contextTop that is either still transformed
 with the object transformMatrix, or restored to neutral transform
 
-#### Inherited from
-
-[`FabricObject`](/api/classes/fabricobject/).[`clearContextTop`](/api/classes/fabricobject/#clearcontexttop)
-
 #### Todo
 
 discuss swapping restoreManually with a renderCallback, but think of async issues
+
+#### Inherited from
+
+[`FabricObject`](/api/classes/fabricobject/).[`clearContextTop`](/api/classes/fabricobject/#clearcontexttop)
 
 #### Defined in
 
@@ -2927,13 +2927,13 @@ for clone as image, passed to toDataURL
 
 Object cloned as image.
 
-#### Inherited from
-
-[`FabricObject`](/api/classes/fabricobject/).[`cloneAsImage`](/api/classes/fabricobject/#cloneasimage)
-
 #### Todo
 
 fix the export type, it could not be Image but the type that getClass return for 'image'.
+
+#### Inherited from
+
+[`FabricObject`](/api/classes/fabricobject/).[`cloneAsImage`](/api/classes/fabricobject/#cloneasimage)
 
 #### Defined in
 
@@ -3226,15 +3226,15 @@ Context to draw on
 
 `void`
 
-#### Inherited from
-
-[`FabricObject`](/api/classes/fabricobject/).[`drawSelectionBackground`](/api/classes/fabricobject/#drawselectionbackground)
-
 #### Todo
 
 evaluate if make this disappear in favor of a pre-render hook for objects
 this was added by Andrea Bogazzi to make possible some feature for work reasons
 it seemed a good option, now is an edge case
+
+#### Inherited from
+
+[`FabricObject`](/api/classes/fabricobject/).[`drawSelectionBackground`](/api/classes/fabricobject/#drawselectionbackground)
 
 #### Defined in
 
@@ -3649,13 +3649,13 @@ Returns height of an object bounding box counting transformations
 
 height value
 
-#### Inherited from
-
-[`FabricObject`](/api/classes/fabricobject/).[`getScaledHeight`](/api/classes/fabricobject/#getscaledheight)
-
 #### Todo
 
 shouldn't this account for group transform and return the actual size in canvas coordinate plane?
+
+#### Inherited from
+
+[`FabricObject`](/api/classes/fabricobject/).[`getScaledHeight`](/api/classes/fabricobject/#getscaledheight)
 
 #### Defined in
 
@@ -3675,13 +3675,13 @@ Returns width of an object's bounding box counting transformations
 
 width value
 
-#### Inherited from
-
-[`FabricObject`](/api/classes/fabricobject/).[`getScaledWidth`](/api/classes/fabricobject/#getscaledwidth)
-
 #### Todo
 
 shouldn't this account for group transform and return the actual size in canvas coordinate plane?
+
+#### Inherited from
+
+[`FabricObject`](/api/classes/fabricobject/).[`getScaledWidth`](/api/classes/fabricobject/#getscaledwidth)
 
 #### Defined in
 
@@ -3958,13 +3958,13 @@ some use case where the fill is invisible.
 
 Boolean
 
-#### Inherited from
-
-[`FabricObject`](/api/classes/fabricobject/).[`hasFill`](/api/classes/fabricobject/#hasfill)
-
 #### Since
 
 3.0.0
+
+#### Inherited from
+
+[`FabricObject`](/api/classes/fabricobject/).[`hasFill`](/api/classes/fabricobject/#hasfill)
 
 #### Defined in
 
@@ -3989,13 +3989,13 @@ some use case where the stroke is invisible.
 
 Boolean
 
-#### Inherited from
-
-[`FabricObject`](/api/classes/fabricobject/).[`hasStroke`](/api/classes/fabricobject/#hasstroke)
-
 #### Since
 
 3.0.0
+
+#### Inherited from
+
+[`FabricObject`](/api/classes/fabricobject/).[`hasStroke`](/api/classes/fabricobject/#hasstroke)
 
 #### Defined in
 
@@ -4503,13 +4503,13 @@ Function that receives a notification when an event of the specified type occurs
 
 disposer
 
-##### Inherited from
-
-[`FabricObject`](/api/classes/fabricobject/).[`on`](/api/classes/fabricobject/#on)
-
 ##### Alias
 
 on
+
+##### Inherited from
+
+[`FabricObject`](/api/classes/fabricobject/).[`on`](/api/classes/fabricobject/#on)
 
 ##### Defined in
 
@@ -4656,13 +4656,13 @@ Function that receives a notification when an event of the specified type occurs
 
 disposer
 
-##### Inherited from
-
-[`FabricObject`](/api/classes/fabricobject/).[`once`](/api/classes/fabricobject/#once)
-
 ##### Alias
 
 once
+
+##### Inherited from
+
+[`FabricObject`](/api/classes/fabricobject/).[`once`](/api/classes/fabricobject/#once)
 
 ##### Defined in
 
@@ -4949,13 +4949,13 @@ true to set the specified control visible, false otherwise
 
 `void`
 
-#### Inherited from
-
-[`FabricObject`](/api/classes/fabricobject/).[`setControlVisible`](/api/classes/fabricobject/#setcontrolvisible)
-
 #### Todo
 
 discuss this overlap of priority here with the team. Andrea Bogazzi for details
+
+#### Inherited from
+
+[`FabricObject`](/api/classes/fabricobject/).[`setControlVisible`](/api/classes/fabricobject/#setcontrolvisible)
 
 #### Defined in
 
@@ -5202,15 +5202,15 @@ Vertical origin: 'top', 'center' or 'bottom'
 
 `void`
 
-#### Inherited from
-
-[`FabricObject`](/api/classes/fabricobject/).[`setXY`](/api/classes/fabricobject/#setxy)
-
 #### Example
 
 ```ts
 object.setXY(new Point(5, 5), 'left', 'bottom').
 ```
+
+#### Inherited from
+
+[`FabricObject`](/api/classes/fabricobject/).[`setXY`](/api/classes/fabricobject/#setxy)
 
 #### Defined in
 

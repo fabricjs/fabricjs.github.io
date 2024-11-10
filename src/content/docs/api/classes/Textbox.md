@@ -3587,13 +3587,13 @@ properties to override the object style
 
 `void`
 
-#### Inherited from
-
-[`IText`](/api/classes/itext/).[`_renderControls`](/api/classes/itext/#_rendercontrols)
-
 #### Todo
 
 move to interactivity
+
+#### Inherited from
+
+[`IText`](/api/classes/itext/).[`_renderControls`](/api/classes/itext/#_rendercontrols)
 
 #### Defined in
 
@@ -3912,13 +3912,13 @@ As object — multiple properties
 object.animate({ left: ..., top: ... });
 object.animate({ left: ..., top: ... }, { duration: ... });
 
-#### Inherited from
-
-[`IText`](/api/classes/itext/).[`animate`](/api/classes/itext/#animate)
-
 #### Tutorial
 
 [http://fabricjs.com/fabric-intro-part-2#animation](http://fabricjs.com/fabric-intro-part-2#animation)
+
+#### Inherited from
+
+[`IText`](/api/classes/itext/).[`animate`](/api/classes/itext/#animate)
 
 #### Defined in
 
@@ -4140,13 +4140,13 @@ When true won't restore the context after clear, in order to draw something else
 canvas.contextTop that is either still transformed
 with the object transformMatrix, or restored to neutral transform
 
-#### Inherited from
-
-[`IText`](/api/classes/itext/).[`clearContextTop`](/api/classes/itext/#clearcontexttop)
-
 #### Todo
 
 discuss swapping restoreManually with a renderCallback, but think of async issues
+
+#### Inherited from
+
+[`IText`](/api/classes/itext/).[`clearContextTop`](/api/classes/itext/#clearcontexttop)
 
 #### Defined in
 
@@ -4203,13 +4203,13 @@ for clone as image, passed to toDataURL
 
 Object cloned as image.
 
-#### Inherited from
-
-[`IText`](/api/classes/itext/).[`cloneAsImage`](/api/classes/itext/#cloneasimage)
-
 #### Todo
 
 fix the export type, it could not be Image but the type that getClass return for 'image'.
+
+#### Inherited from
+
+[`IText`](/api/classes/itext/).[`cloneAsImage`](/api/classes/itext/#cloneasimage)
 
 #### Defined in
 
@@ -4546,15 +4546,15 @@ Context to draw on
 
 `void`
 
-#### Inherited from
-
-[`IText`](/api/classes/itext/).[`drawSelectionBackground`](/api/classes/itext/#drawselectionbackground)
-
 #### Todo
 
 evaluate if make this disappear in favor of a pre-render hook for objects
 this was added by Andrea Bogazzi to make possible some feature for work reasons
 it seemed a good option, now is an edge case
+
+#### Inherited from
+
+[`IText`](/api/classes/itext/).[`drawSelectionBackground`](/api/classes/itext/#drawselectionbackground)
 
 #### Defined in
 
@@ -5533,13 +5533,13 @@ Returns height of an object bounding box counting transformations
 
 height value
 
-#### Inherited from
-
-[`IText`](/api/classes/itext/).[`getScaledHeight`](/api/classes/itext/#getscaledheight)
-
 #### Todo
 
 shouldn't this account for group transform and return the actual size in canvas coordinate plane?
+
+#### Inherited from
+
+[`IText`](/api/classes/itext/).[`getScaledHeight`](/api/classes/itext/#getscaledheight)
 
 #### Defined in
 
@@ -5559,13 +5559,13 @@ Returns width of an object's bounding box counting transformations
 
 width value
 
-#### Inherited from
-
-[`IText`](/api/classes/itext/).[`getScaledWidth`](/api/classes/itext/#getscaledwidth)
-
 #### Todo
 
 shouldn't this account for group transform and return the actual size in canvas coordinate plane?
+
+#### Inherited from
+
+[`IText`](/api/classes/itext/).[`getScaledWidth`](/api/classes/itext/#getscaledwidth)
 
 #### Defined in
 
@@ -5966,15 +5966,15 @@ Override this method to customize grapheme splitting
 
 array of graphemes
 
-#### Inherited from
-
-[`IText`](/api/classes/itext/).[`graphemeSplit`](/api/classes/itext/#graphemesplit)
-
 #### Todo
 
 the util `graphemeSplit` needs to be injectable in some way.
 is more comfortable to inject the correct util rather than having to override text
 in the middle of the prototype chain
+
+#### Inherited from
+
+[`IText`](/api/classes/itext/).[`graphemeSplit`](/api/classes/itext/#graphemesplit)
 
 #### Defined in
 
@@ -6063,13 +6063,13 @@ some use case where the fill is invisible.
 
 Boolean
 
-#### Inherited from
-
-[`IText`](/api/classes/itext/).[`hasFill`](/api/classes/itext/#hasfill)
-
 #### Since
 
 3.0.0
+
+#### Inherited from
+
+[`IText`](/api/classes/itext/).[`hasFill`](/api/classes/itext/#hasfill)
 
 #### Defined in
 
@@ -6094,13 +6094,13 @@ some use case where the stroke is invisible.
 
 Boolean
 
-#### Inherited from
-
-[`IText`](/api/classes/itext/).[`hasStroke`](/api/classes/itext/#hasstroke)
-
 #### Since
 
 3.0.0
+
+#### Inherited from
+
+[`IText`](/api/classes/itext/).[`hasStroke`](/api/classes/itext/#hasstroke)
 
 #### Defined in
 
@@ -7215,13 +7215,13 @@ Function that receives a notification when an event of the specified type occurs
 
 disposer
 
-##### Inherited from
-
-[`IText`](/api/classes/itext/).[`on`](/api/classes/itext/#on)
-
 ##### Alias
 
 on
+
+##### Inherited from
+
+[`IText`](/api/classes/itext/).[`on`](/api/classes/itext/#on)
 
 ##### Defined in
 
@@ -7361,14 +7361,14 @@ override this method to control whether instance should/shouldn't become a drag 
 
 should handle event
 
-#### Inherited from
-
-[`IText`](/api/classes/itext/).[`onDragStart`](/api/classes/itext/#ondragstart)
-
 #### See
 
 also DraggableTextDelegate#isActive
 To prevent drag and drop between objects both shouldStartDragging and onDragStart should return false
+
+#### Inherited from
+
+[`IText`](/api/classes/itext/).[`onDragStart`](/api/classes/itext/#ondragstart)
 
 #### Defined in
 
@@ -7520,13 +7520,13 @@ Function that receives a notification when an event of the specified type occurs
 
 disposer
 
-##### Inherited from
-
-[`IText`](/api/classes/itext/).[`once`](/api/classes/itext/#once)
-
 ##### Alias
 
 once
+
+##### Inherited from
+
+[`IText`](/api/classes/itext/).[`once`](/api/classes/itext/#once)
 
 ##### Defined in
 
@@ -8118,13 +8118,13 @@ true to set the specified control visible, false otherwise
 
 `void`
 
-#### Inherited from
-
-[`IText`](/api/classes/itext/).[`setControlVisible`](/api/classes/itext/#setcontrolvisible)
-
 #### Todo
 
 discuss this overlap of priority here with the team. Andrea Bogazzi for details
+
+#### Inherited from
+
+[`IText`](/api/classes/itext/).[`setControlVisible`](/api/classes/itext/#setcontrolvisible)
 
 #### Defined in
 
@@ -8593,15 +8593,15 @@ Vertical origin: 'top', 'center' or 'bottom'
 
 `void`
 
-#### Inherited from
-
-[`IText`](/api/classes/itext/).[`setXY`](/api/classes/itext/#setxy)
-
 #### Example
 
 ```ts
 object.setXY(new Point(5, 5), 'left', 'bottom').
 ```
+
+#### Inherited from
+
+[`IText`](/api/classes/itext/).[`setXY`](/api/classes/itext/#setxy)
 
 #### Defined in
 
@@ -8781,13 +8781,13 @@ block cursor/selection logic while rendering the exported canvas
 
 `HTMLCanvasElement`
 
-#### Inherited from
-
-[`IText`](/api/classes/itext/).[`toCanvasElement`](/api/classes/itext/#tocanvaselement)
-
 #### Todo
 
 this workaround should be replaced with a more robust solution
+
+#### Inherited from
+
+[`IText`](/api/classes/itext/).[`toCanvasElement`](/api/classes/itext/#tocanvaselement)
 
 #### Defined in
 
@@ -8927,13 +8927,13 @@ Any properties that you might want to additionally include in the output
 
 object representation of an instance
 
-#### Overrides
-
-[`IText`](/api/classes/itext/).[`toObject`](/api/classes/itext/#toobject)
-
 #### Method
 
 toObject
+
+#### Overrides
+
+[`IText`](/api/classes/itext/).[`toObject`](/api/classes/itext/#toobject)
 
 #### Defined in
 
@@ -9349,15 +9349,15 @@ Options object
 
 `Promise`\<[`FabricText`](/api/classes/fabrictext/)\<`object`, [`SerializedTextProps`](/api/interfaces/serializedtextprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>\>
 
-#### Inherited from
-
-[`IText`](/api/classes/itext/).[`fromElement`](/api/classes/itext/#fromelement)
-
 #### Static
 
 #### Member Of
 
 Text
+
+#### Inherited from
+
+[`IText`](/api/classes/itext/).[`fromElement`](/api/classes/itext/#fromelement)
 
 #### Defined in
 

@@ -2859,13 +2859,13 @@ properties to override the object style
 
 `void`
 
-#### Inherited from
-
-`StyledText._renderControls`
-
 #### Todo
 
 move to interactivity
+
+#### Inherited from
+
+`StyledText._renderControls`
 
 #### Defined in
 
@@ -3100,13 +3100,13 @@ As object — multiple properties
 object.animate({ left: ..., top: ... });
 object.animate({ left: ..., top: ... }, { duration: ... });
 
-#### Inherited from
-
-`StyledText.animate`
-
 #### Tutorial
 
 [http://fabricjs.com/fabric-intro-part-2#animation](http://fabricjs.com/fabric-intro-part-2#animation)
+
+#### Inherited from
+
+`StyledText.animate`
 
 #### Defined in
 
@@ -3306,13 +3306,13 @@ When true won't restore the context after clear, in order to draw something else
 canvas.contextTop that is either still transformed
 with the object transformMatrix, or restored to neutral transform
 
-#### Inherited from
-
-`StyledText.clearContextTop`
-
 #### Todo
 
 discuss swapping restoreManually with a renderCallback, but think of async issues
+
+#### Inherited from
+
+`StyledText.clearContextTop`
 
 #### Defined in
 
@@ -3369,13 +3369,13 @@ for clone as image, passed to toDataURL
 
 Object cloned as image.
 
-#### Inherited from
-
-`StyledText.cloneAsImage`
-
 #### Todo
 
 fix the export type, it could not be Image but the type that getClass return for 'image'.
+
+#### Inherited from
+
+`StyledText.cloneAsImage`
 
 #### Defined in
 
@@ -3668,15 +3668,15 @@ Context to draw on
 
 `void`
 
-#### Inherited from
-
-`StyledText.drawSelectionBackground`
-
 #### Todo
 
 evaluate if make this disappear in favor of a pre-render hook for objects
 this was added by Andrea Bogazzi to make possible some feature for work reasons
 it seemed a good option, now is an edge case
+
+#### Inherited from
+
+`StyledText.drawSelectionBackground`
 
 #### Defined in
 
@@ -4226,13 +4226,13 @@ Returns height of an object bounding box counting transformations
 
 height value
 
-#### Inherited from
-
-`StyledText.getScaledHeight`
-
 #### Todo
 
 shouldn't this account for group transform and return the actual size in canvas coordinate plane?
+
+#### Inherited from
+
+`StyledText.getScaledHeight`
 
 #### Defined in
 
@@ -4252,13 +4252,13 @@ Returns width of an object's bounding box counting transformations
 
 width value
 
-#### Inherited from
-
-`StyledText.getScaledWidth`
-
 #### Todo
 
 shouldn't this account for group transform and return the actual size in canvas coordinate plane?
+
+#### Inherited from
+
+`StyledText.getScaledWidth`
 
 #### Defined in
 
@@ -4669,13 +4669,13 @@ some use case where the fill is invisible.
 
 Boolean
 
-#### Inherited from
-
-`StyledText.hasFill`
-
 #### Since
 
 3.0.0
+
+#### Inherited from
+
+`StyledText.hasFill`
 
 #### Defined in
 
@@ -4700,13 +4700,13 @@ some use case where the stroke is invisible.
 
 Boolean
 
-#### Inherited from
-
-`StyledText.hasStroke`
-
 #### Since
 
 3.0.0
+
+#### Inherited from
+
+`StyledText.hasStroke`
 
 #### Defined in
 
@@ -5335,13 +5335,13 @@ Function that receives a notification when an event of the specified type occurs
 
 disposer
 
-##### Inherited from
-
-`StyledText.on`
-
 ##### Alias
 
 on
+
+##### Inherited from
+
+`StyledText.on`
 
 ##### Defined in
 
@@ -5488,13 +5488,13 @@ Function that receives a notification when an event of the specified type occurs
 
 disposer
 
-##### Inherited from
-
-`StyledText.once`
-
 ##### Alias
 
 once
+
+##### Inherited from
+
+`StyledText.once`
 
 ##### Defined in
 
@@ -5807,13 +5807,13 @@ true to set the specified control visible, false otherwise
 
 `void`
 
-#### Inherited from
-
-`StyledText.setControlVisible`
-
 #### Todo
 
 discuss this overlap of priority here with the team. Andrea Bogazzi for details
+
+#### Inherited from
+
+`StyledText.setControlVisible`
 
 #### Defined in
 
@@ -6163,15 +6163,15 @@ Vertical origin: 'top', 'center' or 'bottom'
 
 `void`
 
-#### Inherited from
-
-`StyledText.setXY`
-
 #### Example
 
 ```ts
 object.setXY(new Point(5, 5), 'left', 'bottom').
 ```
+
+#### Inherited from
+
+`StyledText.setXY`
 
 #### Defined in
 

@@ -2436,13 +2436,13 @@ As object — multiple properties
 object.animate({ left: ..., top: ... });
 object.animate({ left: ..., top: ... }, { duration: ... });
 
-#### Inherited from
-
-[`BaseFabricObject`](/api/classes/basefabricobject/).[`animate`](/api/classes/basefabricobject/#animate)
-
 #### Tutorial
 
 [http://fabricjs.com/fabric-intro-part-2#animation](http://fabricjs.com/fabric-intro-part-2#animation)
+
+#### Inherited from
+
+[`BaseFabricObject`](/api/classes/basefabricobject/).[`animate`](/api/classes/basefabricobject/#animate)
 
 #### Defined in
 
@@ -2646,13 +2646,13 @@ for clone as image, passed to toDataURL
 
 Object cloned as image.
 
-#### Inherited from
-
-[`BaseFabricObject`](/api/classes/basefabricobject/).[`cloneAsImage`](/api/classes/basefabricobject/#cloneasimage)
-
 #### Todo
 
 fix the export type, it could not be Image but the type that getClass return for 'image'.
+
+#### Inherited from
+
+[`BaseFabricObject`](/api/classes/basefabricobject/).[`cloneAsImage`](/api/classes/basefabricobject/#cloneasimage)
 
 #### Defined in
 
@@ -2933,15 +2933,15 @@ Context to draw on
 
 `void`
 
-#### Overrides
-
-[`BaseFabricObject`](/api/classes/basefabricobject/).[`drawSelectionBackground`](/api/classes/basefabricobject/#drawselectionbackground)
-
 #### Todo
 
 evaluate if make this disappear in favor of a pre-render hook for objects
 this was added by Andrea Bogazzi to make possible some feature for work reasons
 it seemed a good option, now is an edge case
+
+#### Overrides
+
+[`BaseFabricObject`](/api/classes/basefabricobject/).[`drawSelectionBackground`](/api/classes/basefabricobject/#drawselectionbackground)
 
 #### Defined in
 
@@ -3348,13 +3348,13 @@ Returns height of an object bounding box counting transformations
 
 height value
 
-#### Inherited from
-
-[`BaseFabricObject`](/api/classes/basefabricobject/).[`getScaledHeight`](/api/classes/basefabricobject/#getscaledheight)
-
 #### Todo
 
 shouldn't this account for group transform and return the actual size in canvas coordinate plane?
+
+#### Inherited from
+
+[`BaseFabricObject`](/api/classes/basefabricobject/).[`getScaledHeight`](/api/classes/basefabricobject/#getscaledheight)
 
 #### Defined in
 
@@ -3374,13 +3374,13 @@ Returns width of an object's bounding box counting transformations
 
 width value
 
-#### Inherited from
-
-[`BaseFabricObject`](/api/classes/basefabricobject/).[`getScaledWidth`](/api/classes/basefabricobject/#getscaledwidth)
-
 #### Todo
 
 shouldn't this account for group transform and return the actual size in canvas coordinate plane?
+
+#### Inherited from
+
+[`BaseFabricObject`](/api/classes/basefabricobject/).[`getScaledWidth`](/api/classes/basefabricobject/#getscaledwidth)
 
 #### Defined in
 
@@ -3553,13 +3553,13 @@ some use case where the fill is invisible.
 
 Boolean
 
-#### Inherited from
-
-[`BaseFabricObject`](/api/classes/basefabricobject/).[`hasFill`](/api/classes/basefabricobject/#hasfill)
-
 #### Since
 
 3.0.0
+
+#### Inherited from
+
+[`BaseFabricObject`](/api/classes/basefabricobject/).[`hasFill`](/api/classes/basefabricobject/#hasfill)
 
 #### Defined in
 
@@ -3584,13 +3584,13 @@ some use case where the stroke is invisible.
 
 Boolean
 
-#### Inherited from
-
-[`BaseFabricObject`](/api/classes/basefabricobject/).[`hasStroke`](/api/classes/basefabricobject/#hasstroke)
-
 #### Since
 
 3.0.0
+
+#### Inherited from
+
+[`BaseFabricObject`](/api/classes/basefabricobject/).[`hasStroke`](/api/classes/basefabricobject/#hasstroke)
 
 #### Defined in
 
@@ -4094,13 +4094,13 @@ Function that receives a notification when an event of the specified type occurs
 
 disposer
 
-##### Inherited from
-
-[`BaseFabricObject`](/api/classes/basefabricobject/).[`on`](/api/classes/basefabricobject/#on)
-
 ##### Alias
 
 on
+
+##### Inherited from
+
+[`BaseFabricObject`](/api/classes/basefabricobject/).[`on`](/api/classes/basefabricobject/#on)
 
 ##### Defined in
 
@@ -4235,13 +4235,13 @@ Function that receives a notification when an event of the specified type occurs
 
 disposer
 
-##### Inherited from
-
-[`BaseFabricObject`](/api/classes/basefabricobject/).[`once`](/api/classes/basefabricobject/#once)
-
 ##### Alias
 
 once
+
+##### Inherited from
+
+[`BaseFabricObject`](/api/classes/basefabricobject/).[`once`](/api/classes/basefabricobject/#once)
 
 ##### Defined in
 
@@ -4765,15 +4765,15 @@ Vertical origin: 'top', 'center' or 'bottom'
 
 `void`
 
-#### Inherited from
-
-[`BaseFabricObject`](/api/classes/basefabricobject/).[`setXY`](/api/classes/basefabricobject/#setxy)
-
 #### Example
 
 ```ts
 object.setXY(new Point(5, 5), 'left', 'bottom').
 ```
+
+#### Inherited from
+
+[`BaseFabricObject`](/api/classes/basefabricobject/).[`setXY`](/api/classes/basefabricobject/#setxy)
 
 #### Defined in
 

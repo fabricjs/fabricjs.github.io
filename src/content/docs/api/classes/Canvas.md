@@ -2427,13 +2427,13 @@ Waits until rendering has settled to destroy the canvas
 
 a promise resolving to `true` once the canvas has been destroyed or to `false` if the canvas has was already destroyed
 
-#### Inherited from
-
-`SelectableCanvas.dispose`
-
 #### Throws
 
 if aborted by a consequent call
+
+#### Inherited from
+
+`SelectableCanvas.dispose`
 
 #### Defined in
 
@@ -2930,10 +2930,6 @@ point existing in the scene (the same plane as the plane [FabricObject#getCenter
 This means that changes to the [viewportTransform](/api/api/classes/staticcanvas/viewporttransform/#viewporttransform) do not change the values of the point,
 however, from the viewer's perspective, the point is changed.
 
-#### Inherited from
-
-`SelectableCanvas.getScenePoint`
-
 #### Example
 
 ```ts
@@ -2942,6 +2938,10 @@ const viewportPoint = sendPointToPlane(
  canvas.viewportTransform
 );
 ```
+
+#### Inherited from
+
+`SelectableCanvas.getScenePoint`
 
 #### Defined in
 
@@ -2959,11 +2959,11 @@ Returns context of canvas where object selection is drawn
 
 `CanvasRenderingContext2D`
 
+#### Alias
+
 #### Inherited from
 
 `SelectableCanvas.getSelectionContext`
-
-#### Alias
 
 #### Defined in
 
@@ -3028,10 +3028,6 @@ point existing in the same plane as the HTMLCanvasElement,
 This means that changes to the [viewportTransform](/api/api/classes/staticcanvas/viewporttransform/#viewporttransform) do not change the values of the point
 and it remains unchanged from the viewer's perspective.
 
-#### Inherited from
-
-`SelectableCanvas.getViewportPoint`
-
 #### Example
 
 ```ts
@@ -3041,6 +3037,10 @@ const scenePoint = sendPointToPlane(
  canvas.viewportTransform
 );
 ```
+
+#### Inherited from
+
+`SelectableCanvas.getViewportPoint`
 
 #### Defined in
 
@@ -3189,14 +3189,14 @@ Top coordinate in viewport space
 
 `boolean`
 
-#### Inherited from
-
-`SelectableCanvas.isTargetTransparent`
-
 #### TODO
 
 this seems dumb that we treat controls with transparency. we can find controls
 programmatically without painting them, the cache canvas optimization is always valid
+
+#### Inherited from
+
+`SelectableCanvas.isTargetTransparent`
 
 #### Defined in
 
@@ -3259,10 +3259,6 @@ options
 
 instance
 
-#### Inherited from
-
-`SelectableCanvas.loadFromJSON`
-
 #### Tutorial
 
 [http://fabricjs.com/fabric-intro-part-3#deserialization](http://fabricjs.com/fabric-intro-part-3#deserialization)
@@ -3286,6 +3282,10 @@ canvas.loadFromJSON(json, function(o, object) {
   ... canvas is restored, add your code.
 });
 ```
+
+#### Inherited from
+
+`SelectableCanvas.loadFromJSON`
 
 #### Defined in
 
@@ -3467,13 +3467,13 @@ Function that receives a notification when an event of the specified type occurs
 
 disposer
 
-##### Inherited from
-
-`SelectableCanvas.on`
-
 ##### Alias
 
 on
+
+##### Inherited from
+
+`SelectableCanvas.on`
 
 ##### Defined in
 
@@ -3531,13 +3531,13 @@ Function that receives a notification when an event of the specified type occurs
 
 disposer
 
-##### Inherited from
-
-`SelectableCanvas.once`
-
 ##### Alias
 
 once
+
+##### Inherited from
+
+`SelectableCanvas.once`
 
 ##### Defined in
 
@@ -3745,13 +3745,13 @@ coordinates from viewport to check.
 
 **top most object on screen** that contains pointer
 
-#### Inherited from
-
-`SelectableCanvas.searchPossibleTargets`
-
 #### See
 
 _searchPossibleTargets
+
+#### Inherited from
+
+`SelectableCanvas.searchPossibleTargets`
 
 #### Defined in
 
@@ -3902,13 +3902,13 @@ Cursor type of the canvas element.
 
 `void`
 
-#### Inherited from
-
-`SelectableCanvas.setCursor`
-
 #### See
 
 http://www.w3.org/TR/css3-ui/#cursor
+
+#### Inherited from
+
+`SelectableCanvas.setCursor`
 
 #### Defined in
 
@@ -4271,10 +4271,6 @@ Options object
 
 Returns a data: URL containing a representation of the object in the format specified by options.format
 
-#### Inherited from
-
-`SelectableCanvas.toDataURL`
-
 #### See
 
 [demo](https://jsfiddle.net/xsjua1rd/)
@@ -4311,6 +4307,10 @@ var dataURL = canvas.toDataURL({
   filter: (object) => object.isContainedWithinObject(myObject) || object.intersectsWithObject(myObject)
 });
 ```
+
+#### Inherited from
+
+`SelectableCanvas.toDataURL`
 
 #### Defined in
 
@@ -4389,10 +4389,6 @@ Having a toJSON method means you can do JSON.stringify(myCanvas)
 
 JSON compatible object
 
-#### Inherited from
-
-`SelectableCanvas.toJSON`
-
 #### Tutorial
 
 [http://fabricjs.com/fabric-intro-part-3#serialization](http://fabricjs.com/fabric-intro-part-3#serialization)
@@ -4414,6 +4410,10 @@ var json = canvas.toJSON(['lockMovementX', 'lockMovementY', 'lockRotation', 'loc
 ```ts
 var json = canvas.toJSON();
 ```
+
+#### Inherited from
+
+`SelectableCanvas.toJSON`
 
 #### Defined in
 
@@ -4471,10 +4471,6 @@ Method for further parsing of svg elements, called after each fabric object conv
 
 SVG string
 
-#### Inherited from
-
-`SelectableCanvas.toSVG`
-
 #### Function
 
 #### Tutorial
@@ -4515,6 +4511,10 @@ var svg = canvas.toSVG(null, function(svg) {
   return svg.replace('stroke-dasharray: ; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; ', '');
 });
 ```
+
+#### Inherited from
+
+`SelectableCanvas.toSVG`
 
 #### Defined in
 

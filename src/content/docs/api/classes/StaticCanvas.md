@@ -1850,13 +1850,13 @@ Function that receives a notification when an event of the specified type occurs
 
 disposer
 
-##### Inherited from
-
-`createCollectionMixin(CommonMethods<CanvasEvents>).on`
-
 ##### Alias
 
 on
+
+##### Inherited from
+
+`createCollectionMixin(CommonMethods<CanvasEvents>).on`
 
 ##### Defined in
 
@@ -1914,13 +1914,13 @@ Function that receives a notification when an event of the specified type occurs
 
 disposer
 
-##### Inherited from
-
-`createCollectionMixin(CommonMethods<CanvasEvents>).once`
-
 ##### Alias
 
 once
+
+##### Inherited from
+
+`createCollectionMixin(CommonMethods<CanvasEvents>).once`
 
 ##### Defined in
 
