@@ -1,9 +1,15 @@
 .contributorCard {
   text-align: center;
-  width: 200px;
+  width: 47%;
 }
 
 .contributorCard img {
   border-radius: 50%;
   width: 90%;
+}
+
+@media (min-width: 400px) {
+  .contributorCard {
+    width: 200px;
+  }
 }
