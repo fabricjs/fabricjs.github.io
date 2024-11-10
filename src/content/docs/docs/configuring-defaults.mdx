@@ -46,6 +46,11 @@ Changing FontFamily on FabricObject will have no effect because FabricText has i
 As a thumb rule you should change your own defaults once as a way to configure FabricJS to adapt to your application needs.
 Configuring defaults instead of setting every option on every object instance is something that will reduce clutter in your code, but is not going to be faster or better from a performance point of view.
 
+There is a method called `getDefaults()` on the instances.
+This will return an object that shows you which are the defaults for that instance.
+
+This method is used on the `toObject` export to optionally avoid to export the default values to reduce the size of the output.
+
 ## A note on Prototype
 
 Differently from FabricJS version 5 and earlier, this won't affect already constructed instances.
@@ -53,6 +58,7 @@ Differently from FabricJS version 5 and earlier, this won't affect already const
 Javascript Classes syntax does not support properties on the Prototype that FabricJS was leveraging with Objects before.
 
 If you really like the old behaviour you can still switch to it by writing some code.
+
 Here is an example for FabricObject:
 
 ```ts
@@ -63,3 +69,6 @@ FabricObject.ownDefaults = {};
 ```
 
 Note that you really need some strong reason to do so.
+There are good points, like for example properties that are objects or arrays are not going to be duplicated per instance but shared across all of them.
+On the other side this will create unexpected mutation side effects that you may not want in your application.
+The default for fabricJS is on the safer side, with an eye to overridability.
