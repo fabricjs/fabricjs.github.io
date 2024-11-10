@@ -9,4 +9,4 @@ title: "config"
 
 ## Defined in
 
-[src/config.ts:160](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/config.ts#L160)
+[src/config.ts:164](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/config.ts#L164)

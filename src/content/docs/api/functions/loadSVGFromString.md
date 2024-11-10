@@ -35,4 +35,4 @@ fabric
 
 ## Defined in
 
-[src/parser/loadSVGFromString.ts:20](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/parser/loadSVGFromString.ts#L20)
+[src/parser/loadSVGFromString.ts:20](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/parser/loadSVGFromString.ts#L20)

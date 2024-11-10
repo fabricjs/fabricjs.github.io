@@ -9,4 +9,4 @@ title: "Kodachrome"
 
 ## Defined in
 
-[src/filters/ColorMatrixFilters.ts:43](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/ColorMatrixFilters.ts#L43)
+[src/filters/ColorMatrixFilters.ts:43](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/filters/ColorMatrixFilters.ts#L43)

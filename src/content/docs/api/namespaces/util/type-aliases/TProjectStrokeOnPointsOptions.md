@@ -49,4 +49,4 @@ https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/stroke-miterlimit
 
 ## Defined in
 
-[src/util/misc/projectStroke/types.ts:4](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/util/misc/projectStroke/types.ts#L4)
+[src/util/misc/projectStroke/types.ts:4](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/util/misc/projectStroke/types.ts#L4)

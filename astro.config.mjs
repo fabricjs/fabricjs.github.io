@@ -13,7 +13,7 @@ export default defineConfig({
       src: './src/assets/logo.svg',
     },
     components: {
-      Header: './src/components/Header/Header.astro',
+      Header: './src/components/Header/HeaderWithSearch.astro',
       PageTitle: './src/components/PageTitleDocs/PageTitle.astro',
     },
     sidebar: [
@@ -43,7 +43,6 @@ export default defineConfig({
           plugin: ['typedoc-plugin-no-inherit'],
           readme: 'none',
           gitRemote: 'https://github.com/fabricjs/fabric.js/blob',
-          gitRevision: 'v6.0.0-rc4',
           entryFileName: 'index.md',
           includeVersion: true,
           sourceLinkExternal: true,

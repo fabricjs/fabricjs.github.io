@@ -21,7 +21,7 @@ title: "DragEventData"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:194](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L194)
+[src/EventTypeDefs.ts:194](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/EventTypeDefs.ts#L194)
 
 ***
 
@@ -31,7 +31,7 @@ title: "DragEventData"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:195](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L195)
+[src/EventTypeDefs.ts:195](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/EventTypeDefs.ts#L195)
 
 ***
 
@@ -41,7 +41,7 @@ title: "DragEventData"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:193](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L193)
+[src/EventTypeDefs.ts:193](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/EventTypeDefs.ts#L193)
 
 ***
 
@@ -51,7 +51,7 @@ title: "DragEventData"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:196](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L196)
+[src/EventTypeDefs.ts:196](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/EventTypeDefs.ts#L196)
 
 ***
 
@@ -65,7 +65,7 @@ title: "DragEventData"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:96](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L96)
+[src/EventTypeDefs.ts:96](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/EventTypeDefs.ts#L96)
 
 ***
 
@@ -75,7 +75,7 @@ title: "DragEventData"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:192](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L192)
+[src/EventTypeDefs.ts:192](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/EventTypeDefs.ts#L192)
 
 ***
 
@@ -85,4 +85,4 @@ title: "DragEventData"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:191](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/EventTypeDefs.ts#L191)
+[src/EventTypeDefs.ts:191](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/EventTypeDefs.ts#L191)

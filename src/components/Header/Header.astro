@@ -2,6 +2,7 @@
     <a id="logo" href="/">
       <img alt="FabricJS logo" src="/logo.svg" />
     </a>
+    <slot />
     <nav>
       <ul>
         <li>
@@ -34,8 +35,10 @@
   </header>
 
   <style>
-    #site-header {
-    display: block;
+  #site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     font-size: 16px;
     line-height: 1;
     background: var(--sl-color-bg-nav);

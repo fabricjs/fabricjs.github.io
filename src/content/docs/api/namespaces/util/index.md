@@ -30,6 +30,7 @@ title: "util"
 - [TBaseAnimationOptions](/api/namespaces/util/type-aliases/tbaseanimationoptions/)
 - [TClosePathCommand](/api/namespaces/util/type-aliases/tclosepathcommand/)
 - [TComplexParsedCommand](/api/namespaces/util/type-aliases/tcomplexparsedcommand/)
+- [TComplexParsedCommandType](/api/namespaces/util/type-aliases/tcomplexparsedcommandtype/)
 - [TComplexPathData](/api/namespaces/util/type-aliases/tcomplexpathdata/)
 - [TComposeMatrixArgs](/api/namespaces/util/type-aliases/tcomposematrixargs/)
 - [TCubicCurveCommand](/api/namespaces/util/type-aliases/tcubiccurvecommand/)

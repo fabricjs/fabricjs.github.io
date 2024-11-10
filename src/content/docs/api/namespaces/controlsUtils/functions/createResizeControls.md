@@ -21,4 +21,4 @@ title: "createResizeControls"
 
 ## Defined in
 
-[src/controls/commonControls.ts:86](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/controls/commonControls.ts#L86)
+[src/controls/commonControls.ts:86](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/controls/commonControls.ts#L86)

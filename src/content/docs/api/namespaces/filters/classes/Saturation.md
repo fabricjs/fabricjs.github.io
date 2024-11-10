@@ -45,7 +45,7 @@ Options object
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:56](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/BaseFilter.ts#L56)
+[src/filters/BaseFilter.ts:56](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/filters/BaseFilter.ts#L56)
 
 ## Properties
 
@@ -67,7 +67,7 @@ A value of 0 has no effect.
 
 #### Defined in
 
-[src/filters/Saturation.ts:32](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/Saturation.ts#L32)
+[src/filters/Saturation.ts:32](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/filters/Saturation.ts#L32)
 
 ***
 
@@ -81,7 +81,7 @@ A value of 0 has no effect.
 
 #### Defined in
 
-[src/filters/Saturation.ts:36](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/Saturation.ts#L36)
+[src/filters/Saturation.ts:36](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/filters/Saturation.ts#L36)
 
 ***
 
@@ -101,7 +101,7 @@ to avoid doing that.
 
 #### Defined in
 
-[src/filters/Saturation.ts:34](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/Saturation.ts#L34)
+[src/filters/Saturation.ts:34](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/filters/Saturation.ts#L34)
 
 ***
 
@@ -119,7 +119,7 @@ needs to specify all the one that are needed
 
 #### Defined in
 
-[src/filters/Saturation.ts:38](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/Saturation.ts#L38)
+[src/filters/Saturation.ts:38](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/filters/Saturation.ts#L38)
 
 ## Accessors
 
@@ -145,7 +145,7 @@ Filter type
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:30](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/BaseFilter.ts#L30)
+[src/filters/BaseFilter.ts:30](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/filters/BaseFilter.ts#L30)
 
 ## Methods
 
@@ -167,7 +167,7 @@ Filter type
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:204](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/BaseFilter.ts#L204)
+[src/filters/BaseFilter.ts:204](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/filters/BaseFilter.ts#L204)
 
 ***
 
@@ -189,7 +189,7 @@ Filter type
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:231](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/BaseFilter.ts#L231)
+[src/filters/BaseFilter.ts:231](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/filters/BaseFilter.ts#L231)
 
 ***
 
@@ -215,7 +215,7 @@ Determines whether to use WebGL or Canvas2D based on the options.webgl flag.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:264](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/BaseFilter.ts#L264)
+[src/filters/BaseFilter.ts:264](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/filters/BaseFilter.ts#L264)
 
 ***
 
@@ -239,7 +239,7 @@ Apply the Saturation operation to a Uint8ClampedArray representing the pixels of
 
 #### Defined in
 
-[src/filters/Saturation.ts:50](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/Saturation.ts#L50)
+[src/filters/Saturation.ts:50](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/filters/Saturation.ts#L50)
 
 ***
 
@@ -263,7 +263,7 @@ Apply this filter using webgl.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:314](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/BaseFilter.ts#L314)
+[src/filters/BaseFilter.ts:314](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/filters/BaseFilter.ts#L314)
 
 ***
 
@@ -289,7 +289,7 @@ Apply this filter using webgl.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:333](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/BaseFilter.ts#L333)
+[src/filters/BaseFilter.ts:333](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/filters/BaseFilter.ts#L333)
 
 ***
 
@@ -314,7 +314,7 @@ remember that options.targetCanvas is available for use till end of chain.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:369](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/BaseFilter.ts#L369)
+[src/filters/BaseFilter.ts:369](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/filters/BaseFilter.ts#L369)
 
 ***
 
@@ -360,7 +360,7 @@ vertexShader source for compilation
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:82](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/BaseFilter.ts#L82)
+[src/filters/BaseFilter.ts:82](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/filters/BaseFilter.ts#L82)
 
 ***
 
@@ -392,7 +392,7 @@ A map of attribute names to attribute locations.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:152](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/BaseFilter.ts#L152)
+[src/filters/BaseFilter.ts:152](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/filters/BaseFilter.ts#L152)
 
 ***
 
@@ -413,7 +413,7 @@ Used to force recompilation when parameters change or to retrieve the shader fro
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:283](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/BaseFilter.ts#L283)
+[src/filters/BaseFilter.ts:283](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/filters/BaseFilter.ts#L283)
 
 ***
 
@@ -431,7 +431,7 @@ Used to force recompilation when parameters change or to retrieve the shader fro
 
 #### Defined in
 
-[src/filters/Saturation.ts:40](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/Saturation.ts#L40)
+[src/filters/Saturation.ts:40](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/filters/Saturation.ts#L40)
 
 ***
 
@@ -463,7 +463,7 @@ A map of uniform names to uniform locations.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:168](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/BaseFilter.ts#L168)
+[src/filters/BaseFilter.ts:168](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/filters/BaseFilter.ts#L168)
 
 ***
 
@@ -481,7 +481,7 @@ A map of uniform names to uniform locations.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:71](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/BaseFilter.ts#L71)
+[src/filters/BaseFilter.ts:71](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/filters/BaseFilter.ts#L71)
 
 ***
 
@@ -504,7 +504,7 @@ Other filters may need their own version ( ColorMatrix, HueRotation, gamma, Comp
 
 #### Defined in
 
-[src/filters/Saturation.ts:73](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/Saturation.ts#L73)
+[src/filters/Saturation.ts:73](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/filters/Saturation.ts#L73)
 
 ***
 
@@ -530,7 +530,7 @@ the compiled program shader
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:294](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/BaseFilter.ts#L294)
+[src/filters/BaseFilter.ts:294](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/filters/BaseFilter.ts#L294)
 
 ***
 
@@ -562,7 +562,7 @@ A map of shader attribute names to their locations.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:191](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/BaseFilter.ts#L191)
+[src/filters/BaseFilter.ts:191](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/filters/BaseFilter.ts#L191)
 
 ***
 
@@ -592,7 +592,7 @@ A map of string uniform names to WebGLUniformLocation objects
 
 #### Defined in
 
-[src/filters/Saturation.ts:66](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/Saturation.ts#L66)
+[src/filters/Saturation.ts:66](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/filters/Saturation.ts#L66)
 
 ***
 
@@ -614,7 +614,7 @@ JSON
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:402](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/BaseFilter.ts#L402)
+[src/filters/BaseFilter.ts:406](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/filters/BaseFilter.ts#L406)
 
 ***
 
@@ -623,6 +623,8 @@ JSON
 > **toObject**(): `object` & `SaturationOwnProps`
 
 Returns object representation of an instance
+It will automatically export the default values of a filter,
+stored in the static defaults property.
 
 #### Returns
 
@@ -636,7 +638,7 @@ Object representation of an instance
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:382](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/BaseFilter.ts#L382)
+[src/filters/BaseFilter.ts:386](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/filters/BaseFilter.ts#L386)
 
 ***
 
@@ -660,7 +662,7 @@ Object representation of an instance
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:344](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/BaseFilter.ts#L344)
+[src/filters/BaseFilter.ts:344](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/filters/BaseFilter.ts#L344)
 
 ***
 
@@ -684,4 +686,4 @@ Object representation of an instance
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:407](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/BaseFilter.ts#L407)
+[src/filters/BaseFilter.ts:411](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/filters/BaseFilter.ts#L411)

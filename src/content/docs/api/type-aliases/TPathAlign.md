@@ -9,4 +9,4 @@ title: "TPathAlign"
 
 ## Defined in
 
-[src/shapes/Text/Text.ts:67](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Text/Text.ts#L67)
+[src/shapes/Text/Text.ts:69](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/shapes/Text/Text.ts#L69)

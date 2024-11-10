@@ -31,4 +31,4 @@ fabric
 
 ## Defined in
 
-[src/parser/parseTransformAttribute.ts:39](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/parser/parseTransformAttribute.ts#L39)
+[src/parser/parseTransformAttribute.ts:39](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/parser/parseTransformAttribute.ts#L39)
