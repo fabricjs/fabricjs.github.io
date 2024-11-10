@@ -21,7 +21,7 @@
     "@types/react-dom": "^18.2.22",
     "astro": "^4.16.6",
     "codemirror": "^6.0.1",
-    "fabric": "^6.1.0",
+    "fabric": "^6.4.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",

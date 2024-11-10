@@ -1,0 +1,23 @@
+---
+date: '2024-07-01'
+title: 'Configuring defaults properties'
+description: ''
+sidebar:
+  order: 3
+---
+
+import { CodeEditor } from '../../../components/CodeEditor';
+import code1 from './configuring-controls/code1.js?raw';
+
+## Configuring default controls for objects
+
+If you are looking for configuring default controls please check this other page [Configuring controls](/docs/configuring-controls/).
+Every object in FabricJS ( rect, path, circle...) come with a serie of state properties that determine how the object looks like and some of the default interactive behaviours.
+
+You can configure those value when instantiating the object or you may want to set certain properties at project level and forget about them.
+There are a couple of common reasons why you would like to do that globally:
+- you decide you don't want use caching
+- you don't like the transparent 1px stroke around objects
+- you want all your text objects to start with a custom font
+- you may want to setup the project to work with originX and originY set on 'center' as suggested
+
