@@ -13,7 +13,7 @@ export default defineConfig({
       src: './src/assets/logo.svg',
     },
     components: {
-      Header: './src/components/Header/Header.astro',
+      Header: './src/components/Header/HeaderWithSearch.astro',
       PageTitle: './src/components/PageTitleDocs/PageTitle.astro',
     },
     sidebar: [
