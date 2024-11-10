@@ -1324,7 +1324,7 @@ a zoomed canvas will then produce zoomed SVG output.
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:953](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvas.ts#L953)
+[src/canvas/StaticCanvas.ts:954](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvas.ts#L954)
 
 ***
 
@@ -1645,7 +1645,7 @@ Event object fired on mouseup
 
 #### Defined in
 
-[src/canvas/Canvas.ts:1270](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/Canvas.ts#L1270)
+[src/canvas/Canvas.ts:1286](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/Canvas.ts#L1286)
 
 ***
 
@@ -1669,7 +1669,7 @@ Event object fired on mouseup
 
 #### Defined in
 
-[src/canvas/Canvas.ts:876](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/Canvas.ts#L876)
+[src/canvas/Canvas.ts:892](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/Canvas.ts#L892)
 
 ***
 
@@ -1829,7 +1829,7 @@ Object that the mouse is hovering, if so.
 
 #### Defined in
 
-[src/canvas/Canvas.ts:1328](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/Canvas.ts#L1328)
+[src/canvas/Canvas.ts:1344](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/Canvas.ts#L1344)
 
 ***
 
@@ -2063,7 +2063,7 @@ Object to center vertically and horizontally
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:755](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvas.ts#L755)
+[src/canvas/StaticCanvas.ts:756](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvas.ts#L756)
 
 ***
 
@@ -2087,7 +2087,7 @@ Centers object horizontally in the canvas
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:733](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvas.ts#L733)
+[src/canvas/StaticCanvas.ts:734](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvas.ts#L734)
 
 ***
 
@@ -2113,7 +2113,7 @@ Object to center vertically
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:744](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvas.ts#L744)
+[src/canvas/StaticCanvas.ts:745](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvas.ts#L745)
 
 ***
 
@@ -2133,7 +2133,7 @@ clear [textEditingManager](../../../../api/classes/canvas/#texteditingmanager)
 
 #### Defined in
 
-[src/canvas/Canvas.ts:1519](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/Canvas.ts#L1519)
+[src/canvas/Canvas.ts:1535](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/Canvas.ts#L1535)
 
 ***
 
@@ -2185,7 +2185,7 @@ Array of properties to include in the cloned canvas and children
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1326](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvas.ts#L1326)
+[src/canvas/StaticCanvas.ts:1327](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvas.ts#L1327)
 
 ***
 
@@ -2206,7 +2206,7 @@ This essentially copies canvas dimensions since loadFromJSON does not affect can
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1336](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvas.ts#L1336)
+[src/canvas/StaticCanvas.ts:1337](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvas.ts#L1337)
 
 ***
 
@@ -2320,7 +2320,7 @@ Object to check against
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1079](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvas.ts#L1079)
+[src/canvas/StaticCanvas.ts:1080](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvas.ts#L1080)
 
 ***
 
@@ -2342,7 +2342,7 @@ and are not extracted from the DOM by fabricjs
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1122](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvas.ts#L1122)
+[src/canvas/StaticCanvas.ts:1123](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvas.ts#L1123)
 
 ***
 
@@ -2362,7 +2362,7 @@ Creates markup containing SVG referenced elements like patterns, gradients etc.
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1094](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvas.ts#L1094)
+[src/canvas/StaticCanvas.ts:1095](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvas.ts#L1095)
 
 ***
 
@@ -2382,7 +2382,7 @@ clear [textEditingManager](../../../../api/classes/canvas/#texteditingmanager)
 
 #### Defined in
 
-[src/canvas/Canvas.ts:1527](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/Canvas.ts#L1527)
+[src/canvas/Canvas.ts:1543](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/Canvas.ts#L1543)
 
 ***
 
@@ -2465,7 +2465,7 @@ Context to render on
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:609](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvas.ts#L609)
+[src/canvas/StaticCanvas.ts:610](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvas.ts#L610)
 
 ***
 
@@ -2771,7 +2771,7 @@ object with "top" and "left" number values
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:715](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvas.ts#L715)
+[src/canvas/StaticCanvas.ts:716](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvas.ts#L716)
 
 ***
 
@@ -2791,7 +2791,7 @@ Returns coordinates of a center of canvas.
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:726](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvas.ts#L726)
+[src/canvas/StaticCanvas.ts:727](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvas.ts#L727)
 
 ***
 
@@ -3066,7 +3066,7 @@ vpCenter, viewport center
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:793](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvas.ts#L793)
+[src/canvas/StaticCanvas.ts:794](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvas.ts#L794)
 
 ***
 
@@ -3289,7 +3289,7 @@ canvas.loadFromJSON(json, function(o, object) {
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1275](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvas.ts#L1275)
+[src/canvas/StaticCanvas.ts:1276](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvas.ts#L1276)
 
 ***
 
@@ -3595,7 +3595,7 @@ Pans viewpoint relatively
 
 > **removeListeners**(): `void`
 
-Removes all event listeners
+Removes all event listeners, used when disposing the instance
 
 #### Returns
 
@@ -4249,7 +4249,7 @@ Cropping informations
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1412](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvas.ts#L1412)
+[src/canvas/StaticCanvas.ts:1411](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvas.ts#L1411)
 
 ***
 
@@ -4314,7 +4314,7 @@ var dataURL = canvas.toDataURL({
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1381](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvas.ts#L1381)
+[src/canvas/StaticCanvas.ts:1380](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvas.ts#L1380)
 
 ***
 
@@ -4342,7 +4342,7 @@ json string
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:816](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvas.ts#L816)
+[src/canvas/StaticCanvas.ts:817](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvas.ts#L817)
 
 ***
 
@@ -4370,7 +4370,7 @@ object representation of an instance
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:853](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvas.ts#L853)
+[src/canvas/StaticCanvas.ts:854](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvas.ts#L854)
 
 ***
 
@@ -4417,7 +4417,7 @@ var json = canvas.toJSON();
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:844](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvas.ts#L844)
+[src/canvas/StaticCanvas.ts:845](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvas.ts#L845)
 
 ***
 
@@ -4445,7 +4445,7 @@ object representation of an instance
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:825](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvas.ts#L825)
+[src/canvas/StaticCanvas.ts:826](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvas.ts#L826)
 
 ***
 
@@ -4518,7 +4518,7 @@ var svg = canvas.toSVG(null, function(svg) {
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:992](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvas.ts#L992)
+[src/canvas/StaticCanvas.ts:993](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvas.ts#L993)
 
 ***
 
@@ -4592,7 +4592,7 @@ Object to center vertically and horizontally
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:763](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvas.ts#L763)
+[src/canvas/StaticCanvas.ts:764](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvas.ts#L764)
 
 ***
 
@@ -4618,7 +4618,7 @@ Object to center vertically and horizontally
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:771](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvas.ts#L771)
+[src/canvas/StaticCanvas.ts:772](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvas.ts#L772)
 
 ***
 
@@ -4644,7 +4644,7 @@ Object to center vertically and horizontally
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:782](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvas.ts#L782)
+[src/canvas/StaticCanvas.ts:783](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvas.ts#L783)
 
 ***
 

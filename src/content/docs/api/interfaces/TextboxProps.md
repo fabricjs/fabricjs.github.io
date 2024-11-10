@@ -70,7 +70,7 @@ Angle of rotation of an object (in degrees)
 
 #### Defined in
 
-[src/shapes/Object/types/BaseProps.ts:57](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Object/types/BaseProps.ts#L57)
+[src/shapes/Object/types/BaseProps.ts:63](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Object/types/BaseProps.ts#L63)
 
 ***
 
@@ -267,7 +267,7 @@ when being scaled via the controls.
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:94](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Text/Text.ts#L94)
+[src/shapes/Text/Text.ts:96](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Text/Text.ts#L96)
 
 ***
 
@@ -428,7 +428,7 @@ This API is no longer supported and may be removed in a future release.
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:106](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Text/Text.ts#L106)
+[src/shapes/Text/Text.ts:108](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Text/Text.ts#L108)
 
 ***
 
@@ -559,7 +559,7 @@ false
 
 #### Defined in
 
-[src/shapes/Object/types/BaseProps.ts:64](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Object/types/BaseProps.ts#L64)
+[src/shapes/Object/types/BaseProps.ts:70](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Object/types/BaseProps.ts#L70)
 
 ***
 
@@ -581,7 +581,7 @@ false
 
 #### Defined in
 
-[src/shapes/Object/types/BaseProps.ts:71](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Object/types/BaseProps.ts#L71)
+[src/shapes/Object/types/BaseProps.ts:77](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Object/types/BaseProps.ts#L77)
 
 ***
 
@@ -595,7 +595,7 @@ false
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:98](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Text/Text.ts#L98)
+[src/shapes/Text/Text.ts:100](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Text/Text.ts#L100)
 
 ***
 
@@ -609,7 +609,7 @@ false
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:96](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Text/Text.ts#L96)
+[src/shapes/Text/Text.ts:98](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Text/Text.ts#L98)
 
 ***
 
@@ -623,7 +623,7 @@ false
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:99](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Text/Text.ts#L99)
+[src/shapes/Text/Text.ts:101](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Text/Text.ts#L101)
 
 ***
 
@@ -637,7 +637,7 @@ false
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:97](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Text/Text.ts#L97)
+[src/shapes/Text/Text.ts:99](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Text/Text.ts#L99)
 
 ***
 
@@ -831,7 +831,7 @@ You can change this by setting [originX](../../../../api/interfaces/fabricobject
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:95](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Text/Text.ts#L95)
+[src/shapes/Text/Text.ts:97](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Text/Text.ts#L97)
 
 ***
 
@@ -845,7 +845,7 @@ You can change this by setting [originX](../../../../api/interfaces/fabricobject
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:104](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Text/Text.ts#L104)
+[src/shapes/Text/Text.ts:106](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Text/Text.ts#L106)
 
 ***
 
@@ -1159,7 +1159,7 @@ Opacity of an object
 
 ***
 
-### originX
+### ~~originX~~
 
 > **originX**: [`TOriginX`](/api/type-aliases/toriginx/)
 
@@ -1172,17 +1172,23 @@ See http://jsfiddle.net/1ow02gea/244/ on how originX/originY affect objects in g
 'left'
 ```
 
+:::caution[Deprecated]
+please set your default to 'center' in new projects and don't use it to build logic
+The reason is explained here: https://github.com/fabricjs/fabric.js/discussions/9736
+To set the default value to 'center' import BaseFabricObject and set the static BaseFabricObject.ownDefaults.originX = 'center'
+:::
+
 #### Inherited from
 
 [`ITextProps`](/api/interfaces/itextprops/).[`originX`](/api/interfaces/itextprops/#originx)
 
 #### Defined in
 
-[src/shapes/Object/types/BaseProps.ts:42](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Object/types/BaseProps.ts#L42)
+[src/shapes/Object/types/BaseProps.ts:45](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Object/types/BaseProps.ts#L45)
 
 ***
 
-### originY
+### ~~originY~~
 
 > **originY**: [`TOriginY`](/api/type-aliases/toriginy/)
 
@@ -1195,13 +1201,19 @@ See http://jsfiddle.net/1ow02gea/244/ on how originX/originY affect objects in g
 'top'
 ```
 
+:::caution[Deprecated]
+please set your default to 'center' in new projects and don't use it to build logic
+The reason is explained here: https://github.com/fabricjs/fabric.js/discussions/9736
+To set the default value to 'center' import BaseFabricObject and set the static BaseFabricObject.ownDefaults.originY = 'center'
+:::
+
 #### Inherited from
 
 [`ITextProps`](/api/interfaces/itextprops/).[`originY`](/api/interfaces/itextprops/#originy)
 
 #### Defined in
 
-[src/shapes/Object/types/BaseProps.ts:50](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Object/types/BaseProps.ts#L50)
+[src/shapes/Object/types/BaseProps.ts:56](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Object/types/BaseProps.ts#L56)
 
 ***
 
@@ -1215,7 +1227,7 @@ See http://jsfiddle.net/1ow02gea/244/ on how originX/originY affect objects in g
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:103](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Text/Text.ts#L103)
+[src/shapes/Text/Text.ts:105](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Text/Text.ts#L105)
 
 ***
 
@@ -1273,7 +1285,7 @@ Determines if the fill or the stroke is drawn first (one of "fill" or "stroke")
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:107](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Text/Text.ts#L107)
+[src/shapes/Text/Text.ts:109](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Text/Text.ts#L109)
 
 ***
 
@@ -1287,7 +1299,7 @@ Determines if the fill or the stroke is drawn first (one of "fill" or "stroke")
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:101](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Text/Text.ts#L101)
+[src/shapes/Text/Text.ts:103](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Text/Text.ts#L103)
 
 ***
 
@@ -1301,7 +1313,7 @@ Determines if the fill or the stroke is drawn first (one of "fill" or "stroke")
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:100](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Text/Text.ts#L100)
+[src/shapes/Text/Text.ts:102](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Text/Text.ts#L102)
 
 ***
 
@@ -1345,7 +1357,7 @@ Object scale factor (horizontal)
 
 #### Defined in
 
-[src/shapes/Object/types/BaseProps.ts:78](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Object/types/BaseProps.ts#L78)
+[src/shapes/Object/types/BaseProps.ts:84](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Object/types/BaseProps.ts#L84)
 
 ***
 
@@ -1367,7 +1379,7 @@ Object scale factor (vertical)
 
 #### Defined in
 
-[src/shapes/Object/types/BaseProps.ts:85](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Object/types/BaseProps.ts#L85)
+[src/shapes/Object/types/BaseProps.ts:91](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Object/types/BaseProps.ts#L91)
 
 ***
 
@@ -1431,7 +1443,7 @@ This API is no longer supported and may be removed in a future release.
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:59](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/IText/IText.ts#L59)
+[src/shapes/IText/IText.ts:68](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/IText/IText.ts#L68)
 
 ***
 
@@ -1445,7 +1457,7 @@ This API is no longer supported and may be removed in a future release.
 
 #### Defined in
 
-[src/shapes/IText/IText.ts:58](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/IText/IText.ts#L58)
+[src/shapes/IText/IText.ts:67](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/IText/IText.ts#L67)
 
 ***
 
@@ -1489,7 +1501,7 @@ Angle of skew on x axes of an object (in degrees)
 
 #### Defined in
 
-[src/shapes/Object/types/BaseProps.ts:92](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Object/types/BaseProps.ts#L92)
+[src/shapes/Object/types/BaseProps.ts:98](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Object/types/BaseProps.ts#L98)
 
 ***
 
@@ -1511,7 +1523,7 @@ Angle of skew on y axes of an object (in degrees)
 
 #### Defined in
 
-[src/shapes/Object/types/BaseProps.ts:99](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Object/types/BaseProps.ts#L99)
+[src/shapes/Object/types/BaseProps.ts:105](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Object/types/BaseProps.ts#L105)
 
 ***
 
@@ -1762,7 +1774,7 @@ Width of a stroke used to render this object
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:117](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Text/Text.ts#L117)
+[src/shapes/Text/Text.ts:119](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Text/Text.ts#L119)
 
 ***
 
@@ -1776,7 +1788,7 @@ Width of a stroke used to render this object
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:105](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Text/Text.ts#L105)
+[src/shapes/Text/Text.ts:107](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Text/Text.ts#L107)
 
 ***
 
@@ -1858,7 +1870,7 @@ true
 
 #### Defined in
 
-[src/shapes/Text/Text.ts:102](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Text/Text.ts#L102)
+[src/shapes/Text/Text.ts:104](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/shapes/Text/Text.ts#L104)
 
 ***
 

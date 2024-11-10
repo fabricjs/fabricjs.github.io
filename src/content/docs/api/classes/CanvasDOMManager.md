@@ -39,7 +39,7 @@ here only for backward compatibility
 
 #### Defined in
 
-[src/canvas/DOMManagers/CanvasDOMManager.ts:18](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/DOMManagers/CanvasDOMManager.ts#L18)
+[src/canvas/DOMManagers/CanvasDOMManager.ts:15](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/DOMManagers/CanvasDOMManager.ts#L15)
 
 ## Properties
 
@@ -49,7 +49,7 @@ here only for backward compatibility
 
 #### Defined in
 
-[src/canvas/DOMManagers/CanvasDOMManager.ts:16](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/DOMManagers/CanvasDOMManager.ts#L16)
+[src/canvas/DOMManagers/CanvasDOMManager.ts:13](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/DOMManagers/CanvasDOMManager.ts#L13)
 
 ***
 
@@ -73,7 +73,7 @@ here only for backward compatibility
 
 #### Defined in
 
-[src/canvas/DOMManagers/CanvasDOMManager.ts:15](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/DOMManagers/CanvasDOMManager.ts#L15)
+[src/canvas/DOMManagers/CanvasDOMManager.ts:12](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/DOMManagers/CanvasDOMManager.ts#L12)
 
 ## Methods
 
@@ -123,7 +123,7 @@ Calculates canvas element offset relative to the document
 
 #### Defined in
 
-[src/canvas/DOMManagers/CanvasDOMManager.ts:104](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/DOMManagers/CanvasDOMManager.ts#L104)
+[src/canvas/DOMManagers/CanvasDOMManager.ts:108](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/DOMManagers/CanvasDOMManager.ts#L108)
 
 ***
 
@@ -141,7 +141,7 @@ Calculates canvas element offset relative to the document
 
 #### Defined in
 
-[src/canvas/DOMManagers/CanvasDOMManager.ts:116](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/DOMManagers/CanvasDOMManager.ts#L116)
+[src/canvas/DOMManagers/CanvasDOMManager.ts:120](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/DOMManagers/CanvasDOMManager.ts#L120)
 
 ***
 
@@ -163,7 +163,7 @@ Calculates canvas element offset relative to the document
 
 #### Defined in
 
-[src/canvas/DOMManagers/CanvasDOMManager.ts:98](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/DOMManagers/CanvasDOMManager.ts#L98)
+[src/canvas/DOMManagers/CanvasDOMManager.ts:102](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/DOMManagers/CanvasDOMManager.ts#L102)
 
 ***
 
@@ -187,4 +187,4 @@ Calculates canvas element offset relative to the document
 
 #### Defined in
 
-[src/canvas/DOMManagers/CanvasDOMManager.ts:92](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/DOMManagers/CanvasDOMManager.ts#L92)
+[src/canvas/DOMManagers/CanvasDOMManager.ts:96](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/DOMManagers/CanvasDOMManager.ts#L96)

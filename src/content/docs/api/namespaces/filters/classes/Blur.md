@@ -667,7 +667,7 @@ JSON
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:402](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/BaseFilter.ts#L402)
+[src/filters/BaseFilter.ts:406](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/BaseFilter.ts#L406)
 
 ***
 
@@ -676,6 +676,8 @@ JSON
 > **toObject**(): `object` & `BlurOwnProps`
 
 Returns object representation of an instance
+It will automatically export the default values of a filter,
+stored in the static defaults property.
 
 #### Returns
 
@@ -689,7 +691,7 @@ Object representation of an instance
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:382](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/BaseFilter.ts#L382)
+[src/filters/BaseFilter.ts:386](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/BaseFilter.ts#L386)
 
 ***
 
@@ -737,4 +739,4 @@ Object representation of an instance
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:407](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/BaseFilter.ts#L407)
+[src/filters/BaseFilter.ts:411](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/BaseFilter.ts#L411)

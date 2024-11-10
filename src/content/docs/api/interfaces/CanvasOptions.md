@@ -16,6 +16,9 @@ title: "CanvasOptions"
 > **allowTouchScrolling**: `boolean`
 
 Indicates whether the browser can be scrolled when using a touchscreen and dragging on the canvas
+It gives PRIORITY to DOM scrolling, it doesn't make it always possible.
+If is true, when using a touch event on the canvas, the canvas will scroll if scroll is possible.
+If we are in drawing mode or if we are selecting an object the canvas preventDefault and so it won't scroll
 
 #### Default
 
@@ -33,7 +36,7 @@ move to Canvas
 
 #### Defined in
 
-[src/canvas/StaticCanvasOptions.ts:160](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvasOptions.ts#L160)
+[src/canvas/StaticCanvasOptions.ts:163](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvasOptions.ts#L163)
 
 ***
 
@@ -1113,7 +1116,7 @@ canvas.viewportTransform = [0.7, 0, 0, 0.7, 50, 50];
 
 #### Defined in
 
-[src/canvas/StaticCanvasOptions.ts:171](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvasOptions.ts#L171)
+[src/canvas/StaticCanvasOptions.ts:174](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/canvas/StaticCanvasOptions.ts#L174)
 
 ***
 

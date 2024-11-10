@@ -111,6 +111,8 @@ title: "fabric"
 - [ControlActionHandler](/api/type-aliases/controlactionhandler/)
 - [ControlCallback](/api/type-aliases/controlcallback/)
 - [ControlCursorCallback](/api/type-aliases/controlcursorcallback/)
+- [CursorBoundaries](/api/type-aliases/cursorboundaries/)
+- [CursorRenderingData](/api/type-aliases/cursorrenderingdata/)
 - [GradientCoordValue](/api/type-aliases/gradientcoordvalue/)
 - [GradientCoords](/api/type-aliases/gradientcoords/)
 - [GradientOptions](/api/type-aliases/gradientoptions/)

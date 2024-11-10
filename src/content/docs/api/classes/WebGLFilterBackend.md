@@ -176,7 +176,7 @@ omitted, caching will be skipped.
 
 #### Defined in
 
-[src/filters/WebGLFilterBackend.ts:108](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/WebGLFilterBackend.ts#L108)
+[src/filters/WebGLFilterBackend.ts:106](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/WebGLFilterBackend.ts#L106)
 
 ***
 
@@ -196,7 +196,7 @@ A GPU info object with renderer and vendor strings.
 
 #### Defined in
 
-[src/filters/WebGLFilterBackend.ts:382](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/WebGLFilterBackend.ts#L382)
+[src/filters/WebGLFilterBackend.ts:380](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/WebGLFilterBackend.ts#L380)
 
 ***
 
@@ -212,7 +212,7 @@ Wipe out WebGL-related caches.
 
 #### Defined in
 
-[src/filters/WebGLFilterBackend.ts:197](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/WebGLFilterBackend.ts#L197)
+[src/filters/WebGLFilterBackend.ts:195](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/WebGLFilterBackend.ts#L195)
 
 ***
 
@@ -239,7 +239,7 @@ The 2D target canvas to copy on to.
 
 #### Defined in
 
-[src/filters/WebGLFilterBackend.ts:322](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/WebGLFilterBackend.ts#L322)
+[src/filters/WebGLFilterBackend.ts:320](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/WebGLFilterBackend.ts#L320)
 
 ***
 
@@ -266,7 +266,7 @@ The 2D target canvas to copy on to.
 
 #### Defined in
 
-[src/filters/WebGLFilterBackend.ts:354](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/WebGLFilterBackend.ts#L354)
+[src/filters/WebGLFilterBackend.ts:352](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/WebGLFilterBackend.ts#L352)
 
 ***
 
@@ -307,7 +307,7 @@ This filter is very useful for LUTs filters. If you need interpolation use gl.LI
 
 #### Defined in
 
-[src/filters/WebGLFilterBackend.ts:215](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/WebGLFilterBackend.ts#L215)
+[src/filters/WebGLFilterBackend.ts:213](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/WebGLFilterBackend.ts#L213)
 
 ***
 
@@ -346,7 +346,7 @@ Detach event listeners, remove references, and clean up caches.
 
 #### Defined in
 
-[src/filters/WebGLFilterBackend.ts:182](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/WebGLFilterBackend.ts#L182)
+[src/filters/WebGLFilterBackend.ts:180](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/WebGLFilterBackend.ts#L180)
 
 ***
 
@@ -369,7 +369,7 @@ The cache key provided when the source image was filtered.
 
 #### Defined in
 
-[src/filters/WebGLFilterBackend.ts:306](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/WebGLFilterBackend.ts#L306)
+[src/filters/WebGLFilterBackend.ts:304](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/WebGLFilterBackend.ts#L304)
 
 ***
 
@@ -400,7 +400,7 @@ texture cache entry if one does not already exist.
 
 #### Defined in
 
-[src/filters/WebGLFilterBackend.ts:275](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/WebGLFilterBackend.ts#L275)
+[src/filters/WebGLFilterBackend.ts:273](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/filters/WebGLFilterBackend.ts#L273)
 
 ***
 

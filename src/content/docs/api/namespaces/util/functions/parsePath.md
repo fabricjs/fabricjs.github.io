@@ -19,4 +19,4 @@ An array of SVG path commands
 
 ## Defined in
 
-[src/util/path/index.ts:845](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/util/path/index.ts#L845)
+[src/util/path/index.ts:857](https://github.com/fabricjs/fabric.js/blob/v6.0.0-rc4/src/util/path/index.ts#L857)
