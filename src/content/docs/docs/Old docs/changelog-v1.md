@@ -403,7 +403,7 @@ As of 1.6.2 is possible to use those configuration option to define which keys a
   
 
 `hoverCursor` now appears also on non selectable objects but `moveCursor` does not appear if the object can't be moved. In addition `moveCursor` is now customizable with the property `moveCursor`.  
-The biggest change is the possibility of cusomizing the look of controls. Both border and controls can be filled and stroked and can also have a dash-array instead of a continue line. Corners can be both square or round.  
+The biggest change is the possibility of customizing the look of controls. Both border and controls can be filled and stroked and can also have a dash-array instead of a continue line. Corners can be both square or round.  
 To control those feature you can use those new properties:
 
   borderDashArray: Dash stroke of borders
