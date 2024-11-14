@@ -103,7 +103,7 @@ By doing so it syncs the **visual** state.
 
 Keep in mind that rendering can be expensive and therefore can lead to a drop in performance.
 
-Rendering is performed in the parent plane, see [transformations](#transformations).
+Rendering is performed in the parent plane, see [transformations](/docs/understanding-fabricjs/transformations/).
 
 Objects need a reference to canvas for proper rendering (handled by fabric under the hood).
 
