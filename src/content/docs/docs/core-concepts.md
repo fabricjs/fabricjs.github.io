@@ -73,8 +73,8 @@ The `Control` API is designed especially for creating custom controls and custom
 
 ### Drawing & Brushes
 
-The drawing interaction is controlled by `Canvas#freeDrawingBrush` and `Canvas#isDrawingMode`.
-Once the interaction completes an object is created => listen to the `path:created` event for it.
+The drawing interaction is controlled by `Canvas.freeDrawingBrush` and `Canvas.isDrawingMode`.
+Once the interaction completes, an object is created. You can listen to the `path:created` event for it.
 
 Available brushes:
 
