@@ -22,4 +22,4 @@ TODO: figure out how to remove the type assertions in a nice way
 
 ## Defined in
 
-[src/util/path/index.ts:351](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/util/path/index.ts#L351)
+[src/util/path/index.ts:351](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/util/path/index.ts#L351)

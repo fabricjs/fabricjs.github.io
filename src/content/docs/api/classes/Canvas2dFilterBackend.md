@@ -29,7 +29,7 @@ cleared never. Clearing is left to the developer.
 
 #### Defined in
 
-[src/filters/Canvas2dFilterBackend.ts:15](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/filters/Canvas2dFilterBackend.ts#L15)
+[src/filters/Canvas2dFilterBackend.ts:15](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/Canvas2dFilterBackend.ts#L15)
 
 ## Methods
 
@@ -68,4 +68,4 @@ The destination for filtered output to be drawn.
 
 #### Defined in
 
-[src/filters/Canvas2dFilterBackend.ts:27](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/filters/Canvas2dFilterBackend.ts#L27)
+[src/filters/Canvas2dFilterBackend.ts:27](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/Canvas2dFilterBackend.ts#L27)
