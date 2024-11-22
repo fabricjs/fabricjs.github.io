@@ -1,0 +1,14 @@
+#companies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+#companies a {
+    max-width: 180px;
+}
+
+#companies a img {
+    max-width: 100%;
+}

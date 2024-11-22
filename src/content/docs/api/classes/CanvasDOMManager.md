@@ -39,7 +39,7 @@ here only for backward compatibility
 
 #### Defined in
 
-[src/canvas/DOMManagers/CanvasDOMManager.ts:15](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/canvas/DOMManagers/CanvasDOMManager.ts#L15)
+[src/canvas/DOMManagers/CanvasDOMManager.ts:15](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/canvas/DOMManagers/CanvasDOMManager.ts#L15)
 
 ## Properties
 
@@ -49,7 +49,7 @@ here only for backward compatibility
 
 #### Defined in
 
-[src/canvas/DOMManagers/CanvasDOMManager.ts:13](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/canvas/DOMManagers/CanvasDOMManager.ts#L13)
+[src/canvas/DOMManagers/CanvasDOMManager.ts:13](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/canvas/DOMManagers/CanvasDOMManager.ts#L13)
 
 ***
 
@@ -63,7 +63,7 @@ here only for backward compatibility
 
 #### Defined in
 
-[src/canvas/DOMManagers/StaticCanvasDOMManager.ts:22](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/canvas/DOMManagers/StaticCanvasDOMManager.ts#L22)
+[src/canvas/DOMManagers/StaticCanvasDOMManager.ts:22](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/canvas/DOMManagers/StaticCanvasDOMManager.ts#L22)
 
 ***
 
@@ -73,7 +73,7 @@ here only for backward compatibility
 
 #### Defined in
 
-[src/canvas/DOMManagers/CanvasDOMManager.ts:12](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/canvas/DOMManagers/CanvasDOMManager.ts#L12)
+[src/canvas/DOMManagers/CanvasDOMManager.ts:12](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/canvas/DOMManagers/CanvasDOMManager.ts#L12)
 
 ## Methods
 
@@ -101,7 +101,7 @@ Calculates canvas element offset relative to the document
 
 #### Defined in
 
-[src/canvas/DOMManagers/StaticCanvasDOMManager.ts:71](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/canvas/DOMManagers/StaticCanvasDOMManager.ts#L71)
+[src/canvas/DOMManagers/StaticCanvasDOMManager.ts:71](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/canvas/DOMManagers/StaticCanvasDOMManager.ts#L71)
 
 ***
 
@@ -123,7 +123,7 @@ Calculates canvas element offset relative to the document
 
 #### Defined in
 
-[src/canvas/DOMManagers/CanvasDOMManager.ts:108](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/canvas/DOMManagers/CanvasDOMManager.ts#L108)
+[src/canvas/DOMManagers/CanvasDOMManager.ts:108](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/canvas/DOMManagers/CanvasDOMManager.ts#L108)
 
 ***
 
@@ -141,7 +141,7 @@ Calculates canvas element offset relative to the document
 
 #### Defined in
 
-[src/canvas/DOMManagers/CanvasDOMManager.ts:120](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/canvas/DOMManagers/CanvasDOMManager.ts#L120)
+[src/canvas/DOMManagers/CanvasDOMManager.ts:120](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/canvas/DOMManagers/CanvasDOMManager.ts#L120)
 
 ***
 
@@ -163,7 +163,7 @@ Calculates canvas element offset relative to the document
 
 #### Defined in
 
-[src/canvas/DOMManagers/CanvasDOMManager.ts:102](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/canvas/DOMManagers/CanvasDOMManager.ts#L102)
+[src/canvas/DOMManagers/CanvasDOMManager.ts:102](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/canvas/DOMManagers/CanvasDOMManager.ts#L102)
 
 ***
 
@@ -187,4 +187,4 @@ Calculates canvas element offset relative to the document
 
 #### Defined in
 
-[src/canvas/DOMManagers/CanvasDOMManager.ts:96](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/canvas/DOMManagers/CanvasDOMManager.ts#L96)
+[src/canvas/DOMManagers/CanvasDOMManager.ts:96](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/canvas/DOMManagers/CanvasDOMManager.ts#L96)
