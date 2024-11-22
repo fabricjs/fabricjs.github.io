@@ -29,4 +29,4 @@ array of objects starting from the object that triggered the call to the current
 
 ## Defined in
 
-[src/LayoutManager/types.ts:74](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/LayoutManager/types.ts#L74)
+[src/LayoutManager/types.ts:74](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/LayoutManager/types.ts#L74)

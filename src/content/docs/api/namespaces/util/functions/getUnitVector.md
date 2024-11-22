@@ -19,4 +19,4 @@ vector representing the unit vector pointing to the direction of `v`
 
 ## Defined in
 
-[src/util/misc/vectors.ts:54](https://github.com/fabricjs/fabric.js/blob/5c1240d8b4662e45868dd33f385f941de21c8e9c/src/util/misc/vectors.ts#L54)
+[src/util/misc/vectors.ts:54](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/util/misc/vectors.ts#L54)
