@@ -2,6 +2,8 @@
 date: '2023-08-20'
 title: 'Core concepts'
 description: 'Core concepts'
+sidebar:
+  order: 300
 ---
 
 When working with FabricJS there are many classes and concepts you will have to learn to know.
@@ -114,5 +116,11 @@ Fabric supports `JSON` and `SVG` exports.
 
 ### JSON
 
-JSON export is meant for saving and restoring.
-Every fabricJS object 
+JSON export is meant for saving and restoring visual state on the canvas.
+Every fabricJS object is equipped with its own `toObject` method that will output a simple JS object that can be put in storage and used in pair with `fromObject` to get back an instance of the same type.
+This state is supposed to restore the visual state of the canvas and not functionalities like controls.
+FabricJS assumes that custom controls and custom handler are set up in your codebase as part of your app and are not part of your state.
+
+### SVG
+
+SVG export is meant to ouput your visual canvas to a vector format output that can be imported in other softwares or printed. SVG and Canvas share a lot of similarities but are not identical. As a result SVG import and SVG export are not 1:1. Some features are supported in SVG export but are not supported in SVG import for example like TSPAN or Patterns.
