@@ -3,7 +3,7 @@ date: '2015-03-10'
 title: 'Getting started'
 description: 'Getting started with FabricJS'
 sidebar:
-  order: 1
+  order: 100
 ---
 
 ## Installation

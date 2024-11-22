@@ -1,54 +1,58 @@
 ---
 date: '2023-08-20'
-title: 'Core Concepts'
-description: 'Core Concepts'
+title: 'Core concepts'
+description: 'Core concepts'
+sidebar:
+  order: 300
 ---
 
-# Core Concepts
+When working with FabricJS there are many classes and concepts you will have to learn to know.
+This is an overview of the main building blocks of FabricJS
 
-## State
+## Canvas
 
-State is comprised of 2 aspects. The **logical** state and the **visual** state.
-The **visual** state is our end game, what the user sees, whereas the **logical** state is what exists under the hood.
-The 2 are deeply intertwined. However, in many cases, looking at a problem with this concept in mind produces much simpler and performant solutions.
+The main container for FabricJS is the `StaticCavas` or the interactive version called simply `Canvas`.
+This is a class that provides you the surface where you will draw and will also provide the tools to:
 
-Caching and erasing are 2 examples that utilize this concept.
-
-_Cheating_ the user to think something is happening by showing a visual outcome (that may not correlate to the **logical** state) is sometimes the best way to solve a problem.
-
-Since we are dealing with 2 states there are cases they fall out of sync.
-Flagging an object as `dirty` will sync its visual state on the next render (invalidating its cache, if it is caching).
-
-```ts
-object.set({ dirty: true });
-```
-
-Syncing its **logical** state is needed for user interactions.
-
-```ts
-object.setCoords();
-```
+- Handle selections and object interactions
+- Reorder the stack of objects
+- Render imperatively
+- Serialize and Deserialize the state
+- Export the graphic state to JSON or SVG or an image
+- Handle the viewport of your current application
 
 ## Objects
 
-Objects are shapes with a lifecycle that supports both the **logical** and the **visual** states.
+Objects are the items we add on the Canvas or StaticCanvas.
+The prebuilt objects offer some basic shapes and Text.
+Each of these objects represent a visually different shape that can be added on the canvas and freely transformed or edited.
 
 - `Path`
 - `Polyline`, `Polygon`
 - `Rect`
 - `Circle`, `Ellipse`
-- `Image`
-- `Text`, `IText`, `Textbox`
+- `FabricImage`
+- `FabricText`, `IText`, `Textbox`
+
+### Patterns, Gradients and Shadows
+
+On top of classes to represent shape/objects there are smaller classes that are used to paint object fills or strokes.
+You can't add a `Gradient` or a `Shadow` to a canvas, you set those as properties of object to obtain determined effects
+
+### Image filters
+
+FabricImage class represent a raster image on the canvas.
+FabricImage can be filtered with one or more filters.
+Filters are small programs written in WEBGL ( with an optional JS fallback ) that change image pixel value to obtain certain effects.
+FabricJS supports numerous prebuilt fitlers for common operations and also a stack to combine more than one filter to build a particular effect.
 
 ## Interactions
 
-User interactions drive both **logical** and **visual** state changes.
-The standard fabric app is built mainly on interactions.
-As such there are many **events** to subscribe to in order to make it easier to achieve complex UX.
-
-```ts
-object.on('eventName', ...);
-```
+FabricJS offers some prebuilt interactions between the objects on the canvas
+- Selection
+- Dragging
+- Scaling, rotation, skewing through customizable controls
+- Brushing
 
 ### Selection
 
@@ -67,109 +71,56 @@ Fabric exposes the following controls:
 - rotating
 - resizing
 - skewing
-- translating action
 
-The `Control` API is designed especially for creating custom controls and customizing existing ones.
+The `Control` Class and the API is designed especially for creating custom controls and customizing existing ones either in appearances or functionalities. More on `Controls` [here](/docs/configuring-controls/)
 
 ### Drawing & Brushes
 
-The drawing interaction is controlled by `Canvas#freeDrawingBrush` and `Canvas#isDrawingMode`.
-Once the interaction completes an object is created => listen to the `path:created` event for it.
+The Canvas offer an embedded drawing mode in which the mouse move event is forwarded to a brush class that has the scope of creating an object that will represent your brush strokes. Brushing is based on the `Path` object or on a collection of circles/rect to represent a spray.
 
 Available brushes:
 
-- `CircleBrush`
-- `PatternBrush`
-- `PencilBrush`
-- `SprayBrush`
+- `CircleBrush` and `SprayBrush` ( a spray example )
+- `PencilBrush` ( a classic pencil )
+- `PatternBrush` ( a pencil brush filled up with a pattern )
 
-### Zoom, Pan & Viewport interactions
+## Events
 
-Fabric doesn't support these interaction out of the box.
-Check out the demo.
+Some interaction between the user of the application and the code written by the developer are handled through events.
+You will get an event every time a final user interact with the canvas through FabricJS embedded functionalities for low level events like:
 
-### Animations
+- mouse up/down/move
+- mouse wheel
+- mouse in/out
+- drag and drop
 
-Animations are another form of state change.
-It is possible to animate anything in fabric as long as you sync the state properly.
-Remember to cleanup after yourself by aborting running animations.
+While you will also get some high level event that is the end result of embedded user experience built on top of standard mouse events
 
-## Visual State
+- object selection created/destroyed/changed
+- object added to canvas/group
+- object remove from canvas/group
+- object created from brushing
 
-### Rendering
+## Animations
 
-Rendering is the process in which a canvas or an object redraws itself.
-By doing so it syncs the **visual** state.
+FabricJS also support some basic animation utility.
+You can use animation library that supports objects to work with fabricJS.
+You can animate object positions, transform properties like scale, colors or matrices.
+As long as you can change the state during time from a value to aother you can create an animation.
 
-Keep in mind that rendering can be expensive and therefore can lead to a drop in performance.
+FabricJS animation utility is barebone if you have some specific need for some specific animation effect you are better searching a specific library to do that.
 
-Rendering is performed in the parent plane, see [transformations](#transformations).
+## Exports
 
-Objects need a reference to canvas for proper rendering (handled by fabric under the hood).
+Fabric supports `JSON` and `SVG` exports.
 
-#### `renderAll` vs. `requestRenderAll`
+### JSON
 
-`renderAll` is sync, `requestRenderAll` is not, both render the canvas.
-`requestRenderAll` first request an animation frame before rendering.
-Calling `requestRenderAll` repeatedly will have no effect as long as rendering has not started.
+JSON export is meant for saving and restoring visual state on the canvas.
+Every fabricJS object is equipped with its own `toObject` method that will output a simple JS object that can be put in storage and used in pair with `fromObject` to get back an instance of the same type.
+This state is supposed to restore the visual state of the canvas and not functionalities like controls.
+FabricJS assumes that custom controls and custom handler are set up in your codebase as part of your app and are not part of your state.
 
-### Caching
+### SVG
 
-Caching means rendering an object onto a standalone canvas (called a cache). Then, when rendering occurs we can pull the cache and render it instead of redrawing the object.
-
-Caching is used for 2 reasons:
-
-- Performance\
-  We save on redrawing the object if its state did not change.
-
-- Context Isolation\
-  Performing complex rendering such as clipping, filtering, using `globalCompositeOperation` etc. need an isolated context to render on in order for the operation to remain isolated and not to affect the entire canvas, so we use the cache.
-
-## I/O
-
-Fabric supports `JSON` and `SVG` serialization.
-Take a look at:
-
-|            | In            | Out             |
-| ---------- | ------------- | --------------- |
-| **`JSON`** | `fromObject`  | `toObject`      |
-| **`SVG`**  | `fromElement` | `toSVG`         |
-| **`PDF`**  | `N/A`         | Use node canvas |
-
-Use the `classRegistry` to register your own classes for parsing.
-
-If you encounter issues with serialization try changing `NUM_FRACTION_DIGITS`.
-
-## Customization, Subclassing & Mutation
-
-```ts
-// subclass
-class MyRect extends Rect {
-
-    // override methods
-    ...
-
-    // override default values
-    getDefaults() {
-        return {
-            ...super.getDefaults(),
-            ...
-        }
-    }
-}
-// register subclass for I/O
-classRegistry.setClass(MyRect);
-
-// prototype mutation
-fabric.Object.prototype.someMethod = function() {
-    ...
-}
-
-// override default values
-fabric.Object.getDefaults = function() {
-    return {
-        ...
-    }
-}
-
-```
+SVG export is meant to ouput your visual canvas to a vector format output that can be imported in other softwares or printed. SVG and Canvas share a lot of similarities but are not identical. As a result SVG import and SVG export are not 1:1. Some features are supported in SVG export but are not supported in SVG import for example like TSPAN or Patterns.
