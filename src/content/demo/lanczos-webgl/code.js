@@ -26,7 +26,7 @@ var p = {
 	y: 0,
 };
 
-fabric.Image.fromURL('../assets/dragon.jpg').then((img) => {
+fabric.FabricImage.fromURL('../assets/dragon.jpg').then((img) => {
 	var r = canvas.getRetinaScaling();
     oImg = img;
     oImg.set({ left: 400, top: 250 })
@@ -34,7 +34,6 @@ fabric.Image.fromURL('../assets/dragon.jpg').then((img) => {
 	lanczosFilter.scaleX = lanczosFilter.scaleY = oImg.scaleX * r;
 	oImg.lockScalingFlip = true;
 	oImg.minScaleLimit = 0.025;
-	oImg.padding = 5;
 	oImg.filters = [lanczosFilter];
 	oImg.hoverCursor = 'crossHair';
     oImg.on('scaling', function(opt) {
