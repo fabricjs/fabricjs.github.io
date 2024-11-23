@@ -1,0 +1,5 @@
+.buttons {
+    display: flex;
+    margin-bottom: 16px;
+    column-gap: 16px;
+}
