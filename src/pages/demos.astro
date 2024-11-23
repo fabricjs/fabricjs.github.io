@@ -7,7 +7,7 @@ const collectionName = 'demo';
 const demoEntries = await getCollection(collectionName);
 const images = import.meta.glob<{ default: ImageMetadata }>('/src/content/demo/**/*.{jpeg,jpg,png,gif}');
 ---
-<Layout title="FabricJS Demos">
+<Layout title="FabricJS Demos" description="Simple features showcase">
     <main class="darkBg">
         <h1>FabricJS Demos</h1>
         <ThumbnailList>
