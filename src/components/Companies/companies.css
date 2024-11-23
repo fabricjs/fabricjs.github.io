@@ -5,10 +5,30 @@
     justify-items: center;
 }
 
+#companies #logos {
+    display: flex;
+    flex-direction: row;
+    column-gap: 16px;
+    align-items: center;
+}
+
 #companies a {
+    justify-content: space-around;
     max-width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#companies .imageContainer {
+    height: 180px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 #companies a img {
     max-width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
