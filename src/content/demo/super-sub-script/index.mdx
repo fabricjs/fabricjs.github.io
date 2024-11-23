@@ -1,0 +1,20 @@
+---
+date: '2018-03-03'
+title: 'Superscript and subscript'
+thumbnail: 'super-sub-script.png'
+tags: ['text', 'text styles']
+---
+
+import { CodeEditor } from '../../../components/CodeEditor';
+import code from './code?raw';
+import '../../../css/demo-common.css';
+
+<div class="controls">
+    <button id="super">Set superscript on selection</button>
+    <button id="sub">Set subscript on selection</button>
+    <button id="remove">Remove script informations</button>
+</div>
+
+<CodeEditor code={code} canvasId="c" client:idle>
+    <canvas id="c" width="500" height="500"></canvas>
+</CodeEditor>
