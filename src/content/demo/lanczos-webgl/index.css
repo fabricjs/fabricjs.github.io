@@ -1,0 +1,17 @@
+#log {
+	display: inline-block;
+	overflow-y: scroll;
+}
+
+.flexH {
+    display: flex;
+    column-gap: 16px;
+}
+
+.flexV {
+    display: flex;
+    flex-direction: column;
+    max-height: 800;
+    overflow-y: scroll;
+    row-gap: 16px;
+}
