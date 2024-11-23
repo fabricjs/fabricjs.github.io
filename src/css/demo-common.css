@@ -7,4 +7,5 @@
 
 canvas {
     border: 1px solid black;
+    box-sizing: content-box;
 }
