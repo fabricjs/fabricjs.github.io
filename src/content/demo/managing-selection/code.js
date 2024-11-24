@@ -26,7 +26,7 @@ function add() {
 
 const $ = (id) => document.getElementById(id);
 
-const canvas = new fabric.Canvas('canvas');
+const canvas = new fabric.Canvas(canvasEl);
 add();
 fabric.FabricObject.ownDefaults.transparentCorners = false;
   
