@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import * as fabric from 'fabric';
-import './textOnPath.css';
 
 export const TextOnPath = () => {
     
