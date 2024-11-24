@@ -98,6 +98,7 @@ if (window.location.protocol === 'https:') {
         webcam.getElement().play();
     }).catch(function getWebcamNotAllowed(e) {
         // block will be hit if user selects "no" for browser "allow webcam access" prompt
+        console.error(e);
         console.warn('webcam was not allowed')
     });
 }
