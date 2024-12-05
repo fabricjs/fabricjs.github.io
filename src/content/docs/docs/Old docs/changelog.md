@@ -387,29 +387,34 @@ Added <code>strokeUniform</code> property, that lets you scale objects without d
 Mostly svg fixes for this release, on input and output
 ```
 - Fix: Shift click and onSelect function #5348
-- Fix: Load from Json from images with filters and resize filters #5346```
+- Fix: Load from Json from images with filters and resize filters #5346
+```
 ### Version 2.5.0
 Mostly svg fixes for this release, on input and output
 ```
 - Fix: Shift click and onSelect function #5348
-- Fix: Load from Json from images with filters and resize filters #5346```
+- Fix: Load from Json from images with filters and resize filters #5346
+```
 ### Version 2.4.6
 Mostly svg fixes for this release, on input and output
 ```
 - Fix: Shift click and onSelect function #5348
-- Fix: Load from Json from images with filters and resize filters #5346```
+- Fix: Load from Json from images with filters and resize filters #5346
+```
 ### Version 2.4.5
 Mostly svg fixes for this release, on input and output
 ```
 - Fix: Shift click and onSelect function #5348
-- Fix: Load from Json from images with filters and resize filters #5346```
+- Fix: Load from Json from images with filters and resize filters #5346
+```
 ### Version 2.4.4
 ```
 - Fix: add clipPath to stateful cache check. #5384
 - Fix: restore draggability of small objects #5379
 - Improvement: Added strokeDashOffset to objects and from SVG import. #5398
 - Fix: do not mark objects as invisible if strokeWidth is > 0 #5382
-- Improvement: Better gradients parsing with xlink:href #5357```
+- Improvement: Better gradients parsing with xlink:href #5357
+```
 ### Version 2.4.3
 A handful of fixes for group and clipPaths, Image serializations and filters, click interactions
 ```
@@ -417,14 +422,16 @@ A handful of fixes for group and clipPaths, Image serializations and filters, cl
 - Fix: Load from Json from images with filters and resize filters #5346
 - Fix: Remove special case of 1x1 rect #5345
 - Fix: Group with clipPath restore #5344
-- Fix: Fix shift + click interaction with unselectable objects #5324```
+- Fix: Fix shift + click interaction with unselectable objects #5324
+```
 ### Version 2.4.2
 Clippath to SVG fixed, a couple of nice bugfixes for targeting in nested groups and svg loading in ie11
 ```
 - Fix: Better toSVG support to enable clipPath #5284
 - Fix: Per pixel target find and groups and sub targets #5287
 - Fix: Object clone as Image and shadow clipping #5308
-- Fix: IE11 loading SVG #5307```
+- Fix: IE11 loading SVG #5307
+```
 ### Version 2.4.1
 First round of feedback for clipPath bugs, plus other bugfixes that piled up while working on clipPaths
 ```
@@ -435,7 +442,8 @@ First round of feedback for clipPath bugs, plus other bugfixes that piled up whi
 - Fix: clipPath svg parsing in nodejs #5262
 - Fix: Avoid running selection logic on mouse up #5259
 - Fix: fix font size parsing on SVG #5258
-- Fix: Avoid extra renders on mouseUp/Down #5256```
+- Fix: Avoid extra renders on mouseUp/Down #5256
+```
 ### Version 2.4.0
 Launched clipPath support, check tutorial for more info <a href="/clippath-part1" >ClipPath tutorials</a>
 ### Version 2.3.6
@@ -490,12 +498,14 @@ Lot of small IText fixes and a group caching bug removed.
  - Fix: Enter edit on object selected programmatically. #5010
  - Fix: Canvas.dispose was not removing all events properly. #5020
  - Fix: Make rgba and hsla regex work case insensitive. #5017
- - Fix: Make group transitioning from not cached to cached work. #5021```
+ - Fix: Make group transitioning from not cached to cached work. #5021
+ ```
 ### Version 2.3.0
 Added new events and a performance improvement for pixel transparency on cached object. Cached objects gets now sampled directly on their cached to check for transparency without a repaint. Check the new events <a href="/new-events">here</a>
 ```
 - Add and improve more events for transformations and mouse interaction #4979
-- Improvement: whenever possible use cache for target transparency sampling #4955```
+- Improvement: whenever possible use cache for target transparency sampling #4955
+```
 ### Version 2.2.4
 Just fixes to brushes, filters and events mostly coming from contributors.
 A new method is added isPartiallyOnscreen for objects, helps you identify when the object is crossing your viewport boundaries and an important bug in statefull processing is fixed that was causing type errors when comparing an array with null or an object with null or a string
