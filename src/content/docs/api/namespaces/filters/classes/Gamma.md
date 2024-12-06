@@ -43,7 +43,7 @@ object.applyFilters();
 
 #### Defined in
 
-[src/filters/Gamma.ts:50](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/Gamma.ts#L50)
+[src/filters/Gamma.ts:50](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/Gamma.ts#L50)
 
 ## Properties
 
@@ -63,7 +63,7 @@ Gamma array value, from 0.01 to 2.2.
 
 #### Defined in
 
-[src/filters/Gamma.ts:33](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/Gamma.ts#L33)
+[src/filters/Gamma.ts:33](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/Gamma.ts#L33)
 
 ***
 
@@ -85,7 +85,7 @@ Gamma array value, from 0.01 to 2.2.
 
 #### Defined in
 
-[src/filters/Gamma.ts:34](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/Gamma.ts#L34)
+[src/filters/Gamma.ts:34](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/Gamma.ts#L34)
 
 ***
 
@@ -99,7 +99,7 @@ Gamma array value, from 0.01 to 2.2.
 
 #### Defined in
 
-[src/filters/Gamma.ts:42](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/Gamma.ts#L42)
+[src/filters/Gamma.ts:42](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/Gamma.ts#L42)
 
 ***
 
@@ -119,7 +119,7 @@ to avoid doing that.
 
 #### Defined in
 
-[src/filters/Gamma.ts:40](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/Gamma.ts#L40)
+[src/filters/Gamma.ts:40](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/Gamma.ts#L40)
 
 ***
 
@@ -137,7 +137,7 @@ needs to specify all the one that are needed
 
 #### Defined in
 
-[src/filters/Gamma.ts:44](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/Gamma.ts#L44)
+[src/filters/Gamma.ts:44](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/Gamma.ts#L44)
 
 ## Accessors
 
@@ -163,7 +163,7 @@ Filter type
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:30](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/BaseFilter.ts#L30)
+[src/filters/BaseFilter.ts:31](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L31)
 
 ## Methods
 
@@ -185,7 +185,7 @@ Filter type
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:204](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/BaseFilter.ts#L204)
+[src/filters/BaseFilter.ts:205](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L205)
 
 ***
 
@@ -207,7 +207,7 @@ Filter type
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:231](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/BaseFilter.ts#L231)
+[src/filters/BaseFilter.ts:232](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L232)
 
 ***
 
@@ -233,7 +233,7 @@ Determines whether to use WebGL or Canvas2D based on the options.webgl flag.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:264](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/BaseFilter.ts#L264)
+[src/filters/BaseFilter.ts:265](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L265)
 
 ***
 
@@ -257,7 +257,7 @@ Apply the Gamma operation to a Uint8Array representing the pixels of an image.
 
 #### Defined in
 
-[src/filters/Gamma.ts:65](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/Gamma.ts#L65)
+[src/filters/Gamma.ts:65](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/Gamma.ts#L65)
 
 ***
 
@@ -281,7 +281,7 @@ Apply this filter using webgl.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:314](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/BaseFilter.ts#L314)
+[src/filters/BaseFilter.ts:315](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L315)
 
 ***
 
@@ -307,7 +307,7 @@ Apply this filter using webgl.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:333](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/BaseFilter.ts#L333)
+[src/filters/BaseFilter.ts:334](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L334)
 
 ***
 
@@ -332,7 +332,7 @@ remember that options.targetCanvas is available for use till end of chain.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:369](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/BaseFilter.ts#L369)
+[src/filters/BaseFilter.ts:370](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L370)
 
 ***
 
@@ -378,7 +378,7 @@ vertexShader source for compilation
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:82](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/BaseFilter.ts#L82)
+[src/filters/BaseFilter.ts:83](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L83)
 
 ***
 
@@ -410,7 +410,7 @@ A map of attribute names to attribute locations.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:152](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/BaseFilter.ts#L152)
+[src/filters/BaseFilter.ts:153](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L153)
 
 ***
 
@@ -431,7 +431,7 @@ Used to force recompilation when parameters change or to retrieve the shader fro
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:283](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/BaseFilter.ts#L283)
+[src/filters/BaseFilter.ts:284](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L284)
 
 ***
 
@@ -449,7 +449,7 @@ Used to force recompilation when parameters change or to retrieve the shader fro
 
 #### Defined in
 
-[src/filters/Gamma.ts:46](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/Gamma.ts#L46)
+[src/filters/Gamma.ts:46](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/Gamma.ts#L46)
 
 ***
 
@@ -481,7 +481,7 @@ A map of uniform names to uniform locations.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:168](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/BaseFilter.ts#L168)
+[src/filters/BaseFilter.ts:169](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L169)
 
 ***
 
@@ -499,7 +499,7 @@ A map of uniform names to uniform locations.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:71](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/BaseFilter.ts#L71)
+[src/filters/BaseFilter.ts:72](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L72)
 
 ***
 
@@ -522,7 +522,7 @@ Other filters may need their own version ( ColorMatrix, HueRotation, gamma, Comp
 
 #### Defined in
 
-[src/filters/Gamma.ts:107](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/Gamma.ts#L107)
+[src/filters/Gamma.ts:107](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/Gamma.ts#L107)
 
 ***
 
@@ -548,7 +548,7 @@ the compiled program shader
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:294](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/BaseFilter.ts#L294)
+[src/filters/BaseFilter.ts:295](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L295)
 
 ***
 
@@ -580,7 +580,7 @@ A map of shader attribute names to their locations.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:191](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/BaseFilter.ts#L191)
+[src/filters/BaseFilter.ts:192](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L192)
 
 ***
 
@@ -610,7 +610,7 @@ A map of string uniform names to WebGLUniformLocation objects
 
 #### Defined in
 
-[src/filters/Gamma.ts:100](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/Gamma.ts#L100)
+[src/filters/Gamma.ts:100](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/Gamma.ts#L100)
 
 ***
 
@@ -632,7 +632,7 @@ JSON
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:406](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/BaseFilter.ts#L406)
+[src/filters/BaseFilter.ts:407](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L407)
 
 ***
 
@@ -664,7 +664,7 @@ Object representation of an instance
 
 #### Defined in
 
-[src/filters/Gamma.ts:112](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/Gamma.ts#L112)
+[src/filters/Gamma.ts:112](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/Gamma.ts#L112)
 
 ***
 
@@ -688,13 +688,13 @@ Object representation of an instance
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:344](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/BaseFilter.ts#L344)
+[src/filters/BaseFilter.ts:345](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L345)
 
 ***
 
 ### fromObject()
 
-> `static` **fromObject**(`__namedParameters`, `_options`): `Promise`\<[`BaseFilter`](/api/namespaces/filters/classes/basefilter/)\<`string`, `object`\>\>
+> `static` **fromObject**(`__namedParameters`, `_options`): `Promise`\<[`BaseFilter`](/api/namespaces/filters/classes/basefilter/)\<`string`, `object`, `object`\>\>
 
 #### Parameters
 
@@ -704,7 +704,7 @@ Object representation of an instance
 
 #### Returns
 
-`Promise`\<[`BaseFilter`](/api/namespaces/filters/classes/basefilter/)\<`string`, `object`\>\>
+`Promise`\<[`BaseFilter`](/api/namespaces/filters/classes/basefilter/)\<`string`, `object`, `object`\>\>
 
 #### Inherited from
 
@@ -712,4 +712,4 @@ Object representation of an instance
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:411](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/BaseFilter.ts#L411)
+[src/filters/BaseFilter.ts:412](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L412)

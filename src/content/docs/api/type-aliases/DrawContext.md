@@ -9,4 +9,4 @@ title: "DrawContext"
 
 ## Defined in
 
-[src/shapes/Object/Object.ts:141](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/shapes/Object/Object.ts#L141)
+[src/shapes/Object/Object.ts:137](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/shapes/Object/Object.ts#L137)
