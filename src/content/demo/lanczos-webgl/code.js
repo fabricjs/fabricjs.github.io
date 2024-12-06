@@ -21,7 +21,7 @@ var p = {
 	y: 0,
 };
 
-fabric.FabricImage.fromURL('../assets/dragon.jpg').then((img) => {
+fabric.FabricImage.fromURL('/assets/dragon.jpg').then((img) => {
 	var r = canvas.getRetinaScaling();
     oImg = img;
     oImg.set({ left: 20, top: 20 })
