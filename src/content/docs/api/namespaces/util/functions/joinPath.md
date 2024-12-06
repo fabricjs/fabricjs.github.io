@@ -25,4 +25,4 @@ joined path 'M 0 0 L 20 30'
 
 ## Defined in
 
-[src/util/path/index.ts:1032](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/util/path/index.ts#L1032)
+[src/util/path/index.ts:1032](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/util/path/index.ts#L1032)

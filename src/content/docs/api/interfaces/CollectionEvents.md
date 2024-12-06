@@ -22,7 +22,7 @@ title: "CollectionEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:250](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/EventTypeDefs.ts#L250)
+[src/EventTypeDefs.ts:250](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/EventTypeDefs.ts#L250)
 
 ***
 
@@ -36,4 +36,4 @@ title: "CollectionEvents"
 
 #### Defined in
 
-[src/EventTypeDefs.ts:251](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/EventTypeDefs.ts#L251)
+[src/EventTypeDefs.ts:251](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/EventTypeDefs.ts#L251)

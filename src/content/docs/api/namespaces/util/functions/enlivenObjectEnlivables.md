@@ -25,4 +25,4 @@ the input object with enlived values
 
 ## Defined in
 
-[src/util/misc/objectEnlive.ts:143](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/util/misc/objectEnlive.ts#L143)
+[src/util/misc/objectEnlive.ts:143](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/util/misc/objectEnlive.ts#L143)

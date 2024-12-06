@@ -39,7 +39,7 @@ override by subclass for persistence (TS does not support `static abstract`)
 
 #### Defined in
 
-[src/LayoutManager/LayoutStrategies/ClipPathLayout.ts:14](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/LayoutManager/LayoutStrategies/ClipPathLayout.ts#L14)
+[src/LayoutManager/LayoutStrategies/ClipPathLayout.ts:14](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/LayoutManager/LayoutStrategies/ClipPathLayout.ts#L14)
 
 ## Methods
 
@@ -65,7 +65,7 @@ Override this method to customize layout.
 
 #### Defined in
 
-[src/LayoutManager/LayoutStrategies/LayoutStrategy.ts:68](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/LayoutManager/LayoutStrategies/LayoutStrategy.ts#L68)
+[src/LayoutManager/LayoutStrategies/LayoutStrategy.ts:68](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/LayoutManager/LayoutStrategies/LayoutStrategy.ts#L68)
 
 ***
 
@@ -95,7 +95,7 @@ layout result **OR** `undefined` to skip layout
 
 #### Defined in
 
-[src/LayoutManager/LayoutStrategies/ClipPathLayout.ts:24](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/LayoutManager/LayoutStrategies/ClipPathLayout.ts#L24)
+[src/LayoutManager/LayoutStrategies/ClipPathLayout.ts:24](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/LayoutManager/LayoutStrategies/ClipPathLayout.ts#L24)
 
 ***
 
@@ -119,7 +119,7 @@ layout result **OR** `undefined` to skip layout
 
 #### Defined in
 
-[src/LayoutManager/LayoutStrategies/LayoutStrategy.ts:58](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/LayoutManager/LayoutStrategies/LayoutStrategy.ts#L58)
+[src/LayoutManager/LayoutStrategies/LayoutStrategy.ts:58](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/LayoutManager/LayoutStrategies/LayoutStrategy.ts#L58)
 
 ***
 
@@ -137,7 +137,7 @@ layout result **OR** `undefined` to skip layout
 
 #### Defined in
 
-[src/LayoutManager/LayoutStrategies/ClipPathLayout.ts:20](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/LayoutManager/LayoutStrategies/ClipPathLayout.ts#L20)
+[src/LayoutManager/LayoutStrategies/ClipPathLayout.ts:20](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/LayoutManager/LayoutStrategies/ClipPathLayout.ts#L20)
 
 ***
 
@@ -159,4 +159,4 @@ layout result **OR** `undefined` to skip layout
 
 #### Defined in
 
-[src/LayoutManager/LayoutStrategies/ClipPathLayout.ts:16](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/LayoutManager/LayoutStrategies/ClipPathLayout.ts#L16)
+[src/LayoutManager/LayoutStrategies/ClipPathLayout.ts:16](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/LayoutManager/LayoutStrategies/ClipPathLayout.ts#L16)

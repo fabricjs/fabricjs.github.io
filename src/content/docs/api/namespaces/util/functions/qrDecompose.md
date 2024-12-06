@@ -5,7 +5,7 @@ prev: false
 title: "qrDecompose"
 ---
 
-> **qrDecompose**(`a`): `Required`\<`Omit`\<[`TComposeMatrixArgs`](/api/namespaces/util/type-aliases/tcomposematrixargs/), `"flipX"` \| `"flipY"`\>\>
+> **qrDecompose**(`a`): `Required`\<`Omit`\<[`TComposeMatrixArgs`](/api/namespaces/util/type-aliases/tcomposematrixargs/), `"flipY"` \| `"flipX"`\>\>
 
 ## Parameters
 
@@ -15,10 +15,10 @@ transformMatrix
 
 ## Returns
 
-`Required`\<`Omit`\<[`TComposeMatrixArgs`](/api/namespaces/util/type-aliases/tcomposematrixargs/), `"flipX"` \| `"flipY"`\>\>
+`Required`\<`Omit`\<[`TComposeMatrixArgs`](/api/namespaces/util/type-aliases/tcomposematrixargs/), `"flipY"` \| `"flipX"`\>\>
 
 Components of transform
 
 ## Defined in
 
-[src/util/misc/matrix.ts:116](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/util/misc/matrix.ts#L116)
+[src/util/misc/matrix.ts:116](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/util/misc/matrix.ts#L116)

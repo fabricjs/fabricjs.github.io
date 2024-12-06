@@ -31,11 +31,13 @@ title: "BaseFilter"
 
 • **OwnProps** *extends* `Record`\<`string`, `any`\> = `object`
 
+• **SerializedProps** *extends* `Record`\<`string`, `any`\> = `OwnProps`
+
 ## Constructors
 
 ### new BaseFilter()
 
-> **new BaseFilter**\<`Name`, `OwnProps`\>(`options`?): [`BaseFilter`](/api/namespaces/filters/classes/basefilter/)\<`Name`, `OwnProps`\>
+> **new BaseFilter**\<`Name`, `OwnProps`, `SerializedProps`\>(`options`?): [`BaseFilter`](/api/namespaces/filters/classes/basefilter/)\<`Name`, `OwnProps`, `SerializedProps`\>
 
 Constructor
 
@@ -47,11 +49,11 @@ Options object
 
 #### Returns
 
-[`BaseFilter`](/api/namespaces/filters/classes/basefilter/)\<`Name`, `OwnProps`\>
+[`BaseFilter`](/api/namespaces/filters/classes/basefilter/)\<`Name`, `OwnProps`, `SerializedProps`\>
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:56](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/BaseFilter.ts#L56)
+[src/filters/BaseFilter.ts:57](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L57)
 
 ## Properties
 
@@ -61,7 +63,7 @@ Options object
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:50](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/BaseFilter.ts#L50)
+[src/filters/BaseFilter.ts:51](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L51)
 
 ***
 
@@ -77,7 +79,7 @@ to avoid doing that.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:41](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/BaseFilter.ts#L41)
+[src/filters/BaseFilter.ts:42](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L42)
 
 ***
 
@@ -91,7 +93,7 @@ needs to specify all the one that are needed
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:48](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/BaseFilter.ts#L48)
+[src/filters/BaseFilter.ts:49](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L49)
 
 ## Accessors
 
@@ -113,7 +115,7 @@ Filter type
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:30](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/BaseFilter.ts#L30)
+[src/filters/BaseFilter.ts:31](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L31)
 
 ## Methods
 
@@ -131,7 +133,7 @@ Filter type
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:204](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/BaseFilter.ts#L204)
+[src/filters/BaseFilter.ts:205](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L205)
 
 ***
 
@@ -149,7 +151,7 @@ Filter type
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:231](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/BaseFilter.ts#L231)
+[src/filters/BaseFilter.ts:232](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L232)
 
 ***
 
@@ -171,7 +173,7 @@ Determines whether to use WebGL or Canvas2D based on the options.webgl flag.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:264](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/BaseFilter.ts#L264)
+[src/filters/BaseFilter.ts:265](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L265)
 
 ***
 
@@ -189,7 +191,7 @@ Determines whether to use WebGL or Canvas2D based on the options.webgl flag.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:274](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/BaseFilter.ts#L274)
+[src/filters/BaseFilter.ts:275](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L275)
 
 ***
 
@@ -209,7 +211,7 @@ Apply this filter using webgl.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:314](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/BaseFilter.ts#L314)
+[src/filters/BaseFilter.ts:315](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L315)
 
 ***
 
@@ -231,7 +233,7 @@ Apply this filter using webgl.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:333](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/BaseFilter.ts#L333)
+[src/filters/BaseFilter.ts:334](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L334)
 
 ***
 
@@ -252,7 +254,7 @@ remember that options.targetCanvas is available for use till end of chain.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:369](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/BaseFilter.ts#L369)
+[src/filters/BaseFilter.ts:370](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L370)
 
 ***
 
@@ -294,7 +296,7 @@ vertexShader source for compilation
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:82](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/BaseFilter.ts#L82)
+[src/filters/BaseFilter.ts:83](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L83)
 
 ***
 
@@ -322,7 +324,7 @@ A map of attribute names to attribute locations.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:152](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/BaseFilter.ts#L152)
+[src/filters/BaseFilter.ts:153](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L153)
 
 ***
 
@@ -339,7 +341,7 @@ Used to force recompilation when parameters change or to retrieve the shader fro
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:283](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/BaseFilter.ts#L283)
+[src/filters/BaseFilter.ts:284](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L284)
 
 ***
 
@@ -367,7 +369,7 @@ A map of uniform names to uniform locations.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:168](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/BaseFilter.ts#L168)
+[src/filters/BaseFilter.ts:169](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L169)
 
 ***
 
@@ -381,7 +383,7 @@ A map of uniform names to uniform locations.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:71](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/BaseFilter.ts#L71)
+[src/filters/BaseFilter.ts:72](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L72)
 
 ***
 
@@ -404,7 +406,7 @@ Other filters may need their own version ( ColorMatrix, HueRotation, gamma, Comp
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:247](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/BaseFilter.ts#L247)
+[src/filters/BaseFilter.ts:248](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L248)
 
 ***
 
@@ -426,7 +428,7 @@ the compiled program shader
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:294](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/BaseFilter.ts#L294)
+[src/filters/BaseFilter.ts:295](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L295)
 
 ***
 
@@ -454,7 +456,7 @@ A map of shader attribute names to their locations.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:191](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/BaseFilter.ts#L191)
+[src/filters/BaseFilter.ts:192](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L192)
 
 ***
 
@@ -482,31 +484,31 @@ A map of shader uniform names to their locations.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:358](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/BaseFilter.ts#L358)
+[src/filters/BaseFilter.ts:359](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L359)
 
 ***
 
 ### toJSON()
 
-> **toJSON**(): `object` & `OwnProps`
+> **toJSON**(): `object` & `SerializedProps`
 
 Returns a JSON representation of an instance
 
 #### Returns
 
-`object` & `OwnProps`
+`object` & `SerializedProps`
 
 JSON
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:406](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/BaseFilter.ts#L406)
+[src/filters/BaseFilter.ts:407](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L407)
 
 ***
 
 ### toObject()
 
-> **toObject**(): `object` & `OwnProps`
+> **toObject**(): `object` & `SerializedProps`
 
 Returns object representation of an instance
 It will automatically export the default values of a filter,
@@ -514,13 +516,13 @@ stored in the static defaults property.
 
 #### Returns
 
-`object` & `OwnProps`
+`object` & `SerializedProps`
 
 Object representation of an instance
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:386](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/BaseFilter.ts#L386)
+[src/filters/BaseFilter.ts:387](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L387)
 
 ***
 
@@ -540,13 +542,13 @@ Object representation of an instance
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:344](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/BaseFilter.ts#L344)
+[src/filters/BaseFilter.ts:345](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L345)
 
 ***
 
 ### fromObject()
 
-> `static` **fromObject**(`__namedParameters`, `_options`): `Promise`\<[`BaseFilter`](/api/namespaces/filters/classes/basefilter/)\<`string`, `object`\>\>
+> `static` **fromObject**(`__namedParameters`, `_options`): `Promise`\<[`BaseFilter`](/api/namespaces/filters/classes/basefilter/)\<`string`, `object`, `object`\>\>
 
 #### Parameters
 
@@ -556,8 +558,8 @@ Object representation of an instance
 
 #### Returns
 
-`Promise`\<[`BaseFilter`](/api/namespaces/filters/classes/basefilter/)\<`string`, `object`\>\>
+`Promise`\<[`BaseFilter`](/api/namespaces/filters/classes/basefilter/)\<`string`, `object`, `object`\>\>
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:411](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/BaseFilter.ts#L411)
+[src/filters/BaseFilter.ts:412](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L412)

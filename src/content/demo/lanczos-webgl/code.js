@@ -5,12 +5,7 @@ var ctx2 = canvas2.getContext('2d');
 ctx.imageSmoothingEnabled = false;
 ctx2.imageSmoothingEnabled = false;
 
-var canvas = new fabric.Canvas('a', {
-	imageSmoothingEnabled: false,
-	enableRetinaScaling: false,
-	fireRightClick: true,
-	stopContextMenu: true,
-});
+const canvas = new fabric.Canvas(canvasEl);
 // create a rectangle object
 
 var lanczosFilter = new fabric.filters.Resize({
@@ -29,7 +24,7 @@ var p = {
 fabric.FabricImage.fromURL('../assets/dragon.jpg').then((img) => {
 	var r = canvas.getRetinaScaling();
     oImg = img;
-    oImg.set({ left: 400, top: 250 })
+    oImg.set({ left: 20, top: 20 })
     oImg.scale(0.2);
 	lanczosFilter.scaleX = lanczosFilter.scaleY = oImg.scaleX * r;
 	oImg.lockScalingFlip = true;

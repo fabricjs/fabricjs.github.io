@@ -49,4 +49,4 @@ title: "createObjectDefaultControls"
 
 ## Defined in
 
-[src/controls/commonControls.ts:14](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/controls/commonControls.ts#L14)
+[src/controls/commonControls.ts:14](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/controls/commonControls.ts#L14)

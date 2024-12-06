@@ -29,7 +29,7 @@ cleared never. Clearing is left to the developer.
 
 #### Defined in
 
-[src/filters/Canvas2dFilterBackend.ts:15](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/Canvas2dFilterBackend.ts#L15)
+[src/filters/Canvas2dFilterBackend.ts:15](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/Canvas2dFilterBackend.ts#L15)
 
 ## Methods
 
@@ -42,7 +42,7 @@ to the provided destination canvas.
 
 #### Parameters
 
-• **filters**: [`BaseFilter`](/api/namespaces/filters/classes/basefilter/)\<`string`, `Record`\<`string`, `any`\>\>[]
+• **filters**: [`BaseFilter`](/api/namespaces/filters/classes/basefilter/)\<`string`, `Record`\<`string`, `any`\>, `Record`\<`string`, `any`\>\>[]
 
 The filter to apply.
 
@@ -68,4 +68,4 @@ The destination for filtered output to be drawn.
 
 #### Defined in
 
-[src/filters/Canvas2dFilterBackend.ts:27](https://github.com/fabricjs/fabric.js/blob/c093e29e73123dafcfa091ff4d5e04e690bb796e/src/filters/Canvas2dFilterBackend.ts#L27)
+[src/filters/Canvas2dFilterBackend.ts:27](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/Canvas2dFilterBackend.ts#L27)
