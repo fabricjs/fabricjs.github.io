@@ -18,7 +18,7 @@ export const CodeEditor = ({ code: codeProp, children, canvasId, autoRun = true,
   const [code, setCode] = useState('');
 
   const runCallback = useCallback(
-    debounce((newcode = [codeProp]) => {
+    debounce((newcode = [codeProp], isClickByRunMeButton = false) => {
       if (window.canvasesId[canvasId]) {
         window.canvasesId[canvasId].dispose();
       }
@@ -26,6 +26,8 @@ export const CodeEditor = ({ code: codeProp, children, canvasId, autoRun = true,
         `const fabric = window.fabric;`,
         `const canvasEl = document.getElementById('${canvasId}');`,
       ];
+      // when click 'run me' button, makes code string change to trigger 'setCode' function.
+      if (isClickByRunMeButton) preamble.push(`const randomValue = ${Math.random()};`);
       const exec = `try {
           ${newcode.join('\n')}
           window.canvasesId['${canvasId}'] = canvas;
@@ -90,7 +92,7 @@ export const CodeEditor = ({ code: codeProp, children, canvasId, autoRun = true,
       </Helmet>
       {canvasDown || children}
       <div ref={divRef} style={{ marginTop: '1rem' }} />
-      <button onClick={() => runCallback([editorRef.current.state.doc.toString()])}>runMe</button>
+      <button onClick={() => runCallback([editorRef.current.state.doc.toString()], true)}>Run me</button>
       {canvasDown && children}
     </div>
   );
