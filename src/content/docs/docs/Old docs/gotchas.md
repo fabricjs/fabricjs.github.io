@@ -54,9 +54,21 @@ or, as an alternative:
 ```
 For more information and detailed explanation, check the [dedicated caching page](/docs/old-docs/fabric-object-caching/).
 
+
 ### Objects have a transparent stroke of width 1 by default
 
-By default, objects have a transparent stroke of width 1 that shift them by 0.5 pixel horizontally and vertically. This will make hard for you to position objects at exact position. There are a couple of reason for this: - if it had no strokeWidth, setting stroke color would bring no results - SVG have the same default so for svg import it made sense to do so - Before fabric v1.5 stroke wasn't part of the control bounding box and position so this wasn't an issue. To remove the stroke:
+By default, objects have a transparent stroke of width 1 that shift their bounding box by 0.5 pixel horizontally and vertically from the fill.
+
+This is not apparent if you work with rect that have sizes of 200-300 and above, but when dealing with small rectangle this gap is clear and when streching the rectangle in one direction only is even more evident.
+
+This gap is the stroke, the border that is being drawn transparent.
+
+There are a couple of reason for this:
+- if it had no strokeWidth, setting stroke color would bring no results
+- SVG have the same default so for svg import it made sense to do so
+- Before fabric v1.5 stroke wasn't part of the control bounding box and position so this wasn't an issue.
+
+To remove the stroke:
 
 ```js
 rect.set('strokeWidth', 0);
