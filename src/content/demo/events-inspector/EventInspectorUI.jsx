@@ -1,100 +1,18 @@
-import React, { useEffect, useCallback, useRef, memo, useState } from 'react';
+import React, { useEffect, useCallback, useRef, useState } from 'react';
+import {  
+  EventCheckbox,
+  canvasEvents,
+  objectsEvents,
+  LogEntry,
+  eventGroups,
+  EventGroupCheckbox
+} from './demoComponents';
 import * as fabric from 'fabric';
 import './index.css';
 
 // old html demo converted to a component with MINIMAL react adapatation.
-// value true if is a canvas event, false if is an object event
-const canvasEvents = [
-  'object:modified',
-  'object:moving',
-  'object:scaling',
-  'object:rotating',
-  'object:skewing',
-  'object:resizing',
-  'before:transform',
-  'before:selection:cleared',
-  'selection:cleared',
-  'selection:created',
-  'selection:updated',
-  'mouse:up',
-  'mouse:down',
-  'mouse:move',
-  'mouse:up:before',
-  'mouse:down:before',
-  'mouse:move:before',
-  'mouse:dblclick',
-  'mouse:wheel',
-  'mouse:over',
-  'mouse:out',
-  'drop:before',
-  'drop',
-  'drag:over',
-  'drag:enter',
-  'drag:leave',
-  'after:render',
-  'path:created',
-  'object:added',
-  'object:removed',
-  'text:selection:changed',
-  'text:changed',
-  'text:editing:entered',
-  'text:editing:exited',
-];
-const objectsEvents = [
-  'moving',
-  'scaling',
-  'rotating',
-  'skewing',
-  'resizing',
-  'mouseup',
-  'mousedown',
-  'mousemove',
-  'mouseup:before',
-  'mousedown:before',
-  'mousemove:before',
-  'mousedblclick',
-  'mousewheel',
-  'mouseover',
-  'mouseout',
-  'drop:before',
-  'drop',
-  'dragover',
-  'dragenter',
-  'dragleave',
-  'selection:changed',
-  'changed',
-  'editing:entered',
-  'editing:exited',
-];
-
-const EventCheckbox = memo(({ eventName, onChange, checked }) => {
-
-  const labelId = `chk_${eventName}`;
-
-  const onChangeWrapped = useCallback((e) => {
-    const checked = e.target.checked;
-    onChange && onChange(eventName, checked);
-  }, [onChange])
-
-  return (
-    <div>
-      <input type="checkbox" checked={checked} onChange={onChangeWrapped} id={labelId} />
-      <label htmlFor={labelId}>{eventName}</label>
-    </div>
-  );
-})
-
-const LogEntry = memo(({ logEntry, color }) => {
-  const [open, setOpen] = useState(false);
-  return (
-    <div className='log-entry' style={{ color }}>
-      <button onClick={() => setOpen(!open)}>{open ? '-' : '+'}</button>
-      <strong>{logEntry.eventName}</strong>
-      {open && <code>{logEntry.code}</code>}
-      {open && <small>{new Date(logEntry.id).toISOString()}</small>}
-    </div>
-  );
-});
+// The reac code written here has been written to remove the old code that was very contributor unfriendly.
+// The react code written here does not represent my react or web ui skills.
 
 export const EventInspectorUI = () => {
   const canvasRef = useRef();
@@ -172,25 +90,19 @@ export const EventInspectorUI = () => {
     <>
       <div className="demo-main">
         <div className="column-main">
-          <p>To avoid event spamming, you can disable the checkboxs below.</p>
+          <p>To avoid event spamming, you can disable events groups.</p>
           <div>
+            {eventGroups.map(group => (
+              <EventGroupCheckbox key={group.id} groupName={group.id} label={group.label} onChange={() => {}} />
+            ))}
             <label htmlFor="toggle">
               <input type="checkbox" id="toggle" checked />
               All events
             </label>
 
-            <label htmlFor="move">
-              <input type="checkbox" id="move" checked />
-              Movement events
-            </label>
             <label htmlFor="dragover">
               <input type="checkbox" id="dragover" checked />
               DragOver
-            </label>
-
-            <label htmlFor="canvas_events">
-              <input type="checkbox" id="canvas_events" checked />
-              Canvas
             </label>
 
             <label htmlFor="green">
