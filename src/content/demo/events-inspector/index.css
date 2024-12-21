@@ -1,19 +1,15 @@
 .demo-main {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
 }
-.column-main {
-  max-width: 600px;
-}
-.column-events {
-  font-size: 16px;
-}
+
 .column-main,
 .column-events {
   display: flex;
   flex-direction: column;
 }
+
 .demo-header {
   display: flex;
   flex-direction: row;
@@ -21,6 +17,7 @@
 .demo-body {
   display: flex;
   flex-direction: row;
+  gap: 12px;
 }
 .log-entry {
   white-space: pre;
