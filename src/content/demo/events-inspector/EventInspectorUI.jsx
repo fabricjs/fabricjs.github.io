@@ -84,10 +84,23 @@ const EventCheckbox = memo(({ eventName, onChange, checked }) => {
   );
 })
 
+const LogEntry = memo(({ logEntry, color }) => {
+  const [open, setOpen] = useState(false);
+  return (
+    <div className='log-entry' style={{ color }}>
+      <button onClick={() => setOpen(!open)}>{open ? '-' : '+'}</button>
+      <strong>{logEntry.eventName}</strong>
+      {open && <code>{logEntry.code}</code>}
+      {open && <small>{new Date(logEntry.id).toISOString()}</small>}
+    </div>
+  );
+});
+
 export const EventInspectorUI = () => {
   const canvasRef = useRef();
   
-  const [logs, setLogs] = useState([]);
+  const logs = useRef([]);
+  const [logsUpdated, setLogsUpdated] = useState(0);
   const [eventStatusObj, setEventStatusObj] = useState(
     Object.fromEntries(
       objectsEvents.map((key) => [key, true])
@@ -132,8 +145,10 @@ export const EventInspectorUI = () => {
   }, [])
 
   const logCallback = useCallback((eventData, eventName) => {
-    setLogs([...logs, JSON.stringify({eventName: eventData})])
-  });
+    const id = performance.now();
+    logs.current.push({ id, eventName, code: JSON.stringify(eventData, null, '\t') });
+    setLogsUpdated(id);
+  }, [logs]);
 
   const onChangeCanvas = useCallback((eventName, checked) => {
     const method = checked ? 'on' : 'off';
@@ -214,7 +229,11 @@ export const EventInspectorUI = () => {
               ></div>
             </div>
           </div>
-          <div id="log1">{logs}</div>
+          <div id="log1">{
+            logs.current.map(logEntry => (
+              <LogEntry key={logEntry.id} logEntry={logEntry} color="blue" />
+            ))
+          }</div>
           <button id="clear_log" onClick={() => setLogs([])}>clear log</button>
         </div>
         <div className="events-checkboxes">
@@ -223,7 +242,7 @@ export const EventInspectorUI = () => {
               <strong>Canvas events</strong>
             </div>
             {canvasEvents.map(eventKey => 
-              <EventCheckbox checked={eventStatusCanvas[eventKey]} onChange={onChangeCanvas} eventName={eventKey} />
+              <EventCheckbox key={`canvas_${eventKey}`} checked={eventStatusCanvas[eventKey]} onChange={onChangeCanvas} eventName={eventKey} />
             )}
           </div>
           <div className="column-events">
@@ -231,7 +250,7 @@ export const EventInspectorUI = () => {
               <strong>Objects events</strong>
             </div>
             {objectsEvents.map(eventKey => 
-              <EventCheckbox checked={eventStatusObj[eventKey]} onChange={onChangeObject} eventName={eventKey} />
+              <EventCheckbox key={`obj_${eventKey}`} checked={eventStatusObj[eventKey]} onChange={onChangeObject} eventName={eventKey} />
             )}
           </div>
         </div>
