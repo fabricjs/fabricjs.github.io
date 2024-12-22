@@ -10,6 +10,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/content/demo/*
 <Layout title="Fabric.js Demos" description="Simple features showcase">
     <main class="darkBg">
         <h1>Fabric.js Demos</h1>
+        <p>Looking for old Fabric.js v5 demos? <a href="https://fabric5.fabricjs.com/demos" alt="Fabric v5 demos">click here</a>.
         <ThumbnailList>
             {demoEntries.map(({ data, id, slug }) => {
                 const imgFullPath = `/src/content/${collectionName}/${id.replace(/index\.mdx?/, data.thumbnail)}`;

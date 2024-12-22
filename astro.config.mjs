@@ -29,6 +29,10 @@ export default defineConfig({
         collapsed: true,
         autogenerate: { directory: 'api' },
       },
+      {
+        label: 'Fabric.js v5',
+        link: 'https://fabric5.fabricjs.com/docs',
+      }
     ],
     customCss: [
       // Relative path to your custom CSS file

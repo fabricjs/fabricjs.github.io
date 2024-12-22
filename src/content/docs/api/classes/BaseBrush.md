@@ -31,7 +31,7 @@ title: "BaseBrush"
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:75](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/brushes/BaseBrush.ts#L75)
+[src/brushes/BaseBrush.ts:75](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/BaseBrush.ts#L75)
 
 ## Properties
 
@@ -45,7 +45,7 @@ add type
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:73](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/brushes/BaseBrush.ts#L73)
+[src/brushes/BaseBrush.ts:73](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/BaseBrush.ts#L73)
 
 ***
 
@@ -63,7 +63,7 @@ Color of a brush
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:16](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/brushes/BaseBrush.ts#L16)
+[src/brushes/BaseBrush.ts:16](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/BaseBrush.ts#L16)
 
 ***
 
@@ -81,7 +81,7 @@ false
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:68](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/brushes/BaseBrush.ts#L68)
+[src/brushes/BaseBrush.ts:68](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/BaseBrush.ts#L68)
 
 ***
 
@@ -101,7 +101,7 @@ Shadow object representing shadow of this shape.
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:32](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/brushes/BaseBrush.ts#L32)
+[src/brushes/BaseBrush.ts:32](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/BaseBrush.ts#L32)
 
 ***
 
@@ -119,7 +119,7 @@ Stroke Dash Array.
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:60](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/brushes/BaseBrush.ts#L60)
+[src/brushes/BaseBrush.ts:60](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/BaseBrush.ts#L60)
 
 ***
 
@@ -137,7 +137,7 @@ Line endings style of a brush (one of "butt", "round", "square")
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:39](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/brushes/BaseBrush.ts#L39)
+[src/brushes/BaseBrush.ts:39](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/BaseBrush.ts#L39)
 
 ***
 
@@ -155,7 +155,7 @@ Corner style of a brush (one of "bevel", "round", "miter")
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:46](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/brushes/BaseBrush.ts#L46)
+[src/brushes/BaseBrush.ts:46](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/BaseBrush.ts#L46)
 
 ***
 
@@ -173,7 +173,7 @@ Maximum miter length (used for strokeLineJoin = "miter") of a brush's
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:53](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/brushes/BaseBrush.ts#L53)
+[src/brushes/BaseBrush.ts:53](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/BaseBrush.ts#L53)
 
 ***
 
@@ -191,7 +191,7 @@ Width of a brush, has to be a Number, no string literals
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:23](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/brushes/BaseBrush.ts#L23)
+[src/brushes/BaseBrush.ts:23](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/BaseBrush.ts#L23)
 
 ## Methods
 
@@ -205,7 +205,7 @@ Width of a brush, has to be a Number, no string literals
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:79](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/brushes/BaseBrush.ts#L79)
+[src/brushes/BaseBrush.ts:79](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/BaseBrush.ts#L79)
 
 ***
 
@@ -225,7 +225,7 @@ Width of a brush, has to be a Number, no string literals
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:80](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/brushes/BaseBrush.ts#L80)
+[src/brushes/BaseBrush.ts:80](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/BaseBrush.ts#L80)
 
 ***
 
@@ -245,7 +245,7 @@ Width of a brush, has to be a Number, no string literals
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:81](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/brushes/BaseBrush.ts#L81)
+[src/brushes/BaseBrush.ts:81](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/BaseBrush.ts#L81)
 
 ***
 
@@ -265,4 +265,4 @@ true if brush should continue blocking interaction
 
 #### Defined in
 
-[src/brushes/BaseBrush.ts:85](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/brushes/BaseBrush.ts#L85)
+[src/brushes/BaseBrush.ts:85](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/BaseBrush.ts#L85)

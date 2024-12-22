@@ -29,7 +29,7 @@ optional in hex or rgb(a) or hsl format or from known color list
 
 #### Defined in
 
-[src/color/Color.ts:25](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/color/Color.ts#L25)
+[src/color/Color.ts:25](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/color/Color.ts#L25)
 
 ## Properties
 
@@ -39,7 +39,7 @@ optional in hex or rgb(a) or hsl format or from known color list
 
 #### Defined in
 
-[src/color/Color.ts:19](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/color/Color.ts#L19)
+[src/color/Color.ts:19](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/color/Color.ts#L19)
 
 ## Methods
 
@@ -57,7 +57,7 @@ Gets value of alpha channel for this color
 
 #### Defined in
 
-[src/color/Color.ts:133](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/color/Color.ts#L133)
+[src/color/Color.ts:133](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/color/Color.ts#L133)
 
 ***
 
@@ -73,7 +73,7 @@ Returns source of this color (where source is an array representation; ex: [200,
 
 #### Defined in
 
-[src/color/Color.ts:64](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/color/Color.ts#L64)
+[src/color/Color.ts:64](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/color/Color.ts#L64)
 
 ***
 
@@ -95,7 +95,7 @@ thisArg
 
 #### Defined in
 
-[src/color/Color.ts:173](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/color/Color.ts#L173)
+[src/color/Color.ts:173](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/color/Color.ts#L173)
 
 ***
 
@@ -119,7 +119,7 @@ thisArg
 
 #### Defined in
 
-[src/color/Color.ts:142](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/color/Color.ts#L142)
+[src/color/Color.ts:142](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/color/Color.ts#L142)
 
 ***
 
@@ -139,7 +139,7 @@ Sets source of this color (where source is an array representation; ex: [200, 20
 
 #### Defined in
 
-[src/color/Color.ts:72](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/color/Color.ts#L72)
+[src/color/Color.ts:72](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/color/Color.ts#L72)
 
 ***
 
@@ -161,7 +161,7 @@ thisArg
 
 #### Defined in
 
-[src/color/Color.ts:161](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/color/Color.ts#L161)
+[src/color/Color.ts:161](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/color/Color.ts#L161)
 
 ***
 
@@ -179,7 +179,7 @@ thisArg
 
 #### Defined in
 
-[src/color/Color.ts:151](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/color/Color.ts#L151)
+[src/color/Color.ts:151](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/color/Color.ts#L151)
 
 ***
 
@@ -197,7 +197,7 @@ ex: FF5555
 
 #### Defined in
 
-[src/color/Color.ts:115](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/color/Color.ts#L115)
+[src/color/Color.ts:115](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/color/Color.ts#L115)
 
 ***
 
@@ -215,7 +215,7 @@ ex: FF5555CC
 
 #### Defined in
 
-[src/color/Color.ts:124](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/color/Color.ts#L124)
+[src/color/Color.ts:124](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/color/Color.ts#L124)
 
 ***
 
@@ -233,7 +233,7 @@ ex: hsl(0-360,0%-100%,0%-100%)
 
 #### Defined in
 
-[src/color/Color.ts:97](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/color/Color.ts#L97)
+[src/color/Color.ts:97](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/color/Color.ts#L97)
 
 ***
 
@@ -251,7 +251,7 @@ ex: hsla(0-360,0%-100%,0%-100%,0-1)
 
 #### Defined in
 
-[src/color/Color.ts:106](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/color/Color.ts#L106)
+[src/color/Color.ts:106](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/color/Color.ts#L106)
 
 ***
 
@@ -269,7 +269,7 @@ ex: rgb(0-255,0-255,0-255)
 
 #### Defined in
 
-[src/color/Color.ts:80](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/color/Color.ts#L80)
+[src/color/Color.ts:80](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/color/Color.ts#L80)
 
 ***
 
@@ -287,7 +287,7 @@ ex: rgba(0-255,0-255,0-255,0-1)
 
 #### Defined in
 
-[src/color/Color.ts:89](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/color/Color.ts#L89)
+[src/color/Color.ts:89](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/color/Color.ts#L89)
 
 ***
 
@@ -315,7 +315,7 @@ Color
 
 #### Defined in
 
-[src/color/Color.ts:298](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/color/Color.ts#L298)
+[src/color/Color.ts:298](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/color/Color.ts#L298)
 
 ***
 
@@ -341,7 +341,7 @@ Color
 
 #### Defined in
 
-[src/color/Color.ts:236](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/color/Color.ts#L236)
+[src/color/Color.ts:236](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/color/Color.ts#L236)
 
 ***
 
@@ -369,7 +369,7 @@ Color
 
 #### Defined in
 
-[src/color/Color.ts:248](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/color/Color.ts#L248)
+[src/color/Color.ts:248](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/color/Color.ts#L248)
 
 ***
 
@@ -395,7 +395,7 @@ Color
 
 #### Defined in
 
-[src/color/Color.ts:195](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/color/Color.ts#L195)
+[src/color/Color.ts:195](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/color/Color.ts#L195)
 
 ***
 
@@ -423,7 +423,7 @@ Color
 
 #### Defined in
 
-[src/color/Color.ts:207](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/color/Color.ts#L207)
+[src/color/Color.ts:207](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/color/Color.ts#L207)
 
 ***
 
@@ -454,7 +454,7 @@ Color
 
 #### Defined in
 
-[src/color/Color.ts:334](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/color/Color.ts#L334)
+[src/color/Color.ts:334](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/color/Color.ts#L334)
 
 ***
 
@@ -484,7 +484,7 @@ Color
 
 #### Defined in
 
-[src/color/Color.ts:309](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/color/Color.ts#L309)
+[src/color/Color.ts:309](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/color/Color.ts#L309)
 
 ***
 
@@ -517,7 +517,7 @@ http://http://www.w3.org/TR/css3-color/#hsl-color
 
 #### Defined in
 
-[src/color/Color.ts:260](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/color/Color.ts#L260)
+[src/color/Color.ts:260](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/color/Color.ts#L260)
 
 ***
 
@@ -545,4 +545,4 @@ Color
 
 #### Defined in
 
-[src/color/Color.ts:217](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/color/Color.ts#L217)
+[src/color/Color.ts:217](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/color/Color.ts#L217)

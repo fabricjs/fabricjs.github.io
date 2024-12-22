@@ -65,7 +65,7 @@ object:removed
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:186](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L186)
+[src/canvas/StaticCanvas.ts:186](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L186)
 
 ## Properties
 
@@ -83,7 +83,7 @@ needs to end up in the constructor too
 
 #### Defined in
 
-[src/Collection.ts:21](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/Collection.ts#L21)
+[src/Collection.ts:21](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L21)
 
 ***
 
@@ -101,7 +101,7 @@ needs to end up in the constructor too
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:159](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L159)
+[src/canvas/StaticCanvas.ts:159](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L159)
 
 ***
 
@@ -119,7 +119,7 @@ move to Canvas
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:123](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L123)
+[src/canvas/StaticCanvas.ts:123](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L123)
 
 ***
 
@@ -141,7 +141,7 @@ Background color of canvas instance.
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:98](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L98)
+[src/canvas/StaticCanvas.ts:98](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L98)
 
 ***
 
@@ -166,7 +166,7 @@ vale. As an alternative you can disable image objectCaching
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:99](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L99)
+[src/canvas/StaticCanvas.ts:99](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L99)
 
 ***
 
@@ -196,7 +196,7 @@ we should really find a different way to do this
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:97](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L97)
+[src/canvas/StaticCanvas.ts:97](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L97)
 
 ***
 
@@ -215,7 +215,7 @@ clipPath will clip away controls, if you do not want this to happen use controls
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:105](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L105)
+[src/canvas/StaticCanvas.ts:105](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L105)
 
 ***
 
@@ -233,7 +233,7 @@ move to Canvas
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:118](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L118)
+[src/canvas/StaticCanvas.ts:118](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L118)
 
 ***
 
@@ -246,7 +246,7 @@ No more rendering operation will be executed on this canvas.
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:150](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L150)
+[src/canvas/StaticCanvas.ts:150](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L150)
 
 ***
 
@@ -259,7 +259,7 @@ WIll likely complete the render cycle already scheduled but stopping adding more
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:157](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L157)
+[src/canvas/StaticCanvas.ts:157](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L157)
 
 ***
 
@@ -269,7 +269,7 @@ WIll likely complete the render cycle already scheduled but stopping adding more
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:163](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L163)
+[src/canvas/StaticCanvas.ts:163](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L163)
 
 ***
 
@@ -291,7 +291,7 @@ When true, canvas is scaled by devicePixelRatio for better rendering on retina s
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:112](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L112)
+[src/canvas/StaticCanvas.ts:112](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L112)
 
 ***
 
@@ -308,7 +308,7 @@ The canvas can be taller than width if retina scaling is active
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:94](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L94)
+[src/canvas/StaticCanvas.ts:94](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L94)
 
 ***
 
@@ -330,7 +330,7 @@ Indicates whether this canvas will use image smoothing, this is on by default in
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:113](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L113)
+[src/canvas/StaticCanvas.ts:113](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L113)
 
 ***
 
@@ -353,7 +353,7 @@ if set to false, takes precedence over the object value.
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:107](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L107)
+[src/canvas/StaticCanvas.ts:107](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L107)
 
 ***
 
@@ -379,7 +379,7 @@ Overlay color of canvas instance.
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:102](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L102)
+[src/canvas/StaticCanvas.ts:102](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L102)
 
 ***
 
@@ -404,7 +404,7 @@ vale. As an alternative you can disable image objectCaching
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:103](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L103)
+[src/canvas/StaticCanvas.ts:103](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L103)
 
 ***
 
@@ -434,7 +434,7 @@ we should really find a different way to do this
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:101](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L101)
+[src/canvas/StaticCanvas.ts:101](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L101)
 
 ***
 
@@ -461,7 +461,7 @@ Left default to true to do not break documentation and old app, fiddles.
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:110](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L110)
+[src/canvas/StaticCanvas.ts:110](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L110)
 
 ***
 
@@ -487,7 +487,7 @@ true
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:111](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L111)
+[src/canvas/StaticCanvas.ts:111](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L111)
 
 ***
 
@@ -510,7 +510,7 @@ a zoomed canvas will then produce zoomed SVG output.
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:954](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L954)
+[src/canvas/StaticCanvas.ts:954](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L954)
 
 ***
 
@@ -542,7 +542,7 @@ canvas.viewportTransform = [0.7, 0, 0, 0.7, 50, 50];
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:125](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L125)
+[src/canvas/StaticCanvas.ts:125](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L125)
 
 ***
 
@@ -554,7 +554,7 @@ The viewport bounding box in scene plane coordinates, see [calcViewportBoundarie
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:130](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L130)
+[src/canvas/StaticCanvas.ts:130](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L130)
 
 ***
 
@@ -571,7 +571,7 @@ The canvas can be larger than width if retina scaling is active
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:93](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L93)
+[src/canvas/StaticCanvas.ts:93](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L93)
 
 ***
 
@@ -581,7 +581,7 @@ The canvas can be larger than width if retina scaling is active
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:174](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L174)
+[src/canvas/StaticCanvas.ts:174](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L174)
 
 ## Accessors
 
@@ -595,7 +595,7 @@ The canvas can be larger than width if retina scaling is active
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:141](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L141)
+[src/canvas/StaticCanvas.ts:141](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L141)
 
 ***
 
@@ -612,7 +612,7 @@ Can be use to read the raw pixels, but never write or manipulate
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:137](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L137)
+[src/canvas/StaticCanvas.ts:137](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L137)
 
 ## Methods
 
@@ -634,7 +634,7 @@ Can be use to read the raw pixels, but never write or manipulate
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:228](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L228)
+[src/canvas/StaticCanvas.ts:228](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L228)
 
 ***
 
@@ -656,7 +656,7 @@ Can be use to read the raw pixels, but never write or manipulate
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:243](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L243)
+[src/canvas/StaticCanvas.ts:243](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L243)
 
 ***
 
@@ -674,7 +674,7 @@ Can be use to read the raw pixels, but never write or manipulate
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:249](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L249)
+[src/canvas/StaticCanvas.ts:249](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L249)
 
 ***
 
@@ -698,7 +698,7 @@ Can be use to read the raw pixels, but never write or manipulate
 
 #### Defined in
 
-[src/CommonMethods.ts:38](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/CommonMethods.ts#L38)
+[src/CommonMethods.ts:38](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/CommonMethods.ts#L38)
 
 ***
 
@@ -720,7 +720,7 @@ to move to
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:431](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L431)
+[src/canvas/StaticCanvas.ts:431](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L431)
 
 ***
 
@@ -749,7 +749,7 @@ new array length
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:210](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L210)
+[src/canvas/StaticCanvas.ts:210](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L210)
 
 ***
 
@@ -785,7 +785,7 @@ true if change occurred
 
 #### Defined in
 
-[src/Collection.ts:240](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/Collection.ts#L240)
+[src/Collection.ts:240](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L240)
 
 ***
 
@@ -814,7 +814,7 @@ true if change occurred
 
 #### Defined in
 
-[src/Collection.ts:194](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/Collection.ts#L194)
+[src/Collection.ts:194](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L194)
 
 ***
 
@@ -839,7 +839,7 @@ This method is also attached as "resize" event handler of window
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:266](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L266)
+[src/canvas/StaticCanvas.ts:266](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L266)
 
 ***
 
@@ -856,7 +856,7 @@ helps to determinate when an object is in the current rendering viewport
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:528](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L528)
+[src/canvas/StaticCanvas.ts:528](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L528)
 
 ***
 
@@ -870,7 +870,7 @@ helps to determinate when an object is in the current rendering viewport
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:546](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L546)
+[src/canvas/StaticCanvas.ts:546](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L546)
 
 ***
 
@@ -892,7 +892,7 @@ Object to center vertically and horizontally
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:756](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L756)
+[src/canvas/StaticCanvas.ts:756](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L756)
 
 ***
 
@@ -912,7 +912,7 @@ Centers object horizontally in the canvas
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:734](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L734)
+[src/canvas/StaticCanvas.ts:734](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L734)
 
 ***
 
@@ -934,7 +934,7 @@ Object to center vertically
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:745](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L745)
+[src/canvas/StaticCanvas.ts:745](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L745)
 
 ***
 
@@ -950,7 +950,7 @@ Clears all contexts (background, main, top) of an instance
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:478](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L478)
+[src/canvas/StaticCanvas.ts:478](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L478)
 
 ***
 
@@ -972,7 +972,7 @@ Context to clear
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:463](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L463)
+[src/canvas/StaticCanvas.ts:463](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L463)
 
 ***
 
@@ -994,7 +994,7 @@ Array of properties to include in the cloned canvas and children
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1327](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L1327)
+[src/canvas/StaticCanvas.ts:1327](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L1327)
 
 ***
 
@@ -1011,7 +1011,7 @@ This essentially copies canvas dimensions since loadFromJSON does not affect can
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1337](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L1337)
+[src/canvas/StaticCanvas.ts:1337](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L1337)
 
 ***
 
@@ -1047,7 +1047,7 @@ array of objects contained in the bounding box, ordered from top to bottom stack
 
 #### Defined in
 
-[src/Collection.ts:326](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/Collection.ts#L326)
+[src/Collection.ts:326](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L326)
 
 ***
 
@@ -1069,7 +1069,7 @@ complexity
 
 #### Defined in
 
-[src/Collection.ts:165](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/Collection.ts#L165)
+[src/Collection.ts:165](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L165)
 
 ***
 
@@ -1103,7 +1103,7 @@ Object to check against
 
 #### Defined in
 
-[src/Collection.ts:148](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/Collection.ts#L148)
+[src/Collection.ts:148](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L148)
 
 ***
 
@@ -1121,7 +1121,7 @@ Object to check against
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1080](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L1080)
+[src/canvas/StaticCanvas.ts:1080](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L1080)
 
 ***
 
@@ -1139,7 +1139,7 @@ and are not extracted from the DOM by fabricjs
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1123](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L1123)
+[src/canvas/StaticCanvas.ts:1123](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L1123)
 
 ***
 
@@ -1155,7 +1155,7 @@ Creates markup containing SVG referenced elements like patterns, gradients etc.
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1095](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L1095)
+[src/canvas/StaticCanvas.ts:1095](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L1095)
 
 ***
 
@@ -1177,7 +1177,7 @@ if aborted by a consequent call
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1455](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L1455)
+[src/canvas/StaticCanvas.ts:1455](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L1455)
 
 ***
 
@@ -1201,7 +1201,7 @@ Context to render on
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:610](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L610)
+[src/canvas/StaticCanvas.ts:610](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L610)
 
 ***
 
@@ -1219,7 +1219,7 @@ Context to render on
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:553](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L553)
+[src/canvas/StaticCanvas.ts:553](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L553)
 
 ***
 
@@ -1245,7 +1245,7 @@ Context to render on
 
 #### Defined in
 
-[src/Collection.ts:272](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/Collection.ts#L272)
+[src/Collection.ts:272](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L272)
 
 ***
 
@@ -1271,7 +1271,7 @@ Context to render on
 
 #### Defined in
 
-[src/Collection.ts:295](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/Collection.ts#L295)
+[src/Collection.ts:295](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L295)
 
 ***
 
@@ -1305,7 +1305,7 @@ Options object
 
 #### Defined in
 
-[src/Observable.ts:167](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/Observable.ts#L167)
+[src/Observable.ts:167](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L167)
 
 ***
 
@@ -1334,7 +1334,7 @@ Callback invoked with current object as first argument,
 
 #### Defined in
 
-[src/Collection.ts:91](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/Collection.ts#L91)
+[src/Collection.ts:91](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L91)
 
 ***
 
@@ -1362,7 +1362,7 @@ value of a property
 
 #### Defined in
 
-[src/CommonMethods.ts:59](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/CommonMethods.ts#L59)
+[src/CommonMethods.ts:59](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/CommonMethods.ts#L59)
 
 ***
 
@@ -1393,7 +1393,7 @@ object with "top" and "left" number values
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:716](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L716)
+[src/canvas/StaticCanvas.ts:716](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L716)
 
 ***
 
@@ -1409,7 +1409,7 @@ Returns coordinates of a center of canvas.
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:727](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L727)
+[src/canvas/StaticCanvas.ts:727](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L727)
 
 ***
 
@@ -1425,7 +1425,7 @@ Returns context of canvas where objects are drawn
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:471](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L471)
+[src/canvas/StaticCanvas.ts:471](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L471)
 
 ***
 
@@ -1441,7 +1441,7 @@ Returns &lt;canvas> element corresponding to this instance
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:455](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L455)
+[src/canvas/StaticCanvas.ts:455](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L455)
 
 ***
 
@@ -1457,7 +1457,7 @@ Returns canvas height (in px)
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:282](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L282)
+[src/canvas/StaticCanvas.ts:282](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L282)
 
 ***
 
@@ -1483,7 +1483,7 @@ When specified, only objects of these types are returned
 
 #### Defined in
 
-[src/Collection.ts:108](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/Collection.ts#L108)
+[src/Collection.ts:108](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L108)
 
 ***
 
@@ -1501,7 +1501,7 @@ vpCenter, viewport center
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:794](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L794)
+[src/canvas/StaticCanvas.ts:794](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L794)
 
 ***
 
@@ -1517,7 +1517,7 @@ Returns canvas width (in px)
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:274](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L274)
+[src/canvas/StaticCanvas.ts:274](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L274)
 
 ***
 
@@ -1533,7 +1533,7 @@ Returns canvas zoom level
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:384](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L384)
+[src/canvas/StaticCanvas.ts:384](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L384)
 
 ***
 
@@ -1565,7 +1565,7 @@ new array length
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:216](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L216)
+[src/canvas/StaticCanvas.ts:216](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L216)
 
 ***
 
@@ -1587,7 +1587,7 @@ true if collection is empty
 
 #### Defined in
 
-[src/Collection.ts:128](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/Collection.ts#L128)
+[src/Collection.ts:128](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L128)
 
 ***
 
@@ -1613,7 +1613,7 @@ object at index
 
 #### Defined in
 
-[src/Collection.ts:120](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/Collection.ts#L120)
+[src/Collection.ts:120](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L120)
 
 ***
 
@@ -1672,7 +1672,7 @@ canvas.loadFromJSON(json, function(o, object) {
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1276](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L1276)
+[src/canvas/StaticCanvas.ts:1276](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L1276)
 
 ***
 
@@ -1704,7 +1704,7 @@ true if change occurred
 
 #### Defined in
 
-[src/Collection.ts:262](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/Collection.ts#L262)
+[src/Collection.ts:262](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L262)
 
 ***
 
@@ -1742,7 +1742,7 @@ event name (eg. 'after:render')
 
 ##### Defined in
 
-[src/Observable.ts:122](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/Observable.ts#L122)
+[src/Observable.ts:122](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L122)
 
 #### off(eventName, handler)
 
@@ -1774,7 +1774,7 @@ event listener to unsubscribe
 
 ##### Defined in
 
-[src/Observable.ts:128](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/Observable.ts#L128)
+[src/Observable.ts:128](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L128)
 
 #### off(handlers)
 
@@ -1798,7 +1798,7 @@ handlers key/value pairs (eg. {'after:render': handler, 'selection:cleared': han
 
 ##### Defined in
 
-[src/Observable.ts:133](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/Observable.ts#L133)
+[src/Observable.ts:133](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L133)
 
 #### off()
 
@@ -1816,7 +1816,7 @@ unsubscribe all event listeners
 
 ##### Defined in
 
-[src/Observable.ts:137](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/Observable.ts#L137)
+[src/Observable.ts:137](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L137)
 
 ***
 
@@ -1860,7 +1860,7 @@ on
 
 ##### Defined in
 
-[src/Observable.ts:23](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/Observable.ts#L23)
+[src/Observable.ts:23](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L23)
 
 #### on(handlers)
 
@@ -1880,7 +1880,7 @@ on
 
 ##### Defined in
 
-[src/Observable.ts:27](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/Observable.ts#L27)
+[src/Observable.ts:27](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L27)
 
 ***
 
@@ -1924,7 +1924,7 @@ once
 
 ##### Defined in
 
-[src/Observable.ts:62](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/Observable.ts#L62)
+[src/Observable.ts:62](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L62)
 
 #### once(handlers)
 
@@ -1944,7 +1944,7 @@ once
 
 ##### Defined in
 
-[src/Observable.ts:66](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/Observable.ts#L66)
+[src/Observable.ts:66](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L66)
 
 ***
 
@@ -1966,7 +1966,7 @@ Pans viewpoint relatively
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:442](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L442)
+[src/canvas/StaticCanvas.ts:442](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L442)
 
 ***
 
@@ -1982,7 +1982,7 @@ Renders the canvas
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:492](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L492)
+[src/canvas/StaticCanvas.ts:492](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L492)
 
 ***
 
@@ -2006,7 +2006,7 @@ to render
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:562](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L562)
+[src/canvas/StaticCanvas.ts:562](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L562)
 
 ***
 
@@ -2024,7 +2024,7 @@ a boolean flag will avoid appending more.
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:518](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L518)
+[src/canvas/StaticCanvas.ts:518](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L518)
 
 ***
 
@@ -2060,7 +2060,7 @@ true if change occurred
 
 #### Defined in
 
-[src/Collection.ts:214](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/Collection.ts#L214)
+[src/Collection.ts:214](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L214)
 
 ***
 
@@ -2089,7 +2089,7 @@ true if change occurred
 
 #### Defined in
 
-[src/Collection.ts:178](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/Collection.ts#L178)
+[src/Collection.ts:178](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L178)
 
 ***
 
@@ -2119,7 +2119,7 @@ Property value (if function, the value is passed into it and its return value is
 
 #### Defined in
 
-[src/CommonMethods.ts:29](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/CommonMethods.ts#L29)
+[src/CommonMethods.ts:29](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/CommonMethods.ts#L29)
 
 ***
 
@@ -2155,7 +2155,7 @@ Set the given dimensions only as css dimensions
 
 ##### Defined in
 
-[src/canvas/StaticCanvas.ts:361](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L361)
+[src/canvas/StaticCanvas.ts:361](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L361)
 
 #### setDimensions(dimensions, options)
 
@@ -2177,7 +2177,7 @@ Set the given dimensions only as css dimensions
 
 ##### Defined in
 
-[src/canvas/StaticCanvas.ts:365](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L365)
+[src/canvas/StaticCanvas.ts:365](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L365)
 
 #### setDimensions(dimensions, options)
 
@@ -2195,7 +2195,7 @@ Set the given dimensions only as css dimensions
 
 ##### Defined in
 
-[src/canvas/StaticCanvas.ts:369](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L369)
+[src/canvas/StaticCanvas.ts:369](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L369)
 
 ***
 
@@ -2236,7 +2236,7 @@ Set the given dimensions only as css dimensions
 
 ##### Defined in
 
-[src/canvas/StaticCanvas.ts:314](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L314)
+[src/canvas/StaticCanvas.ts:314](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L314)
 
 #### setHeight(value, options)
 
@@ -2258,7 +2258,7 @@ Set the given dimensions only as css dimensions
 
 ##### Defined in
 
-[src/canvas/StaticCanvas.ts:318](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L318)
+[src/canvas/StaticCanvas.ts:318](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L318)
 
 ***
 
@@ -2280,7 +2280,7 @@ a Canvas 2D API transform matrix
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:392](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L392)
+[src/canvas/StaticCanvas.ts:392](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L392)
 
 ***
 
@@ -2320,7 +2320,7 @@ Set the given dimensions only as css dimensions
 
 ##### Defined in
 
-[src/canvas/StaticCanvas.ts:294](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L294)
+[src/canvas/StaticCanvas.ts:294](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L294)
 
 #### setWidth(value, options)
 
@@ -2342,7 +2342,7 @@ Set the given dimensions only as css dimensions
 
 ##### Defined in
 
-[src/canvas/StaticCanvas.ts:298](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L298)
+[src/canvas/StaticCanvas.ts:298](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L298)
 
 ***
 
@@ -2364,7 +2364,7 @@ to set zoom to, less than 1 zooms out
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:423](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L423)
+[src/canvas/StaticCanvas.ts:423](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L423)
 
 ***
 
@@ -2386,7 +2386,7 @@ Collection size
 
 #### Defined in
 
-[src/Collection.ts:136](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/Collection.ts#L136)
+[src/Collection.ts:136](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L136)
 
 ***
 
@@ -2416,7 +2416,7 @@ Cropping informations
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1411](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L1411)
+[src/canvas/StaticCanvas.ts:1411](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L1411)
 
 ***
 
@@ -2477,7 +2477,7 @@ var dataURL = canvas.toDataURL({
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1380](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L1380)
+[src/canvas/StaticCanvas.ts:1380](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L1380)
 
 ***
 
@@ -2501,7 +2501,7 @@ json string
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:817](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L817)
+[src/canvas/StaticCanvas.ts:817](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L817)
 
 ***
 
@@ -2525,7 +2525,7 @@ object representation of an instance
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:854](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L854)
+[src/canvas/StaticCanvas.ts:854](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L854)
 
 ***
 
@@ -2568,7 +2568,7 @@ var json = canvas.toJSON();
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:845](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L845)
+[src/canvas/StaticCanvas.ts:845](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L845)
 
 ***
 
@@ -2592,7 +2592,7 @@ object representation of an instance
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:826](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L826)
+[src/canvas/StaticCanvas.ts:826](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L826)
 
 ***
 
@@ -2661,7 +2661,7 @@ var svg = canvas.toSVG(null, function(svg) {
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:993](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L993)
+[src/canvas/StaticCanvas.ts:993](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L993)
 
 ***
 
@@ -2679,7 +2679,7 @@ string representation of an instance
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:1514](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L1514)
+[src/canvas/StaticCanvas.ts:1514](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L1514)
 
 ***
 
@@ -2705,7 +2705,7 @@ Property to toggle
 
 #### Defined in
 
-[src/CommonMethods.ts:46](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/CommonMethods.ts#L46)
+[src/CommonMethods.ts:46](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/CommonMethods.ts#L46)
 
 ***
 
@@ -2727,7 +2727,7 @@ Object to center vertically and horizontally
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:764](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L764)
+[src/canvas/StaticCanvas.ts:764](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L764)
 
 ***
 
@@ -2749,7 +2749,7 @@ Object to center vertically and horizontally
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:772](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L772)
+[src/canvas/StaticCanvas.ts:772](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L772)
 
 ***
 
@@ -2771,7 +2771,7 @@ Object to center vertically and horizontally
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:783](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L783)
+[src/canvas/StaticCanvas.ts:783](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L783)
 
 ***
 
@@ -2800,7 +2800,7 @@ to set zoom to, less than 1 zooms out
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:406](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L406)
+[src/canvas/StaticCanvas.ts:406](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L406)
 
 ***
 
@@ -2814,4 +2814,4 @@ to set zoom to, less than 1 zooms out
 
 #### Defined in
 
-[src/canvas/StaticCanvas.ts:182](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/StaticCanvas.ts#L182)
+[src/canvas/StaticCanvas.ts:182](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L182)
