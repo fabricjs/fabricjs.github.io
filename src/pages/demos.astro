@@ -7,9 +7,9 @@ const collectionName = 'demo';
 const demoEntries = await getCollection(collectionName);
 const images = import.meta.glob<{ default: ImageMetadata }>('/src/content/demo/**/*.{jpeg,jpg,png,gif}');
 ---
-<Layout title="FabricJS Demos" description="Simple features showcase">
+<Layout title="Fabric.js Demos" description="Simple features showcase">
     <main class="darkBg">
-        <h1>FabricJS Demos</h1>
+        <h1>Fabric.js Demos</h1>
         <ThumbnailList>
             {demoEntries.map(({ data, id, slug }) => {
                 const imgFullPath = `/src/content/${collectionName}/${id.replace(/index\.mdx?/, data.thumbnail)}`;

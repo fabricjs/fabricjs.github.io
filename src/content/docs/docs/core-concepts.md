@@ -6,12 +6,12 @@ sidebar:
   order: 300
 ---
 
-When working with FabricJS there are many classes and concepts you will have to learn to know.
-This is an overview of the main building blocks of FabricJS
+When working with Fabric.js there are many classes and concepts you will have to learn to know.
+This is an overview of the main building blocks of Fabric.js
 
 ## Canvas
 
-The main container for FabricJS is the `StaticCavas` or the interactive version called simply `Canvas`.
+The main container for Fabric.js is the `StaticCavas` or the interactive version called simply `Canvas`.
 This is a class that provides you the surface where you will draw and will also provide the tools to:
 
 - Handle selections and object interactions
@@ -44,11 +44,11 @@ You can't add a `Gradient` or a `Shadow` to a canvas, you set those as propertie
 FabricImage class represent a raster image on the canvas.
 FabricImage can be filtered with one or more filters.
 Filters are small programs written in WEBGL ( with an optional JS fallback ) that change image pixel value to obtain certain effects.
-FabricJS supports numerous prebuilt fitlers for common operations and also a stack to combine more than one filter to build a particular effect.
+Fabric.js supports numerous prebuilt fitlers for common operations and also a stack to combine more than one filter to build a particular effect.
 
 ## Interactions
 
-FabricJS offers some prebuilt interactions between the objects on the canvas
+Fabric.js offers some prebuilt interactions between the objects on the canvas
 - Selection
 - Dragging
 - Scaling, rotation, skewing through customizable controls
@@ -87,7 +87,7 @@ Available brushes:
 ## Events
 
 Some interaction between the user of the application and the code written by the developer are handled through events.
-You will get an event every time a final user interact with the canvas through FabricJS embedded functionalities for low level events like:
+You will get an event every time a final user interact with the canvas through Fabric.js embedded functionalities for low level events like:
 
 - mouse up/down/move
 - mouse wheel
@@ -103,12 +103,12 @@ While you will also get some high level event that is the end result of embedded
 
 ## Animations
 
-FabricJS also support some basic animation utility.
+Fabric.js also support some basic animation utility.
 You can use animation library that supports objects to work with fabricJS.
 You can animate object positions, transform properties like scale, colors or matrices.
 As long as you can change the state during time from a value to aother you can create an animation.
 
-FabricJS animation utility is barebone if you have some specific need for some specific animation effect you are better searching a specific library to do that.
+Fabric.js animation utility is barebone if you have some specific need for some specific animation effect you are better searching a specific library to do that.
 
 ## Exports
 
@@ -119,7 +119,7 @@ Fabric supports `JSON` and `SVG` exports.
 JSON export is meant for saving and restoring visual state on the canvas.
 Every fabricJS object is equipped with its own `toObject` method that will output a simple JS object that can be put in storage and used in pair with `fromObject` to get back an instance of the same type.
 This state is supposed to restore the visual state of the canvas and not functionalities like controls.
-FabricJS assumes that custom controls and custom handler are set up in your codebase as part of your app and are not part of your state.
+Fabric.js assumes that custom controls and custom handler are set up in your codebase as part of your app and are not part of your state.
 
 ### SVG
 

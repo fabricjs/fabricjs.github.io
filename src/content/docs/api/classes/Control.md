@@ -58,7 +58,7 @@ y position of the cursor
 > **actionName**: `string` = `SCALE`
 
 Name of the action that the control will likely execute.
-This is optional. FabricJS uses to identify what the user is doing for some
+This is optional. Fabric.js uses to identify what the user is doing for some
 extra optimizations. If you are writing a custom control and you want to know
 somewhere else in the code what is going on, you can use this string here.
 you can also provide a custom getActionName if your control run multiple actions

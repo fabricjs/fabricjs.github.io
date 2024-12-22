@@ -5,7 +5,7 @@ sidebar:
   order: 4
 ---
 
-FabricJS offers a series of functions and classes to build your own controls for the objects and custom functionalities.
+Fabric.js offers a series of functions and classes to build your own controls for the objects and custom functionalities.
 
 The fabric Canvas code is built to look into any object `controls` property for a map of controls to render target and use.
 

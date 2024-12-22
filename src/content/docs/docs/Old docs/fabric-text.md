@@ -1,7 +1,7 @@
 ---
 date: '2017-08-11'
-description: 'FabricJS Text'
-title: FabricJS Text
+description: 'Fabric.js Text'
+title: Fabric.js Text
 ---
 
 ### An introduction to fabricjs Text 2.0
