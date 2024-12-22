@@ -24,7 +24,7 @@ const { entry }: { entry: Entry } = Astro.props;
 const { Content } = await entry.render();
 ---
 
-<Layout title="FabricJS">
+<Layout title="Fabric.js">
 	<main>
 		<h1>{entry.data.title}</h1>
 		<article>
@@ -33,7 +33,7 @@ const { Content } = await entry.render();
 		<GithubEditLink relativePath={`demo/${entry.slug}/index.mdx`} />
 		<!-- <PrevNextLinks
       prev={
-        pageContext.prev || { title: 'All FabricJS demos', slug: '/demos' }
+        pageContext.prev || { title: 'All Fabric.js demos', slug: '/demos' }
       }
       next={pageContext.next}
     /> -->

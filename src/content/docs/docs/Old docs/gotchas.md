@@ -33,13 +33,13 @@ This affects SVG export too.
 
 Sometimes in prototypes and quick proof of concepts, people change fabric objects properties with text inputs.  
 Fabric documentation states that top, left, scaleX, angle and other properties requires numbers as values.  
-**Text inputs return strings.** FabricJS does not check types and does not convert them, when it does convert a string to a number is because of a side effect of some code and is not a feature to rely on.  
+**Text inputs return strings.** Fabric.js does not check types and does not convert them, when it does convert a string to a number is because of a side effect of some code and is not a feature to rely on.  
 Use parseInt and parseFloat before assigning a value to a property that requires a number.
 
 ### Object does not update after changing property - objectCaching
 
 A common source of confusion is when a developer assigns a new property to fill and the objects does not update after a renderAll.  
-FabricJS does cache objects as images to speed up rendering. If you want fabricJS to know that something changed and that a particular object needs to be redrawn, use the `set` method.
+Fabric.js does cache objects as images to speed up rendering. If you want fabricJS to know that something changed and that a particular object needs to be redrawn, use the `set` method.
 
 ```ts
   rect.set('fill', 'red');

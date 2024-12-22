@@ -139,7 +139,7 @@ That's it. At this point the image data has been changed, the function does not 
 
 #### The WEBGL version
 
-The WEBGL version require to write a fragment shader insted of javascript function. FabricJS provides a standard function that does not change anything to start with. I will not go in detail of what you can do or not do with WEBGL, since i have not the necessary expertise an since there is much material out ther with lot of explanations.  
+The WEBGL version require to write a fragment shader insted of javascript function. Fabric.js provides a standard function that does not change anything to start with. I will not go in detail of what you can do or not do with WEBGL, since i have not the necessary expertise an since there is much material out ther with lot of explanations.  
 The basic fragment shader looks like this:
 ```js
 /**

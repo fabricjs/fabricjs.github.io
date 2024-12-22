@@ -10,7 +10,7 @@ This api is for fabricJS 4.0, the api and the text is currently in beta. Some li
 
 This api lets the developer create its own custom controls without having to use overrides on standard fabricJS controls method. This makes customizaion supported, easy and makes update to the latest version always possible.
 
-FabricJS uses the api internally to define the standard controls set with the same feature and customization that was possible in version 3 and below.
+Fabric.js uses the api internally to define the standard controls set with the same feature and customization that was possible in version 3 and below.
 
 ### How does it work.
 
@@ -45,7 +45,7 @@ Default controls are defined here: [standard controls definition](https://github
 
 #### visible and getVisibility
 
-Before FabricJS 4.0 controls could be set as non visible, to be ignored.
+Before Fabric.js 4.0 controls could be set as non visible, to be ignored.
 Now controls can either exist, non exist, but also be temporary invsisible depending on object status.
 
 The default `getVisibility` function of the control will either return the standard object `_controlsVisibility` property that has been mantained for compatibility reason, or in case that is not set will return the control `.visible` value.
@@ -55,7 +55,7 @@ Controls are generally shared among instances, so setting a control to `.visible
 #### actioname and getActionName
 
 The property actionName gives the name of the action that the controll will likely execute.
-This is used to fire the event during the action, and also FabricJS uses to identify what the user is doing for some extra optimizations. If you are writing a custom control and you want to know somewhere else in the code what is going on, you can use this string here and listen to the resulting event.
+This is used to fire the event during the action, and also Fabric.js uses to identify what the user is doing for some extra optimizations. If you are writing a custom control and you want to know somewhere else in the code what is going on, you can use this string here and listen to the resulting event.
 
 The old naming convention of events is still respected. So a scale action will still fire the event `scaling` and `object:scaling`. But will also fire an extra event `scale` or `scaleX` because that is the action name. So when creating your custom action handler ( if needed ) you can choose if explicitly fire an event with the name you want in your action handler or let fabric fire an event with the same name of the action name.
 

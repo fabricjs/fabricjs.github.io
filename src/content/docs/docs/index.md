@@ -1,10 +1,10 @@
 ---
 date: '2015-03-09'
-title: 'Introduction to FabricJS'
-description: 'A thorough guide to profeciently using FabricJS'
+title: 'Introduction to Fabric.js'
+description: 'A thorough guide to profeciently using Fabric.js'
 ---
 
-A brief introduction to FabricJS and especially what the user can expect from this guide
+A brief introduction to Fabric.js and especially what the user can expect from this guide
 
 ## Pre-requisites
 

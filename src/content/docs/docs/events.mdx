@@ -5,3 +5,42 @@ description: ''
 sidebar:
   order: 600
 ---
+
+## Why events
+
+Fabric.js offers hard coded interactions that are triggered by user interactions with the canvas.
+During those actions the developer may want to react or run extra code, or even just update the state of the application.
+
+Simple examples are:
+- When an object has been selected
+- When an object is being hovered
+- When a transformation is finished
+
+Events have been always part of fabric.js, way before the custom controls api and selection callbacks were introduced.
+As a result events have also been used to modify standard fabric.js behaviours creating complex code flows.
+
+## How events work
+
+Both the BaseFabricObject class and the StaticCanvas inherit from an Observable class.
+This class expose 4 methods, `on`, `off`, `once` and `fire`.
+
+The  `on`, `off`, `once` are used to register and unregister event listeners:
+
+```ts
+const handler = function() {
+  console.log('circle has been clicked');
+}
+// to register an event listener
+const disposer = myCircle.on('mousedown', handler);
+
+// to unregister an event listener call off
+myCircle.off('mousedown', handler);
+// or use the return value of on
+dispose();
+```
+
+The disposer is a function that when called will remove the event listener, this may be easier
+to use than keeping a reference to the handler function used with `on` as an alternative.
+
+The handlers are called bound on the instance, so in the handler funcion the `this` is  either the fabric object or the fabric canvas.
+Fat arrow functions can't be bound to anyhting else than the context in which they were created, so if you don't want unexpected side effects *use functions for event handers*

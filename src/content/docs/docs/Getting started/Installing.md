@@ -1,14 +1,14 @@
 ---
 date: '2015-03-10'
 title: 'Getting started'
-description: 'Getting started with FabricJS'
+description: 'Getting started with Fabric.js'
 sidebar:
   order: 100
 ---
 
 ## Installation
 
-FabricJS can be made available via following approaches as suited by your project
+Fabric.js can be made available via following approaches as suited by your project
 
 ### Using from CDN via script tag
 
