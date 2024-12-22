@@ -39,8 +39,42 @@ myCircle.off('mousedown', handler);
 dispose();
 ```
 
+
+**Be careful**: The `off` method can be called with only the event name, in this case all the listeners for that event
+ will be removed from the instance. This is bad since fabric.js does not have protected events and it is using events events for some functionalities.
+ For example removing all the mousedown events from a text instance will break text editing. This pattern and the more radical one `myObject.off()`
+ are deprecated and should be avoided. 
+
 The disposer is a function that when called will remove the event listener, this may be easier
 to use than keeping a reference to the handler function used with `on` as an alternative.
 
 The handlers are called bound on the instance, so in the handler funcion the `this` is  either the fabric object or the fabric canvas.
-Fat arrow functions can't be bound to anyhting else than the context in which they were created, so if you don't want unexpected side effects *use functions for event handers*
+Fat arrow functions can't be bound to anyhting else than the context in which they were created, so if you don't want unexpected
+ side effects **use functions for event handers**.
+
+Fabric.js calls `fire` to trigger event listeners, the listeners that are hosted on the instance are then called bound in order
+ of registration and with a data object as first and only argument.
+
+Events are fired twice, once on the object involved and once on the canvas, this allow a bit of freedom in writing your event listeners.
+The fire order depends on the implementation of the particular event and is not a specification to take in account.
+While firing twice the event is the same, with the same data object. The canvas event is enriched with an additional property referencing the `target` of the event.
+
+When events are triggered by mouse actions, the mouse or pointer event is forwarded along the data together with common properties that are usually useful to the consumer.
+As an example the `mouse:down` event will have:
+- `e` the original mouse event
+- `scenePoint` the point where the event happened in the canvas coordinate system
+- `viewportPoint` the point where the event happened in the viewport coordinate system
+- `target` the object that was hit by the event, possibly undefimed
+- `subTargets` an array of objects that were hit by the event, possibly empty, if the target has children
+- `transform` the current ongoing transform action (if any, like scaling for example)
+
+## Events list
+
+There isn't an hand curated even list with descriptions and data passed in the argument.
+One way to get to know the events is to look at the event demo here: [Events inspector](/demo/events-inspector/) or to use a type enabled ide and look at 
+auto completition for the on method.
+
+## Custom events
+
+You can fire custom events by using the `fire` method and passing the event name and the data you want, or no data at all.
+
