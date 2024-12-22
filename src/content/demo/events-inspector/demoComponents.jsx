@@ -63,6 +63,8 @@ export const objectsEvents = [
   'changed',
   'editing:entered',
   'editing:exited',
+  'selected',
+  'deselected',
 ];
 
 export const eventGroups = [
