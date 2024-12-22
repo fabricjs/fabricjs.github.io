@@ -6,7 +6,7 @@ sidebar:
   order: 600
 ---
 
-## Why events
+### Why events
 
 Fabric.js offers hard coded interactions that are triggered by user interactions with the canvas.
 During those actions the developer may want to react or run extra code, or even just update the state of the application.
@@ -19,7 +19,7 @@ Simple examples are:
 Events have been always part of fabric.js, way before the custom controls api and selection callbacks were introduced.
 As a result events have also been used to modify standard fabric.js behaviours creating complex code flows.
 
-## When to use events
+### When to use events
 
 Try to do *not* depend too much from events, is not a great pattern outisde mouse and selections.
 At the time i joined the project events were already there and with time there have been additions but never cleanups.
@@ -51,7 +51,7 @@ The custom controls api made most of the transform event unnecessary as well. If
 Events around the selection actions are good to inform your UI framework that something has happened, but for example if you want to avoid
  selecting an object based on some condition it is better to use the onSelect and onDeselect callbacks on the object that are made to influence the operation.
 
-## How events work
+### How events work
 
 Both the BaseFabricObject class and the StaticCanvas inherit from an Observable class.
 This class expose 4 methods, `on`, `off`, `once` and `fire`.
@@ -100,13 +100,13 @@ As an example the `mouse:down` event will have:
 - `subTargets` an array of objects that were hit by the event, possibly empty, if the target has children
 - `transform` the current ongoing transform action (if any, like scaling for example)
 
-## Events list
+### Events list
 
 There isn't an hand curated even list with descriptions and data passed in the argument.
 One way to get to know the events is to look at the event demo here: [Events inspector](/demo/events-inspector/) or to use a type enabled ide and look at 
 auto completition for the on method.
 
-## Custom events
+### Custom events
 
 You can fire custom events by using the `fire` method and passing the event name and the data you want, or no data at all.
 
