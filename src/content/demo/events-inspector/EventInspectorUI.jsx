@@ -11,8 +11,8 @@ import * as fabric from 'fabric';
 import './index.css';
 
 // old html demo converted to a component with MINIMAL react adapatation.
-// The reac code written here has been written to remove the old code that was very contributor unfriendly.
-// The react code written here does not represent my react or web ui skills.
+// The react code written here has been written to remove the old code that was very contributor unfriendly.
+// The react code has not been optimized or wrote to be a react best practice but it has written to just work.
 
 export const EventInspectorUI = () => {
   const canvasRef = useRef();
@@ -71,7 +71,7 @@ export const EventInspectorUI = () => {
       new fabric.Textbox('Textbox edit and drag me on textbox 2', { fill: 'black', top: 70, left: 200 })
     );
     canvas.add(
-      new fabric.Textbox('Textbox 2', { fill: 'black', top: 120, left: 200 })
+      new fabric.Textbox('Textbox 2', { fill: 'black', top: 120, left: 400 })
     );
 
     canvasEvents.forEach((eventName) => {
