@@ -65,28 +65,41 @@ export const objectsEvents = [
   'editing:exited',
 ];
 
-export const eventGroups = [{
-    label: 'Events on mouse move',
-    id: 'move',
-    events: [
-        'moving',
-        'scaling',
-        'rotating',
-        'skewing',
-        'resizing',
-        'mousemove', 
-        'mouse:move',
-        'object:moving',
-        'object:scaling',
-        'object:rotating',
-        'object:skewing',
-        'object:resizing',
-    ],
-}, {
+export const eventGroups = [
+  {
+    label: 'All events',
+    id: 'all',
+    enabled: false,
+    events: [...canvasEvents, ...objectsEvents],
+  }, {
     label: 'Canvas events',
-    id: 'move',
+    enabled: true,
+    id: 'canvas',
     events: canvasEvents,
-}]
+  }, {
+    label: 'High volume events',
+    id: 'move',
+    enabled: false,
+    events: [
+      'mouse:wheel',
+      'mousewheel',
+      'dragover',
+      'moving',
+      'scaling',
+      'rotating',
+      'skewing',
+      'resizing',
+      'mousemove', 
+      'mousemove:before', 
+      'mouse:move',
+      'mouse:move:before',
+      'object:moving',
+      'object:scaling',
+      'object:rotating',
+      'object:skewing',
+      'object:resizing',
+    ],
+  }];
 
 export const EventCheckbox = memo(({ eventName, onChange, checked }) => {
 
@@ -117,18 +130,18 @@ export const LogEntry = memo(({ logEntry, color }) => {
   );
 });
 
-export const EventGroupCheckbox = memo(({ groupName, label, onChange, checked }) => {
+export const EventGroupCheckbox = memo(({ groupName, label, onChange }) => {
     const labelId = `grp_${groupName}`;
 
     const onChangeWrapped = useCallback((e) => {
       const checked = e.target.checked;
-      onChange && onChange(eventName, checked);
+      onChange && onChange(groupName, checked);
     }, [onChange])
   
     return (
-      <div>
-        <input type="checkbox" checked={checked} onChange={onChangeWrapped} id={labelId} />
-        <label htmlFor={labelId}>{label}</label>
-      </div>
+      <label htmlFor={labelId}>
+        <input type="checkbox" onChange={onChangeWrapped} id={labelId} />
+        {label}
+      </label>
     );
 });

@@ -19,16 +19,29 @@ export const EventInspectorUI = () => {
   
   const logs = useRef([]);
   const [logsUpdated, setLogsUpdated] = useState(0);
-  const [eventStatusObj, setEventStatusObj] = useState(
+  const eventStatusObj = useRef(
     Object.fromEntries(
-      objectsEvents.map((key) => [key, true])
+      objectsEvents.map((key) => [key, false])
     )
   );
-  const [eventStatusCanvas, setEventStatusCanvas] = useState(
+  const eventStatusCanvas = useRef(
     Object.fromEntries(
-      canvasEvents.map((key) => [key, true])
+      canvasEvents.map((key) => [key, false])
     )
   );
+
+  const logCallback = useCallback((eventData, eventName, forCanvas) => {
+    const id = performance.now();
+    if (forCanvas && !eventStatusCanvas.current[eventName]) {
+      return;
+    }
+    if (!forCanvas && !eventStatusObj.current[eventName]) {
+      return;
+    }
+    logs.current.push({ id, eventName, code: JSON.stringify(eventData, null, '\t') });
+    logs.current = logs.current.slice(0, 100);
+    setLogsUpdated(id);
+  }, [setLogsUpdated]);
 
   useEffect(() => {
     fabric.FabricObject.ownDefaults.transparentCorners = false;
@@ -60,31 +73,57 @@ export const EventInspectorUI = () => {
     canvas.add(
       new fabric.Textbox('Textbox 2', { fill: 'black', top: 120, left: 200 })
     );
-  }, [])
 
-  const logCallback = useCallback((eventData, eventName) => {
-    const id = performance.now();
-    logs.current.push({ id, eventName, code: JSON.stringify(eventData, null, '\t') });
-    setLogsUpdated(id);
-  }, [logs]);
+    canvasEvents.forEach((eventName) => {
+      canvas.on(eventName, (eventData) => logCallback(eventData, eventName, true));
+    });
+
+    objectsEvents.forEach((eventName) => {
+      canvas.getObjects().forEach((obj) => {
+        obj.on(eventName, (eventData) => logCallback(eventData, eventName, false));
+      });
+    })
+  }, []);
 
   const onChangeCanvas = useCallback((eventName, checked) => {
-    const method = checked ? 'on' : 'off';
-    const canvas = canvasRef.current;
-    canvas[method](eventName, (eventData) => logCallback(eventData, eventName))
-    eventStatusCanvas[eventName] = checked;
-    setEventStatusCanvas({...eventStatusCanvas});
-  }, [eventStatusCanvas, setEventStatusCanvas]);
+    console.log(checked, eventName)
+    eventStatusCanvas.current[eventName] = checked;
+    setLogsUpdated(performance.now());
+  }, [eventStatusCanvas]);
 
-  const onChangeObject = useCallback((eventName, checked) => {
-    const method = checked ? 'on' : 'off';
-    const canvas = canvasRef.current;
-    canvas.getObjects().forEach((obj) => {
-      obj[method](eventName, (eventData) => logCallback(eventData, eventName));
+  const onChangeObject = useCallback((eventName, checked) => {   
+    eventStatusObj.current[eventName] = checked;
+    setLogsUpdated(performance.now());
+  }, [eventStatusObj]);
+
+  const onChangeGroup = useCallback((groupName, checked) => {
+    const group = eventGroups.find(group => group.id === groupName);
+    if (!group) return;
+    group.events.forEach((eventName) => {
+      if (canvasEvents.includes(eventName)) {
+        eventStatusCanvas.current[eventName] = checked;
+      }
+      if (objectsEvents.includes(eventName)) {
+        eventStatusObj.current[eventName] = checked;
+      }
+      setLogsUpdated(performance.now());
     });
-    eventStatusObj[eventName] = checked;
-    setEventStatusObj({...eventStatusObj});
-  }, [eventStatusObj, setEventStatusObj]);
+  }, [setLogsUpdated])
+
+  // just the initial setup
+  useEffect(() => {
+    eventGroups.forEach(group => {
+      group.events.forEach((eventName) => {
+        if (canvasEvents.includes(eventName)) {
+          eventStatusCanvas.current[eventName] = group.enabled;
+        }
+        if (objectsEvents.includes(eventName)) {
+          eventStatusObj.current[eventName] = group.enabled;
+        }
+      });
+    });
+    setLogsUpdated(performance.now());
+  }, [])
 
   return (
     <>
@@ -93,39 +132,9 @@ export const EventInspectorUI = () => {
           <p>To avoid event spamming, you can disable events groups.</p>
           <div>
             {eventGroups.map(group => (
-              <EventGroupCheckbox key={group.id} groupName={group.id} label={group.label} onChange={() => {}} />
+              <EventGroupCheckbox key={group.id} groupName={group.id} label={group.label} onChange={onChangeGroup} />
             ))}
-            <label htmlFor="toggle">
-              <input type="checkbox" id="toggle" checked />
-              All events
-            </label>
-
-            <label htmlFor="dragover">
-              <input type="checkbox" id="dragover" checked />
-              DragOver
-            </label>
-
-            <label htmlFor="green">
-              <input type="checkbox" id="green" checked />
-              Green
-            </label>
-
-            <label htmlFor="red">
-              <input type="checkbox" id="red" checked />
-              Red
-            </label>
-
-            <label htmlFor="blue">
-              <input type="checkbox" id="blue" checked />
-              Blue
-            </label>
-
-            <label htmlFor="black">
-              <input type="checkbox" id="black" checked />
-              Black
-            </label>
           </div>
-
           <div className="demo-body">
             <canvas id="c1" width="600" height="400"></canvas>
             <div>
@@ -142,11 +151,11 @@ export const EventInspectorUI = () => {
             </div>
           </div>
           <div id="log1">{
-            logs.current.map(logEntry => (
-              <LogEntry key={logEntry.id} logEntry={logEntry} color="blue" />
+            logs.current.map((logEntry, i) => (
+              <LogEntry key={`${logEntry.id}-${i}`} logEntry={logEntry} color="blue" />
             ))
           }</div>
-          <button id="clear_log" onClick={() => setLogs([])}>clear log</button>
+          <button id="clear_log" onClick={() => { logs.current=[]; setLogsUpdated(performance.now()) }}>clear log</button>
         </div>
         <div className="events-checkboxes">
           <div className="column-events">
@@ -154,7 +163,7 @@ export const EventInspectorUI = () => {
               <strong>Canvas events</strong>
             </div>
             {canvasEvents.map(eventKey => 
-              <EventCheckbox key={`canvas_${eventKey}`} checked={eventStatusCanvas[eventKey]} onChange={onChangeCanvas} eventName={eventKey} />
+              <EventCheckbox key={`canvas_${eventKey}`} checked={eventStatusCanvas.current[eventKey]} onChange={onChangeCanvas} eventName={eventKey} />
             )}
           </div>
           <div className="column-events">
@@ -162,7 +171,7 @@ export const EventInspectorUI = () => {
               <strong>Objects events</strong>
             </div>
             {objectsEvents.map(eventKey => 
-              <EventCheckbox key={`obj_${eventKey}`} checked={eventStatusObj[eventKey]} onChange={onChangeObject} eventName={eventKey} />
+              <EventCheckbox key={`obj_${eventKey}`} checked={eventStatusObj.current[eventKey]} onChange={onChangeObject} eventName={eventKey} />
             )}
           </div>
         </div>
