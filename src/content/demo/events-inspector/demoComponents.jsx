@@ -130,17 +130,20 @@ export const LogEntry = memo(({ logEntry, color }) => {
   );
 });
 
-export const EventGroupCheckbox = memo(({ groupName, label, onChange }) => {
+export const EventGroupCheckbox = memo(({ groupName, label, onChange, initialChecked }) => {
     const labelId = `grp_${groupName}`;
+
+    const [checked, setChecked] = useState(initialChecked);
 
     const onChangeWrapped = useCallback((e) => {
       const checked = e.target.checked;
+      setChecked(checked);
       onChange && onChange(groupName, checked);
-    }, [onChange])
+    }, [onChange, checked]);
   
     return (
       <label htmlFor={labelId}>
-        <input type="checkbox" onChange={onChangeWrapped} id={labelId} />
+        <input type="checkbox" onChange={onChangeWrapped} id={labelId} checked={checked} />
         {label}
       </label>
     );

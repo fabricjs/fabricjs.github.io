@@ -58,20 +58,15 @@ label {
 .bold label {
   font-weight: bold;
 }
-label[for='green'] {
-  color: green;
-}
-label[for='red'] {
-  color: red;
-}
-label[for='blue'] {
-  color: blue;
-}
 .log-container {
   display: flex;
   flex-direction: column;
   overflow: auto;
 }
-.hidden {
-  display: none;
+.events-checkboxes {
+  padding-top: 24px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
 }
+

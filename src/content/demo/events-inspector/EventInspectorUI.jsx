@@ -132,7 +132,13 @@ export const EventInspectorUI = () => {
           <p>To avoid event spamming, you can disable events groups.</p>
           <div>
             {eventGroups.map(group => (
-              <EventGroupCheckbox key={group.id} groupName={group.id} label={group.label} onChange={onChangeGroup} />
+              <EventGroupCheckbox
+                key={group.id}
+                groupName={group.id}
+                label={group.label}
+                onChange={onChangeGroup}
+                initialChecked={group.enabled}
+              />
             ))}
           </div>
           <div className="demo-body">
