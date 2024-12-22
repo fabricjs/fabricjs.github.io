@@ -110,3 +110,16 @@ auto completition for the on method.
 
 You can fire custom events by using the `fire` method and passing the event name and the data you want, or no data at all.
 
+To keep your code typehinted, you can also extend the event list:
+
+```ts
+// declare the events for typescript
+declare module "fabric" {
+  interface CanvasEvents {
+      'custom:event': Partial<TEvent> & {
+          target: FabricObject;
+          anydata: string;
+      };
+  }
+}
+```

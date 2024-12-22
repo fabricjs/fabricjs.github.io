@@ -70,22 +70,6 @@ Rect.prototype.getText = function() { return 'none'; }
 Text.prototype.getText = function() { return this.text; }
 ```
 
-### Custom events
-
-You can even extend event list. Typescript and ide will be able to typehint your custom events:
-
-```ts
-// declare the events for typescript
-declare module "fabric" {
-  interface CanvasEvents {
-      'custom:event': Partial<TEvent> & {
-          target: FabricObject;
-          anydata: string;
-      };
-  }
-}
-```
-
 ### Subclassing
 
 Subclassing is easier but is not always possible.
