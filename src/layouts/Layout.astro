@@ -2,7 +2,7 @@
 import Header from '../components/Header/Header.astro';
 import './style.css';
 import './colorvars.css';
-import CarbonAd from '../components/CarbonAd/InlineCarbonAd';
+import CarbonAd from '../components/CarbonAd/InlineCarbonAd.astro';
 
 interface Props {
 	title: string;
@@ -24,7 +24,7 @@ const { title, description } = Astro.props;
 	</head>
 	<body>
 		<Header />
-		<CarbonAd client:load />
+		<CarbonAd />
 		<slot />
 	</body>
 </html>
