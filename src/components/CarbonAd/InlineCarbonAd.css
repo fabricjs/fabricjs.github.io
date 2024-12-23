@@ -1,13 +1,24 @@
-#gentle-reminder, #carbonads {
+#gentle-reminder.show, #carbonads {
   width: 100%;
   border-radius: 8px;
   border: 1px solid var(--primary-color);
   background-color: var(--primary-color-tint);
 }
 
+.ads-placeholder {
+  min-height: 162px;
+  height: fit-content;
+}
+
 .reminder {
-  padding: 16px;
+  border: 1px solid transparent;
+  transition: height 250ms linear, background-color 500ms linear, border 250ms linear 500ms, line-height 350ms linear;
   text-align: center;
+  line-height: 1;
+}
+
+.reminder.show {
+  padding: 16px;
   line-height: 2;
 }
 
