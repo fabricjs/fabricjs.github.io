@@ -10,6 +10,10 @@
   height: fit-content;
 }
 
+.sl-container .ads-placeholder {
+  min-height: 122px;
+}
+
 .reminder {
   border: 1px solid transparent;
   transition: height 250ms linear, background-color 500ms linear, border 250ms linear 500ms, line-height 350ms linear;
