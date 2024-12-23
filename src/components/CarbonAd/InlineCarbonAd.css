@@ -15,7 +15,7 @@
 }
 
 .reminder {
-  border: 1px solid transparent;
+  border: 1px solid var(--primary-color-tint);
   transition: height 250ms linear, background-color 500ms linear, border 250ms linear 500ms, line-height 350ms linear;
   text-align: center;
   line-height: 1;
