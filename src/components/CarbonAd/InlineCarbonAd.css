@@ -1,17 +1,17 @@
 #gentle-reminder.show, #carbonads {
   width: 100%;
   border-radius: 8px;
-  border: 1px solid var(--primary-color);
+  border: 1px solid var(--info-color);
   background-color: var(--primary-color-tint);
 }
 
 .ads-placeholder {
-  min-height: 162px;
+  min-height: 234px;
   height: fit-content;
 }
 
 .sl-container .ads-placeholder {
-  min-height: 122px;
+  min-height: 192px;
 }
 
 .reminder {
@@ -24,6 +24,7 @@
 .reminder.show {
   padding: 16px;
   line-height: 2;
+  height: calc(auto);
 }
 
 #carbonads span {
@@ -96,5 +97,13 @@
 
     #carbonads .carbon-wrap {
         gap: 16px;
+    }
+
+    .ads-placeholder {
+      min-height: 162px;
+    }
+
+    .sl-container .ads-placeholder {
+      min-height: 122px;
     }
 }
