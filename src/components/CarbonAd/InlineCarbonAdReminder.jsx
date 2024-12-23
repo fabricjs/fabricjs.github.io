@@ -19,7 +19,7 @@ const CarbonAd = () => {
   const classname = expand ? 'reminder show' : 'reminder';
 
   return (
-    <div key="placeholder" id="gentle-reminder" className={classname} style={{ height: expand ? '212px' : showReminder ? '120px' : 0 }}>
+    <div key="placeholder" id="gentle-reminder" className={classname} style={{ height: expand ? undefined : 0 }}>
       {showReminder && (
         <>
         Do you like fabricJS?
