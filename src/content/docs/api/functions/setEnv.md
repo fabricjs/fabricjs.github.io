@@ -31,4 +31,4 @@ setEnv({ ...getEnv(), window, document });
 
 ## Defined in
 
-[src/env/index.ts:29](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/env/index.ts#L29)
+[src/env/index.ts:29](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/env/index.ts#L29)

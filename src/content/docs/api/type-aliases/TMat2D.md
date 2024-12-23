@@ -20,4 +20,4 @@ https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform#matrix
 
 ## Defined in
 
-[src/typedefs.ts:60](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/typedefs.ts#L60)
+[src/typedefs.ts:60](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/typedefs.ts#L60)

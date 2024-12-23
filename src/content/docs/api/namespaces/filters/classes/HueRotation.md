@@ -45,7 +45,7 @@ Options object
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:57](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L57)
+[src/filters/BaseFilter.ts:57](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L57)
 
 ## Properties
 
@@ -68,7 +68,7 @@ true
 
 #### Defined in
 
-[src/filters/ColorMatrix.ts:57](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/ColorMatrix.ts#L57)
+[src/filters/ColorMatrix.ts:57](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/ColorMatrix.ts#L57)
 
 ***
 
@@ -97,7 +97,7 @@ array of 20 numbers.
 
 #### Defined in
 
-[src/filters/ColorMatrix.ts:49](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/ColorMatrix.ts#L49)
+[src/filters/ColorMatrix.ts:49](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/ColorMatrix.ts#L49)
 
 ***
 
@@ -109,7 +109,7 @@ HueRotation value, from -1 to 1.
 
 #### Defined in
 
-[src/filters/HueRotation.ts:41](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/HueRotation.ts#L41)
+[src/filters/HueRotation.ts:41](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/HueRotation.ts#L41)
 
 ***
 
@@ -123,7 +123,7 @@ HueRotation value, from -1 to 1.
 
 #### Defined in
 
-[src/filters/HueRotation.ts:45](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/HueRotation.ts#L45)
+[src/filters/HueRotation.ts:45](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/HueRotation.ts#L45)
 
 ***
 
@@ -143,7 +143,7 @@ to avoid doing that.
 
 #### Defined in
 
-[src/filters/HueRotation.ts:43](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/HueRotation.ts#L43)
+[src/filters/HueRotation.ts:43](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/HueRotation.ts#L43)
 
 ***
 
@@ -161,7 +161,7 @@ needs to specify all the one that are needed
 
 #### Defined in
 
-[src/filters/ColorMatrix.ts:63](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/ColorMatrix.ts#L63)
+[src/filters/ColorMatrix.ts:63](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/ColorMatrix.ts#L63)
 
 ## Accessors
 
@@ -187,7 +187,7 @@ Filter type
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:31](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L31)
+[src/filters/BaseFilter.ts:31](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L31)
 
 ## Methods
 
@@ -209,7 +209,7 @@ Filter type
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:205](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L205)
+[src/filters/BaseFilter.ts:205](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L205)
 
 ***
 
@@ -231,7 +231,7 @@ Filter type
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:232](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L232)
+[src/filters/BaseFilter.ts:232](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L232)
 
 ***
 
@@ -257,7 +257,7 @@ Determines whether to use WebGL or Canvas2D based on the options.webgl flag.
 
 #### Defined in
 
-[src/filters/HueRotation.ts:82](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/HueRotation.ts#L82)
+[src/filters/HueRotation.ts:82](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/HueRotation.ts#L82)
 
 ***
 
@@ -281,7 +281,7 @@ Apply the ColorMatrix operation to a Uint8Array representing the pixels of an im
 
 #### Defined in
 
-[src/filters/ColorMatrix.ts:75](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/ColorMatrix.ts#L75)
+[src/filters/ColorMatrix.ts:75](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/ColorMatrix.ts#L75)
 
 ***
 
@@ -305,7 +305,7 @@ Apply this filter using webgl.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:315](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L315)
+[src/filters/BaseFilter.ts:315](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L315)
 
 ***
 
@@ -331,7 +331,7 @@ Apply this filter using webgl.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:334](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L334)
+[src/filters/BaseFilter.ts:334](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L334)
 
 ***
 
@@ -345,7 +345,7 @@ Apply this filter using webgl.
 
 #### Defined in
 
-[src/filters/HueRotation.ts:47](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/HueRotation.ts#L47)
+[src/filters/HueRotation.ts:47](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/HueRotation.ts#L47)
 
 ***
 
@@ -370,7 +370,7 @@ remember that options.targetCanvas is available for use till end of chain.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:370](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L370)
+[src/filters/BaseFilter.ts:370](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L370)
 
 ***
 
@@ -416,7 +416,7 @@ vertexShader source for compilation
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:83](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L83)
+[src/filters/BaseFilter.ts:83](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L83)
 
 ***
 
@@ -448,7 +448,7 @@ A map of attribute names to attribute locations.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:153](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L153)
+[src/filters/BaseFilter.ts:153](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L153)
 
 ***
 
@@ -469,7 +469,7 @@ Used to force recompilation when parameters change or to retrieve the shader fro
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:284](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L284)
+[src/filters/BaseFilter.ts:284](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L284)
 
 ***
 
@@ -487,7 +487,7 @@ Used to force recompilation when parameters change or to retrieve the shader fro
 
 #### Defined in
 
-[src/filters/ColorMatrix.ts:65](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/ColorMatrix.ts#L65)
+[src/filters/ColorMatrix.ts:65](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/ColorMatrix.ts#L65)
 
 ***
 
@@ -519,7 +519,7 @@ A map of uniform names to uniform locations.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:169](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L169)
+[src/filters/BaseFilter.ts:169](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L169)
 
 ***
 
@@ -537,7 +537,7 @@ A map of uniform names to uniform locations.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:72](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L72)
+[src/filters/BaseFilter.ts:72](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L72)
 
 ***
 
@@ -560,7 +560,7 @@ Other filters may need their own version ( ColorMatrix, HueRotation, gamma, Comp
 
 #### Defined in
 
-[src/filters/HueRotation.ts:78](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/HueRotation.ts#L78)
+[src/filters/HueRotation.ts:78](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/HueRotation.ts#L78)
 
 ***
 
@@ -586,7 +586,7 @@ the compiled program shader
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:295](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L295)
+[src/filters/BaseFilter.ts:295](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L295)
 
 ***
 
@@ -618,7 +618,7 @@ A map of shader attribute names to their locations.
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:192](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L192)
+[src/filters/BaseFilter.ts:192](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L192)
 
 ***
 
@@ -648,7 +648,7 @@ A map of string uniform names to WebGLUniformLocation objects
 
 #### Defined in
 
-[src/filters/ColorMatrix.ts:106](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/ColorMatrix.ts#L106)
+[src/filters/ColorMatrix.ts:106](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/ColorMatrix.ts#L106)
 
 ***
 
@@ -670,7 +670,7 @@ JSON
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:407](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L407)
+[src/filters/BaseFilter.ts:407](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L407)
 
 ***
 
@@ -702,7 +702,7 @@ Object representation of an instance
 
 #### Defined in
 
-[src/filters/HueRotation.ts:87](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/HueRotation.ts#L87)
+[src/filters/HueRotation.ts:87](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/HueRotation.ts#L87)
 
 ***
 
@@ -726,7 +726,7 @@ Object representation of an instance
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:345](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L345)
+[src/filters/BaseFilter.ts:345](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L345)
 
 ***
 
@@ -750,4 +750,4 @@ Object representation of an instance
 
 #### Defined in
 
-[src/filters/BaseFilter.ts:412](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/filters/BaseFilter.ts#L412)
+[src/filters/BaseFilter.ts:412](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L412)

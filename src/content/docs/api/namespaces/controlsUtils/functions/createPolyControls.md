@@ -21,7 +21,7 @@ title: "createPolyControls"
 
 ### Defined in
 
-[src/controls/polyControl.ts:105](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/controls/polyControl.ts#L105)
+[src/controls/polyControl.ts:105](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/controls/polyControl.ts#L105)
 
 ## createPolyControls(numOfControls, options)
 
@@ -39,4 +39,4 @@ title: "createPolyControls"
 
 ### Defined in
 
-[src/controls/polyControl.ts:109](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/controls/polyControl.ts#L109)
+[src/controls/polyControl.ts:109](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/controls/polyControl.ts#L109)

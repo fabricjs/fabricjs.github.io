@@ -55,7 +55,7 @@ Options object
 
 #### Defined in
 
-[src/Observable.ts:167](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/Observable.ts#L167)
+[src/Observable.ts:167](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L167)
 
 ***
 
@@ -89,7 +89,7 @@ event name (eg. 'after:render')
 
 ##### Defined in
 
-[src/Observable.ts:122](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/Observable.ts#L122)
+[src/Observable.ts:122](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L122)
 
 #### off(eventName, handler)
 
@@ -117,7 +117,7 @@ event listener to unsubscribe
 
 ##### Defined in
 
-[src/Observable.ts:128](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/Observable.ts#L128)
+[src/Observable.ts:128](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L128)
 
 #### off(handlers)
 
@@ -137,7 +137,7 @@ handlers key/value pairs (eg. {'after:render': handler, 'selection:cleared': han
 
 ##### Defined in
 
-[src/Observable.ts:133](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/Observable.ts#L133)
+[src/Observable.ts:133](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L133)
 
 #### off()
 
@@ -151,7 +151,7 @@ unsubscribe all event listeners
 
 ##### Defined in
 
-[src/Observable.ts:137](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/Observable.ts#L137)
+[src/Observable.ts:137](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L137)
 
 ***
 
@@ -191,7 +191,7 @@ on
 
 ##### Defined in
 
-[src/Observable.ts:23](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/Observable.ts#L23)
+[src/Observable.ts:23](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L23)
 
 #### on(handlers)
 
@@ -207,7 +207,7 @@ on
 
 ##### Defined in
 
-[src/Observable.ts:27](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/Observable.ts#L27)
+[src/Observable.ts:27](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L27)
 
 ***
 
@@ -247,7 +247,7 @@ once
 
 ##### Defined in
 
-[src/Observable.ts:62](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/Observable.ts#L62)
+[src/Observable.ts:62](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L62)
 
 #### once(handlers)
 
@@ -263,4 +263,4 @@ once
 
 ##### Defined in
 
-[src/Observable.ts:66](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/Observable.ts#L66)
+[src/Observable.ts:66](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L66)

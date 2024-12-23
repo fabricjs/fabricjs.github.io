@@ -25,7 +25,7 @@ title: "StaticCanvasDOMManager"
 
 #### Defined in
 
-[src/canvas/DOMManagers/StaticCanvasDOMManager.ts:24](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/DOMManagers/StaticCanvasDOMManager.ts#L24)
+[src/canvas/DOMManagers/StaticCanvasDOMManager.ts:24](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/DOMManagers/StaticCanvasDOMManager.ts#L24)
 
 ## Properties
 
@@ -35,7 +35,7 @@ title: "StaticCanvasDOMManager"
 
 #### Defined in
 
-[src/canvas/DOMManagers/StaticCanvasDOMManager.ts:22](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/DOMManagers/StaticCanvasDOMManager.ts#L22)
+[src/canvas/DOMManagers/StaticCanvasDOMManager.ts:22](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/DOMManagers/StaticCanvasDOMManager.ts#L22)
 
 ## Methods
 
@@ -59,7 +59,7 @@ Calculates canvas element offset relative to the document
 
 #### Defined in
 
-[src/canvas/DOMManagers/StaticCanvasDOMManager.ts:71](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/DOMManagers/StaticCanvasDOMManager.ts#L71)
+[src/canvas/DOMManagers/StaticCanvasDOMManager.ts:71](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/DOMManagers/StaticCanvasDOMManager.ts#L71)
 
 ***
 
@@ -77,7 +77,7 @@ Calculates canvas element offset relative to the document
 
 #### Defined in
 
-[src/canvas/DOMManagers/StaticCanvasDOMManager.ts:47](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/DOMManagers/StaticCanvasDOMManager.ts#L47)
+[src/canvas/DOMManagers/StaticCanvasDOMManager.ts:47](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/DOMManagers/StaticCanvasDOMManager.ts#L47)
 
 ***
 
@@ -91,7 +91,7 @@ Calculates canvas element offset relative to the document
 
 #### Defined in
 
-[src/canvas/DOMManagers/StaticCanvasDOMManager.ts:75](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/DOMManagers/StaticCanvasDOMManager.ts#L75)
+[src/canvas/DOMManagers/StaticCanvasDOMManager.ts:75](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/DOMManagers/StaticCanvasDOMManager.ts#L75)
 
 ***
 
@@ -109,7 +109,7 @@ Calculates canvas element offset relative to the document
 
 #### Defined in
 
-[src/canvas/DOMManagers/StaticCanvasDOMManager.ts:64](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/DOMManagers/StaticCanvasDOMManager.ts#L64)
+[src/canvas/DOMManagers/StaticCanvasDOMManager.ts:64](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/DOMManagers/StaticCanvasDOMManager.ts#L64)
 
 ***
 
@@ -129,4 +129,4 @@ Calculates canvas element offset relative to the document
 
 #### Defined in
 
-[src/canvas/DOMManagers/StaticCanvasDOMManager.ts:59](https://github.com/fabricjs/fabric.js/blob/a0b4adf41e0a1fd81824114cedd4c32bfb8cac25/src/canvas/DOMManagers/StaticCanvasDOMManager.ts#L59)
+[src/canvas/DOMManagers/StaticCanvasDOMManager.ts:59](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/DOMManagers/StaticCanvasDOMManager.ts#L59)
