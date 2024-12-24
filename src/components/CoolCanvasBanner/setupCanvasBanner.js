@@ -12,7 +12,8 @@ import {
   Ellipse,
   Group,
   FabricObject,
-} from 'fabric';
+  Path,
+} from 'fabric/es';
 
 export const setupCanvasBanner = ({ canvasEl, container }) => {
   FabricObject.ownDefaults.originX = 'center';
