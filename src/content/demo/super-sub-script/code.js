@@ -3,24 +3,24 @@ const $ = (id) => document.getElementById(id);
 $('super').onclick = () => {
 	var active = canvas.getActiveObject();
 	if (!active) return;
-	active.setSuperscript();
+	active.setSuperscript(0,4);
 	canvas.requestRenderAll();
 }
 
 $('sub').onclick = () => {
 	var active = canvas.getActiveObject();
 	if (!active) return;
-	active.setSubscript();
+	active.setSubscript(0,4);
 	canvas.requestRenderAll();
 }
 
 $('remove').onclick = () => {
 	var active = canvas.getActiveObject();
 	if (!active) return;
-	active.setSelectionStyles({
+	active.setSelectionStyles && active.setSelectionStyles({
 		fontSize: undefined,
 		deltaY: undefined,
-	});
+	}, 0, 4);
 	canvas.requestRenderAll();
 }
 
