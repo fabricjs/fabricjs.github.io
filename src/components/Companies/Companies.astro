@@ -4,12 +4,12 @@ import './companies.css';
 const logos = [
     {
         link: 'https://automatio.ai',
-        alt: 'Company logo',
+        description: 'Automatio AI',
         logo: '/logos/automatio.ai.png',
     },
     {
         link: 'https://zaparoo.org/',
-        alt: 'Company logo',
+        description: 'Zaparoo',
         logo: '/logos/zaparoo.png',
     }
 ]
@@ -20,9 +20,9 @@ const logos = [
   <div id="logos">
     {logos.map((logo) => <a href={logo.link} target="_blank">
         <div class="imageContainer">
-            <img src={logo.logo} alt={logo.alt} loading="lazy">
+            <img src={logo.logo} alt="Company logo">
         </div>
-        <p>{logo.alt}</p>
+        <p>{logo.description}</p>
     </a>)}
   </div>
 </section>
