@@ -10,7 +10,7 @@ import ContributorCard from '../ContributorCard/ContributorCard.astro';
     {list.map(({ login, avatar_url, html_url }) => (
     <ContributorCard
         name={login}
-        picUrl={avatar_url}
+        picUrl={avatar_url.replace('https://avatars.githubusercontent.com/u/', 'https://avatars-githubusercontent.webp.se/u/')}
         url={html_url}
     />
     ))}
