@@ -22,6 +22,7 @@
 
 #companies .imageContainer {
     height: 180px;
+    width: 180px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -32,3 +33,10 @@
     display: flex;
     justify-content: space-around;
 }
+
+@media (min-width: 400px) {
+    #companies a img {
+      width: 180px;
+      max-height: 180px;
+    }
+  }

@@ -13,11 +13,24 @@ import {
   Group,
   FabricObject,
   Path,
+  Gradient,
+  classRegistry,
 } from 'fabric/es';
 
+
+
 export const setupCanvasBanner = ({ canvasEl, container }) => {
+  classRegistry.setClass(Path);
+  classRegistry.setSVGClass(Path);
+  classRegistry.setClass(Gradient, 'gradient');
+  classRegistry.setClass(Gradient, 'linear');
+  classRegistry.setClass(Gradient, 'radial');
   FabricObject.ownDefaults.originX = 'center';
   FabricObject.ownDefaults.originY = 'center';
+  FabricObject.ownDefaults.cornerStrokeColor = 'white';
+  FabricObject.ownDefaults.cornerStyle = 'circle';
+  FabricObject.ownDefaults.cornerColor = '#0C7CAC';
+  FabricObject.ownDefaults.transparentCorners = false;
   const resizeObserver = new ResizeObserver((entries) => {
     for (const entry of entries) {
       if (entry.target === container) {
