@@ -6,10 +6,15 @@
 .contributorCard img {
   border-radius: 50%;
   width: 90%;
+  height: 90%;
 }
 
 @media (min-width: 400px) {
   .contributorCard {
     width: 200px;
+  }
+  .contributorCard img {
+    width: 180px;
+    height: 180px;
   }
 }
