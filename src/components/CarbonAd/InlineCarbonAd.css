@@ -1,8 +1,12 @@
 #gentle-reminder.show, #carbonads {
   width: 100%;
   border-radius: 8px;
-  border: 1px solid var(--info-color);
+  border: 1px solid var(--info-color-hover);
   background-color: var(--primary-color-tint);
+}
+
+#carbonads a {
+  color: var(--info-color-hover);
 }
 
 .ads-placeholder {
