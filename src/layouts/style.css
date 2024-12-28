@@ -31,10 +31,6 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
       'century gothic', sans-serif;
-    /*font-family:'Segoe UI','Roboto','century gothic',Verdana,Arial,Helvetica,sans-serif;*/
-    /*letter-spacing:1px;*/
-    background-color: #fff; /*#fafafa,fbfbfb,f8f8f8,eeeeef,eaedf1,ecf0f1,e8e8ea,e6e6e6;*/
-    /*background:#fff url('img/miNote4msg.png') no-repeat fixed center/100% 100%;*/
     direction: ltr;
     line-height: 1.6;
     cursor: default; /*forces a pointer type cursor instead of selecton caret*/
@@ -72,10 +68,7 @@
   h3 {
     color: var(--font-color-dark);
   }
-  
-  .darkBg {
-    background-color: var(--offwhite-color);
-  }
+
   
   /* ---------------------------
   ###   Main element styling   |

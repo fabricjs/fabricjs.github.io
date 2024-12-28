@@ -5,111 +5,146 @@ title: Caching of object, properties and beahvior
 ---
 import { Example1, Example2, Example3 } from './fabric-object-caching/fabric-object-caching.jsx';
 
-### How does it work?
+## Caching in Fabric.js
 
-When fabric object caching is active, the objects you paint on canvas are actually pre painted on another smaller offscreen canvas, as big as the object pixel dimension itself. During the `render` method this pre painted canvas gets copied on the main canvas with a `drawImage` operation.
+When fabric object caching is active, the objects you paint on canvas are actually pre painted on another smaller canvas,
+ outside of the DOM, as big as the object pixel dimension itself.
+During the `render` method this pre painted canvas gets copied on the main canvas with a `drawImage` operation.
 
 That means that during `drag` `rotate` `skew` `scale` operations the object is not redrawn on canvas, but just its copied cached image gets drawn over the canvas.
 
-### How can I tweak/customize it?
+In general every top level object on the fabric.canvas ends up on its own image counterpart stored on a HTMLCanvas
+ of which a reference is saved in the property `_cacheCanvas`. Every render cycle the code checks if this object is dirty
+ and in case it refreshes the copy and then uses it for painting again.
 
-This feature comes with 3 properties to use it in different ways:
-```js
-/**
- * When `true`, object is cached on an additional canvas.
- * default to true
- * since 1.7.0
- * @type Boolean
- * @default
- */
-objectCaching:            objectCaching,
+The caching strategy is very simple in Fabric.js and there are few properties on the objects or in the top level configuration to slightly tweak it.
+In practice then this process has a lot of costrains and perfomance pitfalls. Please be sure to read this entire page to
+ understand the basics.
 
-/**
- * When `true`, object properties are checked for cache invalidation. In some particular
- * situation you may want this to be disabled ( spray brush, very big pathgroups, groups)
- * or if your application does not allow you to modify properties for groups child you want
- * to disable it for groups.
- * default to false
- * since 1.7.0
- * @type Boolean
- * @default
- */
-statefullCache:            false,
+## Tweaks and configuration
 
-/**
- * When `true`, cache does not get updated during scaling. The picture will get blocky if scaled
- * too much and will be redrawn with correct details at the end of scaling.
- * this setting is performance and application dependant.
- * default to false
- * since 1.7.0
- * @type Boolean
- * @default
- */
-noScaleCache:              true,
+### Object configuration
 
-/**
- * List of properties to consider when checking if cache needs refresh
- * Those properties are checked by statefullCache ON ( or lazy mode if we want ) or from single
- * calls to Object.set(key, value). If the key is in this list, the object is marked as dirty
- * and refreshed at the next render
- * @type Array
- */
-cacheProperties: (
-  'fill stroke strokeWidth strokeDashArray width height stroke strokeWidth strokeDashArray' +
-  ' strokeLineCap strokeLineJoin strokeMiterLimit fillRule backgroundColor'
-).split(' '),
+Fabric.js objects have some top level properties to handle caching.
 
-/**
- * When set to `true`, object's cache will be rerendered next render call.
- * @type Boolean
- * @default true
- */
-dirty:                true,
+```ts
+myObject.objectCaching = true;
+```
+objectCaching property is the main switch of caching per object.
+When is false caching is skipped, unless is required because of some other constrain ( more on that later )
 
-/**
-  * When return `true`, force the object to have its own cache, even if it is inside a group
-  * it may be needed when your object behave in a particular way on the cache and always needs
-  * its own isolated canvas to render correctly.
-  * since 1.7.12
-  * @type function
-  * @return false
-  */
- needsItsOwnCache: function() {
-   return false;
- },
+```ts
+myObject.noScaleCache = true;
+```
+noScaleCache is a boolean that will stop cache invalidation during a scaling operation with the mouse.
+At the end of the scaling operation the object will be redrawn and a new cache will be created for that scale value.
 
- /**
- * Pixel limit for cache canvases. 1Mpx , 4Mpx should be fine.
- * @since 1.7.14
- * @type Number
- * @default
- */
-fabric.perfLimitSizeTotal = 2097152;
+```ts
+myObject.dirty = true;
+```
+This boolean flags the cache status as old/invalid/dirty and will cause a re-render at the next render cycle.
+As of today there isn't a method to force cache refresh imperatively.
 
-/**
- * Pixel limit for cache canvases width or height. IE fixes the maximum at 5000
- * @since 1.7.14
- * @type Number
- * @default
- */
-fabric.maxCacheSideLimit = 4096;
+### Classes configuration
 
-/**
- * Lowest pixel limit for cache canvases, set at 256PX
- * @since 1.7.14
- * @type Number
- * @default
- */
-fabric.minCacheSideLimit = 256;
+On top of those per instance properties there are some that are at class level.
+Each class has a static array of `cacheProperties` as this one below:
+
+```ts
+static cacheProperties = [
+  'fill',
+  'stroke',
+  'strokeWidth',
+  'strokeDashArray',
+  'width',
+  'height',
+  'paintFirst',
+  'strokeUniform',
+  'strokeLineCap',
+  'strokeDashOffset',
+  'strokeLineJoin',
+  'strokeMiterLimit',
+  'backgroundColor',
+  'clipPath',
+];
 ```
 
-`objectCaching` is the main properties, default to true for browsers, false for node, it enables objectCaching at object level.  
-`statefullCache` This property rule if fabric should autocheck if is time to redraw the cached copy or if the dev shoud manually invalidate it. this property is default to false. More on this later.  
-`noScaleCache` default to true, disable cache regeneration for scale operation. It can be enabled to avoid blurry effects for big scaling.  
-`cacheProperties` Every time Object.set(key, value) is called, key is searched in this array of properties. If found it mark the object as needing a re render. StatefullCache set to true instead exentesively compare all the keys with a copy of the old values at each render.  
-`dirty` is a simple flag that force a cache rerender at next render method, and is set to false automatically after cache regeneration. `fabric.perfLimitSizeTotal` Max size in pixel area of generated cache canvases.  
-`fabric.maxCacheSideLimit` Max size in pixel of the largest side of the cache canvas. ( numbers bigger than 5000 breaks IE )  
-`fabric.minCacheSideLimit` Max size in pixel of the minimal side of the cache canvas. ( numbers smaller than 256 can disable gpu compositing. to be verified )  
+Being static you will find this array on the class definition like:
+
+```ts
+import { Path } from 'fabric';
+
+console.log(Path.cacheProperties);
+
+// outputs
+['fill', 'stroke', 'strokeWidth', ...]
+```
+This array is used from the `set` method to check on cache invalidation.
+The moment you call:
+```ts
+myObject.set({ fill: 'red', name: 'John' });
+```
+Both keys fill and name get checked against the array and if one is found the object status is set to dirty.
+It is suggested to always use the set method, with the object signature or the simpler one when you want to
+ change properties to your objects to avoid stale caches.
+
+### Fabric.js configuration
+
+Caching has a list of compromises in order to be somehow convenient most of the time.
+A cached canvas can't be too big or it will be too slow to be refreshed for example.
+It can't be too small or it will not trigger certain GPU optmization paths in browsers
+ ( this information may be obsolete with browser changes )
+
+In the Fabric.js configuration object there are 3 values that relate to caching:
+
+```ts
+  /**
+   * Pixel limit for cache canvases. 1Mpx , 4Mpx should be fine.
+   * @since 1.7.14
+   * @type Number
+   * @default
+   */
+  perfLimitSizeTotal = 2097152;
+
+  /**
+   * Pixel limit for cache canvases width or height. IE fixes the maximum at 5000
+   * @since 1.7.14
+   * @type Number
+   * @default
+   */
+  maxCacheSideLimit = 4096;
+
+  /**
+   * Lowest pixel limit for cache canvases, set at 256PX
+   * @since 1.7.14
+   * @type Number
+   * @default
+   */
+  minCacheSideLimit = 256;
+```
+
+minCacheSideLimit will determine the mini size of a side of the cache. At any object size the cache canvas will be at least 256 by 256 pixels.
+If you are caching a Rect that is 1 by 1, you will have a 256 by 156 canvas with a single pixel filled.
+
+maxCacheSizeLimit and perfLimitSizeTotal are determining the maximum side and the maximum surface of the cache canvas.
+So with a value of 4k pixels and a perfLimitSizeTotal of around 2 milion pixels, if your object is 5000 by 10000 it will cached to a size of
+ 4096 by (2097152 / 4096). The biggest side will be reduce to 4096 and the other one will be fit in what 2Milion pixels allow.
+
+You can change those value to experiment with what quality and speed fit best for your application by doing the follwing:
+
+```ts
+import { config } from 'fabric';
+config.perfLimitSizeTotal = 4096 * 1024;
+config.maxCacheSideLimit = 8192;
+```
+Please continue reading for considerations of various kind, mobile performance, output quality when exporting and so on.
+
+### Caching and render logic
+
+### Sharp output and printing
+
+### Performance pitfalls
+
 
 Example of a cache canvas that is bigger than the drawn object (256x256 is the minimum by default):
 
