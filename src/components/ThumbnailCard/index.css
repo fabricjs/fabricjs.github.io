@@ -4,6 +4,7 @@
     height: 0;
     padding-bottom: 60%; /*50*/
     overflow: hidden;
+    border: 1px dashed var(--info-color);
   }
   .thumbCntnr > .img-wrapper {
     /*margin-top:-20%;/*-25*/

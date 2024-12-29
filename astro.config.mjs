@@ -5,10 +5,15 @@ import starlightTypeDoc, { typeDocSidebarGroup } from 'starlight-typedoc';
 
 // https://astro.build/config
 export default defineConfig({
+  redirects: {
+    '/kitchensink': 'https://fabric5.fabricjs.com/kitchensink',
+    '/fabric-object-caching': '/docs/fabric-object-caching',
+    '/docs/old-docs/fabric-object-caching': '/docs/fabric-object-caching',
+  },
   integrations: [starlight({
     favicon: '/favicon.ico',
     title: 'Docs and Guides',
-    disable404Route: true,
+    disable404Route: true, 
     logo: {
       src: './src/assets/logo.svg',
     },

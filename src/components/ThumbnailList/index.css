@@ -1,5 +1,4 @@
 ul.thumbList {
-    background-color: var(--offwhite-color);
     padding: 30px var(--padding-left-right);
   }
   ul.thumbList > li {
