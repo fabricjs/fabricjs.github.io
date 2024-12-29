@@ -109,7 +109,6 @@ If you are creating a custom class and you have some property that influences re
 
 When a cache property is set in an object that is inside a group, all the parents of the object get invalidated as well.
 
-
 ### Fabric.js configuration
 
 Caching has a list of compromises in order to be somehow convenient most of the time.
@@ -164,6 +163,89 @@ Please continue reading for considerations of various kind, mobile performance, 
 ### Caching and render loop
 
 This little paragraph will try to illustrate the logic of handling cache in Fabric.js.
+When executing `Canvas.renderAll` the library loop over every top object on the canvas, everything that has been added to the canvas with `canvas.add`
+For each object the code checks if the object should cache.
+This `shouldCache()` check is not as straight forward as we would like:
+
+```ts
+  /**
+   * Decide if the object should cache or not. Create its own cache level
+   * objectCaching is a global flag, wins over everything
+   * needsItsOwnCache should be used when the object drawing method requires
+   * a cache step. None of the fabric classes requires it.
+   * Generally you do not cache objects in groups because the group outside is cached.
+   * Read as: cache if is needed, or if the feature is enabled but we are not already caching.
+   * @return {Boolean}
+   */
+  shouldCache() {
+    this.ownCaching = (this.objectCaching && (!this.parent || !this.parent.isOnACache())) ||
+      this.needsItsOwnCache();
+    return this.ownCaching;
+  }
+
+  /**
+   * When returns `true`, force the object to have its own cache, even if it is inside a group
+   * it may be needed when your object behave in a particular way on the cache and always needs
+   * its own isolated canvas to render correctly.
+   * Created to be overridden
+   * since 1.7.12
+   * @returns Boolean
+   */
+  needsItsOwnCache() {
+    if (
+      this.paintFirst === STROKE &&
+      this.hasFill() &&
+      this.hasStroke() &&
+      !!this.shadow
+    ) {
+      return true;
+    }
+    if (this.clipPath) {
+      return true;
+    }
+    return false;
+  }
+
+  /**
+   * Check if this object will cast a shadow with an offset.
+   * used by Group.shouldCache to know if child has a shadow recursively
+   * @return {Boolean}
+   * @deprecated
+   */
+  willDrawShadow() {
+    return (
+      !!this.shadow && (this.shadow.offsetX !== 0 || this.shadow.offsetY !== 0)
+    );
+  }
+
+
+  /**
+   * Check if instance or its group are caching, recursively up
+   * @return {Boolean}
+   */
+  isOnACache(): boolean {
+    return this.ownCaching || (!!this.parent && this.parent.isOnACache());
+  }
+```
+
+Let's read it as:
+We will cache if objectCaching is true, unless we have a parent that is already on a cache.
+Regardless if we need a cache we are going to cache anyway.
+When do we need a cache? When there is a clipPath or if we have a shadow and we are painting stroke first.
+
+So in case of a plain object outside of a group it boils down to having cache enabled.
+If paintFirst is set to stroke ( default is fill ) we need a cache to avoid that the paint
+ of fill would cast a shadow on the stroke.
+
+When an object is cached the painted copy is done without opacity or shadow. The resulting canvas then gets blended 
+with the correct opacity and cast the shadow realtime every draw.
+The reasons behind those are that shadows in canvas keep the orientation regardless of the rotation. An object casting
+ a shadow south east will continue to cast a shadow in that direction also when you rotate it. If we want to have that
+ working we can't cache a shadow. The reasons behind opacity is that a semi transparent cache still needs to be blended 
+ with the background, so caching or not caching the opacity is not giving us any speed advantage, on the other side not caching the opacity 
+ allow us to reuse the cache when the user changes the opacity of an object.
+
+Now when caching a group things get more complicated.
 
 ### Performance pitfalls and issues
 
