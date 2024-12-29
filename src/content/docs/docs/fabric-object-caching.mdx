@@ -162,7 +162,8 @@ Please continue reading for considerations of various kind, mobile performance, 
 
 ### Caching and render loop
 
-This little paragraph will try to illustrate the logic of handling cache in Fabric.js.
+This little paragraph will try to illustrate the current logic of handling cache in Fabric.js.
+
 When executing `Canvas.renderAll` the library loop over every top object on the canvas, everything that has been added to the canvas with `canvas.add`
 For each object the code checks if the object should cache.
 This `shouldCache()` check is not as straight forward as we would like:
@@ -246,6 +247,56 @@ The reasons behind those are that shadows in canvas keep the orientation regardl
  allow us to reuse the cache when the user changes the opacity of an object.
 
 Now when caching a group things get more complicated.
+
+```ts
+  /**
+   * Decide if the group should cache or not. Create its own cache level
+   * needsItsOwnCache should be used when the object drawing method requires
+   * a cache step.
+   * Generally you do not cache objects in groups because the group is already cached.
+   * @return {Boolean}
+   */
+  shouldCache() {
+    const ownCache = FabricObject.prototype.shouldCache.call(this);
+    if (ownCache) {
+      for (let i = 0; i < this._objects.length; i++) {
+        if (this._objects[i].willDrawShadow()) {
+          this.ownCaching = false;
+          return false;
+        }
+      }
+    }
+    return ownCache;
+  }
+
+  /**
+   * Check if this object or a child object will cast a shadow
+   * @return {Boolean}
+   */
+  willDrawShadow() {
+    if (super.willDrawShadow()) {
+      return true;
+    }
+    for (let i = 0; i < this._objects.length; i++) {
+      if (this._objects[i].willDrawShadow()) {
+        return true;
+      }
+    }
+    return false;
+  }
+```
+
+When caching the group we start with the same `shouldCache` check. If it returns true we will check every child
+ recursively for a **shadow with offset**. If a shadow with offset is found, we can't cache. A shadow without offset
+ can still be cached since the rotation won't affect the shadow cast.
+
+Running `shouldCache` will flag the group property `ownCache` that will tell us if the group is caching, when later on we are checking
+each object for its own caching strategy it will be useful to determine if they are being cached already in the group.
+
+With the current code when caching a group, the group has first to check recursively down if it can cache, and every object has anyway to check
+ recursively up if it is already being cached.
+
+The above logic takes care only about the decision to cache.
 
 ### Performance pitfalls and issues
 
