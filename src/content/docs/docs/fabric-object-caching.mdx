@@ -2,7 +2,10 @@
 date: '2016-11-26'
 description: 'Caching of object, properties and beahvior'
 title: Caching of object, properties and beahvior
+sidebar:
+  order: 700
 ---
+
 import { Example1, Example2, Example3, Example4 } from './fabric-object-caching/fabric-object-caching.jsx';
 
 ## Caching in Fabric.js
@@ -45,7 +48,7 @@ The right canvas has scaling that invalidates the cache every scale change.
 You can also open your developer tools and record scaling performances in both cases and compare.
 Take care that the below yellow care is a large complex object made of 417 innner objects and gradients.
 if you scale an object more than 3 times the original size you will notice blurring that then gets fixed with a new cached
- copy as soon as you perform a mouse up. Try it by yourself:
+ copy as soon as you perform a mouse up. Try it by yourself by scaling the little yellow cars on both canvases:
 
 <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
 <Example3 client:idle hideCode />
@@ -377,8 +380,34 @@ major GC event happens when the canvas aren't resized.
 
 In general viewport zooming is a performance killer with many objects and cache.
 
-#### Object blurryness and anti aliasing
+#### Object blurriness and anti aliasing
 
+The canvas vector drawing is anti aliased. This means that if you draw a black single pixel line at at position X, you will get 
+ the line across pixel X and X-1. This across line means that both pixels will be grey and none black, you get a blurry line.
+it is very important that things are drawn as crisp as possible in the cache canvas to avoid to add blurryness on top of blurryness.
+To produce the below screenshot i created 2 cached rects, one wide 51px, another wide 51.5px, both with a 1px stroke.
+
+![Cache blurryness](/article_assets/cache_compare.png)
+
+Fabric.js is able to make both sides crisp in the case of the 51px rect, by pixel align the rect on a 256px surface, understanding that
+ we need to draw on integer pixels as much as possible. For the 51.5 pixel rect this is not possible and a single side is blurry.
+ This same issue would happen without caching, but in the moment we would translate our rectangle of fractions of pixels, the canvas would
+ reoptimize aliasing pixels trying to always produce a crisp line. This is not possible for the cached copy that has its peak crispness when
+ is pixel aligned and has sub optimal results when is not.
+
+This is easier to understand if we look at the cache of the triangle:
+
+![Cache blurryness](/article_assets/cache_triangle.png)
+
+When the triangles are put one near the other, the difference between the cached one and the non cached one are basically zero.
+If we factor in rotation, things change a lot. When rotating of 26.57 degree the non cached triangle, one of the sides completely aligns
+ with the pixel grid and becomes a perfect black line. The cached anti-aliased line gets aligned vertically and anti-aliased again, 
+ creating a blurry mess. This is not fixable and it is what is is.
+
+![Cache blurryness](/article_assets/triangle_rotated_cache.png)
+
+A nice effort has been done to ensure the cache is painted on the cache canvas with the most crisp pixels to lower the impact of double 
+anti aliasing, but some issues are part of the canvas itself and can't be fixed.
 
 ### Sharp output and printing
 
