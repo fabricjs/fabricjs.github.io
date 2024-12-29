@@ -298,14 +298,66 @@ With the current code when caching a group, the group has first to check recursi
 
 The above logic takes care only about the decision to cache.
 
+Then we need either to paint an object on the cache and then just render the cache on the canvas.
+
+Fabric.js has to understand if the cache is dirty first of all.
+Is dirty when is dirty or when it doesn't exist or when it changed size.
+
+In case the cache needs to be created or painted, dimensions needs to be calculated.
+A cache is going to be rendered on a zoomed canvas with retina scaling possibly and all of this needs to be taken in account.
+
+All of those parameters are accounted for in `_getCacheCanvasDimensions` and limited down to fit in the cache size configuration.
+
+```ts
+  _getCacheCanvasDimensions(): TCacheCanvasDimensions {
+    const objectScale = this.getTotalObjectScaling(),
+      // calculate dimensions without skewing
+      dim = this._getTransformedDimensions({ skewX: 0, skewY: 0 }),
+      neededX = (dim.x * objectScale.x) / this.scaleX,
+      neededY = (dim.y * objectScale.y) / this.scaleY;
+    return {
+      // for sure this ALIASING_LIMIT is slightly creating problem
+      // in situation in which the cache canvas gets an upper limit
+      // also objectScale contains already scaleX and scaleY
+      width: Math.ceil(neededX + ALIASING_LIMIT),
+      height: Math.ceil(neededY + ALIASING_LIMIT),
+      zoomX: objectScale.x,
+      zoomY: objectScale.y,
+      x: neededX,
+      y: neededY,
+    };
+  }
+```
+
+If the canvas has the exact same dimension of the previous render cycle the canvas is going to be cleaned and repainted.
+If the object grew bigger or smaller the canvas will be resized and repainted.
+
+Once painted and optimally centered the cache canvas is built and then painted on the canvas on the right place.
+
 ### Performance pitfalls and issues
 
-Performance gains are not always there and there are also issues.
+Performance gains are not always there and there are also issues with blurryness rarely.
 
-It depends on what your project looks like. Are you drawing just a bunch of circles, rects and simple polygons?
- Maybe caching is not beneficial for you at all.
+Caching is beneficial depending on what your project looks like.
+If Are you drawing just a bunch of circles, rects or simple polygons caching is not a big deal. Calling `ctx.fillRect` or `ctx.drawImage`
+is mostly the same and if itsn't exactly the same you save on cache canvas creation and size comparision and a lot of ram.
 
-Are you importing and displaying large and complex svgs? well you will move from possibly shuttering to smooth. Is there any glich I should be aware of? Well you may not like the `noScaleCache` feature and that is why there is a flag to disable it.
+On the other side if you importing and displaying large and complex svgs or groups well in that case cache is helpful.
+
+You have always to keep in mind that if you are dealing with really static groups of objects you always have the option to export them to canvases
+and use those canvases to instantiate some FabricImage and keep them fast and really static.
+Also consider that complex SVG can also be not parsed and used as plain image.
+
+Cache is always really helpful with large text objects or with styled text objects.
+
+#### Viewport Zoom
+
+The first performance pitfall that is common to all caching situation is viewport zooming. Zoom causes a change in size of
+all the canvas objects at once and so the resizing and repainting of all objects.
+
+
+#### Object blurryness and anti aliasing
+
 
 ### Sharp output and printing
 
