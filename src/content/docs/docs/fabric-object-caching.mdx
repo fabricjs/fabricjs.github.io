@@ -355,6 +355,27 @@ Cache is always really helpful with large text objects or with styled text objec
 The first performance pitfall that is common to all caching situation is viewport zooming. Zoom causes a change in size of
 all the canvas objects at once and so the resizing and repainting of all objects.
 
+The below flamegraph is from a canvas with 900 simple rects ( not a real use case ) and we are measuring the time used to during a zoom level change:
+
+**Rects are 50px:**
+![performance flamegraph 50px](/article_assets/cache_min.png)
+
+**Rects are 130px:**
+![performance flamegraph 130px](/article_assets/cache_normal.png)
+
+**Rects are 130px and uncached:**
+
+![performance flamegraph uncached 130px](/article_assets/uncached_normal.png)
+
+As you can see drawing 900 simple rects takes around 4-5ms on a modern laptop. As much as it would to render the cached copies.
+Disabling cache for this synthetic test we skip all the overhead of checking the cache size and actually resizing the cache canvases.
+
+You can see that **50px are much faster than 130px** and this is because the 50px with retina scaling and 1.2 zoom is still under the minimum
+ cache size of 256px, so the caches are cleaned but not resized. The 130px rect breaks at 260 with retina scaling and every subsequent zoom 
+ requires a canvas resize with a context lost and a new memory allocation. Of the 70+ms required around 30 are of garbage collecting. While no
+major GC event happens when the canvas aren't resized.
+
+In general viewport zooming is a performance killer with many objects and cache.
 
 #### Object blurryness and anti aliasing
 
