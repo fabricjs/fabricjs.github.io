@@ -3,7 +3,7 @@ date: '2016-11-26'
 description: 'Caching of object, properties and beahvior'
 title: Caching of object, properties and beahvior
 ---
-import { Example1, Example2, Example3 } from './fabric-object-caching/fabric-object-caching.jsx';
+import { Example1, Example2, Example3, Example4 } from './fabric-object-caching/fabric-object-caching.jsx';
 
 ## Caching in Fabric.js
 
@@ -39,11 +39,27 @@ myObject.noScaleCache = true;
 noScaleCache is a boolean that will stop cache invalidation during a scaling operation with the mouse.
 At the end of the scaling operation the object will be redrawn and a new cache will be created for that scale value.
 
+Also spot differences in scaling between `noScaleCache` true or false.  
+In canvases below left canvas is `true`, that means that during the scaling transformation the object is not regenerated.
+The right canvas has scaling that invalidates the cache every scale change.
+You can also open your developer tools and record scaling performances in both cases and compare.
+Take care that the below yellow care is a large complex object made of 417 innner objects and gradients.
+if you scale an object more than 3 times the original size you will notice blurring that then gets fixed with a new cached
+ copy as soon as you perform a mouse up. Try it by yourself:
+
+<div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
+<Example3 client:idle hideCode />
+<Example4 client:idle hideCode />
+</div>
+
 ```ts
 myObject.dirty = true;
 ```
 This boolean flags the cache status as old/invalid/dirty and will cause a re-render at the next render cycle.
 As of today there isn't a method to force cache refresh imperatively.
+
+Fabric.js takes care to set the dirty flag during the operations that will likely cause a cache invalidation,
+ like text typing for example.
 
 ### Classes configuration
 
@@ -88,6 +104,12 @@ Both keys fill and name get checked against the array and if one is found the ob
 It is suggested to always use the set method, with the object signature or the simpler one when you want to
  change properties to your objects to avoid stale caches.
 
+If you are creating a custom class and you have some property that influences rendering you should add to your
+ new class `cacheProperties` all the properties of the base class and add your own.
+
+When a cache property is set in an object that is inside a group, all the parents of the object get invalidated as well.
+
+
 ### Fabric.js configuration
 
 Caching has a list of compromises in order to be somehow convenient most of the time.
@@ -107,7 +129,7 @@ In the Fabric.js configuration object there are 3 values that relate to caching:
   perfLimitSizeTotal = 2097152;
 
   /**
-   * Pixel limit for cache canvases width or height. IE fixes the maximum at 5000
+   * Pixel limit for cache canvases width or height. IE11 was the historical reason why this number is below 5000
    * @since 1.7.14
    * @type Number
    * @default
@@ -139,74 +161,45 @@ config.maxCacheSideLimit = 8192;
 ```
 Please continue reading for considerations of various kind, mobile performance, output quality when exporting and so on.
 
-### Caching and render logic
+### Caching and render loop
+
+This little paragraph will try to illustrate the logic of handling cache in Fabric.js.
+
+### Performance pitfalls and issues
+
+Performance gains are not always there and there are also issues.
+
+It depends on what your project looks like. Are you drawing just a bunch of circles, rects and simple polygons?
+ Maybe caching is not beneficial for you at all.
+
+Are you importing and displaying large and complex svgs? well you will move from possibly shuttering to smooth. Is there any glich I should be aware of? Well you may not like the `noScaleCache` feature and that is why there is a flag to disable it.
+
+
 
 ### Sharp output and printing
 
-### Performance pitfalls
-
+### Caching in action
 
 Example of a cache canvas that is bigger than the drawn object (256x256 is the minimum by default):
 
-![](/article_assets/carMinCache.png)
+<div style={{ width: '256px', height: '256px', border: '1px solid black'}}>
+  <img src="/article_assets/carMinCache.png" style={{ width: '256px' }} />
+</div>
 
-Example of the biggest size cache canvas at default values ( 2 Mega pixels ). Scroll to see something:
+Example of the biggest size cache canvas at default values ( 2 Mega pixels ). Scroll inside the white area to see image at 100% zoom:
 
-### How much performance gain I get, are there any problems?
+<div style={{ width: '100%', height: '256px', overflow: 'scroll', border: '1px solid black'}}>
+  <img src="/article_assets/carMaxCache.png" style={{ maxWidth: 'unset', width: '1773px' }} />
+</div>
 
-It depends on what your project looks like. Are you drawing just a bunch of circles, rects and simple polygons? Maybe you will not gain that much performance.  
-Are you importing and displaying large and complex svgs? well you will move from possibly shuttering to smooth. Is there any glich I should be aware of? Well you may not like the `noScaleCache` feature and that is why there is a flag to disable it.
+The default cache setting is not small, is enough for crisp images on a standard screen.
 
-### What about compatibility problem with my current project? Should I update? Can I disable caching?
-
-I would say yes, switch to 1.7.0, check if everything is fine. If not report any visual problem to issue tracker, you can still completly disable the feature everywhere doing:
-
-fabric.Object.prototype.objectCaching = false;
-
-to override the standard value and cache will be disabled for your project.
-
-### Live samples
-
-Below you can see 2 fabric canvases. The left one is the default cached one, while the right one is drawn with cache disabled as it was on previous versions.  
-The canvases are loaded with heavy pathgroups, the snowwhite, the heaviest I could find is in 3 copies and makes the render speed cripple down. Try to drag around one of the shapes on the left or right canvas and notice the speed difference.
+Below you can see 2 fabric canvases. The left one is the default cached, while the right one is drawn with cache disabled.  
+The canvases are loaded with heavy pathgroups, the snowman, the heaviest I could find is in 3 copies and makes the render speed cripple down.
+Try to drag around one of the shapes on the left or right canvas and notice the speed difference.
+On a modern machine without caching is still usable, at the time of writing this article for the first time ( around 2017 ) the difference was night and day.
 
 <Example1 client:idle hideCode canvasStyle={{ display: 'inline-block'}} />
 <Example2 client:idle hideCode canvasStyle={{ display: 'inline-block'}} />
 
-Also spot differences in scaling between `noScaleCache` with values true or false.  
-In canvases below Left canvas is `false`, that means that during the scaling tasnformation the obect is not regenerated. if you scale an object more than 3 times the original size you will notice blurring that then gets fixed with a new cached copy as soon as you perform a mouse up. Try it by yourself:
-
-<Example3 client:idle hideCode />
-
-
-### When does the cache gets updated with a new version?
-
-Fabric has a hardcoded trigger to update the cache during the built in functions where the developer has no easy way to insert code.  
-Those situations are: `scaling`, `typing text`, `canvas global zoom`.  
-In all other cases, it's the developer that's changing some property of an object, and should therefore make sure to force a cache update by setting the object's `dirty` property to true when necessary. So calling `object.set('fill', 'red')` require no other actions. If for some reason you are not using the set method (for example in situation of text objects in which setting some properties triggers expensive functions) you will use the flag.  
-There is also a way to ask fabric to check at render time a change for properties. This is not expensive most of the time but I decided to leave it off because in crowded situations ( like spray brush or 1000+ svg paths ) it was expensive.  
-Groups and PathGroups are taken care of in this way:  
-When an object gets set a property, the property is checked, if it is in the `cacheProperties` array, the object and the group is set as dirty. If the property is in the `stateProperties` array, only the group is set as dirty.
-
-### How does fabric check for changes in custom subclasses with custom properties?
-
-Custom subclassing is one of the fabric strongest features in my opinion and object caching has been built with that in mind.. So there is an array defined called `cacheProperties` that contains a list of properties that get checked at every render when the property `statefullCache` is set true. (defaults to false).  
-The array looks like this:
-```js
-  cacheProperties: (
-    'fill stroke strokeWidth strokeDashArray width height' +
-    ' strokeLineCap strokeLineJoin strokeMiterLimit fillRule backgroundColor'
-  ).split(' '),
-```
-and gets more properties in different sublcasses, for example rect adds `rx` and `ry` and so on. The properties are checked recursively, that means that at every change detected a copy of the property is saved, and at next render is compared deeply. Normally properties that need deep checks are gradients, patterns, path array, strokeDash. If your application make no use of some properties at all you can remove them from the cacheProperties array and make the check faster, or you can add your custom properties that influence rendering to have them checked.
-
-### Gotchas
-
-Image is cut of of object bounding box: **YES**. There is an invisible canvas that keep a copy of the object. This canvas is sized with objects width/height. If width and height are not correct for the object we are trying to display, the image will be cut off. There is no other solution than disable the caching for the object or fix the problem.  
-Currently affected uses case:
-
-- (mainly solved since 1.7.7) sometimes things can look blurry
-- (mainly solved since 1.7.8) paths with wrongly parsed command sequence (very few)
-- (mainly solved since 1.7.3) Text using custom fonts with very big ascender/descender and of wich canvas is not able to measure extension.
-- Groups not initialized correctly ( created empty and not updated after using the .add method, please use addWithUpdate)
-- Scaling events that reset scale and modify width/height, disable `noScaleCache`, set it to false
+As a reference, on my machine, an m1 pro from 2021 the cached canvas takes 0.8ms to render, while the non cached one takes 25ms.
