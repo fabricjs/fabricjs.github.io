@@ -51,8 +51,8 @@ if you scale an object more than 3 times the original size you will notice blurr
  copy as soon as you perform a mouse up. Try it by yourself by scaling the little yellow cars on both canvases:
 
 <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
-<Example3 client:idle hideCode />
-<Example4 client:idle hideCode />
+<Example3 client:idle hideCode canvasStyle={{ border: '1px solid black' }} />
+<Example4 client:idle hideCode canvasStyle={{ border: '1px solid black' }}/>
 </div>
 
 ```ts
@@ -411,8 +411,9 @@ anti aliasing, but some issues are part of the canvas itself and can't be fixed.
 
 ### Sharp output and printing
 
-Png or Jpeg exports with caching active is in general a bad idea.
-Let's see why.
+Because of the above details, Png or Jpeg exports with caching active is in general a bad idea.
+If you are working to produce optimum print files you should disable caching before exporting and enabling it back after.
+For the shapes that require caching enabled there is no embedded solution now, but one is planned
 
 ### Caching in action
 
@@ -435,7 +436,7 @@ The canvases are loaded with heavy pathgroups, the snowman, the heaviest I could
 Try to drag around one of the shapes on the left or right canvas and notice the speed difference.
 On a modern machine without caching is still usable, at the time of writing this article for the first time ( around 2017 ) the difference was night and day.
 
-<Example1 client:idle hideCode canvasStyle={{ display: 'inline-block'}} />
-<Example2 client:idle hideCode canvasStyle={{ display: 'inline-block'}} />
+<Example1 client:idle hideCode canvasStyle={{ border: '1px solid black', display: 'inline-block' }} />
+<Example2 client:idle hideCode canvasStyle={{ border: '1px solid black', display: 'inline-block' }} />
 
 As a reference, on my machine, an m1 pro from 2021 the cached canvas takes 0.8ms to render, while the non cached one takes 25ms.
