@@ -5,6 +5,8 @@ prev: false
 title: "Group"
 ---
 
+Defined in: [src/shapes/Group.ts:82](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L82)
+
 ## Fires
 
 object:added
@@ -39,15 +41,21 @@ layout:after
 
 > **new Group**(`objects`?, `options`?): [`Group`](/api/classes/group/)
 
+Defined in: [src/shapes/Group.ts:139](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L139)
+
 Constructor
 
 #### Parameters
 
-• **objects?**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[] = `[]`
+##### objects?
+
+[`FabricObject`](/api/classes/fabricobject/)[] = `[]`
 
 instance objects
 
-• **options?**: `Partial`\<[`GroupProps`](/api/interfaces/groupprops/)\> = `{}`
+##### options?
+
+`Partial`\<[`GroupProps`](/api/interfaces/groupprops/)\> = `{}`
 
 Options object
 
@@ -57,19 +65,15 @@ Options object
 
 #### Overrides
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).constructor`
-
-#### Defined in
-
-[src/shapes/Group.ts:139](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L139)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).constructor`
 
 ## Properties
 
 ### \_\_corner?
 
 > `optional` **\_\_corner**: `string`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:105](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L105)
 
 keeps the value of the last hovered corner during mouse move.
 0 is no corner, or 'mt', 'ml', 'mtr' etc..
@@ -79,13 +83,7 @@ this isn't cleaned automatically. Non selected objects may have wrong values
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).__corner`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:105](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L105)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).__corner`
 
 ***
 
@@ -93,25 +91,23 @@ this isn't cleaned automatically. Non selected objects may have wrong values
 
 > **\_controlsVisibility**: `Record`\<`string`, `boolean`\>
 
+Defined in: [src/shapes/Object/InteractiveObject.ts:112](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L112)
+
 a map of control visibility for this object.
 this was left when controls were introduced to not break the api too much
 this takes priority over the generic control visibility
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  )._controlsVisibility`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:112](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L112)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, )._controlsVisibility`
 
 ***
 
 ### \_objects
 
-> **\_objects**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[] = `[]`
+> **\_objects**: [`FabricObject`](/api/classes/fabricobject/)[] = `[]`
+
+Defined in: [src/Collection.ts:21](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L21)
 
 #### TODO
 
@@ -119,19 +115,15 @@ needs to end up in the constructor too
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  )._objects`
-
-#### Defined in
-
-[src/Collection.ts:21](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L21)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, )._objects`
 
 ***
 
 ### \_scaling?
 
 > `optional` **\_scaling**: `boolean`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:134](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L134)
 
 A boolean used from the gesture module to keep tracking of a scaling
 action when there is no scaling transform in place.
@@ -145,42 +137,15 @@ DON'T USE IT. WE WILL TRY TO REMOVE IT
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  )._scaling`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:134](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L134)
-
-***
-
-### aCoords
-
-> **aCoords**: [`TCornerPoint`](/api/type-aliases/tcornerpoint/)
-
-Describe object's corner position in scene coordinates.
-The coordinates are derived from the following:
-left, top, width, height, scaleX, scaleY, skewX, skewY, angle, strokeWidth.
-The coordinates do not depend on viewport changes.
-The coordinates get updated with [setCoords](../../../../api/classes/group/#setcoords).
-You can calculate them without updating with [()](../../../../api/classes/group/#calcacoords)
-
-#### Inherited from
-
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).aCoords`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:63](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L63)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, )._scaling`
 
 ***
 
 ### absolutePositioned
 
 > **absolutePositioned**: `boolean`
+
+Defined in: [src/shapes/Object/Object.ts:214](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L214)
 
 Meaningful ONLY when the object is used as clipPath.
 if true, the clipPath will have its top and left relative to canvas, and will
@@ -201,19 +166,34 @@ false
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).absolutePositioned`
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).absolutePositioned`
 
-#### Defined in
+***
 
-[src/shapes/Object/Object.ts:214](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L214)
+### aCoords
+
+> **aCoords**: [`TCornerPoint`](/api/type-aliases/tcornerpoint/)
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:63](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L63)
+
+Describe object's corner position in scene coordinates.
+The coordinates are derived from the following:
+left, top, width, height, scaleX, scaleY, skewX, skewY, angle, strokeWidth.
+The coordinates do not depend on viewport changes.
+The coordinates get updated with [setCoords](../../../../api/classes/group/#setcoords).
+You can calculate them without updating with [()](../../../../api/classes/group/#calcacoords)
+
+#### Inherited from
+
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).aCoords`
 
 ***
 
 ### angle
 
 > **angle**: [`TDegree`](/api/type-aliases/tdegree/)
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:581](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L581)
 
 Angle of rotation of an object (in degrees)
 
@@ -229,19 +209,15 @@ Angle of rotation of an object (in degrees)
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).angle`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:581](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L581)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).angle`
 
 ***
 
 ### backgroundColor
 
 > **backgroundColor**: `string`
+
+Defined in: [src/shapes/Object/Object.ts:201](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L201)
 
 Background color of an object.
 takes css colors https://www.w3.org/TR/css-color-3/
@@ -258,19 +234,15 @@ takes css colors https://www.w3.org/TR/css-color-3/
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).backgroundColor`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:201](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L201)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).backgroundColor`
 
 ***
 
 ### borderColor
 
 > **borderColor**: `string`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:74](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L74)
 
 Color of controlling borders of an object (when it's active)
 
@@ -286,19 +258,15 @@ rgb(178,204,255)
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).borderColor`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:74](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L74)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).borderColor`
 
 ***
 
 ### borderDashArray
 
 > **borderDashArray**: `null` \| `number`[]
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:75](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L75)
 
 Array specifying dash pattern of an object's borders (hasBorder must be true)
 
@@ -312,19 +280,15 @@ Array specifying dash pattern of an object's borders (hasBorder must be true)
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).borderDashArray`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:75](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L75)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).borderDashArray`
 
 ***
 
 ### borderOpacityWhenMoving
 
 > **borderOpacityWhenMoving**: `number`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:76](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L76)
 
 Opacity of object's controlling borders when object is active and moving
 
@@ -340,19 +304,15 @@ Opacity of object's controlling borders when object is active and moving
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).borderOpacityWhenMoving`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:76](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L76)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).borderOpacityWhenMoving`
 
 ***
 
 ### borderScaleFactor
 
 > **borderScaleFactor**: `number`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:77](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L77)
 
 Scale factor for the border of the objects ( selection box and controls stroke ).
 Bigger number will make a thicker border
@@ -372,19 +332,15 @@ you will need to write your own render function for controls
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).borderScaleFactor`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:77](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L77)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).borderScaleFactor`
 
 ***
 
 ### centeredRotation
 
 > **centeredRotation**: `boolean`
+
+Defined in: [src/shapes/Object/Object.ts:215](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L215)
 
 When `true` the object will rotate on its center.
 When `false` will rotate around the origin point defined by originX and originY.
@@ -408,19 +364,15 @@ The object method `rotate` will always consider this property and never the canv
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).centeredRotation`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:215](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L215)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).centeredRotation`
 
 ***
 
 ### centeredScaling
 
 > **centeredScaling**: `boolean`
+
+Defined in: [src/shapes/Object/Object.ts:216](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L216)
 
 When true, this object will use center point as the origin of transformation
 when being scaled via the controls.
@@ -441,19 +393,15 @@ when being scaled via the controls.
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).centeredScaling`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:216](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L216)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).centeredScaling`
 
 ***
 
 ### clipPath?
 
-> `optional` **clipPath**: [`BaseFabricObject`](/api/classes/basefabricobject/)\<`Partial`\<`ObjectProps`\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+> `optional` **clipPath**: [`BaseFabricObject`](/api/classes/basefabricobject/)
+
+Defined in: [src/shapes/Object/Object.ts:212](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L212)
 
 a fabricObject that, without stroke define a clipping area with their shape. filled in black
 the clipPath object gets used when the object has rendered, and the context is placed in the center
@@ -466,13 +414,7 @@ If you want 0,0 of a clipPath to align with an object center, use clipPath.origi
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).clipPath`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:212](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L212)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).clipPath`
 
 ***
 
@@ -480,18 +422,14 @@ If you want 0,0 of a clipPath to align with an object center, use clipPath.origi
 
 > `optional` **clipPathId**: `string`
 
+Defined in: [src/shapes/Object/FabricObjectSVGExportMixin.ts:14](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/FabricObjectSVGExportMixin.ts#L14)
+
 When an object is being exported as SVG as a clippath, a reference inside the SVG is needed.
 This reference is a UID in the fabric namespace and is temporary stored here.
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).clipPathId`
-
-#### Defined in
-
-[src/shapes/Object/FabricObjectSVGExportMixin.ts:14](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/FabricObjectSVGExportMixin.ts#L14)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).clipPathId`
 
 ***
 
@@ -499,24 +437,22 @@ This reference is a UID in the fabric namespace and is temporary stored here.
 
 > **controls**: `TControlSet`
 
+Defined in: [src/shapes/Object/InteractiveObject.ts:118](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L118)
+
 holds the controls for the object.
 controls are added by default_controls.js
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).controls`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:118](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L118)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).controls`
 
 ***
 
 ### cornerColor
 
 > **cornerColor**: `string`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:68](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L68)
 
 Color of controlling corners of an object (when it's active)
 
@@ -532,19 +468,15 @@ rgb(178,204,255)
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).cornerColor`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:68](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L68)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).cornerColor`
 
 ***
 
 ### cornerDashArray
 
 > **cornerDashArray**: `null` \| `number`[]
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:71](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L71)
 
 Array specifying dash pattern of an object's control (hasBorder must be true)
 
@@ -564,19 +496,15 @@ null
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).cornerDashArray`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:71](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L71)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).cornerDashArray`
 
 ***
 
 ### cornerSize
 
 > **cornerSize**: `number`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:65](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L65)
 
 Size of object's controlling corners (in pixels)
 
@@ -592,19 +520,15 @@ Size of object's controlling corners (in pixels)
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).cornerSize`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:65](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L65)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).cornerSize`
 
 ***
 
 ### cornerStrokeColor
 
 > **cornerStrokeColor**: `string`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:69](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L69)
 
 Color of controlling corners of an object (when it's active and transparentCorners false)
 
@@ -624,13 +548,7 @@ Color of controlling corners of an object (when it's active and transparentCorne
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).cornerStrokeColor`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:69](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L69)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).cornerStrokeColor`
 
 ***
 
@@ -638,9 +556,15 @@ Color of controlling corners of an object (when it's active and transparentCorne
 
 > **cornerStyle**: `"circle"` \| `"rect"`
 
+Defined in: [src/shapes/Object/InteractiveObject.ts:70](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L70)
+
 Specify style of control, 'rect' or 'circle'
 This is deprecated. In the future there will be a standard control render
 And you can swap it with one of the alternative proposed with the control api
+
+:::caution[Deprecated]
+This API is no longer supported and may be removed in a future release.
+:::
 
 #### Since
 
@@ -652,29 +576,21 @@ And you can swap it with one of the alternative proposed with the control api
 'rect'
 ```
 
-:::caution[Deprecated]
-This API is no longer supported and may be removed in a future release.
-:::
-
 #### Implementation of
 
 [`GroupProps`](/api/interfaces/groupprops/).[`cornerStyle`](/api/interfaces/groupprops/#cornerstyle)
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).cornerStyle`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:70](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L70)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).cornerStyle`
 
 ***
 
 ### dirty
 
 > **dirty**: `boolean`
+
+Defined in: [src/shapes/Object/Object.ts:241](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L241)
 
 When set to `true`, object's cache will be rerendered next render call.
 since 1.7.0
@@ -687,19 +603,15 @@ true
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).dirty`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:241](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L241)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).dirty`
 
 ***
 
 ### evented
 
 > **evented**: `boolean`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:82](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L82)
 
 When set to `false`, an object can not be a target of events. All events propagate through it. Introduced in v1.3.4
 
@@ -715,19 +627,15 @@ When set to `false`, an object can not be a target of events. All events propaga
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).evented`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:82](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L82)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).evented`
 
 ***
 
 ### excludeFromExport
 
 > **excludeFromExport**: `boolean`
+
+Defined in: [src/shapes/Object/Object.ts:208](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L208)
 
 When `true`, object is not exported in OBJECT/JSON
 
@@ -747,19 +655,15 @@ When `true`, object is not exported in OBJECT/JSON
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).excludeFromExport`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:208](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L208)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).excludeFromExport`
 
 ***
 
 ### fill
 
 > **fill**: `null` \| `string` \| [`TFiller`](/api/type-aliases/tfiller/)
+
+Defined in: [src/shapes/Object/Object.ts:191](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L191)
 
 Color of object's fill
 takes css colors https://www.w3.org/TR/css-color-3/
@@ -776,19 +680,15 @@ rgb(0,0,0)
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).fill`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:191](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L191)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).fill`
 
 ***
 
 ### fillRule
 
 > **fillRule**: `CanvasFillRule`
+
+Defined in: [src/shapes/Object/Object.ts:192](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L192)
 
 Fill rule used to fill an object
 accepted values are nonzero, evenodd
@@ -806,19 +706,15 @@ nonzero
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).fillRule`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:192](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L192)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).fillRule`
 
 ***
 
 ### flipX
 
 > **flipX**: `boolean`
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:567](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L567)
 
 When true, an object is rendered as flipped horizontally
 
@@ -834,19 +730,15 @@ false
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).flipX`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:567](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L567)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).flipX`
 
 ***
 
 ### flipY
 
 > **flipY**: `boolean`
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:568](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L568)
 
 When true, an object is rendered as flipped vertically
 
@@ -862,19 +754,15 @@ false
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).flipY`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:568](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L568)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).flipY`
 
 ***
 
 ### globalCompositeOperation
 
 > **globalCompositeOperation**: `GlobalCompositeOperation`
+
+Defined in: [src/shapes/Object/Object.ts:200](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L200)
 
 Composite rule used for canvas globalCompositeOperation
 
@@ -890,19 +778,15 @@ Composite rule used for canvas globalCompositeOperation
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).globalCompositeOperation`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:200](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L200)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).globalCompositeOperation`
 
 ***
 
 ### hasBorders
 
 > **hasBorders**: `boolean`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:78](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L78)
 
 When set to `false`, object's controlling borders are not rendered
 
@@ -918,19 +802,15 @@ When set to `false`, object's controlling borders are not rendered
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).hasBorders`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:78](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L78)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).hasBorders`
 
 ***
 
 ### hasControls
 
 > **hasControls**: `boolean`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:72](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L72)
 
 When set to `false`, object's controls are not displayed and can not be used to manipulate object
 
@@ -946,19 +826,15 @@ true
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).hasControls`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:72](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L72)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).hasControls`
 
 ***
 
 ### height
 
 > **height**: `number`
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:566](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L566)
 
 Object height
 
@@ -974,19 +850,15 @@ Object height
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).height`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:566](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L566)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).height`
 
 ***
 
 ### hoverCursor
 
 > **hoverCursor**: `null` \| `string`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:86](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L86)
 
 Default cursor value used when hovering over this object on canvas
 
@@ -1002,19 +874,15 @@ null
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).hoverCursor`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:86](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L86)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).hoverCursor`
 
 ***
 
 ### includeDefaultValues
 
 > **includeDefaultValues**: `boolean`
+
+Defined in: [src/shapes/Object/Object.ts:207](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L207)
 
 When `false`, default object's values are not included in its serialization
 
@@ -1030,19 +898,15 @@ When `false`, default object's values are not included in its serialization
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).includeDefaultValues`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:207](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L207)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).includeDefaultValues`
 
 ***
 
 ### ~~interactive~~
 
 > **interactive**: `boolean`
+
+Defined in: [src/shapes/Group.ts:108](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L108)
 
 Used to allow targeting of object inside groups.
 set to true if you want to select an object inside a group.\
@@ -1052,29 +916,27 @@ that will take care of enabling subTargetCheck and necessary object events.
 There is too much attached to group interactivity to just be evaluated by a
 boolean in the code
 
+:::caution[Deprecated]
+This API is no longer supported and may be removed in a future release.
+:::
+
 #### Default
 
 ```ts
 
 ```
 
-:::caution[Deprecated]
-This API is no longer supported and may be removed in a future release.
-:::
-
 #### Implementation of
 
 [`GroupProps`](/api/interfaces/groupprops/).[`interactive`](/api/interfaces/groupprops/#interactive)
-
-#### Defined in
-
-[src/shapes/Group.ts:108](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L108)
 
 ***
 
 ### inverted
 
 > **inverted**: `boolean`
+
+Defined in: [src/shapes/Object/Object.ts:213](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L213)
 
 Meaningful ONLY when the object is used as clipPath.
 if true, the clipPath will make the object clip to the outside of the clipPath
@@ -1092,13 +954,7 @@ false
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).inverted`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:213](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L213)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).inverted`
 
 ***
 
@@ -1106,18 +962,14 @@ false
 
 > `optional` **isMoving**: `boolean`
 
+Defined in: [src/shapes/Object/InteractiveObject.ts:124](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L124)
+
 internal boolean to signal the code that the object is
 part of the move action.
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).isMoving`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:124](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L124)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).isMoving`
 
 ***
 
@@ -1125,19 +977,19 @@ part of the move action.
 
 > **layoutManager**: [`LayoutManager`](/api/classes/layoutmanager/)
 
+Defined in: [src/shapes/Group.ts:110](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L110)
+
 #### Implementation of
 
 [`GroupProps`](/api/interfaces/groupprops/).[`layoutManager`](/api/interfaces/groupprops/#layoutmanager)
-
-#### Defined in
-
-[src/shapes/Group.ts:110](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L110)
 
 ***
 
 ### left
 
 > **left**: `number`
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:564](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L564)
 
 Left position of an object.
 Note that by default it's relative to object left.
@@ -1155,19 +1007,15 @@ You can change this by setting [originX](../../../../api/interfaces/fabricobject
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).left`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:564](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L564)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).left`
 
 ***
 
 ### lockMovementX
 
 > **lockMovementX**: `boolean`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:56](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L56)
 
 When `true`, object horizontal movement is locked
 
@@ -1183,19 +1031,15 @@ When `true`, object horizontal movement is locked
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).lockMovementX`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:56](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L56)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).lockMovementX`
 
 ***
 
 ### lockMovementY
 
 > **lockMovementY**: `boolean`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:57](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L57)
 
 When `true`, object vertical movement is locked
 
@@ -1211,19 +1055,15 @@ When `true`, object vertical movement is locked
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).lockMovementY`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:57](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L57)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).lockMovementY`
 
 ***
 
 ### lockRotation
 
 > **lockRotation**: `boolean`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:58](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L58)
 
 When `true`, object rotation is locked
 
@@ -1239,19 +1079,15 @@ When `true`, object rotation is locked
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).lockRotation`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:58](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L58)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).lockRotation`
 
 ***
 
 ### lockScalingFlip
 
 > **lockScalingFlip**: `boolean`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:63](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L63)
 
 When `true`, object cannot be flipped by scaling into negative values
 
@@ -1267,19 +1103,15 @@ When `true`, object cannot be flipped by scaling into negative values
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).lockScalingFlip`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:63](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L63)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).lockScalingFlip`
 
 ***
 
 ### lockScalingX
 
 > **lockScalingX**: `boolean`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:59](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L59)
 
 When `true`, object horizontal scaling is locked
 
@@ -1295,19 +1127,15 @@ When `true`, object horizontal scaling is locked
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).lockScalingX`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:59](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L59)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).lockScalingX`
 
 ***
 
 ### lockScalingY
 
 > **lockScalingY**: `boolean`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:60](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L60)
 
 When `true`, object vertical scaling is locked
 
@@ -1323,19 +1151,15 @@ When `true`, object vertical scaling is locked
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).lockScalingY`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:60](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L60)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).lockScalingY`
 
 ***
 
 ### lockSkewingX
 
 > **lockSkewingX**: `boolean`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:61](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L61)
 
 When `true`, object horizontal skewing is locked
 
@@ -1351,19 +1175,15 @@ When `true`, object horizontal skewing is locked
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).lockSkewingX`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:61](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L61)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).lockSkewingX`
 
 ***
 
 ### lockSkewingY
 
 > **lockSkewingY**: `boolean`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:62](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L62)
 
 When `true`, object vertical skewing is locked
 
@@ -1379,13 +1199,7 @@ When `true`, object vertical skewing is locked
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).lockSkewingY`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:62](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L62)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).lockSkewingY`
 
 ***
 
@@ -1393,23 +1207,21 @@ When `true`, object vertical skewing is locked
 
 > `optional` **matrixCache**: `TMatrixCache`
 
+Defined in: [src/shapes/Object/ObjectGeometry.ts:73](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L73)
+
 storage cache for object full transform matrix
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).matrixCache`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:73](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L73)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).matrixCache`
 
 ***
 
 ### minScaleLimit
 
 > **minScaleLimit**: `number`
+
+Defined in: [src/shapes/Object/Object.ts:186](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L186)
 
 Minimum allowed scale value of an object
 
@@ -1425,19 +1237,15 @@ Minimum allowed scale value of an object
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).minScaleLimit`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:186](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L186)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).minScaleLimit`
 
 ***
 
 ### moveCursor
 
 > **moveCursor**: `null` \| `string`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:87](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L87)
 
 Default cursor value used when moving this object on canvas
 
@@ -1453,19 +1261,15 @@ null
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).moveCursor`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:87](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L87)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).moveCursor`
 
 ***
 
 ### noScaleCache
 
 > **noScaleCache**: `boolean`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:51](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L51)
 
 When `true`, cache does not get updated during scaling. The picture will get blocky if scaled
 too much and will be redrawn with correct details at the end of scaling.
@@ -1485,40 +1289,15 @@ true
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).noScaleCache`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:51](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L51)
-
-***
-
-### oCoords
-
-> **oCoords**: `Record`\<`string`, `TOCoord`\>
-
-The object's controls' position in viewport coordinates
-Calculated by [Control#positionHandler](../../../../api/classes/control/#positionhandler) and [Control#calcCornerCoords](../../../../api/classes/control/#calccornercoords), depending on [padding](../../../../api/classes/fabricobject/#padding).
-`corner/touchCorner` describe the 4 points forming the interactive area of the corner.
-Used to draw and locate controls.
-
-#### Inherited from
-
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).oCoords`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:95](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L95)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).noScaleCache`
 
 ***
 
 ### objectCaching
 
 > **objectCaching**: `boolean`
+
+Defined in: [src/shapes/Object/Object.ts:210](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L210)
 
 When `true`, object is cached on an additional canvas.
 When `false`, object is not cached unless necessary ( clipPath )
@@ -1540,19 +1319,32 @@ true
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).objectCaching`
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).objectCaching`
 
-#### Defined in
+***
 
-[src/shapes/Object/Object.ts:210](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L210)
+### oCoords
+
+> **oCoords**: `Record`\<`string`, `TOCoord`\>
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:95](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L95)
+
+The object's controls' position in viewport coordinates
+Calculated by [Control#positionHandler](../../../../api/classes/control/#positionhandler) and [Control#calcCornerCoords](../../../../api/classes/control/#calccornercoords), depending on [padding](../../../../api/classes/fabricobject/#padding).
+`corner/touchCorner` describe the 4 points forming the interactive area of the corner.
+Used to draw and locate controls.
+
+#### Inherited from
+
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).oCoords`
 
 ***
 
 ### opacity
 
 > **opacity**: `number`
+
+Defined in: [src/shapes/Object/Object.ts:188](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L188)
 
 Opacity of an object
 
@@ -1568,19 +1360,15 @@ Opacity of an object
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).opacity`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:188](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L188)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).opacity`
 
 ***
 
 ### ~~originX~~
 
 > **originX**: [`TOriginX`](/api/type-aliases/toriginx/)
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:576](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L576)
 
 :::caution[Deprecated]
 please use 'center' as value in new projects
@@ -1592,19 +1380,15 @@ please use 'center' as value in new projects
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).originX`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:576](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L576)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).originX`
 
 ***
 
 ### ~~originY~~
 
 > **originY**: [`TOriginY`](/api/type-aliases/toriginy/)
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:580](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L580)
 
 :::caution[Deprecated]
 please use 'center' as value in new projects
@@ -1616,13 +1400,7 @@ please use 'center' as value in new projects
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).originY`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:580](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L580)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).originY`
 
 ***
 
@@ -1630,23 +1408,21 @@ please use 'center' as value in new projects
 
 > `optional` **ownMatrixCache**: `TMatrixCache`
 
+Defined in: [src/shapes/Object/ObjectGeometry.ts:68](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L68)
+
 storage cache for object transform matrix
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).ownMatrixCache`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:68](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L68)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).ownMatrixCache`
 
 ***
 
 ### padding
 
 > **padding**: `number`
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:53](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L53)
 
 Padding between object and its controlling borders (in pixels)
 
@@ -1662,19 +1438,15 @@ Padding between object and its controlling borders (in pixels)
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).padding`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:53](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L53)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).padding`
 
 ***
 
 ### paintFirst
 
 > **paintFirst**: `"fill"` \| `"stroke"`
+
+Defined in: [src/shapes/Object/Object.ts:190](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L190)
 
 Determines if the fill or the stroke is drawn first (one of "fill" or "stroke")
 
@@ -1690,13 +1462,7 @@ Determines if the fill or the stroke is drawn first (one of "fill" or "stroke")
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).paintFirst`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:190](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L190)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).paintFirst`
 
 ***
 
@@ -1704,24 +1470,22 @@ Determines if the fill or the stroke is drawn first (one of "fill" or "stroke")
 
 > `optional` **parent**: [`Group`](/api/classes/group/)
 
+Defined in: [src/shapes/Object/Object.ts:1595](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1595)
+
 A reference to the parent of the object
 Used to keep the original parent ref when the object has been added to an ActiveSelection, hence loosing the `group` ref
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).parent`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:1595](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1595)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).parent`
 
 ***
 
 ### perPixelTargetFind
 
 > **perPixelTargetFind**: `boolean`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:83](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L83)
 
 When set to `true`, objects are "found" on canvas on per-pixel basis rather than according to bounding box
 
@@ -1737,19 +1501,15 @@ When set to `true`, objects are "found" on canvas on per-pixel basis rather than
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).perPixelTargetFind`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:83](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L83)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).perPixelTargetFind`
 
 ***
 
 ### scaleX
 
 > **scaleX**: `number`
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:569](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L569)
 
 Object scale factor (horizontal)
 
@@ -1765,19 +1525,15 @@ Object scale factor (horizontal)
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).scaleX`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:569](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L569)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).scaleX`
 
 ***
 
 ### scaleY
 
 > **scaleY**: `number`
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:570](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L570)
 
 Object scale factor (vertical)
 
@@ -1793,19 +1549,15 @@ Object scale factor (vertical)
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).scaleY`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:570](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L570)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).scaleY`
 
 ***
 
 ### selectable
 
 > **selectable**: `boolean`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:81](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L81)
 
 When set to `false`, an object can not be selected for modification (using either point-click-based or group-based selection).
 But events still fire on it.
@@ -1822,13 +1574,7 @@ But events still fire on it.
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).selectable`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:81](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L81)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).selectable`
 
 ***
 
@@ -1836,8 +1582,14 @@ But events still fire on it.
 
 > **selectionBackgroundColor**: `string`
 
+Defined in: [src/shapes/Object/InteractiveObject.ts:79](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L79)
+
 Selection Background color of an object. colored layer behind the object when it is active.
 does not mix good with globalCompositeOperation methods.
+
+:::caution[Deprecated]
+This API is no longer supported and may be removed in a future release.
+:::
 
 #### Default
 
@@ -1845,29 +1597,21 @@ does not mix good with globalCompositeOperation methods.
 
 ```
 
-:::caution[Deprecated]
-This API is no longer supported and may be removed in a future release.
-:::
-
 #### Implementation of
 
 [`GroupProps`](/api/interfaces/groupprops/).[`selectionBackgroundColor`](/api/interfaces/groupprops/#selectionbackgroundcolor)
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).selectionBackgroundColor`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:79](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L79)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).selectionBackgroundColor`
 
 ***
 
 ### shadow
 
 > **shadow**: `null` \| [`Shadow`](/api/classes/shadow/)
+
+Defined in: [src/shapes/Object/Object.ts:203](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L203)
 
 Shadow object representing shadow of this shape
 
@@ -1883,19 +1627,15 @@ null
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).shadow`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:203](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L203)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).shadow`
 
 ***
 
 ### skewX
 
 > **skewX**: `number`
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:571](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L571)
 
 Angle of skew on x axes of an object (in degrees)
 
@@ -1911,19 +1651,15 @@ Angle of skew on x axes of an object (in degrees)
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).skewX`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:571](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L571)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).skewX`
 
 ***
 
 ### skewY
 
 > **skewY**: `number`
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:572](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L572)
 
 Angle of skew on y axes of an object (in degrees)
 
@@ -1939,19 +1675,15 @@ Angle of skew on y axes of an object (in degrees)
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).skewY`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:572](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L572)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).skewY`
 
 ***
 
 ### snapAngle?
 
 > `optional` **snapAngle**: [`TDegree`](/api/type-aliases/tdegree/)
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:53](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L53)
 
 The angle that an object will lock to while rotating.
 
@@ -1961,19 +1693,15 @@ The angle that an object will lock to while rotating.
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).snapAngle`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:53](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L53)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).snapAngle`
 
 ***
 
 ### snapThreshold?
 
 > `optional` **snapThreshold**: [`TDegree`](/api/type-aliases/tdegree/)
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:54](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L54)
 
 The angle difference from the current snapped angle in which snapping should occur.
 When undefined, the snapThreshold will default to the snapAngle.
@@ -1984,19 +1712,15 @@ When undefined, the snapThreshold will default to the snapAngle.
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).snapThreshold`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:54](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L54)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).snapThreshold`
 
 ***
 
 ### stroke
 
 > **stroke**: `null` \| `string` \| [`TFiller`](/api/type-aliases/tfiller/)
+
+Defined in: [src/shapes/Object/Object.ts:193](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L193)
 
 When defined, an object is rendered via stroke and this property specifies its color
 takes css colors https://www.w3.org/TR/css-color-3/
@@ -2013,19 +1737,15 @@ null
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).stroke`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:193](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L193)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).stroke`
 
 ***
 
 ### strokeDashArray
 
 > **strokeDashArray**: `null` \| `number`[]
+
+Defined in: [src/shapes/Object/Object.ts:194](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L194)
 
 Array specifying dash pattern of an object's stroke (stroke must be defined)
 
@@ -2041,19 +1761,15 @@ null;
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).strokeDashArray`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:194](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L194)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).strokeDashArray`
 
 ***
 
 ### strokeDashOffset
 
 > **strokeDashOffset**: `number`
+
+Defined in: [src/shapes/Object/Object.ts:195](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L195)
 
 Line offset of an object's stroke
 
@@ -2069,19 +1785,15 @@ Line offset of an object's stroke
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).strokeDashOffset`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:195](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L195)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).strokeDashOffset`
 
 ***
 
 ### strokeLineCap
 
 > **strokeLineCap**: `CanvasLineCap`
+
+Defined in: [src/shapes/Object/Object.ts:196](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L196)
 
 Line endings style of an object's stroke (one of "butt", "round", "square")
 
@@ -2097,19 +1809,15 @@ butt
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).strokeLineCap`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:196](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L196)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).strokeLineCap`
 
 ***
 
 ### strokeLineJoin
 
 > **strokeLineJoin**: `CanvasLineJoin`
+
+Defined in: [src/shapes/Object/Object.ts:197](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L197)
 
 Corner style of an object's stroke (one of "bevel", "round", "miter")
 
@@ -2125,19 +1833,15 @@ Corner style of an object's stroke (one of "bevel", "round", "miter")
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).strokeLineJoin`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:197](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L197)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).strokeLineJoin`
 
 ***
 
 ### strokeMiterLimit
 
 > **strokeMiterLimit**: `number`
+
+Defined in: [src/shapes/Object/Object.ts:198](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L198)
 
 Maximum miter length (used for strokeLineJoin = "miter") of an object's stroke
 
@@ -2153,19 +1857,15 @@ Maximum miter length (used for strokeLineJoin = "miter") of an object's stroke
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).strokeMiterLimit`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:198](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L198)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).strokeMiterLimit`
 
 ***
 
 ### strokeUniform
 
 > **strokeUniform**: `boolean`
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:583](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L583)
 
 When `false`, the stoke width will scale with the object.
 When `true`, the stroke will always match the exact pixel size entered for stroke width.
@@ -2194,19 +1894,15 @@ false
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).strokeUniform`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:583](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L583)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).strokeUniform`
 
 ***
 
 ### strokeWidth
 
 > **strokeWidth**: `number`
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:582](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L582)
 
 Width of a stroke used to render this object
 
@@ -2222,19 +1918,15 @@ Width of a stroke used to render this object
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).strokeWidth`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:582](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L582)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).strokeWidth`
 
 ***
 
 ### subTargetCheck
 
 > **subTargetCheck**: `boolean`
+
+Defined in: [src/shapes/Group.ts:94](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L94)
 
 Used to optimize performance
 set to `false` if you don't need contained objects to be targets of events
@@ -2249,15 +1941,13 @@ set to `false` if you don't need contained objects to be targets of events
 
 [`GroupProps`](/api/interfaces/groupprops/).[`subTargetCheck`](/api/interfaces/groupprops/#subtargetcheck)
 
-#### Defined in
-
-[src/shapes/Group.ts:94](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L94)
-
 ***
 
 ### top
 
 > **top**: `number`
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:563](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L563)
 
 Top position of an object.
 Note that by default it's relative to object top.
@@ -2275,19 +1965,15 @@ You can change this by setting [originY](../../../../api/interfaces/fabricobject
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).top`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:563](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L563)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).top`
 
 ***
 
 ### touchCornerSize
 
 > **touchCornerSize**: `number`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:66](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L66)
 
 Size of object's controlling corners when touch interaction is detected
 
@@ -2303,19 +1989,15 @@ Size of object's controlling corners when touch interaction is detected
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).touchCornerSize`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:66](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L66)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).touchCornerSize`
 
 ***
 
 ### transparentCorners
 
 > **transparentCorners**: `boolean`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:67](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L67)
 
 When true, object's controlling corners are rendered as transparent inside (i.e. stroke instead of fill)
 
@@ -2331,19 +2013,15 @@ true
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).transparentCorners`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:67](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L67)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).transparentCorners`
 
 ***
 
 ### visible
 
 > **visible**: `boolean`
+
+Defined in: [src/shapes/Object/Object.ts:205](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L205)
 
 When set to `false`, an object is not rendered on canvas
 
@@ -2359,19 +2037,15 @@ When set to `false`, an object is not rendered on canvas
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).visible`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:205](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L205)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).visible`
 
 ***
 
 ### width
 
 > **width**: `number`
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:565](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L565)
 
 Object width
 
@@ -2387,19 +2061,15 @@ Object width
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).width`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:565](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L565)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).width`
 
 ***
 
 ### cacheProperties
 
 > `static` **cacheProperties**: `string`[]
+
+Defined in: [src/shapes/Object/Object.ts:233](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L233)
 
 List of properties to consider when checking if cache needs refresh
 Those properties are checked by
@@ -2408,13 +2078,7 @@ and refreshed at the next render
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).cacheProperties`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:233](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L233)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).cacheProperties`
 
 ***
 
@@ -2422,17 +2086,13 @@ and refreshed at the next render
 
 > `static` **colorProperties**: `string`[]
 
+Defined in: [src/shapes/Object/Object.ts:1502](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1502)
+
 List of properties to consider for animating colors.
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).colorProperties`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:1502](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1502)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).colorProperties`
 
 ***
 
@@ -2440,18 +2100,14 @@ List of properties to consider for animating colors.
 
 > `static` **customProperties**: `string`[] = `[]`
 
+Defined in: [src/shapes/Object/Object.ts:1743](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1743)
+
 Define a list of custom properties that will be serialized when
 instance.toObject() gets called
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).customProperties`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:1743](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1743)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).customProperties`
 
 ***
 
@@ -2459,15 +2115,11 @@ instance.toObject() gets called
 
 > `static` **ownDefaults**: `Record`\<`string`, `any`\> = `groupDefaultValues`
 
+Defined in: [src/shapes/Group.ts:122](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L122)
+
 #### Overrides
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).ownDefaults`
-
-#### Defined in
-
-[src/shapes/Group.ts:122](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L122)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).ownDefaults`
 
 ***
 
@@ -2475,19 +2127,15 @@ instance.toObject() gets called
 
 > `static` **stateProperties**: `string`[]
 
+Defined in: [src/shapes/Object/Object.ts:224](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L224)
+
 This list of properties is used to check if the state of an object is changed.
 This state change now is only used for children of groups to understand if a group
 needs its cache regenerated during a .set call
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).stateProperties`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:224](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L224)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).stateProperties`
 
 ***
 
@@ -2495,41 +2143,41 @@ needs its cache regenerated during a .set call
 
 > `static` **type**: `string` = `'Group'`
 
+Defined in: [src/shapes/Group.ts:120](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L120)
+
 Legacy identifier of the class. Prefer using utils like isType or instanceOf
 Will be removed in fabric 7 or 8.
 The setter exists to avoid type errors in old code and possibly current deserialization code.
 DO NOT build new code around this type value
 
-#### TODO
-
-add sustainable warning message
-
 :::caution[Deprecated]
 This API is no longer supported and may be removed in a future release.
 :::
 
+#### TODO
+
+add sustainable warning message
+
 #### Overrides
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).type`
-
-#### Defined in
-
-[src/shapes/Group.ts:120](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L120)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).type`
 
 ## Accessors
 
 ### type
 
-> `get` **type**(): `string`
+#### Get Signature
+
+> **get** **type**(): `string`
+
+Defined in: [src/shapes/Object/Object.ts:353](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L353)
 
 Legacy identifier of the class. Prefer using utils like isType or instanceOf
 Will be removed in fabric 7 or 8.
 The setter exists to avoid type errors in old code and possibly current deserialization code.
 DO NOT build new code around this type value
 
-#### TODO
+##### TODO
 
 add sustainable warning message
 
@@ -2537,25 +2185,29 @@ add sustainable warning message
 This API is no longer supported and may be removed in a future release.
 :::
 
-> `set` **type**(`value`): `void`
-
-#### Parameters
-
-• **value**: `string`
-
-#### Returns
+##### Returns
 
 `string`
 
+#### Set Signature
+
+> **set** **type**(`value`): `void`
+
+Defined in: [src/shapes/Object/Object.ts:361](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L361)
+
+##### Parameters
+
+###### value
+
+`string`
+
+##### Returns
+
+`void`
+
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).type`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:353](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L353)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).type`
 
 ## Methods
 
@@ -2563,15 +2215,23 @@ This API is no longer supported and may be removed in a future release.
 
 > **\_drawClipPath**(`ctx`, `clipPath`, `context`): `void`
 
+Defined in: [src/shapes/Object/Object.ts:883](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L883)
+
 Prepare clipPath state and cache and draw it on instance's cache
 
 #### Parameters
 
-• **ctx**: `CanvasRenderingContext2D`
+##### ctx
 
-• **clipPath**: `undefined` \| [`BaseFabricObject`](/api/classes/basefabricobject/)\<`Partial`\<`ObjectProps`\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+`CanvasRenderingContext2D`
 
-• **context**: [`DrawContext`](/api/type-aliases/drawcontext/)
+##### clipPath
+
+`undefined` | [`BaseFabricObject`](/api/classes/basefabricobject/)
+
+##### context
+
+[`DrawContext`](/api/type-aliases/drawcontext/)
 
 #### Returns
 
@@ -2579,19 +2239,15 @@ Prepare clipPath state and cache and draw it on instance's cache
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  )._drawClipPath`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:883](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L883)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, )._drawClipPath`
 
 ***
 
 ### \_limitCacheSize()
 
 > **\_limitCacheSize**(`dims`): `any`
+
+Defined in: [src/shapes/Object/Object.ts:402](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L402)
 
 Limit the cache dimensions so that X * Y do not cross config.perfLimitSizeTotal
 and each side do not cross fabric.cacheSideLimit
@@ -2600,7 +2256,9 @@ making bargain with performances.
 
 #### Parameters
 
-• **dims**: `any`
+##### dims
+
+`any`
 
 #### Returns
 
@@ -2616,13 +2274,7 @@ making bargain with performances.
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  )._limitCacheSize`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:402](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L402)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, )._limitCacheSize`
 
 ***
 
@@ -2630,9 +2282,13 @@ making bargain with performances.
 
 > **\_onObjectAdded**(`object`): `void`
 
+Defined in: [src/shapes/Group.ts:258](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L258)
+
 #### Parameters
 
-• **object**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+##### object
+
+[`FabricObject`](/api/classes/fabricobject/)
 
 #### Returns
 
@@ -2640,13 +2296,7 @@ making bargain with performances.
 
 #### Overrides
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  )._onObjectAdded`
-
-#### Defined in
-
-[src/shapes/Group.ts:258](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L258)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, )._onObjectAdded`
 
 ***
 
@@ -2654,25 +2304,23 @@ making bargain with performances.
 
 > **\_onStackOrderChanged**(): `void`
 
+Defined in: [src/shapes/Group.ts:288](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L288)
+
 #### Returns
 
 `void`
 
 #### Overrides
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  )._onStackOrderChanged`
-
-#### Defined in
-
-[src/shapes/Group.ts:288](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L288)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, )._onStackOrderChanged`
 
 ***
 
 ### \_removeCacheCanvas()
 
 > **\_removeCacheCanvas**(): `void`
+
+Defined in: [src/shapes/Object/Object.ts:719](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L719)
 
 Remove cacheCanvas and its dimensions from the objects
 
@@ -2682,13 +2330,7 @@ Remove cacheCanvas and its dimensions from the objects
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  )._removeCacheCanvas`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:719](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L719)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, )._removeCacheCanvas`
 
 ***
 
@@ -2696,16 +2338,22 @@ Remove cacheCanvas and its dimensions from the objects
 
 > **\_renderControls**(`ctx`, `styleOverride`?): `void`
 
+Defined in: [src/shapes/Object/InteractiveObject.ts:435](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L435)
+
 Renders controls and borders for the object
 the context here is not transformed
 
 #### Parameters
 
-• **ctx**: `CanvasRenderingContext2D`
+##### ctx
+
+`CanvasRenderingContext2D`
 
 Context to render on
 
-• **styleOverride?**: `TStyleOverride` = `{}`
+##### styleOverride?
+
+`TStyleOverride` = `{}`
 
 properties to override the object style
 
@@ -2719,13 +2367,7 @@ move to interactivity
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  )._renderControls`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:435](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L435)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, )._renderControls`
 
 ***
 
@@ -2733,9 +2375,13 @@ move to interactivity
 
 > **\_setClippingProperties**(`ctx`): `void`
 
+Defined in: [src/shapes/Object/Object.ts:1025](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1025)
+
 #### Parameters
 
-• **ctx**: `CanvasRenderingContext2D`
+##### ctx
+
+`CanvasRenderingContext2D`
 
 #### Returns
 
@@ -2743,13 +2389,7 @@ move to interactivity
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  )._setClippingProperties`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:1025](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1025)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, )._setClippingProperties`
 
 ***
 
@@ -2757,11 +2397,17 @@ move to interactivity
 
 > **\_setFillStyles**(`ctx`, `__namedParameters`): `void`
 
+Defined in: [src/shapes/Object/Object.ts:1014](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1014)
+
 #### Parameters
 
-• **ctx**: `CanvasRenderingContext2D`
+##### ctx
 
-• **\_\_namedParameters**: `Pick`\<[`Group`](/api/classes/group/), `"fill"`\>
+`CanvasRenderingContext2D`
+
+##### \_\_namedParameters
+
+`Pick`\<[`Group`](/api/classes/group/), `"fill"`\>
 
 #### Returns
 
@@ -2769,13 +2415,7 @@ move to interactivity
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  )._setFillStyles`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:1014](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1014)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, )._setFillStyles`
 
 ***
 
@@ -2783,11 +2423,17 @@ move to interactivity
 
 > **\_setStrokeStyles**(`ctx`, `decl`): `void`
 
+Defined in: [src/shapes/Object/Object.ts:972](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L972)
+
 #### Parameters
 
-• **ctx**: `CanvasRenderingContext2D`
+##### ctx
 
-• **decl**: `Pick`\<[`Group`](/api/classes/group/), `"stroke"` \| `"strokeWidth"` \| `"strokeDashOffset"` \| `"strokeLineCap"` \| `"strokeLineJoin"` \| `"strokeMiterLimit"`\>
+`CanvasRenderingContext2D`
+
+##### decl
+
+`Pick`\<[`Group`](/api/classes/group/), `"stroke"` \| `"strokeWidth"` \| `"strokeDashOffset"` \| `"strokeLineCap"` \| `"strokeLineJoin"` \| `"strokeMiterLimit"`\>
 
 #### Returns
 
@@ -2795,13 +2441,7 @@ move to interactivity
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  )._setStrokeStyles`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:972](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L972)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, )._setStrokeStyles`
 
 ***
 
@@ -2809,12 +2449,16 @@ move to interactivity
 
 > **\_setupCompositeOperation**(`ctx`): `void`
 
+Defined in: [src/shapes/Object/Object.ts:1477](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1477)
+
 Sets canvas globalCompositeOperation for specific object
 custom composition operation for the particular object can be specified using globalCompositeOperation property
 
 #### Parameters
 
-• **ctx**: `CanvasRenderingContext2D`
+##### ctx
+
+`CanvasRenderingContext2D`
 
 Rendering canvas context
 
@@ -2824,13 +2468,7 @@ Rendering canvas context
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  )._setupCompositeOperation`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:1477](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1477)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, )._setupCompositeOperation`
 
 ***
 
@@ -2838,11 +2476,15 @@ Rendering canvas context
 
 > **\_toSVG**(`reviver`?): `string`[]
 
+Defined in: [src/shapes/Group.ts:637](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L637)
+
 Returns svg representation of an instance
 
 #### Parameters
 
-• **reviver?**: [`TSVGReviver`](/api/type-aliases/tsvgreviver/)
+##### reviver?
+
+[`TSVGReviver`](/api/type-aliases/tsvgreviver/)
 
 Method for further parsing of svg representation.
 
@@ -2854,13 +2496,7 @@ svg representation of an instance
 
 #### Overrides
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  )._toSVG`
-
-#### Defined in
-
-[src/shapes/Group.ts:637](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L637)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, )._toSVG`
 
 ***
 
@@ -2868,11 +2504,15 @@ svg representation of an instance
 
 > **add**(...`objects`): `number`
 
+Defined in: [src/shapes/Group.ts:228](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L228)
+
 Add objects
 
 #### Parameters
 
-• ...**objects**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[]
+##### objects
+
+...[`FabricObject`](/api/classes/fabricobject/)[]
 
 #### Returns
 
@@ -2880,13 +2520,7 @@ Add objects
 
 #### Overrides
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).add`
-
-#### Defined in
-
-[src/shapes/Group.ts:228](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L228)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).add`
 
 ***
 
@@ -2894,9 +2528,13 @@ Add objects
 
 > **addPaintOrder**(`this`): `string`
 
+Defined in: [src/shapes/Object/FabricObjectSVGExportMixin.ts:249](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/FabricObjectSVGExportMixin.ts#L249)
+
 #### Parameters
 
-• **this**: `FabricObjectSVGExportMixin` & [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+##### this
+
+`FabricObjectSVGExportMixin` & [`FabricObject`](/api/classes/fabricobject/)
 
 #### Returns
 
@@ -2904,19 +2542,15 @@ Add objects
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).addPaintOrder`
-
-#### Defined in
-
-[src/shapes/Object/FabricObjectSVGExportMixin.ts:249](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/FabricObjectSVGExportMixin.ts#L249)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).addPaintOrder`
 
 ***
 
 ### animate()
 
 > **animate**\<`T`\>(`animatable`, `options`?): `Record`\<`string`, [`TAnimation`](/api/namespaces/util/type-aliases/tanimation/)\<`T`\>\>
+
+Defined in: [src/shapes/Object/Object.ts:1516](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1516)
 
 Animates object's properties
 
@@ -2926,11 +2560,15 @@ Animates object's properties
 
 #### Parameters
 
-• **animatable**: `Record`\<`string`, `T`\>
+##### animatable
+
+`Record`\<`string`, `T`\>
 
 map of keys and end values
 
-• **options?**: `Partial`\<[`AnimationOptions`](/api/namespaces/util/type-aliases/animationoptions/)\<`T`\>\>
+##### options?
+
+`Partial`\<[`AnimationOptions`](/api/namespaces/util/type-aliases/animationoptions/)\<`T`\>\>
 
 #### Returns
 
@@ -2949,19 +2587,15 @@ object.animate({ left: ..., top: ... }, { duration: ... });
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).animate`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:1516](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1516)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).animate`
 
 ***
 
 ### bringObjectForward()
 
 > **bringObjectForward**(`object`, `intersecting`?): `boolean`
+
+Defined in: [src/Collection.ts:240](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L240)
 
 Moves an object or a selection up in stack of drawn objects
 An optional parameter, intersecting allows to move the object in front
@@ -2971,11 +2605,15 @@ stack.
 
 #### Parameters
 
-• **object**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+##### object
+
+[`FabricObject`](/api/classes/fabricobject/)
 
 Object to send
 
-• **intersecting?**: `boolean`
+##### intersecting?
+
+`boolean`
 
 If `true`, send object in front of next upper intersecting object
 
@@ -2987,13 +2625,7 @@ true if change occurred
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).bringObjectForward`
-
-#### Defined in
-
-[src/Collection.ts:240](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L240)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).bringObjectForward`
 
 ***
 
@@ -3001,12 +2633,16 @@ true if change occurred
 
 > **bringObjectToFront**(`object`): `boolean`
 
+Defined in: [src/Collection.ts:194](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L194)
+
 Moves an object or the objects of a multiple selection
 to the top of the stack of drawn objects
 
 #### Parameters
 
-• **object**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+##### object
+
+[`FabricObject`](/api/classes/fabricobject/)
 
 Object to send
 
@@ -3018,19 +2654,15 @@ true if change occurred
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).bringObjectToFront`
-
-#### Defined in
-
-[src/Collection.ts:194](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L194)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).bringObjectToFront`
 
 ***
 
 ### calcACoords()
 
 > **calcACoords**(): [`TCornerPoint`](/api/type-aliases/tcornerpoint/)
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:427](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L427)
 
 Calculates the coordinates of the 4 corner of the bbox, in absolute coordinates.
 those never change with zoom or viewport changes.
@@ -3041,19 +2673,15 @@ those never change with zoom or viewport changes.
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).calcACoords`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:427](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L427)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).calcACoords`
 
 ***
 
 ### calcOCoords()
 
 > **calcOCoords**(): `Record`\<`string`, `TOCoord`\>
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:255](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L255)
 
 Calculates the coordinates of the center of each control plus the corners of the control itself
 This basically just delegates to each control positionHandler
@@ -3066,19 +2694,15 @@ is a public api and should be done just if extremely necessary
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).calcOCoords`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:255](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L255)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).calcOCoords`
 
 ***
 
 ### calcOwnMatrix()
 
 > **calcOwnMatrix**(): [`TMat2D`](/api/type-aliases/tmat2d/)
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:513](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L513)
 
 calculate transform matrix that represents the current transformations from the
 object's properties, this matrix does not include the group transformation
@@ -3091,13 +2715,7 @@ transform matrix for the object
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).calcOwnMatrix`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:513](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L513)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).calcOwnMatrix`
 
 ***
 
@@ -3105,12 +2723,16 @@ transform matrix for the object
 
 > **calcTransformMatrix**(`skipGroup`?): [`TMat2D`](/api/type-aliases/tmat2d/)
 
+Defined in: [src/shapes/Object/ObjectGeometry.ts:485](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L485)
+
 calculate transform matrix that represents the current transformations from the
 object's properties.
 
 #### Parameters
 
-• **skipGroup?**: `boolean` = `false`
+##### skipGroup?
+
+`boolean` = `false`
 
 return transform matrix for object not counting parent transformations
 There are some situation in which this is useful to avoid the fake rotation.
@@ -3123,13 +2745,7 @@ transform matrix for the object
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).calcTransformMatrix`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:485](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L485)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).calcTransformMatrix`
 
 ***
 
@@ -3137,11 +2753,15 @@ transform matrix for the object
 
 > **canDrop**(`_e`): `boolean`
 
+Defined in: [src/shapes/Object/InteractiveObject.ts:701](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L701)
+
 Override to customize drag and drop behavior
 
 #### Parameters
 
-• **\_e**: `DragEvent`
+##### \_e
+
+`DragEvent`
 
 #### Returns
 
@@ -3151,19 +2771,15 @@ true if the object currently dragged can be dropped on the target
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).canDrop`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:701](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L701)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).canDrop`
 
 ***
 
 ### clearContextTop()
 
 > **clearContextTop**(`restoreManually`?): `undefined` \| `CanvasRenderingContext2D`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:627](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L627)
 
 Clears the canvas.contextTop in a specific area that corresponds to the object's bounding box
 that is in the canvas.contextContainer.
@@ -3172,7 +2788,9 @@ Example: blinking cursor text selection, drag effects.
 
 #### Parameters
 
-• **restoreManually?**: `boolean`
+##### restoreManually?
+
+`boolean`
 
 When true won't restore the context after clear, in order to draw something else.
 
@@ -3189,13 +2807,7 @@ discuss swapping restoreManually with a renderCallback, but think of async issue
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).clearContextTop`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:627](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L627)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).clearContextTop`
 
 ***
 
@@ -3203,11 +2815,15 @@ discuss swapping restoreManually with a renderCallback, but think of async issue
 
 > **clone**(`propertiesToInclude`?): `Promise`\<[`Group`](/api/classes/group/)\>
 
+Defined in: [src/shapes/Object/Object.ts:1251](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1251)
+
 Clones an instance.
 
 #### Parameters
 
-• **propertiesToInclude?**: `string`[]
+##### propertiesToInclude?
+
+`string`[]
 
 Any properties that you might want to additionally include in the output
 
@@ -3217,19 +2833,15 @@ Any properties that you might want to additionally include in the output
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).clone`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:1251](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1251)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).clone`
 
 ***
 
 ### cloneAsImage()
 
-> **cloneAsImage**(`options`?): [`FabricImage`](/api/classes/fabricimage/)\<`Partial`\<[`ImageProps`](/api/interfaces/imageprops/)\>, [`SerializedImageProps`](/api/interfaces/serializedimageprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+> **cloneAsImage**(`options`?): [`FabricImage`](/api/classes/fabricimage/)
+
+Defined in: [src/shapes/Object/Object.ts:1277](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1277)
 
 Creates an instance of Image out of an object
 makes use of toCanvasElement.
@@ -3240,13 +2852,15 @@ toCanvasElement and then toBlob from the obtained canvas is also a good option.
 
 #### Parameters
 
-• **options?**: `ObjectToCanvasElementOptions`
+##### options?
+
+`ObjectToCanvasElementOptions`
 
 for clone as image, passed to toDataURL
 
 #### Returns
 
-[`FabricImage`](/api/classes/fabricimage/)\<`Partial`\<[`ImageProps`](/api/interfaces/imageprops/)\>, [`SerializedImageProps`](/api/interfaces/serializedimageprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+[`FabricImage`](/api/classes/fabricimage/)
 
 Object cloned as image.
 
@@ -3256,19 +2870,15 @@ fix the export type, it could not be Image but the type that getClass return for
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).cloneAsImage`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:1277](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1277)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).cloneAsImage`
 
 ***
 
 ### collectObjects()
 
-> **collectObjects**(`bbox`, `options`): [`InteractiveFabricObject`](/api/classes/interactivefabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[]
+> **collectObjects**(`bbox`, `options`): [`InteractiveFabricObject`](/api/classes/interactivefabricobject/)[]
+
+Defined in: [src/Collection.ts:326](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L326)
 
 Given a bounding box, return all the objects of the collection that are contained in the bounding box.
 If `includeIntersecting` is true, return also the objects that intersect the bounding box as well.
@@ -3276,37 +2886,39 @@ This is meant to work with selection. Is not a generic method.
 
 #### Parameters
 
-• **bbox**: [`TBBox`](/api/type-aliases/tbbox/)
+##### bbox
+
+[`TBBox`](/api/type-aliases/tbbox/)
 
 a bounding box in scene coordinates
 
-• **options** = `{}`
+##### options
 
 an object with includeIntersecting
 
-• **options.includeIntersecting?**: `boolean` = `true`
+###### includeIntersecting
+
+`boolean` = `true`
 
 #### Returns
 
-[`InteractiveFabricObject`](/api/classes/interactivefabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[]
+[`InteractiveFabricObject`](/api/classes/interactivefabricobject/)[]
 
 array of objects contained in the bounding box, ordered from top to bottom stacking wise
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).collectObjects`
-
-#### Defined in
-
-[src/Collection.ts:326](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L326)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).collectObjects`
 
 ***
 
 ### complexity()
 
 > **complexity**(): `number`
+
+Defined in: [src/Collection.ts:165](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L165)
+
+Returns number representation of a collection complexity
 
 #### Returns
 
@@ -3316,13 +2928,7 @@ complexity
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).complexity`
-
-#### Defined in
-
-[src/Collection.ts:165](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L165)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).complexity`
 
 ***
 
@@ -3330,17 +2936,23 @@ complexity
 
 > **contains**(`object`, `deep`?): `boolean`
 
+Defined in: [src/Collection.ts:148](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L148)
+
 Returns true if collection contains an object.\
 **Prefer using [FabricObject#isDescendantOf](../../../../api/classes/fabricobject/#isdescendantof) for performance reasons**
 instead of `a.contains(b)` use `b.isDescendantOf(a)`
 
 #### Parameters
 
-• **object**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+##### object
+
+[`FabricObject`](/api/classes/fabricobject/)
 
 Object to check against
 
-• **deep?**: `boolean`
+##### deep?
+
+`boolean`
 
 `true` to check all descendants, `false` to check only `_objects`
 
@@ -3352,13 +2964,7 @@ Object to check against
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).contains`
-
-#### Defined in
-
-[src/Collection.ts:148](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L148)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).contains`
 
 ***
 
@@ -3366,11 +2972,15 @@ Object to check against
 
 > **containsPoint**(`point`): `boolean`
 
+Defined in: [src/shapes/Object/ObjectGeometry.ts:282](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L282)
+
 Checks if point is inside the object
 
 #### Parameters
 
-• **point**: [`Point`](/api/classes/point/)
+##### point
+
+[`Point`](/api/classes/point/)
 
 Point to check against
 
@@ -3382,19 +2992,15 @@ true if point is inside the object
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).containsPoint`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:282](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L282)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).containsPoint`
 
 ***
 
 ### dispose()
 
 > **dispose**(): `void`
+
+Defined in: [src/shapes/Group.ts:605](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L605)
 
 cancel instance's running animations
 override if necessary to dispose artifacts such as `clipPath`
@@ -3405,13 +3011,7 @@ override if necessary to dispose artifacts such as `clipPath`
 
 #### Overrides
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).dispose`
-
-#### Defined in
-
-[src/shapes/Group.ts:605](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L605)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).dispose`
 
 ***
 
@@ -3419,21 +3019,29 @@ override if necessary to dispose artifacts such as `clipPath`
 
 > **drawBorders**(`ctx`, `options`, `styleOverride`?): `void`
 
+Defined in: [src/shapes/Object/InteractiveObject.ts:478](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L478)
+
 Draws borders of an object's bounding box.
 Requires public properties: width, height
 Requires public options: padding, borderColor
 
 #### Parameters
 
-• **ctx**: `CanvasRenderingContext2D`
+##### ctx
+
+`CanvasRenderingContext2D`
 
 Context to draw on
 
-• **options**: `Required`\<`Omit`\<[`TComposeMatrixArgs`](/api/namespaces/util/type-aliases/tcomposematrixargs/), `"flipY"` \| `"flipX"`\>\>
+##### options
+
+`Required`\<`Omit`\<[`TComposeMatrixArgs`](/api/namespaces/util/type-aliases/tcomposematrixargs/), `"flipY"` \| `"flipX"`\>\>
 
 object representing current object parameters
 
-• **styleOverride?**: `TStyleOverride`
+##### styleOverride?
+
+`TStyleOverride`
 
 object to override the object style
 
@@ -3443,13 +3051,7 @@ object to override the object style
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).drawBorders`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:478](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L478)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).drawBorders`
 
 ***
 
@@ -3457,13 +3059,19 @@ object to override the object style
 
 > **drawCacheOnCanvas**(`this`, `ctx`): `void`
 
+Defined in: [src/shapes/Object/Object.ts:905](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L905)
+
 Paint the cached copy of the object on the target context.
 
 #### Parameters
 
-• **this**: `TCachedFabricObject`\<[`BaseFabricObject`](/api/classes/basefabricobject/)\<`Partial`\<`ObjectProps`\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>\>
+##### this
 
-• **ctx**: `CanvasRenderingContext2D`
+`TCachedFabricObject`\<[`BaseFabricObject`](/api/classes/basefabricobject/)\>
+
+##### ctx
+
+`CanvasRenderingContext2D`
 
 Context to render on
 
@@ -3473,13 +3081,7 @@ Context to render on
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).drawCacheOnCanvas`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:905](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L905)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).drawCacheOnCanvas`
 
 ***
 
@@ -3487,17 +3089,25 @@ Context to render on
 
 > **drawClipPathOnCache**(`ctx`, `clipPath`, `canvasWithClipPath`): `void`
 
+Defined in: [src/shapes/Object/Object.ts:810](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L810)
+
 Execute the drawing operation for an object clipPath
 
 #### Parameters
 
-• **ctx**: `CanvasRenderingContext2D`
+##### ctx
+
+`CanvasRenderingContext2D`
 
 Context to render on
 
-• **clipPath**: [`BaseFabricObject`](/api/classes/basefabricobject/)\<`Partial`\<`ObjectProps`\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+##### clipPath
 
-• **canvasWithClipPath**: `HTMLCanvasElement`
+[`BaseFabricObject`](/api/classes/basefabricobject/)
+
+##### canvasWithClipPath
+
+`HTMLCanvasElement`
 
 #### Returns
 
@@ -3505,19 +3115,15 @@ Context to render on
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).drawClipPathOnCache`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:810](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L810)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).drawClipPathOnCache`
 
 ***
 
 ### drawControls()
 
 > **drawControls**(`ctx`, `styleOverride`): `void`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:550](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L550)
 
 Draws corners of an object's bounding box.
 Requires public properties: width, height
@@ -3528,11 +3134,15 @@ is outside the standard selection and transform process.
 
 #### Parameters
 
-• **ctx**: `CanvasRenderingContext2D`
+##### ctx
+
+`CanvasRenderingContext2D`
 
 Context to draw on
 
-• **styleOverride**: `Partial`\<`Pick`\<[`InteractiveFabricObject`](/api/classes/interactivefabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>, `"cornerStyle"` \| `"cornerSize"` \| `"cornerColor"` \| `"cornerStrokeColor"` \| `"cornerDashArray"` \| `"transparentCorners"`\>\> = `{}`
+##### styleOverride
+
+`Partial`\<`Pick`\<[`InteractiveFabricObject`](/api/classes/interactivefabricobject/), `"cornerStyle"` \| `"cornerSize"` \| `"cornerColor"` \| `"cornerStrokeColor"` \| `"cornerDashArray"` \| `"transparentCorners"`\>\> = `{}`
 
 object to override the object style
 
@@ -3542,13 +3152,7 @@ object to override the object style
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).drawControls`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:550](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L550)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).drawControls`
 
 ***
 
@@ -3556,17 +3160,23 @@ object to override the object style
 
 > **drawControlsConnectingLines**(`ctx`, `size`): `void`
 
+Defined in: [src/shapes/Object/InteractiveObject.ts:517](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L517)
+
 Draws lines from a borders of an object's bounding box to controls that have `withConnection` property set.
 Requires public properties: width, height
 Requires public options: padding, borderColor
 
 #### Parameters
 
-• **ctx**: `CanvasRenderingContext2D`
+##### ctx
+
+`CanvasRenderingContext2D`
 
 Context to draw on
 
-• **size**: [`Point`](/api/classes/point/)
+##### size
+
+[`Point`](/api/classes/point/)
 
 object size x = width, y = height
 
@@ -3576,13 +3186,7 @@ object size x = width, y = height
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).drawControlsConnectingLines`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:517](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L517)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).drawControlsConnectingLines`
 
 ***
 
@@ -3590,17 +3194,25 @@ object size x = width, y = height
 
 > **drawObject**(`ctx`, `forClipping`, `context`): `void`
 
+Defined in: [src/shapes/Group.ts:496](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L496)
+
 Execute the drawing operation for an object on a specified context
 
 #### Parameters
 
-• **ctx**: `CanvasRenderingContext2D`
+##### ctx
+
+`CanvasRenderingContext2D`
 
 Context to render on
 
-• **forClipping**: `undefined` \| `boolean`
+##### forClipping
 
-• **context**: [`DrawContext`](/api/type-aliases/drawcontext/)
+`undefined` | `boolean`
+
+##### context
+
+[`DrawContext`](/api/type-aliases/drawcontext/)
 
 #### Returns
 
@@ -3608,19 +3220,15 @@ Context to render on
 
 #### Overrides
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).drawObject`
-
-#### Defined in
-
-[src/shapes/Group.ts:496](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L496)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).drawObject`
 
 ***
 
 ### drawSelectionBackground()
 
 > **drawSelectionBackground**(`ctx`): `void`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:375](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L375)
 
 Draws a colored layer behind the object, inside its selection borders.
 Requires public options: padding, selectionBackgroundColor
@@ -3629,7 +3237,9 @@ has checks to be skipped when the object is on a staticCanvas
 
 #### Parameters
 
-• **ctx**: `CanvasRenderingContext2D`
+##### ctx
+
+`CanvasRenderingContext2D`
 
 Context to draw on
 
@@ -3645,19 +3255,15 @@ it seemed a good option, now is an edge case
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).drawSelectionBackground`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:375](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L375)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).drawSelectionBackground`
 
 ***
 
 ### findCommonAncestors()
 
 > **findCommonAncestors**\<`T`\>(`other`): `AncestryComparison`
+
+Defined in: [src/shapes/Object/Object.ts:1634](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1634)
 
 Compare ancestors
 
@@ -3667,7 +3273,9 @@ Compare ancestors
 
 #### Parameters
 
-• **other**: `T`
+##### other
+
+`T`
 
 #### Returns
 
@@ -3677,13 +3285,7 @@ an object that represent the ancestry situation.
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).findCommonAncestors`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:1634](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1634)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).findCommonAncestors`
 
 ***
 
@@ -3691,13 +3293,21 @@ an object that represent the ancestry situation.
 
 > **findNewLowerIndex**(`object`, `idx`, `intersecting`?): `number`
 
+Defined in: [src/Collection.ts:272](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L272)
+
 #### Parameters
 
-• **object**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+##### object
 
-• **idx**: `number`
+[`FabricObject`](/api/classes/fabricobject/)
 
-• **intersecting?**: `boolean`
+##### idx
+
+`number`
+
+##### intersecting?
+
+`boolean`
 
 #### Returns
 
@@ -3705,13 +3315,7 @@ an object that represent the ancestry situation.
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).findNewLowerIndex`
-
-#### Defined in
-
-[src/Collection.ts:272](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L272)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).findNewLowerIndex`
 
 ***
 
@@ -3719,13 +3323,21 @@ an object that represent the ancestry situation.
 
 > **findNewUpperIndex**(`object`, `idx`, `intersecting`?): `number`
 
+Defined in: [src/Collection.ts:295](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L295)
+
 #### Parameters
 
-• **object**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+##### object
 
-• **idx**: `number`
+[`FabricObject`](/api/classes/fabricobject/)
 
-• **intersecting?**: `boolean`
+##### idx
+
+`number`
+
+##### intersecting?
+
+`boolean`
 
 #### Returns
 
@@ -3733,19 +3345,15 @@ an object that represent the ancestry situation.
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).findNewUpperIndex`
-
-#### Defined in
-
-[src/Collection.ts:295](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L295)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).findNewUpperIndex`
 
 ***
 
 ### fire()
 
 > **fire**\<`K`\>(`eventName`, `options`?): `void`
+
+Defined in: [src/Observable.ts:167](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L167)
 
 Fires event with an optional options object
 
@@ -3755,11 +3363,15 @@ Fires event with an optional options object
 
 #### Parameters
 
-• **eventName**: `K`
+##### eventName
+
+`K`
 
 Event name to fire
 
-• **options?**: [`GroupEvents`](/api/interfaces/groupevents/)\[`K`\]
+##### options?
+
+[`GroupEvents`](/api/interfaces/groupevents/)\[`K`\]
 
 Options object
 
@@ -3769,13 +3381,7 @@ Options object
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).fire`
-
-#### Defined in
-
-[src/Observable.ts:167](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L167)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).fire`
 
 ***
 
@@ -3783,12 +3389,16 @@ Options object
 
 > **forEachControl**(`fn`): `void`
 
+Defined in: [src/shapes/Object/InteractiveObject.ts:353](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L353)
+
 Calls a function for each control. The function gets called,
 with the control, the control's key and the object that is calling the iterator
 
 #### Parameters
 
-• **fn**
+##### fn
+
+(`control`, `key`, `fabricObject`) => `any`
 
 function to iterate over the controls over
 
@@ -3798,13 +3408,7 @@ function to iterate over the controls over
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).forEachControl`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:353](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L353)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).forEachControl`
 
 ***
 
@@ -3812,13 +3416,17 @@ function to iterate over the controls over
 
 > **forEachObject**(`callback`): `void`
 
+Defined in: [src/Collection.ts:91](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L91)
+
 Executes given function for each object in this group
 A simple shortcut for getObjects().forEach, before es6 was more complicated,
 now is just a shortcut.
 
 #### Parameters
 
-• **callback**
+##### callback
+
+(`object`, `index`, `array`) => `any`
 
 Callback invoked with current object as first argument,
                   index - as second and an array of all objects - as third.
@@ -3829,13 +3437,7 @@ Callback invoked with current object as first argument,
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).forEachObject`
-
-#### Defined in
-
-[src/Collection.ts:91](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L91)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).forEachObject`
 
 ***
 
@@ -3843,11 +3445,15 @@ Callback invoked with current object as first argument,
 
 > **get**(`property`): `any`
 
+Defined in: [src/CommonMethods.ts:59](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/CommonMethods.ts#L59)
+
 Basic getter
 
 #### Parameters
 
-• **property**: `string`
+##### property
+
+`string`
 
 Property name
 
@@ -3859,39 +3465,31 @@ value of a property
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).get`
-
-#### Defined in
-
-[src/CommonMethods.ts:59](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/CommonMethods.ts#L59)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).get`
 
 ***
 
 ### getActiveControl()
 
-> **getActiveControl**(): `undefined` \| `object`
+> **getActiveControl**(): `undefined` \| \{ `control`: [`Control`](/api/classes/control/); `coord`: `TOCoord`; `key`: `string`; \}
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:194](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L194)
 
 #### Returns
 
-`undefined` \| `object`
+`undefined` \| \{ `control`: [`Control`](/api/classes/control/); `coord`: `TOCoord`; `key`: `string`; \}
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).getActiveControl`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:194](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L194)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).getActiveControl`
 
 ***
 
 ### getAncestors()
 
 > **getAncestors**(): `Ancestors`
+
+Defined in: [src/shapes/Object/Object.ts:1617](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1617)
 
 #### Returns
 
@@ -3901,19 +3499,15 @@ ancestors (excluding `ActiveSelection`) from bottom to top
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).getAncestors`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:1617](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1617)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).getAncestors`
 
 ***
 
 ### getBoundingRect()
 
 > **getBoundingRect**(): [`TBBox`](/api/type-aliases/tbbox/)
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:343](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L343)
 
 Returns coordinates of object's bounding rectangle (left, top, width, height)
 the box is intended as aligned to axis of canvas.
@@ -3926,13 +3520,7 @@ Object with left, top, width, height properties
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).getBoundingRect`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:343](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L343)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).getBoundingRect`
 
 ***
 
@@ -3940,25 +3528,23 @@ Object with left, top, width, height properties
 
 > **getCanvasRetinaScaling**(): `number`
 
+Defined in: [src/shapes/Object/ObjectGeometry.ts:400](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L400)
+
 #### Returns
 
 `number`
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).getCanvasRetinaScaling`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:400](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L400)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).getCanvasRetinaScaling`
 
 ***
 
 ### getCenterPoint()
 
 > **getCenterPoint**(): [`Point`](/api/classes/point/)
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:732](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L732)
 
 Returns the center coordinates of the object relative to canvas
 
@@ -3968,19 +3554,15 @@ Returns the center coordinates of the object relative to canvas
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).getCenterPoint`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:732](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L732)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).getCenterPoint`
 
 ***
 
 ### getCoords()
 
 > **getCoords**(): [`Point`](/api/classes/point/)[]
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:204](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L204)
 
 #### Returns
 
@@ -3990,19 +3572,15 @@ Returns the center coordinates of the object relative to canvas
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).getCoords`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:204](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L204)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).getCoords`
 
 ***
 
 ### getObjectOpacity()
 
 > **getObjectOpacity**(): `number`
+
+Defined in: [src/shapes/Object/Object.ts:570](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L570)
 
 Return the object opacity counting also the group property
 
@@ -4012,19 +3590,41 @@ Return the object opacity counting also the group property
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).getObjectOpacity`
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).getObjectOpacity`
 
-#### Defined in
+***
 
-[src/shapes/Object/Object.ts:570](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L570)
+### getObjects()
+
+> **getObjects**(...`types`?): [`FabricObject`](/api/classes/fabricobject/)[]
+
+Defined in: [src/Collection.ts:108](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L108)
+
+Returns an array of children objects of this instance
+
+#### Parameters
+
+##### types?
+
+...`string`[]
+
+When specified, only objects of these types are returned
+
+#### Returns
+
+[`FabricObject`](/api/classes/fabricobject/)[]
+
+#### Inherited from
+
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).getObjects`
 
 ***
 
 ### getObjectScaling()
 
 > **getObjectScaling**(): [`Point`](/api/classes/point/)
+
+Defined in: [src/shapes/Object/Object.ts:539](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L539)
 
 Return the object scale factor counting also the group scaling
 
@@ -4034,47 +3634,15 @@ Return the object scale factor counting also the group scaling
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).getObjectScaling`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:539](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L539)
-
-***
-
-### getObjects()
-
-> **getObjects**(...`types`?): [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[]
-
-Returns an array of children objects of this instance
-
-#### Parameters
-
-• ...**types?**: `string`[]
-
-When specified, only objects of these types are returned
-
-#### Returns
-
-[`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[]
-
-#### Inherited from
-
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).getObjects`
-
-#### Defined in
-
-[src/Collection.ts:108](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L108)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).getObjectScaling`
 
 ***
 
 ### getPointByOrigin()
 
 > **getPointByOrigin**(`originX`, `originY`): [`Point`](/api/classes/point/)
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:762](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L762)
 
 Returns the position of the object as if it has a different origin.
 Take an object that has left, top set to 100, 100 with origin 'left', 'top'.
@@ -4085,11 +3653,15 @@ Alternatively you can use this to also find which point in the parent plane is a
 
 #### Parameters
 
-• **originX**: [`TOriginX`](/api/type-aliases/toriginx/)
+##### originX
+
+[`TOriginX`](/api/type-aliases/toriginx/)
 
 Horizontal origin: 'left', 'center' or 'right'
 
-• **originY**: [`TOriginY`](/api/type-aliases/toriginy/)
+##### originY
+
+[`TOriginY`](/api/type-aliases/toriginy/)
 
 Vertical origin: 'top', 'center' or 'bottom'
 
@@ -4099,19 +3671,15 @@ Vertical origin: 'top', 'center' or 'bottom'
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).getPointByOrigin`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:762](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L762)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).getPointByOrigin`
 
 ***
 
 ### getRelativeCenterPoint()
 
 > **getRelativeCenterPoint**(): [`Point`](/api/classes/point/)
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:743](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L743)
 
 Returns the center coordinates of the object relative to it's parent
 
@@ -4121,19 +3689,15 @@ Returns the center coordinates of the object relative to it's parent
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).getRelativeCenterPoint`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:743](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L743)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).getRelativeCenterPoint`
 
 ***
 
 ### getRelativeX()
 
 > **getRelativeX**(): `number`
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:115](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L115)
 
 #### Returns
 
@@ -4144,19 +3708,15 @@ if parent is canvas then this property is identical to [getX](/api/api/classes/g
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).getRelativeX`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:115](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L115)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).getRelativeX`
 
 ***
 
 ### getRelativeXY()
 
 > **getRelativeXY**(): [`Point`](/api/classes/point/)
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:176](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L176)
 
 #### Returns
 
@@ -4166,19 +3726,15 @@ x,y position according to object's [originX](/api/api/classes/fabricobject/origi
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).getRelativeXY`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:176](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L176)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).getRelativeXY`
 
 ***
 
 ### getRelativeY()
 
 > **getRelativeY**(): `number`
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:131](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L131)
 
 #### Returns
 
@@ -4189,19 +3745,15 @@ if parent is canvas then this property is identical to [getY](/api/api/classes/g
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).getRelativeY`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:131](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L131)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).getRelativeY`
 
 ***
 
 ### getScaledHeight()
 
 > **getScaledHeight**(): `number`
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:361](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L361)
 
 Returns height of an object bounding box counting transformations
 
@@ -4217,19 +3769,15 @@ shouldn't this account for group transform and return the actual size in canvas 
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).getScaledHeight`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:361](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L361)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).getScaledHeight`
 
 ***
 
 ### getScaledWidth()
 
 > **getScaledWidth**(): `number`
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:352](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L352)
 
 Returns width of an object's bounding box counting transformations
 
@@ -4245,13 +3793,7 @@ shouldn't this account for group transform and return the actual size in canvas 
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).getScaledWidth`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:352](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L352)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).getScaledWidth`
 
 ***
 
@@ -4259,11 +3801,15 @@ shouldn't this account for group transform and return the actual size in canvas 
 
 > **getSvgCommons**(`this`): `string`
 
+Defined in: [src/shapes/Object/FabricObjectSVGExportMixin.ts:84](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/FabricObjectSVGExportMixin.ts#L84)
+
 Returns id attribute for svg output
 
 #### Parameters
 
-• **this**: `FabricObjectSVGExportMixin` & [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\> & `object`
+##### this
+
+`FabricObjectSVGExportMixin` & [`FabricObject`](/api/classes/fabricobject/) & `object`
 
 #### Returns
 
@@ -4271,13 +3817,7 @@ Returns id attribute for svg output
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).getSvgCommons`
-
-#### Defined in
-
-[src/shapes/Object/FabricObjectSVGExportMixin.ts:84](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/FabricObjectSVGExportMixin.ts#L84)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).getSvgCommons`
 
 ***
 
@@ -4285,11 +3825,15 @@ Returns id attribute for svg output
 
 > **getSvgFilter**(`this`): `string`
 
+Defined in: [src/shapes/Object/FabricObjectSVGExportMixin.ts:76](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/FabricObjectSVGExportMixin.ts#L76)
+
 Returns filter for svg shadow
 
 #### Parameters
 
-• **this**: `FabricObjectSVGExportMixin` & [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+##### this
+
+`FabricObjectSVGExportMixin` & [`FabricObject`](/api/classes/fabricobject/)
 
 #### Returns
 
@@ -4297,19 +3841,15 @@ Returns filter for svg shadow
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).getSvgFilter`
-
-#### Defined in
-
-[src/shapes/Object/FabricObjectSVGExportMixin.ts:76](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/FabricObjectSVGExportMixin.ts#L76)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).getSvgFilter`
 
 ***
 
 ### getSvgStyles()
 
 > **getSvgStyles**(): `string`
+
+Defined in: [src/shapes/Group.ts:652](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L652)
 
 Returns styles-string for svg-export, specific version for group
 
@@ -4319,13 +3859,7 @@ Returns styles-string for svg-export, specific version for group
 
 #### Overrides
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).getSvgStyles`
-
-#### Defined in
-
-[src/shapes/Group.ts:652](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L652)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).getSvgStyles`
 
 ***
 
@@ -4333,15 +3867,23 @@ Returns styles-string for svg-export, specific version for group
 
 > **getSvgTransform**(`this`, `full`?, `additionalTransform`?): `string`
 
+Defined in: [src/shapes/Object/FabricObjectSVGExportMixin.ts:103](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/FabricObjectSVGExportMixin.ts#L103)
+
 Returns transform-string for svg-export
 
 #### Parameters
 
-• **this**: `FabricObjectSVGExportMixin` & [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+##### this
 
-• **full?**: `boolean`
+`FabricObjectSVGExportMixin` & [`FabricObject`](/api/classes/fabricobject/)
 
-• **additionalTransform?**: `string` = `''`
+##### full?
+
+`boolean`
+
+##### additionalTransform?
+
+`string` = `''`
 
 #### Returns
 
@@ -4349,19 +3891,15 @@ Returns transform-string for svg-export
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).getSvgTransform`
-
-#### Defined in
-
-[src/shapes/Object/FabricObjectSVGExportMixin.ts:103](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/FabricObjectSVGExportMixin.ts#L103)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).getSvgTransform`
 
 ***
 
 ### getTotalAngle()
 
 > **getTotalAngle**(): [`TDegree`](/api/type-aliases/tdegree/)
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:408](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L408)
 
 Returns the object angle relative to canvas counting also the group property
 
@@ -4371,19 +3909,15 @@ Returns the object angle relative to canvas counting also the group property
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).getTotalAngle`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:408](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L408)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).getTotalAngle`
 
 ***
 
 ### getTotalObjectScaling()
 
 > **getTotalObjectScaling**(): [`Point`](/api/classes/point/)
+
+Defined in: [src/shapes/Object/Object.ts:556](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L556)
 
 Return the object scale factor counting also the group scaling, zoom and retina
 
@@ -4395,19 +3929,15 @@ object with scaleX and scaleY properties
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).getTotalObjectScaling`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:556](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L556)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).getTotalObjectScaling`
 
 ***
 
 ### getViewportTransform()
 
 > **getViewportTransform**(): [`TMat2D`](/api/type-aliases/tmat2d/)
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:418](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L418)
 
 Retrieves viewportTransform from Object's canvas if available
 
@@ -4417,19 +3947,15 @@ Retrieves viewportTransform from Object's canvas if available
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).getViewportTransform`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:418](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L418)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).getViewportTransform`
 
 ***
 
 ### getX()
 
 > **getX**(): `number`
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:86](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L86)
 
 #### Returns
 
@@ -4439,19 +3965,15 @@ x position according to object's [originX](/api/api/classes/fabricobject/originx
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).getX`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:86](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L86)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).getX`
 
 ***
 
 ### getXY()
 
 > **getXY**(): [`Point`](/api/classes/point/)
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:146](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L146)
 
 #### Returns
 
@@ -4461,19 +3983,15 @@ x position according to object's [originX](/api/api/classes/fabricobject/originx
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).getXY`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:146](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L146)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).getXY`
 
 ***
 
 ### getY()
 
 > **getY**(): `number`
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:100](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L100)
 
 #### Returns
 
@@ -4483,13 +4001,7 @@ y position according to object's [originY](/api/api/classes/fabricobject/originy
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).getY`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:100](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L100)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).getY`
 
 ***
 
@@ -4497,13 +4009,17 @@ y position according to object's [originY](/api/api/classes/fabricobject/originy
 
 > **hasCommonAncestors**\<`T`\>(`other`): `boolean`
 
+Defined in: [src/shapes/Object/Object.ts:1699](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1699)
+
 #### Type Parameters
 
 • **T** *extends* [`Group`](/api/classes/group/)
 
 #### Parameters
 
-• **other**: `T`
+##### other
+
+`T`
 
 #### Returns
 
@@ -4511,19 +4027,15 @@ y position according to object's [originY](/api/api/classes/fabricobject/originy
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).hasCommonAncestors`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:1699](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1699)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).hasCommonAncestors`
 
 ***
 
 ### hasFill()
 
 > **hasFill**(): `null` \| `boolean` \| `""`
+
+Defined in: [src/shapes/Object/Object.ts:750](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L750)
 
 return true if the object will draw a fill
 Does not consider text styles. This is just a shortcut used at rendering time
@@ -4544,19 +4056,15 @@ Boolean
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).hasFill`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:750](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L750)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).hasFill`
 
 ***
 
 ### hasStroke()
 
 > **hasStroke**(): `null` \| `boolean` \| `""`
+
+Defined in: [src/shapes/Object/Object.ts:734](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L734)
 
 return true if the object will draw a stroke
 Does not consider text styles. This is just a shortcut used at rendering time
@@ -4577,13 +4085,7 @@ Boolean
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).hasStroke`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:734](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L734)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).hasStroke`
 
 ***
 
@@ -4591,15 +4093,21 @@ Boolean
 
 > **insertAt**(`index`, ...`objects`): `number`
 
+Defined in: [src/shapes/Group.ts:240](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L240)
+
 Inserts an object into collection at specified index
 
 #### Parameters
 
-• **index**: `number`
+##### index
+
+`number`
 
 Index to insert object at
 
-• ...**objects**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[]
+##### objects
+
+...[`FabricObject`](/api/classes/fabricobject/)[]
 
 Object to insert
 
@@ -4609,13 +4117,7 @@ Object to insert
 
 #### Overrides
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).insertAt`
-
-#### Defined in
-
-[src/shapes/Group.ts:240](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L240)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).insertAt`
 
 ***
 
@@ -4623,11 +4125,15 @@ Object to insert
 
 > **intersectsWithObject**(`other`): `boolean`
 
+Defined in: [src/shapes/Object/ObjectGeometry.ts:232](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L232)
+
 Checks if object intersects with another object
 
 #### Parameters
 
-• **other**: `ObjectGeometry`\<[`ObjectEvents`](/api/interfaces/objectevents/)\>
+##### other
+
+`ObjectGeometry`
 
 Object to test
 
@@ -4639,13 +4145,7 @@ true if object intersects with another object
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).intersectsWithObject`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:232](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L232)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).intersectsWithObject`
 
 ***
 
@@ -4653,13 +4153,19 @@ true if object intersects with another object
 
 > **intersectsWithRect**(`tl`, `br`): `boolean`
 
-Checks if object intersects with the scene rect formed by tl and br
+Defined in: [src/shapes/Object/ObjectGeometry.ts:218](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L218)
+
+Checks if object intersects with the scene rect formed by [tl](../../../../api/classes/fabricobject/#tl) and [br](../../../../api/classes/fabricobject/#br)
 
 #### Parameters
 
-• **tl**: [`Point`](/api/classes/point/)
+##### tl
 
-• **br**: [`Point`](/api/classes/point/)
+[`Point`](/api/classes/point/)
+
+##### br
+
+[`Point`](/api/classes/point/)
 
 #### Returns
 
@@ -4667,13 +4173,7 @@ Checks if object intersects with the scene rect formed by tl and br
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).intersectsWithRect`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:218](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L218)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).intersectsWithRect`
 
 ***
 
@@ -4681,11 +4181,15 @@ Checks if object intersects with the scene rect formed by tl and br
 
 > **isCacheDirty**(`skipCanvas`): `boolean`
 
+Defined in: [src/shapes/Object/Object.ts:919](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L919)
+
 Check if cache is dirty
 
 #### Parameters
 
-• **skipCanvas**: `boolean` = `false`
+##### skipCanvas
+
+`boolean` = `false`
 
 skip canvas checks because this object is painted
 on parent canvas.
@@ -4696,13 +4200,7 @@ on parent canvas.
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).isCacheDirty`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:919](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L919)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).isCacheDirty`
 
 ***
 
@@ -4710,11 +4208,15 @@ on parent canvas.
 
 > **isContainedWithinObject**(`other`): `boolean`
 
+Defined in: [src/shapes/Object/ObjectGeometry.ts:251](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L251)
+
 Checks if object is fully contained within area of another object
 
 #### Parameters
 
-• **other**: `ObjectGeometry`\<[`ObjectEvents`](/api/interfaces/objectevents/)\>
+##### other
+
+`ObjectGeometry`
 
 Object to test
 
@@ -4726,13 +4228,7 @@ true if object is fully contained within area of another object
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).isContainedWithinObject`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:251](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L251)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).isContainedWithinObject`
 
 ***
 
@@ -4740,13 +4236,19 @@ true if object is fully contained within area of another object
 
 > **isContainedWithinRect**(`tl`, `br`): `boolean`
 
-Checks if object is fully contained within the scene rect formed by tl and br
+Defined in: [src/shapes/Object/ObjectGeometry.ts:259](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L259)
+
+Checks if object is fully contained within the scene rect formed by [tl](../../../../api/classes/fabricobject/#tl-1) and [br](../../../../api/classes/fabricobject/#br-1)
 
 #### Parameters
 
-• **tl**: [`Point`](/api/classes/point/)
+##### tl
 
-• **br**: [`Point`](/api/classes/point/)
+[`Point`](/api/classes/point/)
+
+##### br
+
+[`Point`](/api/classes/point/)
 
 #### Returns
 
@@ -4754,13 +4256,7 @@ Checks if object is fully contained within the scene rect formed by tl and br
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).isContainedWithinRect`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:259](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L259)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).isContainedWithinRect`
 
 ***
 
@@ -4768,11 +4264,15 @@ Checks if object is fully contained within the scene rect formed by tl and br
 
 > **isControlVisible**(`controlKey`): `boolean`
 
+Defined in: [src/shapes/Object/InteractiveObject.ts:584](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L584)
+
 Returns true if the specified control is visible, false otherwise.
 
 #### Parameters
 
-• **controlKey**: `string`
+##### controlKey
+
+`string`
 
 The key of the control. Possible values are usually 'tl', 'tr', 'br', 'bl', 'ml', 'mt', 'mr', 'mb', 'mtr',
 but since the control api allow for any control name, can be any string.
@@ -4785,13 +4285,7 @@ true if the specified control is visible, false otherwise
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).isControlVisible`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:584](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L584)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).isControlVisible`
 
 ***
 
@@ -4799,12 +4293,16 @@ true if the specified control is visible, false otherwise
 
 > **isDescendantOf**(`target`): `boolean`
 
+Defined in: [src/shapes/Object/Object.ts:1603](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1603)
+
 Checks if object is descendant of target
 Should be used instead of [Group.contains](../../../../api/classes/group/#contains) or [StaticCanvas.contains](../../../../api/classes/staticcanvas/#contains) for performance reasons
 
 #### Parameters
 
-• **target**: `TAncestor`
+##### target
+
+`TAncestor`
 
 #### Returns
 
@@ -4812,19 +4310,15 @@ Should be used instead of [Group.contains](../../../../api/classes/group/#contai
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).isDescendantOf`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:1603](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1603)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).isDescendantOf`
 
 ***
 
 ### isEmpty()
 
 > **isEmpty**(): `boolean`
+
+Defined in: [src/Collection.ts:128](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L128)
 
 Returns true if collection contains no objects
 
@@ -4836,13 +4330,7 @@ true if collection is empty
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).isEmpty`
-
-#### Defined in
-
-[src/Collection.ts:128](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L128)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).isEmpty`
 
 ***
 
@@ -4850,13 +4338,17 @@ true if collection is empty
 
 > **isInFrontOf**\<`T`\>(`other`): `undefined` \| `boolean`
 
+Defined in: [src/shapes/Object/Object.ts:1709](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1709)
+
 #### Type Parameters
 
 • **T** *extends* [`Group`](/api/classes/group/)
 
 #### Parameters
 
-• **other**: `T`
+##### other
+
+`T`
 
 object to compare against
 
@@ -4868,13 +4360,7 @@ if objects do not share a common ancestor or they are strictly equal it is impos
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).isInFrontOf`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:1709](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1709)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).isInFrontOf`
 
 ***
 
@@ -4882,19 +4368,15 @@ if objects do not share a common ancestor or they are strictly equal it is impos
 
 > **isNotVisible**(): `boolean`
 
+Defined in: [src/shapes/Object/Object.ts:649](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L649)
+
 #### Returns
 
 `boolean`
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).isNotVisible`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:649](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L649)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).isNotVisible`
 
 ***
 
@@ -4902,21 +4384,21 @@ if objects do not share a common ancestor or they are strictly equal it is impos
 
 > **isOnACache**(): `boolean`
 
+Defined in: [src/shapes/Group.ts:488](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L488)
+
 Check if instance or its group are caching, recursively up
 
 #### Returns
 
 `boolean`
 
-#### Defined in
-
-[src/shapes/Group.ts:488](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L488)
-
 ***
 
 ### isOnScreen()
 
 > **isOnScreen**(): `boolean`
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:291](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L291)
 
 Checks if object is contained within the canvas with current viewportTransform
 the check is done stopping at first point that appears on screen
@@ -4929,13 +4411,7 @@ true if object is fully or partially contained within canvas
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).isOnScreen`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:291](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L291)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).isOnScreen`
 
 ***
 
@@ -4943,13 +4419,17 @@ true if object is fully or partially contained within canvas
 
 > **isOverlapping**\<`T`\>(`other`): `boolean`
 
+Defined in: [src/shapes/Object/ObjectGeometry.ts:269](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L269)
+
 #### Type Parameters
 
-• **T** *extends* `ObjectGeometry`\<[`ObjectEvents`](/api/interfaces/objectevents/)\>
+• **T** *extends* `ObjectGeometry`
 
 #### Parameters
 
-• **other**: `T`
+##### other
+
+`T`
 
 #### Returns
 
@@ -4957,19 +4437,15 @@ true if object is fully or partially contained within canvas
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).isOverlapping`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:269](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L269)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).isOverlapping`
 
 ***
 
 ### isPartiallyOnScreen()
 
 > **isPartiallyOnScreen**(): `boolean`
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:321](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L321)
 
 Checks if object is partially contained within the canvas with current viewportTransform
 
@@ -4981,13 +4457,7 @@ true if object is partially contained within canvas
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).isPartiallyOnScreen`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:321](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L321)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).isPartiallyOnScreen`
 
 ***
 
@@ -4995,11 +4465,15 @@ true if object is partially contained within canvas
 
 > **isType**(...`types`): `boolean`
 
+Defined in: [src/shapes/Object/Object.ts:1408](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1408)
+
 Returns true if any of the specified types is identical to the type of an instance
 
 #### Parameters
 
-• ...**types**: `string`[]
+##### types
+
+...`string`[]
 
 #### Returns
 
@@ -5007,41 +4481,33 @@ Returns true if any of the specified types is identical to the type of an instan
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).isType`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:1408](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1408)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).isType`
 
 ***
 
 ### item()
 
-> **item**(`index`): [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+> **item**(`index`): [`FabricObject`](/api/classes/fabricobject/)
+
+Defined in: [src/Collection.ts:120](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L120)
 
 Returns object at specified index
 
 #### Parameters
 
-• **index**: `number`
+##### index
+
+`number`
 
 #### Returns
 
-[`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+[`FabricObject`](/api/classes/fabricobject/)
 
 object at index
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).item`
-
-#### Defined in
-
-[src/Collection.ts:120](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L120)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).item`
 
 ***
 
@@ -5049,15 +4515,21 @@ object at index
 
 > **moveObjectTo**(`object`, `index`): `boolean`
 
+Defined in: [src/Collection.ts:262](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L262)
+
 Moves an object to specified level in stack of drawn objects
 
 #### Parameters
 
-• **object**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+##### object
+
+[`FabricObject`](/api/classes/fabricobject/)
 
 Object to send
 
-• **index**: `number`
+##### index
+
+`number`
 
 Position to move to
 
@@ -5069,19 +4541,15 @@ true if change occurred
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).moveObjectTo`
-
-#### Defined in
-
-[src/Collection.ts:262](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L262)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).moveObjectTo`
 
 ***
 
 ### needsItsOwnCache()
 
 > **needsItsOwnCache**(): `boolean`
+
+Defined in: [src/shapes/Object/Object.ts:762](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L762)
 
 When set to `true`, force the object to have its own cache, even if it is inside a group
 it may be needed when your object behave in a particular way on the cache and always needs
@@ -5097,21 +4565,17 @@ Boolean
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).needsItsOwnCache`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:762](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L762)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).needsItsOwnCache`
 
 ***
 
 ### off()
 
-#### off(eventName)
+#### Call Signature
 
 > **off**\<`K`\>(`eventName`): `void`
+
+Defined in: [src/Observable.ts:122](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L122)
 
 Unsubscribe all event listeners for eventname.
 Do not use this pattern. You could kill internal fabricJS events.
@@ -5127,7 +4591,9 @@ This API is no longer supported and may be removed in a future release.
 
 ##### Parameters
 
-• **eventName**: `K`
+###### eventName
+
+`K`
 
 event name (eg. 'after:render')
 
@@ -5137,17 +4603,13 @@ event name (eg. 'after:render')
 
 ##### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).off`
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).off`
 
-##### Defined in
-
-[src/Observable.ts:122](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L122)
-
-#### off(eventName, handler)
+#### Call Signature
 
 > **off**\<`K`\>(`eventName`, `handler`): `void`
+
+Defined in: [src/Observable.ts:128](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L128)
 
 unsubscribe an event listener
 
@@ -5157,11 +4619,15 @@ unsubscribe an event listener
 
 ##### Parameters
 
-• **eventName**: `K`
+###### eventName
+
+`K`
 
 event name (eg. 'after:render')
 
-• **handler**: `TEventCallback`\<`any`\>
+###### handler
+
+`TEventCallback`\<`any`\>
 
 event listener to unsubscribe
 
@@ -5171,23 +4637,21 @@ event listener to unsubscribe
 
 ##### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).off`
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).off`
 
-##### Defined in
-
-[src/Observable.ts:128](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L128)
-
-#### off(handlers)
+#### Call Signature
 
 > **off**(`handlers`): `void`
+
+Defined in: [src/Observable.ts:133](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L133)
 
 unsubscribe event listeners
 
 ##### Parameters
 
-• **handlers**: `EventRegistryObject`\<[`GroupEvents`](/api/interfaces/groupevents/)\>
+###### handlers
+
+`EventRegistryObject`\<[`GroupEvents`](/api/interfaces/groupevents/)\>
 
 handlers key/value pairs (eg. {'after:render': handler, 'selection:cleared': handler})
 
@@ -5197,17 +4661,13 @@ handlers key/value pairs (eg. {'after:render': handler, 'selection:cleared': han
 
 ##### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).off`
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).off`
 
-##### Defined in
-
-[src/Observable.ts:133](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L133)
-
-#### off()
+#### Call Signature
 
 > **off**(): `void`
+
+Defined in: [src/Observable.ts:137](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L137)
 
 unsubscribe all event listeners
 
@@ -5217,21 +4677,17 @@ unsubscribe all event listeners
 
 ##### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).off`
-
-##### Defined in
-
-[src/Observable.ts:137](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L137)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).off`
 
 ***
 
 ### on()
 
-#### on(eventName, handler)
+#### Call Signature
 
 > **on**\<`K`, `E`\>(`eventName`, `handler`): `VoidFunction`
+
+Defined in: [src/Observable.ts:23](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L23)
 
 Observes specified event
 
@@ -5239,15 +4695,19 @@ Observes specified event
 
 • **K** *extends* keyof [`GroupEvents`](/api/interfaces/groupevents/)
 
-• **E** *extends* [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\> \| [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\> & `object` \| [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/)\<`WheelEvent`\> \| [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\> & `InEvent` \| [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\> & `OutEvent` \| `Partial`\<[`TEvent`](/api/interfaces/tevent/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\>\> & `object` \| `Partial`\<[`TEvent`](/api/interfaces/tevent/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\>\> & `object` \| `object` \| `object` \| `object` \| `TEventWithTarget`\<`DragEvent`\> \| [`DragEventData`](/api/interfaces/drageventdata/) \| [`DragEventData`](/api/interfaces/drageventdata/) & `InEvent` \| [`DragEventData`](/api/interfaces/drageventdata/) & `OutEvent` \| [`DropEventData`](/api/interfaces/dropeventdata/) \| `SimpleEventHandler`\<`Event`\> \| [`BasicTransformEvent`](/api/interfaces/basictransformevent/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\> \| [`BasicTransformEvent`](/api/interfaces/basictransformevent/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\> & [`ModifyPathEvent`](/api/interfaces/modifypathevent/) \| [`ModifiedEvent`](/api/interfaces/modifiedevent/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\> \| `object` \| `object` \| [`LayoutBeforeEvent`](/api/type-aliases/layoutbeforeevent/) \| [`LayoutAfterEvent`](/api/type-aliases/layoutafterevent/)
+• **E** *extends* [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/) \| [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/) & `object` \| [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/)\<`WheelEvent`\> \| [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/) & `InEvent` \| [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/) & `OutEvent` \| `Partial`\<[`TEvent`](/api/interfaces/tevent/)\> & `object` \| `Partial`\<[`TEvent`](/api/interfaces/tevent/)\> & `object` \| \{ `target`: [`Canvas`](/api/classes/canvas/) \| [`Group`](/api/classes/group/) \| [`StaticCanvas`](/api/classes/staticcanvas/); \} \| \{ `target`: [`Canvas`](/api/classes/canvas/) \| [`Group`](/api/classes/group/) \| [`StaticCanvas`](/api/classes/staticcanvas/); \} \| \{ `path`: [`FabricObject`](/api/classes/fabricobject/); \} \| `TEventWithTarget`\<`DragEvent`\> \| [`DragEventData`](/api/interfaces/drageventdata/) \| [`DragEventData`](/api/interfaces/drageventdata/) & `InEvent` \| [`DragEventData`](/api/interfaces/drageventdata/) & `OutEvent` \| [`DropEventData`](/api/interfaces/dropeventdata/) \| `SimpleEventHandler`\<`Event`\> \| [`BasicTransformEvent`](/api/interfaces/basictransformevent/) \| [`BasicTransformEvent`](/api/interfaces/basictransformevent/) & [`ModifyPathEvent`](/api/interfaces/modifypathevent/) \| [`ModifiedEvent`](/api/interfaces/modifiedevent/) \| \{ `target`: [`FabricObject`](/api/classes/fabricobject/); \} \| \{ `target`: [`FabricObject`](/api/classes/fabricobject/); \} \| [`LayoutBeforeEvent`](/api/type-aliases/layoutbeforeevent/) \| [`LayoutAfterEvent`](/api/type-aliases/layoutafterevent/)
 
 ##### Parameters
 
-• **eventName**: `K`
+###### eventName
+
+`K`
 
 Event name (eg. 'after:render')
 
-• **handler**: `TEventCallback`\<`E`\>
+###### handler
+
+`TEventCallback`\<`E`\>
 
 Function that receives a notification when an event of the specified type occurs
 
@@ -5263,138 +4723,47 @@ on
 
 ##### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).on`
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).on`
 
-##### Defined in
-
-[src/Observable.ts:23](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L23)
-
-#### on(handlers)
+#### Call Signature
 
 > **on**(`handlers`): `VoidFunction`
 
+Defined in: [src/Observable.ts:27](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L27)
+
+Observes specified event
+
 ##### Parameters
 
-• **handlers**: `EventRegistryObject`\<[`GroupEvents`](/api/interfaces/groupevents/)\>
+###### handlers
+
+`EventRegistryObject`\<[`GroupEvents`](/api/interfaces/groupevents/)\>
+
+key/value pairs (eg. {'after:render': handler, 'selection:cleared': handler})
 
 ##### Returns
 
 `VoidFunction`
 
+disposer
+
+##### Alias
+
+on
+
 ##### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).on`
-
-##### Defined in
-
-[src/Observable.ts:27](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L27)
-
-***
-
-### onDeselect()
-
-> **onDeselect**(`_options`?): `boolean`
-
-This callback function is called every time _discardActiveObject or _setActiveObject
-try to to deselect this object. If the function returns true, the process is cancelled
-
-#### Parameters
-
-• **\_options?**
-
-options sent from the upper functions
-
-• **\_options.e?**: [`TPointerEvent`](/api/type-aliases/tpointerevent/)
-
-• **\_options.object?**: [`InteractiveFabricObject`](/api/classes/interactivefabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
-
-#### Returns
-
-`boolean`
-
-#### Inherited from
-
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).onDeselect`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:658](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L658)
-
-***
-
-### onDragStart()
-
-> **onDragStart**(`_e`): `boolean`
-
-Override to customize Drag behavior\
-Fired once a drag session has started
-
-#### Parameters
-
-• **\_e**: `DragEvent`
-
-#### Returns
-
-`boolean`
-
-true to handle the drag event
-
-#### Inherited from
-
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).onDragStart`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:691](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L691)
-
-***
-
-### onSelect()
-
-> **onSelect**(`_options`?): `boolean`
-
-This callback function is called every time _discardActiveObject or _setActiveObject
-try to to select this object. If the function returns true, the process is cancelled
-
-#### Parameters
-
-• **\_options?**
-
-options sent from the upper functions
-
-• **\_options.e?**: [`TPointerEvent`](/api/type-aliases/tpointerevent/)
-
-event if the process is generated by an event
-
-#### Returns
-
-`boolean`
-
-#### Inherited from
-
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).onSelect`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:672](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L672)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).on`
 
 ***
 
 ### once()
 
-#### once(eventName, handler)
+#### Call Signature
 
 > **once**\<`K`, `E`\>(`eventName`, `handler`): `VoidFunction`
+
+Defined in: [src/Observable.ts:62](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L62)
 
 Observes specified event **once**
 
@@ -5402,15 +4771,19 @@ Observes specified event **once**
 
 • **K** *extends* keyof [`GroupEvents`](/api/interfaces/groupevents/)
 
-• **E** *extends* [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\> \| [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\> & `object` \| [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/)\<`WheelEvent`\> \| [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\> & `InEvent` \| [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\> & `OutEvent` \| `Partial`\<[`TEvent`](/api/interfaces/tevent/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\>\> & `object` \| `Partial`\<[`TEvent`](/api/interfaces/tevent/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\>\> & `object` \| `object` \| `object` \| `object` \| `TEventWithTarget`\<`DragEvent`\> \| [`DragEventData`](/api/interfaces/drageventdata/) \| [`DragEventData`](/api/interfaces/drageventdata/) & `InEvent` \| [`DragEventData`](/api/interfaces/drageventdata/) & `OutEvent` \| [`DropEventData`](/api/interfaces/dropeventdata/) \| `SimpleEventHandler`\<`Event`\> \| [`BasicTransformEvent`](/api/interfaces/basictransformevent/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\> \| [`BasicTransformEvent`](/api/interfaces/basictransformevent/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\> & [`ModifyPathEvent`](/api/interfaces/modifypathevent/) \| [`ModifiedEvent`](/api/interfaces/modifiedevent/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\> \| `object` \| `object` \| [`LayoutBeforeEvent`](/api/type-aliases/layoutbeforeevent/) \| [`LayoutAfterEvent`](/api/type-aliases/layoutafterevent/)
+• **E** *extends* [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/) \| [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/) & `object` \| [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/)\<`WheelEvent`\> \| [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/) & `InEvent` \| [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/) & `OutEvent` \| `Partial`\<[`TEvent`](/api/interfaces/tevent/)\> & `object` \| `Partial`\<[`TEvent`](/api/interfaces/tevent/)\> & `object` \| \{ `target`: [`Canvas`](/api/classes/canvas/) \| [`Group`](/api/classes/group/) \| [`StaticCanvas`](/api/classes/staticcanvas/); \} \| \{ `target`: [`Canvas`](/api/classes/canvas/) \| [`Group`](/api/classes/group/) \| [`StaticCanvas`](/api/classes/staticcanvas/); \} \| \{ `path`: [`FabricObject`](/api/classes/fabricobject/); \} \| `TEventWithTarget`\<`DragEvent`\> \| [`DragEventData`](/api/interfaces/drageventdata/) \| [`DragEventData`](/api/interfaces/drageventdata/) & `InEvent` \| [`DragEventData`](/api/interfaces/drageventdata/) & `OutEvent` \| [`DropEventData`](/api/interfaces/dropeventdata/) \| `SimpleEventHandler`\<`Event`\> \| [`BasicTransformEvent`](/api/interfaces/basictransformevent/) \| [`BasicTransformEvent`](/api/interfaces/basictransformevent/) & [`ModifyPathEvent`](/api/interfaces/modifypathevent/) \| [`ModifiedEvent`](/api/interfaces/modifiedevent/) \| \{ `target`: [`FabricObject`](/api/classes/fabricobject/); \} \| \{ `target`: [`FabricObject`](/api/classes/fabricobject/); \} \| [`LayoutBeforeEvent`](/api/type-aliases/layoutbeforeevent/) \| [`LayoutAfterEvent`](/api/type-aliases/layoutafterevent/)
 
 ##### Parameters
 
-• **eventName**: `K`
+###### eventName
+
+`K`
 
 Event name (eg. 'after:render')
 
-• **handler**: `TEventCallback`\<`E`\>
+###### handler
+
+`TEventCallback`\<`E`\>
 
 Function that receives a notification when an event of the specified type occurs
 
@@ -5426,81 +4799,170 @@ once
 
 ##### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).once`
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).once`
 
-##### Defined in
-
-[src/Observable.ts:62](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L62)
-
-#### once(handlers)
+#### Call Signature
 
 > **once**(`handlers`): `VoidFunction`
 
+Defined in: [src/Observable.ts:66](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L66)
+
+Observes specified event **once**
+
 ##### Parameters
 
-• **handlers**: `EventRegistryObject`\<[`GroupEvents`](/api/interfaces/groupevents/)\>
+###### handlers
+
+`EventRegistryObject`\<[`GroupEvents`](/api/interfaces/groupevents/)\>
+
+key/value pairs (eg. {'after:render': handler, 'selection:cleared': handler})
 
 ##### Returns
 
 `VoidFunction`
 
+disposer
+
+##### Alias
+
+once
+
 ##### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).once`
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).once`
 
-##### Defined in
+***
 
-[src/Observable.ts:66](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L66)
+### onDeselect()
+
+> **onDeselect**(`_options`?): `boolean`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:658](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L658)
+
+This callback function is called every time _discardActiveObject or _setActiveObject
+try to to deselect this object. If the function returns true, the process is cancelled
+
+#### Parameters
+
+##### \_options?
+
+options sent from the upper functions
+
+###### e
+
+[`TPointerEvent`](/api/type-aliases/tpointerevent/)
+
+###### object
+
+[`InteractiveFabricObject`](/api/classes/interactivefabricobject/)
+
+#### Returns
+
+`boolean`
+
+#### Inherited from
+
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).onDeselect`
+
+***
+
+### onDragStart()
+
+> **onDragStart**(`_e`): `boolean`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:691](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L691)
+
+Override to customize Drag behavior\
+Fired once a drag session has started
+
+#### Parameters
+
+##### \_e
+
+`DragEvent`
+
+#### Returns
+
+`boolean`
+
+true to handle the drag event
+
+#### Inherited from
+
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).onDragStart`
+
+***
+
+### onSelect()
+
+> **onSelect**(`_options`?): `boolean`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:672](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L672)
+
+This callback function is called every time _discardActiveObject or _setActiveObject
+try to to select this object. If the function returns true, the process is cancelled
+
+#### Parameters
+
+##### \_options?
+
+options sent from the upper functions
+
+###### e
+
+[`TPointerEvent`](/api/type-aliases/tpointerevent/)
+
+event if the process is generated by an event
+
+#### Returns
+
+`boolean`
+
+#### Inherited from
+
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).onSelect`
 
 ***
 
 ### remove()
 
-> **remove**(...`objects`): [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[]
+> **remove**(...`objects`): [`FabricObject`](/api/classes/fabricobject/)[]
+
+Defined in: [src/shapes/Group.ts:252](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L252)
 
 Remove objects
 
 #### Parameters
 
-• ...**objects**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[]
+##### objects
+
+...[`FabricObject`](/api/classes/fabricobject/)[]
 
 #### Returns
 
-[`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[]
+[`FabricObject`](/api/classes/fabricobject/)[]
 
 removed objects
 
 #### Overrides
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).remove`
-
-#### Defined in
-
-[src/shapes/Group.ts:252](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L252)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).remove`
 
 ***
 
 ### removeAll()
 
-> **removeAll**(): [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[]
+> **removeAll**(): [`FabricObject`](/api/classes/fabricobject/)[]
+
+Defined in: [src/shapes/Group.ts:319](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L319)
 
 Remove all objects
 
 #### Returns
 
-[`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[]
+[`FabricObject`](/api/classes/fabricobject/)[]
 
 removed objects
-
-#### Defined in
-
-[src/shapes/Group.ts:319](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L319)
 
 ***
 
@@ -5508,11 +4970,15 @@ removed objects
 
 > **render**(`ctx`): `void`
 
+Defined in: [src/shapes/Group.ts:539](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L539)
+
 Renders instance on a given context
 
 #### Parameters
 
-• **ctx**: `CanvasRenderingContext2D`
+##### ctx
+
+`CanvasRenderingContext2D`
 
 context to render instance on
 
@@ -5522,13 +4988,7 @@ context to render instance on
 
 #### Overrides
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).render`
-
-#### Defined in
-
-[src/shapes/Group.ts:539](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L539)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).render`
 
 ***
 
@@ -5536,11 +4996,17 @@ context to render instance on
 
 > **renderCache**(`this`, `options`?): `void`
 
+Defined in: [src/shapes/Object/Object.ts:695](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L695)
+
 #### Parameters
 
-• **this**: `TCachedFabricObject`\<[`BaseFabricObject`](/api/classes/basefabricobject/)\<`Partial`\<`ObjectProps`\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>\>
+##### this
 
-• **options?**: `any`
+`TCachedFabricObject`\<[`BaseFabricObject`](/api/classes/basefabricobject/)\>
+
+##### options?
+
+`any`
 
 #### Returns
 
@@ -5548,13 +5014,7 @@ context to render instance on
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).renderCache`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:695](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L695)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).renderCache`
 
 ***
 
@@ -5562,13 +5022,17 @@ context to render instance on
 
 > **renderDragSourceEffect**(`_e`): `void`
 
+Defined in: [src/shapes/Object/InteractiveObject.ts:712](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L712)
+
 Override to customize drag and drop behavior
 render a specific effect when an object is the source of a drag event
 example: render the selection status for the part of text that is being dragged from a text object
 
 #### Parameters
 
-• **\_e**: `DragEvent`
+##### \_e
+
+`DragEvent`
 
 #### Returns
 
@@ -5576,19 +5040,15 @@ example: render the selection status for the part of text that is being dragged 
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).renderDragSourceEffect`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:712](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L712)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).renderDragSourceEffect`
 
 ***
 
 ### renderDropTargetEffect()
 
 > **renderDropTargetEffect**(`_e`): `void`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:724](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L724)
 
 Override to customize drag and drop behavior
 render a specific effect when an object is the target of a drag event
@@ -5597,7 +5057,9 @@ object will change when dropping. example: show the cursor where the text is abo
 
 #### Parameters
 
-• **\_e**: `DragEvent`
+##### \_e
+
+`DragEvent`
 
 #### Returns
 
@@ -5605,13 +5067,7 @@ object will change when dropping. example: show the cursor where the text is abo
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).renderDropTargetEffect`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:724](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L724)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).renderDropTargetEffect`
 
 ***
 
@@ -5619,11 +5075,15 @@ object will change when dropping. example: show the cursor where the text is abo
 
 > **rotate**(`angle`): `void`
 
+Defined in: [src/shapes/Object/Object.ts:1436](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1436)
+
 Sets "angle" of an instance with centered rotation
 
 #### Parameters
 
-• **angle**: [`TDegree`](/api/type-aliases/tdegree/)
+##### angle
+
+[`TDegree`](/api/type-aliases/tdegree/)
 
 Angle value (in degrees)
 
@@ -5633,13 +5093,7 @@ Angle value (in degrees)
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).rotate`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:1436](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1436)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).rotate`
 
 ***
 
@@ -5647,11 +5101,15 @@ Angle value (in degrees)
 
 > **scale**(`value`): `void`
 
+Defined in: [src/shapes/Object/ObjectGeometry.ts:370](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L370)
+
 Scales an object (equally by x and y)
 
 #### Parameters
 
-• **value**: `number`
+##### value
+
+`number`
 
 Scale factor
 
@@ -5661,13 +5119,7 @@ Scale factor
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).scale`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:370](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L370)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).scale`
 
 ***
 
@@ -5675,11 +5127,15 @@ Scale factor
 
 > **scaleToHeight**(`value`): `void`
 
+Defined in: [src/shapes/Object/ObjectGeometry.ts:393](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L393)
+
 Scales an object to a given height, with respect to bounding box (scaling by x/y equally)
 
 #### Parameters
 
-• **value**: `number`
+##### value
+
+`number`
 
 New height value
 
@@ -5689,13 +5145,7 @@ New height value
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).scaleToHeight`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:393](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L393)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).scaleToHeight`
 
 ***
 
@@ -5703,11 +5153,15 @@ New height value
 
 > **scaleToWidth**(`value`): `void`
 
+Defined in: [src/shapes/Object/ObjectGeometry.ts:381](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L381)
+
 Scales an object to a given width, with respect to bounding box (scaling by x/y equally)
 
 #### Parameters
 
-• **value**: `number`
+##### value
+
+`number`
 
 New width value
 
@@ -5717,19 +5171,15 @@ New width value
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).scaleToWidth`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:381](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L381)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).scaleToWidth`
 
 ***
 
 ### sendObjectBackwards()
 
 > **sendObjectBackwards**(`object`, `intersecting`?): `boolean`
+
+Defined in: [src/Collection.ts:214](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L214)
 
 Moves an object or a selection down in stack of drawn objects
 An optional parameter, `intersecting` allows to move the object in behind
@@ -5739,11 +5189,15 @@ stack.
 
 #### Parameters
 
-• **object**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+##### object
+
+[`FabricObject`](/api/classes/fabricobject/)
 
 Object to send
 
-• **intersecting?**: `boolean`
+##### intersecting?
+
+`boolean`
 
 If `true`, send object behind next lower intersecting object
 
@@ -5755,13 +5209,7 @@ true if change occurred
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).sendObjectBackwards`
-
-#### Defined in
-
-[src/Collection.ts:214](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L214)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).sendObjectBackwards`
 
 ***
 
@@ -5769,12 +5217,16 @@ true if change occurred
 
 > **sendObjectToBack**(`object`): `boolean`
 
+Defined in: [src/Collection.ts:178](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L178)
+
 Moves an object or the objects of a multiple selection
 to the bottom of the stack of drawn objects
 
 #### Parameters
 
-• **object**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+##### object
+
+[`FabricObject`](/api/classes/fabricobject/)
 
 Object to send to back
 
@@ -5786,13 +5238,7 @@ true if change occurred
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).sendObjectToBack`
-
-#### Defined in
-
-[src/Collection.ts:178](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L178)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).sendObjectToBack`
 
 ***
 
@@ -5800,15 +5246,21 @@ true if change occurred
 
 > **set**(`key`, `value`?): [`Group`](/api/classes/group/)
 
+Defined in: [src/CommonMethods.ts:29](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/CommonMethods.ts#L29)
+
 Sets property to a given value. When changing position/dimension -related properties (left, top, scale, angle, etc.) `set` does not update position of object's borders/controls. If you need to update those, call `setCoords()`.
 
 #### Parameters
 
-• **key**: `string` \| `Record`\<`string`, `any`\>
+##### key
 
 Property name or object (if object, iterate over the object properties)
 
-• **value?**: `any`
+`string` | `Record`\<`string`, `any`\>
+
+##### value?
+
+`any`
 
 Property value (if function, the value is passed into it and its return value is used as a new one)
 
@@ -5818,13 +5270,34 @@ Property value (if function, the value is passed into it and its return value is
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).set`
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).set`
 
-#### Defined in
+***
 
-[src/CommonMethods.ts:29](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/CommonMethods.ts#L29)
+### setControlsVisibility()
+
+> **setControlsVisibility**(`options`?): `void`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:611](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L611)
+
+Sets the visibility state of object controls, this is just a bulk option for setControlVisible;
+
+#### Parameters
+
+##### options?
+
+`Record`\<`string`, `boolean`\> = `{}`
+
+with an optional key per control
+example: {Boolean} [options.bl] true to enable the bottom-left control, false to disable it
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).setControlsVisibility`
 
 ***
 
@@ -5832,17 +5305,23 @@ Property value (if function, the value is passed into it and its return value is
 
 > **setControlVisible**(`controlKey`, `visible`): `void`
 
+Defined in: [src/shapes/Object/InteractiveObject.ts:599](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L599)
+
 Sets the visibility of the specified control.
 please do not use.
 
 #### Parameters
 
-• **controlKey**: `string`
+##### controlKey
+
+`string`
 
 The key of the control. Possible values are 'tl', 'tr', 'br', 'bl', 'ml', 'mt', 'mr', 'mb', 'mtr'.
 but since the control api allow for any control name, can be any string.
 
-• **visible**: `boolean`
+##### visible
+
+`boolean`
 
 true to set the specified control visible, false otherwise
 
@@ -5856,42 +5335,7 @@ discuss this overlap of priority here with the team. Andrea Bogazzi for details
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).setControlVisible`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:599](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L599)
-
-***
-
-### setControlsVisibility()
-
-> **setControlsVisibility**(`options`?): `void`
-
-Sets the visibility state of object controls, this is just a bulk option for setControlVisible;
-
-#### Parameters
-
-• **options?**: `Record`\<`string`, `boolean`\> = `{}`
-
-with an optional key per control
-example: {Boolean} [options.bl] true to enable the bottom-left control, false to disable it
-
-#### Returns
-
-`void`
-
-#### Inherited from
-
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).setControlsVisibility`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:611](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L611)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).setControlVisible`
 
 ***
 
@@ -5899,25 +5343,23 @@ example: {Boolean} [options.bl] true to enable the bottom-left control, false to
 
 > **setCoords**(): `void`
 
+Defined in: [src/shapes/Group.ts:521](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L521)
+
 #### Returns
 
 `void`
 
 #### Overrides
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).setCoords`
-
-#### Defined in
-
-[src/shapes/Group.ts:521](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L521)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).setCoords`
 
 ***
 
 ### setOnGroup()
 
 > **setOnGroup**(): `void`
+
+Defined in: [src/shapes/Object/Object.ts:1468](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1468)
 
 This callback function is called by the parent group of an object every
 time a non-delegated property changes on the group. It is passed the key
@@ -5930,13 +5372,7 @@ Travis build error about unused variables.
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).setOnGroup`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:1468](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1468)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).setOnGroup`
 
 ***
 
@@ -5944,19 +5380,27 @@ Travis build error about unused variables.
 
 > **setPositionByOrigin**(`pos`, `originX`, `originY`): `void`
 
+Defined in: [src/shapes/Object/ObjectGeometry.ts:777](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L777)
+
 Sets the position of the object taking into consideration the object's origin
 
 #### Parameters
 
-• **pos**: [`Point`](/api/classes/point/)
+##### pos
+
+[`Point`](/api/classes/point/)
 
 The new position of the object
 
-• **originX**: [`TOriginX`](/api/type-aliases/toriginx/)
+##### originX
+
+[`TOriginX`](/api/type-aliases/toriginx/)
 
 Horizontal origin: 'left', 'center' or 'right'
 
-• **originY**: [`TOriginY`](/api/type-aliases/toriginy/)
+##### originY
+
+[`TOriginY`](/api/type-aliases/toriginy/)
 
 Vertical origin: 'top', 'center' or 'bottom'
 
@@ -5966,13 +5410,7 @@ Vertical origin: 'top', 'center' or 'bottom'
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).setPositionByOrigin`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:777](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L777)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).setPositionByOrigin`
 
 ***
 
@@ -5980,9 +5418,13 @@ Vertical origin: 'top', 'center' or 'bottom'
 
 > **setRelativeX**(`value`): `void`
 
+Defined in: [src/shapes/Object/ObjectGeometry.ts:123](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L123)
+
 #### Parameters
 
-• **value**: `number`
+##### value
+
+`number`
 
 x position according to object's [originX](../../../../api/classes/fabricobject/#originx) property in parent's coordinate plane\
 if parent is canvas then this method is identical to [setX](../../../../api/classes/group/#setx)
@@ -5993,13 +5435,7 @@ if parent is canvas then this method is identical to [setX](../../../../api/clas
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).setRelativeX`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:123](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L123)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).setRelativeX`
 
 ***
 
@@ -6007,19 +5443,27 @@ if parent is canvas then this method is identical to [setX](../../../../api/clas
 
 > **setRelativeXY**(`point`, `originX`?, `originY`?): `void`
 
+Defined in: [src/shapes/Object/ObjectGeometry.ts:186](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L186)
+
 As [setXY](../../../../api/classes/group/#setxy), but in current parent's coordinate plane (the current group if any or the canvas)
 
 #### Parameters
 
-• **point**: [`Point`](/api/classes/point/)
+##### point
 
-position according to object's originX originY properties in parent's coordinate plane
+[`Point`](/api/classes/point/)
 
-• **originX?**: [`TOriginX`](/api/type-aliases/toriginx/) = `...`
+position according to object's [originX](../../../../api/classes/fabricobject/#originx-3) [originY](../../../../api/classes/fabricobject/#originy-3) properties in parent's coordinate plane
+
+##### originX?
+
+[`TOriginX`](/api/type-aliases/toriginx/) = `...`
 
 Horizontal origin: 'left', 'center' or 'right'
 
-• **originY?**: [`TOriginY`](/api/type-aliases/toriginy/) = `...`
+##### originY?
+
+[`TOriginY`](/api/type-aliases/toriginy/) = `...`
 
 Vertical origin: 'top', 'center' or 'bottom'
 
@@ -6029,13 +5473,7 @@ Vertical origin: 'top', 'center' or 'bottom'
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).setRelativeXY`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:186](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L186)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).setRelativeXY`
 
 ***
 
@@ -6043,9 +5481,13 @@ Vertical origin: 'top', 'center' or 'bottom'
 
 > **setRelativeY**(`value`): `void`
 
+Defined in: [src/shapes/Object/ObjectGeometry.ts:139](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L139)
+
 #### Parameters
 
-• **value**: `number`
+##### value
+
+`number`
 
 y position according to object's [originY](../../../../api/classes/fabricobject/#originy) property in parent's coordinate plane\
 if parent is canvas then this property is identical to [setY](../../../../api/classes/group/#sety)
@@ -6056,13 +5498,7 @@ if parent is canvas then this property is identical to [setY](../../../../api/cl
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).setRelativeY`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:139](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L139)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).setRelativeY`
 
 ***
 
@@ -6070,9 +5506,13 @@ if parent is canvas then this property is identical to [setY](../../../../api/cl
 
 > **setX**(`value`): `void`
 
+Defined in: [src/shapes/Object/ObjectGeometry.ts:93](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L93)
+
 #### Parameters
 
-• **value**: `number`
+##### value
+
+`number`
 
 x position according to object's [originX](../../../../api/classes/fabricobject/#originx) property in canvas coordinate plane
 
@@ -6082,13 +5522,7 @@ x position according to object's [originX](../../../../api/classes/fabricobject/
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).setX`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:93](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L93)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).setX`
 
 ***
 
@@ -6096,21 +5530,29 @@ x position according to object's [originX](../../../../api/classes/fabricobject/
 
 > **setXY**(`point`, `originX`?, `originY`?): `void`
 
+Defined in: [src/shapes/Object/ObjectGeometry.ts:163](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L163)
+
 Set an object position to a particular point, the point is intended in absolute ( canvas ) coordinate.
-You can specify originX and originY values,
+You can specify [originX](../../../../api/classes/fabricobject/#originx-4) and [originY](../../../../api/classes/fabricobject/#originy-4) values,
 that otherwise are the object's current values.
 
 #### Parameters
 
-• **point**: [`Point`](/api/classes/point/)
+##### point
+
+[`Point`](/api/classes/point/)
 
 position in scene coordinate plane
 
-• **originX?**: [`TOriginX`](/api/type-aliases/toriginx/)
+##### originX?
+
+[`TOriginX`](/api/type-aliases/toriginx/)
 
 Horizontal origin: 'left', 'center' or 'right'
 
-• **originY?**: [`TOriginY`](/api/type-aliases/toriginy/)
+##### originY?
+
+[`TOriginY`](/api/type-aliases/toriginy/)
 
 Vertical origin: 'top', 'center' or 'bottom'
 
@@ -6126,13 +5568,7 @@ object.setXY(new Point(5, 5), 'left', 'bottom').
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).setXY`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:163](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L163)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).setXY`
 
 ***
 
@@ -6140,9 +5576,13 @@ object.setXY(new Point(5, 5), 'left', 'bottom').
 
 > **setY**(`value`): `void`
 
+Defined in: [src/shapes/Object/ObjectGeometry.ts:107](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L107)
+
 #### Parameters
 
-• **value**: `number`
+##### value
+
+`number`
 
 y position according to object's [originY](../../../../api/classes/fabricobject/#originy) property in canvas coordinate plane
 
@@ -6152,19 +5592,15 @@ y position according to object's [originY](../../../../api/classes/fabricobject/
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).setY`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:107](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L107)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).setY`
 
 ***
 
 ### shouldCache()
 
 > **shouldCache**(): `boolean`
+
+Defined in: [src/shapes/Group.ts:455](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L455)
 
 Decide if the object should cache or not. Create its own cache level
 needsItsOwnCache should be used when the object drawing method requires
@@ -6177,13 +5613,7 @@ Generally you do not cache objects in groups because the group is already cached
 
 #### Overrides
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).shouldCache`
-
-#### Defined in
-
-[src/shapes/Group.ts:455](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L455)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).shouldCache`
 
 ***
 
@@ -6191,12 +5621,16 @@ Generally you do not cache objects in groups because the group is already cached
 
 > **shouldStartDragging**(`_e`): `boolean`
 
+Defined in: [src/shapes/Object/InteractiveObject.ts:682](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L682)
+
 Override to customize Drag behavior
-Fired from Canvas#_onMouseMove
+Fired from Canvas#\_onMouseMove
 
 #### Parameters
 
-• **\_e**: [`TPointerEvent`](/api/type-aliases/tpointerevent/)
+##### \_e
+
+[`TPointerEvent`](/api/type-aliases/tpointerevent/)
 
 #### Returns
 
@@ -6206,19 +5640,15 @@ true in order for the window to start a drag session
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).shouldStartDragging`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:682](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L682)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).shouldStartDragging`
 
 ***
 
 ### size()
 
 > **size**(): `number`
+
+Defined in: [src/Collection.ts:136](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L136)
 
 Returns a size of a collection (i.e: length of an array containing its objects)
 
@@ -6230,13 +5660,7 @@ Collection size
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).size`
-
-#### Defined in
-
-[src/Collection.ts:136](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L136)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).size`
 
 ***
 
@@ -6244,15 +5668,21 @@ Collection size
 
 > **strokeBorders**(`ctx`, `size`): `void`
 
+Defined in: [src/shapes/Object/InteractiveObject.ts:399](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L399)
+
 override this function in order to customize the drawing of the control box, e.g. rounded corners, different border style.
 
 #### Parameters
 
-• **ctx**: `CanvasRenderingContext2D`
+##### ctx
+
+`CanvasRenderingContext2D`
 
 ctx is rotated and translated so that (0,0) is at object's center
 
-• **size**: [`Point`](/api/classes/point/)
+##### size
+
+[`Point`](/api/classes/point/)
 
 the control box size used
 
@@ -6262,13 +5692,7 @@ the control box size used
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).strokeBorders`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:399](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L399)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).strokeBorders`
 
 ***
 
@@ -6276,11 +5700,15 @@ the control box size used
 
 > **toCanvasElement**(`options`): `HTMLCanvasElement`
 
+Defined in: [src/shapes/Object/Object.ts:1299](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1299)
+
 Converts an object into a HTMLCanvas element
 
 #### Parameters
 
-• **options**: `ObjectToCanvasElementOptions` = `{}`
+##### options
+
+`ObjectToCanvasElementOptions` = `{}`
 
 Options object
 
@@ -6292,13 +5720,7 @@ Returns DOM element <canvas> with the FabricObject
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).toCanvasElement`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:1299](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1299)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).toCanvasElement`
 
 ***
 
@@ -6306,11 +5728,15 @@ Returns DOM element <canvas> with the FabricObject
 
 > **toClipPathSVG**(`reviver`?): `string`
 
+Defined in: [src/shapes/Group.ts:666](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L666)
+
 Returns svg clipPath representation of an instance
 
 #### Parameters
 
-• **reviver?**: [`TSVGReviver`](/api/type-aliases/tsvgreviver/)
+##### reviver?
+
+[`TSVGReviver`](/api/type-aliases/tsvgreviver/)
 
 Method for further parsing of svg representation.
 
@@ -6322,43 +5748,7 @@ svg representation of an instance
 
 #### Overrides
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).toClipPathSVG`
-
-#### Defined in
-
-[src/shapes/Group.ts:666](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L666)
-
-***
-
-### toDataURL()
-
-> **toDataURL**(`options`): `string`
-
-Converts an object into a data-url-like string
-
-#### Parameters
-
-• **options**: `toDataURLOptions` = `{}`
-
-Options object
-
-#### Returns
-
-`string`
-
-Returns a data: URL containing a representation of the object in the format specified by options.format
-
-#### Inherited from
-
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).toDataURL`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:1395](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1395)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).toClipPathSVG`
 
 ***
 
@@ -6366,11 +5756,15 @@ Returns a data: URL containing a representation of the object in the format spec
 
 > **toDatalessObject**(`propertiesToInclude`?): `any`
 
+Defined in: [src/shapes/Object/Object.ts:1843](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1843)
+
 Returns (dataless) object representation of an instance
 
 #### Parameters
 
-• **propertiesToInclude?**: `any`[]
+##### propertiesToInclude?
+
+`any`[]
 
 Any properties that you might want to additionally include in the output
 
@@ -6382,19 +5776,69 @@ Object representation of an instance
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).toDatalessObject`
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).toDatalessObject`
 
-#### Defined in
+***
 
-[src/shapes/Object/Object.ts:1843](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1843)
+### toDataURL()
+
+> **toDataURL**(`options`): `string`
+
+Defined in: [src/shapes/Object/Object.ts:1395](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1395)
+
+Converts an object into a data-url-like string
+
+#### Parameters
+
+##### options
+
+`toDataURLOptions` = `{}`
+
+Options object
+
+#### Returns
+
+`string`
+
+Returns a data: URL containing a representation of the object in the format specified by options.format
+
+#### Inherited from
+
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).toDataURL`
+
+***
+
+### toggle()
+
+> **toggle**(`property`): [`Group`](/api/classes/group/)
+
+Defined in: [src/CommonMethods.ts:46](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/CommonMethods.ts#L46)
+
+Toggles specified property from `true` to `false` or from `false` to `true`
+
+#### Parameters
+
+##### property
+
+`string`
+
+Property to toggle
+
+#### Returns
+
+[`Group`](/api/classes/group/)
+
+#### Inherited from
+
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).toggle`
 
 ***
 
 ### toJSON()
 
 > **toJSON**(): `any`
+
+Defined in: [src/shapes/Object/Object.ts:1427](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1427)
 
 Returns a JSON representation of an instance
 
@@ -6406,19 +5850,15 @@ JSON
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).toJSON`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:1427](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1427)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).toJSON`
 
 ***
 
 ### toObject()
 
 > **toObject**\<`T`, `K`\>(`propertiesToInclude`?): `Pick`\<`T`, `K`\> & [`SerializedGroupProps`](/api/interfaces/serializedgroupprops/)
+
+Defined in: [src/shapes/Group.ts:576](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L576)
 
 Returns object representation of an instance
 
@@ -6430,7 +5870,9 @@ Returns object representation of an instance
 
 #### Parameters
 
-• **propertiesToInclude?**: `K`[] = `[]`
+##### propertiesToInclude?
+
+`K`[] = `[]`
 
 Any properties that you might want to additionally include in the output
 
@@ -6442,13 +5884,25 @@ object representation of an instance
 
 #### Overrides
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).toObject`
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).toObject`
 
-#### Defined in
+***
 
-[src/shapes/Group.ts:576](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L576)
+### toString()
+
+> **toString**(): `string`
+
+Defined in: [src/shapes/Group.ts:601](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L601)
+
+Returns a string representation of an instance
+
+#### Returns
+
+`string`
+
+#### Overrides
+
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).toString`
 
 ***
 
@@ -6456,13 +5910,19 @@ object representation of an instance
 
 > **toSVG**(`this`, `reviver`?): `string`
 
+Defined in: [src/shapes/Object/FabricObjectSVGExportMixin.ts:129](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/FabricObjectSVGExportMixin.ts#L129)
+
 Returns svg representation of an instance
 
 #### Parameters
 
-• **this**: `FabricObjectSVGExportMixin` & [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+##### this
 
-• **reviver?**: [`TSVGReviver`](/api/type-aliases/tsvgreviver/)
+`FabricObjectSVGExportMixin` & [`FabricObject`](/api/classes/fabricobject/)
+
+##### reviver?
+
+[`TSVGReviver`](/api/type-aliases/tsvgreviver/)
 
 Method for further parsing of svg representation.
 
@@ -6474,63 +5934,7 @@ svg representation of an instance
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).toSVG`
-
-#### Defined in
-
-[src/shapes/Object/FabricObjectSVGExportMixin.ts:129](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/FabricObjectSVGExportMixin.ts#L129)
-
-***
-
-### toString()
-
-> **toString**(): `string`
-
-Returns a string representation of an instance
-
-#### Returns
-
-`string`
-
-#### Overrides
-
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).toString`
-
-#### Defined in
-
-[src/shapes/Group.ts:601](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L601)
-
-***
-
-### toggle()
-
-> **toggle**(`property`): [`Group`](/api/classes/group/)
-
-Toggles specified property from `true` to `false` or from `false` to `true`
-
-#### Parameters
-
-• **property**: `string`
-
-Property to toggle
-
-#### Returns
-
-[`Group`](/api/classes/group/)
-
-#### Inherited from
-
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).toggle`
-
-#### Defined in
-
-[src/CommonMethods.ts:46](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/CommonMethods.ts#L46)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).toSVG`
 
 ***
 
@@ -6538,11 +5942,15 @@ Property to toggle
 
 > **transform**(`ctx`): `void`
 
+Defined in: [src/shapes/Object/Object.ts:527](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L527)
+
 Transforms context when rendering an object
 
 #### Parameters
 
-• **ctx**: `CanvasRenderingContext2D`
+##### ctx
+
+`CanvasRenderingContext2D`
 
 Context
 
@@ -6552,13 +5960,7 @@ Context
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).transform`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:527](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L527)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).transform`
 
 ***
 
@@ -6566,9 +5968,13 @@ Context
 
 > **transformMatrixKey**(`skipGroup`): `number`[]
 
+Defined in: [src/shapes/Object/ObjectGeometry.ts:453](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L453)
+
 #### Parameters
 
-• **skipGroup**: `boolean` = `false`
+##### skipGroup
+
+`boolean` = `false`
 
 #### Returns
 
@@ -6576,13 +5982,7 @@ Context
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).transformMatrixKey`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:453](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L453)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).transformMatrixKey`
 
 ***
 
@@ -6590,19 +5990,27 @@ Context
 
 > **translateToCenterPoint**(`point`, `originX`, `originY`): [`Point`](/api/classes/point/)
 
+Defined in: [src/shapes/Object/ObjectGeometry.ts:682](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L682)
+
 Translates the coordinates from origin to center coordinates (based on the object's dimensions)
 
 #### Parameters
 
-• **point**: [`Point`](/api/classes/point/)
+##### point
+
+[`Point`](/api/classes/point/)
 
 The point which corresponds to the originX and originY params
 
-• **originX**: [`TOriginX`](/api/type-aliases/toriginx/)
+##### originX
+
+[`TOriginX`](/api/type-aliases/toriginx/)
 
 Horizontal origin: 'left', 'center' or 'right'
 
-• **originY**: [`TOriginY`](/api/type-aliases/toriginy/)
+##### originY
+
+[`TOriginY`](/api/type-aliases/toriginy/)
 
 Vertical origin: 'top', 'center' or 'bottom'
 
@@ -6612,13 +6020,7 @@ Vertical origin: 'top', 'center' or 'bottom'
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).translateToCenterPoint`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:682](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L682)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).translateToCenterPoint`
 
 ***
 
@@ -6626,27 +6028,39 @@ Vertical origin: 'top', 'center' or 'bottom'
 
 > **translateToGivenOrigin**(`point`, `fromOriginX`, `fromOriginY`, `toOriginX`, `toOriginY`): [`Point`](/api/classes/point/)
 
+Defined in: [src/shapes/Object/ObjectGeometry.ts:654](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L654)
+
 Translates the coordinates from a set of origin to another (based on the object's dimensions)
 
 #### Parameters
 
-• **point**: [`Point`](/api/classes/point/)
+##### point
+
+[`Point`](/api/classes/point/)
 
 The point which corresponds to the originX and originY params
 
-• **fromOriginX**: [`TOriginX`](/api/type-aliases/toriginx/)
+##### fromOriginX
+
+[`TOriginX`](/api/type-aliases/toriginx/)
 
 Horizontal origin: 'left', 'center' or 'right'
 
-• **fromOriginY**: [`TOriginY`](/api/type-aliases/toriginy/)
+##### fromOriginY
+
+[`TOriginY`](/api/type-aliases/toriginy/)
 
 Vertical origin: 'top', 'center' or 'bottom'
 
-• **toOriginX**: [`TOriginX`](/api/type-aliases/toriginx/)
+##### toOriginX
+
+[`TOriginX`](/api/type-aliases/toriginx/)
 
 Horizontal origin: 'left', 'center' or 'right'
 
-• **toOriginY**: [`TOriginY`](/api/type-aliases/toriginy/)
+##### toOriginY
+
+[`TOriginY`](/api/type-aliases/toriginy/)
 
 Vertical origin: 'top', 'center' or 'bottom'
 
@@ -6656,13 +6070,7 @@ Vertical origin: 'top', 'center' or 'bottom'
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).translateToGivenOrigin`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:654](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L654)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).translateToGivenOrigin`
 
 ***
 
@@ -6670,19 +6078,27 @@ Vertical origin: 'top', 'center' or 'bottom'
 
 > **translateToOriginPoint**(`center`, `originX`, `originY`): [`Point`](/api/classes/point/)
 
+Defined in: [src/shapes/Object/ObjectGeometry.ts:710](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L710)
+
 Translates the coordinates from center to origin coordinates (based on the object's dimensions)
 
 #### Parameters
 
-• **center**: [`Point`](/api/classes/point/)
+##### center
+
+[`Point`](/api/classes/point/)
 
 The point which corresponds to center of the object
 
-• **originX**: [`TOriginX`](/api/type-aliases/toriginx/)
+##### originX
+
+[`TOriginX`](/api/type-aliases/toriginx/)
 
 Horizontal origin: 'left', 'center' or 'right'
 
-• **originY**: [`TOriginY`](/api/type-aliases/toriginy/)
+##### originY
+
+[`TOriginY`](/api/type-aliases/toriginy/)
 
 Vertical origin: 'top', 'center' or 'bottom'
 
@@ -6692,13 +6108,7 @@ Vertical origin: 'top', 'center' or 'bottom'
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).translateToOriginPoint`
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:710](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L710)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).translateToOriginPoint`
 
 ***
 
@@ -6706,23 +6116,25 @@ Vertical origin: 'top', 'center' or 'bottom'
 
 > **triggerLayout**(`options`): `void`
 
+Defined in: [src/shapes/Group.ts:527](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L527)
+
 #### Parameters
 
-• **options**: [`ImperativeLayoutOptions`](/api/type-aliases/imperativelayoutoptions/) = `{}`
+##### options
+
+[`ImperativeLayoutOptions`](/api/type-aliases/imperativelayoutoptions/) = `{}`
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-[src/shapes/Group.ts:527](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L527)
 
 ***
 
 ### willDrawShadow()
 
 > **willDrawShadow**(): `boolean`
+
+Defined in: [src/shapes/Group.ts:472](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L472)
 
 Check if this object or a child object will cast a shadow
 
@@ -6732,13 +6144,7 @@ Check if this object or a child object will cast a shadow
 
 #### Overrides
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).willDrawShadow`
-
-#### Defined in
-
-[src/shapes/Group.ts:472](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L472)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).willDrawShadow`
 
 ***
 
@@ -6746,15 +6152,21 @@ Check if this object or a child object will cast a shadow
 
 > `static` **\_fromObject**\<`S`\>(`__namedParameters`, `__namedParameters`): `Promise`\<`S`\>
 
+Defined in: [src/shapes/Object/Object.ts:1896](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1896)
+
 #### Type Parameters
 
-• **S** *extends* [`BaseFabricObject`](/api/classes/basefabricobject/)\<`Partial`\<`ObjectProps`\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+• **S** *extends* [`BaseFabricObject`](/api/classes/basefabricobject/)
 
 #### Parameters
 
-• **\_\_namedParameters**: `Record`\<`string`, `unknown`\>
+##### \_\_namedParameters
 
-• **\_\_namedParameters**: [`Abortable`](/api/type-aliases/abortable/) & `object` = `{}`
+`Record`\<`string`, `unknown`\>
+
+##### \_\_namedParameters
+
+[`Abortable`](/api/type-aliases/abortable/) & `object` = `{}`
 
 #### Returns
 
@@ -6762,19 +6174,15 @@ Check if this object or a child object will cast a shadow
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  )._fromObject`
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:1896](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1896)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, )._fromObject`
 
 ***
 
 ### createControls()
 
 > `static` **createControls**(): `object`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:167](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L167)
 
 Creates the default control object.
 If you prefer to have on instance of controls shared among all objects
@@ -6790,13 +6198,7 @@ make this function return an empty object and add controls to the ownDefaults
 
 #### Inherited from
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).createControls`
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:167](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L167)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).createControls`
 
 ***
 
@@ -6804,16 +6206,12 @@ make this function return an empty object and add controls to the ownDefaults
 
 > `static` **getDefaults**(): `Record`\<`string`, `any`\>
 
+Defined in: [src/shapes/Group.ts:126](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L126)
+
 #### Returns
 
 `Record`\<`string`, `any`\>
 
 #### Overrides
 
-`createCollectionMixin(
-    FabricObject<GroupProps, SerializedGroupProps, GroupEvents>,
-  ).getDefaults`
-
-#### Defined in
-
-[src/shapes/Group.ts:126](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L126)
+`createCollectionMixin( FabricObject<GroupProps, SerializedGroupProps, GroupEvents>, ).getDefaults`

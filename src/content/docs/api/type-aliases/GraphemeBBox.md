@@ -7,6 +7,8 @@ title: "GraphemeBBox"
 
 > **GraphemeBBox**: `object`
 
+Defined in: [src/shapes/Text/Text.ts:83](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Text/Text.ts#L83)
+
 Measure and return the info of a single grapheme.
 needs the the info of previous graphemes already filled
 Override to customize measuring
@@ -44,7 +46,3 @@ Override to customize measuring
 ### width
 
 > **width**: `number`
-
-## Defined in
-
-[src/shapes/Text/Text.ts:83](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Text/Text.ts#L83)

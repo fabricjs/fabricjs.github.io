@@ -7,6 +7,8 @@ title: "LayoutAfterEvent"
 
 > **LayoutAfterEvent**: `object`
 
+Defined in: [src/LayoutManager/types.ts:143](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/types.ts#L143)
+
 ## Type declaration
 
 ### context
@@ -18,7 +20,3 @@ title: "LayoutAfterEvent"
 > `optional` **result**: [`LayoutResult`](/api/type-aliases/layoutresult/)
 
 will be undefined if layout was skipped
-
-## Defined in
-
-[src/LayoutManager/types.ts:143](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/types.ts#L143)

@@ -7,6 +7,8 @@ title: "TOnAnimationChangeCallback"
 
 > **TOnAnimationChangeCallback**\<`T`, `R`\>: (`value`, `valueProgress`, `durationProgress`) => `R`
 
+Defined in: [src/util/animation/types.ts:12](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/util/animation/types.ts#L12)
+
 Callback called every frame
 
 ## Type Parameters
@@ -17,23 +19,25 @@ Callback called every frame
 
 ## Parameters
 
-• **value**: `T`
+### value
+
+`T`
 
 current value of the animation.
 
-• **valueProgress**: `number`
+### valueProgress
+
+`number`
 
 ∈ [0, 1], the current animation progress reflected on value, normalized.
 0 is the starting value and 1 is the ending value.
 
-• **durationProgress**: `number`
+### durationProgress
+
+`number`
 
 ∈ [0, 1], the current animation duration normalized to 1.
 
 ## Returns
 
 `R`
-
-## Defined in
-
-[src/util/animation/types.ts:12](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/util/animation/types.ts#L12)

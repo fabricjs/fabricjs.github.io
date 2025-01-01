@@ -7,6 +7,8 @@ title: "CursorRenderingData"
 
 > **CursorRenderingData**: `object`
 
+Defined in: [src/shapes/IText/IText.ts:29](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/IText/IText.ts#L29)
+
 ## Type declaration
 
 ### color
@@ -32,7 +34,3 @@ title: "CursorRenderingData"
 ### width
 
 > **width**: `number`
-
-## Defined in
-
-[src/shapes/IText/IText.ts:29](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/IText/IText.ts#L29)

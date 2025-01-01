@@ -7,6 +7,8 @@ title: "TSVGExportOptions"
 
 > **TSVGExportOptions**: `object`
 
+Defined in: [src/canvas/StaticCanvas.ts:62](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L62)
+
 ## Type declaration
 
 ### encoding?
@@ -29,26 +31,22 @@ title: "TSVGExportOptions"
 
 > `optional` **viewBox**: `object`
 
-### viewBox.height
+#### viewBox.height
 
 > **height**: `number`
 
-### viewBox.width
+#### viewBox.width
 
 > **width**: `number`
 
-### viewBox.x
+#### viewBox.x
 
 > **x**: `number`
 
-### viewBox.y
+#### viewBox.y
 
 > **y**: `number`
 
 ### width?
 
 > `optional` **width**: `string`
-
-## Defined in
-
-[src/canvas/StaticCanvas.ts:62](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L62)

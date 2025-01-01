@@ -5,8 +5,6 @@ prev: false
 title: "TMatColorMatrix"
 ---
 
-> **TMatColorMatrix**: [`number`, `number`, `number`, `number`, `number`, `number`, `number`, `number`, `number`, `number`, `number`, `number`, `number`, `number`, `number`, `number`, `number`, `number`, `number`, `number`]
+> **TMatColorMatrix**: \[`number`, `number`, `number`, `number`, `number`, `number`, `number`, `number`, `number`, `number`, `number`, `number`, `number`, `number`, `number`, `number`, `number`, `number`, `number`, `number`\]
 
-## Defined in
-
-[src/filters/typedefs.ts:60](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/typedefs.ts#L60)
+Defined in: [src/filters/typedefs.ts:60](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/typedefs.ts#L60)

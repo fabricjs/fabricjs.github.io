@@ -5,6 +5,8 @@ prev: false
 title: "DropEventData"
 ---
 
+Defined in: [src/EventTypeDefs.ts:199](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L199)
+
 ## Extends
 
 - [`DragEventData`](/api/interfaces/drageventdata/)
@@ -15,14 +17,12 @@ title: "DropEventData"
 
 > **absolutePointer**: [`Point`](/api/classes/point/)
 
+Defined in: [src/EventTypeDefs.ts:211](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L211)
+
 :::caution[Deprecated]
 use scenePoint instead.
 Kept for compatibility
 :::
-
-#### Defined in
-
-[src/EventTypeDefs.ts:211](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L211)
 
 ***
 
@@ -30,13 +30,11 @@ Kept for compatibility
 
 > `optional` **canDrop**: `boolean`
 
+Defined in: [src/EventTypeDefs.ts:194](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L194)
+
 #### Inherited from
 
 [`DragEventData`](/api/interfaces/drageventdata/).[`canDrop`](/api/interfaces/drageventdata/#candrop)
-
-#### Defined in
-
-[src/EventTypeDefs.ts:194](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L194)
 
 ***
 
@@ -44,41 +42,35 @@ Kept for compatibility
 
 > `optional` **didDrop**: `boolean`
 
+Defined in: [src/EventTypeDefs.ts:195](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L195)
+
 #### Inherited from
 
 [`DragEventData`](/api/interfaces/drageventdata/).[`didDrop`](/api/interfaces/drageventdata/#diddrop)
-
-#### Defined in
-
-[src/EventTypeDefs.ts:195](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L195)
 
 ***
 
 ### dragSource?
 
-> `optional` **dragSource**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+> `optional` **dragSource**: [`FabricObject`](/api/classes/fabricobject/)
+
+Defined in: [src/EventTypeDefs.ts:193](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L193)
 
 #### Inherited from
 
 [`DragEventData`](/api/interfaces/drageventdata/).[`dragSource`](/api/interfaces/drageventdata/#dragsource)
 
-#### Defined in
-
-[src/EventTypeDefs.ts:193](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L193)
-
 ***
 
 ### dropTarget?
 
-> `optional` **dropTarget**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+> `optional` **dropTarget**: [`FabricObject`](/api/classes/fabricobject/)
+
+Defined in: [src/EventTypeDefs.ts:196](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L196)
 
 #### Inherited from
 
 [`DragEventData`](/api/interfaces/drageventdata/).[`dropTarget`](/api/interfaces/drageventdata/#droptarget)
-
-#### Defined in
-
-[src/EventTypeDefs.ts:196](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L196)
 
 ***
 
@@ -86,13 +78,11 @@ Kept for compatibility
 
 > **e**: `DragEvent`
 
+Defined in: [src/EventTypeDefs.ts:96](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L96)
+
 #### Inherited from
 
 [`DragEventData`](/api/interfaces/drageventdata/).[`e`](/api/interfaces/drageventdata/#e)
-
-#### Defined in
-
-[src/EventTypeDefs.ts:96](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L96)
 
 ***
 
@@ -100,14 +90,12 @@ Kept for compatibility
 
 > **pointer**: [`Point`](/api/classes/point/)
 
+Defined in: [src/EventTypeDefs.ts:205](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L205)
+
 :::caution[Deprecated]
 use viewportPoint instead.
 Kept for compatibility
 :::
-
-#### Defined in
-
-[src/EventTypeDefs.ts:205](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L205)
 
 ***
 
@@ -115,37 +103,31 @@ Kept for compatibility
 
 > **scenePoint**: [`Point`](/api/classes/point/)
 
-#### Defined in
-
-[src/EventTypeDefs.ts:212](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L212)
+Defined in: [src/EventTypeDefs.ts:212](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L212)
 
 ***
 
 ### subTargets?
 
-> `optional` **subTargets**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[]
+> `optional` **subTargets**: [`FabricObject`](/api/classes/fabricobject/)[]
+
+Defined in: [src/EventTypeDefs.ts:192](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L192)
 
 #### Inherited from
 
 [`DragEventData`](/api/interfaces/drageventdata/).[`subTargets`](/api/interfaces/drageventdata/#subtargets)
 
-#### Defined in
-
-[src/EventTypeDefs.ts:192](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L192)
-
 ***
 
 ### target?
 
-> `optional` **target**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+> `optional` **target**: [`FabricObject`](/api/classes/fabricobject/)
+
+Defined in: [src/EventTypeDefs.ts:191](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L191)
 
 #### Inherited from
 
 [`DragEventData`](/api/interfaces/drageventdata/).[`target`](/api/interfaces/drageventdata/#target)
-
-#### Defined in
-
-[src/EventTypeDefs.ts:191](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L191)
 
 ***
 
@@ -153,6 +135,4 @@ Kept for compatibility
 
 > **viewportPoint**: [`Point`](/api/classes/point/)
 
-#### Defined in
-
-[src/EventTypeDefs.ts:213](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L213)
+Defined in: [src/EventTypeDefs.ts:213](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L213)

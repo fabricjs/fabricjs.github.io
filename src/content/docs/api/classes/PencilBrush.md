@@ -5,6 +5,8 @@ prev: false
 title: "PencilBrush"
 ---
 
+Defined in: [src/brushes/PencilBrush.ts:19](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/PencilBrush.ts#L19)
+
 ## See
 
 [demo](http://fabricjs.com/freedrawing|Freedrawing)
@@ -23,9 +25,13 @@ title: "PencilBrush"
 
 > **new PencilBrush**(`canvas`): [`PencilBrush`](/api/classes/pencilbrush/)
 
+Defined in: [src/brushes/PencilBrush.ts:47](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/PencilBrush.ts#L47)
+
 #### Parameters
 
-• **canvas**: [`Canvas`](/api/classes/canvas/)
+##### canvas
+
+[`Canvas`](/api/classes/canvas/)
 
 #### Returns
 
@@ -35,15 +41,13 @@ title: "PencilBrush"
 
 [`BaseBrush`](/api/classes/basebrush/).[`constructor`](/api/classes/basebrush/#constructors)
 
-#### Defined in
-
-[src/brushes/PencilBrush.ts:47](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/PencilBrush.ts#L47)
-
 ## Properties
 
 ### canvas
 
 > **canvas**: [`Canvas`](/api/classes/canvas/)
+
+Defined in: [src/brushes/BaseBrush.ts:73](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/BaseBrush.ts#L73)
 
 #### Todo
 
@@ -51,17 +55,15 @@ add type
 
 #### Inherited from
 
-[`BaseBrush`](/api/classes/basebrush/).[`canvas`](/api/classes/basebrush/#canvas)
-
-#### Defined in
-
-[src/brushes/BaseBrush.ts:73](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/BaseBrush.ts#L73)
+[`BaseBrush`](/api/classes/basebrush/).[`canvas`](/api/classes/basebrush/#canvas-1)
 
 ***
 
 ### color
 
 > **color**: `string` = `'rgb(0, 0, 0)'`
+
+Defined in: [src/brushes/BaseBrush.ts:16](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/BaseBrush.ts#L16)
 
 Color of a brush
 
@@ -75,15 +77,13 @@ Color of a brush
 
 [`BaseBrush`](/api/classes/basebrush/).[`color`](/api/classes/basebrush/#color)
 
-#### Defined in
-
-[src/brushes/BaseBrush.ts:16](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/BaseBrush.ts#L16)
-
 ***
 
 ### decimate
 
 > **decimate**: `number` = `0.4`
+
+Defined in: [src/brushes/PencilBrush.ts:25](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/PencilBrush.ts#L25)
 
 Discard points that are less than `decimate` pixel distant from each other
 
@@ -93,15 +93,13 @@ Discard points that are less than `decimate` pixel distant from each other
 0.4
 ```
 
-#### Defined in
-
-[src/brushes/PencilBrush.ts:25](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/PencilBrush.ts#L25)
-
 ***
 
 ### drawStraightLine
 
 > **drawStraightLine**: `boolean` = `false`
+
+Defined in: [src/brushes/PencilBrush.ts:34](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/PencilBrush.ts#L34)
 
 Draws a straight line between last recorded point to current pointer
 Used for `shift` functionality
@@ -112,15 +110,13 @@ Used for `shift` functionality
 false
 ```
 
-#### Defined in
-
-[src/brushes/PencilBrush.ts:34](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/PencilBrush.ts#L34)
-
 ***
 
 ### limitedToCanvasSize
 
 > **limitedToCanvasSize**: `boolean` = `false`
+
+Defined in: [src/brushes/BaseBrush.ts:68](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/BaseBrush.ts#L68)
 
 When `true`, the free drawing is limited to the whiteboard size. Default to false.
 
@@ -134,15 +130,13 @@ false
 
 [`BaseBrush`](/api/classes/basebrush/).[`limitedToCanvasSize`](/api/classes/basebrush/#limitedtocanvassize)
 
-#### Defined in
-
-[src/brushes/BaseBrush.ts:68](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/BaseBrush.ts#L68)
-
 ***
 
 ### shadow
 
 > **shadow**: `null` \| [`Shadow`](/api/classes/shadow/) = `null`
+
+Defined in: [src/brushes/BaseBrush.ts:32](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/BaseBrush.ts#L32)
 
 Shadow object representing shadow of this shape.
 <b>Backwards incompatibility note:</b> This property replaces "shadowColor" (String), "shadowOffsetX" (Number),
@@ -158,28 +152,24 @@ Shadow object representing shadow of this shape.
 
 [`BaseBrush`](/api/classes/basebrush/).[`shadow`](/api/classes/basebrush/#shadow)
 
-#### Defined in
-
-[src/brushes/BaseBrush.ts:32](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/BaseBrush.ts#L32)
-
 ***
 
 ### straightLineKey
 
 > **straightLineKey**: `undefined` \| `null` \| `"altKey"` \| `"ctrlKey"` \| `"metaKey"` \| `"shiftKey"` = `'shiftKey'`
 
+Defined in: [src/brushes/PencilBrush.ts:41](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/PencilBrush.ts#L41)
+
 The event modifier key that makes the brush draw a straight line.
 If `null` or 'none' or any other string that is not a modifier key the feature is disabled.
-
-#### Defined in
-
-[src/brushes/PencilBrush.ts:41](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/PencilBrush.ts#L41)
 
 ***
 
 ### strokeDashArray
 
 > **strokeDashArray**: `null` \| `number`[] = `null`
+
+Defined in: [src/brushes/BaseBrush.ts:60](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/BaseBrush.ts#L60)
 
 Stroke Dash Array.
 
@@ -193,15 +183,13 @@ Stroke Dash Array.
 
 [`BaseBrush`](/api/classes/basebrush/).[`strokeDashArray`](/api/classes/basebrush/#strokedasharray)
 
-#### Defined in
-
-[src/brushes/BaseBrush.ts:60](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/BaseBrush.ts#L60)
-
 ***
 
 ### strokeLineCap
 
 > **strokeLineCap**: `CanvasLineCap` = `'round'`
+
+Defined in: [src/brushes/BaseBrush.ts:39](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/BaseBrush.ts#L39)
 
 Line endings style of a brush (one of "butt", "round", "square")
 
@@ -215,15 +203,13 @@ Line endings style of a brush (one of "butt", "round", "square")
 
 [`BaseBrush`](/api/classes/basebrush/).[`strokeLineCap`](/api/classes/basebrush/#strokelinecap)
 
-#### Defined in
-
-[src/brushes/BaseBrush.ts:39](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/BaseBrush.ts#L39)
-
 ***
 
 ### strokeLineJoin
 
 > **strokeLineJoin**: `CanvasLineJoin` = `'round'`
+
+Defined in: [src/brushes/BaseBrush.ts:46](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/BaseBrush.ts#L46)
 
 Corner style of a brush (one of "bevel", "round", "miter")
 
@@ -237,15 +223,13 @@ Corner style of a brush (one of "bevel", "round", "miter")
 
 [`BaseBrush`](/api/classes/basebrush/).[`strokeLineJoin`](/api/classes/basebrush/#strokelinejoin)
 
-#### Defined in
-
-[src/brushes/BaseBrush.ts:46](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/BaseBrush.ts#L46)
-
 ***
 
 ### strokeMiterLimit
 
 > **strokeMiterLimit**: `number` = `10`
+
+Defined in: [src/brushes/BaseBrush.ts:53](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/BaseBrush.ts#L53)
 
 Maximum miter length (used for strokeLineJoin = "miter") of a brush's
 
@@ -259,15 +243,13 @@ Maximum miter length (used for strokeLineJoin = "miter") of a brush's
 
 [`BaseBrush`](/api/classes/basebrush/).[`strokeMiterLimit`](/api/classes/basebrush/#strokemiterlimit)
 
-#### Defined in
-
-[src/brushes/BaseBrush.ts:53](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/BaseBrush.ts#L53)
-
 ***
 
 ### width
 
 > **width**: `number` = `1`
+
+Defined in: [src/brushes/BaseBrush.ts:23](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/BaseBrush.ts#L23)
 
 Width of a brush, has to be a Number, no string literals
 
@@ -281,15 +263,13 @@ Width of a brush, has to be a Number, no string literals
 
 [`BaseBrush`](/api/classes/basebrush/).[`width`](/api/classes/basebrush/#width)
 
-#### Defined in
-
-[src/brushes/BaseBrush.ts:23](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/BaseBrush.ts#L23)
-
 ## Methods
 
 ### \_finalizeAndAddPath()
 
 > **\_finalizeAndAddPath**(): `void`
+
+Defined in: [src/brushes/PencilBrush.ts:273](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/PencilBrush.ts#L273)
 
 On mouseup after drawing the path on contextTop canvas
 we use the points captured to create an new Path object
@@ -299,21 +279,21 @@ and add it to the canvas.
 
 `void`
 
-#### Defined in
-
-[src/brushes/PencilBrush.ts:273](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/PencilBrush.ts#L273)
-
 ***
 
 ### convertPointsToSVGPath()
 
 > **convertPointsToSVGPath**(`points`): [`TSimplePathData`](/api/namespaces/util/type-aliases/tsimplepathdata/)
 
+Defined in: [src/brushes/PencilBrush.ts:212](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/PencilBrush.ts#L212)
+
 Converts points to SVG path
 
 #### Parameters
 
-• **points**: [`Point`](/api/classes/point/)[]
+##### points
+
+[`Point`](/api/classes/point/)[]
 
 Array of points
 
@@ -323,33 +303,29 @@ Array of points
 
 SVG path commands
 
-#### Defined in
-
-[src/brushes/PencilBrush.ts:212](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/PencilBrush.ts#L212)
-
 ***
 
 ### createPath()
 
-> **createPath**(`pathData`): [`Path`](/api/classes/path/)\<`Partial`\<[`PathProps`](/api/interfaces/pathprops/)\>, [`SerializedPathProps`](/api/interfaces/serializedpathprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+> **createPath**(`pathData`): [`Path`](/api/classes/path/)
+
+Defined in: [src/brushes/PencilBrush.ts:222](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/PencilBrush.ts#L222)
 
 Creates a Path object to add on canvas
 
 #### Parameters
 
-• **pathData**: [`TSimplePathData`](/api/namespaces/util/type-aliases/tsimplepathdata/)
+##### pathData
+
+[`TSimplePathData`](/api/namespaces/util/type-aliases/tsimplepathdata/)
 
 Path data
 
 #### Returns
 
-[`Path`](/api/classes/path/)\<`Partial`\<[`PathProps`](/api/interfaces/pathprops/)\>, [`SerializedPathProps`](/api/interfaces/serializedpathprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+[`Path`](/api/classes/path/)
 
 Path to add on canvas
-
-#### Defined in
-
-[src/brushes/PencilBrush.ts:222](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/PencilBrush.ts#L222)
 
 ***
 
@@ -357,27 +333,31 @@ Path to add on canvas
 
 > **decimatePoints**(`points`, `distance`): [`Point`](/api/classes/point/)[]
 
+Defined in: [src/brushes/PencilBrush.ts:243](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/PencilBrush.ts#L243)
+
 Decimate points array with the decimate value
 
 #### Parameters
 
-• **points**: [`Point`](/api/classes/point/)[]
+##### points
 
-• **distance**: `number`
+[`Point`](/api/classes/point/)[]
+
+##### distance
+
+`number`
 
 #### Returns
 
 [`Point`](/api/classes/point/)[]
-
-#### Defined in
-
-[src/brushes/PencilBrush.ts:243](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/PencilBrush.ts#L243)
 
 ***
 
 ### needsFullRender()
 
 > **needsFullRender**(): `boolean`
+
+Defined in: [src/brushes/PencilBrush.ts:53](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/PencilBrush.ts#L53)
 
 #### Returns
 
@@ -387,23 +367,25 @@ Decimate points array with the decimate value
 
 `BaseBrush.needsFullRender`
 
-#### Defined in
-
-[src/brushes/PencilBrush.ts:53](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/PencilBrush.ts#L53)
-
 ***
 
 ### onMouseDown()
 
 > **onMouseDown**(`pointer`, `__namedParameters`): `void`
 
+Defined in: [src/brushes/PencilBrush.ts:67](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/PencilBrush.ts#L67)
+
 Invoked on mouse down
 
 #### Parameters
 
-• **pointer**: [`Point`](/api/classes/point/)
+##### pointer
 
-• **\_\_namedParameters**: [`TEvent`](/api/interfaces/tevent/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\>
+[`Point`](/api/classes/point/)
+
+##### \_\_namedParameters
+
+[`TEvent`](/api/interfaces/tevent/)
 
 #### Returns
 
@@ -413,23 +395,25 @@ Invoked on mouse down
 
 [`BaseBrush`](/api/classes/basebrush/).[`onMouseDown`](/api/classes/basebrush/#onmousedown)
 
-#### Defined in
-
-[src/brushes/PencilBrush.ts:67](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/PencilBrush.ts#L67)
-
 ***
 
 ### onMouseMove()
 
 > **onMouseMove**(`pointer`, `__namedParameters`): `void`
 
+Defined in: [src/brushes/PencilBrush.ts:83](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/PencilBrush.ts#L83)
+
 Invoked on mouse move
 
 #### Parameters
 
-• **pointer**: [`Point`](/api/classes/point/)
+##### pointer
 
-• **\_\_namedParameters**: [`TEvent`](/api/interfaces/tevent/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\>
+[`Point`](/api/classes/point/)
+
+##### \_\_namedParameters
+
+[`TEvent`](/api/interfaces/tevent/)
 
 #### Returns
 
@@ -439,21 +423,21 @@ Invoked on mouse move
 
 [`BaseBrush`](/api/classes/basebrush/).[`onMouseMove`](/api/classes/basebrush/#onmousemove)
 
-#### Defined in
-
-[src/brushes/PencilBrush.ts:83](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/PencilBrush.ts#L83)
-
 ***
 
 ### onMouseUp()
 
 > **onMouseUp**(`__namedParameters`): `boolean`
 
+Defined in: [src/brushes/PencilBrush.ts:121](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/PencilBrush.ts#L121)
+
 Invoked on mouse up
 
 #### Parameters
 
-• **\_\_namedParameters**: [`TEvent`](/api/interfaces/tevent/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\>
+##### \_\_namedParameters
+
+[`TEvent`](/api/interfaces/tevent/)
 
 #### Returns
 
@@ -463,28 +447,28 @@ Invoked on mouse up
 
 [`BaseBrush`](/api/classes/basebrush/).[`onMouseUp`](/api/classes/basebrush/#onmouseup)
 
-#### Defined in
-
-[src/brushes/PencilBrush.ts:121](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/PencilBrush.ts#L121)
-
 ***
 
 ### drawSegment()
 
 > `static` **drawSegment**(`ctx`, `p1`, `p2`): [`Point`](/api/classes/point/)
 
+Defined in: [src/brushes/PencilBrush.ts:57](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/PencilBrush.ts#L57)
+
 #### Parameters
 
-• **ctx**: `CanvasRenderingContext2D`
+##### ctx
 
-• **p1**: [`Point`](/api/classes/point/)
+`CanvasRenderingContext2D`
 
-• **p2**: [`Point`](/api/classes/point/)
+##### p1
+
+[`Point`](/api/classes/point/)
+
+##### p2
+
+[`Point`](/api/classes/point/)
 
 #### Returns
 
 [`Point`](/api/classes/point/)
-
-#### Defined in
-
-[src/brushes/PencilBrush.ts:57](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/PencilBrush.ts#L57)

@@ -7,6 +7,8 @@ title: "TProjection"
 
 > **TProjection**: `object`
 
+Defined in: [src/util/misc/projectStroke/types.ts:19](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/util/misc/projectStroke/types.ts#L19)
+
 ## Type declaration
 
 ### angle?
@@ -24,7 +26,3 @@ title: "TProjection"
 ### projectedPoint
 
 > **projectedPoint**: [`Point`](/api/classes/point/)
-
-## Defined in
-
-[src/util/misc/projectStroke/types.ts:19](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/util/misc/projectStroke/types.ts#L19)

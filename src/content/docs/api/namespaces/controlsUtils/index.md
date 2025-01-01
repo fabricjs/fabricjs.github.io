@@ -5,13 +5,11 @@ prev: false
 title: "controlsUtils"
 ---
 
-## Index
-
-### Type Aliases
+## Type Aliases
 
 - [PathPointControlStyle](/api/namespaces/controlsutils/type-aliases/pathpointcontrolstyle/)
 
-### Functions
+## Functions
 
 - [changeWidth](/api/namespaces/controlsutils/functions/changewidth/)
 - [createObjectDefaultControls](/api/namespaces/controlsutils/functions/createobjectdefaultcontrols/)

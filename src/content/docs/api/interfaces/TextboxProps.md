@@ -5,6 +5,8 @@ prev: false
 title: "TextboxProps"
 ---
 
+Defined in: [src/shapes/Textbox.ts:46](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Textbox.ts#L46)
+
 ## Extends
 
 - [`ITextProps`](/api/interfaces/itextprops/).`UniqueTextboxProps`
@@ -15,19 +17,19 @@ title: "TextboxProps"
 
 > **\_wordJoiners**: `RegExp`
 
+Defined in: [src/shapes/Textbox.ts:39](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Textbox.ts#L39)
+
 #### Inherited from
 
 `UniqueTextboxProps._wordJoiners`
-
-#### Defined in
-
-[src/shapes/Textbox.ts:39](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Textbox.ts#L39)
 
 ***
 
 ### absolutePositioned
 
 > **absolutePositioned**: `boolean`
+
+Defined in: [src/shapes/Object/types/SerializedObjectProps.ts:72](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/SerializedObjectProps.ts#L72)
 
 Meaningful ONLY when the object is used as clipPath.
 if true, the clipPath will have its top and left relative to canvas, and will
@@ -46,15 +48,13 @@ false
 
 [`ITextProps`](/api/interfaces/itextprops/).[`absolutePositioned`](/api/interfaces/itextprops/#absolutepositioned)
 
-#### Defined in
-
-[src/shapes/Object/types/SerializedObjectProps.ts:72](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/SerializedObjectProps.ts#L72)
-
 ***
 
 ### angle
 
 > **angle**: [`TDegree`](/api/type-aliases/tdegree/)
+
+Defined in: [src/shapes/Object/types/BaseProps.ts:63](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/BaseProps.ts#L63)
 
 Angle of rotation of an object (in degrees)
 
@@ -68,15 +68,13 @@ Angle of rotation of an object (in degrees)
 
 [`ITextProps`](/api/interfaces/itextprops/).[`angle`](/api/interfaces/itextprops/#angle)
 
-#### Defined in
-
-[src/shapes/Object/types/BaseProps.ts:63](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/BaseProps.ts#L63)
-
 ***
 
 ### backgroundColor
 
 > **backgroundColor**: `string`
+
+Defined in: [src/shapes/Object/types/SerializedObjectProps.ts:26](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/SerializedObjectProps.ts#L26)
 
 Background color of an object.
 takes css colors https://www.w3.org/TR/css-color-3/
@@ -91,15 +89,13 @@ takes css colors https://www.w3.org/TR/css-color-3/
 
 [`ITextProps`](/api/interfaces/itextprops/).[`backgroundColor`](/api/interfaces/itextprops/#backgroundcolor)
 
-#### Defined in
-
-[src/shapes/Object/types/SerializedObjectProps.ts:26](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/SerializedObjectProps.ts#L26)
-
 ***
 
 ### borderColor
 
 > **borderColor**: `string`
+
+Defined in: [src/shapes/Object/types/BorderProps.ts:7](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/BorderProps.ts#L7)
 
 Color of controlling borders of an object (when it's active)
 
@@ -113,15 +109,13 @@ rgb(178,204,255)
 
 [`ITextProps`](/api/interfaces/itextprops/).[`borderColor`](/api/interfaces/itextprops/#bordercolor)
 
-#### Defined in
-
-[src/shapes/Object/types/BorderProps.ts:7](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/BorderProps.ts#L7)
-
 ***
 
 ### borderDashArray
 
 > **borderDashArray**: `null` \| `number`[]
+
+Defined in: [src/shapes/Object/types/BorderProps.ts:15](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/BorderProps.ts#L15)
 
 Array specifying dash pattern of an object's borders (hasBorder must be true)
 
@@ -133,15 +127,13 @@ Array specifying dash pattern of an object's borders (hasBorder must be true)
 
 [`ITextProps`](/api/interfaces/itextprops/).[`borderDashArray`](/api/interfaces/itextprops/#borderdasharray)
 
-#### Defined in
-
-[src/shapes/Object/types/BorderProps.ts:15](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/BorderProps.ts#L15)
-
 ***
 
 ### borderOpacityWhenMoving
 
 > **borderOpacityWhenMoving**: `number`
+
+Defined in: [src/shapes/Object/types/BorderProps.ts:29](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/BorderProps.ts#L29)
 
 Opacity of object's controlling borders when object is active and moving
 
@@ -155,15 +147,13 @@ Opacity of object's controlling borders when object is active and moving
 
 [`ITextProps`](/api/interfaces/itextprops/).[`borderOpacityWhenMoving`](/api/interfaces/itextprops/#borderopacitywhenmoving)
 
-#### Defined in
-
-[src/shapes/Object/types/BorderProps.ts:29](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/BorderProps.ts#L29)
-
 ***
 
 ### borderScaleFactor
 
 > **borderScaleFactor**: `number`
+
+Defined in: [src/shapes/Object/types/BorderProps.ts:40](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/BorderProps.ts#L40)
 
 Scale factor for the border of the objects ( selection box and controls stroke ).
 Bigger number will make a thicker border
@@ -181,29 +171,25 @@ you will need to write your own render function for controls
 
 [`ITextProps`](/api/interfaces/itextprops/).[`borderScaleFactor`](/api/interfaces/itextprops/#borderscalefactor)
 
-#### Defined in
-
-[src/shapes/Object/types/BorderProps.ts:40](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/BorderProps.ts#L40)
-
 ***
 
 ### canvas?
 
-> `optional` **canvas**: [`Canvas`](/api/classes/canvas/) \| [`StaticCanvas`](/api/classes/staticcanvas/)\<[`StaticCanvasEvents`](/api/interfaces/staticcanvasevents/)\>
+> `optional` **canvas**: [`Canvas`](/api/classes/canvas/) \| [`StaticCanvas`](/api/classes/staticcanvas/)
+
+Defined in: [src/shapes/Object/types/ObjectProps.ts:20](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/ObjectProps.ts#L20)
 
 #### Inherited from
 
 [`ITextProps`](/api/interfaces/itextprops/).[`canvas`](/api/interfaces/itextprops/#canvas)
-
-#### Defined in
-
-[src/shapes/Object/types/ObjectProps.ts:20](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/ObjectProps.ts#L20)
 
 ***
 
 ### centeredRotation
 
 > **centeredRotation**: `boolean`
+
+Defined in: [src/shapes/Object/types/ObjectTransformProps.ts:27](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/ObjectTransformProps.ts#L27)
 
 When `true` the object will rotate on its center.
 When `false` will rotate around the origin point defined by originX and originY.
@@ -225,15 +211,13 @@ The object method `rotate` will always consider this property and never the canv
 
 [`ITextProps`](/api/interfaces/itextprops/).[`centeredRotation`](/api/interfaces/itextprops/#centeredrotation)
 
-#### Defined in
-
-[src/shapes/Object/types/ObjectTransformProps.ts:27](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/ObjectTransformProps.ts#L27)
-
 ***
 
 ### centeredScaling
 
 > **centeredScaling**: `boolean`
+
+Defined in: [src/shapes/Object/types/ObjectTransformProps.ts:36](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/ObjectTransformProps.ts#L36)
 
 When true, this object will use center point as the origin of transformation
 when being scaled via the controls.
@@ -252,29 +236,25 @@ when being scaled via the controls.
 
 [`ITextProps`](/api/interfaces/itextprops/).[`centeredScaling`](/api/interfaces/itextprops/#centeredscaling)
 
-#### Defined in
-
-[src/shapes/Object/types/ObjectTransformProps.ts:36](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/ObjectTransformProps.ts#L36)
-
 ***
 
 ### charSpacing
 
 > **charSpacing**: `number`
 
+Defined in: [src/shapes/Text/Text.ts:96](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Text/Text.ts#L96)
+
 #### Inherited from
 
 [`ITextProps`](/api/interfaces/itextprops/).[`charSpacing`](/api/interfaces/itextprops/#charspacing)
-
-#### Defined in
-
-[src/shapes/Text/Text.ts:96](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Text/Text.ts#L96)
 
 ***
 
 ### clipPath?
 
-> `optional` **clipPath**: [`BaseFabricObject`](/api/classes/basefabricobject/)\<`Partial`\<`ObjectProps`\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+> `optional` **clipPath**: [`BaseFabricObject`](/api/classes/basefabricobject/)
+
+Defined in: [src/shapes/Object/types/ObjectProps.ts:16](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/ObjectProps.ts#L16)
 
 a fabricObject that, without stroke define a clipping area with their shape. filled in black
 the clipPath object gets used when the object has rendered, and the context is placed in the center
@@ -285,15 +265,13 @@ If you want 0,0 of a clipPath to align with an object center, use clipPath.origi
 
 [`ITextProps`](/api/interfaces/itextprops/).[`clipPath`](/api/interfaces/itextprops/#clippath)
 
-#### Defined in
-
-[src/shapes/Object/types/ObjectProps.ts:16](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/ObjectProps.ts#L16)
-
 ***
 
 ### cornerColor
 
 > **cornerColor**: `string`
+
+Defined in: [src/shapes/Object/types/ControlProps.ts:28](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/ControlProps.ts#L28)
 
 Color of controlling corners of an object (when it's active)
 
@@ -307,15 +285,13 @@ rgb(178,204,255)
 
 [`ITextProps`](/api/interfaces/itextprops/).[`cornerColor`](/api/interfaces/itextprops/#cornercolor)
 
-#### Defined in
-
-[src/shapes/Object/types/ControlProps.ts:28](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/ControlProps.ts#L28)
-
 ***
 
 ### cornerDashArray
 
 > **cornerDashArray**: `null` \| `number`[]
+
+Defined in: [src/shapes/Object/types/ControlProps.ts:55](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/ControlProps.ts#L55)
 
 Array specifying dash pattern of an object's control (hasBorder must be true)
 
@@ -333,15 +309,13 @@ null
 
 [`ITextProps`](/api/interfaces/itextprops/).[`cornerDashArray`](/api/interfaces/itextprops/#cornerdasharray)
 
-#### Defined in
-
-[src/shapes/Object/types/ControlProps.ts:55](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/ControlProps.ts#L55)
-
 ***
 
 ### cornerSize
 
 > **cornerSize**: `number`
+
+Defined in: [src/shapes/Object/types/ControlProps.ts:7](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/ControlProps.ts#L7)
 
 Size of object's controlling corners (in pixels)
 
@@ -355,15 +329,13 @@ Size of object's controlling corners (in pixels)
 
 [`ITextProps`](/api/interfaces/itextprops/).[`cornerSize`](/api/interfaces/itextprops/#cornersize)
 
-#### Defined in
-
-[src/shapes/Object/types/ControlProps.ts:7](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/ControlProps.ts#L7)
-
 ***
 
 ### cornerStrokeColor
 
 > **cornerStrokeColor**: `string`
+
+Defined in: [src/shapes/Object/types/ControlProps.ts:36](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/ControlProps.ts#L36)
 
 Color of controlling corners of an object (when it's active and transparentCorners false)
 
@@ -381,19 +353,21 @@ Color of controlling corners of an object (when it's active and transparentCorne
 
 [`ITextProps`](/api/interfaces/itextprops/).[`cornerStrokeColor`](/api/interfaces/itextprops/#cornerstrokecolor)
 
-#### Defined in
-
-[src/shapes/Object/types/ControlProps.ts:36](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/ControlProps.ts#L36)
-
 ***
 
 ### ~~cornerStyle~~
 
 > **cornerStyle**: `"circle"` \| `"rect"`
 
+Defined in: [src/shapes/Object/types/ControlProps.ts:47](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/ControlProps.ts#L47)
+
 Specify style of control, 'rect' or 'circle'
 This is deprecated. In the future there will be a standard control render
 And you can swap it with one of the alternative proposed with the control api
+
+:::caution[Deprecated]
+This API is no longer supported and may be removed in a future release.
+:::
 
 #### Since
 
@@ -405,17 +379,9 @@ And you can swap it with one of the alternative proposed with the control api
 'rect'
 ```
 
-:::caution[Deprecated]
-This API is no longer supported and may be removed in a future release.
-:::
-
 #### Inherited from
 
 [`ITextProps`](/api/interfaces/itextprops/).[`cornerStyle`](/api/interfaces/itextprops/#cornerstyle)
-
-#### Defined in
-
-[src/shapes/Object/types/ControlProps.ts:47](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/ControlProps.ts#L47)
 
 ***
 
@@ -423,13 +389,11 @@ This API is no longer supported and may be removed in a future release.
 
 > **direction**: `CanvasDirection`
 
+Defined in: [src/shapes/Text/Text.ts:108](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Text/Text.ts#L108)
+
 #### Inherited from
 
 [`ITextProps`](/api/interfaces/itextprops/).[`direction`](/api/interfaces/itextprops/#direction)
-
-#### Defined in
-
-[src/shapes/Text/Text.ts:108](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Text/Text.ts#L108)
 
 ***
 
@@ -437,19 +401,19 @@ This API is no longer supported and may be removed in a future release.
 
 > **dynamicMinWidth**: `number`
 
+Defined in: [src/shapes/Textbox.ts:38](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Textbox.ts#L38)
+
 #### Inherited from
 
 `UniqueTextboxProps.dynamicMinWidth`
-
-#### Defined in
-
-[src/shapes/Textbox.ts:38](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Textbox.ts#L38)
 
 ***
 
 ### evented
 
 > **evented**: `boolean`
+
+Defined in: [src/shapes/Object/types/FabricObjectProps.ts:65](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/FabricObjectProps.ts#L65)
 
 When set to `false`, an object can not be a target of events. All events propagate through it. Introduced in v1.3.4
 
@@ -463,15 +427,13 @@ When set to `false`, an object can not be a target of events. All events propaga
 
 [`ITextProps`](/api/interfaces/itextprops/).[`evented`](/api/interfaces/itextprops/#evented)
 
-#### Defined in
-
-[src/shapes/Object/types/FabricObjectProps.ts:65](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/FabricObjectProps.ts#L65)
-
 ***
 
 ### excludeFromExport
 
 > **excludeFromExport**: `boolean`
+
+Defined in: [src/shapes/Object/types/ObjectProps.ts:52](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/ObjectProps.ts#L52)
 
 When `true`, object is not exported in OBJECT/JSON
 
@@ -489,15 +451,13 @@ When `true`, object is not exported in OBJECT/JSON
 
 [`ITextProps`](/api/interfaces/itextprops/).[`excludeFromExport`](/api/interfaces/itextprops/#excludefromexport)
 
-#### Defined in
-
-[src/shapes/Object/types/ObjectProps.ts:52](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/ObjectProps.ts#L52)
-
 ***
 
 ### fill
 
 > **fill**: `null` \| `string` \| [`TFiller`](/api/type-aliases/tfiller/)
+
+Defined in: [src/shapes/Object/types/ObjectProps.ts:17](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/ObjectProps.ts#L17)
 
 Color of object's fill
 takes css colors https://www.w3.org/TR/css-color-3/
@@ -512,15 +472,13 @@ rgb(0,0,0)
 
 [`ITextProps`](/api/interfaces/itextprops/).[`fill`](/api/interfaces/itextprops/#fill)
 
-#### Defined in
-
-[src/shapes/Object/types/ObjectProps.ts:17](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/ObjectProps.ts#L17)
-
 ***
 
 ### fillRule
 
 > **fillRule**: `CanvasFillRule`
+
+Defined in: [src/shapes/Object/types/FillStrokeProps.ts:26](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/FillStrokeProps.ts#L26)
 
 Fill rule used to fill an object
 accepted values are nonzero, evenodd
@@ -536,15 +494,13 @@ nonzero
 
 [`ITextProps`](/api/interfaces/itextprops/).[`fillRule`](/api/interfaces/itextprops/#fillrule)
 
-#### Defined in
-
-[src/shapes/Object/types/FillStrokeProps.ts:26](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/FillStrokeProps.ts#L26)
-
 ***
 
 ### flipX
 
 > **flipX**: `boolean`
+
+Defined in: [src/shapes/Object/types/BaseProps.ts:70](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/BaseProps.ts#L70)
 
 When true, an object is rendered as flipped horizontally
 
@@ -558,15 +514,13 @@ false
 
 [`ITextProps`](/api/interfaces/itextprops/).[`flipX`](/api/interfaces/itextprops/#flipx)
 
-#### Defined in
-
-[src/shapes/Object/types/BaseProps.ts:70](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/BaseProps.ts#L70)
-
 ***
 
 ### flipY
 
 > **flipY**: `boolean`
+
+Defined in: [src/shapes/Object/types/BaseProps.ts:77](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/BaseProps.ts#L77)
 
 When true, an object is rendered as flipped vertically
 
@@ -580,23 +534,17 @@ false
 
 [`ITextProps`](/api/interfaces/itextprops/).[`flipY`](/api/interfaces/itextprops/#flipy)
 
-#### Defined in
-
-[src/shapes/Object/types/BaseProps.ts:77](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/BaseProps.ts#L77)
-
 ***
 
 ### fontFamily
 
 > **fontFamily**: `string`
 
+Defined in: [src/shapes/Text/Text.ts:100](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Text/Text.ts#L100)
+
 #### Inherited from
 
 [`ITextProps`](/api/interfaces/itextprops/).[`fontFamily`](/api/interfaces/itextprops/#fontfamily)
-
-#### Defined in
-
-[src/shapes/Text/Text.ts:100](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Text/Text.ts#L100)
 
 ***
 
@@ -604,13 +552,11 @@ false
 
 > **fontSize**: `number`
 
+Defined in: [src/shapes/Text/Text.ts:98](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Text/Text.ts#L98)
+
 #### Inherited from
 
 [`ITextProps`](/api/interfaces/itextprops/).[`fontSize`](/api/interfaces/itextprops/#fontsize)
-
-#### Defined in
-
-[src/shapes/Text/Text.ts:98](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Text/Text.ts#L98)
 
 ***
 
@@ -618,13 +564,11 @@ false
 
 > **fontStyle**: `string`
 
+Defined in: [src/shapes/Text/Text.ts:101](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Text/Text.ts#L101)
+
 #### Inherited from
 
 [`ITextProps`](/api/interfaces/itextprops/).[`fontStyle`](/api/interfaces/itextprops/#fontstyle)
-
-#### Defined in
-
-[src/shapes/Text/Text.ts:101](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Text/Text.ts#L101)
 
 ***
 
@@ -632,19 +576,19 @@ false
 
 > **fontWeight**: `string` \| `number`
 
+Defined in: [src/shapes/Text/Text.ts:99](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Text/Text.ts#L99)
+
 #### Inherited from
 
 [`ITextProps`](/api/interfaces/itextprops/).[`fontWeight`](/api/interfaces/itextprops/#fontweight)
-
-#### Defined in
-
-[src/shapes/Text/Text.ts:99](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Text/Text.ts#L99)
 
 ***
 
 ### globalCompositeOperation
 
 > **globalCompositeOperation**: `GlobalCompositeOperation`
+
+Defined in: [src/shapes/Object/types/SerializedObjectProps.ts:18](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/SerializedObjectProps.ts#L18)
 
 Composite rule used for canvas globalCompositeOperation
 
@@ -658,15 +602,13 @@ Composite rule used for canvas globalCompositeOperation
 
 [`ITextProps`](/api/interfaces/itextprops/).[`globalCompositeOperation`](/api/interfaces/itextprops/#globalcompositeoperation)
 
-#### Defined in
-
-[src/shapes/Object/types/SerializedObjectProps.ts:18](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/SerializedObjectProps.ts#L18)
-
 ***
 
 ### hasBorders
 
 > **hasBorders**: `boolean`
+
+Defined in: [src/shapes/Object/types/BorderProps.ts:22](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/BorderProps.ts#L22)
 
 When set to `false`, object's controlling borders are not rendered
 
@@ -680,15 +622,13 @@ When set to `false`, object's controlling borders are not rendered
 
 [`ITextProps`](/api/interfaces/itextprops/).[`hasBorders`](/api/interfaces/itextprops/#hasborders)
 
-#### Defined in
-
-[src/shapes/Object/types/BorderProps.ts:22](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/BorderProps.ts#L22)
-
 ***
 
 ### hasControls
 
 > **hasControls**: `boolean`
+
+Defined in: [src/shapes/Object/types/ControlProps.ts:69](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/ControlProps.ts#L69)
 
 When set to `false`, object's controls are not displayed and can not be used to manipulate object
 
@@ -702,15 +642,13 @@ true
 
 [`ITextProps`](/api/interfaces/itextprops/).[`hasControls`](/api/interfaces/itextprops/#hascontrols)
 
-#### Defined in
-
-[src/shapes/Object/types/ControlProps.ts:69](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/ControlProps.ts#L69)
-
 ***
 
 ### height
 
 > **height**: `number`
+
+Defined in: [src/shapes/Object/types/BaseProps.ts:34](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/BaseProps.ts#L34)
 
 Object height
 
@@ -724,15 +662,13 @@ Object height
 
 [`ITextProps`](/api/interfaces/itextprops/).[`height`](/api/interfaces/itextprops/#height)
 
-#### Defined in
-
-[src/shapes/Object/types/BaseProps.ts:34](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/BaseProps.ts#L34)
-
 ***
 
 ### hoverCursor
 
 > **hoverCursor**: `null` \| `string`
+
+Defined in: [src/shapes/Object/types/FabricObjectProps.ts:27](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/FabricObjectProps.ts#L27)
 
 Default cursor value used when hovering over this object on canvas
 
@@ -746,15 +682,13 @@ null
 
 [`ITextProps`](/api/interfaces/itextprops/).[`hoverCursor`](/api/interfaces/itextprops/#hovercursor)
 
-#### Defined in
-
-[src/shapes/Object/types/FabricObjectProps.ts:27](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/FabricObjectProps.ts#L27)
-
 ***
 
 ### includeDefaultValues
 
 > **includeDefaultValues**: `boolean`
+
+Defined in: [src/shapes/Object/types/ObjectProps.ts:44](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/ObjectProps.ts#L44)
 
 When `false`, default object's values are not included in its serialization
 
@@ -768,15 +702,13 @@ When `false`, default object's values are not included in its serialization
 
 [`ITextProps`](/api/interfaces/itextprops/).[`includeDefaultValues`](/api/interfaces/itextprops/#includedefaultvalues)
 
-#### Defined in
-
-[src/shapes/Object/types/ObjectProps.ts:44](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/ObjectProps.ts#L44)
-
 ***
 
 ### inverted
 
 > **inverted**: `boolean`
+
+Defined in: [src/shapes/Object/types/SerializedObjectProps.ts:60](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/SerializedObjectProps.ts#L60)
 
 Meaningful ONLY when the object is used as clipPath.
 if true, the clipPath will make the object clip to the outside of the clipPath
@@ -792,15 +724,13 @@ false
 
 [`ITextProps`](/api/interfaces/itextprops/).[`inverted`](/api/interfaces/itextprops/#inverted)
 
-#### Defined in
-
-[src/shapes/Object/types/SerializedObjectProps.ts:60](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/SerializedObjectProps.ts#L60)
-
 ***
 
 ### left
 
 > **left**: `number`
+
+Defined in: [src/shapes/Object/types/BaseProps.ts:11](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/BaseProps.ts#L11)
 
 Left position of an object.
 Note that by default it's relative to object left.
@@ -816,23 +746,17 @@ You can change this by setting [originX](../../../../api/interfaces/fabricobject
 
 [`ITextProps`](/api/interfaces/itextprops/).[`left`](/api/interfaces/itextprops/#left)
 
-#### Defined in
-
-[src/shapes/Object/types/BaseProps.ts:11](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/BaseProps.ts#L11)
-
 ***
 
 ### lineHeight
 
 > **lineHeight**: `number`
 
+Defined in: [src/shapes/Text/Text.ts:97](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Text/Text.ts#L97)
+
 #### Inherited from
 
 [`ITextProps`](/api/interfaces/itextprops/).[`lineHeight`](/api/interfaces/itextprops/#lineheight)
-
-#### Defined in
-
-[src/shapes/Text/Text.ts:97](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Text/Text.ts#L97)
 
 ***
 
@@ -840,19 +764,19 @@ You can change this by setting [originX](../../../../api/interfaces/fabricobject
 
 > **linethrough**: `boolean`
 
+Defined in: [src/shapes/Text/Text.ts:106](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Text/Text.ts#L106)
+
 #### Inherited from
 
 [`ITextProps`](/api/interfaces/itextprops/).[`linethrough`](/api/interfaces/itextprops/#linethrough)
-
-#### Defined in
-
-[src/shapes/Text/Text.ts:106](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Text/Text.ts#L106)
 
 ***
 
 ### lockMovementX
 
 > **lockMovementX**: `boolean`
+
+Defined in: [src/shapes/Object/types/LockInteractionProps.ts:7](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/LockInteractionProps.ts#L7)
 
 When `true`, object horizontal movement is locked
 
@@ -866,15 +790,13 @@ When `true`, object horizontal movement is locked
 
 [`ITextProps`](/api/interfaces/itextprops/).[`lockMovementX`](/api/interfaces/itextprops/#lockmovementx)
 
-#### Defined in
-
-[src/shapes/Object/types/LockInteractionProps.ts:7](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/LockInteractionProps.ts#L7)
-
 ***
 
 ### lockMovementY
 
 > **lockMovementY**: `boolean`
+
+Defined in: [src/shapes/Object/types/LockInteractionProps.ts:14](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/LockInteractionProps.ts#L14)
 
 When `true`, object vertical movement is locked
 
@@ -888,15 +810,13 @@ When `true`, object vertical movement is locked
 
 [`ITextProps`](/api/interfaces/itextprops/).[`lockMovementY`](/api/interfaces/itextprops/#lockmovementy)
 
-#### Defined in
-
-[src/shapes/Object/types/LockInteractionProps.ts:14](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/LockInteractionProps.ts#L14)
-
 ***
 
 ### lockRotation
 
 > **lockRotation**: `boolean`
+
+Defined in: [src/shapes/Object/types/LockInteractionProps.ts:21](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/LockInteractionProps.ts#L21)
 
 When `true`, object rotation is locked
 
@@ -910,15 +830,13 @@ When `true`, object rotation is locked
 
 [`ITextProps`](/api/interfaces/itextprops/).[`lockRotation`](/api/interfaces/itextprops/#lockrotation)
 
-#### Defined in
-
-[src/shapes/Object/types/LockInteractionProps.ts:21](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/LockInteractionProps.ts#L21)
-
 ***
 
 ### lockScalingFlip
 
 > **lockScalingFlip**: `boolean`
+
+Defined in: [src/shapes/Object/types/LockInteractionProps.ts:56](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/LockInteractionProps.ts#L56)
 
 When `true`, object cannot be flipped by scaling into negative values
 
@@ -932,15 +850,13 @@ When `true`, object cannot be flipped by scaling into negative values
 
 [`ITextProps`](/api/interfaces/itextprops/).[`lockScalingFlip`](/api/interfaces/itextprops/#lockscalingflip)
 
-#### Defined in
-
-[src/shapes/Object/types/LockInteractionProps.ts:56](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/LockInteractionProps.ts#L56)
-
 ***
 
 ### lockScalingX
 
 > **lockScalingX**: `boolean`
+
+Defined in: [src/shapes/Object/types/LockInteractionProps.ts:28](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/LockInteractionProps.ts#L28)
 
 When `true`, object horizontal scaling is locked
 
@@ -954,15 +870,13 @@ When `true`, object horizontal scaling is locked
 
 [`ITextProps`](/api/interfaces/itextprops/).[`lockScalingX`](/api/interfaces/itextprops/#lockscalingx)
 
-#### Defined in
-
-[src/shapes/Object/types/LockInteractionProps.ts:28](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/LockInteractionProps.ts#L28)
-
 ***
 
 ### lockScalingY
 
 > **lockScalingY**: `boolean`
+
+Defined in: [src/shapes/Object/types/LockInteractionProps.ts:35](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/LockInteractionProps.ts#L35)
 
 When `true`, object vertical scaling is locked
 
@@ -976,15 +890,13 @@ When `true`, object vertical scaling is locked
 
 [`ITextProps`](/api/interfaces/itextprops/).[`lockScalingY`](/api/interfaces/itextprops/#lockscalingy)
 
-#### Defined in
-
-[src/shapes/Object/types/LockInteractionProps.ts:35](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/LockInteractionProps.ts#L35)
-
 ***
 
 ### lockSkewingX
 
 > **lockSkewingX**: `boolean`
+
+Defined in: [src/shapes/Object/types/LockInteractionProps.ts:42](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/LockInteractionProps.ts#L42)
 
 When `true`, object horizontal skewing is locked
 
@@ -998,15 +910,13 @@ When `true`, object horizontal skewing is locked
 
 [`ITextProps`](/api/interfaces/itextprops/).[`lockSkewingX`](/api/interfaces/itextprops/#lockskewingx)
 
-#### Defined in
-
-[src/shapes/Object/types/LockInteractionProps.ts:42](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/LockInteractionProps.ts#L42)
-
 ***
 
 ### lockSkewingY
 
 > **lockSkewingY**: `boolean`
+
+Defined in: [src/shapes/Object/types/LockInteractionProps.ts:49](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/LockInteractionProps.ts#L49)
 
 When `true`, object vertical skewing is locked
 
@@ -1020,15 +930,13 @@ When `true`, object vertical skewing is locked
 
 [`ITextProps`](/api/interfaces/itextprops/).[`lockSkewingY`](/api/interfaces/itextprops/#lockskewingy)
 
-#### Defined in
-
-[src/shapes/Object/types/LockInteractionProps.ts:49](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/LockInteractionProps.ts#L49)
-
 ***
 
 ### minScaleLimit
 
 > **minScaleLimit**: `number`
+
+Defined in: [src/shapes/Object/types/ObjectProps.ts:27](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/ObjectProps.ts#L27)
 
 Minimum allowed scale value of an object
 
@@ -1042,29 +950,25 @@ Minimum allowed scale value of an object
 
 [`ITextProps`](/api/interfaces/itextprops/).[`minScaleLimit`](/api/interfaces/itextprops/#minscalelimit)
 
-#### Defined in
-
-[src/shapes/Object/types/ObjectProps.ts:27](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/ObjectProps.ts#L27)
-
 ***
 
 ### minWidth
 
 > **minWidth**: `number`
 
+Defined in: [src/shapes/Textbox.ts:36](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Textbox.ts#L36)
+
 #### Inherited from
 
 `UniqueTextboxProps.minWidth`
-
-#### Defined in
-
-[src/shapes/Textbox.ts:36](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Textbox.ts#L36)
 
 ***
 
 ### moveCursor
 
 > **moveCursor**: `null` \| `string`
+
+Defined in: [src/shapes/Object/types/FabricObjectProps.ts:34](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/FabricObjectProps.ts#L34)
 
 Default cursor value used when moving this object on canvas
 
@@ -1078,15 +982,13 @@ null
 
 [`ITextProps`](/api/interfaces/itextprops/).[`moveCursor`](/api/interfaces/itextprops/#movecursor)
 
-#### Defined in
-
-[src/shapes/Object/types/FabricObjectProps.ts:34](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/FabricObjectProps.ts#L34)
-
 ***
 
 ### noScaleCache?
 
 > `optional` **noScaleCache**: `boolean`
+
+Defined in: [src/shapes/Object/types/FabricObjectProps.ts:20](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/FabricObjectProps.ts#L20)
 
 When `true`, cache does not get updated during scaling. The picture will get blocky if scaled
 too much and will be redrawn with correct details at the end of scaling.
@@ -1104,15 +1006,13 @@ true
 
 [`ITextProps`](/api/interfaces/itextprops/).[`noScaleCache`](/api/interfaces/itextprops/#noscalecache)
 
-#### Defined in
-
-[src/shapes/Object/types/FabricObjectProps.ts:20](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/FabricObjectProps.ts#L20)
-
 ***
 
 ### objectCaching
 
 > **objectCaching**: `boolean`
+
+Defined in: [src/shapes/Object/types/ObjectProps.ts:37](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/ObjectProps.ts#L37)
 
 When `true`, object is cached on an additional canvas.
 When `false`, object is not cached unless necessary ( clipPath )
@@ -1132,15 +1032,13 @@ true
 
 [`ITextProps`](/api/interfaces/itextprops/).[`objectCaching`](/api/interfaces/itextprops/#objectcaching)
 
-#### Defined in
-
-[src/shapes/Object/types/ObjectProps.ts:37](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/ObjectProps.ts#L37)
-
 ***
 
 ### opacity
 
 > **opacity**: `number`
+
+Defined in: [src/shapes/Object/types/SerializedObjectProps.ts:11](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/SerializedObjectProps.ts#L11)
 
 Opacity of an object
 
@@ -1154,24 +1052,16 @@ Opacity of an object
 
 [`ITextProps`](/api/interfaces/itextprops/).[`opacity`](/api/interfaces/itextprops/#opacity)
 
-#### Defined in
-
-[src/shapes/Object/types/SerializedObjectProps.ts:11](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/SerializedObjectProps.ts#L11)
-
 ***
 
 ### ~~originX~~
 
 > **originX**: [`TOriginX`](/api/type-aliases/toriginx/)
 
+Defined in: [src/shapes/Object/types/BaseProps.ts:45](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/BaseProps.ts#L45)
+
 Horizontal origin of transformation of an object (`left`, `center`, `right`  or `[0, 1]`)
 See http://jsfiddle.net/1ow02gea/244/ on how originX/originY affect objects in groups
-
-#### Default
-
-```ts
-'left'
-```
 
 :::caution[Deprecated]
 please set your default to 'center' in new projects and don't use it to build logic
@@ -1179,13 +1069,15 @@ The reason is explained here: https://github.com/fabricjs/fabric.js/discussions/
 To set the default value to 'center' import BaseFabricObject and set the static BaseFabricObject.ownDefaults.originX = 'center'
 :::
 
+#### Default
+
+```ts
+'left'
+```
+
 #### Inherited from
 
 [`ITextProps`](/api/interfaces/itextprops/).[`originX`](/api/interfaces/itextprops/#originx)
-
-#### Defined in
-
-[src/shapes/Object/types/BaseProps.ts:45](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/BaseProps.ts#L45)
 
 ***
 
@@ -1193,14 +1085,10 @@ To set the default value to 'center' import BaseFabricObject and set the static 
 
 > **originY**: [`TOriginY`](/api/type-aliases/toriginy/)
 
+Defined in: [src/shapes/Object/types/BaseProps.ts:56](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/BaseProps.ts#L56)
+
 Vertical origin of transformation of an object (`top`, `center`, `bottom` or `[0, 1]`)
 See http://jsfiddle.net/1ow02gea/244/ on how originX/originY affect objects in groups
-
-#### Default
-
-```ts
-'top'
-```
 
 :::caution[Deprecated]
 please set your default to 'center' in new projects and don't use it to build logic
@@ -1208,13 +1096,15 @@ The reason is explained here: https://github.com/fabricjs/fabric.js/discussions/
 To set the default value to 'center' import BaseFabricObject and set the static BaseFabricObject.ownDefaults.originY = 'center'
 :::
 
+#### Default
+
+```ts
+'top'
+```
+
 #### Inherited from
 
 [`ITextProps`](/api/interfaces/itextprops/).[`originY`](/api/interfaces/itextprops/#originy)
-
-#### Defined in
-
-[src/shapes/Object/types/BaseProps.ts:56](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/BaseProps.ts#L56)
 
 ***
 
@@ -1222,19 +1112,19 @@ To set the default value to 'center' import BaseFabricObject and set the static 
 
 > **overline**: `boolean`
 
+Defined in: [src/shapes/Text/Text.ts:105](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Text/Text.ts#L105)
+
 #### Inherited from
 
 [`ITextProps`](/api/interfaces/itextprops/).[`overline`](/api/interfaces/itextprops/#overline)
-
-#### Defined in
-
-[src/shapes/Text/Text.ts:105](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Text/Text.ts#L105)
 
 ***
 
 ### padding
 
 > **padding**: `number`
+
+Defined in: [src/shapes/Object/types/ControlProps.ts:62](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/ControlProps.ts#L62)
 
 Padding between object and its controlling borders (in pixels)
 
@@ -1248,15 +1138,13 @@ Padding between object and its controlling borders (in pixels)
 
 [`ITextProps`](/api/interfaces/itextprops/).[`padding`](/api/interfaces/itextprops/#padding)
 
-#### Defined in
-
-[src/shapes/Object/types/ControlProps.ts:62](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/ControlProps.ts#L62)
-
 ***
 
 ### paintFirst
 
 > **paintFirst**: `"fill"` \| `"stroke"`
+
+Defined in: [src/shapes/Object/types/FillStrokeProps.ts:9](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/FillStrokeProps.ts#L9)
 
 Determines if the fill or the stroke is drawn first (one of "fill" or "stroke")
 
@@ -1270,23 +1158,17 @@ Determines if the fill or the stroke is drawn first (one of "fill" or "stroke")
 
 [`ITextProps`](/api/interfaces/itextprops/).[`paintFirst`](/api/interfaces/itextprops/#paintfirst)
 
-#### Defined in
-
-[src/shapes/Object/types/FillStrokeProps.ts:9](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/FillStrokeProps.ts#L9)
-
 ***
 
 ### path?
 
-> `optional` **path**: [`Path`](/api/classes/path/)\<`Partial`\<[`PathProps`](/api/interfaces/pathprops/)\>, [`SerializedPathProps`](/api/interfaces/serializedpathprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+> `optional` **path**: [`Path`](/api/classes/path/)
+
+Defined in: [src/shapes/Text/Text.ts:109](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Text/Text.ts#L109)
 
 #### Inherited from
 
 [`ITextProps`](/api/interfaces/itextprops/).[`path`](/api/interfaces/itextprops/#path)
-
-#### Defined in
-
-[src/shapes/Text/Text.ts:109](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Text/Text.ts#L109)
 
 ***
 
@@ -1294,13 +1176,11 @@ Determines if the fill or the stroke is drawn first (one of "fill" or "stroke")
 
 > **pathAlign**: [`TPathAlign`](/api/type-aliases/tpathalign/)
 
+Defined in: [src/shapes/Text/Text.ts:103](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Text/Text.ts#L103)
+
 #### Inherited from
 
 [`ITextProps`](/api/interfaces/itextprops/).[`pathAlign`](/api/interfaces/itextprops/#pathalign)
-
-#### Defined in
-
-[src/shapes/Text/Text.ts:103](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Text/Text.ts#L103)
 
 ***
 
@@ -1308,19 +1188,19 @@ Determines if the fill or the stroke is drawn first (one of "fill" or "stroke")
 
 > **pathSide**: [`TPathSide`](/api/type-aliases/tpathside/)
 
+Defined in: [src/shapes/Text/Text.ts:102](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Text/Text.ts#L102)
+
 #### Inherited from
 
 [`ITextProps`](/api/interfaces/itextprops/).[`pathSide`](/api/interfaces/itextprops/#pathside)
-
-#### Defined in
-
-[src/shapes/Text/Text.ts:102](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Text/Text.ts#L102)
 
 ***
 
 ### perPixelTargetFind
 
 > **perPixelTargetFind**: `boolean`
+
+Defined in: [src/shapes/Object/types/FabricObjectProps.ts:50](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/FabricObjectProps.ts#L50)
 
 When set to `true`, objects are "found" on canvas on per-pixel basis rather than according to bounding box
 
@@ -1334,15 +1214,13 @@ When set to `true`, objects are "found" on canvas on per-pixel basis rather than
 
 [`ITextProps`](/api/interfaces/itextprops/).[`perPixelTargetFind`](/api/interfaces/itextprops/#perpixeltargetfind)
 
-#### Defined in
-
-[src/shapes/Object/types/FabricObjectProps.ts:50](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/FabricObjectProps.ts#L50)
-
 ***
 
 ### scaleX
 
 > **scaleX**: `number`
+
+Defined in: [src/shapes/Object/types/BaseProps.ts:84](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/BaseProps.ts#L84)
 
 Object scale factor (horizontal)
 
@@ -1356,15 +1234,13 @@ Object scale factor (horizontal)
 
 [`ITextProps`](/api/interfaces/itextprops/).[`scaleX`](/api/interfaces/itextprops/#scalex)
 
-#### Defined in
-
-[src/shapes/Object/types/BaseProps.ts:84](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/BaseProps.ts#L84)
-
 ***
 
 ### scaleY
 
 > **scaleY**: `number`
+
+Defined in: [src/shapes/Object/types/BaseProps.ts:91](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/BaseProps.ts#L91)
 
 Object scale factor (vertical)
 
@@ -1378,15 +1254,13 @@ Object scale factor (vertical)
 
 [`ITextProps`](/api/interfaces/itextprops/).[`scaleY`](/api/interfaces/itextprops/#scaley)
 
-#### Defined in
-
-[src/shapes/Object/types/BaseProps.ts:91](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/BaseProps.ts#L91)
-
 ***
 
 ### selectable
 
 > **selectable**: `boolean`
+
+Defined in: [src/shapes/Object/types/FabricObjectProps.ts:58](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/FabricObjectProps.ts#L58)
 
 When set to `false`, an object can not be selected for modification (using either point-click-based or group-based selection).
 But events still fire on it.
@@ -1401,18 +1275,20 @@ But events still fire on it.
 
 [`ITextProps`](/api/interfaces/itextprops/).[`selectable`](/api/interfaces/itextprops/#selectable)
 
-#### Defined in
-
-[src/shapes/Object/types/FabricObjectProps.ts:58](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/FabricObjectProps.ts#L58)
-
 ***
 
 ### ~~selectionBackgroundColor~~
 
 > **selectionBackgroundColor**: `string`
 
+Defined in: [src/shapes/Object/types/FabricObjectProps.ts:43](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/FabricObjectProps.ts#L43)
+
 Selection Background color of an object. colored layer behind the object when it is active.
 does not mix good with globalCompositeOperation methods.
+
+:::caution[Deprecated]
+This API is no longer supported and may be removed in a future release.
+:::
 
 #### Default
 
@@ -1420,17 +1296,9 @@ does not mix good with globalCompositeOperation methods.
 
 ```
 
-:::caution[Deprecated]
-This API is no longer supported and may be removed in a future release.
-:::
-
 #### Inherited from
 
 [`ITextProps`](/api/interfaces/itextprops/).[`selectionBackgroundColor`](/api/interfaces/itextprops/#selectionbackgroundcolor)
-
-#### Defined in
-
-[src/shapes/Object/types/FabricObjectProps.ts:43](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/FabricObjectProps.ts#L43)
 
 ***
 
@@ -1438,13 +1306,11 @@ This API is no longer supported and may be removed in a future release.
 
 > **selectionEnd**: `number`
 
+Defined in: [src/shapes/IText/IText.ts:68](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/IText/IText.ts#L68)
+
 #### Inherited from
 
 [`ITextProps`](/api/interfaces/itextprops/).[`selectionEnd`](/api/interfaces/itextprops/#selectionend)
-
-#### Defined in
-
-[src/shapes/IText/IText.ts:68](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/IText/IText.ts#L68)
 
 ***
 
@@ -1452,19 +1318,19 @@ This API is no longer supported and may be removed in a future release.
 
 > **selectionStart**: `number`
 
+Defined in: [src/shapes/IText/IText.ts:67](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/IText/IText.ts#L67)
+
 #### Inherited from
 
 [`ITextProps`](/api/interfaces/itextprops/).[`selectionStart`](/api/interfaces/itextprops/#selectionstart)
-
-#### Defined in
-
-[src/shapes/IText/IText.ts:67](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/IText/IText.ts#L67)
 
 ***
 
 ### shadow
 
 > **shadow**: `null` \| [`Shadow`](/api/classes/shadow/)
+
+Defined in: [src/shapes/Object/types/ObjectProps.ts:19](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/ObjectProps.ts#L19)
 
 Shadow object representing shadow of this shape
 
@@ -1478,15 +1344,13 @@ null
 
 [`ITextProps`](/api/interfaces/itextprops/).[`shadow`](/api/interfaces/itextprops/#shadow)
 
-#### Defined in
-
-[src/shapes/Object/types/ObjectProps.ts:19](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/ObjectProps.ts#L19)
-
 ***
 
 ### skewX
 
 > **skewX**: [`TDegree`](/api/type-aliases/tdegree/)
+
+Defined in: [src/shapes/Object/types/BaseProps.ts:98](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/BaseProps.ts#L98)
 
 Angle of skew on x axes of an object (in degrees)
 
@@ -1500,15 +1364,13 @@ Angle of skew on x axes of an object (in degrees)
 
 [`ITextProps`](/api/interfaces/itextprops/).[`skewX`](/api/interfaces/itextprops/#skewx)
 
-#### Defined in
-
-[src/shapes/Object/types/BaseProps.ts:98](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/BaseProps.ts#L98)
-
 ***
 
 ### skewY
 
 > **skewY**: [`TDegree`](/api/type-aliases/tdegree/)
+
+Defined in: [src/shapes/Object/types/BaseProps.ts:105](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/BaseProps.ts#L105)
 
 Angle of skew on y axes of an object (in degrees)
 
@@ -1522,15 +1384,13 @@ Angle of skew on y axes of an object (in degrees)
 
 [`ITextProps`](/api/interfaces/itextprops/).[`skewY`](/api/interfaces/itextprops/#skewy)
 
-#### Defined in
-
-[src/shapes/Object/types/BaseProps.ts:105](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/BaseProps.ts#L105)
-
 ***
 
 ### snapAngle?
 
 > `optional` **snapAngle**: [`TDegree`](/api/type-aliases/tdegree/)
+
+Defined in: [src/shapes/Object/types/ObjectTransformProps.ts:8](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/ObjectTransformProps.ts#L8)
 
 The angle that an object will lock to while rotating.
 
@@ -1538,15 +1398,13 @@ The angle that an object will lock to while rotating.
 
 [`ITextProps`](/api/interfaces/itextprops/).[`snapAngle`](/api/interfaces/itextprops/#snapangle)
 
-#### Defined in
-
-[src/shapes/Object/types/ObjectTransformProps.ts:8](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/ObjectTransformProps.ts#L8)
-
 ***
 
 ### snapThreshold?
 
 > `optional` **snapThreshold**: [`TDegree`](/api/type-aliases/tdegree/)
+
+Defined in: [src/shapes/Object/types/ObjectTransformProps.ts:15](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/ObjectTransformProps.ts#L15)
 
 The angle difference from the current snapped angle in which snapping should occur.
 When undefined, the snapThreshold will default to the snapAngle.
@@ -1555,29 +1413,25 @@ When undefined, the snapThreshold will default to the snapAngle.
 
 [`ITextProps`](/api/interfaces/itextprops/).[`snapThreshold`](/api/interfaces/itextprops/#snapthreshold)
 
-#### Defined in
-
-[src/shapes/Object/types/ObjectTransformProps.ts:15](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/ObjectTransformProps.ts#L15)
-
 ***
 
 ### splitByGrapheme
 
 > **splitByGrapheme**: `boolean`
 
+Defined in: [src/shapes/Textbox.ts:37](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Textbox.ts#L37)
+
 #### Inherited from
 
 `UniqueTextboxProps.splitByGrapheme`
-
-#### Defined in
-
-[src/shapes/Textbox.ts:37](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Textbox.ts#L37)
 
 ***
 
 ### stroke
 
 > **stroke**: `null` \| `string` \| [`TFiller`](/api/type-aliases/tfiller/)
+
+Defined in: [src/shapes/Object/types/ObjectProps.ts:18](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/ObjectProps.ts#L18)
 
 When defined, an object is rendered via stroke and this property specifies its color
 takes css colors https://www.w3.org/TR/css-color-3/
@@ -1592,15 +1446,13 @@ null
 
 [`ITextProps`](/api/interfaces/itextprops/).[`stroke`](/api/interfaces/itextprops/#stroke)
 
-#### Defined in
-
-[src/shapes/Object/types/ObjectProps.ts:18](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/ObjectProps.ts#L18)
-
 ***
 
 ### strokeDashArray
 
 > **strokeDashArray**: `null` \| `number`[]
+
+Defined in: [src/shapes/Object/types/FillStrokeProps.ts:48](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/FillStrokeProps.ts#L48)
 
 Array specifying dash pattern of an object's stroke (stroke must be defined)
 
@@ -1614,15 +1466,13 @@ null;
 
 [`ITextProps`](/api/interfaces/itextprops/).[`strokeDashArray`](/api/interfaces/itextprops/#strokedasharray)
 
-#### Defined in
-
-[src/shapes/Object/types/FillStrokeProps.ts:48](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/FillStrokeProps.ts#L48)
-
 ***
 
 ### strokeDashOffset
 
 > **strokeDashOffset**: `number`
+
+Defined in: [src/shapes/Object/types/FillStrokeProps.ts:55](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/FillStrokeProps.ts#L55)
 
 Line offset of an object's stroke
 
@@ -1636,15 +1486,13 @@ Line offset of an object's stroke
 
 [`ITextProps`](/api/interfaces/itextprops/).[`strokeDashOffset`](/api/interfaces/itextprops/#strokedashoffset)
 
-#### Defined in
-
-[src/shapes/Object/types/FillStrokeProps.ts:55](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/FillStrokeProps.ts#L55)
-
 ***
 
 ### strokeLineCap
 
 > **strokeLineCap**: `CanvasLineCap`
+
+Defined in: [src/shapes/Object/types/FillStrokeProps.ts:62](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/FillStrokeProps.ts#L62)
 
 Line endings style of an object's stroke (one of "butt", "round", "square")
 
@@ -1658,15 +1506,13 @@ butt
 
 [`ITextProps`](/api/interfaces/itextprops/).[`strokeLineCap`](/api/interfaces/itextprops/#strokelinecap)
 
-#### Defined in
-
-[src/shapes/Object/types/FillStrokeProps.ts:62](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/FillStrokeProps.ts#L62)
-
 ***
 
 ### strokeLineJoin
 
 > **strokeLineJoin**: `CanvasLineJoin`
+
+Defined in: [src/shapes/Object/types/FillStrokeProps.ts:69](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/FillStrokeProps.ts#L69)
 
 Corner style of an object's stroke (one of "bevel", "round", "miter")
 
@@ -1680,15 +1526,13 @@ Corner style of an object's stroke (one of "bevel", "round", "miter")
 
 [`ITextProps`](/api/interfaces/itextprops/).[`strokeLineJoin`](/api/interfaces/itextprops/#strokelinejoin)
 
-#### Defined in
-
-[src/shapes/Object/types/FillStrokeProps.ts:69](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/FillStrokeProps.ts#L69)
-
 ***
 
 ### strokeMiterLimit
 
 > **strokeMiterLimit**: `number`
+
+Defined in: [src/shapes/Object/types/FillStrokeProps.ts:76](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/FillStrokeProps.ts#L76)
 
 Maximum miter length (used for strokeLineJoin = "miter") of an object's stroke
 
@@ -1702,15 +1546,13 @@ Maximum miter length (used for strokeLineJoin = "miter") of an object's stroke
 
 [`ITextProps`](/api/interfaces/itextprops/).[`strokeMiterLimit`](/api/interfaces/itextprops/#strokemiterlimit)
 
-#### Defined in
-
-[src/shapes/Object/types/FillStrokeProps.ts:76](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/FillStrokeProps.ts#L76)
-
 ***
 
 ### strokeUniform
 
 > **strokeUniform**: `boolean`
+
+Defined in: [src/shapes/Object/types/FillStrokeProps.ts:89](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/FillStrokeProps.ts#L89)
 
 When `false`, the stoke width will scale with the object.
 When `true`, the stroke will always match the exact pixel size entered for stroke width.
@@ -1737,15 +1579,13 @@ false
 
 [`ITextProps`](/api/interfaces/itextprops/).[`strokeUniform`](/api/interfaces/itextprops/#strokeuniform)
 
-#### Defined in
-
-[src/shapes/Object/types/FillStrokeProps.ts:89](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/FillStrokeProps.ts#L89)
-
 ***
 
 ### strokeWidth
 
 > **strokeWidth**: `number`
+
+Defined in: [src/shapes/Object/types/FillStrokeProps.ts:41](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/FillStrokeProps.ts#L41)
 
 Width of a stroke used to render this object
 
@@ -1759,23 +1599,17 @@ Width of a stroke used to render this object
 
 [`ITextProps`](/api/interfaces/itextprops/).[`strokeWidth`](/api/interfaces/itextprops/#strokewidth)
 
-#### Defined in
-
-[src/shapes/Object/types/FillStrokeProps.ts:41](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/FillStrokeProps.ts#L41)
-
 ***
 
 ### styles
 
 > **styles**: [`TextStyle`](/api/type-aliases/textstyle/)
 
+Defined in: [src/shapes/Text/Text.ts:119](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Text/Text.ts#L119)
+
 #### Inherited from
 
 [`ITextProps`](/api/interfaces/itextprops/).[`styles`](/api/interfaces/itextprops/#styles)
-
-#### Defined in
-
-[src/shapes/Text/Text.ts:119](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Text/Text.ts#L119)
 
 ***
 
@@ -1783,19 +1617,19 @@ Width of a stroke used to render this object
 
 > **textAlign**: `string`
 
+Defined in: [src/shapes/Text/Text.ts:107](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Text/Text.ts#L107)
+
 #### Inherited from
 
 [`ITextProps`](/api/interfaces/itextprops/).[`textAlign`](/api/interfaces/itextprops/#textalign)
-
-#### Defined in
-
-[src/shapes/Text/Text.ts:107](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Text/Text.ts#L107)
 
 ***
 
 ### top
 
 > **top**: `number`
+
+Defined in: [src/shapes/Object/types/BaseProps.ts:20](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/BaseProps.ts#L20)
 
 Top position of an object.
 Note that by default it's relative to object top.
@@ -1811,15 +1645,13 @@ You can change this by setting [originY](../../../../api/interfaces/fabricobject
 
 [`ITextProps`](/api/interfaces/itextprops/).[`top`](/api/interfaces/itextprops/#top)
 
-#### Defined in
-
-[src/shapes/Object/types/BaseProps.ts:20](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/BaseProps.ts#L20)
-
 ***
 
 ### touchCornerSize
 
 > **touchCornerSize**: `number`
+
+Defined in: [src/shapes/Object/types/ControlProps.ts:14](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/ControlProps.ts#L14)
 
 Size of object's controlling corners when touch interaction is detected
 
@@ -1833,15 +1665,13 @@ Size of object's controlling corners when touch interaction is detected
 
 [`ITextProps`](/api/interfaces/itextprops/).[`touchCornerSize`](/api/interfaces/itextprops/#touchcornersize)
 
-#### Defined in
-
-[src/shapes/Object/types/ControlProps.ts:14](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/ControlProps.ts#L14)
-
 ***
 
 ### transparentCorners
 
 > **transparentCorners**: `boolean`
+
+Defined in: [src/shapes/Object/types/ControlProps.ts:21](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/ControlProps.ts#L21)
 
 When true, object's controlling corners are rendered as transparent inside (i.e. stroke instead of fill)
 
@@ -1855,29 +1685,25 @@ true
 
 [`ITextProps`](/api/interfaces/itextprops/).[`transparentCorners`](/api/interfaces/itextprops/#transparentcorners)
 
-#### Defined in
-
-[src/shapes/Object/types/ControlProps.ts:21](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/ControlProps.ts#L21)
-
 ***
 
 ### underline
 
 > **underline**: `boolean`
 
+Defined in: [src/shapes/Text/Text.ts:104](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Text/Text.ts#L104)
+
 #### Inherited from
 
 [`ITextProps`](/api/interfaces/itextprops/).[`underline`](/api/interfaces/itextprops/#underline)
-
-#### Defined in
-
-[src/shapes/Text/Text.ts:104](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Text/Text.ts#L104)
 
 ***
 
 ### visible
 
 > **visible**: `boolean`
+
+Defined in: [src/shapes/Object/types/SerializedObjectProps.ts:40](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/SerializedObjectProps.ts#L40)
 
 When set to `false`, an object is not rendered on canvas
 
@@ -1891,15 +1717,13 @@ When set to `false`, an object is not rendered on canvas
 
 [`ITextProps`](/api/interfaces/itextprops/).[`visible`](/api/interfaces/itextprops/#visible)
 
-#### Defined in
-
-[src/shapes/Object/types/SerializedObjectProps.ts:40](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/SerializedObjectProps.ts#L40)
-
 ***
 
 ### width
 
 > **width**: `number`
+
+Defined in: [src/shapes/Object/types/BaseProps.ts:27](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/BaseProps.ts#L27)
 
 Object width
 
@@ -1912,7 +1736,3 @@ Object width
 #### Inherited from
 
 [`ITextProps`](/api/interfaces/itextprops/).[`width`](/api/interfaces/itextprops/#width)
-
-#### Defined in
-
-[src/shapes/Object/types/BaseProps.ts:27](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/types/BaseProps.ts#L27)

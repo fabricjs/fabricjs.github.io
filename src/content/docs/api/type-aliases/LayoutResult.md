@@ -7,6 +7,8 @@ title: "LayoutResult"
 
 > **LayoutResult**: `object`
 
+Defined in: [src/LayoutManager/types.ts:54](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/types.ts#L54)
+
 ## Type declaration
 
 ### nextCenter
@@ -26,7 +28,3 @@ The vector used to offset objects by, as measured by the plane
 ### result?
 
 > `optional` **result**: [`LayoutStrategyResult`](/api/type-aliases/layoutstrategyresult/)
-
-## Defined in
-
-[src/LayoutManager/types.ts:54](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/types.ts#L54)

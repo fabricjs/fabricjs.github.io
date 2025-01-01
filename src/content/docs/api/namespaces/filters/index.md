@@ -5,9 +5,7 @@ prev: false
 title: "filters"
 ---
 
-## Index
-
-### Classes
+## Classes
 
 - [BaseFilter](/api/namespaces/filters/classes/basefilter/)
 - [BlendColor](/api/namespaces/filters/classes/blendcolor/)
@@ -29,12 +27,12 @@ title: "filters"
 - [Saturation](/api/namespaces/filters/classes/saturation/)
 - [Vibrance](/api/namespaces/filters/classes/vibrance/)
 
-### Type Aliases
+## Type Aliases
 
 - [TBlendMode](/api/namespaces/filters/type-aliases/tblendmode/)
 - [TResizeType](/api/namespaces/filters/type-aliases/tresizetype/)
 
-### Variables
+## Variables
 
 - [BlackWhite](/api/namespaces/filters/variables/blackwhite/)
 - [Brownie](/api/namespaces/filters/variables/brownie/)

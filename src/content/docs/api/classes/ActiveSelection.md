@@ -5,6 +5,8 @@ prev: false
 title: "ActiveSelection"
 ---
 
+Defined in: [src/shapes/ActiveSelection.ts:36](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/ActiveSelection.ts#L36)
+
 Used by Canvas to manage selection.
 
 ## Example
@@ -28,11 +30,17 @@ classRegistry.setClass(MyActiveSelection)
 
 > **new ActiveSelection**(`objects`, `options`): [`ActiveSelection`](/api/classes/activeselection/)
 
+Defined in: [src/shapes/ActiveSelection.ts:60](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/ActiveSelection.ts#L60)
+
 #### Parameters
 
-• **objects**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[] = `[]`
+##### objects
 
-• **options**: `Partial`\<[`ActiveSelectionOptions`](/api/interfaces/activeselectionoptions/)\> = `{}`
+[`FabricObject`](/api/classes/fabricobject/)[] = `[]`
+
+##### options
+
+`Partial`\<[`ActiveSelectionOptions`](/api/interfaces/activeselectionoptions/)\> = `{}`
 
 #### Returns
 
@@ -42,15 +50,13 @@ classRegistry.setClass(MyActiveSelection)
 
 [`Group`](/api/classes/group/).[`constructor`](/api/classes/group/#constructors)
 
-#### Defined in
-
-[src/shapes/ActiveSelection.ts:60](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/ActiveSelection.ts#L60)
-
 ## Properties
 
 ### \_\_corner?
 
 > `optional` **\_\_corner**: `string`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:105](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L105)
 
 keeps the value of the last hovered corner during mouse move.
 0 is no corner, or 'mt', 'ml', 'mtr' etc..
@@ -62,15 +68,13 @@ this isn't cleaned automatically. Non selected objects may have wrong values
 
 [`Group`](/api/classes/group/).[`__corner`](/api/classes/group/#__corner)
 
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:105](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L105)
-
 ***
 
 ### \_controlsVisibility
 
 > **\_controlsVisibility**: `Record`\<`string`, `boolean`\>
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:112](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L112)
 
 a map of control visibility for this object.
 this was left when controls were introduced to not break the api too much
@@ -80,15 +84,13 @@ this takes priority over the generic control visibility
 
 [`Group`](/api/classes/group/).[`_controlsVisibility`](/api/classes/group/#_controlsvisibility)
 
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:112](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L112)
-
 ***
 
 ### \_objects
 
-> **\_objects**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[] = `[]`
+> **\_objects**: [`FabricObject`](/api/classes/fabricobject/)[] = `[]`
+
+Defined in: [src/Collection.ts:21](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L21)
 
 #### TODO
 
@@ -98,15 +100,13 @@ needs to end up in the constructor too
 
 [`Group`](/api/classes/group/).[`_objects`](/api/classes/group/#_objects)
 
-#### Defined in
-
-[src/Collection.ts:21](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L21)
-
 ***
 
 ### \_scaling?
 
 > `optional` **\_scaling**: `boolean`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:134](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L134)
 
 A boolean used from the gesture module to keep tracking of a scaling
 action when there is no scaling transform in place.
@@ -122,36 +122,13 @@ DON'T USE IT. WE WILL TRY TO REMOVE IT
 
 [`Group`](/api/classes/group/).[`_scaling`](/api/classes/group/#_scaling)
 
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:134](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L134)
-
-***
-
-### aCoords
-
-> **aCoords**: [`TCornerPoint`](/api/type-aliases/tcornerpoint/)
-
-Describe object's corner position in scene coordinates.
-The coordinates are derived from the following:
-left, top, width, height, scaleX, scaleY, skewX, skewY, angle, strokeWidth.
-The coordinates do not depend on viewport changes.
-The coordinates get updated with [setCoords](../../../../api/classes/activeselection/#setcoords).
-You can calculate them without updating with [()](../../../../api/classes/activeselection/#calcacoords)
-
-#### Inherited from
-
-[`Group`](/api/classes/group/).[`aCoords`](/api/classes/group/#acoords)
-
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:63](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L63)
-
 ***
 
 ### absolutePositioned
 
 > **absolutePositioned**: `boolean`
+
+Defined in: [src/shapes/Object/Object.ts:214](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L214)
 
 Meaningful ONLY when the object is used as clipPath.
 if true, the clipPath will have its top and left relative to canvas, and will
@@ -170,15 +147,32 @@ false
 
 [`Group`](/api/classes/group/).[`absolutePositioned`](/api/classes/group/#absolutepositioned)
 
-#### Defined in
+***
 
-[src/shapes/Object/Object.ts:214](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L214)
+### aCoords
+
+> **aCoords**: [`TCornerPoint`](/api/type-aliases/tcornerpoint/)
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:63](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L63)
+
+Describe object's corner position in scene coordinates.
+The coordinates are derived from the following:
+left, top, width, height, scaleX, scaleY, skewX, skewY, angle, strokeWidth.
+The coordinates do not depend on viewport changes.
+The coordinates get updated with [setCoords](../../../../api/classes/activeselection/#setcoords).
+You can calculate them without updating with [()](../../../../api/classes/activeselection/#calcacoords)
+
+#### Inherited from
+
+[`Group`](/api/classes/group/).[`aCoords`](/api/classes/group/#acoords)
 
 ***
 
 ### angle
 
 > **angle**: [`TDegree`](/api/type-aliases/tdegree/)
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:581](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L581)
 
 Angle of rotation of an object (in degrees)
 
@@ -192,15 +186,13 @@ Angle of rotation of an object (in degrees)
 
 [`Group`](/api/classes/group/).[`angle`](/api/classes/group/#angle)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:581](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L581)
-
 ***
 
 ### backgroundColor
 
 > **backgroundColor**: `string`
+
+Defined in: [src/shapes/Object/Object.ts:201](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L201)
 
 Background color of an object.
 takes css colors https://www.w3.org/TR/css-color-3/
@@ -215,15 +207,13 @@ takes css colors https://www.w3.org/TR/css-color-3/
 
 [`Group`](/api/classes/group/).[`backgroundColor`](/api/classes/group/#backgroundcolor)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:201](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L201)
-
 ***
 
 ### borderColor
 
 > **borderColor**: `string`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:74](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L74)
 
 Color of controlling borders of an object (when it's active)
 
@@ -237,15 +227,13 @@ rgb(178,204,255)
 
 [`Group`](/api/classes/group/).[`borderColor`](/api/classes/group/#bordercolor)
 
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:74](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L74)
-
 ***
 
 ### borderDashArray
 
 > **borderDashArray**: `null` \| `number`[]
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:75](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L75)
 
 Array specifying dash pattern of an object's borders (hasBorder must be true)
 
@@ -257,15 +245,13 @@ Array specifying dash pattern of an object's borders (hasBorder must be true)
 
 [`Group`](/api/classes/group/).[`borderDashArray`](/api/classes/group/#borderdasharray)
 
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:75](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L75)
-
 ***
 
 ### borderOpacityWhenMoving
 
 > **borderOpacityWhenMoving**: `number`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:76](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L76)
 
 Opacity of object's controlling borders when object is active and moving
 
@@ -279,15 +265,13 @@ Opacity of object's controlling borders when object is active and moving
 
 [`Group`](/api/classes/group/).[`borderOpacityWhenMoving`](/api/classes/group/#borderopacitywhenmoving)
 
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:76](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L76)
-
 ***
 
 ### borderScaleFactor
 
 > **borderScaleFactor**: `number`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:77](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L77)
 
 Scale factor for the border of the objects ( selection box and controls stroke ).
 Bigger number will make a thicker border
@@ -305,15 +289,13 @@ you will need to write your own render function for controls
 
 [`Group`](/api/classes/group/).[`borderScaleFactor`](/api/classes/group/#borderscalefactor)
 
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:77](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L77)
-
 ***
 
 ### centeredRotation
 
 > **centeredRotation**: `boolean`
+
+Defined in: [src/shapes/Object/Object.ts:215](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L215)
 
 When `true` the object will rotate on its center.
 When `false` will rotate around the origin point defined by originX and originY.
@@ -335,15 +317,13 @@ The object method `rotate` will always consider this property and never the canv
 
 [`Group`](/api/classes/group/).[`centeredRotation`](/api/classes/group/#centeredrotation)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:215](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L215)
-
 ***
 
 ### centeredScaling
 
 > **centeredScaling**: `boolean`
+
+Defined in: [src/shapes/Object/Object.ts:216](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L216)
 
 When true, this object will use center point as the origin of transformation
 when being scaled via the controls.
@@ -362,15 +342,13 @@ when being scaled via the controls.
 
 [`Group`](/api/classes/group/).[`centeredScaling`](/api/classes/group/#centeredscaling)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:216](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L216)
-
 ***
 
 ### clipPath?
 
-> `optional` **clipPath**: [`BaseFabricObject`](/api/classes/basefabricobject/)\<`Partial`\<`ObjectProps`\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+> `optional` **clipPath**: [`BaseFabricObject`](/api/classes/basefabricobject/)
+
+Defined in: [src/shapes/Object/Object.ts:212](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L212)
 
 a fabricObject that, without stroke define a clipping area with their shape. filled in black
 the clipPath object gets used when the object has rendered, and the context is placed in the center
@@ -381,15 +359,13 @@ If you want 0,0 of a clipPath to align with an object center, use clipPath.origi
 
 [`Group`](/api/classes/group/).[`clipPath`](/api/classes/group/#clippath)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:212](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L212)
-
 ***
 
 ### clipPathId?
 
 > `optional` **clipPathId**: `string`
+
+Defined in: [src/shapes/Object/FabricObjectSVGExportMixin.ts:14](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/FabricObjectSVGExportMixin.ts#L14)
 
 When an object is being exported as SVG as a clippath, a reference inside the SVG is needed.
 This reference is a UID in the fabric namespace and is temporary stored here.
@@ -398,15 +374,13 @@ This reference is a UID in the fabric namespace and is temporary stored here.
 
 [`Group`](/api/classes/group/).[`clipPathId`](/api/classes/group/#clippathid)
 
-#### Defined in
-
-[src/shapes/Object/FabricObjectSVGExportMixin.ts:14](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/FabricObjectSVGExportMixin.ts#L14)
-
 ***
 
 ### controls
 
 > **controls**: `TControlSet`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:118](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L118)
 
 holds the controls for the object.
 controls are added by default_controls.js
@@ -415,15 +389,13 @@ controls are added by default_controls.js
 
 [`Group`](/api/classes/group/).[`controls`](/api/classes/group/#controls)
 
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:118](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L118)
-
 ***
 
 ### cornerColor
 
 > **cornerColor**: `string`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:68](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L68)
 
 Color of controlling corners of an object (when it's active)
 
@@ -437,15 +409,13 @@ rgb(178,204,255)
 
 [`Group`](/api/classes/group/).[`cornerColor`](/api/classes/group/#cornercolor)
 
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:68](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L68)
-
 ***
 
 ### cornerDashArray
 
 > **cornerDashArray**: `null` \| `number`[]
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:71](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L71)
 
 Array specifying dash pattern of an object's control (hasBorder must be true)
 
@@ -463,15 +433,13 @@ null
 
 [`Group`](/api/classes/group/).[`cornerDashArray`](/api/classes/group/#cornerdasharray)
 
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:71](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L71)
-
 ***
 
 ### cornerSize
 
 > **cornerSize**: `number`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:65](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L65)
 
 Size of object's controlling corners (in pixels)
 
@@ -485,15 +453,13 @@ Size of object's controlling corners (in pixels)
 
 [`Group`](/api/classes/group/).[`cornerSize`](/api/classes/group/#cornersize)
 
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:65](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L65)
-
 ***
 
 ### cornerStrokeColor
 
 > **cornerStrokeColor**: `string`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:69](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L69)
 
 Color of controlling corners of an object (when it's active and transparentCorners false)
 
@@ -511,19 +477,21 @@ Color of controlling corners of an object (when it's active and transparentCorne
 
 [`Group`](/api/classes/group/).[`cornerStrokeColor`](/api/classes/group/#cornerstrokecolor)
 
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:69](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L69)
-
 ***
 
 ### ~~cornerStyle~~
 
 > **cornerStyle**: `"circle"` \| `"rect"`
 
+Defined in: [src/shapes/Object/InteractiveObject.ts:70](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L70)
+
 Specify style of control, 'rect' or 'circle'
 This is deprecated. In the future there will be a standard control render
 And you can swap it with one of the alternative proposed with the control api
+
+:::caution[Deprecated]
+This API is no longer supported and may be removed in a future release.
+:::
 
 #### Since
 
@@ -535,23 +503,17 @@ And you can swap it with one of the alternative proposed with the control api
 'rect'
 ```
 
-:::caution[Deprecated]
-This API is no longer supported and may be removed in a future release.
-:::
-
 #### Inherited from
 
 [`Group`](/api/classes/group/).[`cornerStyle`](/api/classes/group/#cornerstyle)
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:70](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L70)
 
 ***
 
 ### dirty
 
 > **dirty**: `boolean`
+
+Defined in: [src/shapes/Object/Object.ts:241](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L241)
 
 When set to `true`, object's cache will be rerendered next render call.
 since 1.7.0
@@ -566,15 +528,13 @@ true
 
 [`Group`](/api/classes/group/).[`dirty`](/api/classes/group/#dirty)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:241](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L241)
-
 ***
 
 ### evented
 
 > **evented**: `boolean`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:82](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L82)
 
 When set to `false`, an object can not be a target of events. All events propagate through it. Introduced in v1.3.4
 
@@ -588,15 +548,13 @@ When set to `false`, an object can not be a target of events. All events propaga
 
 [`Group`](/api/classes/group/).[`evented`](/api/classes/group/#evented)
 
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:82](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L82)
-
 ***
 
 ### excludeFromExport
 
 > **excludeFromExport**: `boolean`
+
+Defined in: [src/shapes/Object/Object.ts:208](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L208)
 
 When `true`, object is not exported in OBJECT/JSON
 
@@ -614,15 +572,13 @@ When `true`, object is not exported in OBJECT/JSON
 
 [`Group`](/api/classes/group/).[`excludeFromExport`](/api/classes/group/#excludefromexport)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:208](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L208)
-
 ***
 
 ### fill
 
 > **fill**: `null` \| `string` \| [`TFiller`](/api/type-aliases/tfiller/)
+
+Defined in: [src/shapes/Object/Object.ts:191](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L191)
 
 Color of object's fill
 takes css colors https://www.w3.org/TR/css-color-3/
@@ -637,15 +593,13 @@ rgb(0,0,0)
 
 [`Group`](/api/classes/group/).[`fill`](/api/classes/group/#fill)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:191](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L191)
-
 ***
 
 ### fillRule
 
 > **fillRule**: `CanvasFillRule`
+
+Defined in: [src/shapes/Object/Object.ts:192](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L192)
 
 Fill rule used to fill an object
 accepted values are nonzero, evenodd
@@ -661,15 +615,13 @@ nonzero
 
 [`Group`](/api/classes/group/).[`fillRule`](/api/classes/group/#fillrule)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:192](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L192)
-
 ***
 
 ### flipX
 
 > **flipX**: `boolean`
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:567](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L567)
 
 When true, an object is rendered as flipped horizontally
 
@@ -683,15 +635,13 @@ false
 
 [`Group`](/api/classes/group/).[`flipX`](/api/classes/group/#flipx)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:567](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L567)
-
 ***
 
 ### flipY
 
 > **flipY**: `boolean`
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:568](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L568)
 
 When true, an object is rendered as flipped vertically
 
@@ -705,15 +655,13 @@ false
 
 [`Group`](/api/classes/group/).[`flipY`](/api/classes/group/#flipy)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:568](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L568)
-
 ***
 
 ### globalCompositeOperation
 
 > **globalCompositeOperation**: `GlobalCompositeOperation`
+
+Defined in: [src/shapes/Object/Object.ts:200](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L200)
 
 Composite rule used for canvas globalCompositeOperation
 
@@ -727,15 +675,13 @@ Composite rule used for canvas globalCompositeOperation
 
 [`Group`](/api/classes/group/).[`globalCompositeOperation`](/api/classes/group/#globalcompositeoperation)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:200](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L200)
-
 ***
 
 ### hasBorders
 
 > **hasBorders**: `boolean`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:78](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L78)
 
 When set to `false`, object's controlling borders are not rendered
 
@@ -749,15 +695,13 @@ When set to `false`, object's controlling borders are not rendered
 
 [`Group`](/api/classes/group/).[`hasBorders`](/api/classes/group/#hasborders)
 
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:78](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L78)
-
 ***
 
 ### hasControls
 
 > **hasControls**: `boolean`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:72](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L72)
 
 When set to `false`, object's controls are not displayed and can not be used to manipulate object
 
@@ -771,15 +715,13 @@ true
 
 [`Group`](/api/classes/group/).[`hasControls`](/api/classes/group/#hascontrols)
 
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:72](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L72)
-
 ***
 
 ### height
 
 > **height**: `number`
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:566](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L566)
 
 Object height
 
@@ -793,15 +735,13 @@ Object height
 
 [`Group`](/api/classes/group/).[`height`](/api/classes/group/#height)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:566](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L566)
-
 ***
 
 ### hoverCursor
 
 > **hoverCursor**: `null` \| `string`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:86](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L86)
 
 Default cursor value used when hovering over this object on canvas
 
@@ -815,15 +755,13 @@ null
 
 [`Group`](/api/classes/group/).[`hoverCursor`](/api/classes/group/#hovercursor)
 
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:86](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L86)
-
 ***
 
 ### includeDefaultValues
 
 > **includeDefaultValues**: `boolean`
+
+Defined in: [src/shapes/Object/Object.ts:207](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L207)
 
 When `false`, default object's values are not included in its serialization
 
@@ -837,15 +775,13 @@ When `false`, default object's values are not included in its serialization
 
 [`Group`](/api/classes/group/).[`includeDefaultValues`](/api/classes/group/#includedefaultvalues)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:207](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L207)
-
 ***
 
 ### ~~interactive~~
 
 > **interactive**: `boolean`
+
+Defined in: [src/shapes/Group.ts:108](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L108)
 
 Used to allow targeting of object inside groups.
 set to true if you want to select an object inside a group.\
@@ -855,29 +791,27 @@ that will take care of enabling subTargetCheck and necessary object events.
 There is too much attached to group interactivity to just be evaluated by a
 boolean in the code
 
+:::caution[Deprecated]
+This API is no longer supported and may be removed in a future release.
+:::
+
 #### Default
 
 ```ts
 
 ```
 
-:::caution[Deprecated]
-This API is no longer supported and may be removed in a future release.
-:::
-
 #### Inherited from
 
 [`Group`](/api/classes/group/).[`interactive`](/api/classes/group/#interactive)
-
-#### Defined in
-
-[src/shapes/Group.ts:108](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L108)
 
 ***
 
 ### inverted
 
 > **inverted**: `boolean`
+
+Defined in: [src/shapes/Object/Object.ts:213](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L213)
 
 Meaningful ONLY when the object is used as clipPath.
 if true, the clipPath will make the object clip to the outside of the clipPath
@@ -893,15 +827,13 @@ false
 
 [`Group`](/api/classes/group/).[`inverted`](/api/classes/group/#inverted)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:213](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L213)
-
 ***
 
 ### isMoving?
 
 > `optional` **isMoving**: `boolean`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:124](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L124)
 
 internal boolean to signal the code that the object is
 part of the move action.
@@ -910,15 +842,13 @@ part of the move action.
 
 [`Group`](/api/classes/group/).[`isMoving`](/api/classes/group/#ismoving)
 
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:124](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L124)
-
 ***
 
 ### layoutManager
 
 > **layoutManager**: `ActiveSelectionLayoutManager`
+
+Defined in: [src/shapes/ActiveSelection.ts:49](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/ActiveSelection.ts#L49)
 
 The ActiveSelection needs to use the ActiveSelectionLayoutManager
 or selections on interactive groups may be broken
@@ -927,15 +857,13 @@ or selections on interactive groups may be broken
 
 [`Group`](/api/classes/group/).[`layoutManager`](/api/classes/group/#layoutmanager)
 
-#### Defined in
-
-[src/shapes/ActiveSelection.ts:49](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/ActiveSelection.ts#L49)
-
 ***
 
 ### left
 
 > **left**: `number`
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:564](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L564)
 
 Left position of an object.
 Note that by default it's relative to object left.
@@ -951,15 +879,13 @@ You can change this by setting [originX](../../../../api/interfaces/fabricobject
 
 [`Group`](/api/classes/group/).[`left`](/api/classes/group/#left)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:564](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L564)
-
 ***
 
 ### lockMovementX
 
 > **lockMovementX**: `boolean`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:56](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L56)
 
 When `true`, object horizontal movement is locked
 
@@ -973,15 +899,13 @@ When `true`, object horizontal movement is locked
 
 [`Group`](/api/classes/group/).[`lockMovementX`](/api/classes/group/#lockmovementx)
 
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:56](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L56)
-
 ***
 
 ### lockMovementY
 
 > **lockMovementY**: `boolean`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:57](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L57)
 
 When `true`, object vertical movement is locked
 
@@ -995,15 +919,13 @@ When `true`, object vertical movement is locked
 
 [`Group`](/api/classes/group/).[`lockMovementY`](/api/classes/group/#lockmovementy)
 
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:57](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L57)
-
 ***
 
 ### lockRotation
 
 > **lockRotation**: `boolean`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:58](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L58)
 
 When `true`, object rotation is locked
 
@@ -1017,15 +939,13 @@ When `true`, object rotation is locked
 
 [`Group`](/api/classes/group/).[`lockRotation`](/api/classes/group/#lockrotation)
 
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:58](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L58)
-
 ***
 
 ### lockScalingFlip
 
 > **lockScalingFlip**: `boolean`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:63](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L63)
 
 When `true`, object cannot be flipped by scaling into negative values
 
@@ -1039,15 +959,13 @@ When `true`, object cannot be flipped by scaling into negative values
 
 [`Group`](/api/classes/group/).[`lockScalingFlip`](/api/classes/group/#lockscalingflip)
 
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:63](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L63)
-
 ***
 
 ### lockScalingX
 
 > **lockScalingX**: `boolean`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:59](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L59)
 
 When `true`, object horizontal scaling is locked
 
@@ -1061,15 +979,13 @@ When `true`, object horizontal scaling is locked
 
 [`Group`](/api/classes/group/).[`lockScalingX`](/api/classes/group/#lockscalingx)
 
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:59](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L59)
-
 ***
 
 ### lockScalingY
 
 > **lockScalingY**: `boolean`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:60](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L60)
 
 When `true`, object vertical scaling is locked
 
@@ -1083,15 +999,13 @@ When `true`, object vertical scaling is locked
 
 [`Group`](/api/classes/group/).[`lockScalingY`](/api/classes/group/#lockscalingy)
 
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:60](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L60)
-
 ***
 
 ### lockSkewingX
 
 > **lockSkewingX**: `boolean`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:61](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L61)
 
 When `true`, object horizontal skewing is locked
 
@@ -1105,15 +1019,13 @@ When `true`, object horizontal skewing is locked
 
 [`Group`](/api/classes/group/).[`lockSkewingX`](/api/classes/group/#lockskewingx)
 
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:61](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L61)
-
 ***
 
 ### lockSkewingY
 
 > **lockSkewingY**: `boolean`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:62](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L62)
 
 When `true`, object vertical skewing is locked
 
@@ -1127,15 +1039,13 @@ When `true`, object vertical skewing is locked
 
 [`Group`](/api/classes/group/).[`lockSkewingY`](/api/classes/group/#lockskewingy)
 
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:62](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L62)
-
 ***
 
 ### matrixCache?
 
 > `optional` **matrixCache**: `TMatrixCache`
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:73](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L73)
 
 storage cache for object full transform matrix
 
@@ -1143,15 +1053,13 @@ storage cache for object full transform matrix
 
 [`Group`](/api/classes/group/).[`matrixCache`](/api/classes/group/#matrixcache)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:73](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L73)
-
 ***
 
 ### minScaleLimit
 
 > **minScaleLimit**: `number`
+
+Defined in: [src/shapes/Object/Object.ts:186](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L186)
 
 Minimum allowed scale value of an object
 
@@ -1165,15 +1073,13 @@ Minimum allowed scale value of an object
 
 [`Group`](/api/classes/group/).[`minScaleLimit`](/api/classes/group/#minscalelimit)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:186](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L186)
-
 ***
 
 ### moveCursor
 
 > **moveCursor**: `null` \| `string`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:87](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L87)
 
 Default cursor value used when moving this object on canvas
 
@@ -1187,15 +1093,13 @@ null
 
 [`Group`](/api/classes/group/).[`moveCursor`](/api/classes/group/#movecursor)
 
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:87](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L87)
-
 ***
 
 ### multiSelectionStacking
 
 > **multiSelectionStacking**: [`MultiSelectionStacking`](/api/type-aliases/multiselectionstacking/)
+
+Defined in: [src/shapes/ActiveSelection.ts:58](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/ActiveSelection.ts#L58)
 
 controls how selected objects are added during a multiselection event
 - `canvas-stacking` adds the selected object to the active selection while respecting canvas object stacking order
@@ -1206,15 +1110,13 @@ meaning that the stack is ordered by the order in which objects were selected
 
 `canvas-stacking`
 
-#### Defined in
-
-[src/shapes/ActiveSelection.ts:58](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/ActiveSelection.ts#L58)
-
 ***
 
 ### noScaleCache
 
 > **noScaleCache**: `boolean`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:51](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L51)
 
 When `true`, cache does not get updated during scaling. The picture will get blocky if scaled
 too much and will be redrawn with correct details at the end of scaling.
@@ -1232,34 +1134,13 @@ true
 
 [`Group`](/api/classes/group/).[`noScaleCache`](/api/classes/group/#noscalecache)
 
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:51](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L51)
-
-***
-
-### oCoords
-
-> **oCoords**: `Record`\<`string`, `TOCoord`\>
-
-The object's controls' position in viewport coordinates
-Calculated by [Control#positionHandler](../../../../api/classes/control/#positionhandler) and [Control#calcCornerCoords](../../../../api/classes/control/#calccornercoords), depending on [padding](../../../../api/classes/fabricobject/#padding).
-`corner/touchCorner` describe the 4 points forming the interactive area of the corner.
-Used to draw and locate controls.
-
-#### Inherited from
-
-[`Group`](/api/classes/group/).[`oCoords`](/api/classes/group/#ocoords)
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:95](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L95)
-
 ***
 
 ### objectCaching
 
 > **objectCaching**: `boolean`
+
+Defined in: [src/shapes/Object/Object.ts:210](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L210)
 
 When `true`, object is cached on an additional canvas.
 When `false`, object is not cached unless necessary ( clipPath )
@@ -1279,15 +1160,30 @@ true
 
 [`Group`](/api/classes/group/).[`objectCaching`](/api/classes/group/#objectcaching)
 
-#### Defined in
+***
 
-[src/shapes/Object/Object.ts:210](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L210)
+### oCoords
+
+> **oCoords**: `Record`\<`string`, `TOCoord`\>
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:95](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L95)
+
+The object's controls' position in viewport coordinates
+Calculated by [Control#positionHandler](../../../../api/classes/control/#positionhandler) and [Control#calcCornerCoords](../../../../api/classes/control/#calccornercoords), depending on [padding](../../../../api/classes/fabricobject/#padding).
+`corner/touchCorner` describe the 4 points forming the interactive area of the corner.
+Used to draw and locate controls.
+
+#### Inherited from
+
+[`Group`](/api/classes/group/).[`oCoords`](/api/classes/group/#ocoords)
 
 ***
 
 ### opacity
 
 > **opacity**: `number`
+
+Defined in: [src/shapes/Object/Object.ts:188](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L188)
 
 Opacity of an object
 
@@ -1301,15 +1197,13 @@ Opacity of an object
 
 [`Group`](/api/classes/group/).[`opacity`](/api/classes/group/#opacity)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:188](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L188)
-
 ***
 
 ### ~~originX~~
 
 > **originX**: [`TOriginX`](/api/type-aliases/toriginx/)
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:576](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L576)
 
 :::caution[Deprecated]
 please use 'center' as value in new projects
@@ -1319,15 +1213,13 @@ please use 'center' as value in new projects
 
 [`Group`](/api/classes/group/).[`originX`](/api/classes/group/#originx)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:576](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L576)
-
 ***
 
 ### ~~originY~~
 
 > **originY**: [`TOriginY`](/api/type-aliases/toriginy/)
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:580](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L580)
 
 :::caution[Deprecated]
 please use 'center' as value in new projects
@@ -1337,15 +1229,13 @@ please use 'center' as value in new projects
 
 [`Group`](/api/classes/group/).[`originY`](/api/classes/group/#originy)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:580](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L580)
-
 ***
 
 ### ownMatrixCache?
 
 > `optional` **ownMatrixCache**: `TMatrixCache`
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:68](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L68)
 
 storage cache for object transform matrix
 
@@ -1353,15 +1243,13 @@ storage cache for object transform matrix
 
 [`Group`](/api/classes/group/).[`ownMatrixCache`](/api/classes/group/#ownmatrixcache)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:68](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L68)
-
 ***
 
 ### padding
 
 > **padding**: `number`
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:53](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L53)
 
 Padding between object and its controlling borders (in pixels)
 
@@ -1375,15 +1263,13 @@ Padding between object and its controlling borders (in pixels)
 
 [`Group`](/api/classes/group/).[`padding`](/api/classes/group/#padding)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:53](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L53)
-
 ***
 
 ### paintFirst
 
 > **paintFirst**: `"fill"` \| `"stroke"`
+
+Defined in: [src/shapes/Object/Object.ts:190](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L190)
 
 Determines if the fill or the stroke is drawn first (one of "fill" or "stroke")
 
@@ -1397,15 +1283,13 @@ Determines if the fill or the stroke is drawn first (one of "fill" or "stroke")
 
 [`Group`](/api/classes/group/).[`paintFirst`](/api/classes/group/#paintfirst)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:190](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L190)
-
 ***
 
 ### parent?
 
 > `optional` **parent**: [`Group`](/api/classes/group/)
+
+Defined in: [src/shapes/Object/Object.ts:1595](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1595)
 
 A reference to the parent of the object
 Used to keep the original parent ref when the object has been added to an ActiveSelection, hence loosing the `group` ref
@@ -1414,15 +1298,13 @@ Used to keep the original parent ref when the object has been added to an Active
 
 [`Group`](/api/classes/group/).[`parent`](/api/classes/group/#parent)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:1595](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1595)
-
 ***
 
 ### perPixelTargetFind
 
 > **perPixelTargetFind**: `boolean`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:83](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L83)
 
 When set to `true`, objects are "found" on canvas on per-pixel basis rather than according to bounding box
 
@@ -1436,15 +1318,13 @@ When set to `true`, objects are "found" on canvas on per-pixel basis rather than
 
 [`Group`](/api/classes/group/).[`perPixelTargetFind`](/api/classes/group/#perpixeltargetfind)
 
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:83](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L83)
-
 ***
 
 ### scaleX
 
 > **scaleX**: `number`
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:569](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L569)
 
 Object scale factor (horizontal)
 
@@ -1458,15 +1338,13 @@ Object scale factor (horizontal)
 
 [`Group`](/api/classes/group/).[`scaleX`](/api/classes/group/#scalex)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:569](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L569)
-
 ***
 
 ### scaleY
 
 > **scaleY**: `number`
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:570](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L570)
 
 Object scale factor (vertical)
 
@@ -1480,15 +1358,13 @@ Object scale factor (vertical)
 
 [`Group`](/api/classes/group/).[`scaleY`](/api/classes/group/#scaley)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:570](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L570)
-
 ***
 
 ### selectable
 
 > **selectable**: `boolean`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:81](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L81)
 
 When set to `false`, an object can not be selected for modification (using either point-click-based or group-based selection).
 But events still fire on it.
@@ -1503,18 +1379,20 @@ But events still fire on it.
 
 [`Group`](/api/classes/group/).[`selectable`](/api/classes/group/#selectable)
 
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:81](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L81)
-
 ***
 
 ### ~~selectionBackgroundColor~~
 
 > **selectionBackgroundColor**: `string`
 
+Defined in: [src/shapes/Object/InteractiveObject.ts:79](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L79)
+
 Selection Background color of an object. colored layer behind the object when it is active.
 does not mix good with globalCompositeOperation methods.
+
+:::caution[Deprecated]
+This API is no longer supported and may be removed in a future release.
+:::
 
 #### Default
 
@@ -1522,23 +1400,17 @@ does not mix good with globalCompositeOperation methods.
 
 ```
 
-:::caution[Deprecated]
-This API is no longer supported and may be removed in a future release.
-:::
-
 #### Inherited from
 
 [`Group`](/api/classes/group/).[`selectionBackgroundColor`](/api/classes/group/#selectionbackgroundcolor)
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:79](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L79)
 
 ***
 
 ### shadow
 
 > **shadow**: `null` \| [`Shadow`](/api/classes/shadow/)
+
+Defined in: [src/shapes/Object/Object.ts:203](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L203)
 
 Shadow object representing shadow of this shape
 
@@ -1552,15 +1424,13 @@ null
 
 [`Group`](/api/classes/group/).[`shadow`](/api/classes/group/#shadow)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:203](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L203)
-
 ***
 
 ### skewX
 
 > **skewX**: `number`
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:571](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L571)
 
 Angle of skew on x axes of an object (in degrees)
 
@@ -1574,15 +1444,13 @@ Angle of skew on x axes of an object (in degrees)
 
 [`Group`](/api/classes/group/).[`skewX`](/api/classes/group/#skewx)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:571](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L571)
-
 ***
 
 ### skewY
 
 > **skewY**: `number`
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:572](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L572)
 
 Angle of skew on y axes of an object (in degrees)
 
@@ -1596,15 +1464,13 @@ Angle of skew on y axes of an object (in degrees)
 
 [`Group`](/api/classes/group/).[`skewY`](/api/classes/group/#skewy)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:572](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L572)
-
 ***
 
 ### snapAngle?
 
 > `optional` **snapAngle**: [`TDegree`](/api/type-aliases/tdegree/)
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:53](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L53)
 
 The angle that an object will lock to while rotating.
 
@@ -1612,15 +1478,13 @@ The angle that an object will lock to while rotating.
 
 [`Group`](/api/classes/group/).[`snapAngle`](/api/classes/group/#snapangle)
 
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:53](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L53)
-
 ***
 
 ### snapThreshold?
 
 > `optional` **snapThreshold**: [`TDegree`](/api/type-aliases/tdegree/)
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:54](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L54)
 
 The angle difference from the current snapped angle in which snapping should occur.
 When undefined, the snapThreshold will default to the snapAngle.
@@ -1629,15 +1493,13 @@ When undefined, the snapThreshold will default to the snapAngle.
 
 [`Group`](/api/classes/group/).[`snapThreshold`](/api/classes/group/#snapthreshold)
 
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:54](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L54)
-
 ***
 
 ### stroke
 
 > **stroke**: `null` \| `string` \| [`TFiller`](/api/type-aliases/tfiller/)
+
+Defined in: [src/shapes/Object/Object.ts:193](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L193)
 
 When defined, an object is rendered via stroke and this property specifies its color
 takes css colors https://www.w3.org/TR/css-color-3/
@@ -1652,15 +1514,13 @@ null
 
 [`Group`](/api/classes/group/).[`stroke`](/api/classes/group/#stroke)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:193](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L193)
-
 ***
 
 ### strokeDashArray
 
 > **strokeDashArray**: `null` \| `number`[]
+
+Defined in: [src/shapes/Object/Object.ts:194](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L194)
 
 Array specifying dash pattern of an object's stroke (stroke must be defined)
 
@@ -1674,15 +1534,13 @@ null;
 
 [`Group`](/api/classes/group/).[`strokeDashArray`](/api/classes/group/#strokedasharray)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:194](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L194)
-
 ***
 
 ### strokeDashOffset
 
 > **strokeDashOffset**: `number`
+
+Defined in: [src/shapes/Object/Object.ts:195](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L195)
 
 Line offset of an object's stroke
 
@@ -1696,15 +1554,13 @@ Line offset of an object's stroke
 
 [`Group`](/api/classes/group/).[`strokeDashOffset`](/api/classes/group/#strokedashoffset)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:195](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L195)
-
 ***
 
 ### strokeLineCap
 
 > **strokeLineCap**: `CanvasLineCap`
+
+Defined in: [src/shapes/Object/Object.ts:196](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L196)
 
 Line endings style of an object's stroke (one of "butt", "round", "square")
 
@@ -1718,15 +1574,13 @@ butt
 
 [`Group`](/api/classes/group/).[`strokeLineCap`](/api/classes/group/#strokelinecap)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:196](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L196)
-
 ***
 
 ### strokeLineJoin
 
 > **strokeLineJoin**: `CanvasLineJoin`
+
+Defined in: [src/shapes/Object/Object.ts:197](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L197)
 
 Corner style of an object's stroke (one of "bevel", "round", "miter")
 
@@ -1740,15 +1594,13 @@ Corner style of an object's stroke (one of "bevel", "round", "miter")
 
 [`Group`](/api/classes/group/).[`strokeLineJoin`](/api/classes/group/#strokelinejoin)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:197](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L197)
-
 ***
 
 ### strokeMiterLimit
 
 > **strokeMiterLimit**: `number`
+
+Defined in: [src/shapes/Object/Object.ts:198](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L198)
 
 Maximum miter length (used for strokeLineJoin = "miter") of an object's stroke
 
@@ -1762,15 +1614,13 @@ Maximum miter length (used for strokeLineJoin = "miter") of an object's stroke
 
 [`Group`](/api/classes/group/).[`strokeMiterLimit`](/api/classes/group/#strokemiterlimit)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:198](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L198)
-
 ***
 
 ### strokeUniform
 
 > **strokeUniform**: `boolean`
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:583](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L583)
 
 When `false`, the stoke width will scale with the object.
 When `true`, the stroke will always match the exact pixel size entered for stroke width.
@@ -1797,15 +1647,13 @@ false
 
 [`Group`](/api/classes/group/).[`strokeUniform`](/api/classes/group/#strokeuniform)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:583](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L583)
-
 ***
 
 ### strokeWidth
 
 > **strokeWidth**: `number`
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:582](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L582)
 
 Width of a stroke used to render this object
 
@@ -1819,15 +1667,13 @@ Width of a stroke used to render this object
 
 [`Group`](/api/classes/group/).[`strokeWidth`](/api/classes/group/#strokewidth)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:582](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L582)
-
 ***
 
 ### subTargetCheck
 
 > **subTargetCheck**: `boolean`
+
+Defined in: [src/shapes/Group.ts:94](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L94)
 
 Used to optimize performance
 set to `false` if you don't need contained objects to be targets of events
@@ -1842,15 +1688,13 @@ set to `false` if you don't need contained objects to be targets of events
 
 [`Group`](/api/classes/group/).[`subTargetCheck`](/api/classes/group/#subtargetcheck)
 
-#### Defined in
-
-[src/shapes/Group.ts:94](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L94)
-
 ***
 
 ### top
 
 > **top**: `number`
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:563](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L563)
 
 Top position of an object.
 Note that by default it's relative to object top.
@@ -1866,15 +1710,13 @@ You can change this by setting [originY](../../../../api/interfaces/fabricobject
 
 [`Group`](/api/classes/group/).[`top`](/api/classes/group/#top)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:563](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L563)
-
 ***
 
 ### touchCornerSize
 
 > **touchCornerSize**: `number`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:66](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L66)
 
 Size of object's controlling corners when touch interaction is detected
 
@@ -1888,15 +1730,13 @@ Size of object's controlling corners when touch interaction is detected
 
 [`Group`](/api/classes/group/).[`touchCornerSize`](/api/classes/group/#touchcornersize)
 
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:66](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L66)
-
 ***
 
 ### transparentCorners
 
 > **transparentCorners**: `boolean`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:67](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L67)
 
 When true, object's controlling corners are rendered as transparent inside (i.e. stroke instead of fill)
 
@@ -1910,15 +1750,13 @@ true
 
 [`Group`](/api/classes/group/).[`transparentCorners`](/api/classes/group/#transparentcorners)
 
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:67](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L67)
-
 ***
 
 ### visible
 
 > **visible**: `boolean`
+
+Defined in: [src/shapes/Object/Object.ts:205](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L205)
 
 When set to `false`, an object is not rendered on canvas
 
@@ -1932,15 +1770,13 @@ When set to `false`, an object is not rendered on canvas
 
 [`Group`](/api/classes/group/).[`visible`](/api/classes/group/#visible)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:205](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L205)
-
 ***
 
 ### width
 
 > **width**: `number`
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:565](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L565)
 
 Object width
 
@@ -1954,15 +1790,13 @@ Object width
 
 [`Group`](/api/classes/group/).[`width`](/api/classes/group/#width)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:565](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L565)
-
 ***
 
 ### cacheProperties
 
 > `static` **cacheProperties**: `string`[]
+
+Defined in: [src/shapes/Object/Object.ts:233](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L233)
 
 List of properties to consider when checking if cache needs refresh
 Those properties are checked by
@@ -1973,15 +1807,13 @@ and refreshed at the next render
 
 [`Group`](/api/classes/group/).[`cacheProperties`](/api/classes/group/#cacheproperties)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:233](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L233)
-
 ***
 
 ### colorProperties
 
 > `static` **colorProperties**: `string`[]
+
+Defined in: [src/shapes/Object/Object.ts:1502](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1502)
 
 List of properties to consider for animating colors.
 
@@ -1989,15 +1821,13 @@ List of properties to consider for animating colors.
 
 [`Group`](/api/classes/group/).[`colorProperties`](/api/classes/group/#colorproperties)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:1502](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1502)
-
 ***
 
 ### customProperties
 
 > `static` **customProperties**: `string`[] = `[]`
+
+Defined in: [src/shapes/Object/Object.ts:1743](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1743)
 
 Define a list of custom properties that will be serialized when
 instance.toObject() gets called
@@ -2006,29 +1836,25 @@ instance.toObject() gets called
 
 [`Group`](/api/classes/group/).[`customProperties`](/api/classes/group/#customproperties)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:1743](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1743)
-
 ***
 
 ### ownDefaults
 
 > `static` **ownDefaults**: `Record`\<`string`, `any`\> = `activeSelectionDefaultValues`
 
+Defined in: [src/shapes/ActiveSelection.ts:39](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/ActiveSelection.ts#L39)
+
 #### Overrides
 
 [`Group`](/api/classes/group/).[`ownDefaults`](/api/classes/group/#owndefaults)
-
-#### Defined in
-
-[src/shapes/ActiveSelection.ts:39](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/ActiveSelection.ts#L39)
 
 ***
 
 ### stateProperties
 
 > `static` **stateProperties**: `string`[]
+
+Defined in: [src/shapes/Object/Object.ts:224](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L224)
 
 This list of properties is used to check if the state of an object is changed.
 This state change now is only used for children of groups to understand if a group
@@ -2038,49 +1864,47 @@ needs its cache regenerated during a .set call
 
 [`Group`](/api/classes/group/).[`stateProperties`](/api/classes/group/#stateproperties)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:224](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L224)
-
 ***
 
 ### ~~type~~
 
 > `static` **type**: `string` = `'ActiveSelection'`
 
+Defined in: [src/shapes/ActiveSelection.ts:37](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/ActiveSelection.ts#L37)
+
 Legacy identifier of the class. Prefer using utils like isType or instanceOf
 Will be removed in fabric 7 or 8.
 The setter exists to avoid type errors in old code and possibly current deserialization code.
 DO NOT build new code around this type value
 
-#### TODO
-
-add sustainable warning message
-
 :::caution[Deprecated]
 This API is no longer supported and may be removed in a future release.
 :::
+
+#### TODO
+
+add sustainable warning message
 
 #### Overrides
 
 [`Group`](/api/classes/group/).[`type`](/api/classes/group/#type)
 
-#### Defined in
-
-[src/shapes/ActiveSelection.ts:37](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/ActiveSelection.ts#L37)
-
 ## Accessors
 
 ### type
 
-> `get` **type**(): `string`
+#### Get Signature
+
+> **get** **type**(): `string`
+
+Defined in: [src/shapes/Object/Object.ts:353](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L353)
 
 Legacy identifier of the class. Prefer using utils like isType or instanceOf
 Will be removed in fabric 7 or 8.
 The setter exists to avoid type errors in old code and possibly current deserialization code.
 DO NOT build new code around this type value
 
-#### TODO
+##### TODO
 
 add sustainable warning message
 
@@ -2088,23 +1912,29 @@ add sustainable warning message
 This API is no longer supported and may be removed in a future release.
 :::
 
-> `set` **type**(`value`): `void`
-
-#### Parameters
-
-• **value**: `string`
-
-#### Returns
+##### Returns
 
 `string`
+
+#### Set Signature
+
+> **set** **type**(`value`): `void`
+
+Defined in: [src/shapes/Object/Object.ts:361](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L361)
+
+##### Parameters
+
+###### value
+
+`string`
+
+##### Returns
+
+`void`
 
 #### Inherited from
 
 [`Group`](/api/classes/group/).[`type`](/api/classes/group/#type-1)
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:353](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L353)
 
 ## Methods
 
@@ -2112,15 +1942,23 @@ This API is no longer supported and may be removed in a future release.
 
 > **\_drawClipPath**(`ctx`, `clipPath`, `context`): `void`
 
+Defined in: [src/shapes/Object/Object.ts:883](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L883)
+
 Prepare clipPath state and cache and draw it on instance's cache
 
 #### Parameters
 
-• **ctx**: `CanvasRenderingContext2D`
+##### ctx
 
-• **clipPath**: `undefined` \| [`BaseFabricObject`](/api/classes/basefabricobject/)\<`Partial`\<`ObjectProps`\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+`CanvasRenderingContext2D`
 
-• **context**: [`DrawContext`](/api/type-aliases/drawcontext/)
+##### clipPath
+
+`undefined` | [`BaseFabricObject`](/api/classes/basefabricobject/)
+
+##### context
+
+[`DrawContext`](/api/type-aliases/drawcontext/)
 
 #### Returns
 
@@ -2130,15 +1968,13 @@ Prepare clipPath state and cache and draw it on instance's cache
 
 [`Group`](/api/classes/group/).[`_drawClipPath`](/api/classes/group/#_drawclippath)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:883](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L883)
-
 ***
 
 ### \_limitCacheSize()
 
 > **\_limitCacheSize**(`dims`): `any`
+
+Defined in: [src/shapes/Object/Object.ts:402](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L402)
 
 Limit the cache dimensions so that X * Y do not cross config.perfLimitSizeTotal
 and each side do not cross fabric.cacheSideLimit
@@ -2147,7 +1983,9 @@ making bargain with performances.
 
 #### Parameters
 
-• **dims**: `any`
+##### dims
+
+`any`
 
 #### Returns
 
@@ -2165,19 +2003,19 @@ making bargain with performances.
 
 [`Group`](/api/classes/group/).[`_limitCacheSize`](/api/classes/group/#_limitcachesize)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:402](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L402)
-
 ***
 
 ### \_onObjectAdded()
 
 > **\_onObjectAdded**(`object`): `void`
 
+Defined in: [src/shapes/Group.ts:258](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L258)
+
 #### Parameters
 
-• **object**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+##### object
+
+[`FabricObject`](/api/classes/fabricobject/)
 
 #### Returns
 
@@ -2187,15 +2025,13 @@ making bargain with performances.
 
 [`Group`](/api/classes/group/).[`_onObjectAdded`](/api/classes/group/#_onobjectadded)
 
-#### Defined in
-
-[src/shapes/Group.ts:258](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L258)
-
 ***
 
 ### \_onStackOrderChanged()
 
 > **\_onStackOrderChanged**(): `void`
+
+Defined in: [src/shapes/Group.ts:288](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L288)
 
 #### Returns
 
@@ -2205,15 +2041,13 @@ making bargain with performances.
 
 [`Group`](/api/classes/group/).[`_onStackOrderChanged`](/api/classes/group/#_onstackorderchanged)
 
-#### Defined in
-
-[src/shapes/Group.ts:288](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L288)
-
 ***
 
 ### \_removeCacheCanvas()
 
 > **\_removeCacheCanvas**(): `void`
+
+Defined in: [src/shapes/Object/Object.ts:719](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L719)
 
 Remove cacheCanvas and its dimensions from the objects
 
@@ -2225,29 +2059,33 @@ Remove cacheCanvas and its dimensions from the objects
 
 [`Group`](/api/classes/group/).[`_removeCacheCanvas`](/api/classes/group/#_removecachecanvas)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:719](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L719)
-
 ***
 
 ### \_renderControls()
 
 > **\_renderControls**(`ctx`, `styleOverride`?, `childrenOverride`?): `void`
 
+Defined in: [src/shapes/ActiveSelection.ts:237](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/ActiveSelection.ts#L237)
+
 Renders controls and borders for the object
 
 #### Parameters
 
-• **ctx**: `CanvasRenderingContext2D`
+##### ctx
+
+`CanvasRenderingContext2D`
 
 Context to render on
 
-• **styleOverride?**: `Partial`\<`Pick`\<[`InteractiveFabricObject`](/api/classes/interactivefabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>, `"cornerStyle"` \| `"cornerSize"` \| `"cornerColor"` \| `"cornerStrokeColor"` \| `"cornerDashArray"` \| `"transparentCorners"`\>\>
+##### styleOverride?
+
+`Partial`\<`Pick`\<[`InteractiveFabricObject`](/api/classes/interactivefabricobject/), `"cornerStyle"` \| `"cornerSize"` \| `"cornerColor"` \| `"cornerStrokeColor"` \| `"cornerDashArray"` \| `"transparentCorners"`\>\>
 
 properties to override the object style
 
-• **childrenOverride?**: `Partial`\<`Pick`\<[`InteractiveFabricObject`](/api/classes/interactivefabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>, `"cornerStyle"` \| `"cornerSize"` \| `"cornerColor"` \| `"cornerStrokeColor"` \| `"cornerDashArray"` \| `"transparentCorners"`\>\>
+##### childrenOverride?
+
+`Partial`\<`Pick`\<[`InteractiveFabricObject`](/api/classes/interactivefabricobject/), `"cornerStyle"` \| `"cornerSize"` \| `"cornerColor"` \| `"cornerStrokeColor"` \| `"cornerDashArray"` \| `"transparentCorners"`\>\>
 
 properties to override the children overrides
 
@@ -2259,19 +2097,19 @@ properties to override the children overrides
 
 [`Group`](/api/classes/group/).[`_renderControls`](/api/classes/group/#_rendercontrols)
 
-#### Defined in
-
-[src/shapes/ActiveSelection.ts:237](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/ActiveSelection.ts#L237)
-
 ***
 
 ### \_setClippingProperties()
 
 > **\_setClippingProperties**(`ctx`): `void`
 
+Defined in: [src/shapes/Object/Object.ts:1025](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1025)
+
 #### Parameters
 
-• **ctx**: `CanvasRenderingContext2D`
+##### ctx
+
+`CanvasRenderingContext2D`
 
 #### Returns
 
@@ -2281,21 +2119,23 @@ properties to override the children overrides
 
 [`Group`](/api/classes/group/).[`_setClippingProperties`](/api/classes/group/#_setclippingproperties)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:1025](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1025)
-
 ***
 
 ### \_setFillStyles()
 
 > **\_setFillStyles**(`ctx`, `__namedParameters`): `void`
 
+Defined in: [src/shapes/Object/Object.ts:1014](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1014)
+
 #### Parameters
 
-• **ctx**: `CanvasRenderingContext2D`
+##### ctx
 
-• **\_\_namedParameters**: `Pick`\<[`ActiveSelection`](/api/classes/activeselection/), `"fill"`\>
+`CanvasRenderingContext2D`
+
+##### \_\_namedParameters
+
+`Pick`\<[`ActiveSelection`](/api/classes/activeselection/), `"fill"`\>
 
 #### Returns
 
@@ -2305,21 +2145,23 @@ properties to override the children overrides
 
 [`Group`](/api/classes/group/).[`_setFillStyles`](/api/classes/group/#_setfillstyles)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:1014](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1014)
-
 ***
 
 ### \_setStrokeStyles()
 
 > **\_setStrokeStyles**(`ctx`, `decl`): `void`
 
+Defined in: [src/shapes/Object/Object.ts:972](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L972)
+
 #### Parameters
 
-• **ctx**: `CanvasRenderingContext2D`
+##### ctx
 
-• **decl**: `Pick`\<[`ActiveSelection`](/api/classes/activeselection/), `"stroke"` \| `"strokeWidth"` \| `"strokeDashOffset"` \| `"strokeLineCap"` \| `"strokeLineJoin"` \| `"strokeMiterLimit"`\>
+`CanvasRenderingContext2D`
+
+##### decl
+
+`Pick`\<[`ActiveSelection`](/api/classes/activeselection/), `"stroke"` \| `"strokeWidth"` \| `"strokeDashOffset"` \| `"strokeLineCap"` \| `"strokeLineJoin"` \| `"strokeMiterLimit"`\>
 
 #### Returns
 
@@ -2329,22 +2171,22 @@ properties to override the children overrides
 
 [`Group`](/api/classes/group/).[`_setStrokeStyles`](/api/classes/group/#_setstrokestyles)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:972](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L972)
-
 ***
 
 ### \_setupCompositeOperation()
 
 > **\_setupCompositeOperation**(`ctx`): `void`
 
+Defined in: [src/shapes/Object/Object.ts:1477](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1477)
+
 Sets canvas globalCompositeOperation for specific object
 custom composition operation for the particular object can be specified using globalCompositeOperation property
 
 #### Parameters
 
-• **ctx**: `CanvasRenderingContext2D`
+##### ctx
+
+`CanvasRenderingContext2D`
 
 Rendering canvas context
 
@@ -2356,21 +2198,21 @@ Rendering canvas context
 
 [`Group`](/api/classes/group/).[`_setupCompositeOperation`](/api/classes/group/#_setupcompositeoperation)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:1477](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1477)
-
 ***
 
 ### \_toSVG()
 
 > **\_toSVG**(`reviver`?): `string`[]
 
+Defined in: [src/shapes/Group.ts:637](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L637)
+
 Returns svg representation of an instance
 
 #### Parameters
 
-• **reviver?**: [`TSVGReviver`](/api/type-aliases/tsvgreviver/)
+##### reviver?
+
+[`TSVGReviver`](/api/type-aliases/tsvgreviver/)
 
 Method for further parsing of svg representation.
 
@@ -2384,21 +2226,21 @@ svg representation of an instance
 
 [`Group`](/api/classes/group/).[`_toSVG`](/api/classes/group/#_tosvg)
 
-#### Defined in
-
-[src/shapes/Group.ts:637](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L637)
-
 ***
 
 ### add()
 
 > **add**(...`objects`): `number`
 
+Defined in: [src/shapes/Group.ts:228](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L228)
+
 Add objects
 
 #### Parameters
 
-• ...**objects**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[]
+##### objects
+
+...[`FabricObject`](/api/classes/fabricobject/)[]
 
 #### Returns
 
@@ -2408,19 +2250,19 @@ Add objects
 
 [`Group`](/api/classes/group/).[`add`](/api/classes/group/#add)
 
-#### Defined in
-
-[src/shapes/Group.ts:228](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L228)
-
 ***
 
 ### addPaintOrder()
 
 > **addPaintOrder**(`this`): `string`
 
+Defined in: [src/shapes/Object/FabricObjectSVGExportMixin.ts:249](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/FabricObjectSVGExportMixin.ts#L249)
+
 #### Parameters
 
-• **this**: `FabricObjectSVGExportMixin` & [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+##### this
+
+`FabricObjectSVGExportMixin` & [`FabricObject`](/api/classes/fabricobject/)
 
 #### Returns
 
@@ -2430,15 +2272,13 @@ Add objects
 
 [`Group`](/api/classes/group/).[`addPaintOrder`](/api/classes/group/#addpaintorder)
 
-#### Defined in
-
-[src/shapes/Object/FabricObjectSVGExportMixin.ts:249](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/FabricObjectSVGExportMixin.ts#L249)
-
 ***
 
 ### animate()
 
 > **animate**\<`T`\>(`animatable`, `options`?): `Record`\<`string`, [`TAnimation`](/api/namespaces/util/type-aliases/tanimation/)\<`T`\>\>
+
+Defined in: [src/shapes/Object/Object.ts:1516](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1516)
 
 Animates object's properties
 
@@ -2448,11 +2288,15 @@ Animates object's properties
 
 #### Parameters
 
-• **animatable**: `Record`\<`string`, `T`\>
+##### animatable
+
+`Record`\<`string`, `T`\>
 
 map of keys and end values
 
-• **options?**: `Partial`\<[`AnimationOptions`](/api/namespaces/util/type-aliases/animationoptions/)\<`T`\>\>
+##### options?
+
+`Partial`\<[`AnimationOptions`](/api/namespaces/util/type-aliases/animationoptions/)\<`T`\>\>
 
 #### Returns
 
@@ -2473,15 +2317,13 @@ object.animate({ left: ..., top: ... }, { duration: ... });
 
 [`Group`](/api/classes/group/).[`animate`](/api/classes/group/#animate)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:1516](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1516)
-
 ***
 
 ### bringObjectForward()
 
 > **bringObjectForward**(`object`, `intersecting`?): `boolean`
+
+Defined in: [src/Collection.ts:240](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L240)
 
 Moves an object or a selection up in stack of drawn objects
 An optional parameter, intersecting allows to move the object in front
@@ -2491,11 +2333,15 @@ stack.
 
 #### Parameters
 
-• **object**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+##### object
+
+[`FabricObject`](/api/classes/fabricobject/)
 
 Object to send
 
-• **intersecting?**: `boolean`
+##### intersecting?
+
+`boolean`
 
 If `true`, send object in front of next upper intersecting object
 
@@ -2509,22 +2355,22 @@ true if change occurred
 
 [`Group`](/api/classes/group/).[`bringObjectForward`](/api/classes/group/#bringobjectforward)
 
-#### Defined in
-
-[src/Collection.ts:240](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L240)
-
 ***
 
 ### bringObjectToFront()
 
 > **bringObjectToFront**(`object`): `boolean`
 
+Defined in: [src/Collection.ts:194](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L194)
+
 Moves an object or the objects of a multiple selection
 to the top of the stack of drawn objects
 
 #### Parameters
 
-• **object**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+##### object
+
+[`FabricObject`](/api/classes/fabricobject/)
 
 Object to send
 
@@ -2538,15 +2384,13 @@ true if change occurred
 
 [`Group`](/api/classes/group/).[`bringObjectToFront`](/api/classes/group/#bringobjecttofront)
 
-#### Defined in
-
-[src/Collection.ts:194](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L194)
-
 ***
 
 ### calcACoords()
 
 > **calcACoords**(): [`TCornerPoint`](/api/type-aliases/tcornerpoint/)
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:427](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L427)
 
 Calculates the coordinates of the 4 corner of the bbox, in absolute coordinates.
 those never change with zoom or viewport changes.
@@ -2559,15 +2403,13 @@ those never change with zoom or viewport changes.
 
 [`Group`](/api/classes/group/).[`calcACoords`](/api/classes/group/#calcacoords)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:427](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L427)
-
 ***
 
 ### calcOCoords()
 
 > **calcOCoords**(): `Record`\<`string`, `TOCoord`\>
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:255](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L255)
 
 Calculates the coordinates of the center of each control plus the corners of the control itself
 This basically just delegates to each control positionHandler
@@ -2582,15 +2424,13 @@ is a public api and should be done just if extremely necessary
 
 [`Group`](/api/classes/group/).[`calcOCoords`](/api/classes/group/#calcocoords)
 
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:255](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L255)
-
 ***
 
 ### calcOwnMatrix()
 
 > **calcOwnMatrix**(): [`TMat2D`](/api/type-aliases/tmat2d/)
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:513](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L513)
 
 calculate transform matrix that represents the current transformations from the
 object's properties, this matrix does not include the group transformation
@@ -2605,22 +2445,22 @@ transform matrix for the object
 
 [`Group`](/api/classes/group/).[`calcOwnMatrix`](/api/classes/group/#calcownmatrix)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:513](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L513)
-
 ***
 
 ### calcTransformMatrix()
 
 > **calcTransformMatrix**(`skipGroup`?): [`TMat2D`](/api/type-aliases/tmat2d/)
 
+Defined in: [src/shapes/Object/ObjectGeometry.ts:485](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L485)
+
 calculate transform matrix that represents the current transformations from the
 object's properties.
 
 #### Parameters
 
-• **skipGroup?**: `boolean` = `false`
+##### skipGroup?
+
+`boolean` = `false`
 
 return transform matrix for object not counting parent transformations
 There are some situation in which this is useful to avoid the fake rotation.
@@ -2635,21 +2475,21 @@ transform matrix for the object
 
 [`Group`](/api/classes/group/).[`calcTransformMatrix`](/api/classes/group/#calctransformmatrix)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:485](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L485)
-
 ***
 
 ### canDrop()
 
 > **canDrop**(`_e`): `boolean`
 
+Defined in: [src/shapes/Object/InteractiveObject.ts:701](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L701)
+
 Override to customize drag and drop behavior
 
 #### Parameters
 
-• **\_e**: `DragEvent`
+##### \_e
+
+`DragEvent`
 
 #### Returns
 
@@ -2661,21 +2501,21 @@ true if the object currently dragged can be dropped on the target
 
 [`Group`](/api/classes/group/).[`canDrop`](/api/classes/group/#candrop)
 
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:701](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L701)
-
 ***
 
 ### canEnterGroup()
 
 > **canEnterGroup**(`object`): `boolean`
 
+Defined in: [src/shapes/ActiveSelection.ts:115](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/ActiveSelection.ts#L115)
+
 block ancestors/descendants of selected objects from being selected to prevent a circular object tree
 
 #### Parameters
 
-• **object**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+##### object
+
+[`FabricObject`](/api/classes/fabricobject/)
 
 #### Returns
 
@@ -2685,15 +2525,13 @@ block ancestors/descendants of selected objects from being selected to prevent a
 
 `Group.canEnterGroup`
 
-#### Defined in
-
-[src/shapes/ActiveSelection.ts:115](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/ActiveSelection.ts#L115)
-
 ***
 
 ### clearContextTop()
 
 > **clearContextTop**(`restoreManually`?): `undefined` \| `CanvasRenderingContext2D`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:627](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L627)
 
 Clears the canvas.contextTop in a specific area that corresponds to the object's bounding box
 that is in the canvas.contextContainer.
@@ -2702,7 +2540,9 @@ Example: blinking cursor text selection, drag effects.
 
 #### Parameters
 
-• **restoreManually?**: `boolean`
+##### restoreManually?
+
+`boolean`
 
 When true won't restore the context after clear, in order to draw something else.
 
@@ -2721,21 +2561,21 @@ discuss swapping restoreManually with a renderCallback, but think of async issue
 
 [`Group`](/api/classes/group/).[`clearContextTop`](/api/classes/group/#clearcontexttop)
 
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:627](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L627)
-
 ***
 
 ### clone()
 
 > **clone**(`propertiesToInclude`?): `Promise`\<[`ActiveSelection`](/api/classes/activeselection/)\>
 
+Defined in: [src/shapes/Object/Object.ts:1251](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1251)
+
 Clones an instance.
 
 #### Parameters
 
-• **propertiesToInclude?**: `string`[]
+##### propertiesToInclude?
+
+`string`[]
 
 Any properties that you might want to additionally include in the output
 
@@ -2747,15 +2587,13 @@ Any properties that you might want to additionally include in the output
 
 [`Group`](/api/classes/group/).[`clone`](/api/classes/group/#clone)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:1251](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1251)
-
 ***
 
 ### cloneAsImage()
 
-> **cloneAsImage**(`options`?): [`FabricImage`](/api/classes/fabricimage/)\<`Partial`\<[`ImageProps`](/api/interfaces/imageprops/)\>, [`SerializedImageProps`](/api/interfaces/serializedimageprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+> **cloneAsImage**(`options`?): [`FabricImage`](/api/classes/fabricimage/)
+
+Defined in: [src/shapes/Object/Object.ts:1277](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1277)
 
 Creates an instance of Image out of an object
 makes use of toCanvasElement.
@@ -2766,13 +2604,15 @@ toCanvasElement and then toBlob from the obtained canvas is also a good option.
 
 #### Parameters
 
-• **options?**: `ObjectToCanvasElementOptions`
+##### options?
+
+`ObjectToCanvasElementOptions`
 
 for clone as image, passed to toDataURL
 
 #### Returns
 
-[`FabricImage`](/api/classes/fabricimage/)\<`Partial`\<[`ImageProps`](/api/interfaces/imageprops/)\>, [`SerializedImageProps`](/api/interfaces/serializedimageprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+[`FabricImage`](/api/classes/fabricimage/)
 
 Object cloned as image.
 
@@ -2784,15 +2624,13 @@ fix the export type, it could not be Image but the type that getClass return for
 
 [`Group`](/api/classes/group/).[`cloneAsImage`](/api/classes/group/#cloneasimage)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:1277](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1277)
-
 ***
 
 ### collectObjects()
 
-> **collectObjects**(`bbox`, `options`): [`InteractiveFabricObject`](/api/classes/interactivefabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[]
+> **collectObjects**(`bbox`, `options`): [`InteractiveFabricObject`](/api/classes/interactivefabricobject/)[]
+
+Defined in: [src/Collection.ts:326](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L326)
 
 Given a bounding box, return all the objects of the collection that are contained in the bounding box.
 If `includeIntersecting` is true, return also the objects that intersect the bounding box as well.
@@ -2800,19 +2638,23 @@ This is meant to work with selection. Is not a generic method.
 
 #### Parameters
 
-• **bbox**: [`TBBox`](/api/type-aliases/tbbox/)
+##### bbox
+
+[`TBBox`](/api/type-aliases/tbbox/)
 
 a bounding box in scene coordinates
 
-• **options** = `{}`
+##### options
 
 an object with includeIntersecting
 
-• **options.includeIntersecting?**: `boolean` = `true`
+###### includeIntersecting
+
+`boolean` = `true`
 
 #### Returns
 
-[`InteractiveFabricObject`](/api/classes/interactivefabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[]
+[`InteractiveFabricObject`](/api/classes/interactivefabricobject/)[]
 
 array of objects contained in the bounding box, ordered from top to bottom stacking wise
 
@@ -2820,15 +2662,15 @@ array of objects contained in the bounding box, ordered from top to bottom stack
 
 [`Group`](/api/classes/group/).[`collectObjects`](/api/classes/group/#collectobjects)
 
-#### Defined in
-
-[src/Collection.ts:326](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L326)
-
 ***
 
 ### complexity()
 
 > **complexity**(): `number`
+
+Defined in: [src/Collection.ts:165](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L165)
+
+Returns number representation of a collection complexity
 
 #### Returns
 
@@ -2840,15 +2682,13 @@ complexity
 
 [`Group`](/api/classes/group/).[`complexity`](/api/classes/group/#complexity)
 
-#### Defined in
-
-[src/Collection.ts:165](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L165)
-
 ***
 
 ### contains()
 
 > **contains**(`object`, `deep`?): `boolean`
+
+Defined in: [src/Collection.ts:148](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L148)
 
 Returns true if collection contains an object.\
 **Prefer using [FabricObject#isDescendantOf](../../../../api/classes/fabricobject/#isdescendantof) for performance reasons**
@@ -2856,11 +2696,15 @@ instead of `a.contains(b)` use `b.isDescendantOf(a)`
 
 #### Parameters
 
-• **object**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+##### object
+
+[`FabricObject`](/api/classes/fabricobject/)
 
 Object to check against
 
-• **deep?**: `boolean`
+##### deep?
+
+`boolean`
 
 `true` to check all descendants, `false` to check only `_objects`
 
@@ -2874,21 +2718,21 @@ Object to check against
 
 [`Group`](/api/classes/group/).[`contains`](/api/classes/group/#contains)
 
-#### Defined in
-
-[src/Collection.ts:148](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L148)
-
 ***
 
 ### containsPoint()
 
 > **containsPoint**(`point`): `boolean`
 
+Defined in: [src/shapes/Object/ObjectGeometry.ts:282](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L282)
+
 Checks if point is inside the object
 
 #### Parameters
 
-• **point**: [`Point`](/api/classes/point/)
+##### point
+
+[`Point`](/api/classes/point/)
 
 Point to check against
 
@@ -2902,15 +2746,13 @@ true if point is inside the object
 
 [`Group`](/api/classes/group/).[`containsPoint`](/api/classes/group/#containspoint)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:282](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L282)
-
 ***
 
 ### dispose()
 
 > **dispose**(): `void`
+
+Defined in: [src/shapes/Group.ts:605](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L605)
 
 cancel instance's running animations
 override if necessary to dispose artifacts such as `clipPath`
@@ -2923,15 +2765,13 @@ override if necessary to dispose artifacts such as `clipPath`
 
 [`Group`](/api/classes/group/).[`dispose`](/api/classes/group/#dispose)
 
-#### Defined in
-
-[src/shapes/Group.ts:605](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L605)
-
 ***
 
 ### drawBorders()
 
 > **drawBorders**(`ctx`, `options`, `styleOverride`?): `void`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:478](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L478)
 
 Draws borders of an object's bounding box.
 Requires public properties: width, height
@@ -2939,15 +2779,21 @@ Requires public options: padding, borderColor
 
 #### Parameters
 
-• **ctx**: `CanvasRenderingContext2D`
+##### ctx
+
+`CanvasRenderingContext2D`
 
 Context to draw on
 
-• **options**: `Required`\<`Omit`\<[`TComposeMatrixArgs`](/api/namespaces/util/type-aliases/tcomposematrixargs/), `"flipY"` \| `"flipX"`\>\>
+##### options
+
+`Required`\<`Omit`\<[`TComposeMatrixArgs`](/api/namespaces/util/type-aliases/tcomposematrixargs/), `"flipY"` \| `"flipX"`\>\>
 
 object representing current object parameters
 
-• **styleOverride?**: `TStyleOverride`
+##### styleOverride?
+
+`TStyleOverride`
 
 object to override the object style
 
@@ -2959,23 +2805,25 @@ object to override the object style
 
 [`Group`](/api/classes/group/).[`drawBorders`](/api/classes/group/#drawborders)
 
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:478](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L478)
-
 ***
 
 ### drawCacheOnCanvas()
 
 > **drawCacheOnCanvas**(`this`, `ctx`): `void`
 
+Defined in: [src/shapes/Object/Object.ts:905](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L905)
+
 Paint the cached copy of the object on the target context.
 
 #### Parameters
 
-• **this**: `TCachedFabricObject`\<[`BaseFabricObject`](/api/classes/basefabricobject/)\<`Partial`\<`ObjectProps`\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>\>
+##### this
 
-• **ctx**: `CanvasRenderingContext2D`
+`TCachedFabricObject`\<[`BaseFabricObject`](/api/classes/basefabricobject/)\>
+
+##### ctx
+
+`CanvasRenderingContext2D`
 
 Context to render on
 
@@ -2987,27 +2835,31 @@ Context to render on
 
 [`Group`](/api/classes/group/).[`drawCacheOnCanvas`](/api/classes/group/#drawcacheoncanvas)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:905](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L905)
-
 ***
 
 ### drawClipPathOnCache()
 
 > **drawClipPathOnCache**(`ctx`, `clipPath`, `canvasWithClipPath`): `void`
 
+Defined in: [src/shapes/Object/Object.ts:810](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L810)
+
 Execute the drawing operation for an object clipPath
 
 #### Parameters
 
-• **ctx**: `CanvasRenderingContext2D`
+##### ctx
+
+`CanvasRenderingContext2D`
 
 Context to render on
 
-• **clipPath**: [`BaseFabricObject`](/api/classes/basefabricobject/)\<`Partial`\<`ObjectProps`\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+##### clipPath
 
-• **canvasWithClipPath**: `HTMLCanvasElement`
+[`BaseFabricObject`](/api/classes/basefabricobject/)
+
+##### canvasWithClipPath
+
+`HTMLCanvasElement`
 
 #### Returns
 
@@ -3017,15 +2869,13 @@ Context to render on
 
 [`Group`](/api/classes/group/).[`drawClipPathOnCache`](/api/classes/group/#drawclippathoncache)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:810](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L810)
-
 ***
 
 ### drawControls()
 
 > **drawControls**(`ctx`, `styleOverride`): `void`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:550](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L550)
 
 Draws corners of an object's bounding box.
 Requires public properties: width, height
@@ -3036,11 +2886,15 @@ is outside the standard selection and transform process.
 
 #### Parameters
 
-• **ctx**: `CanvasRenderingContext2D`
+##### ctx
+
+`CanvasRenderingContext2D`
 
 Context to draw on
 
-• **styleOverride**: `Partial`\<`Pick`\<[`InteractiveFabricObject`](/api/classes/interactivefabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>, `"cornerStyle"` \| `"cornerSize"` \| `"cornerColor"` \| `"cornerStrokeColor"` \| `"cornerDashArray"` \| `"transparentCorners"`\>\> = `{}`
+##### styleOverride
+
+`Partial`\<`Pick`\<[`InteractiveFabricObject`](/api/classes/interactivefabricobject/), `"cornerStyle"` \| `"cornerSize"` \| `"cornerColor"` \| `"cornerStrokeColor"` \| `"cornerDashArray"` \| `"transparentCorners"`\>\> = `{}`
 
 object to override the object style
 
@@ -3052,15 +2906,13 @@ object to override the object style
 
 [`Group`](/api/classes/group/).[`drawControls`](/api/classes/group/#drawcontrols)
 
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:550](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L550)
-
 ***
 
 ### drawControlsConnectingLines()
 
 > **drawControlsConnectingLines**(`ctx`, `size`): `void`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:517](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L517)
 
 Draws lines from a borders of an object's bounding box to controls that have `withConnection` property set.
 Requires public properties: width, height
@@ -3068,11 +2920,15 @@ Requires public options: padding, borderColor
 
 #### Parameters
 
-• **ctx**: `CanvasRenderingContext2D`
+##### ctx
+
+`CanvasRenderingContext2D`
 
 Context to draw on
 
-• **size**: [`Point`](/api/classes/point/)
+##### size
+
+[`Point`](/api/classes/point/)
 
 object size x = width, y = height
 
@@ -3084,27 +2940,31 @@ object size x = width, y = height
 
 [`Group`](/api/classes/group/).[`drawControlsConnectingLines`](/api/classes/group/#drawcontrolsconnectinglines)
 
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:517](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L517)
-
 ***
 
 ### drawObject()
 
 > **drawObject**(`ctx`, `forClipping`, `context`): `void`
 
+Defined in: [src/shapes/Group.ts:496](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L496)
+
 Execute the drawing operation for an object on a specified context
 
 #### Parameters
 
-• **ctx**: `CanvasRenderingContext2D`
+##### ctx
+
+`CanvasRenderingContext2D`
 
 Context to render on
 
-• **forClipping**: `undefined` \| `boolean`
+##### forClipping
 
-• **context**: [`DrawContext`](/api/type-aliases/drawcontext/)
+`undefined` | `boolean`
+
+##### context
+
+[`DrawContext`](/api/type-aliases/drawcontext/)
 
 #### Returns
 
@@ -3114,15 +2974,13 @@ Context to render on
 
 [`Group`](/api/classes/group/).[`drawObject`](/api/classes/group/#drawobject)
 
-#### Defined in
-
-[src/shapes/Group.ts:496](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L496)
-
 ***
 
 ### drawSelectionBackground()
 
 > **drawSelectionBackground**(`ctx`): `void`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:375](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L375)
 
 Draws a colored layer behind the object, inside its selection borders.
 Requires public options: padding, selectionBackgroundColor
@@ -3131,7 +2989,9 @@ has checks to be skipped when the object is on a staticCanvas
 
 #### Parameters
 
-• **ctx**: `CanvasRenderingContext2D`
+##### ctx
+
+`CanvasRenderingContext2D`
 
 Context to draw on
 
@@ -3149,15 +3009,13 @@ it seemed a good option, now is an edge case
 
 [`Group`](/api/classes/group/).[`drawSelectionBackground`](/api/classes/group/#drawselectionbackground)
 
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:375](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L375)
-
 ***
 
 ### findCommonAncestors()
 
 > **findCommonAncestors**\<`T`\>(`other`): `AncestryComparison`
+
+Defined in: [src/shapes/Object/Object.ts:1634](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1634)
 
 Compare ancestors
 
@@ -3167,7 +3025,9 @@ Compare ancestors
 
 #### Parameters
 
-• **other**: `T`
+##### other
+
+`T`
 
 #### Returns
 
@@ -3179,23 +3039,27 @@ an object that represent the ancestry situation.
 
 [`Group`](/api/classes/group/).[`findCommonAncestors`](/api/classes/group/#findcommonancestors)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:1634](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1634)
-
 ***
 
 ### findNewLowerIndex()
 
 > **findNewLowerIndex**(`object`, `idx`, `intersecting`?): `number`
 
+Defined in: [src/Collection.ts:272](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L272)
+
 #### Parameters
 
-• **object**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+##### object
 
-• **idx**: `number`
+[`FabricObject`](/api/classes/fabricobject/)
 
-• **intersecting?**: `boolean`
+##### idx
+
+`number`
+
+##### intersecting?
+
+`boolean`
 
 #### Returns
 
@@ -3205,23 +3069,27 @@ an object that represent the ancestry situation.
 
 [`Group`](/api/classes/group/).[`findNewLowerIndex`](/api/classes/group/#findnewlowerindex)
 
-#### Defined in
-
-[src/Collection.ts:272](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L272)
-
 ***
 
 ### findNewUpperIndex()
 
 > **findNewUpperIndex**(`object`, `idx`, `intersecting`?): `number`
 
+Defined in: [src/Collection.ts:295](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L295)
+
 #### Parameters
 
-• **object**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+##### object
 
-• **idx**: `number`
+[`FabricObject`](/api/classes/fabricobject/)
 
-• **intersecting?**: `boolean`
+##### idx
+
+`number`
+
+##### intersecting?
+
+`boolean`
 
 #### Returns
 
@@ -3231,15 +3099,13 @@ an object that represent the ancestry situation.
 
 [`Group`](/api/classes/group/).[`findNewUpperIndex`](/api/classes/group/#findnewupperindex)
 
-#### Defined in
-
-[src/Collection.ts:295](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L295)
-
 ***
 
 ### fire()
 
 > **fire**\<`K`\>(`eventName`, `options`?): `void`
+
+Defined in: [src/Observable.ts:167](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L167)
 
 Fires event with an optional options object
 
@@ -3249,11 +3115,15 @@ Fires event with an optional options object
 
 #### Parameters
 
-• **eventName**: `K`
+##### eventName
+
+`K`
 
 Event name to fire
 
-• **options?**: [`GroupEvents`](/api/interfaces/groupevents/)\[`K`\]
+##### options?
+
+[`GroupEvents`](/api/interfaces/groupevents/)\[`K`\]
 
 Options object
 
@@ -3265,22 +3135,22 @@ Options object
 
 [`Group`](/api/classes/group/).[`fire`](/api/classes/group/#fire)
 
-#### Defined in
-
-[src/Observable.ts:167](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L167)
-
 ***
 
 ### forEachControl()
 
 > **forEachControl**(`fn`): `void`
 
+Defined in: [src/shapes/Object/InteractiveObject.ts:353](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L353)
+
 Calls a function for each control. The function gets called,
 with the control, the control's key and the object that is calling the iterator
 
 #### Parameters
 
-• **fn**
+##### fn
+
+(`control`, `key`, `fabricObject`) => `any`
 
 function to iterate over the controls over
 
@@ -3292,15 +3162,13 @@ function to iterate over the controls over
 
 [`Group`](/api/classes/group/).[`forEachControl`](/api/classes/group/#foreachcontrol)
 
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:353](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L353)
-
 ***
 
 ### forEachObject()
 
 > **forEachObject**(`callback`): `void`
+
+Defined in: [src/Collection.ts:91](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L91)
 
 Executes given function for each object in this group
 A simple shortcut for getObjects().forEach, before es6 was more complicated,
@@ -3308,7 +3176,9 @@ now is just a shortcut.
 
 #### Parameters
 
-• **callback**
+##### callback
+
+(`object`, `index`, `array`) => `any`
 
 Callback invoked with current object as first argument,
                   index - as second and an array of all objects - as third.
@@ -3321,21 +3191,21 @@ Callback invoked with current object as first argument,
 
 [`Group`](/api/classes/group/).[`forEachObject`](/api/classes/group/#foreachobject)
 
-#### Defined in
-
-[src/Collection.ts:91](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L91)
-
 ***
 
 ### get()
 
 > **get**(`property`): `any`
 
+Defined in: [src/CommonMethods.ts:59](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/CommonMethods.ts#L59)
+
 Basic getter
 
 #### Parameters
 
-• **property**: `string`
+##### property
+
+`string`
 
 Property name
 
@@ -3349,33 +3219,29 @@ value of a property
 
 [`Group`](/api/classes/group/).[`get`](/api/classes/group/#get)
 
-#### Defined in
-
-[src/CommonMethods.ts:59](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/CommonMethods.ts#L59)
-
 ***
 
 ### getActiveControl()
 
-> **getActiveControl**(): `undefined` \| `object`
+> **getActiveControl**(): `undefined` \| \{ `control`: [`Control`](/api/classes/control/); `coord`: `TOCoord`; `key`: `string`; \}
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:194](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L194)
 
 #### Returns
 
-`undefined` \| `object`
+`undefined` \| \{ `control`: [`Control`](/api/classes/control/); `coord`: `TOCoord`; `key`: `string`; \}
 
 #### Inherited from
 
 [`Group`](/api/classes/group/).[`getActiveControl`](/api/classes/group/#getactivecontrol)
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:194](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L194)
 
 ***
 
 ### getAncestors()
 
 > **getAncestors**(): `Ancestors`
+
+Defined in: [src/shapes/Object/Object.ts:1617](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1617)
 
 #### Returns
 
@@ -3387,15 +3253,13 @@ ancestors (excluding `ActiveSelection`) from bottom to top
 
 [`Group`](/api/classes/group/).[`getAncestors`](/api/classes/group/#getancestors)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:1617](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1617)
-
 ***
 
 ### getBoundingRect()
 
 > **getBoundingRect**(): [`TBBox`](/api/type-aliases/tbbox/)
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:343](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L343)
 
 Returns coordinates of object's bounding rectangle (left, top, width, height)
 the box is intended as aligned to axis of canvas.
@@ -3410,15 +3274,13 @@ Object with left, top, width, height properties
 
 [`Group`](/api/classes/group/).[`getBoundingRect`](/api/classes/group/#getboundingrect)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:343](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L343)
-
 ***
 
 ### getCanvasRetinaScaling()
 
 > **getCanvasRetinaScaling**(): `number`
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:400](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L400)
 
 #### Returns
 
@@ -3428,15 +3290,13 @@ Object with left, top, width, height properties
 
 [`Group`](/api/classes/group/).[`getCanvasRetinaScaling`](/api/classes/group/#getcanvasretinascaling)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:400](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L400)
-
 ***
 
 ### getCenterPoint()
 
 > **getCenterPoint**(): [`Point`](/api/classes/point/)
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:732](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L732)
 
 Returns the center coordinates of the object relative to canvas
 
@@ -3448,15 +3308,13 @@ Returns the center coordinates of the object relative to canvas
 
 [`Group`](/api/classes/group/).[`getCenterPoint`](/api/classes/group/#getcenterpoint)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:732](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L732)
-
 ***
 
 ### getCoords()
 
 > **getCoords**(): [`Point`](/api/classes/point/)[]
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:204](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L204)
 
 #### Returns
 
@@ -3468,15 +3326,13 @@ Returns the center coordinates of the object relative to canvas
 
 [`Group`](/api/classes/group/).[`getCoords`](/api/classes/group/#getcoords)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:204](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L204)
-
 ***
 
 ### getObjectOpacity()
 
 > **getObjectOpacity**(): `number`
+
+Defined in: [src/shapes/Object/Object.ts:570](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L570)
 
 Return the object opacity counting also the group property
 
@@ -3488,15 +3344,39 @@ Return the object opacity counting also the group property
 
 [`Group`](/api/classes/group/).[`getObjectOpacity`](/api/classes/group/#getobjectopacity)
 
-#### Defined in
+***
 
-[src/shapes/Object/Object.ts:570](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L570)
+### getObjects()
+
+> **getObjects**(...`types`?): [`FabricObject`](/api/classes/fabricobject/)[]
+
+Defined in: [src/Collection.ts:108](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L108)
+
+Returns an array of children objects of this instance
+
+#### Parameters
+
+##### types?
+
+...`string`[]
+
+When specified, only objects of these types are returned
+
+#### Returns
+
+[`FabricObject`](/api/classes/fabricobject/)[]
+
+#### Inherited from
+
+[`Group`](/api/classes/group/).[`getObjects`](/api/classes/group/#getobjects)
 
 ***
 
 ### getObjectScaling()
 
 > **getObjectScaling**(): [`Point`](/api/classes/point/)
+
+Defined in: [src/shapes/Object/Object.ts:539](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L539)
 
 Return the object scale factor counting also the group scaling
 
@@ -3508,41 +3388,13 @@ Return the object scale factor counting also the group scaling
 
 [`Group`](/api/classes/group/).[`getObjectScaling`](/api/classes/group/#getobjectscaling)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:539](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L539)
-
-***
-
-### getObjects()
-
-> **getObjects**(...`types`?): [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[]
-
-Returns an array of children objects of this instance
-
-#### Parameters
-
-• ...**types?**: `string`[]
-
-When specified, only objects of these types are returned
-
-#### Returns
-
-[`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[]
-
-#### Inherited from
-
-[`Group`](/api/classes/group/).[`getObjects`](/api/classes/group/#getobjects)
-
-#### Defined in
-
-[src/Collection.ts:108](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L108)
-
 ***
 
 ### getPointByOrigin()
 
 > **getPointByOrigin**(`originX`, `originY`): [`Point`](/api/classes/point/)
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:762](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L762)
 
 Returns the position of the object as if it has a different origin.
 Take an object that has left, top set to 100, 100 with origin 'left', 'top'.
@@ -3553,11 +3405,15 @@ Alternatively you can use this to also find which point in the parent plane is a
 
 #### Parameters
 
-• **originX**: [`TOriginX`](/api/type-aliases/toriginx/)
+##### originX
+
+[`TOriginX`](/api/type-aliases/toriginx/)
 
 Horizontal origin: 'left', 'center' or 'right'
 
-• **originY**: [`TOriginY`](/api/type-aliases/toriginy/)
+##### originY
+
+[`TOriginY`](/api/type-aliases/toriginy/)
 
 Vertical origin: 'top', 'center' or 'bottom'
 
@@ -3569,15 +3425,13 @@ Vertical origin: 'top', 'center' or 'bottom'
 
 [`Group`](/api/classes/group/).[`getPointByOrigin`](/api/classes/group/#getpointbyorigin)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:762](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L762)
-
 ***
 
 ### getRelativeCenterPoint()
 
 > **getRelativeCenterPoint**(): [`Point`](/api/classes/point/)
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:743](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L743)
 
 Returns the center coordinates of the object relative to it's parent
 
@@ -3589,15 +3443,13 @@ Returns the center coordinates of the object relative to it's parent
 
 [`Group`](/api/classes/group/).[`getRelativeCenterPoint`](/api/classes/group/#getrelativecenterpoint)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:743](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L743)
-
 ***
 
 ### getRelativeX()
 
 > **getRelativeX**(): `number`
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:115](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L115)
 
 #### Returns
 
@@ -3610,15 +3462,13 @@ if parent is canvas then this property is identical to [getX](/api/api/classes/a
 
 [`Group`](/api/classes/group/).[`getRelativeX`](/api/classes/group/#getrelativex)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:115](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L115)
-
 ***
 
 ### getRelativeXY()
 
 > **getRelativeXY**(): [`Point`](/api/classes/point/)
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:176](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L176)
 
 #### Returns
 
@@ -3630,15 +3480,13 @@ x,y position according to object's [originX](/api/api/classes/fabricobject/origi
 
 [`Group`](/api/classes/group/).[`getRelativeXY`](/api/classes/group/#getrelativexy)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:176](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L176)
-
 ***
 
 ### getRelativeY()
 
 > **getRelativeY**(): `number`
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:131](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L131)
 
 #### Returns
 
@@ -3651,15 +3499,13 @@ if parent is canvas then this property is identical to [getY](/api/api/classes/a
 
 [`Group`](/api/classes/group/).[`getRelativeY`](/api/classes/group/#getrelativey)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:131](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L131)
-
 ***
 
 ### getScaledHeight()
 
 > **getScaledHeight**(): `number`
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:361](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L361)
 
 Returns height of an object bounding box counting transformations
 
@@ -3677,15 +3523,13 @@ shouldn't this account for group transform and return the actual size in canvas 
 
 [`Group`](/api/classes/group/).[`getScaledHeight`](/api/classes/group/#getscaledheight)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:361](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L361)
-
 ***
 
 ### getScaledWidth()
 
 > **getScaledWidth**(): `number`
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:352](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L352)
 
 Returns width of an object's bounding box counting transformations
 
@@ -3703,21 +3547,21 @@ shouldn't this account for group transform and return the actual size in canvas 
 
 [`Group`](/api/classes/group/).[`getScaledWidth`](/api/classes/group/#getscaledwidth)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:352](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L352)
-
 ***
 
 ### getSvgCommons()
 
 > **getSvgCommons**(`this`): `string`
 
+Defined in: [src/shapes/Object/FabricObjectSVGExportMixin.ts:84](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/FabricObjectSVGExportMixin.ts#L84)
+
 Returns id attribute for svg output
 
 #### Parameters
 
-• **this**: `FabricObjectSVGExportMixin` & [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\> & `object`
+##### this
+
+`FabricObjectSVGExportMixin` & [`FabricObject`](/api/classes/fabricobject/) & `object`
 
 #### Returns
 
@@ -3727,21 +3571,21 @@ Returns id attribute for svg output
 
 [`Group`](/api/classes/group/).[`getSvgCommons`](/api/classes/group/#getsvgcommons)
 
-#### Defined in
-
-[src/shapes/Object/FabricObjectSVGExportMixin.ts:84](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/FabricObjectSVGExportMixin.ts#L84)
-
 ***
 
 ### getSvgFilter()
 
 > **getSvgFilter**(`this`): `string`
 
+Defined in: [src/shapes/Object/FabricObjectSVGExportMixin.ts:76](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/FabricObjectSVGExportMixin.ts#L76)
+
 Returns filter for svg shadow
 
 #### Parameters
 
-• **this**: `FabricObjectSVGExportMixin` & [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+##### this
+
+`FabricObjectSVGExportMixin` & [`FabricObject`](/api/classes/fabricobject/)
 
 #### Returns
 
@@ -3751,15 +3595,13 @@ Returns filter for svg shadow
 
 [`Group`](/api/classes/group/).[`getSvgFilter`](/api/classes/group/#getsvgfilter)
 
-#### Defined in
-
-[src/shapes/Object/FabricObjectSVGExportMixin.ts:76](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/FabricObjectSVGExportMixin.ts#L76)
-
 ***
 
 ### getSvgStyles()
 
 > **getSvgStyles**(): `string`
+
+Defined in: [src/shapes/Group.ts:652](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L652)
 
 Returns styles-string for svg-export, specific version for group
 
@@ -3771,25 +3613,29 @@ Returns styles-string for svg-export, specific version for group
 
 [`Group`](/api/classes/group/).[`getSvgStyles`](/api/classes/group/#getsvgstyles)
 
-#### Defined in
-
-[src/shapes/Group.ts:652](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L652)
-
 ***
 
 ### getSvgTransform()
 
 > **getSvgTransform**(`this`, `full`?, `additionalTransform`?): `string`
 
+Defined in: [src/shapes/Object/FabricObjectSVGExportMixin.ts:103](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/FabricObjectSVGExportMixin.ts#L103)
+
 Returns transform-string for svg-export
 
 #### Parameters
 
-• **this**: `FabricObjectSVGExportMixin` & [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+##### this
 
-• **full?**: `boolean`
+`FabricObjectSVGExportMixin` & [`FabricObject`](/api/classes/fabricobject/)
 
-• **additionalTransform?**: `string` = `''`
+##### full?
+
+`boolean`
+
+##### additionalTransform?
+
+`string` = `''`
 
 #### Returns
 
@@ -3799,15 +3645,13 @@ Returns transform-string for svg-export
 
 [`Group`](/api/classes/group/).[`getSvgTransform`](/api/classes/group/#getsvgtransform)
 
-#### Defined in
-
-[src/shapes/Object/FabricObjectSVGExportMixin.ts:103](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/FabricObjectSVGExportMixin.ts#L103)
-
 ***
 
 ### getTotalAngle()
 
 > **getTotalAngle**(): [`TDegree`](/api/type-aliases/tdegree/)
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:408](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L408)
 
 Returns the object angle relative to canvas counting also the group property
 
@@ -3819,15 +3663,13 @@ Returns the object angle relative to canvas counting also the group property
 
 [`Group`](/api/classes/group/).[`getTotalAngle`](/api/classes/group/#gettotalangle)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:408](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L408)
-
 ***
 
 ### getTotalObjectScaling()
 
 > **getTotalObjectScaling**(): [`Point`](/api/classes/point/)
+
+Defined in: [src/shapes/Object/Object.ts:556](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L556)
 
 Return the object scale factor counting also the group scaling, zoom and retina
 
@@ -3841,15 +3683,13 @@ object with scaleX and scaleY properties
 
 [`Group`](/api/classes/group/).[`getTotalObjectScaling`](/api/classes/group/#gettotalobjectscaling)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:556](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L556)
-
 ***
 
 ### getViewportTransform()
 
 > **getViewportTransform**(): [`TMat2D`](/api/type-aliases/tmat2d/)
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:418](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L418)
 
 Retrieves viewportTransform from Object's canvas if available
 
@@ -3861,15 +3701,13 @@ Retrieves viewportTransform from Object's canvas if available
 
 [`Group`](/api/classes/group/).[`getViewportTransform`](/api/classes/group/#getviewporttransform)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:418](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L418)
-
 ***
 
 ### getX()
 
 > **getX**(): `number`
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:86](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L86)
 
 #### Returns
 
@@ -3881,15 +3719,13 @@ x position according to object's [originX](/api/api/classes/fabricobject/originx
 
 [`Group`](/api/classes/group/).[`getX`](/api/classes/group/#getx)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:86](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L86)
-
 ***
 
 ### getXY()
 
 > **getXY**(): [`Point`](/api/classes/point/)
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:146](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L146)
 
 #### Returns
 
@@ -3901,15 +3737,13 @@ x position according to object's [originX](/api/api/classes/fabricobject/originx
 
 [`Group`](/api/classes/group/).[`getXY`](/api/classes/group/#getxy)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:146](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L146)
-
 ***
 
 ### getY()
 
 > **getY**(): `number`
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:100](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L100)
 
 #### Returns
 
@@ -3921,15 +3755,13 @@ y position according to object's [originY](/api/api/classes/fabricobject/originy
 
 [`Group`](/api/classes/group/).[`getY`](/api/classes/group/#gety)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:100](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L100)
-
 ***
 
 ### hasCommonAncestors()
 
 > **hasCommonAncestors**\<`T`\>(`other`): `boolean`
+
+Defined in: [src/shapes/Object/Object.ts:1699](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1699)
 
 #### Type Parameters
 
@@ -3937,7 +3769,9 @@ y position according to object's [originY](/api/api/classes/fabricobject/originy
 
 #### Parameters
 
-• **other**: `T`
+##### other
+
+`T`
 
 #### Returns
 
@@ -3947,15 +3781,13 @@ y position according to object's [originY](/api/api/classes/fabricobject/originy
 
 [`Group`](/api/classes/group/).[`hasCommonAncestors`](/api/classes/group/#hascommonancestors)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:1699](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1699)
-
 ***
 
 ### hasFill()
 
 > **hasFill**(): `null` \| `boolean` \| `""`
+
+Defined in: [src/shapes/Object/Object.ts:750](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L750)
 
 return true if the object will draw a fill
 Does not consider text styles. This is just a shortcut used at rendering time
@@ -3978,15 +3810,13 @@ Boolean
 
 [`Group`](/api/classes/group/).[`hasFill`](/api/classes/group/#hasfill)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:750](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L750)
-
 ***
 
 ### hasStroke()
 
 > **hasStroke**(): `null` \| `boolean` \| `""`
+
+Defined in: [src/shapes/Object/Object.ts:734](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L734)
 
 return true if the object will draw a stroke
 Does not consider text styles. This is just a shortcut used at rendering time
@@ -4009,25 +3839,27 @@ Boolean
 
 [`Group`](/api/classes/group/).[`hasStroke`](/api/classes/group/#hasstroke)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:734](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L734)
-
 ***
 
 ### insertAt()
 
 > **insertAt**(`index`, ...`objects`): `number`
 
+Defined in: [src/shapes/Group.ts:240](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L240)
+
 Inserts an object into collection at specified index
 
 #### Parameters
 
-• **index**: `number`
+##### index
+
+`number`
 
 Index to insert object at
 
-• ...**objects**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[]
+##### objects
+
+...[`FabricObject`](/api/classes/fabricobject/)[]
 
 Object to insert
 
@@ -4039,21 +3871,21 @@ Object to insert
 
 [`Group`](/api/classes/group/).[`insertAt`](/api/classes/group/#insertat)
 
-#### Defined in
-
-[src/shapes/Group.ts:240](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L240)
-
 ***
 
 ### intersectsWithObject()
 
 > **intersectsWithObject**(`other`): `boolean`
 
+Defined in: [src/shapes/Object/ObjectGeometry.ts:232](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L232)
+
 Checks if object intersects with another object
 
 #### Parameters
 
-• **other**: `ObjectGeometry`\<[`ObjectEvents`](/api/interfaces/objectevents/)\>
+##### other
+
+`ObjectGeometry`
 
 Object to test
 
@@ -4067,23 +3899,25 @@ true if object intersects with another object
 
 [`Group`](/api/classes/group/).[`intersectsWithObject`](/api/classes/group/#intersectswithobject)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:232](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L232)
-
 ***
 
 ### intersectsWithRect()
 
 > **intersectsWithRect**(`tl`, `br`): `boolean`
 
-Checks if object intersects with the scene rect formed by tl and br
+Defined in: [src/shapes/Object/ObjectGeometry.ts:218](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L218)
+
+Checks if object intersects with the scene rect formed by [tl](../../../../api/classes/fabricobject/#tl) and [br](../../../../api/classes/fabricobject/#br)
 
 #### Parameters
 
-• **tl**: [`Point`](/api/classes/point/)
+##### tl
 
-• **br**: [`Point`](/api/classes/point/)
+[`Point`](/api/classes/point/)
+
+##### br
+
+[`Point`](/api/classes/point/)
 
 #### Returns
 
@@ -4093,21 +3927,21 @@ Checks if object intersects with the scene rect formed by tl and br
 
 [`Group`](/api/classes/group/).[`intersectsWithRect`](/api/classes/group/#intersectswithrect)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:218](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L218)
-
 ***
 
 ### isCacheDirty()
 
 > **isCacheDirty**(`skipCanvas`): `boolean`
 
+Defined in: [src/shapes/Object/Object.ts:919](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L919)
+
 Check if cache is dirty
 
 #### Parameters
 
-• **skipCanvas**: `boolean` = `false`
+##### skipCanvas
+
+`boolean` = `false`
 
 skip canvas checks because this object is painted
 on parent canvas.
@@ -4120,21 +3954,21 @@ on parent canvas.
 
 [`Group`](/api/classes/group/).[`isCacheDirty`](/api/classes/group/#iscachedirty)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:919](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L919)
-
 ***
 
 ### isContainedWithinObject()
 
 > **isContainedWithinObject**(`other`): `boolean`
 
+Defined in: [src/shapes/Object/ObjectGeometry.ts:251](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L251)
+
 Checks if object is fully contained within area of another object
 
 #### Parameters
 
-• **other**: `ObjectGeometry`\<[`ObjectEvents`](/api/interfaces/objectevents/)\>
+##### other
+
+`ObjectGeometry`
 
 Object to test
 
@@ -4148,23 +3982,25 @@ true if object is fully contained within area of another object
 
 [`Group`](/api/classes/group/).[`isContainedWithinObject`](/api/classes/group/#iscontainedwithinobject)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:251](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L251)
-
 ***
 
 ### isContainedWithinRect()
 
 > **isContainedWithinRect**(`tl`, `br`): `boolean`
 
-Checks if object is fully contained within the scene rect formed by tl and br
+Defined in: [src/shapes/Object/ObjectGeometry.ts:259](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L259)
+
+Checks if object is fully contained within the scene rect formed by [tl](../../../../api/classes/fabricobject/#tl-1) and [br](../../../../api/classes/fabricobject/#br-1)
 
 #### Parameters
 
-• **tl**: [`Point`](/api/classes/point/)
+##### tl
 
-• **br**: [`Point`](/api/classes/point/)
+[`Point`](/api/classes/point/)
+
+##### br
+
+[`Point`](/api/classes/point/)
 
 #### Returns
 
@@ -4174,21 +4010,21 @@ Checks if object is fully contained within the scene rect formed by tl and br
 
 [`Group`](/api/classes/group/).[`isContainedWithinRect`](/api/classes/group/#iscontainedwithinrect)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:259](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L259)
-
 ***
 
 ### isControlVisible()
 
 > **isControlVisible**(`controlKey`): `boolean`
 
+Defined in: [src/shapes/Object/InteractiveObject.ts:584](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L584)
+
 Returns true if the specified control is visible, false otherwise.
 
 #### Parameters
 
-• **controlKey**: `string`
+##### controlKey
+
+`string`
 
 The key of the control. Possible values are usually 'tl', 'tr', 'br', 'bl', 'ml', 'mt', 'mr', 'mb', 'mtr',
 but since the control api allow for any control name, can be any string.
@@ -4203,22 +4039,22 @@ true if the specified control is visible, false otherwise
 
 [`Group`](/api/classes/group/).[`isControlVisible`](/api/classes/group/#iscontrolvisible)
 
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:584](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L584)
-
 ***
 
 ### isDescendantOf()
 
 > **isDescendantOf**(`target`): `boolean`
 
+Defined in: [src/shapes/Object/Object.ts:1603](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1603)
+
 Checks if object is descendant of target
 Should be used instead of [Group.contains](../../../../api/classes/group/#contains) or [StaticCanvas.contains](../../../../api/classes/staticcanvas/#contains) for performance reasons
 
 #### Parameters
 
-• **target**: `TAncestor`
+##### target
+
+`TAncestor`
 
 #### Returns
 
@@ -4228,15 +4064,13 @@ Should be used instead of [Group.contains](../../../../api/classes/group/#contai
 
 [`Group`](/api/classes/group/).[`isDescendantOf`](/api/classes/group/#isdescendantof)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:1603](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1603)
-
 ***
 
 ### isEmpty()
 
 > **isEmpty**(): `boolean`
+
+Defined in: [src/Collection.ts:128](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L128)
 
 Returns true if collection contains no objects
 
@@ -4250,15 +4084,13 @@ true if collection is empty
 
 [`Group`](/api/classes/group/).[`isEmpty`](/api/classes/group/#isempty)
 
-#### Defined in
-
-[src/Collection.ts:128](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L128)
-
 ***
 
 ### isInFrontOf()
 
 > **isInFrontOf**\<`T`\>(`other`): `undefined` \| `boolean`
+
+Defined in: [src/shapes/Object/Object.ts:1709](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1709)
 
 #### Type Parameters
 
@@ -4266,7 +4098,9 @@ true if collection is empty
 
 #### Parameters
 
-• **other**: `T`
+##### other
+
+`T`
 
 object to compare against
 
@@ -4280,15 +4114,13 @@ if objects do not share a common ancestor or they are strictly equal it is impos
 
 [`Group`](/api/classes/group/).[`isInFrontOf`](/api/classes/group/#isinfrontof)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:1709](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1709)
-
 ***
 
 ### isNotVisible()
 
 > **isNotVisible**(): `boolean`
+
+Defined in: [src/shapes/Object/Object.ts:649](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L649)
 
 #### Returns
 
@@ -4298,15 +4130,13 @@ if objects do not share a common ancestor or they are strictly equal it is impos
 
 [`Group`](/api/classes/group/).[`isNotVisible`](/api/classes/group/#isnotvisible)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:649](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L649)
-
 ***
 
 ### isOnACache()
 
 > **isOnACache**(): `boolean`
+
+Defined in: [src/shapes/ActiveSelection.ts:227](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/ActiveSelection.ts#L227)
 
 Check if this group or its parent group are caching, recursively up
 
@@ -4318,15 +4148,13 @@ Check if this group or its parent group are caching, recursively up
 
 [`Group`](/api/classes/group/).[`isOnACache`](/api/classes/group/#isonacache)
 
-#### Defined in
-
-[src/shapes/ActiveSelection.ts:227](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/ActiveSelection.ts#L227)
-
 ***
 
 ### isOnScreen()
 
 > **isOnScreen**(): `boolean`
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:291](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L291)
 
 Checks if object is contained within the canvas with current viewportTransform
 the check is done stopping at first point that appears on screen
@@ -4341,23 +4169,23 @@ true if object is fully or partially contained within canvas
 
 [`Group`](/api/classes/group/).[`isOnScreen`](/api/classes/group/#isonscreen)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:291](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L291)
-
 ***
 
 ### isOverlapping()
 
 > **isOverlapping**\<`T`\>(`other`): `boolean`
 
+Defined in: [src/shapes/Object/ObjectGeometry.ts:269](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L269)
+
 #### Type Parameters
 
-• **T** *extends* `ObjectGeometry`\<[`ObjectEvents`](/api/interfaces/objectevents/)\>
+• **T** *extends* `ObjectGeometry`
 
 #### Parameters
 
-• **other**: `T`
+##### other
+
+`T`
 
 #### Returns
 
@@ -4367,15 +4195,13 @@ true if object is fully or partially contained within canvas
 
 [`Group`](/api/classes/group/).[`isOverlapping`](/api/classes/group/#isoverlapping)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:269](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L269)
-
 ***
 
 ### isPartiallyOnScreen()
 
 > **isPartiallyOnScreen**(): `boolean`
+
+Defined in: [src/shapes/Object/ObjectGeometry.ts:321](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L321)
 
 Checks if object is partially contained within the canvas with current viewportTransform
 
@@ -4389,21 +4215,21 @@ true if object is partially contained within canvas
 
 [`Group`](/api/classes/group/).[`isPartiallyOnScreen`](/api/classes/group/#ispartiallyonscreen)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:321](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L321)
-
 ***
 
 ### isType()
 
 > **isType**(...`types`): `boolean`
 
+Defined in: [src/shapes/Object/Object.ts:1408](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1408)
+
 Returns true if any of the specified types is identical to the type of an instance
 
 #### Parameters
 
-• ...**types**: `string`[]
+##### types
+
+...`string`[]
 
 #### Returns
 
@@ -4413,25 +4239,25 @@ Returns true if any of the specified types is identical to the type of an instan
 
 [`Group`](/api/classes/group/).[`isType`](/api/classes/group/#istype)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:1408](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1408)
-
 ***
 
 ### item()
 
-> **item**(`index`): [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+> **item**(`index`): [`FabricObject`](/api/classes/fabricobject/)
+
+Defined in: [src/Collection.ts:120](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L120)
 
 Returns object at specified index
 
 #### Parameters
 
-• **index**: `number`
+##### index
+
+`number`
 
 #### Returns
 
-[`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+[`FabricObject`](/api/classes/fabricobject/)
 
 object at index
 
@@ -4439,25 +4265,27 @@ object at index
 
 [`Group`](/api/classes/group/).[`item`](/api/classes/group/#item)
 
-#### Defined in
-
-[src/Collection.ts:120](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L120)
-
 ***
 
 ### moveObjectTo()
 
 > **moveObjectTo**(`object`, `index`): `boolean`
 
+Defined in: [src/Collection.ts:262](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L262)
+
 Moves an object to specified level in stack of drawn objects
 
 #### Parameters
 
-• **object**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+##### object
+
+[`FabricObject`](/api/classes/fabricobject/)
 
 Object to send
 
-• **index**: `number`
+##### index
+
+`number`
 
 Position to move to
 
@@ -4471,21 +4299,21 @@ true if change occurred
 
 [`Group`](/api/classes/group/).[`moveObjectTo`](/api/classes/group/#moveobjectto)
 
-#### Defined in
-
-[src/Collection.ts:262](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L262)
-
 ***
 
 ### multiSelectAdd()
 
 > **multiSelectAdd**(...`targets`): `void`
 
+Defined in: [src/shapes/ActiveSelection.ts:94](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/ActiveSelection.ts#L94)
+
 Adds objects with respect to [multiSelectionStacking](../../../../api/classes/activeselection/#multiselectionstacking)
 
 #### Parameters
 
-• ...**targets**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[]
+##### targets
+
+...[`FabricObject`](/api/classes/fabricobject/)[]
 
 object to add to selection
 
@@ -4493,15 +4321,13 @@ object to add to selection
 
 `void`
 
-#### Defined in
-
-[src/shapes/ActiveSelection.ts:94](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/ActiveSelection.ts#L94)
-
 ***
 
 ### needsItsOwnCache()
 
 > **needsItsOwnCache**(): `boolean`
+
+Defined in: [src/shapes/Object/Object.ts:762](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L762)
 
 When set to `true`, force the object to have its own cache, even if it is inside a group
 it may be needed when your object behave in a particular way on the cache and always needs
@@ -4519,17 +4345,15 @@ Boolean
 
 [`Group`](/api/classes/group/).[`needsItsOwnCache`](/api/classes/group/#needsitsowncache)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:762](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L762)
-
 ***
 
 ### off()
 
-#### off(eventName)
+#### Call Signature
 
 > **off**\<`K`\>(`eventName`): `void`
+
+Defined in: [src/Observable.ts:122](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L122)
 
 Unsubscribe all event listeners for eventname.
 Do not use this pattern. You could kill internal fabricJS events.
@@ -4545,7 +4369,9 @@ This API is no longer supported and may be removed in a future release.
 
 ##### Parameters
 
-• **eventName**: `K`
+###### eventName
+
+`K`
 
 event name (eg. 'after:render')
 
@@ -4557,13 +4383,11 @@ event name (eg. 'after:render')
 
 [`Group`](/api/classes/group/).[`off`](/api/classes/group/#off)
 
-##### Defined in
-
-[src/Observable.ts:122](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L122)
-
-#### off(eventName, handler)
+#### Call Signature
 
 > **off**\<`K`\>(`eventName`, `handler`): `void`
+
+Defined in: [src/Observable.ts:128](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L128)
 
 unsubscribe an event listener
 
@@ -4573,11 +4397,15 @@ unsubscribe an event listener
 
 ##### Parameters
 
-• **eventName**: `K`
+###### eventName
+
+`K`
 
 event name (eg. 'after:render')
 
-• **handler**: `TEventCallback`\<`any`\>
+###### handler
+
+`TEventCallback`\<`any`\>
 
 event listener to unsubscribe
 
@@ -4589,19 +4417,19 @@ event listener to unsubscribe
 
 [`Group`](/api/classes/group/).[`off`](/api/classes/group/#off)
 
-##### Defined in
-
-[src/Observable.ts:128](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L128)
-
-#### off(handlers)
+#### Call Signature
 
 > **off**(`handlers`): `void`
+
+Defined in: [src/Observable.ts:133](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L133)
 
 unsubscribe event listeners
 
 ##### Parameters
 
-• **handlers**: `EventRegistryObject`\<[`GroupEvents`](/api/interfaces/groupevents/)\>
+###### handlers
+
+`EventRegistryObject`\<[`GroupEvents`](/api/interfaces/groupevents/)\>
 
 handlers key/value pairs (eg. {'after:render': handler, 'selection:cleared': handler})
 
@@ -4613,13 +4441,11 @@ handlers key/value pairs (eg. {'after:render': handler, 'selection:cleared': han
 
 [`Group`](/api/classes/group/).[`off`](/api/classes/group/#off)
 
-##### Defined in
-
-[src/Observable.ts:133](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L133)
-
-#### off()
+#### Call Signature
 
 > **off**(): `void`
+
+Defined in: [src/Observable.ts:137](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L137)
 
 unsubscribe all event listeners
 
@@ -4631,17 +4457,15 @@ unsubscribe all event listeners
 
 [`Group`](/api/classes/group/).[`off`](/api/classes/group/#off)
 
-##### Defined in
-
-[src/Observable.ts:137](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L137)
-
 ***
 
 ### on()
 
-#### on(eventName, handler)
+#### Call Signature
 
 > **on**\<`K`, `E`\>(`eventName`, `handler`): `VoidFunction`
+
+Defined in: [src/Observable.ts:23](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L23)
 
 Observes specified event
 
@@ -4649,15 +4473,19 @@ Observes specified event
 
 • **K** *extends* keyof [`GroupEvents`](/api/interfaces/groupevents/)
 
-• **E** *extends* [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\> \| [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\> & `object` \| [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/)\<`WheelEvent`\> \| [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\> & `InEvent` \| [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\> & `OutEvent` \| `Partial`\<[`TEvent`](/api/interfaces/tevent/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\>\> & `object` \| `Partial`\<[`TEvent`](/api/interfaces/tevent/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\>\> & `object` \| `object` \| `object` \| `object` \| `TEventWithTarget`\<`DragEvent`\> \| [`DragEventData`](/api/interfaces/drageventdata/) \| [`DragEventData`](/api/interfaces/drageventdata/) & `InEvent` \| [`DragEventData`](/api/interfaces/drageventdata/) & `OutEvent` \| [`DropEventData`](/api/interfaces/dropeventdata/) \| `SimpleEventHandler`\<`Event`\> \| [`BasicTransformEvent`](/api/interfaces/basictransformevent/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\> \| [`BasicTransformEvent`](/api/interfaces/basictransformevent/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\> & [`ModifyPathEvent`](/api/interfaces/modifypathevent/) \| [`ModifiedEvent`](/api/interfaces/modifiedevent/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\> \| `object` \| `object` \| [`LayoutBeforeEvent`](/api/type-aliases/layoutbeforeevent/) \| [`LayoutAfterEvent`](/api/type-aliases/layoutafterevent/)
+• **E** *extends* [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/) \| [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/) & `object` \| [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/)\<`WheelEvent`\> \| [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/) & `InEvent` \| [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/) & `OutEvent` \| `Partial`\<[`TEvent`](/api/interfaces/tevent/)\> & `object` \| `Partial`\<[`TEvent`](/api/interfaces/tevent/)\> & `object` \| \{ `target`: [`Canvas`](/api/classes/canvas/) \| [`Group`](/api/classes/group/) \| [`StaticCanvas`](/api/classes/staticcanvas/); \} \| \{ `target`: [`Canvas`](/api/classes/canvas/) \| [`Group`](/api/classes/group/) \| [`StaticCanvas`](/api/classes/staticcanvas/); \} \| \{ `path`: [`FabricObject`](/api/classes/fabricobject/); \} \| `TEventWithTarget`\<`DragEvent`\> \| [`DragEventData`](/api/interfaces/drageventdata/) \| [`DragEventData`](/api/interfaces/drageventdata/) & `InEvent` \| [`DragEventData`](/api/interfaces/drageventdata/) & `OutEvent` \| [`DropEventData`](/api/interfaces/dropeventdata/) \| `SimpleEventHandler`\<`Event`\> \| [`BasicTransformEvent`](/api/interfaces/basictransformevent/) \| [`BasicTransformEvent`](/api/interfaces/basictransformevent/) & [`ModifyPathEvent`](/api/interfaces/modifypathevent/) \| [`ModifiedEvent`](/api/interfaces/modifiedevent/) \| \{ `target`: [`FabricObject`](/api/classes/fabricobject/); \} \| \{ `target`: [`FabricObject`](/api/classes/fabricobject/); \} \| [`LayoutBeforeEvent`](/api/type-aliases/layoutbeforeevent/) \| [`LayoutAfterEvent`](/api/type-aliases/layoutafterevent/)
 
 ##### Parameters
 
-• **eventName**: `K`
+###### eventName
+
+`K`
 
 Event name (eg. 'after:render')
 
-• **handler**: `TEventCallback`\<`E`\>
+###### handler
+
+`TEventCallback`\<`E`\>
 
 Function that receives a notification when an event of the specified type occurs
 
@@ -4675,115 +4503,45 @@ on
 
 [`Group`](/api/classes/group/).[`on`](/api/classes/group/#on)
 
-##### Defined in
-
-[src/Observable.ts:23](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L23)
-
-#### on(handlers)
+#### Call Signature
 
 > **on**(`handlers`): `VoidFunction`
 
+Defined in: [src/Observable.ts:27](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L27)
+
+Observes specified event
+
 ##### Parameters
 
-• **handlers**: `EventRegistryObject`\<[`GroupEvents`](/api/interfaces/groupevents/)\>
+###### handlers
+
+`EventRegistryObject`\<[`GroupEvents`](/api/interfaces/groupevents/)\>
+
+key/value pairs (eg. {'after:render': handler, 'selection:cleared': handler})
 
 ##### Returns
 
 `VoidFunction`
 
+disposer
+
+##### Alias
+
+on
+
 ##### Inherited from
 
 [`Group`](/api/classes/group/).[`on`](/api/classes/group/#on)
-
-##### Defined in
-
-[src/Observable.ts:27](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L27)
-
-***
-
-### onDeselect()
-
-> **onDeselect**(): `boolean`
-
-remove all objects
-
-#### Returns
-
-`boolean`
-
-#### Overrides
-
-[`Group`](/api/classes/group/).[`onDeselect`](/api/classes/group/#ondeselect)
-
-#### Defined in
-
-[src/shapes/ActiveSelection.ts:198](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/ActiveSelection.ts#L198)
-
-***
-
-### onDragStart()
-
-> **onDragStart**(`_e`): `boolean`
-
-Override to customize Drag behavior\
-Fired once a drag session has started
-
-#### Parameters
-
-• **\_e**: `DragEvent`
-
-#### Returns
-
-`boolean`
-
-true to handle the drag event
-
-#### Inherited from
-
-[`Group`](/api/classes/group/).[`onDragStart`](/api/classes/group/#ondragstart)
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:691](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L691)
-
-***
-
-### onSelect()
-
-> **onSelect**(`_options`?): `boolean`
-
-This callback function is called every time _discardActiveObject or _setActiveObject
-try to to select this object. If the function returns true, the process is cancelled
-
-#### Parameters
-
-• **\_options?**
-
-options sent from the upper functions
-
-• **\_options.e?**: [`TPointerEvent`](/api/type-aliases/tpointerevent/)
-
-event if the process is generated by an event
-
-#### Returns
-
-`boolean`
-
-#### Inherited from
-
-[`Group`](/api/classes/group/).[`onSelect`](/api/classes/group/#onselect)
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:672](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L672)
 
 ***
 
 ### once()
 
-#### once(eventName, handler)
+#### Call Signature
 
 > **once**\<`K`, `E`\>(`eventName`, `handler`): `VoidFunction`
+
+Defined in: [src/Observable.ts:62](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L62)
 
 Observes specified event **once**
 
@@ -4791,15 +4549,19 @@ Observes specified event **once**
 
 • **K** *extends* keyof [`GroupEvents`](/api/interfaces/groupevents/)
 
-• **E** *extends* [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\> \| [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\> & `object` \| [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/)\<`WheelEvent`\> \| [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\> & `InEvent` \| [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\> & `OutEvent` \| `Partial`\<[`TEvent`](/api/interfaces/tevent/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\>\> & `object` \| `Partial`\<[`TEvent`](/api/interfaces/tevent/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\>\> & `object` \| `object` \| `object` \| `object` \| `TEventWithTarget`\<`DragEvent`\> \| [`DragEventData`](/api/interfaces/drageventdata/) \| [`DragEventData`](/api/interfaces/drageventdata/) & `InEvent` \| [`DragEventData`](/api/interfaces/drageventdata/) & `OutEvent` \| [`DropEventData`](/api/interfaces/dropeventdata/) \| `SimpleEventHandler`\<`Event`\> \| [`BasicTransformEvent`](/api/interfaces/basictransformevent/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\> \| [`BasicTransformEvent`](/api/interfaces/basictransformevent/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\> & [`ModifyPathEvent`](/api/interfaces/modifypathevent/) \| [`ModifiedEvent`](/api/interfaces/modifiedevent/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\> \| `object` \| `object` \| [`LayoutBeforeEvent`](/api/type-aliases/layoutbeforeevent/) \| [`LayoutAfterEvent`](/api/type-aliases/layoutafterevent/)
+• **E** *extends* [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/) \| [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/) & `object` \| [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/)\<`WheelEvent`\> \| [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/) & `InEvent` \| [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/) & `OutEvent` \| `Partial`\<[`TEvent`](/api/interfaces/tevent/)\> & `object` \| `Partial`\<[`TEvent`](/api/interfaces/tevent/)\> & `object` \| \{ `target`: [`Canvas`](/api/classes/canvas/) \| [`Group`](/api/classes/group/) \| [`StaticCanvas`](/api/classes/staticcanvas/); \} \| \{ `target`: [`Canvas`](/api/classes/canvas/) \| [`Group`](/api/classes/group/) \| [`StaticCanvas`](/api/classes/staticcanvas/); \} \| \{ `path`: [`FabricObject`](/api/classes/fabricobject/); \} \| `TEventWithTarget`\<`DragEvent`\> \| [`DragEventData`](/api/interfaces/drageventdata/) \| [`DragEventData`](/api/interfaces/drageventdata/) & `InEvent` \| [`DragEventData`](/api/interfaces/drageventdata/) & `OutEvent` \| [`DropEventData`](/api/interfaces/dropeventdata/) \| `SimpleEventHandler`\<`Event`\> \| [`BasicTransformEvent`](/api/interfaces/basictransformevent/) \| [`BasicTransformEvent`](/api/interfaces/basictransformevent/) & [`ModifyPathEvent`](/api/interfaces/modifypathevent/) \| [`ModifiedEvent`](/api/interfaces/modifiedevent/) \| \{ `target`: [`FabricObject`](/api/classes/fabricobject/); \} \| \{ `target`: [`FabricObject`](/api/classes/fabricobject/); \} \| [`LayoutBeforeEvent`](/api/type-aliases/layoutbeforeevent/) \| [`LayoutAfterEvent`](/api/type-aliases/layoutafterevent/)
 
 ##### Parameters
 
-• **eventName**: `K`
+###### eventName
+
+`K`
 
 Event name (eg. 'after:render')
 
-• **handler**: `TEventCallback`\<`E`\>
+###### handler
+
+`TEventCallback`\<`E`\>
 
 Function that receives a notification when an event of the specified type occurs
 
@@ -4817,45 +4579,131 @@ once
 
 [`Group`](/api/classes/group/).[`once`](/api/classes/group/#once)
 
-##### Defined in
-
-[src/Observable.ts:62](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L62)
-
-#### once(handlers)
+#### Call Signature
 
 > **once**(`handlers`): `VoidFunction`
 
+Defined in: [src/Observable.ts:66](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L66)
+
+Observes specified event **once**
+
 ##### Parameters
 
-• **handlers**: `EventRegistryObject`\<[`GroupEvents`](/api/interfaces/groupevents/)\>
+###### handlers
+
+`EventRegistryObject`\<[`GroupEvents`](/api/interfaces/groupevents/)\>
+
+key/value pairs (eg. {'after:render': handler, 'selection:cleared': handler})
 
 ##### Returns
 
 `VoidFunction`
 
+disposer
+
+##### Alias
+
+once
+
 ##### Inherited from
 
 [`Group`](/api/classes/group/).[`once`](/api/classes/group/#once)
 
-##### Defined in
+***
 
-[src/Observable.ts:66](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L66)
+### onDeselect()
+
+> **onDeselect**(): `boolean`
+
+Defined in: [src/shapes/ActiveSelection.ts:198](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/ActiveSelection.ts#L198)
+
+remove all objects
+
+#### Returns
+
+`boolean`
+
+#### Overrides
+
+[`Group`](/api/classes/group/).[`onDeselect`](/api/classes/group/#ondeselect)
+
+***
+
+### onDragStart()
+
+> **onDragStart**(`_e`): `boolean`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:691](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L691)
+
+Override to customize Drag behavior\
+Fired once a drag session has started
+
+#### Parameters
+
+##### \_e
+
+`DragEvent`
+
+#### Returns
+
+`boolean`
+
+true to handle the drag event
+
+#### Inherited from
+
+[`Group`](/api/classes/group/).[`onDragStart`](/api/classes/group/#ondragstart)
+
+***
+
+### onSelect()
+
+> **onSelect**(`_options`?): `boolean`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:672](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L672)
+
+This callback function is called every time _discardActiveObject or _setActiveObject
+try to to select this object. If the function returns true, the process is cancelled
+
+#### Parameters
+
+##### \_options?
+
+options sent from the upper functions
+
+###### e
+
+[`TPointerEvent`](/api/type-aliases/tpointerevent/)
+
+event if the process is generated by an event
+
+#### Returns
+
+`boolean`
+
+#### Inherited from
+
+[`Group`](/api/classes/group/).[`onSelect`](/api/classes/group/#onselect)
 
 ***
 
 ### remove()
 
-> **remove**(...`objects`): [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[]
+> **remove**(...`objects`): [`FabricObject`](/api/classes/fabricobject/)[]
+
+Defined in: [src/shapes/Group.ts:252](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L252)
 
 Remove objects
 
 #### Parameters
 
-• ...**objects**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[]
+##### objects
+
+...[`FabricObject`](/api/classes/fabricobject/)[]
 
 #### Returns
 
-[`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[]
+[`FabricObject`](/api/classes/fabricobject/)[]
 
 removed objects
 
@@ -4863,21 +4711,19 @@ removed objects
 
 [`Group`](/api/classes/group/).[`remove`](/api/classes/group/#remove)
 
-#### Defined in
-
-[src/shapes/Group.ts:252](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L252)
-
 ***
 
 ### removeAll()
 
-> **removeAll**(): [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[]
+> **removeAll**(): [`FabricObject`](/api/classes/fabricobject/)[]
+
+Defined in: [src/shapes/Group.ts:319](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L319)
 
 Remove all objects
 
 #### Returns
 
-[`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[]
+[`FabricObject`](/api/classes/fabricobject/)[]
 
 removed objects
 
@@ -4885,21 +4731,21 @@ removed objects
 
 [`Group`](/api/classes/group/).[`removeAll`](/api/classes/group/#removeall)
 
-#### Defined in
-
-[src/shapes/Group.ts:319](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L319)
-
 ***
 
 ### render()
 
 > **render**(`ctx`): `void`
 
+Defined in: [src/shapes/Group.ts:539](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L539)
+
 Renders instance on a given context
 
 #### Parameters
 
-• **ctx**: `CanvasRenderingContext2D`
+##### ctx
+
+`CanvasRenderingContext2D`
 
 context to render instance on
 
@@ -4911,21 +4757,23 @@ context to render instance on
 
 [`Group`](/api/classes/group/).[`render`](/api/classes/group/#render)
 
-#### Defined in
-
-[src/shapes/Group.ts:539](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L539)
-
 ***
 
 ### renderCache()
 
 > **renderCache**(`this`, `options`?): `void`
 
+Defined in: [src/shapes/Object/Object.ts:695](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L695)
+
 #### Parameters
 
-• **this**: `TCachedFabricObject`\<[`BaseFabricObject`](/api/classes/basefabricobject/)\<`Partial`\<`ObjectProps`\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>\>
+##### this
 
-• **options?**: `any`
+`TCachedFabricObject`\<[`BaseFabricObject`](/api/classes/basefabricobject/)\>
+
+##### options?
+
+`any`
 
 #### Returns
 
@@ -4935,15 +4783,13 @@ context to render instance on
 
 [`Group`](/api/classes/group/).[`renderCache`](/api/classes/group/#rendercache)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:695](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L695)
-
 ***
 
 ### renderDragSourceEffect()
 
 > **renderDragSourceEffect**(`_e`): `void`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:712](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L712)
 
 Override to customize drag and drop behavior
 render a specific effect when an object is the source of a drag event
@@ -4951,7 +4797,9 @@ example: render the selection status for the part of text that is being dragged 
 
 #### Parameters
 
-• **\_e**: `DragEvent`
+##### \_e
+
+`DragEvent`
 
 #### Returns
 
@@ -4961,15 +4809,13 @@ example: render the selection status for the part of text that is being dragged 
 
 [`Group`](/api/classes/group/).[`renderDragSourceEffect`](/api/classes/group/#renderdragsourceeffect)
 
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:712](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L712)
-
 ***
 
 ### renderDropTargetEffect()
 
 > **renderDropTargetEffect**(`_e`): `void`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:724](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L724)
 
 Override to customize drag and drop behavior
 render a specific effect when an object is the target of a drag event
@@ -4978,7 +4824,9 @@ object will change when dropping. example: show the cursor where the text is abo
 
 #### Parameters
 
-• **\_e**: `DragEvent`
+##### \_e
+
+`DragEvent`
 
 #### Returns
 
@@ -4988,21 +4836,21 @@ object will change when dropping. example: show the cursor where the text is abo
 
 [`Group`](/api/classes/group/).[`renderDropTargetEffect`](/api/classes/group/#renderdroptargeteffect)
 
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:724](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L724)
-
 ***
 
 ### rotate()
 
 > **rotate**(`angle`): `void`
 
+Defined in: [src/shapes/Object/Object.ts:1436](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1436)
+
 Sets "angle" of an instance with centered rotation
 
 #### Parameters
 
-• **angle**: [`TDegree`](/api/type-aliases/tdegree/)
+##### angle
+
+[`TDegree`](/api/type-aliases/tdegree/)
 
 Angle value (in degrees)
 
@@ -5014,21 +4862,21 @@ Angle value (in degrees)
 
 [`Group`](/api/classes/group/).[`rotate`](/api/classes/group/#rotate)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:1436](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1436)
-
 ***
 
 ### scale()
 
 > **scale**(`value`): `void`
 
+Defined in: [src/shapes/Object/ObjectGeometry.ts:370](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L370)
+
 Scales an object (equally by x and y)
 
 #### Parameters
 
-• **value**: `number`
+##### value
+
+`number`
 
 Scale factor
 
@@ -5040,21 +4888,21 @@ Scale factor
 
 [`Group`](/api/classes/group/).[`scale`](/api/classes/group/#scale)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:370](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L370)
-
 ***
 
 ### scaleToHeight()
 
 > **scaleToHeight**(`value`): `void`
 
+Defined in: [src/shapes/Object/ObjectGeometry.ts:393](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L393)
+
 Scales an object to a given height, with respect to bounding box (scaling by x/y equally)
 
 #### Parameters
 
-• **value**: `number`
+##### value
+
+`number`
 
 New height value
 
@@ -5066,21 +4914,21 @@ New height value
 
 [`Group`](/api/classes/group/).[`scaleToHeight`](/api/classes/group/#scaletoheight)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:393](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L393)
-
 ***
 
 ### scaleToWidth()
 
 > **scaleToWidth**(`value`): `void`
 
+Defined in: [src/shapes/Object/ObjectGeometry.ts:381](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L381)
+
 Scales an object to a given width, with respect to bounding box (scaling by x/y equally)
 
 #### Parameters
 
-• **value**: `number`
+##### value
+
+`number`
 
 New width value
 
@@ -5092,15 +4940,13 @@ New width value
 
 [`Group`](/api/classes/group/).[`scaleToWidth`](/api/classes/group/#scaletowidth)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:381](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L381)
-
 ***
 
 ### sendObjectBackwards()
 
 > **sendObjectBackwards**(`object`, `intersecting`?): `boolean`
+
+Defined in: [src/Collection.ts:214](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L214)
 
 Moves an object or a selection down in stack of drawn objects
 An optional parameter, `intersecting` allows to move the object in behind
@@ -5110,11 +4956,15 @@ stack.
 
 #### Parameters
 
-• **object**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+##### object
+
+[`FabricObject`](/api/classes/fabricobject/)
 
 Object to send
 
-• **intersecting?**: `boolean`
+##### intersecting?
+
+`boolean`
 
 If `true`, send object behind next lower intersecting object
 
@@ -5128,22 +4978,22 @@ true if change occurred
 
 [`Group`](/api/classes/group/).[`sendObjectBackwards`](/api/classes/group/#sendobjectbackwards)
 
-#### Defined in
-
-[src/Collection.ts:214](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L214)
-
 ***
 
 ### sendObjectToBack()
 
 > **sendObjectToBack**(`object`): `boolean`
 
+Defined in: [src/Collection.ts:178](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L178)
+
 Moves an object or the objects of a multiple selection
 to the bottom of the stack of drawn objects
 
 #### Parameters
 
-• **object**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+##### object
+
+[`FabricObject`](/api/classes/fabricobject/)
 
 Object to send to back
 
@@ -5157,25 +5007,27 @@ true if change occurred
 
 [`Group`](/api/classes/group/).[`sendObjectToBack`](/api/classes/group/#sendobjecttoback)
 
-#### Defined in
-
-[src/Collection.ts:178](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L178)
-
 ***
 
 ### set()
 
 > **set**(`key`, `value`?): [`ActiveSelection`](/api/classes/activeselection/)
 
+Defined in: [src/CommonMethods.ts:29](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/CommonMethods.ts#L29)
+
 Sets property to a given value. When changing position/dimension -related properties (left, top, scale, angle, etc.) `set` does not update position of object's borders/controls. If you need to update those, call `setCoords()`.
 
 #### Parameters
 
-• **key**: `string` \| `Record`\<`string`, `any`\>
+##### key
 
 Property name or object (if object, iterate over the object properties)
 
-• **value?**: `any`
+`string` | `Record`\<`string`, `any`\>
+
+##### value?
+
+`any`
 
 Property value (if function, the value is passed into it and its return value is used as a new one)
 
@@ -5187,9 +5039,32 @@ Property value (if function, the value is passed into it and its return value is
 
 [`Group`](/api/classes/group/).[`set`](/api/classes/group/#set)
 
-#### Defined in
+***
 
-[src/CommonMethods.ts:29](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/CommonMethods.ts#L29)
+### setControlsVisibility()
+
+> **setControlsVisibility**(`options`?): `void`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:611](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L611)
+
+Sets the visibility state of object controls, this is just a bulk option for setControlVisible;
+
+#### Parameters
+
+##### options?
+
+`Record`\<`string`, `boolean`\> = `{}`
+
+with an optional key per control
+example: {Boolean} [options.bl] true to enable the bottom-left control, false to disable it
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+[`Group`](/api/classes/group/).[`setControlsVisibility`](/api/classes/group/#setcontrolsvisibility)
 
 ***
 
@@ -5197,17 +5072,23 @@ Property value (if function, the value is passed into it and its return value is
 
 > **setControlVisible**(`controlKey`, `visible`): `void`
 
+Defined in: [src/shapes/Object/InteractiveObject.ts:599](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L599)
+
 Sets the visibility of the specified control.
 please do not use.
 
 #### Parameters
 
-• **controlKey**: `string`
+##### controlKey
+
+`string`
 
 The key of the control. Possible values are 'tl', 'tr', 'br', 'bl', 'ml', 'mt', 'mr', 'mb', 'mtr'.
 but since the control api allow for any control name, can be any string.
 
-• **visible**: `boolean`
+##### visible
+
+`boolean`
 
 true to set the specified control visible, false otherwise
 
@@ -5223,42 +5104,13 @@ discuss this overlap of priority here with the team. Andrea Bogazzi for details
 
 [`Group`](/api/classes/group/).[`setControlVisible`](/api/classes/group/#setcontrolvisible)
 
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:599](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L599)
-
-***
-
-### setControlsVisibility()
-
-> **setControlsVisibility**(`options`?): `void`
-
-Sets the visibility state of object controls, this is just a bulk option for setControlVisible;
-
-#### Parameters
-
-• **options?**: `Record`\<`string`, `boolean`\> = `{}`
-
-with an optional key per control
-example: {Boolean} [options.bl] true to enable the bottom-left control, false to disable it
-
-#### Returns
-
-`void`
-
-#### Inherited from
-
-[`Group`](/api/classes/group/).[`setControlsVisibility`](/api/classes/group/#setcontrolsvisibility)
-
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:611](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L611)
-
 ***
 
 ### setCoords()
 
 > **setCoords**(): `void`
+
+Defined in: [src/shapes/Group.ts:521](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L521)
 
 #### Returns
 
@@ -5268,15 +5120,13 @@ example: {Boolean} [options.bl] true to enable the bottom-left control, false to
 
 [`Group`](/api/classes/group/).[`setCoords`](/api/classes/group/#setcoords)
 
-#### Defined in
-
-[src/shapes/Group.ts:521](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L521)
-
 ***
 
 ### setOnGroup()
 
 > **setOnGroup**(): `void`
+
+Defined in: [src/shapes/Object/Object.ts:1468](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1468)
 
 This callback function is called by the parent group of an object every
 time a non-delegated property changes on the group. It is passed the key
@@ -5291,29 +5141,33 @@ Travis build error about unused variables.
 
 [`Group`](/api/classes/group/).[`setOnGroup`](/api/classes/group/#setongroup)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:1468](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1468)
-
 ***
 
 ### setPositionByOrigin()
 
 > **setPositionByOrigin**(`pos`, `originX`, `originY`): `void`
 
+Defined in: [src/shapes/Object/ObjectGeometry.ts:777](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L777)
+
 Sets the position of the object taking into consideration the object's origin
 
 #### Parameters
 
-• **pos**: [`Point`](/api/classes/point/)
+##### pos
+
+[`Point`](/api/classes/point/)
 
 The new position of the object
 
-• **originX**: [`TOriginX`](/api/type-aliases/toriginx/)
+##### originX
+
+[`TOriginX`](/api/type-aliases/toriginx/)
 
 Horizontal origin: 'left', 'center' or 'right'
 
-• **originY**: [`TOriginY`](/api/type-aliases/toriginy/)
+##### originY
+
+[`TOriginY`](/api/type-aliases/toriginy/)
 
 Vertical origin: 'top', 'center' or 'bottom'
 
@@ -5325,19 +5179,19 @@ Vertical origin: 'top', 'center' or 'bottom'
 
 [`Group`](/api/classes/group/).[`setPositionByOrigin`](/api/classes/group/#setpositionbyorigin)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:777](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L777)
-
 ***
 
 ### setRelativeX()
 
 > **setRelativeX**(`value`): `void`
 
+Defined in: [src/shapes/Object/ObjectGeometry.ts:123](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L123)
+
 #### Parameters
 
-• **value**: `number`
+##### value
+
+`number`
 
 x position according to object's [originX](../../../../api/classes/fabricobject/#originx) property in parent's coordinate plane\
 if parent is canvas then this method is identical to [setX](../../../../api/classes/activeselection/#setx)
@@ -5350,29 +5204,33 @@ if parent is canvas then this method is identical to [setX](../../../../api/clas
 
 [`Group`](/api/classes/group/).[`setRelativeX`](/api/classes/group/#setrelativex)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:123](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L123)
-
 ***
 
 ### setRelativeXY()
 
 > **setRelativeXY**(`point`, `originX`?, `originY`?): `void`
 
+Defined in: [src/shapes/Object/ObjectGeometry.ts:186](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L186)
+
 As [setXY](../../../../api/classes/activeselection/#setxy), but in current parent's coordinate plane (the current group if any or the canvas)
 
 #### Parameters
 
-• **point**: [`Point`](/api/classes/point/)
+##### point
 
-position according to object's originX originY properties in parent's coordinate plane
+[`Point`](/api/classes/point/)
 
-• **originX?**: [`TOriginX`](/api/type-aliases/toriginx/) = `...`
+position according to object's [originX](../../../../api/classes/fabricobject/#originx-3) [originY](../../../../api/classes/fabricobject/#originy-3) properties in parent's coordinate plane
+
+##### originX?
+
+[`TOriginX`](/api/type-aliases/toriginx/) = `...`
 
 Horizontal origin: 'left', 'center' or 'right'
 
-• **originY?**: [`TOriginY`](/api/type-aliases/toriginy/) = `...`
+##### originY?
+
+[`TOriginY`](/api/type-aliases/toriginy/) = `...`
 
 Vertical origin: 'top', 'center' or 'bottom'
 
@@ -5384,19 +5242,19 @@ Vertical origin: 'top', 'center' or 'bottom'
 
 [`Group`](/api/classes/group/).[`setRelativeXY`](/api/classes/group/#setrelativexy)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:186](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L186)
-
 ***
 
 ### setRelativeY()
 
 > **setRelativeY**(`value`): `void`
 
+Defined in: [src/shapes/Object/ObjectGeometry.ts:139](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L139)
+
 #### Parameters
 
-• **value**: `number`
+##### value
+
+`number`
 
 y position according to object's [originY](../../../../api/classes/fabricobject/#originy) property in parent's coordinate plane\
 if parent is canvas then this property is identical to [setY](../../../../api/classes/activeselection/#sety)
@@ -5409,19 +5267,19 @@ if parent is canvas then this property is identical to [setY](../../../../api/cl
 
 [`Group`](/api/classes/group/).[`setRelativeY`](/api/classes/group/#setrelativey)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:139](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L139)
-
 ***
 
 ### setX()
 
 > **setX**(`value`): `void`
 
+Defined in: [src/shapes/Object/ObjectGeometry.ts:93](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L93)
+
 #### Parameters
 
-• **value**: `number`
+##### value
+
+`number`
 
 x position according to object's [originX](../../../../api/classes/fabricobject/#originx) property in canvas coordinate plane
 
@@ -5433,31 +5291,35 @@ x position according to object's [originX](../../../../api/classes/fabricobject/
 
 [`Group`](/api/classes/group/).[`setX`](/api/classes/group/#setx)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:93](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L93)
-
 ***
 
 ### setXY()
 
 > **setXY**(`point`, `originX`?, `originY`?): `void`
 
+Defined in: [src/shapes/Object/ObjectGeometry.ts:163](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L163)
+
 Set an object position to a particular point, the point is intended in absolute ( canvas ) coordinate.
-You can specify originX and originY values,
+You can specify [originX](../../../../api/classes/fabricobject/#originx-4) and [originY](../../../../api/classes/fabricobject/#originy-4) values,
 that otherwise are the object's current values.
 
 #### Parameters
 
-• **point**: [`Point`](/api/classes/point/)
+##### point
+
+[`Point`](/api/classes/point/)
 
 position in scene coordinate plane
 
-• **originX?**: [`TOriginX`](/api/type-aliases/toriginx/)
+##### originX?
+
+[`TOriginX`](/api/type-aliases/toriginx/)
 
 Horizontal origin: 'left', 'center' or 'right'
 
-• **originY?**: [`TOriginY`](/api/type-aliases/toriginy/)
+##### originY?
+
+[`TOriginY`](/api/type-aliases/toriginy/)
 
 Vertical origin: 'top', 'center' or 'bottom'
 
@@ -5475,19 +5337,19 @@ object.setXY(new Point(5, 5), 'left', 'bottom').
 
 [`Group`](/api/classes/group/).[`setXY`](/api/classes/group/#setxy)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:163](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L163)
-
 ***
 
 ### setY()
 
 > **setY**(`value`): `void`
 
+Defined in: [src/shapes/Object/ObjectGeometry.ts:107](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L107)
+
 #### Parameters
 
-• **value**: `number`
+##### value
+
+`number`
 
 y position according to object's [originY](../../../../api/classes/fabricobject/#originy) property in canvas coordinate plane
 
@@ -5499,15 +5361,13 @@ y position according to object's [originY](../../../../api/classes/fabricobject/
 
 [`Group`](/api/classes/group/).[`setY`](/api/classes/group/#sety)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:107](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L107)
-
 ***
 
 ### shouldCache()
 
 > **shouldCache**(): `boolean`
+
+Defined in: [src/shapes/ActiveSelection.ts:219](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/ActiveSelection.ts#L219)
 
 Decide if the object should cache or not. Create its own cache level
 objectCaching is a global flag, wins over everything
@@ -5523,22 +5383,22 @@ Generally you do not cache objects in groups because the group outside is cached
 
 [`Group`](/api/classes/group/).[`shouldCache`](/api/classes/group/#shouldcache)
 
-#### Defined in
-
-[src/shapes/ActiveSelection.ts:219](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/ActiveSelection.ts#L219)
-
 ***
 
 ### shouldStartDragging()
 
 > **shouldStartDragging**(`_e`): `boolean`
 
+Defined in: [src/shapes/Object/InteractiveObject.ts:682](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L682)
+
 Override to customize Drag behavior
-Fired from Canvas#_onMouseMove
+Fired from Canvas#\_onMouseMove
 
 #### Parameters
 
-• **\_e**: [`TPointerEvent`](/api/type-aliases/tpointerevent/)
+##### \_e
+
+[`TPointerEvent`](/api/type-aliases/tpointerevent/)
 
 #### Returns
 
@@ -5550,15 +5410,13 @@ true in order for the window to start a drag session
 
 [`Group`](/api/classes/group/).[`shouldStartDragging`](/api/classes/group/#shouldstartdragging)
 
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:682](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L682)
-
 ***
 
 ### size()
 
 > **size**(): `number`
+
+Defined in: [src/Collection.ts:136](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L136)
 
 Returns a size of a collection (i.e: length of an array containing its objects)
 
@@ -5570,11 +5428,7 @@ Collection size
 
 #### Inherited from
 
-[`Group`](/api/classes/group/).[`size`](/api/classes/group/#size)
-
-#### Defined in
-
-[src/Collection.ts:136](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L136)
+[`Group`](/api/classes/group/).[`size`](/api/classes/group/#size-1)
 
 ***
 
@@ -5582,15 +5436,21 @@ Collection size
 
 > **strokeBorders**(`ctx`, `size`): `void`
 
+Defined in: [src/shapes/Object/InteractiveObject.ts:399](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L399)
+
 override this function in order to customize the drawing of the control box, e.g. rounded corners, different border style.
 
 #### Parameters
 
-• **ctx**: `CanvasRenderingContext2D`
+##### ctx
+
+`CanvasRenderingContext2D`
 
 ctx is rotated and translated so that (0,0) is at object's center
 
-• **size**: [`Point`](/api/classes/point/)
+##### size
+
+[`Point`](/api/classes/point/)
 
 the control box size used
 
@@ -5602,21 +5462,21 @@ the control box size used
 
 [`Group`](/api/classes/group/).[`strokeBorders`](/api/classes/group/#strokeborders)
 
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:399](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L399)
-
 ***
 
 ### toCanvasElement()
 
 > **toCanvasElement**(`options`): `HTMLCanvasElement`
 
+Defined in: [src/shapes/Object/Object.ts:1299](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1299)
+
 Converts an object into a HTMLCanvas element
 
 #### Parameters
 
-• **options**: `ObjectToCanvasElementOptions` = `{}`
+##### options
+
+`ObjectToCanvasElementOptions` = `{}`
 
 Options object
 
@@ -5630,21 +5490,21 @@ Returns DOM element <canvas> with the FabricObject
 
 [`Group`](/api/classes/group/).[`toCanvasElement`](/api/classes/group/#tocanvaselement)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:1299](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1299)
-
 ***
 
 ### toClipPathSVG()
 
 > **toClipPathSVG**(`reviver`?): `string`
 
+Defined in: [src/shapes/Group.ts:666](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L666)
+
 Returns svg clipPath representation of an instance
 
 #### Parameters
 
-• **reviver?**: [`TSVGReviver`](/api/type-aliases/tsvgreviver/)
+##### reviver?
+
+[`TSVGReviver`](/api/type-aliases/tsvgreviver/)
 
 Method for further parsing of svg representation.
 
@@ -5658,49 +5518,21 @@ svg representation of an instance
 
 [`Group`](/api/classes/group/).[`toClipPathSVG`](/api/classes/group/#toclippathsvg)
 
-#### Defined in
-
-[src/shapes/Group.ts:666](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L666)
-
-***
-
-### toDataURL()
-
-> **toDataURL**(`options`): `string`
-
-Converts an object into a data-url-like string
-
-#### Parameters
-
-• **options**: `toDataURLOptions` = `{}`
-
-Options object
-
-#### Returns
-
-`string`
-
-Returns a data: URL containing a representation of the object in the format specified by options.format
-
-#### Inherited from
-
-[`Group`](/api/classes/group/).[`toDataURL`](/api/classes/group/#todataurl)
-
-#### Defined in
-
-[src/shapes/Object/Object.ts:1395](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1395)
-
 ***
 
 ### toDatalessObject()
 
 > **toDatalessObject**(`propertiesToInclude`?): `any`
 
+Defined in: [src/shapes/Object/Object.ts:1843](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1843)
+
 Returns (dataless) object representation of an instance
 
 #### Parameters
 
-• **propertiesToInclude?**: `any`[]
+##### propertiesToInclude?
+
+`any`[]
 
 Any properties that you might want to additionally include in the output
 
@@ -5714,15 +5546,67 @@ Object representation of an instance
 
 [`Group`](/api/classes/group/).[`toDatalessObject`](/api/classes/group/#todatalessobject)
 
-#### Defined in
+***
 
-[src/shapes/Object/Object.ts:1843](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1843)
+### toDataURL()
+
+> **toDataURL**(`options`): `string`
+
+Defined in: [src/shapes/Object/Object.ts:1395](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1395)
+
+Converts an object into a data-url-like string
+
+#### Parameters
+
+##### options
+
+`toDataURLOptions` = `{}`
+
+Options object
+
+#### Returns
+
+`string`
+
+Returns a data: URL containing a representation of the object in the format specified by options.format
+
+#### Inherited from
+
+[`Group`](/api/classes/group/).[`toDataURL`](/api/classes/group/#todataurl)
+
+***
+
+### toggle()
+
+> **toggle**(`property`): [`ActiveSelection`](/api/classes/activeselection/)
+
+Defined in: [src/CommonMethods.ts:46](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/CommonMethods.ts#L46)
+
+Toggles specified property from `true` to `false` or from `false` to `true`
+
+#### Parameters
+
+##### property
+
+`string`
+
+Property to toggle
+
+#### Returns
+
+[`ActiveSelection`](/api/classes/activeselection/)
+
+#### Inherited from
+
+[`Group`](/api/classes/group/).[`toggle`](/api/classes/group/#toggle)
 
 ***
 
 ### toJSON()
 
 > **toJSON**(): `any`
+
+Defined in: [src/shapes/Object/Object.ts:1427](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1427)
 
 Returns a JSON representation of an instance
 
@@ -5736,15 +5620,13 @@ JSON
 
 [`Group`](/api/classes/group/).[`toJSON`](/api/classes/group/#tojson)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:1427](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1427)
-
 ***
 
 ### toObject()
 
 > **toObject**\<`T`, `K`\>(`propertiesToInclude`?): `Pick`\<`T`, `K`\> & [`SerializedGroupProps`](/api/interfaces/serializedgroupprops/)
+
+Defined in: [src/shapes/Group.ts:576](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L576)
 
 Returns object representation of an instance
 
@@ -5756,7 +5638,9 @@ Returns object representation of an instance
 
 #### Parameters
 
-• **propertiesToInclude?**: `K`[] = `[]`
+##### propertiesToInclude?
+
+`K`[] = `[]`
 
 Any properties that you might want to additionally include in the output
 
@@ -5770,9 +5654,23 @@ object representation of an instance
 
 [`Group`](/api/classes/group/).[`toObject`](/api/classes/group/#toobject)
 
-#### Defined in
+***
 
-[src/shapes/Group.ts:576](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L576)
+### toString()
+
+> **toString**(): `string`
+
+Defined in: [src/shapes/ActiveSelection.ts:207](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/ActiveSelection.ts#L207)
+
+Returns string representation of a group
+
+#### Returns
+
+`string`
+
+#### Overrides
+
+[`Group`](/api/classes/group/).[`toString`](/api/classes/group/#tostring)
 
 ***
 
@@ -5780,13 +5678,19 @@ object representation of an instance
 
 > **toSVG**(`this`, `reviver`?): `string`
 
+Defined in: [src/shapes/Object/FabricObjectSVGExportMixin.ts:129](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/FabricObjectSVGExportMixin.ts#L129)
+
 Returns svg representation of an instance
 
 #### Parameters
 
-• **this**: `FabricObjectSVGExportMixin` & [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+##### this
 
-• **reviver?**: [`TSVGReviver`](/api/type-aliases/tsvgreviver/)
+`FabricObjectSVGExportMixin` & [`FabricObject`](/api/classes/fabricobject/)
+
+##### reviver?
+
+[`TSVGReviver`](/api/type-aliases/tsvgreviver/)
 
 Method for further parsing of svg representation.
 
@@ -5800,67 +5704,21 @@ svg representation of an instance
 
 [`Group`](/api/classes/group/).[`toSVG`](/api/classes/group/#tosvg)
 
-#### Defined in
-
-[src/shapes/Object/FabricObjectSVGExportMixin.ts:129](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/FabricObjectSVGExportMixin.ts#L129)
-
-***
-
-### toString()
-
-> **toString**(): `string`
-
-Returns string representation of a group
-
-#### Returns
-
-`string`
-
-#### Overrides
-
-[`Group`](/api/classes/group/).[`toString`](/api/classes/group/#tostring)
-
-#### Defined in
-
-[src/shapes/ActiveSelection.ts:207](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/ActiveSelection.ts#L207)
-
-***
-
-### toggle()
-
-> **toggle**(`property`): [`ActiveSelection`](/api/classes/activeselection/)
-
-Toggles specified property from `true` to `false` or from `false` to `true`
-
-#### Parameters
-
-• **property**: `string`
-
-Property to toggle
-
-#### Returns
-
-[`ActiveSelection`](/api/classes/activeselection/)
-
-#### Inherited from
-
-[`Group`](/api/classes/group/).[`toggle`](/api/classes/group/#toggle)
-
-#### Defined in
-
-[src/CommonMethods.ts:46](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/CommonMethods.ts#L46)
-
 ***
 
 ### transform()
 
 > **transform**(`ctx`): `void`
 
+Defined in: [src/shapes/Object/Object.ts:527](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L527)
+
 Transforms context when rendering an object
 
 #### Parameters
 
-• **ctx**: `CanvasRenderingContext2D`
+##### ctx
+
+`CanvasRenderingContext2D`
 
 Context
 
@@ -5872,19 +5730,19 @@ Context
 
 [`Group`](/api/classes/group/).[`transform`](/api/classes/group/#transform)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:527](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L527)
-
 ***
 
 ### transformMatrixKey()
 
 > **transformMatrixKey**(`skipGroup`): `number`[]
 
+Defined in: [src/shapes/Object/ObjectGeometry.ts:453](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L453)
+
 #### Parameters
 
-• **skipGroup**: `boolean` = `false`
+##### skipGroup
+
+`boolean` = `false`
 
 #### Returns
 
@@ -5894,29 +5752,33 @@ Context
 
 [`Group`](/api/classes/group/).[`transformMatrixKey`](/api/classes/group/#transformmatrixkey)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:453](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L453)
-
 ***
 
 ### translateToCenterPoint()
 
 > **translateToCenterPoint**(`point`, `originX`, `originY`): [`Point`](/api/classes/point/)
 
+Defined in: [src/shapes/Object/ObjectGeometry.ts:682](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L682)
+
 Translates the coordinates from origin to center coordinates (based on the object's dimensions)
 
 #### Parameters
 
-• **point**: [`Point`](/api/classes/point/)
+##### point
+
+[`Point`](/api/classes/point/)
 
 The point which corresponds to the originX and originY params
 
-• **originX**: [`TOriginX`](/api/type-aliases/toriginx/)
+##### originX
+
+[`TOriginX`](/api/type-aliases/toriginx/)
 
 Horizontal origin: 'left', 'center' or 'right'
 
-• **originY**: [`TOriginY`](/api/type-aliases/toriginy/)
+##### originY
+
+[`TOriginY`](/api/type-aliases/toriginy/)
 
 Vertical origin: 'top', 'center' or 'bottom'
 
@@ -5928,37 +5790,45 @@ Vertical origin: 'top', 'center' or 'bottom'
 
 [`Group`](/api/classes/group/).[`translateToCenterPoint`](/api/classes/group/#translatetocenterpoint)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:682](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L682)
-
 ***
 
 ### translateToGivenOrigin()
 
 > **translateToGivenOrigin**(`point`, `fromOriginX`, `fromOriginY`, `toOriginX`, `toOriginY`): [`Point`](/api/classes/point/)
 
+Defined in: [src/shapes/Object/ObjectGeometry.ts:654](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L654)
+
 Translates the coordinates from a set of origin to another (based on the object's dimensions)
 
 #### Parameters
 
-• **point**: [`Point`](/api/classes/point/)
+##### point
+
+[`Point`](/api/classes/point/)
 
 The point which corresponds to the originX and originY params
 
-• **fromOriginX**: [`TOriginX`](/api/type-aliases/toriginx/)
+##### fromOriginX
+
+[`TOriginX`](/api/type-aliases/toriginx/)
 
 Horizontal origin: 'left', 'center' or 'right'
 
-• **fromOriginY**: [`TOriginY`](/api/type-aliases/toriginy/)
+##### fromOriginY
+
+[`TOriginY`](/api/type-aliases/toriginy/)
 
 Vertical origin: 'top', 'center' or 'bottom'
 
-• **toOriginX**: [`TOriginX`](/api/type-aliases/toriginx/)
+##### toOriginX
+
+[`TOriginX`](/api/type-aliases/toriginx/)
 
 Horizontal origin: 'left', 'center' or 'right'
 
-• **toOriginY**: [`TOriginY`](/api/type-aliases/toriginy/)
+##### toOriginY
+
+[`TOriginY`](/api/type-aliases/toriginy/)
 
 Vertical origin: 'top', 'center' or 'bottom'
 
@@ -5970,29 +5840,33 @@ Vertical origin: 'top', 'center' or 'bottom'
 
 [`Group`](/api/classes/group/).[`translateToGivenOrigin`](/api/classes/group/#translatetogivenorigin)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:654](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L654)
-
 ***
 
 ### translateToOriginPoint()
 
 > **translateToOriginPoint**(`center`, `originX`, `originY`): [`Point`](/api/classes/point/)
 
+Defined in: [src/shapes/Object/ObjectGeometry.ts:710](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L710)
+
 Translates the coordinates from center to origin coordinates (based on the object's dimensions)
 
 #### Parameters
 
-• **center**: [`Point`](/api/classes/point/)
+##### center
+
+[`Point`](/api/classes/point/)
 
 The point which corresponds to center of the object
 
-• **originX**: [`TOriginX`](/api/type-aliases/toriginx/)
+##### originX
+
+[`TOriginX`](/api/type-aliases/toriginx/)
 
 Horizontal origin: 'left', 'center' or 'right'
 
-• **originY**: [`TOriginY`](/api/type-aliases/toriginy/)
+##### originY
+
+[`TOriginY`](/api/type-aliases/toriginy/)
 
 Vertical origin: 'top', 'center' or 'bottom'
 
@@ -6004,19 +5878,19 @@ Vertical origin: 'top', 'center' or 'bottom'
 
 [`Group`](/api/classes/group/).[`translateToOriginPoint`](/api/classes/group/#translatetooriginpoint)
 
-#### Defined in
-
-[src/shapes/Object/ObjectGeometry.ts:710](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/ObjectGeometry.ts#L710)
-
 ***
 
 ### triggerLayout()
 
 > **triggerLayout**(`options`): `void`
 
+Defined in: [src/shapes/Group.ts:527](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L527)
+
 #### Parameters
 
-• **options**: [`ImperativeLayoutOptions`](/api/type-aliases/imperativelayoutoptions/) = `{}`
+##### options
+
+[`ImperativeLayoutOptions`](/api/type-aliases/imperativelayoutoptions/) = `{}`
 
 #### Returns
 
@@ -6026,15 +5900,13 @@ Vertical origin: 'top', 'center' or 'bottom'
 
 [`Group`](/api/classes/group/).[`triggerLayout`](/api/classes/group/#triggerlayout)
 
-#### Defined in
-
-[src/shapes/Group.ts:527](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L527)
-
 ***
 
 ### willDrawShadow()
 
 > **willDrawShadow**(): `boolean`
+
+Defined in: [src/shapes/Group.ts:472](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L472)
 
 Check if this object or a child object will cast a shadow
 
@@ -6046,25 +5918,27 @@ Check if this object or a child object will cast a shadow
 
 [`Group`](/api/classes/group/).[`willDrawShadow`](/api/classes/group/#willdrawshadow)
 
-#### Defined in
-
-[src/shapes/Group.ts:472](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L472)
-
 ***
 
 ### \_fromObject()
 
 > `static` **\_fromObject**\<`S`\>(`__namedParameters`, `__namedParameters`): `Promise`\<`S`\>
 
+Defined in: [src/shapes/Object/Object.ts:1896](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1896)
+
 #### Type Parameters
 
-• **S** *extends* [`BaseFabricObject`](/api/classes/basefabricobject/)\<`Partial`\<`ObjectProps`\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+• **S** *extends* [`BaseFabricObject`](/api/classes/basefabricobject/)
 
 #### Parameters
 
-• **\_\_namedParameters**: `Record`\<`string`, `unknown`\>
+##### \_\_namedParameters
 
-• **\_\_namedParameters**: [`Abortable`](/api/type-aliases/abortable/) & `object` = `{}`
+`Record`\<`string`, `unknown`\>
+
+##### \_\_namedParameters
+
+[`Abortable`](/api/type-aliases/abortable/) & `object` = `{}`
 
 #### Returns
 
@@ -6074,15 +5948,13 @@ Check if this object or a child object will cast a shadow
 
 [`Group`](/api/classes/group/).[`_fromObject`](/api/classes/group/#_fromobject)
 
-#### Defined in
-
-[src/shapes/Object/Object.ts:1896](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/Object.ts#L1896)
-
 ***
 
 ### createControls()
 
 > `static` **createControls**(): `object`
+
+Defined in: [src/shapes/Object/InteractiveObject.ts:167](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L167)
 
 Creates the default control object.
 If you prefer to have on instance of controls shared among all objects
@@ -6100,15 +5972,13 @@ make this function return an empty object and add controls to the ownDefaults
 
 [`Group`](/api/classes/group/).[`createControls`](/api/classes/group/#createcontrols)
 
-#### Defined in
-
-[src/shapes/Object/InteractiveObject.ts:167](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Object/InteractiveObject.ts#L167)
-
 ***
 
 ### getDefaults()
 
 > `static` **getDefaults**(): `Record`\<`string`, `any`\>
+
+Defined in: [src/shapes/ActiveSelection.ts:41](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/ActiveSelection.ts#L41)
 
 #### Returns
 
@@ -6117,7 +5987,3 @@ make this function return an empty object and add controls to the ownDefaults
 #### Overrides
 
 [`Group`](/api/classes/group/).[`getDefaults`](/api/classes/group/#getdefaults)
-
-#### Defined in
-
-[src/shapes/ActiveSelection.ts:41](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/ActiveSelection.ts#L41)

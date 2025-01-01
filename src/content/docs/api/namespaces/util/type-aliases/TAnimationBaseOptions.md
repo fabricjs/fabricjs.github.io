@@ -7,6 +7,8 @@ title: "TAnimationBaseOptions"
 
 > **TAnimationBaseOptions**\<`T`\>: `object`
 
+Defined in: [src/util/animation/types.ts:49](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/util/animation/types.ts#L49)
+
 ## Type Parameters
 
 • **T**
@@ -54,7 +56,3 @@ Easing function
 > **target**: `unknown`
 
 The object this animation is being performed on
-
-## Defined in
-
-[src/util/animation/types.ts:49](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/util/animation/types.ts#L49)

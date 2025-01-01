@@ -7,6 +7,8 @@ title: "LayoutStrategyResult"
 
 > **LayoutStrategyResult**: `object`
 
+Defined in: [src/LayoutManager/types.ts:28](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/types.ts#L28)
+
 ## Type declaration
 
 ### center
@@ -36,7 +38,3 @@ correction vector to translate objects by as measured by the plane
 > **size**: [`Point`](/api/classes/point/)
 
 new width and height of the layout target
-
-## Defined in
-
-[src/LayoutManager/types.ts:28](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/types.ts#L28)

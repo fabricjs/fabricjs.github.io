@@ -5,6 +5,8 @@ prev: false
 title: "Invert"
 ---
 
+Defined in: [src/filters/Invert.ts:22](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/Invert.ts#L22)
+
 ## Example
 
 ```ts
@@ -23,11 +25,15 @@ object.applyFilters(canvas.renderAll.bind(canvas));
 
 > **new Invert**(`options`?): [`Invert`](/api/namespaces/filters/classes/invert/)
 
+Defined in: [src/filters/BaseFilter.ts:57](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L57)
+
 Constructor
 
 #### Parameters
 
-• **options?**: `object` & `Partial`\<`InvertOwnProps`\> & `Record`\<`string`, `any`\> = `{}`
+##### options?
+
+`object` & `Partial`\<`InvertOwnProps`\> & `Record`\<`string`, `any`\> = `{}`
 
 Options object
 
@@ -39,15 +45,13 @@ Options object
 
 [`BaseFilter`](/api/namespaces/filters/classes/basefilter/).[`constructor`](/api/namespaces/filters/classes/basefilter/#constructors)
 
-#### Defined in
-
-[src/filters/BaseFilter.ts:57](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L57)
-
 ## Properties
 
 ### alpha
 
 > **alpha**: `boolean`
+
+Defined in: [src/filters/Invert.ts:28](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/Invert.ts#L28)
 
 Invert also alpha.
 
@@ -59,15 +63,13 @@ Invert also alpha.
 
 ```
 
-#### Defined in
-
-[src/filters/Invert.ts:28](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/Invert.ts#L28)
-
 ***
 
 ### invert
 
 > **invert**: `boolean`
+
+Defined in: [src/filters/Invert.ts:35](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/Invert.ts#L35)
 
 Filter invert. if false, does nothing
 
@@ -79,29 +81,25 @@ Filter invert. if false, does nothing
 
 ```
 
-#### Defined in
-
-[src/filters/Invert.ts:35](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/Invert.ts#L35)
-
 ***
 
 ### defaults
 
 > `static` **defaults**: `InvertOwnProps` = `invertDefaultValues`
 
+Defined in: [src/filters/Invert.ts:39](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/Invert.ts#L39)
+
 #### Overrides
 
 [`BaseFilter`](/api/namespaces/filters/classes/basefilter/).[`defaults`](/api/namespaces/filters/classes/basefilter/#defaults)
-
-#### Defined in
-
-[src/filters/Invert.ts:39](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/Invert.ts#L39)
 
 ***
 
 ### type
 
 > `static` **type**: `string` = `'Invert'`
+
+Defined in: [src/filters/Invert.ts:37](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/Invert.ts#L37)
 
 The class type. Used to identify which class this is.
 This is used for serialization purposes and internally it can be used
@@ -113,15 +111,13 @@ to avoid doing that.
 
 [`BaseFilter`](/api/namespaces/filters/classes/basefilter/).[`type`](/api/namespaces/filters/classes/basefilter/#type)
 
-#### Defined in
-
-[src/filters/Invert.ts:37](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/Invert.ts#L37)
-
 ***
 
 ### uniformLocations
 
 > `static` **uniformLocations**: `string`[]
+
+Defined in: [src/filters/Invert.ts:41](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/Invert.ts#L41)
 
 Contains the uniform locations for the fragment shader.
 uStepW and uStepH are handled by the BaseFilter, each filter class
@@ -131,25 +127,25 @@ needs to specify all the one that are needed
 
 [`BaseFilter`](/api/namespaces/filters/classes/basefilter/).[`uniformLocations`](/api/namespaces/filters/classes/basefilter/#uniformlocations)
 
-#### Defined in
-
-[src/filters/Invert.ts:41](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/Invert.ts#L41)
-
 ## Accessors
 
 ### type
 
-> `get` **type**(): `Name`
+#### Get Signature
+
+> **get** **type**(): `Name`
+
+Defined in: [src/filters/BaseFilter.ts:31](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L31)
 
 Filter type
 
-#### Default
+##### Default
 
 ```ts
 
 ```
 
-#### Returns
+##### Returns
 
 `Name`
 
@@ -157,19 +153,19 @@ Filter type
 
 [`BaseFilter`](/api/namespaces/filters/classes/basefilter/).[`type`](/api/namespaces/filters/classes/basefilter/#type-1)
 
-#### Defined in
-
-[src/filters/BaseFilter.ts:31](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L31)
-
 ## Methods
 
 ### \_setupFrameBuffer()
 
 > **\_setupFrameBuffer**(`options`): `void`
 
+Defined in: [src/filters/BaseFilter.ts:205](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L205)
+
 #### Parameters
 
-• **options**: [`TWebGLPipelineState`](/api/type-aliases/twebglpipelinestate/)
+##### options
+
+[`TWebGLPipelineState`](/api/type-aliases/twebglpipelinestate/)
 
 #### Returns
 
@@ -179,19 +175,19 @@ Filter type
 
 [`BaseFilter`](/api/namespaces/filters/classes/basefilter/).[`_setupFrameBuffer`](/api/namespaces/filters/classes/basefilter/#_setupframebuffer)
 
-#### Defined in
-
-[src/filters/BaseFilter.ts:205](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L205)
-
 ***
 
 ### \_swapTextures()
 
 > **\_swapTextures**(`options`): `void`
 
+Defined in: [src/filters/BaseFilter.ts:232](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L232)
+
 #### Parameters
 
-• **options**: [`TWebGLPipelineState`](/api/type-aliases/twebglpipelinestate/)
+##### options
+
+[`TWebGLPipelineState`](/api/type-aliases/twebglpipelinestate/)
 
 #### Returns
 
@@ -201,15 +197,13 @@ Filter type
 
 [`BaseFilter`](/api/namespaces/filters/classes/basefilter/).[`_swapTextures`](/api/namespaces/filters/classes/basefilter/#_swaptextures)
 
-#### Defined in
-
-[src/filters/BaseFilter.ts:232](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L232)
-
 ***
 
 ### applyTo()
 
 > **applyTo**(`options`): `void`
+
+Defined in: [src/filters/BaseFilter.ts:265](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L265)
 
 Apply this filter to the input image data provided.
 
@@ -217,7 +211,9 @@ Determines whether to use WebGL or Canvas2D based on the options.webgl flag.
 
 #### Parameters
 
-• **options**: [`TWebGLPipelineState`](/api/type-aliases/twebglpipelinestate/) \| [`T2DPipelineState`](/api/type-aliases/t2dpipelinestate/)
+##### options
+
+[`TWebGLPipelineState`](/api/type-aliases/twebglpipelinestate/) | [`T2DPipelineState`](/api/type-aliases/t2dpipelinestate/)
 
 #### Returns
 
@@ -227,21 +223,21 @@ Determines whether to use WebGL or Canvas2D based on the options.webgl flag.
 
 [`BaseFilter`](/api/namespaces/filters/classes/basefilter/).[`applyTo`](/api/namespaces/filters/classes/basefilter/#applyto)
 
-#### Defined in
-
-[src/filters/BaseFilter.ts:265](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L265)
-
 ***
 
 ### applyTo2d()
 
 > **applyTo2d**(`options`): `void`
 
+Defined in: [src/filters/Invert.ts:49](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/Invert.ts#L49)
+
 Apply the Invert operation to a Uint8Array representing the pixels of an image.
 
 #### Parameters
 
-• **options**: [`T2DPipelineState`](/api/type-aliases/t2dpipelinestate/)
+##### options
+
+[`T2DPipelineState`](/api/type-aliases/t2dpipelinestate/)
 
 #### Returns
 
@@ -251,21 +247,21 @@ Apply the Invert operation to a Uint8Array representing the pixels of an image.
 
 [`BaseFilter`](/api/namespaces/filters/classes/basefilter/).[`applyTo2d`](/api/namespaces/filters/classes/basefilter/#applyto2d)
 
-#### Defined in
-
-[src/filters/Invert.ts:49](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/Invert.ts#L49)
-
 ***
 
 ### applyToWebGL()
 
 > **applyToWebGL**(`options`): `void`
 
+Defined in: [src/filters/BaseFilter.ts:315](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L315)
+
 Apply this filter using webgl.
 
 #### Parameters
 
-• **options**: [`TWebGLPipelineState`](/api/type-aliases/twebglpipelinestate/)
+##### options
+
+[`TWebGLPipelineState`](/api/type-aliases/twebglpipelinestate/)
 
 #### Returns
 
@@ -275,23 +271,27 @@ Apply this filter using webgl.
 
 [`BaseFilter`](/api/namespaces/filters/classes/basefilter/).[`applyToWebGL`](/api/namespaces/filters/classes/basefilter/#applytowebgl)
 
-#### Defined in
-
-[src/filters/BaseFilter.ts:315](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L315)
-
 ***
 
 ### bindAdditionalTexture()
 
 > **bindAdditionalTexture**(`gl`, `texture`, `textureUnit`): `void`
 
+Defined in: [src/filters/BaseFilter.ts:334](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L334)
+
 #### Parameters
 
-• **gl**: `WebGLRenderingContext`
+##### gl
 
-• **texture**: `WebGLTexture`
+`WebGLRenderingContext`
 
-• **textureUnit**: `number`
+##### texture
+
+`WebGLTexture`
+
+##### textureUnit
+
+`number`
 
 #### Returns
 
@@ -301,22 +301,22 @@ Apply this filter using webgl.
 
 [`BaseFilter`](/api/namespaces/filters/classes/basefilter/).[`bindAdditionalTexture`](/api/namespaces/filters/classes/basefilter/#bindadditionaltexture)
 
-#### Defined in
-
-[src/filters/BaseFilter.ts:334](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L334)
-
 ***
 
 ### createHelpLayer()
 
 > **createHelpLayer**(`options`): `void`
 
+Defined in: [src/filters/BaseFilter.ts:370](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L370)
+
 If needed by a 2d filter, this functions can create an helper canvas to be used
 remember that options.targetCanvas is available for use till end of chain.
 
 #### Parameters
 
-• **options**: [`T2DPipelineState`](/api/type-aliases/t2dpipelinestate/)
+##### options
+
+[`T2DPipelineState`](/api/type-aliases/t2dpipelinestate/)
 
 #### Returns
 
@@ -326,29 +326,33 @@ remember that options.targetCanvas is available for use till end of chain.
 
 [`BaseFilter`](/api/namespaces/filters/classes/basefilter/).[`createHelpLayer`](/api/namespaces/filters/classes/basefilter/#createhelplayer)
 
-#### Defined in
-
-[src/filters/BaseFilter.ts:370](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L370)
-
 ***
 
 ### createProgram()
 
 > **createProgram**(`gl`, `fragmentSource`, `vertexSource`): `object`
 
+Defined in: [src/filters/BaseFilter.ts:83](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L83)
+
 Compile this filter's shader program.
 
 #### Parameters
 
-• **gl**: `WebGLRenderingContext`
+##### gl
+
+`WebGLRenderingContext`
 
 The GL canvas context to use for shader compilation.
 
-• **fragmentSource**: `string` = `...`
+##### fragmentSource
+
+`string` = `...`
 
 fragmentShader source for compilation
 
-• **vertexSource**: `string` = `...`
+##### vertexSource
+
+`string` = `...`
 
 vertexShader source for compilation
 
@@ -372,25 +376,27 @@ vertexShader source for compilation
 
 [`BaseFilter`](/api/namespaces/filters/classes/basefilter/).[`createProgram`](/api/namespaces/filters/classes/basefilter/#createprogram)
 
-#### Defined in
-
-[src/filters/BaseFilter.ts:83](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L83)
-
 ***
 
 ### getAttributeLocations()
 
 > **getAttributeLocations**(`gl`, `program`): [`TWebGLAttributeLocationMap`](/api/type-aliases/twebglattributelocationmap/)
 
+Defined in: [src/filters/BaseFilter.ts:153](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L153)
+
 Return a map of attribute names to WebGLAttributeLocation objects.
 
 #### Parameters
 
-• **gl**: `WebGLRenderingContext`
+##### gl
+
+`WebGLRenderingContext`
 
 The canvas context used to compile the shader program.
 
-• **program**: `WebGLProgram`
+##### program
+
+`WebGLProgram`
 
 The shader program from which to take attribute locations.
 
@@ -404,15 +410,13 @@ A map of attribute names to attribute locations.
 
 [`BaseFilter`](/api/namespaces/filters/classes/basefilter/).[`getAttributeLocations`](/api/namespaces/filters/classes/basefilter/#getattributelocations)
 
-#### Defined in
-
-[src/filters/BaseFilter.ts:153](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L153)
-
 ***
 
 ### getCacheKey()
 
 > **getCacheKey**(): `string`
+
+Defined in: [src/filters/BaseFilter.ts:284](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L284)
 
 Returns a string that represent the current selected shader code for the filter.
 Used to force recompilation when parameters change or to retrieve the shader from cache
@@ -425,25 +429,27 @@ Used to force recompilation when parameters change or to retrieve the shader fro
 
 [`BaseFilter`](/api/namespaces/filters/classes/basefilter/).[`getCacheKey`](/api/namespaces/filters/classes/basefilter/#getcachekey)
 
-#### Defined in
-
-[src/filters/BaseFilter.ts:284](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L284)
-
 ***
 
 ### getUniformLocations()
 
 > **getUniformLocations**(`gl`, `program`): [`TWebGLUniformLocationMap`](/api/type-aliases/twebgluniformlocationmap/)
 
+Defined in: [src/filters/BaseFilter.ts:169](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L169)
+
 Return a map of uniform names to WebGLUniformLocation objects.
 
 #### Parameters
 
-• **gl**: `WebGLRenderingContext`
+##### gl
+
+`WebGLRenderingContext`
 
 The canvas context used to compile the shader program.
 
-• **program**: `WebGLProgram`
+##### program
+
+`WebGLProgram`
 
 The shader program from which to take uniform locations.
 
@@ -457,15 +463,13 @@ A map of uniform names to uniform locations.
 
 [`BaseFilter`](/api/namespaces/filters/classes/basefilter/).[`getUniformLocations`](/api/namespaces/filters/classes/basefilter/#getuniformlocations)
 
-#### Defined in
-
-[src/filters/BaseFilter.ts:169](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L169)
-
 ***
 
 ### getVertexSource()
 
 > **getVertexSource**(): `string`
+
+Defined in: [src/filters/BaseFilter.ts:72](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L72)
 
 #### Returns
 
@@ -475,15 +479,13 @@ A map of uniform names to uniform locations.
 
 [`BaseFilter`](/api/namespaces/filters/classes/basefilter/).[`getVertexSource`](/api/namespaces/filters/classes/basefilter/#getvertexsource)
 
-#### Defined in
-
-[src/filters/BaseFilter.ts:72](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L72)
-
 ***
 
 ### isNeutralState()
 
 > **isNeutralState**(): `boolean`
+
+Defined in: [src/filters/Invert.ts:71](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/Invert.ts#L71)
 
 Invert filter isNeutralState implementation
 Used only in image applyFilters to discard filters that will not have an effect
@@ -497,21 +499,21 @@ on the image
 
 [`BaseFilter`](/api/namespaces/filters/classes/basefilter/).[`isNeutralState`](/api/namespaces/filters/classes/basefilter/#isneutralstate)
 
-#### Defined in
-
-[src/filters/Invert.ts:71](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/Invert.ts#L71)
-
 ***
 
 ### retrieveShader()
 
 > **retrieveShader**(`options`): [`TWebGLProgramCacheItem`](/api/type-aliases/twebglprogramcacheitem/)
 
+Defined in: [src/filters/BaseFilter.ts:295](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L295)
+
 Retrieves the cached shader.
 
 #### Parameters
 
-• **options**: [`TWebGLPipelineState`](/api/type-aliases/twebglpipelinestate/)
+##### options
+
+[`TWebGLPipelineState`](/api/type-aliases/twebglpipelinestate/)
 
 #### Returns
 
@@ -523,29 +525,33 @@ the compiled program shader
 
 [`BaseFilter`](/api/namespaces/filters/classes/basefilter/).[`retrieveShader`](/api/namespaces/filters/classes/basefilter/#retrieveshader)
 
-#### Defined in
-
-[src/filters/BaseFilter.ts:295](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L295)
-
 ***
 
 ### sendAttributeData()
 
 > **sendAttributeData**(`gl`, `attributeLocations`, `aPositionData`): `void`
 
+Defined in: [src/filters/BaseFilter.ts:192](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L192)
+
 Send attribute data from this filter to its shader program on the GPU.
 
 #### Parameters
 
-• **gl**: `WebGLRenderingContext`
+##### gl
+
+`WebGLRenderingContext`
 
 The canvas context used to compile the shader program.
 
-• **attributeLocations**: `Record`\<`string`, `number`\>
+##### attributeLocations
+
+`Record`\<`string`, `number`\>
 
 A map of shader attribute names to their locations.
 
-• **aPositionData**: `Float32Array`
+##### aPositionData
+
+`Float32Array`
 
 #### Returns
 
@@ -555,25 +561,27 @@ A map of shader attribute names to their locations.
 
 [`BaseFilter`](/api/namespaces/filters/classes/basefilter/).[`sendAttributeData`](/api/namespaces/filters/classes/basefilter/#sendattributedata)
 
-#### Defined in
-
-[src/filters/BaseFilter.ts:192](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L192)
-
 ***
 
 ### sendUniformData()
 
 > **sendUniformData**(`gl`, `uniformLocations`): `void`
 
+Defined in: [src/filters/Invert.ts:81](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/Invert.ts#L81)
+
 Send data from this filter to its shader program's uniforms.
 
 #### Parameters
 
-• **gl**: `WebGLRenderingContext`
+##### gl
+
+`WebGLRenderingContext`
 
 The GL canvas context used to compile this filter's shader.
 
-• **uniformLocations**: [`TWebGLUniformLocationMap`](/api/type-aliases/twebgluniformlocationmap/)
+##### uniformLocations
+
+[`TWebGLUniformLocationMap`](/api/type-aliases/twebgluniformlocationmap/)
 
 A map of string uniform names to WebGLUniformLocation objects
 
@@ -585,15 +593,13 @@ A map of string uniform names to WebGLUniformLocation objects
 
 [`BaseFilter`](/api/namespaces/filters/classes/basefilter/).[`sendUniformData`](/api/namespaces/filters/classes/basefilter/#senduniformdata)
 
-#### Defined in
-
-[src/filters/Invert.ts:81](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/Invert.ts#L81)
-
 ***
 
 ### toJSON()
 
 > **toJSON**(): `object` & `InvertOwnProps`
+
+Defined in: [src/filters/BaseFilter.ts:407](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L407)
 
 Returns a JSON representation of an instance
 
@@ -607,15 +613,13 @@ JSON
 
 [`BaseFilter`](/api/namespaces/filters/classes/basefilter/).[`toJSON`](/api/namespaces/filters/classes/basefilter/#tojson)
 
-#### Defined in
-
-[src/filters/BaseFilter.ts:407](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L407)
-
 ***
 
 ### toObject()
 
 > **toObject**(): `object` & `InvertOwnProps`
+
+Defined in: [src/filters/BaseFilter.ts:387](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L387)
 
 Returns object representation of an instance
 It will automatically export the default values of a filter,
@@ -631,21 +635,23 @@ Object representation of an instance
 
 [`BaseFilter`](/api/namespaces/filters/classes/basefilter/).[`toObject`](/api/namespaces/filters/classes/basefilter/#toobject)
 
-#### Defined in
-
-[src/filters/BaseFilter.ts:387](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L387)
-
 ***
 
 ### unbindAdditionalTexture()
 
 > **unbindAdditionalTexture**(`gl`, `textureUnit`): `void`
 
+Defined in: [src/filters/BaseFilter.ts:345](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L345)
+
 #### Parameters
 
-• **gl**: `WebGLRenderingContext`
+##### gl
 
-• **textureUnit**: `number`
+`WebGLRenderingContext`
+
+##### textureUnit
+
+`number`
 
 #### Returns
 
@@ -655,30 +661,28 @@ Object representation of an instance
 
 [`BaseFilter`](/api/namespaces/filters/classes/basefilter/).[`unbindAdditionalTexture`](/api/namespaces/filters/classes/basefilter/#unbindadditionaltexture)
 
-#### Defined in
-
-[src/filters/BaseFilter.ts:345](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L345)
-
 ***
 
 ### fromObject()
 
-> `static` **fromObject**(`__namedParameters`, `_options`): `Promise`\<[`BaseFilter`](/api/namespaces/filters/classes/basefilter/)\<`string`, `object`, `object`\>\>
+> `static` **fromObject**(`__namedParameters`, `_options`): `Promise`\<[`BaseFilter`](/api/namespaces/filters/classes/basefilter/)\<`string`\>\>
+
+Defined in: [src/filters/BaseFilter.ts:412](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L412)
 
 #### Parameters
 
-• **\_\_namedParameters**: `Record`\<`string`, `any`\>
+##### \_\_namedParameters
 
-• **\_options**: [`Abortable`](/api/type-aliases/abortable/)
+`Record`\<`string`, `any`\>
+
+##### \_options
+
+[`Abortable`](/api/type-aliases/abortable/)
 
 #### Returns
 
-`Promise`\<[`BaseFilter`](/api/namespaces/filters/classes/basefilter/)\<`string`, `object`, `object`\>\>
+`Promise`\<[`BaseFilter`](/api/namespaces/filters/classes/basefilter/)\<`string`\>\>
 
 #### Inherited from
 
 [`BaseFilter`](/api/namespaces/filters/classes/basefilter/).[`fromObject`](/api/namespaces/filters/classes/basefilter/#fromobject)
-
-#### Defined in
-
-[src/filters/BaseFilter.ts:412](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/BaseFilter.ts#L412)

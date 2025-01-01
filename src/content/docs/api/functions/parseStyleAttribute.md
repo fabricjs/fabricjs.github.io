@@ -7,11 +7,15 @@ title: "parseStyleAttribute"
 
 > **parseStyleAttribute**(`element`): `Record`\<`string`, `any`\>
 
+Defined in: [src/parser/parseStyleAttribute.ts:11](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/parser/parseStyleAttribute.ts#L11)
+
 Parses "style" attribute, retuning an object with values
 
 ## Parameters
 
-• **element**: `HTMLElement`
+### element
+
+`HTMLElement`
 
 Element to parse
 
@@ -26,7 +30,3 @@ Objects with values parsed from style attribute of an element
 ## Member Of
 
 fabric
-
-## Defined in
-
-[src/parser/parseStyleAttribute.ts:11](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/parser/parseStyleAttribute.ts#L11)

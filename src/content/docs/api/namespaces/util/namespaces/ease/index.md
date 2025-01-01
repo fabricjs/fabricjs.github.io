@@ -5,9 +5,7 @@ prev: false
 title: "ease"
 ---
 
-## Index
-
-### Functions
+## Functions
 
 - [defaultEasing](/api/namespaces/util/namespaces/ease/functions/defaulteasing/)
 - [easeInBack](/api/namespaces/util/namespaces/ease/functions/easeinback/)
