@@ -7,6 +7,8 @@ title: "ObjectModificationEvents"
 
 > **ObjectModificationEvents**: `object`
 
+Defined in: [src/EventTypeDefs.ts:130](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L130)
+
 ## Type declaration
 
 ### modified
@@ -40,7 +42,3 @@ title: "ObjectModificationEvents"
 ### skewing
 
 > **skewing**: [`BasicTransformEvent`](/api/interfaces/basictransformevent/)
-
-## Defined in
-
-[src/EventTypeDefs.ts:130](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L130)

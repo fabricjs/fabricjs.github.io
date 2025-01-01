@@ -7,6 +7,8 @@ title: "T2DPipelineState"
 
 > **T2DPipelineState**: `object`
 
+Defined in: [src/filters/typedefs.ts:35](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/typedefs.ts#L35)
+
 ## Type declaration
 
 ### canvasEl
@@ -44,7 +46,3 @@ title: "T2DPipelineState"
 ### sourceWidth
 
 > **sourceWidth**: `number`
-
-## Defined in
-
-[src/filters/typedefs.ts:35](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/typedefs.ts#L35)

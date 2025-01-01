@@ -5,14 +5,12 @@ prev: false
 title: "util"
 ---
 
-## Index
-
-### Namespaces
+## Namespaces
 
 - [ease](/api/namespaces/util/namespaces/ease/index/)
 - [string](/api/namespaces/util/namespaces/string/index/)
 
-### Type Aliases
+## Type Aliases
 
 - [AnimationOptions](/api/namespaces/util/type-aliases/animationoptions/)
 - [AnimationState](/api/namespaces/util/type-aliases/animationstate/)
@@ -38,6 +36,7 @@ title: "util"
 - [TCurveInfo](/api/namespaces/util/type-aliases/tcurveinfo/)
 - [TEasingFunction](/api/namespaces/util/type-aliases/teasingfunction/)
 - [TEndPathInfo](/api/namespaces/util/type-aliases/tendpathinfo/)
+- [TextStyleArray](/api/namespaces/util/type-aliases/textstylearray/)
 - [THorizontalLineCommand](/api/namespaces/util/type-aliases/thorizontallinecommand/)
 - [TLineCommand](/api/namespaces/util/type-aliases/tlinecommand/)
 - [TMoveToCommand](/api/namespaces/util/type-aliases/tmovetocommand/)
@@ -77,8 +76,8 @@ title: "util"
 - [TPathSegmentInfo](/api/namespaces/util/type-aliases/tpathsegmentinfo/)
 - [TPathSegmentInfoCommon](/api/namespaces/util/type-aliases/tpathsegmentinfocommon/)
 - [TPointAngle](/api/namespaces/util/type-aliases/tpointangle/)
-- [TProjectStrokeOnPointsOptions](/api/namespaces/util/type-aliases/tprojectstrokeonpointsoptions/)
 - [TProjection](/api/namespaces/util/type-aliases/tprojection/)
+- [TProjectStrokeOnPointsOptions](/api/namespaces/util/type-aliases/tprojectstrokeonpointsoptions/)
 - [TQrDecomposeOut](/api/namespaces/util/type-aliases/tqrdecomposeout/)
 - [TQuadraticCurveCommand](/api/namespaces/util/type-aliases/tquadraticcurvecommand/)
 - [TQuadraticCurveShortcutCommand](/api/namespaces/util/type-aliases/tquadraticcurveshortcutcommand/)
@@ -89,10 +88,9 @@ title: "util"
 - [TSimplePathData](/api/namespaces/util/type-aliases/tsimplepathdata/)
 - [TTranslateMatrixArgs](/api/namespaces/util/type-aliases/ttranslatematrixargs/)
 - [TVerticalLineCommand](/api/namespaces/util/type-aliases/tverticallinecommand/)
-- [TextStyleArray](/api/namespaces/util/type-aliases/textstylearray/)
 - [ValueAnimationOptions](/api/namespaces/util/type-aliases/valueanimationoptions/)
 
-### Functions
+## Functions
 
 - [addTransformToObject](/api/namespaces/util/functions/addtransformtoobject/)
 - [animate](/api/namespaces/util/functions/animate/)
@@ -125,8 +123,8 @@ title: "util"
 - [getBoundsOfCurve](/api/namespaces/util/functions/getboundsofcurve/)
 - [getOrthonormalVector](/api/namespaces/util/functions/getorthonormalvector/)
 - [getPathSegmentsInfo](/api/namespaces/util/functions/getpathsegmentsinfo/)
-- [getPointOnPath](/api/namespaces/util/functions/getpointonpath/)
 - [getPointer](/api/namespaces/util/functions/getpointer/)
+- [getPointOnPath](/api/namespaces/util/functions/getpointonpath/)
 - [getRandomInt](/api/namespaces/util/functions/getrandomint/)
 - [getRegularPolygonPath](/api/namespaces/util/functions/getregularpolygonpath/)
 - [getSmoothPathFromPoints](/api/namespaces/util/functions/getsmoothpathfrompoints/)
@@ -157,10 +155,10 @@ title: "util"
 - [radiansToDegrees](/api/namespaces/util/functions/radianstodegrees/)
 - [removeFromArray](/api/namespaces/util/functions/removefromarray/)
 - [removeTransformFromObject](/api/namespaces/util/functions/removetransformfromobject/)
-- [request](/api/namespaces/util/functions/request/)
+- [~~request~~](/api/namespaces/util/functions/request/)
 - [requestAnimFrame](/api/namespaces/util/functions/requestanimframe/)
 - [resetObjectTransform](/api/namespaces/util/functions/resetobjecttransform/)
-- [rotatePoint](/api/namespaces/util/functions/rotatepoint/)
+- [~~rotatePoint~~](/api/namespaces/util/functions/rotatepoint/)
 - [rotateVector](/api/namespaces/util/functions/rotatevector/)
 - [saveObjectTransform](/api/namespaces/util/functions/saveobjecttransform/)
 - [sendObjectToPlane](/api/namespaces/util/functions/sendobjecttoplane/)
@@ -174,4 +172,4 @@ title: "util"
 - [toDataURL](/api/namespaces/util/functions/todataurl/)
 - [toFixed](/api/namespaces/util/functions/tofixed/)
 - [transformPath](/api/namespaces/util/functions/transformpath/)
-- [transformPoint](/api/namespaces/util/functions/transformpoint/)
+- [~~transformPoint~~](/api/namespaces/util/functions/transformpoint/)

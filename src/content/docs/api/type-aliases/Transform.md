@@ -7,6 +7,8 @@ title: "Transform"
 
 > **Transform**: `object`
 
+Defined in: [src/EventTypeDefs.ts:66](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L66)
+
 relative to target's containing coordinate plane
 both agree on every point
 
@@ -60,14 +62,6 @@ both agree on every point
 
 > **offsetY**: `number`
 
-### originX
-
-> **originX**: [`TOriginX`](/api/type-aliases/toriginx/)
-
-### originY
-
-> **originY**: [`TOriginY`](/api/type-aliases/toriginy/)
-
 ### original
 
 > **original**: `ReturnType`\<*typeof* [`saveObjectTransform`](/api/namespaces/util/functions/saveobjecttransform/)\> & `object`
@@ -79,6 +73,14 @@ both agree on every point
 > **originX**: [`TOriginX`](/api/type-aliases/toriginx/)
 
 ##### originY
+
+> **originY**: [`TOriginY`](/api/type-aliases/toriginy/)
+
+### originX
+
+> **originX**: [`TOriginX`](/api/type-aliases/toriginx/)
+
+### originY
 
 > **originY**: [`TOriginY`](/api/type-aliases/toriginy/)
 
@@ -113,7 +115,3 @@ both agree on every point
 ### width
 
 > **width**: `number`
-
-## Defined in
-
-[src/EventTypeDefs.ts:66](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L66)

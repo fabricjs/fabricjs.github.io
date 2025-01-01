@@ -7,6 +7,8 @@ title: "EnlivenObjectOptions"
 
 > **EnlivenObjectOptions**: [`Abortable`](/api/type-aliases/abortable/) & `object`
 
+Defined in: [src/util/misc/objectEnlive.ts:64](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/util/misc/objectEnlive.ts#L64)
+
 ## Type declaration
 
 ### reviver()?
@@ -22,14 +24,14 @@ called after each fabric object created.
 
 #### Parameters
 
-• **serializedObj**: `Record`\<`string`, `any`\>
+##### serializedObj
 
-• **instance**: `T`
+`Record`\<`string`, `any`\>
+
+##### instance
+
+`T`
 
 #### Returns
 
 `void`
-
-## Defined in
-
-[src/util/misc/objectEnlive.ts:64](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/util/misc/objectEnlive.ts#L64)

@@ -7,6 +7,8 @@ title: "RadialGradientCoords"
 
 > **RadialGradientCoords**\<`T`\>: `object`
 
+Defined in: [src/gradient/typedefs.ts:34](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/gradient/typedefs.ts#L34)
+
 ## Type Parameters
 
 • **T** *extends* [`GradientCoordValue`](/api/type-aliases/gradientcoordvalue/)
@@ -48,7 +50,3 @@ Y coordiante of the first focal point
 > **y2**: `T`
 
 Y coordiante of the second focal point
-
-## Defined in
-
-[src/gradient/typedefs.ts:34](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/gradient/typedefs.ts#L34)

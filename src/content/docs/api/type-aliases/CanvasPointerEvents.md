@@ -7,6 +7,4 @@ title: "CanvasPointerEvents"
 
 > **CanvasPointerEvents**: `TPointerEvents`\<`"mouse:"`\>
 
-## Defined in
-
-[src/EventTypeDefs.ts:284](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L284)
+Defined in: [src/EventTypeDefs.ts:284](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L284)

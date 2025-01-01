@@ -7,42 +7,56 @@ title: "getBoundsOfCurve"
 
 > **getBoundsOfCurve**(`begx`, `begy`, `cp1x`, `cp1y`, `cp2x`, `cp2y`, `endx`, `endy`): [`TRectBounds`](/api/type-aliases/trectbounds/)
 
+Defined in: [src/util/path/index.ts:221](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/util/path/index.ts#L221)
+
 Calculate bounding box of a cubic Bezier curve
 Taken from http://jsbin.com/ivomiq/56/edit (no credits available)
 TODO: can we normalize this with the starting points set at 0 and then translated the bbox?
 
 ## Parameters
 
-• **begx**: `number`
+### begx
+
+`number`
 
 starting point
 
-• **begy**: `number`
+### begy
 
-• **cp1x**: `number`
+`number`
+
+### cp1x
+
+`number`
 
 first control point
 
-• **cp1y**: `number`
+### cp1y
 
-• **cp2x**: `number`
+`number`
+
+### cp2x
+
+`number`
 
 second control point
 
-• **cp2y**: `number`
+### cp2y
 
-• **endx**: `number`
+`number`
+
+### endx
+
+`number`
 
 end of bezier
 
-• **endy**: `number`
+### endy
+
+`number`
 
 ## Returns
 
 [`TRectBounds`](/api/type-aliases/trectbounds/)
 
 the rectangular bounds
-
-## Defined in
-
-[src/util/path/index.ts:221](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/util/path/index.ts#L221)

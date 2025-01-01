@@ -7,21 +7,29 @@ title: "parseSVGDocument"
 
 > **parseSVGDocument**(`doc`, `reviver`?, `__namedParameters`?): `Promise`\<`SVGParsingOutput`\>
 
+Defined in: [src/parser/parseSVGDocument.ts:38](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/parser/parseSVGDocument.ts#L38)
+
 Parses an SVG document, converts it to an array of corresponding fabric.* instances and passes them to a callback
 
 ## Parameters
 
-• **doc**: `Document`
+### doc
+
+`Document`
 
 SVG document to parse
 
-• **reviver?**: `TSvgReviverCallback`
+### reviver?
+
+`TSvgReviverCallback`
 
 Extra callback for further parsing of SVG elements, called after each fabric object has been created.
 Takes as input the original svg element and the generated `FabricObject` as arguments. Used to inspect extra properties not parsed by fabric,
 or extra custom manipulation
 
-• **\_\_namedParameters?**: [`LoadImageOptions`](/api/namespaces/util/type-aliases/loadimageoptions/) = `{}`
+### \_\_namedParameters?
+
+[`LoadImageOptions`](/api/namespaces/util/type-aliases/loadimageoptions/) = `{}`
 
 ## Returns
 
@@ -37,7 +45,3 @@ You may want to use it if you are trying to regroup the objects as they were ori
 ## Member Of
 
 fabric
-
-## Defined in
-
-[src/parser/parseSVGDocument.ts:38](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/parser/parseSVGDocument.ts#L38)

@@ -7,6 +7,8 @@ title: "TPipelineResources"
 
 > **TPipelineResources**: `object` & `Record`\<`string`, `unknown`\>
 
+Defined in: [src/filters/typedefs.ts:8](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/typedefs.ts#L8)
+
 ## Type declaration
 
 ### blendImage?
@@ -24,7 +26,3 @@ title: "TPipelineResources"
 ### sliceByTwo?
 
 > `optional` **sliceByTwo**: `HTMLCanvasElement`
-
-## Defined in
-
-[src/filters/typedefs.ts:8](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/typedefs.ts#L8)

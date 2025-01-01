@@ -5,6 +5,8 @@ prev: false
 title: "Gradient"
 ---
 
+Defined in: [src/gradient/Gradient.ts:29](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/gradient/Gradient.ts#L29)
+
 Gradient class
  Gradient
 
@@ -24,17 +26,17 @@ Gradient class
 
 > **new Gradient**\<`S`, `T`\>(`options`): [`Gradient`](/api/classes/gradient/)\<`S`, `T`\>
 
+Defined in: [src/gradient/Gradient.ts:102](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/gradient/Gradient.ts#L102)
+
 #### Parameters
 
-• **options**: [`GradientOptions`](/api/type-aliases/gradientoptions/)\<`T`\>
+##### options
+
+[`GradientOptions`](/api/type-aliases/gradientoptions/)\<`T`\>
 
 #### Returns
 
 [`Gradient`](/api/classes/gradient/)\<`S`, `T`\>
-
-#### Defined in
-
-[src/gradient/Gradient.ts:102](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/gradient/Gradient.ts#L102)
 
 ## Properties
 
@@ -42,12 +44,10 @@ Gradient class
 
 > **colorStops**: [`ColorStop`](/api/type-aliases/colorstop/)[]
 
+Defined in: [src/gradient/Gradient.ts:86](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/gradient/Gradient.ts#L86)
+
 Defines how many colors a gradient has and how they are located on the axis
 defined by coords
-
-#### Defined in
-
-[src/gradient/Gradient.ts:86](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/gradient/Gradient.ts#L86)
 
 ***
 
@@ -55,11 +55,9 @@ defined by coords
 
 > **coords**: [`GradientCoords`](/api/type-aliases/gradientcoords/)\<`T`\>
 
+Defined in: [src/gradient/Gradient.ts:79](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/gradient/Gradient.ts#L79)
+
 Defines how the gradient is located in space and spread
-
-#### Defined in
-
-[src/gradient/Gradient.ts:79](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/gradient/Gradient.ts#L79)
 
 ***
 
@@ -67,17 +65,17 @@ Defines how the gradient is located in space and spread
 
 > `optional` **excludeFromExport**: `boolean`
 
+Defined in: [src/gradient/Gradient.ts:92](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/gradient/Gradient.ts#L92)
+
 If true, this object will not be exported during the serialization of a canvas
-
-#### Defined in
-
-[src/gradient/Gradient.ts:92](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/gradient/Gradient.ts#L92)
 
 ***
 
 ### gradientTransform?
 
 > `optional` **gradientTransform**: [`TMat2D`](/api/type-aliases/tmat2d/)
+
+Defined in: [src/gradient/Gradient.ts:55](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/gradient/Gradient.ts#L55)
 
 A transform matrix to apply to the gradient before painting.
 Imported from svg gradients, is not applied with the current transform in the center.
@@ -90,15 +88,13 @@ plus the addition of offsetY and offsetX.
 null
 ```
 
-#### Defined in
-
-[src/gradient/Gradient.ts:55](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/gradient/Gradient.ts#L55)
-
 ***
 
 ### gradientUnits
 
 > **gradientUnits**: [`GradientUnits`](/api/type-aliases/gradientunits/)
+
+Defined in: [src/gradient/Gradient.ts:66](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/gradient/Gradient.ts#L66)
 
 coordinates units for coords.
 If `pixels`, the number of coords are in the same unit of width / height.
@@ -112,27 +108,23 @@ allowed values pixels or percentage.
 'pixels'
 ```
 
-#### Defined in
-
-[src/gradient/Gradient.ts:66](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/gradient/Gradient.ts#L66)
-
 ***
 
 ### id
 
 > `readonly` **id**: `string` \| `number`
 
+Defined in: [src/gradient/Gradient.ts:98](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/gradient/Gradient.ts#L98)
+
 ID used for SVG export functionalities
-
-#### Defined in
-
-[src/gradient/Gradient.ts:98](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/gradient/Gradient.ts#L98)
 
 ***
 
 ### offsetX
 
 > **offsetX**: `number`
+
+Defined in: [src/gradient/Gradient.ts:38](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/gradient/Gradient.ts#L38)
 
 Horizontal offset for aligning gradients coming from SVG when outside pathgroups
 
@@ -142,15 +134,13 @@ Horizontal offset for aligning gradients coming from SVG when outside pathgroups
 0
 ```
 
-#### Defined in
-
-[src/gradient/Gradient.ts:38](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/gradient/Gradient.ts#L38)
-
 ***
 
 ### offsetY
 
 > **offsetY**: `number`
+
+Defined in: [src/gradient/Gradient.ts:45](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/gradient/Gradient.ts#L45)
 
 Vertical offset for aligning gradients coming from SVG when outside pathgroups
 
@@ -160,15 +150,13 @@ Vertical offset for aligning gradients coming from SVG when outside pathgroups
 0
 ```
 
-#### Defined in
-
-[src/gradient/Gradient.ts:45](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/gradient/Gradient.ts#L45)
-
 ***
 
 ### type
 
 > **type**: `T`
+
+Defined in: [src/gradient/Gradient.ts:73](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/gradient/Gradient.ts#L73)
 
 Gradient type linear or radial
 
@@ -178,19 +166,13 @@ Gradient type linear or radial
 'linear'
 ```
 
-#### Defined in
-
-[src/gradient/Gradient.ts:73](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/gradient/Gradient.ts#L73)
-
 ***
 
 ### type
 
 > `static` **type**: `string` = `'Gradient'`
 
-#### Defined in
-
-[src/gradient/Gradient.ts:100](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/gradient/Gradient.ts#L100)
+Defined in: [src/gradient/Gradient.ts:100](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/gradient/Gradient.ts#L100)
 
 ## Methods
 
@@ -198,11 +180,15 @@ Gradient type linear or radial
 
 > **addColorStop**(`colorStops`): [`Gradient`](/api/classes/gradient/)\<`S`, `T`\>
 
+Defined in: [src/gradient/Gradient.ts:133](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/gradient/Gradient.ts#L133)
+
 Adds another colorStop
 
 #### Parameters
 
-• **colorStops**: `Record`\<`string`, `string`\>
+##### colorStops
+
+`Record`\<`string`, `string`\>
 
 #### Returns
 
@@ -210,21 +196,21 @@ Adds another colorStop
 
 thisArg
 
-#### Defined in
-
-[src/gradient/Gradient.ts:133](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/gradient/Gradient.ts#L133)
-
 ***
 
 ### toLive()
 
 > **toLive**(`ctx`): `CanvasGradient`
 
+Defined in: [src/gradient/Gradient.ts:299](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/gradient/Gradient.ts#L299)
+
 Returns an instance of CanvasGradient
 
 #### Parameters
 
-• **ctx**: `CanvasRenderingContext2D`
+##### ctx
+
+`CanvasRenderingContext2D`
 
 Context to render on
 
@@ -232,21 +218,21 @@ Context to render on
 
 `CanvasGradient`
 
-#### Defined in
-
-[src/gradient/Gradient.ts:299](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/gradient/Gradient.ts#L299)
-
 ***
 
 ### toObject()
 
 > **toObject**(`propertiesToInclude`?): `Partial`\<[`Gradient`](/api/classes/gradient/)\<`S`, `T`\>\> & `object`
 
+Defined in: [src/gradient/Gradient.ts:150](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/gradient/Gradient.ts#L150)
+
 Returns object representation of a gradient
 
 #### Parameters
 
-• **propertiesToInclude?**: `string`[]
+##### propertiesToInclude?
+
+`string`[]
 
 Any properties that you might want to additionally include in the output
 
@@ -254,27 +240,29 @@ Any properties that you might want to additionally include in the output
 
 `Partial`\<[`Gradient`](/api/classes/gradient/)\<`S`, `T`\>\> & `object`
 
-#### Defined in
-
-[src/gradient/Gradient.ts:150](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/gradient/Gradient.ts#L150)
-
 ***
 
 ### toSVG()
 
 > **toSVG**(`object`, `__namedParameters`): `string`
 
+Defined in: [src/gradient/Gradient.ts:171](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/gradient/Gradient.ts#L171)
+
 Returns SVG representation of an gradient
 
 #### Parameters
 
-• **object**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+##### object
+
+[`FabricObject`](/api/classes/fabricobject/)
 
 Object to create a gradient for
 
-• **\_\_namedParameters** = `{}`
+##### \_\_namedParameters
 
-• **\_\_namedParameters.additionalTransform?**: `string`
+###### additionalTransform
+
+`string`
 
 #### Returns
 
@@ -282,27 +270,31 @@ Object to create a gradient for
 
 SVG representation of an gradient (linear/radial)
 
-#### Defined in
-
-[src/gradient/Gradient.ts:171](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/gradient/Gradient.ts#L171)
-
 ***
 
 ### fromElement()
 
 > `static` **fromElement**(`el`, `instance`, `svgOptions`): [`Gradient`](/api/classes/gradient/)\<[`GradientType`](/api/type-aliases/gradienttype/), [`GradientType`](/api/type-aliases/gradienttype/)\>
 
+Defined in: [src/gradient/Gradient.ts:382](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/gradient/Gradient.ts#L382)
+
 Returns [Gradient](../../../../api/classes/gradient) instance from an SVG element
 
 #### Parameters
 
-• **el**: `SVGGradientElement`
+##### el
+
+`SVGGradientElement`
 
 SVG gradient element
 
-• **instance**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+##### instance
 
-• **svgOptions**: [`SVGOptions`](/api/type-aliases/svgoptions/)
+[`FabricObject`](/api/classes/fabricobject/)
+
+##### svgOptions
+
+[`SVGOptions`](/api/type-aliases/svgoptions/)
 
 an object containing the size of the SVG in order to parse correctly gradients
 that uses gradientUnits as 'userSpaceOnUse' and percentages.
@@ -356,42 +348,38 @@ Gradient
  </radialGradient>
 ```
 
-#### Defined in
-
-[src/gradient/Gradient.ts:382](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/gradient/Gradient.ts#L382)
-
 ***
 
 ### fromObject()
 
-#### fromObject(options)
+#### Call Signature
 
 > `static` **fromObject**(`options`): `Promise`\<[`Gradient`](/api/classes/gradient/)\<`"radial"`, `"radial"`\>\>
 
+Defined in: [src/gradient/Gradient.ts:318](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/gradient/Gradient.ts#L318)
+
 ##### Parameters
 
-• **options**: [`GradientOptions`](/api/type-aliases/gradientoptions/)\<`"linear"`\>
+###### options
+
+[`GradientOptions`](/api/type-aliases/gradientoptions/)\<`"linear"`\>
 
 ##### Returns
 
 `Promise`\<[`Gradient`](/api/classes/gradient/)\<`"radial"`, `"radial"`\>\>
 
-##### Defined in
-
-[src/gradient/Gradient.ts:318](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/gradient/Gradient.ts#L318)
-
-#### fromObject(options)
+#### Call Signature
 
 > `static` **fromObject**(`options`): `Promise`\<[`Gradient`](/api/classes/gradient/)\<`"radial"`, `"radial"`\>\>
 
+Defined in: [src/gradient/Gradient.ts:321](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/gradient/Gradient.ts#L321)
+
 ##### Parameters
 
-• **options**: [`GradientOptions`](/api/type-aliases/gradientoptions/)\<`"radial"`\>
+###### options
+
+[`GradientOptions`](/api/type-aliases/gradientoptions/)\<`"radial"`\>
 
 ##### Returns
 
 `Promise`\<[`Gradient`](/api/classes/gradient/)\<`"radial"`, `"radial"`\>\>
-
-##### Defined in
-
-[src/gradient/Gradient.ts:321](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/gradient/Gradient.ts#L321)

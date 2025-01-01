@@ -5,6 +5,8 @@ prev: false
 title: "TPointerEventInfo"
 ---
 
+Defined in: [src/EventTypeDefs.ts:155](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L155)
+
 ## Extends
 
 - [`TEvent`](/api/interfaces/tevent/)\<`E`\>
@@ -19,14 +21,12 @@ title: "TPointerEventInfo"
 
 > **absolutePointer**: [`Point`](/api/classes/point/)
 
+Defined in: [src/EventTypeDefs.ts:171](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L171)
+
 :::caution[Deprecated]
 use scenePoint instead.
 Kept for compatibility
 :::
-
-#### Defined in
-
-[src/EventTypeDefs.ts:171](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L171)
 
 ***
 
@@ -34,13 +34,11 @@ Kept for compatibility
 
 > **e**: `E`
 
+Defined in: [src/EventTypeDefs.ts:96](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L96)
+
 #### Inherited from
 
 [`TEvent`](/api/interfaces/tevent/).[`e`](/api/interfaces/tevent/#e)
-
-#### Defined in
-
-[src/EventTypeDefs.ts:96](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L96)
 
 ***
 
@@ -48,14 +46,12 @@ Kept for compatibility
 
 > **pointer**: [`Point`](/api/classes/point/)
 
+Defined in: [src/EventTypeDefs.ts:165](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L165)
+
 :::caution[Deprecated]
 use viewportPoint instead.
 Kept for compatibility
 :::
-
-#### Defined in
-
-[src/EventTypeDefs.ts:165](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L165)
 
 ***
 
@@ -63,29 +59,23 @@ Kept for compatibility
 
 > **scenePoint**: [`Point`](/api/classes/point/)
 
-#### Defined in
-
-[src/EventTypeDefs.ts:172](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L172)
+Defined in: [src/EventTypeDefs.ts:172](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L172)
 
 ***
 
 ### subTargets?
 
-> `optional` **subTargets**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[]
+> `optional` **subTargets**: [`FabricObject`](/api/classes/fabricobject/)[]
 
-#### Defined in
-
-[src/EventTypeDefs.ts:158](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L158)
+Defined in: [src/EventTypeDefs.ts:158](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L158)
 
 ***
 
 ### target?
 
-> `optional` **target**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+> `optional` **target**: [`FabricObject`](/api/classes/fabricobject/)
 
-#### Defined in
-
-[src/EventTypeDefs.ts:157](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L157)
+Defined in: [src/EventTypeDefs.ts:157](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L157)
 
 ***
 
@@ -93,9 +83,7 @@ Kept for compatibility
 
 > `optional` **transform**: `null` \| [`Transform`](/api/type-aliases/transform/)
 
-#### Defined in
-
-[src/EventTypeDefs.ts:159](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L159)
+Defined in: [src/EventTypeDefs.ts:159](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L159)
 
 ***
 
@@ -103,6 +91,4 @@ Kept for compatibility
 
 > **viewportPoint**: [`Point`](/api/classes/point/)
 
-#### Defined in
-
-[src/EventTypeDefs.ts:173](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L173)
+Defined in: [src/EventTypeDefs.ts:173](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L173)

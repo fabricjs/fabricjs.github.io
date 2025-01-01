@@ -7,9 +7,15 @@ title: "copyCanvasElement"
 
 > **copyCanvasElement**(`canvas`): `HTMLCanvasElement`
 
+Defined in: [src/util/misc/dom.ts:28](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/util/misc/dom.ts#L28)
+
+Creates a canvas element that is a copy of another and is also painted
+
 ## Parameters
 
-• **canvas**: `HTMLCanvasElement`
+### canvas
+
+`HTMLCanvasElement`
 
 to copy size and content of
 
@@ -18,7 +24,3 @@ to copy size and content of
 `HTMLCanvasElement`
 
 initialized canvas element
-
-## Defined in
-
-[src/util/misc/dom.ts:28](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/util/misc/dom.ts#L28)

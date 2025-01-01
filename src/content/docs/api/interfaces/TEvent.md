@@ -5,6 +5,8 @@ prev: false
 title: "TEvent"
 ---
 
+Defined in: [src/EventTypeDefs.ts:95](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L95)
+
 ## Extended by
 
 - [`BasicTransformEvent`](/api/interfaces/basictransformevent/)
@@ -21,6 +23,4 @@ title: "TEvent"
 
 > **e**: `E`
 
-#### Defined in
-
-[src/EventTypeDefs.ts:96](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L96)
+Defined in: [src/EventTypeDefs.ts:96](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L96)

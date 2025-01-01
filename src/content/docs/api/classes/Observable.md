@@ -5,6 +5,8 @@ prev: false
 title: "Observable"
 ---
 
+Defined in: [src/Observable.ts:11](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L11)
+
 ## Tutorial
 
 [http://fabricjs.com/fabric-intro-part-2#events](http://fabricjs.com/fabric-intro-part-2#events)
@@ -33,6 +35,8 @@ title: "Observable"
 
 > **fire**\<`K`\>(`eventName`, `options`?): `void`
 
+Defined in: [src/Observable.ts:167](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L167)
+
 Fires event with an optional options object
 
 #### Type Parameters
@@ -41,11 +45,15 @@ Fires event with an optional options object
 
 #### Parameters
 
-• **eventName**: `K`
+##### eventName
+
+`K`
 
 Event name to fire
 
-• **options?**: `EventSpec`\[`K`\]
+##### options?
+
+`EventSpec`\[`K`\]
 
 Options object
 
@@ -53,17 +61,15 @@ Options object
 
 `void`
 
-#### Defined in
-
-[src/Observable.ts:167](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L167)
-
 ***
 
 ### off()
 
-#### off(eventName)
+#### Call Signature
 
 > **off**\<`K`\>(`eventName`): `void`
+
+Defined in: [src/Observable.ts:122](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L122)
 
 Unsubscribe all event listeners for eventname.
 Do not use this pattern. You could kill internal fabricJS events.
@@ -79,7 +85,9 @@ This API is no longer supported and may be removed in a future release.
 
 ##### Parameters
 
-• **eventName**: `K`
+###### eventName
+
+`K`
 
 event name (eg. 'after:render')
 
@@ -87,13 +95,11 @@ event name (eg. 'after:render')
 
 `void`
 
-##### Defined in
-
-[src/Observable.ts:122](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L122)
-
-#### off(eventName, handler)
+#### Call Signature
 
 > **off**\<`K`\>(`eventName`, `handler`): `void`
+
+Defined in: [src/Observable.ts:128](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L128)
 
 unsubscribe an event listener
 
@@ -103,11 +109,15 @@ unsubscribe an event listener
 
 ##### Parameters
 
-• **eventName**: `K`
+###### eventName
+
+`K`
 
 event name (eg. 'after:render')
 
-• **handler**: `TEventCallback`\<`any`\>
+###### handler
+
+`TEventCallback`\<`any`\>
 
 event listener to unsubscribe
 
@@ -115,19 +125,19 @@ event listener to unsubscribe
 
 `void`
 
-##### Defined in
-
-[src/Observable.ts:128](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L128)
-
-#### off(handlers)
+#### Call Signature
 
 > **off**(`handlers`): `void`
+
+Defined in: [src/Observable.ts:133](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L133)
 
 unsubscribe event listeners
 
 ##### Parameters
 
-• **handlers**: `EventRegistryObject`\<`EventSpec`\>
+###### handlers
+
+`EventRegistryObject`\<`EventSpec`\>
 
 handlers key/value pairs (eg. {'after:render': handler, 'selection:cleared': handler})
 
@@ -135,13 +145,11 @@ handlers key/value pairs (eg. {'after:render': handler, 'selection:cleared': han
 
 `void`
 
-##### Defined in
-
-[src/Observable.ts:133](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L133)
-
-#### off()
+#### Call Signature
 
 > **off**(): `void`
+
+Defined in: [src/Observable.ts:137](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L137)
 
 unsubscribe all event listeners
 
@@ -149,17 +157,15 @@ unsubscribe all event listeners
 
 `void`
 
-##### Defined in
-
-[src/Observable.ts:137](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L137)
-
 ***
 
 ### on()
 
-#### on(eventName, handler)
+#### Call Signature
 
 > **on**\<`K`, `E`\>(`eventName`, `handler`): `VoidFunction`
+
+Defined in: [src/Observable.ts:23](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L23)
 
 Observes specified event
 
@@ -171,11 +177,15 @@ Observes specified event
 
 ##### Parameters
 
-• **eventName**: `K`
+###### eventName
+
+`K`
 
 Event name (eg. 'after:render')
 
-• **handler**: `TEventCallback`\<`E`\>
+###### handler
+
+`TEventCallback`\<`E`\>
 
 Function that receives a notification when an event of the specified type occurs
 
@@ -189,33 +199,41 @@ disposer
 
 on
 
-##### Defined in
-
-[src/Observable.ts:23](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L23)
-
-#### on(handlers)
+#### Call Signature
 
 > **on**(`handlers`): `VoidFunction`
 
+Defined in: [src/Observable.ts:27](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L27)
+
+Observes specified event
+
 ##### Parameters
 
-• **handlers**: `EventRegistryObject`\<`EventSpec`\>
+###### handlers
+
+`EventRegistryObject`\<`EventSpec`\>
+
+key/value pairs (eg. {'after:render': handler, 'selection:cleared': handler})
 
 ##### Returns
 
 `VoidFunction`
 
-##### Defined in
+disposer
 
-[src/Observable.ts:27](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L27)
+##### Alias
+
+on
 
 ***
 
 ### once()
 
-#### once(eventName, handler)
+#### Call Signature
 
 > **once**\<`K`, `E`\>(`eventName`, `handler`): `VoidFunction`
+
+Defined in: [src/Observable.ts:62](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L62)
 
 Observes specified event **once**
 
@@ -227,11 +245,15 @@ Observes specified event **once**
 
 ##### Parameters
 
-• **eventName**: `K`
+###### eventName
+
+`K`
 
 Event name (eg. 'after:render')
 
-• **handler**: `TEventCallback`\<`E`\>
+###### handler
+
+`TEventCallback`\<`E`\>
 
 Function that receives a notification when an event of the specified type occurs
 
@@ -245,22 +267,28 @@ disposer
 
 once
 
-##### Defined in
-
-[src/Observable.ts:62](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L62)
-
-#### once(handlers)
+#### Call Signature
 
 > **once**(`handlers`): `VoidFunction`
 
+Defined in: [src/Observable.ts:66](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L66)
+
+Observes specified event **once**
+
 ##### Parameters
 
-• **handlers**: `EventRegistryObject`\<`EventSpec`\>
+###### handlers
+
+`EventRegistryObject`\<`EventSpec`\>
+
+key/value pairs (eg. {'after:render': handler, 'selection:cleared': handler})
 
 ##### Returns
 
 `VoidFunction`
 
-##### Defined in
+disposer
 
-[src/Observable.ts:66](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Observable.ts#L66)
+##### Alias
+
+once

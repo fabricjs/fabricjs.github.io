@@ -5,6 +5,8 @@ prev: false
 title: "FixedLayout"
 ---
 
+Defined in: [src/LayoutManager/LayoutStrategies/FixedLayout.ts:13](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/LayoutStrategies/FixedLayout.ts#L13)
+
 Layout will keep target's initial size.
 
 ## Extends
@@ -31,15 +33,13 @@ Layout will keep target's initial size.
 
 > `readonly` `static` **type**: `"fixed"` = `'fixed'`
 
+Defined in: [src/LayoutManager/LayoutStrategies/FixedLayout.ts:14](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/LayoutStrategies/FixedLayout.ts#L14)
+
 override by subclass for persistence (TS does not support `static abstract`)
 
 #### Overrides
 
 [`LayoutStrategy`](/api/classes/layoutstrategy/).[`type`](/api/classes/layoutstrategy/#type)
-
-#### Defined in
-
-[src/LayoutManager/LayoutStrategies/FixedLayout.ts:14](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/LayoutStrategies/FixedLayout.ts#L14)
 
 ## Methods
 
@@ -47,13 +47,19 @@ override by subclass for persistence (TS does not support `static abstract`)
 
 > **calcBoundingBox**(`objects`, `context`): `undefined` \| [`LayoutStrategyResult`](/api/type-aliases/layoutstrategyresult/)
 
+Defined in: [src/LayoutManager/LayoutStrategies/LayoutStrategy.ts:68](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/LayoutStrategies/LayoutStrategy.ts#L68)
+
 Override this method to customize layout.
 
 #### Parameters
 
-• **objects**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[]
+##### objects
 
-• **context**: [`StrictLayoutContext`](/api/type-aliases/strictlayoutcontext/)
+[`FabricObject`](/api/classes/fabricobject/)[]
+
+##### context
+
+[`StrictLayoutContext`](/api/type-aliases/strictlayoutcontext/)
 
 #### Returns
 
@@ -63,15 +69,13 @@ Override this method to customize layout.
 
 [`LayoutStrategy`](/api/classes/layoutstrategy/).[`calcBoundingBox`](/api/classes/layoutstrategy/#calcboundingbox)
 
-#### Defined in
-
-[src/LayoutManager/LayoutStrategies/LayoutStrategy.ts:68](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/LayoutStrategies/LayoutStrategy.ts#L68)
-
 ***
 
 ### calcLayoutResult()
 
 > **calcLayoutResult**(`context`, `objects`): `undefined` \| [`LayoutStrategyResult`](/api/type-aliases/layoutstrategyresult/)
+
+Defined in: [src/LayoutManager/LayoutStrategies/LayoutStrategy.ts:33](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/LayoutStrategies/LayoutStrategy.ts#L33)
 
 Used by the `LayoutManager` to perform layout
 @TODO/fix: if this method is calcResult, should calc unconditionally.
@@ -79,9 +83,13 @@ the condition to not calc should be evaluated by the layoutManager.
 
 #### Parameters
 
-• **context**: [`StrictLayoutContext`](/api/type-aliases/strictlayoutcontext/)
+##### context
 
-• **objects**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[]
+[`StrictLayoutContext`](/api/type-aliases/strictlayoutcontext/)
+
+##### objects
+
+[`FabricObject`](/api/classes/fabricobject/)[]
 
 #### Returns
 
@@ -93,23 +101,25 @@ layout result **OR** `undefined` to skip layout
 
 [`LayoutStrategy`](/api/classes/layoutstrategy/).[`calcLayoutResult`](/api/classes/layoutstrategy/#calclayoutresult)
 
-#### Defined in
-
-[src/LayoutManager/LayoutStrategies/LayoutStrategy.ts:33](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/LayoutStrategies/LayoutStrategy.ts#L33)
-
 ***
 
 ### getInitialSize()
 
 > **getInitialSize**(`__namedParameters`, `__namedParameters`): [`Point`](/api/classes/point/)
 
+Defined in: [src/LayoutManager/LayoutStrategies/FixedLayout.ts:19](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/LayoutStrategies/FixedLayout.ts#L19)
+
 respect target's initial size
 
 #### Parameters
 
-• **\_\_namedParameters**: [`StrictLayoutContext`](/api/type-aliases/strictlayoutcontext/) & [`CommonLayoutContext`](/api/type-aliases/commonlayoutcontext/) & `object`
+##### \_\_namedParameters
 
-• **\_\_namedParameters**: `Pick`\<[`LayoutStrategyResult`](/api/type-aliases/layoutstrategyresult/), `"center"` \| `"size"`\>
+[`StrictLayoutContext`](/api/type-aliases/strictlayoutcontext/) & [`CommonLayoutContext`](/api/type-aliases/commonlayoutcontext/) & `object`
+
+##### \_\_namedParameters
+
+`Pick`\<[`LayoutStrategyResult`](/api/type-aliases/layoutstrategyresult/), `"center"` \| `"size"`\>
 
 #### Returns
 
@@ -119,19 +129,19 @@ respect target's initial size
 
 [`LayoutStrategy`](/api/classes/layoutstrategy/).[`getInitialSize`](/api/classes/layoutstrategy/#getinitialsize)
 
-#### Defined in
-
-[src/LayoutManager/LayoutStrategies/FixedLayout.ts:19](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/LayoutStrategies/FixedLayout.ts#L19)
-
 ***
 
 ### shouldLayoutClipPath()
 
 > **shouldLayoutClipPath**(`__namedParameters`): `undefined` \| `boolean`
 
+Defined in: [src/LayoutManager/LayoutStrategies/LayoutStrategy.ts:50](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/LayoutStrategies/LayoutStrategy.ts#L50)
+
 #### Parameters
 
-• **\_\_namedParameters**: [`StrictLayoutContext`](/api/type-aliases/strictlayoutcontext/)
+##### \_\_namedParameters
+
+[`StrictLayoutContext`](/api/type-aliases/strictlayoutcontext/)
 
 #### Returns
 
@@ -141,19 +151,19 @@ respect target's initial size
 
 [`LayoutStrategy`](/api/classes/layoutstrategy/).[`shouldLayoutClipPath`](/api/classes/layoutstrategy/#shouldlayoutclippath)
 
-#### Defined in
-
-[src/LayoutManager/LayoutStrategies/LayoutStrategy.ts:50](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/LayoutStrategies/LayoutStrategy.ts#L50)
-
 ***
 
 ### shouldPerformLayout()
 
 > **shouldPerformLayout**(`__namedParameters`): `boolean`
 
+Defined in: [src/LayoutManager/LayoutStrategies/LayoutStrategy.ts:42](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/LayoutStrategies/LayoutStrategy.ts#L42)
+
 #### Parameters
 
-• **\_\_namedParameters**: [`StrictLayoutContext`](/api/type-aliases/strictlayoutcontext/)
+##### \_\_namedParameters
+
+[`StrictLayoutContext`](/api/type-aliases/strictlayoutcontext/)
 
 #### Returns
 
@@ -162,7 +172,3 @@ respect target's initial size
 #### Inherited from
 
 [`LayoutStrategy`](/api/classes/layoutstrategy/).[`shouldPerformLayout`](/api/classes/layoutstrategy/#shouldperformlayout)
-
-#### Defined in
-
-[src/LayoutManager/LayoutStrategies/LayoutStrategy.ts:42](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/LayoutStrategies/LayoutStrategy.ts#L42)

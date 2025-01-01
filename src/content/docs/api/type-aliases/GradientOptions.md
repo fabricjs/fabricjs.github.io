@@ -7,6 +7,8 @@ title: "GradientOptions"
 
 > **GradientOptions**\<`T`\>: `object`
 
+Defined in: [src/gradient/typedefs.ts:65](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/gradient/typedefs.ts#L65)
+
 ## Type Parameters
 
 • **T** *extends* [`GradientType`](/api/type-aliases/gradienttype/)
@@ -52,7 +54,3 @@ SVG import compatibility
 ### type?
 
 > `optional` **type**: `T`
-
-## Defined in
-
-[src/gradient/typedefs.ts:65](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/gradient/typedefs.ts#L65)

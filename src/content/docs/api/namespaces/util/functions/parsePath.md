@@ -7,9 +7,13 @@ title: "parsePath"
 
 > **parsePath**(`pathString`): [`TComplexPathData`](/api/namespaces/util/type-aliases/tcomplexpathdata/)
 
+Defined in: [src/util/path/index.ts:857](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/util/path/index.ts#L857)
+
 ## Parameters
 
-• **pathString**: `string`
+### pathString
+
+`string`
 
 ## Returns
 
@@ -17,6 +21,12 @@ title: "parsePath"
 
 An array of SVG path commands
 
-## Defined in
+## Example
 
-[src/util/path/index.ts:857](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/util/path/index.ts#L857)
+```ts
+parsePath('M 3 4 Q 3 5 2 1 4 0 Q 9 12 2 1 4 0') === [
+  ['M', 3, 4],
+  ['Q', 3, 5, 2, 1, 4, 0],
+  ['Q', 9, 12, 2, 1, 4, 0],
+];
+```

@@ -7,18 +7,22 @@ title: "capValue"
 
 > **capValue**(`min`, `value`, `max`): `number`
 
+Defined in: [src/util/misc/capValue.ts:1](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/util/misc/capValue.ts#L1)
+
 ## Parameters
 
-• **min**: `number`
+### min
 
-• **value**: `number`
+`number`
 
-• **max**: `number`
+### value
+
+`number`
+
+### max
+
+`number`
 
 ## Returns
 
 `number`
-
-## Defined in
-
-[src/util/misc/capValue.ts:1](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/util/misc/capValue.ts#L1)

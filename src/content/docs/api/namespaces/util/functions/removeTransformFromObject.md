@@ -7,6 +7,8 @@ title: "removeTransformFromObject"
 
 > **removeTransformFromObject**(`object`, `transform`): `void`
 
+Defined in: [src/util/misc/objectTransforms.ts:23](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/util/misc/objectTransforms.ts#L23)
+
 given an object and a transform, apply the inverse transform to the object,
 this is equivalent to remove from that object that transformation, so that
 added in a space with the removed transform, the object will be the same as before.
@@ -17,18 +19,18 @@ This util is used to add objects inside transformed groups or nested groups.
 
 ## Parameters
 
-• **object**: [`BaseFabricObject`](/api/classes/basefabricobject/)\<`Partial`\<`ObjectProps`\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+### object
+
+[`BaseFabricObject`](/api/classes/basefabricobject/)
 
 the object you want to transform
 
-• **transform**: [`TMat2D`](/api/type-aliases/tmat2d/)
+### transform
+
+[`TMat2D`](/api/type-aliases/tmat2d/)
 
 the destination transform
 
 ## Returns
 
 `void`
-
-## Defined in
-
-[src/util/misc/objectTransforms.ts:23](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/util/misc/objectTransforms.ts#L23)

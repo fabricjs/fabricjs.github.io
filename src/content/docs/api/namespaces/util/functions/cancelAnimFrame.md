@@ -7,14 +7,14 @@ title: "cancelAnimFrame"
 
 > **cancelAnimFrame**(`handle`): `void`
 
+Defined in: [src/util/animation/AnimationFrameProvider.ts:7](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/util/animation/AnimationFrameProvider.ts#L7)
+
 ## Parameters
 
-• **handle**: `number`
+### handle
+
+`number`
 
 ## Returns
 
 `void`
-
-## Defined in
-
-[src/util/animation/AnimationFrameProvider.ts:7](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/util/animation/AnimationFrameProvider.ts#L7)

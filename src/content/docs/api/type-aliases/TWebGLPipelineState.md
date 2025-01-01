@@ -7,6 +7,8 @@ title: "TWebGLPipelineState"
 
 > **TWebGLPipelineState**: `object`
 
+Defined in: [src/filters/typedefs.ts:15](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/typedefs.ts#L15)
+
 ## Type declaration
 
 ### aPosition
@@ -76,7 +78,3 @@ title: "TWebGLPipelineState"
 ### webgl
 
 > **webgl**: `boolean`
-
-## Defined in
-
-[src/filters/typedefs.ts:15](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/typedefs.ts#L15)

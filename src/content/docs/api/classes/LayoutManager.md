@@ -5,23 +5,25 @@ prev: false
 title: "LayoutManager"
 ---
 
+Defined in: [src/LayoutManager/LayoutManager.ts:45](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/LayoutManager.ts#L45)
+
 ## Constructors
 
 ### new LayoutManager()
 
 > **new LayoutManager**(`strategy`): [`LayoutManager`](/api/classes/layoutmanager/)
 
+Defined in: [src/LayoutManager/LayoutManager.ts:51](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/LayoutManager.ts#L51)
+
 #### Parameters
 
-• **strategy**: [`LayoutStrategy`](/api/classes/layoutstrategy/) = `...`
+##### strategy
+
+[`LayoutStrategy`](/api/classes/layoutstrategy/) = `...`
 
 #### Returns
 
 [`LayoutManager`](/api/classes/layoutmanager/)
-
-#### Defined in
-
-[src/LayoutManager/LayoutManager.ts:51](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/LayoutManager.ts#L51)
 
 ## Properties
 
@@ -29,9 +31,7 @@ title: "LayoutManager"
 
 > **strategy**: [`LayoutStrategy`](/api/classes/layoutstrategy/)
 
-#### Defined in
-
-[src/LayoutManager/LayoutManager.ts:49](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/LayoutManager.ts#L49)
+Defined in: [src/LayoutManager/LayoutManager.ts:49](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/LayoutManager.ts#L49)
 
 ## Methods
 
@@ -39,13 +39,11 @@ title: "LayoutManager"
 
 > **dispose**(): `void`
 
+Defined in: [src/LayoutManager/LayoutManager.ts:340](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/LayoutManager.ts#L340)
+
 #### Returns
 
 `void`
-
-#### Defined in
-
-[src/LayoutManager/LayoutManager.ts:340](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/LayoutManager.ts#L340)
 
 ***
 
@@ -53,17 +51,17 @@ title: "LayoutManager"
 
 > **performLayout**(`context`): `void`
 
+Defined in: [src/LayoutManager/LayoutManager.ts:56](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/LayoutManager.ts#L56)
+
 #### Parameters
 
-• **context**: [`LayoutContext`](/api/type-aliases/layoutcontext/)
+##### context
+
+[`LayoutContext`](/api/type-aliases/layoutcontext/)
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-[src/LayoutManager/LayoutManager.ts:56](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/LayoutManager.ts#L56)
 
 ***
 
@@ -71,17 +69,17 @@ title: "LayoutManager"
 
 > **subscribeTargets**(`context`): `void`
 
+Defined in: [src/LayoutManager/LayoutManager.ts:156](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/LayoutManager.ts#L156)
+
 #### Parameters
 
-• **context**: [`RegistrationContext`](/api/type-aliases/registrationcontext/) & `Partial`\<[`StrictLayoutContext`](/api/type-aliases/strictlayoutcontext/)\>
+##### context
+
+[`RegistrationContext`](/api/type-aliases/registrationcontext/) & `Partial`\<[`StrictLayoutContext`](/api/type-aliases/strictlayoutcontext/)\>
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-[src/LayoutManager/LayoutManager.ts:156](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/LayoutManager.ts#L156)
 
 ***
 
@@ -89,6 +87,8 @@ title: "LayoutManager"
 
 > **toJSON**(): `object`
 
+Defined in: [src/LayoutManager/LayoutManager.ts:353](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/LayoutManager.ts#L353)
+
 #### Returns
 
 `object`
@@ -100,10 +100,6 @@ title: "LayoutManager"
 ##### type
 
 > **type**: `string` = `LAYOUT_MANAGER`
-
-#### Defined in
-
-[src/LayoutManager/LayoutManager.ts:353](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/LayoutManager.ts#L353)
 
 ***
 
@@ -111,6 +107,8 @@ title: "LayoutManager"
 
 > **toObject**(): `object`
 
+Defined in: [src/LayoutManager/LayoutManager.ts:346](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/LayoutManager.ts#L346)
+
 #### Returns
 
 `object`
@@ -123,24 +121,20 @@ title: "LayoutManager"
 
 > **type**: `string` = `LAYOUT_MANAGER`
 
-#### Defined in
-
-[src/LayoutManager/LayoutManager.ts:346](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/LayoutManager.ts#L346)
-
 ***
 
 ### unsubscribeTargets()
 
 > **unsubscribeTargets**(`context`): `void`
 
+Defined in: [src/LayoutManager/LayoutManager.ts:150](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/LayoutManager.ts#L150)
+
 #### Parameters
 
-• **context**: [`RegistrationContext`](/api/type-aliases/registrationcontext/) & `Partial`\<[`StrictLayoutContext`](/api/type-aliases/strictlayoutcontext/)\>
+##### context
+
+[`RegistrationContext`](/api/type-aliases/registrationcontext/) & `Partial`\<[`StrictLayoutContext`](/api/type-aliases/strictlayoutcontext/)\>
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-[src/LayoutManager/LayoutManager.ts:150](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/LayoutManager.ts#L150)

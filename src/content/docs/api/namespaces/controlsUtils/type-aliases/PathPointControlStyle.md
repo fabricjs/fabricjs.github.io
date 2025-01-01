@@ -7,6 +7,8 @@ title: "PathPointControlStyle"
 
 > **PathPointControlStyle**: `object`
 
+Defined in: [src/controls/pathControl.ts:21](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/controls/pathControl.ts#L21)
+
 ## Type declaration
 
 ### connectionDashArray?
@@ -20,7 +22,3 @@ title: "PathPointControlStyle"
 ### controlStroke?
 
 > `optional` **controlStroke**: `string`
-
-## Defined in
-
-[src/controls/pathControl.ts:21](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/controls/pathControl.ts#L21)

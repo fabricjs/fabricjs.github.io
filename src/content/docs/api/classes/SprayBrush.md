@@ -5,6 +5,8 @@ prev: false
 title: "SprayBrush"
 ---
 
+Defined in: [src/brushes/SprayBrush.ts:31](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/SprayBrush.ts#L31)
+
 ## See
 
 [demo](http://fabricjs.com/freedrawing|Freedrawing)
@@ -19,11 +21,15 @@ title: "SprayBrush"
 
 > **new SprayBrush**(`canvas`): [`SprayBrush`](/api/classes/spraybrush/)
 
+Defined in: [src/brushes/SprayBrush.ts:83](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/SprayBrush.ts#L83)
+
 Constructor
 
 #### Parameters
 
-• **canvas**: [`Canvas`](/api/classes/canvas/)
+##### canvas
+
+[`Canvas`](/api/classes/canvas/)
 
 #### Returns
 
@@ -35,15 +41,13 @@ Instance of a spray brush
 
 [`BaseBrush`](/api/classes/basebrush/).[`constructor`](/api/classes/basebrush/#constructors)
 
-#### Defined in
-
-[src/brushes/SprayBrush.ts:83](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/SprayBrush.ts#L83)
-
 ## Properties
 
 ### canvas
 
 > **canvas**: [`Canvas`](/api/classes/canvas/)
+
+Defined in: [src/brushes/BaseBrush.ts:73](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/BaseBrush.ts#L73)
 
 #### Todo
 
@@ -51,17 +55,15 @@ add type
 
 #### Inherited from
 
-[`BaseBrush`](/api/classes/basebrush/).[`canvas`](/api/classes/basebrush/#canvas)
-
-#### Defined in
-
-[src/brushes/BaseBrush.ts:73](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/BaseBrush.ts#L73)
+[`BaseBrush`](/api/classes/basebrush/).[`canvas`](/api/classes/basebrush/#canvas-1)
 
 ***
 
 ### color
 
 > **color**: `string` = `'rgb(0, 0, 0)'`
+
+Defined in: [src/brushes/BaseBrush.ts:16](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/BaseBrush.ts#L16)
 
 Color of a brush
 
@@ -75,15 +77,13 @@ Color of a brush
 
 [`BaseBrush`](/api/classes/basebrush/).[`color`](/api/classes/basebrush/#color)
 
-#### Defined in
-
-[src/brushes/BaseBrush.ts:16](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/BaseBrush.ts#L16)
-
 ***
 
 ### density
 
 > **density**: `number` = `20`
+
+Defined in: [src/brushes/SprayBrush.ts:44](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/SprayBrush.ts#L44)
 
 Density of a spray (number of dots per chunk)
 
@@ -93,15 +93,13 @@ Density of a spray (number of dots per chunk)
 
 ```
 
-#### Defined in
-
-[src/brushes/SprayBrush.ts:44](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/SprayBrush.ts#L44)
-
 ***
 
 ### dotWidth
 
 > **dotWidth**: `number` = `1`
+
+Defined in: [src/brushes/SprayBrush.ts:51](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/SprayBrush.ts#L51)
 
 Width of spray dots
 
@@ -111,15 +109,13 @@ Width of spray dots
 
 ```
 
-#### Defined in
-
-[src/brushes/SprayBrush.ts:51](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/SprayBrush.ts#L51)
-
 ***
 
 ### dotWidthVariance
 
 > **dotWidthVariance**: `number` = `1`
+
+Defined in: [src/brushes/SprayBrush.ts:58](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/SprayBrush.ts#L58)
 
 Width variance of spray dots
 
@@ -129,15 +125,13 @@ Width variance of spray dots
 
 ```
 
-#### Defined in
-
-[src/brushes/SprayBrush.ts:58](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/SprayBrush.ts#L58)
-
 ***
 
 ### limitedToCanvasSize
 
 > **limitedToCanvasSize**: `boolean` = `false`
+
+Defined in: [src/brushes/BaseBrush.ts:68](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/BaseBrush.ts#L68)
 
 When `true`, the free drawing is limited to the whiteboard size. Default to false.
 
@@ -151,15 +145,13 @@ false
 
 [`BaseBrush`](/api/classes/basebrush/).[`limitedToCanvasSize`](/api/classes/basebrush/#limitedtocanvassize)
 
-#### Defined in
-
-[src/brushes/BaseBrush.ts:68](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/BaseBrush.ts#L68)
-
 ***
 
 ### optimizeOverlapping
 
 > **optimizeOverlapping**: `boolean` = `true`
+
+Defined in: [src/brushes/SprayBrush.ts:72](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/SprayBrush.ts#L72)
 
 Whether overlapping dots (rectangles) should be removed (for performance reasons)
 
@@ -169,15 +161,13 @@ Whether overlapping dots (rectangles) should be removed (for performance reasons
 
 ```
 
-#### Defined in
-
-[src/brushes/SprayBrush.ts:72](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/SprayBrush.ts#L72)
-
 ***
 
 ### randomOpacity
 
 > **randomOpacity**: `boolean` = `false`
+
+Defined in: [src/brushes/SprayBrush.ts:65](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/SprayBrush.ts#L65)
 
 Whether opacity of a dot should be random
 
@@ -187,15 +177,13 @@ Whether opacity of a dot should be random
 
 ```
 
-#### Defined in
-
-[src/brushes/SprayBrush.ts:65](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/SprayBrush.ts#L65)
-
 ***
 
 ### shadow
 
 > **shadow**: `null` \| [`Shadow`](/api/classes/shadow/) = `null`
+
+Defined in: [src/brushes/BaseBrush.ts:32](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/BaseBrush.ts#L32)
 
 Shadow object representing shadow of this shape.
 <b>Backwards incompatibility note:</b> This property replaces "shadowColor" (String), "shadowOffsetX" (Number),
@@ -211,15 +199,13 @@ Shadow object representing shadow of this shape.
 
 [`BaseBrush`](/api/classes/basebrush/).[`shadow`](/api/classes/basebrush/#shadow)
 
-#### Defined in
-
-[src/brushes/BaseBrush.ts:32](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/BaseBrush.ts#L32)
-
 ***
 
 ### strokeDashArray
 
 > **strokeDashArray**: `null` \| `number`[] = `null`
+
+Defined in: [src/brushes/BaseBrush.ts:60](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/BaseBrush.ts#L60)
 
 Stroke Dash Array.
 
@@ -233,15 +219,13 @@ Stroke Dash Array.
 
 [`BaseBrush`](/api/classes/basebrush/).[`strokeDashArray`](/api/classes/basebrush/#strokedasharray)
 
-#### Defined in
-
-[src/brushes/BaseBrush.ts:60](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/BaseBrush.ts#L60)
-
 ***
 
 ### strokeLineCap
 
 > **strokeLineCap**: `CanvasLineCap` = `'round'`
+
+Defined in: [src/brushes/BaseBrush.ts:39](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/BaseBrush.ts#L39)
 
 Line endings style of a brush (one of "butt", "round", "square")
 
@@ -255,15 +239,13 @@ Line endings style of a brush (one of "butt", "round", "square")
 
 [`BaseBrush`](/api/classes/basebrush/).[`strokeLineCap`](/api/classes/basebrush/#strokelinecap)
 
-#### Defined in
-
-[src/brushes/BaseBrush.ts:39](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/BaseBrush.ts#L39)
-
 ***
 
 ### strokeLineJoin
 
 > **strokeLineJoin**: `CanvasLineJoin` = `'round'`
+
+Defined in: [src/brushes/BaseBrush.ts:46](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/BaseBrush.ts#L46)
 
 Corner style of a brush (one of "bevel", "round", "miter")
 
@@ -277,15 +259,13 @@ Corner style of a brush (one of "bevel", "round", "miter")
 
 [`BaseBrush`](/api/classes/basebrush/).[`strokeLineJoin`](/api/classes/basebrush/#strokelinejoin)
 
-#### Defined in
-
-[src/brushes/BaseBrush.ts:46](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/BaseBrush.ts#L46)
-
 ***
 
 ### strokeMiterLimit
 
 > **strokeMiterLimit**: `number` = `10`
+
+Defined in: [src/brushes/BaseBrush.ts:53](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/BaseBrush.ts#L53)
 
 Maximum miter length (used for strokeLineJoin = "miter") of a brush's
 
@@ -299,15 +279,13 @@ Maximum miter length (used for strokeLineJoin = "miter") of a brush's
 
 [`BaseBrush`](/api/classes/basebrush/).[`strokeMiterLimit`](/api/classes/basebrush/#strokemiterlimit)
 
-#### Defined in
-
-[src/brushes/BaseBrush.ts:53](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/BaseBrush.ts#L53)
-
 ***
 
 ### width
 
 > **width**: `number` = `10`
+
+Defined in: [src/brushes/SprayBrush.ts:37](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/SprayBrush.ts#L37)
 
 Width of a spray
 
@@ -321,15 +299,13 @@ Width of a spray
 
 [`BaseBrush`](/api/classes/basebrush/).[`width`](/api/classes/basebrush/#width)
 
-#### Defined in
-
-[src/brushes/SprayBrush.ts:37](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/SprayBrush.ts#L37)
-
 ## Methods
 
 ### \_render()
 
 > **\_render**(): `void`
+
+Defined in: [src/brushes/SprayBrush.ts:177](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/SprayBrush.ts#L177)
 
 Render all spray chunks
 
@@ -341,27 +317,23 @@ Render all spray chunks
 
 [`BaseBrush`](/api/classes/basebrush/).[`_render`](/api/classes/basebrush/#_render)
 
-#### Defined in
-
-[src/brushes/SprayBrush.ts:177](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/SprayBrush.ts#L177)
-
 ***
 
 ### addSprayChunk()
 
 > **addSprayChunk**(`pointer`): `void`
 
+Defined in: [src/brushes/SprayBrush.ts:192](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/SprayBrush.ts#L192)
+
 #### Parameters
 
-• **pointer**: [`Point`](/api/classes/point/)
+##### pointer
+
+[`Point`](/api/classes/point/)
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-[src/brushes/SprayBrush.ts:192](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/SprayBrush.ts#L192)
 
 ***
 
@@ -369,11 +341,15 @@ Render all spray chunks
 
 > **onMouseDown**(`pointer`): `void`
 
+Defined in: [src/brushes/SprayBrush.ts:93](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/SprayBrush.ts#L93)
+
 Invoked on mouse down
 
 #### Parameters
 
-• **pointer**: [`Point`](/api/classes/point/)
+##### pointer
+
+[`Point`](/api/classes/point/)
 
 #### Returns
 
@@ -383,21 +359,21 @@ Invoked on mouse down
 
 [`BaseBrush`](/api/classes/basebrush/).[`onMouseDown`](/api/classes/basebrush/#onmousedown)
 
-#### Defined in
-
-[src/brushes/SprayBrush.ts:93](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/SprayBrush.ts#L93)
-
 ***
 
 ### onMouseMove()
 
 > **onMouseMove**(`pointer`): `void`
 
+Defined in: [src/brushes/SprayBrush.ts:106](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/SprayBrush.ts#L106)
+
 Invoked on mouse move
 
 #### Parameters
 
-• **pointer**: [`Point`](/api/classes/point/)
+##### pointer
+
+[`Point`](/api/classes/point/)
 
 #### Returns
 
@@ -407,15 +383,13 @@ Invoked on mouse move
 
 [`BaseBrush`](/api/classes/basebrush/).[`onMouseMove`](/api/classes/basebrush/#onmousemove)
 
-#### Defined in
-
-[src/brushes/SprayBrush.ts:106](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/SprayBrush.ts#L106)
-
 ***
 
 ### onMouseUp()
 
 > **onMouseUp**(): `void`
+
+Defined in: [src/brushes/SprayBrush.ts:117](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/SprayBrush.ts#L117)
 
 Invoked on mouse up
 
@@ -427,24 +401,20 @@ Invoked on mouse up
 
 [`BaseBrush`](/api/classes/basebrush/).[`onMouseUp`](/api/classes/basebrush/#onmouseup)
 
-#### Defined in
-
-[src/brushes/SprayBrush.ts:117](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/SprayBrush.ts#L117)
-
 ***
 
 ### renderChunck()
 
 > **renderChunck**(`sprayChunck`): `void`
 
+Defined in: [src/brushes/SprayBrush.ts:159](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/SprayBrush.ts#L159)
+
 #### Parameters
 
-• **sprayChunck**: [`SprayBrushPoint`](/api/type-aliases/spraybrushpoint/)[]
+##### sprayChunck
+
+[`SprayBrushPoint`](/api/type-aliases/spraybrushpoint/)[]
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-[src/brushes/SprayBrush.ts:159](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/brushes/SprayBrush.ts#L159)

@@ -5,6 +5,8 @@ prev: false
 title: "ClipPathLayout"
 ---
 
+Defined in: [src/LayoutManager/LayoutStrategies/ClipPathLayout.ts:13](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/LayoutStrategies/ClipPathLayout.ts#L13)
+
 Layout will adjust the bounding box to match the clip path bounding box.
 
 ## Extends
@@ -31,15 +33,13 @@ Layout will adjust the bounding box to match the clip path bounding box.
 
 > `readonly` `static` **type**: `"clip-path"` = `'clip-path'`
 
+Defined in: [src/LayoutManager/LayoutStrategies/ClipPathLayout.ts:14](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/LayoutStrategies/ClipPathLayout.ts#L14)
+
 override by subclass for persistence (TS does not support `static abstract`)
 
 #### Overrides
 
 [`LayoutStrategy`](/api/classes/layoutstrategy/).[`type`](/api/classes/layoutstrategy/#type)
-
-#### Defined in
-
-[src/LayoutManager/LayoutStrategies/ClipPathLayout.ts:14](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/LayoutStrategies/ClipPathLayout.ts#L14)
 
 ## Methods
 
@@ -47,13 +47,19 @@ override by subclass for persistence (TS does not support `static abstract`)
 
 > **calcBoundingBox**(`objects`, `context`): `undefined` \| [`LayoutStrategyResult`](/api/type-aliases/layoutstrategyresult/)
 
+Defined in: [src/LayoutManager/LayoutStrategies/LayoutStrategy.ts:68](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/LayoutStrategies/LayoutStrategy.ts#L68)
+
 Override this method to customize layout.
 
 #### Parameters
 
-• **objects**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[]
+##### objects
 
-• **context**: [`StrictLayoutContext`](/api/type-aliases/strictlayoutcontext/)
+[`FabricObject`](/api/classes/fabricobject/)[]
+
+##### context
+
+[`StrictLayoutContext`](/api/type-aliases/strictlayoutcontext/)
 
 #### Returns
 
@@ -63,15 +69,13 @@ Override this method to customize layout.
 
 [`LayoutStrategy`](/api/classes/layoutstrategy/).[`calcBoundingBox`](/api/classes/layoutstrategy/#calcboundingbox)
 
-#### Defined in
-
-[src/LayoutManager/LayoutStrategies/LayoutStrategy.ts:68](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/LayoutStrategies/LayoutStrategy.ts#L68)
-
 ***
 
 ### calcLayoutResult()
 
 > **calcLayoutResult**(`context`, `objects`): `undefined` \| [`LayoutStrategyResult`](/api/type-aliases/layoutstrategyresult/)
+
+Defined in: [src/LayoutManager/LayoutStrategies/ClipPathLayout.ts:24](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/LayoutStrategies/ClipPathLayout.ts#L24)
 
 Used by the `LayoutManager` to perform layout
 @TODO/fix: if this method is calcResult, should calc unconditionally.
@@ -79,9 +83,13 @@ the condition to not calc should be evaluated by the layoutManager.
 
 #### Parameters
 
-• **context**: [`StrictLayoutContext`](/api/type-aliases/strictlayoutcontext/)
+##### context
 
-• **objects**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[]
+[`StrictLayoutContext`](/api/type-aliases/strictlayoutcontext/)
+
+##### objects
+
+[`FabricObject`](/api/classes/fabricobject/)[]
 
 #### Returns
 
@@ -93,21 +101,23 @@ layout result **OR** `undefined` to skip layout
 
 [`LayoutStrategy`](/api/classes/layoutstrategy/).[`calcLayoutResult`](/api/classes/layoutstrategy/#calclayoutresult)
 
-#### Defined in
-
-[src/LayoutManager/LayoutStrategies/ClipPathLayout.ts:24](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/LayoutStrategies/ClipPathLayout.ts#L24)
-
 ***
 
 ### getInitialSize()
 
 > **getInitialSize**(`context`, `result`): [`Point`](/api/classes/point/)
 
+Defined in: [src/LayoutManager/LayoutStrategies/LayoutStrategy.ts:58](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/LayoutStrategies/LayoutStrategy.ts#L58)
+
 #### Parameters
 
-• **context**: [`StrictLayoutContext`](/api/type-aliases/strictlayoutcontext/) & [`CommonLayoutContext`](/api/type-aliases/commonlayoutcontext/) & `object`
+##### context
 
-• **result**: `Pick`\<[`LayoutStrategyResult`](/api/type-aliases/layoutstrategyresult/), `"center"` \| `"size"`\>
+[`StrictLayoutContext`](/api/type-aliases/strictlayoutcontext/) & [`CommonLayoutContext`](/api/type-aliases/commonlayoutcontext/) & `object`
+
+##### result
+
+`Pick`\<[`LayoutStrategyResult`](/api/type-aliases/layoutstrategyresult/), `"center"` \| `"size"`\>
 
 #### Returns
 
@@ -117,15 +127,13 @@ layout result **OR** `undefined` to skip layout
 
 [`LayoutStrategy`](/api/classes/layoutstrategy/).[`getInitialSize`](/api/classes/layoutstrategy/#getinitialsize)
 
-#### Defined in
-
-[src/LayoutManager/LayoutStrategies/LayoutStrategy.ts:58](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/LayoutStrategies/LayoutStrategy.ts#L58)
-
 ***
 
 ### shouldLayoutClipPath()
 
 > **shouldLayoutClipPath**(): `boolean`
+
+Defined in: [src/LayoutManager/LayoutStrategies/ClipPathLayout.ts:20](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/LayoutStrategies/ClipPathLayout.ts#L20)
 
 #### Returns
 
@@ -135,19 +143,19 @@ layout result **OR** `undefined` to skip layout
 
 [`LayoutStrategy`](/api/classes/layoutstrategy/).[`shouldLayoutClipPath`](/api/classes/layoutstrategy/#shouldlayoutclippath)
 
-#### Defined in
-
-[src/LayoutManager/LayoutStrategies/ClipPathLayout.ts:20](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/LayoutStrategies/ClipPathLayout.ts#L20)
-
 ***
 
 ### shouldPerformLayout()
 
 > **shouldPerformLayout**(`context`): `boolean`
 
+Defined in: [src/LayoutManager/LayoutStrategies/ClipPathLayout.ts:16](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/LayoutStrategies/ClipPathLayout.ts#L16)
+
 #### Parameters
 
-• **context**: [`StrictLayoutContext`](/api/type-aliases/strictlayoutcontext/)
+##### context
+
+[`StrictLayoutContext`](/api/type-aliases/strictlayoutcontext/)
 
 #### Returns
 
@@ -156,7 +164,3 @@ layout result **OR** `undefined` to skip layout
 #### Overrides
 
 [`LayoutStrategy`](/api/classes/layoutstrategy/).[`shouldPerformLayout`](/api/classes/layoutstrategy/#shouldperformlayout)
-
-#### Defined in
-
-[src/LayoutManager/LayoutStrategies/ClipPathLayout.ts:16](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/LayoutStrategies/ClipPathLayout.ts#L16)

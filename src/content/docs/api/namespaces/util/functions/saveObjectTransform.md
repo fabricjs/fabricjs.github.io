@@ -7,9 +7,15 @@ title: "saveObjectTransform"
 
 > **saveObjectTransform**(`target`): `object`
 
+Defined in: [src/util/misc/objectTransforms.ts:86](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/util/misc/objectTransforms.ts#L86)
+
+Extract Object transform values
+
 ## Parameters
 
-• **target**: [`BaseFabricObject`](/api/classes/basefabricobject/)\<`Partial`\<`ObjectProps`\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+### target
+
+[`BaseFabricObject`](/api/classes/basefabricobject/)
 
 object to read from
 
@@ -54,7 +60,3 @@ Components of transform
 ### top
 
 > **top**: `number` = `target.top`
-
-## Defined in
-
-[src/util/misc/objectTransforms.ts:86](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/util/misc/objectTransforms.ts#L86)

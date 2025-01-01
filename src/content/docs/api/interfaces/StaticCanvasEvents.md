@@ -5,6 +5,8 @@ prev: false
 title: "StaticCanvasEvents"
 ---
 
+Defined in: [src/EventTypeDefs.ts:312](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L312)
+
 ## Extends
 
 - [`CollectionEvents`](/api/interfaces/collectionevents/)
@@ -19,13 +21,11 @@ title: "StaticCanvasEvents"
 
 > **after:render**: `object`
 
+Defined in: [src/EventTypeDefs.ts:318](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L318)
+
 #### ctx
 
 > **ctx**: `CanvasRenderingContext2D`
-
-#### Defined in
-
-[src/EventTypeDefs.ts:318](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L318)
 
 ***
 
@@ -33,13 +33,11 @@ title: "StaticCanvasEvents"
 
 > **before:render**: `object`
 
+Defined in: [src/EventTypeDefs.ts:317](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L317)
+
 #### ctx
 
 > **ctx**: `CanvasRenderingContext2D`
-
-#### Defined in
-
-[src/EventTypeDefs.ts:317](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L317)
 
 ***
 
@@ -47,9 +45,7 @@ title: "StaticCanvasEvents"
 
 > **canvas:cleared**: `never`
 
-#### Defined in
-
-[src/EventTypeDefs.ts:314](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L314)
+Defined in: [src/EventTypeDefs.ts:314](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L314)
 
 ***
 
@@ -57,17 +53,15 @@ title: "StaticCanvasEvents"
 
 > **object:added**: `object`
 
+Defined in: [src/EventTypeDefs.ts:250](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L250)
+
 #### target
 
-> **target**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+> **target**: [`FabricObject`](/api/classes/fabricobject/)
 
 #### Inherited from
 
 [`CollectionEvents`](/api/interfaces/collectionevents/).[`object:added`](/api/interfaces/collectionevents/#object:added)
-
-#### Defined in
-
-[src/EventTypeDefs.ts:250](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L250)
 
 ***
 
@@ -75,15 +69,13 @@ title: "StaticCanvasEvents"
 
 > **object:layout:after**: [`LayoutAfterEvent`](/api/type-aliases/layoutafterevent/) & `object`
 
+Defined in: [src/EventTypeDefs.ts:320](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L320)
+
 #### Type declaration
 
 ##### target
 
 > **target**: [`Group`](/api/classes/group/)
-
-#### Defined in
-
-[src/EventTypeDefs.ts:320](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L320)
 
 ***
 
@@ -91,15 +83,13 @@ title: "StaticCanvasEvents"
 
 > **object:layout:before**: [`LayoutBeforeEvent`](/api/type-aliases/layoutbeforeevent/) & `object`
 
+Defined in: [src/EventTypeDefs.ts:319](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L319)
+
 #### Type declaration
 
 ##### target
 
 > **target**: [`Group`](/api/classes/group/)
-
-#### Defined in
-
-[src/EventTypeDefs.ts:319](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L319)
 
 ***
 
@@ -107,14 +97,12 @@ title: "StaticCanvasEvents"
 
 > **object:removed**: `object`
 
+Defined in: [src/EventTypeDefs.ts:251](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L251)
+
 #### target
 
-> **target**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+> **target**: [`FabricObject`](/api/classes/fabricobject/)
 
 #### Inherited from
 
 [`CollectionEvents`](/api/interfaces/collectionevents/).[`object:removed`](/api/interfaces/collectionevents/#object:removed)
-
-#### Defined in
-
-[src/EventTypeDefs.ts:251](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L251)

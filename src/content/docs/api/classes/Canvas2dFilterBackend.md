@@ -5,6 +5,8 @@ prev: false
 title: "Canvas2dFilterBackend"
 ---
 
+Defined in: [src/filters/Canvas2dFilterBackend.ts:7](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/Canvas2dFilterBackend.ts#L7)
+
 ## Constructors
 
 ### new Canvas2dFilterBackend()
@@ -21,15 +23,13 @@ title: "Canvas2dFilterBackend"
 
 > **resources**: [`TPipelineResources`](/api/type-aliases/tpipelineresources/) = `{}`
 
+Defined in: [src/filters/Canvas2dFilterBackend.ts:15](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/Canvas2dFilterBackend.ts#L15)
+
 Experimental. This object is a sort of repository of help layers used to avoid
 of recreating them during frequent filtering. If you are previewing a filter with
 a slider you probably do not want to create help layers every filter step.
 in this object there will be appended some canvases, created once, resized sometimes
 cleared never. Clearing is left to the developer.
-
-#### Defined in
-
-[src/filters/Canvas2dFilterBackend.ts:15](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/Canvas2dFilterBackend.ts#L15)
 
 ## Methods
 
@@ -37,35 +37,43 @@ cleared never. Clearing is left to the developer.
 
 > **applyFilters**(`filters`, `sourceElement`, `sourceWidth`, `sourceHeight`, `targetCanvas`): `void` \| [`T2DPipelineState`](/api/type-aliases/t2dpipelinestate/)
 
+Defined in: [src/filters/Canvas2dFilterBackend.ts:27](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/Canvas2dFilterBackend.ts#L27)
+
 Apply a set of filters against a source image and draw the filtered output
 to the provided destination canvas.
 
 #### Parameters
 
-• **filters**: [`BaseFilter`](/api/namespaces/filters/classes/basefilter/)\<`string`, `Record`\<`string`, `any`\>, `Record`\<`string`, `any`\>\>[]
+##### filters
+
+[`BaseFilter`](/api/namespaces/filters/classes/basefilter/)\<`string`, `Record`\<`string`, `any`\>, `Record`\<`string`, `any`\>\>[]
 
 The filter to apply.
 
-• **sourceElement**: `CanvasImageSource`
+##### sourceElement
+
+`CanvasImageSource`
 
 The source to be filtered.
 
-• **sourceWidth**: `number`
+##### sourceWidth
+
+`number`
 
 The width of the source input.
 
-• **sourceHeight**: `number`
+##### sourceHeight
+
+`number`
 
 The height of the source input.
 
-• **targetCanvas**: `HTMLCanvasElement`
+##### targetCanvas
+
+`HTMLCanvasElement`
 
 The destination for filtered output to be drawn.
 
 #### Returns
 
 `void` \| [`T2DPipelineState`](/api/type-aliases/t2dpipelinestate/)
-
-#### Defined in
-
-[src/filters/Canvas2dFilterBackend.ts:27](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/Canvas2dFilterBackend.ts#L27)
