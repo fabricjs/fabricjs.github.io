@@ -50,7 +50,7 @@ export default defineConfig({
         tsconfig: './fabric.js/typedoc.config.json',
         typeDoc: {
           // needs fixes
-          plugin: ['typedoc-plugin-no-inherit'],
+          // plugin: ['typedoc-plugin-no-inherit'],
           readme: 'none',
           gitRemote: 'https://github.com/fabricjs/fabric.js/blob',
           entryFileName: 'index.md',
