@@ -177,6 +177,7 @@ title: "fabric"
 - [TDataUrlOptions](/api/type-aliases/tdataurloptions/)
 - [TDegree](/api/type-aliases/tdegree/)
 - [TEndPathInfo](/api/type-aliases/tendpathinfo/)
+- [TEventsExtraData](/api/type-aliases/teventsextradata/)
 - [TextStyle](/api/type-aliases/textstyle/)
 - [TextStyleDeclaration](/api/type-aliases/textstyledeclaration/)
 - [TFabricObjectProps](/api/type-aliases/tfabricobjectprops/)

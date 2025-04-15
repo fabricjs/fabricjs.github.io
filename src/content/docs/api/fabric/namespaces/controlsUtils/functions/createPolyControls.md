@@ -9,7 +9,7 @@ title: "createPolyControls"
 
 > **createPolyControls**(`poly`, `options?`): `Record`\<`string`, [`Control`](/api/classes/control/)\>
 
-Defined in: [src/controls/polyControl.ts:105](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/controls/polyControl.ts#L105)
+Defined in: [src/controls/polyControl.ts:105](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/controls/polyControl.ts#L105)
 
 ### Parameters
 
@@ -29,7 +29,7 @@ Defined in: [src/controls/polyControl.ts:105](https://github.com/fabricjs/fabric
 
 > **createPolyControls**(`numOfControls`, `options?`): `Record`\<`string`, [`Control`](/api/classes/control/)\>
 
-Defined in: [src/controls/polyControl.ts:109](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/controls/polyControl.ts#L109)
+Defined in: [src/controls/polyControl.ts:109](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/controls/polyControl.ts#L109)
 
 ### Parameters
 

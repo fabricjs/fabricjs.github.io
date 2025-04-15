@@ -7,7 +7,7 @@ title: "wrapWithFixedAnchor"
 
 > **wrapWithFixedAnchor**\<`T`\>(`actionHandler`): [`TransformActionHandler`](/api/type-aliases/transformactionhandler/)\<`T`\>
 
-Defined in: [src/controls/wrapWithFixedAnchor.ts:9](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/controls/wrapWithFixedAnchor.ts#L9)
+Defined in: [src/controls/wrapWithFixedAnchor.ts:9](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/controls/wrapWithFixedAnchor.ts#L9)
 
 Wrap an action handler with saving/restoring object position on the transform.
 this is the code that permits to objects to keep their position while transforming.

@@ -7,7 +7,7 @@ title: "TScaleMatrixArgs"
 
 > **TScaleMatrixArgs** = `object`
 
-Defined in: [src/util/misc/matrix.ts:18](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/util/misc/matrix.ts#L18)
+Defined in: [src/util/misc/matrix.ts:18](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/util/misc/matrix.ts#L18)
 
 ## Properties
 
@@ -15,7 +15,7 @@ Defined in: [src/util/misc/matrix.ts:18](https://github.com/fabricjs/fabric.js/b
 
 > `optional` **flipX**: `boolean`
 
-Defined in: [src/util/misc/matrix.ts:21](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/util/misc/matrix.ts#L21)
+Defined in: [src/util/misc/matrix.ts:21](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/util/misc/matrix.ts#L21)
 
 ***
 
@@ -23,7 +23,7 @@ Defined in: [src/util/misc/matrix.ts:21](https://github.com/fabricjs/fabric.js/b
 
 > `optional` **flipY**: `boolean`
 
-Defined in: [src/util/misc/matrix.ts:22](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/util/misc/matrix.ts#L22)
+Defined in: [src/util/misc/matrix.ts:22](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/util/misc/matrix.ts#L22)
 
 ***
 
@@ -31,7 +31,7 @@ Defined in: [src/util/misc/matrix.ts:22](https://github.com/fabricjs/fabric.js/b
 
 > `optional` **scaleX**: `number`
 
-Defined in: [src/util/misc/matrix.ts:19](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/util/misc/matrix.ts#L19)
+Defined in: [src/util/misc/matrix.ts:19](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/util/misc/matrix.ts#L19)
 
 ***
 
@@ -39,7 +39,7 @@ Defined in: [src/util/misc/matrix.ts:19](https://github.com/fabricjs/fabric.js/b
 
 > `optional` **scaleY**: `number`
 
-Defined in: [src/util/misc/matrix.ts:20](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/util/misc/matrix.ts#L20)
+Defined in: [src/util/misc/matrix.ts:20](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/util/misc/matrix.ts#L20)
 
 ***
 
@@ -47,7 +47,7 @@ Defined in: [src/util/misc/matrix.ts:20](https://github.com/fabricjs/fabric.js/b
 
 > `optional` **skewX**: [`TDegree`](/api/type-aliases/tdegree/)
 
-Defined in: [src/util/misc/matrix.ts:23](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/util/misc/matrix.ts#L23)
+Defined in: [src/util/misc/matrix.ts:23](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/util/misc/matrix.ts#L23)
 
 ***
 
@@ -55,4 +55,4 @@ Defined in: [src/util/misc/matrix.ts:23](https://github.com/fabricjs/fabric.js/b
 
 > `optional` **skewY**: [`TDegree`](/api/type-aliases/tdegree/)
 
-Defined in: [src/util/misc/matrix.ts:24](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/util/misc/matrix.ts#L24)
+Defined in: [src/util/misc/matrix.ts:24](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/util/misc/matrix.ts#L24)

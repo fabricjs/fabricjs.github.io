@@ -7,7 +7,7 @@ title: "isTouchEvent"
 
 > **isTouchEvent**(`event`): `boolean`
 
-Defined in: [src/util/dom\_event.ts:22](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/util/dom_event.ts#L22)
+Defined in: [src/util/dom\_event.ts:22](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/util/dom_event.ts#L22)
 
 ## Parameters
 

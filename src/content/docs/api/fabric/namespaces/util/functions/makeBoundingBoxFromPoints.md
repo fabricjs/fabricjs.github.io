@@ -7,7 +7,7 @@ title: "makeBoundingBoxFromPoints"
 
 > **makeBoundingBoxFromPoints**(`points`): [`TBBox`](/api/type-aliases/tbbox/)
 
-Defined in: [src/util/misc/boundingBoxFromPoints.ts:9](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/util/misc/boundingBoxFromPoints.ts#L9)
+Defined in: [src/util/misc/boundingBoxFromPoints.ts:9](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/util/misc/boundingBoxFromPoints.ts#L9)
 
 Calculates bounding box (left, top, width, height) from given `points`
 

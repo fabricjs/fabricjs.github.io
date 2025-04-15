@@ -115,6 +115,7 @@ title: "util"
 - [sizeAfterTransform](/api/fabric/namespaces/util/functions/sizeaftertransform/)
 - [stylesFromArray](/api/fabric/namespaces/util/functions/stylesfromarray/)
 - [stylesToArray](/api/fabric/namespaces/util/functions/stylestoarray/)
+- [toBlob](/api/fabric/namespaces/util/functions/toblob/)
 - [toDataURL](/api/fabric/namespaces/util/functions/todataurl/)
 - [toFixed](/api/fabric/namespaces/util/functions/tofixed/)
 - [transformPath](/api/fabric/namespaces/util/functions/transformpath/)

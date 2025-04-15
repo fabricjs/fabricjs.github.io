@@ -9,7 +9,7 @@ title: "animate"
 
 > **animate**(`options`): `ArrayAnimation`
 
-Defined in: [src/util/animation/animate.ts:50](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/util/animation/animate.ts#L50)
+Defined in: [src/util/animation/animate.ts:50](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/util/animation/animate.ts#L50)
 
 Changes value(s) from startValue to endValue within a certain period of time,
 invoking callbacks as the value(s) change.
@@ -54,7 +54,7 @@ animate({
 
 > **animate**(`options`): `ValueAnimation`
 
-Defined in: [src/util/animation/animate.ts:51](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/util/animation/animate.ts#L51)
+Defined in: [src/util/animation/animate.ts:51](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/util/animation/animate.ts#L51)
 
 Changes value(s) from startValue to endValue within a certain period of time,
 invoking callbacks as the value(s) change.
@@ -99,7 +99,7 @@ animate({
 
 > **animate**\<`T`\>(`options`): `T` *extends* `Partial`\<[`TAnimationBaseOptions`](/api/fabric/namespaces/util/type-aliases/tanimationbaseoptions/)\<`number`[]\> & [`TAnimationCallbacks`](/api/fabric/namespaces/util/type-aliases/tanimationcallbacks/)\<`number`[]\> & `object`\> ? `ArrayAnimation` : `ValueAnimation`
 
-Defined in: [src/util/animation/animate.ts:52](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/util/animation/animate.ts#L52)
+Defined in: [src/util/animation/animate.ts:52](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/util/animation/animate.ts#L52)
 
 Changes value(s) from startValue to endValue within a certain period of time,
 invoking callbacks as the value(s) change.

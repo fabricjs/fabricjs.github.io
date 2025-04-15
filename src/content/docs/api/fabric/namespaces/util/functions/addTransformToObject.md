@@ -7,7 +7,7 @@ title: "addTransformToObject"
 
 > **addTransformToObject**(`object`, `transform`): `void`
 
-Defined in: [src/util/misc/objectTransforms.ts:43](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/util/misc/objectTransforms.ts#L43)
+Defined in: [src/util/misc/objectTransforms.ts:43](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/util/misc/objectTransforms.ts#L43)
 
 given an object and a transform, apply the transform to the object.
 this is equivalent to change the space where the object is drawn.

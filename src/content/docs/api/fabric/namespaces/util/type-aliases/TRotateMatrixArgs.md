@@ -7,7 +7,7 @@ title: "TRotateMatrixArgs"
 
 > **TRotateMatrixArgs** = `object`
 
-Defined in: [src/util/misc/matrix.ts:9](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/util/misc/matrix.ts#L9)
+Defined in: [src/util/misc/matrix.ts:9](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/util/misc/matrix.ts#L9)
 
 ## Properties
 
@@ -15,4 +15,4 @@ Defined in: [src/util/misc/matrix.ts:9](https://github.com/fabricjs/fabric.js/bl
 
 > `optional` **angle**: [`TDegree`](/api/type-aliases/tdegree/)
 
-Defined in: [src/util/misc/matrix.ts:10](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/util/misc/matrix.ts#L10)
+Defined in: [src/util/misc/matrix.ts:10](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/util/misc/matrix.ts#L10)
