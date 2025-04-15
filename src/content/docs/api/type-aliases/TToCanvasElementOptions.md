@@ -5,19 +5,23 @@ prev: false
 title: "TToCanvasElementOptions"
 ---
 
-> **TToCanvasElementOptions**\<`T`\>: `object`
+> **TToCanvasElementOptions**\<`T`\> = `object`
 
-Defined in: [src/typedefs.ts:100](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/typedefs.ts#L100)
+Defined in: [src/typedefs.ts:104](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/typedefs.ts#L104)
 
 ## Type Parameters
 
-• **T** *extends* [`BaseFabricObject`](/api/classes/basefabricobject/) = [`BaseFabricObject`](/api/classes/basefabricobject/)
+### T
 
-## Type declaration
+`T` *extends* [`BaseFabricObject`](/api/classes/basefabricobject/) = [`BaseFabricObject`](/api/classes/basefabricobject/)
+
+## Properties
 
 ### filter()?
 
 > `optional` **filter**: (`object`) => `boolean`
+
+Defined in: [src/typedefs.ts:111](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/typedefs.ts#L111)
 
 #### Parameters
 
@@ -29,18 +33,34 @@ Defined in: [src/typedefs.ts:100](https://github.com/fabricjs/fabric.js/blob/874
 
 `boolean`
 
+***
+
 ### height?
 
 > `optional` **height**: `number`
+
+Defined in: [src/typedefs.ts:110](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/typedefs.ts#L110)
+
+***
 
 ### left?
 
 > `optional` **left**: `number`
 
+Defined in: [src/typedefs.ts:107](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/typedefs.ts#L107)
+
+***
+
 ### top?
 
 > `optional` **top**: `number`
 
+Defined in: [src/typedefs.ts:108](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/typedefs.ts#L108)
+
+***
+
 ### width?
 
 > `optional` **width**: `number`
+
+Defined in: [src/typedefs.ts:109](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/typedefs.ts#L109)

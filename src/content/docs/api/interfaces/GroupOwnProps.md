@@ -5,7 +5,7 @@ prev: false
 title: "GroupOwnProps"
 ---
 
-Defined in: [src/shapes/Group.ts:54](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L54)
+Defined in: [src/shapes/Group.ts:54](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/shapes/Group.ts#L54)
 
 ## Extended by
 
@@ -18,7 +18,7 @@ Defined in: [src/shapes/Group.ts:54](https://github.com/fabricjs/fabric.js/blob/
 
 > **interactive**: `boolean`
 
-Defined in: [src/shapes/Group.ts:56](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L56)
+Defined in: [src/shapes/Group.ts:56](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/shapes/Group.ts#L56)
 
 ***
 
@@ -26,4 +26,4 @@ Defined in: [src/shapes/Group.ts:56](https://github.com/fabricjs/fabric.js/blob/
 
 > **subTargetCheck**: `boolean`
 
-Defined in: [src/shapes/Group.ts:55](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Group.ts#L55)
+Defined in: [src/shapes/Group.ts:55](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/shapes/Group.ts#L55)

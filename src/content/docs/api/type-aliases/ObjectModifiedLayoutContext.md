@@ -5,9 +5,9 @@ prev: false
 title: "ObjectModifiedLayoutContext"
 ---
 
-> **ObjectModifiedLayoutContext**: [`CommonLayoutContext`](/api/type-aliases/commonlayoutcontext/) & `object`
+> **ObjectModifiedLayoutContext** = [`CommonLayoutContext`](/api/type-aliases/commonlayoutcontext/) & `object`
 
-Defined in: [src/LayoutManager/types.ts:96](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/types.ts#L96)
+Defined in: [src/LayoutManager/types.ts:96](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/LayoutManager/types.ts#L96)
 
 ## Type declaration
 

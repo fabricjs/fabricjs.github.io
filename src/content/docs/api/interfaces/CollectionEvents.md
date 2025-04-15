@@ -5,12 +5,12 @@ prev: false
 title: "CollectionEvents"
 ---
 
-Defined in: [src/EventTypeDefs.ts:249](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L249)
+Defined in: [src/EventTypeDefs.ts:249](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/EventTypeDefs.ts#L249)
 
 ## Extended by
 
-- [`GroupEvents`](/api/interfaces/groupevents/)
 - [`StaticCanvasEvents`](/api/interfaces/staticcanvasevents/)
+- [`GroupEvents`](/api/interfaces/groupevents/)
 
 ## Properties
 
@@ -18,7 +18,7 @@ Defined in: [src/EventTypeDefs.ts:249](https://github.com/fabricjs/fabric.js/blo
 
 > **object:added**: `object`
 
-Defined in: [src/EventTypeDefs.ts:250](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L250)
+Defined in: [src/EventTypeDefs.ts:250](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/EventTypeDefs.ts#L250)
 
 #### target
 
@@ -30,7 +30,7 @@ Defined in: [src/EventTypeDefs.ts:250](https://github.com/fabricjs/fabric.js/blo
 
 > **object:removed**: `object`
 
-Defined in: [src/EventTypeDefs.ts:251](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L251)
+Defined in: [src/EventTypeDefs.ts:251](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/EventTypeDefs.ts#L251)
 
 #### target
 

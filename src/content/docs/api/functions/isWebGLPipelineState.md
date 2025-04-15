@@ -7,7 +7,7 @@ title: "isWebGLPipelineState"
 
 > **isWebGLPipelineState**(`options`): `options is TWebGLPipelineState`
 
-Defined in: [src/filters/utils.ts:6](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/utils.ts#L6)
+Defined in: [src/filters/utils.ts:6](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/filters/utils.ts#L6)
 
 ## Parameters
 

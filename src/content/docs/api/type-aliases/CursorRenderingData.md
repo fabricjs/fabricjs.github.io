@@ -5,32 +5,54 @@ prev: false
 title: "CursorRenderingData"
 ---
 
-> **CursorRenderingData**: `object`
+> **CursorRenderingData** = `object`
 
-Defined in: [src/shapes/IText/IText.ts:29](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/IText/IText.ts#L29)
+Defined in: [src/shapes/IText/IText.ts:32](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/shapes/IText/IText.ts#L32)
 
-## Type declaration
+## Properties
 
 ### color
 
 > **color**: `string`
 
+Defined in: [src/shapes/IText/IText.ts:33](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/shapes/IText/IText.ts#L33)
+
+***
+
 ### height
 
 > **height**: `number`
+
+Defined in: [src/shapes/IText/IText.ts:38](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/shapes/IText/IText.ts#L38)
+
+***
 
 ### left
 
 > **left**: `number`
 
+Defined in: [src/shapes/IText/IText.ts:35](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/shapes/IText/IText.ts#L35)
+
+***
+
 ### opacity
 
 > **opacity**: `number`
+
+Defined in: [src/shapes/IText/IText.ts:34](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/shapes/IText/IText.ts#L34)
+
+***
 
 ### top
 
 > **top**: `number`
 
+Defined in: [src/shapes/IText/IText.ts:36](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/shapes/IText/IText.ts#L36)
+
+***
+
 ### width
 
 > **width**: `number`
+
+Defined in: [src/shapes/IText/IText.ts:37](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/shapes/IText/IText.ts#L37)

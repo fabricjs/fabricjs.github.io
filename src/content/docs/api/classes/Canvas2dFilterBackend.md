@@ -5,17 +5,17 @@ prev: false
 title: "Canvas2dFilterBackend"
 ---
 
-Defined in: [src/filters/Canvas2dFilterBackend.ts:7](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/Canvas2dFilterBackend.ts#L7)
+Defined in: [src/filters/Canvas2dFilterBackend.ts:7](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/filters/Canvas2dFilterBackend.ts#L7)
 
 ## Constructors
 
-### new Canvas2dFilterBackend()
+### Constructor
 
-> **new Canvas2dFilterBackend**(): [`Canvas2dFilterBackend`](/api/classes/canvas2dfilterbackend/)
+> **new Canvas2dFilterBackend**(): `Canvas2dFilterBackend`
 
 #### Returns
 
-[`Canvas2dFilterBackend`](/api/classes/canvas2dfilterbackend/)
+`Canvas2dFilterBackend`
 
 ## Properties
 
@@ -23,7 +23,7 @@ Defined in: [src/filters/Canvas2dFilterBackend.ts:7](https://github.com/fabricjs
 
 > **resources**: [`TPipelineResources`](/api/type-aliases/tpipelineresources/) = `{}`
 
-Defined in: [src/filters/Canvas2dFilterBackend.ts:15](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/Canvas2dFilterBackend.ts#L15)
+Defined in: [src/filters/Canvas2dFilterBackend.ts:15](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/filters/Canvas2dFilterBackend.ts#L15)
 
 Experimental. This object is a sort of repository of help layers used to avoid
 of recreating them during frequent filtering. If you are previewing a filter with
@@ -37,7 +37,7 @@ cleared never. Clearing is left to the developer.
 
 > **applyFilters**(`filters`, `sourceElement`, `sourceWidth`, `sourceHeight`, `targetCanvas`): `void` \| [`T2DPipelineState`](/api/type-aliases/t2dpipelinestate/)
 
-Defined in: [src/filters/Canvas2dFilterBackend.ts:27](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/Canvas2dFilterBackend.ts#L27)
+Defined in: [src/filters/Canvas2dFilterBackend.ts:27](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/filters/Canvas2dFilterBackend.ts#L27)
 
 Apply a set of filters against a source image and draw the filtered output
 to the provided destination canvas.
@@ -46,7 +46,7 @@ to the provided destination canvas.
 
 ##### filters
 
-[`BaseFilter`](/api/namespaces/filters/classes/basefilter/)\<`string`, `Record`\<`string`, `any`\>, `Record`\<`string`, `any`\>\>[]
+[`BaseFilter`](/api/fabric/namespaces/filters/classes/basefilter/)\<`string`, `Record`\<`string`, `any`\>, `Record`\<`string`, `any`\>\>[]
 
 The filter to apply.
 

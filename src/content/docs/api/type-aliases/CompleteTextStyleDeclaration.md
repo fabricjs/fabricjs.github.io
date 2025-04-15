@@ -5,6 +5,6 @@ prev: false
 title: "CompleteTextStyleDeclaration"
 ---
 
-> **CompleteTextStyleDeclaration**: `Pick`\<[`FabricText`](/api/classes/fabrictext/), `StylePropertiesType`\>
+> **CompleteTextStyleDeclaration** = `Pick`\<[`FabricText`](/api/classes/fabrictext/), `StylePropertiesType`\>
 
-Defined in: [src/shapes/Text/StyledText.ts:11](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/shapes/Text/StyledText.ts#L11)
+Defined in: [src/shapes/Text/StyledText.ts:11](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/shapes/Text/StyledText.ts#L11)

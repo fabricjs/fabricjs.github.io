@@ -5,7 +5,7 @@ prev: false
 title: "CanvasEvents"
 ---
 
-Defined in: [src/EventTypeDefs.ts:323](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L323)
+Defined in: [src/EventTypeDefs.ts:343](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/EventTypeDefs.ts#L343)
 
 ## Extends
 
@@ -17,7 +17,7 @@ Defined in: [src/EventTypeDefs.ts:323](https://github.com/fabricjs/fabric.js/blo
 
 > **after:render**: `object`
 
-Defined in: [src/EventTypeDefs.ts:318](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L318)
+Defined in: [src/EventTypeDefs.ts:338](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/EventTypeDefs.ts#L338)
 
 #### ctx
 
@@ -25,7 +25,7 @@ Defined in: [src/EventTypeDefs.ts:318](https://github.com/fabricjs/fabric.js/blo
 
 #### Inherited from
 
-[`StaticCanvasEvents`](/api/interfaces/staticcanvasevents/).[`after:render`](/api/interfaces/staticcanvasevents/#after:render)
+[`StaticCanvasEvents`](/api/interfaces/staticcanvasevents/).[`after:render`](/api/interfaces/staticcanvasevents/#afterrender)
 
 ***
 
@@ -33,7 +33,7 @@ Defined in: [src/EventTypeDefs.ts:318](https://github.com/fabricjs/fabric.js/blo
 
 > **before:path:created**: `object`
 
-Defined in: [src/EventTypeDefs.ts:331](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L331)
+Defined in: [src/EventTypeDefs.ts:351](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/EventTypeDefs.ts#L351)
 
 #### path
 
@@ -45,7 +45,7 @@ Defined in: [src/EventTypeDefs.ts:331](https://github.com/fabricjs/fabric.js/blo
 
 > **before:render**: `object`
 
-Defined in: [src/EventTypeDefs.ts:317](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L317)
+Defined in: [src/EventTypeDefs.ts:337](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/EventTypeDefs.ts#L337)
 
 #### ctx
 
@@ -53,21 +53,21 @@ Defined in: [src/EventTypeDefs.ts:317](https://github.com/fabricjs/fabric.js/blo
 
 #### Inherited from
 
-[`StaticCanvasEvents`](/api/interfaces/staticcanvasevents/).[`before:render`](/api/interfaces/staticcanvasevents/#before:render)
+[`StaticCanvasEvents`](/api/interfaces/staticcanvasevents/).[`before:render`](/api/interfaces/staticcanvasevents/#beforerender)
 
 ***
 
 ### before:selection:cleared
 
-> **before:selection:cleared**: `Partial`\<[`TEvent`](/api/interfaces/tevent/)\> & `object`
+> **before:selection:cleared**: `Partial`\<[`TEvent`](/api/interfaces/tevent/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\>\> & `object`
 
-Defined in: [src/EventTypeDefs.ts:241](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L241)
+Defined in: [src/EventTypeDefs.ts:241](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/EventTypeDefs.ts#L241)
 
 #### Type declaration
 
 ##### deselected
 
-> **deselected**: [`FabricObject`](/api/classes/fabricobject/)[]
+> **deselected**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[]
 
 #### Inherited from
 
@@ -77,9 +77,9 @@ Defined in: [src/EventTypeDefs.ts:241](https://github.com/fabricjs/fabric.js/blo
 
 ### before:transform
 
-> **before:transform**: [`TEvent`](/api/interfaces/tevent/) & `object`
+> **before:transform**: [`TEvent`](/api/interfaces/tevent/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\> & `object`
 
-Defined in: [src/EventTypeDefs.ts:142](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L142)
+Defined in: [src/EventTypeDefs.ts:142](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/EventTypeDefs.ts#L142)
 
 #### Type declaration
 
@@ -97,11 +97,11 @@ Defined in: [src/EventTypeDefs.ts:142](https://github.com/fabricjs/fabric.js/blo
 
 > **canvas:cleared**: `never`
 
-Defined in: [src/EventTypeDefs.ts:314](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L314)
+Defined in: [src/EventTypeDefs.ts:334](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/EventTypeDefs.ts#L334)
 
 #### Inherited from
 
-[`StaticCanvasEvents`](/api/interfaces/staticcanvasevents/).[`canvas:cleared`](/api/interfaces/staticcanvasevents/#canvas:cleared)
+[`StaticCanvasEvents`](/api/interfaces/staticcanvasevents/).[`canvas:cleared`](/api/interfaces/staticcanvasevents/#canvascleared)
 
 ***
 
@@ -109,7 +109,7 @@ Defined in: [src/EventTypeDefs.ts:314](https://github.com/fabricjs/fabric.js/blo
 
 > **contextmenu**: `SimpleEventHandler`\<`Event`\>
 
-Defined in: [src/EventTypeDefs.ts:288](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L288)
+Defined in: [src/EventTypeDefs.ts:308](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/EventTypeDefs.ts#L308)
 
 #### Inherited from
 
@@ -121,11 +121,11 @@ Defined in: [src/EventTypeDefs.ts:288](https://github.com/fabricjs/fabric.js/blo
 
 > **contextmenu:before**: `SimpleEventHandler`\<`Event`\>
 
-Defined in: [src/EventTypeDefs.ts:287](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L287)
+Defined in: [src/EventTypeDefs.ts:307](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/EventTypeDefs.ts#L307)
 
 #### Inherited from
 
-[`MiscEvents`](/api/interfaces/miscevents/).[`contextmenu:before`](/api/interfaces/miscevents/#contextmenu:before)
+[`MiscEvents`](/api/interfaces/miscevents/).[`contextmenu:before`](/api/interfaces/miscevents/#contextmenubefore)
 
 ***
 
@@ -133,7 +133,7 @@ Defined in: [src/EventTypeDefs.ts:287](https://github.com/fabricjs/fabric.js/blo
 
 > **drag**: [`DragEventData`](/api/interfaces/drageventdata/)
 
-Defined in: [src/EventTypeDefs.ts:218](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L218)
+Defined in: [src/EventTypeDefs.ts:218](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/EventTypeDefs.ts#L218)
 
 #### Inherited from
 
@@ -145,7 +145,7 @@ Defined in: [src/EventTypeDefs.ts:218](https://github.com/fabricjs/fabric.js/blo
 
 > **drag:enter**: [`DragEventData`](/api/interfaces/drageventdata/) & `InEvent`
 
-Defined in: [src/EventTypeDefs.ts:229](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L229)
+Defined in: [src/EventTypeDefs.ts:229](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/EventTypeDefs.ts#L229)
 
 #### Inherited from
 
@@ -157,7 +157,7 @@ Defined in: [src/EventTypeDefs.ts:229](https://github.com/fabricjs/fabric.js/blo
 
 > **drag:leave**: [`DragEventData`](/api/interfaces/drageventdata/) & `OutEvent`
 
-Defined in: [src/EventTypeDefs.ts:230](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L230)
+Defined in: [src/EventTypeDefs.ts:230](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/EventTypeDefs.ts#L230)
 
 #### Inherited from
 
@@ -169,7 +169,7 @@ Defined in: [src/EventTypeDefs.ts:230](https://github.com/fabricjs/fabric.js/blo
 
 > **dragend**: [`DragEventData`](/api/interfaces/drageventdata/)
 
-Defined in: [src/EventTypeDefs.ts:222](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L222)
+Defined in: [src/EventTypeDefs.ts:222](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/EventTypeDefs.ts#L222)
 
 #### Inherited from
 
@@ -181,7 +181,7 @@ Defined in: [src/EventTypeDefs.ts:222](https://github.com/fabricjs/fabric.js/blo
 
 > **dragenter**: [`DragEventData`](/api/interfaces/drageventdata/) & `InEvent`
 
-Defined in: [src/EventTypeDefs.ts:220](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L220)
+Defined in: [src/EventTypeDefs.ts:220](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/EventTypeDefs.ts#L220)
 
 #### Inherited from
 
@@ -193,7 +193,7 @@ Defined in: [src/EventTypeDefs.ts:220](https://github.com/fabricjs/fabric.js/blo
 
 > **dragleave**: [`DragEventData`](/api/interfaces/drageventdata/) & `OutEvent`
 
-Defined in: [src/EventTypeDefs.ts:221](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L221)
+Defined in: [src/EventTypeDefs.ts:221](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/EventTypeDefs.ts#L221)
 
 #### Inherited from
 
@@ -205,7 +205,7 @@ Defined in: [src/EventTypeDefs.ts:221](https://github.com/fabricjs/fabric.js/blo
 
 > **dragover**: [`DragEventData`](/api/interfaces/drageventdata/)
 
-Defined in: [src/EventTypeDefs.ts:219](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L219)
+Defined in: [src/EventTypeDefs.ts:219](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/EventTypeDefs.ts#L219)
 
 #### Inherited from
 
@@ -217,7 +217,7 @@ Defined in: [src/EventTypeDefs.ts:219](https://github.com/fabricjs/fabric.js/blo
 
 > **dragstart**: `TEventWithTarget`\<`DragEvent`\>
 
-Defined in: [src/EventTypeDefs.ts:217](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L217)
+Defined in: [src/EventTypeDefs.ts:217](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/EventTypeDefs.ts#L217)
 
 #### Inherited from
 
@@ -229,7 +229,7 @@ Defined in: [src/EventTypeDefs.ts:217](https://github.com/fabricjs/fabric.js/blo
 
 > **drop**: [`DropEventData`](/api/interfaces/dropeventdata/)
 
-Defined in: [src/EventTypeDefs.ts:224](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L224)
+Defined in: [src/EventTypeDefs.ts:224](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/EventTypeDefs.ts#L224)
 
 #### Inherited from
 
@@ -241,7 +241,7 @@ Defined in: [src/EventTypeDefs.ts:224](https://github.com/fabricjs/fabric.js/blo
 
 > **drop:after**: [`DropEventData`](/api/interfaces/dropeventdata/)
 
-Defined in: [src/EventTypeDefs.ts:225](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L225)
+Defined in: [src/EventTypeDefs.ts:225](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/EventTypeDefs.ts#L225)
 
 #### Inherited from
 
@@ -253,7 +253,7 @@ Defined in: [src/EventTypeDefs.ts:225](https://github.com/fabricjs/fabric.js/blo
 
 > **drop:before**: [`DropEventData`](/api/interfaces/dropeventdata/)
 
-Defined in: [src/EventTypeDefs.ts:223](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L223)
+Defined in: [src/EventTypeDefs.ts:223](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/EventTypeDefs.ts#L223)
 
 #### Inherited from
 
@@ -265,7 +265,7 @@ Defined in: [src/EventTypeDefs.ts:223](https://github.com/fabricjs/fabric.js/blo
 
 > **erasing:end**: `object`
 
-Defined in: [src/EventTypeDefs.ts:336](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L336)
+Defined in: [src/EventTypeDefs.ts:356](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/EventTypeDefs.ts#L356)
 
 #### drawables
 
@@ -273,11 +273,11 @@ Defined in: [src/EventTypeDefs.ts:336](https://github.com/fabricjs/fabric.js/blo
 
 ##### drawables.backgroundImage?
 
-> `optional` **backgroundImage**: [`FabricObject`](/api/classes/fabricobject/)
+> `optional` **backgroundImage**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
 
 ##### drawables.overlayImage?
 
-> `optional` **overlayImage**: [`FabricObject`](/api/classes/fabricobject/)
+> `optional` **overlayImage**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
 
 #### path
 
@@ -285,11 +285,11 @@ Defined in: [src/EventTypeDefs.ts:336](https://github.com/fabricjs/fabric.js/blo
 
 #### subTargets
 
-> **subTargets**: [`FabricObject`](/api/classes/fabricobject/)[]
+> **subTargets**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[]
 
 #### targets
 
-> **targets**: [`FabricObject`](/api/classes/fabricobject/)[]
+> **targets**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[]
 
 ***
 
@@ -297,13 +297,13 @@ Defined in: [src/EventTypeDefs.ts:336](https://github.com/fabricjs/fabric.js/blo
 
 > **erasing:start**: `never`
 
-Defined in: [src/EventTypeDefs.ts:335](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L335)
+Defined in: [src/EventTypeDefs.ts:355](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/EventTypeDefs.ts#L355)
 
 ***
 
 ### mouse:dblclick
 
-> **mouse:dblclick**: [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/)
+> **mouse:dblclick**: [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\>
 
 #### Inherited from
 
@@ -313,7 +313,16 @@ Defined in: [src/EventTypeDefs.ts:335](https://github.com/fabricjs/fabric.js/blo
 
 ### mouse:down
 
-> **mouse:down**: [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/)
+> **mouse:down**: [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\> & [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\> & `object`
+
+#### Type declaration
+
+##### alreadySelected
+
+> **alreadySelected**: `boolean`
+
+Indicates if the target or current target where already selected
+before the cycle of mouse down -> mouse up started
 
 #### Inherited from
 
@@ -323,7 +332,7 @@ Defined in: [src/EventTypeDefs.ts:335](https://github.com/fabricjs/fabric.js/blo
 
 ### mouse:down:before
 
-> **mouse:down:before**: [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/)
+> **mouse:down:before**: [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\>
 
 #### Inherited from
 
@@ -333,7 +342,7 @@ Defined in: [src/EventTypeDefs.ts:335](https://github.com/fabricjs/fabric.js/blo
 
 ### mouse:move
 
-> **mouse:move**: [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/)
+> **mouse:move**: [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\>
 
 #### Inherited from
 
@@ -343,7 +352,7 @@ Defined in: [src/EventTypeDefs.ts:335](https://github.com/fabricjs/fabric.js/blo
 
 ### mouse:move:before
 
-> **mouse:move:before**: [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/)
+> **mouse:move:before**: [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\>
 
 #### Inherited from
 
@@ -353,7 +362,7 @@ Defined in: [src/EventTypeDefs.ts:335](https://github.com/fabricjs/fabric.js/blo
 
 ### mouse:out
 
-> **mouse:out**: [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/) & `OutEvent`
+> **mouse:out**: [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\> & `OutEvent`
 
 #### Inherited from
 
@@ -363,7 +372,7 @@ Defined in: [src/EventTypeDefs.ts:335](https://github.com/fabricjs/fabric.js/blo
 
 ### mouse:over
 
-> **mouse:over**: [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/) & `InEvent`
+> **mouse:over**: [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\> & `InEvent`
 
 #### Inherited from
 
@@ -371,19 +380,35 @@ Defined in: [src/EventTypeDefs.ts:335](https://github.com/fabricjs/fabric.js/blo
 
 ***
 
+### mouse:tripleclick
+
+> **mouse:tripleclick**: [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\>
+
+#### Inherited from
+
+`CanvasPointerEvents.mouse:tripleclick`
+
+***
+
 ### mouse:up
 
-> **mouse:up**: [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/) & `object`
+> **mouse:up**: [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\> & `object`
 
 #### Type declaration
 
 ##### currentSubTargets
 
-> **currentSubTargets**: [`FabricObject`](/api/classes/fabricobject/)[]
+> **currentSubTargets**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[]
+
+The subtargets at the moment of mouseup that could be different from the
+target at the moment of mouse down in case of a drag action for example
 
 ##### currentTarget?
 
-> `optional` **currentTarget**: [`FabricObject`](/api/classes/fabricobject/)
+> `optional` **currentTarget**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+
+The targets at the moment of mouseup that could be different from the
+target at the moment of mouse down in case of a drag action for example
 
 ##### isClick
 
@@ -397,17 +422,23 @@ Defined in: [src/EventTypeDefs.ts:335](https://github.com/fabricjs/fabric.js/blo
 
 ### mouse:up:before
 
-> **mouse:up:before**: [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/) & `object`
+> **mouse:up:before**: [`TPointerEventInfo`](/api/interfaces/tpointereventinfo/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\> & `object`
 
 #### Type declaration
 
 ##### currentSubTargets
 
-> **currentSubTargets**: [`FabricObject`](/api/classes/fabricobject/)[]
+> **currentSubTargets**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[]
+
+The subtargets at the moment of mouseup that could be different from the
+target at the moment of mouse down in case of a drag action for example
 
 ##### currentTarget?
 
-> `optional` **currentTarget**: [`FabricObject`](/api/classes/fabricobject/)
+> `optional` **currentTarget**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
+
+The targets at the moment of mouseup that could be different from the
+target at the moment of mouse down in case of a drag action for example
 
 ##### isClick
 
@@ -433,7 +464,7 @@ Defined in: [src/EventTypeDefs.ts:335](https://github.com/fabricjs/fabric.js/blo
 
 > **object:added**: `object`
 
-Defined in: [src/EventTypeDefs.ts:250](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L250)
+Defined in: [src/EventTypeDefs.ts:250](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/EventTypeDefs.ts#L250)
 
 #### target
 
@@ -441,7 +472,7 @@ Defined in: [src/EventTypeDefs.ts:250](https://github.com/fabricjs/fabric.js/blo
 
 #### Inherited from
 
-[`StaticCanvasEvents`](/api/interfaces/staticcanvasevents/).[`object:added`](/api/interfaces/staticcanvasevents/#object:added)
+[`StaticCanvasEvents`](/api/interfaces/staticcanvasevents/).[`object:added`](/api/interfaces/staticcanvasevents/#objectadded)
 
 ***
 
@@ -449,7 +480,7 @@ Defined in: [src/EventTypeDefs.ts:250](https://github.com/fabricjs/fabric.js/blo
 
 > **object:layout:after**: [`LayoutAfterEvent`](/api/type-aliases/layoutafterevent/) & `object`
 
-Defined in: [src/EventTypeDefs.ts:320](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L320)
+Defined in: [src/EventTypeDefs.ts:340](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/EventTypeDefs.ts#L340)
 
 #### Type declaration
 
@@ -459,7 +490,7 @@ Defined in: [src/EventTypeDefs.ts:320](https://github.com/fabricjs/fabric.js/blo
 
 #### Inherited from
 
-[`StaticCanvasEvents`](/api/interfaces/staticcanvasevents/).[`object:layout:after`](/api/interfaces/staticcanvasevents/#object:layout:after)
+[`StaticCanvasEvents`](/api/interfaces/staticcanvasevents/).[`object:layout:after`](/api/interfaces/staticcanvasevents/#objectlayoutafter)
 
 ***
 
@@ -467,7 +498,7 @@ Defined in: [src/EventTypeDefs.ts:320](https://github.com/fabricjs/fabric.js/blo
 
 > **object:layout:before**: [`LayoutBeforeEvent`](/api/type-aliases/layoutbeforeevent/) & `object`
 
-Defined in: [src/EventTypeDefs.ts:319](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L319)
+Defined in: [src/EventTypeDefs.ts:339](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/EventTypeDefs.ts#L339)
 
 #### Type declaration
 
@@ -477,7 +508,7 @@ Defined in: [src/EventTypeDefs.ts:319](https://github.com/fabricjs/fabric.js/blo
 
 #### Inherited from
 
-[`StaticCanvasEvents`](/api/interfaces/staticcanvasevents/).[`object:layout:before`](/api/interfaces/staticcanvasevents/#object:layout:before)
+[`StaticCanvasEvents`](/api/interfaces/staticcanvasevents/).[`object:layout:before`](/api/interfaces/staticcanvasevents/#objectlayoutbefore)
 
 ***
 
@@ -485,7 +516,7 @@ Defined in: [src/EventTypeDefs.ts:319](https://github.com/fabricjs/fabric.js/blo
 
 > **object:modified**: [`ModifiedEvent`](/api/interfaces/modifiedevent/)
 
-Defined in: [src/EventTypeDefs.ts:152](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L152)
+Defined in: [src/EventTypeDefs.ts:152](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/EventTypeDefs.ts#L152)
 
 #### Inherited from
 
@@ -495,9 +526,9 @@ Defined in: [src/EventTypeDefs.ts:152](https://github.com/fabricjs/fabric.js/blo
 
 ### object:modifyPath
 
-> **object:modifyPath**: [`BasicTransformEvent`](/api/interfaces/basictransformevent/) & `object` & [`ModifyPathEvent`](/api/interfaces/modifypathevent/)
+> **object:modifyPath**: [`BasicTransformEvent`](/api/interfaces/basictransformevent/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\> & `object` & [`ModifyPathEvent`](/api/interfaces/modifypathevent/)
 
-Defined in: [src/EventTypeDefs.ts:149](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L149)
+Defined in: [src/EventTypeDefs.ts:149](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/EventTypeDefs.ts#L149)
 
 #### Type declaration
 
@@ -513,9 +544,9 @@ Defined in: [src/EventTypeDefs.ts:149](https://github.com/fabricjs/fabric.js/blo
 
 ### object:modifyPoly
 
-> **object:modifyPoly**: [`BasicTransformEvent`](/api/interfaces/basictransformevent/) & `object`
+> **object:modifyPoly**: [`BasicTransformEvent`](/api/interfaces/basictransformevent/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\> & `object`
 
-Defined in: [src/EventTypeDefs.ts:148](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L148)
+Defined in: [src/EventTypeDefs.ts:148](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/EventTypeDefs.ts#L148)
 
 #### Type declaration
 
@@ -531,9 +562,9 @@ Defined in: [src/EventTypeDefs.ts:148](https://github.com/fabricjs/fabric.js/blo
 
 ### object:moving
 
-> **object:moving**: [`BasicTransformEvent`](/api/interfaces/basictransformevent/) & `object`
+> **object:moving**: [`BasicTransformEvent`](/api/interfaces/basictransformevent/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\> & `object`
 
-Defined in: [src/EventTypeDefs.ts:143](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L143)
+Defined in: [src/EventTypeDefs.ts:143](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/EventTypeDefs.ts#L143)
 
 #### Type declaration
 
@@ -551,7 +582,7 @@ Defined in: [src/EventTypeDefs.ts:143](https://github.com/fabricjs/fabric.js/blo
 
 > **object:removed**: `object`
 
-Defined in: [src/EventTypeDefs.ts:251](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L251)
+Defined in: [src/EventTypeDefs.ts:251](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/EventTypeDefs.ts#L251)
 
 #### target
 
@@ -559,15 +590,15 @@ Defined in: [src/EventTypeDefs.ts:251](https://github.com/fabricjs/fabric.js/blo
 
 #### Inherited from
 
-[`StaticCanvasEvents`](/api/interfaces/staticcanvasevents/).[`object:removed`](/api/interfaces/staticcanvasevents/#object:removed)
+[`StaticCanvasEvents`](/api/interfaces/staticcanvasevents/).[`object:removed`](/api/interfaces/staticcanvasevents/#objectremoved)
 
 ***
 
 ### object:resizing
 
-> **object:resizing**: [`BasicTransformEvent`](/api/interfaces/basictransformevent/) & `object`
+> **object:resizing**: [`BasicTransformEvent`](/api/interfaces/basictransformevent/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\> & `object`
 
-Defined in: [src/EventTypeDefs.ts:147](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L147)
+Defined in: [src/EventTypeDefs.ts:147](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/EventTypeDefs.ts#L147)
 
 #### Type declaration
 
@@ -583,9 +614,9 @@ Defined in: [src/EventTypeDefs.ts:147](https://github.com/fabricjs/fabric.js/blo
 
 ### object:rotating
 
-> **object:rotating**: [`BasicTransformEvent`](/api/interfaces/basictransformevent/) & `object`
+> **object:rotating**: [`BasicTransformEvent`](/api/interfaces/basictransformevent/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\> & `object`
 
-Defined in: [src/EventTypeDefs.ts:145](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L145)
+Defined in: [src/EventTypeDefs.ts:145](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/EventTypeDefs.ts#L145)
 
 #### Type declaration
 
@@ -601,9 +632,9 @@ Defined in: [src/EventTypeDefs.ts:145](https://github.com/fabricjs/fabric.js/blo
 
 ### object:scaling
 
-> **object:scaling**: [`BasicTransformEvent`](/api/interfaces/basictransformevent/) & `object`
+> **object:scaling**: [`BasicTransformEvent`](/api/interfaces/basictransformevent/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\> & `object`
 
-Defined in: [src/EventTypeDefs.ts:144](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L144)
+Defined in: [src/EventTypeDefs.ts:144](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/EventTypeDefs.ts#L144)
 
 #### Type declaration
 
@@ -619,9 +650,9 @@ Defined in: [src/EventTypeDefs.ts:144](https://github.com/fabricjs/fabric.js/blo
 
 ### object:skewing
 
-> **object:skewing**: [`BasicTransformEvent`](/api/interfaces/basictransformevent/) & `object`
+> **object:skewing**: [`BasicTransformEvent`](/api/interfaces/basictransformevent/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\> & `object`
 
-Defined in: [src/EventTypeDefs.ts:146](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L146)
+Defined in: [src/EventTypeDefs.ts:146](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/EventTypeDefs.ts#L146)
 
 #### Type declaration
 
@@ -639,7 +670,7 @@ Defined in: [src/EventTypeDefs.ts:146](https://github.com/fabricjs/fabric.js/blo
 
 > **path:created**: `object`
 
-Defined in: [src/EventTypeDefs.ts:332](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L332)
+Defined in: [src/EventTypeDefs.ts:352](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/EventTypeDefs.ts#L352)
 
 #### path
 
@@ -649,15 +680,15 @@ Defined in: [src/EventTypeDefs.ts:332](https://github.com/fabricjs/fabric.js/blo
 
 ### selection:cleared
 
-> **selection:cleared**: `Partial`\<[`TEvent`](/api/interfaces/tevent/)\> & `object`
+> **selection:cleared**: `Partial`\<[`TEvent`](/api/interfaces/tevent/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\>\> & `object`
 
-Defined in: [src/EventTypeDefs.ts:244](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L244)
+Defined in: [src/EventTypeDefs.ts:244](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/EventTypeDefs.ts#L244)
 
 #### Type declaration
 
 ##### deselected
 
-> **deselected**: [`FabricObject`](/api/classes/fabricobject/)[]
+> **deselected**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[]
 
 #### Inherited from
 
@@ -667,15 +698,15 @@ Defined in: [src/EventTypeDefs.ts:244](https://github.com/fabricjs/fabric.js/blo
 
 ### selection:created
 
-> **selection:created**: `Partial`\<[`TEvent`](/api/interfaces/tevent/)\> & `object`
+> **selection:created**: `Partial`\<[`TEvent`](/api/interfaces/tevent/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\>\> & `object`
 
-Defined in: [src/EventTypeDefs.ts:234](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L234)
+Defined in: [src/EventTypeDefs.ts:234](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/EventTypeDefs.ts#L234)
 
 #### Type declaration
 
 ##### selected
 
-> **selected**: [`FabricObject`](/api/classes/fabricobject/)[]
+> **selected**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[]
 
 #### Inherited from
 
@@ -685,19 +716,19 @@ Defined in: [src/EventTypeDefs.ts:234](https://github.com/fabricjs/fabric.js/blo
 
 ### selection:updated
 
-> **selection:updated**: `Partial`\<[`TEvent`](/api/interfaces/tevent/)\> & `object`
+> **selection:updated**: `Partial`\<[`TEvent`](/api/interfaces/tevent/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\>\> & `object`
 
-Defined in: [src/EventTypeDefs.ts:237](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L237)
+Defined in: [src/EventTypeDefs.ts:237](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/EventTypeDefs.ts#L237)
 
 #### Type declaration
 
 ##### deselected
 
-> **deselected**: [`FabricObject`](/api/classes/fabricobject/)[]
+> **deselected**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[]
 
 ##### selected
 
-> **selected**: [`FabricObject`](/api/classes/fabricobject/)[]
+> **selected**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[]
 
 #### Inherited from
 
@@ -709,7 +740,7 @@ Defined in: [src/EventTypeDefs.ts:237](https://github.com/fabricjs/fabric.js/blo
 
 > **text:changed**: `object`
 
-Defined in: [src/EventTypeDefs.ts:350](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L350)
+Defined in: [src/EventTypeDefs.ts:370](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/EventTypeDefs.ts#L370)
 
 #### target
 
@@ -719,9 +750,9 @@ Defined in: [src/EventTypeDefs.ts:350](https://github.com/fabricjs/fabric.js/blo
 
 ### text:editing:entered
 
-> **text:editing:entered**: `object` & `Partial`\<[`TEvent`](/api/interfaces/tevent/)\>
+> **text:editing:entered**: `object` & `Partial`\<[`TEvent`](/api/interfaces/tevent/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\>\>
 
-Defined in: [src/EventTypeDefs.ts:351](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L351)
+Defined in: [src/EventTypeDefs.ts:371](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/EventTypeDefs.ts#L371)
 
 #### Type declaration
 
@@ -735,7 +766,7 @@ Defined in: [src/EventTypeDefs.ts:351](https://github.com/fabricjs/fabric.js/blo
 
 > **text:editing:exited**: `object`
 
-Defined in: [src/EventTypeDefs.ts:352](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L352)
+Defined in: [src/EventTypeDefs.ts:372](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/EventTypeDefs.ts#L372)
 
 #### target
 
@@ -747,7 +778,7 @@ Defined in: [src/EventTypeDefs.ts:352](https://github.com/fabricjs/fabric.js/blo
 
 > **text:selection:changed**: `object`
 
-Defined in: [src/EventTypeDefs.ts:349](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/EventTypeDefs.ts#L349)
+Defined in: [src/EventTypeDefs.ts:369](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/EventTypeDefs.ts#L369)
 
 #### target
 

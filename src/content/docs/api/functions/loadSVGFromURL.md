@@ -5,9 +5,9 @@ prev: false
 title: "loadSVGFromURL"
 ---
 
-> **loadSVGFromURL**(`url`, `reviver`?, `options`?): `Promise`\<`SVGParsingOutput`\>
+> **loadSVGFromURL**(`url`, `reviver?`, `options?`): `Promise`\<`SVGParsingOutput`\>
 
-Defined in: [src/parser/loadSVGFromURL.ts:21](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/parser/loadSVGFromURL.ts#L21)
+Defined in: [src/parser/loadSVGFromURL.ts:21](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/parser/loadSVGFromURL.ts#L21)
 
 Takes url corresponding to an SVG document, and parses it into a set of fabric objects.
 Note that SVG is fetched via XMLHttpRequest, so it needs to conform to SOP (Same Origin Policy)
@@ -30,7 +30,7 @@ or extra custom manipulation
 
 ### options?
 
-[`LoadImageOptions`](/api/namespaces/util/type-aliases/loadimageoptions/) = `{}`
+[`LoadImageOptions`](/api/fabric/namespaces/util/type-aliases/loadimageoptions/) = `{}`
 
 Object containing options for parsing
 

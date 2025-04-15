@@ -5,36 +5,62 @@ prev: false
 title: "SerializedShadowOptions"
 ---
 
-> **SerializedShadowOptions**: `object`
+> **SerializedShadowOptions** = `object`
 
-Defined in: [src/Shadow.ts:53](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Shadow.ts#L53)
+Defined in: [src/Shadow.ts:53](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/Shadow.ts#L53)
 
-## Type declaration
+## Properties
 
 ### affectStroke
 
 > **affectStroke**: `boolean`
 
+Defined in: [src/Shadow.ts:58](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/Shadow.ts#L58)
+
+***
+
 ### blur
 
 > **blur**: `number`
+
+Defined in: [src/Shadow.ts:55](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/Shadow.ts#L55)
+
+***
 
 ### color
 
 > **color**: `string`
 
+Defined in: [src/Shadow.ts:54](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/Shadow.ts#L54)
+
+***
+
 ### nonScaling
 
 > **nonScaling**: `boolean`
+
+Defined in: [src/Shadow.ts:59](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/Shadow.ts#L59)
+
+***
 
 ### offsetX
 
 > **offsetX**: `number`
 
+Defined in: [src/Shadow.ts:56](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/Shadow.ts#L56)
+
+***
+
 ### offsetY
 
 > **offsetY**: `number`
 
+Defined in: [src/Shadow.ts:57](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/Shadow.ts#L57)
+
+***
+
 ### type
 
 > **type**: `string`
+
+Defined in: [src/Shadow.ts:60](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/Shadow.ts#L60)

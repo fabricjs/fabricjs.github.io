@@ -5,13 +5,15 @@ prev: false
 title: "createCollectionMixin"
 ---
 
-> **createCollectionMixin**\<`TBase`\>(`Base`): (...`args`) => `Collection`\<`TBase`\> & `TBase`
+> **createCollectionMixin**\<`TBase`\>(`Base`): \{(...`args`): `Collection`; `prototype`: `Collection`\<`any`\>; \} & `TBase`
 
-Defined in: [src/Collection.ts:15](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Collection.ts#L15)
+Defined in: [src/Collection.ts:15](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/Collection.ts#L15)
 
 ## Type Parameters
 
-• **TBase** *extends* [`Constructor`](/api/type-aliases/constructor/)
+### TBase
+
+`TBase` *extends* [`Constructor`](/api/type-aliases/constructor/)
 
 ## Parameters
 
@@ -21,4 +23,4 @@ Defined in: [src/Collection.ts:15](https://github.com/fabricjs/fabric.js/blob/87
 
 ## Returns
 
-(...`args`) => `Collection`\<`TBase`\> & `TBase`
+\{(...`args`): `Collection`; `prototype`: `Collection`\<`any`\>; \} & `TBase`

@@ -5,353 +5,11 @@ prev: false
 title: "fabric"
 ---
 
-## References
-
-### Image
-
-Renames and re-exports [FabricImage](/api/classes/fabricimage/)
-
-***
-
-### Object
-
-Renames and re-exports [FabricObject](/api/classes/fabricobject/)
-
-***
-
-### TArcCommand
-
-Re-exports [TArcCommand](/api/namespaces/util/type-aliases/tarccommand/)
-
-***
-
-### TArcCommandSingleFlag
-
-Re-exports [TArcCommandSingleFlag](/api/namespaces/util/type-aliases/tarccommandsingleflag/)
-
-***
-
-### TClosePathCommand
-
-Re-exports [TClosePathCommand](/api/namespaces/util/type-aliases/tclosepathcommand/)
-
-***
-
-### TComplexParsedCommand
-
-Re-exports [TComplexParsedCommand](/api/namespaces/util/type-aliases/tcomplexparsedcommand/)
-
-***
-
-### TComplexParsedCommandType
-
-Re-exports [TComplexParsedCommandType](/api/namespaces/util/type-aliases/tcomplexparsedcommandtype/)
-
-***
-
-### TComplexPathData
-
-Re-exports [TComplexPathData](/api/namespaces/util/type-aliases/tcomplexpathdata/)
-
-***
-
-### TCubicCurveCommand
-
-Re-exports [TCubicCurveCommand](/api/namespaces/util/type-aliases/tcubiccurvecommand/)
-
-***
-
-### TCubicCurveShortcutCommand
-
-Re-exports [TCubicCurveShortcutCommand](/api/namespaces/util/type-aliases/tcubiccurveshortcutcommand/)
-
-***
-
-### TCurveInfo
-
-Re-exports [TCurveInfo](/api/namespaces/util/type-aliases/tcurveinfo/)
-
-***
-
-### TEndPathInfo
-
-Re-exports [TEndPathInfo](/api/namespaces/util/type-aliases/tendpathinfo/)
-
-***
-
-### Text
-
-Renames and re-exports [FabricText](/api/classes/fabrictext/)
-
-***
-
-### THorizontalLineCommand
-
-Re-exports [THorizontalLineCommand](/api/namespaces/util/type-aliases/thorizontallinecommand/)
-
-***
-
-### TLineCommand
-
-Re-exports [TLineCommand](/api/namespaces/util/type-aliases/tlinecommand/)
-
-***
-
-### TMoveToCommand
-
-Re-exports [TMoveToCommand](/api/namespaces/util/type-aliases/tmovetocommand/)
-
-***
-
-### TParsedAbsoluteArcCommand
-
-Re-exports [TParsedAbsoluteArcCommand](/api/namespaces/util/type-aliases/tparsedabsolutearccommand/)
-
-***
-
-### TParsedAbsoluteClosePathCommand
-
-Re-exports [TParsedAbsoluteClosePathCommand](/api/namespaces/util/type-aliases/tparsedabsoluteclosepathcommand/)
-
-***
-
-### TParsedAbsoluteCubicCurveCommand
-
-Re-exports [TParsedAbsoluteCubicCurveCommand](/api/namespaces/util/type-aliases/tparsedabsolutecubiccurvecommand/)
-
-***
-
-### TParsedAbsoluteCubicCurveShortcutCommand
-
-Re-exports [TParsedAbsoluteCubicCurveShortcutCommand](/api/namespaces/util/type-aliases/tparsedabsolutecubiccurveshortcutcommand/)
-
-***
-
-### TParsedAbsoluteHorizontalLineCommand
-
-Re-exports [TParsedAbsoluteHorizontalLineCommand](/api/namespaces/util/type-aliases/tparsedabsolutehorizontallinecommand/)
-
-***
-
-### TParsedAbsoluteLineCommand
-
-Re-exports [TParsedAbsoluteLineCommand](/api/namespaces/util/type-aliases/tparsedabsolutelinecommand/)
-
-***
-
-### TParsedAbsoluteMoveToCommand
-
-Re-exports [TParsedAbsoluteMoveToCommand](/api/namespaces/util/type-aliases/tparsedabsolutemovetocommand/)
-
-***
-
-### TParsedAbsoluteQuadraticCurveCommand
-
-Re-exports [TParsedAbsoluteQuadraticCurveCommand](/api/namespaces/util/type-aliases/tparsedabsolutequadraticcurvecommand/)
-
-***
-
-### TParsedAbsoluteQuadraticCurveShortcutCommand
-
-Re-exports [TParsedAbsoluteQuadraticCurveShortcutCommand](/api/namespaces/util/type-aliases/tparsedabsolutequadraticcurveshortcutcommand/)
-
-***
-
-### TParsedAbsoluteVerticalLineCommand
-
-Re-exports [TParsedAbsoluteVerticalLineCommand](/api/namespaces/util/type-aliases/tparsedabsoluteverticallinecommand/)
-
-***
-
-### TParsedArcCommand
-
-Re-exports [TParsedArcCommand](/api/namespaces/util/type-aliases/tparsedarccommand/)
-
-***
-
-### TParsedClosePathCommand
-
-Re-exports [TParsedClosePathCommand](/api/namespaces/util/type-aliases/tparsedclosepathcommand/)
-
-***
-
-### TParsedCommand
-
-Re-exports [TParsedCommand](/api/namespaces/util/type-aliases/tparsedcommand/)
-
-***
-
-### TParsedCubicCurveCommand
-
-Re-exports [TParsedCubicCurveCommand](/api/namespaces/util/type-aliases/tparsedcubiccurvecommand/)
-
-***
-
-### TParsedCubicCurveShortcutCommand
-
-Re-exports [TParsedCubicCurveShortcutCommand](/api/namespaces/util/type-aliases/tparsedcubiccurveshortcutcommand/)
-
-***
-
-### TParsedHorizontalLineCommand
-
-Re-exports [TParsedHorizontalLineCommand](/api/namespaces/util/type-aliases/tparsedhorizontallinecommand/)
-
-***
-
-### TParsedLineCommand
-
-Re-exports [TParsedLineCommand](/api/namespaces/util/type-aliases/tparsedlinecommand/)
-
-***
-
-### TParsedMoveToCommand
-
-Re-exports [TParsedMoveToCommand](/api/namespaces/util/type-aliases/tparsedmovetocommand/)
-
-***
-
-### TParsedQuadraticCurveCommand
-
-Re-exports [TParsedQuadraticCurveCommand](/api/namespaces/util/type-aliases/tparsedquadraticcurvecommand/)
-
-***
-
-### TParsedQuadraticCurveShortcutCommand
-
-Re-exports [TParsedQuadraticCurveShortcutCommand](/api/namespaces/util/type-aliases/tparsedquadraticcurveshortcutcommand/)
-
-***
-
-### TParsedRelativeArcCommand
-
-Re-exports [TParsedRelativeArcCommand](/api/namespaces/util/type-aliases/tparsedrelativearccommand/)
-
-***
-
-### TParsedRelativeClosePathCommand
-
-Re-exports [TParsedRelativeClosePathCommand](/api/namespaces/util/type-aliases/tparsedrelativeclosepathcommand/)
-
-***
-
-### TParsedRelativeCubicCurveCommand
-
-Re-exports [TParsedRelativeCubicCurveCommand](/api/namespaces/util/type-aliases/tparsedrelativecubiccurvecommand/)
-
-***
-
-### TParsedRelativeCubicCurveShortcutCommand
-
-Re-exports [TParsedRelativeCubicCurveShortcutCommand](/api/namespaces/util/type-aliases/tparsedrelativecubiccurveshortcutcommand/)
-
-***
-
-### TParsedRelativeHorizontalLineCommand
-
-Re-exports [TParsedRelativeHorizontalLineCommand](/api/namespaces/util/type-aliases/tparsedrelativehorizontallinecommand/)
-
-***
-
-### TParsedRelativeLineCommand
-
-Re-exports [TParsedRelativeLineCommand](/api/namespaces/util/type-aliases/tparsedrelativelinecommand/)
-
-***
-
-### TParsedRelativeMoveToCommand
-
-Re-exports [TParsedRelativeMoveToCommand](/api/namespaces/util/type-aliases/tparsedrelativemovetocommand/)
-
-***
-
-### TParsedRelativeQuadraticCurveCommand
-
-Re-exports [TParsedRelativeQuadraticCurveCommand](/api/namespaces/util/type-aliases/tparsedrelativequadraticcurvecommand/)
-
-***
-
-### TParsedRelativeQuadraticCurveShortcutCommand
-
-Re-exports [TParsedRelativeQuadraticCurveShortcutCommand](/api/namespaces/util/type-aliases/tparsedrelativequadraticcurveshortcutcommand/)
-
-***
-
-### TParsedRelativeVerticalLineCommand
-
-Re-exports [TParsedRelativeVerticalLineCommand](/api/namespaces/util/type-aliases/tparsedrelativeverticallinecommand/)
-
-***
-
-### TParsedVerticalLineCommand
-
-Re-exports [TParsedVerticalLineCommand](/api/namespaces/util/type-aliases/tparsedverticallinecommand/)
-
-***
-
-### TPathSegmentCommandInfo
-
-Re-exports [TPathSegmentCommandInfo](/api/namespaces/util/type-aliases/tpathsegmentcommandinfo/)
-
-***
-
-### TPathSegmentInfo
-
-Re-exports [TPathSegmentInfo](/api/namespaces/util/type-aliases/tpathsegmentinfo/)
-
-***
-
-### TPathSegmentInfoCommon
-
-Re-exports [TPathSegmentInfoCommon](/api/namespaces/util/type-aliases/tpathsegmentinfocommon/)
-
-***
-
-### TPointAngle
-
-Re-exports [TPointAngle](/api/namespaces/util/type-aliases/tpointangle/)
-
-***
-
-### TQuadraticCurveCommand
-
-Re-exports [TQuadraticCurveCommand](/api/namespaces/util/type-aliases/tquadraticcurvecommand/)
-
-***
-
-### TQuadraticCurveShortcutCommand
-
-Re-exports [TQuadraticCurveShortcutCommand](/api/namespaces/util/type-aliases/tquadraticcurveshortcutcommand/)
-
-***
-
-### TSimpleParseCommandType
-
-Re-exports [TSimpleParseCommandType](/api/namespaces/util/type-aliases/tsimpleparsecommandtype/)
-
-***
-
-### TSimpleParsedCommand
-
-Re-exports [TSimpleParsedCommand](/api/namespaces/util/type-aliases/tsimpleparsedcommand/)
-
-***
-
-### TSimplePathData
-
-Re-exports [TSimplePathData](/api/namespaces/util/type-aliases/tsimplepathdata/)
-
-***
-
-### TVerticalLineCommand
-
-Re-exports [TVerticalLineCommand](/api/namespaces/util/type-aliases/tverticallinecommand/)
-
 ## Namespaces
 
-- [controlsUtils](/api/namespaces/controlsutils/index/)
-- [filters](/api/namespaces/filters/index/)
-- [util](/api/namespaces/util/index/)
+- [controlsUtils](/api/fabric/namespaces/controlsutils/index/)
+- [filters](/api/fabric/namespaces/filters/index/)
+- [util](/api/fabric/namespaces/util/index/)
 
 ## Classes
 
@@ -497,6 +155,8 @@ Re-exports [TVerticalLineCommand](/api/namespaces/util/type-aliases/tverticallin
 - [SVGElementName](/api/type-aliases/svgelementname/)
 - [SVGOptions](/api/type-aliases/svgoptions/)
 - [T2DPipelineState](/api/type-aliases/t2dpipelinestate/)
+- [TArcCommand](/api/type-aliases/tarccommand/)
+- [TArcCommandSingleFlag](/api/type-aliases/tarccommandsingleflag/)
 - [TAxis](/api/type-aliases/taxis/)
 - [TAxisKey](/api/type-aliases/taxiskey/)
 - [TBBox](/api/type-aliases/tbbox/)
@@ -504,28 +164,77 @@ Re-exports [TVerticalLineCommand](/api/namespaces/util/type-aliases/tverticallin
 - [TCacheCanvasDimensions](/api/type-aliases/tcachecanvasdimensions/)
 - [TCanvasSizeOptions](/api/type-aliases/tcanvassizeoptions/)
 - [TClassProperties](/api/type-aliases/tclassproperties/)
+- [TClosePathCommand](/api/type-aliases/tclosepathcommand/)
 - [TColorArg](/api/type-aliases/tcolorarg/)
+- [TComplexParsedCommand](/api/type-aliases/tcomplexparsedcommand/)
+- [TComplexParsedCommandType](/api/type-aliases/tcomplexparsedcommandtype/)
+- [TComplexPathData](/api/type-aliases/tcomplexpathdata/)
 - [TCornerPoint](/api/type-aliases/tcornerpoint/)
 - [TCrossOrigin](/api/type-aliases/tcrossorigin/)
+- [TCubicCurveCommand](/api/type-aliases/tcubiccurvecommand/)
+- [TCubicCurveShortcutCommand](/api/type-aliases/tcubiccurveshortcutcommand/)
+- [TCurveInfo](/api/type-aliases/tcurveinfo/)
 - [TDataUrlOptions](/api/type-aliases/tdataurloptions/)
 - [TDegree](/api/type-aliases/tdegree/)
+- [TEndPathInfo](/api/type-aliases/tendpathinfo/)
+- [TEventsExtraData](/api/type-aliases/teventsextradata/)
 - [TextStyle](/api/type-aliases/textstyle/)
 - [TextStyleDeclaration](/api/type-aliases/textstyledeclaration/)
 - [TFabricObjectProps](/api/type-aliases/tfabricobjectprops/)
 - [TFiller](/api/type-aliases/tfiller/)
+- [THorizontalLineCommand](/api/type-aliases/thorizontallinecommand/)
+- [TLineCommand](/api/type-aliases/tlinecommand/)
 - [TMat2D](/api/type-aliases/tmat2d/)
 - [TMatColorMatrix](/api/type-aliases/tmatcolormatrix/)
 - [TModificationEvents](/api/type-aliases/tmodificationevents/)
+- [TMoveToCommand](/api/type-aliases/tmovetocommand/)
 - [TOptionalModifierKey](/api/type-aliases/toptionalmodifierkey/)
 - [TOptions](/api/type-aliases/toptions/)
 - [TOriginX](/api/type-aliases/toriginx/)
 - [TOriginY](/api/type-aliases/toriginy/)
+- [TParsedAbsoluteArcCommand](/api/type-aliases/tparsedabsolutearccommand/)
+- [TParsedAbsoluteClosePathCommand](/api/type-aliases/tparsedabsoluteclosepathcommand/)
+- [TParsedAbsoluteCubicCurveCommand](/api/type-aliases/tparsedabsolutecubiccurvecommand/)
+- [TParsedAbsoluteCubicCurveShortcutCommand](/api/type-aliases/tparsedabsolutecubiccurveshortcutcommand/)
+- [TParsedAbsoluteHorizontalLineCommand](/api/type-aliases/tparsedabsolutehorizontallinecommand/)
+- [TParsedAbsoluteLineCommand](/api/type-aliases/tparsedabsolutelinecommand/)
+- [TParsedAbsoluteMoveToCommand](/api/type-aliases/tparsedabsolutemovetocommand/)
+- [TParsedAbsoluteQuadraticCurveCommand](/api/type-aliases/tparsedabsolutequadraticcurvecommand/)
+- [TParsedAbsoluteQuadraticCurveShortcutCommand](/api/type-aliases/tparsedabsolutequadraticcurveshortcutcommand/)
+- [TParsedAbsoluteVerticalLineCommand](/api/type-aliases/tparsedabsoluteverticallinecommand/)
+- [TParsedArcCommand](/api/type-aliases/tparsedarccommand/)
+- [TParsedClosePathCommand](/api/type-aliases/tparsedclosepathcommand/)
+- [TParsedCommand](/api/type-aliases/tparsedcommand/)
+- [TParsedCubicCurveCommand](/api/type-aliases/tparsedcubiccurvecommand/)
+- [TParsedCubicCurveShortcutCommand](/api/type-aliases/tparsedcubiccurveshortcutcommand/)
+- [TParsedHorizontalLineCommand](/api/type-aliases/tparsedhorizontallinecommand/)
+- [TParsedLineCommand](/api/type-aliases/tparsedlinecommand/)
+- [TParsedMoveToCommand](/api/type-aliases/tparsedmovetocommand/)
+- [TParsedQuadraticCurveCommand](/api/type-aliases/tparsedquadraticcurvecommand/)
+- [TParsedQuadraticCurveShortcutCommand](/api/type-aliases/tparsedquadraticcurveshortcutcommand/)
+- [TParsedRelativeArcCommand](/api/type-aliases/tparsedrelativearccommand/)
+- [TParsedRelativeClosePathCommand](/api/type-aliases/tparsedrelativeclosepathcommand/)
+- [TParsedRelativeCubicCurveCommand](/api/type-aliases/tparsedrelativecubiccurvecommand/)
+- [TParsedRelativeCubicCurveShortcutCommand](/api/type-aliases/tparsedrelativecubiccurveshortcutcommand/)
+- [TParsedRelativeHorizontalLineCommand](/api/type-aliases/tparsedrelativehorizontallinecommand/)
+- [TParsedRelativeLineCommand](/api/type-aliases/tparsedrelativelinecommand/)
+- [TParsedRelativeMoveToCommand](/api/type-aliases/tparsedrelativemovetocommand/)
+- [TParsedRelativeQuadraticCurveCommand](/api/type-aliases/tparsedrelativequadraticcurvecommand/)
+- [TParsedRelativeQuadraticCurveShortcutCommand](/api/type-aliases/tparsedrelativequadraticcurveshortcutcommand/)
+- [TParsedRelativeVerticalLineCommand](/api/type-aliases/tparsedrelativeverticallinecommand/)
+- [TParsedVerticalLineCommand](/api/type-aliases/tparsedverticallinecommand/)
 - [TPathAlign](/api/type-aliases/tpathalign/)
+- [TPathSegmentCommandInfo](/api/type-aliases/tpathsegmentcommandinfo/)
+- [TPathSegmentInfo](/api/type-aliases/tpathsegmentinfo/)
+- [TPathSegmentInfoCommon](/api/type-aliases/tpathsegmentinfocommon/)
 - [TPathSide](/api/type-aliases/tpathside/)
 - [TPipelineResources](/api/type-aliases/tpipelineresources/)
+- [TPointAngle](/api/type-aliases/tpointangle/)
 - [TPointerEvent](/api/type-aliases/tpointerevent/)
 - [TPointerEventNames](/api/type-aliases/tpointereventnames/)
 - [TProgramCache](/api/type-aliases/tprogramcache/)
+- [TQuadraticCurveCommand](/api/type-aliases/tquadraticcurvecommand/)
+- [TQuadraticCurveShortcutCommand](/api/type-aliases/tquadraticcurveshortcutcommand/)
 - [TRadian](/api/type-aliases/tradian/)
 - [Transform](/api/type-aliases/transform/)
 - [TransformAction](/api/type-aliases/transformaction/)
@@ -533,12 +242,16 @@ Re-exports [TVerticalLineCommand](/api/namespaces/util/type-aliases/tverticallin
 - [TRectBounds](/api/type-aliases/trectbounds/)
 - [TRGBAColorSource](/api/type-aliases/trgbacolorsource/)
 - [TRGBColorSource](/api/type-aliases/trgbcolorsource/)
+- [TSimpleParseCommandType](/api/type-aliases/tsimpleparsecommandtype/)
+- [TSimpleParsedCommand](/api/type-aliases/tsimpleparsedcommand/)
+- [TSimplePathData](/api/type-aliases/tsimplepathdata/)
 - [TSize](/api/type-aliases/tsize/)
 - [TSVGExportOptions](/api/type-aliases/tsvgexportoptions/)
 - [TSVGReviver](/api/type-aliases/tsvgreviver/)
 - [TTextureCache](/api/type-aliases/ttexturecache/)
 - [TToCanvasElementOptions](/api/type-aliases/ttocanvaselementoptions/)
 - [TValidToObjectMethod](/api/type-aliases/tvalidtoobjectmethod/)
+- [TVerticalLineCommand](/api/type-aliases/tverticallinecommand/)
 - [TWebGLAttributeLocationMap](/api/type-aliases/twebglattributelocationmap/)
 - [TWebGLPipelineState](/api/type-aliases/twebglpipelinestate/)
 - [TWebGLProgramCacheItem](/api/type-aliases/twebglprogramcacheitem/)
@@ -574,3 +287,21 @@ Re-exports [TVerticalLineCommand](/api/namespaces/util/type-aliases/tverticallin
 - [parseTransformAttribute](/api/functions/parsetransformattribute/)
 - [setEnv](/api/functions/setenv/)
 - [setFilterBackend](/api/functions/setfilterbackend/)
+
+## References
+
+### Image
+
+Renames and re-exports [FabricImage](/api/classes/fabricimage/)
+
+***
+
+### Object
+
+Renames and re-exports [FabricObject](/api/classes/fabricobject/)
+
+***
+
+### Text
+
+Renames and re-exports [FabricText](/api/classes/fabrictext/)

@@ -5,18 +5,24 @@ prev: false
 title: "LayoutAfterEvent"
 ---
 
-> **LayoutAfterEvent**: `object`
+> **LayoutAfterEvent** = `object`
 
-Defined in: [src/LayoutManager/types.ts:143](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/types.ts#L143)
+Defined in: [src/LayoutManager/types.ts:143](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/LayoutManager/types.ts#L143)
 
-## Type declaration
+## Properties
 
 ### context
 
 > **context**: [`StrictLayoutContext`](/api/type-aliases/strictlayoutcontext/)
 
+Defined in: [src/LayoutManager/types.ts:144](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/LayoutManager/types.ts#L144)
+
+***
+
 ### result?
 
 > `optional` **result**: [`LayoutResult`](/api/type-aliases/layoutresult/)
+
+Defined in: [src/LayoutManager/types.ts:148](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/LayoutManager/types.ts#L148)
 
 will be undefined if layout was skipped

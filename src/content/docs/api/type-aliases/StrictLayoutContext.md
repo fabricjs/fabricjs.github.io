@@ -5,9 +5,9 @@ prev: false
 title: "StrictLayoutContext"
 ---
 
-> **StrictLayoutContext**: [`LayoutContext`](/api/type-aliases/layoutcontext/) & `object`
+> **StrictLayoutContext** = [`LayoutContext`](/api/type-aliases/layoutcontext/) & `object`
 
-Defined in: [src/LayoutManager/types.ts:127](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/types.ts#L127)
+Defined in: [src/LayoutManager/types.ts:127](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/LayoutManager/types.ts#L127)
 
 ## Type declaration
 
@@ -24,6 +24,8 @@ Defined in: [src/LayoutManager/types.ts:127](https://github.com/fabricjs/fabric.
 > **strategy**: [`LayoutStrategy`](/api/classes/layoutstrategy/)
 
 ### stopPropagation()
+
+> **stopPropagation**(): `void`
 
 #### Returns
 

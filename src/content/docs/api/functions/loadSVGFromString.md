@@ -5,9 +5,9 @@ prev: false
 title: "loadSVGFromString"
 ---
 
-> **loadSVGFromString**(`string`, `reviver`?, `options`?): `Promise`\<`SVGParsingOutput`\>
+> **loadSVGFromString**(`string`, `reviver?`, `options?`): `Promise`\<`SVGParsingOutput`\>
 
-Defined in: [src/parser/loadSVGFromString.ts:20](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/parser/loadSVGFromString.ts#L20)
+Defined in: [src/parser/loadSVGFromString.ts:20](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/parser/loadSVGFromString.ts#L20)
 
 Takes string corresponding to an SVG document, and parses it into a set of fabric objects
 
@@ -29,7 +29,7 @@ or extra custom manipulation
 
 ### options?
 
-[`LoadImageOptions`](/api/namespaces/util/type-aliases/loadimageoptions/)
+[`LoadImageOptions`](/api/fabric/namespaces/util/type-aliases/loadimageoptions/)
 
 Object containing options for parsing
 

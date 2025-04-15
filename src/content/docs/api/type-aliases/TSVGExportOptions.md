@@ -5,48 +5,70 @@ prev: false
 title: "TSVGExportOptions"
 ---
 
-> **TSVGExportOptions**: `object`
+> **TSVGExportOptions** = `object`
 
-Defined in: [src/canvas/StaticCanvas.ts:62](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/canvas/StaticCanvas.ts#L62)
+Defined in: [src/canvas/StaticCanvas.ts:62](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/canvas/StaticCanvas.ts#L62)
 
-## Type declaration
+## Properties
 
 ### encoding?
 
 > `optional` **encoding**: `"UTF-8"`
 
+Defined in: [src/canvas/StaticCanvas.ts:70](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/canvas/StaticCanvas.ts#L70)
+
+***
+
 ### height?
 
 > `optional` **height**: `string`
+
+Defined in: [src/canvas/StaticCanvas.ts:72](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/canvas/StaticCanvas.ts#L72)
+
+***
 
 ### reviver?
 
 > `optional` **reviver**: [`TSVGReviver`](/api/type-aliases/tsvgreviver/)
 
+Defined in: [src/canvas/StaticCanvas.ts:73](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/canvas/StaticCanvas.ts#L73)
+
+***
+
 ### suppressPreamble?
 
 > `optional` **suppressPreamble**: `boolean`
+
+Defined in: [src/canvas/StaticCanvas.ts:63](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/canvas/StaticCanvas.ts#L63)
+
+***
 
 ### viewBox?
 
 > `optional` **viewBox**: `object`
 
-#### viewBox.height
+Defined in: [src/canvas/StaticCanvas.ts:64](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/canvas/StaticCanvas.ts#L64)
+
+#### height
 
 > **height**: `number`
 
-#### viewBox.width
+#### width
 
 > **width**: `number`
 
-#### viewBox.x
+#### x
 
 > **x**: `number`
 
-#### viewBox.y
+#### y
 
 > **y**: `number`
+
+***
 
 ### width?
 
 > `optional` **width**: `string`
+
+Defined in: [src/canvas/StaticCanvas.ts:71](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/canvas/StaticCanvas.ts#L71)

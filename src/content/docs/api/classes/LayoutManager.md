@@ -5,15 +5,15 @@ prev: false
 title: "LayoutManager"
 ---
 
-Defined in: [src/LayoutManager/LayoutManager.ts:45](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/LayoutManager.ts#L45)
+Defined in: [src/LayoutManager/LayoutManager.ts:45](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/LayoutManager/LayoutManager.ts#L45)
 
 ## Constructors
 
-### new LayoutManager()
+### Constructor
 
-> **new LayoutManager**(`strategy`): [`LayoutManager`](/api/classes/layoutmanager/)
+> **new LayoutManager**(`strategy`): `LayoutManager`
 
-Defined in: [src/LayoutManager/LayoutManager.ts:51](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/LayoutManager.ts#L51)
+Defined in: [src/LayoutManager/LayoutManager.ts:51](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/LayoutManager/LayoutManager.ts#L51)
 
 #### Parameters
 
@@ -23,7 +23,7 @@ Defined in: [src/LayoutManager/LayoutManager.ts:51](https://github.com/fabricjs/
 
 #### Returns
 
-[`LayoutManager`](/api/classes/layoutmanager/)
+`LayoutManager`
 
 ## Properties
 
@@ -31,7 +31,7 @@ Defined in: [src/LayoutManager/LayoutManager.ts:51](https://github.com/fabricjs/
 
 > **strategy**: [`LayoutStrategy`](/api/classes/layoutstrategy/)
 
-Defined in: [src/LayoutManager/LayoutManager.ts:49](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/LayoutManager.ts#L49)
+Defined in: [src/LayoutManager/LayoutManager.ts:49](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/LayoutManager/LayoutManager.ts#L49)
 
 ## Methods
 
@@ -39,7 +39,7 @@ Defined in: [src/LayoutManager/LayoutManager.ts:49](https://github.com/fabricjs/
 
 > **dispose**(): `void`
 
-Defined in: [src/LayoutManager/LayoutManager.ts:340](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/LayoutManager.ts#L340)
+Defined in: [src/LayoutManager/LayoutManager.ts:340](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/LayoutManager/LayoutManager.ts#L340)
 
 #### Returns
 
@@ -51,7 +51,7 @@ Defined in: [src/LayoutManager/LayoutManager.ts:340](https://github.com/fabricjs
 
 > **performLayout**(`context`): `void`
 
-Defined in: [src/LayoutManager/LayoutManager.ts:56](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/LayoutManager.ts#L56)
+Defined in: [src/LayoutManager/LayoutManager.ts:56](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/LayoutManager/LayoutManager.ts#L56)
 
 #### Parameters
 
@@ -69,7 +69,7 @@ Defined in: [src/LayoutManager/LayoutManager.ts:56](https://github.com/fabricjs/
 
 > **subscribeTargets**(`context`): `void`
 
-Defined in: [src/LayoutManager/LayoutManager.ts:156](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/LayoutManager.ts#L156)
+Defined in: [src/LayoutManager/LayoutManager.ts:156](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/LayoutManager/LayoutManager.ts#L156)
 
 #### Parameters
 
@@ -87,7 +87,7 @@ Defined in: [src/LayoutManager/LayoutManager.ts:156](https://github.com/fabricjs
 
 > **toJSON**(): `object`
 
-Defined in: [src/LayoutManager/LayoutManager.ts:353](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/LayoutManager.ts#L353)
+Defined in: [src/LayoutManager/LayoutManager.ts:353](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/LayoutManager/LayoutManager.ts#L353)
 
 #### Returns
 
@@ -107,7 +107,7 @@ Defined in: [src/LayoutManager/LayoutManager.ts:353](https://github.com/fabricjs
 
 > **toObject**(): `object`
 
-Defined in: [src/LayoutManager/LayoutManager.ts:346](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/LayoutManager.ts#L346)
+Defined in: [src/LayoutManager/LayoutManager.ts:346](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/LayoutManager/LayoutManager.ts#L346)
 
 #### Returns
 
@@ -127,7 +127,7 @@ Defined in: [src/LayoutManager/LayoutManager.ts:346](https://github.com/fabricjs
 
 > **unsubscribeTargets**(`context`): `void`
 
-Defined in: [src/LayoutManager/LayoutManager.ts:150](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/LayoutManager/LayoutManager.ts#L150)
+Defined in: [src/LayoutManager/LayoutManager.ts:150](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/LayoutManager/LayoutManager.ts#L150)
 
 #### Parameters
 

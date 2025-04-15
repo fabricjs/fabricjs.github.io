@@ -5,9 +5,9 @@ prev: false
 title: "getFilterBackend"
 ---
 
-> **getFilterBackend**(`strict`?): `FilterBackend`
+> **getFilterBackend**(`strict?`): `FilterBackend`
 
-Defined in: [src/filters/FilterBackend.ts:29](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/filters/FilterBackend.ts#L29)
+Defined in: [src/filters/FilterBackend.ts:29](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/filters/FilterBackend.ts#L29)
 
 Get the current fabricJS filter backend  or initialize one if not available yet
 

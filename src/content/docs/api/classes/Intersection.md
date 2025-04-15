@@ -5,15 +5,15 @@ prev: false
 title: "Intersection"
 ---
 
-Defined in: [src/Intersection.ts:8](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Intersection.ts#L8)
+Defined in: [src/Intersection.ts:8](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/Intersection.ts#L8)
 
 ## Constructors
 
-### new Intersection()
+### Constructor
 
-> **new Intersection**(`status`?): [`Intersection`](/api/classes/intersection/)
+> **new Intersection**(`status?`): `Intersection`
 
-Defined in: [src/Intersection.ts:13](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Intersection.ts#L13)
+Defined in: [src/Intersection.ts:13](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/Intersection.ts#L13)
 
 #### Parameters
 
@@ -23,7 +23,7 @@ Defined in: [src/Intersection.ts:13](https://github.com/fabricjs/fabric.js/blob/
 
 #### Returns
 
-[`Intersection`](/api/classes/intersection/)
+`Intersection`
 
 ## Properties
 
@@ -31,7 +31,7 @@ Defined in: [src/Intersection.ts:13](https://github.com/fabricjs/fabric.js/blob/
 
 > **points**: [`Point`](/api/classes/point/)[]
 
-Defined in: [src/Intersection.ts:9](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Intersection.ts#L9)
+Defined in: [src/Intersection.ts:9](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/Intersection.ts#L9)
 
 ***
 
@@ -39,15 +39,15 @@ Defined in: [src/Intersection.ts:9](https://github.com/fabricjs/fabric.js/blob/8
 
 > `optional` **status**: [`IntersectionType`](/api/type-aliases/intersectiontype/)
 
-Defined in: [src/Intersection.ts:11](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Intersection.ts#L11)
+Defined in: [src/Intersection.ts:11](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/Intersection.ts#L11)
 
 ## Methods
 
 ### intersectLineLine()
 
-> `static` **intersectLineLine**(`a1`, `a2`, `b1`, `b2`, `aInfinite`?, `bInfinite`?): [`Intersection`](/api/classes/intersection/)
+> `static` **intersectLineLine**(`a1`, `a2`, `b1`, `b2`, `aInfinite?`, `bInfinite?`): `Intersection`
 
-Defined in: [src/Intersection.ts:127](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Intersection.ts#L127)
+Defined in: [src/Intersection.ts:127](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/Intersection.ts#L127)
 
 Checks if a line intersects another
 
@@ -83,7 +83,7 @@ check segment intersection by passing `false`
 
 #### Returns
 
-[`Intersection`](/api/classes/intersection/)
+`Intersection`
 
 #### See
 
@@ -96,9 +96,9 @@ check segment intersection by passing `false`
 
 ### intersectLinePolygon()
 
-> `static` **intersectLinePolygon**(`a1`, `a2`, `points`, `infinite`?): [`Intersection`](/api/classes/intersection/)
+> `static` **intersectLinePolygon**(`a1`, `a2`, `points`, `infinite?`): `Intersection`
 
-Defined in: [src/Intersection.ts:224](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Intersection.ts#L224)
+Defined in: [src/Intersection.ts:224](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/Intersection.ts#L224)
 
 Checks if line intersects polygon
 
@@ -130,7 +130,7 @@ check segment intersection by passing `false`
 
 #### Returns
 
-[`Intersection`](/api/classes/intersection/)
+`Intersection`
 
 #### Todo
 
@@ -140,15 +140,15 @@ account for stroke
 
 #### See
 
-[intersectSegmentPolygon](../../../../api/classes/intersection/#intersectsegmentpolygon) for segment intersection
+[intersectSegmentPolygon](/api/classes/intersection/#intersectsegmentpolygon) for segment intersection
 
 ***
 
 ### intersectPolygonPolygon()
 
-> `static` **intersectPolygonPolygon**(`points1`, `points2`): [`Intersection`](/api/classes/intersection/)
+> `static` **intersectPolygonPolygon**(`points1`, `points2`): `Intersection`
 
-Defined in: [src/Intersection.ts:277](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Intersection.ts#L277)
+Defined in: [src/Intersection.ts:277](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/Intersection.ts#L277)
 
 Checks if polygon intersects another polygon
 
@@ -164,7 +164,7 @@ Checks if polygon intersects another polygon
 
 #### Returns
 
-[`Intersection`](/api/classes/intersection/)
+`Intersection`
 
 #### Todo
 
@@ -176,9 +176,9 @@ account for stroke
 
 ### intersectPolygonRectangle()
 
-> `static` **intersectPolygonRectangle**(`points`, `r1`, `r2`): [`Intersection`](/api/classes/intersection/)
+> `static` **intersectPolygonRectangle**(`points`, `r1`, `r2`): `Intersection`
 
-Defined in: [src/Intersection.ts:315](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Intersection.ts#L315)
+Defined in: [src/Intersection.ts:315](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/Intersection.ts#L315)
 
 Checks if polygon intersects rectangle
 
@@ -204,21 +204,21 @@ bottom right point of rect
 
 #### Returns
 
-[`Intersection`](/api/classes/intersection/)
+`Intersection`
 
 #### Static
 
 #### See
 
-[intersectPolygonPolygon](../../../../api/classes/intersection/#intersectpolygonpolygon) for polygon intersection
+[intersectPolygonPolygon](/api/classes/intersection/#intersectpolygonpolygon) for polygon intersection
 
 ***
 
 ### intersectSegmentLine()
 
-> `static` **intersectSegmentLine**(`s1`, `s2`, `l1`, `l2`): [`Intersection`](/api/classes/intersection/)
+> `static` **intersectSegmentLine**(`s1`, `s2`, `l1`, `l2`): `Intersection`
 
-Defined in: [src/Intersection.ts:183](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Intersection.ts#L183)
+Defined in: [src/Intersection.ts:183](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/Intersection.ts#L183)
 
 Checks if a segment intersects a line
 
@@ -250,11 +250,11 @@ other point on line
 
 #### Returns
 
-[`Intersection`](/api/classes/intersection/)
+`Intersection`
 
 #### See
 
-[intersectLineLine](../../../../api/classes/intersection/#intersectlineline) for line intersection
+[intersectLineLine](/api/classes/intersection/#intersectlineline) for line intersection
 
 #### Static
 
@@ -262,9 +262,9 @@ other point on line
 
 ### intersectSegmentPolygon()
 
-> `static` **intersectSegmentPolygon**(`a1`, `a2`, `points`): [`Intersection`](/api/classes/intersection/)
+> `static` **intersectSegmentPolygon**(`a1`, `a2`, `points`): `Intersection`
 
-Defined in: [src/Intersection.ts:259](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Intersection.ts#L259)
+Defined in: [src/Intersection.ts:259](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/Intersection.ts#L259)
 
 Checks if segment intersects polygon
 
@@ -290,21 +290,21 @@ polygon points
 
 #### Returns
 
-[`Intersection`](/api/classes/intersection/)
+`Intersection`
 
 #### Static
 
 #### See
 
-[intersectLinePolygon](../../../../api/classes/intersection/#intersectlinepolygon) for line intersection
+[intersectLinePolygon](/api/classes/intersection/#intersectlinepolygon) for line intersection
 
 ***
 
 ### intersectSegmentSegment()
 
-> `static` **intersectSegmentSegment**(`a1`, `a2`, `b1`, `b2`): [`Intersection`](/api/classes/intersection/)
+> `static` **intersectSegmentSegment**(`a1`, `a2`, `b1`, `b2`): `Intersection`
 
-Defined in: [src/Intersection.ts:202](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Intersection.ts#L202)
+Defined in: [src/Intersection.ts:202](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/Intersection.ts#L202)
 
 Checks if a segment intersects another
 
@@ -336,11 +336,11 @@ other boundary point of segment
 
 #### Returns
 
-[`Intersection`](/api/classes/intersection/)
+`Intersection`
 
 #### See
 
-[intersectLineLine](../../../../api/classes/intersection/#intersectlineline) for line intersection
+[intersectLineLine](/api/classes/intersection/#intersectlineline) for line intersection
 
 #### Static
 
@@ -348,9 +348,9 @@ other boundary point of segment
 
 ### isPointContained()
 
-> `static` **isPointContained**(`T`, `A`, `B`, `infinite`?): `boolean`
+> `static` **isPointContained**(`T`, `A`, `B`, `infinite?`): `boolean`
 
-Defined in: [src/Intersection.ts:51](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Intersection.ts#L51)
+Defined in: [src/Intersection.ts:51](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/Intersection.ts#L51)
 
 check if point T is on the segment or line defined between A and B
 
@@ -392,9 +392,9 @@ true if `T` is contained
 
 > `static` **isPointInPolygon**(`point`, `points`): `boolean`
 
-Defined in: [src/Intersection.ts:91](https://github.com/fabricjs/fabric.js/blob/8748628df7e9de00ba77413bfc3ad9e9fe9d4f30/src/Intersection.ts#L91)
+Defined in: [src/Intersection.ts:91](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/Intersection.ts#L91)
 
-Use the ray casting algorithm to determine if [point](../../../../api/classes/intersection/#point) is in the polygon defined by [points](../../../../api/classes/intersection/#points-4)
+Use the ray casting algorithm to determine if [Point](/api/classes/point/) is in the polygon defined by [points][Point](/api/classes/point/)
 
 #### Parameters
 
