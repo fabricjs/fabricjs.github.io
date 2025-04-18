@@ -5,7 +5,7 @@ prev: false
 title: "RemoveColor"
 ---
 
-Defined in: [src/filters/RemoveColor.ts:29](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/filters/RemoveColor.ts#L29)
+Defined in: [src/filters/RemoveColor.ts:29](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/RemoveColor.ts#L29)
 
 Remove white filter class
 
@@ -30,7 +30,7 @@ canvas.renderAll();
 
 > **new RemoveColor**(`options?`): `RemoveColor`
 
-Defined in: [src/filters/BaseFilter.ts:57](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/filters/BaseFilter.ts#L57)
+Defined in: [src/filters/BaseFilter.ts:57](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/BaseFilter.ts#L57)
 
 Constructor
 
@@ -56,7 +56,7 @@ Options object
 
 > **color**: `string`
 
-Defined in: [src/filters/RemoveColor.ts:38](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/filters/RemoveColor.ts#L38)
+Defined in: [src/filters/RemoveColor.ts:38](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/RemoveColor.ts#L38)
 
 Color to remove, in any format understood by [Color](/api/classes/color/).
 
@@ -74,7 +74,7 @@ Color to remove, in any format understood by [Color](/api/classes/color/).
 
 > **distance**: `number`
 
-Defined in: [src/filters/RemoveColor.ts:44](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/filters/RemoveColor.ts#L44)
+Defined in: [src/filters/RemoveColor.ts:44](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/RemoveColor.ts#L44)
 
 distance to actual color, as value up or down from each r,g,b
 between 0 and 1
@@ -85,7 +85,7 @@ between 0 and 1
 
 > **useAlpha**: `boolean`
 
-Defined in: [src/filters/RemoveColor.ts:50](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/filters/RemoveColor.ts#L50)
+Defined in: [src/filters/RemoveColor.ts:50](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/RemoveColor.ts#L50)
 
 For color to remove inside distance, use alpha channel for a smoother deletion
 NOT IMPLEMENTED YET
@@ -96,7 +96,7 @@ NOT IMPLEMENTED YET
 
 > `static` **defaults**: `RemoveColorOwnProps` = `removeColorDefaultValues`
 
-Defined in: [src/filters/RemoveColor.ts:54](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/filters/RemoveColor.ts#L54)
+Defined in: [src/filters/RemoveColor.ts:54](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/RemoveColor.ts#L54)
 
 #### Overrides
 
@@ -108,7 +108,7 @@ Defined in: [src/filters/RemoveColor.ts:54](https://github.com/fabricjs/fabric.j
 
 > `static` **type**: `string` = `'RemoveColor'`
 
-Defined in: [src/filters/RemoveColor.ts:52](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/filters/RemoveColor.ts#L52)
+Defined in: [src/filters/RemoveColor.ts:52](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/RemoveColor.ts#L52)
 
 The class type. Used to identify which class this is.
 This is used for serialization purposes and internally it can be used
@@ -126,7 +126,7 @@ to avoid doing that.
 
 > `static` **uniformLocations**: `string`[]
 
-Defined in: [src/filters/RemoveColor.ts:56](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/filters/RemoveColor.ts#L56)
+Defined in: [src/filters/RemoveColor.ts:56](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/RemoveColor.ts#L56)
 
 Contains the uniform locations for the fragment shader.
 uStepW and uStepH are handled by the BaseFilter, each filter class
@@ -144,7 +144,7 @@ needs to specify all the one that are needed
 
 > **get** **type**(): `Name`
 
-Defined in: [src/filters/BaseFilter.ts:31](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/filters/BaseFilter.ts#L31)
+Defined in: [src/filters/BaseFilter.ts:31](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/BaseFilter.ts#L31)
 
 Filter type
 
@@ -168,7 +168,7 @@ Filter type
 
 > **\_setupFrameBuffer**(`options`): `void`
 
-Defined in: [src/filters/BaseFilter.ts:205](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/filters/BaseFilter.ts#L205)
+Defined in: [src/filters/BaseFilter.ts:205](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/BaseFilter.ts#L205)
 
 #### Parameters
 
@@ -190,7 +190,7 @@ Defined in: [src/filters/BaseFilter.ts:205](https://github.com/fabricjs/fabric.j
 
 > **\_swapTextures**(`options`): `void`
 
-Defined in: [src/filters/BaseFilter.ts:232](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/filters/BaseFilter.ts#L232)
+Defined in: [src/filters/BaseFilter.ts:232](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/BaseFilter.ts#L232)
 
 #### Parameters
 
@@ -212,7 +212,7 @@ Defined in: [src/filters/BaseFilter.ts:232](https://github.com/fabricjs/fabric.j
 
 > **applyTo**(`options`): `void`
 
-Defined in: [src/filters/BaseFilter.ts:265](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/filters/BaseFilter.ts#L265)
+Defined in: [src/filters/BaseFilter.ts:265](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/BaseFilter.ts#L265)
 
 Apply this filter to the input image data provided.
 
@@ -238,7 +238,7 @@ Determines whether to use WebGL or Canvas2D based on the options.webgl flag.
 
 > **applyTo2d**(`canvasEl`): `void`
 
-Defined in: [src/filters/RemoveColor.ts:66](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/filters/RemoveColor.ts#L66)
+Defined in: [src/filters/RemoveColor.ts:66](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/RemoveColor.ts#L66)
 
 Applies filter to canvas element
 
@@ -264,7 +264,7 @@ Canvas element to apply filter to
 
 > **applyToWebGL**(`options`): `void`
 
-Defined in: [src/filters/BaseFilter.ts:315](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/filters/BaseFilter.ts#L315)
+Defined in: [src/filters/BaseFilter.ts:315](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/BaseFilter.ts#L315)
 
 Apply this filter using webgl.
 
@@ -288,7 +288,7 @@ Apply this filter using webgl.
 
 > **bindAdditionalTexture**(`gl`, `texture`, `textureUnit`): `void`
 
-Defined in: [src/filters/BaseFilter.ts:334](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/filters/BaseFilter.ts#L334)
+Defined in: [src/filters/BaseFilter.ts:334](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/BaseFilter.ts#L334)
 
 #### Parameters
 
@@ -318,7 +318,7 @@ Defined in: [src/filters/BaseFilter.ts:334](https://github.com/fabricjs/fabric.j
 
 > **createHelpLayer**(`options`): `void`
 
-Defined in: [src/filters/BaseFilter.ts:370](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/filters/BaseFilter.ts#L370)
+Defined in: [src/filters/BaseFilter.ts:370](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/BaseFilter.ts#L370)
 
 If needed by a 2d filter, this functions can create an helper canvas to be used
 remember that options.targetCanvas is available for use till end of chain.
@@ -343,7 +343,7 @@ remember that options.targetCanvas is available for use till end of chain.
 
 > **createProgram**(`gl`, `fragmentSource`, `vertexSource`): `object`
 
-Defined in: [src/filters/BaseFilter.ts:83](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/filters/BaseFilter.ts#L83)
+Defined in: [src/filters/BaseFilter.ts:83](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/BaseFilter.ts#L83)
 
 Compile this filter's shader program.
 
@@ -393,7 +393,7 @@ vertexShader source for compilation
 
 > **getAttributeLocations**(`gl`, `program`): [`TWebGLAttributeLocationMap`](/api/type-aliases/twebglattributelocationmap/)
 
-Defined in: [src/filters/BaseFilter.ts:153](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/filters/BaseFilter.ts#L153)
+Defined in: [src/filters/BaseFilter.ts:153](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/BaseFilter.ts#L153)
 
 Return a map of attribute names to WebGLAttributeLocation objects.
 
@@ -427,7 +427,7 @@ A map of attribute names to attribute locations.
 
 > **getCacheKey**(): `string`
 
-Defined in: [src/filters/BaseFilter.ts:284](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/filters/BaseFilter.ts#L284)
+Defined in: [src/filters/BaseFilter.ts:284](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/BaseFilter.ts#L284)
 
 Returns a string that represent the current selected shader code for the filter.
 Used to force recompilation when parameters change or to retrieve the shader from cache
@@ -446,7 +446,7 @@ Used to force recompilation when parameters change or to retrieve the shader fro
 
 > **getFragmentSource**(): `string`
 
-Defined in: [src/filters/RemoveColor.ts:58](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/filters/RemoveColor.ts#L58)
+Defined in: [src/filters/RemoveColor.ts:58](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/RemoveColor.ts#L58)
 
 #### Returns
 
@@ -462,7 +462,7 @@ Defined in: [src/filters/RemoveColor.ts:58](https://github.com/fabricjs/fabric.j
 
 > **getUniformLocations**(`gl`, `program`): [`TWebGLUniformLocationMap`](/api/type-aliases/twebgluniformlocationmap/)
 
-Defined in: [src/filters/BaseFilter.ts:169](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/filters/BaseFilter.ts#L169)
+Defined in: [src/filters/BaseFilter.ts:169](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/BaseFilter.ts#L169)
 
 Return a map of uniform names to WebGLUniformLocation objects.
 
@@ -496,7 +496,7 @@ A map of uniform names to uniform locations.
 
 > **getVertexSource**(): `string`
 
-Defined in: [src/filters/BaseFilter.ts:72](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/filters/BaseFilter.ts#L72)
+Defined in: [src/filters/BaseFilter.ts:72](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/BaseFilter.ts#L72)
 
 #### Returns
 
@@ -512,7 +512,7 @@ Defined in: [src/filters/BaseFilter.ts:72](https://github.com/fabricjs/fabric.js
 
 > **isNeutralState**(`options?`): `boolean`
 
-Defined in: [src/filters/BaseFilter.ts:248](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/filters/BaseFilter.ts#L248)
+Defined in: [src/filters/BaseFilter.ts:248](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/BaseFilter.ts#L248)
 
 Generic isNeutral implementation for one parameter based filters.
 Used only in image applyFilters to discard filters that will not have an effect
@@ -539,7 +539,7 @@ Other filters may need their own version ( ColorMatrix, HueRotation, gamma, Comp
 
 > **retrieveShader**(`options`): [`TWebGLProgramCacheItem`](/api/type-aliases/twebglprogramcacheitem/)
 
-Defined in: [src/filters/BaseFilter.ts:295](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/filters/BaseFilter.ts#L295)
+Defined in: [src/filters/BaseFilter.ts:295](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/BaseFilter.ts#L295)
 
 Retrieves the cached shader.
 
@@ -565,7 +565,7 @@ the compiled program shader
 
 > **sendAttributeData**(`gl`, `attributeLocations`, `aPositionData`): `void`
 
-Defined in: [src/filters/BaseFilter.ts:192](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/filters/BaseFilter.ts#L192)
+Defined in: [src/filters/BaseFilter.ts:192](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/BaseFilter.ts#L192)
 
 Send attribute data from this filter to its shader program on the GPU.
 
@@ -601,7 +601,7 @@ A map of shader attribute names to their locations.
 
 > **sendUniformData**(`gl`, `uniformLocations`): `void`
 
-Defined in: [src/filters/RemoveColor.ts:100](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/filters/RemoveColor.ts#L100)
+Defined in: [src/filters/RemoveColor.ts:100](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/RemoveColor.ts#L100)
 
 Send data from this filter to its shader program's uniforms.
 
@@ -633,7 +633,7 @@ A map of string uniform names to WebGLUniformLocation objects
 
 > **toJSON**(): `object` & `RemoveColorOwnProps`
 
-Defined in: [src/filters/BaseFilter.ts:407](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/filters/BaseFilter.ts#L407)
+Defined in: [src/filters/BaseFilter.ts:407](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/BaseFilter.ts#L407)
 
 Returns a JSON representation of an instance
 
@@ -653,7 +653,7 @@ JSON
 
 > **toObject**(): `object` & `RemoveColorOwnProps`
 
-Defined in: [src/filters/BaseFilter.ts:387](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/filters/BaseFilter.ts#L387)
+Defined in: [src/filters/BaseFilter.ts:387](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/BaseFilter.ts#L387)
 
 Returns object representation of an instance
 It will automatically export the default values of a filter,
@@ -675,7 +675,7 @@ Object representation of an instance
 
 > **unbindAdditionalTexture**(`gl`, `textureUnit`): `void`
 
-Defined in: [src/filters/BaseFilter.ts:345](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/filters/BaseFilter.ts#L345)
+Defined in: [src/filters/BaseFilter.ts:345](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/BaseFilter.ts#L345)
 
 #### Parameters
 
@@ -701,7 +701,7 @@ Defined in: [src/filters/BaseFilter.ts:345](https://github.com/fabricjs/fabric.j
 
 > `static` **fromObject**(`__namedParameters`, `_options`): `Promise`\<[`BaseFilter`](/api/fabric/namespaces/filters/classes/basefilter/)\<`string`, `object`, `object`\>\>
 
-Defined in: [src/filters/BaseFilter.ts:412](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/filters/BaseFilter.ts#L412)
+Defined in: [src/filters/BaseFilter.ts:412](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/BaseFilter.ts#L412)
 
 #### Parameters
 

@@ -7,7 +7,7 @@ title: "SerializedShadowOptions"
 
 > **SerializedShadowOptions** = `object`
 
-Defined in: [src/Shadow.ts:53](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/Shadow.ts#L53)
+Defined in: [src/Shadow.ts:53](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/Shadow.ts#L53)
 
 ## Properties
 
@@ -15,7 +15,7 @@ Defined in: [src/Shadow.ts:53](https://github.com/fabricjs/fabric.js/blob/b4f67b
 
 > **affectStroke**: `boolean`
 
-Defined in: [src/Shadow.ts:58](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/Shadow.ts#L58)
+Defined in: [src/Shadow.ts:58](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/Shadow.ts#L58)
 
 ***
 
@@ -23,7 +23,7 @@ Defined in: [src/Shadow.ts:58](https://github.com/fabricjs/fabric.js/blob/b4f67b
 
 > **blur**: `number`
 
-Defined in: [src/Shadow.ts:55](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/Shadow.ts#L55)
+Defined in: [src/Shadow.ts:55](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/Shadow.ts#L55)
 
 ***
 
@@ -31,7 +31,7 @@ Defined in: [src/Shadow.ts:55](https://github.com/fabricjs/fabric.js/blob/b4f67b
 
 > **color**: `string`
 
-Defined in: [src/Shadow.ts:54](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/Shadow.ts#L54)
+Defined in: [src/Shadow.ts:54](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/Shadow.ts#L54)
 
 ***
 
@@ -39,7 +39,7 @@ Defined in: [src/Shadow.ts:54](https://github.com/fabricjs/fabric.js/blob/b4f67b
 
 > **nonScaling**: `boolean`
 
-Defined in: [src/Shadow.ts:59](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/Shadow.ts#L59)
+Defined in: [src/Shadow.ts:59](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/Shadow.ts#L59)
 
 ***
 
@@ -47,7 +47,7 @@ Defined in: [src/Shadow.ts:59](https://github.com/fabricjs/fabric.js/blob/b4f67b
 
 > **offsetX**: `number`
 
-Defined in: [src/Shadow.ts:56](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/Shadow.ts#L56)
+Defined in: [src/Shadow.ts:56](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/Shadow.ts#L56)
 
 ***
 
@@ -55,7 +55,7 @@ Defined in: [src/Shadow.ts:56](https://github.com/fabricjs/fabric.js/blob/b4f67b
 
 > **offsetY**: `number`
 
-Defined in: [src/Shadow.ts:57](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/Shadow.ts#L57)
+Defined in: [src/Shadow.ts:57](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/Shadow.ts#L57)
 
 ***
 
@@ -63,4 +63,4 @@ Defined in: [src/Shadow.ts:57](https://github.com/fabricjs/fabric.js/blob/b4f67b
 
 > **type**: `string`
 
-Defined in: [src/Shadow.ts:60](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/Shadow.ts#L60)
+Defined in: [src/Shadow.ts:60](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/Shadow.ts#L60)

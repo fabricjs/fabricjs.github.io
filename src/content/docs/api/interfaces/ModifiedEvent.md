@@ -5,7 +5,7 @@ prev: false
 title: "ModifiedEvent"
 ---
 
-Defined in: [src/EventTypeDefs.ts:118](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/EventTypeDefs.ts#L118)
+Defined in: [src/EventTypeDefs.ts:118](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/EventTypeDefs.ts#L118)
 
 ## Type Parameters
 
@@ -19,7 +19,7 @@ Defined in: [src/EventTypeDefs.ts:118](https://github.com/fabricjs/fabric.js/blo
 
 > `optional` **action**: `string`
 
-Defined in: [src/EventTypeDefs.ts:122](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/EventTypeDefs.ts#L122)
+Defined in: [src/EventTypeDefs.ts:122](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/EventTypeDefs.ts#L122)
 
 ***
 
@@ -27,7 +27,7 @@ Defined in: [src/EventTypeDefs.ts:122](https://github.com/fabricjs/fabric.js/blo
 
 > `optional` **e**: `E`
 
-Defined in: [src/EventTypeDefs.ts:119](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/EventTypeDefs.ts#L119)
+Defined in: [src/EventTypeDefs.ts:119](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/EventTypeDefs.ts#L119)
 
 ***
 
@@ -35,7 +35,7 @@ Defined in: [src/EventTypeDefs.ts:119](https://github.com/fabricjs/fabric.js/blo
 
 > **target**: [`FabricObject`](/api/classes/fabricobject/)
 
-Defined in: [src/EventTypeDefs.ts:121](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/EventTypeDefs.ts#L121)
+Defined in: [src/EventTypeDefs.ts:121](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/EventTypeDefs.ts#L121)
 
 ***
 
@@ -43,4 +43,4 @@ Defined in: [src/EventTypeDefs.ts:121](https://github.com/fabricjs/fabric.js/blo
 
 > `optional` **transform**: [`Transform`](/api/type-aliases/transform/)
 
-Defined in: [src/EventTypeDefs.ts:120](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/EventTypeDefs.ts#L120)
+Defined in: [src/EventTypeDefs.ts:120](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/EventTypeDefs.ts#L120)

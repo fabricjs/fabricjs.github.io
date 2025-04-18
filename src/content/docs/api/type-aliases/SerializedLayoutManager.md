@@ -7,7 +7,7 @@ title: "SerializedLayoutManager"
 
 > **SerializedLayoutManager** = `object`
 
-Defined in: [src/LayoutManager/LayoutManager.ts:40](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/LayoutManager/LayoutManager.ts#L40)
+Defined in: [src/LayoutManager/LayoutManager.ts:40](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/LayoutManager/LayoutManager.ts#L40)
 
 ## Properties
 
@@ -15,7 +15,7 @@ Defined in: [src/LayoutManager/LayoutManager.ts:40](https://github.com/fabricjs/
 
 > **strategy**: `string`
 
-Defined in: [src/LayoutManager/LayoutManager.ts:42](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/LayoutManager/LayoutManager.ts#L42)
+Defined in: [src/LayoutManager/LayoutManager.ts:42](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/LayoutManager/LayoutManager.ts#L42)
 
 ***
 
@@ -23,4 +23,4 @@ Defined in: [src/LayoutManager/LayoutManager.ts:42](https://github.com/fabricjs/
 
 > **type**: `string`
 
-Defined in: [src/LayoutManager/LayoutManager.ts:41](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/LayoutManager/LayoutManager.ts#L41)
+Defined in: [src/LayoutManager/LayoutManager.ts:41](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/LayoutManager/LayoutManager.ts#L41)

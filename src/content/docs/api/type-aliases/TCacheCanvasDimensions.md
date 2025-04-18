@@ -7,7 +7,7 @@ title: "TCacheCanvasDimensions"
 
 > **TCacheCanvasDimensions** = `object`
 
-Defined in: [src/typedefs.ts:93](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/typedefs.ts#L93)
+Defined in: [src/typedefs.ts:93](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/typedefs.ts#L93)
 
 ## Properties
 
@@ -15,7 +15,7 @@ Defined in: [src/typedefs.ts:93](https://github.com/fabricjs/fabric.js/blob/b4f6
 
 > **height**: `number`
 
-Defined in: [src/typedefs.ts:95](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/typedefs.ts#L95)
+Defined in: [src/typedefs.ts:95](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/typedefs.ts#L95)
 
 ***
 
@@ -23,7 +23,7 @@ Defined in: [src/typedefs.ts:95](https://github.com/fabricjs/fabric.js/blob/b4f6
 
 > **width**: `number`
 
-Defined in: [src/typedefs.ts:94](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/typedefs.ts#L94)
+Defined in: [src/typedefs.ts:94](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/typedefs.ts#L94)
 
 ***
 
@@ -31,7 +31,7 @@ Defined in: [src/typedefs.ts:94](https://github.com/fabricjs/fabric.js/blob/b4f6
 
 > **x**: `number`
 
-Defined in: [src/typedefs.ts:98](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/typedefs.ts#L98)
+Defined in: [src/typedefs.ts:98](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/typedefs.ts#L98)
 
 ***
 
@@ -39,7 +39,7 @@ Defined in: [src/typedefs.ts:98](https://github.com/fabricjs/fabric.js/blob/b4f6
 
 > **y**: `number`
 
-Defined in: [src/typedefs.ts:99](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/typedefs.ts#L99)
+Defined in: [src/typedefs.ts:99](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/typedefs.ts#L99)
 
 ***
 
@@ -47,7 +47,7 @@ Defined in: [src/typedefs.ts:99](https://github.com/fabricjs/fabric.js/blob/b4f6
 
 > **zoomX**: `number`
 
-Defined in: [src/typedefs.ts:96](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/typedefs.ts#L96)
+Defined in: [src/typedefs.ts:96](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/typedefs.ts#L96)
 
 ***
 
@@ -55,4 +55,4 @@ Defined in: [src/typedefs.ts:96](https://github.com/fabricjs/fabric.js/blob/b4f6
 
 > **zoomY**: `number`
 
-Defined in: [src/typedefs.ts:97](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/typedefs.ts#L97)
+Defined in: [src/typedefs.ts:97](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/typedefs.ts#L97)

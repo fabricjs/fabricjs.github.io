@@ -7,7 +7,7 @@ title: "CursorRenderingData"
 
 > **CursorRenderingData** = `object`
 
-Defined in: [src/shapes/IText/IText.ts:32](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/shapes/IText/IText.ts#L32)
+Defined in: [src/shapes/IText/IText.ts:32](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/shapes/IText/IText.ts#L32)
 
 ## Properties
 
@@ -15,7 +15,7 @@ Defined in: [src/shapes/IText/IText.ts:32](https://github.com/fabricjs/fabric.js
 
 > **color**: `string`
 
-Defined in: [src/shapes/IText/IText.ts:33](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/shapes/IText/IText.ts#L33)
+Defined in: [src/shapes/IText/IText.ts:33](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/shapes/IText/IText.ts#L33)
 
 ***
 
@@ -23,7 +23,7 @@ Defined in: [src/shapes/IText/IText.ts:33](https://github.com/fabricjs/fabric.js
 
 > **height**: `number`
 
-Defined in: [src/shapes/IText/IText.ts:38](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/shapes/IText/IText.ts#L38)
+Defined in: [src/shapes/IText/IText.ts:38](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/shapes/IText/IText.ts#L38)
 
 ***
 
@@ -31,7 +31,7 @@ Defined in: [src/shapes/IText/IText.ts:38](https://github.com/fabricjs/fabric.js
 
 > **left**: `number`
 
-Defined in: [src/shapes/IText/IText.ts:35](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/shapes/IText/IText.ts#L35)
+Defined in: [src/shapes/IText/IText.ts:35](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/shapes/IText/IText.ts#L35)
 
 ***
 
@@ -39,7 +39,7 @@ Defined in: [src/shapes/IText/IText.ts:35](https://github.com/fabricjs/fabric.js
 
 > **opacity**: `number`
 
-Defined in: [src/shapes/IText/IText.ts:34](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/shapes/IText/IText.ts#L34)
+Defined in: [src/shapes/IText/IText.ts:34](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/shapes/IText/IText.ts#L34)
 
 ***
 
@@ -47,7 +47,7 @@ Defined in: [src/shapes/IText/IText.ts:34](https://github.com/fabricjs/fabric.js
 
 > **top**: `number`
 
-Defined in: [src/shapes/IText/IText.ts:36](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/shapes/IText/IText.ts#L36)
+Defined in: [src/shapes/IText/IText.ts:36](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/shapes/IText/IText.ts#L36)
 
 ***
 
@@ -55,4 +55,4 @@ Defined in: [src/shapes/IText/IText.ts:36](https://github.com/fabricjs/fabric.js
 
 > **width**: `number`
 
-Defined in: [src/shapes/IText/IText.ts:37](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/shapes/IText/IText.ts#L37)
+Defined in: [src/shapes/IText/IText.ts:37](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/shapes/IText/IText.ts#L37)

@@ -7,7 +7,7 @@ title: "GradientOptions"
 
 > **GradientOptions**\<`T`\> = `object`
 
-Defined in: [src/gradient/typedefs.ts:65](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/gradient/typedefs.ts#L65)
+Defined in: [src/gradient/typedefs.ts:65](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/gradient/typedefs.ts#L65)
 
 ## Type Parameters
 
@@ -21,7 +21,7 @@ Defined in: [src/gradient/typedefs.ts:65](https://github.com/fabricjs/fabric.js/
 
 > `optional` **colorStops**: [`ColorStop`](/api/type-aliases/colorstop/)[]
 
-Defined in: [src/gradient/typedefs.ts:68](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/gradient/typedefs.ts#L68)
+Defined in: [src/gradient/typedefs.ts:68](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/gradient/typedefs.ts#L68)
 
 ***
 
@@ -29,7 +29,7 @@ Defined in: [src/gradient/typedefs.ts:68](https://github.com/fabricjs/fabric.js/
 
 > `optional` **coords**: `Partial`\<[`GradientCoords`](/api/type-aliases/gradientcoords/)\<`T`\>\>
 
-Defined in: [src/gradient/typedefs.ts:69](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/gradient/typedefs.ts#L69)
+Defined in: [src/gradient/typedefs.ts:69](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/gradient/typedefs.ts#L69)
 
 ***
 
@@ -37,7 +37,7 @@ Defined in: [src/gradient/typedefs.ts:69](https://github.com/fabricjs/fabric.js/
 
 > `optional` **gradientTransform**: [`TMat2D`](/api/type-aliases/tmat2d/)
 
-Defined in: [src/gradient/typedefs.ts:73](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/gradient/typedefs.ts#L73)
+Defined in: [src/gradient/typedefs.ts:73](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/gradient/typedefs.ts#L73)
 
 #### Todo
 
@@ -49,7 +49,7 @@ rename?
 
 > `optional` **gradientUnits**: [`GradientUnits`](/api/type-aliases/gradientunits/)
 
-Defined in: [src/gradient/typedefs.ts:67](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/gradient/typedefs.ts#L67)
+Defined in: [src/gradient/typedefs.ts:67](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/gradient/typedefs.ts#L67)
 
 ***
 
@@ -57,7 +57,7 @@ Defined in: [src/gradient/typedefs.ts:67](https://github.com/fabricjs/fabric.js/
 
 > `optional` **id**: `string`
 
-Defined in: [src/gradient/typedefs.ts:74](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/gradient/typedefs.ts#L74)
+Defined in: [src/gradient/typedefs.ts:74](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/gradient/typedefs.ts#L74)
 
 ***
 
@@ -65,7 +65,7 @@ Defined in: [src/gradient/typedefs.ts:74](https://github.com/fabricjs/fabric.js/
 
 > `optional` **offsetX**: `number`
 
-Defined in: [src/gradient/typedefs.ts:78](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/gradient/typedefs.ts#L78)
+Defined in: [src/gradient/typedefs.ts:78](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/gradient/typedefs.ts#L78)
 
 SVG import compatibility
 
@@ -75,7 +75,7 @@ SVG import compatibility
 
 > `optional` **offsetY**: `number`
 
-Defined in: [src/gradient/typedefs.ts:82](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/gradient/typedefs.ts#L82)
+Defined in: [src/gradient/typedefs.ts:82](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/gradient/typedefs.ts#L82)
 
 SVG import compatibility
 
@@ -85,4 +85,4 @@ SVG import compatibility
 
 > `optional` **type**: `T`
 
-Defined in: [src/gradient/typedefs.ts:66](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/gradient/typedefs.ts#L66)
+Defined in: [src/gradient/typedefs.ts:66](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/gradient/typedefs.ts#L66)

@@ -7,7 +7,7 @@ title: "matrixToSVG"
 
 > **matrixToSVG**(`transform`): `string`
 
-Defined in: [src/util/misc/svgExport.ts:10](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/util/misc/svgExport.ts#L10)
+Defined in: [src/util/misc/svgExport.ts:10](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/util/misc/svgExport.ts#L10)
 
 given an array of 6 number returns something like `"matrix(...numbers)"`
 

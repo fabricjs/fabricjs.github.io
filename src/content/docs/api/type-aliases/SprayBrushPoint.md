@@ -7,7 +7,7 @@ title: "SprayBrushPoint"
 
 > **SprayBrushPoint** = `object`
 
-Defined in: [src/brushes/typedefs.ts:13](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/brushes/typedefs.ts#L13)
+Defined in: [src/brushes/typedefs.ts:13](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/brushes/typedefs.ts#L13)
 
 ## Properties
 
@@ -15,7 +15,7 @@ Defined in: [src/brushes/typedefs.ts:13](https://github.com/fabricjs/fabric.js/b
 
 > **opacity**: `number`
 
-Defined in: [src/brushes/typedefs.ts:17](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/brushes/typedefs.ts#L17)
+Defined in: [src/brushes/typedefs.ts:17](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/brushes/typedefs.ts#L17)
 
 ***
 
@@ -23,7 +23,7 @@ Defined in: [src/brushes/typedefs.ts:17](https://github.com/fabricjs/fabric.js/b
 
 > **width**: `number`
 
-Defined in: [src/brushes/typedefs.ts:16](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/brushes/typedefs.ts#L16)
+Defined in: [src/brushes/typedefs.ts:16](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/brushes/typedefs.ts#L16)
 
 ***
 
@@ -31,7 +31,7 @@ Defined in: [src/brushes/typedefs.ts:16](https://github.com/fabricjs/fabric.js/b
 
 > **x**: `number`
 
-Defined in: [src/brushes/typedefs.ts:14](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/brushes/typedefs.ts#L14)
+Defined in: [src/brushes/typedefs.ts:14](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/brushes/typedefs.ts#L14)
 
 ***
 
@@ -39,4 +39,4 @@ Defined in: [src/brushes/typedefs.ts:14](https://github.com/fabricjs/fabric.js/b
 
 > **y**: `number`
 
-Defined in: [src/brushes/typedefs.ts:15](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/brushes/typedefs.ts#L15)
+Defined in: [src/brushes/typedefs.ts:15](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/brushes/typedefs.ts#L15)

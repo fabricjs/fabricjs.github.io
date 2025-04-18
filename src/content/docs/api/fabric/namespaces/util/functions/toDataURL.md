@@ -7,7 +7,7 @@ title: "toDataURL"
 
 > **toDataURL**(`canvasEl`, `format`, `quality`): `string`
 
-Defined in: [src/util/misc/dom.ts:58](https://github.com/fabricjs/fabric.js/blob/b4f67b1cfd353d0e2763b168e07bce6b67895452/src/util/misc/dom.ts#L58)
+Defined in: [src/util/misc/dom.ts:58](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/util/misc/dom.ts#L58)
 
 since 2.6.0 moved from canvas instance to utility.
 possibly useless
