@@ -5731,7 +5731,7 @@ make this function return an empty object and add controls to the ownDefaults
 
 ### fromElement()
 
-> `static` **fromElement**(`element`, `options?`, `cssRules?`): `Promise`\<`Rect`\<\{ `height`: `any`; `left`: `any`; `signal`: `AbortSignal`; `top`: `any`; `visible`: `boolean`; `width`: `any`; \}, [`SerializedRectProps`](/api/interfaces/serializedrectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>\>
+> `static` **fromElement**(`element`, `options?`, `cssRules?`): `Promise`\<`Rect`\<\{ `height`: `any`; `left`: `any`; `signal?`: `AbortSignal`; `top`: `any`; `visible`: `boolean`; `width`: `any`; \}, [`SerializedRectProps`](/api/interfaces/serializedrectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>\>
 
 Defined in: [src/shapes/Rect.ts:198](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/shapes/Rect.ts#L198)
 
@@ -5757,7 +5757,7 @@ Options object
 
 #### Returns
 
-`Promise`\<`Rect`\<\{ `height`: `any`; `left`: `any`; `signal`: `AbortSignal`; `top`: `any`; `visible`: `boolean`; `width`: `any`; \}, [`SerializedRectProps`](/api/interfaces/serializedrectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>\>
+`Promise`\<`Rect`\<\{ `height`: `any`; `left`: `any`; `signal?`: `AbortSignal`; `top`: `any`; `visible`: `boolean`; `width`: `any`; \}, [`SerializedRectProps`](/api/interfaces/serializedrectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>\>
 
 #### Static
 

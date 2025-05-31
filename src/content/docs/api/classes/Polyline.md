@@ -5565,7 +5565,7 @@ make this function return an empty object and add controls to the ownDefaults
 
 ### fromElement()
 
-> `static` **fromElement**(`element`, `options?`, `cssRules?`): `Promise`\<`Polyline`\<\{ `signal`: `AbortSignal`; \}, [`SerializedPolylineProps`](/api/interfaces/serializedpolylineprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>\>
+> `static` **fromElement**(`element`, `options?`, `cssRules?`): `Promise`\<`Polyline`\<\{ `signal?`: `AbortSignal`; \}, [`SerializedPolylineProps`](/api/interfaces/serializedpolylineprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>\>
 
 Defined in: [src/shapes/Polyline.ts:400](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/shapes/Polyline.ts#L400)
 
@@ -5591,7 +5591,7 @@ Options object
 
 #### Returns
 
-`Promise`\<`Polyline`\<\{ `signal`: `AbortSignal`; \}, [`SerializedPolylineProps`](/api/interfaces/serializedpolylineprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>\>
+`Promise`\<`Polyline`\<\{ `signal?`: `AbortSignal`; \}, [`SerializedPolylineProps`](/api/interfaces/serializedpolylineprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>\>
 
 #### Static
 
