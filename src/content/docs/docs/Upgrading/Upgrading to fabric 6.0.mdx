@@ -59,7 +59,7 @@ Object.assign(Rect.prototype, {
   fill: 'black',
 });
 ```
-The class was created with an utility, createKlass that took care of running the custom `initialize` method for every new instance that was created, and that took care of inheritance.
+The class was created with an utility, createClass that took care of running the custom `initialize` method for every new instance that was created, and that took care of inheritance.
 As a result this was the situation:
 - Default values for properties were defined on the prototype exactly as method were
 - All Instances shared the same on the prototype for properties that weren't assigned
