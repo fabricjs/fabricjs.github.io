@@ -7,7 +7,7 @@ title: "renderCircleControl"
 
 > **renderCircleControl**(`this`, `ctx`, `left`, `top`, `styleOverride`, `fabricObject`): `void`
 
-Defined in: [src/controls/controlRendering.ts:39](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/controls/controlRendering.ts#L39)
+Defined in: [src/controls/controlRendering.ts:39](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/controls/controlRendering.ts#L39)
 
 Render a round control, as per fabric features.
 This function is written to respect object properties like transparentCorners, cornerSize
@@ -40,7 +40,7 @@ y coordinate where the control center should be
 
 ### styleOverride
 
-`Partial`
+`ControlRenderingStyleOverride`
 
 override for FabricObject controls style
 

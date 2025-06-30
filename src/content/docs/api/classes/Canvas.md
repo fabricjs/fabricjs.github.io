@@ -5,7 +5,7 @@ prev: false
 title: "Canvas"
 ---
 
-Defined in: [src/canvas/Canvas.ts:74](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/Canvas.ts#L74)
+Defined in: [src/canvas/Canvas.ts:74](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/Canvas.ts#L74)
 
 ## Extends
 
@@ -21,7 +21,7 @@ Defined in: [src/canvas/Canvas.ts:74](https://github.com/fabricjs/fabric.js/blob
 
 > **new Canvas**(`el?`, `options?`): `Canvas`
 
-Defined in: [src/canvas/Canvas.ts:124](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/Canvas.ts#L124)
+Defined in: [src/canvas/Canvas.ts:124](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/Canvas.ts#L124)
 
 #### Parameters
 
@@ -47,7 +47,7 @@ Defined in: [src/canvas/Canvas.ts:124](https://github.com/fabricjs/fabric.js/blo
 
 > `optional` **\_activeObject**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
 
-Defined in: [src/canvas/SelectableCanvas.ts:309](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L309)
+Defined in: [src/canvas/SelectableCanvas.ts:309](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L309)
 
 #### Inherited from
 
@@ -59,7 +59,7 @@ Defined in: [src/canvas/SelectableCanvas.ts:309](https://github.com/fabricjs/fab
 
 > **\_objects**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[]
 
-Defined in: [src/canvas/SelectableCanvas.ts:153](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L153)
+Defined in: [src/canvas/SelectableCanvas.ts:153](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L153)
 
 #### TODO
 
@@ -75,7 +75,7 @@ needs to end up in the constructor too
 
 > **\_offset**: `object`
 
-Defined in: [src/canvas/StaticCanvas.ts:159](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L159)
+Defined in: [src/canvas/StaticCanvas.ts:159](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L159)
 
 #### left
 
@@ -95,7 +95,7 @@ Defined in: [src/canvas/StaticCanvas.ts:159](https://github.com/fabricjs/fabric.
 
 > **allowTouchScrolling**: `boolean`
 
-Defined in: [src/canvas/StaticCanvas.ts:123](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L123)
+Defined in: [src/canvas/StaticCanvas.ts:123](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L123)
 
 #### Todo
 
@@ -115,7 +115,7 @@ move to Canvas
 
 > **altActionKey**: [`TOptionalModifierKey`](/api/type-aliases/toptionalmodifierkey/)
 
-Defined in: [src/canvas/SelectableCanvas.ts:161](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L161)
+Defined in: [src/canvas/SelectableCanvas.ts:161](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L161)
 
 Indicates which key enable alternate action on corner
 values: 'altKey', 'shiftKey', 'ctrlKey'.
@@ -146,7 +146,7 @@ feature is disabled feature disabled.
 
 > **altSelectionKey**: [`TOptionalModifierKey`](/api/type-aliases/toptionalmodifierkey/)
 
-Defined in: [src/canvas/SelectableCanvas.ts:166](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L166)
+Defined in: [src/canvas/SelectableCanvas.ts:166](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L166)
 
 Indicates which key enable alternative selection
 in case of target overlapping with active object
@@ -180,7 +180,7 @@ feature is disabled.
 
 > **backgroundColor**: `string` \| [`TFiller`](/api/type-aliases/tfiller/)
 
-Defined in: [src/canvas/StaticCanvas.ts:98](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L98)
+Defined in: [src/canvas/StaticCanvas.ts:98](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L98)
 
 Background color of canvas instance.
 
@@ -204,7 +204,7 @@ Background color of canvas instance.
 
 > `optional` **backgroundImage**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
 
-Defined in: [src/canvas/StaticCanvas.ts:99](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L99)
+Defined in: [src/canvas/StaticCanvas.ts:99](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L99)
 
 Background image of canvas instance.
 since 2.4.0 image caching is active, please when putting an image as background, add to the
@@ -231,7 +231,7 @@ vale. As an alternative you can disable image objectCaching
 
 > **backgroundVpt**: `boolean`
 
-Defined in: [src/canvas/StaticCanvas.ts:97](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L97)
+Defined in: [src/canvas/StaticCanvas.ts:97](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L97)
 
 if set to false background image is not affected by viewport transform
 
@@ -263,7 +263,7 @@ we should really find a different way to do this
 
 > **centeredKey**: [`TOptionalModifierKey`](/api/type-aliases/toptionalmodifierkey/)
 
-Defined in: [src/canvas/SelectableCanvas.ts:160](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L160)
+Defined in: [src/canvas/SelectableCanvas.ts:160](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L160)
 
 Indicates which key enable centered Transform
 values: 'altKey', 'shiftKey', 'ctrlKey'.
@@ -294,7 +294,7 @@ feature is disabled feature disabled.
 
 > **centeredRotation**: `boolean`
 
-Defined in: [src/canvas/SelectableCanvas.ts:159](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L159)
+Defined in: [src/canvas/SelectableCanvas.ts:159](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L159)
 
 When true, objects use center point as the origin of rotate transformation.
 <b>Backwards incompatibility note:</b> This property replaces "centerTransform" (Boolean).
@@ -323,7 +323,7 @@ When true, objects use center point as the origin of rotate transformation.
 
 > **centeredScaling**: `boolean`
 
-Defined in: [src/canvas/SelectableCanvas.ts:158](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L158)
+Defined in: [src/canvas/SelectableCanvas.ts:158](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L158)
 
 When true, objects use center point as the origin of scale transformation.
 <b>Backwards incompatibility note:</b> This property replaces "centerTransform" (Boolean).
@@ -352,7 +352,7 @@ When true, objects use center point as the origin of scale transformation.
 
 > `optional` **clipPath**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
 
-Defined in: [src/canvas/StaticCanvas.ts:105](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L105)
+Defined in: [src/canvas/StaticCanvas.ts:105](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L105)
 
 a fabricObject that, without stroke define a clipping area with their shape. filled in black
 the clipPath object gets used when the canvas has rendered, and the context is placed in the
@@ -373,7 +373,7 @@ clipPath will clip away controls, if you do not want this to happen use controls
 
 > **containerClass**: `string`
 
-Defined in: [src/canvas/SelectableCanvas.ts:180](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L180)
+Defined in: [src/canvas/SelectableCanvas.ts:180](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L180)
 
 Default element class that's given to wrapper (div) element of canvas
 
@@ -401,7 +401,7 @@ customize [CanvasDOMManager](/api/classes/canvasdommanager/) instead or access [
 
 > **controlsAboveOverlay**: `boolean`
 
-Defined in: [src/canvas/StaticCanvas.ts:118](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L118)
+Defined in: [src/canvas/StaticCanvas.ts:118](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L118)
 
 #### Todo
 
@@ -421,7 +421,7 @@ move to Canvas
 
 > **defaultCursor**: `string`
 
-Defined in: [src/canvas/SelectableCanvas.ts:176](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L176)
+Defined in: [src/canvas/SelectableCanvas.ts:176](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L176)
 
 Default cursor value used for the entire canvas
 
@@ -445,7 +445,7 @@ default
 
 > `optional` **destroyed**: `boolean`
 
-Defined in: [src/canvas/StaticCanvas.ts:150](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L150)
+Defined in: [src/canvas/StaticCanvas.ts:150](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L150)
 
 If true the Canvas is in the process or has been disposed/destroyed.
 No more rendering operation will be executed on this canvas.
@@ -460,7 +460,7 @@ No more rendering operation will be executed on this canvas.
 
 > `optional` **disposed**: `boolean`
 
-Defined in: [src/canvas/StaticCanvas.ts:157](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L157)
+Defined in: [src/canvas/StaticCanvas.ts:157](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L157)
 
 Started the process of disposing but not done yet.
 WIll likely complete the render cycle already scheduled but stopping adding more.
@@ -475,7 +475,7 @@ WIll likely complete the render cycle already scheduled but stopping adding more
 
 > **elements**: [`CanvasDOMManager`](/api/classes/canvasdommanager/)
 
-Defined in: [src/canvas/SelectableCanvas.ts:294](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L294)
+Defined in: [src/canvas/SelectableCanvas.ts:294](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L294)
 
 #### Inherited from
 
@@ -487,7 +487,7 @@ Defined in: [src/canvas/SelectableCanvas.ts:294](https://github.com/fabricjs/fab
 
 > **enablePointerEvents**: `boolean`
 
-Defined in: [src/canvas/Canvas.ts:82](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/Canvas.ts#L82)
+Defined in: [src/canvas/Canvas.ts:82](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/Canvas.ts#L82)
 
 When the option is enabled, PointerEvent is used instead of TPointerEvent.
 
@@ -507,7 +507,7 @@ When the option is enabled, PointerEvent is used instead of TPointerEvent.
 
 > **enableRetinaScaling**: `boolean`
 
-Defined in: [src/canvas/StaticCanvas.ts:112](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L112)
+Defined in: [src/canvas/StaticCanvas.ts:112](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L112)
 
 When true, canvas is scaled by devicePixelRatio for better rendering on retina screens
 
@@ -531,7 +531,7 @@ When true, canvas is scaled by devicePixelRatio for better rendering on retina s
 
 > **fireMiddleClick**: `boolean`
 
-Defined in: [src/canvas/SelectableCanvas.ts:202](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L202)
+Defined in: [src/canvas/SelectableCanvas.ts:202](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L202)
 
 Indicates if the canvas can fire middle click events
 
@@ -559,7 +559,7 @@ Indicates if the canvas can fire middle click events
 
 > **fireRightClick**: `boolean`
 
-Defined in: [src/canvas/SelectableCanvas.ts:201](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L201)
+Defined in: [src/canvas/SelectableCanvas.ts:201](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L201)
 
 Indicates if the canvas can fire right click events
 
@@ -587,7 +587,7 @@ Indicates if the canvas can fire right click events
 
 > `optional` **freeDrawingBrush**: [`BaseBrush`](/api/classes/basebrush/)
 
-Defined in: [src/canvas/SelectableCanvas.ts:308](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L308)
+Defined in: [src/canvas/SelectableCanvas.ts:308](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L308)
 
 #### Inherited from
 
@@ -599,7 +599,7 @@ Defined in: [src/canvas/SelectableCanvas.ts:308](https://github.com/fabricjs/fab
 
 > **freeDrawingCursor**: `string`
 
-Defined in: [src/canvas/SelectableCanvas.ts:177](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L177)
+Defined in: [src/canvas/SelectableCanvas.ts:177](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L177)
 
 Cursor value used during free drawing
 
@@ -623,7 +623,7 @@ crosshair
 
 > **height**: `number`
 
-Defined in: [src/canvas/StaticCanvas.ts:94](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L94)
+Defined in: [src/canvas/StaticCanvas.ts:94](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L94)
 
 Height in virtual/logical pixels of the canvas.
 The canvas can be taller than width if retina scaling is active
@@ -642,7 +642,7 @@ The canvas can be taller than width if retina scaling is active
 
 > **hoverCursor**: `string`
 
-Defined in: [src/canvas/SelectableCanvas.ts:174](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L174)
+Defined in: [src/canvas/SelectableCanvas.ts:174](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L174)
 
 Default cursor value used when hovering over an object on canvas
 
@@ -666,7 +666,7 @@ move
 
 > **imageSmoothingEnabled**: `boolean`
 
-Defined in: [src/canvas/StaticCanvas.ts:113](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L113)
+Defined in: [src/canvas/StaticCanvas.ts:113](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L113)
 
 Indicates whether this canvas will use image smoothing, this is on by default in browsers
 
@@ -690,7 +690,7 @@ Indicates whether this canvas will use image smoothing, this is on by default in
 
 > **includeDefaultValues**: `boolean`
 
-Defined in: [src/canvas/StaticCanvas.ts:107](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L107)
+Defined in: [src/canvas/StaticCanvas.ts:107](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L107)
 
 Indicates whether toObject/toDatalessObject should include default values
 if set to false, takes precedence over the object value.
@@ -715,7 +715,7 @@ if set to false, takes precedence over the object value.
 
 > **isDrawingMode**: `boolean`
 
-Defined in: [src/canvas/SelectableCanvas.ts:195](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L195)
+Defined in: [src/canvas/SelectableCanvas.ts:195](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L195)
 
 When true, mouse events on canvas (mousedown/mousemove/mouseup) result in free drawing.
 After mousedown, mousemove creates a shape,
@@ -741,7 +741,7 @@ and then mouseup finalizes it and adds an instance of `fabric.Path` onto canvas.
 
 > **moveCursor**: `string`
 
-Defined in: [src/canvas/SelectableCanvas.ts:175](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L175)
+Defined in: [src/canvas/SelectableCanvas.ts:175](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L175)
 
 Default cursor value used when moving an object on canvas
 
@@ -765,7 +765,7 @@ move
 
 > **notAllowedCursor**: `string`
 
-Defined in: [src/canvas/SelectableCanvas.ts:178](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L178)
+Defined in: [src/canvas/SelectableCanvas.ts:178](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L178)
 
 Cursor value used for disabled elements ( corners with disabled action )
 
@@ -793,7 +793,7 @@ not-allowed
 
 > **overlayColor**: `string` \| [`TFiller`](/api/type-aliases/tfiller/)
 
-Defined in: [src/canvas/StaticCanvas.ts:102](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L102)
+Defined in: [src/canvas/StaticCanvas.ts:102](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L102)
 
 Overlay color of canvas instance.
 
@@ -821,7 +821,7 @@ Overlay color of canvas instance.
 
 > `optional` **overlayImage**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
 
-Defined in: [src/canvas/StaticCanvas.ts:103](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L103)
+Defined in: [src/canvas/StaticCanvas.ts:103](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L103)
 
 Overlay image of canvas instance.
 since 2.4.0 image caching is active, please when putting an image as overlay, add to the
@@ -848,7 +848,7 @@ vale. As an alternative you can disable image objectCaching
 
 > **overlayVpt**: `boolean`
 
-Defined in: [src/canvas/StaticCanvas.ts:101](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L101)
+Defined in: [src/canvas/StaticCanvas.ts:101](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L101)
 
 if set to false overlay image is not affected by viewport transform
 
@@ -880,7 +880,7 @@ we should really find a different way to do this
 
 > **perPixelTargetFind**: `boolean`
 
-Defined in: [src/canvas/SelectableCanvas.ts:183](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L183)
+Defined in: [src/canvas/SelectableCanvas.ts:183](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L183)
 
 When true, object detection happens on per-pixel basis rather than on per-bounding-box
 
@@ -904,7 +904,7 @@ When true, object detection happens on per-pixel basis rather than on per-boundi
 
 > **preserveObjectStacking**: `boolean`
 
-Defined in: [src/canvas/SelectableCanvas.ts:197](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L197)
+Defined in: [src/canvas/SelectableCanvas.ts:197](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L197)
 
 Indicates whether objects should remain in current stack position when selected.
 When false objects are brought to top and rendered as part of the selection group
@@ -929,7 +929,7 @@ When false objects are brought to top and rendered as part of the selection grou
 
 > **renderOnAddRemove**: `boolean`
 
-Defined in: [src/canvas/StaticCanvas.ts:110](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L110)
+Defined in: [src/canvas/StaticCanvas.ts:110](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L110)
 
 Indicates whether [StaticCanvas#add](/api/classes/staticcanvas/#add), [StaticCanvas#insertAt](/api/classes/staticcanvas/#insertat) and StaticCanvas#remove,
 StaticCanvas#moveTo, [StaticCanvas#clear](/api/classes/staticcanvas/#clear) and many more, should also re-render canvas.
@@ -958,7 +958,7 @@ Left default to true to do not break documentation and old app, fiddles.
 
 > **selection**: `boolean`
 
-Defined in: [src/canvas/SelectableCanvas.ts:164](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L164)
+Defined in: [src/canvas/SelectableCanvas.ts:164](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L164)
 
 Indicates whether group selection should be enabled
 
@@ -982,7 +982,7 @@ Indicates whether group selection should be enabled
 
 > **selectionBorderColor**: `string`
 
-Defined in: [src/canvas/SelectableCanvas.ts:169](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L169)
+Defined in: [src/canvas/SelectableCanvas.ts:169](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L169)
 
 Color of the border of selection (usually slightly darker than color of selection itself)
 
@@ -1006,7 +1006,7 @@ Color of the border of selection (usually slightly darker than color of selectio
 
 > **selectionColor**: `string`
 
-Defined in: [src/canvas/SelectableCanvas.ts:167](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L167)
+Defined in: [src/canvas/SelectableCanvas.ts:167](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L167)
 
 Color of selection
 
@@ -1030,7 +1030,7 @@ Color of selection
 
 > **selectionDashArray**: `number`[]
 
-Defined in: [src/canvas/SelectableCanvas.ts:168](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L168)
+Defined in: [src/canvas/SelectableCanvas.ts:168](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L168)
 
 Default dash array pattern
 If not empty the selection border is dashed
@@ -1049,7 +1049,7 @@ If not empty the selection border is dashed
 
 > **selectionFullyContained**: `boolean`
 
-Defined in: [src/canvas/SelectableCanvas.ts:171](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L171)
+Defined in: [src/canvas/SelectableCanvas.ts:171](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L171)
 
 Select only shapes that are fully contained in the dragged selection rectangle.
 
@@ -1073,7 +1073,7 @@ Select only shapes that are fully contained in the dragged selection rectangle.
 
 > **selectionKey**: [`TOptionalModifierKey`](/api/type-aliases/toptionalmodifierkey/) \| (`"altKey"` \| `"ctrlKey"` \| `"metaKey"` \| `"shiftKey"`)[]
 
-Defined in: [src/canvas/SelectableCanvas.ts:165](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L165)
+Defined in: [src/canvas/SelectableCanvas.ts:165](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L165)
 
 Indicates which key or keys enable multiple click selection
 Pass value as a string or array of strings
@@ -1105,7 +1105,7 @@ feature is disabled.
 
 > **selectionLineWidth**: `number`
 
-Defined in: [src/canvas/SelectableCanvas.ts:170](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L170)
+Defined in: [src/canvas/SelectableCanvas.ts:170](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L170)
 
 Width of a line used in object/group selection
 
@@ -1129,7 +1129,7 @@ Width of a line used in object/group selection
 
 > **skipOffscreen**: `boolean`
 
-Defined in: [src/canvas/StaticCanvas.ts:111](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L111)
+Defined in: [src/canvas/StaticCanvas.ts:111](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L111)
 
 Based on vptCoords and object.aCoords, skip rendering of objects that
 are not included in current viewport.
@@ -1157,7 +1157,7 @@ true
 
 > **skipTargetFind**: `boolean`
 
-Defined in: [src/canvas/SelectableCanvas.ts:185](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L185)
+Defined in: [src/canvas/SelectableCanvas.ts:185](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L185)
 
 When true, target detection is skipped. Target detection will return always undefined.
 click selection won't work anymore, events will fire with no targets.
@@ -1185,7 +1185,7 @@ if you deactivate both, you should look into staticCanvas.
 
 > **stopContextMenu**: `boolean`
 
-Defined in: [src/canvas/SelectableCanvas.ts:200](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L200)
+Defined in: [src/canvas/SelectableCanvas.ts:200](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L200)
 
 Indicates if the right click on canvas can output the context menu or not
 
@@ -1213,7 +1213,7 @@ Indicates if the right click on canvas can output the context menu or not
 
 > **svgViewportTransformation**: `boolean`
 
-Defined in: [src/canvas/StaticCanvas.ts:954](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L954)
+Defined in: [src/canvas/StaticCanvas.ts:954](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L954)
 
 When true, getSvgTransform() will apply the StaticCanvas.viewportTransform to the SVG transformation. When true,
 a zoomed canvas will then produce zoomed SVG output.
@@ -1238,7 +1238,7 @@ a zoomed canvas will then produce zoomed SVG output.
 
 > **targetFindTolerance**: `number`
 
-Defined in: [src/canvas/SelectableCanvas.ts:184](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L184)
+Defined in: [src/canvas/SelectableCanvas.ts:184](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L184)
 
 Number of pixels around target pixel to tolerate (consider active) during object detection
 
@@ -1262,7 +1262,7 @@ Number of pixels around target pixel to tolerate (consider active) during object
 
 > **targets**: [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[] = `[]`
 
-Defined in: [src/canvas/SelectableCanvas.ts:208](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L208)
+Defined in: [src/canvas/SelectableCanvas.ts:208](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L208)
 
 Keep track of the subTargets for Mouse Events, ordered bottom up from innermost nested subTarget
 
@@ -1276,7 +1276,7 @@ Keep track of the subTargets for Mouse Events, ordered bottom up from innermost 
 
 > **textEditingManager**: `TextEditingManager`
 
-Defined in: [src/canvas/Canvas.ts:122](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/Canvas.ts#L122)
+Defined in: [src/canvas/Canvas.ts:122](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/Canvas.ts#L122)
 
 ***
 
@@ -1284,7 +1284,7 @@ Defined in: [src/canvas/Canvas.ts:122](https://github.com/fabricjs/fabric.js/blo
 
 > **uniformScaling**: `boolean`
 
-Defined in: [src/canvas/SelectableCanvas.ts:156](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L156)
+Defined in: [src/canvas/SelectableCanvas.ts:156](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L156)
 
 When true, objects can be transformed by one side (unproportionately)
 when dragged on the corners that normally would not do that.
@@ -1313,7 +1313,7 @@ fabric 4.0 // changed name and default value
 
 > **uniScaleKey**: [`TOptionalModifierKey`](/api/type-aliases/toptionalmodifierkey/)
 
-Defined in: [src/canvas/SelectableCanvas.ts:157](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L157)
+Defined in: [src/canvas/SelectableCanvas.ts:157](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L157)
 
 Indicates which key switches uniform scaling.
 values: 'altKey', 'shiftKey', 'ctrlKey'.
@@ -1347,7 +1347,7 @@ and viceversa.
 
 > **viewportTransform**: [`TMat2D`](/api/type-aliases/tmat2d/)
 
-Defined in: [src/canvas/StaticCanvas.ts:125](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L125)
+Defined in: [src/canvas/StaticCanvas.ts:125](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L125)
 
 The transformation (a Canvas 2D API transform matrix) which focuses the viewport
 
@@ -1381,7 +1381,7 @@ canvas.viewportTransform = [0.7, 0, 0, 0.7, 50, 50];
 
 > **vptCoords**: [`TCornerPoint`](/api/type-aliases/tcornerpoint/)
 
-Defined in: [src/canvas/StaticCanvas.ts:130](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L130)
+Defined in: [src/canvas/StaticCanvas.ts:130](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L130)
 
 The viewport bounding box in scene plane coordinates, see [calcViewportBoundaries](/api/classes/canvas/#calcviewportboundaries)
 
@@ -1395,7 +1395,7 @@ The viewport bounding box in scene plane coordinates, see [calcViewportBoundarie
 
 > **width**: `number`
 
-Defined in: [src/canvas/StaticCanvas.ts:93](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L93)
+Defined in: [src/canvas/StaticCanvas.ts:93](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L93)
 
 Width in virtual/logical pixels of the canvas.
 The canvas can be larger than width if retina scaling is active
@@ -1414,7 +1414,7 @@ The canvas can be larger than width if retina scaling is active
 
 > `static` **ownDefaults**: [`TOptions`](/api/type-aliases/toptions/)\<[`CanvasOptions`](/api/interfaces/canvasoptions/)\> = `canvasDefaults`
 
-Defined in: [src/canvas/SelectableCanvas.ts:288](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L288)
+Defined in: [src/canvas/SelectableCanvas.ts:288](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L288)
 
 #### Inherited from
 
@@ -1428,7 +1428,7 @@ Defined in: [src/canvas/SelectableCanvas.ts:288](https://github.com/fabricjs/fab
 
 > **get** **contextContainer**(): `CanvasRenderingContext2D`
 
-Defined in: [src/canvas/StaticCanvas.ts:141](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L141)
+Defined in: [src/canvas/StaticCanvas.ts:141](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L141)
 
 ##### Returns
 
@@ -1446,7 +1446,7 @@ Defined in: [src/canvas/StaticCanvas.ts:141](https://github.com/fabricjs/fabric.
 
 > **get** **contextTop**(): `CanvasRenderingContext2D`
 
-Defined in: [src/canvas/SelectableCanvas.ts:298](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L298)
+Defined in: [src/canvas/SelectableCanvas.ts:298](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L298)
 
 ##### Returns
 
@@ -1464,7 +1464,7 @@ Defined in: [src/canvas/SelectableCanvas.ts:298](https://github.com/fabricjs/fab
 
 > **get** **lowerCanvasEl**(): `HTMLCanvasElement`
 
-Defined in: [src/canvas/StaticCanvas.ts:137](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L137)
+Defined in: [src/canvas/StaticCanvas.ts:137](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L137)
 
 A reference to the canvas actual HTMLCanvasElement.
 Can be use to read the raw pixels, but never write or manipulate
@@ -1485,7 +1485,7 @@ Can be use to read the raw pixels, but never write or manipulate
 
 > **get** **upperCanvasEl**(): `HTMLCanvasElement`
 
-Defined in: [src/canvas/SelectableCanvas.ts:295](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L295)
+Defined in: [src/canvas/SelectableCanvas.ts:295](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L295)
 
 ##### Returns
 
@@ -1503,7 +1503,7 @@ Defined in: [src/canvas/SelectableCanvas.ts:295](https://github.com/fabricjs/fab
 
 > **get** **wrapperEl**(): `HTMLDivElement`
 
-Defined in: [src/canvas/SelectableCanvas.ts:301](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L301)
+Defined in: [src/canvas/SelectableCanvas.ts:301](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L301)
 
 ##### Returns
 
@@ -1519,7 +1519,7 @@ Defined in: [src/canvas/SelectableCanvas.ts:301](https://github.com/fabricjs/fab
 
 > **\_\_onMouseWheel**(`e`): `void`
 
-Defined in: [src/canvas/Canvas.ts:1306](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/Canvas.ts#L1306)
+Defined in: [src/canvas/Canvas.ts:1306](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/Canvas.ts#L1306)
 
 Method that defines actions when an Event Mouse Wheel
 
@@ -1541,7 +1541,7 @@ Event object fired on mouseup
 
 > **\_basicEventHandler**\<`T`\>(`eventType`, `options`): [`CanvasEvents`](/api/interfaces/canvasevents/) & [`ObjectEvents`](/api/interfaces/objectevents/)\[`T`\]
 
-Defined in: [src/canvas/Canvas.ts:904](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/Canvas.ts#L904)
+Defined in: [src/canvas/Canvas.ts:904](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/Canvas.ts#L904)
 
 #### Type Parameters
 
@@ -1569,7 +1569,7 @@ Defined in: [src/canvas/Canvas.ts:904](https://github.com/fabricjs/fabric.js/blo
 
 > **\_chooseObjectsToRender**(): [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[]
 
-Defined in: [src/canvas/SelectableCanvas.ts:360](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L360)
+Defined in: [src/canvas/SelectableCanvas.ts:360](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L360)
 
 Divides objects in two groups, one to render immediately
 and one to render as activeGroup.
@@ -1590,7 +1590,7 @@ objects to render immediately and pushes the other in the activeGroup.
 
 > **\_discardActiveObject**(`e?`, `object?`): `this is { _activeObject: undefined }`
 
-Defined in: [src/canvas/SelectableCanvas.ts:1179](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L1179)
+Defined in: [src/canvas/SelectableCanvas.ts:1179](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L1179)
 
 This is supposed to be equivalent to discardActiveObject but without firing
 any selection events ( can still fire object transformation events ). There is commitment to have this stay this way.
@@ -1626,7 +1626,7 @@ true if the active object has been discarded
 
 > **\_onStackOrderChanged**(): `void`
 
-Defined in: [src/canvas/SelectableCanvas.ts:350](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L350)
+Defined in: [src/canvas/SelectableCanvas.ts:350](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L350)
 
 #### Returns
 
@@ -1642,7 +1642,7 @@ Defined in: [src/canvas/SelectableCanvas.ts:350](https://github.com/fabricjs/fab
 
 > **\_set**(`key`, `value`): `void`
 
-Defined in: [src/CommonMethods.ts:38](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/CommonMethods.ts#L38)
+Defined in: [src/CommonMethods.ts:38](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/CommonMethods.ts#L38)
 
 #### Parameters
 
@@ -1668,7 +1668,7 @@ Defined in: [src/CommonMethods.ts:38](https://github.com/fabricjs/fabric.js/blob
 
 > **\_setActiveObject**(`object`, `e?`): `boolean`
 
-Defined in: [src/canvas/SelectableCanvas.ts:1147](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L1147)
+Defined in: [src/canvas/SelectableCanvas.ts:1147](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L1147)
 
 This is supposed to be equivalent to setActiveObject but without firing
 any event. There is commitment to have this stay this way.
@@ -1704,7 +1704,7 @@ true if the object has been selected
 
 > **\_setCursorFromEvent**(`e`, `target?`): `void`
 
-Defined in: [src/canvas/Canvas.ts:1364](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/Canvas.ts#L1364)
+Defined in: [src/canvas/Canvas.ts:1364](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/Canvas.ts#L1364)
 
 Sets the cursor depending on where the canvas is being hovered.
 Note: very buggy in Opera
@@ -1733,7 +1733,7 @@ Object that the mouse is hovering, if so.
 
 > **absolutePan**(`point`): `void`
 
-Defined in: [src/canvas/StaticCanvas.ts:431](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L431)
+Defined in: [src/canvas/StaticCanvas.ts:431](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L431)
 
 Pan viewport so as to place point at top left corner of canvas
 
@@ -1759,7 +1759,7 @@ to move to
 
 > **add**(...`objects`): `number`
 
-Defined in: [src/canvas/StaticCanvas.ts:210](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L210)
+Defined in: [src/canvas/StaticCanvas.ts:210](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L210)
 
 Adds objects to collection
 Objects should be instances of (or inherit from) FabricObject
@@ -1788,7 +1788,7 @@ new array length
 
 > **addOrRemove**(`functor`, `_eventjsFunctor`): `void`
 
-Defined in: [src/canvas/Canvas.ts:169](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/Canvas.ts#L169)
+Defined in: [src/canvas/Canvas.ts:169](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/Canvas.ts#L169)
 
 #### Parameters
 
@@ -1810,7 +1810,7 @@ Defined in: [src/canvas/Canvas.ts:169](https://github.com/fabricjs/fabric.js/blo
 
 > **bringObjectForward**(`object`, `intersecting?`): `boolean`
 
-Defined in: [src/Collection.ts:240](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/Collection.ts#L240)
+Defined in: [src/Collection.ts:240](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/Collection.ts#L240)
 
 Moves an object or a selection up in stack of drawn objects
 An optional parameter, intersecting allows to move the object in front
@@ -1848,7 +1848,7 @@ true if change occurred
 
 > **bringObjectToFront**(`object`): `boolean`
 
-Defined in: [src/Collection.ts:194](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/Collection.ts#L194)
+Defined in: [src/Collection.ts:194](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/Collection.ts#L194)
 
 Moves an object or the objects of a multiple selection
 to the top of the stack of drawn objects
@@ -1877,7 +1877,7 @@ true if change occurred
 
 > **calcOffset**(): `object`
 
-Defined in: [src/canvas/StaticCanvas.ts:266](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L266)
+Defined in: [src/canvas/StaticCanvas.ts:266](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L266)
 
 Calculates canvas element offset relative to the document
 This method is also attached as "resize" event handler of window
@@ -1904,7 +1904,7 @@ This method is also attached as "resize" event handler of window
 
 > **calcViewportBoundaries**(): [`TCornerPoint`](/api/type-aliases/tcornerpoint/)
 
-Defined in: [src/canvas/StaticCanvas.ts:528](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L528)
+Defined in: [src/canvas/StaticCanvas.ts:528](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L528)
 
 Calculate the position of the 4 corner of canvas with current viewportTransform.
 helps to determinate when an object is in the current rendering viewport
@@ -1923,7 +1923,7 @@ helps to determinate when an object is in the current rendering viewport
 
 > **cancelRequestedRender**(): `void`
 
-Defined in: [src/canvas/StaticCanvas.ts:546](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L546)
+Defined in: [src/canvas/StaticCanvas.ts:546](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L546)
 
 #### Returns
 
@@ -1939,7 +1939,7 @@ Defined in: [src/canvas/StaticCanvas.ts:546](https://github.com/fabricjs/fabric.
 
 > **centerObject**(`object`): `void`
 
-Defined in: [src/canvas/StaticCanvas.ts:756](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L756)
+Defined in: [src/canvas/StaticCanvas.ts:756](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L756)
 
 Centers object vertically and horizontally in the canvas
 
@@ -1965,7 +1965,7 @@ Object to center vertically and horizontally
 
 > **centerObjectH**(`object`): `void`
 
-Defined in: [src/canvas/StaticCanvas.ts:734](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L734)
+Defined in: [src/canvas/StaticCanvas.ts:734](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L734)
 
 Centers object horizontally in the canvas
 
@@ -1989,7 +1989,7 @@ Centers object horizontally in the canvas
 
 > **centerObjectV**(`object`): `void`
 
-Defined in: [src/canvas/StaticCanvas.ts:745](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L745)
+Defined in: [src/canvas/StaticCanvas.ts:745](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L745)
 
 Centers object vertically in the canvas
 
@@ -2015,7 +2015,7 @@ Object to center vertically
 
 > **clear**(): `void`
 
-Defined in: [src/canvas/Canvas.ts:1555](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/Canvas.ts#L1555)
+Defined in: [src/canvas/Canvas.ts:1555](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/Canvas.ts#L1555)
 
 clear [textEditingManager](/api/classes/canvas/#texteditingmanager)
 
@@ -2033,7 +2033,7 @@ clear [textEditingManager](/api/classes/canvas/#texteditingmanager)
 
 > **clearContext**(`ctx`): `void`
 
-Defined in: [src/canvas/StaticCanvas.ts:463](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L463)
+Defined in: [src/canvas/StaticCanvas.ts:463](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L463)
 
 Clears specified context of canvas element
 
@@ -2059,7 +2059,7 @@ Context to clear
 
 > **clone**(`properties?`): `Promise`\<`Canvas`\>
 
-Defined in: [src/canvas/StaticCanvas.ts:1327](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L1327)
+Defined in: [src/canvas/StaticCanvas.ts:1327](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L1327)
 
 Clones canvas instance
 
@@ -2085,7 +2085,7 @@ Array of properties to include in the cloned canvas and children
 
 > **cloneWithoutData**(): `Canvas`
 
-Defined in: [src/canvas/StaticCanvas.ts:1337](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L1337)
+Defined in: [src/canvas/StaticCanvas.ts:1337](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L1337)
 
 Clones canvas instance without cloning existing data.
 This essentially copies canvas dimensions since loadFromJSON does not affect canvas size.
@@ -2104,7 +2104,7 @@ This essentially copies canvas dimensions since loadFromJSON does not affect can
 
 > **collectObjects**(`bbox`, `options`): [`InteractiveFabricObject`](/api/classes/interactivefabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[]
 
-Defined in: [src/Collection.ts:326](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/Collection.ts#L326)
+Defined in: [src/Collection.ts:326](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/Collection.ts#L326)
 
 Given a bounding box, return all the objects of the collection that are contained in the bounding box.
 If `includeIntersecting` is true, return also the objects that intersect the bounding box as well.
@@ -2142,7 +2142,7 @@ array of objects contained in the bounding box, ordered from top to bottom stack
 
 > **complexity**(): `number`
 
-Defined in: [src/Collection.ts:165](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/Collection.ts#L165)
+Defined in: [src/Collection.ts:165](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/Collection.ts#L165)
 
 Returns number representation of a collection complexity
 
@@ -2162,7 +2162,7 @@ complexity
 
 > **contains**(`object`, `deep?`): `boolean`
 
-Defined in: [src/Collection.ts:148](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/Collection.ts#L148)
+Defined in: [src/Collection.ts:148](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/Collection.ts#L148)
 
 Returns true if collection contains an object.\
 **Prefer using [FabricObject#isDescendantOf](/api/classes/fabricobject/#isdescendantof) for performance reasons**
@@ -2198,7 +2198,7 @@ Object to check against
 
 > **createSVGClipPathMarkup**(`options`): `string`
 
-Defined in: [src/canvas/StaticCanvas.ts:1080](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L1080)
+Defined in: [src/canvas/StaticCanvas.ts:1080](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L1080)
 
 #### Parameters
 
@@ -2220,7 +2220,7 @@ Defined in: [src/canvas/StaticCanvas.ts:1080](https://github.com/fabricjs/fabric
 
 > **createSVGFontFacesMarkup**(): `string`
 
-Defined in: [src/canvas/StaticCanvas.ts:1123](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L1123)
+Defined in: [src/canvas/StaticCanvas.ts:1123](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L1123)
 
 Creates markup containing SVG font faces,
 font URLs for font faces must be collected by developers
@@ -2240,7 +2240,7 @@ and are not extracted from the DOM by fabricjs
 
 > **createSVGRefElementsMarkup**(): `string`
 
-Defined in: [src/canvas/StaticCanvas.ts:1095](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L1095)
+Defined in: [src/canvas/StaticCanvas.ts:1095](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L1095)
 
 Creates markup containing SVG referenced elements like patterns, gradients etc.
 
@@ -2258,7 +2258,7 @@ Creates markup containing SVG referenced elements like patterns, gradients etc.
 
 > **destroy**(): `void`
 
-Defined in: [src/canvas/Canvas.ts:1563](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/Canvas.ts#L1563)
+Defined in: [src/canvas/Canvas.ts:1563](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/Canvas.ts#L1563)
 
 clear [textEditingManager](/api/classes/canvas/#texteditingmanager)
 
@@ -2276,7 +2276,7 @@ clear [textEditingManager](/api/classes/canvas/#texteditingmanager)
 
 > **discardActiveObject**(`e?`): `this is { _activeObject: undefined }`
 
-Defined in: [src/canvas/SelectableCanvas.ts:1209](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L1209)
+Defined in: [src/canvas/SelectableCanvas.ts:1209](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L1209)
 
 Discards currently active object and fire events. If the function is called by fabric
 as a consequence of a mouse event, the event is passed as a parameter and
@@ -2305,7 +2305,7 @@ true if the active object has been discarded
 
 > **dispose**(): `Promise`\<`boolean`\>
 
-Defined in: [src/canvas/StaticCanvas.ts:1471](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L1471)
+Defined in: [src/canvas/StaticCanvas.ts:1471](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L1471)
 
 Waits until rendering has settled to destroy the canvas
 
@@ -2329,7 +2329,7 @@ if aborted by a consequent call
 
 > **drawClipPathOnCanvas**(`ctx`, `clipPath`): `void`
 
-Defined in: [src/canvas/StaticCanvas.ts:610](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L610)
+Defined in: [src/canvas/StaticCanvas.ts:610](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L610)
 
 Paint the cached clipPath on the lowerCanvasEl
 
@@ -2359,7 +2359,7 @@ Context to render on
 
 > **drawControls**(`ctx`): `void`
 
-Defined in: [src/canvas/SelectableCanvas.ts:1317](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L1317)
+Defined in: [src/canvas/SelectableCanvas.ts:1317](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L1317)
 
 Draws objects' controls (borders/controls)
 
@@ -2385,7 +2385,7 @@ Context to render controls on
 
 > **endCurrentTransform**(`e?`): `void`
 
-Defined in: [src/canvas/SelectableCanvas.ts:1229](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L1229)
+Defined in: [src/canvas/SelectableCanvas.ts:1229](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L1229)
 
 End the current transform.
 You don't usually need to call this method unless you are interrupting a user initiated transform
@@ -2413,7 +2413,7 @@ send the mouse event that generate the finalize down, so it can be used in the e
 
 > **findNewLowerIndex**(`object`, `idx`, `intersecting?`): `number`
 
-Defined in: [src/Collection.ts:272](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/Collection.ts#L272)
+Defined in: [src/Collection.ts:272](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/Collection.ts#L272)
 
 #### Parameters
 
@@ -2443,7 +2443,7 @@ Defined in: [src/Collection.ts:272](https://github.com/fabricjs/fabric.js/blob/e
 
 > **findNewUpperIndex**(`object`, `idx`, `intersecting?`): `number`
 
-Defined in: [src/Collection.ts:295](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/Collection.ts#L295)
+Defined in: [src/Collection.ts:295](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/Collection.ts#L295)
 
 #### Parameters
 
@@ -2473,7 +2473,7 @@ Defined in: [src/Collection.ts:295](https://github.com/fabricjs/fabric.js/blob/e
 
 > **findTarget**(`e`): `undefined` \| [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
 
-Defined in: [src/canvas/SelectableCanvas.ts:712](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L712)
+Defined in: [src/canvas/SelectableCanvas.ts:712](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L712)
 
 Method that determines what object we are clicking on
 11/09/2018 TODO: would be cool if findTarget could discern between being a full target
@@ -2503,7 +2503,7 @@ the target found
 
 > **fire**\<`K`\>(`eventName`, `options?`): `void`
 
-Defined in: [src/Observable.ts:167](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/Observable.ts#L167)
+Defined in: [src/Observable.ts:167](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/Observable.ts#L167)
 
 Fires event with an optional options object
 
@@ -2541,7 +2541,7 @@ Options object
 
 > **forEachObject**(`callback`): `void`
 
-Defined in: [src/Collection.ts:91](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/Collection.ts#L91)
+Defined in: [src/Collection.ts:91](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/Collection.ts#L91)
 
 Executes given function for each object in this group
 A simple shortcut for getObjects().forEach, before es6 was more complicated,
@@ -2570,7 +2570,7 @@ Callback invoked with current object as first argument,
 
 > **get**(`property`): `any`
 
-Defined in: [src/CommonMethods.ts:59](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/CommonMethods.ts#L59)
+Defined in: [src/CommonMethods.ts:59](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/CommonMethods.ts#L59)
 
 Basic getter
 
@@ -2598,7 +2598,7 @@ value of a property
 
 > **getActiveObject**(): `undefined` \| [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
 
-Defined in: [src/canvas/SelectableCanvas.ts:1049](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L1049)
+Defined in: [src/canvas/SelectableCanvas.ts:1049](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L1049)
 
 Returns currently active object
 
@@ -2618,7 +2618,7 @@ active object
 
 > **getActiveObjects**(): [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[]
 
-Defined in: [src/canvas/SelectableCanvas.ts:1057](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L1057)
+Defined in: [src/canvas/SelectableCanvas.ts:1057](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L1057)
 
 Returns an array with the current selected objects
 
@@ -2638,7 +2638,7 @@ active objects array
 
 > **getCenter**(): `object`
 
-Defined in: [src/canvas/StaticCanvas.ts:716](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L716)
+Defined in: [src/canvas/StaticCanvas.ts:716](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L716)
 
 Returns coordinates of a center of canvas.
 Returned value is an object with top and left properties
@@ -2671,7 +2671,7 @@ object with "top" and "left" number values
 
 > **getCenterPoint**(): [`Point`](/api/classes/point/)
 
-Defined in: [src/canvas/StaticCanvas.ts:727](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L727)
+Defined in: [src/canvas/StaticCanvas.ts:727](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L727)
 
 Returns coordinates of a center of canvas.
 
@@ -2689,7 +2689,7 @@ Returns coordinates of a center of canvas.
 
 > **getContext**(): `CanvasRenderingContext2D`
 
-Defined in: [src/canvas/StaticCanvas.ts:471](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L471)
+Defined in: [src/canvas/StaticCanvas.ts:471](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L471)
 
 Returns context of canvas where objects are drawn
 
@@ -2707,7 +2707,7 @@ Returns context of canvas where objects are drawn
 
 > **getElement**(): `HTMLCanvasElement`
 
-Defined in: [src/canvas/StaticCanvas.ts:455](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L455)
+Defined in: [src/canvas/StaticCanvas.ts:455](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L455)
 
 Returns &lt;canvas> element corresponding to this instance
 
@@ -2725,7 +2725,7 @@ Returns &lt;canvas> element corresponding to this instance
 
 > **getHeight**(): `number`
 
-Defined in: [src/canvas/StaticCanvas.ts:282](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L282)
+Defined in: [src/canvas/StaticCanvas.ts:282](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L282)
 
 Returns canvas height (in px)
 
@@ -2743,7 +2743,7 @@ Returns canvas height (in px)
 
 > **getObjects**(...`types?`): [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[]
 
-Defined in: [src/Collection.ts:108](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/Collection.ts#L108)
+Defined in: [src/Collection.ts:108](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/Collection.ts#L108)
 
 Returns an array of children objects of this instance
 
@@ -2769,7 +2769,7 @@ When specified, only objects of these types are returned
 
 > **getPointer**(`e`, `fromViewport?`): [`Point`](/api/classes/point/)
 
-Defined in: [src/canvas/SelectableCanvas.ts:954](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L954)
+Defined in: [src/canvas/SelectableCanvas.ts:954](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L954)
 
 Returns pointer relative to canvas.
 
@@ -2804,7 +2804,7 @@ whether to return the point from the viewport or in the scene
 
 > **getScenePoint**(`e`): [`Point`](/api/classes/point/)
 
-Defined in: [src/canvas/SelectableCanvas.ts:937](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L937)
+Defined in: [src/canvas/SelectableCanvas.ts:937](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L937)
 
 #### Parameters
 
@@ -2839,7 +2839,7 @@ const viewportPoint = sendPointToPlane(
 
 > **getSelectionContext**(): `CanvasRenderingContext2D`
 
-Defined in: [src/canvas/SelectableCanvas.ts:1033](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L1033)
+Defined in: [src/canvas/SelectableCanvas.ts:1033](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L1033)
 
 Returns context of canvas where object selection is drawn
 
@@ -2859,7 +2859,7 @@ Returns context of canvas where object selection is drawn
 
 > **getSelectionElement**(): `HTMLCanvasElement`
 
-Defined in: [src/canvas/SelectableCanvas.ts:1041](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L1041)
+Defined in: [src/canvas/SelectableCanvas.ts:1041](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L1041)
 
 Returns &lt;canvas> element on which object selection is drawn
 
@@ -2877,7 +2877,7 @@ Returns &lt;canvas> element on which object selection is drawn
 
 > **getTopContext**(): `CanvasRenderingContext2D`
 
-Defined in: [src/canvas/SelectableCanvas.ts:1024](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L1024)
+Defined in: [src/canvas/SelectableCanvas.ts:1024](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L1024)
 
 Returns context of top canvas where interactions are drawn
 
@@ -2895,7 +2895,7 @@ Returns context of top canvas where interactions are drawn
 
 > **getViewportPoint**(`e`): [`Point`](/api/classes/point/)
 
-Defined in: [src/canvas/SelectableCanvas.ts:918](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L918)
+Defined in: [src/canvas/SelectableCanvas.ts:918](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L918)
 
 #### Parameters
 
@@ -2932,7 +2932,7 @@ const scenePoint = sendPointToPlane(
 
 > **getVpCenter**(): [`Point`](/api/classes/point/)
 
-Defined in: [src/canvas/StaticCanvas.ts:794](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L794)
+Defined in: [src/canvas/StaticCanvas.ts:794](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L794)
 
 Calculate the point in canvas that correspond to the center of actual viewport.
 
@@ -2952,7 +2952,7 @@ vpCenter, viewport center
 
 > **getWidth**(): `number`
 
-Defined in: [src/canvas/StaticCanvas.ts:274](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L274)
+Defined in: [src/canvas/StaticCanvas.ts:274](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L274)
 
 Returns canvas width (in px)
 
@@ -2970,7 +2970,7 @@ Returns canvas width (in px)
 
 > **getZoom**(): `number`
 
-Defined in: [src/canvas/StaticCanvas.ts:384](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L384)
+Defined in: [src/canvas/StaticCanvas.ts:384](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L384)
 
 Returns canvas zoom level
 
@@ -2988,7 +2988,7 @@ Returns canvas zoom level
 
 > **insertAt**(`index`, ...`objects`): `number`
 
-Defined in: [src/canvas/StaticCanvas.ts:216](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L216)
+Defined in: [src/canvas/StaticCanvas.ts:216](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L216)
 
 Inserts an object into collection at specified index
 
@@ -3022,7 +3022,7 @@ new array length
 
 > **isEmpty**(): `boolean`
 
-Defined in: [src/Collection.ts:128](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/Collection.ts#L128)
+Defined in: [src/Collection.ts:128](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/Collection.ts#L128)
 
 Returns true if collection contains no objects
 
@@ -3042,7 +3042,7 @@ true if collection is empty
 
 > **isTargetTransparent**(`target`, `x`, `y`): `boolean`
 
-Defined in: [src/canvas/SelectableCanvas.ts:444](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L444)
+Defined in: [src/canvas/SelectableCanvas.ts:444](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L444)
 
 Returns true if object is transparent at a certain location
 Clarification: this is `is target transparent at location X or are controls there`
@@ -3086,7 +3086,7 @@ programmatically without painting them, the cache canvas optimization is always 
 
 > **item**(`index`): [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
 
-Defined in: [src/Collection.ts:120](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/Collection.ts#L120)
+Defined in: [src/Collection.ts:120](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/Collection.ts#L120)
 
 Returns object at specified index
 
@@ -3112,7 +3112,7 @@ object at index
 
 > **loadFromJSON**(`json`, `reviver?`, `options?`): `Promise`\<`Canvas`\>
 
-Defined in: [src/canvas/StaticCanvas.ts:1276](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L1276)
+Defined in: [src/canvas/StaticCanvas.ts:1276](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L1276)
 
 Populates canvas with data from the specified JSON.
 JSON format must conform to the one of fabric.Canvas#toJSON
@@ -3179,7 +3179,7 @@ canvas.loadFromJSON(json, function(o, object) {
 
 > **moveObjectTo**(`object`, `index`): `boolean`
 
-Defined in: [src/Collection.ts:262](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/Collection.ts#L262)
+Defined in: [src/Collection.ts:262](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/Collection.ts#L262)
 
 Moves an object to specified level in stack of drawn objects
 
@@ -3215,7 +3215,7 @@ true if change occurred
 
 > **off**\<`K`\>(`eventName`): `void`
 
-Defined in: [src/Observable.ts:122](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/Observable.ts#L122)
+Defined in: [src/Observable.ts:122](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/Observable.ts#L122)
 
 Unsubscribe all event listeners for eventname.
 Do not use this pattern. You could kill internal fabricJS events.
@@ -3251,7 +3251,7 @@ event name (eg. 'after:render')
 
 > **off**\<`K`\>(`eventName`, `handler`): `void`
 
-Defined in: [src/Observable.ts:128](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/Observable.ts#L128)
+Defined in: [src/Observable.ts:128](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/Observable.ts#L128)
 
 unsubscribe an event listener
 
@@ -3287,7 +3287,7 @@ event listener to unsubscribe
 
 > **off**(`handlers`): `void`
 
-Defined in: [src/Observable.ts:133](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/Observable.ts#L133)
+Defined in: [src/Observable.ts:133](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/Observable.ts#L133)
 
 unsubscribe event listeners
 
@@ -3295,7 +3295,7 @@ unsubscribe event listeners
 
 ###### handlers
 
-`EventRegistryObject`\<[`CanvasEvents`](/api/interfaces/canvasevents/)\>
+`EventRegistryObject`\<`EventSpec`\>
 
 handlers key/value pairs (eg. {'after:render': handler, 'selection:cleared': handler})
 
@@ -3311,7 +3311,7 @@ handlers key/value pairs (eg. {'after:render': handler, 'selection:cleared': han
 
 > **off**(): `void`
 
-Defined in: [src/Observable.ts:137](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/Observable.ts#L137)
+Defined in: [src/Observable.ts:137](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/Observable.ts#L137)
 
 unsubscribe all event listeners
 
@@ -3331,7 +3331,7 @@ unsubscribe all event listeners
 
 > **on**\<`K`, `E`\>(`eventName`, `handler`): `VoidFunction`
 
-Defined in: [src/Observable.ts:23](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/Observable.ts#L23)
+Defined in: [src/Observable.ts:23](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/Observable.ts#L23)
 
 Observes specified event
 
@@ -3377,7 +3377,7 @@ on
 
 > **on**(`handlers`): `VoidFunction`
 
-Defined in: [src/Observable.ts:27](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/Observable.ts#L27)
+Defined in: [src/Observable.ts:27](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/Observable.ts#L27)
 
 Observes specified event
 
@@ -3385,7 +3385,7 @@ Observes specified event
 
 ###### handlers
 
-`EventRegistryObject`\<[`CanvasEvents`](/api/interfaces/canvasevents/)\>
+`EventRegistryObject`\<`EventSpec`\>
 
 key/value pairs (eg. {'after:render': handler, 'selection:cleared': handler})
 
@@ -3411,7 +3411,7 @@ on
 
 > **once**\<`K`, `E`\>(`eventName`, `handler`): `VoidFunction`
 
-Defined in: [src/Observable.ts:62](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/Observable.ts#L62)
+Defined in: [src/Observable.ts:62](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/Observable.ts#L62)
 
 Observes specified event **once**
 
@@ -3457,7 +3457,7 @@ once
 
 > **once**(`handlers`): `VoidFunction`
 
-Defined in: [src/Observable.ts:66](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/Observable.ts#L66)
+Defined in: [src/Observable.ts:66](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/Observable.ts#L66)
 
 Observes specified event **once**
 
@@ -3465,7 +3465,7 @@ Observes specified event **once**
 
 ###### handlers
 
-`EventRegistryObject`\<[`CanvasEvents`](/api/interfaces/canvasevents/)\>
+`EventRegistryObject`\<`EventSpec`\>
 
 key/value pairs (eg. {'after:render': handler, 'selection:cleared': handler})
 
@@ -3489,7 +3489,7 @@ once
 
 > **relativePan**(`point`): `void`
 
-Defined in: [src/canvas/StaticCanvas.ts:442](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L442)
+Defined in: [src/canvas/StaticCanvas.ts:442](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L442)
 
 Pans viewpoint relatively
 
@@ -3515,7 +3515,7 @@ Pans viewpoint relatively
 
 > **removeListeners**(): `void`
 
-Defined in: [src/canvas/Canvas.ts:212](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/Canvas.ts#L212)
+Defined in: [src/canvas/Canvas.ts:212](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/Canvas.ts#L212)
 
 Removes all event listeners, used when disposing the instance
 
@@ -3529,7 +3529,7 @@ Removes all event listeners, used when disposing the instance
 
 > **renderAll**(): `void`
 
-Defined in: [src/canvas/SelectableCanvas.ts:372](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L372)
+Defined in: [src/canvas/SelectableCanvas.ts:372](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L372)
 
 Renders both the top canvas and the secondary container canvas.
 
@@ -3547,7 +3547,7 @@ Renders both the top canvas and the secondary container canvas.
 
 > **renderCanvas**(`ctx`, `objects`): `void`
 
-Defined in: [src/canvas/StaticCanvas.ts:562](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L562)
+Defined in: [src/canvas/StaticCanvas.ts:562](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L562)
 
 Renders background, objects, overlay and controls.
 
@@ -3577,7 +3577,7 @@ to render
 
 > **renderTop**(): `void`
 
-Defined in: [src/canvas/SelectableCanvas.ts:412](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L412)
+Defined in: [src/canvas/SelectableCanvas.ts:412](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L412)
 
 Method to render only the top canvas.
 Also used to render the group selection box.
@@ -3597,7 +3597,7 @@ Does not render text selection.
 
 > **renderTopLayer**(`ctx`): `void`
 
-Defined in: [src/canvas/SelectableCanvas.ts:393](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L393)
+Defined in: [src/canvas/SelectableCanvas.ts:393](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L393)
 
 text selection is rendered by the active text instance during the rendering cycle
 
@@ -3621,7 +3621,7 @@ text selection is rendered by the active text instance during the rendering cycl
 
 > **requestRenderAll**(): `void`
 
-Defined in: [src/canvas/StaticCanvas.ts:518](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L518)
+Defined in: [src/canvas/StaticCanvas.ts:518](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L518)
 
 Append a renderAll request to next animation frame.
 unless one is already in progress, in that case nothing is done
@@ -3641,7 +3641,7 @@ a boolean flag will avoid appending more.
 
 > **searchPossibleTargets**(`objects?`, `pointer?`): `undefined` \| [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
 
-Defined in: [src/canvas/SelectableCanvas.ts:872](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L872)
+Defined in: [src/canvas/SelectableCanvas.ts:872](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L872)
 
 Function used to search inside objects an object that contains pointer in bounding box or that contains pointerOnCanvas when painted
 
@@ -3679,7 +3679,7 @@ coordinates from viewport to check.
 
 > **sendObjectBackwards**(`object`, `intersecting?`): `boolean`
 
-Defined in: [src/Collection.ts:214](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/Collection.ts#L214)
+Defined in: [src/Collection.ts:214](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/Collection.ts#L214)
 
 Moves an object or a selection down in stack of drawn objects
 An optional parameter, `intersecting` allows to move the object in behind
@@ -3717,7 +3717,7 @@ true if change occurred
 
 > **sendObjectToBack**(`object`): `boolean`
 
-Defined in: [src/Collection.ts:178](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/Collection.ts#L178)
+Defined in: [src/Collection.ts:178](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/Collection.ts#L178)
 
 Moves an object or the objects of a multiple selection
 to the bottom of the stack of drawn objects
@@ -3746,7 +3746,7 @@ true if change occurred
 
 > **set**(`key`, `value?`): `Canvas`
 
-Defined in: [src/CommonMethods.ts:29](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/CommonMethods.ts#L29)
+Defined in: [src/CommonMethods.ts:29](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/CommonMethods.ts#L29)
 
 Sets property to a given value. When changing position/dimension -related properties (left, top, scale, angle, etc.) `set` does not update position of object's borders/controls. If you need to update those, call `setCoords()`.
 
@@ -3778,7 +3778,7 @@ Property value (if function, the value is passed into it and its return value is
 
 > **setActiveObject**(`object`, `e?`): `boolean`
 
-Defined in: [src/canvas/SelectableCanvas.ts:1131](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L1131)
+Defined in: [src/canvas/SelectableCanvas.ts:1131](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L1131)
 
 Sets given object as the only active object on canvas
 
@@ -3812,7 +3812,7 @@ true if the object has been selected
 
 > **setCursor**(`value`): `void`
 
-Defined in: [src/canvas/SelectableCanvas.ts:660](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L660)
+Defined in: [src/canvas/SelectableCanvas.ts:660](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L660)
 
 Set the cursor type of the canvas element
 
@@ -3844,7 +3844,7 @@ http://www.w3.org/TR/css3-ui/#cursor
 
 > **setDimensions**(`dimensions`, `options?`): `void`
 
-Defined in: [src/canvas/StaticCanvas.ts:361](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L361)
+Defined in: [src/canvas/StaticCanvas.ts:361](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L361)
 
 Sets dimensions (width, height) of this canvas instance. when options.cssOnly flag active you should also supply the unit of measure (px/%/em)
 
@@ -3884,7 +3884,7 @@ Set the given dimensions only as css dimensions
 
 > **setDimensions**(`dimensions`, `options?`): `void`
 
-Defined in: [src/canvas/StaticCanvas.ts:365](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L365)
+Defined in: [src/canvas/StaticCanvas.ts:365](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L365)
 
 Sets dimensions (width, height) of this canvas instance. when options.cssOnly flag active you should also supply the unit of measure (px/%/em)
 
@@ -3924,7 +3924,7 @@ Set the given dimensions only as css dimensions
 
 > **setDimensions**(`dimensions`, `options?`): `void`
 
-Defined in: [src/canvas/StaticCanvas.ts:369](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L369)
+Defined in: [src/canvas/StaticCanvas.ts:369](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L369)
 
 Sets dimensions (width, height) of this canvas instance. when options.cssOnly flag active you should also supply the unit of measure (px/%/em)
 
@@ -3958,7 +3958,7 @@ Options object
 
 > **setHeight**(`value`, `options?`): `void`
 
-Defined in: [src/canvas/StaticCanvas.ts:314](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L314)
+Defined in: [src/canvas/StaticCanvas.ts:314](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L314)
 
 s
 Sets height of this canvas instance
@@ -4003,7 +4003,7 @@ Set the given dimensions only as css dimensions
 
 > **setHeight**(`value`, `options?`): `void`
 
-Defined in: [src/canvas/StaticCanvas.ts:318](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L318)
+Defined in: [src/canvas/StaticCanvas.ts:318](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L318)
 
 s
 Sets height of this canvas instance
@@ -4050,7 +4050,7 @@ Set the given dimensions only as css dimensions
 
 > **setViewportTransform**(`vpt`): `void`
 
-Defined in: [src/canvas/SelectableCanvas.ts:1269](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L1269)
+Defined in: [src/canvas/SelectableCanvas.ts:1269](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L1269)
 
 Sets viewport transformation of this canvas instance
 
@@ -4078,7 +4078,7 @@ a Canvas 2D API transform matrix
 
 > **setWidth**(`value`, `options?`): `void`
 
-Defined in: [src/canvas/StaticCanvas.ts:294](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L294)
+Defined in: [src/canvas/StaticCanvas.ts:294](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L294)
 
 Sets width of this canvas instance
 
@@ -4122,7 +4122,7 @@ Set the given dimensions only as css dimensions
 
 > **setWidth**(`value`, `options?`): `void`
 
-Defined in: [src/canvas/StaticCanvas.ts:298](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L298)
+Defined in: [src/canvas/StaticCanvas.ts:298](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L298)
 
 Sets width of this canvas instance
 
@@ -4168,7 +4168,7 @@ Set the given dimensions only as css dimensions
 
 > **setZoom**(`value`): `void`
 
-Defined in: [src/canvas/StaticCanvas.ts:423](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L423)
+Defined in: [src/canvas/StaticCanvas.ts:423](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L423)
 
 Sets zoom level of this canvas instance
 
@@ -4194,7 +4194,7 @@ to set zoom to, less than 1 zooms out
 
 > **size**(): `number`
 
-Defined in: [src/Collection.ts:136](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/Collection.ts#L136)
+Defined in: [src/Collection.ts:136](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/Collection.ts#L136)
 
 Returns a size of a collection (i.e: length of an array containing its objects)
 
@@ -4214,7 +4214,7 @@ Collection size
 
 > **toBlob**(`options`): `Promise`\<`null` \| `Blob`\>
 
-Defined in: [src/canvas/StaticCanvas.ts:1396](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L1396)
+Defined in: [src/canvas/StaticCanvas.ts:1396](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L1396)
 
 #### Parameters
 
@@ -4236,7 +4236,7 @@ Defined in: [src/canvas/StaticCanvas.ts:1396](https://github.com/fabricjs/fabric
 
 > **toCanvasElement**(`multiplier?`, `options?`): `HTMLCanvasElement`
 
-Defined in: [src/canvas/StaticCanvas.ts:1427](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L1427)
+Defined in: [src/canvas/StaticCanvas.ts:1427](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L1427)
 
 Create a new HTMLCanvas element painted with the current canvas content.
 No need to resize the actual one or repaint it.
@@ -4272,7 +4272,7 @@ Cropping informations
 
 > **toDatalessJSON**(`propertiesToInclude?`): `any`
 
-Defined in: [src/canvas/StaticCanvas.ts:817](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L817)
+Defined in: [src/canvas/StaticCanvas.ts:817](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L817)
 
 Returns dataless JSON representation of canvas
 
@@ -4300,7 +4300,7 @@ json string
 
 > **toDatalessObject**(`propertiesToInclude?`): `any`
 
-Defined in: [src/canvas/StaticCanvas.ts:854](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L854)
+Defined in: [src/canvas/StaticCanvas.ts:854](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L854)
 
 Returns dataless object representation of canvas
 
@@ -4328,7 +4328,7 @@ object representation of an instance
 
 > **toDataURL**(`options?`): `string`
 
-Defined in: [src/canvas/StaticCanvas.ts:1380](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L1380)
+Defined in: [src/canvas/StaticCanvas.ts:1380](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L1380)
 
 Exports canvas element to a dataurl image. Note that when multiplier is used, cropping is scaled appropriately
 
@@ -4393,7 +4393,7 @@ var dataURL = canvas.toDataURL({
 
 > **toggle**(`property`): `Canvas`
 
-Defined in: [src/CommonMethods.ts:46](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/CommonMethods.ts#L46)
+Defined in: [src/CommonMethods.ts:46](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/CommonMethods.ts#L46)
 
 Toggles specified property from `true` to `false` or from `false` to `true`
 
@@ -4419,7 +4419,7 @@ Property to toggle
 
 > **toJSON**(): `any`
 
-Defined in: [src/canvas/StaticCanvas.ts:845](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L845)
+Defined in: [src/canvas/StaticCanvas.ts:845](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L845)
 
 Returns Object representation of canvas
 this alias is provided because if you call JSON.stringify on an instance,
@@ -4464,7 +4464,7 @@ var json = canvas.toJSON();
 
 > **toObject**(`propertiesToInclude?`): `any`
 
-Defined in: [src/canvas/StaticCanvas.ts:826](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L826)
+Defined in: [src/canvas/StaticCanvas.ts:826](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L826)
 
 Returns object representation of canvas
 
@@ -4492,7 +4492,7 @@ object representation of an instance
 
 > **toString**(): `string`
 
-Defined in: [src/canvas/StaticCanvas.ts:1530](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L1530)
+Defined in: [src/canvas/StaticCanvas.ts:1530](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L1530)
 
 Returns a string representation of an instance
 
@@ -4512,7 +4512,7 @@ string representation of an instance
 
 > **toSVG**(`options?`, `reviver?`): `string`
 
-Defined in: [src/canvas/StaticCanvas.ts:993](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L993)
+Defined in: [src/canvas/StaticCanvas.ts:993](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L993)
 
 **`Function`**
 
@@ -4587,7 +4587,7 @@ var svg = canvas.toSVG(null, function(svg) {
 
 > **viewportCenterObject**(`object`): `void`
 
-Defined in: [src/canvas/StaticCanvas.ts:764](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L764)
+Defined in: [src/canvas/StaticCanvas.ts:764](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L764)
 
 Centers object vertically and horizontally in the viewport
 
@@ -4613,7 +4613,7 @@ Object to center vertically and horizontally
 
 > **viewportCenterObjectH**(`object`): `void`
 
-Defined in: [src/canvas/StaticCanvas.ts:772](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L772)
+Defined in: [src/canvas/StaticCanvas.ts:772](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L772)
 
 Centers object horizontally in the viewport, object.top is unchanged
 
@@ -4639,7 +4639,7 @@ Object to center vertically and horizontally
 
 > **viewportCenterObjectV**(`object`): `void`
 
-Defined in: [src/canvas/StaticCanvas.ts:783](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L783)
+Defined in: [src/canvas/StaticCanvas.ts:783](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L783)
 
 Centers object Vertically in the viewport, object.top is unchanged
 
@@ -4665,7 +4665,7 @@ Object to center vertically and horizontally
 
 > **zoomToPoint**(`point`, `value`): `void`
 
-Defined in: [src/canvas/StaticCanvas.ts:406](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/StaticCanvas.ts#L406)
+Defined in: [src/canvas/StaticCanvas.ts:406](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L406)
 
 Sets zoom level of this canvas instance, the zoom centered around point
 meaning that following zoom to point with the same point will have the visual
@@ -4700,7 +4700,7 @@ to set zoom to, less than 1 zooms out
 
 > `static` **getDefaults**(): `Record`\<`string`, `any`\>
 
-Defined in: [src/canvas/SelectableCanvas.ts:290](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/canvas/SelectableCanvas.ts#L290)
+Defined in: [src/canvas/SelectableCanvas.ts:290](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/SelectableCanvas.ts#L290)
 
 #### Returns
 

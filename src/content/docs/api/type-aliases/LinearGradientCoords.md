@@ -7,7 +7,7 @@ title: "LinearGradientCoords"
 
 > **LinearGradientCoords**\<`T`\> = `object`
 
-Defined in: [src/gradient/typedefs.ts:15](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/gradient/typedefs.ts#L15)
+Defined in: [src/gradient/typedefs.ts:15](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/gradient/typedefs.ts#L15)
 
 ## Type Parameters
 
@@ -21,7 +21,7 @@ Defined in: [src/gradient/typedefs.ts:15](https://github.com/fabricjs/fabric.js/
 
 > **x1**: `T`
 
-Defined in: [src/gradient/typedefs.ts:19](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/gradient/typedefs.ts#L19)
+Defined in: [src/gradient/typedefs.ts:19](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/gradient/typedefs.ts#L19)
 
 X coordiante of the first point
 
@@ -31,7 +31,7 @@ X coordiante of the first point
 
 > **x2**: `T`
 
-Defined in: [src/gradient/typedefs.ts:27](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/gradient/typedefs.ts#L27)
+Defined in: [src/gradient/typedefs.ts:27](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/gradient/typedefs.ts#L27)
 
 X coordiante of the second point
 
@@ -41,7 +41,7 @@ X coordiante of the second point
 
 > **y1**: `T`
 
-Defined in: [src/gradient/typedefs.ts:23](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/gradient/typedefs.ts#L23)
+Defined in: [src/gradient/typedefs.ts:23](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/gradient/typedefs.ts#L23)
 
 Y coordiante of the first point
 
@@ -51,6 +51,6 @@ Y coordiante of the first point
 
 > **y2**: `T`
 
-Defined in: [src/gradient/typedefs.ts:31](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/gradient/typedefs.ts#L31)
+Defined in: [src/gradient/typedefs.ts:31](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/gradient/typedefs.ts#L31)
 
 Y coordiante of the second point

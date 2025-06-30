@@ -7,7 +7,7 @@ title: "LayoutStrategyResult"
 
 > **LayoutStrategyResult** = `object`
 
-Defined in: [src/LayoutManager/types.ts:28](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/LayoutManager/types.ts#L28)
+Defined in: [src/LayoutManager/types.ts:28](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/LayoutManager/types.ts#L28)
 
 ## Properties
 
@@ -15,7 +15,7 @@ Defined in: [src/LayoutManager/types.ts:28](https://github.com/fabricjs/fabric.j
 
 > **center**: [`Point`](/api/classes/point/)
 
-Defined in: [src/LayoutManager/types.ts:32](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/LayoutManager/types.ts#L32)
+Defined in: [src/LayoutManager/types.ts:32](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/LayoutManager/types.ts#L32)
 
 new center point as measured by the **containing** plane (same as `left` with `originX` set to `center`)
 
@@ -25,7 +25,7 @@ new center point as measured by the **containing** plane (same as `left` with `o
 
 > `optional` **correction**: [`Point`](/api/classes/point/)
 
-Defined in: [src/LayoutManager/types.ts:41](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/LayoutManager/types.ts#L41)
+Defined in: [src/LayoutManager/types.ts:41](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/LayoutManager/types.ts#L41)
 
 correction vector to translate objects by, measured in the same plane as `center`
 
@@ -39,7 +39,7 @@ In other words, this value makes it possible to layout objects relative to the t
 
 > `optional` **relativeCorrection**: [`Point`](/api/classes/point/)
 
-Defined in: [src/LayoutManager/types.ts:46](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/LayoutManager/types.ts#L46)
+Defined in: [src/LayoutManager/types.ts:46](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/LayoutManager/types.ts#L46)
 
 correction vector to translate objects by as measured by the plane
 
@@ -49,6 +49,6 @@ correction vector to translate objects by as measured by the plane
 
 > **size**: [`Point`](/api/classes/point/)
 
-Defined in: [src/LayoutManager/types.ts:51](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/LayoutManager/types.ts#L51)
+Defined in: [src/LayoutManager/types.ts:51](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/LayoutManager/types.ts#L51)
 
 new width and height of the layout target

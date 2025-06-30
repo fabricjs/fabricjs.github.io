@@ -5,7 +5,7 @@ prev: false
 title: "StaticCanvasEvents"
 ---
 
-Defined in: [src/EventTypeDefs.ts:332](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/EventTypeDefs.ts#L332)
+Defined in: [src/EventTypeDefs.ts:332](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/EventTypeDefs.ts#L332)
 
 ## Extends
 
@@ -21,7 +21,7 @@ Defined in: [src/EventTypeDefs.ts:332](https://github.com/fabricjs/fabric.js/blo
 
 > **after:render**: `object`
 
-Defined in: [src/EventTypeDefs.ts:338](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/EventTypeDefs.ts#L338)
+Defined in: [src/EventTypeDefs.ts:338](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/EventTypeDefs.ts#L338)
 
 #### ctx
 
@@ -33,7 +33,7 @@ Defined in: [src/EventTypeDefs.ts:338](https://github.com/fabricjs/fabric.js/blo
 
 > **before:render**: `object`
 
-Defined in: [src/EventTypeDefs.ts:337](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/EventTypeDefs.ts#L337)
+Defined in: [src/EventTypeDefs.ts:337](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/EventTypeDefs.ts#L337)
 
 #### ctx
 
@@ -45,7 +45,7 @@ Defined in: [src/EventTypeDefs.ts:337](https://github.com/fabricjs/fabric.js/blo
 
 > **canvas:cleared**: `never`
 
-Defined in: [src/EventTypeDefs.ts:334](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/EventTypeDefs.ts#L334)
+Defined in: [src/EventTypeDefs.ts:334](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/EventTypeDefs.ts#L334)
 
 ***
 
@@ -53,7 +53,7 @@ Defined in: [src/EventTypeDefs.ts:334](https://github.com/fabricjs/fabric.js/blo
 
 > **object:added**: `object`
 
-Defined in: [src/EventTypeDefs.ts:250](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/EventTypeDefs.ts#L250)
+Defined in: [src/EventTypeDefs.ts:250](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/EventTypeDefs.ts#L250)
 
 #### target
 
@@ -69,7 +69,7 @@ Defined in: [src/EventTypeDefs.ts:250](https://github.com/fabricjs/fabric.js/blo
 
 > **object:layout:after**: [`LayoutAfterEvent`](/api/type-aliases/layoutafterevent/) & `object`
 
-Defined in: [src/EventTypeDefs.ts:340](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/EventTypeDefs.ts#L340)
+Defined in: [src/EventTypeDefs.ts:340](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/EventTypeDefs.ts#L340)
 
 #### Type declaration
 
@@ -83,7 +83,7 @@ Defined in: [src/EventTypeDefs.ts:340](https://github.com/fabricjs/fabric.js/blo
 
 > **object:layout:before**: [`LayoutBeforeEvent`](/api/type-aliases/layoutbeforeevent/) & `object`
 
-Defined in: [src/EventTypeDefs.ts:339](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/EventTypeDefs.ts#L339)
+Defined in: [src/EventTypeDefs.ts:339](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/EventTypeDefs.ts#L339)
 
 #### Type declaration
 
@@ -97,7 +97,7 @@ Defined in: [src/EventTypeDefs.ts:339](https://github.com/fabricjs/fabric.js/blo
 
 > **object:removed**: `object`
 
-Defined in: [src/EventTypeDefs.ts:251](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/EventTypeDefs.ts#L251)
+Defined in: [src/EventTypeDefs.ts:251](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/EventTypeDefs.ts#L251)
 
 #### target
 

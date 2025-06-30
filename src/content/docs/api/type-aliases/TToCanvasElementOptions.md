@@ -7,7 +7,7 @@ title: "TToCanvasElementOptions"
 
 > **TToCanvasElementOptions**\<`T`\> = `object`
 
-Defined in: [src/typedefs.ts:104](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/typedefs.ts#L104)
+Defined in: [src/typedefs.ts:104](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/typedefs.ts#L104)
 
 ## Type Parameters
 
@@ -21,7 +21,7 @@ Defined in: [src/typedefs.ts:104](https://github.com/fabricjs/fabric.js/blob/e11
 
 > `optional` **filter**: (`object`) => `boolean`
 
-Defined in: [src/typedefs.ts:111](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/typedefs.ts#L111)
+Defined in: [src/typedefs.ts:111](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/typedefs.ts#L111)
 
 #### Parameters
 
@@ -39,7 +39,7 @@ Defined in: [src/typedefs.ts:111](https://github.com/fabricjs/fabric.js/blob/e11
 
 > `optional` **height**: `number`
 
-Defined in: [src/typedefs.ts:110](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/typedefs.ts#L110)
+Defined in: [src/typedefs.ts:110](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/typedefs.ts#L110)
 
 ***
 
@@ -47,7 +47,7 @@ Defined in: [src/typedefs.ts:110](https://github.com/fabricjs/fabric.js/blob/e11
 
 > `optional` **left**: `number`
 
-Defined in: [src/typedefs.ts:107](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/typedefs.ts#L107)
+Defined in: [src/typedefs.ts:107](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/typedefs.ts#L107)
 
 ***
 
@@ -55,7 +55,7 @@ Defined in: [src/typedefs.ts:107](https://github.com/fabricjs/fabric.js/blob/e11
 
 > `optional` **top**: `number`
 
-Defined in: [src/typedefs.ts:108](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/typedefs.ts#L108)
+Defined in: [src/typedefs.ts:108](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/typedefs.ts#L108)
 
 ***
 
@@ -63,4 +63,4 @@ Defined in: [src/typedefs.ts:108](https://github.com/fabricjs/fabric.js/blob/e11
 
 > `optional` **width**: `number`
 
-Defined in: [src/typedefs.ts:109](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/typedefs.ts#L109)
+Defined in: [src/typedefs.ts:109](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/typedefs.ts#L109)

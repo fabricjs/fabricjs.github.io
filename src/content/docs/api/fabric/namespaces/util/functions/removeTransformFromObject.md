@@ -7,7 +7,7 @@ title: "removeTransformFromObject"
 
 > **removeTransformFromObject**(`object`, `transform`): `void`
 
-Defined in: [src/util/misc/objectTransforms.ts:23](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/util/misc/objectTransforms.ts#L23)
+Defined in: [src/util/misc/objectTransforms.ts:23](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/util/misc/objectTransforms.ts#L23)
 
 given an object and a transform, apply the inverse transform to the object,
 this is equivalent to remove from that object that transformation, so that

@@ -7,7 +7,7 @@ title: "SVGOptions"
 
 > **SVGOptions** = `object`
 
-Defined in: [src/gradient/typedefs.ts:85](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/gradient/typedefs.ts#L85)
+Defined in: [src/gradient/typedefs.ts:85](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/gradient/typedefs.ts#L85)
 
 ## Properties
 
@@ -15,7 +15,7 @@ Defined in: [src/gradient/typedefs.ts:85](https://github.com/fabricjs/fabric.js/
 
 > **height**: `number`
 
-Defined in: [src/gradient/typedefs.ts:101](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/gradient/typedefs.ts#L101)
+Defined in: [src/gradient/typedefs.ts:101](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/gradient/typedefs.ts#L101)
 
 height part of the svg tag if viewBox is not specified
 
@@ -25,7 +25,7 @@ height part of the svg tag if viewBox is not specified
 
 > **opacity**: `string` \| `null`
 
-Defined in: [src/gradient/typedefs.ts:103](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/gradient/typedefs.ts#L103)
+Defined in: [src/gradient/typedefs.ts:103](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/gradient/typedefs.ts#L103)
 
 ***
 
@@ -33,7 +33,7 @@ Defined in: [src/gradient/typedefs.ts:103](https://github.com/fabricjs/fabric.js
 
 > **viewBoxHeight**: `number`
 
-Defined in: [src/gradient/typedefs.ts:93](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/gradient/typedefs.ts#L93)
+Defined in: [src/gradient/typedefs.ts:93](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/gradient/typedefs.ts#L93)
 
 height part of the viewBox attribute on svg
 
@@ -43,7 +43,7 @@ height part of the viewBox attribute on svg
 
 > **viewBoxWidth**: `number`
 
-Defined in: [src/gradient/typedefs.ts:89](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/gradient/typedefs.ts#L89)
+Defined in: [src/gradient/typedefs.ts:89](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/gradient/typedefs.ts#L89)
 
 width part of the viewBox attribute on svg
 
@@ -53,6 +53,6 @@ width part of the viewBox attribute on svg
 
 > **width**: `number`
 
-Defined in: [src/gradient/typedefs.ts:97](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/gradient/typedefs.ts#L97)
+Defined in: [src/gradient/typedefs.ts:97](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/gradient/typedefs.ts#L97)
 
 width part of the svg tag if viewBox is not specified

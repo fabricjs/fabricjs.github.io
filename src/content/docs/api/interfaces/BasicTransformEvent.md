@@ -5,7 +5,7 @@ prev: false
 title: "BasicTransformEvent"
 ---
 
-Defined in: [src/EventTypeDefs.ts:103](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/EventTypeDefs.ts#L103)
+Defined in: [src/EventTypeDefs.ts:103](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/EventTypeDefs.ts#L103)
 
 ## Extends
 
@@ -23,7 +23,7 @@ Defined in: [src/EventTypeDefs.ts:103](https://github.com/fabricjs/fabric.js/blo
 
 > **e**: `E`
 
-Defined in: [src/EventTypeDefs.ts:96](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/EventTypeDefs.ts#L96)
+Defined in: [src/EventTypeDefs.ts:96](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/EventTypeDefs.ts#L96)
 
 #### Inherited from
 
@@ -35,7 +35,7 @@ Defined in: [src/EventTypeDefs.ts:96](https://github.com/fabricjs/fabric.js/blob
 
 > **pointer**: [`Point`](/api/classes/point/)
 
-Defined in: [src/EventTypeDefs.ts:106](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/EventTypeDefs.ts#L106)
+Defined in: [src/EventTypeDefs.ts:106](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/EventTypeDefs.ts#L106)
 
 ***
 
@@ -43,4 +43,4 @@ Defined in: [src/EventTypeDefs.ts:106](https://github.com/fabricjs/fabric.js/blo
 
 > **transform**: [`Transform`](/api/type-aliases/transform/)
 
-Defined in: [src/EventTypeDefs.ts:105](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/EventTypeDefs.ts#L105)
+Defined in: [src/EventTypeDefs.ts:105](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/EventTypeDefs.ts#L105)

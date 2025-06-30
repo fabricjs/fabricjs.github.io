@@ -7,7 +7,7 @@ title: "parseSVGDocument"
 
 > **parseSVGDocument**(`doc`, `reviver?`, `__namedParameters?`): `Promise`\<`SVGParsingOutput`\>
 
-Defined in: [src/parser/parseSVGDocument.ts:38](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/parser/parseSVGDocument.ts#L38)
+Defined in: [src/parser/parseSVGDocument.ts:38](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/parser/parseSVGDocument.ts#L38)
 
 **`Function`**
 

@@ -7,4 +7,4 @@ title: "ControlCursorCallback"
 
 > **ControlCursorCallback** = [`ControlCallback`](/api/type-aliases/controlcallback/)\<`string`\>
 
-Defined in: [src/EventTypeDefs.ts:60](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/EventTypeDefs.ts#L60)
+Defined in: [src/EventTypeDefs.ts:60](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/EventTypeDefs.ts#L60)

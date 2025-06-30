@@ -7,4 +7,4 @@ title: "Kodachrome"
 
 > `const` **Kodachrome**: *typeof* [`ColorMatrix`](/api/fabric/namespaces/filters/classes/colormatrix/)
 
-Defined in: [src/filters/ColorMatrixFilters.ts:46](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/ColorMatrixFilters.ts#L46)
+Defined in: [src/filters/ColorMatrixFilters.ts:46](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/filters/ColorMatrixFilters.ts#L46)

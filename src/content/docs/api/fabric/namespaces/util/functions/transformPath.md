@@ -7,7 +7,7 @@ title: "transformPath"
 
 > **transformPath**(`path`, `transform`, `pathOffset?`): [`TSimplePathData`](/api/type-aliases/tsimplepathdata/)
 
-Defined in: [src/util/path/index.ts:966](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/util/path/index.ts#L966)
+Defined in: [src/util/path/index.ts:966](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/util/path/index.ts#L966)
 
 Transform a path by transforming each segment.
 it has to be a simplified path or it won't work.

@@ -7,7 +7,7 @@ title: "pick"
 
 > **pick**\<`T`\>(`source`, `keys`): `Partial`\<`T`\>
 
-Defined in: [src/util/misc/pick.ts:7](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/util/misc/pick.ts#L7)
+Defined in: [src/util/misc/pick.ts:7](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/util/misc/pick.ts#L7)
 
 Populates an object with properties of another object
 

@@ -9,7 +9,7 @@ title: "animate"
 
 > **animate**(`options`): `ArrayAnimation`
 
-Defined in: [src/util/animation/animate.ts:50](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/util/animation/animate.ts#L50)
+Defined in: [src/util/animation/animate.ts:50](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/util/animation/animate.ts#L50)
 
 Changes value(s) from startValue to endValue within a certain period of time,
 invoking callbacks as the value(s) change.
@@ -18,7 +18,7 @@ invoking callbacks as the value(s) change.
 
 #### options
 
-`Partial`
+[`ArrayAnimationOptions`](/api/fabric/namespaces/util/type-aliases/arrayanimationoptions/)
 
 ### Returns
 
@@ -54,7 +54,7 @@ animate({
 
 > **animate**(`options`): `ValueAnimation`
 
-Defined in: [src/util/animation/animate.ts:51](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/util/animation/animate.ts#L51)
+Defined in: [src/util/animation/animate.ts:51](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/util/animation/animate.ts#L51)
 
 Changes value(s) from startValue to endValue within a certain period of time,
 invoking callbacks as the value(s) change.
@@ -63,7 +63,7 @@ invoking callbacks as the value(s) change.
 
 #### options
 
-`Partial`
+[`ValueAnimationOptions`](/api/fabric/namespaces/util/type-aliases/valueanimationoptions/)
 
 ### Returns
 
@@ -99,7 +99,7 @@ animate({
 
 > **animate**\<`T`\>(`options`): `T` *extends* `Partial`\<[`TAnimationBaseOptions`](/api/fabric/namespaces/util/type-aliases/tanimationbaseoptions/)\<`number`[]\> & [`TAnimationCallbacks`](/api/fabric/namespaces/util/type-aliases/tanimationcallbacks/)\<`number`[]\> & `object`\> ? `ArrayAnimation` : `ValueAnimation`
 
-Defined in: [src/util/animation/animate.ts:52](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/util/animation/animate.ts#L52)
+Defined in: [src/util/animation/animate.ts:52](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/util/animation/animate.ts#L52)
 
 Changes value(s) from startValue to endValue within a certain period of time,
 invoking callbacks as the value(s) change.

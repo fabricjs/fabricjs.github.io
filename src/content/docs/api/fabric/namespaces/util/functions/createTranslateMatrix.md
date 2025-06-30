@@ -7,7 +7,7 @@ title: "createTranslateMatrix"
 
 > **createTranslateMatrix**(`x`, `y?`): [`TMat2D`](/api/type-aliases/tmat2d/)
 
-Defined in: [src/util/misc/matrix.ts:147](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/util/misc/matrix.ts#L147)
+Defined in: [src/util/misc/matrix.ts:147](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/util/misc/matrix.ts#L147)
 
 Generate a translation matrix
 

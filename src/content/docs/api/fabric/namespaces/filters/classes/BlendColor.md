@@ -5,7 +5,7 @@ prev: false
 title: "BlendColor"
 ---
 
-Defined in: [src/filters/BlendColor.ts:47](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/BlendColor.ts#L47)
+Defined in: [src/filters/BlendColor.ts:47](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/filters/BlendColor.ts#L47)
 
 Color Blend filter class
 
@@ -36,7 +36,7 @@ canvas.renderAll();
 
 > **new BlendColor**(`options?`): `BlendColor`
 
-Defined in: [src/filters/BaseFilter.ts:57](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/BaseFilter.ts#L57)
+Defined in: [src/filters/BaseFilter.ts:57](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/filters/BaseFilter.ts#L57)
 
 Constructor
 
@@ -62,7 +62,7 @@ Options object
 
 > **alpha**: `number`
 
-Defined in: [src/filters/BlendColor.ts:68](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/BlendColor.ts#L68)
+Defined in: [src/filters/BlendColor.ts:68](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/filters/BlendColor.ts#L68)
 
 alpha value. represent the strength of the blend color operation.
 
@@ -78,7 +78,7 @@ alpha value. represent the strength of the blend color operation.
 
 > **color**: `string`
 
-Defined in: [src/filters/BlendColor.ts:54](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/BlendColor.ts#L54)
+Defined in: [src/filters/BlendColor.ts:54](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/filters/BlendColor.ts#L54)
 
 Color to make the blend operation with. default to a reddish color since black or white
 gives always strong result.
@@ -95,7 +95,7 @@ gives always strong result.
 
 > **mode**: [`TBlendMode`](/api/fabric/namespaces/filters/type-aliases/tblendmode/)
 
-Defined in: [src/filters/BlendColor.ts:62](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/BlendColor.ts#L62)
+Defined in: [src/filters/BlendColor.ts:62](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/filters/BlendColor.ts#L62)
 
 Blend mode for the filter: one of multiply, add, difference, screen, subtract,
 darken, lighten, overlay, exclusion, tint.
@@ -112,7 +112,7 @@ darken, lighten, overlay, exclusion, tint.
 
 > `static` **defaults**: `BlendColorOwnProps` = `blendColorDefaultValues`
 
-Defined in: [src/filters/BlendColor.ts:70](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/BlendColor.ts#L70)
+Defined in: [src/filters/BlendColor.ts:70](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/filters/BlendColor.ts#L70)
 
 #### Overrides
 
@@ -124,7 +124,7 @@ Defined in: [src/filters/BlendColor.ts:70](https://github.com/fabricjs/fabric.js
 
 > `static` **type**: `string` = `'BlendColor'`
 
-Defined in: [src/filters/BlendColor.ts:72](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/BlendColor.ts#L72)
+Defined in: [src/filters/BlendColor.ts:72](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/filters/BlendColor.ts#L72)
 
 The class type. Used to identify which class this is.
 This is used for serialization purposes and internally it can be used
@@ -142,7 +142,7 @@ to avoid doing that.
 
 > `static` **uniformLocations**: `string`[]
 
-Defined in: [src/filters/BlendColor.ts:74](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/BlendColor.ts#L74)
+Defined in: [src/filters/BlendColor.ts:74](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/filters/BlendColor.ts#L74)
 
 Contains the uniform locations for the fragment shader.
 uStepW and uStepH are handled by the BaseFilter, each filter class
@@ -160,7 +160,7 @@ needs to specify all the one that are needed
 
 > **get** **type**(): `Name`
 
-Defined in: [src/filters/BaseFilter.ts:31](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/BaseFilter.ts#L31)
+Defined in: [src/filters/BaseFilter.ts:31](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/filters/BaseFilter.ts#L31)
 
 Filter type
 
@@ -184,7 +184,7 @@ Filter type
 
 > **\_setupFrameBuffer**(`options`): `void`
 
-Defined in: [src/filters/BaseFilter.ts:205](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/BaseFilter.ts#L205)
+Defined in: [src/filters/BaseFilter.ts:205](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/filters/BaseFilter.ts#L205)
 
 #### Parameters
 
@@ -206,7 +206,7 @@ Defined in: [src/filters/BaseFilter.ts:205](https://github.com/fabricjs/fabric.j
 
 > **\_swapTextures**(`options`): `void`
 
-Defined in: [src/filters/BaseFilter.ts:232](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/BaseFilter.ts#L232)
+Defined in: [src/filters/BaseFilter.ts:232](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/filters/BaseFilter.ts#L232)
 
 #### Parameters
 
@@ -228,7 +228,7 @@ Defined in: [src/filters/BaseFilter.ts:232](https://github.com/fabricjs/fabric.j
 
 > **applyTo**(`options`): `void`
 
-Defined in: [src/filters/BaseFilter.ts:265](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/BaseFilter.ts#L265)
+Defined in: [src/filters/BaseFilter.ts:265](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/filters/BaseFilter.ts#L265)
 
 Apply this filter to the input image data provided.
 
@@ -254,7 +254,7 @@ Determines whether to use WebGL or Canvas2D based on the options.webgl flag.
 
 > **applyTo2d**(`options`): `void`
 
-Defined in: [src/filters/BlendColor.ts:102](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/BlendColor.ts#L102)
+Defined in: [src/filters/BlendColor.ts:102](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/filters/BlendColor.ts#L102)
 
 Apply the Blend operation to a Uint8ClampedArray representing the pixels of an image.
 
@@ -278,7 +278,7 @@ Apply the Blend operation to a Uint8ClampedArray representing the pixels of an i
 
 > **applyToWebGL**(`options`): `void`
 
-Defined in: [src/filters/BaseFilter.ts:315](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/BaseFilter.ts#L315)
+Defined in: [src/filters/BaseFilter.ts:315](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/filters/BaseFilter.ts#L315)
 
 Apply this filter using webgl.
 
@@ -302,7 +302,7 @@ Apply this filter using webgl.
 
 > **bindAdditionalTexture**(`gl`, `texture`, `textureUnit`): `void`
 
-Defined in: [src/filters/BaseFilter.ts:334](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/BaseFilter.ts#L334)
+Defined in: [src/filters/BaseFilter.ts:334](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/filters/BaseFilter.ts#L334)
 
 #### Parameters
 
@@ -332,7 +332,7 @@ Defined in: [src/filters/BaseFilter.ts:334](https://github.com/fabricjs/fabric.j
 
 > **createHelpLayer**(`options`): `void`
 
-Defined in: [src/filters/BaseFilter.ts:370](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/BaseFilter.ts#L370)
+Defined in: [src/filters/BaseFilter.ts:370](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/filters/BaseFilter.ts#L370)
 
 If needed by a 2d filter, this functions can create an helper canvas to be used
 remember that options.targetCanvas is available for use till end of chain.
@@ -357,7 +357,7 @@ remember that options.targetCanvas is available for use till end of chain.
 
 > **createProgram**(`gl`, `fragmentSource`, `vertexSource`): `object`
 
-Defined in: [src/filters/BaseFilter.ts:83](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/BaseFilter.ts#L83)
+Defined in: [src/filters/BaseFilter.ts:83](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/filters/BaseFilter.ts#L83)
 
 Compile this filter's shader program.
 
@@ -407,7 +407,7 @@ vertexShader source for compilation
 
 > **getAttributeLocations**(`gl`, `program`): [`TWebGLAttributeLocationMap`](/api/type-aliases/twebglattributelocationmap/)
 
-Defined in: [src/filters/BaseFilter.ts:153](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/BaseFilter.ts#L153)
+Defined in: [src/filters/BaseFilter.ts:153](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/filters/BaseFilter.ts#L153)
 
 Return a map of attribute names to WebGLAttributeLocation objects.
 
@@ -441,7 +441,7 @@ A map of attribute names to attribute locations.
 
 > **getCacheKey**(): `string`
 
-Defined in: [src/filters/BlendColor.ts:76](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/BlendColor.ts#L76)
+Defined in: [src/filters/BlendColor.ts:76](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/filters/BlendColor.ts#L76)
 
 Returns a string that represent the current selected shader code for the filter.
 Used to force recompilation when parameters change or to retrieve the shader from cache
@@ -460,7 +460,7 @@ Used to force recompilation when parameters change or to retrieve the shader fro
 
 > **getUniformLocations**(`gl`, `program`): [`TWebGLUniformLocationMap`](/api/type-aliases/twebgluniformlocationmap/)
 
-Defined in: [src/filters/BaseFilter.ts:169](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/BaseFilter.ts#L169)
+Defined in: [src/filters/BaseFilter.ts:169](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/filters/BaseFilter.ts#L169)
 
 Return a map of uniform names to WebGLUniformLocation objects.
 
@@ -494,7 +494,7 @@ A map of uniform names to uniform locations.
 
 > **getVertexSource**(): `string`
 
-Defined in: [src/filters/BaseFilter.ts:72](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/BaseFilter.ts#L72)
+Defined in: [src/filters/BaseFilter.ts:72](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/filters/BaseFilter.ts#L72)
 
 #### Returns
 
@@ -510,7 +510,7 @@ Defined in: [src/filters/BaseFilter.ts:72](https://github.com/fabricjs/fabric.js
 
 > **isNeutralState**(`options?`): `boolean`
 
-Defined in: [src/filters/BaseFilter.ts:248](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/BaseFilter.ts#L248)
+Defined in: [src/filters/BaseFilter.ts:248](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/filters/BaseFilter.ts#L248)
 
 Generic isNeutral implementation for one parameter based filters.
 Used only in image applyFilters to discard filters that will not have an effect
@@ -537,7 +537,7 @@ Other filters may need their own version ( ColorMatrix, HueRotation, gamma, Comp
 
 > **retrieveShader**(`options`): [`TWebGLProgramCacheItem`](/api/type-aliases/twebglprogramcacheitem/)
 
-Defined in: [src/filters/BaseFilter.ts:295](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/BaseFilter.ts#L295)
+Defined in: [src/filters/BaseFilter.ts:295](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/filters/BaseFilter.ts#L295)
 
 Retrieves the cached shader.
 
@@ -563,7 +563,7 @@ the compiled program shader
 
 > **sendAttributeData**(`gl`, `attributeLocations`, `aPositionData`): `void`
 
-Defined in: [src/filters/BaseFilter.ts:192](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/BaseFilter.ts#L192)
+Defined in: [src/filters/BaseFilter.ts:192](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/filters/BaseFilter.ts#L192)
 
 Send attribute data from this filter to its shader program on the GPU.
 
@@ -599,7 +599,7 @@ A map of shader attribute names to their locations.
 
 > **sendUniformData**(`gl`, `uniformLocations`): `void`
 
-Defined in: [src/filters/BlendColor.ts:187](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/BlendColor.ts#L187)
+Defined in: [src/filters/BlendColor.ts:187](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/filters/BlendColor.ts#L187)
 
 Send data from this filter to its shader program's uniforms.
 
@@ -631,7 +631,7 @@ A map of string uniform names to WebGLUniformLocation objects
 
 > **toJSON**(): `object` & `BlendColorOwnProps`
 
-Defined in: [src/filters/BaseFilter.ts:407](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/BaseFilter.ts#L407)
+Defined in: [src/filters/BaseFilter.ts:407](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/filters/BaseFilter.ts#L407)
 
 Returns a JSON representation of an instance
 
@@ -651,7 +651,7 @@ JSON
 
 > **toObject**(): `object` & `BlendColorOwnProps`
 
-Defined in: [src/filters/BaseFilter.ts:387](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/BaseFilter.ts#L387)
+Defined in: [src/filters/BaseFilter.ts:387](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/filters/BaseFilter.ts#L387)
 
 Returns object representation of an instance
 It will automatically export the default values of a filter,
@@ -673,7 +673,7 @@ Object representation of an instance
 
 > **unbindAdditionalTexture**(`gl`, `textureUnit`): `void`
 
-Defined in: [src/filters/BaseFilter.ts:345](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/BaseFilter.ts#L345)
+Defined in: [src/filters/BaseFilter.ts:345](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/filters/BaseFilter.ts#L345)
 
 #### Parameters
 
@@ -699,7 +699,7 @@ Defined in: [src/filters/BaseFilter.ts:345](https://github.com/fabricjs/fabric.j
 
 > `static` **fromObject**(`__namedParameters`, `_options`): `Promise`\<[`BaseFilter`](/api/fabric/namespaces/filters/classes/basefilter/)\<`string`, `object`, `object`\>\>
 
-Defined in: [src/filters/BaseFilter.ts:412](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/filters/BaseFilter.ts#L412)
+Defined in: [src/filters/BaseFilter.ts:412](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/filters/BaseFilter.ts#L412)
 
 #### Parameters
 

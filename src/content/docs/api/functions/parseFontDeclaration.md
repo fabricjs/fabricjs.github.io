@@ -7,7 +7,7 @@ title: "parseFontDeclaration"
 
 > **parseFontDeclaration**(`value`, `oStyle`): `void`
 
-Defined in: [src/parser/parseFontDeclaration.ts:12](https://github.com/fabricjs/fabric.js/blob/e114448a1bce9b68a3e1bba337bc0c83a35c1aa5/src/parser/parseFontDeclaration.ts#L12)
+Defined in: [src/parser/parseFontDeclaration.ts:12](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/parser/parseFontDeclaration.ts#L12)
 
 **`Function`**
 
