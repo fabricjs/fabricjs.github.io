@@ -3,6 +3,8 @@ import react from "@astrojs/react";
 import starlight from "@astrojs/starlight";
 import starlightTypeDoc, { typeDocSidebarGroup } from 'starlight-typedoc';
 
+import sitemap from '@astrojs/sitemap';
+
 // https://astro.build/config
 export default defineConfig({
   redirects: {
@@ -59,5 +61,5 @@ export default defineConfig({
         },
       }),
     ],
-  }), react()],
+  }), react(), sitemap()],
 });

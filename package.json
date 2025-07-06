@@ -13,6 +13,7 @@
     "@astrojs/check": "^0.9.4",
     "@astrojs/mdx": "^4.3.0",
     "@astrojs/react": "^4.3.0",
+    "@astrojs/sitemap": "^3.4.1",
     "@astrojs/starlight": "^0.34.4",
     "@codemirror/lang-javascript": "^6.2.2",
     "@codemirror/state": "^6.4.1",
