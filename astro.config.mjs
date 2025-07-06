@@ -7,6 +7,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://fabricjs.com',
   redirects: {
     '/kitchensink': 'https://fabric5.fabricjs.com/kitchensink',
     '/fabric-object-caching': '/docs/fabric-object-caching',
