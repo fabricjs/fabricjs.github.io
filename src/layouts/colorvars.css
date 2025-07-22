@@ -101,12 +101,10 @@
 
   a {
     text-decoration: none;
-    color: var(--info-color);
   }
 
   a:hover {
     text-decoration: none;
-    color: var(--info-color-hover);
   }
 
   a:active,
