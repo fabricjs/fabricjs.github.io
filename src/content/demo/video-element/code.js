@@ -7,6 +7,7 @@ const video2source = document.createElement('source');
 
 const webcamEl = document.createElement('video');
 
+// FabricImage requires the width and height attributes to be set
 video1El.width = 480;
 video1El.height = 360;
 video1El.id = 'video1'
