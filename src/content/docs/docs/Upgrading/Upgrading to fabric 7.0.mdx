@@ -1,0 +1,92 @@
+---
+date: '2025-08-24'
+title: 'Upgrading to Fabric.js 7.0'
+description: 'Updating your app for Fabric.js 7.0'
+---
+
+Fabric 7.0 is basically Fabric 6.0 there is no major change that should stop you from updating.
+
+The reason for the major version change was the will to move to canvas version 3 and higher,
+that itself required jsdom 26 and that required at least node 18.
+
+In the process node 18 was remove too, since its support halted in April 2025 and while FabricJS can
+still run ok on node 18, vitest 4 does not nor do the latest versions of jsdom.
+
+Updating node on your project should be fairly easy, and is way more important than updating FabricJS.
+
+Since a major version bump was happening also the list of supported browsers was refreshed to allow for better transpiling.
+The current supported platform list looks like this
+
+- NodeJS >= 20
+- chrome >= 88
+- safari >= 13
+- firefox >= 85
+- edge >= 88
+- Opera >= 73
+
+These browsers have been picked up with a random date of release of Jan 2021,
+so browsers that at the moment of release are nearly 5 years old.
+
+On top of supported platform changes, there are some notable api changes:
+
+## Removing Opacity from Gradient ColorStop
+
+FabricJS Gradient class supported ColorStop(s) that had a generic color and an opacity value,
+mirroring SVG properties. Now this required that each render we would look at both the color value
+for the color-stop and its opacity value and we would mix the 2, parsing a color value each render.
+
+We decided to drop support for the opacity value and left the only opacity at the color value.
+This will still allow you to have semi transparent gradients, but the way you specify or animate the
+transparency is different.
+
+The ColorStop type changes are:
+
+```diff
+export type ColorStop = {
+  color: string;
+  offset: number;
+-  opacity?: number;
+};
+```
+The color string supported an alpha value before and still does it, the double opacity is gone,
+together with its confusion and performance hit.
+
+If your application was doing heavy usage of the opacity property and was saving user data, there
+is an update you can use to keep the old data working.
+You can find it in
+```ts
+import { installGradientUpdater } from 'fabric/extensions';
+
+installGradientUpdater();
+```
+It will wrap the fromObject function of Gradient to take care of the difference.
+It is still suggested to clean up your old data when possible.
+
+## Removed deprecations
+
+### Events
+The data duplication between `pointer`/`absolutePointer` and `viewportPoint`/`scenePoint` has been removed.
+Now you find only viewportPoint and scenePoint in the events
+
+### Canvas
+- `getCenter` method has been removed, use only `getCenterPoint`
+- The internal cache variables `_pointer` and `_absolutePointer` have been renamed to `_viewportPoint` and `_scenePoint` for clarity
+- `preserveObjectStacking` is now default to `true`, if you want objects to break the stack when selected, set it to `false`
+- `getPointer` deprecated method has been removed, is now a protected `_getPointerImpl` method.
+- `setWidth` and `setHeight` are gone, use only `setDimensions({ width, height })`
+
+
+### Objects
+#### Text
+- unused method `_getSVGLineTopOffset` has been deleted
+#### Itext
+- protected `_exitEditing` is merged with `exitEditingImpl` public
+#### Image
+- `CSS_CANVAS` static property from image is gone also with the `classList.Add` requirement
+
+### Utils
+- `rotatePoint` is gone, use `point.rotate` instead
+- `request` is gone. We use fetch, node 18 supports fetch. There is no reason to use the old request object and status
+- `setStyle` is gone
+- `parseAttributes`, `parseStyleAttribute`, `parseFontDeclaration`, `parsePointsAttribute`, `parseTransformAttribute` and `getCSSRules`
+have been removed from the package. Those utils were meant for internal usage and never for exposing this part of the api.
