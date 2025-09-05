@@ -7,7 +7,7 @@ title: "getSvgAttributes"
 
 > **getSvgAttributes**(`type`): `string`[]
 
-Defined in: [src/util/misc/svgParsing.ts:12](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/util/misc/svgParsing.ts#L12)
+Defined in: [src/util/misc/svgParsing.ts:12](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/util/misc/svgParsing.ts#L12)
 
 Returns array of attributes for given svg that fabric parses
 

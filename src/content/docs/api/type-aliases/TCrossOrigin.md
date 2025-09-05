@@ -7,7 +7,7 @@ title: "TCrossOrigin"
 
 > **TCrossOrigin** = `""` \| `"anonymous"` \| `"use-credentials"` \| `null`
 
-Defined in: [src/typedefs.ts:77](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/typedefs.ts#L77)
+Defined in: [src/typedefs.ts:77](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/typedefs.ts#L77)
 
 An invalid keyword and an empty string will be handled as the `anonymous` keyword.
 

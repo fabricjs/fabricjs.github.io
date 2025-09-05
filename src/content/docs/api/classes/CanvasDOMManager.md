@@ -5,7 +5,7 @@ prev: false
 title: "CanvasDOMManager"
 ---
 
-Defined in: [src/canvas/DOMManagers/CanvasDOMManager.ts:11](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/DOMManagers/CanvasDOMManager.ts#L11)
+Defined in: [src/canvas/DOMManagers/CanvasDOMManager.ts:12](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/canvas/DOMManagers/CanvasDOMManager.ts#L12)
 
 ## Extends
 
@@ -17,7 +17,7 @@ Defined in: [src/canvas/DOMManagers/CanvasDOMManager.ts:11](https://github.com/f
 
 > **new CanvasDOMManager**(`arg0?`, `__namedParameters?`): `CanvasDOMManager`
 
-Defined in: [src/canvas/DOMManagers/CanvasDOMManager.ts:15](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/DOMManagers/CanvasDOMManager.ts#L15)
+Defined in: [src/canvas/DOMManagers/CanvasDOMManager.ts:16](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/canvas/DOMManagers/CanvasDOMManager.ts#L16)
 
 #### Parameters
 
@@ -53,7 +53,7 @@ here only for backward compatibility
 
 > **container**: `HTMLDivElement`
 
-Defined in: [src/canvas/DOMManagers/CanvasDOMManager.ts:13](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/DOMManagers/CanvasDOMManager.ts#L13)
+Defined in: [src/canvas/DOMManagers/CanvasDOMManager.ts:14](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/canvas/DOMManagers/CanvasDOMManager.ts#L14)
 
 ***
 
@@ -61,7 +61,7 @@ Defined in: [src/canvas/DOMManagers/CanvasDOMManager.ts:13](https://github.com/f
 
 > **lower**: `CanvasItem`
 
-Defined in: [src/canvas/DOMManagers/StaticCanvasDOMManager.ts:22](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/DOMManagers/StaticCanvasDOMManager.ts#L22)
+Defined in: [src/canvas/DOMManagers/StaticCanvasDOMManager.ts:22](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/canvas/DOMManagers/StaticCanvasDOMManager.ts#L22)
 
 #### Inherited from
 
@@ -73,7 +73,7 @@ Defined in: [src/canvas/DOMManagers/StaticCanvasDOMManager.ts:22](https://github
 
 > **upper**: `CanvasItem`
 
-Defined in: [src/canvas/DOMManagers/CanvasDOMManager.ts:12](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/DOMManagers/CanvasDOMManager.ts#L12)
+Defined in: [src/canvas/DOMManagers/CanvasDOMManager.ts:13](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/canvas/DOMManagers/CanvasDOMManager.ts#L13)
 
 ## Methods
 
@@ -81,7 +81,7 @@ Defined in: [src/canvas/DOMManagers/CanvasDOMManager.ts:12](https://github.com/f
 
 > **calcOffset**(): `object`
 
-Defined in: [src/canvas/DOMManagers/StaticCanvasDOMManager.ts:71](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/DOMManagers/StaticCanvasDOMManager.ts#L71)
+Defined in: [src/canvas/DOMManagers/StaticCanvasDOMManager.ts:71](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/canvas/DOMManagers/StaticCanvasDOMManager.ts#L71)
 
 Calculates canvas element offset relative to the document
 
@@ -107,7 +107,7 @@ Calculates canvas element offset relative to the document
 
 > **cleanupDOM**(`size`): `void`
 
-Defined in: [src/canvas/DOMManagers/CanvasDOMManager.ts:108](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/DOMManagers/CanvasDOMManager.ts#L108)
+Defined in: [src/canvas/DOMManagers/CanvasDOMManager.ts:109](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/canvas/DOMManagers/CanvasDOMManager.ts#L109)
 
 #### Parameters
 
@@ -129,7 +129,7 @@ Defined in: [src/canvas/DOMManagers/CanvasDOMManager.ts:108](https://github.com/
 
 > **dispose**(): `void`
 
-Defined in: [src/canvas/DOMManagers/CanvasDOMManager.ts:120](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/DOMManagers/CanvasDOMManager.ts#L120)
+Defined in: [src/canvas/DOMManagers/CanvasDOMManager.ts:121](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/canvas/DOMManagers/CanvasDOMManager.ts#L121)
 
 #### Returns
 
@@ -145,7 +145,7 @@ Defined in: [src/canvas/DOMManagers/CanvasDOMManager.ts:120](https://github.com/
 
 > **setCSSDimensions**(`size`): `void`
 
-Defined in: [src/canvas/DOMManagers/CanvasDOMManager.ts:102](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/DOMManagers/CanvasDOMManager.ts#L102)
+Defined in: [src/canvas/DOMManagers/CanvasDOMManager.ts:103](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/canvas/DOMManagers/CanvasDOMManager.ts#L103)
 
 #### Parameters
 
@@ -167,7 +167,7 @@ Defined in: [src/canvas/DOMManagers/CanvasDOMManager.ts:102](https://github.com/
 
 > **setDimensions**(`size`, `retinaScaling`): `void`
 
-Defined in: [src/canvas/DOMManagers/CanvasDOMManager.ts:96](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/DOMManagers/CanvasDOMManager.ts#L96)
+Defined in: [src/canvas/DOMManagers/CanvasDOMManager.ts:97](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/canvas/DOMManagers/CanvasDOMManager.ts#L97)
 
 #### Parameters
 

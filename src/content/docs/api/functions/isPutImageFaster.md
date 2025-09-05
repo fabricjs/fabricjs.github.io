@@ -7,7 +7,7 @@ title: "isPutImageFaster"
 
 > **isPutImageFaster**(`width`, `height`): `boolean`
 
-Defined in: [src/filters/utils.ts:18](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/filters/utils.ts#L18)
+Defined in: [src/filters/utils.ts:18](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/filters/utils.ts#L18)
 
 Pick a method to copy data from GL context to 2d canvas.  In some browsers using
 drawImage should be faster, but is also bugged for a small combination of old hardware

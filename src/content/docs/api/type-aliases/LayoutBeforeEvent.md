@@ -7,7 +7,7 @@ title: "LayoutBeforeEvent"
 
 > **LayoutBeforeEvent** = `object`
 
-Defined in: [src/LayoutManager/types.ts:139](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/LayoutManager/types.ts#L139)
+Defined in: [src/LayoutManager/types.ts:139](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/LayoutManager/types.ts#L139)
 
 ## Properties
 
@@ -15,4 +15,4 @@ Defined in: [src/LayoutManager/types.ts:139](https://github.com/fabricjs/fabric.
 
 > **context**: [`StrictLayoutContext`](/api/type-aliases/strictlayoutcontext/)
 
-Defined in: [src/LayoutManager/types.ts:140](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/LayoutManager/types.ts#L140)
+Defined in: [src/LayoutManager/types.ts:140](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/LayoutManager/types.ts#L140)

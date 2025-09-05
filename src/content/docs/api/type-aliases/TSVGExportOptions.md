@@ -7,7 +7,7 @@ title: "TSVGExportOptions"
 
 > **TSVGExportOptions** = `object`
 
-Defined in: [src/canvas/StaticCanvas.ts:62](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L62)
+Defined in: [src/canvas/StaticCanvas.ts:62](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/canvas/StaticCanvas.ts#L62)
 
 ## Properties
 
@@ -15,7 +15,7 @@ Defined in: [src/canvas/StaticCanvas.ts:62](https://github.com/fabricjs/fabric.j
 
 > `optional` **encoding**: `"UTF-8"`
 
-Defined in: [src/canvas/StaticCanvas.ts:70](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L70)
+Defined in: [src/canvas/StaticCanvas.ts:70](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/canvas/StaticCanvas.ts#L70)
 
 ***
 
@@ -23,7 +23,7 @@ Defined in: [src/canvas/StaticCanvas.ts:70](https://github.com/fabricjs/fabric.j
 
 > `optional` **height**: `string`
 
-Defined in: [src/canvas/StaticCanvas.ts:72](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L72)
+Defined in: [src/canvas/StaticCanvas.ts:72](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/canvas/StaticCanvas.ts#L72)
 
 ***
 
@@ -31,7 +31,7 @@ Defined in: [src/canvas/StaticCanvas.ts:72](https://github.com/fabricjs/fabric.j
 
 > `optional` **reviver**: [`TSVGReviver`](/api/type-aliases/tsvgreviver/)
 
-Defined in: [src/canvas/StaticCanvas.ts:73](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L73)
+Defined in: [src/canvas/StaticCanvas.ts:73](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/canvas/StaticCanvas.ts#L73)
 
 ***
 
@@ -39,7 +39,7 @@ Defined in: [src/canvas/StaticCanvas.ts:73](https://github.com/fabricjs/fabric.j
 
 > `optional` **suppressPreamble**: `boolean`
 
-Defined in: [src/canvas/StaticCanvas.ts:63](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L63)
+Defined in: [src/canvas/StaticCanvas.ts:63](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/canvas/StaticCanvas.ts#L63)
 
 ***
 
@@ -47,7 +47,7 @@ Defined in: [src/canvas/StaticCanvas.ts:63](https://github.com/fabricjs/fabric.j
 
 > `optional` **viewBox**: `object`
 
-Defined in: [src/canvas/StaticCanvas.ts:64](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L64)
+Defined in: [src/canvas/StaticCanvas.ts:64](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/canvas/StaticCanvas.ts#L64)
 
 #### height
 
@@ -71,4 +71,4 @@ Defined in: [src/canvas/StaticCanvas.ts:64](https://github.com/fabricjs/fabric.j
 
 > `optional` **width**: `string`
 
-Defined in: [src/canvas/StaticCanvas.ts:71](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/canvas/StaticCanvas.ts#L71)
+Defined in: [src/canvas/StaticCanvas.ts:71](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/canvas/StaticCanvas.ts#L71)

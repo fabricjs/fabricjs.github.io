@@ -5,7 +5,7 @@ prev: false
 title: "TEvent"
 ---
 
-Defined in: [src/EventTypeDefs.ts:95](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/EventTypeDefs.ts#L95)
+Defined in: [src/EventTypeDefs.ts:101](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/EventTypeDefs.ts#L101)
 
 ## Extended by
 
@@ -25,4 +25,4 @@ Defined in: [src/EventTypeDefs.ts:95](https://github.com/fabricjs/fabric.js/blob
 
 > **e**: `E`
 
-Defined in: [src/EventTypeDefs.ts:96](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/EventTypeDefs.ts#L96)
+Defined in: [src/EventTypeDefs.ts:102](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/EventTypeDefs.ts#L102)

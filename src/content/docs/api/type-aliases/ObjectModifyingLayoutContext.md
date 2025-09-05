@@ -7,9 +7,9 @@ title: "ObjectModifyingLayoutContext"
 
 > **ObjectModifyingLayoutContext** = [`CommonLayoutContext`](/api/type-aliases/commonlayoutcontext/) & `object` & \{ `e`: [`BasicTransformEvent`](/api/interfaces/basictransformevent/); `trigger`: [`TModificationEvents`](/api/type-aliases/tmodificationevents/); \} \| \{ `e`: [`ITextEvents`](/api/type-aliases/itextevents/)\[`"changed"`\]; `trigger`: `"changed"`; \}
 
-Defined in: [src/LayoutManager/types.ts:102](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/LayoutManager/types.ts#L102)
+Defined in: [src/LayoutManager/types.ts:102](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/LayoutManager/types.ts#L102)
 
-## Type declaration
+## Type Declaration
 
 ### type
 

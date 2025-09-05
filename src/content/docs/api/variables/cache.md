@@ -7,4 +7,4 @@ title: "cache"
 
 > `const` **cache**: `Cache`
 
-Defined in: [src/cache.ts:90](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/cache.ts#L90)
+Defined in: [src/cache.ts:90](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/cache.ts#L90)

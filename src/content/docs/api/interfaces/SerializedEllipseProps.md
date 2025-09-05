@@ -5,7 +5,7 @@ prev: false
 title: "SerializedEllipseProps"
 ---
 
-Defined in: [src/shapes/Ellipse.ts:21](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/shapes/Ellipse.ts#L21)
+Defined in: [src/shapes/Ellipse.ts:21](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/shapes/Ellipse.ts#L21)
 
 ## Extends
 
@@ -17,7 +17,7 @@ Defined in: [src/shapes/Ellipse.ts:21](https://github.com/fabricjs/fabric.js/blo
 
 > **angle**: [`TDegree`](/api/type-aliases/tdegree/)
 
-Defined in: [src/shapes/Object/types/BaseProps.ts:63](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/shapes/Object/types/BaseProps.ts#L63)
+Defined in: [src/shapes/Object/types/BaseProps.ts:61](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/shapes/Object/types/BaseProps.ts#L61)
 
 Angle of rotation of an object (in degrees)
 
@@ -37,16 +37,10 @@ Angle of rotation of an object (in degrees)
 
 > **backgroundColor**: `string`
 
-Defined in: [src/shapes/Object/types/SerializedObjectProps.ts:26](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/shapes/Object/types/SerializedObjectProps.ts#L26)
+Defined in: [src/shapes/Object/types/SerializedObjectProps.ts:24](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/shapes/Object/types/SerializedObjectProps.ts#L24)
 
 Background color of an object.
 takes css colors https://www.w3.org/TR/css-color-3/
-
-#### Default
-
-```ts
-
-```
 
 #### Inherited from
 
@@ -58,7 +52,7 @@ takes css colors https://www.w3.org/TR/css-color-3/
 
 > `optional` **clipPath**: `Partial`\<[`SerializedObjectProps`](/api/interfaces/serializedobjectprops/) & `ClipPathProps`\>
 
-Defined in: [src/shapes/Object/types/SerializedObjectProps.ts:49](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/shapes/Object/types/SerializedObjectProps.ts#L49)
+Defined in: [src/shapes/Object/types/SerializedObjectProps.ts:46](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/shapes/Object/types/SerializedObjectProps.ts#L46)
 
 a fabricObject that, without stroke define a clipping area with their shape. filled in black
 the clipPath object gets used when the object has rendered, and the context is placed in the center
@@ -73,9 +67,9 @@ If you want 0,0 of a clipPath to align with an object center, use clipPath.origi
 
 ### fill
 
-> **fill**: `null` \| `string` \| `Record`\<`string`, `any`\> \| `Partial`\<[`Gradient`](/api/classes/gradient/)\<`"linear"`, `"linear"`\>\> & `object` \| `Partial`\<[`Gradient`](/api/classes/gradient/)\<`"radial"`, `"radial"`\>\> & `object`
+> **fill**: `null` \| `string` \| `Record`\<`string`, `any`\> \| [`SerializedGradientProps`](/api/type-aliases/serializedgradientprops/)\<`"linear"`\> \| [`SerializedGradientProps`](/api/type-aliases/serializedgradientprops/)\<`"radial"`\>
 
-Defined in: [src/shapes/Object/types/FillStrokeProps.ts:17](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/shapes/Object/types/FillStrokeProps.ts#L17)
+Defined in: [src/shapes/Object/types/FillStrokeProps.ts:16](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/shapes/Object/types/FillStrokeProps.ts#L16)
 
 Color of object's fill
 takes css colors https://www.w3.org/TR/css-color-3/
@@ -96,7 +90,7 @@ rgb(0,0,0)
 
 > **fillRule**: `CanvasFillRule`
 
-Defined in: [src/shapes/Object/types/FillStrokeProps.ts:26](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/shapes/Object/types/FillStrokeProps.ts#L26)
+Defined in: [src/shapes/Object/types/FillStrokeProps.ts:25](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/shapes/Object/types/FillStrokeProps.ts#L25)
 
 Fill rule used to fill an object
 accepted values are nonzero, evenodd
@@ -118,7 +112,7 @@ nonzero
 
 > **flipX**: `boolean`
 
-Defined in: [src/shapes/Object/types/BaseProps.ts:70](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/shapes/Object/types/BaseProps.ts#L70)
+Defined in: [src/shapes/Object/types/BaseProps.ts:68](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/shapes/Object/types/BaseProps.ts#L68)
 
 When true, an object is rendered as flipped horizontally
 
@@ -138,7 +132,7 @@ false
 
 > **flipY**: `boolean`
 
-Defined in: [src/shapes/Object/types/BaseProps.ts:77](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/shapes/Object/types/BaseProps.ts#L77)
+Defined in: [src/shapes/Object/types/BaseProps.ts:75](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/shapes/Object/types/BaseProps.ts#L75)
 
 When true, an object is rendered as flipped vertically
 
@@ -158,15 +152,9 @@ false
 
 > **globalCompositeOperation**: `GlobalCompositeOperation`
 
-Defined in: [src/shapes/Object/types/SerializedObjectProps.ts:18](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/shapes/Object/types/SerializedObjectProps.ts#L18)
+Defined in: [src/shapes/Object/types/SerializedObjectProps.ts:17](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/shapes/Object/types/SerializedObjectProps.ts#L17)
 
 Composite rule used for canvas globalCompositeOperation
-
-#### Default
-
-```ts
-
-```
 
 #### Inherited from
 
@@ -178,15 +166,9 @@ Composite rule used for canvas globalCompositeOperation
 
 > **height**: `number`
 
-Defined in: [src/shapes/Object/types/BaseProps.ts:34](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/shapes/Object/types/BaseProps.ts#L34)
+Defined in: [src/shapes/Object/types/BaseProps.ts:32](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/shapes/Object/types/BaseProps.ts#L32)
 
 Object height
-
-#### Default
-
-```ts
-
-```
 
 #### Inherited from
 
@@ -198,11 +180,11 @@ Object height
 
 > **left**: `number`
 
-Defined in: [src/shapes/Object/types/BaseProps.ts:11](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/shapes/Object/types/BaseProps.ts#L11)
+Defined in: [src/shapes/Object/types/BaseProps.ts:11](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/shapes/Object/types/BaseProps.ts#L11)
 
 Left position of an object.
 Note that by default it's relative to object left.
-You can change this by setting [FabricObject#originX](/api/classes/fabricobject/#originx)
+You can change this by setting originX
 
 #### Default
 
@@ -220,7 +202,7 @@ You can change this by setting [FabricObject#originX](/api/classes/fabricobject/
 
 > **opacity**: `number`
 
-Defined in: [src/shapes/Object/types/SerializedObjectProps.ts:11](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/shapes/Object/types/SerializedObjectProps.ts#L11)
+Defined in: [src/shapes/Object/types/SerializedObjectProps.ts:11](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/shapes/Object/types/SerializedObjectProps.ts#L11)
 
 Opacity of an object
 
@@ -240,7 +222,7 @@ Opacity of an object
 
 > **originX**: [`TOriginX`](/api/type-aliases/toriginx/)
 
-Defined in: [src/shapes/Object/types/BaseProps.ts:45](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/shapes/Object/types/BaseProps.ts#L45)
+Defined in: [src/shapes/Object/types/BaseProps.ts:43](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/shapes/Object/types/BaseProps.ts#L43)
 
 Horizontal origin of transformation of an object (`left`, `center`, `right`  or `[0, 1]`)
 See http://jsfiddle.net/1ow02gea/244/ on how originX/originY affect objects in groups
@@ -267,7 +249,7 @@ To set the default value to 'center' import BaseFabricObject and set the static 
 
 > **originY**: [`TOriginY`](/api/type-aliases/toriginy/)
 
-Defined in: [src/shapes/Object/types/BaseProps.ts:56](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/shapes/Object/types/BaseProps.ts#L56)
+Defined in: [src/shapes/Object/types/BaseProps.ts:54](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/shapes/Object/types/BaseProps.ts#L54)
 
 Vertical origin of transformation of an object (`top`, `center`, `bottom` or `[0, 1]`)
 See http://jsfiddle.net/1ow02gea/244/ on how originX/originY affect objects in groups
@@ -294,15 +276,9 @@ To set the default value to 'center' import BaseFabricObject and set the static 
 
 > **paintFirst**: `"fill"` \| `"stroke"`
 
-Defined in: [src/shapes/Object/types/FillStrokeProps.ts:9](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/shapes/Object/types/FillStrokeProps.ts#L9)
+Defined in: [src/shapes/Object/types/FillStrokeProps.ts:8](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/shapes/Object/types/FillStrokeProps.ts#L8)
 
 Determines if the fill or the stroke is drawn first (one of "fill" or "stroke")
-
-#### Default
-
-```ts
-
-```
 
 #### Inherited from
 
@@ -314,7 +290,7 @@ Determines if the fill or the stroke is drawn first (one of "fill" or "stroke")
 
 > **rx**: `number`
 
-Defined in: [src/shapes/Ellipse.ts:17](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/shapes/Ellipse.ts#L17)
+Defined in: [src/shapes/Ellipse.ts:17](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/shapes/Ellipse.ts#L17)
 
 #### Inherited from
 
@@ -326,7 +302,7 @@ Defined in: [src/shapes/Ellipse.ts:17](https://github.com/fabricjs/fabric.js/blo
 
 > **ry**: `number`
 
-Defined in: [src/shapes/Ellipse.ts:18](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/shapes/Ellipse.ts#L18)
+Defined in: [src/shapes/Ellipse.ts:18](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/shapes/Ellipse.ts#L18)
 
 #### Inherited from
 
@@ -338,7 +314,7 @@ Defined in: [src/shapes/Ellipse.ts:18](https://github.com/fabricjs/fabric.js/blo
 
 > **scaleX**: `number`
 
-Defined in: [src/shapes/Object/types/BaseProps.ts:84](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/shapes/Object/types/BaseProps.ts#L84)
+Defined in: [src/shapes/Object/types/BaseProps.ts:82](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/shapes/Object/types/BaseProps.ts#L82)
 
 Object scale factor (horizontal)
 
@@ -358,7 +334,7 @@ Object scale factor (horizontal)
 
 > **scaleY**: `number`
 
-Defined in: [src/shapes/Object/types/BaseProps.ts:91](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/shapes/Object/types/BaseProps.ts#L91)
+Defined in: [src/shapes/Object/types/BaseProps.ts:89](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/shapes/Object/types/BaseProps.ts#L89)
 
 Object scale factor (vertical)
 
@@ -378,7 +354,7 @@ Object scale factor (vertical)
 
 > **shadow**: `null` \| `Partial`\<[`SerializedShadowOptions`](/api/type-aliases/serializedshadowoptions/)\>
 
-Defined in: [src/shapes/Object/types/SerializedObjectProps.ts:33](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/shapes/Object/types/SerializedObjectProps.ts#L33)
+Defined in: [src/shapes/Object/types/SerializedObjectProps.ts:31](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/shapes/Object/types/SerializedObjectProps.ts#L31)
 
 Shadow object representing shadow of this shape
 
@@ -398,7 +374,7 @@ null
 
 > **skewX**: [`TDegree`](/api/type-aliases/tdegree/)
 
-Defined in: [src/shapes/Object/types/BaseProps.ts:98](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/shapes/Object/types/BaseProps.ts#L98)
+Defined in: [src/shapes/Object/types/BaseProps.ts:96](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/shapes/Object/types/BaseProps.ts#L96)
 
 Angle of skew on x axes of an object (in degrees)
 
@@ -418,7 +394,7 @@ Angle of skew on x axes of an object (in degrees)
 
 > **skewY**: [`TDegree`](/api/type-aliases/tdegree/)
 
-Defined in: [src/shapes/Object/types/BaseProps.ts:105](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/shapes/Object/types/BaseProps.ts#L105)
+Defined in: [src/shapes/Object/types/BaseProps.ts:103](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/shapes/Object/types/BaseProps.ts#L103)
 
 Angle of skew on y axes of an object (in degrees)
 
@@ -436,9 +412,9 @@ Angle of skew on y axes of an object (in degrees)
 
 ### stroke
 
-> **stroke**: `null` \| `string` \| `Record`\<`string`, `any`\> \| `Partial`\<[`Gradient`](/api/classes/gradient/)\<`"linear"`, `"linear"`\>\> & `object` \| `Partial`\<[`Gradient`](/api/classes/gradient/)\<`"radial"`, `"radial"`\>\> & `object`
+> **stroke**: `null` \| `string` \| `Record`\<`string`, `any`\> \| [`SerializedGradientProps`](/api/type-aliases/serializedgradientprops/)\<`"linear"`\> \| [`SerializedGradientProps`](/api/type-aliases/serializedgradientprops/)\<`"radial"`\>
 
-Defined in: [src/shapes/Object/types/FillStrokeProps.ts:34](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/shapes/Object/types/FillStrokeProps.ts#L34)
+Defined in: [src/shapes/Object/types/FillStrokeProps.ts:33](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/shapes/Object/types/FillStrokeProps.ts#L33)
 
 When defined, an object is rendered via stroke and this property specifies its color
 takes css colors https://www.w3.org/TR/css-color-3/
@@ -459,7 +435,7 @@ null
 
 > **strokeDashArray**: `null` \| `number`[]
 
-Defined in: [src/shapes/Object/types/FillStrokeProps.ts:48](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/shapes/Object/types/FillStrokeProps.ts#L48)
+Defined in: [src/shapes/Object/types/FillStrokeProps.ts:47](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/shapes/Object/types/FillStrokeProps.ts#L47)
 
 Array specifying dash pattern of an object's stroke (stroke must be defined)
 
@@ -479,7 +455,7 @@ null;
 
 > **strokeDashOffset**: `number`
 
-Defined in: [src/shapes/Object/types/FillStrokeProps.ts:55](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/shapes/Object/types/FillStrokeProps.ts#L55)
+Defined in: [src/shapes/Object/types/FillStrokeProps.ts:54](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/shapes/Object/types/FillStrokeProps.ts#L54)
 
 Line offset of an object's stroke
 
@@ -499,7 +475,7 @@ Line offset of an object's stroke
 
 > **strokeLineCap**: `CanvasLineCap`
 
-Defined in: [src/shapes/Object/types/FillStrokeProps.ts:62](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/shapes/Object/types/FillStrokeProps.ts#L62)
+Defined in: [src/shapes/Object/types/FillStrokeProps.ts:61](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/shapes/Object/types/FillStrokeProps.ts#L61)
 
 Line endings style of an object's stroke (one of "butt", "round", "square")
 
@@ -519,15 +495,9 @@ butt
 
 > **strokeLineJoin**: `CanvasLineJoin`
 
-Defined in: [src/shapes/Object/types/FillStrokeProps.ts:69](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/shapes/Object/types/FillStrokeProps.ts#L69)
+Defined in: [src/shapes/Object/types/FillStrokeProps.ts:67](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/shapes/Object/types/FillStrokeProps.ts#L67)
 
 Corner style of an object's stroke (one of "bevel", "round", "miter")
-
-#### Default
-
-```ts
-
-```
 
 #### Inherited from
 
@@ -539,7 +509,7 @@ Corner style of an object's stroke (one of "bevel", "round", "miter")
 
 > **strokeMiterLimit**: `number`
 
-Defined in: [src/shapes/Object/types/FillStrokeProps.ts:76](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/shapes/Object/types/FillStrokeProps.ts#L76)
+Defined in: [src/shapes/Object/types/FillStrokeProps.ts:74](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/shapes/Object/types/FillStrokeProps.ts#L74)
 
 Maximum miter length (used for strokeLineJoin = "miter") of an object's stroke
 
@@ -559,7 +529,7 @@ Maximum miter length (used for strokeLineJoin = "miter") of an object's stroke
 
 > **strokeUniform**: `boolean`
 
-Defined in: [src/shapes/Object/types/FillStrokeProps.ts:89](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/shapes/Object/types/FillStrokeProps.ts#L89)
+Defined in: [src/shapes/Object/types/FillStrokeProps.ts:87](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/shapes/Object/types/FillStrokeProps.ts#L87)
 
 When `false`, the stoke width will scale with the object.
 When `true`, the stroke will always match the exact pixel size entered for stroke width.
@@ -592,7 +562,7 @@ false
 
 > **strokeWidth**: `number`
 
-Defined in: [src/shapes/Object/types/FillStrokeProps.ts:41](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/shapes/Object/types/FillStrokeProps.ts#L41)
+Defined in: [src/shapes/Object/types/FillStrokeProps.ts:40](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/shapes/Object/types/FillStrokeProps.ts#L40)
 
 Width of a stroke used to render this object
 
@@ -612,11 +582,11 @@ Width of a stroke used to render this object
 
 > **top**: `number`
 
-Defined in: [src/shapes/Object/types/BaseProps.ts:20](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/shapes/Object/types/BaseProps.ts#L20)
+Defined in: [src/shapes/Object/types/BaseProps.ts:20](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/shapes/Object/types/BaseProps.ts#L20)
 
 Top position of an object.
 Note that by default it's relative to object top.
-You can change this by setting [FabricObject#originY](/api/classes/fabricobject/#originy)
+You can change this by setting originY
 
 #### Default
 
@@ -634,15 +604,9 @@ You can change this by setting [FabricObject#originY](/api/classes/fabricobject/
 
 > **visible**: `boolean`
 
-Defined in: [src/shapes/Object/types/SerializedObjectProps.ts:40](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/shapes/Object/types/SerializedObjectProps.ts#L40)
+Defined in: [src/shapes/Object/types/SerializedObjectProps.ts:37](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/shapes/Object/types/SerializedObjectProps.ts#L37)
 
 When set to `false`, an object is not rendered on canvas
-
-#### Default
-
-```ts
-
-```
 
 #### Inherited from
 
@@ -654,15 +618,9 @@ When set to `false`, an object is not rendered on canvas
 
 > **width**: `number`
 
-Defined in: [src/shapes/Object/types/BaseProps.ts:27](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/shapes/Object/types/BaseProps.ts#L27)
+Defined in: [src/shapes/Object/types/BaseProps.ts:26](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/shapes/Object/types/BaseProps.ts#L26)
 
 Object width
-
-#### Default
-
-```ts
-
-```
 
 #### Inherited from
 

@@ -4,17 +4,19 @@ title: 'Upgrading to Fabric.js 7.0'
 description: 'Updating your app for Fabric.js 7.0'
 ---
 
-Fabric 7.0 is basically Fabric 6.0 there is no major change that should stop you from updating.
+## Breaking changes
+
+Fabric 7.0 is basically Fabric 6.0 there is no large major change that should stop you from updating.
 
 The reason for the major version change was the will to move to canvas version 3 and higher,
-that itself required jsdom 26 and that required at least node 18.
+that itself required jsdom 26 and that required at least node 18, it was bumped to 20 anyway.
 
-In the process node 18 was remove too, since its support halted in April 2025 and while FabricJS can
+Node 18 was removed too since its support halted in April 2025 and while FabricJS can
 still run ok on node 18, vitest 4 does not nor do the latest versions of jsdom.
 
-Updating node on your project should be fairly easy, and is way more important than updating FabricJS.
+Since a major version bump was happening also the list of supported browsers was refreshed to allow
+for better transpilation and usage of newer Canvas api.
 
-Since a major version bump was happening also the list of supported browsers was refreshed to allow for better transpiling.
 The current supported platform list looks like this
 
 - NodeJS >= 20
@@ -24,7 +26,7 @@ The current supported platform list looks like this
 - edge >= 88
 - Opera >= 73
 
-These browsers have been picked up with a random date of release of Jan 2021,
+These browsers have been picked up with date of release of Jan 2021,
 so browsers that at the moment of release are nearly 5 years old.
 
 On top of supported platform changes, there are some notable api changes:
@@ -62,6 +64,13 @@ installGradientUpdater();
 It will wrap the fromObject function of Gradient to take care of the difference.
 It is still suggested to clean up your old data when possible.
 
+## Changes to findTarget
+
+`Canvas.findTarget` has been refactored. Its result is now cached for the duration of the event,
+it finds all the possible targets and uses them where needed for drag actions or normal actions.
+The refactor was done mainly to have clearer code since the existing `findTarget` function was hard
+to read and maintain
+
 ## Removed deprecations
 
 ### Events
@@ -90,3 +99,9 @@ Now you find only viewportPoint and scenePoint in the events
 - `setStyle` is gone
 - `parseAttributes`, `parseStyleAttribute`, `parseFontDeclaration`, `parsePointsAttribute`, `parseTransformAttribute` and `getCSSRules`
 have been removed from the package. Those utils were meant for internal usage and never for exposing this part of the api.
+
+## Non breaking changes
+
+Thanks to the efforts of [@Smrtnyk](https://github.com/Smrtnyk) QUnit was remove and the unit tests have been migrated to vitest.
+DevDependencies and lint rules have been cleaned up too and Github actions now works also on PR from forks.
+

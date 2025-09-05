@@ -7,4 +7,4 @@ title: "ModifierKey"
 
 > **ModifierKey** = keyof `Pick`\<`MouseEvent` \| `PointerEvent` \| `TouchEvent`, `"altKey"` \| `"shiftKey"` \| `"ctrlKey"` \| `"metaKey"`\>
 
-Defined in: [src/EventTypeDefs.ts:25](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/EventTypeDefs.ts#L25)
+Defined in: [src/EventTypeDefs.ts:26](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/EventTypeDefs.ts#L26)

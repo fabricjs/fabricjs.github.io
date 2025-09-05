@@ -7,7 +7,7 @@ title: "factoryPolyActionHandler"
 
 > **factoryPolyActionHandler**(`pointIndex`, `fn`): (`eventData`, `transform`, `x`, `y`) => `boolean`
 
-Defined in: [src/controls/polyControl.ts:68](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/controls/polyControl.ts#L68)
+Defined in: [src/controls/polyControl.ts:68](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/controls/polyControl.ts#L68)
 
 Keep the polygon in the same position when we change its `width`/`height`/`top`/`left`.
 

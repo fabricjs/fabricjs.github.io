@@ -7,7 +7,7 @@ title: "renderSquareControl"
 
 > **renderSquareControl**(`this`, `ctx`, `left`, `top`, `styleOverride`, `fabricObject`): `void`
 
-Defined in: [src/controls/controlRendering.ts:98](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/controls/controlRendering.ts#L98)
+Defined in: [src/controls/controlRendering.ts:98](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/controls/controlRendering.ts#L98)
 
 Render a square control, as per fabric features.
 This function is written to respect object properties like transparentCorners, cornerSize

@@ -5,7 +5,7 @@ prev: false
 title: "CircleBrush"
 ---
 
-Defined in: [src/brushes/CircleBrush.ts:12](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/brushes/CircleBrush.ts#L12)
+Defined in: [src/brushes/CircleBrush.ts:12](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/brushes/CircleBrush.ts#L12)
 
 ## See
 
@@ -21,7 +21,7 @@ Defined in: [src/brushes/CircleBrush.ts:12](https://github.com/fabricjs/fabric.j
 
 > **new CircleBrush**(`canvas`): `CircleBrush`
 
-Defined in: [src/brushes/CircleBrush.ts:22](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/brushes/CircleBrush.ts#L22)
+Defined in: [src/brushes/CircleBrush.ts:21](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/brushes/CircleBrush.ts#L21)
 
 #### Parameters
 
@@ -43,7 +43,7 @@ Defined in: [src/brushes/CircleBrush.ts:22](https://github.com/fabricjs/fabric.j
 
 > **canvas**: [`Canvas`](/api/classes/canvas/)
 
-Defined in: [src/brushes/BaseBrush.ts:73](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/brushes/BaseBrush.ts#L73)
+Defined in: [src/brushes/BaseBrush.ts:66](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/brushes/BaseBrush.ts#L66)
 
 #### Todo
 
@@ -59,15 +59,9 @@ add type
 
 > **color**: `string` = `'rgb(0, 0, 0)'`
 
-Defined in: [src/brushes/BaseBrush.ts:16](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/brushes/BaseBrush.ts#L16)
+Defined in: [src/brushes/BaseBrush.ts:15](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/brushes/BaseBrush.ts#L15)
 
 Color of a brush
-
-#### Default
-
-```ts
-
-```
 
 #### Inherited from
 
@@ -79,7 +73,7 @@ Color of a brush
 
 > **limitedToCanvasSize**: `boolean` = `false`
 
-Defined in: [src/brushes/BaseBrush.ts:68](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/brushes/BaseBrush.ts#L68)
+Defined in: [src/brushes/BaseBrush.ts:61](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/brushes/BaseBrush.ts#L61)
 
 When `true`, the free drawing is limited to the whiteboard size. Default to false.
 
@@ -99,7 +93,7 @@ false
 
 > **points**: [`CircleBrushPoint`](/api/type-aliases/circlebrushpoint/)[]
 
-Defined in: [src/brushes/CircleBrush.ts:20](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/brushes/CircleBrush.ts#L20)
+Defined in: [src/brushes/CircleBrush.ts:19](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/brushes/CircleBrush.ts#L19)
 
 ***
 
@@ -107,17 +101,11 @@ Defined in: [src/brushes/CircleBrush.ts:20](https://github.com/fabricjs/fabric.j
 
 > **shadow**: `null` \| [`Shadow`](/api/classes/shadow/) = `null`
 
-Defined in: [src/brushes/BaseBrush.ts:32](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/brushes/BaseBrush.ts#L32)
+Defined in: [src/brushes/BaseBrush.ts:29](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/brushes/BaseBrush.ts#L29)
 
 Shadow object representing shadow of this shape.
 <b>Backwards incompatibility note:</b> This property replaces "shadowColor" (String), "shadowOffsetX" (Number),
 "shadowOffsetY" (Number) and "shadowBlur" (Number) since v1.2.12
-
-#### Default
-
-```ts
-
-```
 
 #### Inherited from
 
@@ -129,15 +117,9 @@ Shadow object representing shadow of this shape.
 
 > **strokeDashArray**: `null` \| `number`[] = `null`
 
-Defined in: [src/brushes/BaseBrush.ts:60](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/brushes/BaseBrush.ts#L60)
+Defined in: [src/brushes/BaseBrush.ts:53](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/brushes/BaseBrush.ts#L53)
 
 Stroke Dash Array.
-
-#### Default
-
-```ts
-
-```
 
 #### Inherited from
 
@@ -149,15 +131,9 @@ Stroke Dash Array.
 
 > **strokeLineCap**: `CanvasLineCap` = `'round'`
 
-Defined in: [src/brushes/BaseBrush.ts:39](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/brushes/BaseBrush.ts#L39)
+Defined in: [src/brushes/BaseBrush.ts:35](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/brushes/BaseBrush.ts#L35)
 
 Line endings style of a brush (one of "butt", "round", "square")
-
-#### Default
-
-```ts
-
-```
 
 #### Inherited from
 
@@ -169,15 +145,9 @@ Line endings style of a brush (one of "butt", "round", "square")
 
 > **strokeLineJoin**: `CanvasLineJoin` = `'round'`
 
-Defined in: [src/brushes/BaseBrush.ts:46](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/brushes/BaseBrush.ts#L46)
+Defined in: [src/brushes/BaseBrush.ts:41](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/brushes/BaseBrush.ts#L41)
 
 Corner style of a brush (one of "bevel", "round", "miter")
-
-#### Default
-
-```ts
-
-```
 
 #### Inherited from
 
@@ -189,15 +159,9 @@ Corner style of a brush (one of "bevel", "round", "miter")
 
 > **strokeMiterLimit**: `number` = `10`
 
-Defined in: [src/brushes/BaseBrush.ts:53](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/brushes/BaseBrush.ts#L53)
+Defined in: [src/brushes/BaseBrush.ts:47](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/brushes/BaseBrush.ts#L47)
 
 Maximum miter length (used for strokeLineJoin = "miter") of a brush's
-
-#### Default
-
-```ts
-
-```
 
 #### Inherited from
 
@@ -209,15 +173,9 @@ Maximum miter length (used for strokeLineJoin = "miter") of a brush's
 
 > **width**: `number` = `10`
 
-Defined in: [src/brushes/CircleBrush.ts:18](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/brushes/CircleBrush.ts#L18)
+Defined in: [src/brushes/CircleBrush.ts:17](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/brushes/CircleBrush.ts#L17)
 
 Width of a brush
-
-#### Default
-
-```ts
-
-```
 
 #### Overrides
 
@@ -229,7 +187,7 @@ Width of a brush
 
 > **addPoint**(`pointer`): [`CircleBrushPoint`](/api/type-aliases/circlebrushpoint/)
 
-Defined in: [src/brushes/CircleBrush.ts:128](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/brushes/CircleBrush.ts#L128)
+Defined in: [src/brushes/CircleBrush.ts:127](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/brushes/CircleBrush.ts#L127)
 
 #### Parameters
 
@@ -249,7 +207,7 @@ Just added pointer point
 
 > **dot**(`ctx`, `point`): `void`
 
-Defined in: [src/brushes/CircleBrush.ts:39](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/brushes/CircleBrush.ts#L39)
+Defined in: [src/brushes/CircleBrush.ts:38](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/brushes/CircleBrush.ts#L38)
 
 #### Parameters
 
@@ -271,7 +229,7 @@ Defined in: [src/brushes/CircleBrush.ts:39](https://github.com/fabricjs/fabric.j
 
 > **drawDot**(`pointer`): `void`
 
-Defined in: [src/brushes/CircleBrush.ts:31](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/brushes/CircleBrush.ts#L31)
+Defined in: [src/brushes/CircleBrush.ts:30](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/brushes/CircleBrush.ts#L30)
 
 Invoked inside on mouse down and mouse move
 
@@ -291,7 +249,7 @@ Invoked inside on mouse down and mouse move
 
 > **onMouseDown**(`pointer`): `void`
 
-Defined in: [src/brushes/CircleBrush.ts:50](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/brushes/CircleBrush.ts#L50)
+Defined in: [src/brushes/CircleBrush.ts:49](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/brushes/CircleBrush.ts#L49)
 
 Invoked on mouse down
 
@@ -315,7 +273,7 @@ Invoked on mouse down
 
 > **onMouseMove**(`pointer`): `void`
 
-Defined in: [src/brushes/CircleBrush.ts:75](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/brushes/CircleBrush.ts#L75)
+Defined in: [src/brushes/CircleBrush.ts:74](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/brushes/CircleBrush.ts#L74)
 
 Invoked on mouse move
 
@@ -339,7 +297,7 @@ Invoked on mouse move
 
 > **onMouseUp**(): `void`
 
-Defined in: [src/brushes/CircleBrush.ts:91](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/brushes/CircleBrush.ts#L91)
+Defined in: [src/brushes/CircleBrush.ts:90](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/brushes/CircleBrush.ts#L90)
 
 Invoked on mouse up
 

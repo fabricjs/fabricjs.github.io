@@ -5,7 +5,7 @@ prev: false
 title: "ModifyPathEvent"
 ---
 
-Defined in: [src/EventTypeDefs.ts:125](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/EventTypeDefs.ts#L125)
+Defined in: [src/EventTypeDefs.ts:134](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/EventTypeDefs.ts#L134)
 
 ## Properties
 
@@ -13,7 +13,7 @@ Defined in: [src/EventTypeDefs.ts:125](https://github.com/fabricjs/fabric.js/blo
 
 > **commandIndex**: `number`
 
-Defined in: [src/EventTypeDefs.ts:126](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/EventTypeDefs.ts#L126)
+Defined in: [src/EventTypeDefs.ts:135](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/EventTypeDefs.ts#L135)
 
 ***
 
@@ -21,4 +21,4 @@ Defined in: [src/EventTypeDefs.ts:126](https://github.com/fabricjs/fabric.js/blo
 
 > **pointIndex**: `number`
 
-Defined in: [src/EventTypeDefs.ts:127](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/EventTypeDefs.ts#L127)
+Defined in: [src/EventTypeDefs.ts:136](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/EventTypeDefs.ts#L136)

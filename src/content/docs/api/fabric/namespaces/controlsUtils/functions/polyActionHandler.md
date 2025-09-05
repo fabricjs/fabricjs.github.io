@@ -7,7 +7,7 @@ title: "polyActionHandler"
 
 > **polyActionHandler**(`eventData`, `transform`, `x`, `y`): `boolean`
 
-Defined in: [src/controls/polyControl.ts:45](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/controls/polyControl.ts#L45)
+Defined in: [src/controls/polyControl.ts:45](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/controls/polyControl.ts#L45)
 
 This function defines what the control does.
 It'll be called on every mouse move after a control has been clicked and is being dragged.

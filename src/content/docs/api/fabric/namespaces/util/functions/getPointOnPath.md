@@ -7,7 +7,7 @@ title: "getPointOnPath"
 
 > **getPointOnPath**(`path`, `distance`, `infos`): `undefined` \| [`TPointAngle`](/api/type-aliases/tpointangle/)
 
-Defined in: [src/util/path/index.ts:790](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/util/path/index.ts#L790)
+Defined in: [src/util/path/index.ts:790](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/util/path/index.ts#L790)
 
 Get the point on the path that is distance along the path
 

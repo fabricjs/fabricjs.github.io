@@ -7,7 +7,7 @@ title: "sendObjectToPlane"
 
 > **sendObjectToPlane**(`object`, `from?`, `to?`): [`TMat2D`](/api/type-aliases/tmat2d/)
 
-Defined in: [src/util/misc/planeChange.ts:81](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/util/misc/planeChange.ts#L81)
+Defined in: [src/util/misc/planeChange.ts:81](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/util/misc/planeChange.ts#L81)
 
 A util that abstracts applying transform to objects.\
 Sends `object` to the destination coordinate plane by applying the relevant transformations.\

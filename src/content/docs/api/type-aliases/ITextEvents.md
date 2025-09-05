@@ -7,9 +7,9 @@ title: "ITextEvents"
 
 > **ITextEvents** = [`ObjectEvents`](/api/interfaces/objectevents/) & `object`
 
-Defined in: [src/shapes/IText/ITextBehavior.ts:30](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/shapes/IText/ITextBehavior.ts#L30)
+Defined in: [src/shapes/IText/ITextBehavior.ts:30](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/shapes/IText/ITextBehavior.ts#L30)
 
-## Type declaration
+## Type Declaration
 
 ### changed
 
