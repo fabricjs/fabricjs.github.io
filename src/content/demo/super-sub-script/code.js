@@ -29,7 +29,7 @@ $('remove').onclick = () => {
 	active.setSelectionStyles && active.setSelectionStyles({
 		fontSize: undefined,
 		deltaY: undefined,
-	}, 0, 4);
+	}, ...getRanges());
 	canvas.requestRenderAll();
 }
 
