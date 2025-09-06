@@ -4,6 +4,8 @@ title: 'Upgrading to Fabric.js 7.0'
 description: 'Updating your app for Fabric.js 7.0'
 ---
 
+FabricJS 7.0 will be released shortly, this is a **preview** of the breaking changes and an upgrade guide.
+
 ## Breaking changes
 
 Fabric 7.0 is basically Fabric 6.0 there is no large major change that should stop you from updating.
@@ -30,6 +32,17 @@ These browsers have been picked up with date of release of Jan 2021,
 so browsers that at the moment of release are nearly 5 years old.
 
 On top of supported platform changes, there are some notable api changes:
+
+## Changed default values
+
+### fireMiddleClick, fireRightClick and stopContextMenu on Canvas
+
+These 3 booleans have been flipped to default `TRUE`.
+This mean that mouse up and down even will fire also for these buttons.
+If you have mouse events that have to be triggered only for the left button, you have to safeguard
+your event with an early return inspecting the event `button` property OR changing back the default values to fault.
+
+FabricJS 8.0 will delete these property so changing the default value will not be an option in the future.
 
 ## Removing Opacity from Gradient ColorStop
 
