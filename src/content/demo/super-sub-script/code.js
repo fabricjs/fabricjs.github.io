@@ -1,16 +1,25 @@
 const $ = (id) => document.getElementById(id);
 
+const getRange = () => {
+	var active = canvas.getActiveObject();
+	if (!active) return [];
+	if (active.selectionStart === active.selectionEnd) {
+		return [active.selectionStart, activeSelectionEnd + 1];
+	}
+	return [active.selectionStart, active.selectionEnd];
+}
+
 $('super').onclick = () => {
 	var active = canvas.getActiveObject();
 	if (!active) return;
-	active.setSuperscript(0,4);
+	active.setSuperscript(...getRange());
 	canvas.requestRenderAll();
 }
 
 $('sub').onclick = () => {
 	var active = canvas.getActiveObject();
 	if (!active) return;
-	active.setSubscript(0,4);
+	active.setSubscript(...getRange());
 	canvas.requestRenderAll();
 }
 
