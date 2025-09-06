@@ -4,7 +4,7 @@ const getRange = () => {
 	var active = canvas.getActiveObject();
 	if (!active) return [];
 	if (active.selectionStart === active.selectionEnd) {
-		return [active.selectionStart, activeSelectionEnd + 1];
+		return [active.selectionStart, active.selectionEnd + 1];
 	}
 	return [active.selectionStart, active.selectionEnd];
 }
