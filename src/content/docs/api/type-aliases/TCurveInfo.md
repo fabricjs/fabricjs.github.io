@@ -7,7 +7,7 @@ title: "TCurveInfo"
 
 > **TCurveInfo**\<`C`\> = [`TPathSegmentInfoCommon`](/api/type-aliases/tpathsegmentinfocommon/)\<`C`\> & `object`
 
-Defined in: [src/util/path/typedefs.ts:11](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/util/path/typedefs.ts#L11)
+Defined in: [src/util/path/typedefs.ts:11](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/util/path/typedefs.ts#L11)
 
 ## Type Declaration
 

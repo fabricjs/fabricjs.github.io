@@ -7,7 +7,7 @@ title: "ControlCursorCallback"
 
 > **ControlCursorCallback**\<`R`\> = (`eventData`, `control`, `fabricObject`, `coord`) => `R`
 
-Defined in: [src/EventTypeDefs.ts:61](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/EventTypeDefs.ts#L61)
+Defined in: [src/EventTypeDefs.ts:61](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/EventTypeDefs.ts#L61)
 
 ## Type Parameters
 

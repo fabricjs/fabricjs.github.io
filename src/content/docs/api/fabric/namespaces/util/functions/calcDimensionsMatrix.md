@@ -7,7 +7,7 @@ title: "calcDimensionsMatrix"
 
 > **calcDimensionsMatrix**(`options`): [`TMat2D`](/api/type-aliases/tmat2d/)
 
-Defined in: [src/util/misc/matrix.ts:274](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/util/misc/matrix.ts#L274)
+Defined in: [src/util/misc/matrix.ts:274](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/util/misc/matrix.ts#L274)
 
 Returns a transform matrix starting from an object of the same kind of
 the one returned from qrDecompose, useful also if you want to calculate some

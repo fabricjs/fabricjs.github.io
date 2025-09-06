@@ -7,7 +7,7 @@ title: "isTransparent"
 
 > **isTransparent**(`ctx`, `x`, `y`, `tolerance`): `boolean`
 
-Defined in: [src/util/misc/isTransparent.ts:10](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/util/misc/isTransparent.ts#L10)
+Defined in: [src/util/misc/isTransparent.ts:10](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/util/misc/isTransparent.ts#L10)
 
 Returns true if context has transparent pixel
 at specified location (taking tolerance into account)

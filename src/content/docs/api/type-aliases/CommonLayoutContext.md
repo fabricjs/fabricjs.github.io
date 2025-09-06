@@ -7,7 +7,7 @@ title: "CommonLayoutContext"
 
 > **CommonLayoutContext** = `object`
 
-Defined in: [src/LayoutManager/types.ts:74](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/LayoutManager/types.ts#L74)
+Defined in: [src/LayoutManager/types.ts:74](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/LayoutManager/types.ts#L74)
 
 ## Properties
 
@@ -15,7 +15,7 @@ Defined in: [src/LayoutManager/types.ts:74](https://github.com/fabricjs/fabric.j
 
 > `optional` **path**: [`Group`](/api/classes/group/)[]
 
-Defined in: [src/LayoutManager/types.ts:81](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/LayoutManager/types.ts#L81)
+Defined in: [src/LayoutManager/types.ts:81](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/LayoutManager/types.ts#L81)
 
 array of objects starting from the object that triggered the call to the current one
 
@@ -25,7 +25,7 @@ array of objects starting from the object that triggered the call to the current
 
 > `optional` **strategy**: [`LayoutStrategy`](/api/classes/layoutstrategy/)
 
-Defined in: [src/LayoutManager/types.ts:76](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/LayoutManager/types.ts#L76)
+Defined in: [src/LayoutManager/types.ts:76](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/LayoutManager/types.ts#L76)
 
 ***
 
@@ -33,7 +33,7 @@ Defined in: [src/LayoutManager/types.ts:76](https://github.com/fabricjs/fabric.j
 
 > **target**: [`Group`](/api/classes/group/)
 
-Defined in: [src/LayoutManager/types.ts:75](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/LayoutManager/types.ts#L75)
+Defined in: [src/LayoutManager/types.ts:75](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/LayoutManager/types.ts#L75)
 
 ***
 
@@ -41,4 +41,4 @@ Defined in: [src/LayoutManager/types.ts:75](https://github.com/fabricjs/fabric.j
 
 > **type**: [`LayoutTrigger`](/api/type-aliases/layouttrigger/)
 
-Defined in: [src/LayoutManager/types.ts:77](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/LayoutManager/types.ts#L77)
+Defined in: [src/LayoutManager/types.ts:77](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/LayoutManager/types.ts#L77)

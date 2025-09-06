@@ -7,7 +7,7 @@ title: "TBrushEventData"
 
 > **TBrushEventData** = [`TEvent`](/api/interfaces/tevent/) & `object`
 
-Defined in: [src/brushes/typedefs.ts:4](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/brushes/typedefs.ts#L4)
+Defined in: [src/brushes/typedefs.ts:4](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/brushes/typedefs.ts#L4)
 
 ## Type Declaration
 

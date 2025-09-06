@@ -7,7 +7,7 @@ title: "TAnimationBaseOptions"
 
 > **TAnimationBaseOptions**\<`T`\> = `object`
 
-Defined in: [src/util/animation/types.ts:49](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/util/animation/types.ts#L49)
+Defined in: [src/util/animation/types.ts:49](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/util/animation/types.ts#L49)
 
 ## Type Parameters
 
@@ -21,7 +21,7 @@ Defined in: [src/util/animation/types.ts:49](https://github.com/fabricjs/fabric.
 
 > **delay**: `number`
 
-Defined in: [src/util/animation/types.ts:60](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/util/animation/types.ts#L60)
+Defined in: [src/util/animation/types.ts:60](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/util/animation/types.ts#L60)
 
 Delay to start the animation in ms
 
@@ -37,7 +37,7 @@ Delay to start the animation in ms
 
 > **duration**: `number`
 
-Defined in: [src/util/animation/types.ts:54](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/util/animation/types.ts#L54)
+Defined in: [src/util/animation/types.ts:54](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/util/animation/types.ts#L54)
 
 Duration of the animation in ms
 
@@ -53,7 +53,7 @@ Duration of the animation in ms
 
 > **easing**: [`TEasingFunction`](/api/fabric/namespaces/util/type-aliases/teasingfunction/)\<`T`\>
 
-Defined in: [src/util/animation/types.ts:66](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/util/animation/types.ts#L66)
+Defined in: [src/util/animation/types.ts:66](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/util/animation/types.ts#L66)
 
 Easing function
 
@@ -69,6 +69,6 @@ Easing function
 
 > **target**: `unknown`
 
-Defined in: [src/util/animation/types.ts:71](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/util/animation/types.ts#L71)
+Defined in: [src/util/animation/types.ts:71](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/util/animation/types.ts#L71)
 
 The object this animation is being performed on

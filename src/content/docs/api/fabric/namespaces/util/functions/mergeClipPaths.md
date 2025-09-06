@@ -7,7 +7,7 @@ title: "mergeClipPaths"
 
 > **mergeClipPaths**(`c1`, `c2`): [`Group`](/api/classes/group/)
 
-Defined in: [src/util/misc/mergeClipPaths.ts:22](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/util/misc/mergeClipPaths.ts#L22)
+Defined in: [src/util/misc/mergeClipPaths.ts:22](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/util/misc/mergeClipPaths.ts#L22)
 
 Merges 2 clip paths into one visually equal clip path
 

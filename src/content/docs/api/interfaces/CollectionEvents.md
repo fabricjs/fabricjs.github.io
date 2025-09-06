@@ -5,7 +5,7 @@ prev: false
 title: "CollectionEvents"
 ---
 
-Defined in: [src/EventTypeDefs.ts:234](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/EventTypeDefs.ts#L234)
+Defined in: [src/EventTypeDefs.ts:234](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/EventTypeDefs.ts#L234)
 
 ## Extended by
 
@@ -18,7 +18,7 @@ Defined in: [src/EventTypeDefs.ts:234](https://github.com/fabricjs/fabric.js/blo
 
 > **object:added**: `object`
 
-Defined in: [src/EventTypeDefs.ts:235](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/EventTypeDefs.ts#L235)
+Defined in: [src/EventTypeDefs.ts:235](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/EventTypeDefs.ts#L235)
 
 #### target
 
@@ -30,7 +30,7 @@ Defined in: [src/EventTypeDefs.ts:235](https://github.com/fabricjs/fabric.js/blo
 
 > **object:removed**: `object`
 
-Defined in: [src/EventTypeDefs.ts:236](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/EventTypeDefs.ts#L236)
+Defined in: [src/EventTypeDefs.ts:236](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/EventTypeDefs.ts#L236)
 
 #### target
 

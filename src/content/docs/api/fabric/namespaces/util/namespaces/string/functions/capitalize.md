@@ -7,7 +7,7 @@ title: "capitalize"
 
 > **capitalize**(`string`, `firstLetterOnly?`): `string`
 
-Defined in: [src/util/lang\_string.ts:11](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/util/lang_string.ts#L11)
+Defined in: [src/util/lang\_string.ts:11](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/util/lang_string.ts#L11)
 
 Capitalizes a string
 

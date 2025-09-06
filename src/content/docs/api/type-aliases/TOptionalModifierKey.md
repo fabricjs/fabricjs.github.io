@@ -7,4 +7,4 @@ title: "TOptionalModifierKey"
 
 > **TOptionalModifierKey** = [`ModifierKey`](/api/type-aliases/modifierkey/) \| `null` \| `undefined`
 
-Defined in: [src/EventTypeDefs.ts:31](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/EventTypeDefs.ts#L31)
+Defined in: [src/EventTypeDefs.ts:31](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/EventTypeDefs.ts#L31)

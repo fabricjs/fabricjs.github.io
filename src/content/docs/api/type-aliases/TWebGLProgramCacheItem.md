@@ -7,7 +7,7 @@ title: "TWebGLProgramCacheItem"
 
 > **TWebGLProgramCacheItem** = `object`
 
-Defined in: [src/filters/typedefs.ts:54](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/filters/typedefs.ts#L54)
+Defined in: [src/filters/typedefs.ts:54](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/filters/typedefs.ts#L54)
 
 ## Properties
 
@@ -15,7 +15,7 @@ Defined in: [src/filters/typedefs.ts:54](https://github.com/fabricjs/fabric.js/b
 
 > **attributeLocations**: [`TWebGLAttributeLocationMap`](/api/type-aliases/twebglattributelocationmap/)
 
-Defined in: [src/filters/typedefs.ts:56](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/filters/typedefs.ts#L56)
+Defined in: [src/filters/typedefs.ts:56](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/filters/typedefs.ts#L56)
 
 ***
 
@@ -23,7 +23,7 @@ Defined in: [src/filters/typedefs.ts:56](https://github.com/fabricjs/fabric.js/b
 
 > **program**: `WebGLProgram`
 
-Defined in: [src/filters/typedefs.ts:55](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/filters/typedefs.ts#L55)
+Defined in: [src/filters/typedefs.ts:55](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/filters/typedefs.ts#L55)
 
 ***
 
@@ -31,4 +31,4 @@ Defined in: [src/filters/typedefs.ts:55](https://github.com/fabricjs/fabric.js/b
 
 > **uniformLocations**: [`TWebGLUniformLocationMap`](/api/type-aliases/twebgluniformlocationmap/)
 
-Defined in: [src/filters/typedefs.ts:57](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/filters/typedefs.ts#L57)
+Defined in: [src/filters/typedefs.ts:57](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/filters/typedefs.ts#L57)

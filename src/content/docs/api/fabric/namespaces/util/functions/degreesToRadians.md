@@ -7,7 +7,7 @@ title: "degreesToRadians"
 
 > **degreesToRadians**(`degrees`): [`TRadian`](/api/type-aliases/tradian/)
 
-Defined in: [src/util/misc/radiansDegreesConversion.ts:9](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/util/misc/radiansDegreesConversion.ts#L9)
+Defined in: [src/util/misc/radiansDegreesConversion.ts:9](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/util/misc/radiansDegreesConversion.ts#L9)
 
 Transforms degrees to radians.
 

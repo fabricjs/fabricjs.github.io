@@ -7,7 +7,7 @@ title: "createPolyPositionHandler"
 
 > **createPolyPositionHandler**(`pointIndex`): (`dim`, `finalMatrix`, `polyObject`) => [`Point`](/api/classes/point/)
 
-Defined in: [src/controls/polyControl.ts:24](https://github.com/fabricjs/fabric.js/blob/fea1b29b7495d9634e300bd4bfa43de097745805/src/controls/polyControl.ts#L24)
+Defined in: [src/controls/polyControl.ts:24](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/controls/polyControl.ts#L24)
 
 This function locates the controls.
 It'll be used both for drawing and for interaction.
