@@ -7,7 +7,7 @@ title: "sin"
 
 > **sin**(`angle`): `number`
 
-Defined in: [src/util/misc/sin.ts:11](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/util/misc/sin.ts#L11)
+Defined in: [src/util/misc/sin.ts:11](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/util/misc/sin.ts#L11)
 
 Calculate the cos of an angle, avoiding returning floats for known results
 This function is here just to avoid getting 0.999999999999999 when dealing

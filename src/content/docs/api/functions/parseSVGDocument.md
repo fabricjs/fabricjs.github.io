@@ -7,9 +7,7 @@ title: "parseSVGDocument"
 
 > **parseSVGDocument**(`doc`, `reviver?`, `__namedParameters?`): `Promise`\<`SVGParsingOutput`\>
 
-Defined in: [src/parser/parseSVGDocument.ts:38](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/parser/parseSVGDocument.ts#L38)
-
-**`Function`**
+Defined in: [src/parser/parseSVGDocument.ts:35](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/parser/parseSVGDocument.ts#L35)
 
 Parses an SVG document, converts it to an array of corresponding fabric.* instances and passes them to a callback
 
@@ -39,9 +37,3 @@ or extra custom manipulation
 
 SVGParsingOutput also receives `allElements` array as the last argument. This is the full list of svg nodes available in the document.
 You may want to use it if you are trying to regroup the objects as they were originally grouped in the SVG. ( This was the reason why it was added )
-
-## Static
-
-## Member Of
-
-fabric

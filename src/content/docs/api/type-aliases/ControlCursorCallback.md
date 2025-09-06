@@ -5,6 +5,34 @@ prev: false
 title: "ControlCursorCallback"
 ---
 
-> **ControlCursorCallback** = [`ControlCallback`](/api/type-aliases/controlcallback/)\<`string`\>
+> **ControlCursorCallback**\<`R`\> = (`eventData`, `control`, `fabricObject`, `coord`) => `R`
 
-Defined in: [src/EventTypeDefs.ts:60](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/EventTypeDefs.ts#L60)
+Defined in: [src/EventTypeDefs.ts:61](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/EventTypeDefs.ts#L61)
+
+## Type Parameters
+
+### R
+
+`R` = `string`
+
+## Parameters
+
+### eventData
+
+[`TPointerEvent`](/api/type-aliases/tpointerevent/)
+
+### control
+
+[`Control`](/api/classes/control/)
+
+### fabricObject
+
+[`FabricObject`](/api/classes/fabricobject/)
+
+### coord
+
+`TOCoord`
+
+## Returns
+
+`R`

@@ -7,7 +7,7 @@ title: "TAxisKey"
 
 > **TAxisKey**\<`T`\> = `` `${T}${Capitalize<TAxis>}` ``
 
-Defined in: [src/typedefs.ts:30](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/typedefs.ts#L30)
+Defined in: [src/typedefs.ts:30](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/typedefs.ts#L30)
 
 ## Type Parameters
 

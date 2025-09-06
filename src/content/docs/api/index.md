@@ -37,7 +37,7 @@ title: "fabric"
 - [IText](/api/classes/itext/)
 - [LayoutManager](/api/classes/layoutmanager/)
 - [LayoutStrategy](/api/classes/layoutstrategy/)
-- [Line](/api/classes/line/)
+- [~~Line~~](/api/classes/line/)
 - [Observable](/api/classes/observable/)
 - [Path](/api/classes/path/)
 - [Pattern](/api/classes/pattern/)
@@ -146,6 +146,7 @@ title: "fabric"
 - [Percent](/api/type-aliases/percent/)
 - [RadialGradientCoords](/api/type-aliases/radialgradientcoords/)
 - [RegistrationContext](/api/type-aliases/registrationcontext/)
+- [SerializedGradientProps](/api/type-aliases/serializedgradientprops/)
 - [SerializedLayoutManager](/api/type-aliases/serializedlayoutmanager/)
 - [SerializedPatternOptions](/api/type-aliases/serializedpatternoptions/)
 - [SerializedShadowOptions](/api/type-aliases/serializedshadowoptions/)
@@ -269,7 +270,6 @@ title: "fabric"
 ## Functions
 
 - [createCollectionMixin](/api/functions/createcollectionmixin/)
-- [getCSSRules](/api/functions/getcssrules/)
 - [getEnv](/api/functions/getenv/)
 - [getFabricDocument](/api/functions/getfabricdocument/)
 - [getFabricWindow](/api/functions/getfabricwindow/)
@@ -279,12 +279,7 @@ title: "fabric"
 - [isWebGLPipelineState](/api/functions/iswebglpipelinestate/)
 - [loadSVGFromString](/api/functions/loadsvgfromstring/)
 - [loadSVGFromURL](/api/functions/loadsvgfromurl/)
-- [parseAttributes](/api/functions/parseattributes/)
-- [parseFontDeclaration](/api/functions/parsefontdeclaration/)
-- [parsePointsAttribute](/api/functions/parsepointsattribute/)
-- [parseStyleAttribute](/api/functions/parsestyleattribute/)
 - [parseSVGDocument](/api/functions/parsesvgdocument/)
-- [parseTransformAttribute](/api/functions/parsetransformattribute/)
 - [setEnv](/api/functions/setenv/)
 - [setFilterBackend](/api/functions/setfilterbackend/)
 

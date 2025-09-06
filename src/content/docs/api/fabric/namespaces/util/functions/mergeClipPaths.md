@@ -7,7 +7,7 @@ title: "mergeClipPaths"
 
 > **mergeClipPaths**(`c1`, `c2`): [`Group`](/api/classes/group/)
 
-Defined in: [src/util/misc/mergeClipPaths.ts:23](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/util/misc/mergeClipPaths.ts#L23)
+Defined in: [src/util/misc/mergeClipPaths.ts:22](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/util/misc/mergeClipPaths.ts#L22)
 
 Merges 2 clip paths into one visually equal clip path
 
@@ -37,7 +37,3 @@ In order to handle the `inverted` property we follow logic described in the foll
 [`Group`](/api/classes/group/)
 
 merged clip path
-
-## Member Of
-
-fabric.util

@@ -7,7 +7,7 @@ title: "TAbortCallback"
 
 > **TAbortCallback**\<`T`\> = [`TOnAnimationChangeCallback`](/api/fabric/namespaces/util/type-aliases/tonanimationchangecallback/)\<`T`, `boolean`\>
 
-Defined in: [src/util/animation/types.ts:22](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/util/animation/types.ts#L22)
+Defined in: [src/util/animation/types.ts:22](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/util/animation/types.ts#L22)
 
 Called on each step to determine if animation should abort
 

@@ -7,9 +7,9 @@ title: "TDataUrlOptions"
 
 > **TDataUrlOptions**\<`T`\> = [`TToCanvasElementOptions`](/api/type-aliases/ttocanvaselementoptions/)\<`T`\> & `object`
 
-Defined in: [src/typedefs.ts:114](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/typedefs.ts#L114)
+Defined in: [src/typedefs.ts:116](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/typedefs.ts#L116)
 
-## Type declaration
+## Type Declaration
 
 ### enableRetinaScaling?
 

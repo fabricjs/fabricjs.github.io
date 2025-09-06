@@ -7,7 +7,7 @@ title: "joinPath"
 
 > **joinPath**(`pathData`, `fractionDigits?`): `string`
 
-Defined in: [src/util/path/index.ts:1032](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/util/path/index.ts#L1032)
+Defined in: [src/util/path/index.ts:1032](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/util/path/index.ts#L1032)
 
 Join path commands to go back to svg format
 

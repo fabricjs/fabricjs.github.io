@@ -7,4 +7,4 @@ title: "version"
 
 > `const` **version**: `string`
 
-Defined in: [src/constants.ts:5](https://github.com/fabricjs/fabric.js/blob/977f797255d8c56b5b68360b0d45bed33697d2e8/src/constants.ts#L5)
+Defined in: [src/constants.ts:5](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/constants.ts#L5)
