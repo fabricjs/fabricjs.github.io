@@ -13,7 +13,7 @@ const links = [
   <h2>Resources</h2>
     <ul>
         {
-            links.map((link) => ()=> (<li><a href={link.link} target="_blank" class="resource-label">{link.name}</a> &nbsp;<span></span class="resource-value">{link.description}</span></li>))
+            links.map((link) => (<li><a href={link.link} target="_blank" class="resource-label">{link.name}</a> &nbsp;<span class="resource-value">{link.description}</span></li>))
         }
     </ul>
 </section>
