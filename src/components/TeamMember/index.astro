@@ -3,7 +3,7 @@ import './index.css';
 
 export interface Props {
     withSponsor?: boolean;
-    githubName?: typeof withSponsor extends true ? string : never;
+    githubName?: string;
     imgSrc: string;
     children: any;
 }
