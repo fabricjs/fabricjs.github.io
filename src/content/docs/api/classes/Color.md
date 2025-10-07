@@ -5,13 +5,13 @@ prev: false
 title: "Color"
 ---
 
-Defined in: [src/color/Color.ts:17](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/color/Color.ts#L17)
+Defined in: [src/color/Color.ts:18](https://github.com/fabricjs/fabric.js/blob/9a792f4b7b8031f02ec7ea4ce8c99f810e45cfec/src/color/Color.ts#L18)
 
 Color common color operations
 
 ## See
 
-[colors](http://fabricjs.com/fabric-intro-part-2/#colors)
+[colors](http://fabric5.fabricjs.com/fabric-intro-part-2#colors)
 
 ## Constructors
 
@@ -19,7 +19,7 @@ Color common color operations
 
 > **new Color**(`color?`): `Color`
 
-Defined in: [src/color/Color.ts:25](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/color/Color.ts#L25)
+Defined in: [src/color/Color.ts:26](https://github.com/fabricjs/fabric.js/blob/9a792f4b7b8031f02ec7ea4ce8c99f810e45cfec/src/color/Color.ts#L26)
 
 #### Parameters
 
@@ -39,7 +39,7 @@ optional in hex or rgb(a) or hsl format or from known color list
 
 > **isUnrecognised**: `boolean` = `false`
 
-Defined in: [src/color/Color.ts:19](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/color/Color.ts#L19)
+Defined in: [src/color/Color.ts:20](https://github.com/fabricjs/fabric.js/blob/9a792f4b7b8031f02ec7ea4ce8c99f810e45cfec/src/color/Color.ts#L20)
 
 ## Methods
 
@@ -47,7 +47,7 @@ Defined in: [src/color/Color.ts:19](https://github.com/fabricjs/fabric.js/blob/8
 
 > **getAlpha**(): `number`
 
-Defined in: [src/color/Color.ts:133](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/color/Color.ts#L133)
+Defined in: [src/color/Color.ts:134](https://github.com/fabricjs/fabric.js/blob/9a792f4b7b8031f02ec7ea4ce8c99f810e45cfec/src/color/Color.ts#L134)
 
 Gets value of alpha channel for this color
 
@@ -63,7 +63,7 @@ Gets value of alpha channel for this color
 
 > **getSource**(): [`TRGBAColorSource`](/api/type-aliases/trgbacolorsource/)
 
-Defined in: [src/color/Color.ts:64](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/color/Color.ts#L64)
+Defined in: [src/color/Color.ts:65](https://github.com/fabricjs/fabric.js/blob/9a792f4b7b8031f02ec7ea4ce8c99f810e45cfec/src/color/Color.ts#L65)
 
 Returns source of this color (where source is an array representation; ex: [200, 200, 100, 1])
 
@@ -77,7 +77,7 @@ Returns source of this color (where source is an array representation; ex: [200,
 
 > **overlayWith**(`otherColor`): `Color`
 
-Defined in: [src/color/Color.ts:173](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/color/Color.ts#L173)
+Defined in: [src/color/Color.ts:174](https://github.com/fabricjs/fabric.js/blob/9a792f4b7b8031f02ec7ea4ce8c99f810e45cfec/src/color/Color.ts#L174)
 
 Overlays color with another color
 
@@ -99,7 +99,7 @@ thisArg
 
 > **setAlpha**(`alpha`): `Color`
 
-Defined in: [src/color/Color.ts:142](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/color/Color.ts#L142)
+Defined in: [src/color/Color.ts:143](https://github.com/fabricjs/fabric.js/blob/9a792f4b7b8031f02ec7ea4ce8c99f810e45cfec/src/color/Color.ts#L143)
 
 Sets value of alpha channel for this color
 
@@ -123,7 +123,7 @@ thisArg
 
 > **setSource**(`source`): `void`
 
-Defined in: [src/color/Color.ts:72](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/color/Color.ts#L72)
+Defined in: [src/color/Color.ts:73](https://github.com/fabricjs/fabric.js/blob/9a792f4b7b8031f02ec7ea4ce8c99f810e45cfec/src/color/Color.ts#L73)
 
 Sets source of this color (where source is an array representation; ex: [200, 200, 100, 1])
 
@@ -143,7 +143,7 @@ Sets source of this color (where source is an array representation; ex: [200, 20
 
 > **toBlackWhite**(`threshold`): `Color`
 
-Defined in: [src/color/Color.ts:161](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/color/Color.ts#L161)
+Defined in: [src/color/Color.ts:162](https://github.com/fabricjs/fabric.js/blob/9a792f4b7b8031f02ec7ea4ce8c99f810e45cfec/src/color/Color.ts#L162)
 
 Transforms color to its black and white representation
 
@@ -165,7 +165,7 @@ thisArg
 
 > **toGrayscale**(): `Color`
 
-Defined in: [src/color/Color.ts:151](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/color/Color.ts#L151)
+Defined in: [src/color/Color.ts:152](https://github.com/fabricjs/fabric.js/blob/9a792f4b7b8031f02ec7ea4ce8c99f810e45cfec/src/color/Color.ts#L152)
 
 Transforms color to its grayscale representation
 
@@ -181,7 +181,7 @@ thisArg
 
 > **toHex**(): `string`
 
-Defined in: [src/color/Color.ts:115](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/color/Color.ts#L115)
+Defined in: [src/color/Color.ts:116](https://github.com/fabricjs/fabric.js/blob/9a792f4b7b8031f02ec7ea4ce8c99f810e45cfec/src/color/Color.ts#L116)
 
 Returns color representation in HEX format
 
@@ -197,7 +197,7 @@ ex: FF5555
 
 > **toHexa**(): `string`
 
-Defined in: [src/color/Color.ts:124](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/color/Color.ts#L124)
+Defined in: [src/color/Color.ts:125](https://github.com/fabricjs/fabric.js/blob/9a792f4b7b8031f02ec7ea4ce8c99f810e45cfec/src/color/Color.ts#L125)
 
 Returns color representation in HEXA format
 
@@ -213,7 +213,7 @@ ex: FF5555CC
 
 > **toHsl**(): `string`
 
-Defined in: [src/color/Color.ts:97](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/color/Color.ts#L97)
+Defined in: [src/color/Color.ts:98](https://github.com/fabricjs/fabric.js/blob/9a792f4b7b8031f02ec7ea4ce8c99f810e45cfec/src/color/Color.ts#L98)
 
 Returns color representation in HSL format
 
@@ -229,7 +229,7 @@ ex: hsl(0-360,0%-100%,0%-100%)
 
 > **toHsla**(): `string`
 
-Defined in: [src/color/Color.ts:106](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/color/Color.ts#L106)
+Defined in: [src/color/Color.ts:107](https://github.com/fabricjs/fabric.js/blob/9a792f4b7b8031f02ec7ea4ce8c99f810e45cfec/src/color/Color.ts#L107)
 
 Returns color representation in HSLA format
 
@@ -245,7 +245,7 @@ ex: hsla(0-360,0%-100%,0%-100%,0-1)
 
 > **toRgb**(): `string`
 
-Defined in: [src/color/Color.ts:80](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/color/Color.ts#L80)
+Defined in: [src/color/Color.ts:81](https://github.com/fabricjs/fabric.js/blob/9a792f4b7b8031f02ec7ea4ce8c99f810e45cfec/src/color/Color.ts#L81)
 
 Returns color representation in RGB format
 
@@ -261,7 +261,7 @@ ex: rgb(0-255,0-255,0-255)
 
 > **toRgba**(): `string`
 
-Defined in: [src/color/Color.ts:89](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/color/Color.ts#L89)
+Defined in: [src/color/Color.ts:90](https://github.com/fabricjs/fabric.js/blob/9a792f4b7b8031f02ec7ea4ce8c99f810e45cfec/src/color/Color.ts#L90)
 
 Returns color representation in RGBA format
 
@@ -277,7 +277,7 @@ ex: rgba(0-255,0-255,0-255,0-1)
 
 > `static` **fromHex**(`color`): `Color`
 
-Defined in: [src/color/Color.ts:286](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/color/Color.ts#L286)
+Defined in: [src/color/Color.ts:287](https://github.com/fabricjs/fabric.js/blob/9a792f4b7b8031f02ec7ea4ce8c99f810e45cfec/src/color/Color.ts#L287)
 
 Returns new color object, when given a color in HEX format
 
@@ -299,7 +299,7 @@ Color value ex: FF5555
 
 > `static` **fromHsl**(`color`): `Color`
 
-Defined in: [src/color/Color.ts:230](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/color/Color.ts#L230)
+Defined in: [src/color/Color.ts:231](https://github.com/fabricjs/fabric.js/blob/9a792f4b7b8031f02ec7ea4ce8c99f810e45cfec/src/color/Color.ts#L231)
 
 Returns new color object, when given a color in HSL format
 
@@ -321,7 +321,7 @@ Color value ex: hsl(0-260,0%-100%,0%-100%)
 
 > `static` **fromHsla**(`color`): `Color`
 
-Defined in: [src/color/Color.ts:239](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/color/Color.ts#L239)
+Defined in: [src/color/Color.ts:240](https://github.com/fabricjs/fabric.js/blob/9a792f4b7b8031f02ec7ea4ce8c99f810e45cfec/src/color/Color.ts#L240)
 
 Returns new color object, when given a color in HSLA format
 
@@ -341,7 +341,7 @@ Returns new color object, when given a color in HSLA format
 
 > `static` **fromRgb**(`color`): `Color`
 
-Defined in: [src/color/Color.ts:194](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/color/Color.ts#L194)
+Defined in: [src/color/Color.ts:195](https://github.com/fabricjs/fabric.js/blob/9a792f4b7b8031f02ec7ea4ce8c99f810e45cfec/src/color/Color.ts#L195)
 
 Returns new color object, when given a color in RGB format
 
@@ -363,7 +363,7 @@ Color value ex: rgb(0-255,0-255,0-255)
 
 > `static` **fromRgba**(`color`): `Color`
 
-Defined in: [src/color/Color.ts:203](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/color/Color.ts#L203)
+Defined in: [src/color/Color.ts:204](https://github.com/fabricjs/fabric.js/blob/9a792f4b7b8031f02ec7ea4ce8c99f810e45cfec/src/color/Color.ts#L204)
 
 Returns new color object, when given a color in RGBA format
 
@@ -383,7 +383,7 @@ Returns new color object, when given a color in RGBA format
 
 > `static` **parseAngletoDegrees**(`value`): `number`
 
-Defined in: [src/color/Color.ts:318](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/color/Color.ts#L318)
+Defined in: [src/color/Color.ts:319](https://github.com/fabricjs/fabric.js/blob/9a792f4b7b8031f02ec7ea4ce8c99f810e45cfec/src/color/Color.ts#L319)
 
 Converts a string that could be any angle notation (50deg, 0.5turn, 2rad)
 into degrees without the 'deg' suffix
@@ -408,7 +408,7 @@ number in degrees or NaN if inputs are invalid
 
 > `static` **sourceFromHex**(`color`): `undefined` \| [`TRGBAColorSource`](/api/type-aliases/trgbacolorsource/)
 
-Defined in: [src/color/Color.ts:295](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/color/Color.ts#L295)
+Defined in: [src/color/Color.ts:296](https://github.com/fabricjs/fabric.js/blob/9a792f4b7b8031f02ec7ea4ce8c99f810e45cfec/src/color/Color.ts#L296)
 
 Returns array representation (ex: [100, 100, 200, 1]) of a color that's in HEX format
 
@@ -432,7 +432,7 @@ source
 
 > `static` **sourceFromHsl**(`color`): `undefined` \| [`TRGBAColorSource`](/api/type-aliases/trgbacolorsource/)
 
-Defined in: [src/color/Color.ts:250](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/color/Color.ts#L250)
+Defined in: [src/color/Color.ts:251](https://github.com/fabricjs/fabric.js/blob/9a792f4b7b8031f02ec7ea4ce8c99f810e45cfec/src/color/Color.ts#L251)
 
 Returns array representation (ex: [100, 100, 200, 1]) of a color that's in HSL or HSLA format.
 Adapted from <a href="https://rawgithub.com/mjijackson/mjijackson.github.com/master/2008/02/rgb-to-hsl-and-rgb-to-hsv-color-model-conversion-algorithms-in-javascript.html">https://github.com/mjijackson</a>
@@ -461,7 +461,7 @@ http://http://www.w3.org/TR/css3-color/#hsl-color
 
 > `static` **sourceFromRgb**(`color`): `undefined` \| [`TRGBAColorSource`](/api/type-aliases/trgbacolorsource/)
 
-Defined in: [src/color/Color.ts:212](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/color/Color.ts#L212)
+Defined in: [src/color/Color.ts:213](https://github.com/fabricjs/fabric.js/blob/9a792f4b7b8031f02ec7ea4ce8c99f810e45cfec/src/color/Color.ts#L213)
 
 Returns array representation (ex: [100, 100, 200, 1]) of a color that's in RGB or RGBA format
 

@@ -9,12 +9,12 @@
     display: flex;
     flex-direction: row;
     column-gap: 16px;
-    align-items: center;
+    align-items: start;
 }
 
 #companies a {
     justify-content: space-around;
-    max-width: 180px;
+    width: 220px;
     display: flex;
     flex-direction: column;
     align-items: center;

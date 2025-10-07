@@ -7,7 +7,7 @@ title: "getFabricDocument"
 
 > **getFabricDocument**(): `Document`
 
-Defined in: [src/env/index.ts:38](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/env/index.ts#L38)
+Defined in: [src/env/index.ts:38](https://github.com/fabricjs/fabric.js/blob/9a792f4b7b8031f02ec7ea4ce8c99f810e45cfec/src/env/index.ts#L38)
 
 ## Returns
 

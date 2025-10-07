@@ -7,4 +7,4 @@ title: "TArcCommand"
 
 > **TArcCommand** = `TCommand8`\<[`TParsedArcCommand`](/api/type-aliases/tparsedarccommand/)\> \| [`TArcCommandSingleFlag`](/api/type-aliases/tarccommandsingleflag/)\<[`TParsedArcCommand`](/api/type-aliases/tparsedarccommand/)\>
 
-Defined in: [src/util/path/typedefs.ts:255](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/util/path/typedefs.ts#L255)
+Defined in: [src/util/path/typedefs.ts:255](https://github.com/fabricjs/fabric.js/blob/9a792f4b7b8031f02ec7ea4ce8c99f810e45cfec/src/util/path/typedefs.ts#L255)

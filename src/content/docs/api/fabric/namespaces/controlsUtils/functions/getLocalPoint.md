@@ -7,7 +7,7 @@ title: "getLocalPoint"
 
 > **getLocalPoint**(`transform`, `originX`, `originY`, `x`, `y`): [`Point`](/api/classes/point/)
 
-Defined in: [src/controls/util.ts:136](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/controls/util.ts#L136)
+Defined in: [src/controls/util.ts:136](https://github.com/fabricjs/fabric.js/blob/9a792f4b7b8031f02ec7ea4ce8c99f810e45cfec/src/controls/util.ts#L136)
 
 Transforms a point to the offset from the given origin
 
