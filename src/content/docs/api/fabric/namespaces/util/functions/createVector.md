@@ -7,7 +7,7 @@ title: "createVector"
 
 > **createVector**(`from`, `to`): [`Point`](/api/classes/point/)
 
-Defined in: [src/util/misc/vectors.ts:24](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/util/misc/vectors.ts#L24)
+Defined in: [src/util/misc/vectors.ts:24](https://github.com/fabricjs/fabric.js/blob/9a792f4b7b8031f02ec7ea4ce8c99f810e45cfec/src/util/misc/vectors.ts#L24)
 
 Creates a vector from points represented as a point
 

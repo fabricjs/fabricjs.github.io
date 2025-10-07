@@ -7,7 +7,7 @@ title: "multiplyTransformMatrices"
 
 > **multiplyTransformMatrices**(`a`, `b`, `is2x2?`): [`TMat2D`](/api/type-aliases/tmat2d/)
 
-Defined in: [src/util/misc/matrix.ts:73](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/util/misc/matrix.ts#L73)
+Defined in: [src/util/misc/matrix.ts:73](https://github.com/fabricjs/fabric.js/blob/9a792f4b7b8031f02ec7ea4ce8c99f810e45cfec/src/util/misc/matrix.ts#L73)
 
 Multiply matrix A by matrix B to nest transformations
 

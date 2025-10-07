@@ -7,7 +7,7 @@ title: "isBetweenVectors"
 
 > **isBetweenVectors**(`t`, `a`, `b`): `boolean`
 
-Defined in: [src/util/misc/vectors.ts:94](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/util/misc/vectors.ts#L94)
+Defined in: [src/util/misc/vectors.ts:94](https://github.com/fabricjs/fabric.js/blob/9a792f4b7b8031f02ec7ea4ce8c99f810e45cfec/src/util/misc/vectors.ts#L94)
 
 Checks if the vector is between two others. It is considered
 to be inside when the vector to be tested is between the
