@@ -11,7 +11,7 @@ This is an overview of the main building blocks of Fabric.js
 
 ## Canvas
 
-The main container for Fabric.js is the `StaticCavas` or the interactive version called simply `Canvas`.
+The main container for Fabric.js is the `StaticCanvas` or the interactive version called simply `Canvas`.
 This is a class that provides you the surface where you will draw and will also provide the tools to:
 
 - Handle selections and object interactions
