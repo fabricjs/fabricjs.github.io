@@ -7,7 +7,7 @@ title: "skewCursorStyleHandler"
 
 > `const` **skewCursorStyleHandler**: [`ControlCursorCallback`](/api/type-aliases/controlcursorcallback/)
 
-Defined in: [src/controls/skew.ts:71](https://github.com/fabricjs/fabric.js/blob/8206f10a405480a7ba988ff6cfdde6412c1f13f8/src/controls/skew.ts#L71)
+Defined in: [src/controls/skew.ts:71](https://github.com/fabricjs/fabric.js/blob/9a792f4b7b8031f02ec7ea4ce8c99f810e45cfec/src/controls/skew.ts#L71)
 
 return the correct cursor style for the skew action
 
