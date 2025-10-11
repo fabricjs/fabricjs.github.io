@@ -1,12 +1,19 @@
 ---
 import './index.css';
 
-export interface Props {
-    withSponsor?: boolean;
-    githubName?: typeof withSponsor extends true ? string : never;
-    imgSrc: string;
-    children: any;
-}
+type Props =
+  | {
+      withSponsor: true;
+      githubName: string;
+      imgSrc: string;
+      children: any;
+    }
+  | {
+      withSponsor?: false;
+      githubName?: never;
+      imgSrc: string;
+      children: any;
+    };
 
 const { withSponsor, githubName, imgSrc } = Astro.props;
 ---
