@@ -8,7 +8,6 @@ import { EditorView, basicSetup } from 'codemirror';
 import * as fabric from 'fabric';
 import { debounce } from '../../utils/debounce';
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { Helmet } from 'react-helmet';
 import { espresso } from 'thememirror';
 
 export const CodeEditor = ({ code: codeProp, children, canvasId, autoRun = true, runOnChange = true, canvasDown = false }) => {
@@ -87,9 +86,7 @@ export const CodeEditor = ({ code: codeProp, children, canvasId, autoRun = true,
 
   return (
     <div className='not-content'>
-      <Helmet>
-        <script type="module">{code}</script>
-      </Helmet>
+      <script type="module">{code}</script>
       {canvasDown || children}
       <div ref={divRef} style={{ marginTop: '1rem' }} />
       <button onClick={() => runCallback([editorRef.current.state.doc.toString()], true)}>Run me</button>
