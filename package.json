@@ -27,7 +27,6 @@
     "prettier": "^3.4.2",
     "react": "19.1",
     "react-dom": "19.1",
-    "react-load-script": "^0.0.6",
     "starlight-typedoc": "^0.21.3",
     "thememirror": "^2.0.1",
     "typedoc-plugin-no-inherit": "^1.6.1",
