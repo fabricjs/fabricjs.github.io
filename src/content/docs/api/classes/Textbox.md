@@ -436,21 +436,6 @@ when being scaled via the controls.
 
 ***
 
-### charSpacing
-
-> **charSpacing**: `number`
-
-Defined in: [src/shapes/Text/Text.ts:347](https://github.com/fabricjs/fabric.js/blob/9a792f4b7b8031f02ec7ea4ce8c99f810e45cfec/src/shapes/Text/Text.ts#L347)
-
-additional space between characters
-expressed in thousands of em unit
-
-#### Inherited from
-
-[`IText`](/api/classes/itext/).[`charSpacing`](/api/classes/itext/#charspacing)
-
-***
-
 ### clipPath?
 
 > `optional` **clipPath**: [`BaseFabricObject`](/api/classes/basefabricobject/)\<`Partial`\<`ObjectProps`\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
@@ -1106,6 +1091,21 @@ null
 #### Inherited from
 
 [`IText`](/api/classes/itext/).[`hoverCursor`](/api/classes/itext/#hovercursor)
+
+***
+
+### charSpacing
+
+> **charSpacing**: `number`
+
+Defined in: [src/shapes/Text/Text.ts:347](https://github.com/fabricjs/fabric.js/blob/9a792f4b7b8031f02ec7ea4ce8c99f810e45cfec/src/shapes/Text/Text.ts#L347)
+
+additional space between characters
+expressed in thousands of em unit
+
+#### Inherited from
+
+[`IText`](/api/classes/itext/).[`charSpacing`](/api/classes/itext/#charspacing)
 
 ***
 
