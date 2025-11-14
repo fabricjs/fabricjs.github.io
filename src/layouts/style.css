@@ -33,6 +33,7 @@
       'century gothic', sans-serif;
     direction: ltr;
     line-height: 1.6;
+    width: fit-content;
     cursor: default; /*forces a pointer type cursor instead of selecton caret*/
     /*font-feature-settings: 'kern';
       text-rendering: optimizeLegibility;*/

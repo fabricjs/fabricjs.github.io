@@ -11,10 +11,6 @@ Defined in: [src/shapes/IText/ITextBehavior.ts:30](https://github.com/fabricjs/f
 
 ## Type Declaration
 
-### changed
-
-> **changed**: `never` \| \{ `action`: `string`; `index`: `number`; \}
-
 ### editing:entered
 
 > **editing:entered**: `never` \| \{ `e`: [`TPointerEvent`](/api/type-aliases/tpointerevent/); \}
@@ -22,6 +18,10 @@ Defined in: [src/shapes/IText/ITextBehavior.ts:30](https://github.com/fabricjs/f
 ### editing:exited
 
 > **editing:exited**: `never`
+
+### changed
+
+> **changed**: `never` \| \{ `action`: `string`; `index`: `number`; \}
 
 ### selection:changed
 
