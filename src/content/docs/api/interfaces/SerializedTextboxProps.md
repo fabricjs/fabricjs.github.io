@@ -48,18 +48,6 @@ takes css colors https://www.w3.org/TR/css-color-3/
 
 ***
 
-### charSpacing
-
-> **charSpacing**: `number`
-
-Defined in: [src/shapes/Text/Text.ts:98](https://github.com/fabricjs/fabric.js/blob/9a792f4b7b8031f02ec7ea4ce8c99f810e45cfec/src/shapes/Text/Text.ts#L98)
-
-#### Inherited from
-
-[`SerializedITextProps`](/api/interfaces/serializeditextprops/).[`charSpacing`](/api/interfaces/serializeditextprops/#charspacing)
-
-***
-
 ### clipPath?
 
 > `optional` **clipPath**: `Partial`\<[`SerializedObjectProps`](/api/interfaces/serializedobjectprops/) & `ClipPathProps`\>
@@ -245,6 +233,18 @@ Object height
 #### Inherited from
 
 [`SerializedITextProps`](/api/interfaces/serializeditextprops/).[`height`](/api/interfaces/serializeditextprops/#height)
+
+***
+
+### charSpacing
+
+> **charSpacing**: `number`
+
+Defined in: [src/shapes/Text/Text.ts:98](https://github.com/fabricjs/fabric.js/blob/9a792f4b7b8031f02ec7ea4ce8c99f810e45cfec/src/shapes/Text/Text.ts#L98)
+
+#### Inherited from
+
+[`SerializedITextProps`](/api/interfaces/serializeditextprops/).[`charSpacing`](/api/interfaces/serializeditextprops/#charspacing)
 
 ***
 

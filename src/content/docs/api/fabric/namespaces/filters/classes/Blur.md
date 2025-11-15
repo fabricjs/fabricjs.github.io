@@ -292,22 +292,6 @@ Defined in: [src/filters/BaseFilter.ts:332](https://github.com/fabricjs/fabric.j
 
 ***
 
-### chooseRightDelta()
-
-> **chooseRightDelta**(): `number`[]
-
-Defined in: [src/filters/Blur.ts:199](https://github.com/fabricjs/fabric.js/blob/9a792f4b7b8031f02ec7ea4ce8c99f810e45cfec/src/filters/Blur.ts#L199)
-
-choose right value of image percentage to blur with
-
-#### Returns
-
-`number`[]
-
-a numeric array with delta values
-
-***
-
 ### createHelpLayer()
 
 > **createHelpLayer**(`options`): `void`
@@ -511,6 +495,22 @@ Defined in: [src/filters/BaseFilter.ts:70](https://github.com/fabricjs/fabric.js
 #### Inherited from
 
 [`BaseFilter`](/api/fabric/namespaces/filters/classes/basefilter/).[`getVertexSource`](/api/fabric/namespaces/filters/classes/basefilter/#getvertexsource)
+
+***
+
+### chooseRightDelta()
+
+> **chooseRightDelta**(): `number`[]
+
+Defined in: [src/filters/Blur.ts:199](https://github.com/fabricjs/fabric.js/blob/9a792f4b7b8031f02ec7ea4ce8c99f810e45cfec/src/filters/Blur.ts#L199)
+
+choose right value of image percentage to blur with
+
+#### Returns
+
+`number`[]
+
+a numeric array with delta values
 
 ***
 
