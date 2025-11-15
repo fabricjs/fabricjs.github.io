@@ -708,6 +708,18 @@ Defined in: [src/EventTypeDefs.ts:222](https://github.com/fabricjs/fabric.js/blo
 
 ***
 
+### text:changed
+
+> **text:changed**: `object`
+
+Defined in: [src/EventTypeDefs.ts:345](https://github.com/fabricjs/fabric.js/blob/9a792f4b7b8031f02ec7ea4ce8c99f810e45cfec/src/EventTypeDefs.ts#L345)
+
+#### target
+
+> **target**: [`IText`](/api/classes/itext/)
+
+***
+
 ### text:editing:entered
 
 > **text:editing:entered**: `object` & `Partial`\<[`TEvent`](/api/interfaces/tevent/)\<[`TPointerEvent`](/api/type-aliases/tpointerevent/)\>\>
@@ -727,18 +739,6 @@ Defined in: [src/EventTypeDefs.ts:346](https://github.com/fabricjs/fabric.js/blo
 > **text:editing:exited**: `object`
 
 Defined in: [src/EventTypeDefs.ts:347](https://github.com/fabricjs/fabric.js/blob/9a792f4b7b8031f02ec7ea4ce8c99f810e45cfec/src/EventTypeDefs.ts#L347)
-
-#### target
-
-> **target**: [`IText`](/api/classes/itext/)
-
-***
-
-### text:changed
-
-> **text:changed**: `object`
-
-Defined in: [src/EventTypeDefs.ts:345](https://github.com/fabricjs/fabric.js/blob/9a792f4b7b8031f02ec7ea4ce8c99f810e45cfec/src/EventTypeDefs.ts#L345)
 
 #### target
 
