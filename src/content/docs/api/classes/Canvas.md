@@ -1354,6 +1354,27 @@ Defined in: [src/canvas/Canvas.ts:898](https://github.com/fabricjs/fabric.js/blo
 
 ***
 
+### \_chooseObjectsToRender()
+
+> **\_chooseObjectsToRender**(): [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[]
+
+Defined in: [src/canvas/SelectableCanvas.ts:376](https://github.com/fabricjs/fabric.js/blob/9a792f4b7b8031f02ec7ea4ce8c99f810e45cfec/src/canvas/SelectableCanvas.ts#L376)
+
+Divides objects in two groups, one to render immediately
+and one to render as activeGroup.
+
+#### Returns
+
+[`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[]
+
+objects to render immediately and pushes the other in the activeGroup.
+
+#### Inherited from
+
+`SelectableCanvas._chooseObjectsToRender`
+
+***
+
 ### \_discardActiveObject()
 
 > **\_discardActiveObject**(`e?`, `object?`): `this is { _activeObject: undefined }`
@@ -1387,27 +1408,6 @@ true if the active object has been discarded
 #### Inherited from
 
 `SelectableCanvas._discardActiveObject`
-
-***
-
-### \_chooseObjectsToRender()
-
-> **\_chooseObjectsToRender**(): [`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[]
-
-Defined in: [src/canvas/SelectableCanvas.ts:376](https://github.com/fabricjs/fabric.js/blob/9a792f4b7b8031f02ec7ea4ce8c99f810e45cfec/src/canvas/SelectableCanvas.ts#L376)
-
-Divides objects in two groups, one to render immediately
-and one to render as activeGroup.
-
-#### Returns
-
-[`FabricObject`](/api/classes/fabricobject/)\<`Partial`\<[`FabricObjectProps`](/api/interfaces/fabricobjectprops/)\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>[]
-
-objects to render immediately and pushes the other in the activeGroup.
-
-#### Inherited from
-
-`SelectableCanvas._chooseObjectsToRender`
 
 ***
 

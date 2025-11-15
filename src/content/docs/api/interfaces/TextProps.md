@@ -212,6 +212,18 @@ when being scaled via the controls.
 
 ***
 
+### charSpacing
+
+> **charSpacing**: `number`
+
+Defined in: [src/shapes/Text/Text.ts:98](https://github.com/fabricjs/fabric.js/blob/9a792f4b7b8031f02ec7ea4ce8c99f810e45cfec/src/shapes/Text/Text.ts#L98)
+
+#### Inherited from
+
+`UniqueTextProps.charSpacing`
+
+***
+
 ### clipPath?
 
 > `optional` **clipPath**: [`BaseFabricObject`](/api/classes/basefabricobject/)\<`Partial`\<`ObjectProps`\>, [`SerializedObjectProps`](/api/interfaces/serializedobjectprops/), [`ObjectEvents`](/api/interfaces/objectevents/)\>
@@ -601,18 +613,6 @@ null
 #### Inherited from
 
 [`FabricObjectProps`](/api/interfaces/fabricobjectprops/).[`hoverCursor`](/api/interfaces/fabricobjectprops/#hovercursor)
-
-***
-
-### charSpacing
-
-> **charSpacing**: `number`
-
-Defined in: [src/shapes/Text/Text.ts:98](https://github.com/fabricjs/fabric.js/blob/9a792f4b7b8031f02ec7ea4ce8c99f810e45cfec/src/shapes/Text/Text.ts#L98)
-
-#### Inherited from
-
-`UniqueTextProps.charSpacing`
 
 ***
 

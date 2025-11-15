@@ -28,16 +28,6 @@ If it returns true, abort
 
 ***
 
-### onComplete
-
-> **onComplete**: [`TOnAnimationChangeCallback`](/api/fabric/namespaces/util/type-aliases/tonanimationchangecallback/)\<`T`\>
-
-Defined in: [src/util/animation/types.ts:88](https://github.com/fabricjs/fabric.js/blob/9a792f4b7b8031f02ec7ea4ce8c99f810e45cfec/src/util/animation/types.ts#L88)
-
-Called after the last frame of the animation
-
-***
-
 ### onChange
 
 > **onChange**: [`TOnAnimationChangeCallback`](/api/fabric/namespaces/util/type-aliases/tonanimationchangecallback/)\<`T`\>
@@ -45,6 +35,16 @@ Called after the last frame of the animation
 Defined in: [src/util/animation/types.ts:83](https://github.com/fabricjs/fabric.js/blob/9a792f4b7b8031f02ec7ea4ce8c99f810e45cfec/src/util/animation/types.ts#L83)
 
 Called at each frame of the animation
+
+***
+
+### onComplete
+
+> **onComplete**: [`TOnAnimationChangeCallback`](/api/fabric/namespaces/util/type-aliases/tonanimationchangecallback/)\<`T`\>
+
+Defined in: [src/util/animation/types.ts:88](https://github.com/fabricjs/fabric.js/blob/9a792f4b7b8031f02ec7ea4ce8c99f810e45cfec/src/util/animation/types.ts#L88)
+
+Called after the last frame of the animation
 
 ***
 

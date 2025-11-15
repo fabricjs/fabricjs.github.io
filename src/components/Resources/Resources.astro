@@ -2,6 +2,11 @@
 import './resources.css';
 const links = [
   {
+    link: 'https://github.com/fabricjs/fabric.js',
+    name: '@fabricjs/fabric.js',
+    description: ' - The powerful and simple javascript HTML Canvas library',
+  },
+  {
     link: 'https://github.com/cs-open/react-fabric',
     description:
       ' - A high-extensibility library with a composite style, built with React',
@@ -18,8 +23,8 @@ const links = [
         <li>
           <a href={link.link} target="_blank" class="resource-label">
             {link.name}
-          </a>{' '}
-          &nbsp;<span class="resource-value">{link.description}</span>
+          </a>
+          <span class="resource-value">{link.description}</span>
         </li>
       ))
     }
