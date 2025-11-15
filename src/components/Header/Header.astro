@@ -1,45 +1,33 @@
 <header id="site-header">
-    <a id="logo" href="/">
-      <img alt="Fabric.js logo" src="/logo.svg" width="200" height="63" />
-    </a>
-    <slot />
-    <nav>
-      <ul>
-        <li>
-          <a href="/">
-            Home
-          </a>
-        </li>
-        <li>
-          <a href="/demos">
-            Demos
-          </a>
-        </li>
-        <li>
-          <a href="/docs">
-            Docs
-          </a>
-        </li>
-        <li>
-          <a href="/api">
-            Api specs
-          </a>
-        </li>
-        <li>
-          <a href="/resources">
-            Resources
-          </a>
-        </li>
-        <li>
-          <a href="/team">
-            Team
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+  <a id="logo" href="/">
+    <img alt="Fabric.js logo" src="/logo.svg" width="200" height="63" />
+  </a>
+  <slot />
+  <nav>
+    <ul>
+      <li>
+        <a href="/"> Home </a>
+      </li>
+      <li>
+        <a href="/demos"> Demos </a>
+      </li>
+      <li>
+        <a href="/docs"> Docs </a>
+      </li>
+      <li>
+        <a href="/api"> Api specs </a>
+      </li>
+      <li>
+        <a href="/resources"> Resources </a>
+      </li>
+      <li>
+        <a href="/team"> Team </a>
+      </li>
+    </ul>
+  </nav>
+</header>
 
-  <style>
+<style>
   #site-header {
     display: flex;
     align-items: center;
@@ -55,7 +43,7 @@
     text-align: center;
     align-self: flex-start;
   }
-  
+
   #site-header > nav {
     position: fixed;
     bottom: 0;
@@ -92,7 +80,7 @@
     z-index: -1;
     pointer-events: none;
   }
-  
+
   #site-header > nav > ul {
     width: 100%;
     display: flex;
@@ -106,7 +94,7 @@
     padding: 0px;
   }
   /*#site-header>nav>ul>li{display:inline-block;width:25%}*/
-  
+
   #site-header > nav > ul > li > a {
     color: var(--font-color-normal);
     display: block;
@@ -121,7 +109,7 @@
   #site-header > nav > ul > li > a:hover {
     color: var(--primary-color);
   }
-  
+
   @media (orientation: landscape) {
     #site-header > nav {
       width: 300px;
@@ -137,13 +125,13 @@
       flex-flow: row nowrap;
       align-items: center; /*vertical alignment; 'stretch' will give full height*/
       justify-content: space-between;
-  
+
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       height: var(--header-height);
-      padding: 0 var(--padding-left-right);
+      padding: 0 2rem;
       background: #fff;
       /*border-bottom:1px solid #eee;/*#eaeaea*/
       z-index: 9;
@@ -166,7 +154,7 @@
       box-shadow: unset;
       margin-left: 16px;
     }
-  
+
     #site-header > nav > ul > li > a {
       height: var(--header-height);
       padding: 24px 0;
@@ -177,4 +165,4 @@
       box-shadow: 0 -3px 0 0 var(--primary-color) inset;
     }
   }
-  </style>
+</style>
