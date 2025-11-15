@@ -1,42 +1,37 @@
 #companies {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
 }
 
 #companies #logos {
-    display: flex;
-    flex-direction: row;
-    column-gap: 16px;
-    align-items: start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 16px;
+  align-items: center;
 }
 
 #companies a {
-    justify-content: space-around;
-    width: 220px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  justify-content: space-around;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #companies .imageContainer {
-    height: 180px;
-    width: 180px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  height: 180px;
+  width: 180px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 #companies a img {
-    max-width: 100%;
-    display: flex;
-    justify-content: space-around;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
-
-@media (min-width: 400px) {
-    #companies a img {
-      width: 180px;
-      max-height: 180px;
-    }
-  }
