@@ -15,13 +15,14 @@ export const CodeEditor = ({ code: codeProp, children, canvasId, autoRun = true,
   const editorRef = useRef();
 
   const [code, setCode] = useState('');
-
+  
   const runCallback = useCallback(
     debounce((newcode = [codeProp], isClickByRunMeButton = false) => {
       if (window.canvasesId[canvasId]) {
         window.canvasesId[canvasId].dispose();
       }
       const preamble = [
+        `console.log('hi');`,
         `const fabric = window.fabric;`,
         `const canvasEl = document.getElementById('${canvasId}');`,
       ];
@@ -34,7 +35,7 @@ export const CodeEditor = ({ code: codeProp, children, canvasId, autoRun = true,
           console.error(error);
           window.dispatchEvent(new CustomEvent('canvas_dispose'));
         }`;
-      setCode([...preamble, exec].join('\n'));
+      eval([...preamble, exec].join('\n'))
     }, 500)
   , []);
 
@@ -78,15 +79,17 @@ export const CodeEditor = ({ code: codeProp, children, canvasId, autoRun = true,
     return () => editor.destroy();
   }, []);
 
+
+
   useEffect(() => {
     const handler = () => console.log('TODO: handle disposing gracefully');
     window.addEventListener('canvas_dispose', handler);
     return () => window.removeEventListener('canvas_dispose', handler);
-  });
+  }, []);
 
   return (
     <div className='not-content'>
-      <script type="module">{code}</script>
+      {/* <script type="module">{code}</script> */}
       {canvasDown || children}
       <div ref={divRef} style={{ marginTop: '1rem' }} />
       <button onClick={() => runCallback([editorRef.current.state.doc.toString()], true)}>Run me</button>
