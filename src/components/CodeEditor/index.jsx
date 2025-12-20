@@ -22,7 +22,6 @@ export const CodeEditor = ({ code: codeProp, children, canvasId, autoRun = true,
         window.canvasesId[canvasId].dispose();
       }
       const preamble = [
-        `console.log('hi');`,
         `const fabric = window.fabric;`,
         `const canvasEl = document.getElementById('${canvasId}');`,
       ];
