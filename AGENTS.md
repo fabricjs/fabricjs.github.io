@@ -38,6 +38,37 @@ only used here to generate the API reference via TypeDoc.
 └── .github/workflows/       build.yml (PR check), deploy.yml (push to main → GitHub Pages)
 ```
 
+## Docs vs demos — which one to write
+
+The two sections have different jobs, and content written for one does not
+belong in the other.
+
+**Demos** (`src/content/demo/`) show *what the library can do*. They are a
+showcase: the visual result is the point, the code is there so a reader can
+see it is achievable and poke at it. Keep the snippet as short as the effect
+allows — no scaffolding, no hand-rolled reimplementations of something the
+library already exports. Prose is minimal, just enough to say what to try
+(what to drag, what to double-click) and what each thing on the canvas is.
+
+**Docs** (`src/content/docs/docs/`) explain *how it works, and why*. They are
+allowed — encouraged — to go deep and get technical: quote the library's own
+source when it teaches something, walk through a helper line by line, name the
+internal functions involved, explain which pieces are exported and how to
+recombine them, and be explicit about limitations and caveats. A guide's
+interactive example should stay barebone, precisely so the surrounding prose
+carries the explanation rather than the sample code.
+
+Practical consequences when adding content:
+
+- A long code listing is fine in a guide if it is *explanatory* (the
+  implementation of a helper being taught). It is not fine as example
+  scaffolding in either place.
+- Explaining an extension means saying it exists, what it packages, how to
+  assign it, and that it is a base to build on — extensions export their
+  individual handlers precisely so readers can recompose them.
+- Don't duplicate: a guide can link to a demo for the visual showcase, and a
+  demo can link to a guide for the depth.
+
 ## Key mechanics
 
 - **Content collections** (`src/content/config.ts`): `demo` (interactive
