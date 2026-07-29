@@ -78,18 +78,8 @@ That helper swaps in `createImageCroppingControls()`, draws a ghost of the full
 source image so you can see what you are hiding, turns dragging into panning of
 the crop window, and installs another double-click handler to undo all of it.
 
-It is a convenience for demos, not a requirement — and it is deliberately left
-out above so that both control sets are live at once. Assigning the controls
-yourself, as the first example does, is perfectly valid and is usually what a
-real application wants: crop state that persists, entered and exited by your own
-UI rather than by a double click.
+It is a packaged crop mode experience meant to be a baseline and an inspiration to build yours.
 
-That choice is also why the first canvas shows no ghost. The translucent preview
-of the hidden pixels comes from a `renderGhostImage` function that
-`enterCropMode` attaches to the image as a `before:render` listener. It is an
-internal of the helper and is not exported from `fabric/extensions`, so there is
-currently no way to switch the ghost on for controls you assigned yourself — you
-get it by going through `enterCropMode`, as below.
 
 **Double-click the dragon** to toggle crop mode. The full source image appears at
 50% opacity with a border around its real bounds, the handles become the crop
