@@ -1,0 +1,164 @@
+---
+date: '2026-07-30'
+title: 'Text layout and appearance'
+description: 'Fonts, spacing, alignment and decorations on a text object'
+sidebar:
+  order: 320
+---
+
+import { CodeEditor } from '../../../../components/CodeEditor';
+import code from './layout-and-appearance/code.js?raw';
+
+Every property on this page belongs to `FabricText`, so it works the same on
+`IText` and `Textbox`. All of them can be set in the constructor or later with
+`set()` — and only with `set()`, as
+[choosing a class](/docs/text/choosing-a-class) explains.
+
+<CodeEditor code={code} canvasId="text-appearance" client:idle canvasDown>
+  <canvas width="480" height="260" id="text-appearance"></canvas>
+</CodeEditor>
+
+## Font
+
+| Property | Default | Notes |
+| --- | --- | --- |
+| `fontFamily` | `'Times New Roman'` | A CSS family name. Quoted automatically unless it already contains a quote or a comma |
+| `fontSize` | `40` | In pixels |
+| `fontWeight` | `'normal'` | `'normal'`, `'bold'`, or a number like `700` |
+| `fontStyle` | `'normal'` | `'normal'`, `'italic'`, `'oblique'` |
+
+These four are assembled into a canvas `font` string. That has a consequence
+worth knowing: **a value the browser cannot parse invalidates the whole
+declaration**, and canvas silently ignores an invalid `font`. A `fontWeight` of
+`'demibold'` does not fall back to normal — it leaves the previous font in
+effect, so your text is measured *and* drawn with the wrong typeface and nothing
+reports an error. Stick to real CSS values.
+
+There is no `fontVariant` or `fontStretch`, and no small-caps.
+
+Custom families need care beyond naming them: see [fonts](/docs/text/fonts).
+
+## Spacing
+
+**`lineHeight`** (default `1.16`) is a multiplier, not a pixel value.
+
+**`charSpacing`** (default `0`) is in **thousandths of an em**, which surprises
+everyone the first time. To add one em of space between characters you write
+`charSpacing: 1000`; a subtle tracking adjustment is more like `20`.
+
+```js
+text.set('charSpacing', 40); // ≈ 0.04em
+```
+
+Two caveats. `charSpacing` is computed from the object's `fontSize` even for
+characters that carry their own `fontSize` in `styles`, so a 12px character
+inside a 40px text gets 40px-scale letter spacing. And any non-zero value forces
+Fabric.js to draw the line character by character instead of in one call, which
+costs performance and loses ligatures and contextual shaping.
+
+### How height is actually computed
+
+This catches people building vertical layouts. A line's box is
+`fontSize × 1.13`, and only the gaps *between* lines are multiplied by
+`lineHeight` — the last line contributes no gap. So a single-line text at
+`fontSize: 40` is **45.2** tall, not `40 × 1.16`:
+
+```js
+new fabric.FabricText('one line', { fontSize: 40 }).height; // 45.2
+```
+
+The `1.13` factor is `_fontSizeMult`, and the baseline sits at
+`_fontSizeFraction` (`0.222`) inside the box. Both are overridable, but they are
+internal names — treat them as such.
+
+Note also that Fabric.js only ever measures glyph *widths*. Line height comes
+from the arithmetic above, never from the font's own ascent and descent metrics.
+If your design needs metric-accurate line boxes, you have to compute them
+yourself.
+
+## Alignment
+
+`textAlign` (default `'left'`) accepts `'left'`, `'center'`, `'right'`,
+`'justify'`, and three hybrids: `'justify-left'`, `'justify-center'`,
+`'justify-right'`.
+
+The hybrids justify every line *except* the last one, which is aligned normally
+instead — the usual typographic convention, since justifying a short final line
+looks broken. Plain `'justify'` treats the last line as left-aligned.
+
+Justification works by widening the spaces in a line after measurement. A side
+effect: the per-character boxes reflect the justified positions while the cached
+line width does not, so do not mix the two when computing your own overlays.
+
+There is **no vertical alignment** in Fabric.js — no `verticalAlign`, on any of
+the three classes. Text is always vertically centred in its own bounding box, and
+you position the object yourself.
+
+## Direction
+
+`direction` accepts `'ltr'` (default) and `'rtl'`, but the source marks it
+**experimental and explicitly not supported yet**, and it is worth taking that at
+face value: measurement is always performed left-to-right regardless of the
+setting, and setting `direction` does not re-measure. RTL and bidirectional text
+are not in a shippable state — plan around it rather than on it.
+
+## Decorations
+
+`underline`, `overline` and `linethrough` are booleans (default `false`). In
+older versions of Fabric.js this was a single `textDecoration` string; that API
+is gone.
+
+```js
+text.set({ underline: true, linethrough: false });
+```
+
+They are not real font decorations — Fabric.js draws them as filled rectangles at
+fixed fractions of the font size. Two properties tune them:
+
+- **`textDecorationThickness`** (default `66.667`) is in thousandths of an em,
+  like `charSpacing`. It is not a pixel value, which is worth remembering if you
+  expose it in a UI.
+- **`textDecorationColor`** is unset by default and falls back to the character's
+  `fill`. **Set it explicitly if your text has a gradient or pattern fill** —
+  the fallback assigns the fill object straight to the drawing context, which
+  silently leaves the previous colour in place and paints the wrong one.
+
+A thick decoration can also extend past the object's bounding box and get clipped
+by the render cache.
+
+## Backgrounds
+
+There are two, and they are different:
+
+- **`backgroundColor`** — inherited from `FabricObject`, fills the whole bounding box.
+- **`textBackgroundColor`** — fills only behind the glyphs, line by line, and can
+  be set per character through `styles`.
+
+```js
+text.set('textBackgroundColor', '#fef08a');
+```
+
+One real gotcha: **`textBackgroundColor` removes the object's shadow.** Drawing
+the text background clears the shadow from the context and does not restore it,
+so a text with both loses the shadow entirely. If you need both, put the shadow
+on a separate object underneath.
+
+## Text on a path
+
+`path`, `pathStartOffset`, `pathSide` and `pathAlign` bend text along a `Path`.
+It is a beta feature with real limitations — single line only, no justification —
+and has its own page: [text on a path](/docs/text/text-on-a-path).
+
+## Setting defaults for every text object
+
+To change these globally, assign to `ownDefaults` rather than repeating options
+at every call site. Note that the three classes have separate defaults, so a
+value set on `FabricText` does not reach `IText` or `Textbox` if those already
+declare their own:
+
+```js
+fabric.FabricText.ownDefaults.fontFamily = 'Helvetica';
+```
+
+See [configuring defaults](/docs/configuring-defaults) for how `ownDefaults`
+resolves across the class hierarchy.

@@ -1,0 +1,212 @@
+---
+date: '2026-07-30'
+title: 'Serializing and exporting text'
+description: 'JSON round-trips, style compression and what SVG export and import can and cannot carry'
+sidebar:
+  order: 390
+---
+
+Text serialises like any other object, with one twist: the `styles` structure is
+stored in a different shape from the one you work with at runtime.
+
+## JSON round-trip
+
+```js
+const json = canvas.toJSON();
+await canvas.loadFromJSON(json);
+```
+
+Per-object:
+
+```js
+const data = text.toObject();
+const restored = await fabric.IText.fromObject(data);
+```
+
+**Load fonts before deserialising.** `fromObject` constructs a text object, and
+construction measures the glyphs — so a font that has not arrived yet poisons the
+measurement cache exactly as described in [fonts](/docs/text/fonts). This is the
+most common way the font bug reaches production: the fonts are loaded correctly on
+the authoring path and forgotten on the restore path.
+
+## The two shapes of styles
+
+At runtime `styles` is a nested map of line → character → declaration. Serialised,
+it becomes a flat array of ranges over the whole text:
+
+```js
+// runtime
+text.styles = { 0: { 0: { fontWeight: 'bold' }, 1: { fontWeight: 'bold' } } };
+
+// serialized
+[{ start: 0, end: 2, style: { fontWeight: 'bold' } }]
+```
+
+`start` is inclusive, `end` exclusive, and indices are graphemes counted across the
+whole text with newlines included. Conversion happens automatically in both
+directions, and the loader accepts either shape — so handing it a runtime-style
+nested object also works, which is a useful escape hatch.
+
+The compression is why the round trip is not perfectly lossless.
+
+### What compression drops
+
+Adjacent characters are merged into one range when their **fourteen known
+styleable properties** match. Only the first character's declaration is kept.
+
+So if you added a custom style property — see
+[styling individual characters](/docs/text/character-styles) — and it varies between
+two characters that agree on all fourteen known properties, that variation is
+**silently discarded by `toObject()`**:
+
+```js
+new fabric.FabricText('abcd', {
+  styles: { 0: { 0: { fontWeight: 'bold', mine: 'x' },
+                 1: { fontWeight: 'bold', mine: 'y' } } },
+}).toObject().styles;
+// [{ start: 0, end: 2, style: { fontWeight: 'bold', mine: 'x' } }]  ← 'y' is gone
+```
+
+Worse, a declaration containing **only** unknown properties can make `toObject()`
+throw outright, because no range has been opened for it to extend:
+
+```js
+new fabric.FabricText('abcd', {
+  styles: { 0: { 0: { mine: 'x' } } },
+}).toObject();
+// TypeError: Cannot read properties of undefined (reading 'end')
+```
+
+So a custom property must never be the only thing in a declaration, and must not be
+relied on to vary independently.
+
+If you rely on custom style properties, serialise `styles` yourself:
+
+```js
+class MyText extends fabric.IText {
+  toObject(propertiesToInclude = []) {
+    return {
+      ...super.toObject(propertiesToInclude),
+      styles: fabric.util.cloneDeep(this.styles), // uncompressed
+    };
+  }
+}
+```
+
+The loader accepts the nested form, so no matching `fromObject` work is needed.
+
+### Normalise line endings
+
+There is an asymmetry to be aware of: the two directions of style conversion split
+lines slightly differently — one on `\n` only, the other on `\r\n` as well. Text
+containing Windows line endings therefore comes back with its styles **shifted by
+one character per line**:
+
+```js
+const text = new fabric.FabricText('ab\r\ncd', {
+  styles: { 1: { 0: { fill: 'red' } } }, // second line, first character
+});
+const restored = await fabric.FabricText.fromObject(text.toObject());
+restored.styles; // { 1: { 1: { fill: 'red' } } }  ← moved to the second character
+```
+
+With `\n` the same round trip is exact.
+
+Normalise on the way in and the problem disappears:
+
+```js
+text.set('text', input.replace(/\r\n/g, '\n'));
+```
+
+This is worth doing regardless: a lone `\r` is not treated as a line break but is
+still measured and treated as whitespace for justification.
+
+### Other notes
+
+- `fill` values that are `Gradient` or `Pattern` instances are shared rather than
+  deep-copied during style cloning.
+- `Textbox` serialises `minWidth` and `splitByGrapheme` in addition to the usual
+  properties. `width` round-trips, so wrapping is reproduced — but font metrics
+  differ between environments, so the resulting line breaks are not guaranteed to be
+  identical on another machine.
+- `deltaY`, `superscript`, `subscript` and `offsets` are **not** serialised at the
+  object level. Superscript survives only because it is expressed as per-character
+  `fontSize` and `deltaY` inside `styles`.
+
+## SVG export
+
+```js
+const svg = canvas.toSVG();
+```
+
+Text becomes a `<text>` element containing one `<tspan>` per style run, with
+`xml:space="preserve"` and `white-space: pre`.
+
+The important structural fact: **every `tspan` carries absolute `x` and `y`
+coordinates**, computed from Fabric's own measurements. There is no `text-anchor`
+and no reliance on the consumer's layout — alignment is baked into the numbers.
+
+That makes export predictable, and also fragile in one specific way. If the viewer
+does not have your font, glyphs are substituted but the run positions stay exactly
+where Fabric put them. A single unstyled run degrades acceptably; heavily styled
+text shows gaps and overlaps at every run boundary. Embedding the font via
+`config.addFonts` is the fix — see [fonts](/docs/text/fonts).
+
+More things that are worth knowing before you rely on exported SVG:
+
+- **One `tspan` per character** when `charSpacing` is non-zero or a path is set.
+  Output size grows accordingly.
+- **Decorations are handed to the consumer**, as CSS `text-decoration`, rather than
+  drawn as the rectangles Fabric.js uses on canvas. Position and thickness will not
+  match your canvas rendering exactly. `text-decoration-thickness` is emitted as a
+  percentage, which is patchily supported, and `text-decoration-color` is not
+  supported by all major browsers.
+- **Per-character font stacks break.** A comma-containing `fontFamily` in a style is
+  quoted as a single family name. Use bare family names.
+- **Style values are sanitised.** A family name containing characters like `;`, `<`
+  or `>` is dropped from the span style silently, and the character falls back to the
+  parent font.
+- **Text on a path** exports as individually rotated characters, not `<textPath>`.
+
+## SVG import
+
+Import is considerably weaker than export, and it is important not to assume symmetry:
+
+```js
+const { objects } = await fabric.loadSVGFromString(svg);
+```
+
+What is lost:
+
+- **All per-character styles.** Child `<tspan>` elements are not read — only the
+  combined text content — so an SVG that Fabric.js exported with rich styling
+  re-imports as uniformly styled text.
+- **Line structure.** Whitespace is collapsed, so multi-line SVG text arrives as a
+  single line.
+- **`@font-face` and SVG fonts** are ignored entirely; you get a family name and
+  nothing that makes it available.
+- `font-variant`, `textLength`, `writing-mode`, `dx`/`dy` lists and `textPath` are
+  all unsupported.
+
+What is read: `font-family`, `font-style`, `font-weight`, `font-size`,
+`letter-spacing` (converted into `charSpacing`), `text-decoration` and
+`text-anchor`, plus the `font` shorthand. Missing `font-size` defaults to 16.
+
+One hazard with untrusted input: a `font-family` whose name begins with a digit is
+parsed as a number and throws, failing the whole import. Sanitise before loading.
+
+If you need faithful round-trips, use Fabric's own JSON rather than SVG. SVG is a
+good export target and a lossy import format.
+
+## Exporting to an image
+
+```js
+const dataUrl = canvas.toDataURL({ format: 'png', multiplier: 2 });
+const el = text.toCanvasElement({ multiplier: 2 });
+```
+
+`toCanvasElement` hides the editing caret for you, so exporting mid-edit is safe. A
+custom export path that bypasses it will bake the caret into the output.
+
+Rasterised text is exactly as good as the measurements behind it, so — one last
+time — make sure the fonts were loaded before the text objects were created.

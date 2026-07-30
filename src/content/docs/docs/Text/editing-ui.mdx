@@ -1,0 +1,271 @@
+---
+date: '2026-07-30'
+title: 'Building a text editing UI'
+description: 'Toolbars, focus, undo/redo and the practical problems of wiring text editing into an app'
+sidebar:
+  order: 370
+---
+
+The previous pages describe what Fabric.js gives you. This one is about the gap
+between that and a working editor — the problems you only meet once you put a
+toolbar next to the canvas.
+
+## The focus problem
+
+This is the first thing that will break, so start here.
+
+All keyboard input goes through a hidden `<textarea>`. When the user clicks your
+bold button, the browser moves focus to that button, the textarea fires `blur`, and
+Fabric.js responds by **stopping the caret blink and nothing else**. The object
+stays `isEditing === true`, but typing no longer reaches it. To the user the caret
+has simply died.
+
+Fabric.js recovers focus only for clicks on the canvas itself. For your own UI you
+have to prevent the focus loss, which is best done by not letting the toolbar take
+focus in the first place:
+
+```js
+toolbar.addEventListener('mousedown', (e) => e.preventDefault());
+```
+
+`preventDefault` on `mousedown` stops the focus shift while still letting `click`
+fire, so your buttons work and the textarea keeps focus. Do this on the container
+and it covers every button inside.
+
+If something must take focus — a text input for the font size, a colour picker —
+hand focus back afterwards:
+
+```js
+input.addEventListener('change', () => {
+  applyFontSize(input.value);
+  itext.hiddenTextarea?.focus();
+});
+```
+
+Note the `?.` — the textarea is created when editing begins and destroyed when it
+ends, so never cache the reference.
+
+If your toolbar lives inside a modal or a component that traps focus, mount the
+textarea inside it instead of on `document.body`:
+
+```js
+itext.hiddenTextareaContainer = myModalElement;
+```
+
+## Reading the current formatting
+
+A toolbar needs to show the state of the selection. Ask for the *complete* styles
+of the selected range and check whether they agree:
+
+```js
+function selectionState(itext, property) {
+  const styles = itext.getSelectionStyles(
+    itext.selectionStart,
+    itext.selectionEnd,
+    true, // fill in object-level values
+  );
+  if (styles.length === 0) {
+    // caret with no selection: report the object value
+    return itext[property];
+  }
+  const first = styles[0][property];
+  return styles.every((s) => s[property] === first) ? first : 'mixed';
+}
+```
+
+Two details matter here. The `true` flag is what makes unstyled characters report
+the object's value instead of `undefined`, so a run of plain text does not read as
+"mixed". And an empty result means there is no selection — a caret — in which case
+there is nothing to inspect and you should fall back to the object, or to the
+character before the caret if you want the "what will I type in" answer.
+
+Refresh on `selection:changed` and `changed`:
+
+```js
+itext.on('selection:changed', updateToolbar);
+itext.on('changed', updateToolbar);
+```
+
+## Applying formatting
+
+With a selection, this is a one-liner, because the range arguments default to the
+current selection:
+
+```js
+itext.setSelectionStyles({ fontWeight: 'bold' });
+canvas.requestRenderAll();
+```
+
+Two things to add around it. First, remember that `setSelectionStyles` defers
+re-measurement to the next render, so if your UI reads the bounding box — to place
+a floating toolbar above the text, say — force it first:
+
+```js
+itext.setSelectionStyles({ fontSize: 60 });
+itext.initDimensions();
+itext.setCoords();
+canvas.requestRenderAll();
+```
+
+Second, a toggle needs to read before it writes, and should use `false` rather than
+`undefined` to switch a property off:
+
+```js
+function toggleUnderline(itext) {
+  const current = selectionState(itext, 'underline');
+  itext.setSelectionStyles({ underline: current !== true });
+  canvas.requestRenderAll();
+}
+```
+
+With no selection there is nothing to style. Either disable those controls when
+`selectionStart === selectionEnd`, or apply the change to the whole object with
+`itext.set(...)` — decide which and be consistent, because users notice.
+
+## Changing text programmatically
+
+While editing, the hidden textarea holds the authoritative copy of the text, and
+the next keystroke overwrites the object from it. So a plain `set` is silently
+undone:
+
+```js
+itext.set('text', 'replaced'); // reverted as soon as the user types
+```
+
+The right approach depends on whether you want to stay in edit mode.
+
+**Not staying** — simplest, and correct for things like "replace all":
+
+```js
+itext.exitEditing();
+itext.set('text', newValue);
+canvas.requestRenderAll();
+```
+
+**Staying** — use the character APIs, which reflow `styles` properly, then sync the
+textarea by hand:
+
+```js
+function insertAtCaret(itext, str) {
+  const at = itext.selectionStart;
+  itext.insertChars(str, undefined, at, itext.selectionEnd);
+
+  // keep the textarea in step, or the next keystroke reverts this
+  if (itext.hiddenTextarea) {
+    itext.hiddenTextarea.value = itext.text;
+  }
+  itext.selectionStart = itext.selectionEnd = at + str.length;
+  itext._updateTextarea();
+
+  itext.fire('changed');
+  itext.canvas?.fire('text:changed', { target: itext });
+  itext.canvas?.requestRenderAll();
+}
+```
+
+`insertChars` and `removeChars` do not fire `changed` themselves, which is why the
+example does it — otherwise your autosave and undo stack never hear about the edit.
+`_updateTextarea` is internal but it is the only route to re-syncing the selection,
+and Fabric.js itself uses it for exactly this purpose in its drag-and-drop code.
+
+## Undo and redo
+
+Fabric.js has none. There is no history, and Ctrl+Z is not bound — which also means
+the browser's own textarea undo can fire and produce a partial, style-less undo you
+did not ask for. Intercept it:
+
+```js
+itext.keysMap = { ...itext.keysMap }; // clone: maps are shared process-wide
+// then handle Ctrl+Z yourself in a keydown listener on the textarea,
+// or override onKeyDown in a subclass
+```
+
+Build the history on `changed`, snapshotting `toObject()`. Snapshot on a debounce
+rather than per keystroke, or your history will have one entry per character:
+
+```js
+let timer;
+itext.on('changed', () => {
+  clearTimeout(timer);
+  timer = setTimeout(() => history.push(itext.toObject()), 400);
+});
+```
+
+Restore by exiting editing, applying the snapshot, and re-entering if you want to
+keep the session — restoring mid-edit runs into the textarea problem above.
+
+Remember that `toObject()` compresses `styles` into ranges, so a custom style
+property will not survive the round trip. See
+[serializing and exporting text](/docs/text/serializing-text).
+
+## Floating toolbars
+
+To position a toolbar over the text, use the object's bounding rect in viewport
+coordinates and add the canvas offset:
+
+```js
+function toolbarPosition(itext) {
+  const r = itext.getBoundingRect();      // already viewport space
+  const rect = canvas.getElement().getBoundingClientRect();
+  return { left: rect.left + r.left, top: rect.top + r.top - 44 };
+}
+```
+
+Recompute on `selection:changed`, `changed`, `object:modified` and on canvas
+zoom or pan. And make sure the bounding rect is fresh — after a style change that
+means `initDimensions()` then `setCoords()` first, as above.
+
+## One editor at a time
+
+Entering editing on one text object silently exits any other on the same canvas,
+firing its exit events — including `object:modified` if the text changed. If you
+persist on `object:modified`, expect it to arrive as a side effect of the user
+clicking into a *different* text object, not only when they click away entirely.
+
+Objects on separate canvases can both be editing, and will fight over focus and
+over the shared clipboard channel. If your app has multiple canvases, exit editing
+explicitly when one loses attention.
+
+## Mobile
+
+Focusing the hidden textarea is what raises the soft keyboard, so basic typing
+works. Two rough edges:
+
+- The textarea is styled at a 1px font size, well under the threshold at which iOS
+  Safari suppresses zoom-on-focus, so expect the viewport to zoom when editing
+  begins. Mitigate with a viewport meta tag; there is no library-side fix.
+- The textarea's position is computed from a cached canvas offset that is refreshed
+  on window resize but **not on scroll**. Scroll the page mid-edit and the invisible
+  textarea drifts, which on mobile means the OS scrolls the wrong area into view and
+  IME candidate windows appear in the wrong place. Fix it yourself:
+
+```js
+window.addEventListener('scroll', () => canvas.calcOffset(), { passive: true });
+```
+
+## Accessibility
+
+Be clear-eyed about this: canvas text editing in Fabric.js is not accessible as
+shipped. The hidden textarea carries no label, no ARIA attributes and no role, and
+there is no keyboard route into editing at all — `enterEditing` is reachable only
+from pointer events or your own code.
+
+If accessibility is a requirement, plan for it at the application level: provide a
+keyboard-accessible way to enter editing, expose the text content in an
+accompanying DOM structure, and consider whether a canvas editor is the right
+choice for the content in question. A `<textarea>` overlay synced to the canvas is
+sometimes the more honest answer.
+
+## Editing while other things happen
+
+A few interactions worth testing early, since each has a real cause:
+
+- **Setting object properties mid-edit.** Writes to `selectable`, `hasControls`,
+  `borderColor`, `lockMovementX`, `lockMovementY` and `hoverCursor` are stashed and
+  applied on exit, so they look like no-ops while editing.
+- **The caret disappearing.** It is drawn on the canvas's top context; anything
+  else that clears that context wipes it until the next blink.
+- **Exporting.** `toCanvasElement` hides the caret for you, but a custom export
+  path that bypasses it will bake the caret into the image.
+- **Disposal.** `canvas.dispose()` tears editing down without firing exit events, so
+  do not rely on `editing:exited` for cleanup.

@@ -1,0 +1,150 @@
+---
+date: '2026-07-30'
+title: 'Text objects: choosing a class'
+description: 'FabricText, IText and Textbox — what each one adds and which to use'
+sidebar:
+  order: 310
+---
+
+Fabric.js has three text classes, and they form a chain rather than a menu:
+
+```
+FabricText  →  IText  →  Textbox
+```
+
+Each one inherits everything from the previous, so the question is never "which
+features do I get" but "how far along the chain do I need to go".
+
+## FabricText
+
+The base class. It renders text and nothing else: no cursor, no keyboard, no
+mouse handling. Everything about how text *looks* lives here — fonts, spacing,
+alignment, decorations, per-character styles — and the other two classes inherit
+all of it.
+
+```js
+const label = new fabric.FabricText('Read only', {
+  fontFamily: 'Helvetica',
+  fontSize: 24,
+});
+```
+
+Reach for it when the text is content rather than input: labels, watermarks,
+captions, generated output. It is the cheapest of the three and cannot be typed
+into even if the canvas is interactive.
+
+## IText
+
+`IText` — the *I* is for interactive — adds the entire editing experience:
+
+- a caret with a blink animation, and a rendered selection
+- keyboard input through a hidden `<textarea>`, including IME composition
+- click to place the caret, double-click to select a word, triple-click for the line
+- copy, cut, paste and drag-and-drop of text
+- the `editing:entered` / `changed` / `editing:exited` event family
+
+```js
+const editable = new fabric.IText('Double-click me', { left: 50, top: 50 });
+canvas.add(editable);
+```
+
+Lines break only where you put a `\n`. The object grows as wide as its longest
+line, and there is no wrapping.
+
+The interactive behaviour is split across four internal layers —
+`ITextBehavior`, `ITextKeyBehavior`, `ITextClickBehavior` and then `IText`
+itself — which matters only when you go looking for a method to override.
+
+## Textbox
+
+`Textbox` extends `IText`, so **it is editable too**. What it adds is a fixed
+`width` that text wraps inside, and a `height` recomputed from the wrapped result:
+
+```js
+const box = new fabric.Textbox('This text wraps inside a fixed width', {
+  width: 200,
+});
+```
+
+This trips people up regularly: you do not choose between "editable" and
+"wrapping". `Textbox` is the editable *and* wrapping option, and there is no
+wrapping-but-not-editable class. If you need that, use a `Textbox` with
+`editable: false`.
+
+## Which one
+
+| You need | Use |
+| --- | --- |
+| Static text, no input | `FabricText` |
+| Typing, lines break only at `\n` | `IText` |
+| Typing inside a fixed width, with wrapping | `Textbox` |
+| Wrapping but not editable | `Textbox` with `editable: false` |
+
+When in doubt, `Textbox` is the closest thing to what a user expects a text box
+to be, and it is what most editor applications end up using.
+
+## The one rule that catches everyone
+
+Text measures itself. Changing a property that affects layout has to re-measure
+the glyphs, re-split the lines and recompute width and height — and that only
+happens when you go through `set()`:
+
+```js
+// re-measures, updates width/height
+text.set('fontSize', 60);
+text.set({ text: 'new content' });
+
+// changes the field and nothing else — width and height are now wrong
+text.fontSize = 60;
+text.text = 'new content';
+```
+
+There are no property setters doing this behind your back. Direct assignment is
+silent: no error, no warning, just a stale bounding box, stale controls, and
+character positions that no longer match what is drawn.
+
+The properties that trigger re-measurement are collected in
+`FabricText.textLayoutProperties`:
+
+`fontSize`, `fontWeight`, `fontFamily`, `fontStyle`, `lineHeight`, `text`,
+`charSpacing`, `textAlign`, `styles`, `path`, `pathStartOffset`, `pathSide`,
+`pathAlign` — plus `width` on `Textbox`.
+
+Everything else (`underline`, `textBackgroundColor`, `direction`, `fill`, …) only
+needs a repaint, which `set()` also handles.
+
+Two consequences worth remembering now, both covered in detail later:
+
+- Mutating the `styles` object in place is direct assignment by another name, and
+  needs a manual `initDimensions()`. See [styling individual characters](/docs/text/character-styles).
+- While an `IText` is being edited, the hidden textarea is the source of truth
+  for the text, so even `set('text', …)` gets reverted by the next keystroke. See
+  [building a text editing UI](/docs/text/editing-ui).
+
+## Three index spaces
+
+Text code deals with positions constantly, and Fabric.js uses three different
+kinds of index. Mixing them up is the single most common source of subtle bugs,
+so it is worth naming them before you meet them:
+
+1. **String offsets** — plain UTF-16 indices into `text`. `text.length` lives here.
+2. **Grapheme indices** — one step per *user-perceived character*. `selectionStart`,
+   `selectionEnd` and the character keys in `styles` all live here. An emoji is
+   one grapheme and several UTF-16 units, so these two spaces are not
+   interchangeable.
+3. **Line indices** — and there are two flavours: *logical* lines (split on `\n`,
+   what `styles` is keyed by) and *visual* lines (what actually gets drawn, which
+   for a wrapping `Textbox` is different).
+
+Fabric.js provides converters for the first two, `fromStringToGraphemeSelection`
+and `fromGraphemeToStringSelection`, and `get2DCursorLocation(index, skipWrapping)`
+for the third — where `skipWrapping: true` gives you logical coordinates and the
+default gives visual ones.
+
+## Where to go next
+
+- [Text layout and appearance](/docs/text/layout-and-appearance) — the properties that control how text looks.
+- [Fonts: loading, measuring and caching](/docs/text/fonts) — read this before shipping a custom font. It prevents a whole class of bug.
+- [Styling individual characters](/docs/text/character-styles) — the rich-text data model.
+- [Editing text](/docs/text/editing) — the interactive layer in depth.
+- [Wrapping text with Textbox](/docs/text/textbox-wrapping) — how wrapping actually decides where to break.

@@ -1,0 +1,230 @@
+---
+date: '2026-07-30'
+title: 'Fonts: loading, measuring and caching'
+description: 'How Fabric.js measures text, why late-loading webfonts corrupt layout, and how to do it correctly'
+sidebar:
+  order: 330
+---
+
+If you ship a custom font, read this page before anything else. Getting the order
+of operations wrong does not produce a temporary flash of the wrong typeface — it
+permanently corrupts the measurements of every text object using that family, and
+nothing reports an error.
+
+## How Fabric.js measures text
+
+Fabric.js needs the width of every character to lay out a line, position a caret,
+draw a selection, and decide where a `Textbox` wraps. It gets those widths from
+`ctx.measureText()` on an offscreen canvas, and it caches them aggressively.
+
+Three facts about that cache drive everything else on this page:
+
+1. **It is global and lives as long as the page.** It is not per object, not per
+   canvas — a single module-level cache shared by everything.
+2. **Its key is the family name plus style and weight**, lowercased. Nothing else.
+3. **`fontSize` is not part of the key.** Every character is measured once at a
+   fixed 400px and scaled arithmetically to whatever size you asked for.
+
+That last point means metrics are assumed to scale linearly. Fonts with optical
+sizing or size-specific hinting will be very slightly off at small sizes.
+
+Widths are also measured in pairs to capture kerning, but only when both
+characters share an identical font declaration. Styling one character of a pair
+changes the measured width of its neighbour.
+
+## The failure mode
+
+A text object measures itself **synchronously, in its constructor**. So:
+
+```js
+// The font has been requested by CSS but has not arrived yet.
+const text = new fabric.IText('Hello', { fontFamily: 'Inter' });
+```
+
+At this moment the browser has no `Inter`, so it substitutes a fallback and
+`measureText` returns the fallback's widths. Fabric.js has no way to detect the
+substitution, and stores those widths **under the key `inter`**.
+
+When the font finishes loading, the glyphs repaint correctly — but the cached
+widths do not change, and neither does `text.width`. What you get is:
+
+- a bounding box and selection border that no longer fit the text
+- controls in the wrong place
+- a caret and selection rectangles that drift from the glyphs
+- underlines and text backgrounds of the wrong length
+- a `Textbox` that wraps in the wrong places
+
+And because the cache is global, **every text object created later with that
+family inherits the wrong widths**, including ones created long after the font
+loaded. The corruption outlives the page's loading phase.
+
+## Doing it correctly
+
+Load the font first, then create text. Fabric.js ships no font loader at all —
+there is no `loadFont` utility, no readiness promise, no font event. Use the
+browser's CSS Font Loading API:
+
+```js
+const font = new FontFace('Inter', "url(/fonts/inter.woff2) format('woff2')", {
+  weight: '400',
+  style: 'normal',
+});
+await font.load();
+document.fonts.add(font);
+
+// only now
+const text = new fabric.IText('Hello', { fontFamily: 'Inter' });
+```
+
+If the `@font-face` came from a stylesheet rather than JavaScript, ask for the
+exact face you need:
+
+```js
+await document.fonts.load('400 40px "Inter"');
+```
+
+Be careful with `document.fonts.ready`. It resolves when *pending* loads finish,
+and a face that nothing has requested yet is not pending — so awaiting it can
+resolve before your font has loaded at all. Request the face explicitly, as
+above.
+
+Load one face per weight and style you actually use. `bold` and `italic` are
+cached separately, and synthesised bold usually measures poorly.
+
+Fonts must also be loaded **before `loadFromJSON`**, because deserialising a text
+object runs the same measuring constructor.
+
+## Recovering from a late load
+
+If a font can arrive late — a user-supplied font, a font picker, a slow
+connection — you can repair the damage, but it takes four steps in this order:
+
+```js
+// 1. clear the poisoned widths for that family
+fabric.cache.clearFontCache('Inter');
+
+// 2. re-measure every object using it
+obj.initDimensions();
+
+// 3. force a repaint of the cached bitmap (required for Textbox)
+obj.dirty = true;
+
+// 4. refresh the interaction box
+obj.setCoords();
+
+canvas.requestRenderAll();
+```
+
+Both halves are necessary. Clearing the cache alone does nothing, because the
+object keeps its own copy of the measurements. Calling `initDimensions()` alone
+does nothing either, because it re-reads the same poisoned cache. And the order
+matters — clear first.
+
+Step 3 is easy to miss: `FabricText.initDimensions()` marks the object dirty for
+you, but **`Textbox` overrides the method and does not**. Since a width-only
+change does not alter a Textbox's height, the cached bitmap can otherwise be
+reused and you keep seeing stale glyphs. Set `dirty` yourself.
+
+`clearFontCache()` with no argument empties the whole cache, which is the safe
+option if you are not sure which families are affected. With an argument it
+matches case-insensitively but needs the **exact family string** you put on the
+object.
+
+Objects inside a `Group` need the group's layout re-run afterwards, and remember
+that a family can also appear in per-character `styles`, not just in
+`obj.fontFamily`.
+
+## Family name discipline
+
+The cache key is the whole string, so `'Inter'` and `'Inter, sans-serif'` are two
+unrelated entries — clearing one leaves the other stale. Pick one form and use it
+everywhere.
+
+Prefer a **bare family name with no comma and no quotes**. It keeps the cache
+predictable, lets Fabric.js quote the name correctly for the canvas, and avoids
+two separate SVG export problems:
+
+- A per-character `fontFamily` containing a comma is exported wrapped in a single
+  pair of quotes, turning `Arial, sans-serif` into one bogus family name. Per
+  character font *stacks* do not survive SVG export.
+- Family names containing any of `;` `<` `>` `\`, or sequences like `url(` or
+  `data:`, are stripped from SVG span styles by a sanitiser and vanish silently.
+
+If you need fallbacks, keep them out of the property and handle them at the font
+loading level.
+
+## SVG export
+
+An exported SVG references fonts by name; it does not embed them. Fabric.js can
+emit `@font-face` rules pointing at URLs you supply, but **only for families you
+register yourself**:
+
+```js
+fabric.config.addFonts({ Inter: '/fonts/inter.woff2' });
+```
+
+`config.fontPaths` — and `addFonts`, `removeFonts`, `clearFonts` — affect **SVG
+export only**. They are not a loader and have no effect on canvas rendering or
+measurement, which is a common misreading of the API.
+
+Two sharp edges when you use it:
+
+- The lookup is exact and case-sensitive, so a `fontFamily` of `'Inter, sans-serif'`
+  will not match a registration of `Inter`.
+- If an object's own `fontFamily` is not registered, the per-character fonts on
+  that object are skipped too — so register the base family even when you only
+  care about styled runs.
+
+Because Fabric.js bakes absolute positions into every exported text run, an SVG
+opened without the right font shows substituted glyphs at Fabric's original
+positions. Single-run text degrades tolerably; heavily styled text does not.
+
+## SVG import
+
+Do not rely on it for fonts. `@font-face` rules inside an imported SVG are
+ignored, SVG font elements are ignored, and `font-variant` is dropped. Import
+gives you a family *name* and nothing that makes it available — so load the font
+yourself and re-measure afterwards.
+
+One concrete hazard: a `font-family` whose name starts with a digit is parsed as a
+number and throws during import, taking the whole document with it. Sanitise
+untrusted SVG before loading it.
+
+## Node and server-side rendering
+
+In Node there is no CSS Font Loading API. Fonts come from `node-canvas`:
+
+```js
+const { registerFont } = require('canvas');
+registerFont('./fonts/inter.woff2', { family: 'Inter', weight: '400' });
+```
+
+Register **every** family, weight and style **at process start, before creating
+any canvas or text object**. `fabric.config.addFonts` does not help here — it only
+writes SVG markup.
+
+Also worth knowing: Fabric's default `fontFamily` is `Times New Roman`, which
+frequently does not exist on a Linux container. You will silently get whatever
+fontconfig substitutes, and your server render will not match the browser. Set a
+default you actually ship:
+
+```js
+fabric.FabricText.ownDefaults.fontFamily = 'Inter';
+```
+
+Complex-script shaping and colour emoji depend on the `node-canvas` build and
+will not match a browser exactly, so do not expect pixel parity for those.
+
+## Checklist
+
+1. Await the specific faces (family + weight + style) before creating any text.
+2. Use one canonical family string everywhere; prefer a bare name.
+3. Use only valid CSS `fontWeight` and `fontStyle` values.
+4. Load fonts before `loadFromJSON`.
+5. If a font can load late: `clearFontCache(family)` → `initDimensions()` →
+   `dirty = true` → `setCoords()` → render.
+6. For SVG export, `config.addFonts` every family, including base families of
+   objects with styled runs.
+7. In Node, `registerFont` everything up front and override the default family.
+8. In a long-lived editor that lets users try many fonts, clear unused families
+   occasionally — the cache grows without bound and never expires.
