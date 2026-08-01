@@ -1,0 +1,237 @@
+---
+date: '2026-07-30'
+title: 'Styling individual characters'
+description: 'The styles object, styling a range, and how styles survive editing'
+sidebar:
+  order: 340
+---
+
+import { CodeEditor } from '../../../../components/CodeEditor';
+import code from './character-styles/code.js?raw';
+
+What makes Fabric.js text *rich* text is that any of a small set of properties can
+be overridden per character. This page is the data model behind that.
+
+<CodeEditor code={code} canvasId="text-styles" client:idle canvasDown>
+  <canvas width="600" height="220" id="text-styles"></canvas>
+</CodeEditor>
+
+## The styles object
+
+`styles` is a sparse, two-level map: **logical line index**, then **grapheme index
+within that line**.
+
+```js
+text.styles = {
+  0: {
+    0: { fontWeight: 'bold' },
+    1: { fontWeight: 'bold' },
+  },
+  2: {
+    5: { fill: 'red' },
+  },
+};
+```
+
+A missing line means no styles on that line. A missing character means it inherits
+from the object. So `styles` records only the differences, never a complete
+picture — which is why reading a character's *effective* value needs a helper
+rather than a lookup.
+
+Two things about the indices:
+
+- Character indices count **graphemes**, not UTF-16 units. An emoji or a flag
+  occupies one style slot even though `text.length` counts several.
+- Line indices are **logical** lines — the ones separated by `\n` in your text.
+  For a `Textbox`, the lines you *see* are wrapped lines, and those are a
+  different index space. See [wrapping text with Textbox](/docs/text/textbox-wrapping).
+
+## What can be styled
+
+Exactly fourteen properties:
+
+`fontSize`, `fontWeight`, `fontFamily`, `fontStyle`, `underline`, `overline`,
+`linethrough`, `stroke`, `strokeWidth`, `fill`, `deltaY`, `textBackgroundColor`,
+`textDecorationThickness`, `textDecorationColor`.
+
+Anything not in that list is object-wide only. In particular **`textAlign`,
+`lineHeight`, `charSpacing`, `direction`, `shadow` and `opacity` cannot vary per
+character** — so there is no per-paragraph alignment within a single text object.
+If your editor needs mixed alignment, use one object per paragraph.
+
+`deltaY` shifts a character's baseline in pixels, and is how superscript works.
+
+## Reading and writing a range
+
+```js
+// read
+const styles = text.getSelectionStyles(startIndex, endIndex);
+const complete = text.getSelectionStyles(startIndex, endIndex, true);
+
+// write (merges into whatever is already there)
+text.setSelectionStyles({ fontWeight: 'bold' }, startIndex, endIndex);
+```
+
+Indices are graphemes, `start` is inclusive and `end` is **exclusive**. On an
+`IText` both arguments default to the current selection, which is what makes a
+toolbar button a one-liner:
+
+```js
+itext.setSelectionStyles({ underline: true });
+```
+
+The `complete` flag fills in the object-level value for every property that isn't
+overridden, so you get all fourteen keys back. Use it when you need to know what a
+character actually looks like; omit it when you want to know what was explicitly
+set.
+
+### Three traps in this API
+
+**Omitting `endIndex` silently does nothing.** The documentation suggests it
+defaults to `startIndex + 1`; it does not — the internal loop runs from `start` to
+`end` and with `end` missing it never executes. `getSelectionStyles(3)` returns an
+empty array and `setSelectionStyles({...}, 3)` sets nothing. Always pass an
+explicit end. For the same reason `endIndex: 0` is falsy and behaves like omitting
+it.
+
+**`undefined` and `false` do different things, and neither is a no-op.** Passing
+`undefined` *removes the override*, so the character falls back to the object-level
+value. Passing `false` writes an override of `false`. When the object's own value is
+`true`, the two give opposite results:
+
+```js
+const text = new fabric.FabricText('abc', {
+  underline: true,                            // object-level
+  styles: { 0: { 0: { underline: false } } }, // character 0 overrides it
+});
+
+text.setSelectionStyles({ underline: undefined }, 0, 1);
+// override deleted → character 0 is now underlined, like the rest
+
+text.setSelectionStyles({ underline: false }, 0, 1);
+// override kept → character 0 stays not underlined
+```
+
+So `undefined` means "inherit from the object" and `false` means "force off". Other
+properties in the same declaration are untouched either way. To strip a property
+from every character at once, use `text.removeStyle('underline')`.
+
+**`setSelectionStyles` does not re-measure immediately.** It marks the object for
+re-measurement at the next render instead. Between your call and that render,
+`width`, `height` and `getBoundingRect()` are stale — which bites when you
+reposition a toolbar or an overlay right after applying a style. If you need
+correct dimensions now:
+
+```js
+text.setSelectionStyles({ fontSize: 60 }, 0, 4);
+text.initDimensions();
+text.setCoords();
+```
+
+## Reading an effective value
+
+To find out what a character actually renders as — style override if present,
+object value otherwise — use `getValueOfPropertyAt`:
+
+```js
+const size = text.getValueOfPropertyAt(lineIndex, charIndex, 'fontSize');
+```
+
+Reading `text.fontSize` ignores styles, and reading `text.styles[l][c].fontSize`
+ignores the fallback. This helper is the only correct route, and it takes *line
+and character* coordinates rather than a flat index — convert with
+`text.get2DCursorLocation(index, true)`.
+
+Do not mutate what the lower-level style getters hand back. They return a live
+reference when a style exists and a throwaway empty object when it does not, and
+you cannot tell which from the outside — so treat results as read-only.
+
+## Housekeeping
+
+Styles accumulate redundancy fast, especially through copy and paste, which
+records the *complete* style of every copied character. Two helpers clean up:
+
+- **`text.cleanStyle(property)`** removes per-character values equal to the
+  object's value, prunes the empties, and — if every character agrees — hoists the
+  value onto the object and drops the per-character entries. Note that it can
+  therefore change the object-level property.
+- **`text.removeStyle(property)`** deletes that property everywhere.
+
+`text.styleHas(property)` tells you whether a property appears anywhere, and
+`isEmptyStyles(lineIndex)` whether a line has any styling at all. Both are used
+internally to pick faster rendering paths.
+
+## Superscript and subscript
+
+```js
+text.setSuperscript(startIndex, endIndex);
+text.setSubscript(startIndex, endIndex);
+```
+
+Both are conveniences over `fontSize` and `deltaY`, controlled by the
+`superscript` and `subscript` objects (`{ size: 0.6, baseline: -0.35 }` and
+`{ size: 0.6, baseline: 0.11 }`).
+
+Two consequences of being computed rather than semantic: applying it twice
+compounds — the size multiplies by 0.6 each time — and because `deltaY` is stored
+in pixels, changing `fontSize` afterwards does not rescale the shift. There is no
+`unsetSuperscript`; you reset `fontSize` and `deltaY` yourself.
+
+Also note that the default `superscript`, `subscript` and `offsets` objects are
+shared between instances, so mutating one in place affects every text object
+created afterwards. Replace the whole object instead:
+
+```js
+text.superscript = { size: 0.7, baseline: -0.4 }; // not text.superscript.size = 0.7
+```
+
+## How styles survive edits
+
+When text is inserted or deleted, style keys have to shift with it. Fabric.js
+handles this for you as long as you go through the right API:
+
+- **`text.insertChars(chars, styleArray, start, end)`** — inserts, optionally with
+  one style object per inserted grapheme.
+- **`text.removeChars(start, end)`** — deletes and reflows the remaining styles.
+
+Both re-measure and re-position afterwards. Prefer them over `set('text', …)`,
+which replaces the string without reflowing `styles` at all.
+
+Two behaviours worth knowing because they are visible to users: typing inherits
+the style of the character to the **left** of the caret, and pressing Enter at the
+end of a line deliberately does not drag the previous character's style onto the
+new line. Clearing the text entirely discards all styles.
+
+Neither `insertChars` nor `removeChars` syncs the hidden textarea or fires
+`changed`, so calling them mid-edit needs care — see
+[building a text editing UI](/docs/text/editing-ui).
+
+## Adding your own style property
+
+You can extend the styleable set on a subclass:
+
+```js
+class MyText extends fabric.IText {
+  static _styleProperties = [...fabric.IText._styleProperties, 'myProp'];
+}
+```
+
+That is enough for `getSelectionStyles(…, true)` and `getValueOfPropertyAt` to see
+it. You then override `_renderChar` to draw it, add it to `cacheProperties` if an
+object-level change should repaint, and to `textLayoutProperties` if it affects
+measurement.
+
+**There is a real limit here, so plan for it.** The internal comparison that
+decides "did the style change between these two characters" has a hard-coded list
+of the fourteen properties and no override hook. Two consequences:
+
+1. Adjacent characters differing *only* in your custom property are drawn as one
+   run, using the first character's value.
+2. Serialisation compresses runs the same way, so your property's variation is
+   **dropped by `toObject()`** — and a declaration containing *only* unknown
+   properties makes `toObject()` throw. Never let your property be the sole
+   occupant of a declaration.
+
+The workaround is to serialise `styles` yourself — the loader already accepts the
+uncompressed object form — or to ensure your property never varies independently
+of a known one. See [serializing and exporting text](/docs/text/serializing-text).

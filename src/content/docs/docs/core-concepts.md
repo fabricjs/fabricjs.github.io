@@ -32,7 +32,7 @@ Each of these objects represent a visually different shape that can be added on 
 - `Rect`
 - `Circle`, `Ellipse`
 - `FabricImage`
-- `FabricText`, `IText`, `Textbox`
+- `FabricText`, `IText`, `Textbox` — see [choosing a text class](/docs/text/choosing-a-class)
 
 ### Patterns, Gradients and Shadows
 

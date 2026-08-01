@@ -1,0 +1,178 @@
+---
+date: '2026-07-30'
+title: 'Wrapping text with Textbox'
+description: 'How Textbox decides where to break lines, and how width, scaling and styles interact'
+sidebar:
+  order: 360
+---
+
+import { CodeEditor } from '../../../../components/CodeEditor';
+import code from './textbox-wrapping/code.js?raw';
+
+`Textbox` extends `IText`, so everything in [editing text](/docs/text/editing)
+applies. What it adds is a fixed `width` that text wraps inside, and a `height`
+derived from the result.
+
+<CodeEditor code={code} canvasId="textbox-wrapping" client:idle canvasDown>
+  <canvas width="600" height="280" id="textbox-wrapping"></canvas>
+</CodeEditor>
+
+## How wrapping works
+
+The algorithm is **greedy first-fit**, one pass, no look-ahead:
+
+1. Split the text into logical lines on `\n`.
+2. Split each logical line into words (or into graphemes, with `splitByGrapheme`).
+3. Measure every word.
+4. Fill a line word by word; when the next word would exceed the width, start a new
+   line.
+5. Set `height` from the resulting line count.
+
+There is no Knuth–Plass style optimisation, no hyphenation, no soft-hyphen support
+and no awareness of the Unicode line-breaking rules. Word boundaries are spaces,
+tabs and carriage returns — nothing else.
+
+Two consequences fall directly out of this:
+
+- **A word wider than the box is never broken.** Instead the box widens to fit it.
+- **Chinese, Japanese and Korean text does not wrap at all** with the default
+  settings, because it contains no spaces — the whole paragraph is one "word".
+  That is what `splitByGrapheme` is for.
+
+## Properties
+
+| Property | Default | Behaviour |
+| --- | --- | --- |
+| `width` | `0` | The wrapping width. Setting it re-wraps |
+| `splitByGrapheme` | `false` | Break anywhere rather than at word boundaries |
+| `dynamicMinWidth` | computed | Output, not input: the width of the widest unbreakable word |
+| `minWidth` | `20` | **Currently inert** — nothing in the library reads it |
+
+### width
+
+`width` is the wrap target and must be changed through `set()`:
+
+```js
+box.set('width', 320); // re-wraps and recomputes height
+box.width = 320;       // does not re-wrap
+```
+
+If you create a `Textbox` without a width it gets `0` and then sizes itself to its
+widest word.
+
+### dynamicMinWidth
+
+This is the floor that surprises people. If you set a `width` narrower than the
+widest single word, the box silently snaps back up to fit that word — so a width
+slider appears to "stick" at a minimum you did not choose. Read
+`box.dynamicMinWidth` if you want your UI to reflect the real lower bound, or
+enable `splitByGrapheme` so long words can be broken.
+
+### splitByGrapheme
+
+```js
+box.splitByGrapheme = true;
+box.initDimensions(); // required — see below
+```
+
+Note that unlike `width`, **`splitByGrapheme` is not one of the properties that
+triggers re-wrapping**, so `set()` will not re-flow the text on its own. Call
+`initDimensions()` after changing it.
+
+## Height is not yours
+
+`height` is recomputed from the wrapped line count on every layout pass. An
+assigned height is not rejected outright — it survives until the next re-wrap and
+is then overwritten, which makes it look like it worked right up until the user
+edits the text:
+
+```js
+box.set('height', 400);
+box.height;          // 400, for now
+
+box.set('width', 300); // any layout pass...
+box.height;            // ...and it is back to whatever the text needs
+```
+
+Treat `height` as read-only output.
+
+There is **no fixed-height mode** — no overflow, no clipping, no ellipsis, no
+max-lines, and no shrink-to-fit. A `Textbox` is always exactly as tall as its
+content. If you need a fixed frame, clip the object or the canvas region yourself,
+and if you need text to shrink to fit you have to iterate `fontSize` and re-measure
+in a loop.
+
+There is no vertical alignment either.
+
+## Resizing and scaling
+
+`Textbox` replaces only its **left and right middle handles** with width handles.
+The consequences are worth stating explicitly, because the mix is unusual:
+
+- **`ml` / `mr`** change `width` — text re-wraps live as you drag.
+- **corner handles** change `scaleX` and `scaleY` — text is stretched, no re-wrap.
+- **`mt` / `mb`** change `scaleY` — vertically stretched, no re-wrap.
+
+So the on-screen width is `width * scaleX`, while the wrapping width is `width`
+alone. If your UI reports a width to the user, decide which of the two you mean.
+
+The class documentation states that Y scaling is locked; in current versions that is
+**out of date** — the top, bottom and corner handles do scale. If you want the
+locked behaviour, remove or replace those controls yourself. See
+[configuring controls](/docs/configuring-controls).
+
+## Wrapped lines vs logical lines
+
+This is the part to internalise before writing any code that touches positions in a
+`Textbox`.
+
+`styles` is keyed by **logical** line — the lines you separated with `\n`. But
+everything that renders, measures or positions a caret works in **visual** lines —
+the wrapped ones. A three-line paragraph that wraps into seven visual lines still
+has exactly three entries in `styles`.
+
+Fabric.js keeps an internal map between the two, and translates for you inside the
+style accessors. What you need to remember:
+
+- Never index `styles` with a visual line number.
+- Get logical coordinates with `box.get2DCursorLocation(index, true)`, and visual
+  ones with `box.get2DCursorLocation(index)`.
+- The map is rebuilt on every layout, so never cache indices derived from it across
+  an edit.
+
+Because styles live on logical lines, they survive re-wrapping unharmed — resizing
+the box does not disturb your formatting.
+
+One accessor to be careful with: `styleHas(property, lineIndex)` over-reports for a
+wrapped paragraph, answering for the whole logical line rather than the visual
+segment you asked about. `isEmptyStyles(lineIndex)` is segment-accurate.
+
+There is also a subtle difference in caret arithmetic between the two wrap modes:
+with word wrapping the space at a soft break is consumed, while with
+`splitByGrapheme` nothing is dropped. If you implement your own selection maths,
+account for it.
+
+## Styles change where lines break
+
+Because wrapping measures the real text, per-character styles feed back into it. A
+bold or larger run makes words wider and can re-flow the whole box:
+
+```js
+box.setSelectionStyles({ fontSize: 40 }, 0, 10);
+box.initDimensions(); // re-wrap now rather than at the next render
+```
+
+`charSpacing` does the same. This is expected, but it means "apply bold" is not a
+purely visual operation in a `Textbox` — it can change the layout, and your
+surrounding UI may need to react.
+
+## Performance
+
+Wrapping runs synchronously on every keystroke while editing, re-measuring every
+word of every logical line. The global character-width cache is what keeps this
+viable — which is another reason a poisoned font cache hurts here. For very large
+documents, prefer several smaller text objects over one enormous `Textbox`.
+
+If you call `initDimensions()` by hand on a `Textbox`, set `dirty = true` as well:
+unlike the base class, the override does not do it for you, and a width-only change
+can otherwise reuse the stale cached bitmap.

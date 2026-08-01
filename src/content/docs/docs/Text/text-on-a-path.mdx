@@ -1,0 +1,112 @@
+---
+date: '2026-07-30'
+title: 'Text on a path'
+description: 'Bending text along a Path, and the limits of the beta feature'
+sidebar:
+  order: 380
+---
+
+A text object can follow a `Path` instead of a straight baseline. The feature is
+marked **beta** in the source, and the limits below are real — read them before
+designing around it.
+
+## Using it
+
+Give the text a `path`:
+
+```js
+const path = new fabric.Path('M 0 0 Q 150 -100 300 0', {
+  fill: '',
+  stroke: '',
+  visible: false,
+});
+
+const text = new fabric.FabricText('Text along a curve', {
+  path,
+  fontSize: 28,
+  top: 100,
+  left: 100,
+});
+```
+
+Each character is placed and rotated along the curve. The path is *part of* the
+text object — it is drawn with its own `fill` and `stroke`, so set `visible: false`
+(or clear both paint properties) if you only want the text.
+
+Four properties control the arrangement:
+
+| Property | Default | Behaviour |
+| --- | --- | --- |
+| `path` | `undefined` | The `Path` to follow |
+| `pathStartOffset` | `0` | Distance along the path where the text begins, in pixels |
+| `pathSide` | `'left'` | `'right'` flips the text to the other side of the curve |
+| `pathAlign` | `'baseline'` | How glyphs sit relative to the path: `'baseline'`, `'center'`, `'ascender'`, `'descender'` |
+
+`textAlign` also works — `'left'`, `'center'` and `'right'` position the text along
+the path.
+
+## Attach the path through the constructor or set()
+
+This is the trap that catches everyone:
+
+```js
+text.path = myPath;        // breaks rendering
+text.set('path', myPath);  // correct
+```
+
+Attaching a path requires precomputing information about its segments, and that
+only happens in the constructor or through `set()`. With a directly assigned path,
+the character positions are never computed while the renderer still takes the
+path-drawing branch — you get flat, unrotated, mispositioned text, and the object's
+size is wrong too.
+
+The same applies to changing the path's shape later: re-run `set('path', path)` (or
+call `setPathInfo()`) after modifying the path data.
+
+## What is not supported
+
+**Single line only.** Every line is positioned from the start of the path
+independently, so a text containing `\n` draws all of its lines **on top of each
+other**. There is no per-line offset. Use one text object per line, each with its
+own path.
+
+**No justification.** `textAlign: 'justify'` and its variants silently do nothing on
+a path.
+
+**No wrapping.** `Textbox` overrides the layout that handles paths, so combining
+wrapping with a path is not a supported combination.
+
+**No SVG `<textPath>`.** Export emits individually positioned and rotated
+characters rather than a `textPath` element — visually close, but not editable as
+text-on-a-path by other tools, and the path itself is exported separately. SVG
+*import* of `textPath` is not implemented at all.
+
+**RTL is not handled** in the path rendering branch.
+
+## Other things to know
+
+- **The bounding box becomes the path's bounding box.** Glyphs that ride outside it
+  fall outside the selection box, and can be clipped by the object's render cache.
+- **Text longer than the path wraps around it**, overlapping its own beginning,
+  rather than being truncated.
+- **The path's own transform is ignored** for layout. Scaling, rotating or moving the
+  `Path` object does not move the text; scale the text object or rebuild the path
+  data instead.
+- **Underlines need a fill.** Decorations on a path are skipped for characters with
+  no `fill`, so outline-only text loses them.
+- **Character positions are computed lazily** on the first render with a path, not at
+  construction — so reading per-character geometry immediately after creating the
+  object gives you nothing.
+- `textBackgroundColor` rectangles are placed without accounting for `pathAlign`, so
+  they drift vertically for non-baseline alignments.
+
+## When to reach for it
+
+It works well for what it was built for: a single line of display text along a
+gentle curve, sized to fit. For anything more — multi-line text on a path,
+justified text on a path, or round-tripping through SVG — you will be fighting the
+implementation, and building the layout yourself with one object per glyph is
+usually less work.
+
+There is a [text on path demo](/demos/text-on-path) showing it fitted to a
+user-drawn path.

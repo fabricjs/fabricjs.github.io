@@ -1,0 +1,251 @@
+---
+date: '2026-07-30'
+title: 'Editing text'
+description: 'The IText editing lifecycle, selection, keyboard input and events'
+sidebar:
+  order: 350
+---
+
+import { CodeEditor } from '../../../../components/CodeEditor';
+import code from './editing/code.js?raw';
+
+`IText` and `Textbox` bring a full editing experience: a blinking caret, mouse
+selection, keyboard input, IME composition, clipboard and drag-and-drop. This page
+covers how that machinery works and how to drive it yourself.
+
+Open the console and interact with the text below to watch the events fire.
+
+<CodeEditor code={code} canvasId="text-editing" client:idle canvasDown>
+  <canvas width="600" height="260" id="text-editing"></canvas>
+</CodeEditor>
+
+## Entering and exiting
+
+Editing is a mode the object is in, tracked by `isEditing`, and gated by
+`editable` (default `true`).
+
+```js
+text.enterEditing();
+text.isEditing; // true
+text.exitEditing();
+```
+
+By default it takes **two clicks** to start editing: the first selects the object,
+the second enters editing. That is deliberate — it lets a user move a text object
+without falling into edit mode — and it is not controlled by a flag. For
+single-click editing, call `enterEditing()` yourself:
+
+```js
+canvas.on('mouse:down', ({ target }) => {
+  if (target instanceof fabric.IText) {
+    canvas.setActiveObject(target);
+    target.enterEditing();
+  }
+});
+```
+
+Two asymmetries to know about. `enterEditing()` does nothing if the object is
+already editing or is not `editable`, but **`exitEditing()` has no such guard** —
+calling it when not editing re-fires the exit events, and can fire `modified` a
+second time. Guard your own calls:
+
+```js
+if (text.isEditing) {
+  text.exitEditing();
+}
+```
+
+**Only one object per canvas can be editing.** Entering editing on one text
+silently exits any other, including firing its `editing:exited` and possibly
+`object:modified`. Objects on *different* canvases can edit simultaneously, and
+will then compete for keyboard focus.
+
+Editing an object inside a `Group` requires `group.interactive = true`.
+
+## Events
+
+Object-level events, in the order they fire:
+
+| Event | Payload | When |
+| --- | --- | --- |
+| `editing:entered` | `{ e }` if from a pointer event, otherwise nothing | Editing began |
+| `selection:changed` | none | Caret or selection moved |
+| `changed` | none while typing; `{ index, action }` on drop or drag-out | Text content changed |
+| `editing:exited` | none | Editing ended |
+| `modified` | none | On exit, only if the text actually changed |
+
+Canvas-level equivalents, all carrying `{ target }`:
+
+`text:editing:entered`, `text:selection:changed`, `text:changed`,
+`text:editing:exited`, and `object:modified` (again, only when the text changed).
+
+```js
+canvas.on('text:changed', ({ target }) => {
+  save(target.toObject());
+});
+```
+
+Note that the canvas-level `text:editing:entered` arrives *after* the object's
+`selection:changed`, so do not rely on the entered event being the first thing you
+see.
+
+One documentation bug worth flagging: `IText` claims to fire `copy`, `cut` and
+`paste`. **It does not** — those names are DOM listeners internally, and there is
+nothing to subscribe to.
+
+## Selection and the caret
+
+`selectionStart` and `selectionEnd` are **grapheme indices** into the text — not
+UTF-16 offsets. When they are equal you have a caret; when they differ, a
+selection.
+
+```js
+text.selectionStart = 0;
+text.selectionEnd = 5;
+```
+
+Assigning them directly, as above, changes nothing observable: no event, no
+textarea sync, no repaint. The setters do more:
+
+```js
+text.setSelectionStart(0);
+text.setSelectionEnd(5);
+```
+
+though be aware they fire `selection:changed` *before* storing the new value, so
+handlers observe the previous index. For a reliable selection change from your own
+code, set the fields and then ask for a repaint — the pattern in
+[building a text editing UI](/docs/text/editing-ui).
+
+Helpers worth knowing:
+
+- `getSelectedText()`
+- `selectAll()`, `selectWord(index)`, `selectLine(index)` — the latter two only act
+  while editing, which is why double-click and triple-click do nothing on a
+  non-editing object
+- `get2DCursorLocation(index, skipWrapping)` → `{ lineIndex, charIndex }`
+- `fromStringToGraphemeSelection` / `fromGraphemeToStringSelection` for converting
+  to and from string offsets
+
+**Mind the index space.** Two internal clamps compare grapheme indices against
+`text.length`, which is a UTF-16 length — for text containing emoji these differ,
+so out-of-range indices can slip through. Convert and clamp against the grapheme
+count yourself when handling untrusted positions.
+
+### Appearance
+
+| Property | Default |
+| --- | --- |
+| `cursorColor` | `''` — inherits the fill of the character before the caret |
+| `cursorWidth` | `2` |
+| `cursorDelay` | `1000` ms |
+| `cursorDuration` | `600` ms |
+| `selectionColor` | `'rgba(17,119,255,0.3)'` |
+| `editingBorderColor` | `'rgba(102,153,255,0.25)'` |
+
+The caret width is divided by the object scale and canvas zoom so it stays
+visually constant. Only the horizontal scale is compensated for, so a
+non-uniformly scaled text gets a slightly off caret.
+
+The caret and selection are drawn on the canvas's **top context**, not the main
+one. Anything else that clears that context — a group selection box, drawing mode,
+your own overlay — can wipe the caret until the next blink.
+
+## Keyboard input
+
+All keyboard handling flows through a hidden `<textarea>`; there are no document
+or canvas key listeners. That has one dominant consequence: **if the textarea
+loses focus, typing stops working**, and Fabric.js will not tell you.
+
+Fabric.js handles a deliberately small set of keys itself, through four maps:
+
+- `keysMap` — Tab and Escape exit editing; Home, End, Page Up, Page Down and the
+  four arrows move the caret
+- `keysMapRtl` — the same with left/right mirrored, used when `direction === 'rtl'`
+- `ctrlKeysMapDown` — Ctrl/Cmd+A selects all
+- `ctrlKeysMapUp` — Ctrl/Cmd+C and Ctrl/Cmd+X
+
+Everything else — printable characters, Enter, Backspace, Delete, Ctrl+V — is left
+to the textarea, and Fabric.js reconciles the result by diffing the textarea's
+value against its own text on every `input` event. That diff is also what keeps
+`styles` aligned with the new content.
+
+Modifiers extend caret movement: Alt moves by word, Cmd (or Home/End) by line, and
+Shift extends the selection.
+
+To rebind a key, **clone the map first** — the maps are shared between every text
+object in the process:
+
+```js
+text.keysMap = { ...text.keysMap };
+text.keysMap[13] = 'exitEditing'; // Enter now commits instead of inserting
+```
+
+Map values are method names looked up on the object, so you can add your own
+methods to the prototype and reference them by name. The maps are keyed by the
+legacy `keyCode`, which is layout-dependent; for anything beyond the basics,
+override `onKeyDown` in a subclass instead.
+
+Note that `keysMap` is consulted *before* the Ctrl maps and ignores modifiers, so
+an entry there shadows any Ctrl combination on the same key.
+
+There is one known bug in the default maps: Ctrl/Cmd+X is mapped to a method named
+`cut` that **does not exist**. Cut still works in practice, because the browser's
+native cut plus the input diff does the job before that entry is ever reached.
+
+## IME and composition
+
+Composition is supported: `inCompositionMode` is true while composing, during
+which Fabric.js leaves the selection alone, reads the textarea's own selection for
+rendering, and draws a thin underline instead of the selection band. Predictive
+text and autocorrect are switched off on the textarea, so mobile suggestion bars
+do not appear.
+
+`compositionColor` styles the composition underline, but note it has no default
+value and falls back to black regardless of your theme.
+
+## Clipboard
+
+Copy, cut and paste ride the native DOM events on the textarea. Per-character
+styles survive **within the same page** — Fabric.js keeps the copied styles in a
+module-level side channel and restores them if the pasted string is byte-identical
+to what was copied.
+
+Styles do **not** survive pasting from another tab, another window, after a reload,
+or from outside Fabric.js. In those cases the inserted text takes the style of the
+neighbouring character. Two bundles of Fabric.js on one page also do not share the
+channel.
+
+Copying records the *complete* style of every character, which inflates `styles`
+quickly. Consider `cleanStyle()` afterwards, or disable the behaviour globally:
+
+```js
+fabric.config.disableStyleCopyPaste = true;
+```
+
+## Drag and drop
+
+Dragging a selection out of a text object is supported and carries two payloads: a
+`text/plain` string, and an `application/fabric` payload containing the selected
+text plus its styles — so dragging between Fabric.js objects preserves formatting
+properly, unlike the clipboard.
+
+Dropping onto a text object inserts at the caret position under the pointer, with a
+live caret preview during the drag. Dragging text *out* to another object ends the
+source's editing session. Use the canvas `drop:before` event to rewrite the payload
+if you need to.
+
+## Programmatic changes while editing
+
+This deserves its own warning. While editing, the hidden textarea is the source of
+truth for the text content, and the next keystroke overwrites the object from it.
+So this does not stick:
+
+```js
+text.set('text', 'replaced'); // reverted on the next keypress
+```
+
+Use `insertChars` and `removeChars` and sync the textarea, or exit editing first.
+The full pattern, along with toolbar focus handling, undo/redo and the rest of the
+integration work, is in
+[building a text editing UI](/docs/text/editing-ui).
