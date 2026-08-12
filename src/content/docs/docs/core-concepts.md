@@ -1,5 +1,5 @@
 ---
-date: '2023-08-20'
+date: '2026-08-12'
 title: 'Core concepts'
 description: 'Core concepts'
 sidebar:
@@ -7,7 +7,7 @@ sidebar:
 ---
 
 When working with Fabric.js there are many classes and concepts you will have to learn to know.
-This is an overview of the main building blocks of Fabric.js
+This is an overview of the main building blocks of Fabric.js.
 
 ## Canvas
 
@@ -37,18 +37,19 @@ Each of these objects represent a visually different shape that can be added on 
 ### Patterns, Gradients and Shadows
 
 On top of classes to represent shape/objects there are smaller classes that are used to paint object fills or strokes.
-You can't add a `Gradient` or a `Shadow` to a canvas, you set those as properties of object to obtain determined effects
+You can't add a `Gradient` or a `Shadow` to a canvas, you set those as properties of an object to obtain your desired effects.
 
 ### Image filters
 
-FabricImage class represent a raster image on the canvas.
+FabricImage class represents a raster image on the canvas.
 FabricImage can be filtered with one or more filters.
-Filters are small programs written in WEBGL ( with an optional JS fallback ) that change image pixel value to obtain certain effects.
+Filters are small programs written in WEBGL ( with an optional JS fallback ) that change image pixel values to obtain certain effects.
 Fabric.js supports numerous prebuilt fitlers for common operations and also a stack to combine more than one filter to build a particular effect.
 
 ## Interactions
 
-Fabric.js offers some prebuilt interactions between the objects on the canvas
+Fabric.js offers some prebuilt interactions between the objects on the canvas:
+
 - Selection
 - Dragging
 - Scaling, rotation, skewing through customizable controls
@@ -76,7 +77,7 @@ The `Control` Class and the API is designed especially for creating custom contr
 
 ### Drawing & Brushes
 
-The Canvas offer an embedded drawing mode in which the mouse move event is forwarded to a brush class that has the scope of creating an object that will represent your brush strokes. Brushing is based on the `Path` object or on a collection of circles/rect to represent a spray.
+The Canvas offers an embedded drawing mode in which the mouse move event is forwarded to a brush class that has the scope of creating an object that will represent your brush strokes. Brushing is based on the `Path` object or on a collection of circles/rect to represent a spray.
 
 Available brushes:
 
@@ -87,14 +88,14 @@ Available brushes:
 ## Events
 
 Some interaction between the user of the application and the code written by the developer are handled through events.
-You will get an event every time a final user interact with the canvas through Fabric.js embedded functionalities for low level events like:
+You will get an event every time a final user interacts with the canvas through Fabric.js embedded functionalities for low level events like:
 
 - mouse up/down/move
 - mouse wheel
 - mouse in/out
 - drag and drop
 
-While you will also get some high level event that is the end result of embedded user experience built on top of standard mouse events
+While you will also get some high level events that are the end result of embedded user experience built on top of standard mouse events:
 
 - object selection created/destroyed/changed
 - object added to canvas/group
@@ -103,12 +104,12 @@ While you will also get some high level event that is the end result of embedded
 
 ## Animations
 
-Fabric.js also support some basic animation utility.
-You can use animation library that supports objects to work with fabricJS.
+Fabric.js also supports some basic animation utility.
+You can use animation library that supports objects to work with Fabric.js.
 You can animate object positions, transform properties like scale, colors or matrices.
-As long as you can change the state during time from a value to aother you can create an animation.
+As long as you can change the state during time from a value to another you can create an animation.
 
-Fabric.js animation utility is barebone if you have some specific need for some specific animation effect you are better searching a specific library to do that.
+Fabric.js animation utility is barebones. If you have some specific need for some specific animation effect it is recommended that you use a specific library to do that.
 
 ## Exports
 
@@ -117,10 +118,10 @@ Fabric supports `JSON` and `SVG` exports.
 ### JSON
 
 JSON export is meant for saving and restoring visual state on the canvas.
-Every fabricJS object is equipped with its own `toObject` method that will output a simple JS object that can be put in storage and used in pair with `fromObject` to get back an instance of the same type.
+Every Fabric.js object is equipped with its own `toObject` method that will output a simple JS object that can be put in storage and used in pair with `fromObject` to get back an instance of the same type.
 This state is supposed to restore the visual state of the canvas and not functionalities like controls.
 Fabric.js assumes that custom controls and custom handler are set up in your codebase as part of your app and are not part of your state.
 
 ### SVG
 
-SVG export is meant to ouput your visual canvas to a vector format output that can be imported in other softwares or printed. SVG and Canvas share a lot of similarities but are not identical. As a result SVG import and SVG export are not 1:1. Some features are supported in SVG export but are not supported in SVG import for example like TSPAN or Patterns.
+SVG export is meant to output your visual canvas to a vector format output that can be imported in other softwares or printed. SVG and Canvas share a lot of similarities but are not identical. As a result SVG import and SVG export are not 1:1. Some features are supported in SVG export but are not supported in SVG import, such as TSPAN or Patterns.
