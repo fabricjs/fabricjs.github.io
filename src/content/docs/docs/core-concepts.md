@@ -109,7 +109,7 @@ You can use animation library that supports objects to work with Fabric.js.
 You can animate object positions, transform properties like scale, colors or matrices.
 As long as you can change the state during time from a value to another you can create an animation.
 
-Fabric.js animation utility is barebones. If you have some specific need for some specific animation effect it is recommended that you use a specific library to do that.
+Fabric.js animation utility is a bare-bones utility. If you have some specific need for some specific animation effect it is recommended that you use a specific library to do that.
 
 ## Exports
 
