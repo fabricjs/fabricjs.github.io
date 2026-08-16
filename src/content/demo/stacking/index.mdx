@@ -1,0 +1,64 @@
+---
+date: "2012-07-25"
+title: "Stacking"
+description: "Stacking in FabricJS"
+thumbnail: "stacking.png"
+tags: ["stack", "stacking", "z-index"]
+---
+
+import { CodeEditor } from "../../../components/CodeEditor";
+import code from "./code?raw";
+
+This demo showcases several methods for changing the object stack order, meaning the order in which they are drawn on the canvas.
+
+Ultimately, the `canvas._objects` array determines the stack order. The following functions all re-arrange that array.
+
+[`bringObjectForward`](/api/classes/canvas/#bringobjectforward) & [`sendObjectBackwards`](/api/classes/canvas/#sendobjectbackwards) both accept an optional `boolean` 2nd argument, `intersecting`, which limits changes to intersecting (overlapping) objects.
+
+By default, when an object is selected, it is temporary drawn above all non-selected objects. Setting [`preserveObjectStacking`](/api/classes/canvas/#preserveobjectstacking) to `true` prevents that.
+
+<label for="index">
+  <span>Target: </span>
+  <select id="index">
+    <option>1</option>
+    <option>2</option>
+    <option selected>3</option>
+    <option>4</option>
+    <option>5</option>
+  </select>
+</label>
+
+<br />
+
+<button id="bringObjectForward">bringObjectForward</button>
+<button id="sendObjectBackwards">sendObjectBackwards</button>
+
+<label for="intersecting">
+  <input type="checkbox" id="intersecting" name="intersecting" />
+  <span> intersecting</span>
+</label>
+
+<br />
+
+<button id="bringObjectToFront">bringObjectToFront</button>
+<button id="moveObjectTo">moveObjectTo</button>
+<button id="sendObjectToBack">sendObjectToBack</button>
+
+<br />
+
+<label for="preserveObjectStacking">
+  <input
+    type="checkbox"
+    id="preserveObjectStacking"
+    name="preserveObjectStacking"
+  />
+  <span> preserveObjectStacking</span>
+</label>
+
+<h3>
+  Stack order: <span id="stackInfo"></span>
+</h3>
+
+<CodeEditor code={code} canvasId="c" client:idle>
+  <canvas width="600" height="500" id="c"></canvas>
+</CodeEditor>
